@@ -1,0 +1,16 @@
+#!/usr/bin/python2.4
+
+import gettext
+import pygtk; pygtk.require("2.0")
+import gtk, gtk.glade
+
+from LanguageSelector import LanguageSelector
+
+if __name__ == "__main__":
+        gettext.bindtextdomain("language-selector", "/usr/share/locale")
+        gettext.textdomain("language-selector")
+        gtk.glade.bindtextdomain("language-selector", "/usr/share/locale")
+        gtk.glade.textdomain("language-selector")
+
+	app = LanguageSelector(datadir="/usr/share/language-selector/data/")
+	app.run()

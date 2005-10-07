@@ -1,0 +1,6 @@
+[encoding: UTF-8]
+LanguageSelector/LanguageSelector.py
+data/LanguageSelector.glade
+data/countries.h 
+data/languages.h
+data/language-selector.desktop.in

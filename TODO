@@ -1,0 +1,9 @@
+* i18n:
+  - interface  
+  - all language names
+* make it more user friendly:
+  - add a "preview" when pressing "ok"
+  - add some help text at the top of the screen about what
+    the system is doing
+  - add a message then the system is completed that you
+    need to login/logout

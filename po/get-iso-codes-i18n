@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# Get ISO codes from the iso-codes package and extract translations
+set -e
+
+[ -r /usr/share/iso-codes/iso_3166.tab ] || exit 1
+
+
+
+for mo in iso_3166.mo iso_639.mo; do
+    rm -rf iso-codes >/dev/null 2>&1
+    mkdir iso-codes
+
+    for i in `find /usr/share/locale/ -name $mo` ; do
+	language=`echo $i | cut -f5 -d/`
+	msgunfmt $i >iso-codes/${language}.po 2>/dev/null
+    done
+
+    # now merge the iso-code translations with the current translations
+    for po in *.po; do
+	if [ -f iso-codes/$po ]; then
+	    echo "Merging $po"
+	    msgmerge -N iso-codes/$po $po > $po.new
+	    mv $po.new $po
+	fi
+    done
+done
+
+rm -rf iso-codes
