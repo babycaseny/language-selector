@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 15:02+0200\n"
+"POT-Creation-Date: 2005-11-22 16:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,11 +61,11 @@ msgstr ""
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:372
+#: ../LanguageSelector/LanguageSelector.py:376
 msgid "Unable to get exclusive lock"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:373
+#: ../LanguageSelector/LanguageSelector.py:377
 msgid ""
 "This usually means that another package management application (like apt-get "
 "or aptitude) already running. Please close that application first"

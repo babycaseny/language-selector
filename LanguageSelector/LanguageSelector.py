@@ -357,6 +357,10 @@ class LanguageSelector(GladeApp):
         #print "button_cancel"
         gtk.main_quit()
 
+    def on_delete_event(self, event, data):
+        #print "delete_event"
+        gtk.main_quit()
+
     def updateLanguageView(self):
         #print "updateLanguageView()"
 

@@ -1,3 +1,12 @@
+language-selector (0.1.1) breezy-updates; urgency=low
+
+  * data/language-selector.desktop:
+    - updated desktop file translations
+  * exit properly on window-manager delete events (and release
+    package manager lock this way properly)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 10 Oct 2005 13:46:17 +0200
+
 language-selector (0.1) breezy; urgency=low
 
   * data/language-selector.desktop.in:

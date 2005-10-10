@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-10-07 15:02+0200\n"
+"POT-Creation-Date: 2005-11-22 16:43+0100\n"
 "PO-Revision-Date: 2005-09-09 21:26-0300\n"
 "Last-Translator: Evandro Fernandes Giovanini <evandrofg@ig.com.br>\n"
 "Language-Team: GNOME-BR <gnome-l10n-br@listas.cipsga.org.br>\n"
@@ -65,11 +65,11 @@ msgstr ""
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:372
+#: ../LanguageSelector/LanguageSelector.py:376
 msgid "Unable to get exclusive lock"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:373
+#: ../LanguageSelector/LanguageSelector.py:377
 msgid ""
 "This usually means that another package management application (like apt-get "
 "or aptitude) already running. Please close that application first"
