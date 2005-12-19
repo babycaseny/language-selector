@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-11-22 16:43+0100\n"
+"POT-Creation-Date: 2005-12-19 13:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Michael Vogt <michael.vogt@ubuntu.com>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -10,60 +10,86 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/LanguageSelector.py:151 ../data/languages.h:1
+#: ../LanguageSelector/LanguageSelector.py:163 ../data/languages.h:1
 msgid "Language"
 msgstr "Sprache"
 
-#: ../LanguageSelector/LanguageSelector.py:156
+#: ../LanguageSelector/LanguageSelector.py:168
 #, fuzzy
 msgid "Translations"
 msgstr "Übersetzung"
 
-#: ../LanguageSelector/LanguageSelector.py:165
+#: ../LanguageSelector/LanguageSelector.py:177
 msgid "Writing Aids"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:224
+#: ../LanguageSelector/LanguageSelector.py:262
 msgid "Update language support?"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:225
+#: ../LanguageSelector/LanguageSelector.py:263
 msgid ""
 "Some packages for full language support are not installed on your system. Do "
 "you want to install them now?"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:228
+#: ../LanguageSelector/LanguageSelector.py:266
 msgid "Remind me again"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:229
+#: ../LanguageSelector/LanguageSelector.py:267
 msgid "Install now"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:300
+#: ../LanguageSelector/LanguageSelector.py:269
+#, fuzzy
+msgid "Details"
+msgstr "Dänisch"
+
+#: ../LanguageSelector/LanguageSelector.py:351
+msgid "Internal error"
+msgstr ""
+
+#: ../LanguageSelector/LanguageSelector.py:352
+msgid ""
+"The internal cache couldn't be cleaned. Please report this as a error on "
+"bugzilla.ubuntu.com."
+msgstr ""
+
+#: ../LanguageSelector/LanguageSelector.py:371
 msgid "Can not apply changes"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:301
+#: ../LanguageSelector/LanguageSelector.py:372
 msgid ""
 "Some packages for full language support can't be installed on your system. "
 "This usually means there is something wrong in the ubuntu archive or with "
 "your 'apt' software settings."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:319
+#: ../LanguageSelector/LanguageSelector.py:390
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:376
+#: ../LanguageSelector/LanguageSelector.py:450
 msgid "Unable to get exclusive lock"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:377
+#: ../LanguageSelector/LanguageSelector.py:451
 msgid ""
 "This usually means that another package management application (like apt-get "
 "or aptitude) already running. Please close that application first"
+msgstr ""
+
+#: ../LanguageSelector/LanguageSelector.py:469
+msgid "Package database inconsitent"
+msgstr ""
+
+#: ../LanguageSelector/LanguageSelector.py:470
+msgid ""
+"The package database on your system is in a inconsistent state (you have "
+"broken packages on your system). It is not possible to continue. Please use "
+"synaptic or apt-get to fix this first."
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:1

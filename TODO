@@ -1,3 +1,8 @@
+* speed:
+  - currently _missingTranslationPkgs() is called too often and that means
+    and it iterates over the entire cache too often. it should be changed
+    so that it only goes over the cache *once* by changing it so that it
+    gets a list of translations we are interessted in
 * i18n:
   - interface  
   - all language names
