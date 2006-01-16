@@ -1,3 +1,14 @@
+language-selector (0.1.6) dapper; urgency=low
+
+  * data/LanguageSelector.glade, LanguageSelector/LanguageSelector.py:
+    - more HIG compliant by having "Apply, Cancel, Ok"
+    - have a seperate progress window
+    - wording improvments
+    - add an information symbol next to the text
+    (thanks to Sebasitan Heinlein, Ubuntu: #25203)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 16 Jan 2006 11:45:40 +0100
+
 language-selector (0.1.5) dapper; urgency=low
 
   * print a useful error message and exit if the apt cache is broken 

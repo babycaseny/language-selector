@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-19 13:00+0100\n"
+"POT-Creation-Date: 2006-01-16 12:20+0100\n"
 "PO-Revision-Date: 2005-11-24 12:44+0100\n"
 "Last-Translator: Lasse Bang Mikkelsen <lbm@fatalerror.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -20,23 +20,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../LanguageSelector/LanguageSelector.py:163 ../data/languages.h:1
+#: ../LanguageSelector/LanguageSelector.py:165 ../data/languages.h:1
 msgid "Language"
 msgstr "Sprog"
 
-#: ../LanguageSelector/LanguageSelector.py:168
+#: ../LanguageSelector/LanguageSelector.py:170
 msgid "Translations"
 msgstr "Oversættelser"
 
-#: ../LanguageSelector/LanguageSelector.py:177
+#: ../LanguageSelector/LanguageSelector.py:179
 msgid "Writing Aids"
 msgstr "Skrive-hjælp"
 
-#: ../LanguageSelector/LanguageSelector.py:262
+#: ../LanguageSelector/LanguageSelector.py:264
 msgid "Update language support?"
 msgstr "Opdatér sprog-understøttelse?"
 
-#: ../LanguageSelector/LanguageSelector.py:263
+#: ../LanguageSelector/LanguageSelector.py:265
 msgid ""
 "Some packages for full language support are not installed on your system. Do "
 "you want to install them now?"
@@ -44,34 +44,34 @@ msgstr ""
 "Nogle pakker til fuld sprog-understøttelse er ikke installeret på din "
 "maskine. Vil du installere dem nu?"
 
-#: ../LanguageSelector/LanguageSelector.py:266
+#: ../LanguageSelector/LanguageSelector.py:268
 msgid "Remind me again"
 msgstr "Påmind mig igen"
 
-#: ../LanguageSelector/LanguageSelector.py:267
+#: ../LanguageSelector/LanguageSelector.py:269
 msgid "Install now"
 msgstr "Installér nu"
 
-#: ../LanguageSelector/LanguageSelector.py:269
+#: ../LanguageSelector/LanguageSelector.py:271
 #, fuzzy
 msgid "Details"
 msgstr "Dansk"
 
-#: ../LanguageSelector/LanguageSelector.py:351
+#: ../LanguageSelector/LanguageSelector.py:353
 msgid "Internal error"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:352
+#: ../LanguageSelector/LanguageSelector.py:354
 msgid ""
 "The internal cache couldn't be cleaned. Please report this as a error on "
 "bugzilla.ubuntu.com."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:371
+#: ../LanguageSelector/LanguageSelector.py:374
 msgid "Can not apply changes"
 msgstr "Kan ikke anvende ændringer"
 
-#: ../LanguageSelector/LanguageSelector.py:372
+#: ../LanguageSelector/LanguageSelector.py:375
 msgid ""
 "Some packages for full language support can't be installed on your system. "
 "This usually means there is something wrong in the ubuntu archive or with "
@@ -81,15 +81,15 @@ msgstr ""
 "maskine. Det skyldes sandsynligvis problemer med Ubuntu-arkivet eller med "
 "din 'apt'-opsætning."
 
-#: ../LanguageSelector/LanguageSelector.py:390
+#: ../LanguageSelector/LanguageSelector.py:400
 msgid "The list of available languages on the system has been updated."
 msgstr "Listen over tilgængelige sprog er blevet opdateret."
 
-#: ../LanguageSelector/LanguageSelector.py:450
+#: ../LanguageSelector/LanguageSelector.py:460
 msgid "Unable to get exclusive lock"
 msgstr "Kan ikke opnå eksklusiv lås"
 
-#: ../LanguageSelector/LanguageSelector.py:451
+#: ../LanguageSelector/LanguageSelector.py:461
 msgid ""
 "This usually means that another package management application (like apt-get "
 "or aptitude) already running. Please close that application first"
@@ -97,11 +97,11 @@ msgstr ""
 "Det skyldes sandsynligvis at et andet pakkehåndterings-program (såsom apt-"
 "get eller aptitude) allerede kører. Luk venligst det program først"
 
-#: ../LanguageSelector/LanguageSelector.py:469
+#: ../LanguageSelector/LanguageSelector.py:480
 msgid "Package database inconsitent"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:470
+#: ../LanguageSelector/LanguageSelector.py:481
 msgid ""
 "The package database on your system is in a inconsistent state (you have "
 "broken packages on your system). It is not possible to continue. Please use "
@@ -109,34 +109,49 @@ msgid ""
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:1
-msgid "<b>Default language:</b>"
-msgstr "<b>Forvalgt sprog:</b>"
+msgid "    "
+msgstr ""
 
 #: ../data/LanguageSelector.glade.h:2
-msgid "<b>Languages available to people using this system:</b>"
-msgstr "<b>Tilgængelige sprog for personer der bruger denne maskine:</b>"
+#, fuzzy
+msgid "<b>Default Language</b>"
+msgstr "<b>Forvalgt sprog:</b>"
 
 #: ../data/LanguageSelector.glade.h:3
-msgid "Language selector"
-msgstr "Sprogvælger"
+#, fuzzy
+msgid "<b>Supported Languages</b>"
+msgstr "<b>Forvalgt sprog:</b>"
 
 #: ../data/LanguageSelector.glade.h:4
-msgid "Status:"
-msgstr "Status:"
+msgid "<big><b>Reading available languages</b></big>"
+msgstr ""
 
 #: ../data/LanguageSelector.glade.h:5
+#, fuzzy
+msgid "Default language for new accounts and the login screen:"
+msgstr "Bruges til nye konti og logind-skærmen."
+
+#: ../data/LanguageSelector.glade.h:6
+#, fuzzy
+msgid "Language Support"
+msgstr "Sprogvælger"
+
+#: ../data/LanguageSelector.glade.h:7
 msgid ""
-"Translations include menus, dialogs and help. Writing Aids include "
-"dictionaries, grammar checkers and input methods. Some translations may not "
-"be available for some languages."
+"Reading information about the available languages. Depending on the speed of "
+"your computer this may take a bit."
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:8
+#, fuzzy
+msgid ""
+"Translations include menus, dialogs and help. Writing aids include "
+"dictionaries, grammar checkers and input methods. Please note, some "
+"languages don't provide translations or wirting aids."
 msgstr ""
 "Oversættelser indeholder menuer, vinduer og hjælp. Skrive-hjælp indeholder "
 "ordbøger, stavekontrol og indtastnings-metoder. Nogle oversættelser er "
 "muligvis ikke tilgængelige for nogle sprog."
-
-#: ../data/LanguageSelector.glade.h:6
-msgid "Used for new accounts and the login screen."
-msgstr "Bruges til nye konti og logind-skærmen."
 
 #: ../data/countries.h:1
 msgid "Afghanistan"
@@ -1841,3 +1856,12 @@ msgstr "Installér/fjern sprog-understøttelse"
 #: ../data/language-selector.desktop.in.h:2
 msgid "Language Selector"
 msgstr "Sprogvælger"
+
+#~ msgid "<b>Languages available to people using this system:</b>"
+#~ msgstr "<b>Tilgængelige sprog for personer der bruger denne maskine:</b>"
+
+#~ msgid "Language selector"
+#~ msgstr "Sprogvælger"
+
+#~ msgid "Status:"
+#~ msgstr "Status:"

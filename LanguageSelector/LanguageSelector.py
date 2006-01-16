@@ -113,20 +113,22 @@ class LocaleInfo(object):
             
 
 class GtkProgress(apt.OpProgress):
-    def __init__(self, box,progressbar):
+    def __init__(self, window,progressbar, parent):
+        self._parent = parent
+        self._window = window
         self._progressbar = progressbar
-        self._box = box
+        window.set_transient_for(parent)
     def update(self, percent):
         #print percent
         #print self.Op
         #print self.SubOp
-        self._box.show()
+        self._window.show()
         self._progressbar.set_text(self.op)
         self._progressbar.set_fraction(percent/100.0)
         while gtk.events_pending():
             gtk.main_iteration()
     def done(self):
-        self._box.hide()
+        self._window.hide()
 
 class LanguageSelector(SimpleGladeApp):
 
@@ -156,7 +158,7 @@ class LanguageSelector(SimpleGladeApp):
         self.combo_dirty = False
 
         # apply button
-        self.button_ok.set_sensitive(False)
+        self.button_apply.set_sensitive(False)
 
         # build the treeview
         renderer = gtk.CellRendererText()
@@ -204,9 +206,9 @@ class LanguageSelector(SimpleGladeApp):
     def check_apply_button(self):
         (inst_list, rm_list) = self.build_commit_lists()
         if self.combo_dirty or len(inst_list) > 0 or len(rm_list) > 0:
-            self.button_ok.set_sensitive(True)
+            self.button_apply.set_sensitive(True)
         else:
-            self.button_ok.set_sensitive(False)
+            self.button_apply.set_sensitive(False)
 
     def on_combobox_default_lang_changed(self, widget):
         self.combo_dirty = True
@@ -354,13 +356,14 @@ class LanguageSelector(SimpleGladeApp):
             res = d.run()
             d.destroy()
             # something went pretty bad, re-get a cache
-            progress = GtkProgress(self.hbox_status,self.progressbar_cache)
+            progress = GtkProgress(self.dialog_progress,self.progressbar_cache,
+                                   self.window_main)
             self._cache = apt.Cache(progress)
             res = False
         return res
 
-    def on_button_ok_clicked(self, widget):
-        #print "button_ok"
+    def _commit(self):
+        """ commit helper, builds the commit lists, verifies it """
         (inst_list, rm_list) = self.build_commit_lists()
         if not self.verify_commit_lists(inst_list, rm_list):
             d = gtk.MessageDialog(parent=self.window_main,
@@ -373,14 +376,21 @@ class LanguageSelector(SimpleGladeApp):
                   "can't be installed on your system. This usually "
                   "means there is something wrong in the ubuntu archive "
                   "or with your 'apt' software settings.")))
-            D.run()
+            d.run()
             d.destroy()
-            return
+            return False
         #print "inst_list: %s " % inst_list
         #print "rm_list: %s " % rm_list
         self.commit(inst_list, rm_list)
         self.writeSystemDefaultLang()
-        #gtk.main_quit()
+        return True
+
+    def on_button_ok_clicked(self, widget):
+        self._commit()
+        gtk.main_quit()
+
+    def on_button_apply_clicked(self, widget):
+        self._commit()
         self.updateLanguageView()
         self.updateSystemDefaultCombo()
 
@@ -457,7 +467,8 @@ class LanguageSelector(SimpleGladeApp):
 
         self._langlist.clear()
 
-        progress = GtkProgress(self.hbox_status,self.progressbar_cache)
+        progress = GtkProgress(self.dialog_progress, self.progressbar_cache,
+                               self.window_main)
         self._cache = apt.Cache(progress)
         # sanity check
         if self._cache._depcache.BrokenCount > 0:
