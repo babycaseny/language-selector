@@ -1,3 +1,11 @@
+language-selector (0.1.8) dapper; urgency=low
+
+  * use X-KDE-SubstituteUID=true in desktop file
+  * typo fix
+  * follow localechooser when writing LANGUAGE information (#26435)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  7 Feb 2006 23:38:42 +0100
+
 language-selector (0.1.7) dapper; urgency=low
 
   * typos fixed (#29400)

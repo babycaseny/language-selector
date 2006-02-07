@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-07 11:13+0100\n"
+"POT-Creation-Date: 2006-02-13 20:04+0100\n"
 "PO-Revision-Date: 2005-09-10 21:13+0200\n"
 "Last-Translator: Ondřej Surý <ondrej@sury.org>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -16,87 +16,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: ../LanguageSelector/LanguageSelector.py:175 ../data/languages.h:1
+#: ../LanguageSelector/LanguageSelector.py:189 ../data/languages.h:1
 msgid "Language"
 msgstr "Jazyk"
 
-#: ../LanguageSelector/LanguageSelector.py:180
+#: ../LanguageSelector/LanguageSelector.py:194
 #, fuzzy
 msgid "Translations"
 msgstr "Překlad"
 
-#: ../LanguageSelector/LanguageSelector.py:189
+#: ../LanguageSelector/LanguageSelector.py:203
 msgid "Writing Aids"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:274
+#: ../LanguageSelector/LanguageSelector.py:289
 #, fuzzy
 msgid "The language support is not installed completely"
 msgstr "Jazyky jsou nyní nainstalovány"
 
-#: ../LanguageSelector/LanguageSelector.py:275
+#: ../LanguageSelector/LanguageSelector.py:290
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:277
+#: ../LanguageSelector/LanguageSelector.py:292
 #, fuzzy
 msgid "_Remind Me Again"
 msgstr "Upozorni mě znovu"
 
-#: ../LanguageSelector/LanguageSelector.py:278
+#: ../LanguageSelector/LanguageSelector.py:293
 #, fuzzy
 msgid "_Install"
 msgstr "Instaluj teď"
 
-#: ../LanguageSelector/LanguageSelector.py:281
+#: ../LanguageSelector/LanguageSelector.py:296
 #, fuzzy
 msgid "Details"
 msgstr "dánština"
 
-#: ../LanguageSelector/LanguageSelector.py:363
+#: ../LanguageSelector/LanguageSelector.py:378
 #, fuzzy
 msgid "Could not install the selected language support"
 msgstr "Instaluj/odeber podporu jazyků"
 
-#: ../LanguageSelector/LanguageSelector.py:364
+#: ../LanguageSelector/LanguageSelector.py:379
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:387
+#: ../LanguageSelector/LanguageSelector.py:402
 #, fuzzy
 msgid "Could not install the full language support"
 msgstr "Instaluj/odeber podporu jazyků"
 
-#: ../LanguageSelector/LanguageSelector.py:388
+#: ../LanguageSelector/LanguageSelector.py:403
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:413
+#: ../LanguageSelector/LanguageSelector.py:428
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:475
+#: ../LanguageSelector/LanguageSelector.py:490
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:477
+#: ../LanguageSelector/LanguageSelector.py:492
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:496
+#: ../LanguageSelector/LanguageSelector.py:511
 msgid "Software database is broken"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:497
+#: ../LanguageSelector/LanguageSelector.py:512
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -119,8 +119,8 @@ msgstr ""
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
-"The support for each langauge can differ in the amount of available "
-"translations or wirting aids."
+"The support for each language can differ in the amount of available "
+"translations or writing aids."
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:7

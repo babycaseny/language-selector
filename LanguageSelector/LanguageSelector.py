@@ -42,9 +42,10 @@ from SimpleGladeApp import SimpleGladeApp
 class LocaleInfo(object):
     " class with handy functions to parse the locale information "
     
-    def __init__(self, lang_file, country_file):
+    def __init__(self, lang_file, country_file, languagelist_file):
         self._lang = {}
         self._country = {}
+        self._languagelist = {}
         # read lang file
         self._langFile = lang_file
         for line in open(lang_file):
@@ -60,6 +61,15 @@ class LocaleInfo(object):
                 continue
             (un, code, long_code, descr, cap) = string.split(tmp,":")
             self._country[code] = descr
+        # read the languagelist
+        for line in open(languagelist_file):
+            tmp = string.strip(line)
+            if tmp.startswith("#") or tmp == "":
+                continue
+            w = tmp.split(";")
+            localeenv = w[6].split(":")
+            #print localeenv
+            self._languagelist[localeenv[0]] = '%s' % w[6]
 
     def lang(self, code):
         """ map language code to language name """
@@ -80,7 +90,7 @@ class LocaleInfo(object):
         p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE)
         for line in p.stdout.readlines():
             tmp = string.strip(line)
-            if tmp.startswith("#") or tmp == "":
+            if tmp.startswith("#") or tmp == "" or tmp == "C" or tmp == "POSIX":
                 continue
             # we are only interessted in the locale, not the codec
             locale = string.split(tmp)[0]
@@ -106,6 +116,10 @@ class LocaleInfo(object):
             the LANGUAGE enviroment variable.
             E.g: en_DK -> en_DK:en
         """
+        # first check if we got somethign from languagelist
+        if self._languagelist.has_key(code):
+            return self._languagelist[code]
+        # if not, fall back to "dumb" behaviour
         if not "_" in code:
             return code
         (lang, region) = string.split(code, "_")
@@ -205,7 +219,8 @@ class LanguageSelector(SimpleGladeApp):
         
         # load the localeinfo "database"
         self._localeinfo = LocaleInfo("%s/languages" % self._datadir,
-                                      "%s/countries" % self._datadir)
+                                      "%s/countries" % self._datadir,
+                                      "%s/languagelist" % self._datadir)
         self.updateLanguageView()
         self.updateSystemDefaultCombo()
         # see if something is missing

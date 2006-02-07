@@ -49,3 +49,4 @@ Terminal=false
 Type=Application
 Encoding=UTF-8
 Categories=Application;System;Settings;
+X-KDE-SubstituteUID=true

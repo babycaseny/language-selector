@@ -390,7 +390,7 @@
 	  <property name="visible">True</property>
 	  <property name="label" translatable="yes">&lt;big&gt;&lt;b&gt;Checking available language support&lt;/b&gt;&lt;/big&gt;
 
-The support for each langauge can differ in the amount of available translations or wirting aids.</property>
+The support for each language can differ in the amount of available translations or writing aids.</property>
 	  <property name="use_underline">False</property>
 	  <property name="use_markup">True</property>
 	  <property name="justify">GTK_JUSTIFY_LEFT</property>
