@@ -1,3 +1,12 @@
+language-selector (0.1.7) dapper; urgency=low
+
+  * typos fixed (#29400)
+  * don't close while the cache is read
+  * be careful to not touch packages that have no candidateVersion (#6506)
+  * register itself as a dialog (like the desktop preferences) (#25698)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  7 Feb 2006 10:12:36 +0100
+
 language-selector (0.1.6) dapper; urgency=low
 
   * data/LanguageSelector.glade, LanguageSelector/LanguageSelector.py:

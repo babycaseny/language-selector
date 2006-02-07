@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-16 12:20+0100\n"
+"POT-Creation-Date: 2006-02-07 11:13+0100\n"
 "PO-Revision-Date: 2005-09-10 21:13+0200\n"
 "Last-Translator: Ondřej Surý <ondrej@sury.org>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -16,91 +16,91 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: ../LanguageSelector/LanguageSelector.py:165 ../data/languages.h:1
+#: ../LanguageSelector/LanguageSelector.py:175 ../data/languages.h:1
 msgid "Language"
 msgstr "Jazyk"
 
-#: ../LanguageSelector/LanguageSelector.py:170
+#: ../LanguageSelector/LanguageSelector.py:180
 #, fuzzy
 msgid "Translations"
 msgstr "Překlad"
 
-#: ../LanguageSelector/LanguageSelector.py:179
+#: ../LanguageSelector/LanguageSelector.py:189
 msgid "Writing Aids"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:264
-msgid "Update language support?"
-msgstr "Aktualizovad podporu jazyka?"
+#: ../LanguageSelector/LanguageSelector.py:274
+#, fuzzy
+msgid "The language support is not installed completely"
+msgstr "Jazyky jsou nyní nainstalovány"
 
-#: ../LanguageSelector/LanguageSelector.py:265
+#: ../LanguageSelector/LanguageSelector.py:275
 msgid ""
-"Some packages for full language support are not installed on your system. Do "
-"you want to install them now?"
+"Not all translations or writing aids, that are available for the supported "
+"languages on your system, are installed."
 msgstr ""
-"Některé balíčky pro plnou podporu jazyka nejsou na vašem systému "
-"nainstalovány. Chcete je nainstalovat nyní?"
 
-#: ../LanguageSelector/LanguageSelector.py:268
-msgid "Remind me again"
+#: ../LanguageSelector/LanguageSelector.py:277
+#, fuzzy
+msgid "_Remind Me Again"
 msgstr "Upozorni mě znovu"
 
-#: ../LanguageSelector/LanguageSelector.py:269
-msgid "Install now"
+#: ../LanguageSelector/LanguageSelector.py:278
+#, fuzzy
+msgid "_Install"
 msgstr "Instaluj teď"
 
-#: ../LanguageSelector/LanguageSelector.py:271
+#: ../LanguageSelector/LanguageSelector.py:281
 #, fuzzy
 msgid "Details"
 msgstr "dánština"
 
-#: ../LanguageSelector/LanguageSelector.py:353
-msgid "Internal error"
-msgstr ""
+#: ../LanguageSelector/LanguageSelector.py:363
+#, fuzzy
+msgid "Could not install the selected language support"
+msgstr "Instaluj/odeber podporu jazyků"
 
-#: ../LanguageSelector/LanguageSelector.py:354
+#: ../LanguageSelector/LanguageSelector.py:364
 msgid ""
-"The internal cache couldn't be cleaned. Please report this as a error on "
-"bugzilla.ubuntu.com."
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:374
-msgid "Can not apply changes"
-msgstr "Nemůžu provést změny"
+#: ../LanguageSelector/LanguageSelector.py:387
+#, fuzzy
+msgid "Could not install the full language support"
+msgstr "Instaluj/odeber podporu jazyků"
 
-#: ../LanguageSelector/LanguageSelector.py:375
+#: ../LanguageSelector/LanguageSelector.py:388
 msgid ""
-"Some packages for full language support can't be installed on your system. "
-"This usually means there is something wrong in the ubuntu archive or with "
-"your 'apt' software settings."
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
-"Některé balíčky pro plnou podporu jazyka nemohly být na vašem systému "
-"nainstalovány. To většinou znamená, že je něco špatně s archivem Ubuntu nebo "
-"s vaším nastavením příkazu 'apt'."
 
-#: ../LanguageSelector/LanguageSelector.py:400
+#: ../LanguageSelector/LanguageSelector.py:413
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:460
-msgid "Unable to get exclusive lock"
+#: ../LanguageSelector/LanguageSelector.py:475
+msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:461
+#: ../LanguageSelector/LanguageSelector.py:477
 msgid ""
-"This usually means that another package management application (like apt-get "
-"or aptitude) already running. Please close that application first"
+"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
+"\"Synaptic\" at first."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:480
-msgid "Package database inconsitent"
+#: ../LanguageSelector/LanguageSelector.py:496
+msgid "Software database is broken"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:481
+#: ../LanguageSelector/LanguageSelector.py:497
 msgid ""
-"The package database on your system is in a inconsistent state (you have "
-"broken packages on your system). It is not possible to continue. Please use "
-"synaptic or apt-get to fix this first."
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:1
@@ -116,29 +116,26 @@ msgid "<b>Supported Languages</b>"
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:4
-msgid "<big><b>Reading available languages</b></big>"
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The support for each langauge can differ in the amount of available "
+"translations or wirting aids."
 msgstr ""
 
-#: ../data/LanguageSelector.glade.h:5
-msgid "Default language for new accounts and the login screen:"
+#: ../data/LanguageSelector.glade.h:7
+msgid "Default language for new user accounts and the login screen:"
 msgstr ""
 
-#: ../data/LanguageSelector.glade.h:6
+#: ../data/LanguageSelector.glade.h:8 ../data/language-selector.desktop.in.h:2
 #, fuzzy
 msgid "Language Support"
 msgstr "Výběr jazyka"
 
-#: ../data/LanguageSelector.glade.h:7
+#: ../data/LanguageSelector.glade.h:9
 msgid ""
-"Reading information about the available languages. Depending on the speed of "
-"your computer this may take a bit."
-msgstr ""
-
-#: ../data/LanguageSelector.glade.h:8
-msgid ""
-"Translations include menus, dialogs and help. Writing aids include "
-"dictionaries, grammar checkers and input methods. Please note, some "
-"languages don't provide translations or wirting aids."
+"Translations include applications and documentation. The writing aids "
+"provide native dictionaries, grammar checkers and input methods"
 msgstr ""
 
 #: ../data/countries.h:1
@@ -1838,15 +1835,30 @@ msgid "Zulu"
 msgstr "Zulu"
 
 #: ../data/language-selector.desktop.in.h:1
-msgid "Install/remove language support"
-msgstr "Instaluj/odeber podporu jazyků"
+msgid "Configure multiple and native language support on your system"
+msgstr ""
 
-#: ../data/language-selector.desktop.in.h:2
-msgid "Language Selector"
-msgstr "Výběr jazyka"
+#~ msgid "Update language support?"
+#~ msgstr "Aktualizovad podporu jazyka?"
 
-#~ msgid "The languages are installed now"
-#~ msgstr "Jazyky jsou nyní nainstalovány"
+#~ msgid ""
+#~ "Some packages for full language support are not installed on your system. "
+#~ "Do you want to install them now?"
+#~ msgstr ""
+#~ "Některé balíčky pro plnou podporu jazyka nejsou na vašem systému "
+#~ "nainstalovány. Chcete je nainstalovat nyní?"
+
+#~ msgid "Can not apply changes"
+#~ msgstr "Nemůžu provést změny"
+
+#~ msgid ""
+#~ "Some packages for full language support can't be installed on your "
+#~ "system. This usually means there is something wrong in the ubuntu archive "
+#~ "or with your 'apt' software settings."
+#~ msgstr ""
+#~ "Některé balíčky pro plnou podporu jazyka nemohly být na vašem systému "
+#~ "nainstalovány. To většinou znamená, že je něco špatně s archivem Ubuntu "
+#~ "nebo s vaším nastavením příkazu 'apt'."
 
 #~ msgid "Language selector"
 #~ msgstr "Výběr jazyka"

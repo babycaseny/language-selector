@@ -113,11 +113,16 @@ class LocaleInfo(object):
             
 
 class GtkProgress(apt.OpProgress):
-    def __init__(self, window,progressbar, parent):
+    def __init__(self, host_window ,progressbar, parent):
         self._parent = parent
-        self._window = window
+        self._window = host_window
         self._progressbar = progressbar
-        window.set_transient_for(parent)
+        host_window.set_transient_for(parent)
+        self._progressbar.set_pulse_step(0.01)
+        self._progressbar.pulse()
+        self._window.realize()
+        host_window.window.set_functions(gtk.gdk.FUNC_MOVE)
+
     def update(self, percent):
         #print percent
         #print self.Op
@@ -125,9 +130,14 @@ class GtkProgress(apt.OpProgress):
         self._window.show()
         self._progressbar.set_text(self.op)
         self._progressbar.set_fraction(percent/100.0)
+        #if percent > 99:
+        #    self._progressbar.set_fraction(1)
+        #else:
+        #    self._progressbar.pulse()
         while gtk.events_pending():
             gtk.main_iteration()
     def done(self):
+        self._progressbar.set_fraction(1)
         self._window.hide()
 
 class LanguageSelector(SimpleGladeApp):
@@ -234,7 +244,7 @@ class LanguageSelector(SimpleGladeApp):
         # match every packages that looks similar to translation_pkg
         for pkg in self._cache:
             if pkg.name.startswith(translation_pkg):
-                if not pkg.isInstalled:
+                if not pkg.isInstalled and pkg.candidateVersion != None:
                     missing.append(pkg.name)
         return missing
         
@@ -261,13 +271,13 @@ class LanguageSelector(SimpleGladeApp):
                                   flags=gtk.DIALOG_MODAL,
                                   type=gtk.MESSAGE_QUESTION)
             d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("Update language support?"),
-                _("Some packages for full language support "
-                  "are not installed on your system. Do you "
-                  "want to install them now?")))
-            d.add_buttons(_("Remind me again"), gtk.RESPONSE_NO,
-                          _("Install now"), gtk.RESPONSE_YES)
+                _("The language support is not installed completely"),
+                _("Not all translations or writing aids, that are available for "
+                  "the supported languages on your system, are installed.")))
+            d.add_buttons(_("_Remind Me Again"), gtk.RESPONSE_NO,
+                          _("_Install"), gtk.RESPONSE_YES)
             d.set_default_response(gtk.RESPONSE_YES)
+            d.set_title("")
             expander = gtk.Expander(_("Details"))
             scroll = gtk.ScrolledWindow()
             scroll.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
@@ -347,12 +357,15 @@ class LanguageSelector(SimpleGladeApp):
             # undoing the selections was impossible, 
             d = gtk.MessageDialog(parent=self.window_main,
                                   flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_INFO,
-                                  buttons=gtk.BUTTONS_OK)
+                                  type=gtk.MESSAGE_ERROR,
+                                  buttons=gtk.BUTTONS_CLOSE)
             d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("Internal error"),
-                _("The internal cache couldn't be cleaned. Please "
-                  "report this as a error on bugzilla.ubuntu.com.")))
+                _("Could not install the selected language support"),
+                _("This is perhaps a bug of this application. Please "
+                  "file a bug report at "
+                  "https://launchpad.net/bugs/bugs/+package/ against "
+                  "the 'language-selector' product.")))
+            d.set_title=("")
             res = d.run()
             d.destroy()
             # something went pretty bad, re-get a cache
@@ -368,14 +381,14 @@ class LanguageSelector(SimpleGladeApp):
         if not self.verify_commit_lists(inst_list, rm_list):
             d = gtk.MessageDialog(parent=self.window_main,
                                   flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_INFO,
-                                  buttons=gtk.BUTTONS_OK)
+                                  type=gtk.MESSAGE_ERROR,
+                                  buttons=gtk.BUTTONS_CLOSE)
             d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("Can not apply changes"),
-                _("Some packages for full language support "
-                  "can't be installed on your system. This usually "
-                  "means there is something wrong in the ubuntu archive "
-                  "or with your 'apt' software settings.")))
+                _("Could not install the full language support"),
+                _("Usually this is related to an error in your "
+                  "software archive or software manager. Check your "
+                  "software preferences in the menu \"Adminstration\".")))
+            d.set_title("")
             d.run()
             d.destroy()
             return False
@@ -442,8 +455,10 @@ class LanguageSelector(SimpleGladeApp):
         gtk.main_quit()
 
     def on_delete_event(self, event, data):
-        #print "delete_event"
-        gtk.main_quit()
+        if self.window_main.get_property("sensitive") is False:
+            return True
+        else:
+            gtk.main_quit()
 
     def updateLanguageView(self):
         #print "updateLanguageView()"
@@ -455,12 +470,13 @@ class LanguageSelector(SimpleGladeApp):
             d = gtk.MessageDialog(parent=self.window_main,
                                   flags=gtk.DIALOG_MODAL,
                                   type=gtk.MESSAGE_ERROR,
-                                  buttons=gtk.BUTTONS_OK)
+                                  buttons=gtk.BUTTONS_CLOSE)
             d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("Unable to get exclusive lock"),
-                _("This usually means that another package management "
-                  "application (like apt-get or aptitude) already running. "
-                  "Please close that application first")))
+                _("Only one software management tool is allowed to"
+                  " run at the same time"),
+                _("Please close the other application e.g. \"Update "
+                  "Manager\", \"aptitude\" or \"Synaptic\" at first.")))
+            d.set_title("")
             res = d.run()
             d.destroy()
             sys.exit()
@@ -474,14 +490,15 @@ class LanguageSelector(SimpleGladeApp):
         if self._cache._depcache.BrokenCount > 0:
             d = gtk.MessageDialog(parent=self.window_main,
                                   flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_INFO,
-                                  buttons=gtk.BUTTONS_OK)
+                                  type=gtk.MESSAGE_ERROR,
+                                  buttons=gtk.BUTTONS_CLOSE)
             d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("Package database inconsitent"),
-                _("The package database on your system is in a inconsistent "
-                  "state (you have broken packages on your system). It is "
-                  "not possible to continue. Please use synaptic or apt-get "
-                  "to fix this first." )))
+                _("Software database is broken"),
+                _("It is impossible to install or remove any software. "
+                  "Please use the package manager \"Synaptic\" or run "
+                  "\"sudo apt-get install -f\" in a terminal to fix "
+                  "this issue at first.")))
+            d.set_title("")
             d.run()
             d.destroy()
             sys.exit(1)

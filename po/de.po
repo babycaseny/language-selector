@@ -1,96 +1,111 @@
+# Michael Vogt <michael.vogt@ubuntu.com>, 2006.
+# Sebastian Heinlein <sebastian.heinlein@web.de>, 2006.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-16 12:20+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Michael Vogt <michael.vogt@ubuntu.com>\n"
-"Language-Team: German <debian-l10n-german@lists.debian.org>\n"
+"POT-Creation-Date: 2006-02-07 11:13+0100\n"
+"PO-Revision-Date: 2006-02-03 23:24+0100\n"
+"Last-Translator: Sebastian Heinlein <sebastian.heinlein@web.de>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/LanguageSelector.py:165 ../data/languages.h:1
+#: ../LanguageSelector/LanguageSelector.py:175 ../data/languages.h:1
 msgid "Language"
 msgstr "Sprache"
 
-#: ../LanguageSelector/LanguageSelector.py:170
-#, fuzzy
+#: ../LanguageSelector/LanguageSelector.py:180
 msgid "Translations"
-msgstr "Übersetzung"
+msgstr "Übersetzungen"
 
-#: ../LanguageSelector/LanguageSelector.py:179
+#: ../LanguageSelector/LanguageSelector.py:189
 msgid "Writing Aids"
-msgstr ""
+msgstr "Schreibhilfen"
 
-#: ../LanguageSelector/LanguageSelector.py:264
-msgid "Update language support?"
-msgstr ""
+#: ../LanguageSelector/LanguageSelector.py:274
+msgid "The language support is not installed completely"
+msgstr "Die Sprachunterstützung ist nicht vollständig installiert"
 
-#: ../LanguageSelector/LanguageSelector.py:265
+#: ../LanguageSelector/LanguageSelector.py:275
 msgid ""
-"Some packages for full language support are not installed on your system. Do "
-"you want to install them now?"
+"Not all translations or writing aids, that are available for the supported "
+"languages on your system, are installed."
 msgstr ""
+"Nicht alle Übersetzungen oder Schreibhilfen für die auf Ihrem System "
+"unterstützen Sprachen wurden installiert."
 
-#: ../LanguageSelector/LanguageSelector.py:268
-msgid "Remind me again"
-msgstr ""
+#: ../LanguageSelector/LanguageSelector.py:277
+msgid "_Remind Me Again"
+msgstr "_Erinnere mich später"
 
-#: ../LanguageSelector/LanguageSelector.py:269
-msgid "Install now"
-msgstr ""
+#: ../LanguageSelector/LanguageSelector.py:278
+msgid "_Install"
+msgstr "_Installieren"
 
-#: ../LanguageSelector/LanguageSelector.py:271
-#, fuzzy
+#: ../LanguageSelector/LanguageSelector.py:281
 msgid "Details"
-msgstr "Dänisch"
+msgstr "Details"
 
-#: ../LanguageSelector/LanguageSelector.py:353
-msgid "Internal error"
-msgstr ""
+#: ../LanguageSelector/LanguageSelector.py:363
+msgid "Could not install the selected language support"
+msgstr "Konnte die ausgewählte Sprachunterstützung nicht installieren"
 
-#: ../LanguageSelector/LanguageSelector.py:354
+#: ../LanguageSelector/LanguageSelector.py:364
 msgid ""
-"The internal cache couldn't be cleaned. Please report this as a error on "
-"bugzilla.ubuntu.com."
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
 msgstr ""
+"Dies ist wahrscheinlich ein Fehler in der Anwendung. Bitte füllen Sie einen "
+"Fehlerbericht auf der Seite »https://launchpad.net/bugs/bugs/+package/« für "
+"das Produkt »language-selector« aus."
 
-#: ../LanguageSelector/LanguageSelector.py:374
-msgid "Can not apply changes"
-msgstr ""
+#: ../LanguageSelector/LanguageSelector.py:387
+msgid "Could not install the full language support"
+msgstr "Konnte die Sprachunterstützung nicht vollständig installieren"
 
-#: ../LanguageSelector/LanguageSelector.py:375
+#: ../LanguageSelector/LanguageSelector.py:388
 msgid ""
-"Some packages for full language support can't be installed on your system. "
-"This usually means there is something wrong in the ubuntu archive or with "
-"your 'apt' software settings."
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
+"Für gewöhnlich liegt ein Fehler im Software-Archiv oder der Software-"
+"Verwaltung vor. Überprüfen Sie die Software-Einstellungen im Menü "
+"»Systemverwaltung«."
 
-#: ../LanguageSelector/LanguageSelector.py:400
+#: ../LanguageSelector/LanguageSelector.py:413
 msgid "The list of available languages on the system has been updated."
-msgstr ""
+msgstr "Die Liste mit den unterstützten Sprachen wurde aktualisiert."
 
-#: ../LanguageSelector/LanguageSelector.py:460
-msgid "Unable to get exclusive lock"
-msgstr ""
+#: ../LanguageSelector/LanguageSelector.py:475
+msgid "Only one software management tool is allowed to run at the same time"
+msgstr "Nur eine Anwendung zur Software-Verwaltung kann zur selben Zeit laufen"
 
-#: ../LanguageSelector/LanguageSelector.py:461
+#: ../LanguageSelector/LanguageSelector.py:477
 msgid ""
-"This usually means that another package management application (like apt-get "
-"or aptitude) already running. Please close that application first"
+"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
+"\"Synaptic\" at first."
 msgstr ""
+"Bitte schließen zuerst Sie die andere Anwednung, wie z.B. »Update Manager«, "
+"»aptidude« oder »Synaptic«."
 
-#: ../LanguageSelector/LanguageSelector.py:480
-msgid "Package database inconsitent"
-msgstr ""
+#: ../LanguageSelector/LanguageSelector.py:496
+msgid "Software database is broken"
+msgstr "Software-Datenbank ist defekt"
 
-#: ../LanguageSelector/LanguageSelector.py:481
+#: ../LanguageSelector/LanguageSelector.py:497
 msgid ""
-"The package database on your system is in a inconsistent state (you have "
-"broken packages on your system). It is not possible to continue. Please use "
-"synaptic or apt-get to fix this first."
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
 msgstr ""
+"Das Installieren und Entfernen von Software ist nicht möglich. Bitte "
+"verwenden Sie die Paketverwaltung »Synaptic« oder führen Sie den Befehl "
+"»sudo apt-get install -f« in einem Terminal aus, um dieses Problem zu "
+"beheben."
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -98,37 +113,40 @@ msgstr ""
 
 #: ../data/LanguageSelector.glade.h:2
 msgid "<b>Default Language</b>"
-msgstr ""
+msgstr "<b>Standardsprache</b>"
 
 #: ../data/LanguageSelector.glade.h:3
 msgid "<b>Supported Languages</b>"
-msgstr ""
+msgstr "<b>Unterstützte Sprachen</b>"
 
 #: ../data/LanguageSelector.glade.h:4
-msgid "<big><b>Reading available languages</b></big>"
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The support for each langauge can differ in the amount of available "
+"translations or wirting aids."
 msgstr ""
-
-#: ../data/LanguageSelector.glade.h:5
-msgid "Default language for new accounts and the login screen:"
-msgstr ""
-
-#: ../data/LanguageSelector.glade.h:6
-#, fuzzy
-msgid "Language Support"
-msgstr "Sprachauswahl"
+"<big><b>Überprüfe verfügbare Sprachunterstützung</b></big>Der Umfang an "
+"Unterstützung kann für die jeweilige Sprache sehr unterschiedlich ausfallen. "
+"Dies betrifft Übersetzung wie Schreibhilfen."
 
 #: ../data/LanguageSelector.glade.h:7
-msgid ""
-"Reading information about the available languages. Depending on the speed of "
-"your computer this may take a bit."
-msgstr ""
+msgid "Default language for new user accounts and the login screen:"
+msgstr "Standardsprache für neue Benutzerkonten und das Anmeldefenster:"
 
-#: ../data/LanguageSelector.glade.h:8
+#: ../data/LanguageSelector.glade.h:8 ../data/language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "Sprachunterstützung"
+
+#: ../data/LanguageSelector.glade.h:9
+#, fuzzy
 msgid ""
-"Translations include menus, dialogs and help. Writing aids include "
-"dictionaries, grammar checkers and input methods. Please note, some "
-"languages don't provide translations or wirting aids."
+"Translations include applications and documentation. The writing aids "
+"provide native dictionaries, grammar checkers and input methods"
 msgstr ""
+"Übersetzungen beinhalten Anwendungen und Dokumentation. Die Schreibhilfen "
+"stellen muttersprachliche Wörterbücher, Rechtschreibprüfung und "
+"Eingabemethoden zur Verfügung."
 
 #: ../data/countries.h:1
 msgid "Afghanistan"
@@ -1827,15 +1845,8 @@ msgid "Zulu"
 msgstr "Zulu"
 
 #: ../data/language-selector.desktop.in.h:1
-msgid "Install/remove language support"
-msgstr "Installieren und entfernen von Sprachunterstützung"
-
-#: ../data/language-selector.desktop.in.h:2
-msgid "Language Selector"
-msgstr "Sprachauswahl"
-
-#~ msgid "The languages are installed now"
-#~ msgstr "Die Sprachen wurden installiert"
+msgid "Configure multiple and native language support on your system"
+msgstr "Mehr- und Muttersprachenunterstützung festlegen"
 
 #~ msgid "Language selector"
 #~ msgstr "Sprachauswahl"
