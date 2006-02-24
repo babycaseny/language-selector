@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-13 20:04+0100\n"
+"POT-Creation-Date: 2006-02-24 11:37+0100\n"
 "PO-Revision-Date: 2005-11-24 12:44+0100\n"
 "Last-Translator: Lasse Bang Mikkelsen <lbm@fatalerror.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -80,25 +80,25 @@ msgid ""
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:428
+#: ../LanguageSelector/LanguageSelector.py:429
 msgid "The list of available languages on the system has been updated."
 msgstr "Listen over tilgængelige sprog er blevet opdateret."
 
-#: ../LanguageSelector/LanguageSelector.py:490
+#: ../LanguageSelector/LanguageSelector.py:491
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:492
+#: ../LanguageSelector/LanguageSelector.py:493
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:511
+#: ../LanguageSelector/LanguageSelector.py:512
 msgid "Software database is broken"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:512
+#: ../LanguageSelector/LanguageSelector.py:513
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "

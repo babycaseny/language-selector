@@ -422,9 +422,10 @@ class LanguageSelector(SimpleGladeApp):
         self.updateLanguageView()
         self.updateSystemDefaultCombo()
 
-    def run_synaptic(self, lock, inst, rm):
+    def run_synaptic(self, lock, inst, rm, id):
         cmd = ["/usr/sbin/synaptic", "--hide-main-window",
                "--non-interactive", "--set-selections",
+               "--parent-window-id", "%s" % (id),
                "--finish-str", _("The list of available languages on the "
                                  "system has been updated.")
                ]
@@ -456,7 +457,7 @@ class LanguageSelector(SimpleGladeApp):
         self.window_main.set_sensitive(False)
         lock = thread.allocate_lock()
         lock.acquire()
-        t = thread.start_new_thread(self.run_synaptic,(lock,inst,rm))
+        t = thread.start_new_thread(self.run_synaptic,(lock,inst,rm, self.window_main.window.xid))
         while lock.locked():
             while gtk.events_pending():
                 gtk.main_iteration()

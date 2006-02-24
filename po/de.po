@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-13 20:04+0100\n"
+"POT-Creation-Date: 2006-02-24 11:37+0100\n"
 "PO-Revision-Date: 2006-02-03 23:24+0100\n"
 "Last-Translator: Sebastian Heinlein <sebastian.heinlein@web.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
@@ -76,15 +76,15 @@ msgstr ""
 "Verwaltung vor. Überprüfen Sie die Software-Einstellungen im Menü "
 "»Systemverwaltung«."
 
-#: ../LanguageSelector/LanguageSelector.py:428
+#: ../LanguageSelector/LanguageSelector.py:429
 msgid "The list of available languages on the system has been updated."
 msgstr "Die Liste mit den unterstützten Sprachen wurde aktualisiert."
 
-#: ../LanguageSelector/LanguageSelector.py:490
+#: ../LanguageSelector/LanguageSelector.py:491
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "Nur eine Anwendung zur Software-Verwaltung kann zur selben Zeit laufen"
 
-#: ../LanguageSelector/LanguageSelector.py:492
+#: ../LanguageSelector/LanguageSelector.py:493
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -92,11 +92,11 @@ msgstr ""
 "Bitte schließen zuerst Sie die andere Anwednung, wie z.B. »Update Manager«, "
 "»aptidude« oder »Synaptic«."
 
-#: ../LanguageSelector/LanguageSelector.py:511
+#: ../LanguageSelector/LanguageSelector.py:512
 msgid "Software database is broken"
 msgstr "Software-Datenbank ist defekt"
 
-#: ../LanguageSelector/LanguageSelector.py:512
+#: ../LanguageSelector/LanguageSelector.py:513
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
