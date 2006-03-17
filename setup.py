@@ -17,7 +17,7 @@ os.system("cd po; make update-po")
 setup(name='language-selector',
       version='0.1',
       packages=['LanguageSelector'],
-      scripts=['gnome-language-selector'],
+      scripts=['gnome-language-selector','fontconfig-voodoo'],
       data_files=[('share/language-selector/data',
                    ["data/countries",
                     "data/language-selector.png",
@@ -27,7 +27,10 @@ setup(name='language-selector',
                   ('share/applications',
                    ["data/language-selector.desktop"]),
                   ('share/pixmaps',
-                   ["data/language-selector.png"])]+I18NFILES,
+                   ["data/language-selector.png"]),
+                  ('share/language-selector/fontconfig',
+                   glob.glob("fontconfig/*")),
+                  ]+I18NFILES,
       )
 
 

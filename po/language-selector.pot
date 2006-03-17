@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-24 11:37+0100\n"
+"POT-Creation-Date: 2006-03-17 17:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,80 +16,80 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/LanguageSelector.py:189 ../data/languages.h:1
+#: ../LanguageSelector/LanguageSelector.py:107 ../data/languages.h:1
 msgid "Language"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:194
+#: ../LanguageSelector/LanguageSelector.py:112
 msgid "Translations"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:203
+#: ../LanguageSelector/LanguageSelector.py:121
 msgid "Writing Aids"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:289
+#: ../LanguageSelector/LanguageSelector.py:207
 msgid "The language support is not installed completely"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:290
+#: ../LanguageSelector/LanguageSelector.py:208
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:292
+#: ../LanguageSelector/LanguageSelector.py:210
 msgid "_Remind Me Again"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:293
+#: ../LanguageSelector/LanguageSelector.py:211
 msgid "_Install"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:296
+#: ../LanguageSelector/LanguageSelector.py:214
 msgid "Details"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:378
+#: ../LanguageSelector/LanguageSelector.py:296
 msgid "Could not install the selected language support"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:379
+#: ../LanguageSelector/LanguageSelector.py:297
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:402
+#: ../LanguageSelector/LanguageSelector.py:320
 msgid "Could not install the full language support"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:403
+#: ../LanguageSelector/LanguageSelector.py:321
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:429
+#: ../LanguageSelector/LanguageSelector.py:352
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:491
+#: ../LanguageSelector/LanguageSelector.py:409
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:493
+#: ../LanguageSelector/LanguageSelector.py:411
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:512
+#: ../LanguageSelector/LanguageSelector.py:430
 msgid "Software database is broken"
 msgstr ""
 
-#: ../LanguageSelector/LanguageSelector.py:513
+#: ../LanguageSelector/LanguageSelector.py:431
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "

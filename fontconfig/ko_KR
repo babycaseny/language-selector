@@ -1,0 +1,67 @@
+<fontconfig>
+        <alias>
+                <family>serif</family>
+                <prefer>
+                        <family>UnBatang</family>
+                        <family>Bitstream Vera Serif</family>
+                        <family>DejaVu Serif</family>
+                        <family>Times New Roman</family>
+                        <family>Thorndale AMT</family>
+                        <family>Luxi Serif</family>
+                        <family>Nimbus Roman No9 L</family>
+                        <family>Times</family>
+                        <family>Frank Ruehl</family>
+                        <family>MgOpen Canonica</family>
+                        <family>Norasi</family>
+                        <family>Kinnari</family>
+                        <family>Baekmuk Batang</family>
+                        <family>Kochi Mincho</family>
+                        <family>AR PL ShanHeiSun Uni</family>
+                        <family>AR PL ZenKai Uni</family>
+                </prefer>
+        </alias>
+
+        <alias>
+                <family>sans-serif</family>
+                <prefer>
+                        <family>UnDotum</family>
+                        <family>EunGuseul</family>
+                        <family>Bitstream Vera Sans</family>
+                        <family>DejaVu Sans</family>
+                        <family>Verdana</family>
+                        <family>Arial</family>
+                        <family>Albany AMT</family>
+                        <family>Luxi Sans</family>
+                        <family>Nimbus Sans L</family>
+                        <family>Helvetica</family>
+                        <family>Nachlieli</family>
+                        <family>MgOpen Moderna</family>
+                        <family>Loma</family>
+                        <family>Garuda</family>
+                        <family>Baekmuk Dotum</family>
+                        <family>Kochi Gothic</family>
+                        <family>AR PL ShanHeiSun Uni</family>
+                        <family>AR PL ZenKai Uni</family>
+                </prefer>
+        </alias>
+
+        <alias>
+                <family>monospace</family>
+                <prefer>
+                        <family>EunGuseul Mono</family>
+                        <family>Bitstream Vera Sans Mono</family>
+                        <family>DejaVu Sans Mono</family>
+                        <family>Andale Mono</family>
+                        <family>Courier New</family>
+                        <family>Cumberland AMT</family>
+                        <family>Luxi Mono</family>
+                        <family>Nimbus Mono L</family>
+                        <family>Courier</family>
+                        <family>Miriam Mono</family>
+                        <family>Tlwg Typewriter</family>
+                        <family>Baekmuk Dotum</family>
+                        <family>Kochi Gothic</family>
+                        <family>AR PL ShanHeiSun Uni</family>
+                </prefer>
+        </alias>
+</fontconfig>

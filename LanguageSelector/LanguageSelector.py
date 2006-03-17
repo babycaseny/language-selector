@@ -24,7 +24,8 @@ import time
 import gettext
 import sys
 
-def _(s): return gettext.gettext(s)
+from gettext import gettext as _
+
  
 (LIST_LANG,                     # language (i18n/human-readable)
  LIST_TRANSLATION,              # does the user want the translation pkgs
@@ -37,93 +38,10 @@ def _(s): return gettext.gettext(s)
 (COMBO_LANGUAGE,
  COMBO_CODE) = range(2)
 
+
+
 from SimpleGladeApp import SimpleGladeApp
-
-class LocaleInfo(object):
-    " class with handy functions to parse the locale information "
-    
-    def __init__(self, lang_file, country_file, languagelist_file):
-        self._lang = {}
-        self._country = {}
-        self._languagelist = {}
-        # read lang file
-        self._langFile = lang_file
-        for line in open(lang_file):
-            tmp = string.strip(line)
-            if tmp.startswith("#") or tmp == "":
-                continue
-            (code, lang) = string.split(tmp,":")
-            self._lang[code] = lang
-        # read countries
-        for line in open(country_file):
-            tmp = string.strip(line)
-            if tmp.startswith("#") or tmp == "":
-                continue
-            (un, code, long_code, descr, cap) = string.split(tmp,":")
-            self._country[code] = descr
-        # read the languagelist
-        for line in open(languagelist_file):
-            tmp = string.strip(line)
-            if tmp.startswith("#") or tmp == "":
-                continue
-            w = tmp.split(";")
-            localeenv = w[6].split(":")
-            #print localeenv
-            self._languagelist[localeenv[0]] = '%s' % w[6]
-
-    def lang(self, code):
-        """ map language code to language name """
-        if self._lang.has_key(code):
-            return self._lang[code]
-        return ""
-
-    def country(self, code):
-        """ map country code to country name"""
-        if self._country.has_key(code):
-            return self._country[code]
-        return ""
-
-    def generated_locales(self):
-        """ return a list of locales avaialble on the system
-            (runing locale -a) """
-        locales = []
-        p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE)
-        for line in p.stdout.readlines():
-            tmp = string.strip(line)
-            if tmp.startswith("#") or tmp == "" or tmp == "C" or tmp == "POSIX":
-                continue
-            # we are only interessted in the locale, not the codec
-            locale = string.split(tmp)[0]
-            locale = string.split(locale,".")[0]
-            locale = string.split(locale,"@")[0]
-            if not locale in locales:
-                locales.append(locale)
-        #print locales
-        return locales
-
-    def translate(self, locale):
-        """ get a locale code and output a human readable name """
-        # sanity check, make other code easier
-        if "_" in locale:
-            (lang, country) = string.split(locale, "_")
-            ret = "%s (%s) " % (_(self.lang(lang)), _(self.country(country)))
-        else:
-            ret = self.lang(locale)
-        return ret
-
-    def makeEnvString(self, code):
-        """ input is a language code, output a string that can be put in
-            the LANGUAGE enviroment variable.
-            E.g: en_DK -> en_DK:en
-        """
-        # first check if we got somethign from languagelist
-        if self._languagelist.has_key(code):
-            return self._languagelist[code]
-        # if not, fall back to "dumb" behaviour
-        if not "_" in code:
-            return code
-        (lang, region) = string.split(code, "_")
-        return "%s:%s" % (code, lang)
+from LocaleInfo import LocaleInfo
             
 
 class GtkProgress(apt.OpProgress):
@@ -168,7 +86,7 @@ class LanguageSelector(SimpleGladeApp):
     ]
 
     def __init__(self, datadir=""):
-        SimpleGladeApp.__init__(self, datadir+"/LanguageSelector.glade",
+        SimpleGladeApp.__init__(self, datadir+"/data/LanguageSelector.glade",
                                 domain="language-selector")
 
         self._datadir = datadir
@@ -218,9 +136,9 @@ class LanguageSelector(SimpleGladeApp):
             gtk.main_iteration()
         
         # load the localeinfo "database"
-        self._localeinfo = LocaleInfo("%s/languages" % self._datadir,
-                                      "%s/countries" % self._datadir,
-                                      "%s/languagelist" % self._datadir)
+        self._localeinfo = LocaleInfo("%s/data/languages" % self._datadir,
+                                      "%s/data/countries" % self._datadir,
+                                      "%s/data/languagelist" % self._datadir)
         self.updateLanguageView()
         self.updateSystemDefaultCombo()
         # see if something is missing
@@ -411,6 +329,11 @@ class LanguageSelector(SimpleGladeApp):
         #print "rm_list: %s " % rm_list
         self.commit(inst_list, rm_list)
         self.writeSystemDefaultLang()
+        # queue a restart of gdm (if it is runing) to make the new
+        # locales usable
+        gdmscript = "/etc/init.d/gdm"
+        if os.path.exists("/var/run/gdm.pid") and os.path.exists(gdmscript):
+            subprocess.call(["invoke-rc.d","gdm","reload"])
         return True
 
     def on_button_ok_clicked(self, widget):
@@ -437,11 +360,6 @@ class LanguageSelector(SimpleGladeApp):
             f.write("%s\tdeinstall\n" % s)
         f.close()
         proc.wait()
-        # queue a restart of gdm (if it is runing) to make the new
-        # locales usable
-        gdmscript = "/etc/init.d/gdm"
-        if os.path.exists("/var/run/gdm.pid") and os.path.exists(gdmscript):
-            subprocess.call(["invoke-rc.d","gdm","reload"])
         lock.release()
 
     def commit(self, inst, rm):
@@ -571,7 +489,7 @@ class LanguageSelector(SimpleGladeApp):
             line="LANG=\"%s.UTF-8\"\n" % code
             out.write(line)
         shutil.move("/etc/environment.new", "/etc/environment")
-        
+
     def updateSystemDefaultCombo(self):
         #print "updateSystemDefault()"
         combo = self.combobox_default_lang

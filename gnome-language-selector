@@ -12,5 +12,5 @@ if __name__ == "__main__":
         gtk.glade.bindtextdomain("language-selector", "/usr/share/locale")
         gtk.glade.textdomain("language-selector")
 
-	app = LanguageSelector(datadir="/usr/share/language-selector/data/")
+	app = LanguageSelector(datadir="/usr/share/language-selector/")
 	app.run()

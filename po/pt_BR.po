@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-24 11:37+0100\n"
+"POT-Creation-Date: 2006-03-17 17:29+0000\n"
 "PO-Revision-Date: 2006-02-19 17:05-0300\n"
 "Last-Translator: Carlos Eduardo Pedroza Santiviago <segfault@ubuntu.com>\n"
 "Language-Team: Ubuntu-BR <tradutores@listas.ubuntubrasil.org>\n"
@@ -16,23 +16,23 @@ msgstr ""
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 
-#: ../LanguageSelector/LanguageSelector.py:189 ../data/languages.h:1
+#: ../LanguageSelector/LanguageSelector.py:107 ../data/languages.h:1
 msgid "Language"
 msgstr "Idioma"
 
-#: ../LanguageSelector/LanguageSelector.py:194
+#: ../LanguageSelector/LanguageSelector.py:112
 msgid "Translations"
 msgstr "Traduções"
 
-#: ../LanguageSelector/LanguageSelector.py:203
+#: ../LanguageSelector/LanguageSelector.py:121
 msgid "Writing Aids"
 msgstr "Auxílios à Escrita"
 
-#: ../LanguageSelector/LanguageSelector.py:289
+#: ../LanguageSelector/LanguageSelector.py:207
 msgid "The language support is not installed completely"
 msgstr "O suporte ao idioma não está instalado completamente"
 
-#: ../LanguageSelector/LanguageSelector.py:290
+#: ../LanguageSelector/LanguageSelector.py:208
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
@@ -40,23 +40,23 @@ msgstr ""
 "Nem todas as traduções ou auxílios à escrita, que estão disponíveis para os "
 "idiomas suportados no seu sistema, estão instalados."
 
-#: ../LanguageSelector/LanguageSelector.py:292
+#: ../LanguageSelector/LanguageSelector.py:210
 msgid "_Remind Me Again"
 msgstr "_Lembre-me Novamente"
 
-#: ../LanguageSelector/LanguageSelector.py:293
+#: ../LanguageSelector/LanguageSelector.py:211
 msgid "_Install"
 msgstr "_Instalar"
 
-#: ../LanguageSelector/LanguageSelector.py:296
+#: ../LanguageSelector/LanguageSelector.py:214
 msgid "Details"
 msgstr "Detalhes"
 
-#: ../LanguageSelector/LanguageSelector.py:378
+#: ../LanguageSelector/LanguageSelector.py:296
 msgid "Could not install the selected language support"
 msgstr "Não foi possível instalar o suporte ao idioma selecionado"
 
-#: ../LanguageSelector/LanguageSelector.py:379
+#: ../LanguageSelector/LanguageSelector.py:297
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -66,11 +66,11 @@ msgstr ""
 "erro em https://launchpad.net/bugs/bugs/+package/ sobre o produto 'language-"
 "selector'."
 
-#: ../LanguageSelector/LanguageSelector.py:402
+#: ../LanguageSelector/LanguageSelector.py:320
 msgid "Could not install the full language support"
 msgstr "Não foi possível instalar o suporte completo ao idioma"
 
-#: ../LanguageSelector/LanguageSelector.py:403
+#: ../LanguageSelector/LanguageSelector.py:321
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -79,17 +79,17 @@ msgstr ""
 "gerenciador de programas. Verifique suas preferências de programas no menu "
 "\"Administração\"."
 
-#: ../LanguageSelector/LanguageSelector.py:429
+#: ../LanguageSelector/LanguageSelector.py:352
 msgid "The list of available languages on the system has been updated."
 msgstr "A lista de idiomas disponíveis no sistema foi atualizada."
 
-#: ../LanguageSelector/LanguageSelector.py:491
+#: ../LanguageSelector/LanguageSelector.py:409
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 "Apenas um programa de gerenciamento de pacotes é permitido ser executado ao "
 "mesmo tempo"
 
-#: ../LanguageSelector/LanguageSelector.py:493
+#: ../LanguageSelector/LanguageSelector.py:411
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -97,11 +97,11 @@ msgstr ""
 "Feche os outros programas, como o \"Gerenciador de Atualizações\", \"aptitude"
 "\" ou o \"Synaptic\" primeiro."
 
-#: ../LanguageSelector/LanguageSelector.py:512
+#: ../LanguageSelector/LanguageSelector.py:430
 msgid "Software database is broken"
 msgstr "A Base de Dados de programas está corrompida"
 
-#: ../LanguageSelector/LanguageSelector.py:513
+#: ../LanguageSelector/LanguageSelector.py:431
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "

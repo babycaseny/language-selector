@@ -3,9 +3,10 @@ PO_FILES := $(wildcard *.po)
 
 update-po: language-selector.pot $(patsubst %.po,%.mo,$(wildcard *.po))
 	# update the po files 
-	for f in $(PO_FILES); do \
-		intltool-update -r $${f%.po}  -g language-selector ; \
-	done
+	#for f in $(PO_FILES); do \
+	#	intltool-update -r $${f%.po}  -g language-selector ; \
+	#done
+	intltool-update -r $${f%.po}  -g language-selector ; \
 
 language-selector.pot:
 	intltool-update -p -g language-selector
