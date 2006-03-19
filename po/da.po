@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-17 17:29+0000\n"
+"POT-Creation-Date: 2006-03-19 22:11+0100\n"
 "PO-Revision-Date: 2005-11-24 12:44+0100\n"
 "Last-Translator: Lasse Bang Mikkelsen <lbm@fatalerror.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -1845,6 +1845,36 @@ msgstr "Zulu"
 
 #: ../data/language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
+msgstr ""
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr ""
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr ""
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr ""
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr ""
+
+#: ../fontconfig-voodoo:53
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr ""
+
+#: ../fontconfig-voodoo:66
+msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 
 #~ msgid "Update language support?"

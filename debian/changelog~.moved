@@ -1,14 +1,3 @@
-language-selector (0.1.11) dapper; urgency=low
-
-  * fontconfig/ko_KR: new version from the ubuntu-ko team (thanks!)
-  * fontconfig/jp_JP: disable embedded bitmaps for japanese, thanks
-    to Jun Kobayashi (ubuntu: #35567)
-  * fontconfig/zh_SG: added new configuration (based on zh_CN)
-  * fontconfig-voodoo: add more missing options 
-    (--list, --set, --quiet, --auto, --force)
-
- -- Michael Vogt <michael.vogt@ubuntu.com>  Sun, 19 Mar 2006 22:06:49 +0100
-
 language-selector (0.1.10) dapper; urgency=low
 
   * po/fi.po: added Finnish translation (thanks to Timo Jyrinki)

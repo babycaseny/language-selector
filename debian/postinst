@@ -19,7 +19,7 @@ set -e
 
 case "$1" in
     configure)
-	fontconfig-voodoo || true
+	fontconfig-voodoo --auto --quiet || true
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

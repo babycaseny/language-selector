@@ -4,3 +4,5 @@ data/LanguageSelector.glade
 data/countries.h 
 data/languages.h
 data/language-selector.desktop.in
+gnome-language-selector
+fontconfig-voodoo

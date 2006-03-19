@@ -13,12 +13,13 @@
                         <family>MgOpen Canonica</family>
                         <family>Norasi</family>
                         <family>Kinnari</family>
-                        <family>IPAMonaPMincho</family>
-                        <family>IPAPMincho</family>
-                        <family>Sazanami Mincho</family>
-                        <family>Kochi Mincho</family>
+                        <family>WenQuanYi Bitmap Song</family>
                         <family>AR PL ShanHeiSun Uni</family>
                         <family>AR PL ZenKai Uni</family>
+                        <family>SimSun</family>
+                        <family>MingLiu</family>
+                        <family>Kochi Mincho</family>
+                        <family>UnBatang</family>
                         <family>Baekmuk Batang</family>
                 </prefer>
         </alias>
@@ -37,12 +38,13 @@
                         <family>MgOpen Moderna</family>
                         <family>Loma</family>
                         <family>Garuda</family>
-                        <family>IPAMonaPGothic</family>
-                        <family>IPAPGothic</family>
-                        <family>Sazanami Gothic</family>
-                        <family>Kochi Gothic</family>
+                        <family>WenQuanYi Bitmap Song</family>
                         <family>AR PL ShanHeiSun Uni</family>
                         <family>AR PL ZenKai Uni</family>
+                        <family>SimSun</family>
+                        <family>MingLiu</family>
+                        <family>Kochi Gothic</family>
+                        <family>UnDotum</family>
                         <family>Baekmuk Dotum</family>
                         <family>SimSun</family>
                 </prefer>
@@ -59,19 +61,15 @@
                         <family>Nimbus Mono L</family>
                         <family>Courier</family>
                         <family>Miriam Mono</family>
-                        <family>Tlwg Typewritter</family>
-                        <family>IPAMonaGothic</family>
-                        <family>IPAGothic</family>
-                        <family>Sazanami Gothic</family>
-                        <family>Kochi Gothic</family>
+                        <family>Tlwg Typewriter</family>
+                        <family>WenQuanYi Bitmap Song</family>
                         <family>AR PL ShanHeiSun Uni</family>
                         <family>AR PL ZenKai Uni</family>
+                        <family>NSimSun</family>
+                        <family>PMingLiu</family>
+                        <family>Kochi Gothic</family>
+                        <family>EunGuseul</family>
                         <family>Baekmuk Dotum</family>
                 </prefer>
         </alias>
-        <match target="font">
-                <edit name="embeddedbitmap" mode="assign">
-                        <bool>false</bool>
-                </edit>
-        </match>
 </fontconfig>
