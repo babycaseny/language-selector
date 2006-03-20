@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-19 22:11+0100\n"
+"POT-Creation-Date: 2006-03-20 11:03+0100\n"
 "PO-Revision-Date: 2005-09-10 21:13+0200\n"
 "Last-Translator: Ondřej Surý <ondrej@sury.org>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -1836,6 +1836,14 @@ msgstr "Zulu"
 
 #: ../data/language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
+msgstr ""
+
+#: ../gnome-language-selector:27
+msgid "You are not root"
+msgstr ""
+
+#: ../gnome-language-selector:28
+msgid "Please run this software with administrative rights."
 msgstr ""
 
 #: ../fontconfig-voodoo:18

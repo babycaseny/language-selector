@@ -1,3 +1,11 @@
+language-selector (0.1.12) dapper; urgency=low
+
+  * debian/dirs: remove bogus dir (ubuntu: #35673)
+  * fix the import in fontconfig-voodoo to not throw exceptions
+    when no X is available (ubuntu: #35481)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 20 Mar 2006 10:19:07 +0100
+
 language-selector (0.1.11) dapper; urgency=low
 
   * fontconfig/ko_KR: new version from the ubuntu-ko team (thanks!)
