@@ -1,3 +1,9 @@
+QT:
+- detect what lang-packas-{kde,gnome} needs to be installed
+- add LanguageSelectorPkgCache.canInstall() to check during the click
+- move the error detection into generic code
+
+
 * Kinnison points pitti at u-d
 <sabdfl> mvo: there is a nice "mostly" status on a checkbox, that I think is your friend here
 <sabdfl> so when someone checks that, you try to install the packages

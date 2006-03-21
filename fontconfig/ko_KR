@@ -159,7 +159,7 @@
 	<test name="family">
 		<string>EunGuseul</string>
 	</test>
-	<edit mode="append" binding="strong" Name="family">
+	<edit mode="append" binding="strong" name="family">
 		<string>Bitstream Vera Sans</string>
 	</edit>
 </match>

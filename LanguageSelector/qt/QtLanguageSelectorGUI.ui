@@ -1,0 +1,95 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>QtLanguageSelectorGUI</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>LanguageSelector</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>581</width>
+            <height>421</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Language selector</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Supported Languages</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="4" column="2">
+            <property name="name">
+                <cstring>pushButtonCancel</cstring>
+            </property>
+            <property name="text">
+                <string>Cancel</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="4" column="1">
+            <property name="name">
+                <cstring>pushButtonOk</cstring>
+            </property>
+            <property name="text">
+                <string>Ok</string>
+            </property>
+        </widget>
+        <widget class="QListView" row="1" column="0" rowspan="1" colspan="3">
+            <column>
+                <property name="text">
+                    <string>Translation</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <property name="name">
+                <cstring>listViewLanguages</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="text">
+                <string>Default language</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="3" column="0" rowspan="1" colspan="3">
+            <item>
+                <property name="text">
+                    <string>English</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBoxDefaultLanguage</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>LanguageSelector</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>pushButtonOk_clicked()</slot>
+    <slot>pushButtonCancel_released()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

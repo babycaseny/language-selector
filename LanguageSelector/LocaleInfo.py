@@ -75,7 +75,7 @@ class LocaleInfo(object):
         # sanity check, make other code easier
         if "_" in locale:
             (lang, country) = string.split(locale, "_")
-            ret = "%s (%s) " % (_(self.lang(lang)), _(self.country(country)))
+            ret = "%s (%s)" % (_(self.lang(lang)), _(self.country(country)))
         else:
             ret = self.lang(locale)
         return ret

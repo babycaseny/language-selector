@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'QtLanguageSelector.ui'
+# Form implementation generated from reading ui file 'QtLanguageSelectorGUI.ui'
 #
-# Created: Thu Mar 9 19:18:36 2006
+# Created: Tue Mar 21 14:05:32 2006
 #      by: The PyQt User Interface Compiler (pyuic) 3.15.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -11,7 +11,7 @@
 from qt import *
 
 
-class LanguageSelector(QWidget):
+class QtLanguageSelectorGUI(QWidget):
     def __init__(self,parent = None,name = None,fl = 0):
         QWidget.__init__(self,parent,name,fl)
 
@@ -34,8 +34,7 @@ class LanguageSelector(QWidget):
         LanguageSelectorLayout.addWidget(self.pushButtonOk,4,1)
 
         self.listViewLanguages = QListView(self,"listViewLanguages")
-        self.listViewLanguages.addColumn(self.__tr("Column 1"))
-        self.listViewLanguages.addColumn(self.__tr("New Column"))
+        self.listViewLanguages.addColumn(self.__tr("Translation"))
 
         LanguageSelectorLayout.addMultiCellWidget(self.listViewLanguages,1,1,0,2)
 
@@ -45,12 +44,14 @@ class LanguageSelector(QWidget):
 
         self.comboBoxDefaultLanguage = QComboBox(0,self,"comboBoxDefaultLanguage")
 
-        LanguageSelectorLayout.addMultiCellWidget(self.comboBoxDefaultLanguage,3,3,0,1)
+        LanguageSelectorLayout.addMultiCellWidget(self.comboBoxDefaultLanguage,3,3,0,2)
 
         self.languageChange()
 
         self.resize(QSize(581,421).expandedTo(self.minimumSizeHint()))
         self.clearWState(Qt.WState_Polished)
+
+        self.connect(self.pushButtonCancel,SIGNAL("clicked()"),self.close)
 
 
     def languageChange(self):
@@ -58,16 +59,17 @@ class LanguageSelector(QWidget):
         self.textLabel1.setText(self.__tr("Supported Languages"))
         self.pushButtonCancel.setText(self.__tr("Cancel"))
         self.pushButtonOk.setText(self.__tr("Ok"))
-        self.listViewLanguages.header().setLabel(0,self.__tr("Column 1"))
-        self.listViewLanguages.header().setLabel(1,self.__tr("New Column"))
-        self.listViewLanguages.clear()
-        item = QListViewItem(self.listViewLanguages,None)
-        item.setText(0,self.__tr("New Item"))
-
+        self.listViewLanguages.header().setLabel(0,self.__tr("Translation"))
         self.textLabel2.setText(self.__tr("Default language"))
         self.comboBoxDefaultLanguage.clear()
         self.comboBoxDefaultLanguage.insertItem(self.__tr("English"))
 
 
+    def pushButtonOk_clicked(self):
+        print "QtLanguageSelectorGUI.pushButtonOk_clicked(): Not implemented yet"
+
+    def pushButtonCancel_released(self):
+        print "QtLanguageSelectorGUI.pushButtonCancel_released(): Not implemented yet"
+
     def __tr(self,s,c = None):
-        return qApp.translate("LanguageSelector",s,c)
+        return qApp.translate("QtLanguageSelectorGUI",s,c)

@@ -10,7 +10,7 @@ import gettext
 import sys
 import os
 
-from LanguageSelector.LanguageSelector import LanguageSelector
+from LanguageSelector.gtk.GtkLanguageSelector import GtkLanguageSelector
 from gettext import gettext as _
 
 if __name__ == "__main__":
@@ -31,5 +31,5 @@ if __name__ == "__main__":
             d.destroy()
             sys.exit(1)
 
-	app = LanguageSelector(datadir="/usr/share/language-selector/")
+	app = GtkLanguageSelector(datadir="/usr/share/language-selector/")
 	app.run()

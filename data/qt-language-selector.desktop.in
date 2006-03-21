@@ -1,0 +1,12 @@
+[Desktop Entry]
+_Name=Language Support
+_GenericName=Language Support
+_Comment=Configure multiple and native language support on your system
+Exec=/usr/bin/qt-language-selector
+Icon=language-selector.png
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Application;System;Settings;
+X-KDE-SubstituteUID=true
+X-Ubuntu-Gettext-Domain=language-selector

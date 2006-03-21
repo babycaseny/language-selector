@@ -7,7 +7,29 @@ Standards-Version: 3.6.1.1
 
 Package: language-selector
 Architecture: all
-Depends: python, ${shlibs:Depends}, python2.4-gtk2, python2.4-glade2, python2.4-apt (>= 0.6.12), synaptic
+Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, python, python2.4-gtk2, python2.4-glade2, python2.4-apt (>= 0.6.12), synaptic
 Description: Language selector for ubuntu linux
  This package let you change and install language packs
  in ubuntu linux.
+ .
+ This package contains the gtk frontend.
+
+Package: language-selector-qt
+Architecture: all
+Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, python, python2.4-qt3, adept
+Replaces: language-selector (<< 0.1.12)
+Description: Language selector for kubuntu linux
+ This package let you change and install language packs
+ in ubuntu linux.
+ . 
+ This package contains the qt frontend.
+
+Package: language-selector-common
+Architecture: all
+Depends: python, ${shlibs:Depends}
+Replaces: language-selector (<< 0.1.12)
+Description: Language selector for ubuntu linux
+ This package let you change and install language packs
+ in ubuntu linux.
+ . 
+ This package contains the common part of language-selector

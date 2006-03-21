@@ -1,0 +1,21 @@
+#!/usr/bin/python2.4 
+
+import sys
+from qt import *
+
+from LanguageSelector.LanguageSelector import *
+from LanguageSelector.qt.QtLanguageSelector import QtLanguageSelector
+from gettext import gettext as _
+
+
+if __name__ == "__main__":
+
+    app = QApplication(sys.argv)
+    
+    lc = QtLanguageSelector(app, "/usr/share/language-selector/")
+    app.setMainWidget(lc)
+    
+    lc.show()
+
+    app.exec_loop()
+    

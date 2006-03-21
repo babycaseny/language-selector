@@ -62,7 +62,7 @@ install: build
 	dh_installdirs
 
 	# Add here commands to install the package into debian/language-selector.
-	./setup.py install --prefix=$(CURDIR)/debian/language-selector/usr
+	./setup.py install --prefix=$(CURDIR)/debian/tmp/usr
 
 
 # Build architecture-independent files here.
@@ -76,7 +76,9 @@ binary-arch: build install
 	dh_installchangelogs 
 	dh_installdocs
 	dh_installexamples
-#	dh_install
+	# the order of the dh_installs is important (i.e. the frontends
+	# must be done before the -common)
+	dh_install --sourcedir=debian/tmp 
 #	dh_installmenu
 #	dh_installdebconf	
 #	dh_installlogrotate

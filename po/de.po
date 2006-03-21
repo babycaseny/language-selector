@@ -5,107 +5,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-20 11:03+0100\n"
+"POT-Creation-Date: 2006-03-21 14:48+0100\n"
 "PO-Revision-Date: 2006-02-03 23:24+0100\n"
 "Last-Translator: Sebastian Heinlein <sebastian.heinlein@web.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: ../LanguageSelector/LanguageSelector.py:107 ../data/languages.h:1
-msgid "Language"
-msgstr "Sprache"
-
-#: ../LanguageSelector/LanguageSelector.py:112
-msgid "Translations"
-msgstr "Übersetzungen"
-
-#: ../LanguageSelector/LanguageSelector.py:121
-msgid "Writing Aids"
-msgstr "Schreibhilfen"
-
-#: ../LanguageSelector/LanguageSelector.py:207
-msgid "The language support is not installed completely"
-msgstr "Die Sprachunterstützung ist nicht vollständig installiert"
-
-#: ../LanguageSelector/LanguageSelector.py:208
-msgid ""
-"Not all translations or writing aids, that are available for the supported "
-"languages on your system, are installed."
-msgstr ""
-"Nicht alle Übersetzungen oder Schreibhilfen für die auf Ihrem System "
-"unterstützen Sprachen wurden installiert."
-
-#: ../LanguageSelector/LanguageSelector.py:210
-msgid "_Remind Me Again"
-msgstr "_Erinnere mich später"
-
-#: ../LanguageSelector/LanguageSelector.py:211
-msgid "_Install"
-msgstr "_Installieren"
-
-#: ../LanguageSelector/LanguageSelector.py:214
-msgid "Details"
-msgstr "Details"
-
-#: ../LanguageSelector/LanguageSelector.py:296
-msgid "Could not install the selected language support"
-msgstr "Konnte die ausgewählte Sprachunterstützung nicht installieren"
-
-#: ../LanguageSelector/LanguageSelector.py:297
-msgid ""
-"This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
-msgstr ""
-"Dies ist wahrscheinlich ein Fehler in der Anwendung. Bitte füllen Sie einen "
-"Fehlerbericht auf der Seite »https://launchpad.net/bugs/bugs/+package/« für "
-"das Produkt »language-selector« aus."
-
-#: ../LanguageSelector/LanguageSelector.py:320
-msgid "Could not install the full language support"
-msgstr "Konnte die Sprachunterstützung nicht vollständig installieren"
-
-#: ../LanguageSelector/LanguageSelector.py:321
-msgid ""
-"Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
-msgstr ""
-"Für gewöhnlich liegt ein Fehler im Software-Archiv oder der Software-"
-"Verwaltung vor. Überprüfen Sie die Software-Einstellungen im Menü "
-"»Systemverwaltung«."
-
-#: ../LanguageSelector/LanguageSelector.py:352
-msgid "The list of available languages on the system has been updated."
-msgstr "Die Liste mit den unterstützten Sprachen wurde aktualisiert."
-
-#: ../LanguageSelector/LanguageSelector.py:409
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "Nur eine Anwendung zur Software-Verwaltung kann zur selben Zeit laufen"
-
-#: ../LanguageSelector/LanguageSelector.py:411
-msgid ""
-"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
-"\"Synaptic\" at first."
-msgstr ""
-"Bitte schließen zuerst Sie die andere Anwednung, wie z.B. »Update Manager«, "
-"»aptidude« oder »Synaptic«."
-
-#: ../LanguageSelector/LanguageSelector.py:430
-msgid "Software database is broken"
-msgstr "Software-Datenbank ist defekt"
-
-#: ../LanguageSelector/LanguageSelector.py:431
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"Das Installieren und Entfernen von Software ist nicht möglich. Bitte "
-"verwenden Sie die Paketverwaltung »Synaptic« oder führen Sie den Befehl "
-"»sudo apt-get install -f« in einem Terminal aus, um dieses Problem zu "
-"beheben."
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -1117,6 +1023,10 @@ msgstr "Taiwan"
 msgid "United States Minor Outlying Islands"
 msgstr "Vereinigte Staaten Amerikanisch-Ozeanien"
 
+#: ../data/languages.h:1
+msgid "Language"
+msgstr "Sprache"
+
 #: ../data/languages.h:2
 msgid "Afar"
 msgstr "Afar"
@@ -1886,6 +1796,81 @@ msgstr ""
 #: ../fontconfig-voodoo:66
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
+
+#~ msgid "Translations"
+#~ msgstr "Übersetzungen"
+
+#~ msgid "Writing Aids"
+#~ msgstr "Schreibhilfen"
+
+#~ msgid "The language support is not installed completely"
+#~ msgstr "Die Sprachunterstützung ist nicht vollständig installiert"
+
+#~ msgid ""
+#~ "Not all translations or writing aids, that are available for the "
+#~ "supported languages on your system, are installed."
+#~ msgstr ""
+#~ "Nicht alle Übersetzungen oder Schreibhilfen für die auf Ihrem System "
+#~ "unterstützen Sprachen wurden installiert."
+
+#~ msgid "_Remind Me Again"
+#~ msgstr "_Erinnere mich später"
+
+#~ msgid "_Install"
+#~ msgstr "_Installieren"
+
+#~ msgid "Details"
+#~ msgstr "Details"
+
+#~ msgid "Could not install the selected language support"
+#~ msgstr "Konnte die ausgewählte Sprachunterstützung nicht installieren"
+
+#~ msgid ""
+#~ "This is perhaps a bug of this application. Please file a bug report at "
+#~ "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+#~ "product."
+#~ msgstr ""
+#~ "Dies ist wahrscheinlich ein Fehler in der Anwendung. Bitte füllen Sie "
+#~ "einen Fehlerbericht auf der Seite »https://launchpad.net/bugs/bugs/"
+#~ "+package/« für das Produkt »language-selector« aus."
+
+#~ msgid "Could not install the full language support"
+#~ msgstr "Konnte die Sprachunterstützung nicht vollständig installieren"
+
+#~ msgid ""
+#~ "Usually this is related to an error in your software archive or software "
+#~ "manager. Check your software preferences in the menu \"Adminstration\"."
+#~ msgstr ""
+#~ "Für gewöhnlich liegt ein Fehler im Software-Archiv oder der Software-"
+#~ "Verwaltung vor. Überprüfen Sie die Software-Einstellungen im Menü "
+#~ "»Systemverwaltung«."
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "Die Liste mit den unterstützten Sprachen wurde aktualisiert."
+
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr ""
+#~ "Nur eine Anwendung zur Software-Verwaltung kann zur selben Zeit laufen"
+
+#~ msgid ""
+#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
+#~ "or \"Synaptic\" at first."
+#~ msgstr ""
+#~ "Bitte schließen zuerst Sie die andere Anwednung, wie z.B. »Update "
+#~ "Manager«, »aptidude« oder »Synaptic«."
+
+#~ msgid "Software database is broken"
+#~ msgstr "Software-Datenbank ist defekt"
+
+#~ msgid ""
+#~ "It is impossible to install or remove any software. Please use the "
+#~ "package manager \"Synaptic\" or run \"sudo apt-get install -f\" in a "
+#~ "terminal to fix this issue at first."
+#~ msgstr ""
+#~ "Das Installieren und Entfernen von Software ist nicht möglich. Bitte "
+#~ "verwenden Sie die Paketverwaltung »Synaptic« oder führen Sie den Befehl "
+#~ "»sudo apt-get install -f« in einem Terminal aus, um dieses Problem zu "
+#~ "beheben."
 
 #~ msgid "Language selector"
 #~ msgstr "Sprachauswahl"
