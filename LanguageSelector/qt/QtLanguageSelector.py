@@ -113,6 +113,10 @@ class QtLanguageSelector(QtLanguageSelectorGUI,LanguageSelectorBase):
             time.sleep(0.05)
         self.setEnabled(True)
 
+        kdmscript = "/etc/init.d/kdm"
+        if os.path.exists("/var/run/kdm.pid") and os.path.exists(kdmscript):
+            subprocess.call(["invoke-rc.d","kdm","reload"])
+
         #self.run_pkg_manager(to_inst, to_rm)
         # re-init
         self.init()

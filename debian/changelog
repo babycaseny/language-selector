@@ -1,3 +1,10 @@
+language-selector (0.1.14) dapper; urgency=low
+
+  * reload kdm after langauges got installed
+  * fix version of Replace for langauge-selector-common
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 22 Mar 2006 10:35:28 +0100
+
 language-selector (0.1.13) dapper; urgency=low
 
   * add a qt fontend 
