@@ -1,3 +1,14 @@
+language-selector (0.1.15) dapper; urgency=low
+
+  * fontconfig/ja_JP: updated to the latest version from Jun Kobayashi  
+  * fontconfig-voodoo: added "--current" and minor fixes
+  * language-selector-qt uses adept_batch now to install stuff
+  * LanguageSelector/LanguageSelector.py: fix a bug in the fontconfig-voodoo
+    setup
+  * qt-language-selector desktop file fix a double entry (#36135)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 27 Mar 2006 10:48:28 +0200
+
 language-selector (0.1.14) dapper; urgency=low
 
   * reload kdm after langauges got installed

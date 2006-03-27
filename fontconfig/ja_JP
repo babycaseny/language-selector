@@ -1,77 +1,84 @@
 <fontconfig>
-	<alias>
-                <family>serif</family>
-                <prefer>
-                        <family>Bitstream Vera Serif</family>
-                        <family>DejaVu Serif</family>
-                        <family>Times New Roman</family>
-                        <family>Thorndale AMT</family>
-                        <family>Luxi Serif</family>
-                        <family>Nimbus Roman No9 L</family>
-                        <family>Times</family>
-                        <family>Frank Ruehl</family>
-                        <family>MgOpen Canonica</family>
-                        <family>Norasi</family>
-                        <family>Kinnari</family>
-                        <family>IPAMonaPMincho</family>
-                        <family>IPAPMincho</family>
-                        <family>Sazanami Mincho</family>
-                        <family>Kochi Mincho</family>
-                        <family>AR PL ShanHeiSun Uni</family>
-                        <family>AR PL ZenKai Uni</family>
-                        <family>Baekmuk Batang</family>
-                </prefer>
-        </alias>
-        <alias>
-                <family>sans-serif</family>
-                <prefer>
-                        <family>Bitstream Vera Sans</family>
-                        <family>DejaVu Sans</family>
-                        <family>Verdana</family>
-                        <family>Arial</family>
-                        <family>Albany AMT</family>
-                        <family>Luxi Sans</family>
-                        <family>Nimbus Sans L</family>
-                        <family>Helvetica</family>
-                        <family>Nachlieli</family>
-                        <family>MgOpen Moderna</family>
-                        <family>Loma</family>
-                        <family>Garuda</family>
-                        <family>IPAMonaPGothic</family>
-                        <family>IPAPGothic</family>
-                        <family>Sazanami Gothic</family>
-                        <family>Kochi Gothic</family>
-                        <family>AR PL ShanHeiSun Uni</family>
-                        <family>AR PL ZenKai Uni</family>
-                        <family>Baekmuk Dotum</family>
-                        <family>SimSun</family>
-                </prefer>
-        </alias>
-        <alias>
-                <family>monospace</family>
-                <prefer>
-                        <family>Bitstream Vera Sans Mono</family>
-                        <family>DejaVu Sans Mono</family>
-                        <family>Andale Mono</family>
-                        <family>Courier New</family>
-                        <family>Cumberland AMT</family>
-                        <family>Luxi Mono</family>
-                        <family>Nimbus Mono L</family>
-                        <family>Courier</family>
-                        <family>Miriam Mono</family>
-                        <family>Tlwg Typewritter</family>
-                        <family>IPAMonaGothic</family>
-                        <family>IPAGothic</family>
-                        <family>Sazanami Gothic</family>
-                        <family>Kochi Gothic</family>
-                        <family>AR PL ShanHeiSun Uni</family>
-                        <family>AR PL ZenKai Uni</family>
-                        <family>Baekmuk Dotum</family>
-                </prefer>
-        </alias>
-        <match target="font">
-                <edit name="embeddedbitmap" mode="assign">
-                        <bool>false</bool>
-                </edit>
-        </match>
+	<match target="font">
+		<edit name="embeddedbitmap" mode="assign">
+			<bool>false</bool>
+		</edit>
+		<edit name="autohint" mode="assign">
+			<bool>true</bool>
+		</edit>
+		<edit name="antialias" mode="assign">
+			<bool>true</bool>
+		</edit>
+		<edit name="hintstyle" mode="assign">
+			<const>hintnone</const>
+		</edit>
+	</match>
+
+	<match target="font">
+		<test name="lang" compare="contains">
+			<string>ja</string>
+		</test>
+		<test name="spacing" compare="eq">
+			<const>dual</const>
+		</test>
+		<edit name="spacing">
+			<const>proportional</const>
+		</edit>
+		<edit name="globaladvance" binding="strong">
+			<bool>false</bool>
+		</edit>
+	</match>
+
+	<match target="font">
+		<test name="lang" compare="contains">
+			<string>ja</string>
+		</test>
+		<test name="outline" compare="eq">
+			<bool>false</bool>
+		</test>
+		<test name="spacing" compare="eq">
+			<const>mono</const>
+			<const>charcell</const>
+		</test>
+		<edit name="spacing">
+			<const>proportional</const>
+		</edit>
+		<edit name="globaladvance" binding="strong">
+			<bool>false</bool>
+		</edit>
+	</match>
+
+	<match target="pattern">
+		<test qual="any" name="family">
+			<string>sans-serif</string>
+		</test>
+		<edit name="family" mode="prepend" binding="strong">
+			<string>IPAMonaPGothic</string>
+			<string>IPAPGothic</string>
+			<string>Sazanami Gothic</string>
+			<string>Kochi Gothic</string>
+		</edit>
+	</match> 
+	<match target="pattern">
+		<test qual="any" name="family">
+			<string>serif</string>
+		</test>
+		<edit name="family" mode="prepend" binding="strong">
+			<string>IPAMonaPMincho</string>
+			<string>IPAPMincho</string>
+			<string>Sazanami Mincho</string>
+			<string>Kochi Mincho</string>
+		</edit>
+	</match> 
+	<match target="pattern">
+		<test qual="any" name="family">
+			<string>monospace</string>
+		</test>
+		<edit name="family" mode="prepend" binding="strong">
+			<string>IPAMonaGothic</string>
+			<string>IPAGothic</string>
+			<string>Sazanami Gothic</string>
+			<string>Kochi Gothic</string>
+		</edit>
+	</match> 
 </fontconfig>

@@ -35,15 +35,29 @@ def main():
     parser.add_option("-l", "--list", dest="list",
                       action="store_true",
                       help=_("List the available fontconfig-voodoo configs"))
+    parser.add_option("-c", "--current", dest="show_current",
+                      action="store_true",
+                      help=_("Show the current fontconfig-voodoo config"))
     parser.add_option("-q", "--quiet",
                       action="store_true", dest="silent", default=False)
 
-    # parse it
-    (options, args) = parser.parse_args()
+    # check if we have arguments at all
+    if len(sys.argv[1:]) == 0:
+        parser.print_help()
+        sys.exit(0)
 
+    # parse them
+    (options, args) = parser.parse_args()
 
     # do the work
     fc = FontConfig.FontConfigHack()
+
+    if options.show_current:
+        if options.silent:
+            print fc.getCurrentConfig()
+        else:
+            print "Current config: %s" % fc.getCurrentConfig()
+        sys.exit(0)
 
     if options.list:
         print "\n".join(fc.getAvailableConfigs())

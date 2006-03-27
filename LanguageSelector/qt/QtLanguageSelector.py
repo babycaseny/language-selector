@@ -65,10 +65,10 @@ class QtLanguageSelector(QtLanguageSelectorGUI,LanguageSelectorBase):
 
     def run_pkg_manager(self, lock, to_inst, to_rm):
         if len(to_inst) > 0:
-            subprocess.call(["konsole","-e","apt-get","install"]+to_inst)
+            subprocess.call(["adept_batch","install"]+to_inst)
         # then remove
         if len(to_rm) > 0:
-            subprocess.call(["konsole","-e","apt-get","remove"]+to_rm)
+            subprocess.call(["adept_batch","remove"]+to_rm)
         lock.release()
 
     def onPushButtonOk(self):
@@ -76,7 +76,9 @@ class QtLanguageSelector(QtLanguageSelectorGUI,LanguageSelectorBase):
 
         # update the default language box
         lang = self.comboBoxDefaultLanguage.currentText()
-        self.setSystemDefaultLanguage(self._localeinfo.localeToCodeMap["%s"%lang])
+        new_locale = ("%s"%lang)
+        new_code = self._localeinfo.localeToCodeMap[new_locale]
+        self.setSystemDefaultLanguage(new_code)
 
         # see what needs to be installed
         elm = self.listViewLanguages.firstChild()

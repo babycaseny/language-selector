@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-03-22 14:20+0100\n"
+"POT-Creation-Date: 2006-03-27 11:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1784,10 +1784,14 @@ msgstr ""
 msgid "List the available fontconfig-voodoo configs"
 msgstr ""
 
-#: ../fontconfig-voodoo:53
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr ""
+
+#: ../fontconfig-voodoo:67
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
 
-#: ../fontconfig-voodoo:66
+#: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
