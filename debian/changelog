@@ -1,3 +1,9 @@
+language-selector (0.1.16) dapper; urgency=low
+
+  * LanguageSelector/LangCache.py: fix the detection for langpack-kde
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Sun,  2 Apr 2006 10:44:05 +0200
+
 language-selector (0.1.15) dapper; urgency=low
 
   * fontconfig/ja_JP: updated to the latest version from Jun Kobayashi  
