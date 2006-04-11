@@ -1,3 +1,14 @@
+language-selector (0.1.17) dapper; urgency=low
+
+  * fontconfig/ko_KR.po: 
+    - updated to the latest version (thanks to the Korean language-team!)
+      (ubuntu: #37410)
+  * LanguageSelector/LangCache.py:
+    - update the openoffice detection (ubuntu: 38717)
+    - purge langpacks on delete
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 11 Apr 2006 10:10:33 +0200
+
 language-selector (0.1.16) dapper; urgency=low
 
   * LanguageSelector/LangCache.py: fix the detection for langpack-kde

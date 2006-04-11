@@ -56,11 +56,11 @@
         <test name="lang" compare="contains">
                 <string>ko</string>
         </test>
-        <test name="pixelsize" compare="more_eq">
-		<double>8</double>
+        <test name="pixelsize" compare="more">
+		<int>10</int>
 	</test>
-        <test name="pixelsize" compare="less_eq">
-		<double>16</double>
+        <test name="pixelsize" compare="less">
+		<int>22</int>
 	</test>
         <edit name="antialias" mode="assign">
 		<bool>false</bool>
@@ -154,7 +154,7 @@
 	</alias>
 </match>
 
-<!-- Bind EunGuseul with Bitsream Vera Sans -->
+<!-- Bind EunGuseul with Bitstream Vera Sans -->
 <match target="pattern">
 	<test name="family">
 		<string>EunGuseul</string>
@@ -164,7 +164,7 @@
 	</edit>
 </match>
 
-<!-- Bind EunGuseul Mono with Bitsream Vera Sans Mono -->
+<!-- Bind EunGuseul Mono with Bitstream Vera Sans Mono -->
 <match target="pattern">
 	<test name="family">
 		<string>EunGuseul Mono</string>

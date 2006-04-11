@@ -32,8 +32,8 @@ class LanguageSelectorPkgCache(apt.Cache):
         ("libgnome2-0", "language-pack-gnome-"),
         ("firefox", "mozilla-firefox-locale-"),
         ("mozilla-thunderbird", "mozilla-thunderbird-local-"),
-        ("openoffice.org2", "openoffice.org2-l10n-"),
-        ("openoffice.org2", "openoffice.org2-help-")
+        ("openoffice.org", "openoffice.org-l10n-"),
+        ("openoffice.org", "openoffice.org-help-")
     ]
 
 
@@ -84,7 +84,8 @@ class LanguageSelectorPkgCache(apt.Cache):
         for name in self._getPkgList(languageCode):
             if self.has_key(name):
                 try:
-                    self[name].markDelete()
+                    # purge
+                    self[name].markDelete(True)
                     to_rm.append(name)
                 except SystemError:
                     pass
