@@ -2,7 +2,7 @@ Source: language-selector
 Section: admin
 Priority: optional
 Maintainer: Michael Vogt <michael.vogt@ubuntu.com>
-Build-Depends: debhelper (>= 4.0.0), python, python-dev
+Build-Depends: debhelper (>= 4.0.0), python, python-dev, intltool
 Standards-Version: 3.6.1.1
 
 Package: language-selector
