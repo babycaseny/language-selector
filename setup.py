@@ -12,9 +12,9 @@ for filepath in glob.glob("po/mo/*/LC_MESSAGES/*.mo"):
     I18NFILES.append((targetpath, [filepath]))
 
 # HACK: make sure that the mo files are generated and up-to-date
-os.system("cd po; make update-po")
 os.system("cd data; make")
 os.system("cd LanguageSelector/qt; make")
+os.system("cd po; make update-po")
     
 setup(name='language-selector',
       version='0.1',

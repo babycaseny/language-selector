@@ -122,7 +122,6 @@
 			      <child>
 				<widget class="GtkTreeView" id="treeview_languages">
 				  <property name="visible">True</property>
-				  <property name="tooltip" translatable="yes">Translations include applications and documentation. The writing aids provide native dictionaries, grammar checkers and input methods</property>
 				  <property name="can_focus">True</property>
 				  <property name="headers_visible">True</property>
 				  <property name="rules_hint">True</property>

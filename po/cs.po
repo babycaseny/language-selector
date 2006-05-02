@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-11 10:17+0200\n"
+"POT-Creation-Date: 2006-05-02 13:42+0200\n"
 "PO-Revision-Date: 2005-09-10 21:13+0200\n"
 "Last-Translator: Ondřej Surý <ondrej@sury.org>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -15,6 +15,121 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:175 ../data/languages.h:1
+msgid "Language"
+msgstr "Jazyk"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:182
+#, fuzzy
+msgid "Support"
+msgstr "Výběr jazyka"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:276
+#, fuzzy
+msgid "The language support is not installed completely"
+msgstr "Jazyky jsou nyní nainstalovány"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
+msgid ""
+"Not all translations or writing aids, that are available for the supported "
+"languages on your system, are installed."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#, fuzzy
+msgid "_Remind Me Again"
+msgstr "Upozorni mě znovu"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:280
+#, fuzzy
+msgid "_Install"
+msgstr "Instaluj teď"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#, fuzzy
+msgid "Details"
+msgstr "dánština"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+#, fuzzy
+msgid "Could not install the selected language support"
+msgstr "Instaluj/odeber podporu jazyků"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:349
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:374
+#, fuzzy
+msgid "Could not install the full language support"
+msgstr "Instaluj/odeber podporu jazyků"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:375
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the menu \"Adminstration\"."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+msgid "The list of available languages on the system has been updated."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+msgid "Only one software management tool is allowed to run at the same time"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+msgid ""
+"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
+"\"Synaptic\" at first."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:485
+msgid "Software database is broken"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:486
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+#, fuzzy
+msgid "Translation"
+msgstr "Překlad"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "Výběr jazyka"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+#, fuzzy
+msgid "Supported Languages"
+msgstr "násobné jazyky"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+#, fuzzy
+msgid "Default language"
+msgstr "násobné jazyky"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
+msgid "English"
+msgstr "angličtina"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -41,15 +156,10 @@ msgid "Default language for new user accounts and the login screen:"
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:8 ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
 #, fuzzy
 msgid "Language Support"
 msgstr "Výběr jazyka"
-
-#: ../data/LanguageSelector.glade.h:9
-msgid ""
-"Translations include applications and documentation. The writing aids "
-"provide native dictionaries, grammar checkers and input methods"
-msgstr ""
 
 #: ../data/countries.h:1
 msgid "Afghanistan"
@@ -1019,10 +1129,6 @@ msgstr "Tchaj-wan"
 msgid "United States Minor Outlying Islands"
 msgstr "Drobné odlehlé ostrovy Spojených států"
 
-#: ../data/languages.h:1
-msgid "Language"
-msgstr "Jazyk"
-
 #: ../data/languages.h:2
 msgid "Afar"
 msgstr "afarština"
@@ -1174,10 +1280,6 @@ msgstr ""
 #: ../data/languages.h:39
 msgid "Greek, Modern"
 msgstr "Řečtina (moderní)"
-
-#: ../data/languages.h:40
-msgid "English"
-msgstr "angličtina"
 
 #: ../data/languages.h:41
 msgid "Esperanto"
@@ -1752,6 +1854,7 @@ msgid "Zulu"
 msgstr "Zulu"
 
 #: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
 msgstr ""
 
@@ -1797,34 +1900,6 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 
-#, fuzzy
-#~ msgid "Translations"
-#~ msgstr "Překlad"
-
-#, fuzzy
-#~ msgid "The language support is not installed completely"
-#~ msgstr "Jazyky jsou nyní nainstalovány"
-
-#, fuzzy
-#~ msgid "_Remind Me Again"
-#~ msgstr "Upozorni mě znovu"
-
-#, fuzzy
-#~ msgid "_Install"
-#~ msgstr "Instaluj teď"
-
-#, fuzzy
-#~ msgid "Details"
-#~ msgstr "dánština"
-
-#, fuzzy
-#~ msgid "Could not install the selected language support"
-#~ msgstr "Instaluj/odeber podporu jazyků"
-
-#, fuzzy
-#~ msgid "Could not install the full language support"
-#~ msgstr "Instaluj/odeber podporu jazyků"
-
 #~ msgid "Update language support?"
 #~ msgstr "Aktualizovad podporu jazyka?"
 
@@ -1846,9 +1921,6 @@ msgstr ""
 #~ "Některé balíčky pro plnou podporu jazyka nemohly být na vašem systému "
 #~ "nainstalovány. To většinou znamená, že je něco špatně s archivem Ubuntu "
 #~ "nebo s vaším nastavením příkazu 'apt'."
-
-#~ msgid "Language selector"
-#~ msgstr "Výběr jazyka"
 
 #~ msgid "Status:"
 #~ msgstr "Stav:"
@@ -2533,9 +2605,6 @@ msgstr ""
 
 #~ msgid "Mayan languages"
 #~ msgstr "májské jazyky"
-
-#~ msgid "Multiple languages"
-#~ msgstr "násobné jazyky"
 
 #~ msgid "Navaho"
 #~ msgstr "navajština"

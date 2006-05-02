@@ -63,6 +63,7 @@ install: build
 
 	# Add here commands to install the package into debian/language-selector.
 	./setup.py install --prefix=$(CURDIR)/debian/tmp/usr
+	(cd po; intltool-update -p -g language-selector)
 
 
 # Build architecture-independent files here.
@@ -104,7 +105,7 @@ binary-arch: build install
 arch-build:
 	rm -rf debian/arch-build
 	mkdir -p debian/arch-build/$(PKG)-$(DEBVER)
-	tar -c --exclude=arch-build -f - `bzr inventory` | (cd debian/arch-build/$(PKG)-$(DEBVER);tar xf -)
+	tar -c --exclude=arch-build --no-recursion -f - `bzr inventory` | (cd debian/arch-build/$(PKG)-$(DEBVER);tar xf -)
 	(cd debian/arch-build/$(PKG)-$(DEBVER) && $(DEB_BUILD_PROG))
 
 

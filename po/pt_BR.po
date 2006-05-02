@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-11 10:17+0200\n"
+"POT-Creation-Date: 2006-05-02 13:42+0200\n"
 "PO-Revision-Date: 2006-02-19 17:05-0300\n"
 "Last-Translator: Carlos Eduardo Pedroza Santiviago <segfault@ubuntu.com>\n"
 "Language-Team: Ubuntu-BR <tradutores@listas.ubuntubrasil.org>\n"
@@ -15,6 +15,130 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:175 ../data/languages.h:1
+msgid "Language"
+msgstr "Idioma"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:182
+#, fuzzy
+msgid "Support"
+msgstr "Suporte a Idiomas"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:276
+msgid "The language support is not installed completely"
+msgstr "O suporte ao idioma não está instalado completamente"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
+msgid ""
+"Not all translations or writing aids, that are available for the supported "
+"languages on your system, are installed."
+msgstr ""
+"Nem todas as traduções ou auxílios à escrita, que estão disponíveis para os "
+"idiomas suportados no seu sistema, estão instalados."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+msgid "_Remind Me Again"
+msgstr "_Lembre-me Novamente"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:280
+msgid "_Install"
+msgstr "_Instalar"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+msgid "Details"
+msgstr "Detalhes"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+msgid "Could not install the selected language support"
+msgstr "Não foi possível instalar o suporte ao idioma selecionado"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:349
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
+msgstr ""
+"Isso parece ser um erro neste programa. Por favor preencha um relatório de "
+"erro em https://launchpad.net/bugs/bugs/+package/ sobre o produto 'language-"
+"selector'."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:374
+msgid "Could not install the full language support"
+msgstr "Não foi possível instalar o suporte completo ao idioma"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:375
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the menu \"Adminstration\"."
+msgstr ""
+"Geralmente isso é relacionado a um erro no seu arquivos de pacotes ou "
+"gerenciador de programas. Verifique suas preferências de programas no menu "
+"\"Administração\"."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+msgid "The list of available languages on the system has been updated."
+msgstr "A lista de idiomas disponíveis no sistema foi atualizada."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+msgid "Only one software management tool is allowed to run at the same time"
+msgstr ""
+"Apenas um programa de gerenciamento de pacotes é permitido ser executado ao "
+"mesmo tempo"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+msgid ""
+"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
+"\"Synaptic\" at first."
+msgstr ""
+"Feche os outros programas, como o \"Gerenciador de Atualizações\", \"aptitude"
+"\" ou o \"Synaptic\" primeiro."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:485
+msgid "Software database is broken"
+msgstr "A Base de Dados de programas está corrompida"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:486
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Não é possível instalar ou remover qualquer programa. Por favor use o "
+"Gerenciador de Pacotes \"Synaptic\" ou execute \"sudo apt-get install -f\" "
+"em um terminal para resolver esse probelma primeiro."
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+#, fuzzy
+msgid "Translation"
+msgstr "Traduções"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "Escolha do Idioma"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+#, fuzzy
+msgid "Supported Languages"
+msgstr "<b>Idiomas Suportados</b>"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+#, fuzzy
+msgid "Default language"
+msgstr "<b>Idioma Padrão</b>"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
+msgid "English"
+msgstr "Inglês"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -46,16 +170,9 @@ msgid "Default language for new user accounts and the login screen:"
 msgstr "Idioma padrão para as novas contas de usuários e tela de entrada:"
 
 #: ../data/LanguageSelector.glade.h:8 ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
 msgid "Language Support"
 msgstr "Suporte a Idiomas"
-
-#: ../data/LanguageSelector.glade.h:9
-msgid ""
-"Translations include applications and documentation. The writing aids "
-"provide native dictionaries, grammar checkers and input methods"
-msgstr ""
-"As Traduções abrangem os programas e documentação. Os Auxílios à Escrita "
-"fornecem dicionários nativos, verificadores gramaticais e métodos de entrada"
 
 #: ../data/countries.h:1
 msgid "Afghanistan"
@@ -1025,10 +1142,6 @@ msgstr "Taiwan"
 msgid "United States Minor Outlying Islands"
 msgstr "Ilhas Menores Afastadas dos Estados Unidos"
 
-#: ../data/languages.h:1
-msgid "Language"
-msgstr "Idioma"
-
 #: ../data/languages.h:2
 msgid "Afar"
 msgstr "Afar"
@@ -1180,10 +1293,6 @@ msgstr "Ewe"
 #: ../data/languages.h:39
 msgid "Greek, Modern"
 msgstr "Grego, Moderno"
-
-#: ../data/languages.h:40
-msgid "English"
-msgstr "Inglês"
 
 #: ../data/languages.h:41
 msgid "Esperanto"
@@ -1758,6 +1867,7 @@ msgid "Zulu"
 msgstr "Zulu"
 
 #: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
 msgstr "Configure suporte a vários idiomas nativos no seu sistema"
 
@@ -1803,80 +1913,16 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 
-#~ msgid "Translations"
-#~ msgstr "Traduções"
+#~ msgid ""
+#~ "Translations include applications and documentation. The writing aids "
+#~ "provide native dictionaries, grammar checkers and input methods"
+#~ msgstr ""
+#~ "As Traduções abrangem os programas e documentação. Os Auxílios à Escrita "
+#~ "fornecem dicionários nativos, verificadores gramaticais e métodos de "
+#~ "entrada"
 
 #~ msgid "Writing Aids"
 #~ msgstr "Auxílios à Escrita"
-
-#~ msgid "The language support is not installed completely"
-#~ msgstr "O suporte ao idioma não está instalado completamente"
-
-#~ msgid ""
-#~ "Not all translations or writing aids, that are available for the "
-#~ "supported languages on your system, are installed."
-#~ msgstr ""
-#~ "Nem todas as traduções ou auxílios à escrita, que estão disponíveis para "
-#~ "os idiomas suportados no seu sistema, estão instalados."
-
-#~ msgid "_Remind Me Again"
-#~ msgstr "_Lembre-me Novamente"
-
-#~ msgid "_Install"
-#~ msgstr "_Instalar"
-
-#~ msgid "Details"
-#~ msgstr "Detalhes"
-
-#~ msgid "Could not install the selected language support"
-#~ msgstr "Não foi possível instalar o suporte ao idioma selecionado"
-
-#~ msgid ""
-#~ "This is perhaps a bug of this application. Please file a bug report at "
-#~ "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-#~ "product."
-#~ msgstr ""
-#~ "Isso parece ser um erro neste programa. Por favor preencha um relatório "
-#~ "de erro em https://launchpad.net/bugs/bugs/+package/ sobre o produto "
-#~ "'language-selector'."
-
-#~ msgid "Could not install the full language support"
-#~ msgstr "Não foi possível instalar o suporte completo ao idioma"
-
-#~ msgid ""
-#~ "Usually this is related to an error in your software archive or software "
-#~ "manager. Check your software preferences in the menu \"Adminstration\"."
-#~ msgstr ""
-#~ "Geralmente isso é relacionado a um erro no seu arquivos de pacotes ou "
-#~ "gerenciador de programas. Verifique suas preferências de programas no "
-#~ "menu \"Administração\"."
-
-#~ msgid "The list of available languages on the system has been updated."
-#~ msgstr "A lista de idiomas disponíveis no sistema foi atualizada."
-
-#~ msgid "Only one software management tool is allowed to run at the same time"
-#~ msgstr ""
-#~ "Apenas um programa de gerenciamento de pacotes é permitido ser executado "
-#~ "ao mesmo tempo"
-
-#~ msgid ""
-#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
-#~ "or \"Synaptic\" at first."
-#~ msgstr ""
-#~ "Feche os outros programas, como o \"Gerenciador de Atualizações\", "
-#~ "\"aptitude\" ou o \"Synaptic\" primeiro."
-
-#~ msgid "Software database is broken"
-#~ msgstr "A Base de Dados de programas está corrompida"
-
-#~ msgid ""
-#~ "It is impossible to install or remove any software. Please use the "
-#~ "package manager \"Synaptic\" or run \"sudo apt-get install -f\" in a "
-#~ "terminal to fix this issue at first."
-#~ msgstr ""
-#~ "Não é possível instalar ou remover qualquer programa. Por favor use o "
-#~ "Gerenciador de Pacotes \"Synaptic\" ou execute \"sudo apt-get install -f"
-#~ "\" em um terminal para resolver esse probelma primeiro."
 
 #~ msgid "Update language support?"
 #~ msgstr "Atualizar suporte a idiomas?"
@@ -1899,9 +1945,6 @@ msgstr ""
 #~ "Alguns pacotes para suporte total a idiomas não foram instalados no seu "
 #~ "sistema. Isso geralmente significa que há algo errado com o repositório "
 #~ "de software do ubuntu ou com suas configurações do programa 'apt'."
-
-#~ msgid "Language selector"
-#~ msgstr "Escolha do Idioma"
 
 #~ msgid "Status:"
 #~ msgstr "Status:"

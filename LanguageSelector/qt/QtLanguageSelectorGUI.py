@@ -1,8 +1,9 @@
+import gettext
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'QtLanguageSelectorGUI.ui'
 #
-# Created: Tue Mar 21 14:05:32 2006
+# Created: Tue May 2 13:42:26 2006
 #      by: The PyQt User Interface Compiler (pyuic) 3.15.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -34,7 +35,7 @@ class QtLanguageSelectorGUI(QWidget):
         LanguageSelectorLayout.addWidget(self.pushButtonOk,4,1)
 
         self.listViewLanguages = QListView(self,"listViewLanguages")
-        self.listViewLanguages.addColumn(self.__tr("Translation"))
+        self.listViewLanguages.addColumn(gettext.gettext("Translation"))
 
         LanguageSelectorLayout.addMultiCellWidget(self.listViewLanguages,1,1,0,2)
 
@@ -55,14 +56,14 @@ class QtLanguageSelectorGUI(QWidget):
 
 
     def languageChange(self):
-        self.setCaption(self.__tr("Language selector"))
-        self.textLabel1.setText(self.__tr("Supported Languages"))
-        self.pushButtonCancel.setText(self.__tr("Cancel"))
-        self.pushButtonOk.setText(self.__tr("Ok"))
-        self.listViewLanguages.header().setLabel(0,self.__tr("Translation"))
-        self.textLabel2.setText(self.__tr("Default language"))
+        self.setCaption(gettext.gettext("Language selector"))
+        self.textLabel1.setText(gettext.gettext("Supported Languages"))
+        self.pushButtonCancel.setText(gettext.gettext("Close"))
+        self.pushButtonOk.setText(gettext.gettext("Apply"))
+        self.listViewLanguages.header().setLabel(0,gettext.gettext("Translation"))
+        self.textLabel2.setText(gettext.gettext("Default language"))
         self.comboBoxDefaultLanguage.clear()
-        self.comboBoxDefaultLanguage.insertItem(self.__tr("English"))
+        self.comboBoxDefaultLanguage.insertItem(gettext.gettext("English"))
 
 
     def pushButtonOk_clicked(self):
@@ -70,6 +71,3 @@ class QtLanguageSelectorGUI(QWidget):
 
     def pushButtonCancel_released(self):
         print "QtLanguageSelectorGUI.pushButtonCancel_released(): Not implemented yet"
-
-    def __tr(self,s,c = None):
-        return qApp.translate("QtLanguageSelectorGUI",s,c)

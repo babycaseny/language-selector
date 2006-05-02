@@ -12,9 +12,18 @@ class LocaleInfo(object):
     
     environment = "/etc/environment"
     def __init__(self, lang_file, country_file, languagelist_file):
+        # map language to human readable name, e.g.:
+        # "pt"->"Portugise", "de"->"German", "en"->"English"
         self._lang = {}
+
+        # map country to human readable name, e.g.:
+        # "BR"->"Brasil", "DE"->"Germany", "US"->"United States"
         self._country = {}
+        
+        # map locale (language+country) to the LANGUAGE environment, e.g.:
+        # "pt_PT"->"pt_PT:pt:pt_BR:en_GB:en"
         self._languagelist = {}
+        
         # read lang file
         self._langFile = lang_file
         for line in open(lang_file):
@@ -23,6 +32,7 @@ class LocaleInfo(object):
                 continue
             (code, lang) = tmp.split(":")
             self._lang[code] = lang
+            
         # read countries
         for line in open(country_file):
             tmp = line.strip()
@@ -30,6 +40,7 @@ class LocaleInfo(object):
                 continue
             (un, code, long_code, descr, cap) = tmp.split(":")
             self._country[code] = descr
+            
         # read the languagelist
         for line in open(languagelist_file):
             tmp = line.strip()
@@ -72,13 +83,16 @@ class LocaleInfo(object):
 
     def translate(self, locale):
         """ get a locale code and output a human readable name """
-        # sanity check, make other code easier
         if "_" in locale:
             (lang, country) = string.split(locale, "_")
-            ret = "%s (%s)" % (_(self.lang(lang)), _(self.country(country)))
-        else:
-            ret = self.lang(locale)
-        return ret
+            # get all locales for this language
+            l = filter(lambda k: k.startswith(lang+"_"), self.generated_locales())
+            # only show region/county if we have more than one 
+            if len(l) > 1:
+                return "%s (%s)" % (_(self.lang(lang)), _(self.country(country)))
+            else:
+                return self.lang(lang)
+        return self.lang(locale)
 
     def makeEnvString(self, code):
         """ input is a language code, output a string that can be put in
@@ -110,3 +124,8 @@ if __name__ == "__main__":
                     "%s/data/languagelist" % datadir)
 
     print li.getDefaultLanguage()
+
+    print li._lang
+    print li._country
+    print li._languagelist
+    print li.generated_locales()

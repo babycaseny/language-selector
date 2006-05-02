@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-04-11 10:17+0200\n"
+"POT-Creation-Date: 2006-05-02 13:42+0200\n"
 "PO-Revision-Date: 2006-02-24 18:55+0200\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <ubuntu-fi@lists.ubuntu.com>\n"
@@ -16,6 +16,126 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Rosetta-Version: 0.1\n"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:175 ../data/languages.h:1
+msgid "Language"
+msgstr "Kieli"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:182
+#, fuzzy
+msgid "Support"
+msgstr "Kieliasetukset"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:276
+msgid "The language support is not installed completely"
+msgstr "Kielitukea ei ole asennettu kokonaan"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
+msgid ""
+"Not all translations or writing aids, that are available for the supported "
+"languages on your system, are installed."
+msgstr ""
+"Kaikkia järjestelmässäsi tuetuille kielille olevia käännöksiä tai "
+"kirjoituksen aputyökaluja ei ole asennettu."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+msgid "_Remind Me Again"
+msgstr "_Muistuta minua myöhemmin"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:280
+msgid "_Install"
+msgstr "_Asenna"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+msgid "Details"
+msgstr "Yksityiskohdat"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+msgid "Could not install the selected language support"
+msgstr "Ei voitu asentaa valittua kielitukea"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:349
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
+msgstr ""
+"Tämä voi johtua ohjelmavirheestä. Tee asiasta virheraportti osoitteessa "
+"https://launchpad.net/bugs/bugs/+package/ 'language-selector'-tuotteelle."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:374
+msgid "Could not install the full language support"
+msgstr "Ei voitu asentaa täyttä kielitukea"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:375
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the menu \"Adminstration\"."
+msgstr ""
+"Yleensä tämä liittyy virheeseen ohjelmavarastossa tai pakettienhallinnassa. "
+"Tarkista ohjelma-asetukset valikossa \"Hallinta\"."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+msgid "The list of available languages on the system has been updated."
+msgstr "Luettelo järjestelmän käytettävissä olevista kielistä on päivitetty."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+msgid "Only one software management tool is allowed to run at the same time"
+msgstr "Vain yksi pakettienhallintatyökalu voi olla käynnissä samaan aikaan"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+msgid ""
+"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
+"\"Synaptic\" at first."
+msgstr ""
+"Sulje toinen ohjelma ensin, esim. \"Päivitysten hallinta\", \"aptitude\" tai "
+"\"Synaptic\"."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:485
+msgid "Software database is broken"
+msgstr "Ohjelmatietokanta on rikki"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:486
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Mitään ohjelmia ei voida asentaa tai poistaa. Korjaa ongelma käyttämällä "
+"Synaptic-pakettienhallintaa tai komentoa \"sudo apt-get install -f\" "
+"päätteessä."
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+#, fuzzy
+msgid "Translation"
+msgstr "Käännökset"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "Kielen valitsin"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+#, fuzzy
+msgid "Supported Languages"
+msgstr "<b>Tuetut kielet</b>"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+#, fuzzy
+msgid "Default language"
+msgstr "<b>Oletuskieli</b>"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
+msgid "English"
+msgstr "englanti"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -46,16 +166,9 @@ msgid "Default language for new user accounts and the login screen:"
 msgstr "Oletuskieli uusille käyttäjätileille ja kirjautumisruudulle:"
 
 #: ../data/LanguageSelector.glade.h:8 ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
 msgid "Language Support"
 msgstr "Kieliasetukset"
-
-#: ../data/LanguageSelector.glade.h:9
-msgid ""
-"Translations include applications and documentation. The writing aids "
-"provide native dictionaries, grammar checkers and input methods"
-msgstr ""
-"Käännökset sisältävät ohjelmat ja ohjeet. Kirjoituksen aputyökalut "
-"sisältävät sanakirjat, oikolukuohjelmat ja syöttötavat."
 
 #: ../data/countries.h:1
 msgid "Afghanistan"
@@ -1025,10 +1138,6 @@ msgstr "Taiwan"
 msgid "United States Minor Outlying Islands"
 msgstr "Yhdysvaltojen Tyynenmeren erillissaaret"
 
-#: ../data/languages.h:1
-msgid "Language"
-msgstr "Kieli"
-
 #: ../data/languages.h:2
 msgid "Afar"
 msgstr "afar"
@@ -1180,10 +1289,6 @@ msgstr "ewe"
 #: ../data/languages.h:39
 msgid "Greek, Modern"
 msgstr "kreikka, moderni"
-
-#: ../data/languages.h:40
-msgid "English"
-msgstr "englanti"
 
 #: ../data/languages.h:41
 msgid "Esperanto"
@@ -1758,6 +1863,7 @@ msgid "Zulu"
 msgstr "zulu"
 
 #: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
 msgstr "Aseta järjestelmäsi oletuskieli ja muut tuetut kielet"
 
@@ -1803,77 +1909,15 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 
-#~ msgid "Translations"
-#~ msgstr "Käännökset"
+#~ msgid ""
+#~ "Translations include applications and documentation. The writing aids "
+#~ "provide native dictionaries, grammar checkers and input methods"
+#~ msgstr ""
+#~ "Käännökset sisältävät ohjelmat ja ohjeet. Kirjoituksen aputyökalut "
+#~ "sisältävät sanakirjat, oikolukuohjelmat ja syöttötavat."
 
 #~ msgid "Writing Aids"
 #~ msgstr "Kirjoituksen aputyökalut"
-
-#~ msgid "The language support is not installed completely"
-#~ msgstr "Kielitukea ei ole asennettu kokonaan"
-
-#~ msgid ""
-#~ "Not all translations or writing aids, that are available for the "
-#~ "supported languages on your system, are installed."
-#~ msgstr ""
-#~ "Kaikkia järjestelmässäsi tuetuille kielille olevia käännöksiä tai "
-#~ "kirjoituksen aputyökaluja ei ole asennettu."
-
-#~ msgid "_Remind Me Again"
-#~ msgstr "_Muistuta minua myöhemmin"
-
-#~ msgid "_Install"
-#~ msgstr "_Asenna"
-
-#~ msgid "Details"
-#~ msgstr "Yksityiskohdat"
-
-#~ msgid "Could not install the selected language support"
-#~ msgstr "Ei voitu asentaa valittua kielitukea"
-
-#~ msgid ""
-#~ "This is perhaps a bug of this application. Please file a bug report at "
-#~ "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-#~ "product."
-#~ msgstr ""
-#~ "Tämä voi johtua ohjelmavirheestä. Tee asiasta virheraportti osoitteessa "
-#~ "https://launchpad.net/bugs/bugs/+package/ 'language-selector'-tuotteelle."
-
-#~ msgid "Could not install the full language support"
-#~ msgstr "Ei voitu asentaa täyttä kielitukea"
-
-#~ msgid ""
-#~ "Usually this is related to an error in your software archive or software "
-#~ "manager. Check your software preferences in the menu \"Adminstration\"."
-#~ msgstr ""
-#~ "Yleensä tämä liittyy virheeseen ohjelmavarastossa tai "
-#~ "pakettienhallinnassa. Tarkista ohjelma-asetukset valikossa \"Hallinta\"."
-
-#~ msgid "The list of available languages on the system has been updated."
-#~ msgstr ""
-#~ "Luettelo järjestelmän käytettävissä olevista kielistä on päivitetty."
-
-#~ msgid "Only one software management tool is allowed to run at the same time"
-#~ msgstr "Vain yksi pakettienhallintatyökalu voi olla käynnissä samaan aikaan"
-
-#~ msgid ""
-#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
-#~ "or \"Synaptic\" at first."
-#~ msgstr ""
-#~ "Sulje toinen ohjelma ensin, esim. \"Päivitysten hallinta\", \"aptitude\" "
-#~ "tai \"Synaptic\"."
-
-#~ msgid "Software database is broken"
-#~ msgstr "Ohjelmatietokanta on rikki"
-
-#~ msgid ""
-#~ "It is impossible to install or remove any software. Please use the "
-#~ "package manager \"Synaptic\" or run \"sudo apt-get install -f\" in a "
-#~ "terminal to fix this issue at first."
-#~ msgstr ""
-#~ "Mitään ohjelmia ei voida asentaa tai poistaa. Korjaa ongelma käyttämällä "
-#~ "Synaptic-pakettienhallintaa tai komentoa \"sudo apt-get install -f\" "
-#~ "päätteessä."
 
 #~ msgid "Update language support?"
 #~ msgstr "Päivitä kielituki?"
@@ -1909,9 +1953,6 @@ msgstr ""
 
 #~ msgid "<b>Languages available to people using this system:</b>"
 #~ msgstr "<b>Tämän järjestelmän käyttäjien käytettävissä olevat kielet:</b>"
-
-#~ msgid "Language selector"
-#~ msgstr "Kielen valitsin"
 
 #~ msgid "Status:"
 #~ msgstr "Tila:"
