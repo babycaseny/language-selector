@@ -12,6 +12,7 @@ import os
 
 from LanguageSelector.gtk.GtkLanguageSelector import GtkLanguageSelector
 from gettext import gettext as _
+from optparse import OptionParser
 
 if __name__ == "__main__":
         gettext.bindtextdomain("language-selector", "/usr/share/locale")
@@ -31,5 +32,13 @@ if __name__ == "__main__":
             d.destroy()
             sys.exit(1)
 
-	app = GtkLanguageSelector(datadir="/usr/share/language-selector/")
+	parser = OptionParser()
+	parser.add_option("-n", "--no-verify-installed-lang-support",
+			  action="store_false", dest="verify_installed",
+			  default=True,
+			  help="don't verify installed language support")
+	(options, args) = parser.parse_args()
+
+	app = GtkLanguageSelector(datadir="/usr/share/language-selector/",
+				  options=options)
 	app.run()

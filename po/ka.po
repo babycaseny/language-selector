@@ -1,0 +1,1990 @@
+# translation of language-selector.po to Georgian
+# translation of PACKAGE.
+# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Vladimer Sichinava <alinux@siena.linux.it>, 2006.
+# Konstantin Sichinava <ksichinava@gmail.com>, 2006
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"PO-Revision-Date: 2006-05-12 22:30+0000\n"
+"Last-Translator: Vladimer Sichinava <alinux@siena.linux.it>\n"
+"Language-Team: Georgian <gnome@inet.ge>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.1\n"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
+msgid "Language"
+msgstr "ენა"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
+msgid "Support"
+msgstr "მხარდაჭერა"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
+msgid "The language support is not installed completely"
+msgstr "ენის მხარდაჭერა არ არის ბოლომდე ჩაყენებული"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+msgid ""
+"Not all translations or writing aids, that are available for the supported "
+"languages on your system, are installed."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
+msgid "_Remind Me Again"
+msgstr "_შემახსენე მომავალში"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
+msgid "_Install"
+msgstr "_ჩადგმა"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
+msgid "Details"
+msgstr "ცნობები"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
+msgid "Could not install the selected language support"
+msgstr "შეუძლებელია მონიშნული ენის მხარდაჭერის ჩაყენება"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
+msgid "Could not install the full language support"
+msgstr "შეუძლებელია ენის სრული მხარდაჭერის ჩაყენება"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the menu \"Adminstration\"."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
+msgid "The list of available languages on the system has been updated."
+msgstr "სისტემაში არსებული ენების სია განახლებულია"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+msgid "Only one software management tool is allowed to run at the same time"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+msgid ""
+"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
+"\"Synaptic\" at first."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
+msgid "Software database is broken"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+msgid "Translation"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+msgid "Supported Languages"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+msgid "Default language"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
+msgid "English"
+msgstr "ინგლისური"
+
+#: ../data/LanguageSelector.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/LanguageSelector.glade.h:2
+msgid "<b>Default Language</b>"
+msgstr "<b>ნაგულისხმევი ენა</b>"
+
+#: ../data/LanguageSelector.glade.h:3
+msgid "<b>Supported Languages</b>"
+msgstr "<b>მხარდაჭერილი ენები</b>"
+
+#: ../data/LanguageSelector.glade.h:4
+#, fuzzy
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The support for each language can differ in the amount of available "
+"translations or writing aids."
+msgstr ""
+"<big><b>ვამოწმებ არსებული ენების მხარდაჭერას</b></big>↵\n"
+"↵\n"
+"The support for each language can differ in the amount of available "
+"translations or writing aids."
+
+#: ../data/LanguageSelector.glade.h:7
+msgid "Default language for new user accounts and the login screen:"
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:8 ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "ენის მხარდაჭერა"
+
+#: ../data/countries.h:1
+msgid "Afghanistan"
+msgstr "ავღანეთი"
+
+#: ../data/countries.h:2
+msgid "Åland Islands"
+msgstr "ალანდის კუნძულები"
+
+#: ../data/countries.h:3
+msgid "Albania"
+msgstr "ალბანეთი"
+
+#: ../data/countries.h:4
+msgid "Algeria"
+msgstr "ალჟირი"
+
+#: ../data/countries.h:5
+msgid "American Samoa"
+msgstr "ამერიკული სამოა"
+
+#: ../data/countries.h:6
+msgid "Andorra"
+msgstr "ანდორა"
+
+#: ../data/countries.h:7
+msgid "Angola"
+msgstr "ანგოლა"
+
+#: ../data/countries.h:8
+msgid "Anguilla"
+msgstr "ანგუილა"
+
+#: ../data/countries.h:9
+msgid "Antigua and Barbuda"
+msgstr "ანტიგუა და ბარბუდა"
+
+#: ../data/countries.h:10
+msgid "Argentina"
+msgstr "არგენტინა"
+
+#: ../data/countries.h:11
+msgid "Armenia"
+msgstr "სასომხეთი"
+
+#: ../data/countries.h:12
+msgid "Aruba"
+msgstr "არუბა"
+
+#: ../data/countries.h:13
+msgid "Australia"
+msgstr "ავსტრალია"
+
+#: ../data/countries.h:14
+msgid "Austria"
+msgstr "ავსტრია"
+
+#: ../data/countries.h:15
+msgid "Azerbaijan"
+msgstr "აზერბაიჯანი"
+
+#: ../data/countries.h:16
+msgid "Bahamas"
+msgstr "ბაჰამები"
+
+#: ../data/countries.h:17
+msgid "Bahrain"
+msgstr "ბაჰრანი"
+
+#: ../data/countries.h:18
+msgid "Bangladesh"
+msgstr "ბანგლადეში"
+
+#: ../data/countries.h:19
+msgid "Barbados"
+msgstr "ბარბადოსი"
+
+#: ../data/countries.h:20
+msgid "Belarus"
+msgstr "ბელარუსი"
+
+#: ../data/countries.h:21
+msgid "Belgium"
+msgstr "ბელგია"
+
+#: ../data/countries.h:22
+msgid "Belize"
+msgstr "ბალიზე"
+
+#: ../data/countries.h:23
+msgid "Benin"
+msgstr "ბენინი"
+
+#: ../data/countries.h:24
+msgid "Bermuda"
+msgstr "ბერმუდა"
+
+#: ../data/countries.h:25
+msgid "Bhutan"
+msgstr "ბუტანი"
+
+#: ../data/countries.h:26
+msgid "Bolivia"
+msgstr "ბოლივია"
+
+#: ../data/countries.h:27
+msgid "Bosnia and Herzegovina"
+msgstr "ბოსნია და ჰეცოგოვინა"
+
+#: ../data/countries.h:28
+msgid "Botswana"
+msgstr "ბოთსვანა"
+
+#: ../data/countries.h:29
+msgid "Brazil"
+msgstr "ბრაზილია"
+
+#: ../data/countries.h:30
+msgid "British Virgin Islands"
+msgstr "ვირჯინიის ბრიტანული კუნძულები"
+
+#: ../data/countries.h:31
+msgid "Brunei Darussalam"
+msgstr "ბრუნეი დარესსალამი"
+
+#: ../data/countries.h:32
+msgid "Bulgaria"
+msgstr "ბულგარეთი"
+
+#: ../data/countries.h:33
+msgid "Burkina Faso"
+msgstr "ბურკინა ფასო"
+
+#: ../data/countries.h:34
+msgid "Burundi"
+msgstr "ბურუნდი"
+
+#: ../data/countries.h:35
+msgid "Cambodia"
+msgstr "კამბოჯა"
+
+#: ../data/countries.h:36
+msgid "Cameroon"
+msgstr "კამერუნი"
+
+#: ../data/countries.h:37
+msgid "Canada"
+msgstr "კანადა"
+
+#: ../data/countries.h:38
+msgid "Cape Verde"
+msgstr "მწვანე კონცხი"
+
+#: ../data/countries.h:39
+msgid "Cayman Islands"
+msgstr "კაიმანის კუნძულები"
+
+#: ../data/countries.h:40
+msgid "Central African Republic"
+msgstr "ცენტრალური აფრიკის რესპუბლიკა"
+
+#: ../data/countries.h:41
+msgid "Chad"
+msgstr "ჩადი"
+
+#: ../data/countries.h:42
+msgid "Channel Islands"
+msgstr "კანალის კუნძულები"
+
+#: ../data/countries.h:43
+msgid "Chile"
+msgstr "ჩილე"
+
+#: ../data/countries.h:44
+msgid "China"
+msgstr "ჩინეთი"
+
+#: ../data/countries.h:45
+msgid "Hong Kong Special Administrative Region of China"
+msgstr "ჰონკონგის ადმინისტრაციის ქვეშ მყოფი ჩინური რეგიონი"
+
+#: ../data/countries.h:46
+msgid "Macau Special Administrative Region of China"
+msgstr "მაკაუს რეგიონი ჩინეთის მმართველობის ქვეშ"
+
+#: ../data/countries.h:47
+msgid "Colombia"
+msgstr "კოლუმბია"
+
+#: ../data/countries.h:48
+msgid "Comoros"
+msgstr "კომორის კუნძულები"
+
+#: ../data/countries.h:49
+msgid "Congo"
+msgstr "კონგო"
+
+#: ../data/countries.h:50
+msgid "Cook Islands"
+msgstr "კუკის კუნძულები"
+
+#: ../data/countries.h:51
+msgid "Costa Rica"
+msgstr "კოსტა რიკა"
+
+#: ../data/countries.h:52
+msgid "Côte d'Ivoire"
+msgstr "კოტ დ'ივუარი"
+
+#: ../data/countries.h:53
+msgid "Croatia"
+msgstr "ხორვატია"
+
+#: ../data/countries.h:54
+msgid "Cuba"
+msgstr "კუბა"
+
+#: ../data/countries.h:55
+msgid "Cyprus"
+msgstr "კიპროსი"
+
+#: ../data/countries.h:56
+msgid "Czech Republic"
+msgstr "ჩეხური რესპუბლიკა"
+
+#: ../data/countries.h:57
+msgid "Democratic People's Republic of Korea"
+msgstr "კორეის სახალხო დემოკრატიული რესპუბლიკა"
+
+#: ../data/countries.h:58
+msgid "Democratic Republic of the Congo"
+msgstr "კონგოს დემოკრატიული რესპუბლიკა"
+
+#: ../data/countries.h:59
+msgid "Denmark"
+msgstr "დანია"
+
+#: ../data/countries.h:60
+msgid "Djibouti"
+msgstr "ჯიბუტი"
+
+#: ../data/countries.h:61
+msgid "Dominica"
+msgstr "დომინიკა"
+
+#: ../data/countries.h:62
+msgid "Dominican Republic"
+msgstr "დომინიკური რესპუბლიკა"
+
+#: ../data/countries.h:63
+msgid "Ecuador"
+msgstr "ეკვადორი"
+
+#: ../data/countries.h:64
+msgid "Egypt"
+msgstr "ეგვიპტე"
+
+#: ../data/countries.h:65
+msgid "El Salvador"
+msgstr "ელ სალვადორი"
+
+#: ../data/countries.h:66
+msgid "Equatorial Guinea"
+msgstr "ეკვატორული გვინეა"
+
+#: ../data/countries.h:67
+msgid "Eritrea"
+msgstr "ერითრეა"
+
+#: ../data/countries.h:68
+msgid "Estonia"
+msgstr "ესტონეტი"
+
+#: ../data/countries.h:69
+msgid "Ethiopia"
+msgstr "ეთიოპია"
+
+#: ../data/countries.h:70
+msgid "Faeroe Islands"
+msgstr "ფარერის კუნძულები"
+
+#: ../data/countries.h:71
+msgid "Falkland Islands (Malvinas)"
+msgstr "ფალკლენდის კუნძულები (მალბინის)"
+
+#: ../data/countries.h:72 ../data/languages.h:48
+msgid "Fiji"
+msgstr "ფიჯი"
+
+#: ../data/countries.h:73
+msgid "Finland"
+msgstr "ფინეთი"
+
+#: ../data/countries.h:74
+msgid "France"
+msgstr "საფრანგეთი"
+
+#: ../data/countries.h:75
+msgid "French Guiana"
+msgstr "ფრანგული გვინეა"
+
+#: ../data/countries.h:76
+msgid "French Polynesia"
+msgstr "ფრანგული პოლინეზია"
+
+#: ../data/countries.h:77
+msgid "Gabon"
+msgstr "გაბონი"
+
+#: ../data/countries.h:78
+msgid "Gambia"
+msgstr "გამბია"
+
+#: ../data/countries.h:79
+msgid "Georgia"
+msgstr "საქართველო"
+
+#: ../data/countries.h:80
+msgid "Germany"
+msgstr "გერმანია"
+
+#: ../data/countries.h:81
+msgid "Ghana"
+msgstr "განა"
+
+#: ../data/countries.h:82
+msgid "Gibraltar"
+msgstr "გიბრალტარი"
+
+#: ../data/countries.h:83
+msgid "Greece"
+msgstr "საბერძნეთი"
+
+#: ../data/countries.h:84
+msgid "Greenland"
+msgstr "გრენლანდია"
+
+#: ../data/countries.h:85
+msgid "Grenada"
+msgstr "გრენადა"
+
+#: ../data/countries.h:86
+msgid "Guadeloupe"
+msgstr "გუადელუპე"
+
+#: ../data/countries.h:87
+msgid "Guam"
+msgstr "გუამი"
+
+#: ../data/countries.h:88
+msgid "Guatemala"
+msgstr "გუატემალა"
+
+#: ../data/countries.h:89
+msgid "Guinea"
+msgstr "გვინეა"
+
+#: ../data/countries.h:90
+msgid "Guinea-Bissau"
+msgstr "გუინეა-ბისო"
+
+#: ../data/countries.h:91
+msgid "Guyana"
+msgstr "გვიანა"
+
+#: ../data/countries.h:92
+msgid "Haiti"
+msgstr "ჰაიტი"
+
+#: ../data/countries.h:93
+msgid "Holy See"
+msgstr "წმინდა ზღვა"
+
+#: ../data/countries.h:94
+msgid "Honduras"
+msgstr "ჰონდურასი"
+
+#: ../data/countries.h:95
+msgid "Hungary"
+msgstr "უნგრეთი"
+
+#: ../data/countries.h:96
+msgid "Iceland"
+msgstr "ისლანდია"
+
+#: ../data/countries.h:97
+msgid "India"
+msgstr "ინდია"
+
+#: ../data/countries.h:98
+msgid "Indonesia"
+msgstr "ინდონეზია"
+
+#: ../data/countries.h:99
+msgid "Iran (Islamic Republic of)"
+msgstr "ირანი (ისლამური რესპუბლიკა)"
+
+#: ../data/countries.h:100
+msgid "Iraq"
+msgstr "ერაყი"
+
+#: ../data/countries.h:101
+msgid "Ireland"
+msgstr "ირლანდია"
+
+#: ../data/countries.h:102
+msgid "Isle of Man"
+msgstr "მანის კუნძული"
+
+#: ../data/countries.h:103
+msgid "Israel"
+msgstr "ისრაელი"
+
+#: ../data/countries.h:104
+msgid "Italy"
+msgstr "იტალია"
+
+#: ../data/countries.h:105
+msgid "Jamaica"
+msgstr "იამაიკა"
+
+#: ../data/countries.h:106
+msgid "Japan"
+msgstr "იაპონია"
+
+#: ../data/countries.h:107
+msgid "Jordan"
+msgstr "იორდანი"
+
+#: ../data/countries.h:108
+msgid "Kazakhstan"
+msgstr "ყაზახეთი"
+
+#: ../data/countries.h:109
+msgid "Kenya"
+msgstr "კენია"
+
+#: ../data/countries.h:110
+msgid "Kiribati"
+msgstr "კირიბატი"
+
+#: ../data/countries.h:111
+msgid "Kuwait"
+msgstr "ქუვეითი"
+
+#: ../data/countries.h:112
+msgid "Kyrgyzstan"
+msgstr "ყირგიზეთი"
+
+#: ../data/countries.h:113
+msgid "Lao People's Democratic Republic"
+msgstr "ლაოს დემოკრატიული რესპუბლიკა"
+
+#: ../data/countries.h:114
+msgid "Latvia"
+msgstr "ლატვია"
+
+#: ../data/countries.h:115
+msgid "Lebanon"
+msgstr "ლიბანი"
+
+#: ../data/countries.h:116
+msgid "Lesotho"
+msgstr "ლესოტო"
+
+#: ../data/countries.h:117
+msgid "Liberia"
+msgstr "ლიბერია"
+
+#: ../data/countries.h:118
+msgid "Libyan Arab Jamahiriya"
+msgstr "ლიბანის არაბული რესპუბლიკა"
+
+#: ../data/countries.h:119
+msgid "Liechtenstein"
+msgstr "ლიხტენშტეინი"
+
+#: ../data/countries.h:120
+msgid "Lithuania"
+msgstr "ლიტვა"
+
+#: ../data/countries.h:121
+msgid "Luxembourg"
+msgstr "ლუქსემბურგი"
+
+#: ../data/countries.h:122
+msgid "Madagascar"
+msgstr "მადაგასკარი"
+
+#: ../data/countries.h:123
+msgid "Malawi"
+msgstr "მალავი"
+
+#: ../data/countries.h:124
+msgid "Malaysia"
+msgstr "მალაზია"
+
+#: ../data/countries.h:125
+msgid "Maldives"
+msgstr "მალდივები"
+
+#: ../data/countries.h:126
+msgid "Mali"
+msgstr "მალი"
+
+#: ../data/countries.h:127
+msgid "Malta"
+msgstr "მალტა"
+
+#: ../data/countries.h:128
+msgid "Marshall Islands"
+msgstr "მარშალის კუნძულები"
+
+#: ../data/countries.h:129
+msgid "Martinique"
+msgstr "მარტინიკა"
+
+#: ../data/countries.h:130
+msgid "Mauritania"
+msgstr "მავრიტანია"
+
+#: ../data/countries.h:131
+msgid "Mauritius"
+msgstr "მავრიკის კუნძულები"
+
+#: ../data/countries.h:132
+msgid "Mayotte"
+msgstr "მაიოტი"
+
+#: ../data/countries.h:133
+msgid "Mexico"
+msgstr "მექსიკა"
+
+#: ../data/countries.h:134
+msgid "Micronesia (Federated States of)"
+msgstr "მიკრონეზიის ფედერაცია"
+
+#: ../data/countries.h:135
+msgid "Monaco"
+msgstr "მონაკო"
+
+#: ../data/countries.h:136
+msgid "Mongolia"
+msgstr "მონღოლეთი"
+
+#: ../data/countries.h:137
+msgid "Montserrat"
+msgstr "მონსერატტი"
+
+#: ../data/countries.h:138
+msgid "Morocco"
+msgstr "მოროკო"
+
+#: ../data/countries.h:139
+msgid "Mozambique"
+msgstr "მოზამბიკი"
+
+#: ../data/countries.h:140
+msgid "Myanmar"
+msgstr "მიანმა"
+
+#: ../data/countries.h:141
+msgid "Namibia"
+msgstr "ნამიბია"
+
+#: ../data/countries.h:142 ../data/languages.h:113
+msgid "Nauru"
+msgstr "ნაურუ"
+
+#: ../data/countries.h:143
+msgid "Nepal"
+msgstr "ნეპალი"
+
+#: ../data/countries.h:144
+msgid "Netherlands"
+msgstr "ჰოლანდია"
+
+#: ../data/countries.h:145
+msgid "Netherlands Antilles"
+msgstr "დანიის ანტილები"
+
+#: ../data/countries.h:146
+msgid "New Caledonia"
+msgstr "ახალი კალედონია"
+
+#: ../data/countries.h:147
+msgid "New Zealand"
+msgstr "ახალი ზელანდია"
+
+#: ../data/countries.h:148
+msgid "Nicaragua"
+msgstr "ნიკარაგუა"
+
+#: ../data/countries.h:149
+msgid "Niger"
+msgstr "ნიგერი"
+
+#: ../data/countries.h:150
+msgid "Nigeria"
+msgstr "ნიგერია"
+
+#: ../data/countries.h:151
+msgid "Niue"
+msgstr "ნიუე"
+
+#: ../data/countries.h:152
+msgid "Norfolk Island"
+msgstr "ნორფოლკის კუნძული"
+
+#: ../data/countries.h:153
+msgid "Northern Mariana Islands"
+msgstr "ჩრდილოეთ მარიანის კუნძულები"
+
+#: ../data/countries.h:154
+msgid "Norway"
+msgstr "ნორვეგია"
+
+#: ../data/countries.h:155
+msgid "Occupied Palestinian Territory"
+msgstr "პალესტინის დაკავებული ტერიტორია"
+
+#: ../data/countries.h:156
+msgid "Oman"
+msgstr "ომანი"
+
+#: ../data/countries.h:157
+msgid "Pakistan"
+msgstr "პაკისტანი"
+
+#: ../data/countries.h:158
+msgid "Palau"
+msgstr "პალაუ"
+
+#: ../data/countries.h:159
+msgid "Panama"
+msgstr "პანამა"
+
+#: ../data/countries.h:160
+msgid "Papua New Guinea"
+msgstr "პაპუა ახალი გვინეა"
+
+#: ../data/countries.h:161
+msgid "Paraguay"
+msgstr "პარაგუაი"
+
+#: ../data/countries.h:162
+msgid "Peru"
+msgstr "პერუ"
+
+#: ../data/countries.h:163
+msgid "Philippines"
+msgstr "ფილიპინები"
+
+#: ../data/countries.h:164
+msgid "Pitcairn"
+msgstr "პიტკაირნი"
+
+#: ../data/countries.h:165
+msgid "Poland"
+msgstr "პოლონეთი"
+
+#: ../data/countries.h:166
+msgid "Portugal"
+msgstr "პორტუგალია"
+
+#: ../data/countries.h:167
+msgid "Puerto Rico"
+msgstr "პუერტო რიკა"
+
+#: ../data/countries.h:168
+msgid "Qatar"
+msgstr "ქათარი"
+
+#: ../data/countries.h:169
+msgid "Republic of Korea"
+msgstr "კორეის რესპუბლიკა"
+
+#: ../data/countries.h:170
+msgid "Republic of Moldova"
+msgstr "მოლდოვეთის რესპუბლიკა"
+
+#: ../data/countries.h:171
+msgid "Réunion"
+msgstr "რეუნიონი"
+
+#: ../data/countries.h:172
+msgid "Romania"
+msgstr "რუმინეთი"
+
+#: ../data/countries.h:173
+msgid "Russian Federation"
+msgstr "რუსული ფედერაცია"
+
+#: ../data/countries.h:174
+msgid "Rwanda"
+msgstr "რუანდა"
+
+#: ../data/countries.h:175
+msgid "Saint Helena"
+msgstr "წმინდა ელენა"
+
+#: ../data/countries.h:176
+msgid "Saint Kitts and Nevis"
+msgstr "სენთ ქისთი და ნევისი"
+
+#: ../data/countries.h:177
+msgid "Saint Lucia"
+msgstr "სენთ ლუსია"
+
+#: ../data/countries.h:178
+msgid "Saint Pierre and Miquelon"
+msgstr "სან-პიერი და მიკელონი"
+
+#: ../data/countries.h:179
+msgid "Saint Vincent and the Grenadines"
+msgstr "სენთ ვინსენთი და გრენადინები"
+
+#: ../data/countries.h:180
+msgid "Samoa"
+msgstr "სამოა"
+
+#: ../data/countries.h:181
+msgid "San Marino"
+msgstr "სან მარინო"
+
+#: ../data/countries.h:182
+msgid "Sao Tome and Principe"
+msgstr "სან ტომე და პრინსიპი"
+
+#: ../data/countries.h:183
+msgid "Saudi Arabia"
+msgstr "საუდიის არაბეთი"
+
+#: ../data/countries.h:184
+msgid "Senegal"
+msgstr "სენეგალი"
+
+#: ../data/countries.h:185
+msgid "Serbia and Montenegro"
+msgstr "სერბია და მონტენეგრო"
+
+#: ../data/countries.h:186
+msgid "Seychelles"
+msgstr "სეიშელის კუნძულები"
+
+#: ../data/countries.h:187
+msgid "Sierra Leone"
+msgstr "სიერა ლეონი"
+
+#: ../data/countries.h:188
+msgid "Singapore"
+msgstr "სინგაპური"
+
+#: ../data/countries.h:189
+msgid "Slovakia"
+msgstr "სლოვაკეთი"
+
+#: ../data/countries.h:190
+msgid "Slovenia"
+msgstr "სლოვენია"
+
+#: ../data/countries.h:191
+msgid "Solomon Islands"
+msgstr "სოლომონის კუნძულები"
+
+#: ../data/countries.h:192
+msgid "Somalia"
+msgstr "სომალია"
+
+#: ../data/countries.h:193
+msgid "South Africa"
+msgstr "სამხრეთ აფრიკა"
+
+#: ../data/countries.h:194
+msgid "Spain"
+msgstr "ესპანეთი"
+
+#: ../data/countries.h:195
+msgid "Sri Lanka"
+msgstr "შრი ლანკი"
+
+#: ../data/countries.h:196
+msgid "Sudan"
+msgstr "სუდანი"
+
+#: ../data/countries.h:197
+msgid "Suriname"
+msgstr "სურინამი"
+
+#: ../data/countries.h:198
+msgid "Svalbard and Jan Mayen Islands"
+msgstr "სვალბარდი და იან მაისენის კუნძულები"
+
+#: ../data/countries.h:199
+msgid "Swaziland"
+msgstr "სვაზილენდი"
+
+#: ../data/countries.h:200
+msgid "Sweden"
+msgstr "შვედეთი"
+
+#: ../data/countries.h:201
+msgid "Switzerland"
+msgstr "შვეიცარია"
+
+#: ../data/countries.h:202
+msgid "Syrian Arab Republic"
+msgstr "სირიის არაბული რესპუბლიკა"
+
+#: ../data/countries.h:203
+msgid "Tajikistan"
+msgstr "ტაჯიკეთი"
+
+#: ../data/countries.h:204
+msgid "Thailand"
+msgstr "ტაილანდი"
+
+#: ../data/countries.h:205
+msgid "Macedonia, Republic of"
+msgstr "მაკედონიის რესპუბლიკა"
+
+#: ../data/countries.h:206
+msgid "Timor-Leste"
+msgstr "ტიმორ-ლესტე"
+
+#: ../data/countries.h:207
+msgid "Togo"
+msgstr "ტოგო"
+
+#: ../data/countries.h:208
+msgid "Tokelau"
+msgstr "ტოკელაუ"
+
+#: ../data/countries.h:209 ../data/languages.h:166
+msgid "Tonga"
+msgstr "ტონგა"
+
+#: ../data/countries.h:210
+msgid "Trinidad and Tobago"
+msgstr "თრინიდადი და თობაგო"
+
+#: ../data/countries.h:211
+msgid "Tunisia"
+msgstr "ტუნიზია"
+
+#: ../data/countries.h:212
+msgid "Turkey"
+msgstr "თურქეთი"
+
+#: ../data/countries.h:213
+msgid "Turkmenistan"
+msgstr "თურქმენეთი"
+
+#: ../data/countries.h:214
+msgid "Turks and Caicos Islands"
+msgstr "თურქეთის და ქაიკოს კუნძულები"
+
+#: ../data/countries.h:215
+msgid "Tuvalu"
+msgstr "ტუვალუ"
+
+#: ../data/countries.h:216
+msgid "Uganda"
+msgstr "უგანდა"
+
+#: ../data/countries.h:217
+msgid "Ukraine"
+msgstr "უკრაინა"
+
+#: ../data/countries.h:218
+msgid "United Arab Emirates"
+msgstr "შეერთებული არაბული ემირატები"
+
+#: ../data/countries.h:219
+msgid "United Kingdom of Great Britain and Northern Ireland"
+msgstr "დიდი ბრიტანეთის და ჩრდილო ირლანდიის სამეფო"
+
+#: ../data/countries.h:220
+msgid "United Republic of Tanzania"
+msgstr "ტანზანიის შეერთებული რესპუბლიკა"
+
+#: ../data/countries.h:221
+msgid "United States of America"
+msgstr "ამერიკის შეერთებული შტატები"
+
+#: ../data/countries.h:222
+msgid "United States Virgin Islands"
+msgstr "აშშ-ს ვირჯინიის კუნძულები"
+
+#: ../data/countries.h:223
+msgid "Uruguay"
+msgstr "ურუგვაი"
+
+#: ../data/countries.h:224
+msgid "Uzbekistan"
+msgstr "უზბეკეთი"
+
+#: ../data/countries.h:225
+msgid "Vanuatu"
+msgstr "ვანუატუ"
+
+#: ../data/countries.h:226
+msgid "Venezuela"
+msgstr "ვენესუელა"
+
+#: ../data/countries.h:227
+msgid "Viet Nam"
+msgstr "ვიეტნამი"
+
+#: ../data/countries.h:228
+msgid "Wallis and Futuna Islands"
+msgstr "ვალიშის და ფუტუნას კუნძულები"
+
+#: ../data/countries.h:229
+msgid "Western Sahara"
+msgstr "დასავლეთ სახარა"
+
+#: ../data/countries.h:230
+msgid "Yemen"
+msgstr "იემენი"
+
+#: ../data/countries.h:231
+msgid "Zambia"
+msgstr "ზამბია"
+
+#: ../data/countries.h:232
+msgid "Zimbabwe"
+msgstr "ზიმბაბვე"
+
+#: ../data/countries.h:233
+msgid "Antarctica"
+msgstr "ანტარქტიკა"
+
+#: ../data/countries.h:234
+msgid "Bouvet Island"
+msgstr "ბუვეს კუნძული"
+
+#: ../data/countries.h:235
+msgid "British Indian Ocean Territory"
+msgstr "ინდოეთის ოკეანეს ბრიტანული ტერიტორიები"
+
+#: ../data/countries.h:236
+msgid "Christmas Island"
+msgstr "შობის კუნძული"
+
+#: ../data/countries.h:237
+msgid "Cocos (Keeling) Islands"
+msgstr "კოკოსიური(კილინგის)კუნძულები"
+
+#: ../data/countries.h:238
+msgid "French Southern Territories"
+msgstr "სამხრეთ·ფრანგული·ტერიტორიები"
+
+#: ../data/countries.h:239
+msgid "Heard Island and McDonald Islands"
+msgstr "ჰერდისა და მაკდონალდის კუნძულები"
+
+#: ../data/countries.h:240
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "სამხრეთ ჯორჯია და სამხრეთ სენდვიჩის კუნძულები"
+
+#: ../data/countries.h:241
+msgid "Taiwan"
+msgstr "ტაივანი"
+
+#: ../data/countries.h:242
+msgid "United States Minor Outlying Islands"
+msgstr "აშშ-ს მცირე გარე კუნძულები"
+
+#: ../data/languages.h:2
+msgid "Afar"
+msgstr "აფარ"
+
+#: ../data/languages.h:3
+msgid "Abkhazian"
+msgstr "აფხაზური"
+
+#: ../data/languages.h:4
+msgid "Avestan"
+msgstr "ავესტა"
+
+#: ../data/languages.h:5
+msgid "Afrikaans"
+msgstr "აფრიკაანსი"
+
+#: ../data/languages.h:6
+msgid "Akan"
+msgstr "აკან"
+
+#: ../data/languages.h:7
+msgid "Amharic"
+msgstr "არამეული"
+
+#: ../data/languages.h:8
+msgid "Aragonese"
+msgstr "არაგონული"
+
+#: ../data/languages.h:9
+msgid "Arabic"
+msgstr "არაბული"
+
+#: ../data/languages.h:10
+msgid "Assamese"
+msgstr "ასამური"
+
+#: ../data/languages.h:11
+msgid "Asturian"
+msgstr "ასტურიული"
+
+#: ../data/languages.h:12
+msgid "Avaric"
+msgstr "ავარული"
+
+#: ../data/languages.h:13
+msgid "Aymara"
+msgstr "აიმარა"
+
+#: ../data/languages.h:14
+msgid "Azerbaijani"
+msgstr "აზერბაიჯანული"
+
+#: ../data/languages.h:15
+msgid "Bashkir"
+msgstr "ბაშკირული"
+
+#: ../data/languages.h:16
+msgid "Byelorussian"
+msgstr "ბიელორუსული"
+
+#: ../data/languages.h:17
+msgid "Bulgarian"
+msgstr "ბულგარული"
+
+#: ../data/languages.h:18
+msgid "Bihari"
+msgstr "ბიჰარი"
+
+#: ../data/languages.h:19
+msgid "Bislama"
+msgstr "ბისმუთი"
+
+#: ../data/languages.h:20
+msgid "Bambara"
+msgstr "ბამბარა"
+
+#: ../data/languages.h:21
+msgid "Bengali; Bangla"
+msgstr "ბენგალი"
+
+#: ../data/languages.h:22
+msgid "Tibetan"
+msgstr "ტიბეტური"
+
+#: ../data/languages.h:23
+msgid "Breton"
+msgstr "ბრეტონული"
+
+#: ../data/languages.h:24
+msgid "Bosnian"
+msgstr "ბოსნიური"
+
+#: ../data/languages.h:25
+msgid "Catalan"
+msgstr "კატალანური"
+
+#: ../data/languages.h:26
+msgid "Chechen"
+msgstr "ჩეჩნური"
+
+#: ../data/languages.h:27
+msgid "Chamorro"
+msgstr "ჩამორო"
+
+#: ../data/languages.h:28
+msgid "Corsican"
+msgstr "კორსიკული"
+
+#: ../data/languages.h:29
+msgid "Cree"
+msgstr "ქრი"
+
+#: ../data/languages.h:30
+msgid "Czech"
+msgstr "ჩეხური"
+
+#: ../data/languages.h:31
+msgid "Old Church Slavonic"
+msgstr "ძველი საეკლესიო სლავური"
+
+#: ../data/languages.h:32
+msgid "Chuvash"
+msgstr "ჩუვაშური"
+
+#: ../data/languages.h:33
+msgid "Welsh"
+msgstr "შოტლანდიური"
+
+#: ../data/languages.h:34
+msgid "Danish"
+msgstr "დანიური"
+
+#: ../data/languages.h:35
+msgid "German"
+msgstr "გერმანული"
+
+#: ../data/languages.h:36
+msgid "Divehi"
+msgstr "დივეჰი"
+
+#: ../data/languages.h:37
+msgid "Dzongkha"
+msgstr "ჯონკა"
+
+#: ../data/languages.h:38
+msgid "Ewe"
+msgstr "ივი"
+
+#: ../data/languages.h:39
+msgid "Greek, Modern"
+msgstr "ბერძნული"
+
+#: ../data/languages.h:41
+msgid "Esperanto"
+msgstr "ესპერანტო"
+
+#: ../data/languages.h:42
+msgid "Spanish"
+msgstr "ესპანური"
+
+#: ../data/languages.h:43
+msgid "Estonian"
+msgstr "ესტონური"
+
+#: ../data/languages.h:44
+msgid "Basque"
+msgstr "ბასკური"
+
+#: ../data/languages.h:45
+msgid "Persian"
+msgstr "სპარსული"
+
+#: ../data/languages.h:46
+msgid "Fulah"
+msgstr "ფულახ"
+
+#: ../data/languages.h:47
+msgid "Finnish"
+msgstr "ფინური"
+
+#: ../data/languages.h:49
+msgid "Faroese"
+msgstr "ფარიესი"
+
+#: ../data/languages.h:50
+msgid "French"
+msgstr "ფრანგული"
+
+#: ../data/languages.h:51
+msgid "Frisian"
+msgstr "ფრიზიული"
+
+#: ../data/languages.h:52
+msgid "Irish"
+msgstr "ირლანდიური"
+
+#: ../data/languages.h:53
+msgid "Scots Gaelic"
+msgstr "შოტლანდიური გაელური"
+
+#: ../data/languages.h:54
+msgid "Galician"
+msgstr "გალიციური"
+
+#: ../data/languages.h:55
+msgid "Guarani"
+msgstr "გუარანი"
+
+#: ../data/languages.h:56
+msgid "Gujarati"
+msgstr "გუჯარათი"
+
+#: ../data/languages.h:57
+msgid "Manx"
+msgstr "მანქსი"
+
+#: ../data/languages.h:58
+msgid "Hausa"
+msgstr "ჰაუსა"
+
+#: ../data/languages.h:59
+msgid "Hebrew"
+msgstr "ივრითი"
+
+#: ../data/languages.h:60
+msgid "Hindi"
+msgstr "ინდური"
+
+#: ../data/languages.h:61
+msgid "Hiri Motu"
+msgstr "ხირიმოტუ"
+
+#: ../data/languages.h:62
+msgid "Croatian"
+msgstr "ხორვატიული"
+
+#: ../data/languages.h:63
+msgid "Hungarian"
+msgstr "უნგრული"
+
+#: ../data/languages.h:64
+msgid "Armenian"
+msgstr "სომხური"
+
+#: ../data/languages.h:65
+msgid "Herero"
+msgstr "გერერო"
+
+#: ../data/languages.h:66
+msgid "Interlingua"
+msgstr "ინტერლინგვა"
+
+#: ../data/languages.h:67
+msgid "Indonesian"
+msgstr "ინდონეზიური"
+
+#: ../data/languages.h:68
+msgid "Interlingue"
+msgstr "ინტერლინგუე"
+
+#: ../data/languages.h:69
+msgid "Igbo"
+msgstr "იგბო"
+
+#: ../data/languages.h:70
+msgid "Sichuan Yi"
+msgstr "სიჩუანური"
+
+#: ../data/languages.h:71
+msgid "Inupiak"
+msgstr "ინუპიაკ"
+
+#: ../data/languages.h:72
+msgid "Ido"
+msgstr "იდო"
+
+#: ../data/languages.h:73
+msgid "Icelandic"
+msgstr "ისლანდიური"
+
+#: ../data/languages.h:74
+msgid "Italian"
+msgstr "იტალიური"
+
+#: ../data/languages.h:75
+msgid "Inuktitut"
+msgstr "ინუკტიტუტი"
+
+#: ../data/languages.h:76
+msgid "Japanese"
+msgstr "იაპონური"
+
+#: ../data/languages.h:77
+msgid "Javanese"
+msgstr "ინდონეზიური"
+
+#: ../data/languages.h:78
+msgid "Georgian"
+msgstr "ქართული"
+
+#: ../data/languages.h:79
+msgid "Kongo"
+msgstr "კონგო"
+
+#: ../data/languages.h:80
+msgid "Kikuyu"
+msgstr "კიკუიუ"
+
+#: ../data/languages.h:81
+msgid "Kuanyama"
+msgstr "კუნიამა"
+
+#: ../data/languages.h:82
+msgid "Kazakh"
+msgstr "ყაზახური"
+
+#: ../data/languages.h:83
+msgid "Greenlandic"
+msgstr "გრენლანდიური"
+
+#: ../data/languages.h:84
+msgid "Khmer"
+msgstr "ქხმერული"
+
+#: ../data/languages.h:85
+msgid "Kannada"
+msgstr "კანადური"
+
+#: ../data/languages.h:86
+msgid "Korean"
+msgstr "კორეული"
+
+#: ../data/languages.h:87
+msgid "Kanuri"
+msgstr "კანური"
+
+#: ../data/languages.h:88
+msgid "Kashmiri"
+msgstr "ქაშმირული"
+
+#: ../data/languages.h:89
+msgid "Kurdish"
+msgstr "ქურთული"
+
+#: ../data/languages.h:90
+msgid "Komi"
+msgstr "კომი"
+
+#: ../data/languages.h:91
+msgid "Cornish"
+msgstr "კორნიული"
+
+#: ../data/languages.h:92
+msgid "Kirghiz"
+msgstr "ყირღიზული"
+
+#: ../data/languages.h:93
+msgid "Latin"
+msgstr "ლათინური"
+
+#: ../data/languages.h:94
+msgid "Luxembourgish"
+msgstr "ლუქსემბურგული"
+
+#: ../data/languages.h:95
+msgid "Ganda"
+msgstr "განდა"
+
+#: ../data/languages.h:96
+msgid "Limburgan"
+msgstr "ლიმბურგანი"
+
+#: ../data/languages.h:97
+msgid "Lingala"
+msgstr "ლინგალა"
+
+#: ../data/languages.h:98
+msgid "Lao"
+msgstr "ლაო"
+
+#: ../data/languages.h:99
+msgid "Lithuanian"
+msgstr "ლიტვური"
+
+#: ../data/languages.h:100
+msgid "Luba-Katanga"
+msgstr "ლუბა-კატანგა"
+
+#: ../data/languages.h:101
+msgid "Latvian"
+msgstr "ლატვიური"
+
+#: ../data/languages.h:102
+msgid "Malagasy"
+msgstr "მალგასი"
+
+#: ../data/languages.h:103
+msgid "Marshallese"
+msgstr "მარშალური"
+
+#: ../data/languages.h:104
+msgid "Maori"
+msgstr "მაორი"
+
+#: ../data/languages.h:105
+msgid "Macedonian"
+msgstr "მაკედონიური"
+
+#: ../data/languages.h:106
+msgid "Malayalam"
+msgstr "მალაიალამური"
+
+#: ../data/languages.h:107
+msgid "Mongolian"
+msgstr "მონღოლური"
+
+#: ../data/languages.h:108
+msgid "Moldavian"
+msgstr "მოლდავური"
+
+#: ../data/languages.h:109
+msgid "Marathi"
+msgstr "მარატი"
+
+#: ../data/languages.h:110
+msgid "Malay"
+msgstr "მალაიზიური"
+
+#: ../data/languages.h:111
+msgid "Maltese"
+msgstr "მალტური"
+
+#: ../data/languages.h:112
+msgid "Burmese"
+msgstr "ბურმესი"
+
+#: ../data/languages.h:114
+msgid "Norwegian Bokmal"
+msgstr "ნორვეგიული"
+
+#: ../data/languages.h:115
+msgid "North Ndebele"
+msgstr "ჩრდილოეთ ნდელე"
+
+#: ../data/languages.h:116
+msgid "Nepali"
+msgstr "ნეპალური"
+
+#: ../data/languages.h:117
+msgid "Ndonga"
+msgstr "ნდონგა"
+
+#: ../data/languages.h:118
+msgid "Dutch"
+msgstr "ჰოლანდიური"
+
+#: ../data/languages.h:119
+msgid "Norwegian Nynorsk"
+msgstr "ნორვეგიული"
+
+#: ../data/languages.h:120
+msgid "Norwegian"
+msgstr "ნორვეგიული"
+
+#: ../data/languages.h:121
+msgid "South Ndebele"
+msgstr "სამხრეთ ნდელე"
+
+#: ../data/languages.h:122
+msgid "Navajo"
+msgstr "ნავახო"
+
+#: ../data/languages.h:123
+msgid "Occitan"
+msgstr "ოსიტანი"
+
+#: ../data/languages.h:124
+msgid "Ojibwa"
+msgstr "ოჯიბვა"
+
+#: ../data/languages.h:125
+msgid "Oromo"
+msgstr "ორომო"
+
+#: ../data/languages.h:126
+msgid "Oriya"
+msgstr "ორიული"
+
+#: ../data/languages.h:127
+msgid "Ossetian"
+msgstr "ოსური"
+
+#: ../data/languages.h:128
+msgid "Punjabi"
+msgstr "პანჯაბი"
+
+#: ../data/languages.h:129
+msgid "Pali"
+msgstr "პალი"
+
+#: ../data/languages.h:130
+msgid "Polish"
+msgstr "პოლონური"
+
+#: ../data/languages.h:131
+msgid "Pushto"
+msgstr "პუშტუ"
+
+#: ../data/languages.h:132
+msgid "Portuguese"
+msgstr "პორტუგალიური"
+
+#: ../data/languages.h:133
+msgid "Quechua"
+msgstr "კეჩუა"
+
+#: ../data/languages.h:134
+msgid "Rhaeto-Romance"
+msgstr "რეტო-რომანული"
+
+#: ../data/languages.h:135
+msgid "Rundi"
+msgstr "რუნდი"
+
+#: ../data/languages.h:136
+msgid "Romanian"
+msgstr "რუმინული"
+
+#: ../data/languages.h:137
+msgid "Russian"
+msgstr "რუსული"
+
+#: ../data/languages.h:138
+msgid "Kinyarwanda"
+msgstr "კინიარვანდა"
+
+#: ../data/languages.h:139
+msgid "Sanskrit"
+msgstr "სანსკრიტი"
+
+#: ../data/languages.h:140
+msgid "Sardinian"
+msgstr "სარდინიული"
+
+#: ../data/languages.h:141
+msgid "Sindhi"
+msgstr "სინდჰი"
+
+#: ../data/languages.h:142
+msgid "Northern Sami"
+msgstr "ჩრიდილოეთ სამი"
+
+#: ../data/languages.h:143
+msgid "Sango"
+msgstr "სანგო"
+
+#: ../data/languages.h:144
+msgid "Serbo-Croatian"
+msgstr "სერბო-ხორვატიული"
+
+#: ../data/languages.h:145
+msgid "Sinhalese"
+msgstr "სინჰალური"
+
+#: ../data/languages.h:146
+msgid "Slovak"
+msgstr "სლოვაკური"
+
+#: ../data/languages.h:147
+msgid "Slovenian"
+msgstr "სლოვენური"
+
+#: ../data/languages.h:148
+msgid "Samoan"
+msgstr "სამოური"
+
+#: ../data/languages.h:149
+msgid "Shona"
+msgstr "შონა"
+
+#: ../data/languages.h:150
+msgid "Somali"
+msgstr "სომალური"
+
+#: ../data/languages.h:151
+msgid "Albanian"
+msgstr "ალბანური"
+
+#: ../data/languages.h:152
+msgid "Serbian"
+msgstr "სერბული"
+
+#: ../data/languages.h:153
+msgid "Swati"
+msgstr "სვატი"
+
+#: ../data/languages.h:154
+msgid "Southern Sotho"
+msgstr "სამხრეთ სოთო"
+
+#: ../data/languages.h:155
+msgid "Sundanese"
+msgstr "სუდანური"
+
+#: ../data/languages.h:156
+msgid "Swedish"
+msgstr "შვედური"
+
+#: ../data/languages.h:157
+msgid "Swahili"
+msgstr "სუახილი"
+
+#: ../data/languages.h:158
+msgid "Tamil"
+msgstr "თამილური"
+
+#: ../data/languages.h:159
+msgid "Telugu"
+msgstr "თელუგუ"
+
+#: ../data/languages.h:160
+msgid "Tajik"
+msgstr "ტაჯიკური"
+
+#: ../data/languages.h:161
+msgid "Thai"
+msgstr "ტაილანდური"
+
+#: ../data/languages.h:162
+msgid "Tigrinya"
+msgstr "ტიგრინია"
+
+#: ../data/languages.h:163
+msgid "Turkmen"
+msgstr "თურქმენული"
+
+#: ../data/languages.h:164
+msgid "Tagalog"
+msgstr "ტაგალოგი"
+
+#: ../data/languages.h:165
+msgid "Tswana"
+msgstr "ტსვანა"
+
+#: ../data/languages.h:167
+msgid "Turkish"
+msgstr "თურქული"
+
+#: ../data/languages.h:168
+msgid "Tsonga"
+msgstr "ტსონგა"
+
+#: ../data/languages.h:169
+msgid "Tatar"
+msgstr "თათრული"
+
+#: ../data/languages.h:170
+msgid "Twi"
+msgstr "ტუია"
+
+#: ../data/languages.h:171
+msgid "Tahitian"
+msgstr "ტაიტური"
+
+#: ../data/languages.h:172
+msgid "Uighur"
+msgstr "უიგური"
+
+#: ../data/languages.h:173
+msgid "Ukrainian"
+msgstr "უკრაინული"
+
+#: ../data/languages.h:174
+msgid "Urdu"
+msgstr "ურდუ"
+
+#: ../data/languages.h:175
+msgid "Uzbek"
+msgstr "უზბეკური"
+
+#: ../data/languages.h:176
+msgid "Venda"
+msgstr "ვენდა"
+
+#: ../data/languages.h:177
+msgid "Vietnamese"
+msgstr "ვიეტნამური"
+
+#: ../data/languages.h:178
+msgid "Volapuk"
+msgstr "ვოლაპუკი"
+
+#: ../data/languages.h:179
+msgid "Walloon"
+msgstr "ვალონური"
+
+#: ../data/languages.h:180
+msgid "Wolof"
+msgstr "ვოლოფი"
+
+#: ../data/languages.h:181
+msgid "Xhosa"
+msgstr "ქსოსა"
+
+#: ../data/languages.h:182
+msgid "Yiddish"
+msgstr "იდიში"
+
+#: ../data/languages.h:183
+msgid "Yoruba"
+msgstr "იორუბა"
+
+#: ../data/languages.h:184
+msgid "Zhuang"
+msgstr "ზუანგი"
+
+#: ../data/languages.h:185
+msgid "Chinese"
+msgstr "ჩინური"
+
+#: ../data/languages.h:186
+msgid "Zulu"
+msgstr "ზულუ"
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr ""
+
+#: ../gnome-language-selector:28
+msgid "You are not root"
+msgstr ""
+
+#: ../gnome-language-selector:29
+msgid "Please run this software with administrative rights."
+msgstr ""
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr ""
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr ""
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr ""
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr ""
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr ""
+
+#: ../fontconfig-voodoo:67
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr ""
+
+#: ../fontconfig-voodoo:80
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr ""
+
+#~ msgid "Translations"
+#~ msgstr "თარგმანი"
+
+#~ msgid "Writing Aids"
+#~ msgstr "ლინგვისტიკა"
+
+#~ msgid "Update language support?"
+#~ msgstr "შევასრულო ენის მხარდაჭერის განახლება ?"
+
+#~ msgid ""
+#~ "Some packages for full language support are not installed on your system. "
+#~ "Do you want to install them now?"
+#~ msgstr ""
+#~ "ვერ ვპოულობ ენის სრულყოფილი მხარდაჭერის პაკეტებს სისტემაში. გნებავთ მათი "
+#~ "მყისვე ჩადგმა ?"
+
+#~ msgid "Remind me again"
+#~ msgstr "შემახსენე მომავალში"
+
+#~ msgid "Install now"
+#~ msgstr "მყისვე დაყენება"
+
+#~ msgid "Internal error"
+#~ msgstr "შიდა შეცდომა"
+
+#~ msgid ""
+#~ "The internal cache couldn't be cleaned. Please report this as a error on "
+#~ "bugzilla.ubuntu.com."
+#~ msgstr ""
+#~ "შეუძლებელია შიდა შეცდომის შესწორება. გთხოვთ მიწეროთ უბუნტუს bugzilla."
+#~ "ubuntu.com მისამართზე."
+
+#~ msgid "Can not apply changes"
+#~ msgstr "შეუძლებელია ცვლილებების დამტკიცება"
+
+#~ msgid ""
+#~ "Some packages for full language support can't be installed on your "
+#~ "system. This usually means there is something wrong in the ubuntu archive "
+#~ "or with your 'apt' software settings."
+#~ msgstr ""
+#~ "ვერ იდგმება ზოგიერთი პაკეტი ენის სრული მხარდაჭერისთვის. ეს იმას ნიშნავს "
+#~ "რომ რაღაცა სჭირს თქვენს უბუნტუ არქივს ან მოიშალა apt მენეჯერის "
+#~ "პარამეტრები."
+
+#~ msgid "Unable to get exclusive lock"
+#~ msgstr "შეუძლებელია დაკეტვა"
+
+#~ msgid ""
+#~ "This usually means that another package management application (like apt-"
+#~ "get or aptitude) already running. Please close that application first"
+#~ msgstr ""
+#~ "ეტყობა რომ ჩართულია ერთდროულად ორი 'პროგრამების მენეჯერი' (მაგალითად apt-"
+#~ "get ან aptitude). გთხოვთ დახურეთ ერთ-ერთი მათგანი"
+
+#~ msgid "Package database inconsitent"
+#~ msgstr "პროგრამების მონაცემთა ბაზა დაზიანებულია"
+
+#~ msgid ""
+#~ "The package database on your system is in a inconsistent state (you have "
+#~ "broken packages on your system). It is not possible to continue. Please "
+#~ "use synaptic or apt-get to fix this first."
+#~ msgstr ""
+#~ "პროგრამების მონაცემთა ბაზა შეიცავს შეცდომებს (სისტემის ზოგიერთი პროგრამა "
+#~ "დაზიანებულია). შეუძლებელია გაგრძელება. გთხოვთ, პრობლემების მოსაგვარებლად."
+#~ "გამოიყენეთ synaptic ან apt-get."
+
+#~ msgid "<big><b>Reading available languages</b></big>"
+#~ msgstr "<big><b>არსებული ენების შემოწმება</b></big>"
+
+#~ msgid "Default language for new accounts and the login screen:"
+#~ msgstr "ნაგულისხმევი ენა კომპიუტერის მომხმარებლებისთვის:"
+
+#~ msgid ""
+#~ "Reading information about the available languages. Depending on the speed "
+#~ "of your computer this may take a bit."
+#~ msgstr "იკითხება ინფორმაცია მხარდაჭერილი ენების შესახებ. გთხოვთ მოითმინოთ."
+
+#~ msgid ""
+#~ "Translations include menus, dialogs and help. Writing aids include "
+#~ "dictionaries, grammar checkers and input methods. Please note, some "
+#~ "languages don't provide translations or wirting aids."
+#~ msgstr ""
+#~ "თარგმანის პაკეტი წარმოადგენს გრაფიკული გარსის, დახმარების და საინფორმაციო "
+#~ "შეტყობინებების ინტერნაციონალიზაციის შესაძლებლობას. ლინგვისტიკა, "
+#~ "წარმოადგენს მართლწერის მეთოდების და მართლწერისშემამოწმებელი პროგრამების "
+#~ "პაკეტს."
+
+#~ msgid "Install/remove language support"
+#~ msgstr "ენის მხარდაჭერის ჩადგმა/წაშლა"
+
+#~ msgid "Language Selector"
+#~ msgstr "ენის მხარდაჭერა"

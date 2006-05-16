@@ -72,13 +72,17 @@ class QtLanguageSelector(QtLanguageSelectorGUI,LanguageSelectorBase):
         lock.release()
 
     def onPushButtonOk(self):
-        print "onPushButtonOk(self)"
+        #print "onPushButtonOk(self)"
 
         # update the default language box
         lang = self.comboBoxDefaultLanguage.currentText()
         new_locale = ("%s"%lang)
-        new_code = self._localeinfo.localeToCodeMap[new_locale]
-        self.setSystemDefaultLanguage(new_code)
+        try:
+            new_code = self._localeinfo.localeToCodeMap[new_locale]
+            self.setSystemDefaultLanguage(new_code)
+        except KeyError:
+            print "ERROR: can set new_locale: '%s'"%new_locale
+            pass
 
         # see what needs to be installed
         elm = self.listViewLanguages.firstChild()

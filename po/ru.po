@@ -1,0 +1,1912 @@
+# Russian translation for language-selector
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"PO-Revision-Date: 2006-05-12 12:27+0000\n"
+"Last-Translator: Roman Kalashnikov <cargo200@nm.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
+msgid "Language"
+msgstr "Язык"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
+msgid "Support"
+msgstr "Поддержка"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
+msgid "The language support is not installed completely"
+msgstr "Поддержка языка установлена не полностью"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+msgid ""
+"Not all translations or writing aids, that are available for the supported "
+"languages on your system, are installed."
+msgstr ""
+"Установлены не все переводы или методы ввода, доступные для присутствующих в "
+"вашей системе языков."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
+msgid "_Remind Me Again"
+msgstr "_Повторить мне еще"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
+msgid "_Install"
+msgstr "_Установить"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
+msgid "Details"
+msgstr "Детали"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
+msgid "Could not install the selected language support"
+msgstr "Не удалось установить выбранную локализацию"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
+msgstr ""
+"Похоже на ошибку в этом приложении. Пожалуйста, оставьте на странице https://"
+"launchpad.net/bugs/bugs/+package/ сообщение об ошибке в 'language-selector'."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
+msgid "Could not install the full language support"
+msgstr "Не удалось установить локализацию полностью"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the menu \"Adminstration\"."
+msgstr ""
+"Обычно это происходит в результате ошибки в архиве программ или менеджере "
+"архива. Проверьте настройки в меню \"Администрирование\"."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
+msgid "The list of available languages on the system has been updated."
+msgstr "Обновлен список доступных в системе языков."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+msgid "Only one software management tool is allowed to run at the same time"
+msgstr ""
+"Только одна программа установки/удаления пакетов может быт запущена "
+"одновременно"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+msgid ""
+"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
+"\"Synaptic\" at first."
+msgstr ""
+"Пожалуйста, закройте сначала такие приложения как \"Update Manager\", "
+"\"aptitude\" или \"Synaptic\"."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
+msgid "Software database is broken"
+msgstr "Ошибка в базе данных пакетов"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Установка или удаление программ невозможна. Для исправления этой ситуации "
+"используйте менеджер пакетов \"Synaptic\" или запустите в терминале \"sudo "
+"apt-get install -f\"."
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+msgid "Translation"
+msgstr "Перевод"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "Менеджер языков"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+msgid "Supported Languages"
+msgstr "Поддерживаемые языки"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr "Закрыть"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr "Применить"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+msgid "Default language"
+msgstr "Основной язык"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
+msgid "English"
+msgstr "Английский"
+
+#: ../data/LanguageSelector.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/LanguageSelector.glade.h:2
+msgid "<b>Default Language</b>"
+msgstr "<b>Основной язык</b>"
+
+#: ../data/LanguageSelector.glade.h:3
+msgid "<b>Supported Languages</b>"
+msgstr "<b>Поддерживаемые языки</b>"
+
+#: ../data/LanguageSelector.glade.h:4
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The support for each language can differ in the amount of available "
+"translations or writing aids."
+msgstr ""
+"<big><b>Проверка доступной поддержки языка</b></big>\n"
+"\n"
+"Для разных языков количество доступных переводов или методов ввода может "
+"отличаться."
+
+#: ../data/LanguageSelector.glade.h:7
+msgid "Default language for new user accounts and the login screen:"
+msgstr ""
+"Язык по умолчанию для новых учетных записей пользователей и экрана входа в "
+"систему:"
+
+#: ../data/LanguageSelector.glade.h:8 ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "Локализации"
+
+#: ../data/countries.h:1
+msgid "Afghanistan"
+msgstr "Афганистан"
+
+#: ../data/countries.h:2
+msgid "Åland Islands"
+msgstr "Аландские острова"
+
+#: ../data/countries.h:3
+msgid "Albania"
+msgstr "Албания"
+
+#: ../data/countries.h:4
+msgid "Algeria"
+msgstr "Алжир"
+
+#: ../data/countries.h:5
+msgid "American Samoa"
+msgstr "Американское Самоа"
+
+#: ../data/countries.h:6
+msgid "Andorra"
+msgstr "Андорра"
+
+#: ../data/countries.h:7
+msgid "Angola"
+msgstr "Ангола"
+
+#: ../data/countries.h:8
+msgid "Anguilla"
+msgstr "Ангила"
+
+#: ../data/countries.h:9
+msgid "Antigua and Barbuda"
+msgstr "Антигуа и Барбуда"
+
+#: ../data/countries.h:10
+msgid "Argentina"
+msgstr "Аргентина"
+
+#: ../data/countries.h:11
+msgid "Armenia"
+msgstr "Армения"
+
+#: ../data/countries.h:12
+msgid "Aruba"
+msgstr "Аруба"
+
+#: ../data/countries.h:13
+msgid "Australia"
+msgstr "Австралия"
+
+#: ../data/countries.h:14
+msgid "Austria"
+msgstr "Австрия"
+
+#: ../data/countries.h:15
+msgid "Azerbaijan"
+msgstr "Азербайджан"
+
+#: ../data/countries.h:16
+msgid "Bahamas"
+msgstr "Багамы"
+
+#: ../data/countries.h:17
+msgid "Bahrain"
+msgstr "Бахрейн"
+
+#: ../data/countries.h:18
+msgid "Bangladesh"
+msgstr "Бангладеш"
+
+#: ../data/countries.h:19
+msgid "Barbados"
+msgstr "Барбадос"
+
+#: ../data/countries.h:20
+msgid "Belarus"
+msgstr "Беларусь"
+
+#: ../data/countries.h:21
+msgid "Belgium"
+msgstr "Бельгия"
+
+#: ../data/countries.h:22
+msgid "Belize"
+msgstr "Белизе"
+
+#: ../data/countries.h:23
+msgid "Benin"
+msgstr "Бенин"
+
+#: ../data/countries.h:24
+msgid "Bermuda"
+msgstr "Бермуды"
+
+#: ../data/countries.h:25
+msgid "Bhutan"
+msgstr "Бутан"
+
+#: ../data/countries.h:26
+msgid "Bolivia"
+msgstr "Боливия"
+
+#: ../data/countries.h:27
+msgid "Bosnia and Herzegovina"
+msgstr "Юосния и Герцеговина"
+
+#: ../data/countries.h:28
+msgid "Botswana"
+msgstr "Ботсвана"
+
+#: ../data/countries.h:29
+msgid "Brazil"
+msgstr "Бразилия"
+
+#: ../data/countries.h:30
+msgid "British Virgin Islands"
+msgstr "Британские Вирджинские острова"
+
+#: ../data/countries.h:31
+msgid "Brunei Darussalam"
+msgstr "Бруней Даруссалам"
+
+#: ../data/countries.h:32
+msgid "Bulgaria"
+msgstr "Болгария"
+
+#: ../data/countries.h:33
+msgid "Burkina Faso"
+msgstr "Буркина Фасо"
+
+#: ../data/countries.h:34
+msgid "Burundi"
+msgstr "Бурунди"
+
+#: ../data/countries.h:35
+msgid "Cambodia"
+msgstr "Камбоджа"
+
+#: ../data/countries.h:36
+msgid "Cameroon"
+msgstr "Камерун"
+
+#: ../data/countries.h:37
+msgid "Canada"
+msgstr "Канада"
+
+#: ../data/countries.h:38
+msgid "Cape Verde"
+msgstr "Капе Верде"
+
+#: ../data/countries.h:39
+msgid "Cayman Islands"
+msgstr "Каймановы острова"
+
+#: ../data/countries.h:40
+msgid "Central African Republic"
+msgstr "Центральноафриканская республика"
+
+#: ../data/countries.h:41
+msgid "Chad"
+msgstr "Чад"
+
+#: ../data/countries.h:42
+msgid "Channel Islands"
+msgstr "Channel Islands"
+
+#: ../data/countries.h:43
+msgid "Chile"
+msgstr "Чили"
+
+#: ../data/countries.h:44
+msgid "China"
+msgstr "Китай"
+
+#: ../data/countries.h:45
+msgid "Hong Kong Special Administrative Region of China"
+msgstr "Гонк-Конг (Китай)"
+
+#: ../data/countries.h:46
+msgid "Macau Special Administrative Region of China"
+msgstr "Макау (Китай)"
+
+#: ../data/countries.h:47
+msgid "Colombia"
+msgstr "Колумбия"
+
+#: ../data/countries.h:48
+msgid "Comoros"
+msgstr "Коморы"
+
+#: ../data/countries.h:49
+msgid "Congo"
+msgstr "Конго"
+
+#: ../data/countries.h:50
+msgid "Cook Islands"
+msgstr "Острова Кука"
+
+#: ../data/countries.h:51
+msgid "Costa Rica"
+msgstr "Коста Рика"
+
+#: ../data/countries.h:52
+msgid "Côte d'Ivoire"
+msgstr "Кот д'Ивуар"
+
+#: ../data/countries.h:53
+msgid "Croatia"
+msgstr "Хорватия"
+
+#: ../data/countries.h:54
+msgid "Cuba"
+msgstr "Куба"
+
+#: ../data/countries.h:55
+msgid "Cyprus"
+msgstr "Кипр"
+
+#: ../data/countries.h:56
+msgid "Czech Republic"
+msgstr "Чешская Республика"
+
+#: ../data/countries.h:57
+msgid "Democratic People's Republic of Korea"
+msgstr "Корейская Народная Демократическая Республика"
+
+#: ../data/countries.h:58
+msgid "Democratic Republic of the Congo"
+msgstr "Демократическая Республика Конго"
+
+#: ../data/countries.h:59
+msgid "Denmark"
+msgstr "Дания"
+
+#: ../data/countries.h:60
+msgid "Djibouti"
+msgstr "Джибути"
+
+#: ../data/countries.h:61
+msgid "Dominica"
+msgstr "Доминика"
+
+#: ../data/countries.h:62
+msgid "Dominican Republic"
+msgstr "Доминиканская Республика"
+
+#: ../data/countries.h:63
+msgid "Ecuador"
+msgstr "Эквадор"
+
+#: ../data/countries.h:64
+msgid "Egypt"
+msgstr "Египет"
+
+#: ../data/countries.h:65
+msgid "El Salvador"
+msgstr "Эль Сальвадор"
+
+#: ../data/countries.h:66
+msgid "Equatorial Guinea"
+msgstr "Экваториальная Гвинея"
+
+#: ../data/countries.h:67
+msgid "Eritrea"
+msgstr "Эритрия"
+
+#: ../data/countries.h:68
+msgid "Estonia"
+msgstr "Эстония"
+
+#: ../data/countries.h:69
+msgid "Ethiopia"
+msgstr "Эфиопия"
+
+#: ../data/countries.h:70
+msgid "Faeroe Islands"
+msgstr "Острова Фарое"
+
+#: ../data/countries.h:71
+msgid "Falkland Islands (Malvinas)"
+msgstr "Фолклендские острова (Мальвины)"
+
+#: ../data/countries.h:72 ../data/languages.h:48
+msgid "Fiji"
+msgstr "Фиджи"
+
+#: ../data/countries.h:73
+msgid "Finland"
+msgstr "Финляндия"
+
+#: ../data/countries.h:74
+msgid "France"
+msgstr "Франция"
+
+#: ../data/countries.h:75
+msgid "French Guiana"
+msgstr "Французская Гвиана"
+
+#: ../data/countries.h:76
+msgid "French Polynesia"
+msgstr "Французская Полинезия"
+
+#: ../data/countries.h:77
+msgid "Gabon"
+msgstr "Габон"
+
+#: ../data/countries.h:78
+msgid "Gambia"
+msgstr "Гамбия"
+
+#: ../data/countries.h:79
+msgid "Georgia"
+msgstr "Грузия"
+
+#: ../data/countries.h:80
+msgid "Germany"
+msgstr "Германия"
+
+#: ../data/countries.h:81
+msgid "Ghana"
+msgstr "Гана"
+
+#: ../data/countries.h:82
+msgid "Gibraltar"
+msgstr "Гибралтар"
+
+#: ../data/countries.h:83
+msgid "Greece"
+msgstr "Греция"
+
+#: ../data/countries.h:84
+msgid "Greenland"
+msgstr "Гренландия"
+
+#: ../data/countries.h:85
+msgid "Grenada"
+msgstr "Гренада"
+
+#: ../data/countries.h:86
+msgid "Guadeloupe"
+msgstr "Гваделупа"
+
+#: ../data/countries.h:87
+msgid "Guam"
+msgstr "Гуам"
+
+#: ../data/countries.h:88
+msgid "Guatemala"
+msgstr "Гватемала"
+
+#: ../data/countries.h:89
+msgid "Guinea"
+msgstr "Гвинея"
+
+#: ../data/countries.h:90
+msgid "Guinea-Bissau"
+msgstr "Гвинея-Биссау"
+
+#: ../data/countries.h:91
+msgid "Guyana"
+msgstr "Гуяна"
+
+#: ../data/countries.h:92
+msgid "Haiti"
+msgstr "Гаити"
+
+#: ../data/countries.h:93
+msgid "Holy See"
+msgstr "Holy See"
+
+#: ../data/countries.h:94
+msgid "Honduras"
+msgstr "Гондурас"
+
+#: ../data/countries.h:95
+msgid "Hungary"
+msgstr "Венгрия"
+
+#: ../data/countries.h:96
+msgid "Iceland"
+msgstr "Исландия"
+
+#: ../data/countries.h:97
+msgid "India"
+msgstr "Индия"
+
+#: ../data/countries.h:98
+msgid "Indonesia"
+msgstr "Индонезия"
+
+#: ../data/countries.h:99
+msgid "Iran (Islamic Republic of)"
+msgstr "Иран (Исламская Республика)"
+
+#: ../data/countries.h:100
+msgid "Iraq"
+msgstr "Ирак"
+
+#: ../data/countries.h:101
+msgid "Ireland"
+msgstr "Ирландия"
+
+#: ../data/countries.h:102
+msgid "Isle of Man"
+msgstr "Остров Мэн"
+
+#: ../data/countries.h:103
+msgid "Israel"
+msgstr "Израиль"
+
+#: ../data/countries.h:104
+msgid "Italy"
+msgstr "Италия"
+
+#: ../data/countries.h:105
+msgid "Jamaica"
+msgstr "Ямайка"
+
+#: ../data/countries.h:106
+msgid "Japan"
+msgstr "Япония"
+
+#: ../data/countries.h:107
+msgid "Jordan"
+msgstr "Иордан"
+
+#: ../data/countries.h:108
+msgid "Kazakhstan"
+msgstr "Казахстан"
+
+#: ../data/countries.h:109
+msgid "Kenya"
+msgstr "Кения"
+
+#: ../data/countries.h:110
+msgid "Kiribati"
+msgstr "Кирибати"
+
+#: ../data/countries.h:111
+msgid "Kuwait"
+msgstr "Кувейт"
+
+#: ../data/countries.h:112
+msgid "Kyrgyzstan"
+msgstr "Кыргызстан"
+
+#: ../data/countries.h:113
+msgid "Lao People's Democratic Republic"
+msgstr "Лаосская Народно-Демократическая Республика"
+
+#: ../data/countries.h:114
+msgid "Latvia"
+msgstr "Латвия"
+
+#: ../data/countries.h:115
+msgid "Lebanon"
+msgstr "Лебанон"
+
+#: ../data/countries.h:116
+msgid "Lesotho"
+msgstr "Лесото"
+
+#: ../data/countries.h:117
+msgid "Liberia"
+msgstr "Либерия"
+
+#: ../data/countries.h:118
+msgid "Libyan Arab Jamahiriya"
+msgstr "Ливийская Арабская Джамахирия"
+
+#: ../data/countries.h:119
+msgid "Liechtenstein"
+msgstr "Лихтеншнейн"
+
+#: ../data/countries.h:120
+msgid "Lithuania"
+msgstr "Литва"
+
+#: ../data/countries.h:121
+msgid "Luxembourg"
+msgstr "Люксембург"
+
+#: ../data/countries.h:122
+msgid "Madagascar"
+msgstr "Мадагаскар"
+
+#: ../data/countries.h:123
+msgid "Malawi"
+msgstr "Малави"
+
+#: ../data/countries.h:124
+msgid "Malaysia"
+msgstr "Малайзия"
+
+#: ../data/countries.h:125
+msgid "Maldives"
+msgstr "Мальдивы"
+
+#: ../data/countries.h:126
+msgid "Mali"
+msgstr "Мали"
+
+#: ../data/countries.h:127
+msgid "Malta"
+msgstr "Мальта"
+
+#: ../data/countries.h:128
+msgid "Marshall Islands"
+msgstr "Маршалловы острова"
+
+#: ../data/countries.h:129
+msgid "Martinique"
+msgstr "Мартиника"
+
+#: ../data/countries.h:130
+msgid "Mauritania"
+msgstr "Мавритания"
+
+#: ../data/countries.h:131
+msgid "Mauritius"
+msgstr "Мавтрития"
+
+#: ../data/countries.h:132
+msgid "Mayotte"
+msgstr "Майот"
+
+#: ../data/countries.h:133
+msgid "Mexico"
+msgstr "Мексика"
+
+#: ../data/countries.h:134
+msgid "Micronesia (Federated States of)"
+msgstr "Микронезия (Федеративные Штаты)"
+
+#: ../data/countries.h:135
+msgid "Monaco"
+msgstr "Монако"
+
+#: ../data/countries.h:136
+msgid "Mongolia"
+msgstr "Монголия"
+
+#: ../data/countries.h:137
+msgid "Montserrat"
+msgstr "Монсеррат"
+
+#: ../data/countries.h:138
+msgid "Morocco"
+msgstr "Марокко"
+
+#: ../data/countries.h:139
+msgid "Mozambique"
+msgstr "Мозамбик"
+
+#: ../data/countries.h:140
+msgid "Myanmar"
+msgstr "Мьянмар"
+
+#: ../data/countries.h:141
+msgid "Namibia"
+msgstr "Намибия"
+
+#: ../data/countries.h:142 ../data/languages.h:113
+msgid "Nauru"
+msgstr "Науру"
+
+#: ../data/countries.h:143
+msgid "Nepal"
+msgstr "Непал"
+
+#: ../data/countries.h:144
+msgid "Netherlands"
+msgstr "Нидерланды"
+
+#: ../data/countries.h:145
+msgid "Netherlands Antilles"
+msgstr "Нидерландские Антиллы"
+
+#: ../data/countries.h:146
+msgid "New Caledonia"
+msgstr "Новая Каледония"
+
+#: ../data/countries.h:147
+msgid "New Zealand"
+msgstr "Новая Зеландия"
+
+#: ../data/countries.h:148
+msgid "Nicaragua"
+msgstr "Никарагуа"
+
+#: ../data/countries.h:149
+msgid "Niger"
+msgstr "Нигер"
+
+#: ../data/countries.h:150
+msgid "Nigeria"
+msgstr "Нигерия"
+
+#: ../data/countries.h:151
+msgid "Niue"
+msgstr "Ниу"
+
+#: ../data/countries.h:152
+msgid "Norfolk Island"
+msgstr "Норфолк"
+
+#: ../data/countries.h:153
+msgid "Northern Mariana Islands"
+msgstr "Северные Марианские острова"
+
+#: ../data/countries.h:154
+msgid "Norway"
+msgstr "Норвегия"
+
+#: ../data/countries.h:155
+msgid "Occupied Palestinian Territory"
+msgstr "Оккупированная палестинская территория"
+
+#: ../data/countries.h:156
+msgid "Oman"
+msgstr "Оман"
+
+#: ../data/countries.h:157
+msgid "Pakistan"
+msgstr "Пакистан"
+
+#: ../data/countries.h:158
+msgid "Palau"
+msgstr "Палау"
+
+#: ../data/countries.h:159
+msgid "Panama"
+msgstr "Панама"
+
+#: ../data/countries.h:160
+msgid "Papua New Guinea"
+msgstr "Папуа Новая Гвинея"
+
+#: ../data/countries.h:161
+msgid "Paraguay"
+msgstr "Парагвай"
+
+#: ../data/countries.h:162
+msgid "Peru"
+msgstr "Перу"
+
+#: ../data/countries.h:163
+msgid "Philippines"
+msgstr "Филиппины"
+
+#: ../data/countries.h:164
+msgid "Pitcairn"
+msgstr "Питкаирн"
+
+#: ../data/countries.h:165
+msgid "Poland"
+msgstr "Польша"
+
+#: ../data/countries.h:166
+msgid "Portugal"
+msgstr "Португалия"
+
+#: ../data/countries.h:167
+msgid "Puerto Rico"
+msgstr "Пуэрто Рико"
+
+#: ../data/countries.h:168
+msgid "Qatar"
+msgstr "Катар"
+
+#: ../data/countries.h:169
+msgid "Republic of Korea"
+msgstr "Республика Корея"
+
+#: ../data/countries.h:170
+msgid "Republic of Moldova"
+msgstr "Республика Молдова"
+
+#: ../data/countries.h:171
+msgid "Réunion"
+msgstr "Реюнион"
+
+#: ../data/countries.h:172
+msgid "Romania"
+msgstr "Румыния"
+
+#: ../data/countries.h:173
+msgid "Russian Federation"
+msgstr "Российская Федерация"
+
+#: ../data/countries.h:174
+msgid "Rwanda"
+msgstr "Руанда"
+
+#: ../data/countries.h:175
+msgid "Saint Helena"
+msgstr "Святая Елена"
+
+#: ../data/countries.h:176
+msgid "Saint Kitts and Nevis"
+msgstr "Сент-Китс и Невис"
+
+#: ../data/countries.h:177
+msgid "Saint Lucia"
+msgstr "Сент-Лючия"
+
+#: ../data/countries.h:178
+msgid "Saint Pierre and Miquelon"
+msgstr "Сент-Пьер и Микелон"
+
+#: ../data/countries.h:179
+msgid "Saint Vincent and the Grenadines"
+msgstr "Сент-Винсент и Гренадины"
+
+#: ../data/countries.h:180
+msgid "Samoa"
+msgstr "Самоа"
+
+#: ../data/countries.h:181
+msgid "San Marino"
+msgstr "Сан Марино"
+
+#: ../data/countries.h:182
+msgid "Sao Tome and Principe"
+msgstr "Сен-Томе и Принсипи"
+
+#: ../data/countries.h:183
+msgid "Saudi Arabia"
+msgstr "Саудовская Аравия"
+
+#: ../data/countries.h:184
+msgid "Senegal"
+msgstr "Сенегал"
+
+#: ../data/countries.h:185
+msgid "Serbia and Montenegro"
+msgstr "Сербия и Черногория"
+
+#: ../data/countries.h:186
+msgid "Seychelles"
+msgstr "Сейшелы"
+
+#: ../data/countries.h:187
+msgid "Sierra Leone"
+msgstr "Сьерра Леоне"
+
+#: ../data/countries.h:188
+msgid "Singapore"
+msgstr "Сингапур"
+
+#: ../data/countries.h:189
+msgid "Slovakia"
+msgstr "Словакия"
+
+#: ../data/countries.h:190
+msgid "Slovenia"
+msgstr "Словения"
+
+#: ../data/countries.h:191
+msgid "Solomon Islands"
+msgstr "Соломоновы острова"
+
+#: ../data/countries.h:192
+msgid "Somalia"
+msgstr "Сомали"
+
+#: ../data/countries.h:193
+msgid "South Africa"
+msgstr "Южная Африка"
+
+#: ../data/countries.h:194
+msgid "Spain"
+msgstr "Испания"
+
+#: ../data/countries.h:195
+msgid "Sri Lanka"
+msgstr "Шри Ланка"
+
+#: ../data/countries.h:196
+msgid "Sudan"
+msgstr "Судан"
+
+#: ../data/countries.h:197
+msgid "Suriname"
+msgstr "Суринам"
+
+#: ../data/countries.h:198
+msgid "Svalbard and Jan Mayen Islands"
+msgstr "Острова Свалбард и Жан Маен"
+
+#: ../data/countries.h:199
+msgid "Swaziland"
+msgstr "Свазиленд"
+
+#: ../data/countries.h:200
+msgid "Sweden"
+msgstr "Швеция"
+
+#: ../data/countries.h:201
+msgid "Switzerland"
+msgstr "Швейцария"
+
+#: ../data/countries.h:202
+msgid "Syrian Arab Republic"
+msgstr "Сирийская Арабская Республика"
+
+#: ../data/countries.h:203
+msgid "Tajikistan"
+msgstr "Таджикистан"
+
+#: ../data/countries.h:204
+msgid "Thailand"
+msgstr "Таиланд"
+
+#: ../data/countries.h:205
+msgid "Macedonia, Republic of"
+msgstr "Республика Македония"
+
+#: ../data/countries.h:206
+msgid "Timor-Leste"
+msgstr "Тимор-Лесте"
+
+#: ../data/countries.h:207
+msgid "Togo"
+msgstr "Того"
+
+#: ../data/countries.h:208
+msgid "Tokelau"
+msgstr "Токелау"
+
+#: ../data/countries.h:209 ../data/languages.h:166
+msgid "Tonga"
+msgstr "Тонга"
+
+#: ../data/countries.h:210
+msgid "Trinidad and Tobago"
+msgstr "Тринидад и Тобаго"
+
+#: ../data/countries.h:211
+msgid "Tunisia"
+msgstr "Тунис"
+
+#: ../data/countries.h:212
+msgid "Turkey"
+msgstr "Турция"
+
+#: ../data/countries.h:213
+msgid "Turkmenistan"
+msgstr "Туркменистан"
+
+#: ../data/countries.h:214
+msgid "Turks and Caicos Islands"
+msgstr "Острова Теркс и Кайкос"
+
+#: ../data/countries.h:215
+msgid "Tuvalu"
+msgstr "Тувалу"
+
+#: ../data/countries.h:216
+msgid "Uganda"
+msgstr "Уганда"
+
+#: ../data/countries.h:217
+msgid "Ukraine"
+msgstr "Украина"
+
+#: ../data/countries.h:218
+msgid "United Arab Emirates"
+msgstr "Объединенные Арабские Эмираты"
+
+#: ../data/countries.h:219
+msgid "United Kingdom of Great Britain and Northern Ireland"
+msgstr "Объединенное Королевство Великобритании и Северной Ирландии"
+
+#: ../data/countries.h:220
+msgid "United Republic of Tanzania"
+msgstr "Объединенная Республика Танзании"
+
+#: ../data/countries.h:221
+msgid "United States of America"
+msgstr "Соединенные Штаты Америки"
+
+#: ../data/countries.h:222
+msgid "United States Virgin Islands"
+msgstr "Соединенные Штаты Вирджинских Островов"
+
+#: ../data/countries.h:223
+msgid "Uruguay"
+msgstr "Уругвай"
+
+#: ../data/countries.h:224
+msgid "Uzbekistan"
+msgstr "Узбекистан"
+
+#: ../data/countries.h:225
+msgid "Vanuatu"
+msgstr "Вануату"
+
+#: ../data/countries.h:226
+msgid "Venezuela"
+msgstr "Венесуэла"
+
+#: ../data/countries.h:227
+msgid "Viet Nam"
+msgstr "Вьетнам"
+
+#: ../data/countries.h:228
+msgid "Wallis and Futuna Islands"
+msgstr "Острова Валлис и Футуна"
+
+#: ../data/countries.h:229
+msgid "Western Sahara"
+msgstr "Западная Сахара"
+
+#: ../data/countries.h:230
+msgid "Yemen"
+msgstr "Йемен"
+
+#: ../data/countries.h:231
+msgid "Zambia"
+msgstr "Замбия"
+
+#: ../data/countries.h:232
+msgid "Zimbabwe"
+msgstr "Зимбабве"
+
+#: ../data/countries.h:233
+msgid "Antarctica"
+msgstr "Антарктика"
+
+#: ../data/countries.h:234
+msgid "Bouvet Island"
+msgstr "Остров Бувет"
+
+#: ../data/countries.h:235
+msgid "British Indian Ocean Territory"
+msgstr "Британская территория в Индийском океане"
+
+#: ../data/countries.h:236
+msgid "Christmas Island"
+msgstr "Остров Рождества"
+
+#: ../data/countries.h:237
+msgid "Cocos (Keeling) Islands"
+msgstr "Кокосовые (Килинг) острова"
+
+#: ../data/countries.h:238
+msgid "French Southern Territories"
+msgstr "Французские Южные Территории"
+
+#: ../data/countries.h:239
+msgid "Heard Island and McDonald Islands"
+msgstr "Острова Хэрда и МакДональда"
+
+#: ../data/countries.h:240
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Южная Георгия и Южные Сандвичевы острова"
+
+#: ../data/countries.h:241
+msgid "Taiwan"
+msgstr "Тайвань"
+
+#: ../data/countries.h:242
+msgid "United States Minor Outlying Islands"
+msgstr "Малые Тихоокеанские Отдаленные острова Соединенных Штатов"
+
+#: ../data/languages.h:2
+msgid "Afar"
+msgstr "Афар"
+
+#: ../data/languages.h:3
+msgid "Abkhazian"
+msgstr "Абхазский"
+
+#: ../data/languages.h:4
+msgid "Avestan"
+msgstr "Авестанский"
+
+#: ../data/languages.h:5
+msgid "Afrikaans"
+msgstr "Африкаанс"
+
+#: ../data/languages.h:6
+msgid "Akan"
+msgstr "Акан"
+
+#: ../data/languages.h:7
+msgid "Amharic"
+msgstr "Амхарский"
+
+#: ../data/languages.h:8
+msgid "Aragonese"
+msgstr "Арагонезский"
+
+#: ../data/languages.h:9
+msgid "Arabic"
+msgstr "Арабский"
+
+#: ../data/languages.h:10
+msgid "Assamese"
+msgstr "Ассамезе"
+
+#: ../data/languages.h:11
+msgid "Asturian"
+msgstr "Астурианский"
+
+#: ../data/languages.h:12
+msgid "Avaric"
+msgstr "Аварский"
+
+#: ../data/languages.h:13
+msgid "Aymara"
+msgstr "Аймара"
+
+#: ../data/languages.h:14
+msgid "Azerbaijani"
+msgstr "Азербайджанский"
+
+#: ../data/languages.h:15
+msgid "Bashkir"
+msgstr "Башкирский"
+
+#: ../data/languages.h:16
+msgid "Byelorussian"
+msgstr "Белорусский"
+
+#: ../data/languages.h:17
+msgid "Bulgarian"
+msgstr "Болгарский"
+
+#: ../data/languages.h:18
+msgid "Bihari"
+msgstr "Бихари"
+
+#: ../data/languages.h:19
+msgid "Bislama"
+msgstr "Бислама"
+
+#: ../data/languages.h:20
+msgid "Bambara"
+msgstr "Бамбара"
+
+#: ../data/languages.h:21
+msgid "Bengali; Bangla"
+msgstr "Бенгальский; Бангла"
+
+#: ../data/languages.h:22
+msgid "Tibetan"
+msgstr "Тибетский"
+
+#: ../data/languages.h:23
+msgid "Breton"
+msgstr "Бретонский"
+
+#: ../data/languages.h:24
+msgid "Bosnian"
+msgstr "Боснийский"
+
+#: ../data/languages.h:25
+msgid "Catalan"
+msgstr "Каталонский"
+
+#: ../data/languages.h:26
+msgid "Chechen"
+msgstr "Чеченский"
+
+#: ../data/languages.h:27
+msgid "Chamorro"
+msgstr "Чаморро"
+
+#: ../data/languages.h:28
+msgid "Corsican"
+msgstr "Корсиканский"
+
+#: ../data/languages.h:29
+msgid "Cree"
+msgstr "Кри"
+
+#: ../data/languages.h:30
+msgid "Czech"
+msgstr "Чешский"
+
+#: ../data/languages.h:31
+msgid "Old Church Slavonic"
+msgstr "Славонский староцерковный"
+
+#: ../data/languages.h:32
+msgid "Chuvash"
+msgstr "Чувашский"
+
+#: ../data/languages.h:33
+msgid "Welsh"
+msgstr "Уэльский"
+
+#: ../data/languages.h:34
+msgid "Danish"
+msgstr "Датский"
+
+#: ../data/languages.h:35
+msgid "German"
+msgstr "Немецкий"
+
+#: ../data/languages.h:36
+msgid "Divehi"
+msgstr "Дивехи"
+
+#: ../data/languages.h:37
+msgid "Dzongkha"
+msgstr "Дзонгха"
+
+#: ../data/languages.h:38
+msgid "Ewe"
+msgstr "Эве"
+
+#: ../data/languages.h:39
+msgid "Greek, Modern"
+msgstr "Греческий, современный"
+
+#: ../data/languages.h:41
+msgid "Esperanto"
+msgstr "Эсперанто"
+
+#: ../data/languages.h:42
+msgid "Spanish"
+msgstr "Испанский"
+
+#: ../data/languages.h:43
+msgid "Estonian"
+msgstr "Эстонский"
+
+#: ../data/languages.h:44
+msgid "Basque"
+msgstr "Баскский"
+
+#: ../data/languages.h:45
+msgid "Persian"
+msgstr "Персидский"
+
+#: ../data/languages.h:46
+msgid "Fulah"
+msgstr "Фула"
+
+#: ../data/languages.h:47
+msgid "Finnish"
+msgstr "Финский"
+
+#: ../data/languages.h:49
+msgid "Faroese"
+msgstr "Фарезский"
+
+#: ../data/languages.h:50
+msgid "French"
+msgstr "Французский"
+
+#: ../data/languages.h:51
+msgid "Frisian"
+msgstr "Фрисийский"
+
+#: ../data/languages.h:52
+msgid "Irish"
+msgstr "Ирландский"
+
+#: ../data/languages.h:53
+msgid "Scots Gaelic"
+msgstr "Шотландский гелик"
+
+#: ../data/languages.h:54
+msgid "Galician"
+msgstr "Галицианский"
+
+#: ../data/languages.h:55
+msgid "Guarani"
+msgstr "Гуарани"
+
+#: ../data/languages.h:56
+msgid "Gujarati"
+msgstr "Гуджарати"
+
+#: ../data/languages.h:57
+msgid "Manx"
+msgstr "Манкс"
+
+#: ../data/languages.h:58
+msgid "Hausa"
+msgstr "Хауса"
+
+#: ../data/languages.h:59
+msgid "Hebrew"
+msgstr "Еврейский"
+
+#: ../data/languages.h:60
+msgid "Hindi"
+msgstr "Хинди"
+
+#: ../data/languages.h:61
+msgid "Hiri Motu"
+msgstr "Хири Моту"
+
+#: ../data/languages.h:62
+msgid "Croatian"
+msgstr "Хорватский"
+
+#: ../data/languages.h:63
+msgid "Hungarian"
+msgstr "Венгерский"
+
+#: ../data/languages.h:64
+msgid "Armenian"
+msgstr "Армянский"
+
+#: ../data/languages.h:65
+msgid "Herero"
+msgstr "Хереро"
+
+#: ../data/languages.h:66
+msgid "Interlingua"
+msgstr "Интерлингва"
+
+#: ../data/languages.h:67
+msgid "Indonesian"
+msgstr "Индонезский"
+
+#: ../data/languages.h:68
+msgid "Interlingue"
+msgstr "Интерлингва"
+
+#: ../data/languages.h:69
+msgid "Igbo"
+msgstr "Игбо"
+
+#: ../data/languages.h:70
+msgid "Sichuan Yi"
+msgstr "Сичуань Йи"
+
+#: ../data/languages.h:71
+msgid "Inupiak"
+msgstr "Инупиак"
+
+#: ../data/languages.h:72
+msgid "Ido"
+msgstr "Идо"
+
+#: ../data/languages.h:73
+msgid "Icelandic"
+msgstr "Исландский"
+
+#: ../data/languages.h:74
+msgid "Italian"
+msgstr "Итальянский"
+
+#: ../data/languages.h:75
+msgid "Inuktitut"
+msgstr "Инуктитут"
+
+#: ../data/languages.h:76
+msgid "Japanese"
+msgstr "Японский"
+
+#: ../data/languages.h:77
+msgid "Javanese"
+msgstr "Яванский"
+
+#: ../data/languages.h:78
+msgid "Georgian"
+msgstr "Грузинский"
+
+#: ../data/languages.h:79
+msgid "Kongo"
+msgstr "Конго"
+
+#: ../data/languages.h:80
+msgid "Kikuyu"
+msgstr "Кикую"
+
+#: ../data/languages.h:81
+msgid "Kuanyama"
+msgstr "Куаняма"
+
+#: ../data/languages.h:82
+msgid "Kazakh"
+msgstr "Казахский"
+
+#: ../data/languages.h:83
+msgid "Greenlandic"
+msgstr "Гренландский"
+
+#: ../data/languages.h:84
+msgid "Khmer"
+msgstr "Хмерский"
+
+#: ../data/languages.h:85
+msgid "Kannada"
+msgstr "Каннада"
+
+#: ../data/languages.h:86
+msgid "Korean"
+msgstr "Корейский"
+
+#: ../data/languages.h:87
+msgid "Kanuri"
+msgstr "Канури"
+
+#: ../data/languages.h:88
+msgid "Kashmiri"
+msgstr "Кашмири"
+
+#: ../data/languages.h:89
+msgid "Kurdish"
+msgstr "Курдский"
+
+#: ../data/languages.h:90
+msgid "Komi"
+msgstr "Коми"
+
+#: ../data/languages.h:91
+msgid "Cornish"
+msgstr "Корнский"
+
+#: ../data/languages.h:92
+msgid "Kirghiz"
+msgstr "Киргизский"
+
+#: ../data/languages.h:93
+msgid "Latin"
+msgstr "Латинский"
+
+#: ../data/languages.h:94
+msgid "Luxembourgish"
+msgstr "Люксембургский"
+
+#: ../data/languages.h:95
+msgid "Ganda"
+msgstr "Ганда"
+
+#: ../data/languages.h:96
+msgid "Limburgan"
+msgstr "Лимбургский"
+
+#: ../data/languages.h:97
+msgid "Lingala"
+msgstr "Лингала"
+
+#: ../data/languages.h:98
+msgid "Lao"
+msgstr "Лао"
+
+#: ../data/languages.h:99
+msgid "Lithuanian"
+msgstr "Литовский"
+
+#: ../data/languages.h:100
+msgid "Luba-Katanga"
+msgstr "Луба-Катанга"
+
+#: ../data/languages.h:101
+msgid "Latvian"
+msgstr "Латышский"
+
+#: ../data/languages.h:102
+msgid "Malagasy"
+msgstr "Малагази"
+
+#: ../data/languages.h:103
+msgid "Marshallese"
+msgstr "Маршалезский"
+
+#: ../data/languages.h:104
+msgid "Maori"
+msgstr "Маори"
+
+#: ../data/languages.h:105
+msgid "Macedonian"
+msgstr "Македонский"
+
+#: ../data/languages.h:106
+msgid "Malayalam"
+msgstr "Малаям"
+
+#: ../data/languages.h:107
+msgid "Mongolian"
+msgstr "Монгольский"
+
+#: ../data/languages.h:108
+msgid "Moldavian"
+msgstr "Молдавский"
+
+#: ../data/languages.h:109
+msgid "Marathi"
+msgstr "Марати"
+
+#: ../data/languages.h:110
+msgid "Malay"
+msgstr "Малайский"
+
+#: ../data/languages.h:111
+msgid "Maltese"
+msgstr "Мальтский"
+
+#: ../data/languages.h:112
+msgid "Burmese"
+msgstr "Бурмезский"
+
+#: ../data/languages.h:114
+msgid "Norwegian Bokmal"
+msgstr "Норвежский Бокмал"
+
+#: ../data/languages.h:115
+msgid "North Ndebele"
+msgstr "Северный Ндебеле"
+
+#: ../data/languages.h:116
+msgid "Nepali"
+msgstr "Непальский"
+
+#: ../data/languages.h:117
+msgid "Ndonga"
+msgstr "Ндонга"
+
+#: ../data/languages.h:118
+msgid "Dutch"
+msgstr "Датский"
+
+#: ../data/languages.h:119
+msgid "Norwegian Nynorsk"
+msgstr "Норвежский Нинорск"
+
+#: ../data/languages.h:120
+msgid "Norwegian"
+msgstr "Норвежский"
+
+#: ../data/languages.h:121
+msgid "South Ndebele"
+msgstr "Южный Ндебеле"
+
+#: ../data/languages.h:122
+msgid "Navajo"
+msgstr "Навахо"
+
+#: ../data/languages.h:123
+msgid "Occitan"
+msgstr "Оккитан"
+
+#: ../data/languages.h:124
+msgid "Ojibwa"
+msgstr "Оджибве"
+
+#: ../data/languages.h:125
+msgid "Oromo"
+msgstr "Оромо"
+
+#: ../data/languages.h:126
+msgid "Oriya"
+msgstr "Ория"
+
+#: ../data/languages.h:127
+msgid "Ossetian"
+msgstr "Осетинский"
+
+#: ../data/languages.h:128
+msgid "Punjabi"
+msgstr "Панджаби"
+
+#: ../data/languages.h:129
+msgid "Pali"
+msgstr "Пали"
+
+#: ../data/languages.h:130
+msgid "Polish"
+msgstr "Польский"
+
+#: ../data/languages.h:131
+msgid "Pushto"
+msgstr "Пушту"
+
+#: ../data/languages.h:132
+msgid "Portuguese"
+msgstr "Португальский"
+
+#: ../data/languages.h:133
+msgid "Quechua"
+msgstr "Квечуа"
+
+#: ../data/languages.h:134
+msgid "Rhaeto-Romance"
+msgstr "Ретороманский"
+
+#: ../data/languages.h:135
+msgid "Rundi"
+msgstr "Рунди"
+
+#: ../data/languages.h:136
+msgid "Romanian"
+msgstr "Румынский"
+
+#: ../data/languages.h:137
+msgid "Russian"
+msgstr "Русский"
+
+#: ../data/languages.h:138
+msgid "Kinyarwanda"
+msgstr "Кинярванда"
+
+#: ../data/languages.h:139
+msgid "Sanskrit"
+msgstr "Санскрит"
+
+#: ../data/languages.h:140
+msgid "Sardinian"
+msgstr "Сардинский"
+
+#: ../data/languages.h:141
+msgid "Sindhi"
+msgstr "Синди"
+
+#: ../data/languages.h:142
+msgid "Northern Sami"
+msgstr "Северный Сами"
+
+#: ../data/languages.h:143
+msgid "Sango"
+msgstr "Санго"
+
+#: ../data/languages.h:144
+msgid "Serbo-Croatian"
+msgstr "Сербо-Хорватский"
+
+#: ../data/languages.h:145
+msgid "Sinhalese"
+msgstr "Сингалезский"
+
+#: ../data/languages.h:146
+msgid "Slovak"
+msgstr "Словакский"
+
+#: ../data/languages.h:147
+msgid "Slovenian"
+msgstr "Словенский"
+
+#: ../data/languages.h:148
+msgid "Samoan"
+msgstr "Самоанский"
+
+#: ../data/languages.h:149
+msgid "Shona"
+msgstr "Шона"
+
+#: ../data/languages.h:150
+msgid "Somali"
+msgstr "Сомали"
+
+#: ../data/languages.h:151
+msgid "Albanian"
+msgstr "Албанский"
+
+#: ../data/languages.h:152
+msgid "Serbian"
+msgstr "Сербский"
+
+#: ../data/languages.h:153
+msgid "Swati"
+msgstr "Свати"
+
+#: ../data/languages.h:154
+msgid "Southern Sotho"
+msgstr "Южный Сотхо"
+
+#: ../data/languages.h:155
+msgid "Sundanese"
+msgstr "Суданский"
+
+#: ../data/languages.h:156
+msgid "Swedish"
+msgstr "Шведский"
+
+#: ../data/languages.h:157
+msgid "Swahili"
+msgstr "Суахили"
+
+#: ../data/languages.h:158
+msgid "Tamil"
+msgstr "Тамил"
+
+#: ../data/languages.h:159
+msgid "Telugu"
+msgstr "Телугу"
+
+#: ../data/languages.h:160
+msgid "Tajik"
+msgstr "Таджикский"
+
+#: ../data/languages.h:161
+msgid "Thai"
+msgstr "Тай"
+
+#: ../data/languages.h:162
+msgid "Tigrinya"
+msgstr "Тигриня"
+
+#: ../data/languages.h:163
+msgid "Turkmen"
+msgstr "Туркменский"
+
+#: ../data/languages.h:164
+msgid "Tagalog"
+msgstr "Тагалог"
+
+#: ../data/languages.h:165
+msgid "Tswana"
+msgstr "Tcвана"
+
+#: ../data/languages.h:167
+msgid "Turkish"
+msgstr "Турецкий"
+
+#: ../data/languages.h:168
+msgid "Tsonga"
+msgstr "Цонга"
+
+#: ../data/languages.h:169
+msgid "Tatar"
+msgstr "Татарский"
+
+#: ../data/languages.h:170
+msgid "Twi"
+msgstr "Тви"
+
+#: ../data/languages.h:171
+msgid "Tahitian"
+msgstr "Таитянский"
+
+#: ../data/languages.h:172
+msgid "Uighur"
+msgstr "Уйгурский"
+
+#: ../data/languages.h:173
+msgid "Ukrainian"
+msgstr "Украинский"
+
+#: ../data/languages.h:174
+msgid "Urdu"
+msgstr "Урду"
+
+#: ../data/languages.h:175
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#: ../data/languages.h:176
+msgid "Venda"
+msgstr "Венда"
+
+#: ../data/languages.h:177
+msgid "Vietnamese"
+msgstr "Вьетнамский"
+
+#: ../data/languages.h:178
+msgid "Volapuk"
+msgstr "Волапук"
+
+#: ../data/languages.h:179
+msgid "Walloon"
+msgstr "Валлонский"
+
+#: ../data/languages.h:180
+msgid "Wolof"
+msgstr "Волоф"
+
+#: ../data/languages.h:181
+msgid "Xhosa"
+msgstr "Коса"
+
+#: ../data/languages.h:182
+msgid "Yiddish"
+msgstr "Идиш"
+
+#: ../data/languages.h:183
+msgid "Yoruba"
+msgstr "Йоруба"
+
+#: ../data/languages.h:184
+msgid "Zhuang"
+msgstr "Чжуань"
+
+#: ../data/languages.h:185
+msgid "Chinese"
+msgstr "Китайский"
+
+#: ../data/languages.h:186
+msgid "Zulu"
+msgstr "Зулу"
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "Настроить поддержку дополнительных языков в системе"
+
+#: ../gnome-language-selector:28
+msgid "You are not root"
+msgstr "Вы не root"
+
+#: ../gnome-language-selector:29
+msgid "Please run this software with administrative rights."
+msgstr "Пожалуйста, запустите эту программу с правами администратора."
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "Прерывание"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "Делать даже если конфигурация существует"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "Установить fontconfig voodoo для выбранного языка"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"Подобрать конфигурацию на основе окружения LANGUAGE. Если ничего подходящего "
+"не найдено, возвращает 'none'"
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "Покзать доступные настройки fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "Показать текущую настройку fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:67
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr ""
+"Конфигурация уже существует. Чтобы перезаписать используйте '--force'. "
+
+#: ../fontconfig-voodoo:80
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr "Для выбранной локали найдена не fontconfig-voodoo конфигурация."

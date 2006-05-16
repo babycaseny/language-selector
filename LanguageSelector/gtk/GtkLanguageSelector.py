@@ -24,6 +24,7 @@ import thread
 import time
 import gettext
 import sys
+import pwd
 
 from gettext import gettext as _
 
@@ -100,7 +101,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         ("openoffice.org2", "openoffice.org2-help-")
     ]
 
-    def __init__(self, datadir=""):
+    def __init__(self, datadir, options):
         LanguageSelectorBase.__init__(self, datadir)
         SimpleGladeApp.__init__(self,
                                 datadir+"/data/LanguageSelector.glade",
@@ -132,7 +133,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         self.updateLanguageView()
         self.updateSystemDefaultCombo()
         # see if something is missing
-        self.verifyInstalledLangPacks()
+        if options.verify_installed:
+            self.verifyInstalledLangPacks()
         self.window_main.set_sensitive(True)
         self.window_main.window.set_cursor(None)
 
@@ -254,7 +256,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         """ called at the start to inform about possible missing
             langpacks (e.g. gnome/kde langpack transition)
         """
-        print "verifyInstalledLangPacks"
+        #print "verifyInstalledLangPacks"
         missing = []
         for (lang, langInfo) in self._langlist:
             trans_package = "language-pack-%s" % langInfo.languageCode
@@ -318,8 +320,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             if (inconsistent and toRemove) or (toRemove and wasInstalled):
                 self._cache.tryRemoveLanguage(langInfo.languageCode)
         (to_inst, to_rm) = self._cache.getChangesList()
-        print "inst: %s" % to_inst
-        print "rm: %s" % to_rm
+        #print "inst: %s" % to_inst
+        #print "rm: %s" % to_rm
         return (to_inst, to_rm)
 
     def verify_commit_lists(self, inst_list, rm_list):

@@ -3,7 +3,7 @@ import gettext
 
 # Form implementation generated from reading ui file 'QtLanguageSelectorGUI.ui'
 #
-# Created: Tue May 2 16:01:34 2006
+# Created: Tue May 16 20:04:48 2006
 #      by: The PyQt User Interface Compiler (pyuic) 3.15.1
 #
 # WARNING! All changes made in this file will be lost!

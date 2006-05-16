@@ -1,5 +1,5 @@
 # Danish translation of language-selector.
-# Copyright (C) 2005 
+# Copyright (C) 2005
 # This file is distributed under the same license as the language-selector package.
 # Lasse Bang Mikkelsen <lbm@fatalerror.dk>, 2005.
 #
@@ -11,91 +11,90 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-02 16:01+0200\n"
-"PO-Revision-Date: 2005-11-24 12:44+0100\n"
+"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"PO-Revision-Date: 2006-05-02 17:41+0000\n"
 "Last-Translator: Lasse Bang Mikkelsen <lbm@fatalerror.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:175 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
 msgid "Language"
 msgstr "Sprog"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:182
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
 #, fuzzy
 msgid "Support"
 msgstr "Sprogvælger"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:276
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
 msgid "The language support is not installed completely"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
 #, fuzzy
 msgid "_Remind Me Again"
 msgstr "Påmind mig igen"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:280
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
 #, fuzzy
 msgid "_Install"
 msgstr "Installér nu"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
 #, fuzzy
 msgid "Details"
 msgstr "Dansk"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
 #, fuzzy
 msgid "Could not install the selected language support"
 msgstr "Installér/fjern sprog-understøttelse"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:349
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:374
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
 #, fuzzy
 msgid "Could not install the full language support"
 msgstr "Installér/fjern sprog-understøttelse"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:375
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
 msgid "The list of available languages on the system has been updated."
 msgstr "Listen over tilgængelige sprog er blevet opdateret."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:485
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
 msgid "Software database is broken"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:486
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -136,7 +135,7 @@ msgstr "Engelsk"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
-msgstr ""
+msgstr "    "
 
 #: ../data/LanguageSelector.glade.h:2
 #, fuzzy
@@ -1864,11 +1863,11 @@ msgstr "Zulu"
 msgid "Configure multiple and native language support on your system"
 msgstr ""
 
-#: ../gnome-language-selector:27
+#: ../gnome-language-selector:28
 msgid "You are not root"
 msgstr ""
 
-#: ../gnome-language-selector:28
+#: ../gnome-language-selector:29
 msgid "Please run this software with administrative rights."
 msgstr ""
 

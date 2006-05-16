@@ -47,11 +47,11 @@ clean:
 	rm -f build-stamp configure-stamp
 
 	# Add here commands to clean up after the build process.
-	#-$(MAKE) clean
 	./setup.py clean --all
 	find . -name "*.so" -exec rm {} \;
 	find . -name "*.o" -exec rm {} \;
 	find . -name "*.pyc" -exec rm {} \;
+	find . -name "*.desktop" -exec rm {} \;
 
 	dh_clean 
 

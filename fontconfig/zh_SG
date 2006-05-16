@@ -72,4 +72,47 @@
                         <family>Baekmuk Dotum</family>
                 </prefer>
         </alias>
+        <match target="font" >
+                <test name="family" compare="contains" >
+                        <string>Song</string>
+                        <string>Sun</string>
+                        <string>Kai</string>
+                        <string>Ming</string>
+                </test> 
+                <test compare="more_eq" target="pattern" name="weight" >
+                        <int>180</int>
+                </test>
+                <edit mode="assign" name="embolden" >
+                        <bool>true</bool>
+                </edit>
+	</match>
+        <match target="font" >
+                <test name="family" compare="contains" >
+                        <string>Song</string>
+                        <string>Sun</string>
+                        <string>Kai</string>
+                        <string>Ming</string>
+                </test> 
+                <edit name="globaladvance">
+                        <bool>false</bool>
+                </edit>
+                <edit name="spacing">
+                        <int>0</int>
+                </edit>
+                <edit name="hinting">
+                        <bool>true</bool>
+                </edit>
+                <edit name="autohint">
+                        <bool>false</bool>
+                </edit>
+                <edit name="antialias" mode="assign">
+                        <bool>true</bool>
+                </edit>
+                <test name="pixelsize" compare="less_eq">
+                        <int>18</int>
+                </test>
+                <edit name="antialias" mode="assign" >
+                        <bool>false</bool>
+                </edit>
+        </match>
 </fontconfig>

@@ -1,3 +1,18 @@
+language-selector (0.1.20) dapper; urgency=low
+
+  * updated the desktop file translations (for kde that
+    has no gettext support for its desktop files)
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    - don't explode if no locales are generated on the system 
+      (Ubuntu: #43556)
+  * fontconfig/zh_{TW,HK,SG}:
+    - apply the same test-magic as in zh_CN (ubuntu: #44305)
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - added "-n" option to ignore the check for missing packages 
+      for full language support (ubuntu: #37568)
+  
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 16 May 2006 19:00:44 +0200
+
 language-selector (0.1.19) dapper; urgency=low
 
   * fix FTBFS because of missing intltool dependency

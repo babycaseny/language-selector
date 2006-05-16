@@ -1,32 +1,31 @@
 # Michael Vogt <michael.vogt@ubuntu.com>, 2006.
 # Sebastian Heinlein <sebastian.heinlein@web.de>, 2006.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-02 16:01+0200\n"
-"PO-Revision-Date: 2006-02-03 23:24+0100\n"
-"Last-Translator: Sebastian Heinlein <sebastian.heinlein@web.de>\n"
+"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"PO-Revision-Date: 2006-05-15 19:48+0000\n"
+"Last-Translator: Bastian Holst <bastianholst@gmx.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:175 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
 msgid "Language"
 msgstr "Sprache"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:182
-#, fuzzy
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
 msgid "Support"
-msgstr "Sprachunterstützung"
+msgstr "Unterstützung"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:276
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
 msgid "The language support is not installed completely"
 msgstr "Die Sprachunterstützung ist nicht vollständig installiert"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
@@ -34,23 +33,23 @@ msgstr ""
 "Nicht alle Übersetzungen oder Schreibhilfen für die auf Ihrem System "
 "unterstützen Sprachen wurden installiert."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
 msgid "_Remind Me Again"
 msgstr "_Erinnere mich später"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:280
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
 msgid "_Install"
 msgstr "_Installieren"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
 msgid "Details"
 msgstr "Details"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
 msgid "Could not install the selected language support"
 msgstr "Konnte die ausgewählte Sprachunterstützung nicht installieren"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:349
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -60,11 +59,11 @@ msgstr ""
 "Fehlerbericht auf der Seite »https://launchpad.net/bugs/bugs/+package/« für "
 "das Produkt »language-selector« aus."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:374
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
 msgid "Could not install the full language support"
 msgstr "Konnte die Sprachunterstützung nicht vollständig installieren"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:375
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -73,15 +72,15 @@ msgstr ""
 "Verwaltung vor. Überprüfen Sie die Software-Einstellungen im Menü "
 "»Systemverwaltung«."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
 msgid "The list of available languages on the system has been updated."
 msgstr "Die Liste mit den unterstützten Sprachen wurde aktualisiert."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "Nur eine Anwendung zur Software-Verwaltung kann zur selben Zeit laufen"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -89,11 +88,11 @@ msgstr ""
 "Bitte schließen zuerst Sie die andere Anwednung, wie z.B. »Update Manager«, "
 "»aptidude« oder »Synaptic«."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:485
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
 msgid "Software database is broken"
 msgstr "Software-Datenbank ist defekt"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:486
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -106,31 +105,28 @@ msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
 #: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
-#, fuzzy
 msgid "Translation"
-msgstr "Übersetzungen"
+msgstr "Übersetzung"
 
 #: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
 msgid "Language selector"
 msgstr "Sprachauswahl"
 
 #: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
-#, fuzzy
 msgid "Supported Languages"
-msgstr "<b>Unterstützte Sprachen</b>"
+msgstr "Unterstützte Sprachen"
 
 #: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
 msgid "Close"
-msgstr ""
+msgstr "Schließen"
 
 #: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
 msgid "Apply"
-msgstr ""
+msgstr "Übernehmen"
 
 #: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
-#, fuzzy
 msgid "Default language"
-msgstr "<b>Standardsprache</b>"
+msgstr "Standardsprache"
 
 #: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
 msgid "English"
@@ -138,7 +134,7 @@ msgstr "Englisch"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
-msgstr ""
+msgstr "    "
 
 #: ../data/LanguageSelector.glade.h:2
 msgid "<b>Default Language</b>"
@@ -149,7 +145,6 @@ msgid "<b>Supported Languages</b>"
 msgstr "<b>Unterstützte Sprachen</b>"
 
 #: ../data/LanguageSelector.glade.h:4
-#, fuzzy
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -157,8 +152,8 @@ msgid ""
 "translations or writing aids."
 msgstr ""
 "<big><b>Überprüfe verfügbare Sprachunterstützung</b></big>Der Umfang an "
-"Unterstützung kann für die jeweilige Sprache sehr unterschiedlich ausfallen. "
-"Dies betrifft Übersetzung wie Schreibhilfen."
+"Unterstützung kann für die jeweilige Sprache unterschiedlich ausfallen. Dies "
+"betrifft Übersetzung wie Schreibhilfen."
 
 #: ../data/LanguageSelector.glade.h:7
 msgid "Default language for new user accounts and the login screen:"
@@ -335,7 +330,7 @@ msgstr "Tschad"
 
 #: ../data/countries.h:42
 msgid "Channel Islands"
-msgstr ""
+msgstr "Kanalinseln"
 
 #: ../data/countries.h:43
 msgid "Chile"
@@ -351,7 +346,7 @@ msgstr "Hong Kong Special Administrative Region of China"
 
 #: ../data/countries.h:46
 msgid "Macau Special Administrative Region of China"
-msgstr ""
+msgstr "Chinesische Sonderverwaltungszone Macau"
 
 #: ../data/countries.h:47
 msgid "Colombia"
@@ -399,7 +394,7 @@ msgstr "Demokratische Volksrepublik Korea"
 
 #: ../data/countries.h:58
 msgid "Democratic Republic of the Congo"
-msgstr ""
+msgstr "Demokratische Republik Kongo"
 
 #: ../data/countries.h:59
 msgid "Denmark"
@@ -447,7 +442,7 @@ msgstr "Äthiopien"
 
 #: ../data/countries.h:70
 msgid "Faeroe Islands"
-msgstr ""
+msgstr "Faröer Inseln"
 
 #: ../data/countries.h:71
 msgid "Falkland Islands (Malvinas)"
@@ -563,7 +558,7 @@ msgstr "Indonesien"
 
 #: ../data/countries.h:99
 msgid "Iran (Islamic Republic of)"
-msgstr ""
+msgstr "Iran"
 
 #: ../data/countries.h:100
 msgid "Iraq"
@@ -575,7 +570,7 @@ msgstr "Irland"
 
 #: ../data/countries.h:102
 msgid "Isle of Man"
-msgstr ""
+msgstr "Isle of Man"
 
 #: ../data/countries.h:103
 msgid "Israel"
@@ -703,7 +698,7 @@ msgstr "Mexiko"
 
 #: ../data/countries.h:134
 msgid "Micronesia (Federated States of)"
-msgstr ""
+msgstr "Mikronesien"
 
 #: ../data/countries.h:135
 msgid "Monaco"
@@ -843,7 +838,7 @@ msgstr "Quatar"
 
 #: ../data/countries.h:169
 msgid "Republic of Korea"
-msgstr ""
+msgstr "Republik von Korea"
 
 #: ../data/countries.h:170
 msgid "Republic of Moldova"
@@ -851,7 +846,7 @@ msgstr "Republik Moldavien"
 
 #: ../data/countries.h:171
 msgid "Réunion"
-msgstr ""
+msgstr "Réunion"
 
 #: ../data/countries.h:172
 msgid "Romania"
@@ -959,7 +954,7 @@ msgstr "Surinam"
 
 #: ../data/countries.h:198
 msgid "Svalbard and Jan Mayen Islands"
-msgstr ""
+msgstr "Svalbard- und Jan Mayen-Inseln"
 
 #: ../data/countries.h:199
 msgid "Swaziland"
@@ -1055,7 +1050,7 @@ msgstr "Vereinigte Staaten von Amerika"
 
 #: ../data/countries.h:222
 msgid "United States Virgin Islands"
-msgstr ""
+msgstr "Vereinigte Staaten Virgin Inseln"
 
 #: ../data/countries.h:223
 msgid "Uruguay"
@@ -1079,7 +1074,7 @@ msgstr "Vietnam"
 
 #: ../data/countries.h:228
 msgid "Wallis and Futuna Islands"
-msgstr ""
+msgstr "Wallis- und Futuna-Inseln"
 
 #: ../data/countries.h:229
 msgid "Western Sahara"
@@ -1175,7 +1170,7 @@ msgstr "Assamesisch"
 
 #: ../data/languages.h:11
 msgid "Asturian"
-msgstr ""
+msgstr "Asturisch"
 
 #: ../data/languages.h:12
 msgid "Avaric"
@@ -1195,7 +1190,7 @@ msgstr "Baschkirisch"
 
 #: ../data/languages.h:16
 msgid "Byelorussian"
-msgstr ""
+msgstr "Belarussisch"
 
 #: ../data/languages.h:17
 msgid "Bulgarian"
@@ -1215,7 +1210,7 @@ msgstr "Bambara"
 
 #: ../data/languages.h:21
 msgid "Bengali; Bangla"
-msgstr ""
+msgstr "Bengali; Bangla"
 
 #: ../data/languages.h:22
 msgid "Tibetan"
@@ -1255,7 +1250,7 @@ msgstr "Tschechisch"
 
 #: ../data/languages.h:31
 msgid "Old Church Slavonic"
-msgstr ""
+msgstr "Altes Kirchenslawisch"
 
 #: ../data/languages.h:32
 msgid "Chuvash"
@@ -1287,7 +1282,7 @@ msgstr "Ewe-Sprache"
 
 #: ../data/languages.h:39
 msgid "Greek, Modern"
-msgstr ""
+msgstr "Griechisch, Modern"
 
 #: ../data/languages.h:41
 msgid "Esperanto"
@@ -1335,11 +1330,12 @@ msgstr "Irisch"
 
 #: ../data/languages.h:53
 msgid "Scots Gaelic"
-msgstr ""
+msgstr "Schottisches Gälisch"
 
 #: ../data/languages.h:54
+#, fuzzy
 msgid "Galician"
-msgstr ""
+msgstr "Galizisch"
 
 #: ../data/languages.h:55
 msgid "Guarani"
@@ -1367,7 +1363,7 @@ msgstr "Hindi"
 
 #: ../data/languages.h:61
 msgid "Hiri Motu"
-msgstr ""
+msgstr "Hiri Motu"
 
 #: ../data/languages.h:62
 msgid "Croatian"
@@ -1407,7 +1403,7 @@ msgstr "Sichuan Yi"
 
 #: ../data/languages.h:71
 msgid "Inupiak"
-msgstr ""
+msgstr "Inupiak"
 
 #: ../data/languages.h:72
 msgid "Ido"
@@ -1454,8 +1450,9 @@ msgid "Kazakh"
 msgstr "Kasachisch"
 
 #: ../data/languages.h:83
+#, fuzzy
 msgid "Greenlandic"
-msgstr ""
+msgstr "Grönländisch"
 
 #: ../data/languages.h:84
 msgid "Khmer"
@@ -1507,7 +1504,7 @@ msgstr "Ganda"
 
 #: ../data/languages.h:96
 msgid "Limburgan"
-msgstr ""
+msgstr "Limburgisch"
 
 #: ../data/languages.h:97
 msgid "Lingala"
@@ -1575,7 +1572,7 @@ msgstr "Burmesisch"
 
 #: ../data/languages.h:114
 msgid "Norwegian Bokmal"
-msgstr ""
+msgstr "Norwegisch Bokmål"
 
 #: ../data/languages.h:115
 msgid "North Ndebele"
@@ -1611,7 +1608,7 @@ msgstr ""
 
 #: ../data/languages.h:123
 msgid "Occitan"
-msgstr ""
+msgstr "Okzitanisch"
 
 #: ../data/languages.h:124
 msgid "Ojibwa"
@@ -1655,7 +1652,7 @@ msgstr "Quechua"
 
 #: ../data/languages.h:134
 msgid "Rhaeto-Romance"
-msgstr ""
+msgstr "Rätoromanisch"
 
 #: ../data/languages.h:135
 msgid "Rundi"
@@ -1695,11 +1692,12 @@ msgstr "Sango"
 
 #: ../data/languages.h:144
 msgid "Serbo-Croatian"
-msgstr ""
+msgstr "Serbo-Kroatisch"
 
 #: ../data/languages.h:145
+#, fuzzy
 msgid "Sinhalese"
-msgstr ""
+msgstr "Sinhalesisch"
 
 #: ../data/languages.h:146
 msgid "Slovak"
@@ -1734,8 +1732,9 @@ msgid "Swati"
 msgstr "Swazi"
 
 #: ../data/languages.h:154
+#, fuzzy
 msgid "Southern Sotho"
-msgstr ""
+msgstr "Südliches Sotho"
 
 #: ../data/languages.h:155
 msgid "Sundanese"
@@ -1851,7 +1850,7 @@ msgstr "Joruba"
 
 #: ../data/languages.h:184
 msgid "Zhuang"
-msgstr ""
+msgstr "Zhuang"
 
 #: ../data/languages.h:185
 msgid "Chinese"
@@ -1866,21 +1865,21 @@ msgstr "Zulu"
 msgid "Configure multiple and native language support on your system"
 msgstr "Mehr- und Muttersprachenunterstützung festlegen"
 
-#: ../gnome-language-selector:27
-msgid "You are not root"
-msgstr ""
-
 #: ../gnome-language-selector:28
+msgid "You are not root"
+msgstr "Sie sind nicht root (Administrator)"
+
+#: ../gnome-language-selector:29
 msgid "Please run this software with administrative rights."
-msgstr ""
+msgstr "Bitte führen Sie dieses Programm mit Administrator-Rechten aus."
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
-msgstr ""
+msgstr "Programmabbruch"
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
-msgstr ""
+msgstr "Ausführen, selbst wenn eine bestehende Konfiguration existiert"
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
@@ -1891,6 +1890,9 @@ msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"Die Konfiguration basierend auf der LANGUAGE-Umgebungsvariable feststellen. "
+"Setzt die Konfiguration auf \"none\" (nichts) wenn nichts brauchbares "
+"gefunden wurde."
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
@@ -1898,15 +1900,19 @@ msgstr ""
 
 #: ../fontconfig-voodoo:40
 msgid "Show the current fontconfig-voodoo config"
-msgstr ""
+msgstr "Aktuelle fontconfig-voodoo Konfiguration anzeigen"
 
 #: ../fontconfig-voodoo:67
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
+"Eine Konfiguration existiert bereits. Verwenden Sie \"--force\" um sie zu "
+"überschreiben. "
 
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
+"Keine fontconfig-voodoo-Konfiguration wurde für die ausgewählten "
+"Spracheinstellungen gefunden."
 
 #, fuzzy
 #~ msgid ""

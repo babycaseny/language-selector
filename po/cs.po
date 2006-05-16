@@ -7,92 +7,91 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-02 16:01+0200\n"
-"PO-Revision-Date: 2005-09-10 21:13+0200\n"
+"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"PO-Revision-Date: 2006-05-02 17:40+0000\n"
 "Last-Translator: Ondřej Surý <ondrej@sury.org>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:175 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
 msgid "Language"
 msgstr "Jazyk"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:182
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
 #, fuzzy
 msgid "Support"
 msgstr "Výběr jazyka"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:276
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
 #, fuzzy
 msgid "The language support is not installed completely"
 msgstr "Jazyky jsou nyní nainstalovány"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
 #, fuzzy
 msgid "_Remind Me Again"
 msgstr "Upozorni mě znovu"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:280
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
 #, fuzzy
 msgid "_Install"
 msgstr "Instaluj teď"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
 #, fuzzy
 msgid "Details"
 msgstr "dánština"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
 #, fuzzy
 msgid "Could not install the selected language support"
 msgstr "Instaluj/odeber podporu jazyků"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:349
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:374
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
 #, fuzzy
 msgid "Could not install the full language support"
 msgstr "Instaluj/odeber podporu jazyků"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:375
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:485
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
 msgid "Software database is broken"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:486
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -133,15 +132,15 @@ msgstr "angličtina"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
-msgstr ""
+msgstr "    "
 
 #: ../data/LanguageSelector.glade.h:2
 msgid "<b>Default Language</b>"
-msgstr ""
+msgstr "<b>Implicitní jazyk</b>"
 
 #: ../data/LanguageSelector.glade.h:3
 msgid "<b>Supported Languages</b>"
-msgstr ""
+msgstr "<b>Podporované jazyky</b>"
 
 #: ../data/LanguageSelector.glade.h:4
 msgid ""
@@ -150,16 +149,19 @@ msgid ""
 "The support for each language can differ in the amount of available "
 "translations or writing aids."
 msgstr ""
+"<big><b>Kontroluji dostupnou podporu jazyka</b></big>\n"
+"\n"
+"Podpora každého jazyka se může lišit v množství dostupných překladech nebo "
+"kontrole pravopisu."
 
 #: ../data/LanguageSelector.glade.h:7
 msgid "Default language for new user accounts and the login screen:"
-msgstr ""
+msgstr "Implicitní jazyk pro nové uživatelské účty a přihlašovací obrazovku:"
 
 #: ../data/LanguageSelector.glade.h:8 ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
-#, fuzzy
 msgid "Language Support"
-msgstr "Výběr jazyka"
+msgstr "Jazyková podpora"
 
 #: ../data/countries.h:1
 msgid "Afghanistan"
@@ -327,7 +329,7 @@ msgstr "Čad"
 
 #: ../data/countries.h:42
 msgid "Channel Islands"
-msgstr ""
+msgstr "Channel Islands"
 
 #: ../data/countries.h:43
 msgid "Chile"
@@ -343,7 +345,7 @@ msgstr "Hong Kong, speciální administrativní část Číny"
 
 #: ../data/countries.h:46
 msgid "Macau Special Administrative Region of China"
-msgstr ""
+msgstr "Zvláštní správní region číny Macau"
 
 #: ../data/countries.h:47
 msgid "Colombia"
@@ -391,7 +393,7 @@ msgstr "Korejská lidově demokratická republika"
 
 #: ../data/countries.h:58
 msgid "Democratic Republic of the Congo"
-msgstr ""
+msgstr "Demokratická republika Kongo"
 
 #: ../data/countries.h:59
 msgid "Denmark"
@@ -439,7 +441,7 @@ msgstr "Etiopie"
 
 #: ../data/countries.h:70
 msgid "Faeroe Islands"
-msgstr ""
+msgstr "Faerské ostrovy"
 
 #: ../data/countries.h:71
 msgid "Falkland Islands (Malvinas)"
@@ -567,7 +569,7 @@ msgstr "Irsko"
 
 #: ../data/countries.h:102
 msgid "Isle of Man"
-msgstr ""
+msgstr "Ostrov Man"
 
 #: ../data/countries.h:103
 msgid "Israel"
@@ -695,7 +697,7 @@ msgstr "Mexiko"
 
 #: ../data/countries.h:134
 msgid "Micronesia (Federated States of)"
-msgstr ""
+msgstr "Mikronésie (Federace států)"
 
 #: ../data/countries.h:135
 msgid "Monaco"
@@ -835,7 +837,7 @@ msgstr "Katar"
 
 #: ../data/countries.h:169
 msgid "Republic of Korea"
-msgstr ""
+msgstr "Republika Korea"
 
 #: ../data/countries.h:170
 msgid "Republic of Moldova"
@@ -843,7 +845,7 @@ msgstr "Moldavská republika"
 
 #: ../data/countries.h:171
 msgid "Réunion"
-msgstr ""
+msgstr "Réunion"
 
 #: ../data/countries.h:172
 msgid "Romania"
@@ -951,7 +953,7 @@ msgstr "Surinam"
 
 #: ../data/countries.h:198
 msgid "Svalbard and Jan Mayen Islands"
-msgstr ""
+msgstr "Ostrovy Svalbard a Jan Mayen"
 
 #: ../data/countries.h:199
 msgid "Swaziland"
@@ -1047,7 +1049,7 @@ msgstr "Spojené státy americké"
 
 #: ../data/countries.h:222
 msgid "United States Virgin Islands"
-msgstr ""
+msgstr "Spojené státy - Panenské ostrovy"
 
 #: ../data/countries.h:223
 msgid "Uruguay"
@@ -1071,7 +1073,7 @@ msgstr "Vietnam"
 
 #: ../data/countries.h:228
 msgid "Wallis and Futuna Islands"
-msgstr ""
+msgstr "Ostrovy Wallis a Futuna"
 
 #: ../data/countries.h:229
 msgid "Western Sahara"
@@ -1147,7 +1149,7 @@ msgstr "afrikánština"
 
 #: ../data/languages.h:6
 msgid "Akan"
-msgstr ""
+msgstr "Akan"
 
 #: ../data/languages.h:7
 msgid "Amharic"
@@ -1155,7 +1157,7 @@ msgstr "Amharština"
 
 #: ../data/languages.h:8
 msgid "Aragonese"
-msgstr ""
+msgstr "Aragonese"
 
 #: ../data/languages.h:9
 msgid "Arabic"
@@ -1167,7 +1169,7 @@ msgstr "ásámština"
 
 #: ../data/languages.h:11
 msgid "Asturian"
-msgstr ""
+msgstr "Asturian"
 
 #: ../data/languages.h:12
 msgid "Avaric"
@@ -1203,11 +1205,11 @@ msgstr "Bislámština"
 
 #: ../data/languages.h:20
 msgid "Bambara"
-msgstr ""
+msgstr "Bambara"
 
 #: ../data/languages.h:21
 msgid "Bengali; Bangla"
-msgstr ""
+msgstr "Bengali; Bangla"
 
 #: ../data/languages.h:22
 msgid "Tibetan"
@@ -1231,7 +1233,7 @@ msgstr "čečenština"
 
 #: ../data/languages.h:27
 msgid "Chamorro"
-msgstr ""
+msgstr "Chamorština"
 
 #: ../data/languages.h:28
 msgid "Corsican"
@@ -1239,7 +1241,7 @@ msgstr "korsičtina"
 
 #: ../data/languages.h:29
 msgid "Cree"
-msgstr ""
+msgstr "Cree"
 
 #: ../data/languages.h:30
 msgid "Czech"
@@ -1251,7 +1253,7 @@ msgstr "Staroslověnština"
 
 #: ../data/languages.h:32
 msgid "Chuvash"
-msgstr ""
+msgstr "Chuvaština"
 
 #: ../data/languages.h:33
 msgid "Welsh"
@@ -1267,7 +1269,7 @@ msgstr "němčina"
 
 #: ../data/languages.h:36
 msgid "Divehi"
-msgstr ""
+msgstr "Divehi"
 
 #: ../data/languages.h:37
 msgid "Dzongkha"
@@ -1275,7 +1277,7 @@ msgstr "Bhútánština"
 
 #: ../data/languages.h:38
 msgid "Ewe"
-msgstr ""
+msgstr "Švé"
 
 #: ../data/languages.h:39
 msgid "Greek, Modern"
@@ -1303,7 +1305,7 @@ msgstr "perština"
 
 #: ../data/languages.h:46
 msgid "Fulah"
-msgstr ""
+msgstr "Fulah"
 
 #: ../data/languages.h:47
 msgid "Finnish"
@@ -1331,7 +1333,7 @@ msgstr "Skotská galština"
 
 #: ../data/languages.h:54
 msgid "Galician"
-msgstr ""
+msgstr "Galičtina"
 
 #: ../data/languages.h:55
 msgid "Guarani"
@@ -1359,7 +1361,7 @@ msgstr "hindština"
 
 #: ../data/languages.h:61
 msgid "Hiri Motu"
-msgstr ""
+msgstr "Hiri Motu"
 
 #: ../data/languages.h:62
 msgid "Croatian"
@@ -1375,7 +1377,7 @@ msgstr "arménština"
 
 #: ../data/languages.h:65
 msgid "Herero"
-msgstr ""
+msgstr "Herero"
 
 #: ../data/languages.h:66
 msgid "Interlingua"
@@ -1391,19 +1393,19 @@ msgstr "Interlingue"
 
 #: ../data/languages.h:69
 msgid "Igbo"
-msgstr ""
+msgstr "Igbo"
 
 #: ../data/languages.h:70
 msgid "Sichuan Yi"
-msgstr ""
+msgstr "Sichuan Yi"
 
 #: ../data/languages.h:71
 msgid "Inupiak"
-msgstr ""
+msgstr "Inupiak"
 
 #: ../data/languages.h:72
 msgid "Ido"
-msgstr ""
+msgstr "Ido"
 
 #: ../data/languages.h:73
 msgid "Icelandic"
@@ -1435,11 +1437,11 @@ msgstr "Konžština"
 
 #: ../data/languages.h:80
 msgid "Kikuyu"
-msgstr ""
+msgstr "Kikuyu"
 
 #: ../data/languages.h:81
 msgid "Kuanyama"
-msgstr ""
+msgstr "Kuanyama"
 
 #: ../data/languages.h:82
 msgid "Kazakh"
@@ -1463,7 +1465,7 @@ msgstr "korejština"
 
 #: ../data/languages.h:87
 msgid "Kanuri"
-msgstr ""
+msgstr "Kanuri"
 
 #: ../data/languages.h:88
 msgid "Kashmiri"
@@ -1475,7 +1477,7 @@ msgstr "kurdština"
 
 #: ../data/languages.h:90
 msgid "Komi"
-msgstr ""
+msgstr "Komi"
 
 #: ../data/languages.h:91
 msgid "Cornish"
@@ -1495,11 +1497,11 @@ msgstr "lucemburština"
 
 #: ../data/languages.h:95
 msgid "Ganda"
-msgstr ""
+msgstr "Ganda"
 
 #: ../data/languages.h:96
 msgid "Limburgan"
-msgstr ""
+msgstr "Limburgan"
 
 #: ../data/languages.h:97
 msgid "Lingala"
@@ -1515,7 +1517,7 @@ msgstr "litevština"
 
 #: ../data/languages.h:100
 msgid "Luba-Katanga"
-msgstr ""
+msgstr "Luba-Katanga"
 
 #: ../data/languages.h:101
 msgid "Latvian"
@@ -1527,7 +1529,7 @@ msgstr "Malgaština"
 
 #: ../data/languages.h:103
 msgid "Marshallese"
-msgstr ""
+msgstr "Marshallese"
 
 #: ../data/languages.h:104
 msgid "Maori"
@@ -1567,11 +1569,11 @@ msgstr "Barmština"
 
 #: ../data/languages.h:114
 msgid "Norwegian Bokmal"
-msgstr ""
+msgstr "Norština Bokmal"
 
 #: ../data/languages.h:115
 msgid "North Ndebele"
-msgstr ""
+msgstr "North Ndebele"
 
 #: ../data/languages.h:116
 msgid "Nepali"
@@ -1579,7 +1581,7 @@ msgstr "nepálština"
 
 #: ../data/languages.h:117
 msgid "Ndonga"
-msgstr ""
+msgstr "Ndonga"
 
 #: ../data/languages.h:118
 msgid "Dutch"
@@ -1587,7 +1589,7 @@ msgstr "holandština"
 
 #: ../data/languages.h:119
 msgid "Norwegian Nynorsk"
-msgstr ""
+msgstr "Norština Nynorsk"
 
 #: ../data/languages.h:120
 msgid "Norwegian"
@@ -1595,19 +1597,19 @@ msgstr "norština"
 
 #: ../data/languages.h:121
 msgid "South Ndebele"
-msgstr ""
+msgstr "South Ndebele"
 
 #: ../data/languages.h:122
 msgid "Navajo"
-msgstr ""
+msgstr "Navajo"
 
 #: ../data/languages.h:123
 msgid "Occitan"
-msgstr ""
+msgstr "Occitan"
 
 #: ../data/languages.h:124
 msgid "Ojibwa"
-msgstr ""
+msgstr "Ojibwa"
 
 #: ../data/languages.h:125
 msgid "Oromo"
@@ -1623,7 +1625,7 @@ msgstr "osečtina"
 
 #: ../data/languages.h:128
 msgid "Punjabi"
-msgstr ""
+msgstr "Paňdžábština"
 
 #: ../data/languages.h:129
 msgid "Pali"
@@ -1635,7 +1637,7 @@ msgstr "polština"
 
 #: ../data/languages.h:131
 msgid "Pushto"
-msgstr ""
+msgstr "Pushto"
 
 #: ../data/languages.h:132
 msgid "Portuguese"
@@ -1647,7 +1649,7 @@ msgstr "Kečuánština"
 
 #: ../data/languages.h:134
 msgid "Rhaeto-Romance"
-msgstr ""
+msgstr "Rétorománsky"
 
 #: ../data/languages.h:135
 msgid "Rundi"
@@ -1679,7 +1681,7 @@ msgstr "sindhština"
 
 #: ../data/languages.h:142
 msgid "Northern Sami"
-msgstr ""
+msgstr "Severní Sami"
 
 #: ../data/languages.h:143
 msgid "Sango"
@@ -1691,7 +1693,7 @@ msgstr "Srbochorvatština"
 
 #: ../data/languages.h:145
 msgid "Sinhalese"
-msgstr ""
+msgstr "Sinhálština"
 
 #: ../data/languages.h:146
 msgid "Slovak"
@@ -1727,7 +1729,7 @@ msgstr "Siswatština"
 
 #: ../data/languages.h:154
 msgid "Southern Sotho"
-msgstr ""
+msgstr "Southern Sotho"
 
 #: ../data/languages.h:155
 msgid "Sundanese"
@@ -1811,7 +1813,7 @@ msgstr "uzbekistánština"
 
 #: ../data/languages.h:176
 msgid "Venda"
-msgstr ""
+msgstr "Venda"
 
 #: ../data/languages.h:177
 msgid "Vietnamese"
@@ -1819,11 +1821,11 @@ msgstr "vietnamština"
 
 #: ../data/languages.h:178
 msgid "Volapuk"
-msgstr ""
+msgstr "Volapuk"
 
 #: ../data/languages.h:179
 msgid "Walloon"
-msgstr ""
+msgstr "Valonština"
 
 #: ../data/languages.h:180
 msgid "Wolof"
@@ -1843,7 +1845,7 @@ msgstr "Yoruba"
 
 #: ../data/languages.h:184
 msgid "Zhuang"
-msgstr ""
+msgstr "Zhuang"
 
 #: ../data/languages.h:185
 msgid "Chinese"
@@ -1856,49 +1858,52 @@ msgstr "Zulu"
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr ""
-
-#: ../gnome-language-selector:27
-msgid "You are not root"
-msgstr ""
+msgstr "Nastavit národní jazykovou podporu společně s podporou dalších jazyků"
 
 #: ../gnome-language-selector:28
+msgid "You are not root"
+msgstr "Nejste root"
+
+#: ../gnome-language-selector:29
 msgid "Please run this software with administrative rights."
-msgstr ""
+msgstr "Prosím spusťte tento program s administrátorskými právy."
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
-msgstr ""
+msgstr "Unkončování"
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
-msgstr ""
+msgstr "Vynutit i když konfigurace existuje"
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
+msgstr "Nastavit fontconfig voodoo pro zvolený jazyk"
 
 #: ../fontconfig-voodoo:32
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"Odhadnout konfiguraci dle jazykového prostředí. Nastaví konfiguraci na "
+"'none' pokud nebude nalezeno nic odpovídajícího"
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
-msgstr ""
+msgstr "Vypsat dostupné fontconfig-voodoo konfigurace"
 
 #: ../fontconfig-voodoo:40
 msgid "Show the current fontconfig-voodoo config"
-msgstr ""
+msgstr "Zobrazit aktuální fontconfig-voodoo konfiguraci"
 
 #: ../fontconfig-voodoo:67
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
+msgstr "Konfigurace již existuje. Použijte '--force' k jejímu přepsání. "
 
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
+"Žádná fontconfig-voodoo konfigurace nenalezena pro vybrané jazykové prostředí"
 
 #~ msgid "Update language support?"
 #~ msgstr "Aktualizovad podporu jazyka?"
@@ -2436,7 +2441,7 @@ msgstr ""
 #~ msgstr "Tanzánie, sjednocená republika"
 
 #~ msgid "The Former Yugoslav Republic of Macedonia"
-#~ msgstr "Bývalá Jugoslávská Makedonská republika "
+#~ msgstr "Bývalá Jugoslávská Makedonská republika"
 
 #~ msgid "The Transitional Islamic State of Afghanistan"
 #~ msgstr "Přechodný islámský stát Afghánistán"

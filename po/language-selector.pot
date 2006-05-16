@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-02 16:01+0200\n"
+"POT-Creation-Date: 2006-05-16 20:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,76 +16,76 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:175 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
 msgid "Language"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:182
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
 msgid "Support"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:276
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
 msgid "The language support is not installed completely"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
 msgid "_Remind Me Again"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:280
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
 msgid "_Install"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
 msgid "Details"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
 msgid "Could not install the selected language support"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:349
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:374
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
 msgid "Could not install the full language support"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:375
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:485
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
 msgid "Software database is broken"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:486
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -1847,11 +1847,11 @@ msgstr ""
 msgid "Configure multiple and native language support on your system"
 msgstr ""
 
-#: ../gnome-language-selector:27
+#: ../gnome-language-selector:28
 msgid "You are not root"
 msgstr ""
 
-#: ../gnome-language-selector:28
+#: ../gnome-language-selector:29
 msgid "Please run this software with administrative rights."
 msgstr ""
 
