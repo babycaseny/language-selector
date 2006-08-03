@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"POT-Creation-Date: 2006-08-03 11:47+0200\n"
 "PO-Revision-Date: 2006-05-15 19:48+0000\n"
 "Last-Translator: Bastian Holst <bastianholst@gmx.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
@@ -13,19 +13,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:166 ../data/languages.h:1
 msgid "Language"
 msgstr "Sprache"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:173
 msgid "Support"
 msgstr "Unterstützung"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:267
 msgid "The language support is not installed completely"
 msgstr "Die Sprachunterstützung ist nicht vollständig installiert"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:268
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
@@ -33,23 +33,23 @@ msgstr ""
 "Nicht alle Übersetzungen oder Schreibhilfen für die auf Ihrem System "
 "unterstützen Sprachen wurden installiert."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:270
 msgid "_Remind Me Again"
 msgstr "_Erinnere mich später"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:271
 msgid "_Install"
 msgstr "_Installieren"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:274
 msgid "Details"
 msgstr "Details"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:338
 msgid "Could not install the selected language support"
 msgstr "Konnte die ausgewählte Sprachunterstützung nicht installieren"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:339
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -59,11 +59,11 @@ msgstr ""
 "Fehlerbericht auf der Seite »https://launchpad.net/bugs/bugs/+package/« für "
 "das Produkt »language-selector« aus."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:364
 msgid "Could not install the full language support"
 msgstr "Konnte die Sprachunterstützung nicht vollständig installieren"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:365
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -72,15 +72,15 @@ msgstr ""
 "Verwaltung vor. Überprüfen Sie die Software-Einstellungen im Menü "
 "»Systemverwaltung«."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:396
 msgid "The list of available languages on the system has been updated."
 msgstr "Die Liste mit den unterstützten Sprachen wurde aktualisiert."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "Nur eine Anwendung zur Software-Verwaltung kann zur selben Zeit laufen"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -88,11 +88,11 @@ msgstr ""
 "Bitte schließen zuerst Sie die andere Anwednung, wie z.B. »Update Manager«, "
 "»aptidude« oder »Synaptic«."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:475
 msgid "Software database is broken"
 msgstr "Software-Datenbank ist defekt"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -102,35 +102,6 @@ msgstr ""
 "verwenden Sie die Paketverwaltung »Synaptic« oder führen Sie den Befehl "
 "»sudo apt-get install -f« in einem Terminal aus, um dieses Problem zu "
 "beheben."
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
-msgid "Translation"
-msgstr "Übersetzung"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
-msgid "Language selector"
-msgstr "Sprachauswahl"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
-msgid "Supported Languages"
-msgstr "Unterstützte Sprachen"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
-msgid "Close"
-msgstr "Schließen"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
-msgid "Apply"
-msgstr "Übernehmen"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
-msgid "Default language"
-msgstr "Standardsprache"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
-msgid "English"
-msgstr "Englisch"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -1284,6 +1255,10 @@ msgstr "Ewe-Sprache"
 msgid "Greek, Modern"
 msgstr "Griechisch, Modern"
 
+#: ../data/languages.h:40
+msgid "English"
+msgstr "Englisch"
+
 #: ../data/languages.h:41
 msgid "Esperanto"
 msgstr "Esperanto"
@@ -1913,6 +1888,24 @@ msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Keine fontconfig-voodoo-Konfiguration wurde für die ausgewählten "
 "Spracheinstellungen gefunden."
+
+#~ msgid "Translation"
+#~ msgstr "Übersetzung"
+
+#~ msgid "Language selector"
+#~ msgstr "Sprachauswahl"
+
+#~ msgid "Supported Languages"
+#~ msgstr "Unterstützte Sprachen"
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgid "Apply"
+#~ msgstr "Übernehmen"
+
+#~ msgid "Default language"
+#~ msgstr "Standardsprache"
 
 #, fuzzy
 #~ msgid ""

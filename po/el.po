@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"POT-Creation-Date: 2006-08-03 11:47+0200\n"
 "PO-Revision-Date: 2006-05-13 15:43+0000\n"
 "Last-Translator: Kostas Papadimas <pkst@gmx.net>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:166 ../data/languages.h:1
 msgid "Language"
 msgstr "Γλώσσα"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:173
 msgid "Support"
 msgstr "Υποστήριξη"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:267
 msgid "The language support is not installed completely"
 msgstr "Η γλωσσική υποστήριξη δεν έχει εγκατασταθεί πλήρως"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:268
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
@@ -36,23 +36,23 @@ msgstr ""
 "Δεν έχουν εγκατασταθεί πλήρως όλες οι μεταφράσεις και τα βοηθήματα γραφής "
 "που είναι διαθέσιμα για τις υποστηριζόμενες γλώσσες στο σύστημα σας."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:270
 msgid "_Remind Me Again"
 msgstr "Υπεν_θύμιση ξανά"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:271
 msgid "_Install"
 msgstr "_Εγκατάσταση"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:274
 msgid "Details"
 msgstr "Λεπτομέρειες"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:338
 msgid "Could not install the selected language support"
 msgstr "Αδυναμία εγκατάστασης της επιλεγμένης γλωσσικής υποστήριξης"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:339
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -62,11 +62,11 @@ msgstr ""
 "στο https://launchpad.net/bugs/bugs/+package/ για το προϊόν 'language-"
 "selector'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:364
 msgid "Could not install the full language support"
 msgstr "Αδυναμία εγκατάστασης πλήρους γλωσσικής υποστήριξης."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:365
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -74,17 +74,17 @@ msgstr ""
 "Συνήθως αυτό οφείλεται σε σφάλμα στην αρχειοθήκη λογισμικού ή στη διαχείριση "
 "λογισμικού. Ελέγξτε τις προτιμήσεις λογισμικού σας στο μενού \"Διαχείριση\""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:396
 msgid "The list of available languages on the system has been updated."
 msgstr "Ενημερώθηκε η λίστα των διαθέσιμων γλωσσών στο σύστημα σας"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 "Επιτρέπεται η εκτέλεση μόνο ενός εργαλείο διαχείρισης λογισμικού την ίδια "
 "στιγμή."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -92,11 +92,11 @@ msgstr ""
 "Παρακαλώ κλείστε πρώτα την άλλη εφαρμογή π.χ \"Διαχείριση ενημερώσεων\", "
 "\"aptitude\" ή το\"Synaptic\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:475
 msgid "Software database is broken"
 msgstr "Η βάση δεδομένων λογισμικού είναι κατεστραμμένη."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -105,35 +105,6 @@ msgstr ""
 "Είναι αδύνατη η εγκατάσταση ή η απομάκρυνση λογισμικού. Παρακαλώ "
 "χρησιμοποιήστε το διαχειριστή πακέτων \"Synaptic\" ή εκτελέστε την εντολή "
 "\"sudo apt-get install -f\" σε ένα τερματικό για να διορθώσετε το πρόβλημα."
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
-msgid "Translation"
-msgstr "Μετάφραση"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
-msgid "Language selector"
-msgstr "Επιλογέας γλώσσας"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
-msgid "Supported Languages"
-msgstr "Υποστηριζόμενες γλώσσες"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
-msgid "Close"
-msgstr "Κλείσιμο"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
-msgid "Apply"
-msgstr "Εφαρμογή"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
-msgid "Default language"
-msgstr "Προεπιλεγμένη γλώσσα"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
-msgid "English"
-msgstr "Αγγλικά"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -1306,6 +1277,10 @@ msgstr ""
 msgid "Greek, Modern"
 msgstr "Ελληνική"
 
+#: ../data/languages.h:40
+msgid "English"
+msgstr "Αγγλικά"
+
 #: ../data/languages.h:41
 msgid "Esperanto"
 msgstr ""
@@ -1927,3 +1902,21 @@ msgstr ""
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Δεν βρέθηκε ρύθμιση  fontconfig-voodoo για το επιλεγμένο locale."
+
+#~ msgid "Translation"
+#~ msgstr "Μετάφραση"
+
+#~ msgid "Language selector"
+#~ msgstr "Επιλογέας γλώσσας"
+
+#~ msgid "Supported Languages"
+#~ msgstr "Υποστηριζόμενες γλώσσες"
+
+#~ msgid "Close"
+#~ msgstr "Κλείσιμο"
+
+#~ msgid "Apply"
+#~ msgstr "Εφαρμογή"
+
+#~ msgid "Default language"
+#~ msgstr "Προεπιλεγμένη γλώσσα"

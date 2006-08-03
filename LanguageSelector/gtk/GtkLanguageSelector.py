@@ -90,17 +90,6 @@ def xor(a,b): return a ^ b
 
 class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
 
-    # packages that need special translation packs (not covered by
-    # the normal langpacks)
-    pkg_translations = [
-        ("kdelibs4c2", "language-pack-kde-"),
-        ("libgnome2-0", "language-pack-gnome-"),
-        ("firefox", "mozilla-firefox-locale-"),
-        ("mozilla-thunderbird", "mozilla-thunderbird-local-"),
-        ("openoffice.org2", "openoffice.org2-l10n-"),
-        ("openoffice.org2", "openoffice.org2-help-")
-    ]
-
     def __init__(self, datadir, options):
         LanguageSelectorBase.__init__(self, datadir)
         SimpleGladeApp.__init__(self,
@@ -265,7 +254,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             if self._cache.has_key(trans_package) and \
                self._cache[trans_package].isInstalled:
                 #print "IsInstalled: %s " % trans_package
-                for (pkg, translation) in self.pkg_translations:
+                for (pkg, translation) in self._cache.pkg_translations:
                     missing += self.__missingTranslationPkgs(pkg, translation+langInfo.languageCode)
 
         #print "Missing: %s " % missing
@@ -338,8 +327,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             res = False
 
         # undo the selections
-        for pkg in self._cache.keys():
-            self._cache[pkg].markKeep()
+        self._cache.clear()
         if self._cache._depcache.BrokenCount != 0:
             # undoing the selections was impossible, 
             d = gtk.MessageDialog(parent=self.window_main,

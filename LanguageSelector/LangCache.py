@@ -28,8 +28,8 @@ class LanguageSelectorPkgCache(apt.Cache):
     # packages that need special translation packs (not covered by
     # the normal langpacks) 
     pkg_translations = [
-        ("kdelibs4c2a", "language-pack-kde-"),
-        ("libgnome2-0", "language-pack-gnome-"),
+        ("kdelibs-data", "language-pack-kde-"),
+        ("libgnome2-common", "language-pack-gnome-"),
         ("firefox", "mozilla-firefox-locale-"),
         ("mozilla-thunderbird", "mozilla-thunderbird-local-"),
         ("openoffice.org", "openoffice.org-l10n-"),
@@ -45,6 +45,10 @@ class LanguageSelectorPkgCache(apt.Cache):
         # keep the lists 
         self.to_inst = []
         self.to_rm = []
+
+    def clear(self):
+        """ clear the selections """
+        self._depcache.Init()
         
     def getChangesList(self):
         to_inst = []

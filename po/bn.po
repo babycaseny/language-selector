@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"POT-Creation-Date: 2006-08-03 11:47+0200\n"
 "PO-Revision-Date: 2006-05-06 05:37+0000\n"
 "Last-Translator: Khandakar Mujahidul Islam <suzan@bengalinux.org>\n"
 "Language-Team: Bengali <gnome-translation@bengalinux.org>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:166 ../data/languages.h:1
 msgid "Language"
 msgstr "ভাষা"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:173
 msgid "Support"
 msgstr "সমর্থন"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:267
 msgid "The language support is not installed completely"
 msgstr "ভাষা সমর্থন সম্পূর্ণভাবে ইনস্টল করা হল না"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:268
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
@@ -36,23 +36,23 @@ msgstr ""
 "সব অনুবাদ অথবা লেখার সাহায্য, যা আপনার সিস্টেমে সমর্থিত ভাষার জন্য পাওয়া যাচ্ছে, "
 "ইনস্টলকৃত নয়।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:270
 msgid "_Remind Me Again"
 msgstr "আমাকে আবার স্মরণ করিয়ে দিন (_R)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:271
 msgid "_Install"
 msgstr "ইনস্টল করুন (_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:274
 msgid "Details"
 msgstr "বিস্তারিত"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:338
 msgid "Could not install the selected language support"
 msgstr "নির্বাচিত ভাষা সমর্থন ইনস্টল করতে পারল না"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:339
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -62,11 +62,11 @@ msgstr ""
 "প্রোডাক্টের বিপরীতে https://launchpad.net/bugs/bugs/+package/ এ একটি প্রোগ্রাম "
 "ত্রুটি রিপোর্ট করুন।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:364
 msgid "Could not install the full language support"
 msgstr "পূর্ণ ভাষা সমর্থন ইনস্টল করতে পারল না"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:365
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -74,15 +74,15 @@ msgstr ""
 "এটি সাধারণত আপনার সফটওয়্যার আর্কাইভ অথবা সফটওয়্যার ম্যানেজারের ত্রুটি সম্পর্কিত। মেনু"
 "\"Adminstration\"তে আপনার পছন্দের সফটওয়্যার পরীক্ষা করুন।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:396
 msgid "The list of available languages on the system has been updated."
 msgstr "সিস্টেমে পাওয়া যাচ্ছে এমন ভাষার তালিকা আপডেট করা হয়েছে।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "মাত্র এক সফটওয়্যার ব্যবস্থাপনা টুল একই সময়ে চালাতে অনুমতি দেওয়া হল"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -90,11 +90,11 @@ msgstr ""
 "দয়া করে প্রথমে অন্যান্য অ্যাপলিকেশন উদা.\"পরিবর্তন ম্যানেজার\",\"aptitude\"অথবা"
 "\"Synaptic\"বন্ধ করুন।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:475
 msgid "Software database is broken"
 msgstr "সফটওয়্যার ডাটাবেসটি ভাঙা"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 #, fuzzy
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
@@ -104,35 +104,6 @@ msgstr ""
 "এইটি ইনস্টল করতে impossible অথবা যেকোন সফটওয়্যার বাদ দিন। দয়া করে প্যাকেজ "
 "ম্যানেজার\"Synaptic\"ব্যবহার করুন অথবা চালান\"sudo apt-getন প্রথমে এই বিষয়টি "
 "মেরামত করতে একটি টার্মিনালে -f\"ইনস্টল করুন।"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
-msgid "Translation"
-msgstr "অনুবাদ"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
-msgid "Language selector"
-msgstr "ভাষা পছন্দ"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
-msgid "Supported Languages"
-msgstr "সমর্থিত বাষা"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
-msgid "Close"
-msgstr "বন্ধ"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
-msgid "Apply"
-msgstr "আবেদন"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
-msgid "Default language"
-msgstr "ডিফল্ট ভাধষা"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
-msgid "English"
-msgstr "ইংরেজী"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -1308,6 +1279,10 @@ msgstr "Ewe"
 msgid "Greek, Modern"
 msgstr "গ্রিক, আধুনিক"
 
+#: ../data/languages.h:40
+msgid "English"
+msgstr "ইংরেজী"
+
 #: ../data/languages.h:41
 msgid "Esperanto"
 msgstr "এসপারান্তো"
@@ -1983,6 +1958,24 @@ msgstr ""
 #, fuzzy
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "কোনও fontconfig-voodoo কনফিগারেশন নির্বাচিত localeএর জন্য খুঁজে পেল না"
+
+#~ msgid "Translation"
+#~ msgstr "অনুবাদ"
+
+#~ msgid "Language selector"
+#~ msgstr "ভাষা পছন্দ"
+
+#~ msgid "Supported Languages"
+#~ msgstr "সমর্থিত বাষা"
+
+#~ msgid "Close"
+#~ msgstr "বন্ধ"
+
+#~ msgid "Apply"
+#~ msgstr "আবেদন"
+
+#~ msgid "Default language"
+#~ msgstr "ডিফল্ট ভাধষা"
 
 #~ msgid "Translations"
 #~ msgstr "অনুবাদ"

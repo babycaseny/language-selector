@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"POT-Creation-Date: 2006-08-03 11:47+0200\n"
 "PO-Revision-Date: 2006-05-03 08:56+0000\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <ubuntu-fi@lists.ubuntu.com>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Rosetta-Version: 0.1\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:166 ../data/languages.h:1
 msgid "Language"
 msgstr "Kieli"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:173
 msgid "Support"
 msgstr "Tuki"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:267
 msgid "The language support is not installed completely"
 msgstr "Kielitukea ei ole asennettu kokonaan"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:268
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
@@ -36,23 +36,23 @@ msgstr ""
 "Kaikkia järjestelmässäsi tuetuille kielille olevia käännöksiä tai "
 "kirjoituksen aputyökaluja ei ole asennettu."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:270
 msgid "_Remind Me Again"
 msgstr "_Muistuta minua myöhemmin"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:271
 msgid "_Install"
 msgstr "_Asenna"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:274
 msgid "Details"
 msgstr "Yksityiskohdat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:338
 msgid "Could not install the selected language support"
 msgstr "Ei voitu asentaa valittua kielitukea"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:339
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -61,11 +61,11 @@ msgstr ""
 "Tämä voi johtua ohjelmavirheestä. Tee asiasta virheraportti osoitteessa "
 "https://launchpad.net/bugs/bugs/+package/ 'language-selector'-tuotteelle."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:364
 msgid "Could not install the full language support"
 msgstr "Ei voitu asentaa täyttä kielitukea"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:365
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -73,15 +73,15 @@ msgstr ""
 "Yleensä tämä liittyy virheeseen ohjelmavarastossa tai pakettienhallinnassa. "
 "Tarkista ohjelma-asetukset valikossa \"Hallinta\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:396
 msgid "The list of available languages on the system has been updated."
 msgstr "Luettelo järjestelmän käytettävissä olevista kielistä on päivitetty."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "Vain yksi pakettienhallintatyökalu voi olla käynnissä samaan aikaan"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -89,11 +89,11 @@ msgstr ""
 "Sulje toinen ohjelma ensin, esim. \"Päivitysten hallinta\", \"aptitude\" tai "
 "\"Synaptic\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:475
 msgid "Software database is broken"
 msgstr "Ohjelmatietokanta on rikki"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -102,35 +102,6 @@ msgstr ""
 "Mitään ohjelmia ei voida asentaa tai poistaa. Korjaa ongelma käyttämällä "
 "Synaptic-pakettienhallintaa tai komentoa \"sudo apt-get install -f\" "
 "päätteessä."
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
-msgid "Translation"
-msgstr "Käännös"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
-msgid "Language selector"
-msgstr "Kielen valitsin"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
-msgid "Supported Languages"
-msgstr "Tuetut kielet"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
-msgid "Close"
-msgstr "Sulje"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
-msgid "Apply"
-msgstr "Toteuta"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
-msgid "Default language"
-msgstr "Oletuskieli"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
-msgid "English"
-msgstr "englanti"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -1285,6 +1256,10 @@ msgstr "ewe"
 msgid "Greek, Modern"
 msgstr "kreikka, moderni"
 
+#: ../data/languages.h:40
+msgid "English"
+msgstr "englanti"
+
 #: ../data/languages.h:41
 msgid "Esperanto"
 msgstr "esperanto"
@@ -1906,6 +1881,24 @@ msgstr ""
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Ei fonttiasetus-voodoo asetuksia löydetty valitulle alueelle"
+
+#~ msgid "Translation"
+#~ msgstr "Käännös"
+
+#~ msgid "Language selector"
+#~ msgstr "Kielen valitsin"
+
+#~ msgid "Supported Languages"
+#~ msgstr "Tuetut kielet"
+
+#~ msgid "Close"
+#~ msgstr "Sulje"
+
+#~ msgid "Apply"
+#~ msgstr "Toteuta"
+
+#~ msgid "Default language"
+#~ msgstr "Oletuskieli"
 
 #~ msgid ""
 #~ "Translations include applications and documentation. The writing aids "

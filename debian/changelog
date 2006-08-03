@@ -1,3 +1,16 @@
+language-selector (0.1.21) edgy; urgency=low
+
+  * fontconfig/zh_TW:
+    - updated, thanks to Lu, Chao-Ming (Tetralet)
+  * LanguageSelector/LangCache.py:
+    - change the key-dependencies for kde, gnome to
+      "kdelibs-data", "libgnome2-common" (thanks to Kamion)
+  * fix code duplication (yeah!)
+  * debian/control:
+    - updated the python dependencies
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu,  3 Aug 2006 10:33:40 +0200
+
 language-selector (0.1.20) dapper; urgency=low
 
   * updated the desktop file translations (for kde that

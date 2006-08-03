@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lang-hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-16 20:04+0200\n"
+"POT-Creation-Date: 2006-08-03 11:47+0200\n"
 "PO-Revision-Date: 2006-05-13 11:54+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: <hu@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "X-Rosetta-Version: 0.1\n"
 "X-Generator: KBabel 1.11.2\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:166 ../data/languages.h:1
 msgid "Language"
 msgstr "Nyelv"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:184
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:173
 msgid "Support"
 msgstr "Támogatás"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:278
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:267
 msgid "The language support is not installed completely"
 msgstr "A nyelvi támogatás nincs teljesen telepítve"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:279
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:268
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
@@ -38,23 +38,23 @@ msgstr ""
 "Nincs minden fordítás vagy írástámogatás telepítve, ami a rendszeren a "
 "támogatott nyevekhez elérhető."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:281
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:270
 msgid "_Remind Me Again"
 msgstr "_Emlékeztessen később"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:271
 msgid "_Install"
 msgstr "_Telepítés"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:285
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:274
 msgid "Details"
 msgstr "Részletek"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:350
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:338
 msgid "Could not install the selected language support"
 msgstr "A kiválasztott nyelvi támogatás telepítése nem lehetséges"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:339
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -64,11 +64,11 @@ msgstr ""
 "https://launchpad.net/bugs/bugs/+package/ címen a \"language-selector\" "
 "csomaghoz."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:376
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:364
 msgid "Could not install the full language support"
 msgstr "Nem lehet telepíteni a teljes nyelvi támogatást"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:377
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:365
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -76,15 +76,15 @@ msgstr ""
 "Ez általában a szoftverarchívum a vagy a szoftverkezelő hibájával "
 "kapcsolatos. Ellenőrizze szoftverbeállításait az \"Adminisztráció\" menüben."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:408
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:396
 msgid "The list of available languages on the system has been updated."
 msgstr "Az elérhető nyelvek listája frissült a rendszeren."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:465
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "Csak egy szoftverkezelő eszköz futhat egyidejűleg"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -92,11 +92,11 @@ msgstr ""
 "Előbb zárja be a másik alkalmazást, például a Frissítéskezelőt  vagy a "
 "Synaptic csomagkezelőt."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:487
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:475
 msgid "Software database is broken"
 msgstr "A szoftveradatbázis sérült"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:488
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -105,35 +105,6 @@ msgstr ""
 "Lehetetlen szoftvereket telepíteni vagy törölni. Használja a Synaptic "
 "csomagkezelőt, vagy futtassa a \"sudo apt-get install -f\" parancsot egy "
 "terminálban a probléma megoldása érdekében."
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
-msgid "Translation"
-msgstr "Fordítás"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
-msgid "Language selector"
-msgstr "Nyelvválasztó"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
-msgid "Supported Languages"
-msgstr "Támogatott nyelvek"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
-msgid "Close"
-msgstr "Bezárás"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
-msgid "Apply"
-msgstr "Alkalmazás"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
-msgid "Default language"
-msgstr "Alapértelmezett nyelv"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66 ../data/languages.h:40
-msgid "English"
-msgstr "Angol"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -1289,6 +1260,10 @@ msgstr "Ewe"
 msgid "Greek, Modern"
 msgstr "Görög (modern)"
 
+#: ../data/languages.h:40
+msgid "English"
+msgstr "Angol"
+
 #: ../data/languages.h:41
 msgid "Esperanto"
 msgstr "Eszperantó"
@@ -1913,3 +1888,21 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Nem található fontconfig-voodoo konfiguráció a kijelölt területi beállításhoz"
+
+#~ msgid "Translation"
+#~ msgstr "Fordítás"
+
+#~ msgid "Language selector"
+#~ msgstr "Nyelvválasztó"
+
+#~ msgid "Supported Languages"
+#~ msgstr "Támogatott nyelvek"
+
+#~ msgid "Close"
+#~ msgstr "Bezárás"
+
+#~ msgid "Apply"
+#~ msgstr "Alkalmazás"
+
+#~ msgid "Default language"
+#~ msgstr "Alapértelmezett nyelv"
