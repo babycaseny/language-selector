@@ -1,3 +1,17 @@
+language-selector (0.1.22) edgy; urgency=low
+
+  * applied patches from danilo (at) kvota.net:
+    - fix incorrect display if no country is given (#55475)
+    - fix serbian entries (#55476)
+    - iso-codes for translations of language and country names (#55483)
+  * data/Makefile:
+    - removed the generation of pot entries for the languages
+  * debian/control:
+    - depend on iso-codes for the translations
+    - updated the python dependencies to reflect the python transition
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  7 Aug 2006 15:24:34 +0200
+
 language-selector (0.1.21) edgy; urgency=low
 
   * fontconfig/zh_TW:

@@ -87,12 +87,16 @@ class LocaleInfo(object):
             (lang, country) = string.split(locale, "_")
             # get all locales for this language
             l = filter(lambda k: k.startswith(lang+"_"), self.generated_locales())
-            # only show region/county if we have more than one 
+            # only show region/country if we have more than one 
             if len(l) > 1:
-                return "%s (%s)" % (_(self.lang(lang)), _(self.country(country)))
+                mycountry = self.country(country)
+                if mycountry:
+                    return "%s (%s)" % (_(self.lang(lang)), _(mycountry))
+                else:
+                    return "%s" % (_(self.lang(lang)))
             else:
-                return self.lang(lang)
-        return self.lang(locale)
+                return _(self.lang(lang))
+        return _(self.lang(locale))
 
     def makeEnvString(self, code):
         """ input is a language code, output a string that can be put in

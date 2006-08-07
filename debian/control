@@ -7,7 +7,7 @@ Standards-Version: 3.6.1.1
 
 Package: language-selector
 Architecture: all
-Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, python, python2.4-gtk2, python2.4-glade2, python-apt (>= 0.6.12), synaptic
+Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, python, python-gtk2, python-glade2, python-apt (>= 0.6.12), synaptic
 Description: Language selector for ubuntu linux
  This package let you change and install language packs
  in ubuntu linux.
@@ -26,7 +26,7 @@ Description: Language selector for kubuntu linux
 
 Package: language-selector-common
 Architecture: all
-Depends: python, ${shlibs:Depends}
+Depends: python, ${shlibs:Depends}, iso-codes
 Replaces: language-selector (<< 0.1.13)
 Description: Language selector for ubuntu linux
  This package let you change and install language packs

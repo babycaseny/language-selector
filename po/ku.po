@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-03 11:47+0200\n"
+"POT-Creation-Date: 2006-08-07 16:10+0200\n"
 "PO-Revision-Date: 2006-05-04 20:47+0000\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <gnu-ku-wergerandin@lists.sourceforge.net>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Rosetta-Version: 0.1\n"
 "X-Generator: KBabel 1.10\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:166 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:166
 msgid "Language"
 msgstr "Ziman"
 
@@ -139,1702 +139,6 @@ msgstr "Zimanê standard ji bo hesabên bikarhênerên nû û ekrana têketinê:
 msgid "Language Support"
 msgstr "Piştgiriya Zimên"
 
-#: ../data/countries.h:1
-msgid "Afghanistan"
-msgstr "Efganistan"
-
-#: ../data/countries.h:2
-msgid "Åland Islands"
-msgstr "Giravên Åland"
-
-#: ../data/countries.h:3
-msgid "Albania"
-msgstr "Arnawût"
-
-#: ../data/countries.h:4
-msgid "Algeria"
-msgstr "Cezayîr"
-
-#: ../data/countries.h:5
-msgid "American Samoa"
-msgstr "Samoya Emerîkî"
-
-#: ../data/countries.h:6
-msgid "Andorra"
-msgstr "Andora"
-
-#: ../data/countries.h:7
-msgid "Angola"
-msgstr "Angola"
-
-#: ../data/countries.h:8
-msgid "Anguilla"
-msgstr "Angîla"
-
-#: ../data/countries.h:9
-msgid "Antigua and Barbuda"
-msgstr "Antîguya û Barbuda"
-
-#: ../data/countries.h:10
-msgid "Argentina"
-msgstr "Arjantîn"
-
-#: ../data/countries.h:11
-msgid "Armenia"
-msgstr "Ermenistan"
-
-#: ../data/countries.h:12
-msgid "Aruba"
-msgstr "Aruba"
-
-#: ../data/countries.h:13
-msgid "Australia"
-msgstr "Awustralya"
-
-#: ../data/countries.h:14
-msgid "Austria"
-msgstr "Awusturya"
-
-#: ../data/countries.h:15
-msgid "Azerbaijan"
-msgstr "Azerbaycan"
-
-#: ../data/countries.h:16
-msgid "Bahamas"
-msgstr "Giravên Bahama"
-
-#: ../data/countries.h:17
-msgid "Bahrain"
-msgstr "Bahreyn"
-
-#: ../data/countries.h:18
-msgid "Bangladesh"
-msgstr "Bangladeş"
-
-#: ../data/countries.h:19
-msgid "Barbados"
-msgstr "Barbados"
-
-#: ../data/countries.h:20
-msgid "Belarus"
-msgstr "Belarus"
-
-#: ../data/countries.h:21
-msgid "Belgium"
-msgstr "Belçîqa"
-
-#: ../data/countries.h:22
-msgid "Belize"
-msgstr "Belîze"
-
-#: ../data/countries.h:23
-msgid "Benin"
-msgstr "Benîn"
-
-#: ../data/countries.h:24
-msgid "Bermuda"
-msgstr "Bermûda"
-
-#: ../data/countries.h:25
-msgid "Bhutan"
-msgstr "Bûtan"
-
-#: ../data/countries.h:26
-msgid "Bolivia"
-msgstr "Bolîvya"
-
-#: ../data/countries.h:27
-msgid "Bosnia and Herzegovina"
-msgstr "Bosna Hersek"
-
-#: ../data/countries.h:28
-msgid "Botswana"
-msgstr "Botswana"
-
-#: ../data/countries.h:29
-msgid "Brazil"
-msgstr "Brezilya"
-
-#: ../data/countries.h:30
-msgid "British Virgin Islands"
-msgstr "Giravên Virjin (Brîtanya)"
-
-#: ../data/countries.h:31
-msgid "Brunei Darussalam"
-msgstr "Brûney Darûssalam"
-
-#: ../data/countries.h:32
-msgid "Bulgaria"
-msgstr "Bulgaristan"
-
-#: ../data/countries.h:33
-msgid "Burkina Faso"
-msgstr "Burkîna Faso"
-
-#: ../data/countries.h:34
-msgid "Burundi"
-msgstr "Burundî"
-
-#: ../data/countries.h:35
-msgid "Cambodia"
-msgstr "Kamboca"
-
-#: ../data/countries.h:36
-msgid "Cameroon"
-msgstr "Kamerûn"
-
-#: ../data/countries.h:37
-msgid "Canada"
-msgstr "Qenada"
-
-#: ../data/countries.h:38
-msgid "Cape Verde"
-msgstr "Kap Verde"
-
-#: ../data/countries.h:39
-msgid "Cayman Islands"
-msgstr "Giravên Kayman"
-
-#: ../data/countries.h:40
-msgid "Central African Republic"
-msgstr "Komara navendî ya Afrîqa"
-
-#: ../data/countries.h:41
-msgid "Chad"
-msgstr "Çad"
-
-#: ../data/countries.h:42
-msgid "Channel Islands"
-msgstr "Giravên Kanalê"
-
-#: ../data/countries.h:43
-msgid "Chile"
-msgstr "Şîlî"
-
-#: ../data/countries.h:44
-msgid "China"
-msgstr "Çîn"
-
-#: ../data/countries.h:45
-msgid "Hong Kong Special Administrative Region of China"
-msgstr "Hong Kong"
-
-#: ../data/countries.h:46
-msgid "Macau Special Administrative Region of China"
-msgstr "Macao"
-
-#: ../data/countries.h:47
-msgid "Colombia"
-msgstr "Kolombiya"
-
-#: ../data/countries.h:48
-msgid "Comoros"
-msgstr "Komoros"
-
-#: ../data/countries.h:49
-msgid "Congo"
-msgstr "Kongo"
-
-#: ../data/countries.h:50
-msgid "Cook Islands"
-msgstr "Giravên Cook"
-
-#: ../data/countries.h:51
-msgid "Costa Rica"
-msgstr "Kosta Rîka"
-
-#: ../data/countries.h:52
-msgid "Côte d'Ivoire"
-msgstr "Sahila Diranên Fîlan"
-
-#: ../data/countries.h:53
-msgid "Croatia"
-msgstr "Hirvatistan"
-
-#: ../data/countries.h:54
-msgid "Cuba"
-msgstr "Kûba"
-
-#: ../data/countries.h:55
-msgid "Cyprus"
-msgstr "Kibris"
-
-#: ../data/countries.h:56
-msgid "Czech Republic"
-msgstr "Komara Çek"
-
-#: ../data/countries.h:57
-msgid "Democratic People's Republic of Korea"
-msgstr "Komara Demokratîka Kore"
-
-#: ../data/countries.h:58
-msgid "Democratic Republic of the Congo"
-msgstr "Komara Demokratîka Kongo"
-
-#: ../data/countries.h:59
-msgid "Denmark"
-msgstr "Danîmarka"
-
-#: ../data/countries.h:60
-msgid "Djibouti"
-msgstr "Cîbutî"
-
-#: ../data/countries.h:61
-msgid "Dominica"
-msgstr "Domînîka"
-
-#: ../data/countries.h:62
-msgid "Dominican Republic"
-msgstr "Komara Domînîk"
-
-#: ../data/countries.h:63
-msgid "Ecuador"
-msgstr "Ekvator"
-
-#: ../data/countries.h:64
-msgid "Egypt"
-msgstr "Misir"
-
-#: ../data/countries.h:65
-msgid "El Salvador"
-msgstr "El Salvador"
-
-#: ../data/countries.h:66
-msgid "Equatorial Guinea"
-msgstr "Gîneya Ekvatorî"
-
-#: ../data/countries.h:67
-msgid "Eritrea"
-msgstr "Erître"
-
-#: ../data/countries.h:68
-msgid "Estonia"
-msgstr "Estonya"
-
-#: ../data/countries.h:69
-msgid "Ethiopia"
-msgstr "Etîyopya"
-
-#: ../data/countries.h:70
-msgid "Faeroe Islands"
-msgstr "Giravên Faeroe"
-
-#: ../data/countries.h:71
-msgid "Falkland Islands (Malvinas)"
-msgstr "Giravên Falkland (Malvin)"
-
-#: ../data/countries.h:72 ../data/languages.h:48
-msgid "Fiji"
-msgstr "Fîjî"
-
-#: ../data/countries.h:73
-msgid "Finland"
-msgstr "Fînlandiya"
-
-#: ../data/countries.h:74
-msgid "France"
-msgstr "Fransa"
-
-#: ../data/countries.h:75
-msgid "French Guiana"
-msgstr "Gîneya Fransî"
-
-#: ../data/countries.h:76
-msgid "French Polynesia"
-msgstr "Polînesya Fransî"
-
-#: ../data/countries.h:77
-msgid "Gabon"
-msgstr "Gabon"
-
-#: ../data/countries.h:78
-msgid "Gambia"
-msgstr "Gambiya"
-
-#: ../data/countries.h:79
-msgid "Georgia"
-msgstr "Gurcistan"
-
-#: ../data/countries.h:80
-msgid "Germany"
-msgstr "Almanya"
-
-#: ../data/countries.h:81
-msgid "Ghana"
-msgstr "Gana"
-
-#: ../data/countries.h:82
-msgid "Gibraltar"
-msgstr "Cebelîtariq"
-
-#: ../data/countries.h:83
-msgid "Greece"
-msgstr "Yewnanistan"
-
-#: ../data/countries.h:84
-msgid "Greenland"
-msgstr "Greenland"
-
-#: ../data/countries.h:85
-msgid "Grenada"
-msgstr "Girava Grenada"
-
-#: ../data/countries.h:86
-msgid "Guadeloupe"
-msgstr "Guadelûp"
-
-#: ../data/countries.h:87
-msgid "Guam"
-msgstr "Guam"
-
-#: ../data/countries.h:88
-msgid "Guatemala"
-msgstr "Guatemala"
-
-#: ../data/countries.h:89
-msgid "Guinea"
-msgstr "Gîne"
-
-#: ../data/countries.h:90
-msgid "Guinea-Bissau"
-msgstr "Gîneya Bisoî"
-
-#: ../data/countries.h:91
-msgid "Guyana"
-msgstr "Guyana"
-
-#: ../data/countries.h:92
-msgid "Haiti"
-msgstr "Haîtî"
-
-#: ../data/countries.h:93
-msgid "Holy See"
-msgstr "Vatîkan"
-
-#: ../data/countries.h:94
-msgid "Honduras"
-msgstr "Honduras"
-
-#: ../data/countries.h:95
-msgid "Hungary"
-msgstr "Macaristan"
-
-#: ../data/countries.h:96
-msgid "Iceland"
-msgstr "Îzlanda"
-
-#: ../data/countries.h:97
-msgid "India"
-msgstr "Hindistan"
-
-#: ../data/countries.h:98
-msgid "Indonesia"
-msgstr "Endonêzya"
-
-#: ../data/countries.h:99
-msgid "Iran (Islamic Republic of)"
-msgstr "Îran (Komara îslamî)"
-
-#: ../data/countries.h:100
-msgid "Iraq"
-msgstr "Eraq"
-
-#: ../data/countries.h:101
-msgid "Ireland"
-msgstr "Îrlanda"
-
-#: ../data/countries.h:102
-msgid "Isle of Man"
-msgstr "Girava Man"
-
-#: ../data/countries.h:103
-msgid "Israel"
-msgstr "Îsraîl"
-
-#: ../data/countries.h:104
-msgid "Italy"
-msgstr "Îtalya"
-
-#: ../data/countries.h:105
-msgid "Jamaica"
-msgstr "Jamayîka"
-
-#: ../data/countries.h:106
-msgid "Japan"
-msgstr "Japonya"
-
-#: ../data/countries.h:107
-msgid "Jordan"
-msgstr "Urdin"
-
-#: ../data/countries.h:108
-msgid "Kazakhstan"
-msgstr "Kazakistan"
-
-#: ../data/countries.h:109
-msgid "Kenya"
-msgstr "Kenya"
-
-#: ../data/countries.h:110
-msgid "Kiribati"
-msgstr "Kirîbatî"
-
-#: ../data/countries.h:111
-msgid "Kuwait"
-msgstr "Kûveyt"
-
-#: ../data/countries.h:112
-msgid "Kyrgyzstan"
-msgstr "Kirgîsistan"
-
-#: ../data/countries.h:113
-msgid "Lao People's Democratic Republic"
-msgstr "Komara Demokratîka Gelê Lao"
-
-#: ../data/countries.h:114
-msgid "Latvia"
-msgstr "Latviya"
-
-#: ../data/countries.h:115
-msgid "Lebanon"
-msgstr "Lubnan"
-
-#: ../data/countries.h:116
-msgid "Lesotho"
-msgstr "Lesoto"
-
-#: ../data/countries.h:117
-msgid "Liberia"
-msgstr "Lîberya"
-
-#: ../data/countries.h:118
-msgid "Libyan Arab Jamahiriya"
-msgstr "Komara Erebiya Lîbya"
-
-#: ../data/countries.h:119
-msgid "Liechtenstein"
-msgstr "Lihtenştayn"
-
-#: ../data/countries.h:120
-msgid "Lithuania"
-msgstr "Lîtvanya"
-
-#: ../data/countries.h:121
-msgid "Luxembourg"
-msgstr "Luksemburg"
-
-#: ../data/countries.h:122
-msgid "Madagascar"
-msgstr "Madagaskar"
-
-#: ../data/countries.h:123
-msgid "Malawi"
-msgstr "Malawî"
-
-#: ../data/countries.h:124
-msgid "Malaysia"
-msgstr "Malezya"
-
-#: ../data/countries.h:125
-msgid "Maldives"
-msgstr "Giravên Maldiv"
-
-#: ../data/countries.h:126
-msgid "Mali"
-msgstr "Malî"
-
-#: ../data/countries.h:127
-msgid "Malta"
-msgstr "Malta"
-
-#: ../data/countries.h:128
-msgid "Marshall Islands"
-msgstr "Giravên Marşal"
-
-#: ../data/countries.h:129
-msgid "Martinique"
-msgstr "Martinîk"
-
-#: ../data/countries.h:130
-msgid "Mauritania"
-msgstr "Morîtanya"
-
-#: ../data/countries.h:131
-msgid "Mauritius"
-msgstr "Morîtiyus"
-
-#: ../data/countries.h:132
-msgid "Mayotte"
-msgstr "Mayot"
-
-#: ../data/countries.h:133
-msgid "Mexico"
-msgstr "Mexîko"
-
-#: ../data/countries.h:134
-msgid "Micronesia (Federated States of)"
-msgstr "Mîkronesya"
-
-#: ../data/countries.h:135
-msgid "Monaco"
-msgstr "Monako"
-
-#: ../data/countries.h:136
-msgid "Mongolia"
-msgstr "Mongolya"
-
-#: ../data/countries.h:137
-msgid "Montserrat"
-msgstr "Montserat"
-
-#: ../data/countries.h:138
-msgid "Morocco"
-msgstr "Fas"
-
-#: ../data/countries.h:139
-msgid "Mozambique"
-msgstr "Mozambîk"
-
-#: ../data/countries.h:140
-msgid "Myanmar"
-msgstr "Miyanmar"
-
-#: ../data/countries.h:141
-msgid "Namibia"
-msgstr "Namîbya"
-
-#: ../data/countries.h:142 ../data/languages.h:113
-msgid "Nauru"
-msgstr "Naûrû"
-
-#: ../data/countries.h:143
-msgid "Nepal"
-msgstr "Nepal"
-
-#: ../data/countries.h:144
-msgid "Netherlands"
-msgstr "Holanda"
-
-#: ../data/countries.h:145
-msgid "Netherlands Antilles"
-msgstr "Antilê Holandayî"
-
-#: ../data/countries.h:146
-msgid "New Caledonia"
-msgstr "Kaledonyaya Nû"
-
-#: ../data/countries.h:147
-msgid "New Zealand"
-msgstr "Zelandaya Nû"
-
-#: ../data/countries.h:148
-msgid "Nicaragua"
-msgstr "Nîkaraguya"
-
-#: ../data/countries.h:149
-msgid "Niger"
-msgstr "Nîjer"
-
-#: ../data/countries.h:150
-msgid "Nigeria"
-msgstr "Nîjerya"
-
-#: ../data/countries.h:151
-msgid "Niue"
-msgstr "Nîûe"
-
-#: ../data/countries.h:152
-msgid "Norfolk Island"
-msgstr "Girava Norfolk"
-
-#: ../data/countries.h:153
-msgid "Northern Mariana Islands"
-msgstr "Giravên Marîyana Bakûr"
-
-#: ../data/countries.h:154
-msgid "Norway"
-msgstr "Norweç"
-
-#: ../data/countries.h:155
-msgid "Occupied Palestinian Territory"
-msgstr "Filistîn"
-
-#: ../data/countries.h:156
-msgid "Oman"
-msgstr "Uman"
-
-#: ../data/countries.h:157
-msgid "Pakistan"
-msgstr "Pakistan"
-
-#: ../data/countries.h:158
-msgid "Palau"
-msgstr "Palawu"
-
-#: ../data/countries.h:159
-msgid "Panama"
-msgstr "Panama"
-
-#: ../data/countries.h:160
-msgid "Papua New Guinea"
-msgstr "Papûa Gîneya Nû"
-
-#: ../data/countries.h:161
-msgid "Paraguay"
-msgstr "Paraguay"
-
-#: ../data/countries.h:162
-msgid "Peru"
-msgstr "Perû"
-
-#: ../data/countries.h:163
-msgid "Philippines"
-msgstr "Fîlîpîn"
-
-#: ../data/countries.h:164
-msgid "Pitcairn"
-msgstr "Pitkayirn"
-
-#: ../data/countries.h:165
-msgid "Poland"
-msgstr "Polonya"
-
-#: ../data/countries.h:166
-msgid "Portugal"
-msgstr "Portekîz"
-
-#: ../data/countries.h:167
-msgid "Puerto Rico"
-msgstr "Porto Rîko"
-
-#: ../data/countries.h:168
-msgid "Qatar"
-msgstr "Qatar"
-
-#: ../data/countries.h:169
-msgid "Republic of Korea"
-msgstr "Komara Kore"
-
-#: ../data/countries.h:170
-msgid "Republic of Moldova"
-msgstr "Komara Moldova"
-
-#: ../data/countries.h:171
-msgid "Réunion"
-msgstr "Reûnyon"
-
-#: ../data/countries.h:172
-msgid "Romania"
-msgstr "Romanya"
-
-#: ../data/countries.h:173
-msgid "Russian Federation"
-msgstr "Federasyona Rûsî"
-
-#: ../data/countries.h:174
-msgid "Rwanda"
-msgstr "Rûanda"
-
-#: ../data/countries.h:175
-msgid "Saint Helena"
-msgstr "Saint Helena"
-
-#: ../data/countries.h:176
-msgid "Saint Kitts and Nevis"
-msgstr "Saint Kitts  Neûvis"
-
-#: ../data/countries.h:177
-msgid "Saint Lucia"
-msgstr "Saint Lucia"
-
-#: ../data/countries.h:178
-msgid "Saint Pierre and Miquelon"
-msgstr "Saint Pierre û Miquelon"
-
-#: ../data/countries.h:179
-msgid "Saint Vincent and the Grenadines"
-msgstr "Saint Vincent  Grenadûines"
-
-#: ../data/countries.h:180
-msgid "Samoa"
-msgstr "Samoa"
-
-#: ../data/countries.h:181
-msgid "San Marino"
-msgstr "San Marîno"
-
-#: ../data/countries.h:182
-msgid "Sao Tome and Principe"
-msgstr "Sao Tome û Prinsipe"
-
-#: ../data/countries.h:183
-msgid "Saudi Arabia"
-msgstr "Si'ûdî Erebistan"
-
-#: ../data/countries.h:184
-msgid "Senegal"
-msgstr "Senegal"
-
-#: ../data/countries.h:185
-msgid "Serbia and Montenegro"
-msgstr "Sirbistan û Montenegro"
-
-#: ../data/countries.h:186
-msgid "Seychelles"
-msgstr "Seyşelan"
-
-#: ../data/countries.h:187
-msgid "Sierra Leone"
-msgstr "Sîera Leone"
-
-#: ../data/countries.h:188
-msgid "Singapore"
-msgstr "Sîngapur"
-
-#: ../data/countries.h:189
-msgid "Slovakia"
-msgstr "Slovakya"
-
-#: ../data/countries.h:190
-msgid "Slovenia"
-msgstr "Slovenya"
-
-#: ../data/countries.h:191
-msgid "Solomon Islands"
-msgstr "Giravên Solomon"
-
-#: ../data/countries.h:192
-msgid "Somalia"
-msgstr "Somalî"
-
-#: ../data/countries.h:193
-msgid "South Africa"
-msgstr "Efrîkaya Başur"
-
-#: ../data/countries.h:194
-msgid "Spain"
-msgstr "Spanya"
-
-#: ../data/countries.h:195
-msgid "Sri Lanka"
-msgstr "Srî Lanka"
-
-#: ../data/countries.h:196
-msgid "Sudan"
-msgstr "Sûdan"
-
-#: ../data/countries.h:197
-msgid "Suriname"
-msgstr "Sûrînam"
-
-#: ../data/countries.h:198
-msgid "Svalbard and Jan Mayen Islands"
-msgstr "Giravên Svalbard û Jan Mayen"
-
-#: ../data/countries.h:199
-msgid "Swaziland"
-msgstr "Swazîland"
-
-#: ../data/countries.h:200
-msgid "Sweden"
-msgstr "Swêd"
-
-#: ../data/countries.h:201
-msgid "Switzerland"
-msgstr "Swîsre"
-
-#: ../data/countries.h:202
-msgid "Syrian Arab Republic"
-msgstr "Sûriye"
-
-#: ../data/countries.h:203
-msgid "Tajikistan"
-msgstr "Tacîkistan"
-
-#: ../data/countries.h:204
-msgid "Thailand"
-msgstr "Tayland"
-
-#: ../data/countries.h:205
-msgid "Macedonia, Republic of"
-msgstr "Makedonya, Komara"
-
-#: ../data/countries.h:206
-msgid "Timor-Leste"
-msgstr "Tîmora Rojhilat"
-
-#: ../data/countries.h:207
-msgid "Togo"
-msgstr "Togo"
-
-#: ../data/countries.h:208
-msgid "Tokelau"
-msgstr "Tokelau"
-
-#: ../data/countries.h:209 ../data/languages.h:166
-msgid "Tonga"
-msgstr "Tonga"
-
-#: ../data/countries.h:210
-msgid "Trinidad and Tobago"
-msgstr "Trînîdad û Tobago"
-
-#: ../data/countries.h:211
-msgid "Tunisia"
-msgstr "Tûnis"
-
-#: ../data/countries.h:212
-msgid "Turkey"
-msgstr "Tirkiye"
-
-#: ../data/countries.h:213
-msgid "Turkmenistan"
-msgstr "Tirkmenîstan"
-
-#: ../data/countries.h:214
-msgid "Turks and Caicos Islands"
-msgstr "Giravên Turks û Caicos"
-
-#: ../data/countries.h:215
-msgid "Tuvalu"
-msgstr "Tûvalû"
-
-#: ../data/countries.h:216
-msgid "Uganda"
-msgstr "Ûganda"
-
-#: ../data/countries.h:217
-msgid "Ukraine"
-msgstr "Ukrayna"
-
-#: ../data/countries.h:218
-msgid "United Arab Emirates"
-msgstr "Emîrtiyên Ereb ên Yekbuyî"
-
-#: ../data/countries.h:219
-msgid "United Kingdom of Great Britain and Northern Ireland"
-msgstr "Brîtanyaya Mezin û Îrlandaya Bakûr"
-
-#: ../data/countries.h:220
-msgid "United Republic of Tanzania"
-msgstr "Tanzaniya"
-
-#: ../data/countries.h:221
-msgid "United States of America"
-msgstr "Dewletên Yekbûyî yên Emerîkayê"
-
-#: ../data/countries.h:222
-msgid "United States Virgin Islands"
-msgstr "Giravên Virjin"
-
-#: ../data/countries.h:223
-msgid "Uruguay"
-msgstr "Uruguay"
-
-#: ../data/countries.h:224
-msgid "Uzbekistan"
-msgstr "Ozbekîstan"
-
-#: ../data/countries.h:225
-msgid "Vanuatu"
-msgstr "Vanûatû"
-
-#: ../data/countries.h:226
-msgid "Venezuela"
-msgstr "Venezûela"
-
-#: ../data/countries.h:227
-msgid "Viet Nam"
-msgstr "Viyetnam"
-
-#: ../data/countries.h:228
-msgid "Wallis and Futuna Islands"
-msgstr "Giravên Wallis û Futuna"
-
-#: ../data/countries.h:229
-msgid "Western Sahara"
-msgstr "Sehraya Rojava"
-
-#: ../data/countries.h:230
-msgid "Yemen"
-msgstr "Yemen"
-
-#: ../data/countries.h:231
-msgid "Zambia"
-msgstr "Zambiya"
-
-#: ../data/countries.h:232
-msgid "Zimbabwe"
-msgstr "Zimbabwe"
-
-#: ../data/countries.h:233
-msgid "Antarctica"
-msgstr "Antarktîka"
-
-#: ../data/countries.h:234
-msgid "Bouvet Island"
-msgstr "Girava Boyuvet"
-
-#: ../data/countries.h:235
-msgid "British Indian Ocean Territory"
-msgstr "Herêma Îngîlîz a Deryaya Hindî"
-
-#: ../data/countries.h:236
-msgid "Christmas Island"
-msgstr "Girava Noel"
-
-#: ../data/countries.h:237
-msgid "Cocos (Keeling) Islands"
-msgstr "Grava Kokos (Kîlîng)"
-
-#: ../data/countries.h:238
-msgid "French Southern Territories"
-msgstr "Herêma Başurî ya Frensî"
-
-#: ../data/countries.h:239
-msgid "Heard Island and McDonald Islands"
-msgstr "Giravên Heard û McDonald"
-
-#: ../data/countries.h:240
-msgid "South Georgia and the South Sandwich Islands"
-msgstr "Georgiaya Başûr û Giravên Sandwicha Başûr"
-
-#: ../data/countries.h:241
-msgid "Taiwan"
-msgstr "Taywan"
-
-#: ../data/countries.h:242
-msgid "United States Minor Outlying Islands"
-msgstr "Giravên biçûk derve Emerîkayê"
-
-#: ../data/languages.h:2
-msgid "Afar"
-msgstr "Afar"
-
-#: ../data/languages.h:3
-msgid "Abkhazian"
-msgstr "Abxasî"
-
-#: ../data/languages.h:4
-msgid "Avestan"
-msgstr "Zimanê Avesta"
-
-#: ../data/languages.h:5
-msgid "Afrikaans"
-msgstr "Afrîkaans"
-
-#: ../data/languages.h:6
-msgid "Akan"
-msgstr "Akan"
-
-#: ../data/languages.h:7
-msgid "Amharic"
-msgstr "Amharî"
-
-#: ../data/languages.h:8
-msgid "Aragonese"
-msgstr "Aragon   î"
-
-#: ../data/languages.h:9
-msgid "Arabic"
-msgstr "Erebî"
-
-#: ../data/languages.h:10
-msgid "Assamese"
-msgstr "Assamî"
-
-#: ../data/languages.h:11
-msgid "Asturian"
-msgstr "Asturî"
-
-#: ../data/languages.h:12
-msgid "Avaric"
-msgstr "Avarî"
-
-#: ../data/languages.h:13
-msgid "Aymara"
-msgstr "Aymara"
-
-#: ../data/languages.h:14
-msgid "Azerbaijani"
-msgstr "Azerî"
-
-#: ../data/languages.h:15
-msgid "Bashkir"
-msgstr "Bakişr"
-
-#: ../data/languages.h:16
-msgid "Byelorussian"
-msgstr "Belorûsî"
-
-#: ../data/languages.h:17
-msgid "Bulgarian"
-msgstr "Bulgarî"
-
-#: ../data/languages.h:18
-msgid "Bihari"
-msgstr "Biharî"
-
-#: ../data/languages.h:19
-msgid "Bislama"
-msgstr "Bislama"
-
-#: ../data/languages.h:20
-msgid "Bambara"
-msgstr "Bambara"
-
-#: ../data/languages.h:21
-msgid "Bengali; Bangla"
-msgstr "Bengalî; Bangla"
-
-#: ../data/languages.h:22
-msgid "Tibetan"
-msgstr "Tibetî"
-
-#: ../data/languages.h:23
-msgid "Breton"
-msgstr "Bretonî"
-
-#: ../data/languages.h:24
-msgid "Bosnian"
-msgstr "Bosnî"
-
-#: ../data/languages.h:25
-msgid "Catalan"
-msgstr "Katalan"
-
-#: ../data/languages.h:26
-msgid "Chechen"
-msgstr "Çeçen"
-
-#: ../data/languages.h:27
-msgid "Chamorro"
-msgstr "Xamoro"
-
-#: ../data/languages.h:28
-msgid "Corsican"
-msgstr "Korsîkî"
-
-#: ../data/languages.h:29
-msgid "Cree"
-msgstr "Krî"
-
-#: ../data/languages.h:30
-msgid "Czech"
-msgstr "Çekî"
-
-#: ../data/languages.h:31
-msgid "Old Church Slavonic"
-msgstr "Slavonika Kilîseya Kevn"
-
-#: ../data/languages.h:32
-msgid "Chuvash"
-msgstr "Çuvaşî"
-
-#: ../data/languages.h:33
-msgid "Welsh"
-msgstr "Galerî"
-
-#: ../data/languages.h:34
-msgid "Danish"
-msgstr "Danimarkî"
-
-#: ../data/languages.h:35
-msgid "German"
-msgstr "Almanî"
-
-#: ../data/languages.h:36
-msgid "Divehi"
-msgstr "Divehî"
-
-#: ../data/languages.h:37
-msgid "Dzongkha"
-msgstr "Dzongkha"
-
-#: ../data/languages.h:38
-msgid "Ewe"
-msgstr "Ewe"
-
-#: ../data/languages.h:39
-msgid "Greek, Modern"
-msgstr "Yewnanî, Hemdem"
-
-#: ../data/languages.h:40
-msgid "English"
-msgstr "Îngilîzî"
-
-#: ../data/languages.h:41
-msgid "Esperanto"
-msgstr "Esperanto"
-
-#: ../data/languages.h:42
-msgid "Spanish"
-msgstr "Spanî"
-
-#: ../data/languages.h:43
-msgid "Estonian"
-msgstr "Estonî"
-
-#: ../data/languages.h:44
-msgid "Basque"
-msgstr "Baskî"
-
-#: ../data/languages.h:45
-msgid "Persian"
-msgstr "Farisî"
-
-#: ../data/languages.h:46
-msgid "Fulah"
-msgstr "Fulah"
-
-#: ../data/languages.h:47
-msgid "Finnish"
-msgstr "Fînikî"
-
-#: ../data/languages.h:49
-msgid "Faroese"
-msgstr "Faroyî"
-
-#: ../data/languages.h:50
-msgid "French"
-msgstr "Fransî"
-
-#: ../data/languages.h:51
-msgid "Frisian"
-msgstr "Frizî"
-
-#: ../data/languages.h:52
-msgid "Irish"
-msgstr "Irlandî"
-
-#: ../data/languages.h:53
-msgid "Scots Gaelic"
-msgstr "Scots Gaelic"
-
-#: ../data/languages.h:54
-msgid "Galician"
-msgstr "Galikî"
-
-#: ../data/languages.h:55
-msgid "Guarani"
-msgstr "Guaranî"
-
-#: ../data/languages.h:56
-msgid "Gujarati"
-msgstr "Gujaratî"
-
-#: ../data/languages.h:57
-msgid "Manx"
-msgstr "Manx"
-
-#: ../data/languages.h:58
-msgid "Hausa"
-msgstr "Hausa"
-
-#: ../data/languages.h:59
-msgid "Hebrew"
-msgstr "Îbranî"
-
-#: ../data/languages.h:60
-msgid "Hindi"
-msgstr "Hindî"
-
-#: ../data/languages.h:61
-msgid "Hiri Motu"
-msgstr "Hiri Motu"
-
-#: ../data/languages.h:62
-msgid "Croatian"
-msgstr "Kroatî"
-
-#: ../data/languages.h:63
-msgid "Hungarian"
-msgstr "Macarî"
-
-#: ../data/languages.h:64
-msgid "Armenian"
-msgstr "Ermenî"
-
-#: ../data/languages.h:65
-msgid "Herero"
-msgstr "Herero"
-
-#: ../data/languages.h:66
-msgid "Interlingua"
-msgstr "Interlingua"
-
-#: ../data/languages.h:67
-msgid "Indonesian"
-msgstr "Endonezî"
-
-#: ../data/languages.h:68
-msgid "Interlingue"
-msgstr "Interlingue"
-
-#: ../data/languages.h:69
-msgid "Igbo"
-msgstr "Igbo"
-
-#: ../data/languages.h:70
-msgid "Sichuan Yi"
-msgstr "Sichuan Yi"
-
-#: ../data/languages.h:71
-msgid "Inupiak"
-msgstr "Inupiak"
-
-#: ../data/languages.h:72
-msgid "Ido"
-msgstr "Ido"
-
-#: ../data/languages.h:73
-msgid "Icelandic"
-msgstr "Islandî"
-
-#: ../data/languages.h:74
-msgid "Italian"
-msgstr "Italî"
-
-#: ../data/languages.h:75
-msgid "Inuktitut"
-msgstr "Inuktîtut"
-
-#: ../data/languages.h:76
-msgid "Japanese"
-msgstr "Japonî"
-
-#: ../data/languages.h:77
-msgid "Javanese"
-msgstr "Javayî"
-
-#: ../data/languages.h:78
-msgid "Georgian"
-msgstr "Gurcî"
-
-#: ../data/languages.h:79
-msgid "Kongo"
-msgstr "Kongo"
-
-#: ../data/languages.h:80
-msgid "Kikuyu"
-msgstr "Kikuyu"
-
-#: ../data/languages.h:81
-msgid "Kuanyama"
-msgstr "Kuanyama"
-
-#: ../data/languages.h:82
-msgid "Kazakh"
-msgstr "Kazak"
-
-#: ../data/languages.h:83
-msgid "Greenlandic"
-msgstr "Greenlandî"
-
-#: ../data/languages.h:84
-msgid "Khmer"
-msgstr "Xmer"
-
-#: ../data/languages.h:85
-msgid "Kannada"
-msgstr "Kannada"
-
-#: ../data/languages.h:86
-msgid "Korean"
-msgstr "Koreyî"
-
-#: ../data/languages.h:87
-msgid "Kanuri"
-msgstr "Kanurî"
-
-#: ../data/languages.h:88
-msgid "Kashmiri"
-msgstr "Keşmîrî"
-
-#: ../data/languages.h:89
-msgid "Kurdish"
-msgstr "Kurdî"
-
-#: ../data/languages.h:90
-msgid "Komi"
-msgstr "Komî"
-
-#: ../data/languages.h:91
-msgid "Cornish"
-msgstr "Kornî"
-
-#: ../data/languages.h:92
-msgid "Kirghiz"
-msgstr "Kirgîz"
-
-#: ../data/languages.h:93
-msgid "Latin"
-msgstr "Latinî"
-
-#: ../data/languages.h:94
-msgid "Luxembourgish"
-msgstr "Luksemburgî"
-
-#: ../data/languages.h:95
-msgid "Ganda"
-msgstr "Ganda"
-
-#: ../data/languages.h:96
-msgid "Limburgan"
-msgstr "Limburgî"
-
-#: ../data/languages.h:97
-msgid "Lingala"
-msgstr "Lingala"
-
-#: ../data/languages.h:98
-msgid "Lao"
-msgstr "Lao"
-
-#: ../data/languages.h:99
-msgid "Lithuanian"
-msgstr "Litwanî"
-
-#: ../data/languages.h:100
-msgid "Luba-Katanga"
-msgstr "Luba-Katanga"
-
-#: ../data/languages.h:101
-msgid "Latvian"
-msgstr "Letwanî"
-
-#: ../data/languages.h:102
-msgid "Malagasy"
-msgstr "Malagasî"
-
-#: ../data/languages.h:103
-msgid "Marshallese"
-msgstr "Marşalî"
-
-#: ../data/languages.h:104
-msgid "Maori"
-msgstr "Maorî"
-
-#: ../data/languages.h:105
-msgid "Macedonian"
-msgstr "Makedonî"
-
-#: ../data/languages.h:106
-msgid "Malayalam"
-msgstr "Malayalam"
-
-#: ../data/languages.h:107
-msgid "Mongolian"
-msgstr "Mongolî"
-
-#: ../data/languages.h:108
-msgid "Moldavian"
-msgstr "Moldavî"
-
-#: ../data/languages.h:109
-msgid "Marathi"
-msgstr "Maratî"
-
-#: ../data/languages.h:110
-msgid "Malay"
-msgstr "Malayî"
-
-#: ../data/languages.h:111
-msgid "Maltese"
-msgstr "Maltayî"
-
-#: ../data/languages.h:112
-msgid "Burmese"
-msgstr "Burmayî"
-
-#: ../data/languages.h:114
-msgid "Norwegian Bokmal"
-msgstr "Norwecî Bokmal"
-
-#: ../data/languages.h:115
-msgid "North Ndebele"
-msgstr "Ndebeleya Bakûr"
-
-#: ../data/languages.h:116
-msgid "Nepali"
-msgstr "Nepalî"
-
-#: ../data/languages.h:117
-msgid "Ndonga"
-msgstr "Ndonga"
-
-#: ../data/languages.h:118
-msgid "Dutch"
-msgstr "Felemenkî"
-
-#: ../data/languages.h:119
-msgid "Norwegian Nynorsk"
-msgstr "Norwecî Nynorsk"
-
-#: ../data/languages.h:120
-msgid "Norwegian"
-msgstr "Norvecî"
-
-#: ../data/languages.h:121
-msgid "South Ndebele"
-msgstr "Ndebeleya Başûr"
-
-#: ../data/languages.h:122
-msgid "Navajo"
-msgstr "Navajo"
-
-#: ../data/languages.h:123
-msgid "Occitan"
-msgstr "Oksîtan"
-
-#: ../data/languages.h:124
-msgid "Ojibwa"
-msgstr "Ojibwa"
-
-#: ../data/languages.h:125
-msgid "Oromo"
-msgstr "Oromo"
-
-#: ../data/languages.h:126
-msgid "Oriya"
-msgstr "Oriya"
-
-#: ../data/languages.h:127
-msgid "Ossetian"
-msgstr "Osetî"
-
-#: ../data/languages.h:128
-msgid "Punjabi"
-msgstr "Pnêcabî"
-
-#: ../data/languages.h:129
-msgid "Pali"
-msgstr "Palî"
-
-#: ../data/languages.h:130
-msgid "Polish"
-msgstr "Polonî"
-
-#: ../data/languages.h:131
-msgid "Pushto"
-msgstr "Paşto"
-
-#: ../data/languages.h:132
-msgid "Portuguese"
-msgstr "Portekizî"
-
-#: ../data/languages.h:133
-msgid "Quechua"
-msgstr "Quechua"
-
-#: ../data/languages.h:134
-msgid "Rhaeto-Romance"
-msgstr "Reto-Romanî"
-
-#: ../data/languages.h:135
-msgid "Rundi"
-msgstr "Rundî"
-
-#: ../data/languages.h:136
-msgid "Romanian"
-msgstr "Romanî"
-
-#: ../data/languages.h:137
-msgid "Russian"
-msgstr "Rusî"
-
-#: ../data/languages.h:138
-msgid "Kinyarwanda"
-msgstr "Kinyarwanda"
-
-#: ../data/languages.h:139
-msgid "Sanskrit"
-msgstr "Sanskrît"
-
-#: ../data/languages.h:140
-msgid "Sardinian"
-msgstr "Sardî"
-
-#: ../data/languages.h:141
-msgid "Sindhi"
-msgstr "Sindî"
-
-#: ../data/languages.h:142
-msgid "Northern Sami"
-msgstr "Samiya Bakûrî"
-
-#: ../data/languages.h:143
-msgid "Sango"
-msgstr "Sango"
-
-#: ../data/languages.h:144
-msgid "Serbo-Croatian"
-msgstr "Sirp-Kroatî"
-
-#: ../data/languages.h:145
-msgid "Sinhalese"
-msgstr "Sinhalî"
-
-#: ../data/languages.h:146
-msgid "Slovak"
-msgstr "Slovakî"
-
-#: ../data/languages.h:147
-msgid "Slovenian"
-msgstr "Slovenî"
-
-#: ../data/languages.h:148
-msgid "Samoan"
-msgstr "Samoyî"
-
-#: ../data/languages.h:149
-msgid "Shona"
-msgstr "Shona"
-
-#: ../data/languages.h:150
-msgid "Somali"
-msgstr "Somalî"
-
-#: ../data/languages.h:151
-msgid "Albanian"
-msgstr "Albanî"
-
-#: ../data/languages.h:152
-msgid "Serbian"
-msgstr "Sirpkî"
-
-#: ../data/languages.h:153
-msgid "Swati"
-msgstr "Swatî"
-
-#: ../data/languages.h:154
-msgid "Southern Sotho"
-msgstr "Sotoya Başûrî"
-
-#: ../data/languages.h:155
-msgid "Sundanese"
-msgstr "Sundanî"
-
-#: ../data/languages.h:156
-msgid "Swedish"
-msgstr "Swêdî"
-
-#: ../data/languages.h:157
-msgid "Swahili"
-msgstr "Sawahilî"
-
-#: ../data/languages.h:158
-msgid "Tamil"
-msgstr "Tamîl"
-
-#: ../data/languages.h:159
-msgid "Telugu"
-msgstr "Telugu"
-
-#: ../data/languages.h:160
-msgid "Tajik"
-msgstr "Tajîkî"
-
-#: ../data/languages.h:161
-msgid "Thai"
-msgstr "Tay"
-
-#: ../data/languages.h:162
-msgid "Tigrinya"
-msgstr "Tigrinya"
-
-#: ../data/languages.h:163
-msgid "Turkmen"
-msgstr "Tirkmenî"
-
-#: ../data/languages.h:164
-msgid "Tagalog"
-msgstr "Tagalog"
-
-#: ../data/languages.h:165
-msgid "Tswana"
-msgstr "Tswana"
-
-#: ../data/languages.h:167
-msgid "Turkish"
-msgstr "Tirkî"
-
-#: ../data/languages.h:168
-msgid "Tsonga"
-msgstr "Tsonga"
-
-#: ../data/languages.h:169
-msgid "Tatar"
-msgstr "Tatarî"
-
-#: ../data/languages.h:170
-msgid "Twi"
-msgstr "Twî"
-
-#: ../data/languages.h:171
-msgid "Tahitian"
-msgstr "Tahitî"
-
-#: ../data/languages.h:172
-msgid "Uighur"
-msgstr "Uigurî"
-
-#: ../data/languages.h:173
-msgid "Ukrainian"
-msgstr "Ukraynî"
-
-#: ../data/languages.h:174
-msgid "Urdu"
-msgstr "Urdu"
-
-#: ../data/languages.h:175
-msgid "Uzbek"
-msgstr "Ozbek"
-
-#: ../data/languages.h:176
-msgid "Venda"
-msgstr "Venda"
-
-#: ../data/languages.h:177
-msgid "Vietnamese"
-msgstr "Viyetnamî"
-
-#: ../data/languages.h:178
-msgid "Volapuk"
-msgstr "Volapuk"
-
-#: ../data/languages.h:179
-msgid "Walloon"
-msgstr "Valonkî"
-
-#: ../data/languages.h:180
-msgid "Wolof"
-msgstr "Wolof"
-
-#: ../data/languages.h:181
-msgid "Xhosa"
-msgstr "Xosa"
-
-#: ../data/languages.h:182
-msgid "Yiddish"
-msgstr "Jidî (Îbraniya Almanî)"
-
-#: ../data/languages.h:183
-msgid "Yoruba"
-msgstr "Yoruba"
-
-#: ../data/languages.h:184
-msgid "Zhuang"
-msgstr "Juang"
-
-#: ../data/languages.h:185
-msgid "Chinese"
-msgstr "Çinî"
-
-#: ../data/languages.h:186
-msgid "Zulu"
-msgstr "Zulu"
-
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
@@ -1901,6 +205,1278 @@ msgstr "Ji bo locale ya hilbijartî, ti mîhengeke fontconfig-voodoo nehat dîti
 
 #~ msgid "Default language"
 #~ msgstr "Zimanê standard"
+
+#~ msgid "English"
+#~ msgstr "Îngilîzî"
+
+#~ msgid "Afghanistan"
+#~ msgstr "Efganistan"
+
+#~ msgid "Åland Islands"
+#~ msgstr "Giravên Åland"
+
+#~ msgid "Albania"
+#~ msgstr "Arnawût"
+
+#~ msgid "Algeria"
+#~ msgstr "Cezayîr"
+
+#~ msgid "American Samoa"
+#~ msgstr "Samoya Emerîkî"
+
+#~ msgid "Andorra"
+#~ msgstr "Andora"
+
+#~ msgid "Angola"
+#~ msgstr "Angola"
+
+#~ msgid "Anguilla"
+#~ msgstr "Angîla"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antîguya û Barbuda"
+
+#~ msgid "Argentina"
+#~ msgstr "Arjantîn"
+
+#~ msgid "Armenia"
+#~ msgstr "Ermenistan"
+
+#~ msgid "Aruba"
+#~ msgstr "Aruba"
+
+#~ msgid "Australia"
+#~ msgstr "Awustralya"
+
+#~ msgid "Austria"
+#~ msgstr "Awusturya"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Azerbaycan"
+
+#~ msgid "Bahamas"
+#~ msgstr "Giravên Bahama"
+
+#~ msgid "Bahrain"
+#~ msgstr "Bahreyn"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Bangladeş"
+
+#~ msgid "Barbados"
+#~ msgstr "Barbados"
+
+#~ msgid "Belarus"
+#~ msgstr "Belarus"
+
+#~ msgid "Belgium"
+#~ msgstr "Belçîqa"
+
+#~ msgid "Belize"
+#~ msgstr "Belîze"
+
+#~ msgid "Benin"
+#~ msgstr "Benîn"
+
+#~ msgid "Bermuda"
+#~ msgstr "Bermûda"
+
+#~ msgid "Bhutan"
+#~ msgstr "Bûtan"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolîvya"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosna Hersek"
+
+#~ msgid "Botswana"
+#~ msgstr "Botswana"
+
+#~ msgid "Brazil"
+#~ msgstr "Brezilya"
+
+#~ msgid "British Virgin Islands"
+#~ msgstr "Giravên Virjin (Brîtanya)"
+
+#~ msgid "Brunei Darussalam"
+#~ msgstr "Brûney Darûssalam"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bulgaristan"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Burkîna Faso"
+
+#~ msgid "Burundi"
+#~ msgstr "Burundî"
+
+#~ msgid "Cambodia"
+#~ msgstr "Kamboca"
+
+#~ msgid "Cameroon"
+#~ msgstr "Kamerûn"
+
+#~ msgid "Canada"
+#~ msgstr "Qenada"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Kap Verde"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Giravên Kayman"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Komara navendî ya Afrîqa"
+
+#~ msgid "Chad"
+#~ msgstr "Çad"
+
+#~ msgid "Channel Islands"
+#~ msgstr "Giravên Kanalê"
+
+#~ msgid "Chile"
+#~ msgstr "Şîlî"
+
+#~ msgid "China"
+#~ msgstr "Çîn"
+
+#~ msgid "Hong Kong Special Administrative Region of China"
+#~ msgstr "Hong Kong"
+
+#~ msgid "Macau Special Administrative Region of China"
+#~ msgstr "Macao"
+
+#~ msgid "Colombia"
+#~ msgstr "Kolombiya"
+
+#~ msgid "Comoros"
+#~ msgstr "Komoros"
+
+#~ msgid "Congo"
+#~ msgstr "Kongo"
+
+#~ msgid "Cook Islands"
+#~ msgstr "Giravên Cook"
+
+#~ msgid "Costa Rica"
+#~ msgstr "Kosta Rîka"
+
+#~ msgid "Côte d'Ivoire"
+#~ msgstr "Sahila Diranên Fîlan"
+
+#~ msgid "Croatia"
+#~ msgstr "Hirvatistan"
+
+#~ msgid "Cuba"
+#~ msgstr "Kûba"
+
+#~ msgid "Cyprus"
+#~ msgstr "Kibris"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Komara Çek"
+
+#~ msgid "Democratic People's Republic of Korea"
+#~ msgstr "Komara Demokratîka Kore"
+
+#~ msgid "Democratic Republic of the Congo"
+#~ msgstr "Komara Demokratîka Kongo"
+
+#~ msgid "Denmark"
+#~ msgstr "Danîmarka"
+
+#~ msgid "Djibouti"
+#~ msgstr "Cîbutî"
+
+#~ msgid "Dominica"
+#~ msgstr "Domînîka"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Komara Domînîk"
+
+#~ msgid "Ecuador"
+#~ msgstr "Ekvator"
+
+#~ msgid "Egypt"
+#~ msgstr "Misir"
+
+#~ msgid "El Salvador"
+#~ msgstr "El Salvador"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Gîneya Ekvatorî"
+
+#~ msgid "Eritrea"
+#~ msgstr "Erître"
+
+#~ msgid "Estonia"
+#~ msgstr "Estonya"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Etîyopya"
+
+#~ msgid "Faeroe Islands"
+#~ msgstr "Giravên Faeroe"
+
+#~ msgid "Falkland Islands (Malvinas)"
+#~ msgstr "Giravên Falkland (Malvin)"
+
+#~ msgid "Fiji"
+#~ msgstr "Fîjî"
+
+#~ msgid "Finland"
+#~ msgstr "Fînlandiya"
+
+#~ msgid "France"
+#~ msgstr "Fransa"
+
+#~ msgid "French Guiana"
+#~ msgstr "Gîneya Fransî"
+
+#~ msgid "French Polynesia"
+#~ msgstr "Polînesya Fransî"
+
+#~ msgid "Gabon"
+#~ msgstr "Gabon"
+
+#~ msgid "Gambia"
+#~ msgstr "Gambiya"
+
+#~ msgid "Georgia"
+#~ msgstr "Gurcistan"
+
+#~ msgid "Germany"
+#~ msgstr "Almanya"
+
+#~ msgid "Ghana"
+#~ msgstr "Gana"
+
+#~ msgid "Gibraltar"
+#~ msgstr "Cebelîtariq"
+
+#~ msgid "Greece"
+#~ msgstr "Yewnanistan"
+
+#~ msgid "Greenland"
+#~ msgstr "Greenland"
+
+#~ msgid "Grenada"
+#~ msgstr "Girava Grenada"
+
+#~ msgid "Guadeloupe"
+#~ msgstr "Guadelûp"
+
+#~ msgid "Guam"
+#~ msgstr "Guam"
+
+#~ msgid "Guatemala"
+#~ msgstr "Guatemala"
+
+#~ msgid "Guinea"
+#~ msgstr "Gîne"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Gîneya Bisoî"
+
+#~ msgid "Guyana"
+#~ msgstr "Guyana"
+
+#~ msgid "Haiti"
+#~ msgstr "Haîtî"
+
+#~ msgid "Holy See"
+#~ msgstr "Vatîkan"
+
+#~ msgid "Honduras"
+#~ msgstr "Honduras"
+
+#~ msgid "Hungary"
+#~ msgstr "Macaristan"
+
+#~ msgid "Iceland"
+#~ msgstr "Îzlanda"
+
+#~ msgid "India"
+#~ msgstr "Hindistan"
+
+#~ msgid "Indonesia"
+#~ msgstr "Endonêzya"
+
+#~ msgid "Iran (Islamic Republic of)"
+#~ msgstr "Îran (Komara îslamî)"
+
+#~ msgid "Iraq"
+#~ msgstr "Eraq"
+
+#~ msgid "Ireland"
+#~ msgstr "Îrlanda"
+
+#~ msgid "Isle of Man"
+#~ msgstr "Girava Man"
+
+#~ msgid "Israel"
+#~ msgstr "Îsraîl"
+
+#~ msgid "Italy"
+#~ msgstr "Îtalya"
+
+#~ msgid "Jamaica"
+#~ msgstr "Jamayîka"
+
+#~ msgid "Japan"
+#~ msgstr "Japonya"
+
+#~ msgid "Jordan"
+#~ msgstr "Urdin"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Kazakistan"
+
+#~ msgid "Kenya"
+#~ msgstr "Kenya"
+
+#~ msgid "Kiribati"
+#~ msgstr "Kirîbatî"
+
+#~ msgid "Kuwait"
+#~ msgstr "Kûveyt"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Kirgîsistan"
+
+#~ msgid "Lao People's Democratic Republic"
+#~ msgstr "Komara Demokratîka Gelê Lao"
+
+#~ msgid "Latvia"
+#~ msgstr "Latviya"
+
+#~ msgid "Lebanon"
+#~ msgstr "Lubnan"
+
+#~ msgid "Lesotho"
+#~ msgstr "Lesoto"
+
+#~ msgid "Liberia"
+#~ msgstr "Lîberya"
+
+#~ msgid "Libyan Arab Jamahiriya"
+#~ msgstr "Komara Erebiya Lîbya"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Lihtenştayn"
+
+#~ msgid "Lithuania"
+#~ msgstr "Lîtvanya"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Luksemburg"
+
+#~ msgid "Madagascar"
+#~ msgstr "Madagaskar"
+
+#~ msgid "Malawi"
+#~ msgstr "Malawî"
+
+#~ msgid "Malaysia"
+#~ msgstr "Malezya"
+
+#~ msgid "Maldives"
+#~ msgstr "Giravên Maldiv"
+
+#~ msgid "Mali"
+#~ msgstr "Malî"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Giravên Marşal"
+
+#~ msgid "Martinique"
+#~ msgstr "Martinîk"
+
+#~ msgid "Mauritania"
+#~ msgstr "Morîtanya"
+
+#~ msgid "Mauritius"
+#~ msgstr "Morîtiyus"
+
+#~ msgid "Mayotte"
+#~ msgstr "Mayot"
+
+#~ msgid "Mexico"
+#~ msgstr "Mexîko"
+
+#~ msgid "Micronesia (Federated States of)"
+#~ msgstr "Mîkronesya"
+
+#~ msgid "Monaco"
+#~ msgstr "Monako"
+
+#~ msgid "Mongolia"
+#~ msgstr "Mongolya"
+
+#~ msgid "Montserrat"
+#~ msgstr "Montserat"
+
+#~ msgid "Morocco"
+#~ msgstr "Fas"
+
+#~ msgid "Mozambique"
+#~ msgstr "Mozambîk"
+
+#~ msgid "Myanmar"
+#~ msgstr "Miyanmar"
+
+#~ msgid "Namibia"
+#~ msgstr "Namîbya"
+
+#~ msgid "Nauru"
+#~ msgstr "Naûrû"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#~ msgid "Netherlands"
+#~ msgstr "Holanda"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Antilê Holandayî"
+
+#~ msgid "New Caledonia"
+#~ msgstr "Kaledonyaya Nû"
+
+#~ msgid "New Zealand"
+#~ msgstr "Zelandaya Nû"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nîkaraguya"
+
+#~ msgid "Niger"
+#~ msgstr "Nîjer"
+
+#~ msgid "Nigeria"
+#~ msgstr "Nîjerya"
+
+#~ msgid "Niue"
+#~ msgstr "Nîûe"
+
+#~ msgid "Norfolk Island"
+#~ msgstr "Girava Norfolk"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Giravên Marîyana Bakûr"
+
+#~ msgid "Norway"
+#~ msgstr "Norweç"
+
+#~ msgid "Occupied Palestinian Territory"
+#~ msgstr "Filistîn"
+
+#~ msgid "Oman"
+#~ msgstr "Uman"
+
+#~ msgid "Pakistan"
+#~ msgstr "Pakistan"
+
+#~ msgid "Palau"
+#~ msgstr "Palawu"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papûa Gîneya Nû"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paraguay"
+
+#~ msgid "Peru"
+#~ msgstr "Perû"
+
+#~ msgid "Philippines"
+#~ msgstr "Fîlîpîn"
+
+#~ msgid "Pitcairn"
+#~ msgstr "Pitkayirn"
+
+#~ msgid "Poland"
+#~ msgstr "Polonya"
+
+#~ msgid "Portugal"
+#~ msgstr "Portekîz"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Porto Rîko"
+
+#~ msgid "Qatar"
+#~ msgstr "Qatar"
+
+#~ msgid "Republic of Korea"
+#~ msgstr "Komara Kore"
+
+#~ msgid "Republic of Moldova"
+#~ msgstr "Komara Moldova"
+
+#~ msgid "Réunion"
+#~ msgstr "Reûnyon"
+
+#~ msgid "Romania"
+#~ msgstr "Romanya"
+
+#~ msgid "Russian Federation"
+#~ msgstr "Federasyona Rûsî"
+
+#~ msgid "Rwanda"
+#~ msgstr "Rûanda"
+
+#~ msgid "Saint Helena"
+#~ msgstr "Saint Helena"
+
+#~ msgid "Saint Kitts and Nevis"
+#~ msgstr "Saint Kitts  Neûvis"
+
+#~ msgid "Saint Lucia"
+#~ msgstr "Saint Lucia"
+
+#~ msgid "Saint Pierre and Miquelon"
+#~ msgstr "Saint Pierre û Miquelon"
+
+#~ msgid "Saint Vincent and the Grenadines"
+#~ msgstr "Saint Vincent  Grenadûines"
+
+#~ msgid "Samoa"
+#~ msgstr "Samoa"
+
+#~ msgid "San Marino"
+#~ msgstr "San Marîno"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Sao Tome û Prinsipe"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Si'ûdî Erebistan"
+
+#~ msgid "Senegal"
+#~ msgstr "Senegal"
+
+#~ msgid "Serbia and Montenegro"
+#~ msgstr "Sirbistan û Montenegro"
+
+#~ msgid "Seychelles"
+#~ msgstr "Seyşelan"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Sîera Leone"
+
+#~ msgid "Singapore"
+#~ msgstr "Sîngapur"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slovakya"
+
+#~ msgid "Slovenia"
+#~ msgstr "Slovenya"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Giravên Solomon"
+
+#~ msgid "Somalia"
+#~ msgstr "Somalî"
+
+#~ msgid "South Africa"
+#~ msgstr "Efrîkaya Başur"
+
+#~ msgid "Spain"
+#~ msgstr "Spanya"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Srî Lanka"
+
+#~ msgid "Sudan"
+#~ msgstr "Sûdan"
+
+#~ msgid "Suriname"
+#~ msgstr "Sûrînam"
+
+#~ msgid "Svalbard and Jan Mayen Islands"
+#~ msgstr "Giravên Svalbard û Jan Mayen"
+
+#~ msgid "Swaziland"
+#~ msgstr "Swazîland"
+
+#~ msgid "Sweden"
+#~ msgstr "Swêd"
+
+#~ msgid "Switzerland"
+#~ msgstr "Swîsre"
+
+#~ msgid "Syrian Arab Republic"
+#~ msgstr "Sûriye"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Tacîkistan"
+
+#~ msgid "Thailand"
+#~ msgstr "Tayland"
+
+#~ msgid "Macedonia, Republic of"
+#~ msgstr "Makedonya, Komara"
+
+#~ msgid "Timor-Leste"
+#~ msgstr "Tîmora Rojhilat"
+
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#~ msgid "Tokelau"
+#~ msgstr "Tokelau"
+
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trînîdad û Tobago"
+
+#~ msgid "Tunisia"
+#~ msgstr "Tûnis"
+
+#~ msgid "Turkey"
+#~ msgstr "Tirkiye"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Tirkmenîstan"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Giravên Turks û Caicos"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Tûvalû"
+
+#~ msgid "Uganda"
+#~ msgstr "Ûganda"
+
+#~ msgid "Ukraine"
+#~ msgstr "Ukrayna"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "Emîrtiyên Ereb ên Yekbuyî"
+
+#~ msgid "United Kingdom of Great Britain and Northern Ireland"
+#~ msgstr "Brîtanyaya Mezin û Îrlandaya Bakûr"
+
+#~ msgid "United Republic of Tanzania"
+#~ msgstr "Tanzaniya"
+
+#~ msgid "United States of America"
+#~ msgstr "Dewletên Yekbûyî yên Emerîkayê"
+
+#~ msgid "United States Virgin Islands"
+#~ msgstr "Giravên Virjin"
+
+#~ msgid "Uruguay"
+#~ msgstr "Uruguay"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Ozbekîstan"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Vanûatû"
+
+#~ msgid "Venezuela"
+#~ msgstr "Venezûela"
+
+#~ msgid "Viet Nam"
+#~ msgstr "Viyetnam"
+
+#~ msgid "Wallis and Futuna Islands"
+#~ msgstr "Giravên Wallis û Futuna"
+
+#~ msgid "Western Sahara"
+#~ msgstr "Sehraya Rojava"
+
+#~ msgid "Yemen"
+#~ msgstr "Yemen"
+
+#~ msgid "Zambia"
+#~ msgstr "Zambiya"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Zimbabwe"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarktîka"
+
+#~ msgid "Bouvet Island"
+#~ msgstr "Girava Boyuvet"
+
+#~ msgid "British Indian Ocean Territory"
+#~ msgstr "Herêma Îngîlîz a Deryaya Hindî"
+
+#~ msgid "Christmas Island"
+#~ msgstr "Girava Noel"
+
+#~ msgid "Cocos (Keeling) Islands"
+#~ msgstr "Grava Kokos (Kîlîng)"
+
+#~ msgid "French Southern Territories"
+#~ msgstr "Herêma Başurî ya Frensî"
+
+#~ msgid "Heard Island and McDonald Islands"
+#~ msgstr "Giravên Heard û McDonald"
+
+#~ msgid "South Georgia and the South Sandwich Islands"
+#~ msgstr "Georgiaya Başûr û Giravên Sandwicha Başûr"
+
+#~ msgid "Taiwan"
+#~ msgstr "Taywan"
+
+#~ msgid "United States Minor Outlying Islands"
+#~ msgstr "Giravên biçûk derve Emerîkayê"
+
+#~ msgid "Afar"
+#~ msgstr "Afar"
+
+#~ msgid "Abkhazian"
+#~ msgstr "Abxasî"
+
+#~ msgid "Avestan"
+#~ msgstr "Zimanê Avesta"
+
+#~ msgid "Afrikaans"
+#~ msgstr "Afrîkaans"
+
+#~ msgid "Akan"
+#~ msgstr "Akan"
+
+#~ msgid "Amharic"
+#~ msgstr "Amharî"
+
+#~ msgid "Aragonese"
+#~ msgstr "Aragon   î"
+
+#~ msgid "Arabic"
+#~ msgstr "Erebî"
+
+#~ msgid "Assamese"
+#~ msgstr "Assamî"
+
+#~ msgid "Asturian"
+#~ msgstr "Asturî"
+
+#~ msgid "Avaric"
+#~ msgstr "Avarî"
+
+#~ msgid "Aymara"
+#~ msgstr "Aymara"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "Azerî"
+
+#~ msgid "Bashkir"
+#~ msgstr "Bakişr"
+
+#~ msgid "Byelorussian"
+#~ msgstr "Belorûsî"
+
+#~ msgid "Bulgarian"
+#~ msgstr "Bulgarî"
+
+#~ msgid "Bihari"
+#~ msgstr "Biharî"
+
+#~ msgid "Bislama"
+#~ msgstr "Bislama"
+
+#~ msgid "Bambara"
+#~ msgstr "Bambara"
+
+#~ msgid "Bengali; Bangla"
+#~ msgstr "Bengalî; Bangla"
+
+#~ msgid "Tibetan"
+#~ msgstr "Tibetî"
+
+#~ msgid "Breton"
+#~ msgstr "Bretonî"
+
+#~ msgid "Bosnian"
+#~ msgstr "Bosnî"
+
+#~ msgid "Catalan"
+#~ msgstr "Katalan"
+
+#~ msgid "Chechen"
+#~ msgstr "Çeçen"
+
+#~ msgid "Chamorro"
+#~ msgstr "Xamoro"
+
+#~ msgid "Corsican"
+#~ msgstr "Korsîkî"
+
+#~ msgid "Cree"
+#~ msgstr "Krî"
+
+#~ msgid "Czech"
+#~ msgstr "Çekî"
+
+#~ msgid "Old Church Slavonic"
+#~ msgstr "Slavonika Kilîseya Kevn"
+
+#~ msgid "Chuvash"
+#~ msgstr "Çuvaşî"
+
+#~ msgid "Welsh"
+#~ msgstr "Galerî"
+
+#~ msgid "Danish"
+#~ msgstr "Danimarkî"
+
+#~ msgid "German"
+#~ msgstr "Almanî"
+
+#~ msgid "Divehi"
+#~ msgstr "Divehî"
+
+#~ msgid "Dzongkha"
+#~ msgstr "Dzongkha"
+
+#~ msgid "Ewe"
+#~ msgstr "Ewe"
+
+#~ msgid "Greek, Modern"
+#~ msgstr "Yewnanî, Hemdem"
+
+#~ msgid "Esperanto"
+#~ msgstr "Esperanto"
+
+#~ msgid "Spanish"
+#~ msgstr "Spanî"
+
+#~ msgid "Estonian"
+#~ msgstr "Estonî"
+
+#~ msgid "Basque"
+#~ msgstr "Baskî"
+
+#~ msgid "Persian"
+#~ msgstr "Farisî"
+
+#~ msgid "Fulah"
+#~ msgstr "Fulah"
+
+#~ msgid "Finnish"
+#~ msgstr "Fînikî"
+
+#~ msgid "Faroese"
+#~ msgstr "Faroyî"
+
+#~ msgid "French"
+#~ msgstr "Fransî"
+
+#~ msgid "Frisian"
+#~ msgstr "Frizî"
+
+#~ msgid "Irish"
+#~ msgstr "Irlandî"
+
+#~ msgid "Scots Gaelic"
+#~ msgstr "Scots Gaelic"
+
+#~ msgid "Galician"
+#~ msgstr "Galikî"
+
+#~ msgid "Guarani"
+#~ msgstr "Guaranî"
+
+#~ msgid "Gujarati"
+#~ msgstr "Gujaratî"
+
+#~ msgid "Manx"
+#~ msgstr "Manx"
+
+#~ msgid "Hausa"
+#~ msgstr "Hausa"
+
+#~ msgid "Hebrew"
+#~ msgstr "Îbranî"
+
+#~ msgid "Hindi"
+#~ msgstr "Hindî"
+
+#~ msgid "Hiri Motu"
+#~ msgstr "Hiri Motu"
+
+#~ msgid "Croatian"
+#~ msgstr "Kroatî"
+
+#~ msgid "Hungarian"
+#~ msgstr "Macarî"
+
+#~ msgid "Armenian"
+#~ msgstr "Ermenî"
+
+#~ msgid "Herero"
+#~ msgstr "Herero"
+
+#~ msgid "Interlingua"
+#~ msgstr "Interlingua"
+
+#~ msgid "Indonesian"
+#~ msgstr "Endonezî"
+
+#~ msgid "Interlingue"
+#~ msgstr "Interlingue"
+
+#~ msgid "Igbo"
+#~ msgstr "Igbo"
+
+#~ msgid "Sichuan Yi"
+#~ msgstr "Sichuan Yi"
+
+#~ msgid "Inupiak"
+#~ msgstr "Inupiak"
+
+#~ msgid "Ido"
+#~ msgstr "Ido"
+
+#~ msgid "Icelandic"
+#~ msgstr "Islandî"
+
+#~ msgid "Italian"
+#~ msgstr "Italî"
+
+#~ msgid "Inuktitut"
+#~ msgstr "Inuktîtut"
+
+#~ msgid "Japanese"
+#~ msgstr "Japonî"
+
+#~ msgid "Javanese"
+#~ msgstr "Javayî"
+
+#~ msgid "Georgian"
+#~ msgstr "Gurcî"
+
+#~ msgid "Kongo"
+#~ msgstr "Kongo"
+
+#~ msgid "Kikuyu"
+#~ msgstr "Kikuyu"
+
+#~ msgid "Kuanyama"
+#~ msgstr "Kuanyama"
+
+#~ msgid "Kazakh"
+#~ msgstr "Kazak"
+
+#~ msgid "Greenlandic"
+#~ msgstr "Greenlandî"
+
+#~ msgid "Khmer"
+#~ msgstr "Xmer"
+
+#~ msgid "Kannada"
+#~ msgstr "Kannada"
+
+#~ msgid "Korean"
+#~ msgstr "Koreyî"
+
+#~ msgid "Kanuri"
+#~ msgstr "Kanurî"
+
+#~ msgid "Kashmiri"
+#~ msgstr "Keşmîrî"
+
+#~ msgid "Kurdish"
+#~ msgstr "Kurdî"
+
+#~ msgid "Komi"
+#~ msgstr "Komî"
+
+#~ msgid "Cornish"
+#~ msgstr "Kornî"
+
+#~ msgid "Kirghiz"
+#~ msgstr "Kirgîz"
+
+#~ msgid "Latin"
+#~ msgstr "Latinî"
+
+#~ msgid "Luxembourgish"
+#~ msgstr "Luksemburgî"
+
+#~ msgid "Ganda"
+#~ msgstr "Ganda"
+
+#~ msgid "Limburgan"
+#~ msgstr "Limburgî"
+
+#~ msgid "Lingala"
+#~ msgstr "Lingala"
+
+#~ msgid "Lao"
+#~ msgstr "Lao"
+
+#~ msgid "Lithuanian"
+#~ msgstr "Litwanî"
+
+#~ msgid "Luba-Katanga"
+#~ msgstr "Luba-Katanga"
+
+#~ msgid "Latvian"
+#~ msgstr "Letwanî"
+
+#~ msgid "Malagasy"
+#~ msgstr "Malagasî"
+
+#~ msgid "Marshallese"
+#~ msgstr "Marşalî"
+
+#~ msgid "Maori"
+#~ msgstr "Maorî"
+
+#~ msgid "Macedonian"
+#~ msgstr "Makedonî"
+
+#~ msgid "Malayalam"
+#~ msgstr "Malayalam"
+
+#~ msgid "Mongolian"
+#~ msgstr "Mongolî"
+
+#~ msgid "Moldavian"
+#~ msgstr "Moldavî"
+
+#~ msgid "Marathi"
+#~ msgstr "Maratî"
+
+#~ msgid "Malay"
+#~ msgstr "Malayî"
+
+#~ msgid "Maltese"
+#~ msgstr "Maltayî"
+
+#~ msgid "Burmese"
+#~ msgstr "Burmayî"
+
+#~ msgid "Norwegian Bokmal"
+#~ msgstr "Norwecî Bokmal"
+
+#~ msgid "North Ndebele"
+#~ msgstr "Ndebeleya Bakûr"
+
+#~ msgid "Nepali"
+#~ msgstr "Nepalî"
+
+#~ msgid "Ndonga"
+#~ msgstr "Ndonga"
+
+#~ msgid "Dutch"
+#~ msgstr "Felemenkî"
+
+#~ msgid "Norwegian Nynorsk"
+#~ msgstr "Norwecî Nynorsk"
+
+#~ msgid "Norwegian"
+#~ msgstr "Norvecî"
+
+#~ msgid "South Ndebele"
+#~ msgstr "Ndebeleya Başûr"
+
+#~ msgid "Navajo"
+#~ msgstr "Navajo"
+
+#~ msgid "Occitan"
+#~ msgstr "Oksîtan"
+
+#~ msgid "Ojibwa"
+#~ msgstr "Ojibwa"
+
+#~ msgid "Oromo"
+#~ msgstr "Oromo"
+
+#~ msgid "Oriya"
+#~ msgstr "Oriya"
+
+#~ msgid "Ossetian"
+#~ msgstr "Osetî"
+
+#~ msgid "Punjabi"
+#~ msgstr "Pnêcabî"
+
+#~ msgid "Pali"
+#~ msgstr "Palî"
+
+#~ msgid "Polish"
+#~ msgstr "Polonî"
+
+#~ msgid "Pushto"
+#~ msgstr "Paşto"
+
+#~ msgid "Portuguese"
+#~ msgstr "Portekizî"
+
+#~ msgid "Quechua"
+#~ msgstr "Quechua"
+
+#~ msgid "Rhaeto-Romance"
+#~ msgstr "Reto-Romanî"
+
+#~ msgid "Rundi"
+#~ msgstr "Rundî"
+
+#~ msgid "Romanian"
+#~ msgstr "Romanî"
+
+#~ msgid "Russian"
+#~ msgstr "Rusî"
+
+#~ msgid "Kinyarwanda"
+#~ msgstr "Kinyarwanda"
+
+#~ msgid "Sanskrit"
+#~ msgstr "Sanskrît"
+
+#~ msgid "Sardinian"
+#~ msgstr "Sardî"
+
+#~ msgid "Sindhi"
+#~ msgstr "Sindî"
+
+#~ msgid "Northern Sami"
+#~ msgstr "Samiya Bakûrî"
+
+#~ msgid "Sango"
+#~ msgstr "Sango"
+
+#~ msgid "Serbo-Croatian"
+#~ msgstr "Sirp-Kroatî"
+
+#~ msgid "Sinhalese"
+#~ msgstr "Sinhalî"
+
+#~ msgid "Slovak"
+#~ msgstr "Slovakî"
+
+#~ msgid "Slovenian"
+#~ msgstr "Slovenî"
+
+#~ msgid "Samoan"
+#~ msgstr "Samoyî"
+
+#~ msgid "Shona"
+#~ msgstr "Shona"
+
+#~ msgid "Somali"
+#~ msgstr "Somalî"
+
+#~ msgid "Albanian"
+#~ msgstr "Albanî"
+
+#~ msgid "Serbian"
+#~ msgstr "Sirpkî"
+
+#~ msgid "Swati"
+#~ msgstr "Swatî"
+
+#~ msgid "Southern Sotho"
+#~ msgstr "Sotoya Başûrî"
+
+#~ msgid "Sundanese"
+#~ msgstr "Sundanî"
+
+#~ msgid "Swedish"
+#~ msgstr "Swêdî"
+
+#~ msgid "Swahili"
+#~ msgstr "Sawahilî"
+
+#~ msgid "Tamil"
+#~ msgstr "Tamîl"
+
+#~ msgid "Telugu"
+#~ msgstr "Telugu"
+
+#~ msgid "Tajik"
+#~ msgstr "Tajîkî"
+
+#~ msgid "Thai"
+#~ msgstr "Tay"
+
+#~ msgid "Tigrinya"
+#~ msgstr "Tigrinya"
+
+#~ msgid "Turkmen"
+#~ msgstr "Tirkmenî"
+
+#~ msgid "Tagalog"
+#~ msgstr "Tagalog"
+
+#~ msgid "Tswana"
+#~ msgstr "Tswana"
+
+#~ msgid "Turkish"
+#~ msgstr "Tirkî"
+
+#~ msgid "Tsonga"
+#~ msgstr "Tsonga"
+
+#~ msgid "Tatar"
+#~ msgstr "Tatarî"
+
+#~ msgid "Twi"
+#~ msgstr "Twî"
+
+#~ msgid "Tahitian"
+#~ msgstr "Tahitî"
+
+#~ msgid "Uighur"
+#~ msgstr "Uigurî"
+
+#~ msgid "Ukrainian"
+#~ msgstr "Ukraynî"
+
+#~ msgid "Urdu"
+#~ msgstr "Urdu"
+
+#~ msgid "Uzbek"
+#~ msgstr "Ozbek"
+
+#~ msgid "Venda"
+#~ msgstr "Venda"
+
+#~ msgid "Vietnamese"
+#~ msgstr "Viyetnamî"
+
+#~ msgid "Volapuk"
+#~ msgstr "Volapuk"
+
+#~ msgid "Walloon"
+#~ msgstr "Valonkî"
+
+#~ msgid "Wolof"
+#~ msgstr "Wolof"
+
+#~ msgid "Xhosa"
+#~ msgstr "Xosa"
+
+#~ msgid "Yiddish"
+#~ msgstr "Jidî (Îbraniya Almanî)"
+
+#~ msgid "Yoruba"
+#~ msgstr "Yoruba"
+
+#~ msgid "Zhuang"
+#~ msgstr "Juang"
+
+#~ msgid "Chinese"
+#~ msgstr "Çinî"
+
+#~ msgid "Zulu"
+#~ msgstr "Zulu"
 
 #~ msgid "Translations"
 #~ msgstr "Werger"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-03 11:47+0200\n"
+"POT-Creation-Date: 2006-08-07 16:10+0200\n"
 "PO-Revision-Date: 2006-05-12 02:56+0000\n"
 "Last-Translator: gilchris <gilchris@gilchris.org>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:166 ../data/languages.h:1
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:166
 msgid "Language"
 msgstr "언어"
 
@@ -135,1702 +135,6 @@ msgstr "새로운 사용자와 로그인 화면에서 사용할 기본 언어:"
 msgid "Language Support"
 msgstr "언어"
 
-#: ../data/countries.h:1
-msgid "Afghanistan"
-msgstr "아프카니스탄"
-
-#: ../data/countries.h:2
-msgid "Åland Islands"
-msgstr "아일랜드"
-
-#: ../data/countries.h:3
-msgid "Albania"
-msgstr "알바니아"
-
-#: ../data/countries.h:4
-msgid "Algeria"
-msgstr "알제리"
-
-#: ../data/countries.h:5
-msgid "American Samoa"
-msgstr "미국령 사모아"
-
-#: ../data/countries.h:6
-msgid "Andorra"
-msgstr "안도라"
-
-#: ../data/countries.h:7
-msgid "Angola"
-msgstr "앙골라"
-
-#: ../data/countries.h:8
-msgid "Anguilla"
-msgstr "앙귈라"
-
-#: ../data/countries.h:9
-msgid "Antigua and Barbuda"
-msgstr "안티과 바부다"
-
-#: ../data/countries.h:10
-msgid "Argentina"
-msgstr "아르헨티나"
-
-#: ../data/countries.h:11
-msgid "Armenia"
-msgstr "아르메니아"
-
-#: ../data/countries.h:12
-msgid "Aruba"
-msgstr "아루바"
-
-#: ../data/countries.h:13
-msgid "Australia"
-msgstr "오스트레일리아"
-
-#: ../data/countries.h:14
-msgid "Austria"
-msgstr "오스트리아"
-
-#: ../data/countries.h:15
-msgid "Azerbaijan"
-msgstr "아제르바이잔"
-
-#: ../data/countries.h:16
-msgid "Bahamas"
-msgstr "바하마"
-
-#: ../data/countries.h:17
-msgid "Bahrain"
-msgstr "바레인"
-
-#: ../data/countries.h:18
-msgid "Bangladesh"
-msgstr "방글라데시"
-
-#: ../data/countries.h:19
-msgid "Barbados"
-msgstr "바베이도스"
-
-#: ../data/countries.h:20
-msgid "Belarus"
-msgstr "벨로루시"
-
-#: ../data/countries.h:21
-msgid "Belgium"
-msgstr "벨기에"
-
-#: ../data/countries.h:22
-msgid "Belize"
-msgstr "벨리즈"
-
-#: ../data/countries.h:23
-msgid "Benin"
-msgstr "베닌"
-
-#: ../data/countries.h:24
-msgid "Bermuda"
-msgstr "버뮤다"
-
-#: ../data/countries.h:25
-msgid "Bhutan"
-msgstr "부탄"
-
-#: ../data/countries.h:26
-msgid "Bolivia"
-msgstr "볼리비아"
-
-#: ../data/countries.h:27
-msgid "Bosnia and Herzegovina"
-msgstr "보스니아 헤르체고비나"
-
-#: ../data/countries.h:28
-msgid "Botswana"
-msgstr "보츠와나"
-
-#: ../data/countries.h:29
-msgid "Brazil"
-msgstr "브라질"
-
-#: ../data/countries.h:30
-msgid "British Virgin Islands"
-msgstr "영국령 버진 제도"
-
-#: ../data/countries.h:31
-msgid "Brunei Darussalam"
-msgstr "브루나이 다루살람"
-
-#: ../data/countries.h:32
-msgid "Bulgaria"
-msgstr "불가리아"
-
-#: ../data/countries.h:33
-msgid "Burkina Faso"
-msgstr "부르키나 파소"
-
-#: ../data/countries.h:34
-msgid "Burundi"
-msgstr "브룬디"
-
-#: ../data/countries.h:35
-msgid "Cambodia"
-msgstr "캄보디아"
-
-#: ../data/countries.h:36
-msgid "Cameroon"
-msgstr "카메룬"
-
-#: ../data/countries.h:37
-msgid "Canada"
-msgstr "캐나다"
-
-#: ../data/countries.h:38
-msgid "Cape Verde"
-msgstr "카보베르데"
-
-#: ../data/countries.h:39
-msgid "Cayman Islands"
-msgstr "케이맨 군도"
-
-#: ../data/countries.h:40
-msgid "Central African Republic"
-msgstr "중앙 아프리카 공화국"
-
-#: ../data/countries.h:41
-msgid "Chad"
-msgstr "차드"
-
-#: ../data/countries.h:42
-msgid "Channel Islands"
-msgstr "채널 제도"
-
-#: ../data/countries.h:43
-msgid "Chile"
-msgstr "칠레"
-
-#: ../data/countries.h:44
-msgid "China"
-msgstr "중국"
-
-#: ../data/countries.h:45
-msgid "Hong Kong Special Administrative Region of China"
-msgstr "홍콩"
-
-#: ../data/countries.h:46
-msgid "Macau Special Administrative Region of China"
-msgstr "마카오"
-
-#: ../data/countries.h:47
-msgid "Colombia"
-msgstr "콜롬비아"
-
-#: ../data/countries.h:48
-msgid "Comoros"
-msgstr "코모로"
-
-#: ../data/countries.h:49
-msgid "Congo"
-msgstr "콩고"
-
-#: ../data/countries.h:50
-msgid "Cook Islands"
-msgstr "쿡 제도"
-
-#: ../data/countries.h:51
-msgid "Costa Rica"
-msgstr "코스타리카"
-
-#: ../data/countries.h:52
-msgid "Côte d'Ivoire"
-msgstr "코트디부아르"
-
-#: ../data/countries.h:53
-msgid "Croatia"
-msgstr "크로아티아"
-
-#: ../data/countries.h:54
-msgid "Cuba"
-msgstr "쿠바"
-
-#: ../data/countries.h:55
-msgid "Cyprus"
-msgstr "키프로스"
-
-#: ../data/countries.h:56
-msgid "Czech Republic"
-msgstr "체코"
-
-#: ../data/countries.h:57
-msgid "Democratic People's Republic of Korea"
-msgstr "조선민주주의인민공화국"
-
-#: ../data/countries.h:58
-msgid "Democratic Republic of the Congo"
-msgstr "콩고"
-
-#: ../data/countries.h:59
-msgid "Denmark"
-msgstr "덴마크"
-
-#: ../data/countries.h:60
-msgid "Djibouti"
-msgstr "지부티"
-
-#: ../data/countries.h:61
-msgid "Dominica"
-msgstr "도미니카"
-
-#: ../data/countries.h:62
-msgid "Dominican Republic"
-msgstr "도미니카 공화국"
-
-#: ../data/countries.h:63
-msgid "Ecuador"
-msgstr "에콰도르"
-
-#: ../data/countries.h:64
-msgid "Egypt"
-msgstr "이집트"
-
-#: ../data/countries.h:65
-msgid "El Salvador"
-msgstr "엘살바도르"
-
-#: ../data/countries.h:66
-msgid "Equatorial Guinea"
-msgstr "적도 기니"
-
-#: ../data/countries.h:67
-msgid "Eritrea"
-msgstr "에리트레아"
-
-#: ../data/countries.h:68
-msgid "Estonia"
-msgstr "에스토니아"
-
-#: ../data/countries.h:69
-msgid "Ethiopia"
-msgstr "에티오피아"
-
-#: ../data/countries.h:70
-msgid "Faeroe Islands"
-msgstr "페로 제도"
-
-#: ../data/countries.h:71
-msgid "Falkland Islands (Malvinas)"
-msgstr "포클랜드 제도"
-
-#: ../data/countries.h:72 ../data/languages.h:48
-msgid "Fiji"
-msgstr "피지"
-
-#: ../data/countries.h:73
-msgid "Finland"
-msgstr "핀란드"
-
-#: ../data/countries.h:74
-msgid "France"
-msgstr "프랑스"
-
-#: ../data/countries.h:75
-msgid "French Guiana"
-msgstr "프랑스령 기아나"
-
-#: ../data/countries.h:76
-msgid "French Polynesia"
-msgstr "프랑스령 폴리네시아"
-
-#: ../data/countries.h:77
-msgid "Gabon"
-msgstr "가봉"
-
-#: ../data/countries.h:78
-msgid "Gambia"
-msgstr "감비아"
-
-#: ../data/countries.h:79
-msgid "Georgia"
-msgstr "그루지야"
-
-#: ../data/countries.h:80
-msgid "Germany"
-msgstr "독일"
-
-#: ../data/countries.h:81
-msgid "Ghana"
-msgstr "가나"
-
-#: ../data/countries.h:82
-msgid "Gibraltar"
-msgstr "지브롤터"
-
-#: ../data/countries.h:83
-msgid "Greece"
-msgstr "그리스"
-
-#: ../data/countries.h:84
-msgid "Greenland"
-msgstr "그린랜드"
-
-#: ../data/countries.h:85
-msgid "Grenada"
-msgstr "그레나다"
-
-#: ../data/countries.h:86
-msgid "Guadeloupe"
-msgstr "과들루프"
-
-#: ../data/countries.h:87
-msgid "Guam"
-msgstr "괌"
-
-#: ../data/countries.h:88
-msgid "Guatemala"
-msgstr "과테말라"
-
-#: ../data/countries.h:89
-msgid "Guinea"
-msgstr "기니"
-
-#: ../data/countries.h:90
-msgid "Guinea-Bissau"
-msgstr "기니비사우"
-
-#: ../data/countries.h:91
-msgid "Guyana"
-msgstr "가이아나"
-
-#: ../data/countries.h:92
-msgid "Haiti"
-msgstr "아이티"
-
-#: ../data/countries.h:93
-msgid "Holy See"
-msgstr "바티칸"
-
-#: ../data/countries.h:94
-msgid "Honduras"
-msgstr "온두라스"
-
-#: ../data/countries.h:95
-msgid "Hungary"
-msgstr "헝가리"
-
-#: ../data/countries.h:96
-msgid "Iceland"
-msgstr "아이슬란드"
-
-#: ../data/countries.h:97
-msgid "India"
-msgstr "인도"
-
-#: ../data/countries.h:98
-msgid "Indonesia"
-msgstr "인도네시아"
-
-#: ../data/countries.h:99
-msgid "Iran (Islamic Republic of)"
-msgstr "이란"
-
-#: ../data/countries.h:100
-msgid "Iraq"
-msgstr "이라크"
-
-#: ../data/countries.h:101
-msgid "Ireland"
-msgstr "아일랜드"
-
-#: ../data/countries.h:102
-msgid "Isle of Man"
-msgstr "맨 섬"
-
-#: ../data/countries.h:103
-msgid "Israel"
-msgstr "이스라엘"
-
-#: ../data/countries.h:104
-msgid "Italy"
-msgstr "이탈리아"
-
-#: ../data/countries.h:105
-msgid "Jamaica"
-msgstr "자메이카"
-
-#: ../data/countries.h:106
-msgid "Japan"
-msgstr "일본"
-
-#: ../data/countries.h:107
-msgid "Jordan"
-msgstr "요르단"
-
-#: ../data/countries.h:108
-msgid "Kazakhstan"
-msgstr "카자흐스탄"
-
-#: ../data/countries.h:109
-msgid "Kenya"
-msgstr "케냐"
-
-#: ../data/countries.h:110
-msgid "Kiribati"
-msgstr "키리바티"
-
-#: ../data/countries.h:111
-msgid "Kuwait"
-msgstr "쿠웨이트"
-
-#: ../data/countries.h:112
-msgid "Kyrgyzstan"
-msgstr "키르기즈스탄"
-
-#: ../data/countries.h:113
-msgid "Lao People's Democratic Republic"
-msgstr "라오스"
-
-#: ../data/countries.h:114
-msgid "Latvia"
-msgstr "라트비아"
-
-#: ../data/countries.h:115
-msgid "Lebanon"
-msgstr "레바논"
-
-#: ../data/countries.h:116
-msgid "Lesotho"
-msgstr "레소토"
-
-#: ../data/countries.h:117
-msgid "Liberia"
-msgstr "라이베리아"
-
-#: ../data/countries.h:118
-msgid "Libyan Arab Jamahiriya"
-msgstr "리비아 공화국"
-
-#: ../data/countries.h:119
-msgid "Liechtenstein"
-msgstr "리히텐슈타인"
-
-#: ../data/countries.h:120
-msgid "Lithuania"
-msgstr "리투아니아"
-
-#: ../data/countries.h:121
-msgid "Luxembourg"
-msgstr "룩셈부르크"
-
-#: ../data/countries.h:122
-msgid "Madagascar"
-msgstr "마다가스카르"
-
-#: ../data/countries.h:123
-msgid "Malawi"
-msgstr "말라위"
-
-#: ../data/countries.h:124
-msgid "Malaysia"
-msgstr "말레이시아"
-
-#: ../data/countries.h:125
-msgid "Maldives"
-msgstr "몰디브"
-
-#: ../data/countries.h:126
-msgid "Mali"
-msgstr "말리"
-
-#: ../data/countries.h:127
-msgid "Malta"
-msgstr "몰타"
-
-#: ../data/countries.h:128
-msgid "Marshall Islands"
-msgstr "마셜 군도"
-
-#: ../data/countries.h:129
-msgid "Martinique"
-msgstr "말티니크"
-
-#: ../data/countries.h:130
-msgid "Mauritania"
-msgstr "모리타니아"
-
-#: ../data/countries.h:131
-msgid "Mauritius"
-msgstr "모리셔스"
-
-#: ../data/countries.h:132
-msgid "Mayotte"
-msgstr "마요트"
-
-#: ../data/countries.h:133
-msgid "Mexico"
-msgstr "멕시코"
-
-#: ../data/countries.h:134
-msgid "Micronesia (Federated States of)"
-msgstr "마이크로네시아"
-
-#: ../data/countries.h:135
-msgid "Monaco"
-msgstr "모나코"
-
-#: ../data/countries.h:136
-msgid "Mongolia"
-msgstr "몽고"
-
-#: ../data/countries.h:137
-msgid "Montserrat"
-msgstr "몽세라트"
-
-#: ../data/countries.h:138
-msgid "Morocco"
-msgstr "모로코"
-
-#: ../data/countries.h:139
-msgid "Mozambique"
-msgstr "모잠비크"
-
-#: ../data/countries.h:140
-msgid "Myanmar"
-msgstr "미얀마"
-
-#: ../data/countries.h:141
-msgid "Namibia"
-msgstr "나미비아"
-
-#: ../data/countries.h:142 ../data/languages.h:113
-msgid "Nauru"
-msgstr "나우루"
-
-#: ../data/countries.h:143
-msgid "Nepal"
-msgstr "네팔"
-
-#: ../data/countries.h:144
-msgid "Netherlands"
-msgstr "네덜란드"
-
-#: ../data/countries.h:145
-msgid "Netherlands Antilles"
-msgstr "네덜란드령 안틸레스"
-
-#: ../data/countries.h:146
-msgid "New Caledonia"
-msgstr "뉴 칼레도니아"
-
-#: ../data/countries.h:147
-msgid "New Zealand"
-msgstr "뉴질랜드"
-
-#: ../data/countries.h:148
-msgid "Nicaragua"
-msgstr "니카라과"
-
-#: ../data/countries.h:149
-msgid "Niger"
-msgstr "니제르"
-
-#: ../data/countries.h:150
-msgid "Nigeria"
-msgstr "나이제리아"
-
-#: ../data/countries.h:151
-msgid "Niue"
-msgstr "니우에"
-
-#: ../data/countries.h:152
-msgid "Norfolk Island"
-msgstr "노퍽 섬"
-
-#: ../data/countries.h:153
-msgid "Northern Mariana Islands"
-msgstr "북 마리아나 제도"
-
-#: ../data/countries.h:154
-msgid "Norway"
-msgstr "노르웨이"
-
-#: ../data/countries.h:155
-msgid "Occupied Palestinian Territory"
-msgstr "팔레스타인 자치 구역"
-
-#: ../data/countries.h:156
-msgid "Oman"
-msgstr "오만"
-
-#: ../data/countries.h:157
-msgid "Pakistan"
-msgstr "파키스탄"
-
-#: ../data/countries.h:158
-msgid "Palau"
-msgstr "팔라우"
-
-#: ../data/countries.h:159
-msgid "Panama"
-msgstr "파나마"
-
-#: ../data/countries.h:160
-msgid "Papua New Guinea"
-msgstr "파푸아뉴기니"
-
-#: ../data/countries.h:161
-msgid "Paraguay"
-msgstr "파라구와"
-
-#: ../data/countries.h:162
-msgid "Peru"
-msgstr "페루"
-
-#: ../data/countries.h:163
-msgid "Philippines"
-msgstr "필리핀"
-
-#: ../data/countries.h:164
-msgid "Pitcairn"
-msgstr "피트케언"
-
-#: ../data/countries.h:165
-msgid "Poland"
-msgstr "폴란드"
-
-#: ../data/countries.h:166
-msgid "Portugal"
-msgstr "포르투칼"
-
-#: ../data/countries.h:167
-msgid "Puerto Rico"
-msgstr "푸에르토리코"
-
-#: ../data/countries.h:168
-msgid "Qatar"
-msgstr "콰타르"
-
-#: ../data/countries.h:169
-msgid "Republic of Korea"
-msgstr "대한민국"
-
-#: ../data/countries.h:170
-msgid "Republic of Moldova"
-msgstr "몰도바 공화국"
-
-#: ../data/countries.h:171
-msgid "Réunion"
-msgstr "레위니옹"
-
-#: ../data/countries.h:172
-msgid "Romania"
-msgstr "루마니아"
-
-#: ../data/countries.h:173
-msgid "Russian Federation"
-msgstr "러시아"
-
-#: ../data/countries.h:174
-msgid "Rwanda"
-msgstr "르완다"
-
-#: ../data/countries.h:175
-msgid "Saint Helena"
-msgstr "세인트 헬레나"
-
-#: ../data/countries.h:176
-msgid "Saint Kitts and Nevis"
-msgstr "세인트 키츠 네비스"
-
-#: ../data/countries.h:177
-msgid "Saint Lucia"
-msgstr "세인트 루시아"
-
-#: ../data/countries.h:178
-msgid "Saint Pierre and Miquelon"
-msgstr "쌩 피에르 미켈론"
-
-#: ../data/countries.h:179
-msgid "Saint Vincent and the Grenadines"
-msgstr "세인트 빈센트 그레나다인즈"
-
-#: ../data/countries.h:180
-msgid "Samoa"
-msgstr "사모아"
-
-#: ../data/countries.h:181
-msgid "San Marino"
-msgstr "산마리노"
-
-#: ../data/countries.h:182
-msgid "Sao Tome and Principe"
-msgstr "상투메 프린시페"
-
-#: ../data/countries.h:183
-msgid "Saudi Arabia"
-msgstr "사우디아라비아"
-
-#: ../data/countries.h:184
-msgid "Senegal"
-msgstr "세네갈"
-
-#: ../data/countries.h:185
-msgid "Serbia and Montenegro"
-msgstr "세르비아 몬테네그로"
-
-#: ../data/countries.h:186
-msgid "Seychelles"
-msgstr "세이셸"
-
-#: ../data/countries.h:187
-msgid "Sierra Leone"
-msgstr "시에라리온"
-
-#: ../data/countries.h:188
-msgid "Singapore"
-msgstr "싱가포르"
-
-#: ../data/countries.h:189
-msgid "Slovakia"
-msgstr "슬로바키아"
-
-#: ../data/countries.h:190
-msgid "Slovenia"
-msgstr "슬로베니아"
-
-#: ../data/countries.h:191
-msgid "Solomon Islands"
-msgstr "솔로몬 군도"
-
-#: ../data/countries.h:192
-msgid "Somalia"
-msgstr "소말리아"
-
-#: ../data/countries.h:193
-msgid "South Africa"
-msgstr "남아프리카공화국"
-
-#: ../data/countries.h:194
-msgid "Spain"
-msgstr "스페인"
-
-#: ../data/countries.h:195
-msgid "Sri Lanka"
-msgstr "스리랑카"
-
-#: ../data/countries.h:196
-msgid "Sudan"
-msgstr "수단"
-
-#: ../data/countries.h:197
-msgid "Suriname"
-msgstr "수리남"
-
-#: ../data/countries.h:198
-msgid "Svalbard and Jan Mayen Islands"
-msgstr "스발바르와 잔 마옌 군도"
-
-#: ../data/countries.h:199
-msgid "Swaziland"
-msgstr "스와질란드"
-
-#: ../data/countries.h:200
-msgid "Sweden"
-msgstr "스웨덴"
-
-#: ../data/countries.h:201
-msgid "Switzerland"
-msgstr "스위스"
-
-#: ../data/countries.h:202
-msgid "Syrian Arab Republic"
-msgstr "시리아"
-
-#: ../data/countries.h:203
-msgid "Tajikistan"
-msgstr "타지키스탄"
-
-#: ../data/countries.h:204
-msgid "Thailand"
-msgstr "태국"
-
-#: ../data/countries.h:205
-msgid "Macedonia, Republic of"
-msgstr "마케도니아"
-
-#: ../data/countries.h:206
-msgid "Timor-Leste"
-msgstr "동티모르"
-
-#: ../data/countries.h:207
-msgid "Togo"
-msgstr "토고"
-
-#: ../data/countries.h:208
-msgid "Tokelau"
-msgstr "토켈로"
-
-#: ../data/countries.h:209 ../data/languages.h:166
-msgid "Tonga"
-msgstr "통가"
-
-#: ../data/countries.h:210
-msgid "Trinidad and Tobago"
-msgstr "트리니다드토바고"
-
-#: ../data/countries.h:211
-msgid "Tunisia"
-msgstr "튀니지"
-
-#: ../data/countries.h:212
-msgid "Turkey"
-msgstr "터키"
-
-#: ../data/countries.h:213
-msgid "Turkmenistan"
-msgstr "투르크메니스탄"
-
-#: ../data/countries.h:214
-msgid "Turks and Caicos Islands"
-msgstr "터크스 카이코스 군도"
-
-#: ../data/countries.h:215
-msgid "Tuvalu"
-msgstr "투발루"
-
-#: ../data/countries.h:216
-msgid "Uganda"
-msgstr "우간다"
-
-#: ../data/countries.h:217
-msgid "Ukraine"
-msgstr "우크라이나"
-
-#: ../data/countries.h:218
-msgid "United Arab Emirates"
-msgstr "아랍에미레이트"
-
-#: ../data/countries.h:219
-msgid "United Kingdom of Great Britain and Northern Ireland"
-msgstr "영국"
-
-#: ../data/countries.h:220
-msgid "United Republic of Tanzania"
-msgstr "탄자니아"
-
-#: ../data/countries.h:221
-msgid "United States of America"
-msgstr "미국"
-
-#: ../data/countries.h:222
-msgid "United States Virgin Islands"
-msgstr "미국령 Virgin섬"
-
-#: ../data/countries.h:223
-msgid "Uruguay"
-msgstr "우루과이"
-
-#: ../data/countries.h:224
-msgid "Uzbekistan"
-msgstr "우즈베키스탄"
-
-#: ../data/countries.h:225
-msgid "Vanuatu"
-msgstr "바누아투"
-
-#: ../data/countries.h:226
-msgid "Venezuela"
-msgstr "베네주엘라"
-
-#: ../data/countries.h:227
-msgid "Viet Nam"
-msgstr "베트남"
-
-#: ../data/countries.h:228
-msgid "Wallis and Futuna Islands"
-msgstr "윌리스와 푸투나 군도"
-
-#: ../data/countries.h:229
-msgid "Western Sahara"
-msgstr "서부 사하라"
-
-#: ../data/countries.h:230
-msgid "Yemen"
-msgstr "예멘"
-
-#: ../data/countries.h:231
-msgid "Zambia"
-msgstr "잠비아"
-
-#: ../data/countries.h:232
-msgid "Zimbabwe"
-msgstr "짐바브웨"
-
-#: ../data/countries.h:233
-msgid "Antarctica"
-msgstr "남극"
-
-#: ../data/countries.h:234
-msgid "Bouvet Island"
-msgstr "보우벳 섬"
-
-#: ../data/countries.h:235
-msgid "British Indian Ocean Territory"
-msgstr "영국령 인도양 자치구역"
-
-#: ../data/countries.h:236
-msgid "Christmas Island"
-msgstr "크리스마스 섬"
-
-#: ../data/countries.h:237
-msgid "Cocos (Keeling) Islands"
-msgstr "코코스 (킬링) 제도"
-
-#: ../data/countries.h:238
-msgid "French Southern Territories"
-msgstr "프랑스령 남 자치구역"
-
-#: ../data/countries.h:239
-msgid "Heard Island and McDonald Islands"
-msgstr "허드 맥도널드 제도"
-
-#: ../data/countries.h:240
-msgid "South Georgia and the South Sandwich Islands"
-msgstr "남 조지아 & 남 샌드위치 제도"
-
-#: ../data/countries.h:241
-msgid "Taiwan"
-msgstr "대만"
-
-#: ../data/countries.h:242
-msgid "United States Minor Outlying Islands"
-msgstr "미국령 소군도"
-
-#: ../data/languages.h:2
-msgid "Afar"
-msgstr "아파르어"
-
-#: ../data/languages.h:3
-msgid "Abkhazian"
-msgstr "아브하즈어"
-
-#: ../data/languages.h:4
-msgid "Avestan"
-msgstr "아베스타어"
-
-#: ../data/languages.h:5
-msgid "Afrikaans"
-msgstr "남아프리카 공용어"
-
-#: ../data/languages.h:6
-msgid "Akan"
-msgstr "아칸어"
-
-#: ../data/languages.h:7
-msgid "Amharic"
-msgstr "암하라어"
-
-#: ../data/languages.h:8
-msgid "Aragonese"
-msgstr "아라곤어"
-
-#: ../data/languages.h:9
-msgid "Arabic"
-msgstr "아랍어"
-
-#: ../data/languages.h:10
-msgid "Assamese"
-msgstr "아샘어"
-
-#: ../data/languages.h:11
-msgid "Asturian"
-msgstr "아스투리아스어"
-
-#: ../data/languages.h:12
-msgid "Avaric"
-msgstr "애버 어"
-
-#: ../data/languages.h:13
-msgid "Aymara"
-msgstr "아이마라어"
-
-#: ../data/languages.h:14
-msgid "Azerbaijani"
-msgstr "아제르베이잔어"
-
-#: ../data/languages.h:15
-msgid "Bashkir"
-msgstr "바쉬키르어"
-
-#: ../data/languages.h:16
-msgid "Byelorussian"
-msgstr "벨로루시어"
-
-#: ../data/languages.h:17
-msgid "Bulgarian"
-msgstr "불가리아어"
-
-#: ../data/languages.h:18
-msgid "Bihari"
-msgstr "비하르어"
-
-#: ../data/languages.h:19
-msgid "Bislama"
-msgstr "비슬라마어"
-
-#: ../data/languages.h:20
-msgid "Bambara"
-msgstr "밤바라어"
-
-#: ../data/languages.h:21
-msgid "Bengali; Bangla"
-msgstr "벵골어"
-
-#: ../data/languages.h:22
-msgid "Tibetan"
-msgstr "티베르어"
-
-#: ../data/languages.h:23
-msgid "Breton"
-msgstr "브르타뉴어"
-
-#: ../data/languages.h:24
-msgid "Bosnian"
-msgstr "보스니아어"
-
-#: ../data/languages.h:25
-msgid "Catalan"
-msgstr "카탈로니아어"
-
-#: ../data/languages.h:26
-msgid "Chechen"
-msgstr "체첸어"
-
-#: ../data/languages.h:27
-msgid "Chamorro"
-msgstr "차모로어"
-
-#: ../data/languages.h:28
-msgid "Corsican"
-msgstr "코르시카어"
-
-#: ../data/languages.h:29
-msgid "Cree"
-msgstr "크리어"
-
-#: ../data/languages.h:30
-msgid "Czech"
-msgstr "체코어"
-
-#: ../data/languages.h:31
-msgid "Old Church Slavonic"
-msgstr "고대 교회 슬라브어"
-
-#: ../data/languages.h:32
-msgid "Chuvash"
-msgstr "츄바시어"
-
-#: ../data/languages.h:33
-msgid "Welsh"
-msgstr "웨일즈어"
-
-#: ../data/languages.h:34
-msgid "Danish"
-msgstr "덴마크어"
-
-#: ../data/languages.h:35
-msgid "German"
-msgstr "독일어"
-
-#: ../data/languages.h:36
-msgid "Divehi"
-msgstr "몰디브"
-
-#: ../data/languages.h:37
-msgid "Dzongkha"
-msgstr "종카어"
-
-#: ../data/languages.h:38
-msgid "Ewe"
-msgstr "에웨"
-
-#: ../data/languages.h:39
-msgid "Greek, Modern"
-msgstr "현대 그리스어"
-
-#: ../data/languages.h:40
-msgid "English"
-msgstr "영어"
-
-#: ../data/languages.h:41
-msgid "Esperanto"
-msgstr "에스페란토"
-
-#: ../data/languages.h:42
-msgid "Spanish"
-msgstr "스페인어"
-
-#: ../data/languages.h:43
-msgid "Estonian"
-msgstr "에스토니아어"
-
-#: ../data/languages.h:44
-msgid "Basque"
-msgstr "바스크어"
-
-#: ../data/languages.h:45
-msgid "Persian"
-msgstr "페르시아어"
-
-#: ../data/languages.h:46
-msgid "Fulah"
-msgstr "고대 서 아프리카 어"
-
-#: ../data/languages.h:47
-msgid "Finnish"
-msgstr "핀란드어"
-
-#: ../data/languages.h:49
-msgid "Faroese"
-msgstr "파로어"
-
-#: ../data/languages.h:50
-msgid "French"
-msgstr "프랑스어"
-
-#: ../data/languages.h:51
-msgid "Frisian"
-msgstr "프리지아어"
-
-#: ../data/languages.h:52
-msgid "Irish"
-msgstr "아일랜드어"
-
-#: ../data/languages.h:53
-msgid "Scots Gaelic"
-msgstr "스코틀랜드 게일어"
-
-#: ../data/languages.h:54
-msgid "Galician"
-msgstr "갈리시아어"
-
-#: ../data/languages.h:55
-msgid "Guarani"
-msgstr "과라니어"
-
-#: ../data/languages.h:56
-msgid "Gujarati"
-msgstr "구자라트어"
-
-#: ../data/languages.h:57
-msgid "Manx"
-msgstr "맨섬어"
-
-#: ../data/languages.h:58
-msgid "Hausa"
-msgstr "하우사어"
-
-#: ../data/languages.h:59
-msgid "Hebrew"
-msgstr "헤브라이어"
-
-#: ../data/languages.h:60
-msgid "Hindi"
-msgstr "힌디어"
-
-#: ../data/languages.h:61
-msgid "Hiri Motu"
-msgstr "파푸아 뉴기니 어"
-
-#: ../data/languages.h:62
-msgid "Croatian"
-msgstr "크로아티아어"
-
-#: ../data/languages.h:63
-msgid "Hungarian"
-msgstr "헝가리어"
-
-#: ../data/languages.h:64
-msgid "Armenian"
-msgstr "아르메니아어"
-
-#: ../data/languages.h:65
-msgid "Herero"
-msgstr "헤레로어"
-
-#: ../data/languages.h:66
-msgid "Interlingua"
-msgstr "과학자용 국제어"
-
-#: ../data/languages.h:67
-msgid "Indonesian"
-msgstr "인도네시아어"
-
-#: ../data/languages.h:68
-msgid "Interlingue"
-msgstr "인터리그 어"
-
-#: ../data/languages.h:69
-msgid "Igbo"
-msgstr "이그보 어"
-
-#: ../data/languages.h:70
-msgid "Sichuan Yi"
-msgstr "사천어"
-
-#: ../data/languages.h:71
-msgid "Inupiak"
-msgstr "이너픽 (북부 알래스카 어)"
-
-#: ../data/languages.h:72
-msgid "Ido"
-msgstr "이도어"
-
-#: ../data/languages.h:73
-msgid "Icelandic"
-msgstr "아이슬란드어"
-
-#: ../data/languages.h:74
-msgid "Italian"
-msgstr "이탈리아어"
-
-#: ../data/languages.h:75
-msgid "Inuktitut"
-msgstr "이누이트어"
-
-#: ../data/languages.h:76
-msgid "Japanese"
-msgstr "일본어"
-
-#: ../data/languages.h:77
-msgid "Javanese"
-msgstr "일본어"
-
-#: ../data/languages.h:78
-msgid "Georgian"
-msgstr "그루지아어"
-
-#: ../data/languages.h:79
-msgid "Kongo"
-msgstr "콩코어"
-
-#: ../data/languages.h:80
-msgid "Kikuyu"
-msgstr "키쿠유어"
-
-#: ../data/languages.h:81
-msgid "Kuanyama"
-msgstr "콴야마 (부탄 어)"
-
-#: ../data/languages.h:82
-msgid "Kazakh"
-msgstr "카자흐어"
-
-#: ../data/languages.h:83
-msgid "Greenlandic"
-msgstr "그린란드어"
-
-#: ../data/languages.h:84
-msgid "Khmer"
-msgstr "크메르어"
-
-#: ../data/languages.h:85
-msgid "Kannada"
-msgstr "카나다어"
-
-#: ../data/languages.h:86
-msgid "Korean"
-msgstr "한국어"
-
-#: ../data/languages.h:87
-msgid "Kanuri"
-msgstr "카누리어"
-
-#: ../data/languages.h:88
-msgid "Kashmiri"
-msgstr "카슈미르어"
-
-#: ../data/languages.h:89
-msgid "Kurdish"
-msgstr "쿠르드어"
-
-#: ../data/languages.h:90
-msgid "Komi"
-msgstr "코미어"
-
-#: ../data/languages.h:91
-msgid "Cornish"
-msgstr "영국 콘월어"
-
-#: ../data/languages.h:92
-msgid "Kirghiz"
-msgstr "키르기스어"
-
-#: ../data/languages.h:93
-msgid "Latin"
-msgstr "라틴어"
-
-#: ../data/languages.h:94
-msgid "Luxembourgish"
-msgstr "룩셈부르크어"
-
-#: ../data/languages.h:95
-msgid "Ganda"
-msgstr "헨트어"
-
-#: ../data/languages.h:96
-msgid "Limburgan"
-msgstr "림부르크어"
-
-#: ../data/languages.h:97
-msgid "Lingala"
-msgstr "링갈라어"
-
-#: ../data/languages.h:98
-msgid "Lao"
-msgstr "라오스어"
-
-#: ../data/languages.h:99
-msgid "Lithuanian"
-msgstr "리투아니아어"
-
-#: ../data/languages.h:100
-msgid "Luba-Katanga"
-msgstr "루바 카탕가"
-
-#: ../data/languages.h:101
-msgid "Latvian"
-msgstr "라트비아어"
-
-#: ../data/languages.h:102
-msgid "Malagasy"
-msgstr "마다가스카어"
-
-#: ../data/languages.h:103
-msgid "Marshallese"
-msgstr "마셜 군도어"
-
-#: ../data/languages.h:104
-msgid "Maori"
-msgstr "마오리어"
-
-#: ../data/languages.h:105
-msgid "Macedonian"
-msgstr "마케도니아어"
-
-#: ../data/languages.h:106
-msgid "Malayalam"
-msgstr "말라얄람어"
-
-#: ../data/languages.h:107
-msgid "Mongolian"
-msgstr "몽골어"
-
-#: ../data/languages.h:108
-msgid "Moldavian"
-msgstr "몰다비아어"
-
-#: ../data/languages.h:109
-msgid "Marathi"
-msgstr "마라티어"
-
-#: ../data/languages.h:110
-msgid "Malay"
-msgstr "말레이어"
-
-#: ../data/languages.h:111
-msgid "Maltese"
-msgstr "몰타어"
-
-#: ../data/languages.h:112
-msgid "Burmese"
-msgstr "버마어"
-
-#: ../data/languages.h:114
-msgid "Norwegian Bokmal"
-msgstr "노르웨이 불몰어"
-
-#: ../data/languages.h:115
-msgid "North Ndebele"
-msgstr ""
-
-#: ../data/languages.h:116
-msgid "Nepali"
-msgstr "네팔어"
-
-#: ../data/languages.h:117
-msgid "Ndonga"
-msgstr ""
-
-#: ../data/languages.h:118
-msgid "Dutch"
-msgstr "네덜란드어"
-
-#: ../data/languages.h:119
-msgid "Norwegian Nynorsk"
-msgstr "노르웨이 뉘노시크어"
-
-#: ../data/languages.h:120
-msgid "Norwegian"
-msgstr "노르웨이어"
-
-#: ../data/languages.h:121
-msgid "South Ndebele"
-msgstr ""
-
-#: ../data/languages.h:122
-msgid "Navajo"
-msgstr "나바호어"
-
-#: ../data/languages.h:123
-msgid "Occitan"
-msgstr "오크어"
-
-#: ../data/languages.h:124
-msgid "Ojibwa"
-msgstr "오지브웨이어"
-
-#: ../data/languages.h:125
-msgid "Oromo"
-msgstr "오로모어"
-
-#: ../data/languages.h:126
-msgid "Oriya"
-msgstr "오리야어"
-
-#: ../data/languages.h:127
-msgid "Ossetian"
-msgstr "오세티아어"
-
-#: ../data/languages.h:128
-msgid "Punjabi"
-msgstr "펀잡어"
-
-#: ../data/languages.h:129
-msgid "Pali"
-msgstr "팔리어"
-
-#: ../data/languages.h:130
-msgid "Polish"
-msgstr "폴란드어"
-
-#: ../data/languages.h:131
-msgid "Pushto"
-msgstr "아프가니스탄어"
-
-#: ../data/languages.h:132
-msgid "Portuguese"
-msgstr "포르투칼어"
-
-#: ../data/languages.h:133
-msgid "Quechua"
-msgstr "케추아어"
-
-#: ../data/languages.h:134
-msgid "Rhaeto-Romance"
-msgstr "레토로만어"
-
-#: ../data/languages.h:135
-msgid "Rundi"
-msgstr "룬디어"
-
-#: ../data/languages.h:136
-msgid "Romanian"
-msgstr "루마니아어"
-
-#: ../data/languages.h:137
-msgid "Russian"
-msgstr "러시아어"
-
-#: ../data/languages.h:138
-msgid "Kinyarwanda"
-msgstr "키냐완다"
-
-#: ../data/languages.h:139
-msgid "Sanskrit"
-msgstr "산스크리트"
-
-#: ../data/languages.h:140
-msgid "Sardinian"
-msgstr "사르디니아어"
-
-#: ../data/languages.h:141
-msgid "Sindhi"
-msgstr "신드어"
-
-#: ../data/languages.h:142
-msgid "Northern Sami"
-msgstr ""
-
-#: ../data/languages.h:143
-msgid "Sango"
-msgstr "상고"
-
-#: ../data/languages.h:144
-msgid "Serbo-Croatian"
-msgstr "세르보크로아티아어"
-
-#: ../data/languages.h:145
-msgid "Sinhalese"
-msgstr "스리랑카어"
-
-#: ../data/languages.h:146
-msgid "Slovak"
-msgstr "슬로바키아어"
-
-#: ../data/languages.h:147
-msgid "Slovenian"
-msgstr "슬로베니아어"
-
-#: ../data/languages.h:148
-msgid "Samoan"
-msgstr "사모아어"
-
-#: ../data/languages.h:149
-msgid "Shona"
-msgstr "쇼나"
-
-#: ../data/languages.h:150
-msgid "Somali"
-msgstr "소말리어"
-
-#: ../data/languages.h:151
-msgid "Albanian"
-msgstr "알바니아어"
-
-#: ../data/languages.h:152
-msgid "Serbian"
-msgstr "세르비아어"
-
-#: ../data/languages.h:153
-msgid "Swati"
-msgstr "싸티 (고대 아프가니스탄 어)"
-
-#: ../data/languages.h:154
-msgid "Southern Sotho"
-msgstr "남부 소토어"
-
-#: ../data/languages.h:155
-msgid "Sundanese"
-msgstr "순다어"
-
-#: ../data/languages.h:156
-msgid "Swedish"
-msgstr "스웨덴어"
-
-#: ../data/languages.h:157
-msgid "Swahili"
-msgstr "스와힐리어"
-
-#: ../data/languages.h:158
-msgid "Tamil"
-msgstr "타밀어"
-
-#: ../data/languages.h:159
-msgid "Telugu"
-msgstr "텔루구어"
-
-#: ../data/languages.h:160
-msgid "Tajik"
-msgstr "타지크어"
-
-#: ../data/languages.h:161
-msgid "Thai"
-msgstr "태국어"
-
-#: ../data/languages.h:162
-msgid "Tigrinya"
-msgstr "티그리니아어"
-
-#: ../data/languages.h:163
-msgid "Turkmen"
-msgstr "투르크멘어"
-
-#: ../data/languages.h:164
-msgid "Tagalog"
-msgstr "타갈로그어"
-
-#: ../data/languages.h:165
-msgid "Tswana"
-msgstr "츠와나어"
-
-#: ../data/languages.h:167
-msgid "Turkish"
-msgstr "터키어"
-
-#: ../data/languages.h:168
-msgid "Tsonga"
-msgstr "통가어"
-
-#: ../data/languages.h:169
-msgid "Tatar"
-msgstr "타타르어"
-
-#: ../data/languages.h:170
-msgid "Twi"
-msgstr "츠위"
-
-#: ../data/languages.h:171
-msgid "Tahitian"
-msgstr "타히티어"
-
-#: ../data/languages.h:172
-msgid "Uighur"
-msgstr "위그루어"
-
-#: ../data/languages.h:173
-msgid "Ukrainian"
-msgstr "우크라이나어"
-
-#: ../data/languages.h:174
-msgid "Urdu"
-msgstr "우르두어"
-
-#: ../data/languages.h:175
-msgid "Uzbek"
-msgstr "우즈베키스탄어"
-
-#: ../data/languages.h:176
-msgid "Venda"
-msgstr "벤더어"
-
-#: ../data/languages.h:177
-msgid "Vietnamese"
-msgstr "베트남어"
-
-#: ../data/languages.h:178
-msgid "Volapuk"
-msgstr "볼라퓌크"
-
-#: ../data/languages.h:179
-msgid "Walloon"
-msgstr "왈론어"
-
-#: ../data/languages.h:180
-msgid "Wolof"
-msgstr "월로프어"
-
-#: ../data/languages.h:181
-msgid "Xhosa"
-msgstr "코사어"
-
-#: ../data/languages.h:182
-msgid "Yiddish"
-msgstr "이디시어"
-
-#: ../data/languages.h:183
-msgid "Yoruba"
-msgstr "요루바어"
-
-#: ../data/languages.h:184
-msgid "Zhuang"
-msgstr "쯔황 (중국 광시성의 옛 언어)"
-
-#: ../data/languages.h:185
-msgid "Chinese"
-msgstr "중국어"
-
-#: ../data/languages.h:186
-msgid "Zulu"
-msgstr "줄루어"
-
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
@@ -1898,3 +202,1263 @@ msgstr "선택된 로케일을 위한 fontconfig-voodoo 설정이 없습니다."
 
 #~ msgid "Default language"
 #~ msgstr "기본 언어"
+
+#~ msgid "English"
+#~ msgstr "영어"
+
+#~ msgid "Afghanistan"
+#~ msgstr "아프카니스탄"
+
+#~ msgid "Åland Islands"
+#~ msgstr "아일랜드"
+
+#~ msgid "Albania"
+#~ msgstr "알바니아"
+
+#~ msgid "Algeria"
+#~ msgstr "알제리"
+
+#~ msgid "American Samoa"
+#~ msgstr "미국령 사모아"
+
+#~ msgid "Andorra"
+#~ msgstr "안도라"
+
+#~ msgid "Angola"
+#~ msgstr "앙골라"
+
+#~ msgid "Anguilla"
+#~ msgstr "앙귈라"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "안티과 바부다"
+
+#~ msgid "Argentina"
+#~ msgstr "아르헨티나"
+
+#~ msgid "Armenia"
+#~ msgstr "아르메니아"
+
+#~ msgid "Aruba"
+#~ msgstr "아루바"
+
+#~ msgid "Australia"
+#~ msgstr "오스트레일리아"
+
+#~ msgid "Austria"
+#~ msgstr "오스트리아"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "아제르바이잔"
+
+#~ msgid "Bahamas"
+#~ msgstr "바하마"
+
+#~ msgid "Bahrain"
+#~ msgstr "바레인"
+
+#~ msgid "Bangladesh"
+#~ msgstr "방글라데시"
+
+#~ msgid "Barbados"
+#~ msgstr "바베이도스"
+
+#~ msgid "Belarus"
+#~ msgstr "벨로루시"
+
+#~ msgid "Belgium"
+#~ msgstr "벨기에"
+
+#~ msgid "Belize"
+#~ msgstr "벨리즈"
+
+#~ msgid "Benin"
+#~ msgstr "베닌"
+
+#~ msgid "Bermuda"
+#~ msgstr "버뮤다"
+
+#~ msgid "Bhutan"
+#~ msgstr "부탄"
+
+#~ msgid "Bolivia"
+#~ msgstr "볼리비아"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "보스니아 헤르체고비나"
+
+#~ msgid "Botswana"
+#~ msgstr "보츠와나"
+
+#~ msgid "Brazil"
+#~ msgstr "브라질"
+
+#~ msgid "British Virgin Islands"
+#~ msgstr "영국령 버진 제도"
+
+#~ msgid "Brunei Darussalam"
+#~ msgstr "브루나이 다루살람"
+
+#~ msgid "Bulgaria"
+#~ msgstr "불가리아"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "부르키나 파소"
+
+#~ msgid "Burundi"
+#~ msgstr "브룬디"
+
+#~ msgid "Cambodia"
+#~ msgstr "캄보디아"
+
+#~ msgid "Cameroon"
+#~ msgstr "카메룬"
+
+#~ msgid "Canada"
+#~ msgstr "캐나다"
+
+#~ msgid "Cape Verde"
+#~ msgstr "카보베르데"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "케이맨 군도"
+
+#~ msgid "Central African Republic"
+#~ msgstr "중앙 아프리카 공화국"
+
+#~ msgid "Chad"
+#~ msgstr "차드"
+
+#~ msgid "Channel Islands"
+#~ msgstr "채널 제도"
+
+#~ msgid "Chile"
+#~ msgstr "칠레"
+
+#~ msgid "China"
+#~ msgstr "중국"
+
+#~ msgid "Hong Kong Special Administrative Region of China"
+#~ msgstr "홍콩"
+
+#~ msgid "Macau Special Administrative Region of China"
+#~ msgstr "마카오"
+
+#~ msgid "Colombia"
+#~ msgstr "콜롬비아"
+
+#~ msgid "Comoros"
+#~ msgstr "코모로"
+
+#~ msgid "Congo"
+#~ msgstr "콩고"
+
+#~ msgid "Cook Islands"
+#~ msgstr "쿡 제도"
+
+#~ msgid "Costa Rica"
+#~ msgstr "코스타리카"
+
+#~ msgid "Côte d'Ivoire"
+#~ msgstr "코트디부아르"
+
+#~ msgid "Croatia"
+#~ msgstr "크로아티아"
+
+#~ msgid "Cuba"
+#~ msgstr "쿠바"
+
+#~ msgid "Cyprus"
+#~ msgstr "키프로스"
+
+#~ msgid "Czech Republic"
+#~ msgstr "체코"
+
+#~ msgid "Democratic People's Republic of Korea"
+#~ msgstr "조선민주주의인민공화국"
+
+#~ msgid "Democratic Republic of the Congo"
+#~ msgstr "콩고"
+
+#~ msgid "Denmark"
+#~ msgstr "덴마크"
+
+#~ msgid "Djibouti"
+#~ msgstr "지부티"
+
+#~ msgid "Dominica"
+#~ msgstr "도미니카"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "도미니카 공화국"
+
+#~ msgid "Ecuador"
+#~ msgstr "에콰도르"
+
+#~ msgid "Egypt"
+#~ msgstr "이집트"
+
+#~ msgid "El Salvador"
+#~ msgstr "엘살바도르"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "적도 기니"
+
+#~ msgid "Eritrea"
+#~ msgstr "에리트레아"
+
+#~ msgid "Estonia"
+#~ msgstr "에스토니아"
+
+#~ msgid "Ethiopia"
+#~ msgstr "에티오피아"
+
+#~ msgid "Faeroe Islands"
+#~ msgstr "페로 제도"
+
+#~ msgid "Falkland Islands (Malvinas)"
+#~ msgstr "포클랜드 제도"
+
+#~ msgid "Fiji"
+#~ msgstr "피지"
+
+#~ msgid "Finland"
+#~ msgstr "핀란드"
+
+#~ msgid "France"
+#~ msgstr "프랑스"
+
+#~ msgid "French Guiana"
+#~ msgstr "프랑스령 기아나"
+
+#~ msgid "French Polynesia"
+#~ msgstr "프랑스령 폴리네시아"
+
+#~ msgid "Gabon"
+#~ msgstr "가봉"
+
+#~ msgid "Gambia"
+#~ msgstr "감비아"
+
+#~ msgid "Georgia"
+#~ msgstr "그루지야"
+
+#~ msgid "Germany"
+#~ msgstr "독일"
+
+#~ msgid "Ghana"
+#~ msgstr "가나"
+
+#~ msgid "Gibraltar"
+#~ msgstr "지브롤터"
+
+#~ msgid "Greece"
+#~ msgstr "그리스"
+
+#~ msgid "Greenland"
+#~ msgstr "그린랜드"
+
+#~ msgid "Grenada"
+#~ msgstr "그레나다"
+
+#~ msgid "Guadeloupe"
+#~ msgstr "과들루프"
+
+#~ msgid "Guam"
+#~ msgstr "괌"
+
+#~ msgid "Guatemala"
+#~ msgstr "과테말라"
+
+#~ msgid "Guinea"
+#~ msgstr "기니"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "기니비사우"
+
+#~ msgid "Guyana"
+#~ msgstr "가이아나"
+
+#~ msgid "Haiti"
+#~ msgstr "아이티"
+
+#~ msgid "Holy See"
+#~ msgstr "바티칸"
+
+#~ msgid "Honduras"
+#~ msgstr "온두라스"
+
+#~ msgid "Hungary"
+#~ msgstr "헝가리"
+
+#~ msgid "Iceland"
+#~ msgstr "아이슬란드"
+
+#~ msgid "India"
+#~ msgstr "인도"
+
+#~ msgid "Indonesia"
+#~ msgstr "인도네시아"
+
+#~ msgid "Iran (Islamic Republic of)"
+#~ msgstr "이란"
+
+#~ msgid "Iraq"
+#~ msgstr "이라크"
+
+#~ msgid "Ireland"
+#~ msgstr "아일랜드"
+
+#~ msgid "Isle of Man"
+#~ msgstr "맨 섬"
+
+#~ msgid "Israel"
+#~ msgstr "이스라엘"
+
+#~ msgid "Italy"
+#~ msgstr "이탈리아"
+
+#~ msgid "Jamaica"
+#~ msgstr "자메이카"
+
+#~ msgid "Japan"
+#~ msgstr "일본"
+
+#~ msgid "Jordan"
+#~ msgstr "요르단"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "카자흐스탄"
+
+#~ msgid "Kenya"
+#~ msgstr "케냐"
+
+#~ msgid "Kiribati"
+#~ msgstr "키리바티"
+
+#~ msgid "Kuwait"
+#~ msgstr "쿠웨이트"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "키르기즈스탄"
+
+#~ msgid "Lao People's Democratic Republic"
+#~ msgstr "라오스"
+
+#~ msgid "Latvia"
+#~ msgstr "라트비아"
+
+#~ msgid "Lebanon"
+#~ msgstr "레바논"
+
+#~ msgid "Lesotho"
+#~ msgstr "레소토"
+
+#~ msgid "Liberia"
+#~ msgstr "라이베리아"
+
+#~ msgid "Libyan Arab Jamahiriya"
+#~ msgstr "리비아 공화국"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "리히텐슈타인"
+
+#~ msgid "Lithuania"
+#~ msgstr "리투아니아"
+
+#~ msgid "Luxembourg"
+#~ msgstr "룩셈부르크"
+
+#~ msgid "Madagascar"
+#~ msgstr "마다가스카르"
+
+#~ msgid "Malawi"
+#~ msgstr "말라위"
+
+#~ msgid "Malaysia"
+#~ msgstr "말레이시아"
+
+#~ msgid "Maldives"
+#~ msgstr "몰디브"
+
+#~ msgid "Mali"
+#~ msgstr "말리"
+
+#~ msgid "Malta"
+#~ msgstr "몰타"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "마셜 군도"
+
+#~ msgid "Martinique"
+#~ msgstr "말티니크"
+
+#~ msgid "Mauritania"
+#~ msgstr "모리타니아"
+
+#~ msgid "Mauritius"
+#~ msgstr "모리셔스"
+
+#~ msgid "Mayotte"
+#~ msgstr "마요트"
+
+#~ msgid "Mexico"
+#~ msgstr "멕시코"
+
+#~ msgid "Micronesia (Federated States of)"
+#~ msgstr "마이크로네시아"
+
+#~ msgid "Monaco"
+#~ msgstr "모나코"
+
+#~ msgid "Mongolia"
+#~ msgstr "몽고"
+
+#~ msgid "Montserrat"
+#~ msgstr "몽세라트"
+
+#~ msgid "Morocco"
+#~ msgstr "모로코"
+
+#~ msgid "Mozambique"
+#~ msgstr "모잠비크"
+
+#~ msgid "Myanmar"
+#~ msgstr "미얀마"
+
+#~ msgid "Namibia"
+#~ msgstr "나미비아"
+
+#~ msgid "Nauru"
+#~ msgstr "나우루"
+
+#~ msgid "Nepal"
+#~ msgstr "네팔"
+
+#~ msgid "Netherlands"
+#~ msgstr "네덜란드"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "네덜란드령 안틸레스"
+
+#~ msgid "New Caledonia"
+#~ msgstr "뉴 칼레도니아"
+
+#~ msgid "New Zealand"
+#~ msgstr "뉴질랜드"
+
+#~ msgid "Nicaragua"
+#~ msgstr "니카라과"
+
+#~ msgid "Niger"
+#~ msgstr "니제르"
+
+#~ msgid "Nigeria"
+#~ msgstr "나이제리아"
+
+#~ msgid "Niue"
+#~ msgstr "니우에"
+
+#~ msgid "Norfolk Island"
+#~ msgstr "노퍽 섬"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "북 마리아나 제도"
+
+#~ msgid "Norway"
+#~ msgstr "노르웨이"
+
+#~ msgid "Occupied Palestinian Territory"
+#~ msgstr "팔레스타인 자치 구역"
+
+#~ msgid "Oman"
+#~ msgstr "오만"
+
+#~ msgid "Pakistan"
+#~ msgstr "파키스탄"
+
+#~ msgid "Palau"
+#~ msgstr "팔라우"
+
+#~ msgid "Panama"
+#~ msgstr "파나마"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "파푸아뉴기니"
+
+#~ msgid "Paraguay"
+#~ msgstr "파라구와"
+
+#~ msgid "Peru"
+#~ msgstr "페루"
+
+#~ msgid "Philippines"
+#~ msgstr "필리핀"
+
+#~ msgid "Pitcairn"
+#~ msgstr "피트케언"
+
+#~ msgid "Poland"
+#~ msgstr "폴란드"
+
+#~ msgid "Portugal"
+#~ msgstr "포르투칼"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "푸에르토리코"
+
+#~ msgid "Qatar"
+#~ msgstr "콰타르"
+
+#~ msgid "Republic of Korea"
+#~ msgstr "대한민국"
+
+#~ msgid "Republic of Moldova"
+#~ msgstr "몰도바 공화국"
+
+#~ msgid "Réunion"
+#~ msgstr "레위니옹"
+
+#~ msgid "Romania"
+#~ msgstr "루마니아"
+
+#~ msgid "Russian Federation"
+#~ msgstr "러시아"
+
+#~ msgid "Rwanda"
+#~ msgstr "르완다"
+
+#~ msgid "Saint Helena"
+#~ msgstr "세인트 헬레나"
+
+#~ msgid "Saint Kitts and Nevis"
+#~ msgstr "세인트 키츠 네비스"
+
+#~ msgid "Saint Lucia"
+#~ msgstr "세인트 루시아"
+
+#~ msgid "Saint Pierre and Miquelon"
+#~ msgstr "쌩 피에르 미켈론"
+
+#~ msgid "Saint Vincent and the Grenadines"
+#~ msgstr "세인트 빈센트 그레나다인즈"
+
+#~ msgid "Samoa"
+#~ msgstr "사모아"
+
+#~ msgid "San Marino"
+#~ msgstr "산마리노"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "상투메 프린시페"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "사우디아라비아"
+
+#~ msgid "Senegal"
+#~ msgstr "세네갈"
+
+#~ msgid "Serbia and Montenegro"
+#~ msgstr "세르비아 몬테네그로"
+
+#~ msgid "Seychelles"
+#~ msgstr "세이셸"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "시에라리온"
+
+#~ msgid "Singapore"
+#~ msgstr "싱가포르"
+
+#~ msgid "Slovakia"
+#~ msgstr "슬로바키아"
+
+#~ msgid "Slovenia"
+#~ msgstr "슬로베니아"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "솔로몬 군도"
+
+#~ msgid "Somalia"
+#~ msgstr "소말리아"
+
+#~ msgid "South Africa"
+#~ msgstr "남아프리카공화국"
+
+#~ msgid "Spain"
+#~ msgstr "스페인"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "스리랑카"
+
+#~ msgid "Sudan"
+#~ msgstr "수단"
+
+#~ msgid "Suriname"
+#~ msgstr "수리남"
+
+#~ msgid "Svalbard and Jan Mayen Islands"
+#~ msgstr "스발바르와 잔 마옌 군도"
+
+#~ msgid "Swaziland"
+#~ msgstr "스와질란드"
+
+#~ msgid "Sweden"
+#~ msgstr "스웨덴"
+
+#~ msgid "Switzerland"
+#~ msgstr "스위스"
+
+#~ msgid "Syrian Arab Republic"
+#~ msgstr "시리아"
+
+#~ msgid "Tajikistan"
+#~ msgstr "타지키스탄"
+
+#~ msgid "Thailand"
+#~ msgstr "태국"
+
+#~ msgid "Macedonia, Republic of"
+#~ msgstr "마케도니아"
+
+#~ msgid "Timor-Leste"
+#~ msgstr "동티모르"
+
+#~ msgid "Togo"
+#~ msgstr "토고"
+
+#~ msgid "Tokelau"
+#~ msgstr "토켈로"
+
+#~ msgid "Tonga"
+#~ msgstr "통가"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "트리니다드토바고"
+
+#~ msgid "Tunisia"
+#~ msgstr "튀니지"
+
+#~ msgid "Turkey"
+#~ msgstr "터키"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "투르크메니스탄"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "터크스 카이코스 군도"
+
+#~ msgid "Tuvalu"
+#~ msgstr "투발루"
+
+#~ msgid "Uganda"
+#~ msgstr "우간다"
+
+#~ msgid "Ukraine"
+#~ msgstr "우크라이나"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "아랍에미레이트"
+
+#~ msgid "United Kingdom of Great Britain and Northern Ireland"
+#~ msgstr "영국"
+
+#~ msgid "United Republic of Tanzania"
+#~ msgstr "탄자니아"
+
+#~ msgid "United States of America"
+#~ msgstr "미국"
+
+#~ msgid "United States Virgin Islands"
+#~ msgstr "미국령 Virgin섬"
+
+#~ msgid "Uruguay"
+#~ msgstr "우루과이"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "우즈베키스탄"
+
+#~ msgid "Vanuatu"
+#~ msgstr "바누아투"
+
+#~ msgid "Venezuela"
+#~ msgstr "베네주엘라"
+
+#~ msgid "Viet Nam"
+#~ msgstr "베트남"
+
+#~ msgid "Wallis and Futuna Islands"
+#~ msgstr "윌리스와 푸투나 군도"
+
+#~ msgid "Western Sahara"
+#~ msgstr "서부 사하라"
+
+#~ msgid "Yemen"
+#~ msgstr "예멘"
+
+#~ msgid "Zambia"
+#~ msgstr "잠비아"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "짐바브웨"
+
+#~ msgid "Antarctica"
+#~ msgstr "남극"
+
+#~ msgid "Bouvet Island"
+#~ msgstr "보우벳 섬"
+
+#~ msgid "British Indian Ocean Territory"
+#~ msgstr "영국령 인도양 자치구역"
+
+#~ msgid "Christmas Island"
+#~ msgstr "크리스마스 섬"
+
+#~ msgid "Cocos (Keeling) Islands"
+#~ msgstr "코코스 (킬링) 제도"
+
+#~ msgid "French Southern Territories"
+#~ msgstr "프랑스령 남 자치구역"
+
+#~ msgid "Heard Island and McDonald Islands"
+#~ msgstr "허드 맥도널드 제도"
+
+#~ msgid "South Georgia and the South Sandwich Islands"
+#~ msgstr "남 조지아 & 남 샌드위치 제도"
+
+#~ msgid "Taiwan"
+#~ msgstr "대만"
+
+#~ msgid "United States Minor Outlying Islands"
+#~ msgstr "미국령 소군도"
+
+#~ msgid "Afar"
+#~ msgstr "아파르어"
+
+#~ msgid "Abkhazian"
+#~ msgstr "아브하즈어"
+
+#~ msgid "Avestan"
+#~ msgstr "아베스타어"
+
+#~ msgid "Afrikaans"
+#~ msgstr "남아프리카 공용어"
+
+#~ msgid "Akan"
+#~ msgstr "아칸어"
+
+#~ msgid "Amharic"
+#~ msgstr "암하라어"
+
+#~ msgid "Aragonese"
+#~ msgstr "아라곤어"
+
+#~ msgid "Arabic"
+#~ msgstr "아랍어"
+
+#~ msgid "Assamese"
+#~ msgstr "아샘어"
+
+#~ msgid "Asturian"
+#~ msgstr "아스투리아스어"
+
+#~ msgid "Avaric"
+#~ msgstr "애버 어"
+
+#~ msgid "Aymara"
+#~ msgstr "아이마라어"
+
+#~ msgid "Azerbaijani"
+#~ msgstr "아제르베이잔어"
+
+#~ msgid "Bashkir"
+#~ msgstr "바쉬키르어"
+
+#~ msgid "Byelorussian"
+#~ msgstr "벨로루시어"
+
+#~ msgid "Bulgarian"
+#~ msgstr "불가리아어"
+
+#~ msgid "Bihari"
+#~ msgstr "비하르어"
+
+#~ msgid "Bislama"
+#~ msgstr "비슬라마어"
+
+#~ msgid "Bambara"
+#~ msgstr "밤바라어"
+
+#~ msgid "Bengali; Bangla"
+#~ msgstr "벵골어"
+
+#~ msgid "Tibetan"
+#~ msgstr "티베르어"
+
+#~ msgid "Breton"
+#~ msgstr "브르타뉴어"
+
+#~ msgid "Bosnian"
+#~ msgstr "보스니아어"
+
+#~ msgid "Catalan"
+#~ msgstr "카탈로니아어"
+
+#~ msgid "Chechen"
+#~ msgstr "체첸어"
+
+#~ msgid "Chamorro"
+#~ msgstr "차모로어"
+
+#~ msgid "Corsican"
+#~ msgstr "코르시카어"
+
+#~ msgid "Cree"
+#~ msgstr "크리어"
+
+#~ msgid "Czech"
+#~ msgstr "체코어"
+
+#~ msgid "Old Church Slavonic"
+#~ msgstr "고대 교회 슬라브어"
+
+#~ msgid "Chuvash"
+#~ msgstr "츄바시어"
+
+#~ msgid "Welsh"
+#~ msgstr "웨일즈어"
+
+#~ msgid "Danish"
+#~ msgstr "덴마크어"
+
+#~ msgid "German"
+#~ msgstr "독일어"
+
+#~ msgid "Divehi"
+#~ msgstr "몰디브"
+
+#~ msgid "Dzongkha"
+#~ msgstr "종카어"
+
+#~ msgid "Ewe"
+#~ msgstr "에웨"
+
+#~ msgid "Greek, Modern"
+#~ msgstr "현대 그리스어"
+
+#~ msgid "Esperanto"
+#~ msgstr "에스페란토"
+
+#~ msgid "Spanish"
+#~ msgstr "스페인어"
+
+#~ msgid "Estonian"
+#~ msgstr "에스토니아어"
+
+#~ msgid "Basque"
+#~ msgstr "바스크어"
+
+#~ msgid "Persian"
+#~ msgstr "페르시아어"
+
+#~ msgid "Fulah"
+#~ msgstr "고대 서 아프리카 어"
+
+#~ msgid "Finnish"
+#~ msgstr "핀란드어"
+
+#~ msgid "Faroese"
+#~ msgstr "파로어"
+
+#~ msgid "French"
+#~ msgstr "프랑스어"
+
+#~ msgid "Frisian"
+#~ msgstr "프리지아어"
+
+#~ msgid "Irish"
+#~ msgstr "아일랜드어"
+
+#~ msgid "Scots Gaelic"
+#~ msgstr "스코틀랜드 게일어"
+
+#~ msgid "Galician"
+#~ msgstr "갈리시아어"
+
+#~ msgid "Guarani"
+#~ msgstr "과라니어"
+
+#~ msgid "Gujarati"
+#~ msgstr "구자라트어"
+
+#~ msgid "Manx"
+#~ msgstr "맨섬어"
+
+#~ msgid "Hausa"
+#~ msgstr "하우사어"
+
+#~ msgid "Hebrew"
+#~ msgstr "헤브라이어"
+
+#~ msgid "Hindi"
+#~ msgstr "힌디어"
+
+#~ msgid "Hiri Motu"
+#~ msgstr "파푸아 뉴기니 어"
+
+#~ msgid "Croatian"
+#~ msgstr "크로아티아어"
+
+#~ msgid "Hungarian"
+#~ msgstr "헝가리어"
+
+#~ msgid "Armenian"
+#~ msgstr "아르메니아어"
+
+#~ msgid "Herero"
+#~ msgstr "헤레로어"
+
+#~ msgid "Interlingua"
+#~ msgstr "과학자용 국제어"
+
+#~ msgid "Indonesian"
+#~ msgstr "인도네시아어"
+
+#~ msgid "Interlingue"
+#~ msgstr "인터리그 어"
+
+#~ msgid "Igbo"
+#~ msgstr "이그보 어"
+
+#~ msgid "Sichuan Yi"
+#~ msgstr "사천어"
+
+#~ msgid "Inupiak"
+#~ msgstr "이너픽 (북부 알래스카 어)"
+
+#~ msgid "Ido"
+#~ msgstr "이도어"
+
+#~ msgid "Icelandic"
+#~ msgstr "아이슬란드어"
+
+#~ msgid "Italian"
+#~ msgstr "이탈리아어"
+
+#~ msgid "Inuktitut"
+#~ msgstr "이누이트어"
+
+#~ msgid "Japanese"
+#~ msgstr "일본어"
+
+#~ msgid "Javanese"
+#~ msgstr "일본어"
+
+#~ msgid "Georgian"
+#~ msgstr "그루지아어"
+
+#~ msgid "Kongo"
+#~ msgstr "콩코어"
+
+#~ msgid "Kikuyu"
+#~ msgstr "키쿠유어"
+
+#~ msgid "Kuanyama"
+#~ msgstr "콴야마 (부탄 어)"
+
+#~ msgid "Kazakh"
+#~ msgstr "카자흐어"
+
+#~ msgid "Greenlandic"
+#~ msgstr "그린란드어"
+
+#~ msgid "Khmer"
+#~ msgstr "크메르어"
+
+#~ msgid "Kannada"
+#~ msgstr "카나다어"
+
+#~ msgid "Korean"
+#~ msgstr "한국어"
+
+#~ msgid "Kanuri"
+#~ msgstr "카누리어"
+
+#~ msgid "Kashmiri"
+#~ msgstr "카슈미르어"
+
+#~ msgid "Kurdish"
+#~ msgstr "쿠르드어"
+
+#~ msgid "Komi"
+#~ msgstr "코미어"
+
+#~ msgid "Cornish"
+#~ msgstr "영국 콘월어"
+
+#~ msgid "Kirghiz"
+#~ msgstr "키르기스어"
+
+#~ msgid "Latin"
+#~ msgstr "라틴어"
+
+#~ msgid "Luxembourgish"
+#~ msgstr "룩셈부르크어"
+
+#~ msgid "Ganda"
+#~ msgstr "헨트어"
+
+#~ msgid "Limburgan"
+#~ msgstr "림부르크어"
+
+#~ msgid "Lingala"
+#~ msgstr "링갈라어"
+
+#~ msgid "Lao"
+#~ msgstr "라오스어"
+
+#~ msgid "Lithuanian"
+#~ msgstr "리투아니아어"
+
+#~ msgid "Luba-Katanga"
+#~ msgstr "루바 카탕가"
+
+#~ msgid "Latvian"
+#~ msgstr "라트비아어"
+
+#~ msgid "Malagasy"
+#~ msgstr "마다가스카어"
+
+#~ msgid "Marshallese"
+#~ msgstr "마셜 군도어"
+
+#~ msgid "Maori"
+#~ msgstr "마오리어"
+
+#~ msgid "Macedonian"
+#~ msgstr "마케도니아어"
+
+#~ msgid "Malayalam"
+#~ msgstr "말라얄람어"
+
+#~ msgid "Mongolian"
+#~ msgstr "몽골어"
+
+#~ msgid "Moldavian"
+#~ msgstr "몰다비아어"
+
+#~ msgid "Marathi"
+#~ msgstr "마라티어"
+
+#~ msgid "Malay"
+#~ msgstr "말레이어"
+
+#~ msgid "Maltese"
+#~ msgstr "몰타어"
+
+#~ msgid "Burmese"
+#~ msgstr "버마어"
+
+#~ msgid "Norwegian Bokmal"
+#~ msgstr "노르웨이 불몰어"
+
+#~ msgid "Nepali"
+#~ msgstr "네팔어"
+
+#~ msgid "Dutch"
+#~ msgstr "네덜란드어"
+
+#~ msgid "Norwegian Nynorsk"
+#~ msgstr "노르웨이 뉘노시크어"
+
+#~ msgid "Norwegian"
+#~ msgstr "노르웨이어"
+
+#~ msgid "Navajo"
+#~ msgstr "나바호어"
+
+#~ msgid "Occitan"
+#~ msgstr "오크어"
+
+#~ msgid "Ojibwa"
+#~ msgstr "오지브웨이어"
+
+#~ msgid "Oromo"
+#~ msgstr "오로모어"
+
+#~ msgid "Oriya"
+#~ msgstr "오리야어"
+
+#~ msgid "Ossetian"
+#~ msgstr "오세티아어"
+
+#~ msgid "Punjabi"
+#~ msgstr "펀잡어"
+
+#~ msgid "Pali"
+#~ msgstr "팔리어"
+
+#~ msgid "Polish"
+#~ msgstr "폴란드어"
+
+#~ msgid "Pushto"
+#~ msgstr "아프가니스탄어"
+
+#~ msgid "Portuguese"
+#~ msgstr "포르투칼어"
+
+#~ msgid "Quechua"
+#~ msgstr "케추아어"
+
+#~ msgid "Rhaeto-Romance"
+#~ msgstr "레토로만어"
+
+#~ msgid "Rundi"
+#~ msgstr "룬디어"
+
+#~ msgid "Romanian"
+#~ msgstr "루마니아어"
+
+#~ msgid "Russian"
+#~ msgstr "러시아어"
+
+#~ msgid "Kinyarwanda"
+#~ msgstr "키냐완다"
+
+#~ msgid "Sanskrit"
+#~ msgstr "산스크리트"
+
+#~ msgid "Sardinian"
+#~ msgstr "사르디니아어"
+
+#~ msgid "Sindhi"
+#~ msgstr "신드어"
+
+#~ msgid "Sango"
+#~ msgstr "상고"
+
+#~ msgid "Serbo-Croatian"
+#~ msgstr "세르보크로아티아어"
+
+#~ msgid "Sinhalese"
+#~ msgstr "스리랑카어"
+
+#~ msgid "Slovak"
+#~ msgstr "슬로바키아어"
+
+#~ msgid "Slovenian"
+#~ msgstr "슬로베니아어"
+
+#~ msgid "Samoan"
+#~ msgstr "사모아어"
+
+#~ msgid "Shona"
+#~ msgstr "쇼나"
+
+#~ msgid "Somali"
+#~ msgstr "소말리어"
+
+#~ msgid "Albanian"
+#~ msgstr "알바니아어"
+
+#~ msgid "Serbian"
+#~ msgstr "세르비아어"
+
+#~ msgid "Swati"
+#~ msgstr "싸티 (고대 아프가니스탄 어)"
+
+#~ msgid "Southern Sotho"
+#~ msgstr "남부 소토어"
+
+#~ msgid "Sundanese"
+#~ msgstr "순다어"
+
+#~ msgid "Swedish"
+#~ msgstr "스웨덴어"
+
+#~ msgid "Swahili"
+#~ msgstr "스와힐리어"
+
+#~ msgid "Tamil"
+#~ msgstr "타밀어"
+
+#~ msgid "Telugu"
+#~ msgstr "텔루구어"
+
+#~ msgid "Tajik"
+#~ msgstr "타지크어"
+
+#~ msgid "Thai"
+#~ msgstr "태국어"
+
+#~ msgid "Tigrinya"
+#~ msgstr "티그리니아어"
+
+#~ msgid "Turkmen"
+#~ msgstr "투르크멘어"
+
+#~ msgid "Tagalog"
+#~ msgstr "타갈로그어"
+
+#~ msgid "Tswana"
+#~ msgstr "츠와나어"
+
+#~ msgid "Turkish"
+#~ msgstr "터키어"
+
+#~ msgid "Tsonga"
+#~ msgstr "통가어"
+
+#~ msgid "Tatar"
+#~ msgstr "타타르어"
+
+#~ msgid "Twi"
+#~ msgstr "츠위"
+
+#~ msgid "Tahitian"
+#~ msgstr "타히티어"
+
+#~ msgid "Uighur"
+#~ msgstr "위그루어"
+
+#~ msgid "Ukrainian"
+#~ msgstr "우크라이나어"
+
+#~ msgid "Urdu"
+#~ msgstr "우르두어"
+
+#~ msgid "Uzbek"
+#~ msgstr "우즈베키스탄어"
+
+#~ msgid "Venda"
+#~ msgstr "벤더어"
+
+#~ msgid "Vietnamese"
+#~ msgstr "베트남어"
+
+#~ msgid "Volapuk"
+#~ msgstr "볼라퓌크"
+
+#~ msgid "Walloon"
+#~ msgstr "왈론어"
+
+#~ msgid "Wolof"
+#~ msgstr "월로프어"
+
+#~ msgid "Xhosa"
+#~ msgstr "코사어"
+
+#~ msgid "Yiddish"
+#~ msgstr "이디시어"
+
+#~ msgid "Yoruba"
+#~ msgstr "요루바어"
+
+#~ msgid "Zhuang"
+#~ msgstr "쯔황 (중국 광시성의 옛 언어)"
+
+#~ msgid "Chinese"
+#~ msgstr "중국어"
+
+#~ msgid "Zulu"
+#~ msgstr "줄루어"
