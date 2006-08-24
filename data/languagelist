@@ -21,7 +21,8 @@ Croatian;2;hr_HR.UTF-8;hr_HR.UTF-8;hr;HR;hr_HR:hr:en_GB:en;kbd=lat2-sun16(utf8)
 Czech;2;cs_CZ.UTF-8;cs_CZ.UTF-8;cs;CZ;cs_CZ:cs:en_GB:en;kbd=lat2-sun16(utf8)
 Danish;1;da_DK.UTF-8;da_DK.UTF-8;da;DK;da_DK:da:en_GB:en;kbd=lat0-sun16(utf8)
 Dutch;1;nl;nl_NL.UTF-8;nl;NL;nl:en_GB:en;kbd=lat0-sun16(utf8)
-English;0;en;en_US.UTF-8;en;US;en_US:en_GB:en;kbd=lat0-sun16(utf8)
+Dzongkha;4;dz;BT;dz_BT;UTF-8;dz_BT;
+English;0;en;en_US.UTF-8;en;US;en_US:en;kbd=lat0-sun16(utf8)
 Esperanto;2;eo;en_XX.UTF-8;eo;US;eo_XX:eo:en_GB:en;kbd=LatArCyrHeb-16(utf8)
 Estonian;2;et_EE.UTF-8;et_EE.UTF-8;et;EE;et_EE:et:en_GB:en;kbd=lat0-sun16(utf8)
 Finnish;1;fi_FI.UTF-8;fi_FI.UTF-8;fi;FI;fi_FI:fi:en_GB:en;kbd=lat0-sun16(utf8)
@@ -67,7 +68,6 @@ Russian;2;ru;ru_RU.UTF-8;ru;RU;ru_RU:ru:en_GB:en;cyr=uni,16,utf8,ru_ms(ctrl_shif
 #X Sanskrit;3;sa_IN;sa_IN;sa;IN;sa_IN:sa:en_IN:en_GB:en;
 # Serbian commented for consistency: too incomplete
 #X Serbian;2;sr_YU.UTF-8@cyrillic;sr_YU.UTF-8@cyrillic;sr;CS;sr_CS:sr_YU:sr:bs:en_GB:en;kbd=iso05.f16(utf8)
-Serbian;2;sr_CS.UTF-8;sr_CS.UTF-8;sr;CS;sr_CS:sr_YU@cyrillic:sr@cyrillic:sr;kbd=iso05.f16(utf8)
 Slovak;2;sk_SK.UTF-8;sk_SK.UTF-8;sk;SK;sk_SK:sk:en_GB:en;kbd=lat2-sun16(utf8)
 Slovenian;2;sl_SI.UTF-8;sl_SI.UTF-8;sl;SI;sl_SI:sl:en_GB:en;kbd=lat2-sun16(utf8)
 Spanish;1;es;es_ES.UTF-8;es;ES;es_ES:es:en_GB:en;kbd=lat0-sun16(utf8)

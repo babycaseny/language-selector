@@ -1,3 +1,11 @@
+language-selector (0.1.23) edgy; urgency=low
+
+  * data/languagelist:
+    - don't fallback from en_US to en_GB (lp: #10822)
+    - added Bhutanese (lp: #56966)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 24 Aug 2006 15:01:50 +0200
+
 language-selector (0.1.22) edgy; urgency=low
 
   * applied patches from danilo (at) kvota.net:

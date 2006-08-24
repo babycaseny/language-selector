@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-07 16:10+0200\n"
+"POT-Creation-Date: 2006-08-24 15:46+0200\n"
 "PO-Revision-Date: 2006-05-03 08:56+0000\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <ubuntu-fi@lists.ubuntu.com>\n"
@@ -103,6 +103,35 @@ msgstr ""
 "Synaptic-pakettienhallintaa tai komentoa \"sudo apt-get install -f\" "
 "päätteessä."
 
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+msgid "Translation"
+msgstr "Käännös"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "Kielen valitsin"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+msgid "Supported Languages"
+msgstr "Tuetut kielet"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr "Sulje"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr "Toteuta"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+msgid "Default language"
+msgstr "Oletuskieli"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
+msgid "English"
+msgstr "englanti"
+
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -185,27 +214,6 @@ msgstr ""
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Ei fonttiasetus-voodoo asetuksia löydetty valitulle alueelle"
-
-#~ msgid "Translation"
-#~ msgstr "Käännös"
-
-#~ msgid "Language selector"
-#~ msgstr "Kielen valitsin"
-
-#~ msgid "Supported Languages"
-#~ msgstr "Tuetut kielet"
-
-#~ msgid "Close"
-#~ msgstr "Sulje"
-
-#~ msgid "Apply"
-#~ msgstr "Toteuta"
-
-#~ msgid "Default language"
-#~ msgstr "Oletuskieli"
-
-#~ msgid "English"
-#~ msgstr "englanti"
 
 #~ msgid "Afghanistan"
 #~ msgstr "Afganistan"

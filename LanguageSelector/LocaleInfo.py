@@ -47,6 +47,11 @@ class LocaleInfo(object):
             if tmp.startswith("#") or tmp == "":
                 continue
             w = tmp.split(";")
+            # FIXME: the latest localechoosers "languagelist" does
+            # no longer have this field for most languages, so
+            # deal with it and don't set LANGUAGE then
+            # - the interessting question is what to do
+            # if LANGUAGE is already set and the new
             localeenv = w[6].split(":")
             #print localeenv
             self._languagelist[localeenv[0]] = '%s' % w[6]
