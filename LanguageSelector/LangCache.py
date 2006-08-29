@@ -33,7 +33,8 @@ class LanguageSelectorPkgCache(apt.Cache):
         ("firefox", "mozilla-firefox-locale-"),
         ("mozilla-thunderbird", "mozilla-thunderbird-local-"),
         ("openoffice.org", "openoffice.org-l10n-"),
-        ("openoffice.org", "openoffice.org-help-")
+        ("openoffice.org", "openoffice.org-help-"),
+        ("libsword5c2a", "sword-language-pack-")
     ]
 
 

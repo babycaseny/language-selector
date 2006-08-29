@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-24 15:46+0200\n"
+"POT-Creation-Date: 2006-08-29 10:01+0200\n"
 "PO-Revision-Date: 2006-05-02 17:41+0000\n"
 "Last-Translator: Lasse Bang Mikkelsen <lbm@fatalerror.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -101,38 +101,6 @@ msgid ""
 "this issue at first."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
-#, fuzzy
-msgid "Translation"
-msgstr "Oversættelser"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
-msgid "Language selector"
-msgstr "Sprogvælger"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
-#, fuzzy
-msgid "Supported Languages"
-msgstr "<b>Forvalgt sprog:</b>"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
-msgid "Close"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
-msgid "Apply"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
-#, fuzzy
-msgid "Default language"
-msgstr "<b>Forvalgt sprog:</b>"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
-msgid "English"
-msgstr "Engelsk"
-
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -212,6 +180,24 @@ msgstr ""
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Translation"
+#~ msgstr "Oversættelser"
+
+#~ msgid "Language selector"
+#~ msgstr "Sprogvælger"
+
+#, fuzzy
+#~ msgid "Supported Languages"
+#~ msgstr "<b>Forvalgt sprog:</b>"
+
+#, fuzzy
+#~ msgid "Default language"
+#~ msgstr "<b>Forvalgt sprog:</b>"
+
+#~ msgid "English"
+#~ msgstr "Engelsk"
 
 #~ msgid "Afghanistan"
 #~ msgstr "Afghanistan"

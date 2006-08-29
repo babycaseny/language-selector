@@ -10,3 +10,4 @@ Encoding=UTF-8
 Categories=Application;System;Settings;
 X-KDE-SubstituteUID=true
 X-Ubuntu-Gettext-Domain=language-selector
+NotShowIn=KDE

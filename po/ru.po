@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-24 15:46+0200\n"
+"POT-Creation-Date: 2006-08-29 10:01+0200\n"
 "PO-Revision-Date: 2006-05-12 12:27+0000\n"
 "Last-Translator: Roman Kalashnikov <cargo200@nm.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -105,35 +105,6 @@ msgstr ""
 "используйте менеджер пакетов \"Synaptic\" или запустите в терминале \"sudo "
 "apt-get install -f\"."
 
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
-msgid "Translation"
-msgstr "Перевод"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
-msgid "Language selector"
-msgstr "Менеджер языков"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
-msgid "Supported Languages"
-msgstr "Поддерживаемые языки"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
-msgid "Close"
-msgstr "Закрыть"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
-msgid "Apply"
-msgstr "Применить"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
-msgid "Default language"
-msgstr "Основной язык"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
-msgid "English"
-msgstr "Английский"
-
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -218,6 +189,27 @@ msgstr ""
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Для выбранной локали найдена не fontconfig-voodoo конфигурация."
+
+#~ msgid "Translation"
+#~ msgstr "Перевод"
+
+#~ msgid "Language selector"
+#~ msgstr "Менеджер языков"
+
+#~ msgid "Supported Languages"
+#~ msgstr "Поддерживаемые языки"
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
+
+#~ msgid "Apply"
+#~ msgstr "Применить"
+
+#~ msgid "Default language"
+#~ msgstr "Основной язык"
+
+#~ msgid "English"
+#~ msgstr "Английский"
 
 #~ msgid "Afghanistan"
 #~ msgstr "Афганистан"

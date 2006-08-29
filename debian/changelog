@@ -1,3 +1,14 @@
+language-selector (0.1.24) edgy; urgency=low
+
+  [Raphael Pinson]
+  * Add support for sword-language-pack-* packages in
+    LanguageSelector/LangCache.py. 
+  [Michael Vogt]
+  * add DontShow/ShowOnlyIn lines to the desktop files to make sure
+    that we don't display two language-selectors (lp: #55170)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 29 Aug 2006 09:43:48 +0200
+
 language-selector (0.1.23) edgy; urgency=low
 
   * data/languagelist:

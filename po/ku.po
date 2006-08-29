@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-24 15:46+0200\n"
+"POT-Creation-Date: 2006-08-29 10:01+0200\n"
 "PO-Revision-Date: 2006-05-04 20:47+0000\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <gnu-ku-wergerandin@lists.sourceforge.net>\n"
@@ -106,35 +106,6 @@ msgstr ""
 "tiştî vê pirsgirêkê bi gerînendeyê paketan \"Synaptic\" and jî bi \"sudo apt-"
 "get install -f\" di termînalekê de çareser bike."
 
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
-msgid "Translation"
-msgstr "Werger"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
-msgid "Language selector"
-msgstr "Hilbijartina zimanan"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
-msgid "Supported Languages"
-msgstr "Zimanên bi piştigirtiyê"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
-msgid "Close"
-msgstr "Bigire"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
-msgid "Apply"
-msgstr "Bisepîne"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
-msgid "Default language"
-msgstr "Zimanê standard"
-
-#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
-msgid "English"
-msgstr "Îngilîzî"
-
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -216,6 +187,27 @@ msgstr "Konfîgurasiyonek heye. Da ku binvîsî ser, '--force' bi kar bîne. "
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Ji bo locale ya hilbijartî, ti mîhengeke fontconfig-voodoo nehat dîtin"
+
+#~ msgid "Translation"
+#~ msgstr "Werger"
+
+#~ msgid "Language selector"
+#~ msgstr "Hilbijartina zimanan"
+
+#~ msgid "Supported Languages"
+#~ msgstr "Zimanên bi piştigirtiyê"
+
+#~ msgid "Close"
+#~ msgstr "Bigire"
+
+#~ msgid "Apply"
+#~ msgstr "Bisepîne"
+
+#~ msgid "Default language"
+#~ msgstr "Zimanê standard"
+
+#~ msgid "English"
+#~ msgstr "Îngilîzî"
 
 #~ msgid "Afghanistan"
 #~ msgstr "Efganistan"
