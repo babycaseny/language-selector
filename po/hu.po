@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lang-hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-29 10:01+0200\n"
+"POT-Creation-Date: 2006-09-11 13:35+0200\n"
 "PO-Revision-Date: 2006-05-13 11:54+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: <hu@li.org>\n"
@@ -106,6 +106,35 @@ msgstr ""
 "csomagkezelőt, vagy futtassa a \"sudo apt-get install -f\" parancsot egy "
 "terminálban a probléma megoldása érdekében."
 
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+msgid "Translation"
+msgstr "Fordítás"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "Nyelvválasztó"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+msgid "Supported Languages"
+msgstr "Támogatott nyelvek"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr "Bezárás"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+msgid "Default language"
+msgstr "Alapértelmezett nyelv"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
+msgid "English"
+msgstr "Angol"
+
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -192,27 +221,6 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Nem található fontconfig-voodoo konfiguráció a kijelölt területi beállításhoz"
-
-#~ msgid "Translation"
-#~ msgstr "Fordítás"
-
-#~ msgid "Language selector"
-#~ msgstr "Nyelvválasztó"
-
-#~ msgid "Supported Languages"
-#~ msgstr "Támogatott nyelvek"
-
-#~ msgid "Close"
-#~ msgstr "Bezárás"
-
-#~ msgid "Apply"
-#~ msgstr "Alkalmazás"
-
-#~ msgid "Default language"
-#~ msgstr "Alapértelmezett nyelv"
-
-#~ msgid "English"
-#~ msgstr "Angol"
 
 #~ msgid "Afghanistan"
 #~ msgstr "Afganisztán"

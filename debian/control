@@ -16,7 +16,7 @@ Description: Language selector for ubuntu linux
 
 Package: language-selector-qt
 Architecture: all
-Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, python, python-qt3, adept (>= 1.91)
+Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, python, python-qt3, adept (>= 1.91), python-apt
 Replaces: language-selector (<< 0.1.13)
 Description: Language selector for kubuntu linux
  This package let you change and install language packs

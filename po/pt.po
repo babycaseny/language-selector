@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iso_639 CVS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-29 10:01+0200\n"
+"POT-Creation-Date: 2006-09-11 13:35+0200\n"
 "PO-Revision-Date: 2006-05-04 23:11+0000\n"
 "Last-Translator: Tiago Silva <tiagosilva29@gmail.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
@@ -100,6 +100,35 @@ msgstr ""
 "gestor de pacotes \"Synaptic\" ou execute \"sudo apt-get install -f\" num "
 "terminal para corrigir este problema em primeiro lugar."
 
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+msgid "Translation"
+msgstr "Tradução"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "Selector de idiomas"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+msgid "Supported Languages"
+msgstr "Idiomas Suportados"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr "Fechar"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr "Aplicar"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+msgid "Default language"
+msgstr "Idioma padrão"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
+msgid "English"
+msgstr "Inglês"
+
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -183,27 +212,6 @@ msgstr "Já existe uma configuração. Utilize '--force' para a sobrescrever. "
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
-
-#~ msgid "Translation"
-#~ msgstr "Tradução"
-
-#~ msgid "Language selector"
-#~ msgstr "Selector de idiomas"
-
-#~ msgid "Supported Languages"
-#~ msgstr "Idiomas Suportados"
-
-#~ msgid "Close"
-#~ msgstr "Fechar"
-
-#~ msgid "Apply"
-#~ msgstr "Aplicar"
-
-#~ msgid "Default language"
-#~ msgstr "Idioma padrão"
-
-#~ msgid "English"
-#~ msgstr "Inglês"
 
 #~ msgid "Afghanistan"
 #~ msgstr "Afeganistão"

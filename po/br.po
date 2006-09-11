@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-29 10:01+0200\n"
+"POT-Creation-Date: 2006-09-11 13:35+0200\n"
 "PO-Revision-Date: 2006-05-15 22:02+0000\n"
 "Last-Translator: Oublieuse <oublieuse@gmail.com>\n"
 "Language-Team: Breton <br@li.org>\n"
@@ -96,6 +96,35 @@ msgid ""
 "this issue at first."
 msgstr ""
 
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+msgid "Translation"
+msgstr "Troidigezh"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "Duzer yezhoù"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+msgid "Supported Languages"
+msgstr "Yezhoù harpet"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr "Serriñ"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr "Seveniñ"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+msgid "Default language"
+msgstr "Yezh dre-ziouer"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
+msgid "English"
+msgstr "Saozneg"
+
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -171,24 +200,3 @@ msgstr ""
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
-
-#~ msgid "Translation"
-#~ msgstr "Troidigezh"
-
-#~ msgid "Language selector"
-#~ msgstr "Duzer yezhoù"
-
-#~ msgid "Supported Languages"
-#~ msgstr "Yezhoù harpet"
-
-#~ msgid "Close"
-#~ msgstr "Serriñ"
-
-#~ msgid "Apply"
-#~ msgstr "Seveniñ"
-
-#~ msgid "Default language"
-#~ msgstr "Yezh dre-ziouer"
-
-#~ msgid "English"
-#~ msgstr "Saozneg"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-29 10:01+0200\n"
+"POT-Creation-Date: 2006-09-11 13:35+0200\n"
 "PO-Revision-Date: 2006-05-02 17:40+0000\n"
 "Last-Translator: Ondřej Surý <ondrej@sury.org>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -98,6 +98,38 @@ msgid ""
 "this issue at first."
 msgstr ""
 
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+#, fuzzy
+msgid "Translation"
+msgstr "Překlad"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "Výběr jazyka"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+#, fuzzy
+msgid "Supported Languages"
+msgstr "násobné jazyky"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+#, fuzzy
+msgid "Default language"
+msgstr "násobné jazyky"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
+msgid "English"
+msgstr "angličtina"
+
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -180,24 +212,6 @@ msgstr "Konfigurace již existuje. Použijte '--force' k jejímu přepsání. "
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Žádná fontconfig-voodoo konfigurace nenalezena pro vybrané jazykové prostředí"
-
-#, fuzzy
-#~ msgid "Translation"
-#~ msgstr "Překlad"
-
-#~ msgid "Language selector"
-#~ msgstr "Výběr jazyka"
-
-#, fuzzy
-#~ msgid "Supported Languages"
-#~ msgstr "násobné jazyky"
-
-#, fuzzy
-#~ msgid "Default language"
-#~ msgstr "násobné jazyky"
-
-#~ msgid "English"
-#~ msgstr "angličtina"
 
 #~ msgid "Afghanistan"
 #~ msgstr "Afghánistán"

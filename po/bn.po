@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-29 10:01+0200\n"
+"POT-Creation-Date: 2006-09-11 13:35+0200\n"
 "PO-Revision-Date: 2006-05-06 05:37+0000\n"
 "Last-Translator: Khandakar Mujahidul Islam <suzan@bengalinux.org>\n"
 "Language-Team: Bengali <gnome-translation@bengalinux.org>\n"
@@ -105,6 +105,35 @@ msgstr ""
 "ম্যানেজার\"Synaptic\"ব্যবহার করুন অথবা চালান\"sudo apt-getন প্রথমে এই বিষয়টি "
 "মেরামত করতে একটি টার্মিনালে -f\"ইনস্টল করুন।"
 
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+msgid "Translation"
+msgstr "অনুবাদ"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "ভাষা পছন্দ"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+msgid "Supported Languages"
+msgstr "সমর্থিত বাষা"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr "বন্ধ"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr "আবেদন"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+msgid "Default language"
+msgstr "ডিফল্ট ভাধষা"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
+msgid "English"
+msgstr "ইংরেজী"
+
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -196,27 +225,6 @@ msgstr ""
 #, fuzzy
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "কোনও fontconfig-voodoo কনফিগারেশন নির্বাচিত localeএর জন্য খুঁজে পেল না"
-
-#~ msgid "Translation"
-#~ msgstr "অনুবাদ"
-
-#~ msgid "Language selector"
-#~ msgstr "ভাষা পছন্দ"
-
-#~ msgid "Supported Languages"
-#~ msgstr "সমর্থিত বাষা"
-
-#~ msgid "Close"
-#~ msgstr "বন্ধ"
-
-#~ msgid "Apply"
-#~ msgstr "আবেদন"
-
-#~ msgid "Default language"
-#~ msgstr "ডিফল্ট ভাধষা"
-
-#~ msgid "English"
-#~ msgstr "ইংরেজী"
 
 #~ msgid "Afghanistan"
 #~ msgstr "আফগাানিস্তান"

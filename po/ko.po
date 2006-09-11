@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-29 10:01+0200\n"
+"POT-Creation-Date: 2006-09-11 13:35+0200\n"
 "PO-Revision-Date: 2006-05-12 02:56+0000\n"
 "Last-Translator: gilchris <gilchris@gilchris.org>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -102,6 +102,35 @@ msgstr ""
 "어떤 소프트웨어도 설치하거나 삭제할 수 없습니다. \"시냅틱\"이나 터미널에서 "
 "\"sudo apt-get install -f\"를 실행하여 이 문제를 먼저 해결하십시오"
 
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:38
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:63
+msgid "Translation"
+msgstr "번역"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:59
+msgid "Language selector"
+msgstr "언어 선택기"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:60
+msgid "Supported Languages"
+msgstr "지원되는 언어"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:61
+msgid "Close"
+msgstr "닫기"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:62
+msgid "Apply"
+msgstr "적용"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:64
+msgid "Default language"
+msgstr "기본 언어"
+
+#: ../LanguageSelector/qt/QtLanguageSelectorGUI.py:66
+msgid "English"
+msgstr "영어"
+
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
 msgstr "    "
@@ -184,27 +213,6 @@ msgstr ""
 #: ../fontconfig-voodoo:80
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "선택된 로케일을 위한 fontconfig-voodoo 설정이 없습니다."
-
-#~ msgid "Translation"
-#~ msgstr "번역"
-
-#~ msgid "Language selector"
-#~ msgstr "언어 선택기"
-
-#~ msgid "Supported Languages"
-#~ msgstr "지원되는 언어"
-
-#~ msgid "Close"
-#~ msgstr "닫기"
-
-#~ msgid "Apply"
-#~ msgstr "적용"
-
-#~ msgid "Default language"
-#~ msgstr "기본 언어"
-
-#~ msgid "English"
-#~ msgstr "영어"
 
 #~ msgid "Afghanistan"
 #~ msgstr "아프카니스탄"
