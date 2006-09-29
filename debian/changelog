@@ -1,3 +1,9 @@
+language-selector (0.1.26) edgy; urgency=low
+
+  *  Change libsword5c2a to libsword6 in LanguageSelector/LangCache.py 
+
+ -- Raphaël Pinson <raphink@ubuntu.com>  Fri, 29 Sep 2006 08:16:41 +0200
+
 language-selector (0.1.25) edgy; urgency=low
 
   * debian/control:
