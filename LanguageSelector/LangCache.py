@@ -1,3 +1,6 @@
+
+import warnings
+warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
 import apt
 import apt_pkg
 
@@ -34,7 +37,7 @@ class LanguageSelectorPkgCache(apt.Cache):
         ("mozilla-thunderbird", "mozilla-thunderbird-local-"),
         ("openoffice.org", "openoffice.org-l10n-"),
         ("openoffice.org", "openoffice.org-help-"),
-        ("libsword6", "sword-language-pack-")
+        ("libsword5c2a", "sword-language-pack-")
     ]
 
 

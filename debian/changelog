@@ -1,8 +1,18 @@
+language-selector (0.1.27) edgy; urgency=low
+
+  * LanguageSelector/LangCache.py:
+    - hide python-apt future warnings
+  * more exact checking for missing langpacks (lp: #63034)
+  * don't set a fontconfig symlink if we have no configuration
+    and deal with newly added fontconfig fragments (lp: #62869)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu,  5 Oct 2006 15:38:17 +0200
+
 language-selector (0.1.26) edgy; urgency=low
 
-  *  Change libsword5c2a to libsword6 in LanguageSelector/LangCache.py 
+  * Add a ka_GE fontconfig fragment
 
- -- Raphaël Pinson <raphink@ubuntu.com>  Fri, 29 Sep 2006 08:16:41 +0200
+ -- Matthew Garrett <mjg59@srcf.ucam.org>  Thu, 28 Sep 2006 22:39:23 +0100
 
 language-selector (0.1.25) edgy; urgency=low
 

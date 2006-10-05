@@ -234,8 +234,10 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             return missing
 
         # match every packages that looks similar to translation_pkg
+        # 
         for pkg in self._cache:
-            if pkg.name.startswith(translation_pkg):
+            if (pkg.name == translation_pkg or
+                pkg.name.startswith(translation_pkg+"-")):
                 if not pkg.isInstalled and pkg.candidateVersion != None:
                     missing.append(pkg.name)
         return missing

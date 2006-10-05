@@ -58,6 +58,15 @@ class FontConfigHack(object):
         realpath = os.path.realpath(f)
         return os.path.basename(realpath)
 
+    def removeConfig(self):
+        """ removes the current fontconfig-voodoo configuration
+            and do some sanity checking
+        """
+        if os.path.exists(self.configFile) and not os.path.islink(self.configFile):
+            raise ExceptionNotSymlink()
+        if os.path.exists(self.configFile):
+            os.unlink(self.configFile)
+
     def setConfig(self, locale):
         """ set the configuration for 'locale'. if locale can't be
             found a NoConfigurationForLocale exception it thrown
@@ -65,12 +74,8 @@ class FontConfigHack(object):
         # check if we have a config
         if locale not in self.getAvailableConfigs():
             raise ExceptionNoConfigForLocale()
-        # do sanity checking (is it really a symlink?)
-        if os.path.exists(self.configFile) and not os.path.islink(self.configFile):
-            raise ExceptionNotSymlink()
-        # remove existing symlink
-        if os.path.exists(self.configFile):
-            os.unlink(self.configFile)
+        # remove old symlink
+        self.removeConfig()
         # do the actual symlink
         os.symlink(os.path.normpath("%s/%s"% (self.datadir, locale)),
                    self.configFile)

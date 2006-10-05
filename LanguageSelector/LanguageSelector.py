@@ -86,4 +86,4 @@ class LanguageSelectorBase(object):
         if defaultLanguageCode in fc.getAvailableConfigs():
             fc.setConfig(defaultLanguageCode)
         else:
-            fc.setConfig("none")
+            fc.removeConfig()

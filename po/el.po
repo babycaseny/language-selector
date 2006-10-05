@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-29 08:18+0200\n"
+"POT-Creation-Date: 2006-10-05 16:14+0200\n"
 "PO-Revision-Date: 2006-05-13 15:43+0000\n"
 "Last-Translator: Kostas Papadimas <pkst@gmx.net>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
@@ -24,11 +24,11 @@ msgstr "Γλώσσα"
 msgid "Support"
 msgstr "Υποστήριξη"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:267
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:269
 msgid "The language support is not installed completely"
 msgstr "Η γλωσσική υποστήριξη δεν έχει εγκατασταθεί πλήρως"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:268
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:270
 msgid ""
 "Not all translations or writing aids, that are available for the supported "
 "languages on your system, are installed."
@@ -36,23 +36,23 @@ msgstr ""
 "Δεν έχουν εγκατασταθεί πλήρως όλες οι μεταφράσεις και τα βοηθήματα γραφής "
 "που είναι διαθέσιμα για τις υποστηριζόμενες γλώσσες στο σύστημα σας."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:270
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:272
 msgid "_Remind Me Again"
 msgstr "Υπεν_θύμιση ξανά"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:271
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:273
 msgid "_Install"
 msgstr "_Εγκατάσταση"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:274
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:276
 msgid "Details"
 msgstr "Λεπτομέρειες"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:338
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:340
 msgid "Could not install the selected language support"
 msgstr "Αδυναμία εγκατάστασης της επιλεγμένης γλωσσικής υποστήριξης"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:339
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:341
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -62,11 +62,11 @@ msgstr ""
 "στο https://launchpad.net/bugs/bugs/+package/ για το προϊόν 'language-"
 "selector'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:364
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:366
 msgid "Could not install the full language support"
 msgstr "Αδυναμία εγκατάστασης πλήρους γλωσσικής υποστήριξης."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:365
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:367
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -74,17 +74,17 @@ msgstr ""
 "Συνήθως αυτό οφείλεται σε σφάλμα στην αρχειοθήκη λογισμικού ή στη διαχείριση "
 "λογισμικού. Ελέγξτε τις προτιμήσεις λογισμικού σας στο μενού \"Διαχείριση\""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:396
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:398
 msgid "The list of available languages on the system has been updated."
 msgstr "Ενημερώθηκε η λίστα των διαθέσιμων γλωσσών στο σύστημα σας"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr ""
 "Επιτρέπεται η εκτέλεση μόνο ενός εργαλείο διαχείρισης λογισμικού την ίδια "
 "στιγμή."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:457
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -92,11 +92,11 @@ msgstr ""
 "Παρακαλώ κλείστε πρώτα την άλλη εφαρμογή π.χ \"Διαχείριση ενημερώσεων\", "
 "\"aptitude\" ή το\"Synaptic\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:475
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:477
 msgid "Software database is broken"
 msgstr "Η βάση δεδομένων λογισμικού είναι κατεστραμμένη."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:478
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -210,12 +210,16 @@ msgstr "Λίστα των διαθέσιμων ρυθμίσεων fontconfig-voo
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Προβολής της τρέχουσας ρύθμισης fontconfig-voodoo"
 
-#: ../fontconfig-voodoo:67
+#: ../fontconfig-voodoo:62
+msgid "Unconfigured"
+msgstr ""
+
+#: ../fontconfig-voodoo:70
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
 "Μια ρύθμιση υπάρχει ήδη. Χρησιμοποιήστε  '--force' για να αντικατασταθεί. "
 
-#: ../fontconfig-voodoo:80
+#: ../fontconfig-voodoo:83
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Δεν βρέθηκε ρύθμιση  fontconfig-voodoo για το επιλεγμένο locale."
 
