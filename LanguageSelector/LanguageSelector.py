@@ -16,6 +16,7 @@ import time
 import gettext
 import sys
 import string
+import re
 
 import FontConfig
 from gettext import gettext as _
@@ -39,45 +40,48 @@ class LanguageSelectorBase(object):
         self._cache = LanguageSelectorPkgCache(self._localeinfo, progress)
 
     def getSystemDefaultLanguage(self):
-        if not os.path.exists("/etc/environment"):
-            return None
-        for line in open("/etc/environment"):
-            tmp = string.strip(line)
-            l = "LANGUAGE="
-            if tmp.startswith(l):
-                tmp = tmp[len(l):]
-                langs = tmp.strip("\"").split(":")
-                # check if LANGUAGE is empty
-                if len(langs) > 0:
-                    return langs[0]
+        conffiles = ["/etc/default/locale", "/etc/environment"]
+        for fname in conffiles:
+            if os.path.exists(fname):
+                for line in open(fname):
+                    match = re.match(r'LANG="(.*)"$',line)
+                    if match:
+                        if "." in match.group(1):
+                            return match.group(1).split(".")[0]
+                        else:
+                            return match.group(1)
         return None
 
     def setSystemDefaultLanguage(self, defaultLanguageCode):
-        if os.path.exists("/etc/enviroment"):
-            shutil.copy("/etc/environment", "/etc/environment.save")
-        out = open("/etc/environment.new","w+")
-        foundLanguage = False  # the LANGUAGE var
-        foundLang = False      # the LANG var
-        if os.path.exists("/etc/environment"):
-            for line in open("/etc/environment"):
-                tmp = string.strip(line)
-                if tmp.startswith("LANGUAGE="):
-                    foundLanguage = True
-                    line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
+        " this updates the system default language "
+        conffiles = ["/etc/default/locale", "/etc/environment"]
+        for fname in conffiles:
+            out = open(fname+".new","w+")
+            foundLanguage = False  # the LANGUAGE var
+            foundLang = False      # the LANG var
+            if os.path.exists(fname):
+                # look for the line
+                for line in open(fname):
+                    tmp = string.strip(line)
+                    if tmp.startswith("LANGUAGE="):
+                        foundLanguage = True
+                        line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
+                        #print line
+                    if tmp.startswith("LANG="):
+                        foundLang = True
+                        # we always write utf8 languages
+                        line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
+                    out.write(line)
                     #print line
-                if tmp.startswith("LANG="):
-                    foundLang = True
-                    # we always write utf8 languages
-                    line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
+            # if we have not found them add them
+            if foundLanguage == False:
+                line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
                 out.write(line)
-                #print line
-        if foundLanguage == False:
-            line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
-            out.write(line)
-        if foundLang == False:
-            line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
-            out.write(line)
-        shutil.move("/etc/environment.new", "/etc/environment")
+            if foundLang == False:
+                line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
+                out.write(line)
+            out.close()
+            shutil.move(fname+".new", fname)
 
         # now set the fontconfig-voodoo
         fc = FontConfig.FontConfigHack()

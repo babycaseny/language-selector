@@ -1,3 +1,13 @@
+language-selector (0.1.28) edgy; urgency=low
+
+  * fontconfig/ko_KR.po:
+    - updated to match font renaming for ttf-alee (lp: #64796)
+  * LanguageSelector/LanguageSelector.py:
+    - updated /etc/default/locale as well when setting a new
+      language (lp: #64569)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  9 Oct 2006 14:36:58 +0200
+
 language-selector (0.1.27) edgy; urgency=low
 
   * LanguageSelector/LangCache.py:
