@@ -3,6 +3,7 @@
 # a helper class to get locale info
 
 import string
+import re            
 import subprocess
 
 from gettext import gettext as _
@@ -125,6 +126,10 @@ class LocaleInfo(object):
                 (key,value) = line.split("=")
                 value = value.strip('"')
                 return value.split(":")[0]
+        for line in open(self.environment).readlines():
+            match = re.match(r'LANG="([a-zA-Z_]*).*"$',line)
+            if match:
+                return match.group(1)
 
 if __name__ == "__main__":
     datadir = "/usr/share/language-selector/"
@@ -132,7 +137,7 @@ if __name__ == "__main__":
                     "%s/data/countries" % datadir,
                     "%s/data/languagelist" % datadir)
 
-    print li.getDefaultLanguage()
+    print "default: '%s'" % li.getDefaultLanguage()
 
     print li._lang
     print li._country

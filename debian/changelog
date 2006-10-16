@@ -1,3 +1,11 @@
+language-selector (0.1.30) edgy; urgency=low
+
+  * LanguageSelector/LocaleInfo.py:
+    - deal with missing LANGUAGE in /etc/environment and fall back
+      to LANG then (lp: #49334)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 16 Oct 2006 18:36:51 +0200
+
 language-selector (0.1.29) edgy; urgency=low
 
   * fontconfig/zh_{CN,HK,SG,TW}:
