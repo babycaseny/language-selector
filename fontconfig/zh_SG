@@ -78,7 +78,11 @@
                         <string>Sun</string>
                         <string>Kai</string>
                         <string>Ming</string>
-                </test> 
+                </test>
+                <!-- check to see if the font is just regular -->
+                <test name="weight" compare="less_eq">
+                        <int>100</int>
+		</test>
                 <test compare="more_eq" target="pattern" name="weight" >
                         <int>180</int>
                 </test>
