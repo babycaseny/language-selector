@@ -1,73 +1,101 @@
-import gettext
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'QtLanguageSelectorGUI.ui'
 #
-# Created: Mon Oct 16 19:25:55 2006
-#      by: The PyQt User Interface Compiler (pyuic) 3.16
+# Created: Mon Dec 11 11:42:16 2006
+#      by: PyQt4 UI code generator 4.1
 #
 # WARNING! All changes made in this file will be lost!
 
+import sys
+from PyQt4 import QtCore, QtGui
 
-from qt import *
+class Ui_QtLanguageSelectorGUI(object):
+    def setupUi(self, QtLanguageSelectorGUI):
+        QtLanguageSelectorGUI.setObjectName("QtLanguageSelectorGUI")
+        QtLanguageSelectorGUI.resize(QtCore.QSize(QtCore.QRect(0,0,432,468).size()).expandedTo(QtLanguageSelectorGUI.minimumSizeHint()))
 
+        self.gridlayout = QtGui.QGridLayout(QtLanguageSelectorGUI)
+        self.gridlayout.setMargin(9)
+        self.gridlayout.setSpacing(6)
+        self.gridlayout.setObjectName("gridlayout")
 
-class QtLanguageSelectorGUI(QWidget):
-    def __init__(self,parent = None,name = None,fl = 0):
-        QWidget.__init__(self,parent,name,fl)
+        self.systemLanguageFrame = QtGui.QFrame(QtLanguageSelectorGUI)
+        self.systemLanguageFrame.setFrameShape(QtGui.QFrame.NoFrame)
+        self.systemLanguageFrame.setFrameShadow(QtGui.QFrame.Raised)
+        self.systemLanguageFrame.setObjectName("systemLanguageFrame")
 
-        if not name:
-            self.setName("LanguageSelector")
+        self.gridlayout1 = QtGui.QGridLayout(self.systemLanguageFrame)
+        self.gridlayout1.setMargin(9)
+        self.gridlayout1.setSpacing(6)
+        self.gridlayout1.setObjectName("gridlayout1")
 
+        self.pushButtonCancel_2 = QtGui.QPushButton(self.systemLanguageFrame)
+        self.pushButtonCancel_2.setObjectName("pushButtonCancel_2")
+        self.gridlayout1.addWidget(self.pushButtonCancel_2,3,2,1,1)
 
-        LanguageSelectorLayout = QGridLayout(self,1,1,11,6,"LanguageSelectorLayout")
+        self.listBoxDefaultLanguage = QtGui.QListWidget(self.systemLanguageFrame)
+        self.listBoxDefaultLanguage.setObjectName("listBoxDefaultLanguage")
+        self.gridlayout1.addWidget(self.listBoxDefaultLanguage,1,0,1,3)
 
-        self.textLabel1 = QLabel(self,"textLabel1")
+        self.pushButtonSetSystemLanguage = QtGui.QPushButton(self.systemLanguageFrame)
+        self.pushButtonSetSystemLanguage.setObjectName("pushButtonSetSystemLanguage")
+        self.gridlayout1.addWidget(self.pushButtonSetSystemLanguage,3,1,1,1)
 
-        LanguageSelectorLayout.addWidget(self.textLabel1,0,0)
+        self.defaultSystemLabel = QtGui.QLabel(self.systemLanguageFrame)
+        self.defaultSystemLabel.setWordWrap(False)
+        self.defaultSystemLabel.setObjectName("defaultSystemLabel")
+        self.gridlayout1.addWidget(self.defaultSystemLabel,0,0,1,2)
 
-        self.pushButtonCancel = QPushButton(self,"pushButtonCancel")
+        spacerItem = QtGui.QSpacerItem(40,20,QtGui.QSizePolicy.Expanding,QtGui.QSizePolicy.Minimum)
+        self.gridlayout1.addItem(spacerItem,3,0,1,1)
 
-        LanguageSelectorLayout.addWidget(self.pushButtonCancel,4,2)
+        self.enableInputMethods = QtGui.QCheckBox(self.systemLanguageFrame)
+        self.enableInputMethods.setObjectName("enableInputMethods")
+        self.gridlayout1.addWidget(self.enableInputMethods,2,0,1,3)
+        self.gridlayout.addWidget(self.systemLanguageFrame,0,0,1,1)
 
-        self.pushButtonOk = QPushButton(self,"pushButtonOk")
+        self.installLanguageFrame = QtGui.QFrame(QtLanguageSelectorGUI)
+        self.installLanguageFrame.setFrameShape(QtGui.QFrame.NoFrame)
+        self.installLanguageFrame.setFrameShadow(QtGui.QFrame.Raised)
+        self.installLanguageFrame.setObjectName("installLanguageFrame")
 
-        LanguageSelectorLayout.addWidget(self.pushButtonOk,4,1)
+        self.gridlayout2 = QtGui.QGridLayout(self.installLanguageFrame)
+        self.gridlayout2.setMargin(9)
+        self.gridlayout2.setSpacing(6)
+        self.gridlayout2.setObjectName("gridlayout2")
 
-        self.listViewLanguages = QListView(self,"listViewLanguages")
-        self.listViewLanguages.addColumn(gettext.gettext("Translation"))
+        self.listViewLanguages = QtGui.QListWidget(self.installLanguageFrame)
+        self.listViewLanguages.setObjectName("listViewLanguages")
+        self.gridlayout2.addWidget(self.listViewLanguages,1,0,1,3)
 
-        LanguageSelectorLayout.addMultiCellWidget(self.listViewLanguages,1,1,0,2)
+        self.pushButtonOk = QtGui.QPushButton(self.installLanguageFrame)
+        self.pushButtonOk.setObjectName("pushButtonOk")
+        self.gridlayout2.addWidget(self.pushButtonOk,2,1,1,1)
 
-        self.textLabel2 = QLabel(self,"textLabel2")
+        self.pushButtonCancel = QtGui.QPushButton(self.installLanguageFrame)
+        self.pushButtonCancel.setObjectName("pushButtonCancel")
+        self.gridlayout2.addWidget(self.pushButtonCancel,2,2,1,1)
 
-        LanguageSelectorLayout.addWidget(self.textLabel2,2,0)
+        spacerItem1 = QtGui.QSpacerItem(40,20,QtGui.QSizePolicy.Expanding,QtGui.QSizePolicy.Minimum)
+        self.gridlayout2.addItem(spacerItem1,2,0,1,1)
 
-        self.comboBoxDefaultLanguage = QComboBox(0,self,"comboBoxDefaultLanguage")
+        self.selectLanguageLabel = QtGui.QLabel(self.installLanguageFrame)
+        self.selectLanguageLabel.setWordWrap(False)
+        self.selectLanguageLabel.setObjectName("selectLanguageLabel")
+        self.gridlayout2.addWidget(self.selectLanguageLabel,0,0,1,2)
+        self.gridlayout.addWidget(self.installLanguageFrame,1,0,1,1)
 
-        LanguageSelectorLayout.addMultiCellWidget(self.comboBoxDefaultLanguage,3,3,0,2)
+        self.retranslateUi(QtLanguageSelectorGUI)
+        QtCore.QMetaObject.connectSlotsByName(QtLanguageSelectorGUI)
 
-        self.languageChange()
+    def retranslateUi(self, QtLanguageSelectorGUI):
+        QtLanguageSelectorGUI.setWindowTitle(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Language Installer", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButtonCancel_2.setText(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Cancel", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButtonSetSystemLanguage.setText(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Set System Language", None, QtGui.QApplication.UnicodeUTF8))
+        self.defaultSystemLabel.setText(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Default system language:", None, QtGui.QApplication.UnicodeUTF8))
+        self.enableInputMethods.setText(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Enable support to enter complex characters", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButtonOk.setText(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Install", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButtonCancel.setText(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Cancel", None, QtGui.QApplication.UnicodeUTF8))
+        self.selectLanguageLabel.setText(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Select language to install:", None, QtGui.QApplication.UnicodeUTF8))
 
-        self.resize(QSize(581,421).expandedTo(self.minimumSizeHint()))
-        self.clearWState(Qt.WState_Polished)
-
-        self.connect(self.pushButtonCancel,SIGNAL("clicked()"),self.close)
-
-
-    def languageChange(self):
-        self.setCaption(gettext.gettext("Language selector"))
-        self.textLabel1.setText(gettext.gettext("Supported Languages"))
-        self.pushButtonCancel.setText(gettext.gettext("Close"))
-        self.pushButtonOk.setText(gettext.gettext("Apply"))
-        self.listViewLanguages.header().setLabel(0,gettext.gettext("Translation"))
-        self.textLabel2.setText(gettext.gettext("Default language"))
-        self.comboBoxDefaultLanguage.clear()
-        self.comboBoxDefaultLanguage.insertItem(gettext.gettext("English"))
-
-
-    def pushButtonOk_clicked(self):
-        print "QtLanguageSelectorGUI.pushButtonOk_clicked(): Not implemented yet"
-
-    def pushButtonCancel_released(self):
-        print "QtLanguageSelectorGUI.pushButtonCancel_released(): Not implemented yet"

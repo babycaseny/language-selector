@@ -1,95 +1,151 @@
-<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
-<class>QtLanguageSelectorGUI</class>
-<widget class="QWidget">
-    <property name="name">
-        <cstring>LanguageSelector</cstring>
-    </property>
-    <property name="geometry">
-        <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>581</width>
-            <height>421</height>
-        </rect>
-    </property>
-    <property name="caption">
-        <string>Language selector</string>
-    </property>
-    <grid>
-        <property name="name">
-            <cstring>unnamed</cstring>
+<ui version="4.0" >
+ <class>QtLanguageSelectorGUI</class>
+ <widget class="QWidget" name="QtLanguageSelectorGUI" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>468</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Language Installer</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="0" column="0" >
+    <widget class="QFrame" name="systemLanguageFrame" >
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="3" column="2" >
+       <widget class="QPushButton" name="pushButtonCancel_2" >
+        <property name="text" >
+         <string>Cancel</string>
         </property>
-        <widget class="QLabel" row="0" column="0">
-            <property name="name">
-                <cstring>textLabel1</cstring>
-            </property>
-            <property name="text">
-                <string>Supported Languages</string>
-            </property>
-        </widget>
-        <widget class="QPushButton" row="4" column="2">
-            <property name="name">
-                <cstring>pushButtonCancel</cstring>
-            </property>
-            <property name="text">
-                <string>Close</string>
-            </property>
-        </widget>
-        <widget class="QPushButton" row="4" column="1">
-            <property name="name">
-                <cstring>pushButtonOk</cstring>
-            </property>
-            <property name="text">
-                <string>Apply</string>
-            </property>
-        </widget>
-        <widget class="QListView" row="1" column="0" rowspan="1" colspan="3">
-            <column>
-                <property name="text">
-                    <string>Translation</string>
-                </property>
-                <property name="clickable">
-                    <bool>true</bool>
-                </property>
-                <property name="resizable">
-                    <bool>true</bool>
-                </property>
-            </column>
-            <property name="name">
-                <cstring>listViewLanguages</cstring>
-            </property>
-        </widget>
-        <widget class="QLabel" row="2" column="0">
-            <property name="name">
-                <cstring>textLabel2</cstring>
-            </property>
-            <property name="text">
-                <string>Default language</string>
-            </property>
-        </widget>
-        <widget class="QComboBox" row="3" column="0" rowspan="1" colspan="3">
-            <item>
-                <property name="text">
-                    <string>English</string>
-                </property>
-            </item>
-            <property name="name">
-                <cstring>comboBoxDefaultLanguage</cstring>
-            </property>
-        </widget>
-    </grid>
-</widget>
-<connections>
-    <connection>
-        <sender>pushButtonCancel</sender>
-        <signal>clicked()</signal>
-        <receiver>LanguageSelector</receiver>
-        <slot>close()</slot>
-    </connection>
-</connections>
-<slots>
-    <slot>pushButtonOk_clicked()</slot>
-    <slot>pushButtonCancel_released()</slot>
-</slots>
-<layoutdefaults spacing="6" margin="11"/>
-</UI>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="3" >
+       <widget class="QListWidget" name="listBoxDefaultLanguage" />
+      </item>
+      <item row="3" column="1" >
+       <widget class="QPushButton" name="pushButtonSetSystemLanguage" >
+        <property name="text" >
+         <string>Set System Language</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2" >
+       <widget class="QLabel" name="defaultSystemLabel" >
+        <property name="text" >
+         <string>Default system language:</string>
+        </property>
+        <property name="wordWrap" >
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="0" colspan="3" >
+       <widget class="QCheckBox" name="enableInputMethods" >
+        <property name="text" >
+         <string>Enable support to enter complex characters</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QFrame" name="installLanguageFrame" >
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="1" column="0" colspan="3" >
+       <widget class="QListWidget" name="listViewLanguages" />
+      </item>
+      <item row="2" column="1" >
+       <widget class="QPushButton" name="pushButtonOk" >
+        <property name="text" >
+         <string>Install</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" >
+       <widget class="QPushButton" name="pushButtonCancel" >
+        <property name="text" >
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="0" colspan="2" >
+       <widget class="QLabel" name="selectLanguageLabel" >
+        <property name="text" >
+         <string>Select language to install:</string>
+        </property>
+        <property name="wordWrap" >
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <resources/>
+ <connections/>
+</ui>

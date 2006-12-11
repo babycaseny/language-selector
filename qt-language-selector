@@ -1,21 +1,33 @@
 #!/usr/bin/python2.4 
 
 import sys
-from qt import *
+from PyQt4.QtCore import *
+from PyQt4.QtGui import *
 
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.qt.QtLanguageSelector import QtLanguageSelector
-from gettext import gettext as _
+from gettext import gettext as i18n
 
+def _(string):
+    return unicode(i18n(string), "utf-8")
 
 if __name__ == "__main__":
 
+    gettext.bindtextdomain("language-selector", "/usr/share/locale")
+    gettext.textdomain("language-selector")
+
     app = QApplication(sys.argv)
+
+    if os.getuid() != 0:
+        QMessageBox.critical(None, _("Not Root User"), _("Please run this software with administrative rights."))
+        sys.exit(1)
+
+    if len(sys.argv) < 3 or not (sys.argv[1] == "--mode") or not (sys.argv[2] == "install" or sys.argv[2] == "uninstall" or sys.argv[2] == "select"):
+        print "Usage: qt-language-selector --mode [install|uninstall|select]"
+        sys.exit(1)
     
-    lc = QtLanguageSelector(app, "/usr/share/language-selector/")
-    app.setMainWidget(lc)
+    lc = QtLanguageSelector(app, "/usr/share/language-selector/", sys.argv[2])
     
     lc.show()
 
-    app.exec_loop()
-    
+    app.exec_()

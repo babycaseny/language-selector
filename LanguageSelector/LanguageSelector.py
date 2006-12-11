@@ -91,3 +91,32 @@ class LanguageSelectorBase(object):
             fc.setConfig(defaultLanguageCode)
         else:
             fc.removeConfig()
+
+    def missingTranslationPkgs(self, pkg, translation_pkg):
+        """ this will check if the given pkg is installed and if
+            the needed translation package is installed as well
+
+            It returns a list of packages that need to be 
+            installed
+        """
+
+        # FIXME: this function is called too often and it's too slow
+        # -> see ../TODO for ideas how to fix it
+        missing = []
+        # check if the pkg itself is available and installed
+        if not self._cache.has_key(pkg):
+            return missing
+        if not self._cache[pkg].isInstalled:
+            return missing
+
+        # match every packages that looks similar to translation_pkg
+        # 
+        for pkg in self._cache:
+            if (pkg.name == translation_pkg or
+                pkg.name.startswith(translation_pkg+"-")):
+                if not pkg.isInstalled and pkg.candidateVersion != None:
+                    missing.append(pkg.name)
+        return missing
+        
+
+

@@ -1,3 +1,20 @@
+language-selector (0.2.1) feisty; urgency=low
+
+  * Implement https://blueprints.launchpad.net/distros/ubuntu/+spec/kubuntu-feisty-language-selector in qt-language-selector
+   - ports to Qt 4
+   - Splits into three modes, install, uninstall and select system default
+   - Launched from KControl language module, so not shown in app menu
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 11 Dec 2006 11:38:24 +0000
+
+language-selector (0.2.0) feisty; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py,
+    - added support to globally switch on input method support 
+      (lp: #34282)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 27 Oct 2006 16:40:07 +0200
+
 language-selector (0.1.30) edgy; urgency=low
 
   * LanguageSelector/LocaleInfo.py:

@@ -41,7 +41,7 @@ from gettext import gettext as _
 from LanguageSelector.gtk.SimpleGladeApp import SimpleGladeApp
 from LanguageSelector.LocaleInfo import LocaleInfo
 from LanguageSelector.LanguageSelector import *
-
+from LanguageSelector.ImSwitch import ImSwitch
 
 # intervals of the start up progress
 # 3x caching and menu creation
@@ -121,6 +121,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         
         self.updateLanguageView()
         self.updateSystemDefaultCombo()
+        
         # see if something is missing
         if options.verify_installed:
             self.verifyInstalledLangPacks()
@@ -214,87 +215,67 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
 
     def on_combobox_default_lang_changed(self, widget):
         self.combo_dirty = True
+        self.check_input_methods()
         self.check_apply_button()
 
-    def __missingTranslationPkgs(self, pkg, translation_pkg):
-        """ this will check if the given pkg is installed and if
-            the needed translation package is installed as well
-
-            It returns a list of packages that need to be 
-            installed
+    def check_input_methods(self):
+        """ check if the selected langauge has input method support
+            and set checkbutton_enable_input_methods accordingly
         """
+        combo = self.combobox_default_lang
+        model = combo.get_model()
+        (lang, code) = model[combo.get_active()]
+        # if we have a default in im-switch for this language, we
+        # can't change it from here (unless the im-switch swamp in drained)
+        default = os.path.exists("/etc/alternatives/xinput-%s" % code)
+        self.checkbutton_enable_input_methods.set_active(default)
+        self.checkbutton_enable_input_methods.set_sensitive(not default)
+        if default:
+            return
+        # now check if we have overwritten this - we do this by checking
+        # the setting for all_ALL (im-switch goodness again :/)
+        target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
+        active = (target != "default" and target != "none")
+        self.checkbutton_enable_input_methods.set_active(active)
 
-        # FIXME: this function is called too often and it's too slow
-        # -> see ../TODO for ideas how to fix it
-        missing = []
-        # check if the pkg itself is available and installed
-        if not self._cache.has_key(pkg):
-            return missing
-        if not self._cache[pkg].isInstalled:
-            return missing
-
-        # match every packages that looks similar to translation_pkg
-        # 
-        for pkg in self._cache:
-            if (pkg.name == translation_pkg or
-                pkg.name.startswith(translation_pkg+"-")):
-                if not pkg.isInstalled and pkg.candidateVersion != None:
-                    missing.append(pkg.name)
-        return missing
-        
-
-    def verifyInstalledLangPacks(self):
-        """ called at the start to inform about possible missing
-            langpacks (e.g. gnome/kde langpack transition)
+    def __input_method_config_changed(self):
+        """ check if we changed the input method config here         
         """
-        #print "verifyInstalledLangPacks"
-        missing = []
-        for (lang, langInfo) in self._langlist:
-            trans_package = "language-pack-%s" % langInfo.languageCode
-            # we have a langpack installed, see if we have all of it
-            # (for hoary -> breezy transition)
-            if self._cache.has_key(trans_package) and \
-               self._cache[trans_package].isInstalled:
-                #print "IsInstalled: %s " % trans_package
-                for (pkg, translation) in self._cache.pkg_translations:
-                    missing += self.__missingTranslationPkgs(pkg, translation+langInfo.languageCode)
+        combo = self.combobox_default_lang
+        model = combo.get_model()
+        (lang, code) = model[combo.get_active()]
+        # if we have a default in im-switch for this language, we
+        # can't change it from here (unless the im-switch swamp in drained)
+        default = os.path.exists("/etc/alternatives/xinput-%s" % code)
+        if default:
+            return
+        # now check if we have overwritten this - we do this by checking
+        # the setting for all_ALL (im-switch goodness again :/)
+        target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
+        current = (target != "default" and target != "none")
+        new = self.checkbutton_enable_input_methods.get_active()
+        return (new != current)
 
-        #print "Missing: %s " % missing
-        if len(missing) > 0:
-            # FIXME: add "details"
-            d = gtk.MessageDialog(parent=self.window_main,
-                                  flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_QUESTION)
-            d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("The language support is not installed completely"),
-                _("Not all translations or writing aids, that are available for "
-                  "the supported languages on your system, are installed.")))
-            d.add_buttons(_("_Remind Me Again"), gtk.RESPONSE_NO,
-                          _("_Install"), gtk.RESPONSE_YES)
-            d.set_default_response(gtk.RESPONSE_YES)
-            d.set_title("")
-            expander = gtk.Expander(_("Details"))
-            scroll = gtk.ScrolledWindow()
-            scroll.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
-            textview = gtk.TextView()
-            textview.set_cursor_visible(False)
-            textview.set_editable(False)
-            buf = textview.get_buffer()
-            pkgs = ""
-            for pkg in missing:
-                pkgs += "%s (%s)\n" % (pkg, apt.SizeToStr(self._cache[pkg].packageSize))
-            buf.set_text(pkgs)
-            buf.place_cursor(buf.get_start_iter())
-            expander.add(scroll)
-            scroll.add(textview)
-            d.vbox.pack_start(expander)
-            expander.show_all()
-            res = d.run()
-            d.destroy()
-            if res == gtk.RESPONSE_YES:
-                self.commit(missing, [])
-                self.updateLanguageView()
+    def updateInputMethods(self):
+        """ write new input method defaults - currently we only support
+            "im-switch -a" to reset and
+            "im-switch -s scim" to set to scim (that is the default im
+                              for all CJK languages currently)
+        """
+        combo = self.combobox_default_lang
+        model = combo.get_model()
+        (lang, code) = model[combo.get_active()]
+        # if something has changed - act!
+        if self.__input_method_config_changed():
+            if self.checkbutton_enable_input_methods.get_active():
+                os.system("im-switch -z %s -s scim" % code)
+            else:
+                os.system("im-switch -z %s -a" % code)
 
+    def on_checkbutton_enable_input_methods_toggled(self, widget):
+        if self.__input_method_config_changed():
+            self.combo_dirty = True
+            self.check_apply_button()
 
     def build_commit_lists(self):
         for (lang, langInfo) in self._langlist:
@@ -389,6 +370,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
     def on_button_apply_clicked(self, widget):
         self._commit()
         self.updateLanguageView()
+        self.updateInputMethods()
         self.updateSystemDefaultCombo()
 
     def run_synaptic(self, lock, inst, rm, id):
@@ -439,6 +421,58 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             return True
         else:
             gtk.main_quit()
+
+    def verifyInstalledLangPacks(self):
+        """ called at the start to inform about possible missing
+            langpacks (e.g. gnome/kde langpack transition)
+        """
+        #print "verifyInstalledLangPacks"
+        missing = []
+        for (lang, langInfo) in self._langlist:
+            trans_package = "language-pack-%s" % langInfo.languageCode
+            # we have a langpack installed, see if we have all of it
+            # (for hoary -> breezy transition)
+            if self._cache.has_key(trans_package) and \
+               self._cache[trans_package].isInstalled:
+                #print "IsInstalled: %s " % trans_package
+                for (pkg, translation) in self._cache.pkg_translations:
+                    missing += self.missingTranslationPkgs(pkg, translation+langInfo.languageCode)
+
+        #print "Missing: %s " % missing
+        if len(missing) > 0:
+            # FIXME: add "details"
+            d = gtk.MessageDialog(parent=self.window_main,
+                                  flags=gtk.DIALOG_MODAL,
+                                  type=gtk.MESSAGE_QUESTION)
+            d.set_markup("<big><b>%s</b></big>\n\n%s" % (
+                _("The language support is not installed completely"),
+                _("Not all translations or writing aids, that are available for "
+                  "the supported languages on your system, are installed.")))
+            d.add_buttons(_("_Remind Me Again"), gtk.RESPONSE_NO,
+                          _("_Install"), gtk.RESPONSE_YES)
+            d.set_default_response(gtk.RESPONSE_YES)
+            d.set_title("")
+            expander = gtk.Expander(_("Details"))
+            scroll = gtk.ScrolledWindow()
+            scroll.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
+            textview = gtk.TextView()
+            textview.set_cursor_visible(False)
+            textview.set_editable(False)
+            buf = textview.get_buffer()
+            pkgs = ""
+            for pkg in missing:
+                pkgs += "%s (%s)\n" % (pkg, apt.SizeToStr(self._cache[pkg].packageSize))
+            buf.set_text(pkgs)
+            buf.place_cursor(buf.get_start_iter())
+            expander.add(scroll)
+            scroll.add(textview)
+            d.vbox.pack_start(expander)
+            expander.show_all()
+            res = d.run()
+            d.destroy()
+            if res == gtk.RESPONSE_YES:
+                self.commit(missing, [])
+                self.updateLanguageView()
 
     def updateLanguageView(self):
         #print "updateLanguageView()"
