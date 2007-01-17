@@ -1,5 +1,5 @@
 usr/bin/fontconfig-voodoo
-usr/lib/python2.4/site-packages/LanguageSelector/*.py
+usr/lib/python*/site-packages/LanguageSelector/*.py
 usr/share/language-selector
 usr/share/locale
 usr/share/pixmaps

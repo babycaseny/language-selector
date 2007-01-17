@@ -2,6 +2,8 @@
 
 set -e
 
+#DEBHELPER#
+
 case "$1" in
 install|upgrade)
   # old versions had a symlink to "none" meaning unconfigured

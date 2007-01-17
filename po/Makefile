@@ -1,5 +1,8 @@
 
+top_srcdir = ..
+
 PO_FILES := $(wildcard *.po)
+
 
 update-po: language-selector.pot $(patsubst %.po,%.mo,$(wildcard *.po))
 	# update the po files 

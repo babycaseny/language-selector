@@ -1,3 +1,9 @@
+language-selector (0.2.2) feisty; urgency=low
+
+  * updated to the latest python policy (lp: #79634)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 17 Jan 2007 10:14:11 +0100
+
 language-selector (0.2.1) feisty; urgency=low
 
   * Implement https://blueprints.launchpad.net/distros/ubuntu/+spec/kubuntu-feisty-language-selector in qt-language-selector

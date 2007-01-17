@@ -1,3 +1,3 @@
 usr/bin/gnome-language-selector
-usr/lib/python2.4/site-packages/LanguageSelector/gtk
+usr/lib/python*/site-packages/LanguageSelector/gtk
 usr/share/applications/language-selector.desktop

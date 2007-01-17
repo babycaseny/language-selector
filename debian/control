@@ -2,12 +2,14 @@ Source: language-selector
 Section: admin
 Priority: optional
 Maintainer: Michael Vogt <michael.vogt@ubuntu.com>
-Build-Depends: debhelper (>= 4.0.0), python, python-dev, intltool
-Standards-Version: 3.6.1.1
+Build-Depends: debhelper (>= 5.0.38), python-dev, intltool, python-central (>= 0.5.6)
+XS-Python-Version: current
+Standards-Version: 3.7.2
 
 Package: language-selector
 Architecture: all
-Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, python, python-gtk2, python-glade2, python-apt (>= 0.6.12), synaptic
+Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, ${python:Depends}, python-gtk2, python-glade2, python-apt (>= 0.6.12), synaptic
+XB-Python-Version: ${python:Versions}
 Description: Language selector for ubuntu linux
  This package let you change and install language packs
  in ubuntu linux.
@@ -16,8 +18,9 @@ Description: Language selector for ubuntu linux
 
 Package: language-selector-qt
 Architecture: all
-Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, python, python-qt3, adept (>= 1.91), python-apt
+Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, ${python:Depends}, python-qt3, adept (>= 1.91), python-apt
 Replaces: language-selector (<< 0.1.13)
+XB-Python-Version: ${python:Versions}
 Description: Language selector for kubuntu linux
  This package let you change and install language packs
  in ubuntu linux.
@@ -26,8 +29,9 @@ Description: Language selector for kubuntu linux
 
 Package: language-selector-common
 Architecture: all
-Depends: python, ${shlibs:Depends}, iso-codes
+Depends: ${python:Depends}, ${shlibs:Depends}, iso-codes
 Replaces: language-selector (<< 0.1.13)
+XB-Python-Version: ${python:Versions}
 Description: Language selector for ubuntu linux
  This package let you change and install language packs
  in ubuntu linux.
