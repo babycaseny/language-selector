@@ -1,6 +1,5 @@
 [Desktop Entry]
 _Name=Language Support
-_GenericName=Language Support
 _Comment=Configure multiple and native language support on your system
 Exec=gksu /usr/bin/gnome-language-selector
 Icon=config-language
