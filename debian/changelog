@@ -1,3 +1,13 @@
+language-selector (0.2.5) feisty; urgency=low
+
+  * debian/control:
+    - fix the dependencies of qt-langauge-selector
+  * LanguageSelector/qt/QtLanguageSelectorGUI.py:
+    - include in the archive (instead of auto-generating it
+      on each build)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 23 Jan 2007 15:57:10 +0100
+
 language-selector (0.2.4) feisty; urgency=low
 
   * fix python dependencies
