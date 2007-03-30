@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-23 15:57+0100\n"
+"POT-Creation-Date: 2007-03-30 14:10+0100\n"
 "PO-Revision-Date: 2006-05-03 08:56+0000\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <ubuntu-fi@lists.ubuntu.com>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Rosetta-Version: 0.1\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:167
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:170
 msgid "Language"
 msgstr "Kieli"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:174
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177
 msgid "Support"
 msgstr "Tuki"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid "Could not install the selected language support"
 msgstr "Ei voitu asentaa valittua kielitukea"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:322
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -37,11 +37,11 @@ msgstr ""
 "Tämä voi johtua ohjelmavirheestä. Tee asiasta virheraportti osoitteessa "
 "https://launchpad.net/bugs/bugs/+package/ 'language-selector'-tuotteelle."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:347
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:352
 msgid "Could not install the full language support"
 msgstr "Ei voitu asentaa täyttä kielitukea"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:353
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -49,39 +49,41 @@ msgstr ""
 "Yleensä tämä liittyy virheeseen ohjelmavarastossa tai pakettienhallinnassa. "
 "Tarkista ohjelma-asetukset valikossa \"Hallinta\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:380
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
 msgid "The list of available languages on the system has been updated."
 msgstr "Luettelo järjestelmän käytettävissä olevista kielistä on päivitetty."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:448
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "The language support is not installed completely"
 msgstr "Kielitukea ei ole asennettu kokonaan"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:449
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:454
+#, fuzzy
 msgid ""
-"Not all translations or writing aids, that are available for the supported "
-"languages on your system, are installed."
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
 msgstr ""
-"Kaikkia järjestelmässäsi tuetuille kielille olevia käännöksiä tai "
-"kirjoituksen aputyökaluja ei ole asennettu."
+"Jotkin täyteen kielitukeen tarvittavat paketit eivät ole asennettuna "
+"järjestelmässäsi. Haluatko asentaa ne nyt?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "_Remind Me Again"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:457
+#, fuzzy
+msgid "_Remind Me Later"
 msgstr "_Muistuta minua myöhemmin"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:458
 msgid "_Install"
 msgstr "_Asenna"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:461
 msgid "Details"
 msgstr "Yksityiskohdat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:489
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "Vain yksi pakettienhallintatyökalu voi olla käynnissä samaan aikaan"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:491
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:497
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -89,11 +91,11 @@ msgstr ""
 "Sulje toinen ohjelma ensin, esim. \"Päivitysten hallinta\", \"aptitude\" tai "
 "\"Synaptic\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:511
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:517
 msgid "Software database is broken"
 msgstr "Ohjelmatietokanta on rikki"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -117,96 +119,96 @@ msgstr ""
 msgid "Language Selector"
 msgstr "Kielen valitsin"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:68
+#: ../LanguageSelector/qt/QtLanguageSelector.py:67
 #, fuzzy
 msgid "Default system language:"
 msgstr "Oletuskieli"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:68
 #, fuzzy
 msgid "Set System Language"
 msgstr "Tuetut kielet"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
 #: ../data/LanguageSelector.glade.h:9
 msgid "Enable support to enter complex characters"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:71
-#: ../LanguageSelector/qt/QtLanguageSelector.py:74
+#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:73
 #, fuzzy
 msgid "Cancel"
 msgstr "Ranska"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+#: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Select language to install:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:73
+#: ../LanguageSelector/qt/QtLanguageSelector.py:72
 #, fuzzy
 msgid "Install"
 msgstr "_Asenna"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:111
+#: ../LanguageSelector/qt/QtLanguageSelector.py:112
 msgid "Already installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Partially Installed"
 msgstr ""
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Not installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:169
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 #, fuzzy
 msgid "Language Set"
 msgstr "Kieli"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:169
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
 #, python-format
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
 #, fuzzy
 msgid "Language Installed"
 msgstr "Kielen valitsin"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
+#: ../LanguageSelector/qt/QtLanguageSelector.py:249
 #, fuzzy
 msgid "Language Uninstalled"
 msgstr "Kielen valitsin"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
+#: ../LanguageSelector/qt/QtLanguageSelector.py:249
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 #, fuzzy
 msgid "Language Not Set"
 msgstr "Kieliasetukset"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 msgid "Failed to set system language."
 msgstr ""
 
@@ -301,6 +303,13 @@ msgstr ""
 #: ../fontconfig-voodoo:83
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Ei fonttiasetus-voodoo asetuksia löydetty valitulle alueelle"
+
+#~ msgid ""
+#~ "Not all translations or writing aids, that are available for the "
+#~ "supported languages on your system, are installed."
+#~ msgstr ""
+#~ "Kaikkia järjestelmässäsi tuetuille kielille olevia käännöksiä tai "
+#~ "kirjoituksen aputyökaluja ei ole asennettu."
 
 #~ msgid "Translation"
 #~ msgstr "Käännös"
@@ -1592,13 +1601,6 @@ msgstr "Ei fonttiasetus-voodoo asetuksia löydetty valitulle alueelle"
 
 #~ msgid "Update language support?"
 #~ msgstr "Päivitä kielituki?"
-
-#~ msgid ""
-#~ "Some packages for full language support are not installed on your system. "
-#~ "Do you want to install them now?"
-#~ msgstr ""
-#~ "Jotkin täyteen kielitukeen tarvittavat paketit eivät ole asennettuna "
-#~ "järjestelmässäsi. Haluatko asentaa ne nyt?"
 
 #~ msgid "Can not apply changes"
 #~ msgstr "Muutoksia ei voitu ottaa käyttöön"

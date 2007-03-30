@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lang-hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-23 15:57+0100\n"
+"POT-Creation-Date: 2007-03-30 14:10+0100\n"
 "PO-Revision-Date: 2006-05-13 11:54+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: <hu@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "X-Rosetta-Version: 0.1\n"
 "X-Generator: KBabel 1.11.2\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:167
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:170
 msgid "Language"
 msgstr "Nyelv"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:174
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177
 msgid "Support"
 msgstr "Támogatás"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid "Could not install the selected language support"
 msgstr "A kiválasztott nyelvi támogatás telepítése nem lehetséges"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:322
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -40,11 +40,11 @@ msgstr ""
 "https://launchpad.net/bugs/bugs/+package/ címen a \"language-selector\" "
 "csomaghoz."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:347
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:352
 msgid "Could not install the full language support"
 msgstr "Nem lehet telepíteni a teljes nyelvi támogatást"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:353
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -52,39 +52,41 @@ msgstr ""
 "Ez általában a szoftverarchívum a vagy a szoftverkezelő hibájával "
 "kapcsolatos. Ellenőrizze szoftverbeállításait az \"Adminisztráció\" menüben."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:380
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
 msgid "The list of available languages on the system has been updated."
 msgstr "Az elérhető nyelvek listája frissült a rendszeren."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:448
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "The language support is not installed completely"
 msgstr "A nyelvi támogatás nincs teljesen telepítve"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:449
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:454
+#, fuzzy
 msgid ""
-"Not all translations or writing aids, that are available for the supported "
-"languages on your system, are installed."
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
 msgstr ""
 "Nincs minden fordítás vagy írástámogatás telepítve, ami a rendszeren a "
 "támogatott nyevekhez elérhető."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "_Remind Me Again"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:457
+#, fuzzy
+msgid "_Remind Me Later"
 msgstr "_Emlékeztessen később"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:458
 msgid "_Install"
 msgstr "_Telepítés"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:461
 msgid "Details"
 msgstr "Részletek"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:489
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "Csak egy szoftverkezelő eszköz futhat egyidejűleg"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:491
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:497
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -92,11 +94,11 @@ msgstr ""
 "Előbb zárja be a másik alkalmazást, például a Frissítéskezelőt  vagy a "
 "Synaptic csomagkezelőt."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:511
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:517
 msgid "Software database is broken"
 msgstr "A szoftveradatbázis sérült"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -120,96 +122,96 @@ msgstr ""
 msgid "Language Selector"
 msgstr "Nyelvválasztó"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:68
+#: ../LanguageSelector/qt/QtLanguageSelector.py:67
 #, fuzzy
 msgid "Default system language:"
 msgstr "Alapértelmezett nyelv"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:68
 #, fuzzy
 msgid "Set System Language"
 msgstr "Támogatott nyelvek"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
 #: ../data/LanguageSelector.glade.h:9
 msgid "Enable support to enter complex characters"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:71
-#: ../LanguageSelector/qt/QtLanguageSelector.py:74
+#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:73
 #, fuzzy
 msgid "Cancel"
 msgstr "Franciaország"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+#: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Select language to install:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:73
+#: ../LanguageSelector/qt/QtLanguageSelector.py:72
 #, fuzzy
 msgid "Install"
 msgstr "_Telepítés"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:111
+#: ../LanguageSelector/qt/QtLanguageSelector.py:112
 msgid "Already installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Partially Installed"
 msgstr ""
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Not installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:169
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 #, fuzzy
 msgid "Language Set"
 msgstr "Nyelv"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:169
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
 #, python-format
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
 #, fuzzy
 msgid "Language Installed"
 msgstr "Nyelvválasztó"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
+#: ../LanguageSelector/qt/QtLanguageSelector.py:249
 #, fuzzy
 msgid "Language Uninstalled"
 msgstr "Nyelvválasztó"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
+#: ../LanguageSelector/qt/QtLanguageSelector.py:249
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 #, fuzzy
 msgid "Language Not Set"
 msgstr "Nyelvi támogatás"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 msgid "Failed to set system language."
 msgstr ""
 

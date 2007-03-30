@@ -1,3 +1,17 @@
+language-selector (0.2.6) feisty; urgency=low
+
+  [Michael Vogt]
+  * fix not installed completely alert (LP#78655)
+  [Jonathan Riddell]
+  * LanguageSelector/qt/QtLanguageSelectorGUI.py:
+    - Fix encoding error in success norification dialogue
+    - Fix error if input-all_ALL doesn't exist (LP#91329)
+    - Remove some old debugging
+  * LanguageSelector/gtk/GtkLanguageSelectorGUI.py:
+    - Fix error if input-all_ALL doesn't exist
+	
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 30 Mar 2007 14:06:47 +0100
+
 language-selector (0.2.5) feisty; urgency=low
 
   * debian/control:

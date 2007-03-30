@@ -128,6 +128,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         self.window_main.set_sensitive(True)
         self.window_main.window.set_cursor(None)
 
+        if not os.path.exists("/etc/alternatives/xinput-all_ALL"):
+            self.checkbutton_enable_input_methods.set_sensitive(False)
+
     def setupTreeView(self):
         """ do all the treeview setup here """
         def toggle_cell_func(column, cell, model, iter):
@@ -222,39 +225,41 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         """ check if the selected langauge has input method support
             and set checkbutton_enable_input_methods accordingly
         """
-        combo = self.combobox_default_lang
-        model = combo.get_model()
-        (lang, code) = model[combo.get_active()]
-        # if we have a default in im-switch for this language, we
-        # can't change it from here (unless the im-switch swamp in drained)
-        default = os.path.exists("/etc/alternatives/xinput-%s" % code)
-        self.checkbutton_enable_input_methods.set_active(default)
-        self.checkbutton_enable_input_methods.set_sensitive(not default)
-        if default:
-            return
-        # now check if we have overwritten this - we do this by checking
-        # the setting for all_ALL (im-switch goodness again :/)
-        target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
-        active = (target != "default" and target != "none")
-        self.checkbutton_enable_input_methods.set_active(active)
+        if os.path.exists("/etc/alternatives/xinput-all_ALL"):
+            combo = self.combobox_default_lang
+            model = combo.get_model()
+            (lang, code) = model[combo.get_active()]
+            # if we have a default in im-switch for this language, we
+            # can't change it from here (unless the im-switch swamp in drained)
+            default = os.path.exists("/etc/alternatives/xinput-%s" % code)
+            self.checkbutton_enable_input_methods.set_active(default)
+            self.checkbutton_enable_input_methods.set_sensitive(not default)
+            if default:
+                return
+            # now check if we have overwritten this - we do this by checking
+            # the setting for all_ALL (im-switch goodness again :/)
+            target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
+            active = (target != "default" and target != "none")
+            self.checkbutton_enable_input_methods.set_active(active)
 
     def __input_method_config_changed(self):
         """ check if we changed the input method config here         
         """
-        combo = self.combobox_default_lang
-        model = combo.get_model()
-        (lang, code) = model[combo.get_active()]
-        # if we have a default in im-switch for this language, we
-        # can't change it from here (unless the im-switch swamp in drained)
-        default = os.path.exists("/etc/alternatives/xinput-%s" % code)
-        if default:
-            return
-        # now check if we have overwritten this - we do this by checking
-        # the setting for all_ALL (im-switch goodness again :/)
-        target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
-        current = (target != "default" and target != "none")
-        new = self.checkbutton_enable_input_methods.get_active()
-        return (new != current)
+        if os.path.exists("/etc/alternatives/xinput-all_ALL"):
+            combo = self.combobox_default_lang
+            model = combo.get_model()
+            (lang, code) = model[combo.get_active()]
+            # if we have a default in im-switch for this language, we
+            # can't change it from here (unless the im-switch swamp in drained)
+            default = os.path.exists("/etc/alternatives/xinput-%s" % code)
+            if default:
+                return
+            # now check if we have overwritten this - we do this by checking
+            # the setting for all_ALL (im-switch goodness again :/)
+            target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
+            current = (target != "default" and target != "none")
+            new = self.checkbutton_enable_input_methods.get_active()
+            return (new != current)
 
     def updateInputMethods(self):
         """ write new input method defaults - currently we only support
@@ -446,9 +451,10 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
                                   type=gtk.MESSAGE_QUESTION)
             d.set_markup("<big><b>%s</b></big>\n\n%s" % (
                 _("The language support is not installed completely"),
-                _("Not all translations or writing aids, that are available for "
-                  "the supported languages on your system, are installed.")))
-            d.add_buttons(_("_Remind Me Again"), gtk.RESPONSE_NO,
+                _("Some translations or writing aids available for your "
+                  "chosen languages are not installed yet. Do you want "
+                  "to install them now?")))
+            d.add_buttons(_("_Remind Me Later"), gtk.RESPONSE_NO,
                           _("_Install"), gtk.RESPONSE_YES)
             d.set_default_response(gtk.RESPONSE_YES)
             d.set_title("")

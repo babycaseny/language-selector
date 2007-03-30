@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-23 15:57+0100\n"
+"POT-Creation-Date: 2007-03-30 14:10+0100\n"
 "PO-Revision-Date: 2006-05-13 23:26+0000\n"
 "Last-Translator: Nikola Kasabov <nikola.kasabov@gmail.com>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:167
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:170
 msgid "Language"
 msgstr "Език"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:174
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177
 msgid "Support"
 msgstr "Поддръжка"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid "Could not install the selected language support"
 msgstr "Не може да инсталира избраната езикова поддръжка"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:322
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -38,11 +38,11 @@ msgstr ""
 "грешка на https://launchpad.net/bugs/bugs/+package/ относно продукта "
 "'language-selector'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:347
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:352
 msgid "Could not install the full language support"
 msgstr "Не може да инсталира пълната езикова поддръжка"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:348
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:353
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -51,39 +51,41 @@ msgstr ""
 "мениджър. Проверете вашите софтуерни предпочитания в меню \"Администрация на "
 "системата\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:380
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
 msgid "The list of available languages on the system has been updated."
 msgstr "Списъка с наличните езици на системата беше обновен."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:448
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "The language support is not installed completely"
 msgstr "Езиковата поддръжка не е инсталирана напълно"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:449
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:454
+#, fuzzy
 msgid ""
-"Not all translations or writing aids, that are available for the supported "
-"languages on your system, are installed."
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
 msgstr ""
 "Не всички преводи или писмени средства, които са налични за поддържаните "
 "езици на вашата система са инсталирани."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "_Remind Me Again"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:457
+#, fuzzy
+msgid "_Remind Me Later"
 msgstr "_Напомними отново"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:458
 msgid "_Install"
 msgstr "_Инсталиране"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:455
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:461
 msgid "Details"
 msgstr "Детайли"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:489
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "Само един софтуерен мениджър може да е стартиран по едно и също време"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:491
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:497
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -91,11 +93,11 @@ msgstr ""
 "Моля първо затворете другите приложения напр. \"Update Manager\", \"aptitude"
 "\" или \"Synaptic\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:511
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:517
 msgid "Software database is broken"
 msgstr "Софтуерната база данни е счупена"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -119,95 +121,95 @@ msgstr ""
 msgid "Language Selector"
 msgstr "Избор на езици"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:68
+#: ../LanguageSelector/qt/QtLanguageSelector.py:67
 #, fuzzy
 msgid "Default system language:"
 msgstr "Език по подразбиране"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:68
 #, fuzzy
 msgid "Set System Language"
 msgstr "Поддържани езици"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
 #: ../data/LanguageSelector.glade.h:9
 msgid "Enable support to enter complex characters"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:71
-#: ../LanguageSelector/qt/QtLanguageSelector.py:74
+#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:73
 msgid "Cancel"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+#: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Select language to install:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:73
+#: ../LanguageSelector/qt/QtLanguageSelector.py:72
 #, fuzzy
 msgid "Install"
 msgstr "_Инсталиране"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:111
+#: ../LanguageSelector/qt/QtLanguageSelector.py:112
 msgid "Already installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Partially Installed"
 msgstr ""
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Not installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:169
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 #, fuzzy
 msgid "Language Set"
 msgstr "Език"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:169
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
 #, python-format
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
 #, fuzzy
 msgid "Language Installed"
 msgstr "Избор на езици"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
+#: ../LanguageSelector/qt/QtLanguageSelector.py:249
 #, fuzzy
 msgid "Language Uninstalled"
 msgstr "Избор на езици"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
+#: ../LanguageSelector/qt/QtLanguageSelector.py:249
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 #, fuzzy
 msgid "Language Not Set"
 msgstr "Езикова поддръжка"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 msgid "Failed to set system language."
 msgstr ""
 

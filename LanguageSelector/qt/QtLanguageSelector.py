@@ -55,7 +55,6 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         app.connect(self.ui.pushButtonSetSystemLanguage, SIGNAL("clicked()"), self.onSystemPushButtonOk)
         app.connect(self.ui.pushButtonCancel, SIGNAL("clicked()"), self.close)
         app.connect(self.ui.pushButtonCancel_2, SIGNAL("clicked()"), self.close)
-        print "connected"
 
     def init(self):
         self.translateUI()
@@ -91,6 +90,8 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
             item = QListWidgetItem(localeName, self.ui.listBoxDefaultLanguage)
             if defaultLangName == localeName:
                 item.setSelected(True)
+        if not os.path.exists("/etc/alternatives/xinput-all_ALL"):
+            self.ui.enableInputMethods.setEnabled(False)
 
     def updateLanguagesList(self):
         self.ui.listViewLanguages.clear()
@@ -124,33 +125,28 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         """ check if the selected langauge has input method support
             and set checkbutton_enable_input_methods accordingly
         """
-        print "check_input_methods"
-
-        items = self.ui.listBoxDefaultLanguage.selectedItems()
-        if len(items) == 1 and self.mode == "select":
-            item = items[0]
-            lang = item.text()
-            new_locale = ("%s"%lang)
-            try:
-                code = self._localeinfo.localeToCodeMap[new_locale]
-
-                # if we have a default in im-switch for this language, we
-                # can't change it from here (unless the im-switch swamp in drained)
-                default = os.path.exists("/etc/alternatives/xinput-%s" % code)
-                print "default: " + str(default)
-                self.ui.enableInputMethods.setEnabled(not default) 
-                self.ui.enableInputMethods.setChecked(default)        # bah, Qt4 won't show it ticked when disabled
-                if default:
-                    print "returning"
-                    return
-
-                # now check if we have overwritten this - we do this by checking
-                # the setting for all_ALL (im-switch goodness again :/)
-                target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
-                active = (target != "default" and target != "none")
-                self.ui.enableInputMethods.setChecked(active)
-            except KeyError:
-                print "ERROR: can not find new_locale: '%s'"%new_locale
+        if os.path.exists("/etc/alternatives/xinput-all_ALL"):
+            items = self.ui.listBoxDefaultLanguage.selectedItems()
+            if len(items) == 1 and self.mode == "select":
+                item = items[0]
+                lang = item.text()
+                new_locale = ("%s"%lang)
+                try:
+                    code = self._localeinfo.localeToCodeMap[new_locale]
+                    # if we have a default in im-switch for this language, we
+                    # can't change it from here (unless the im-switch swamp in drained)
+                    default = os.path.exists("/etc/alternatives/xinput-%s" % code)
+                    self.ui.enableInputMethods.setEnabled(not default) 
+                    self.ui.enableInputMethods.setChecked(default)        # bah, Qt4 won't show it ticked when disabled
+                    if default:
+                        return
+                    # now check if we have overwritten this - we do this by checking
+                    # the setting for all_ALL (im-switch goodness again :/)
+                    target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
+                    active = (target != "default" and target != "none")
+                    self.ui.enableInputMethods.setChecked(active)
+                except KeyError:
+                    print "ERROR: can not find new_locale: '%s'"%new_locale
 
     def run_pkg_manager(self, lock, to_inst, to_rm):
         self.returncode = 0
@@ -174,17 +170,17 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
     def __input_method_config_changed(self):
         """ check if we changed the input method config here         
         """
-        (lang, code) = self.getSystemLanguage()
-        default = os.path.exists("/etc/alternatives/xinput-%s" % code)
-        if default:
-             return
-        # now check if we have overwritten this - we do this by checking
-        # the setting for all_ALL (im-switch goodness again :/)
-        target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
-        current = (target != "default" and target != "none")
-        new = (self.ui.enableInputMethods.checkState() == Qt.Checked)
-        print "check state: " + str(new)
-        return (new != current)
+        if os.path.exists("/etc/alternatives/xinput-all_ALL"):
+          (lang, code) = self.getSystemLanguage()
+          default = os.path.exists("/etc/alternatives/xinput-%s" % code)
+          if default:
+              return
+          # now check if we have overwritten this - we do this by checking
+          # the setting for all_ALL (im-switch goodness again :/)
+          target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
+          current = (target != "default" and target != "none")
+          new = (self.ui.enableInputMethods.checkState() == Qt.Checked)
+          return (new != current)
 
     def updateInputMethods(self):
         """ write new input method defaults - currently we only support
@@ -248,9 +244,9 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
         #self.run_pkg_manager(to_inst, to_rm)
         if self.returncode == 0 and self.mode == "install":
-            QMessageBox.information( self, _("Language Installed"), _("Translations and support have now been installed for %s.  Select them from the Add Language button." % items[0].text()) )
+            QMessageBox.information( self, _("Language Installed"), _("Translations and support have now been installed for %s.  Select them from the Add Language button." % str(items[0].text())) )
         elif self.returncode == 0 and self.mode == "uninstall":
-            QMessageBox.information( self, _("Language Uninstalled"), _("Translations and support have now been uninstalled for %s." % items[0].text()) )
+            QMessageBox.information( self, _("Language Uninstalled"), _("Translations and support have now been uninstalled for %s." % str(items[0].text())) )
         else:
             QMessageBox.warning(self, _("Language Not Set"), _("Failed to set system language."))
         self.close()
