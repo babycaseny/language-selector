@@ -128,7 +128,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         self.window_main.set_sensitive(True)
         self.window_main.window.set_cursor(None)
 
-        if not os.path.exists("/etc/alternatives/xinput-all_ALL"):
+        if (not os.path.exists("/etc/alternatives/xinput-all_ALL") or
+            not os.path.exists("/usr/bin/im-switch")):
             self.checkbutton_enable_input_methods.set_sensitive(False)
 
     def setupTreeView(self):
@@ -225,9 +226,12 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         """ check if the selected langauge has input method support
             and set checkbutton_enable_input_methods accordingly
         """
-        if os.path.exists("/etc/alternatives/xinput-all_ALL"):
+        if (os.path.exists("/etc/alternatives/xinput-all_ALL") and
+            os.path.exists("/usr/bin/im-switch")):
             combo = self.combobox_default_lang
             model = combo.get_model()
+            if combo.get_active() < 0:
+                return
             (lang, code) = model[combo.get_active()]
             # if we have a default in im-switch for this language, we
             # can't change it from here (unless the im-switch swamp in drained)
@@ -245,7 +249,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
     def __input_method_config_changed(self):
         """ check if we changed the input method config here         
         """
-        if os.path.exists("/etc/alternatives/xinput-all_ALL"):
+        if (os.path.exists("/etc/alternatives/xinput-all_ALL") and
+            os.path.exists("/usr/bin/im-switch")):
             combo = self.combobox_default_lang
             model = combo.get_model()
             (lang, code) = model[combo.get_active()]
@@ -269,6 +274,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         """
         combo = self.combobox_default_lang
         model = combo.get_model()
+        if combo.get_active() < 0:
+            return
         (lang, code) = model[combo.get_active()]
         # if something has changed - act!
         if self.__input_method_config_changed():
@@ -392,7 +399,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         for s in rm:
             f.write("%s\tdeinstall\n" % s)
         f.close()
-        proc.wait()
+        self.install_result = proc.wait()
         lock.release()
 
     def commit(self, inst, rm):
@@ -413,6 +420,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             while gtk.events_pending():
                 gtk.main_iteration()
             time.sleep(0.05)
+        # set reboot required marker if needed
+        self.rebootNotification()
         self.window_main.set_sensitive(True)
         while gtk.events_pending():
             gtk.main_iteration()
@@ -536,6 +545,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
     def writeSystemDefaultLang(self):
         combo = self.combobox_default_lang
         model = combo.get_model()
+        if combo.get_active() < 0:
+            return
         (lang, code) = model[combo.get_active()]
         #print "lang=%s, code=%s" % (lang, code)
 
@@ -568,8 +579,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             if defaultLangName and \
                    self._localeinfo.translate(locale) == defaultLangName:
                 combo.set_active(i)
+                break
             i+=1
-
+            
         # reset the state of the apply button
         self.combo_dirty = False
         self.check_apply_button()

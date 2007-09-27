@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-30 14:10+0100\n"
+"POT-Creation-Date: 2007-09-27 18:14+0200\n"
 "PO-Revision-Date: 2006-05-04 20:47+0000\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <gnu-ku-wergerandin@lists.sourceforge.net>\n"
@@ -19,19 +19,19 @@ msgstr ""
 "X-Rosetta-Version: 0.1\n"
 "X-Generator: KBabel 1.10\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:170
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:171
 msgid "Language"
 msgstr "Ziman"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:178
 msgid "Support"
 msgstr "Piştgirî"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:333
 msgid "Could not install the selected language support"
 msgstr "Sazkirina piştigirtiya zimanê ya hilbijartî serneket"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:334
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -40,11 +40,11 @@ msgstr ""
 "Dibe ku ev bugeke vê sepanê ye. Ji kerema xwe di https://launchpad.net/bugs/"
 "bugs/+package/ de  rapora bugekê ser berhema 'language-selector' binivîse."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:352
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:359
 msgid "Could not install the full language support"
 msgstr "Sazkirina piştgirtina zimanê bi tevahî nehat sazkirin"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:353
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:360
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -52,39 +52,39 @@ msgstr ""
 "Bi giştî ev bi çewtiyeke arşîva nivîsbariyê an gerînendeyê nivîsbariyê re "
 "girêdayî ye. Di menuya \"Rêveberî\" de vebijêrkên nivîsbariyê kontrol bike."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
 msgid "The list of available languages on the system has been updated."
 msgstr "Lîsteya zimanên heyî di sîstema te de hat rojanekirin."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
 msgid "The language support is not installed completely"
 msgstr "Piştgirtiya zimanê ne bi tevahî hatiye sazkirin"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:454
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
 #, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr "Çend paketên desteka zimanê gel te tune. Tu dixwazî van niha saz bikî?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:457
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:466
 #, fuzzy
 msgid "_Remind Me Later"
 msgstr "_Careke din bîne bîra min"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:458
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
 msgid "_Install"
 msgstr "_Saz bike"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:461
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:470
 msgid "Details"
 msgstr "Hûragahî"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "Bi tenê yek amûra îdarekirina nivîsbariyê dikare bimeşe"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:497
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -92,11 +92,15 @@ msgstr ""
 "Ji kerema xwe berê sepana din wekî \"Gerînendeyê Rojanekirinê\", \"aptitude"
 "\" an \"Synaptic\" bigire."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:517
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:526
+#: ../LanguageSelector/qt/QtLanguageSelector.py:64
 msgid "Software database is broken"
 msgstr "Bingeha danê ya nivîsbariyê şikestî ye"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
+#. FIXME: mention adept here instead of synaptic, but the
+#. change happend during string freeze
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:527
+#: ../LanguageSelector/qt/QtLanguageSelector.py:67
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -119,96 +123,96 @@ msgstr ""
 msgid "Language Selector"
 msgstr "Hilbijartina Zimanan"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:67
+#: ../LanguageSelector/qt/QtLanguageSelector.py:77
 #, fuzzy
 msgid "Default system language:"
 msgstr "Zimanê standard"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:68
+#: ../LanguageSelector/qt/QtLanguageSelector.py:78
 #, fuzzy
 msgid "Set System Language"
 msgstr "Zimanên bi piştigirtiyê"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:79
 #: ../data/LanguageSelector.glade.h:9
 msgid "Enable support to enter complex characters"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
-#: ../LanguageSelector/qt/QtLanguageSelector.py:73
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
 #, fuzzy
 msgid "Cancel"
 msgstr "Fransa"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:71
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
 msgid "Select language to install:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #, fuzzy
 msgid "Install"
 msgstr "_Saz bike"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:112
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
 msgid "Already installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+#: ../LanguageSelector/qt/QtLanguageSelector.py:127
 msgid "Partially Installed"
 msgstr ""
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Not installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:165
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/qt/QtLanguageSelector.py:177
+#: ../LanguageSelector/qt/QtLanguageSelector.py:179
 #, fuzzy
 msgid "Language Set"
 msgstr "Hilbijartina Zimanan"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/qt/QtLanguageSelector.py:177
 #, python-format
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/qt/QtLanguageSelector.py:179
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+#: ../LanguageSelector/qt/QtLanguageSelector.py:260
 #, fuzzy
 msgid "Language Installed"
 msgstr "Hilbijartina zimanan"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+#: ../LanguageSelector/qt/QtLanguageSelector.py:260
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:249
+#: ../LanguageSelector/qt/QtLanguageSelector.py:262
 #, fuzzy
 msgid "Language Uninstalled"
 msgstr "Hilbijartina zimanan"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:249
+#: ../LanguageSelector/qt/QtLanguageSelector.py:262
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:264
 #, fuzzy
 msgid "Language Not Set"
 msgstr "Hilbijartina Zimanan"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:264
 msgid "Failed to set system language."
 msgstr ""
 

@@ -92,6 +92,19 @@ class LanguageSelectorBase(object):
         else:
             fc.removeConfig()
 
+    def rebootNotification(self):
+        " display a reboot required notification "
+        rb = "/usr/share/update-notifier/notify-reboot-required"
+        if (hasattr(self, "install_result") and 
+            self.install_result == 0 and
+            os.path.exists(rb)):
+            subprocess.call([rb])
+            s = "/var/lib/update-notifier/dpkg-run-stamp"
+            if os.path.exists(s):
+                file(s,"w")
+        return True
+
+
     def missingTranslationPkgs(self, pkg, translation_pkg):
         """ this will check if the given pkg is installed and if
             the needed translation package is installed as well

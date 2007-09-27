@@ -10,7 +10,7 @@
 			<bool>true</bool>
 		</edit>
 		<edit name="hintstyle" mode="assign">
-			<const>hintnone</const>
+			<const>hintfull</const>
 		</edit>
 	</match>
 

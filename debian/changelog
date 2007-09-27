@@ -1,3 +1,27 @@
+language-selector (0.2.7) gutsy; urgency=low
+
+  * fontconfig/zh_CN:
+    - updated based on the input of ZhengPeng Hou and
+      Arne Goetje (thanks!)
+  * fontconfig/ja_JP:
+    - fix hinting, thanks to  Fumihito YOSHIDA
+      (LP: #139738)
+  * LanguageSelector/LocaleInfo.py:
+    - fix crash in locale output parsing (LP: #139018)
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - do not fail if the system default language is unknown 
+      (LP: #128168)
+    - gray out complex charackter support if im-switch is
+      not available (LP: #111311)
+    - set reboot required flag when new packages got installed 
+      (LP: #127356)
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    - do not crash on broken cache (LP: #108238)
+    - gray out complex charackter support if im-switch is
+      not available (LP: #111311)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 27 Sep 2007 12:47:36 +0200
+
 language-selector (0.2.6) feisty; urgency=low
 
   [Michael Vogt]

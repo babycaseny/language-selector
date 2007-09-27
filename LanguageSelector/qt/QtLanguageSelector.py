@@ -58,7 +58,17 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
     def init(self):
         self.translateUI()
-        self.openCache(apt.progress.OpProgress())
+        try:
+            self.openCache(apt.progress.OpProgress())
+        except ExceptionPkgCacheBroken:
+            s = _("Software database is broken"),
+            # FIXME: mention adept here instead of synaptic, but the
+            #        change happend during string freeze
+            t = _("It is impossible to install or remove any software. "
+                  "Please use the package manager \"Synaptic\" or run "
+                  "\"sudo apt-get install -f\" in a terminal to fix "
+                  "this issue at first.")
+            QMessageBox.warning(self, s, t)
         self.updateLanguagesList()
         self.updateSystemDefaultListbox()
 
@@ -90,7 +100,8 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
             item = QListWidgetItem(localeName, self.ui.listBoxDefaultLanguage)
             if defaultLangName == localeName:
                 item.setSelected(True)
-        if not os.path.exists("/etc/alternatives/xinput-all_ALL"):
+        if (not os.path.exists("/etc/alternatives/xinput-all_ALL") or
+            not os.path.exists("/usr/bin/im-switch")):
             self.ui.enableInputMethods.setEnabled(False)
 
     def updateLanguagesList(self):
@@ -125,7 +136,8 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         """ check if the selected langauge has input method support
             and set checkbutton_enable_input_methods accordingly
         """
-        if os.path.exists("/etc/alternatives/xinput-all_ALL"):
+        if (os.path.exists("/etc/alternatives/xinput-all_ALL") and
+            os.path.exists("/usr/bin/im-switch")):
             items = self.ui.listBoxDefaultLanguage.selectedItems()
             if len(items) == 1 and self.mode == "select":
                 item = items[0]
@@ -170,7 +182,8 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
     def __input_method_config_changed(self):
         """ check if we changed the input method config here         
         """
-        if os.path.exists("/etc/alternatives/xinput-all_ALL"):
+        if (os.path.exists("/etc/alternatives/xinput-all_ALL") and
+            os.path.exists("/usr/bin/im-switch")):
           (lang, code) = self.getSystemLanguage()
           default = os.path.exists("/etc/alternatives/xinput-%s" % code)
           if default:

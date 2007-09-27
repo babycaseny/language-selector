@@ -74,7 +74,7 @@ class LocaleInfo(object):
             (runing locale -a) """
         locales = []
         p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE)
-        for line in p.stdout.readlines():
+        for line in string.split(p.communicate()[0], "\n"):
             tmp = line.strip()
             if tmp.startswith("#") or tmp == "" or tmp == "C" or tmp == "POSIX":
                 continue

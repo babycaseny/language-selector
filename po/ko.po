@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-30 14:10+0100\n"
+"POT-Creation-Date: 2007-09-27 18:14+0200\n"
 "PO-Revision-Date: 2006-05-12 02:56+0000\n"
 "Last-Translator: gilchris <gilchris@gilchris.org>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:170
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:171
 msgid "Language"
 msgstr "언어"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:177
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:178
 msgid "Support"
 msgstr "지원"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:333
 msgid "Could not install the selected language support"
 msgstr "선택된 언어 지원을 설치할 수 없습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:334
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -37,11 +37,11 @@ msgstr ""
 "아마도 프로그램의 버그인 것 같습니다. https://launchpad.net/bugs/bugs/"
 "+package/ 에 'language-selector' 프로그램에 대한 버그를 보고하여 주십시오."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:352
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:359
 msgid "Could not install the full language support"
 msgstr "언어 지원 전체를 설치하지 못했습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:353
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:360
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -49,15 +49,15 @@ msgstr ""
 "일반적으로 이것은 소프트웨어 저장소나 소프트웨어 관리자의 오류와 관련있습니"
 "다. \"Adminstration\" 메뉴에서 소프트웨어 기본 설정을 살펴보시기 바랍니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
 msgid "The list of available languages on the system has been updated."
 msgstr "시스템에서 이용가능한 언어 목록이 업데이트 됐습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
 msgid "The language support is not installed completely"
 msgstr "언어 지원이 완벽하게 설치되지 않았습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:454
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
 #, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -66,24 +66,24 @@ msgstr ""
 "시스템에서 지원 언어를 위하여 사용할 수 있는 모든 번역물과 도움글들이 모두 설"
 "치되지 않았습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:457
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:466
 #, fuzzy
 msgid "_Remind Me Later"
 msgstr "다시 보여줌(_R)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:458
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
 msgid "_Install"
 msgstr "설치(_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:461
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:470
 msgid "Details"
 msgstr "상세 정보"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
 msgid "Only one software management tool is allowed to run at the same time"
 msgstr "동시에 한 가지 소프트웨어 관리 도구만 실행할 수 있습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:497
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
 msgid ""
 "Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
 "\"Synaptic\" at first."
@@ -91,11 +91,15 @@ msgstr ""
 "\"Update Manager\", \"aptitude\", \"시냅틱\"과 같은 프로그램을 먼저 닫은 후"
 "에 실행하십시오."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:517
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:526
+#: ../LanguageSelector/qt/QtLanguageSelector.py:64
 msgid "Software database is broken"
 msgstr "소프트웨어 데이터베이스가 망가졌습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
+#. FIXME: mention adept here instead of synaptic, but the
+#. change happend during string freeze
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:527
+#: ../LanguageSelector/qt/QtLanguageSelector.py:67
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -118,96 +122,96 @@ msgstr ""
 msgid "Language Selector"
 msgstr "언어 선택기"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:67
+#: ../LanguageSelector/qt/QtLanguageSelector.py:77
 #, fuzzy
 msgid "Default system language:"
 msgstr "기본 언어"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:68
+#: ../LanguageSelector/qt/QtLanguageSelector.py:78
 #, fuzzy
 msgid "Set System Language"
 msgstr "지원되는 언어"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:79
 #: ../data/LanguageSelector.glade.h:9
 msgid "Enable support to enter complex characters"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
-#: ../LanguageSelector/qt/QtLanguageSelector.py:73
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
 #, fuzzy
 msgid "Cancel"
 msgstr "프랑스"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:71
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
 msgid "Select language to install:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #, fuzzy
 msgid "Install"
 msgstr "설치(_I)"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:112
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
 msgid "Already installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+#: ../LanguageSelector/qt/QtLanguageSelector.py:127
 msgid "Partially Installed"
 msgstr ""
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Not installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:165
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/qt/QtLanguageSelector.py:177
+#: ../LanguageSelector/qt/QtLanguageSelector.py:179
 #, fuzzy
 msgid "Language Set"
 msgstr "언어"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/qt/QtLanguageSelector.py:177
 #, python-format
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/qt/QtLanguageSelector.py:179
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+#: ../LanguageSelector/qt/QtLanguageSelector.py:260
 #, fuzzy
 msgid "Language Installed"
 msgstr "언어 선택기"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+#: ../LanguageSelector/qt/QtLanguageSelector.py:260
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:249
+#: ../LanguageSelector/qt/QtLanguageSelector.py:262
 #, fuzzy
 msgid "Language Uninstalled"
 msgstr "언어 선택기"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:249
+#: ../LanguageSelector/qt/QtLanguageSelector.py:262
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:264
 #, fuzzy
 msgid "Language Not Set"
 msgstr "언어"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
+#: ../LanguageSelector/qt/QtLanguageSelector.py:264
 msgid "Failed to set system language."
 msgstr ""
 
