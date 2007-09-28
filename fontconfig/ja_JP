@@ -1,4 +1,6 @@
 <fontconfig>
+	<include ignore_missing="yes">CJK_aliases</include>
+
 	<match target="font">
 		<edit name="embeddedbitmap" mode="assign">
 			<bool>false</bool>

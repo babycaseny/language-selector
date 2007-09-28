@@ -64,7 +64,9 @@ install: build
 	# Add here commands to install the package into debian/language-selector.
 	./setup.py install --prefix=$(CURDIR)/debian/tmp/usr
 	(cd po; intltool-update -p -g language-selector)
-
+	# move CJK_aliases into the right place
+	install -d $(CURDIR)/debian/tmp/etc/fonts/conf.d
+	mv $(CURDIR)/debian/tmp/usr/share/language-selector/fontconfig/CJK_aliases $(CURDIR)/debian/tmp/etc/fonts/conf.d
 
 # Build architecture-independent files here.
 binary-indep: build install

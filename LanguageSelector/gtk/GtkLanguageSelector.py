@@ -579,7 +579,6 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             if defaultLangName and \
                    self._localeinfo.translate(locale) == defaultLangName:
                 combo.set_active(i)
-                break
             i+=1
             
         # reset the state of the apply button

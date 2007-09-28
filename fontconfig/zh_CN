@@ -1,44 +1,15 @@
 <fontconfig>
-	<alias>
-		<family>SimSun</family>
-		<accept><family>AR PL ShanHeiSun Uni</family></accept>
-	</alias>
-	<alias>
-		<family>宋体</family>
-		<accept><family>AR PL ShanHeiSun Uni</family></accept>
-	</alias>
-	<alias>
-		<family>楷体</family>
-		<accept><family>AR PL ZenKai Uni</family></accept>
-	</alias>
-	<alias>
-		<family>MingLiU</family>
-		<accept><family>AR PL ShanHeiSun Uni</family></accept>
-	</alias>
-	<alias>
-		<family>細明體</family>
-		<accept><family>AR PL ShanHeiSun Uni</family></accept>
-	</alias>
-	<alias>
-		<family>PMingLiU</family>
-		<accept><family>AR PL ShanHeiSun Uni</family></accept>
-	</alias>
-	<alias>
-		<family>新細明體</family>
-		<accept><family>AR PL ShanHeiSun Uni</family></accept>
-	</alias>
-	<alias>
-		<family>標楷體</family>
-		<accept><family>AR PL ZenKai Uni</family></accept>
-	</alias>
+	<include ignore_missing="yes">CJK_aliases</include>
 
 	<alias>
 		<family>serif</family>
 		<prefer>
 			<family>Bitstream Vera Serif</family>
 			<family>DejaVu Serif</family>
+			<family>AR PL UMing CN</family>
 			<family>AR PL ShanHeiSun Uni</family>
 			<family>WenQuanYi Bitmap Song</family>
+			<family>AR PL UKai CN</family>
 			<family>AR PL ZenKai Uni</family>
 		</prefer>
 	</alias>
@@ -47,8 +18,10 @@
 		<prefer>
 			<family>Bitstream Vera Sans</family>
 			<family>DejaVu Sans</family>
+			<family>AR PL UMing CN</family>
 			<family>AR PL ShanHeiSun Uni</family>
 			<family>WenQuanYi Bitmap Song</family>
+			<family>AR PL UKai CN</family>
 			<family>AR PL ZenKai Uni</family>
 		</prefer>
 	</alias>
@@ -57,8 +30,10 @@
 		<prefer>
 			<family>Bitstream Vera Sans Mono</family>
 			<family>DejaVu Sans Mono</family>
+			<family>AR PL UMing CN</family>
 			<family>AR PL ShanHeiSun Uni</family>
 			<family>WenQuanYi Bitmap Song</family>
+			<family>AR PL UKai CN</family>
 			<family>AR PL ZenKai Uni</family>
 		</prefer>
 	</alias>

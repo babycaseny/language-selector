@@ -3,3 +3,4 @@ usr/lib/python*/site-packages/LanguageSelector/*.py
 usr/share/language-selector
 usr/share/locale
 usr/share/pixmaps
+etc/fonts

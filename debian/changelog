@@ -1,3 +1,13 @@
+language-selector (0.2.8) gutsy; urgency=low
+
+  * fontconfig/*:
+    - updated and unified 
+  * fontconfig/common/CJK_aliases:
+    - added CJK_aliases to match MS font names
+  (thanks to Arne Goetje)
+  
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 28 Sep 2007 11:12:53 +0200
+
 language-selector (0.2.7) gutsy; urgency=low
 
   * fontconfig/zh_CN:
