@@ -1,3 +1,11 @@
+language-selector (0.2.9) gutsy; urgency=low
+
+  * fontconfig/zh_{CN,HK,SG,TW}:
+    - move AR PL UMing TW, AR PL ShanHeiSun Uni and WenQuanYi Bitmap Song
+      up in the fontconfig priority (thanks to Arne Goetje)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 05 Oct 2007 16:17:04 +0200
+
 language-selector (0.2.8) gutsy; urgency=low
 
   * fontconfig/*:
