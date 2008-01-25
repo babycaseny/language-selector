@@ -30,9 +30,7 @@ class FontConfigHack(object):
         self.datadir="%s/fontconfig" % datadir
         self.globalConfDir=globalConfDir
         self.configFile = "%s/language-selector.conf" % self.globalConfDir
-        self.li = LocaleInfo("%s/data/languages" % datadir,
-                             "%s/data/countries" % datadir,
-                             "%s/data/languagelist" % datadir)
+        self.li = LocaleInfo("%s/data/languagelist" % datadir)
     def getAvailableConfigs(self):
         """ get the configurations we have as a list of languages
             (returns a list of ['zh_CN','zh_TW'])
@@ -93,9 +91,7 @@ class FontConfigHack(object):
 if __name__ == "__main__":
     datadir = "/usr/share/language-selector/data"
 
-    li = LocaleInfo("%s/languages" % datadir,
-                    "%s/countries" % datadir,
-                    "%s/languagelist" % datadir)
+    li = LocaleInfo("%s/languagelist" % datadir)
 
     fc = FontConfigHack()
 

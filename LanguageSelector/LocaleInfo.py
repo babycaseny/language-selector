@@ -5,14 +5,16 @@
 import string
 import re            
 import subprocess
+import gettext
 
 from gettext import gettext as _
+from xml.etree.ElementTree import ElementTree
 
 class LocaleInfo(object):
     " class with handy functions to parse the locale information "
     
     environment = "/etc/environment"
-    def __init__(self, lang_file, country_file, languagelist_file):
+    def __init__(self, languagelist_file):
         # map language to human readable name, e.g.:
         # "pt"->"Portugise", "de"->"German", "en"->"English"
         self._lang = {}
@@ -25,22 +27,28 @@ class LocaleInfo(object):
         # "pt_PT"->"pt_PT:pt:pt_BR:en_GB:en"
         self._languagelist = {}
         
-        # read lang file
-        self._langFile = lang_file
-        for line in open(lang_file):
-            tmp = line.strip()
-            if tmp.startswith("#") or tmp == "":
-                continue
-            (code, lang) = tmp.split(":")
-            self._lang[code] = lang
+        # read lang file (we don't use iso_639_3 as it does crash there with:
+        # xml.parsers.expat.ExpatError: not well-formed (invalid token): line 52, column 11
+        et = ElementTree(file="/usr/share/xml/iso-codes/iso_639.xml")
+        it = et.getiterator('iso_639_entry')
+        for elm in it:
+            lang = elm.attrib["name"]
+            if elm.attrib.has_key("iso_639_1_code"):
+                code = elm.attrib["iso_639_1_code"]
+            else:
+                code = elm.attrib["iso_639_2T_code"]
+            self._lang[code] = gettext.dgettext('iso_639', lang)
             
         # read countries
-        for line in open(country_file):
-            tmp = line.strip()
-            if tmp.startswith("#") or tmp == "":
-                continue
-            (un, code, long_code, descr, cap) = tmp.split(":")
-            self._country[code] = descr
+        et = ElementTree(file="/usr/share/xml/iso-codes/iso_3166.xml")
+        it = et.getiterator('iso_3166_entry')
+        for elm in it:
+            descr = elm.attrib["name"]
+            if elm.attrib.has_key("alpha_2_code"):
+                code = elm.attrib["alpha_2_code"]
+            else:
+                code = elm.attrib["alpha_3_code"]
+            self._country[code] = gettext.dgettext('iso_3166',descr)
             
         # read the languagelist
         for line in open(languagelist_file):

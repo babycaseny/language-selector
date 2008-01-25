@@ -31,9 +31,7 @@ class LanguageSelectorBase(object):
     def __init__(self, datadir=""):
         self._datadir = datadir
         # load the localeinfo "database"
-        self._localeinfo = LocaleInfo("%s/data/languages" % self._datadir,
-                                      "%s/data/countries" % self._datadir,
-                                      "%s/data/languagelist" % self._datadir)
+        self._localeinfo = LocaleInfo("%s/data/languagelist" % self._datadir)
         self._cache = None
 
     def openCache(self, progress):

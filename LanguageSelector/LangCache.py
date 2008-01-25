@@ -4,6 +4,8 @@ warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
 import apt
 import apt_pkg
 
+from xml.etree.ElementTree import ElementTree
+
 from gettext import gettext as _
 
 # the language-support information
@@ -101,14 +103,10 @@ class LanguageSelectorPkgCache(apt.Cache):
     def getLanguageInformation(self):
         """ returns a list with language packs/support packages """
         res = []
-        for line in open(self._localeinfo._langFile):
-            line = line.strip()
-            if line.startswith("#"):
-                continue
-            (code, lang) = line.split(":")
+        for (code,lang) in self._localeinfo._lang.items():
             li = LanguageInformation()
             li.languageCode = code
-            li.language = _(lang)
+            li.language = lang
             li.hasLangPack = self.has_key("language-pack-%s" % code)
             li.hasLangSupport = self.has_key("language-support-%s" % code)
             if li.hasLangPack:
@@ -124,9 +122,7 @@ if __name__ == "__main__":
 
     from LocaleInfo import LocaleInfo
     datadir = "/usr/share/language-selector"
-    li = LocaleInfo("%s/data/languages" % datadir,
-                    "%s/data/countries" % datadir,
-                    "%s/data/languagelist" % datadir)
+    li = LocaleInfo("%s/data/languagelist" % datadir)
 
     lc = LanguageSelectorPkgCache(li,apt.progress.OpProgress())
     print "available language information"
