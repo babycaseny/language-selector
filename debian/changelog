@@ -1,3 +1,21 @@
+language-selector (0.3.0) hardy; urgency=low
+
+  [ Michael Vogt ]
+  * run gnome-language-selector as non-root by default
+  * make the input method configuration a per-user setting
+  * fix dialog default size
+
+  [ Arne Goetje ]
+  * split up the fontconfig configuration files according to recent fontconfig
+    rules. Install all fontconfig files in /etc/fonts/conf.avail/ and link
+    those which are needed to /etc/fonts/conf.d/ .
+  * data/languages: split up the entries for Chinese (simplified) and Chinese
+    (traditional) into Chinese (China), Chinese (Hong Kong), Chinese
+    (Singapore) and Chinese (Taiwan), to reflect the different locales and
+    dialects.
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 06 Mar 2008 17:35:25 +0100
+
 language-selector (0.2.10) hardy; urgency=low
 
   * debian/control:

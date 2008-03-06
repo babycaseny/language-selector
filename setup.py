@@ -32,8 +32,6 @@ setup(name='language-selector',
                    glob.glob("data/*.desktop")),
                   ('share/pixmaps',
                    ["data/language-selector.png"]),
-                  ('share/language-selector/fontconfig',
-                   glob.glob("fontconfig/*")),
                   ]+I18NFILES,
       )
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-25 15:38+0000\n"
+"POT-Creation-Date: 2008-03-07 09:28+0100\n"
 "PO-Revision-Date: 2006-05-04 20:47+0000\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <gnu-ku-wergerandin@lists.sourceforge.net>\n"
@@ -19,19 +19,19 @@ msgstr ""
 "X-Rosetta-Version: 0.1\n"
 "X-Generator: KBabel 1.10\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:186
 msgid "Language"
 msgstr "Ziman"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:178
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 msgid "Support"
 msgstr "Piştgirî"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:333
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:325
 msgid "Could not install the selected language support"
 msgstr "Sazkirina piştigirtiya zimanê ya hilbijartî serneket"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:334
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -40,11 +40,11 @@ msgstr ""
 "Dibe ku ev bugeke vê sepanê ye. Ji kerema xwe di https://launchpad.net/bugs/"
 "bugs/+package/ de  rapora bugekê ser berhema 'language-selector' binivîse."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:359
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 msgid "Could not install the full language support"
 msgstr "Sazkirina piştgirtina zimanê bi tevahî nehat sazkirin"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:360
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:358
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -52,54 +52,42 @@ msgstr ""
 "Bi giştî ev bi çewtiyeke arşîva nivîsbariyê an gerînendeyê nivîsbariyê re "
 "girêdayî ye. Di menuya \"Rêveberî\" de vebijêrkên nivîsbariyê kontrol bike."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 msgid "The list of available languages on the system has been updated."
 msgstr "Lîsteya zimanên heyî di sîstema te de hat rojanekirin."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:472
 msgid "The language support is not installed completely"
 msgstr "Piştgirtiya zimanê ne bi tevahî hatiye sazkirin"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:473
 #, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr "Çend paketên desteka zimanê gel te tune. Tu dixwazî van niha saz bikî?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:466
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 #, fuzzy
 msgid "_Remind Me Later"
 msgstr "_Careke din bîne bîra min"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:477
 msgid "_Install"
 msgstr "_Saz bike"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:470
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:480
 msgid "Details"
 msgstr "Hûragahî"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "Bi tenê yek amûra îdarekirina nivîsbariyê dikare bimeşe"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-msgid ""
-"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
-"\"Synaptic\" at first."
-msgstr ""
-"Ji kerema xwe berê sepana din wekî \"Gerînendeyê Rojanekirinê\", \"aptitude"
-"\" an \"Synaptic\" bigire."
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:526
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
 #: ../LanguageSelector/qt/QtLanguageSelector.py:64
 msgid "Software database is broken"
 msgstr "Bingeha danê ya nivîsbariyê şikestî ye"
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:527
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:520
 #: ../LanguageSelector/qt/QtLanguageSelector.py:67
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
@@ -109,6 +97,16 @@ msgstr ""
 "Sazkirin an rakirina nivîsbariyê qet ne gengaz e. Ji kerema xwe berê her "
 "tiştî vê pirsgirêkê bi gerînendeyê paketan \"Synaptic\" and jî bi \"sudo apt-"
 "get install -f\" di termînalekê de çareser bike."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
+msgid "Reboot required"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+msgid ""
+"To complete the changes a reboot is required so that the new functionality "
+"is activated."
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:40
 #, fuzzy
@@ -259,14 +257,6 @@ msgstr "Piştgiriya Zimên"
 msgid "Configure multiple and native language support on your system"
 msgstr "Sazkirina zimanên dayîkî"
 
-#: ../gnome-language-selector:28
-msgid "You are not root"
-msgstr "Tu ne root î"
-
-#: ../gnome-language-selector:29
-msgid "Please run this software with administrative rights."
-msgstr "Ji kerema xwe vê nivîsbariyê bi mafên admin bimeşîne."
-
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
 msgstr "Tê betal kirin"
@@ -295,15 +285,20 @@ msgstr "Lîsteya mîhengên fontconfig-voodoo yên heyî nîşan bide"
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Mîhenga fontconfig-voodoo ya heyî nîşan bide"
 
-#: ../fontconfig-voodoo:62
+#: ../fontconfig-voodoo:43
+#, fuzzy
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Mîhenga fontconfig-voodoo ya heyî nîşan bide"
+
+#: ../fontconfig-voodoo:65
 msgid "Unconfigured"
 msgstr ""
 
-#: ../fontconfig-voodoo:70
+#: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr "Konfîgurasiyonek heye. Da ku binvîsî ser, '--force' bi kar bîne. "
 
-#: ../fontconfig-voodoo:83
+#: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Ji bo locale ya hilbijartî, ti mîhengeke fontconfig-voodoo nehat dîtin"
 
@@ -313,6 +308,22 @@ msgstr "Ji bo locale ya hilbijartî, ti mîhengeke fontconfig-voodoo nehat dîti
 #~ msgstr ""
 #~ "Hemû werger an alîkariyên nivîsandinê yên heyî ji bo zimanên bi "
 #~ "piştigirtiyê di sîstema te de nehatin sazkirin"
+
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr "Bi tenê yek amûra îdarekirina nivîsbariyê dikare bimeşe"
+
+#~ msgid ""
+#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
+#~ "or \"Synaptic\" at first."
+#~ msgstr ""
+#~ "Ji kerema xwe berê sepana din wekî \"Gerînendeyê Rojanekirinê\", "
+#~ "\"aptitude\" an \"Synaptic\" bigire."
+
+#~ msgid "You are not root"
+#~ msgstr "Tu ne root î"
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "Ji kerema xwe vê nivîsbariyê bi mafên admin bimeşîne."
 
 #~ msgid "Translation"
 #~ msgstr "Werger"

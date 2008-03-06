@@ -43,7 +43,10 @@ class LocaleInfo(object):
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_3166.xml")
         it = et.getiterator('iso_3166_entry')
         for elm in it:
-            descr = elm.attrib["name"]
+            if elm.attrib.has_key("common_name"):
+                descr = elm.attrib["common_name"]
+            else:
+                descr = elm.attrib["name"]
             if elm.attrib.has_key("alpha_2_code"):
                 code = elm.attrib["alpha_2_code"]
             else:

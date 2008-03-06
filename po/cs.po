@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-25 15:38+0000\n"
+"POT-Creation-Date: 2008-03-07 09:28+0100\n"
 "PO-Revision-Date: 2006-05-02 17:40+0000\n"
 "Last-Translator: Ondřej Surý <ondrej@sury.org>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -15,48 +15,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:186
 msgid "Language"
 msgstr "Jazyk"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:178
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 #, fuzzy
 msgid "Support"
 msgstr "Výběr jazyka"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:333
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:325
 #, fuzzy
 msgid "Could not install the selected language support"
 msgstr "Instaluj/odeber podporu jazyků"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:334
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:359
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 #, fuzzy
 msgid "Could not install the full language support"
 msgstr "Instaluj/odeber podporu jazyků"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:360
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:358
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:472
 #, fuzzy
 msgid "The language support is not installed completely"
 msgstr "Jazyky jsou nyní nainstalovány"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:473
 #, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -65,44 +65,44 @@ msgstr ""
 "Některé balíčky pro plnou podporu jazyka nejsou na vašem systému "
 "nainstalovány. Chcete je nainstalovat nyní?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:466
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 #, fuzzy
 msgid "_Remind Me Later"
 msgstr "Upozorni mě znovu"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:477
 #, fuzzy
 msgid "_Install"
 msgstr "Instaluj teď"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:470
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:480
 #, fuzzy
 msgid "Details"
 msgstr "dánština"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-msgid ""
-"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
-"\"Synaptic\" at first."
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:526
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
 #: ../LanguageSelector/qt/QtLanguageSelector.py:64
 msgid "Software database is broken"
 msgstr ""
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:527
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:520
 #: ../LanguageSelector/qt/QtLanguageSelector.py:67
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
+msgid "Reboot required"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+msgid ""
+"To complete the changes a reboot is required so that the new functionality "
+"is activated."
 msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:40
@@ -255,14 +255,6 @@ msgstr "Jazyková podpora"
 msgid "Configure multiple and native language support on your system"
 msgstr "Nastavit národní jazykovou podporu společně s podporou dalších jazyků"
 
-#: ../gnome-language-selector:28
-msgid "You are not root"
-msgstr "Nejste root"
-
-#: ../gnome-language-selector:29
-msgid "Please run this software with administrative rights."
-msgstr "Prosím spusťte tento program s administrátorskými právy."
-
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
 msgstr "Unkončování"
@@ -291,18 +283,29 @@ msgstr "Vypsat dostupné fontconfig-voodoo konfigurace"
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Zobrazit aktuální fontconfig-voodoo konfiguraci"
 
-#: ../fontconfig-voodoo:62
+#: ../fontconfig-voodoo:43
+#, fuzzy
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Zobrazit aktuální fontconfig-voodoo konfiguraci"
+
+#: ../fontconfig-voodoo:65
 msgid "Unconfigured"
 msgstr ""
 
-#: ../fontconfig-voodoo:70
+#: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr "Konfigurace již existuje. Použijte '--force' k jejímu přepsání. "
 
-#: ../fontconfig-voodoo:83
+#: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Žádná fontconfig-voodoo konfigurace nenalezena pro vybrané jazykové prostředí"
+
+#~ msgid "You are not root"
+#~ msgstr "Nejste root"
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "Prosím spusťte tento program s administrátorskými právy."
 
 #, fuzzy
 #~ msgid "Translation"

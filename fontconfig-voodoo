@@ -38,6 +38,9 @@ def main():
     parser.add_option("-c", "--current", dest="show_current",
                       action="store_true",
                       help=_("Show the current fontconfig-voodoo config"))
+    parser.add_option("-r", "--remove-current", dest="remove_current",
+                      action="store_true",
+                      help=_("Remove the current fontconfig-voodoo config"))
     parser.add_option("-q", "--quiet",
                       action="store_true", dest="silent", default=False)
 
@@ -66,9 +69,15 @@ def main():
         print "\n".join(fc.getAvailableConfigs())
         sys.exit(0)
         
-    if os.path.exists(fc.configFile) and not options.force:
-        abort(_("A configuration exists already. Use '--force' to "
-                "overwrite it. "))
+    if not options.force:
+        try:
+            fc.getCurrentConfig()
+            # if this does not raise a "Unconfigured" exception, we
+            # abort here
+            abort(_("A configuration exists already. Use '--force' to "
+                    "overwrite it. "))
+        except FontConfig.ExceptionUnconfigured:
+            pass
 
     if options.auto:
         try:
@@ -76,13 +85,17 @@ def main():
         except FontConfig.ExceptionNoConfigForLocale:
             pass
 
+    if options.remove_current:
+        fc.removeConfig()
+        sys.exit(0)
+
     if options.lang:
         try:
             fc.setConfig(options.lang)
         except FontConfig.ExceptionNoConfigForLocale:
             abort(_("No fontconfig-voodoo configuration found for the "
                     "selected locale"))
-    
+
     
 if __name__ == "__main__":
     main()

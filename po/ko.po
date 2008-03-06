@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-25 15:38+0000\n"
+"POT-Creation-Date: 2008-03-07 09:28+0100\n"
 "PO-Revision-Date: 2006-05-12 02:56+0000\n"
 "Last-Translator: gilchris <gilchris@gilchris.org>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:186
 msgid "Language"
 msgstr "언어"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:178
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 msgid "Support"
 msgstr "지원"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:333
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:325
 msgid "Could not install the selected language support"
 msgstr "선택된 언어 지원을 설치할 수 없습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:334
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -37,11 +37,11 @@ msgstr ""
 "아마도 프로그램의 버그인 것 같습니다. https://launchpad.net/bugs/bugs/"
 "+package/ 에 'language-selector' 프로그램에 대한 버그를 보고하여 주십시오."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:359
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 msgid "Could not install the full language support"
 msgstr "언어 지원 전체를 설치하지 못했습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:360
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:358
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -49,15 +49,15 @@ msgstr ""
 "일반적으로 이것은 소프트웨어 저장소나 소프트웨어 관리자의 오류와 관련있습니"
 "다. \"Adminstration\" 메뉴에서 소프트웨어 기본 설정을 살펴보시기 바랍니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 msgid "The list of available languages on the system has been updated."
 msgstr "시스템에서 이용가능한 언어 목록이 업데이트 됐습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:472
 msgid "The language support is not installed completely"
 msgstr "언어 지원이 완벽하게 설치되지 않았습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:473
 #, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -66,39 +66,27 @@ msgstr ""
 "시스템에서 지원 언어를 위하여 사용할 수 있는 모든 번역물과 도움글들이 모두 설"
 "치되지 않았습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:466
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 #, fuzzy
 msgid "_Remind Me Later"
 msgstr "다시 보여줌(_R)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:477
 msgid "_Install"
 msgstr "설치(_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:470
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:480
 msgid "Details"
 msgstr "상세 정보"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "동시에 한 가지 소프트웨어 관리 도구만 실행할 수 있습니다."
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-msgid ""
-"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
-"\"Synaptic\" at first."
-msgstr ""
-"\"Update Manager\", \"aptitude\", \"시냅틱\"과 같은 프로그램을 먼저 닫은 후"
-"에 실행하십시오."
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:526
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
 #: ../LanguageSelector/qt/QtLanguageSelector.py:64
 msgid "Software database is broken"
 msgstr "소프트웨어 데이터베이스가 망가졌습니다."
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:527
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:520
 #: ../LanguageSelector/qt/QtLanguageSelector.py:67
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
@@ -107,6 +95,16 @@ msgid ""
 msgstr ""
 "어떤 소프트웨어도 설치하거나 삭제할 수 없습니다. \"시냅틱\"이나 터미널에서 "
 "\"sudo apt-get install -f\"를 실행하여 이 문제를 먼저 해결하십시오"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
+msgid "Reboot required"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+msgid ""
+"To complete the changes a reboot is required so that the new functionality "
+"is activated."
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:40
 #, fuzzy
@@ -258,14 +256,6 @@ msgstr "언어"
 msgid "Configure multiple and native language support on your system"
 msgstr "시스템 상에 복수 개의 모국어 지원 설정"
 
-#: ../gnome-language-selector:28
-msgid "You are not root"
-msgstr "root가 아닙니다."
-
-#: ../gnome-language-selector:29
-msgid "Please run this software with administrative rights."
-msgstr "이 프로그램은 관리자 권한으로 실행 하십시오."
-
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
 msgstr "중지"
@@ -294,18 +284,39 @@ msgstr "사용가능한 fontconfig-voodoo 설정 목록"
 msgid "Show the current fontconfig-voodoo config"
 msgstr "현재 fontconfig-voodoo 설정 보이기"
 
-#: ../fontconfig-voodoo:62
+#: ../fontconfig-voodoo:43
+#, fuzzy
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "현재 fontconfig-voodoo 설정 보이기"
+
+#: ../fontconfig-voodoo:65
 msgid "Unconfigured"
 msgstr ""
 
-#: ../fontconfig-voodoo:70
+#: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
 "설정이 이미 있습니다. 그것을 덮어쓰기 위하여 '--force'를 사용하십시오. "
 
-#: ../fontconfig-voodoo:83
+#: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "선택된 로케일을 위한 fontconfig-voodoo 설정이 없습니다."
+
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr "동시에 한 가지 소프트웨어 관리 도구만 실행할 수 있습니다."
+
+#~ msgid ""
+#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
+#~ "or \"Synaptic\" at first."
+#~ msgstr ""
+#~ "\"Update Manager\", \"aptitude\", \"시냅틱\"과 같은 프로그램을 먼저 닫은 "
+#~ "후에 실행하십시오."
+
+#~ msgid "You are not root"
+#~ msgstr "root가 아닙니다."
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "이 프로그램은 관리자 권한으로 실행 하십시오."
 
 #~ msgid "Translation"
 #~ msgstr "번역"

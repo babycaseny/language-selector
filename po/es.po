@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-25 15:38+0000\n"
+"POT-Creation-Date: 2008-03-07 09:28+0100\n"
 "PO-Revision-Date: 2006-05-02 18:08+0000\n"
 "Last-Translator: Ricardo Pérez López <ricardo@iesdonana.org>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:186
 msgid "Language"
 msgstr "Idioma"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:178
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 msgid "Support"
 msgstr "Soporte"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:333
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:325
 msgid "Could not install the selected language support"
 msgstr "No se ha podido instalar el soporte para el idioma seleccionado"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:334
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -38,11 +38,11 @@ msgstr ""
 "fallo en https://launchpad.net/bugs/bugs/+package/ sobre el producto "
 "«language-selector»."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:359
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 msgid "Could not install the full language support"
 msgstr "No se ha podido instalar el soporte completo para el idioma"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:360
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:358
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -50,15 +50,15 @@ msgstr ""
 "Normalmente, esto es debido a un fallo en su archivo o gestor de software. "
 "Compruebe las preferencias del software en el menú «Administración»."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 msgid "The list of available languages on the system has been updated."
 msgstr "Se ha actualizado la lista de idiomas disponibles en el sistema."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:472
 msgid "The language support is not installed completely"
 msgstr "El soporte para el idioma no está completamente instalado"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:473
 #, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -67,41 +67,27 @@ msgstr ""
 "No están instaladas todas las traducciones o ayudas a la escritura "
 "disponibles para los idiomas soportados en su sistema."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:466
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 #, fuzzy
 msgid "_Remind Me Later"
 msgstr "_Recordármelo más tarde"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:477
 msgid "_Install"
 msgstr "_Instalar"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:470
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:480
 msgid "Details"
 msgstr "Detalles"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr ""
-"No se permite la ejecución simultánea con otra utilidad de gestión de "
-"software."
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-msgid ""
-"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
-"\"Synaptic\" at first."
-msgstr ""
-"Por favor, cierre primero la otra aplicación (p.ej. «Gestor de "
-"actualizaciones», «aptitude» o «Synaptic»)."
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:526
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
 #: ../LanguageSelector/qt/QtLanguageSelector.py:64
 msgid "Software database is broken"
 msgstr "La base de datos del software está dañada"
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:527
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:520
 #: ../LanguageSelector/qt/QtLanguageSelector.py:67
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
@@ -111,6 +97,16 @@ msgstr ""
 "Es imposible instalar o desinstalar ningún programa. Por favor, use primero "
 "el gestor de paquetes «Synaptic» (o ejecute «sudo apt-get install -f» en una "
 "terminal), para corregir este problema."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
+msgid "Reboot required"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+msgid ""
+"To complete the changes a reboot is required so that the new functionality "
+"is activated."
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:40
 #, fuzzy
@@ -264,14 +260,6 @@ msgstr "Soporte de idiomas"
 msgid "Configure multiple and native language support on your system"
 msgstr "Configurar soporte múltiple y nativo de idiomas para su sistema"
 
-#: ../gnome-language-selector:28
-msgid "You are not root"
-msgstr "Usted no es el superusuario"
-
-#: ../gnome-language-selector:29
-msgid "Please run this software with administrative rights."
-msgstr "Por favor, ejecute este software con privilegios de administración."
-
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
 msgstr "Cancelando"
@@ -300,19 +288,42 @@ msgstr "Listar las configuraciones disponibles de fontconfig-voodoo"
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Mostrar la configuración actual de fontconfig-voodoo"
 
-#: ../fontconfig-voodoo:62
+#: ../fontconfig-voodoo:43
+#, fuzzy
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Mostrar la configuración actual de fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:65
 msgid "Unconfigured"
 msgstr ""
 
-#: ../fontconfig-voodoo:70
+#: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr "Ya existe una configuración. Utilice «--force» para sobreescribirla. "
 
-#: ../fontconfig-voodoo:83
+#: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "No se ha encontrado ninguna configuración de fontconfig-voodoo para la "
 "localización seleccionada"
+
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr ""
+#~ "No se permite la ejecución simultánea con otra utilidad de gestión de "
+#~ "software."
+
+#~ msgid ""
+#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
+#~ "or \"Synaptic\" at first."
+#~ msgstr ""
+#~ "Por favor, cierre primero la otra aplicación (p.ej. «Gestor de "
+#~ "actualizaciones», «aptitude» o «Synaptic»)."
+
+#~ msgid "You are not root"
+#~ msgstr "Usted no es el superusuario"
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "Por favor, ejecute este software con privilegios de administración."
 
 #~ msgid "Translation"
 #~ msgstr "Traducción"

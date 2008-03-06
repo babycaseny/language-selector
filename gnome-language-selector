@@ -20,18 +20,6 @@ if __name__ == "__main__":
         gtk.glade.bindtextdomain("language-selector", "/usr/share/locale")
         gtk.glade.textdomain("language-selector")
 
-	if os.getuid() != 0:
-            d = gtk.MessageDialog(flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_ERROR,
-                                  buttons=gtk.BUTTONS_CLOSE)
-            d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("You are not root"),
-                _("Please run this software with administrative rights.")))
-            d.set_title("")
-            d.run()
-            d.destroy()
-            sys.exit(1)
-
 	parser = OptionParser()
 	parser.add_option("-n", "--no-verify-installed-lang-support",
 			  action="store_false", dest="verify_installed",

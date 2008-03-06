@@ -3,4 +3,5 @@ usr/lib/python*/site-packages/LanguageSelector/*.py
 usr/share/language-selector
 usr/share/locale
 usr/share/pixmaps
-etc/fonts
+../../fontconfig/[0-9][0-9]-*.conf etc/fonts/conf.avail
+

@@ -12,11 +12,12 @@ Bulgarian;2;bg_BG.UTF-8;bg_BG.UTF-8;bg;BG;bg_BG:bg:en_GB:en;kbd=ruscii_8x16(utf8
 # to English instead of showing codes.
 C;0;C;C;en;;
 Catalan;1;ca_ES.UTF-8;ca_ES.UTF-8;ca;ES;ca_ES:ca:en_GB:en;kbd=lat0-sun16(utf8)
-# Special case for Chinese as the two flavours share the same ISO 639 code
-# Both will trigger countrychooser. Each will the the backup for the other
-# one
-Chinese (Simplified);2;zh;zh_CN.UTF-8;zh;CN;zh_CN:zh:en_US:en;
-Chinese (Traditional);2;zh;zh_TW.UTF-8;zh;TW;zh_TW:zh:en_US:en;
+# As we have separate language packs at least for Hong Kong, Chinese should 
+# probably be changed into the following:
+Chinese (China);2;zh;zh_CN.UTF-8;zh;CN;zh_CN:zh:en_US:en;
+Chinese (Hong Kong);2;zh;zh_HK.UTF-8;zh;HK;zh_HK:zh_TW:zh:en_US:en;
+Chinese (Singapore);2;zh;zh_SG.UTF-8;zh;SG;zh_SG:zh_CN:zh:en_US:en;
+Chinese (Taiwan);2;zh;zh_TW.UTF-8;zh;TW;zh_TW:zh:en_US:en;
 Croatian;2;hr_HR.UTF-8;hr_HR.UTF-8;hr;HR;hr_HR:hr:en_GB:en;kbd=lat2-sun16(utf8)
 Czech;2;cs_CZ.UTF-8;cs_CZ.UTF-8;cs;CZ;cs_CZ:cs:en_GB:en;kbd=lat2-sun16(utf8)
 Danish;1;da_DK.UTF-8;da_DK.UTF-8;da;DK;da_DK:da:en_GB:en;kbd=lat0-sun16(utf8)

@@ -16,6 +16,7 @@ import time
 import gettext
 import sys
 import string
+import tempfile
 import re
 
 import FontConfig
@@ -50,11 +51,19 @@ class LanguageSelectorBase(object):
                             return match.group(1)
         return None
 
+    def runAsRoot(self, cmd):
+        " abstract interface for the frontends to run specific commands as root"
+        # compatibilty code for frontends that already run as root
+        if os.getuid() == 0:
+            return subprocess.call(cmd)
+        # 
+        raise AttributeError, "this method needs to be overwriten by the subclass"
+
     def setSystemDefaultLanguage(self, defaultLanguageCode):
         " this updates the system default language "
         conffiles = ["/etc/default/locale", "/etc/environment"]
         for fname in conffiles:
-            out = open(fname+".new","w+")
+            out = tempfile.NamedTemporaryFile()        
             foundLanguage = False  # the LANGUAGE var
             foundLang = False      # the LANG var
             if os.path.exists(fname):
@@ -78,30 +87,18 @@ class LanguageSelectorBase(object):
             if foundLang == False:
                 line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
                 out.write(line)
-            out.close()
-            shutil.move(fname+".new", fname)
+            out.flush()
+            self.runAsRoot(["/bin/cp",out.name, fname])
 
         # now set the fontconfig-voodoo
         fc = FontConfig.FontConfigHack()
         #print defaultLanguageCode
         #print fc.getAvailableConfigs()
         if defaultLanguageCode in fc.getAvailableConfigs():
-            fc.setConfig(defaultLanguageCode)
+            self.runAsRoot(["fontconfig-voodoo", "-f",
+                            "--set=%s" % defaultLanguageCode])
         else:
-            fc.removeConfig()
-
-    def rebootNotification(self):
-        " display a reboot required notification "
-        rb = "/usr/share/update-notifier/notify-reboot-required"
-        if (hasattr(self, "install_result") and 
-            self.install_result == 0 and
-            os.path.exists(rb)):
-            subprocess.call([rb])
-            s = "/var/lib/update-notifier/dpkg-run-stamp"
-            if os.path.exists(s):
-                file(s,"w")
-        return True
-
+            self.runAsRoot(["fontconfig-voodoo","-f","--remove-current"])
 
     def missingTranslationPkgs(self, pkg, translation_pkg):
         """ this will check if the given pkg is installed and if

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-25 15:38+0000\n"
+"POT-Creation-Date: 2008-03-07 09:28+0100\n"
 "PO-Revision-Date: 2006-05-06 05:37+0000\n"
 "Last-Translator: Khandakar Mujahidul Islam <suzan@bengalinux.org>\n"
 "Language-Team: Bengali <gnome-translation@bengalinux.org>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:186
 msgid "Language"
 msgstr "ভাষা"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:178
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 msgid "Support"
 msgstr "সমর্থন"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:333
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:325
 msgid "Could not install the selected language support"
 msgstr "নির্বাচিত ভাষা সমর্থন ইনস্টল করতে পারল না"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:334
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -38,11 +38,11 @@ msgstr ""
 "প্রোডাক্টের বিপরীতে https://launchpad.net/bugs/bugs/+package/ এ একটি প্রোগ্রাম "
 "ত্রুটি রিপোর্ট করুন।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:359
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 msgid "Could not install the full language support"
 msgstr "পূর্ণ ভাষা সমর্থন ইনস্টল করতে পারল না"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:360
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:358
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -50,15 +50,15 @@ msgstr ""
 "এটি সাধারণত আপনার সফটওয়্যার আর্কাইভ অথবা সফটওয়্যার ম্যানেজারের ত্রুটি সম্পর্কিত। মেনু"
 "\"Adminstration\"তে আপনার পছন্দের সফটওয়্যার পরীক্ষা করুন।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 msgid "The list of available languages on the system has been updated."
 msgstr "সিস্টেমে পাওয়া যাচ্ছে এমন ভাষার তালিকা আপডেট করা হয়েছে।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:472
 msgid "The language support is not installed completely"
 msgstr "ভাষা সমর্থন সম্পূর্ণভাবে ইনস্টল করা হল না"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:473
 #, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -67,39 +67,27 @@ msgstr ""
 "সব অনুবাদ অথবা লেখার সাহায্য, যা আপনার সিস্টেমে সমর্থিত ভাষার জন্য পাওয়া যাচ্ছে, "
 "ইনস্টলকৃত নয়।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:466
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 #, fuzzy
 msgid "_Remind Me Later"
 msgstr "আমাকে আবার স্মরণ করিয়ে দিন (_R)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:477
 msgid "_Install"
 msgstr "ইনস্টল করুন (_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:470
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:480
 msgid "Details"
 msgstr "বিস্তারিত"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "মাত্র এক সফটওয়্যার ব্যবস্থাপনা টুল একই সময়ে চালাতে অনুমতি দেওয়া হল"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-msgid ""
-"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
-"\"Synaptic\" at first."
-msgstr ""
-"দয়া করে প্রথমে অন্যান্য অ্যাপলিকেশন উদা.\"পরিবর্তন ম্যানেজার\",\"aptitude\"অথবা"
-"\"Synaptic\"বন্ধ করুন।"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:526
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
 #: ../LanguageSelector/qt/QtLanguageSelector.py:64
 msgid "Software database is broken"
 msgstr "সফটওয়্যার ডাটাবেসটি ভাঙা"
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:527
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:520
 #: ../LanguageSelector/qt/QtLanguageSelector.py:67
 #, fuzzy
 msgid ""
@@ -110,6 +98,16 @@ msgstr ""
 "এইটি ইনস্টল করতে impossible অথবা যেকোন সফটওয়্যার বাদ দিন। দয়া করে প্যাকেজ "
 "ম্যানেজার\"Synaptic\"ব্যবহার করুন অথবা চালান\"sudo apt-getন প্রথমে এই বিষয়টি "
 "মেরামত করতে একটি টার্মিনালে -f\"ইনস্টল করুন।"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
+msgid "Reboot required"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+msgid ""
+"To complete the changes a reboot is required so that the new functionality "
+"is activated."
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:40
 #, fuzzy
@@ -261,16 +259,6 @@ msgstr "ভাষা সমর্থন"
 msgid "Configure multiple and native language support on your system"
 msgstr "আপনার সিস্টেমে একাধিক এবং স্থানীয় ভাষা সমর্থন কনফিগার করুন"
 
-#: ../gnome-language-selector:28
-#, fuzzy
-msgid "You are not root"
-msgstr "আপনি মূল না"
-
-#: ../gnome-language-selector:29
-#, fuzzy
-msgid "Please run this software with administrative rights."
-msgstr "দয়া করে প্রশাসনিক অধিকারের সঙ্গে এই সফটওয়্যারটি চালান।"
-
 #: ../fontconfig-voodoo:18
 #, fuzzy
 msgid "Aborting"
@@ -304,20 +292,43 @@ msgstr "তালিকা পাওয়া যাচ্ছে fontconfig-voodoo 
 msgid "Show the current fontconfig-voodoo config"
 msgstr ""
 
-#: ../fontconfig-voodoo:62
+#: ../fontconfig-voodoo:43
+#, fuzzy
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "তালিকা পাওয়া যাচ্ছে fontconfig-voodoo configs"
+
+#: ../fontconfig-voodoo:65
 msgid "Unconfigured"
 msgstr ""
 
-#: ../fontconfig-voodoo:70
+#: ../fontconfig-voodoo:77
 #, fuzzy
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
 "একটি কনফিগারেশন ইতিমধ্যে অস্তিত্বয়। এইটি ওপর দিয়ে লেখতে ব্যবহার '--force' । "
 
-#: ../fontconfig-voodoo:83
+#: ../fontconfig-voodoo:96
 #, fuzzy
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "কোনও fontconfig-voodoo কনফিগারেশন নির্বাচিত localeএর জন্য খুঁজে পেল না"
+
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr "মাত্র এক সফটওয়্যার ব্যবস্থাপনা টুল একই সময়ে চালাতে অনুমতি দেওয়া হল"
+
+#~ msgid ""
+#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
+#~ "or \"Synaptic\" at first."
+#~ msgstr ""
+#~ "দয়া করে প্রথমে অন্যান্য অ্যাপলিকেশন উদা.\"পরিবর্তন ম্যানেজার\",\"aptitude\"অথবা"
+#~ "\"Synaptic\"বন্ধ করুন।"
+
+#, fuzzy
+#~ msgid "You are not root"
+#~ msgstr "আপনি মূল না"
+
+#, fuzzy
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "দয়া করে প্রশাসনিক অধিকারের সঙ্গে এই সফটওয়্যারটি চালান।"
 
 #~ msgid "Translation"
 #~ msgstr "অনুবাদ"

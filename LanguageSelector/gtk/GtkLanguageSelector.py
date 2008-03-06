@@ -24,6 +24,7 @@ import thread
 import time
 import gettext
 import sys
+import tempfile
 import pwd
 
 from gettext import gettext as _
@@ -104,6 +105,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         combo.add_attribute(cell, 'text', COMBO_LANGUAGE)
         combo.set_model(model)
         self.combo_dirty = False
+        self.imSwitch = ImSwitch()
 
         # apply button
         self.button_apply.set_sensitive(False)
@@ -113,24 +115,37 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
 
         # show it
         self.window_main.show()
-        self.window_main.set_sensitive(False)
-        watch = gtk.gdk.Cursor(gtk.gdk.WATCH)
-        self.window_main.window.set_cursor(watch)
-        while gtk.events_pending():
-            gtk.main_iteration()
-        
+        self.setSensitive(False)
+       
         self.updateLanguageView()
         self.updateSystemDefaultCombo()
-        
+
         # see if something is missing
         if options.verify_installed:
             self.verifyInstalledLangPacks()
-        self.window_main.set_sensitive(True)
-        self.window_main.window.set_cursor(None)
 
-        if (not os.path.exists("/etc/alternatives/xinput-all_ALL") or
-            not os.path.exists("/usr/bin/im-switch")):
+        if not self.imSwitch.available():
             self.checkbutton_enable_input_methods.set_sensitive(False)
+        self.setSensitive(True)
+
+    def setSensitive(self, value):
+        if value:
+            self.window_main.set_sensitive(True)
+            self.window_main.window.set_cursor(None)
+        else:
+            self.window_main.set_sensitive(False)
+            self.window_main.window.set_cursor(gtk.gdk.Cursor(gtk.gdk.WATCH))
+        while gtk.events_pending():
+            gtk.main_iteration()
+
+    def runAsRoot(self, userCmd):
+        " run the given command as root using gksu "
+        cmd = ["gksu", 
+               "--desktop", 
+               "/usr/share/applications/language-selector.desktop", 
+               "--"]
+        ret = subprocess.call(cmd+userCmd)
+        return (ret == 0)
 
     def setupTreeView(self):
         """ do all the treeview setup here """
@@ -226,68 +241,45 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         """ check if the selected langauge has input method support
             and set checkbutton_enable_input_methods accordingly
         """
-        if (os.path.exists("/etc/alternatives/xinput-all_ALL") and
-            os.path.exists("/usr/bin/im-switch")):
-            combo = self.combobox_default_lang
-            model = combo.get_model()
-            if combo.get_active() < 0:
-                return
-            (lang, code) = model[combo.get_active()]
-            # if we have a default in im-switch for this language, we
-            # can't change it from here (unless the im-switch swamp in drained)
-            default = os.path.exists("/etc/alternatives/xinput-%s" % code)
-            self.checkbutton_enable_input_methods.set_active(default)
-            self.checkbutton_enable_input_methods.set_sensitive(not default)
-            if default:
-                return
-            # now check if we have overwritten this - we do this by checking
-            # the setting for all_ALL (im-switch goodness again :/)
-            target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
-            active = (target != "default" and target != "none")
-            self.checkbutton_enable_input_methods.set_active(active)
+        if not self.imSwitch.available():
+            return
+        # get current selected default language
+        combo = self.combobox_default_lang
+        model = combo.get_model()
+        if combo.get_active() < 0:
+            return
+        (lang, code) = model[combo.get_active()]
+        # check if that has a im-switch config
+        active = self.imSwitch.enabledForLocale(code)
+        self._blockSignals = True
+        self.checkbutton_enable_input_methods.set_active(active)
+        self._blockSignals = False
 
-    def __input_method_config_changed(self):
-        """ check if we changed the input method config here         
-        """
-        if (os.path.exists("/etc/alternatives/xinput-all_ALL") and
-            os.path.exists("/usr/bin/im-switch")):
-            combo = self.combobox_default_lang
-            model = combo.get_model()
-            (lang, code) = model[combo.get_active()]
-            # if we have a default in im-switch for this language, we
-            # can't change it from here (unless the im-switch swamp in drained)
-            default = os.path.exists("/etc/alternatives/xinput-%s" % code)
-            if default:
-                return
-            # now check if we have overwritten this - we do this by checking
-            # the setting for all_ALL (im-switch goodness again :/)
-            target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
-            current = (target != "default" and target != "none")
-            new = self.checkbutton_enable_input_methods.get_active()
-            return (new != current)
-
-    def updateInputMethods(self):
-        """ write new input method defaults - currently we only support
-            "im-switch -a" to reset and
-            "im-switch -s scim" to set to scim (that is the default im
-                              for all CJK languages currently)
+    def writeInputMethodConfig(self):
+        """ 
+        write new input method defaults - currently we only support all_ALL
         """
         combo = self.combobox_default_lang
         model = combo.get_model()
         if combo.get_active() < 0:
             return
         (lang, code) = model[combo.get_active()]
-        # if something has changed - act!
-        if self.__input_method_config_changed():
-            if self.checkbutton_enable_input_methods.get_active():
-                os.system("im-switch -z %s -s scim" % code)
+        # check if we need to do something
+        new_value = self.checkbutton_enable_input_methods.get_active()
+        if self.imSwitch.enabledForLocale(code) != new_value:
+            if new_value:
+                self.imSwitch.enable(code)
             else:
-                os.system("im-switch -z %s -a" % code)
+                self.imSwitch.disable(code)
+            self.showRebootRequired()
 
     def on_checkbutton_enable_input_methods_toggled(self, widget):
-        if self.__input_method_config_changed():
-            self.combo_dirty = True
-            self.check_apply_button()
+        if self._blockSignals:
+            return
+        print "on_checkbutton_enable_input_methods_toggled()"
+        active = self.checkbutton_enable_input_methods.get_active()
+        self.combo_dirty = True
+        self.check_apply_button()
 
     def build_commit_lists(self):
         for (lang, langInfo) in self._langlist:
@@ -347,8 +339,14 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             res = False
         return res
 
-    def _commit(self):
-        """ commit helper, builds the commit lists, verifies it """
+    def commitAllChanges(self):
+        """ 
+        commit helper, builds the commit lists, verifies it
+        
+        returns the number of install/removed packages
+        """
+        self.setSensitive(False)
+        # install the new packages (if any)
         (inst_list, rm_list) = self.build_commit_lists()
         if not self.verify_commit_lists(inst_list, rm_list):
             d = gtk.MessageDialog(parent=self.window_main,
@@ -363,56 +361,61 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             d.set_title("")
             d.run()
             d.destroy()
-            return False
+            self.setSensitive(True)
+            return 0
         #print "inst_list: %s " % inst_list
         #print "rm_list: %s " % rm_list
         self.commit(inst_list, rm_list)
-        self.writeSystemDefaultLang()
-        # queue a restart of gdm (if it is runing) to make the new
-        # locales usable
-        gdmscript = "/etc/init.d/gdm"
-        if os.path.exists("/var/run/gdm.pid") and os.path.exists(gdmscript):
-            subprocess.call(["invoke-rc.d","gdm","reload"])
-        return True
+
+        # write input method config
+        self.writeInputMethodConfig()
+
+        # write the system default language
+        if self.writeSystemDefaultLang():
+            # queue a restart of gdm (if it is runing) to make the new
+            # locales usable
+            gdmscript = "/etc/init.d/gdm"
+            if os.path.exists("/var/run/gdm.pid") and os.path.exists(gdmscript):
+                self.runAsRoot(["invoke-rc.d","gdm","reload"])
+        self.setSensitive(True)
+        return len(inst_list)+len(rm_list)
 
     def on_button_ok_clicked(self, widget):
-        self._commit()
+        self.commitAllChanges()
         gtk.main_quit()
 
     def on_button_apply_clicked(self, widget):
-        self._commit()
-        self.updateLanguageView()
-        self.updateInputMethods()
+        if self.commitAllChanges() > 0:
+            self.updateLanguageView()
         self.updateSystemDefaultCombo()
 
     def run_synaptic(self, lock, inst, rm, id):
-        cmd = ["/usr/sbin/synaptic", "--hide-main-window",
-               "--non-interactive", "--set-selections",
+        # FIXME: use self.runAsRoot() here
+        cmd = ["gksu", 
+               "--desktop", "/usr/share/applications/language-selector.desktop", 
+               "--",
+               "/usr/sbin/synaptic", "--hide-main-window",
+               "--non-interactive", 
                "--parent-window-id", "%s" % (id),
                "--finish-str", _("The list of available languages on the "
                                  "system has been updated.")
                ]
-        proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
-        f = proc.stdin
+        f = tempfile.NamedTemporaryFile()        
+        cmd.append("--set-selections-file")
+        cmd.append(f.name)
         for s in inst:
             f.write("%s\tinstall\n" % s)
         for s in rm:
             f.write("%s\tdeinstall\n" % s)
-        f.close()
-        self.install_result = proc.wait()
+        f.flush()
+        subprocess.call(cmd)
         lock.release()
 
     def commit(self, inst, rm):
         # unlock here to make sure that lock/unlock are always run
         # pair-wise (and don't explode on errors)
-        try:
-            apt_pkg.PkgSystemUnLock()
-        except SystemError:
-            print "WARNING: trying to unlock a not-locked PkgSystem"
-            pass
         if len(inst) == 0 and len(rm) == 0:
             return
-        self.window_main.set_sensitive(False)
         lock = thread.allocate_lock()
         lock.acquire()
         t = thread.start_new_thread(self.run_synaptic,(lock,inst,rm, self.window_main.window.xid))
@@ -420,12 +423,19 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             while gtk.events_pending():
                 gtk.main_iteration()
             time.sleep(0.05)
-        # set reboot required marker if needed
-        self.rebootNotification()
-        self.window_main.set_sensitive(True)
-        while gtk.events_pending():
-            gtk.main_iteration()
-                    
+
+    def checkReloginNotification(self):
+        " display a reboot required notification "
+        rb = "/usr/share/update-notifier/notify-reboot-required"
+        if (hasattr(self, "install_result") and 
+            self.install_result == 0 and
+            os.path.exists(rb)):
+            self.runAsRoot([rb])
+            s = "/var/lib/update-notifier/dpkg-run-stamp"
+            if os.path.exists(s):
+                self.runAsRoot(["touch",s])
+        return True
+
     def on_button_cancel_clicked(self, widget):
         #print "button_cancel"
         gtk.main_quit()
@@ -486,30 +496,13 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             res = d.run()
             d.destroy()
             if res == gtk.RESPONSE_YES:
+                self.setSensitive(False)
                 self.commit(missing, [])
                 self.updateLanguageView()
+                self.setSensitive(True)
 
     def updateLanguageView(self):
         #print "updateLanguageView()"
-
-        # get the lock
-        try:
-            apt_pkg.PkgSystemLock()
-        except SystemError:
-            d = gtk.MessageDialog(parent=self.window_main,
-                                  flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_ERROR,
-                                  buttons=gtk.BUTTONS_CLOSE)
-            d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("Only one software management tool is allowed to"
-                  " run at the same time"),
-                _("Please close the other application e.g. \"Update "
-                  "Manager\", \"aptitude\" or \"Synaptic\" at first.")))
-            d.set_title("")
-            res = d.run()
-            d.destroy()
-            sys.exit()
-
         self._langlist.clear()
 
         progress = GtkProgress(self.dialog_progress, self.progressbar_cache,
@@ -548,10 +541,29 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         if combo.get_active() < 0:
             return
         (lang, code) = model[combo.get_active()]
-        #print "lang=%s, code=%s" % (lang, code)
-
-        # make a copy (in case we do anything bad)
+        old_code = self._localeinfo.getDefaultLanguage()
+        # no changes, nothing to do
+        if old_code == code:
+            return False
         self.setSystemDefaultLanguage(code)
+        self.showRebootRequired()
+        return True
+
+    def showRebootRequired(self):
+        " show a message box that a restart is required "
+        d = gtk.MessageDialog(parent=self.window_main,
+                              flags=gtk.DIALOG_MODAL,
+                              type=gtk.MESSAGE_INFO,
+                              buttons=gtk.BUTTONS_CLOSE)
+        d.set_markup("<big><b>%s</b></big>\n\n%s" % (
+                _("Reboot required"),
+                _("To complete the changes a reboot is required so "
+                  "that the new functionality is activated.")
+                ))
+        d.set_title=("")
+        res = d.run()
+        d.destroy()
+        
 
     def updateSystemDefaultCombo(self):
         #print "updateSystemDefault()"

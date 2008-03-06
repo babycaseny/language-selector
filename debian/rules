@@ -64,9 +64,6 @@ install: build
 	# Add here commands to install the package into debian/language-selector.
 	./setup.py install --prefix=$(CURDIR)/debian/tmp/usr
 	(cd po; intltool-update -p -g language-selector)
-	# move CJK_aliases into the right place
-	install -d $(CURDIR)/debian/tmp/etc/fonts/conf.d
-	mv $(CURDIR)/debian/tmp/usr/share/language-selector/fontconfig/CJK_aliases $(CURDIR)/debian/tmp/etc/fonts/conf.d
 
 # Build architecture-independent files here.
 binary-indep: build install
@@ -93,6 +90,16 @@ binary-arch: build install
 #	dh_installinfo
 	dh_installman
 	dh_link
+	dh_link -planguage-selector-common etc/fonts/conf.avail/29-language-selector-ja-jp.conf \
+		etc/fonts/conf.d/29-language-selector-ja-jp.conf
+	dh_link -planguage-selector-common etc/fonts/conf.avail/29-language-selector-ko-kr.conf \
+		etc/fonts/conf.d/29-language-selector-ko-kr.conf
+	dh_link -planguage-selector-common etc/fonts/conf.avail/29-language-selector-zh.conf \
+		etc/fonts/conf.d/29-language-selector-zh.conf
+	dh_link -planguage-selector-common etc/fonts/conf.avail/30-cjk-aliases.conf \
+		etc/fonts/conf.d/30-cjk-aliases.conf
+	dh_link -planguage-selector-common etc/fonts/conf.avail/99-language-selector-zh.conf \
+		etc/fonts/conf.d/99-language-selector-zh.conf
 	dh_strip
 	dh_compress
 	dh_fixperms

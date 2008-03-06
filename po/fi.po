@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-25 15:38+0000\n"
+"POT-Creation-Date: 2008-03-07 09:28+0100\n"
 "PO-Revision-Date: 2006-05-03 08:56+0000\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <ubuntu-fi@lists.ubuntu.com>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Rosetta-Version: 0.1\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:186
 msgid "Language"
 msgstr "Kieli"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:178
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 msgid "Support"
 msgstr "Tuki"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:333
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:325
 msgid "Could not install the selected language support"
 msgstr "Ei voitu asentaa valittua kielitukea"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:334
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -37,11 +37,11 @@ msgstr ""
 "Tämä voi johtua ohjelmavirheestä. Tee asiasta virheraportti osoitteessa "
 "https://launchpad.net/bugs/bugs/+package/ 'language-selector'-tuotteelle."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:359
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 msgid "Could not install the full language support"
 msgstr "Ei voitu asentaa täyttä kielitukea"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:360
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:358
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -49,15 +49,15 @@ msgstr ""
 "Yleensä tämä liittyy virheeseen ohjelmavarastossa tai pakettienhallinnassa. "
 "Tarkista ohjelma-asetukset valikossa \"Hallinta\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 msgid "The list of available languages on the system has been updated."
 msgstr "Luettelo järjestelmän käytettävissä olevista kielistä on päivitetty."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:472
 msgid "The language support is not installed completely"
 msgstr "Kielitukea ei ole asennettu kokonaan"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:473
 #, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -66,39 +66,27 @@ msgstr ""
 "Jotkin täyteen kielitukeen tarvittavat paketit eivät ole asennettuna "
 "järjestelmässäsi. Haluatko asentaa ne nyt?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:466
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 #, fuzzy
 msgid "_Remind Me Later"
 msgstr "_Muistuta minua myöhemmin"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:477
 msgid "_Install"
 msgstr "_Asenna"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:470
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:480
 msgid "Details"
 msgstr "Yksityiskohdat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "Vain yksi pakettienhallintatyökalu voi olla käynnissä samaan aikaan"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-msgid ""
-"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
-"\"Synaptic\" at first."
-msgstr ""
-"Sulje toinen ohjelma ensin, esim. \"Päivitysten hallinta\", \"aptitude\" tai "
-"\"Synaptic\"."
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:526
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
 #: ../LanguageSelector/qt/QtLanguageSelector.py:64
 msgid "Software database is broken"
 msgstr "Ohjelmatietokanta on rikki"
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:527
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:520
 #: ../LanguageSelector/qt/QtLanguageSelector.py:67
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
@@ -108,6 +96,16 @@ msgstr ""
 "Mitään ohjelmia ei voida asentaa tai poistaa. Korjaa ongelma käyttämällä "
 "Synaptic-pakettienhallintaa tai komentoa \"sudo apt-get install -f\" "
 "päätteessä."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
+msgid "Reboot required"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+msgid ""
+"To complete the changes a reboot is required so that the new functionality "
+"is activated."
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:40
 #, fuzzy
@@ -259,14 +257,6 @@ msgstr "Kieliasetukset"
 msgid "Configure multiple and native language support on your system"
 msgstr "Aseta järjestelmäsi oletuskieli ja muut tuetut kielet"
 
-#: ../gnome-language-selector:28
-msgid "You are not root"
-msgstr "Et ole pääkäyttäjä"
-
-#: ../gnome-language-selector:29
-msgid "Please run this software with administrative rights."
-msgstr "Käynnistä tämä ohjelma hallintaoikeuksilla"
-
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
 msgstr "Peruutetaan"
@@ -295,16 +285,21 @@ msgstr "Listaa kaikki saatavilla olevat fonttiasetus-voodoo asetukset"
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Näytä tämänhetkiset \"fontconfig-voodoo\"-asetukset"
 
-#: ../fontconfig-voodoo:62
+#: ../fontconfig-voodoo:43
+#, fuzzy
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Näytä tämänhetkiset \"fontconfig-voodoo\"-asetukset"
+
+#: ../fontconfig-voodoo:65
 msgid "Unconfigured"
 msgstr ""
 
-#: ../fontconfig-voodoo:70
+#: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
 "Asetustiedosto on jo olemassa. Käytä '--force' valintaa ylikirjoitukseen. "
 
-#: ../fontconfig-voodoo:83
+#: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Ei fonttiasetus-voodoo asetuksia löydetty valitulle alueelle"
 
@@ -314,6 +309,22 @@ msgstr "Ei fonttiasetus-voodoo asetuksia löydetty valitulle alueelle"
 #~ msgstr ""
 #~ "Kaikkia järjestelmässäsi tuetuille kielille olevia käännöksiä tai "
 #~ "kirjoituksen aputyökaluja ei ole asennettu."
+
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr "Vain yksi pakettienhallintatyökalu voi olla käynnissä samaan aikaan"
+
+#~ msgid ""
+#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
+#~ "or \"Synaptic\" at first."
+#~ msgstr ""
+#~ "Sulje toinen ohjelma ensin, esim. \"Päivitysten hallinta\", \"aptitude\" "
+#~ "tai \"Synaptic\"."
+
+#~ msgid "You are not root"
+#~ msgstr "Et ole pääkäyttäjä"
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "Käynnistä tämä ohjelma hallintaoikeuksilla"
 
 #~ msgid "Translation"
 #~ msgstr "Käännös"

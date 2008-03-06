@@ -6,12 +6,64 @@
 from LocaleInfo import LocaleInfo
 import os.path
 import sys
+import subprocess
 
 class ImSwitch(object):
-    confdir = "/etc/X11/xinit/xinput.d/"
-    
+    global_confdir = "/etc/X11/xinit/xinput.d/"
+    local_confdir = os.path.expanduser("~/.xinput.d/")
+    bin = "/usr/bin/im-switch"
+    default_method = "scim-bridge"
+
     def __init__(self):
         pass
+
+    def available(self):
+        " return True if im-switch is available at all "
+        return os.path.exists(self.bin)
+    
+    def enabledForLocale(self, locale):
+        " check if we have a config for this specifc locale (e.g. ja_JP) "
+        for dir in (self.local_confdir, self.global_confdir):
+            for name in (locale, "all_ALL"):
+                target = os.path.join(dir,name)
+                #print "checking im-switch config: ", target, os.path.basename(os.path.realpath(target))
+                if os.path.exists(target):
+                    im_name = os.path.basename(os.path.realpath(target))
+                    if im_name in ("none", "default"):
+                        #print "points to none or default"
+                        return False
+                    #print "points to real config"
+                    return True
+        return False
+
+    def enable(self, locale):
+        " enable input methods for locale"
+        # try auto first
+        subprocess.call(["im-switch","-z",locale,"-a"])
+        # if no config is set, force the default
+        if not self.enabledForLocale(locale):
+            subprocess.call(["im-switch","-z",locale,
+                             "-s", self.default_method])
+
+    def disable(self, locale):
+        " disable input method for locale "
+        # remove local config first
+        if os.path.exists(os.path.join(self.local_confdir, locale)):
+            os.unlink(os.path.join(self.local_confdir, locale))
+        # see if we still have a input method and if so, force "none"
+        if self.enabledForLocale(locale):
+            subprocess.call(["im-switch","-z",locale,"-s","none"])
+
+    def getInputMethodForLocale(self, locale):
+        for dir in (self.local_confdir, self.global_confdir):
+            for name in (locale, "all_ALL"):
+                target = os.path.join(dir,name)
+                if os.path.exists(target):
+                    return os.path.basename(os.path.realpath(target))
+        return None
+        
+    
+    # -------------------------- stuff below is NOT USED
     def getAvailableInputMethods(self):
         """ get the input methods available via im-switch """
         inputMethods = []
@@ -50,6 +102,9 @@ class ImSwitch(object):
         
 if __name__ == "__main__":
     im = ImSwitch()
+    print im.getInputMethodForLocale("ja_JP")
+    print im.enabledForLocale("all_ALL")
+    sys.exit(1)
     print "available input methods: "
     print im.getAvailableInputMethods()
     print "current method: ",

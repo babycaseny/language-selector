@@ -11,33 +11,48 @@
 # configuration we got from the CJK community
 
 import glob
+import string
 import os.path
 
 from LocaleInfo import LocaleInfo
 
-class ExceptionNotSymlink(Exception):
+class ExceptionMultpleConfigurations(Exception):
+    " error when multiple languages are symlinked "
     pass
 class ExceptionUnconfigured(Exception):
+    " error if no configuration is set "
     pass
 class ExceptionNoConfigForLocale(Exception):
+    " error if there is no config for the given locale "
     pass
 
 class FontConfigHack(object):
     """ abstract the fontconfig hack """
     def __init__(self,
                  datadir="/usr/share/language-selector/",
-                 globalConfDir="/etc/fonts/"):
+                 globalConfDir="/etc/fonts"):
         self.datadir="%s/fontconfig" % datadir
         self.globalConfDir=globalConfDir
-        self.configFile = "%s/language-selector.conf" % self.globalConfDir
         self.li = LocaleInfo("%s/data/languagelist" % datadir)
+    def _getLocaleCountryFromFileName(self, name):
+        """ 
+        internal helper to extracr from our fontconfig filenames
+        of the form 69-language-selector-zh-tw.conf the locale
+        and country
+
+        returns string of the form locale_COUTNRY (e.g. zh_TW)
+        """
+        fname = os.path.splitext(os.path.basename(name))[0]
+        (head, ll, cc) = string.rsplit(fname, "-", 2)
+        return "%s_%s" % (ll, cc.upper())
     def getAvailableConfigs(self):
         """ get the configurations we have as a list of languages
             (returns a list of ['zh_CN','zh_TW'])
         """
         res = []
-        for name in glob.glob("%s/*" % self.datadir):
-            res.append(os.path.basename(name))
+        pattern = "%s/conf.avail/69-language-selector-*" % self.globalConfDir
+        for name in glob.glob(pattern):
+            res.append(self._getLocaleCountryFromFileName(name))
         return res
     def getCurrentConfig(self):
         """ returns the current language configuration as a string (e.g. zh_CN)
@@ -46,24 +61,23 @@ class FontConfigHack(object):
              ExceptionNotSymlink exception
             if the file dosn't exists raise a
              ExceptionUnconfigured exception
-            if it's unconfigured return the string 'none'
         """
-        f = self.configFile
-        if not os.path.exists(f):
+        pattern = "%s/conf.d/69-language-selector-*" % self.globalConfDir
+        current_config = glob.glob(pattern)
+        if len(current_config) == 0:
             raise ExceptionUnconfigured()
-        if not os.path.islink(f):
-            raise ExceptionNotSymlink()
-        realpath = os.path.realpath(f)
-        return os.path.basename(realpath)
+        if len(current_config) > 1:
+            raise ExceptionMultipleConfigurations()
+        return self._getLocaleCountryFromFileName(current_config[0])
 
     def removeConfig(self):
         """ removes the current fontconfig-voodoo configuration
             and do some sanity checking
         """
-        if os.path.exists(self.configFile) and not os.path.islink(self.configFile):
-            raise ExceptionNotSymlink()
-        if os.path.exists(self.configFile):
-            os.unlink(self.configFile)
+        pattern = "%s/conf.d/69-language-selector-*" % self.globalConfDir
+        for f in glob.glob(pattern):
+            if os.path.exists(f):
+                os.unlink(f)
 
     def setConfig(self, locale):
         """ set the configuration for 'locale'. if locale can't be
@@ -74,9 +88,13 @@ class FontConfigHack(object):
             raise ExceptionNoConfigForLocale()
         # remove old symlink
         self.removeConfig()
-        # do the actual symlink
-        os.symlink(os.path.normpath("%s/%s"% (self.datadir, locale)),
-                   self.configFile)
+        # do the symlink, link from /etc/fonts/conf.avail in /etc/fonts/conf.d
+        (ll,cc) = locale.split('_')
+        fname = "69-language-selector-%s-%s.conf" % (ll, cc.lower())
+        from_link = os.path.join(self.globalConfDir,"conf.avail",fname)
+        to_link = os.path.join(self.globalConfDir, "conf.d", fname)
+        os.symlink(from_link, to_link)
+        return True
         
     def setConfigBasedOnLocale(self):
         """ set the configuration based on the locale in LocaleInfo. If
@@ -89,22 +107,31 @@ class FontConfigHack(object):
         
 
 if __name__ == "__main__":
-    datadir = "/usr/share/language-selector/data"
-
-    li = LocaleInfo("%s/languagelist" % datadir)
-
     fc = FontConfigHack()
+    # available
+    print "available: ", fc.getAvailableConfigs()
 
-    # clean up
-    os.unlink(fc.configFile)
-    
-    print fc.getAvailableConfigs()
+    # current 
     try:
         config = fc.getCurrentConfig()
-    except ExceptionNotSymlink:
-        print "not symlink"
     except ExceptionUnconfigured:
         print "unconfigured"
 
-    print fc.setConfigBasedOnLocale()
-    print fc.getCurrentConfig()
+    # set config
+    print "set config: ", fc.setConfig("ja_JP")
+    print "current: ", fc.getCurrentConfig()
+
+    # auto mode
+    try:
+        print "run auto mode: ", fc.setConfigBasedOnLocale()
+    except ExceptionNoConfigForLocale:
+        print "no config for this locale"
+
+    # remove
+    print "removeConfig()"
+    fc.removeConfig()
+    try:
+        config = fc.getCurrentConfig()
+        print "ERROR: have config after calling removeConfig()"
+    except ExceptionUnconfigured:
+        print "unconfigured (as expected)"

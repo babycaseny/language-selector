@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-25 15:38+0000\n"
+"POT-Creation-Date: 2008-03-07 09:28+0100\n"
 "PO-Revision-Date: 2006-05-13 23:26+0000\n"
 "Last-Translator: Nikola Kasabov <nikola.kasabov@gmail.com>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:186
 msgid "Language"
 msgstr "Език"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:178
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 msgid "Support"
 msgstr "Поддръжка"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:333
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:325
 msgid "Could not install the selected language support"
 msgstr "Не може да инсталира избраната езикова поддръжка"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:334
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -38,11 +38,11 @@ msgstr ""
 "грешка на https://launchpad.net/bugs/bugs/+package/ относно продукта "
 "'language-selector'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:359
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 msgid "Could not install the full language support"
 msgstr "Не може да инсталира пълната езикова поддръжка"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:360
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:358
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
@@ -51,15 +51,15 @@ msgstr ""
 "мениджър. Проверете вашите софтуерни предпочитания в меню \"Администрация на "
 "системата\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 msgid "The list of available languages on the system has been updated."
 msgstr "Списъка с наличните езици на системата беше обновен."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:472
 msgid "The language support is not installed completely"
 msgstr "Езиковата поддръжка не е инсталирана напълно"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:463
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:473
 #, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -68,39 +68,27 @@ msgstr ""
 "Не всички преводи или писмени средства, които са налични за поддържаните "
 "езици на вашата система са инсталирани."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:466
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:476
 #, fuzzy
 msgid "_Remind Me Later"
 msgstr "_Напомними отново"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:467
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:477
 msgid "_Install"
 msgstr "_Инсталиране"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:470
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:480
 msgid "Details"
 msgstr "Детайли"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
-msgid "Only one software management tool is allowed to run at the same time"
-msgstr "Само един софтуерен мениджър може да е стартиран по едно и също време"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-msgid ""
-"Please close the other application e.g. \"Update Manager\", \"aptitude\" or "
-"\"Synaptic\" at first."
-msgstr ""
-"Моля първо затворете другите приложения напр. \"Update Manager\", \"aptitude"
-"\" или \"Synaptic\"."
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:526
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
 #: ../LanguageSelector/qt/QtLanguageSelector.py:64
 msgid "Software database is broken"
 msgstr "Софтуерната база данни е счупена"
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:527
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:520
 #: ../LanguageSelector/qt/QtLanguageSelector.py:67
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
@@ -110,6 +98,16 @@ msgstr ""
 "Невъзможно е да се инсталира или премахва какъвто и да било софтуер. Моля "
 "първо използвайте пакетния мениджър \"Synaptic\" или стартирайте \"sudo apt-"
 "get install -f\" в терминал за да поправите проблема."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
+msgid "Reboot required"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+msgid ""
+"To complete the changes a reboot is required so that the new functionality "
+"is activated."
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:40
 #, fuzzy
@@ -262,14 +260,6 @@ msgid "Configure multiple and native language support on your system"
 msgstr ""
 "Настройка на многоезична и вградена езикова поддръжка на вашата система"
 
-#: ../gnome-language-selector:28
-msgid "You are not root"
-msgstr "Вие не сте root"
-
-#: ../gnome-language-selector:29
-msgid "Please run this software with administrative rights."
-msgstr "Моля стартирайте този софтуер с администраторски права."
-
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
 msgstr "Прекратяване"
@@ -299,18 +289,40 @@ msgstr "Списък с наличните fontconfig-voodoo конфигура�
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Показва текущата fontconfig-voodoo конфигурация"
 
-#: ../fontconfig-voodoo:62
+#: ../fontconfig-voodoo:43
+#, fuzzy
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Показва текущата fontconfig-voodoo конфигурация"
+
+#: ../fontconfig-voodoo:65
 msgid "Unconfigured"
 msgstr ""
 
-#: ../fontconfig-voodoo:70
+#: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
 "Вече съществува конфигурация. Използвайте '--force' за да я препокриете. "
 
-#: ../fontconfig-voodoo:83
+#: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Няма намерена fontconfig-voodoo конфигурация за избрания локал"
+
+#~ msgid "Only one software management tool is allowed to run at the same time"
+#~ msgstr ""
+#~ "Само един софтуерен мениджър може да е стартиран по едно и също време"
+
+#~ msgid ""
+#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
+#~ "or \"Synaptic\" at first."
+#~ msgstr ""
+#~ "Моля първо затворете другите приложения напр. \"Update Manager\", "
+#~ "\"aptitude\" или \"Synaptic\"."
+
+#~ msgid "You are not root"
+#~ msgstr "Вие не сте root"
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "Моля стартирайте този софтуер с администраторски права."
 
 #~ msgid "Translation"
 #~ msgstr "Превод"
