@@ -140,7 +140,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
 
     def runAsRoot(self, userCmd):
         " run the given command as root using gksu "
-        cmd = ["gksu", 
+        cmd = ["/usr/bin/gksu", 
                "--desktop", 
                "/usr/share/applications/language-selector.desktop", 
                "--"]

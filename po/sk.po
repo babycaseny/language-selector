@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-07 09:28+0100\n"
+"POT-Creation-Date: 2008-03-12 13:13+0100\n"
 "PO-Revision-Date: 2006-05-05 22:43+0000\n"
 "Last-Translator: Jozef Kacer <quickparser@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -80,14 +80,14 @@ msgid "Details"
 msgstr "Podrobnosti"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
-#: ../LanguageSelector/qt/QtLanguageSelector.py:64
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
 msgid "Software database is broken"
 msgstr ""
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:520
-#: ../LanguageSelector/qt/QtLanguageSelector.py:67
+#: ../LanguageSelector/qt/QtLanguageSelector.py:72
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -104,108 +104,108 @@ msgid ""
 "is activated."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:40
+#: ../LanguageSelector/qt/QtLanguageSelector.py:45
 #, fuzzy
 msgid "Uninstall"
 msgstr "_Nainštalovať"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:41
+#: ../LanguageSelector/qt/QtLanguageSelector.py:46
 msgid "Select language to uninstall:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:48
+#: ../LanguageSelector/qt/QtLanguageSelector.py:53
 #, fuzzy
 msgid "Language Selector"
 msgstr "Podpora jazykov"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:77
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #, fuzzy
 msgid "Default system language:"
 msgstr "Východzí jazyk"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:78
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
 msgid "Set System Language"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:79
+#: ../LanguageSelector/qt/QtLanguageSelector.py:84
 #: ../data/LanguageSelector.glade.h:9
 msgid "Enable support to enter complex characters"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
-#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/qt/QtLanguageSelector.py:88
 #, fuzzy
 msgid "Cancel"
 msgstr "Francúzsko"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid "Select language to install:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:87
 #, fuzzy
 msgid "Install"
 msgstr "_Nainštalovať"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+#: ../LanguageSelector/qt/QtLanguageSelector.py:128
 msgid "Already installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:127
+#: ../LanguageSelector/qt/QtLanguageSelector.py:132
 msgid "Partially Installed"
 msgstr ""
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:131
+#: ../LanguageSelector/qt/QtLanguageSelector.py:136
 msgid "Not installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:177
-#: ../LanguageSelector/qt/QtLanguageSelector.py:179
+#: ../LanguageSelector/qt/QtLanguageSelector.py:182
+#: ../LanguageSelector/qt/QtLanguageSelector.py:184
 #, fuzzy
 msgid "Language Set"
 msgstr "Jazyk"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:177
+#: ../LanguageSelector/qt/QtLanguageSelector.py:182
 #, python-format
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:179
+#: ../LanguageSelector/qt/QtLanguageSelector.py:184
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:260
+#: ../LanguageSelector/qt/QtLanguageSelector.py:265
 #, fuzzy
 msgid "Language Installed"
 msgstr "Jazyk"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:260
+#: ../LanguageSelector/qt/QtLanguageSelector.py:265
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:262
+#: ../LanguageSelector/qt/QtLanguageSelector.py:267
 msgid "Language Uninstalled"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:262
+#: ../LanguageSelector/qt/QtLanguageSelector.py:267
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:264
+#: ../LanguageSelector/qt/QtLanguageSelector.py:269
 #, fuzzy
 msgid "Language Not Set"
 msgstr "Podpora jazykov"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:264
+#: ../LanguageSelector/qt/QtLanguageSelector.py:269
 msgid "Failed to set system language."
 msgstr ""
 

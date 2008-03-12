@@ -13,6 +13,11 @@ from LanguageSelector.LanguageSelector import *
 from QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
 from gettext import gettext as i18n
 
+def utf8(str):
+  if isinstance(str, unicode):
+      return str
+  return unicode(str, 'UTF-8')
+
 def _(string):
     return unicode(i18n(string), "utf-8")
 
@@ -92,7 +97,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
             defaultLangName = self._localeinfo.translate(defaultLangCode)
         locales = []
         for locale in self._localeinfo.generated_locales():
-            name = self._localeinfo.translate(locale)
+            name = utf8(self._localeinfo.translate(locale))
             locales.append(name)
             self._localeinfo.localeToCodeMap[name] = locale
         locales.sort()

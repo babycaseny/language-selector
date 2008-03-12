@@ -1,3 +1,23 @@
+language-selector (0.3.1) hardy; urgency=low
+
+  [ Michale Vogt ]
+  * LanguageSelector/gtk/GtkLanguageSelector.py
+    - use absolute path when calling gksu (LP: #194166)
+  * data/language-selector.desktop.in:
+    - remove X-KDE-SubstituteUID
+  * fix icon inconsistency (LP: #164316)
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    - fix charackter encoding in UI (LP: #186157)
+  * data/Language-selector.glade:
+    - make the main wndow type "Normal" (LP: #148912)
+
+  [ Arne Goetje ]
+  * debian/rules: remove dh_link for locale specific fontconfig files
+  * LanguageSelector/FontConfig.py: link all locale specific fontconfig files
+    only when the locale is called. (LP: #199557)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 12 Mar 2008 13:06:16 +0100
+
 language-selector (0.3.0) hardy; urgency=low
 
   [ Michael Vogt ]

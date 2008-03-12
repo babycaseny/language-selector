@@ -90,16 +90,8 @@ binary-arch: build install
 #	dh_installinfo
 	dh_installman
 	dh_link
-	dh_link -planguage-selector-common etc/fonts/conf.avail/29-language-selector-ja-jp.conf \
-		etc/fonts/conf.d/29-language-selector-ja-jp.conf
-	dh_link -planguage-selector-common etc/fonts/conf.avail/29-language-selector-ko-kr.conf \
-		etc/fonts/conf.d/29-language-selector-ko-kr.conf
-	dh_link -planguage-selector-common etc/fonts/conf.avail/29-language-selector-zh.conf \
-		etc/fonts/conf.d/29-language-selector-zh.conf
 	dh_link -planguage-selector-common etc/fonts/conf.avail/30-cjk-aliases.conf \
 		etc/fonts/conf.d/30-cjk-aliases.conf
-	dh_link -planguage-selector-common etc/fonts/conf.avail/99-language-selector-zh.conf \
-		etc/fonts/conf.d/99-language-selector-zh.conf
 	dh_strip
 	dh_compress
 	dh_fixperms

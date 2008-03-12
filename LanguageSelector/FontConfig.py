@@ -74,7 +74,7 @@ class FontConfigHack(object):
         """ removes the current fontconfig-voodoo configuration
             and do some sanity checking
         """
-        pattern = "%s/conf.d/69-language-selector-*" % self.globalConfDir
+        pattern = "%s/conf.d/*-language-selector-*" % self.globalConfDir
         for f in glob.glob(pattern):
             if os.path.exists(f):
                 os.unlink(f)
@@ -88,12 +88,17 @@ class FontConfigHack(object):
             raise ExceptionNoConfigForLocale()
         # remove old symlink
         self.removeConfig()
-        # do the symlink, link from /etc/fonts/conf.avail in /etc/fonts/conf.d
         (ll,cc) = locale.split('_')
-        fname = "69-language-selector-%s-%s.conf" % (ll, cc.lower())
-        from_link = os.path.join(self.globalConfDir,"conf.avail",fname)
-        to_link = os.path.join(self.globalConfDir, "conf.d", fname)
-        os.symlink(from_link, to_link)
+        # do the symlinks, link from /etc/fonts/conf.avail in /etc/fonts/conf.d
+        basedir = "%s/conf.avail/" % self.globalConfDir
+        for pattern in ["*-language-selector-%s-%s.conf" % (ll, cc.lower()),
+                        "*-language-selector-%s.conf" % ll,
+                       ]:
+            for f in glob.glob(os.path.join(basedir,pattern)):
+                fname = os.path.basename(f)
+                from_link = os.path.join(self.globalConfDir,"conf.avail",fname)
+                to_link = os.path.join(self.globalConfDir, "conf.d", fname)
+                os.symlink(from_link, to_link)
         return True
         
     def setConfigBasedOnLocale(self):
@@ -118,7 +123,7 @@ if __name__ == "__main__":
         print "unconfigured"
 
     # set config
-    print "set config: ", fc.setConfig("ja_JP")
+    print "set config: ", fc.setConfig("zh_CN")
     print "current: ", fc.getCurrentConfig()
 
     # auto mode
