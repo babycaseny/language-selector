@@ -66,7 +66,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         try:
             self.openCache(apt.progress.OpProgress())
         except ExceptionPkgCacheBroken:
-            s = _("Software database is broken"),
+            s = _("Software database is broken")
             # FIXME: mention adept here instead of synaptic, but the
             #        change happend during string freeze
             t = _("It is impossible to install or remove any software. "
@@ -121,7 +121,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
         for langName in languages:
             lang = self._localeinfo.listviewStrToLangInfoMap[langName]
-            elm = QListWidgetItem(lang.language, self.ui.listViewLanguages)
+            elm = QListWidgetItem(utf8(lang.language), self.ui.listViewLanguages)
             if lang.langPackInstalled and lang.langSupportInstalled:
                 if self.mode == "install":
                     elm.setFlags(Qt.ItemIsDropEnabled)  #not sure how to unset all flags, but this disables the item
@@ -233,7 +233,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         items = self.ui.listViewLanguages.selectedItems()
         if len(items) == 1:
             elm = items[0]
-            li = self._localeinfo.listviewStrToLangInfoMap["%s"%elm.text()]
+            li = self._localeinfo.listviewStrToLangInfoMap["%s"%elm.text().toUtf8()]
             if self.mode == "uninstall":
                 self._cache.tryRemoveLanguage(li.languageCode)
             else:

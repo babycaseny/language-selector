@@ -1,3 +1,15 @@
+language-selector (0.3.2) hardy; urgency=low
+
+  [ Michael Vogt ]
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    - fix another charackter encoding problem (LP: #203335)
+    - fix warning dialog if we have broken packages
+  
+  [ Arne Goetje ]
+  * fixes in the Japanese font configuration (LP: #202731)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 18 Mar 2008 11:07:17 +0100
+
 language-selector (0.3.1) hardy; urgency=low
 
   [ Michale Vogt ]
