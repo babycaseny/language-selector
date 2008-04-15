@@ -12,7 +12,10 @@ update-po: language-selector.pot $(patsubst %.po,%.mo,$(wildcard *.po))
 	intltool-update -r $${f%.po}  -g language-selector ; \
 
 language-selector.pot:
+	intltool-extract --type=gettext/rfc822deb  ../data/incomplete-language-support-gnome.note.in
+	intltool-extract --type=gettext/rfc822deb  ../data/incomplete-language-support-qt.note.in
 	intltool-update -p -g language-selector
+	
 
 %.mo : %.po
 	mkdir -p mo/$(subst .po,,$<)/LC_MESSAGES/ 

@@ -1,3 +1,4 @@
 usr/bin/qt-language-selector
 usr/lib/python*/site-packages/LanguageSelector/qt
 usr/share/applications/qt-language-selector.desktop
+../../data/incomplete-language-support-qt.note usr/share/language-support

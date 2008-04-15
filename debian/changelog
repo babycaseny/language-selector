@@ -1,3 +1,15 @@
+language-selector (0.3.3) hardy; urgency=low
+
+  [ Arne Goetje ]
+  * added .note files for update-notifier do be displayed in 
+    case the language-support is not complete
+  
+  [ Michael Vogt ]
+  * make the .note files translateable
+  * make the build more robust
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 15 Apr 2008 18:23:41 +0200
+
 language-selector (0.3.2) hardy; urgency=low
 
   [ Michael Vogt ]

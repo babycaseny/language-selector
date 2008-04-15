@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-18 11:50+0100\n"
+"POT-Creation-Date: 2008-04-15 19:11+0200\n"
 "PO-Revision-Date: 2006-05-03 08:56+0000\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <ubuntu-fi@lists.ubuntu.com>\n"
@@ -256,6 +256,24 @@ msgstr "Kieliasetukset"
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
 msgstr "Aseta järjestelmäsi oletuskieli ja muut tuetut kielet"
+
+#. Name
+#: ../data/incomplete-language-support-gnome.note.in:1
+#: ../data/incomplete-language-support-qt.note.in:1
+#, fuzzy
+msgid "Incomplete Language Support"
+msgstr "Kieliasetukset"
+
+#. Description
+#: ../data/incomplete-language-support-gnome.note.in:6
+#: ../data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
+msgstr ""
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"

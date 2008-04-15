@@ -3,6 +3,7 @@
 from distutils.core import setup
 import glob
 import os
+import sys
 
 GETTEXT_NAME="language-selector"
 I18NFILES = []
@@ -12,9 +13,10 @@ for filepath in glob.glob("po/mo/*/LC_MESSAGES/*.mo"):
     I18NFILES.append((targetpath, [filepath]))
 
 # HACK: make sure that the mo files are generated and up-to-date
-os.system("cd data; make")
-os.system("cd LanguageSelector/qt; make")
-os.system("cd po; make update-po")
+if sys.argv[1] == "build":
+    assert(os.system("cd data; make") == 0)
+    assert(os.system("cd LanguageSelector/qt; make") == 0)
+    assert(os.system("cd po; make update-po") == 0)
     
 setup(name='language-selector',
       version='0.1',

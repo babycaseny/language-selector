@@ -52,7 +52,7 @@ clean:
 	find . -name "*.o" -exec rm {} \;
 	find . -name "*.pyc" -exec rm {} \;
 	find . -name "*.desktop" -exec rm {} \;
-
+	find . -name "*.note" -exec rm {} \;
 	dh_clean 
 
 install: build

@@ -10,5 +10,7 @@ LanguageSelector/qt/QtLanguageSelectorGUI.py
 data/LanguageSelector.glade
 data/language-selector.desktop.in
 data/qt-language-selector.desktop.in
+data/incomplete-language-support-gnome.note.in.h
+data/incomplete-language-support-qt.note.in.h
 gnome-language-selector
 fontconfig-voodoo
