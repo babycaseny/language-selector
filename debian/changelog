@@ -1,3 +1,11 @@
+language-selector (0.3.4) hardy; urgency=low
+
+  * LanguageSelector/LangCache.py:
+    - drop special case handling that is now handled via 
+      language-support-translations-$lang (LP: #218588)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 17 Apr 2008 14:39:39 +0200
+
 language-selector (0.3.3) hardy; urgency=low
 
   [ Arne Goetje ]

@@ -35,10 +35,10 @@ class LanguageSelectorPkgCache(apt.Cache):
     pkg_translations = [
         ("kdelibs-data", "language-pack-kde-"),
         ("libgnome2-common", "language-pack-gnome-"),
-        ("firefox", "mozilla-firefox-locale-"),
-        ("mozilla-thunderbird", "mozilla-thunderbird-local-"),
-        ("openoffice.org", "openoffice.org-l10n-"),
-        ("openoffice.org", "openoffice.org-help-"),
+        ("firefox-2", "mozilla-firefox-locale-"),
+        ("thunderbird", "language-support-translations-"),
+        ("openoffice.org", "language-support-translations-"),
+        ("openoffice.org", "language-support-translations-"),
         ("libsword5c2a", "sword-language-pack-")
     ]
 

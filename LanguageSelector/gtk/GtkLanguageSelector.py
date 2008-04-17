@@ -486,7 +486,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             buf = textview.get_buffer()
             pkgs = ""
             for pkg in missing:
-                pkgs += "%s (%s)\n" % (pkg, apt.SizeToStr(self._cache[pkg].packageSize))
+                pkgs += "%s\n" % pkg
             buf.set_text(pkgs)
             buf.place_cursor(buf.get_start_iter())
             expander.add(scroll)
