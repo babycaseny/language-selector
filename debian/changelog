@@ -1,3 +1,10 @@
+language-selector (0.3.5) intrepid; urgency=low
+
+  * Port to pyKDE app
+  * Fix upgrade hook for KDE frontend
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 22 Aug 2008 22:49:35 +0100
+
 language-selector (0.3.4) hardy; urgency=low
 
   * LanguageSelector/LangCache.py:

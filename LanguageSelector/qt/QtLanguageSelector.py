@@ -6,8 +6,11 @@
 #
 
 import sys
-from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+from PyQt4.QtCore import *
+
+from PyKDE4.kdecore import *
+from PyKDE4.kdeui import *
 
 from LanguageSelector.LanguageSelector import *
 from QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
@@ -271,13 +274,27 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
 if __name__ == "__main__":
 
-    app = QApplication(sys.argv)
+    appName	= "language-selector"
+    catalog	= ""
+    programName = ki18n ("Language Selector")
+    version	= "0.3.4"
+    description	= ki18n ("Language Selector")
+    license	= KAboutData.License_GPL
+    copyright	= ki18n ("(c) 2008 Canonical Ltd")
+    text	= ki18n ("none")
+    homePage	= "https://launchpad.net/language-selector"
+    bugEmail	= ""
+    
+    aboutData	= KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
+
+    KCmdLineArgs.init (sys.argv, aboutData)
+
+    app = KApplication(sys.argv)
     
     lc = QtLanguageSelector(app, "/usr/share/language-selector/", sys.argv[2])
     app.setMainWidget(lc)
-    
     lc.show()
 
 
-    app.exec_loop()
+    app.exec_()
     

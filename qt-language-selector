@@ -4,6 +4,9 @@ import sys
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 
+from PyKDE4.kdecore import *
+from PyKDE4.kdeui import *
+
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.qt.QtLanguageSelector import QtLanguageSelector
 from gettext import gettext as i18n
@@ -16,17 +19,39 @@ if __name__ == "__main__":
     gettext.bindtextdomain("language-selector", "/usr/share/locale")
     gettext.textdomain("language-selector")
 
-    app = QApplication(sys.argv)
+
+    appName	= "language-selector"
+    catalog	= ""
+    programName = ki18n ("Language Selector")
+    version	= "0.3.4"
+    description	= ki18n ("Language Selector")
+    license	= KAboutData.License_GPL
+    copyright	= ki18n ("(c) 2008 Canonical Ltd")
+    text	= ki18n ("none")
+    homePage	= "https://launchpad.net/language-selector"
+    bugEmail	= ""
+    
+    aboutData	= KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
+
+    options = KCmdLineOptions()
+    options.add("mode <install|uninstall|select>", ki18n("Run in install/uninstall or select mode"))
+
+    KCmdLineArgs.init(sys.argv, aboutData)
+    KCmdLineArgs.addCmdLineOptions(options)
+
+    app = KApplication()
+
+    args = KCmdLineArgs.parsedArgs()
 
     if os.getuid() != 0:
         QMessageBox.critical(None, _("Not Root User"), _("Please run this software with administrative rights."))
         sys.exit(1)
 
-    if len(sys.argv) < 3 or not (sys.argv[1] == "--mode") or not (sys.argv[2] == "install" or sys.argv[2] == "uninstall" or sys.argv[2] == "select"):
+    if not args.isSet("mode"):
         print "Usage: qt-language-selector --mode [install|uninstall|select]"
         sys.exit(1)
     
-    lc = QtLanguageSelector(app, "/usr/share/language-selector/", sys.argv[2])
+    lc = QtLanguageSelector(app, "/usr/share/language-selector/", args.getOption("mode"))
     
     lc.show()
 
