@@ -8,9 +8,8 @@
 import sys
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
-
-from PyKDE4.kdecore import *
-from PyKDE4.kdeui import *
+from PyKDE4.kdecore import ki18n, KAboutData, KCmdLineArgs, KCmdLineOptions
+from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox
 
 from LanguageSelector.LanguageSelector import *
 from QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
@@ -36,11 +35,11 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
         self.parentApp = app
 
-        self.setWindowIcon(QIcon("/usr/share/icons/crystalsvg/32x32/apps/locale.png"))
-        self.ui.pushButtonSetSystemLanguage.setIcon(QIcon("/usr/share/icons/crystalsvg/22x22/actions/button_ok.png"))
-        self.ui.pushButtonOk.setIcon(QIcon("/usr/share/icons/crystalsvg/22x22/actions/button_ok.png"))
-        self.ui.pushButtonCancel.setIcon(QIcon("/usr/share/icons/crystalsvg/22x22/actions/button_cancel.png"))
-        self.ui.pushButtonCancel_2.setIcon(QIcon("/usr/share/icons/crystalsvg/22x22/actions/button_cancel.png"))
+        self.setWindowIcon(KIcon("preferences-desktop-locale"))
+        self.ui.pushButtonSetSystemLanguage.setIcon(KIcon("dialog-ok"))
+        self.ui.pushButtonOk.setIcon(KIcon("dialog-ok"))
+        self.ui.pushButtonCancel.setIcon(KIcon("dialog-cancel"))
+        self.ui.pushButtonCancel_2.setIcon(KIcon("dialog-cancel"))
 
         self.mode = mode
         self.init()
@@ -70,13 +69,11 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
             self.openCache(apt.progress.OpProgress())
         except ExceptionPkgCacheBroken:
             s = _("Software database is broken")
-            # FIXME: mention adept here instead of synaptic, but the
-            #        change happend during string freeze
             t = _("It is impossible to install or remove any software. "
-                  "Please use the package manager \"Synaptic\" or run "
+                  "Please use the package manager \"Adept\" or run "
                   "\"sudo apt-get install -f\" in a terminal to fix "
                   "this issue at first.")
-            QMessageBox.warning(self, s, t)
+            KMessageBox.Error(self, t, s)
         self.updateLanguagesList()
         self.updateSystemDefaultListbox()
 
@@ -171,10 +168,11 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
     def run_pkg_manager(self, lock, to_inst, to_rm):
         self.returncode = 0
         if len(to_inst) > 0:
-            self.returncode = subprocess.call(["adept_batch","install"]+to_inst)
+            print str(["install-package","--install"]+to_inst)
+            self.returncode = subprocess.call(["install-package","--install"]+to_inst)
         # then remove
         if len(to_rm) > 0:
-            self.returncode = subprocess.call(["adept_batch","remove"]+to_rm)
+            self.returncode = subprocess.call(["install-package","--uninstall"]+to_rm)
         lock.release()
 
     def onSystemPushButtonOk(self):
@@ -182,9 +180,9 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         self.setSystemDefaultLanguage(code)
         scimOn = self.updateInputMethods()
         if scimOn:
-            QMessageBox.information(self, _("Language Set"), _("Default system Language now set to %s.  Complex character input will be enabled when you next log in.") % lang)
+            KMessageBox.information(self, _("Default system Language now set to %s.  Complex character input will be enabled when you next log in." % lang), _("Language Set"))
         else:
-            QMessageBox.information(self, _("Language Set"), _("Default system Language now set to %s.") % lang)
+            KMessageBox.information(self, _("Default system Language now set to %s." % lang), _("Language Set"))
         self.close()
 
     def __input_method_config_changed(self):
@@ -265,11 +263,11 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
         #self.run_pkg_manager(to_inst, to_rm)
         if self.returncode == 0 and self.mode == "install":
-            QMessageBox.information( self, _("Language Installed"), _("Translations and support have now been installed for %s.  Select them from the Add Language button." % str(items[0].text())) )
+            KMessageBox.information( self, _("Translations and support have now been installed for %s.  Select them from the Add Language button." % str(items[0].text())), _("Language Installed") )
         elif self.returncode == 0 and self.mode == "uninstall":
-            QMessageBox.information( self, _("Language Uninstalled"), _("Translations and support have now been uninstalled for %s." % str(items[0].text())) )
+            KMessageBox.information( self, _("Translations and support have now been uninstalled for %s." % str(items[0].text())), _("Language Uninstalled") )
         else:
-            QMessageBox.warning(self, _("Language Not Set"), _("Failed to set system language."))
+            KMessageBox.sorry(self, _("Failed to set system language."), _("Language Not Set"))
         self.close()
 
 if __name__ == "__main__":
@@ -286,15 +284,42 @@ if __name__ == "__main__":
     bugEmail	= ""
     
     aboutData	= KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
+    
+    aboutData.addAuthor(ki18n("Rob Bean"), ki18n("PyQt4 to PyKDE4 port"))
+
+    options = KCmdLineOptions()
+    options.add("!mode ", ki18n("REQUIRED: install, uninstall or select must follow"),  "select")
+    options.add("+[install]", ki18n("install a language"))
+    options.add("+[uninstall]", ki18n("uninstall a language"))
+    options.add("+[select]", ki18n("select a language"))
 
     KCmdLineArgs.init (sys.argv, aboutData)
+    KCmdLineArgs.addCmdLineOptions(options)
 
-    app = KApplication(sys.argv)
+    gettext.bindtextdomain("language-selector", "/usr/share/locale")
+    gettext.textdomain("language-selector")
+
+    app = KApplication()
     
-    lc = QtLanguageSelector(app, "/usr/share/language-selector/", sys.argv[2])
-    app.setMainWidget(lc)
+    args = KCmdLineArgs.parsedArgs()
+    
+    if args.isSet("mode"):
+        whattodo = args.getOption("mode")
+        if whattodo in ["install", "uninstall", "select"]:
+            pass
+        else:
+            print whattodo, "is not a valid argument"
+            args.usage()
+    else:
+        print "Please review the usage."
+        args.usage()
+        
+    if os.getuid() != 0:
+        KMessageBox.sorry(None, _("Please run this software with administrative rights."),  _("Not Root User"))
+        sys.exit(1)
+
+    lc = QtLanguageSelector(app, "/usr/share/language-selector/", whattodo)
+    
     lc.show()
 
-
     app.exec_()
-    

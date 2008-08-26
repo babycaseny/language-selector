@@ -1,3 +1,9 @@
+language-selector (0.3.6) intrepid; urgency=low
+
+  * Use install-package instead of old adept_batch
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 26 Aug 2008 18:51:34 +0100
+
 language-selector (0.3.5) intrepid; urgency=low
 
   * Port to pyKDE app

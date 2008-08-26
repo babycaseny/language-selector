@@ -1,8 +1,9 @@
 #!/usr/bin/python
 
 import sys
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+
+from PyKDE4.kdecore import ki18n, KAboutData, KCmdLineArgs, KCmdLineOptions
+from PyKDE4.kdeui import KApplication, KMessageBox
 
 from PyKDE4.kdecore import *
 from PyKDE4.kdeui import *
@@ -16,10 +17,6 @@ def _(string):
 
 if __name__ == "__main__":
 
-    gettext.bindtextdomain("language-selector", "/usr/share/locale")
-    gettext.textdomain("language-selector")
-
-
     appName	= "language-selector"
     catalog	= ""
     programName = ki18n ("Language Selector")
@@ -32,26 +29,41 @@ if __name__ == "__main__":
     bugEmail	= ""
     
     aboutData	= KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
+    
+    aboutData.addAuthor(ki18n("Rob Bean"), ki18n("PyQt4 to PyKDE4 port"))
 
     options = KCmdLineOptions()
-    options.add("mode <install|uninstall|select>", ki18n("Run in install/uninstall or select mode"))
+    options.add("!mode ", ki18n("REQUIRED: install, uninstall or select must follow"),  "select")
+    options.add("+[install]", ki18n("install a language"))
+    options.add("+[uninstall]", ki18n("uninstall a language"))
+    options.add("+[select]", ki18n("select a language"))
 
-    KCmdLineArgs.init(sys.argv, aboutData)
+    KCmdLineArgs.init (sys.argv, aboutData)
     KCmdLineArgs.addCmdLineOptions(options)
 
+    gettext.bindtextdomain("language-selector", "/usr/share/locale")
+    gettext.textdomain("language-selector")
+
     app = KApplication()
-
-    args = KCmdLineArgs.parsedArgs()
-
-    if os.getuid() != 0:
-        QMessageBox.critical(None, _("Not Root User"), _("Please run this software with administrative rights."))
-        sys.exit(1)
-
-    if not args.isSet("mode"):
-        print "Usage: qt-language-selector --mode [install|uninstall|select]"
-        sys.exit(1)
     
-    lc = QtLanguageSelector(app, "/usr/share/language-selector/", args.getOption("mode"))
+    args = KCmdLineArgs.parsedArgs()
+    
+    if args.isSet("mode"):
+        whattodo = args.getOption("mode")
+        if whattodo in ["install", "uninstall", "select"]:
+            pass
+        else:
+            print whattodo, "is not a valid argument"
+            args.usage()
+    else:
+        print "Please review the usage."
+        args.usage()
+        
+    if os.getuid() != 0:
+        KMessageBox.sorry(None, _("Please run this software with administrative rights."),  _("Not Root User"))
+        sys.exit(1)
+
+    lc = QtLanguageSelector(app, "/usr/share/language-selector/", whattodo)
     
     lc.show()
 
