@@ -8,19 +8,54 @@ from xml.etree.ElementTree import ElementTree
 
 from gettext import gettext as _
 
+class LanguagePackageStatus(object):
+    def __init__(self, pkg_template):
+        self.pkgname_template = pkg_template
+        self.available = False
+        self.installed = False
+        self.doChange = False
+
+
 # the language-support information
 class LanguageInformation(object):
     def __init__(self):
         self.language = None
         self.languageCode = None
-        # langPack stuff
-        self.hasLangPack = False
-        self.langPackInstalled = False
-        self.installLangPack = False
-        # langSupport stuff
-        self.hasLangSupport = False
-        self.langSupportInstalled =False
-        self.installLangSupport = False 
+        # langPack/support status 
+        self.languagePkgList = {}
+        self.languagePkgList["languagePack"] = LanguagePackageStatus("language-pack-%s")
+        #self.languagePkgList["languageSupport"] = LanguagePackageStatus("language-support-%s")
+        self.languagePkgList["languageSupportWritingAids"] = LanguagePackageStatus("language-support-writing-%s")
+        self.languagePkgList["languageSupportTranslations"] = LanguagePackageStatus("language-support-translations-%s")
+        self.languagePkgList["languageSupportInputMethods"] = LanguagePackageStatus("language-support-input-%s")
+        self.languagePkgList["languageSupportFonts"] = LanguagePackageStatus("language-support-fonts-%s")
+        self.languagePkgList["languageSupportExtra"] = LanguagePackageStatus("language-support-extra-%s")
+        
+    @property
+    def inconsistent(self):
+        " returns True if only parts of the language support packages are installed "
+        if (not self.notInstalled and not self.fullInstalled) : return True
+        return False
+    @property
+    def fullInstalled(self):
+        " return True if all of the available language support packages are installed "
+        for pkg in self.languagePkgList.values() :
+            if not pkg.available : continue
+            if not ((pkg.installed and not pkg.doChange) or (not pkg.installed and pkg.doChange)) : return False
+        return True
+    @property
+    def notInstalled(self):
+        " return True if none of the available language support packages are installed "
+        for pkg in self.languagePkgList.values() :
+            if not pkg.available : continue
+            if not ((not pkg.installed and not pkg.doChange) or (pkg.installed and pkg.doChange)) : return False
+        return True
+    @property
+    def changes(self):
+        " returns true if anything in the state of the language packs/support changes "
+        for pkg in self.languagePkgList.values() :
+            if (pkg.doChange) : return True
+        return False
     def __str__(self):
         return "%s (%s)" % (self.language, self.languageCode)
 
@@ -41,7 +76,6 @@ class LanguageSelectorPkgCache(apt.Cache):
         ("openoffice.org", "language-support-translations-"),
         ("libsword5c2a", "sword-language-pack-")
     ]
-
 
     def __init__(self, localeinfo, progress):
         apt.Cache.__init__(self, progress)
@@ -69,7 +103,11 @@ class LanguageSelectorPkgCache(apt.Cache):
     def _getPkgList(self, languageCode):
         """ helper that returns the list of needed pkgs for the language """
         # normal langpack+support first
-        pkg_list = ["language-support-%s"%languageCode,
+        pkg_list = ["language-support-input-%s"%languageCode,\
+                    "language-support-writing-%s"%languageCode,\
+                    "language-support-fonts-%s"%languageCode,\
+                    "language-support-translations-%s"%languageCode,\
+                    "language-support-extra-%s"%languageCode,\
                       "language-pack-%s"%languageCode]
         # see what additional pkgs are needed
         for (pkg, translation) in self.pkg_translations:
@@ -77,11 +115,30 @@ class LanguageSelectorPkgCache(apt.Cache):
                 pkg_list.append(translation+languageCode)
         return pkg_list
         
+    def tryChangeDetails(self, li):
+        " change the status of the support details (fonts, input methods) "
+        #print li
+        for item in li.languagePkgList.values():
+            if item.doChange:
+                try:
+                    if item.installed:
+                        self[item.pkgname_template % li.languageCode].markDelete()
+                    else:
+                        self[item.pkgname_template % li.languageCode].markInstall()
+                except SystemError:
+                    pass
+        return
+
     def tryInstallLanguage(self, languageCode):
         """ mark the given language for install """
         to_inst = []
         for name in self._getPkgList(languageCode):
             if self.has_key(name):
+                try:
+                    self[name].markInstall()
+                    to_inst.append(name)
+                except SystemError:
+                    pass
                 try:
                     self[name].markInstall()
                     to_inst.append(name)
@@ -107,13 +164,12 @@ class LanguageSelectorPkgCache(apt.Cache):
             li = LanguageInformation()
             li.languageCode = code
             li.language = lang
-            li.hasLangPack = self.has_key("language-pack-%s" % code)
-            li.hasLangSupport = self.has_key("language-support-%s" % code)
-            if li.hasLangPack:
-                li.langPackInstalled = li.installLangPack = self["language-pack-%s" % code].isInstalled
-            if  li.hasLangSupport:
-                li.langSupportInstalled = li.installLangSupport = self["language-support-%s" % code].isInstalled
-            if li.hasLangPack or li.hasLangSupport:
+            for langpkg_status in li.languagePkgList.values() :
+                pkgname = langpkg_status.pkgname_template % code
+                langpkg_status.available = self.has_key(pkgname)
+                if langpkg_status.available:
+                    langpkg_status.installed = self[pkgname].isInstalled
+            if len(filter(lambda s: s.available, li.languagePkgList.values())) > 0:
                 res.append(li)
         return res
 

@@ -14,6 +14,7 @@ update-po: language-selector.pot $(patsubst %.po,%.mo,$(wildcard *.po))
 language-selector.pot:
 	intltool-extract --type=gettext/rfc822deb  ../data/incomplete-language-support-gnome.note.in
 	intltool-extract --type=gettext/rfc822deb  ../data/incomplete-language-support-qt.note.in
+	intltool-extract --type=gettext/rfc822deb  ../data/restart_session_required.note.in
 	intltool-update -p -g language-selector
 	
 

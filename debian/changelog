@@ -1,3 +1,14 @@
+language-selector (0.3.7) intrepid; urgency=low
+
+  * use update-notifier to display "restart session required" message
+  * session restart is enough to apply "complex character support" (LP: #200197)
+  * add a "details" section to gnome-language-selector to let users install
+    only a subset of available laguage-support packages for a given language.
+    (LP: #184028)
+  * rewording in gnome-language-selector UI (LP: #236584)
+
+ -- Arne Goetje <arne@ubuntu.com>  Wed, 27 Aug 2008 21:46:27 +0800
+
 language-selector (0.3.6) intrepid; urgency=low
 
   * Use install-package instead of old adept_batch

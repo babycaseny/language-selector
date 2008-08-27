@@ -10,15 +10,15 @@
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_NONE</property>
   <property name="modal">False</property>
-  <property name="default_width">520</property>
-  <property name="default_height">420</property>
+  <property name="default_width">550</property>
+  <property name="default_height">400</property>
   <property name="resizable">True</property>
   <property name="destroy_with_parent">False</property>
-  <property name="icon">config-language</property>
+  <property name="icon">language-selector.png</property>
   <property name="decorated">True</property>
   <property name="skip_taskbar_hint">False</property>
   <property name="skip_pager_hint">False</property>
-  <property name="type_hint">GDK_WINDOW_TYPE_HINT_NORMAL</property>
+  <property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
   <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
   <property name="focus_on_map">True</property>
   <property name="urgency_hint">False</property>
@@ -131,12 +131,218 @@
 				  <property name="fixed_height_mode">False</property>
 				  <property name="hover_selection">False</property>
 				  <property name="hover_expand">False</property>
+				  <signal name="cursor_changed" handler="on_treeview_languages_cursor_changed" last_modification_time="Wed, 27 Feb 2008 20:52:38 GMT"/>
 				</widget>
 			      </child>
 			    </widget>
 			    <packing>
 			      <property name="padding">0</property>
 			      <property name="expand">True</property>
+			      <property name="fill">True</property>
+			    </packing>
+			  </child>
+
+			  <child>
+			    <widget class="GtkExpander" id="expander1">
+			      <property name="visible">True</property>
+			      <property name="can_focus">True</property>
+			      <property name="expanded">True</property>
+			      <property name="spacing">6</property>
+
+			      <child>
+				<widget class="GtkVBox" id="vbox11">
+				  <property name="visible">True</property>
+				  <property name="homogeneous">False</property>
+				  <property name="spacing">0</property>
+
+				  <child>
+				    <widget class="GtkTable" id="table1">
+				      <property name="visible">True</property>
+				      <property name="n_rows">3</property>
+				      <property name="n_columns">2</property>
+				      <property name="homogeneous">False</property>
+				      <property name="row_spacing">0</property>
+				      <property name="column_spacing">18</property>
+
+				      <child>
+					<widget class="GtkCheckButton" id="checkbutton_input_methods">
+					  <property name="visible">True</property>
+					  <property name="tooltip" translatable="yes">Input Methods for languages with complex scripts. Scim modules or other relevant software which helps with typing complex characters.</property>
+					  <property name="can_focus">True</property>
+					  <property name="label" translatable="yes">Input methods</property>
+					  <property name="use_underline">True</property>
+					  <property name="relief">GTK_RELIEF_NORMAL</property>
+					  <property name="focus_on_click">True</property>
+					  <property name="active">False</property>
+					  <property name="inconsistent">False</property>
+					  <property name="draw_indicator">True</property>
+					  <signal name="clicked" handler="on_checkbutton_input_methods_clicked" last_modification_time="Wed, 27 Feb 2008 22:42:31 GMT"/>
+					</widget>
+					<packing>
+					  <property name="left_attach">0</property>
+					  <property name="right_attach">1</property>
+					  <property name="top_attach">0</property>
+					  <property name="bottom_attach">1</property>
+					  <property name="x_options">fill</property>
+					  <property name="y_options"></property>
+					</packing>
+				      </child>
+
+				      <child>
+					<widget class="GtkCheckButton" id="checkbutton_writing_aids">
+					  <property name="visible">True</property>
+					  <property name="tooltip" translatable="yes">Word lists, dictionaries, thesauruses, etc. which can help typing by highlighting, correcting or suggesting words.</property>
+					  <property name="can_focus">True</property>
+					  <property name="label" translatable="yes">Writing aids</property>
+					  <property name="use_underline">True</property>
+					  <property name="relief">GTK_RELIEF_NORMAL</property>
+					  <property name="focus_on_click">True</property>
+					  <property name="active">False</property>
+					  <property name="inconsistent">False</property>
+					  <property name="draw_indicator">True</property>
+					  <signal name="clicked" handler="on_checkbutton_writing_aids_clicked" last_modification_time="Wed, 27 Feb 2008 22:42:49 GMT"/>
+					</widget>
+					<packing>
+					  <property name="left_attach">1</property>
+					  <property name="right_attach">2</property>
+					  <property name="top_attach">0</property>
+					  <property name="bottom_attach">1</property>
+					  <property name="x_options">fill</property>
+					  <property name="y_options"></property>
+					</packing>
+				      </child>
+
+				      <child>
+					<widget class="GtkCheckButton" id="checkbutton_basic_translations">
+					  <property name="visible">True</property>
+					  <property name="tooltip" translatable="yes">Translations for your desktop. Also known as language-pack.</property>
+					  <property name="can_focus">True</property>
+					  <property name="label" translatable="yes">Basic Translations</property>
+					  <property name="use_underline">True</property>
+					  <property name="relief">GTK_RELIEF_NORMAL</property>
+					  <property name="focus_on_click">True</property>
+					  <property name="active">False</property>
+					  <property name="inconsistent">False</property>
+					  <property name="draw_indicator">True</property>
+					  <signal name="clicked" handler="on_checkbutton_basic_translations_clicked" last_modification_time="Thu, 28 Feb 2008 10:11:04 GMT"/>
+					</widget>
+					<packing>
+					  <property name="left_attach">0</property>
+					  <property name="right_attach">1</property>
+					  <property name="top_attach">1</property>
+					  <property name="bottom_attach">2</property>
+					  <property name="x_options">fill</property>
+					  <property name="y_options"></property>
+					</packing>
+				      </child>
+
+				      <child>
+					<widget class="GtkCheckButton" id="checkbutton_fonts">
+					  <property name="visible">True</property>
+					  <property name="tooltip" translatable="yes">Additional fonts for this language which might be of general interest, e.g. decorative fonts for printing documents.</property>
+					  <property name="can_focus">True</property>
+					  <property name="label" translatable="yes">Additional Fonts</property>
+					  <property name="use_underline">True</property>
+					  <property name="relief">GTK_RELIEF_NORMAL</property>
+					  <property name="focus_on_click">True</property>
+					  <property name="active">False</property>
+					  <property name="inconsistent">False</property>
+					  <property name="draw_indicator">True</property>
+					  <signal name="clicked" handler="on_checkbutton_fonts_clicked" last_modification_time="Wed, 27 Feb 2008 22:42:53 GMT"/>
+					</widget>
+					<packing>
+					  <property name="left_attach">1</property>
+					  <property name="right_attach">2</property>
+					  <property name="top_attach">1</property>
+					  <property name="bottom_attach">2</property>
+					  <property name="x_options">fill</property>
+					  <property name="y_options"></property>
+					</packing>
+				      </child>
+
+				      <child>
+					<widget class="GtkCheckButton" id="checkbutton_extra">
+					  <property name="visible">True</property>
+					  <property name="tooltip" translatable="yes">Additional software which might be of general interest for users using this language.</property>
+					  <property name="can_focus">True</property>
+					  <property name="label" translatable="yes">Extra software</property>
+					  <property name="use_underline">True</property>
+					  <property name="relief">GTK_RELIEF_NORMAL</property>
+					  <property name="focus_on_click">True</property>
+					  <property name="active">False</property>
+					  <property name="inconsistent">False</property>
+					  <property name="draw_indicator">True</property>
+					  <signal name="clicked" handler="on_checkbutton_extra_clicked" last_modification_time="Wed, 27 Feb 2008 22:42:44 GMT"/>
+					</widget>
+					<packing>
+					  <property name="left_attach">1</property>
+					  <property name="right_attach">2</property>
+					  <property name="top_attach">2</property>
+					  <property name="bottom_attach">3</property>
+					  <property name="x_options">fill</property>
+					  <property name="y_options"></property>
+					</packing>
+				      </child>
+
+				      <child>
+					<widget class="GtkCheckButton" id="checkbutton_extra_translations">
+					  <property name="visible">True</property>
+					  <property name="tooltip" translatable="yes">OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files.</property>
+					  <property name="can_focus">True</property>
+					  <property name="label" translatable="yes">Extra Translations</property>
+					  <property name="use_underline">True</property>
+					  <property name="relief">GTK_RELIEF_NORMAL</property>
+					  <property name="focus_on_click">True</property>
+					  <property name="active">False</property>
+					  <property name="inconsistent">False</property>
+					  <property name="draw_indicator">True</property>
+					  <signal name="clicked" handler="on_checkbutton_extra_translations_clicked" last_modification_time="Thu, 28 Feb 2008 10:11:19 GMT"/>
+					</widget>
+					<packing>
+					  <property name="left_attach">0</property>
+					  <property name="right_attach">1</property>
+					  <property name="top_attach">2</property>
+					  <property name="bottom_attach">3</property>
+					  <property name="x_options">fill</property>
+					  <property name="y_options"></property>
+					</packing>
+				      </child>
+				    </widget>
+				    <packing>
+				      <property name="padding">0</property>
+				      <property name="expand">True</property>
+				      <property name="fill">True</property>
+				    </packing>
+				  </child>
+				</widget>
+			      </child>
+
+			      <child>
+				<widget class="GtkLabel" id="label9">
+				  <property name="visible">True</property>
+				  <property name="label" translatable="yes">Details</property>
+				  <property name="use_underline">False</property>
+				  <property name="use_markup">False</property>
+				  <property name="justify">GTK_JUSTIFY_LEFT</property>
+				  <property name="wrap">False</property>
+				  <property name="selectable">False</property>
+				  <property name="xalign">0.5</property>
+				  <property name="yalign">0.5</property>
+				  <property name="xpad">0</property>
+				  <property name="ypad">0</property>
+				  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+				  <property name="width_chars">-1</property>
+				  <property name="single_line_mode">False</property>
+				  <property name="angle">0</property>
+				</widget>
+				<packing>
+				  <property name="type">label_item</property>
+				</packing>
+			      </child>
+			    </widget>
+			    <packing>
+			      <property name="padding">0</property>
+			      <property name="expand">False</property>
 			      <property name="fill">True</property>
 			    </packing>
 			  </child>
@@ -502,7 +708,7 @@
 	  <property name="visible">True</property>
 	  <property name="label" translatable="yes">&lt;big&gt;&lt;b&gt;Checking available language support&lt;/b&gt;&lt;/big&gt;
 
-The support for each language can differ in the amount of available translations or writing aids.</property>
+The availablity of translations or writing aids can differ between languages.</property>
 	  <property name="use_underline">False</property>
 	  <property name="use_markup">True</property>
 	  <property name="justify">GTK_JUSTIFY_LEFT</property>

@@ -153,30 +153,32 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             langInfo = model.get_value(iter, LIST_LANG_INFO)
 
             # check for active and inconsitent 
-            inconsistent = xor(langInfo.langPackInstalled, langInfo.langSupportInstalled) 
+            inconsistent = langInfo.inconsistent
             #if inconsistent:
             #    print "%s is inconsistent" % langInfo.language
 
             # do we want to install or remove it?
-            toInstall = (langInfo.installLangPack and \
-                         langInfo.installLangSupport)
-            toRemove = (not langInfo.installLangPack and \
-                        not langInfo.installLangSupport)
+            #toInstall = (langInfo.languagePkgList["languagePack"].doChange and \
+            #            langInfo.languagePkgList["languageSupport"].doChange)
+            #toRemove = (not langInfo.languagePkgList["languagePack"].doChange and \
+            #            not langInfo.languagePkgList["languagePack"].doChange)
             # if it is going to be installed or removed, it can't
             # be inconsitent
-            if inconsistent and (toInstall or toRemove):
-                inconsistent = False
+            #if inconsistent and (toInstall or toRemove):
+            #    inconsistent = False
                 
-            cell.set_property("active", toInstall)
+            #cell.set_property("active", toInstall)
+            cell.set_property("active", langInfo.fullInstalled)
             cell.set_property("inconsistent", inconsistent)
             
         def lang_view_func(cell_layout, renderer, model, iter):
             langInfo = model.get_value(iter, LIST_LANG_INFO)
-            inconsistent = xor(langInfo.langPackInstalled, langInfo.langSupportInstalled)
-            current = langInfo.langPackInstalled or langInfo.langSupportInstalled
-            toInstall = langInfo.installLangPack and langInfo.installLangSupport
-            toRemove =  not langInfo.installLangPack and not langInfo.installLangSupport
-            if (not inconsistent and current != toInstall) or (inconsistent and (toInstall or toRemove)):
+            inconsistent = langInfo.inconsistent
+            #current = langInfo.languagePkgList["languagePack"].installed or langInfo.languagePkgList["languageSupport"].installed
+            #toInstall = langInfo.languagePkgList["languagePack"].doChange and langInfo.languagePkgList["languageSupport"].doChange
+            #toRemove =  not langInfo.languagePkgList["languagePack"].doChange and not langInfo.languagePkgList["languageSupport"].doChange
+            #if (not inconsistent and current != toInstall) or (inconsistent and (toInstall or toRemove)):
+            if (langInfo.changes) :
                 markup = "<b>%s</b>" % langInfo.language
             else:
                 markup = "%s" % langInfo.language
@@ -199,34 +201,124 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         self._langlist = gtk.ListStore(str, gobject.TYPE_PYOBJECT)
         self.treeview_languages.set_model(self._langlist)
 
+    def _get_langinfo_on_cursor(self):
+        (path, column) = self.treeview_languages.get_cursor ()
+        if not path:
+            return None
+        iter = self._langlist.get_iter(path)
+        langInfo = self._langlist.get_value(iter, LIST_LANG_INFO)
+        return langInfo
 
+    # details checkboxes
+    def on_checkbutton_fonts_clicked(self, button):
+        if self.block_toggle: return
+        langInfo = self._get_langinfo_on_cursor()
+        langInfo.languagePkgList["languageSupportFonts"].doChange = not langInfo.languagePkgList["languageSupportFonts"].doChange
+        self.check_apply_button()
+        self.treeview_languages.queue_draw()
+        #self.debug_pkg_status()
+    def on_checkbutton_input_methods_clicked(self, button):
+        if self.block_toggle: return
+        langInfo = self._get_langinfo_on_cursor()
+        langInfo.languagePkgList["languageSupportInputMethods"].doChange = not langInfo.languagePkgList["languageSupportInputMethods"].doChange
+        self.check_apply_button()
+        self.treeview_languages.queue_draw()
+        #self.debug_pkg_status()
+    def on_checkbutton_writing_aids_clicked(self, button):
+        if self.block_toggle: return
+        langInfo = self._get_langinfo_on_cursor()
+        langInfo.languagePkgList["languageSupportWritingAids"].doChange = not langInfo.languagePkgList["languageSupportWritingAids"].doChange
+        self.check_apply_button()
+        self.treeview_languages.queue_draw()
+        #self.debug_pkg_status()
+    def on_checkbutton_basic_translations_clicked(self, button):
+        if self.block_toggle: return
+        langInfo = self._get_langinfo_on_cursor()
+        langInfo.languagePkgList["languagePack"].doChange = not langInfo.languagePkgList["languagePack"].doChange
+        self.check_apply_button()
+        self.treeview_languages.queue_draw()
+        #self.debug_pkg_status()
+    def on_checkbutton_extra_translations_clicked(self, button):
+        if self.block_toggle: return
+        langInfo = self._get_langinfo_on_cursor()
+        langInfo.languagePkgList["languageSupportTranslations"].doChange = not langInfo.languagePkgList["languageSupportTranslations"].doChange
+        self.check_apply_button()
+        self.treeview_languages.queue_draw()
+        #self.debug_pkg_status()
+    def on_checkbutton_extra_clicked(self, button):
+        if self.block_toggle: return
+        langInfo = self._get_langinfo_on_cursor()
+        langInfo.languagePkgList["languageSupportExtra"].doChange = not langInfo.languagePkgList["languageSupportExtra"].doChange
+        self.check_apply_button()
+        self.treeview_languages.queue_draw()
+        #self.debug_pkg_status()
+
+    # the global toggle
     def on_toggled(self, renderer, path_string):
         """ called when on install toggle """
         iter = self._langlist.get_iter_from_string(path_string)
         langInfo = self._langlist.get_value(iter, LIST_LANG_INFO)
 
         # special handling for inconsistent state
-        inconsistent = xor(langInfo.langPackInstalled, langInfo.langSupportInstalled)
+        #inconsistent = False  #xor(langInfo.languagePkgList["languagePack"].installed, langInfo.languagePkgList["languageSupport"].installed)
         # check if we already set remove 
-        toInstall = langInfo.installLangPack and langInfo.installLangSupport
-        toRemove = not langInfo.installLangPack and not langInfo.installLangSupport
+        #toInstall = langInfo.languagePkgList["languagePack"].doChange and langInfo.languagePkgList["languageSupport"].doChange
+        #toRemove = not langInfo.languagePkgList["languagePack"].doChange and not langInfo.languagePkgList["languageSupport"].doChange
         # if it is inconistent and wasn't touched yet, set it for install
         # from then on it will just work (tm)
-        if inconsistent and not (toInstall or toRemove):
-            langInfo.installLangPack = True
-            langInfo.installLangSupport = True
-        else:
-            langInfo.installLangPack = not langInfo.installLangPack
-            langInfo.installLangSupport = not langInfo.installLangSupport
+        if langInfo.inconsistent :
+            for pkg in langInfo.languagePkgList.values() :
+                if (pkg.available and not pkg.installed) : 
+                    pkg.doChange = True
+        elif langInfo.fullInstalled :
+            for pkg in langInfo.languagePkgList.values() :
+                if (pkg.available) :
+                    if (not pkg.installed and pkg.doChange) :
+                        pkg.doChange = False
+                    elif (pkg.installed and not pkg.doChange) :
+                        pkg.doChange = True
+        else :
+            for pkg in langInfo.languagePkgList.values() :
+                if (pkg.available) :
+                    if (pkg.installed and pkg.doChange) :
+                        pkg.doChange = False
+                    elif (not pkg.installed and not pkg.doChange) :
+                        pkg.doChange = True
+
         self.check_apply_button()
+        self.treeview_languages.queue_draw()
+        #self.debug_pkg_status()
+
+    def on_treeview_languages_cursor_changed(self, treeview):
+        #print "on_treeview_languages_cursor_changed()"
+        langInfo = self._get_langinfo_on_cursor()
+        for (button, attr) in ( 
+              ("checkbutton_basic_translations", langInfo.languagePkgList["languagePack"]),
+              ("checkbutton_extra_translations", langInfo.languagePkgList["languageSupportTranslations"]),
+              ("checkbutton_writing_aids", langInfo.languagePkgList["languageSupportWritingAids"]),
+              ("checkbutton_input_methods", langInfo.languagePkgList["languageSupportInputMethods"]),
+              ("checkbutton_extra", langInfo.languagePkgList["languageSupportExtra"]),
+              ("checkbutton_fonts", langInfo.languagePkgList["languageSupportFonts"])  ):
+            self.block_toggle = True
+            if ((attr.installed and not attr.doChange) or (not attr.installed and attr.doChange)) :
+                getattr(self, button).set_active(True)
+            else :
+                getattr(self, button).set_active(False)
+            getattr(self, button).set_sensitive(attr.available)
+            self.block_toggle = False
+            #self.debug_pkg_status()
+
+    def debug_pkg_status(self):
+        langInfo = self._get_langinfo_on_cursor()
+        for pkg in langInfo.languagePkgList.items() :
+            print ("%s, available: %s, installed: %s, doChange: %s" % (pkg[0], pkg[1].available, pkg[1].installed, pkg[1].doChange))
+        print ("inconsistent? : %s" % langInfo.inconsistent)
 
     def check_apply_button(self):
         changed = False
         for (lang, langInfo) in self._langlist:
-            if (langInfo.langPackInstalled != langInfo.installLangPack) or \
-               (langInfo.langSupportInstalled != langInfo.installLangSupport):
+            if langInfo.changes:
                 changed = True
-        
         if self.combo_dirty or changed:
             self.button_apply.set_sensitive(True)
         else:
@@ -271,30 +363,33 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
                 self.imSwitch.enable(code)
             else:
                 self.imSwitch.disable(code)
-            self.showRebootRequired()
+            #self.showRebootRequired()
+            self.checkReloginNotification()
 
     def on_checkbutton_enable_input_methods_toggled(self, widget):
         if self._blockSignals:
             return
-        print "on_checkbutton_enable_input_methods_toggled()"
+        #print "on_checkbutton_enable_input_methods_toggled()"
         active = self.checkbutton_enable_input_methods.get_active()
         self.combo_dirty = True
         self.check_apply_button()
 
     def build_commit_lists(self):
+        # FIXME: add support to install only subsets of the 
+        #        language - use langInfo.languagePkgList["languageSupport"]{Fonts,WritingAids,..}.{install,doChange} for this
         for (lang, langInfo) in self._langlist:
-            inconsistent = xor(langInfo.langPackInstalled, langInfo.langSupportInstalled)
-            
-            wasInstalled = langInfo.langPackInstalled and langInfo.langSupportInstalled
-            wasNotInstalled = not langInfo.langPackInstalled and not langInfo.langSupportInstalled
+            #inconsistent = xor(langInfo.languagePkgList["languagePack"].installed, langInfo.languagePkgList["languageSupport"].installed)
 
-            toInstall = langInfo.installLangPack and langInfo.installLangSupport
-            toRemove = not langInfo.installLangPack and not langInfo.installLangSupport
-            
-            if (inconsistent and toInstall) or (toInstall and wasNotInstalled):
-                self._cache.tryInstallLanguage(langInfo.languageCode)
-            if (inconsistent and toRemove) or (toRemove and wasInstalled):
-                self._cache.tryRemoveLanguage(langInfo.languageCode)
+            #wasInstalled = langInfo.languagePkgList["languagePack"].installed and langInfo.languagePkgList["languageSupport"].installed
+            #wasNotInstalled = not langInfo.languagePkgList["languagePack"].installed and not langInfo.languagePkgList["languageSupport"].installed
+
+            #toInstall = langInfo.languagePkgList["languagePack"].doChange and langInfo.languagePkgList["languageSupport"].doChange
+            #toRemove = not langInfo.languagePkgList["languagePack"].doChange and not langInfo.languagePkgList["languageSupport"].doChange
+            #if (inconsistent and toInstall) or (toInstall and wasNotInstalled):
+            #    self._cache.tryInstallLanguage(langInfo.languageCode)
+            #if (inconsistent and toRemove) or (toRemove and wasInstalled):
+            #    self._cache.tryRemoveLanguage(langInfo.languageCode)
+            self._cache.tryChangeDetails(langInfo)
         (to_inst, to_rm) = self._cache.getChangesList()
         #print "inst: %s" % to_inst
         #print "rm: %s" % to_rm
@@ -425,12 +520,29 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             time.sleep(0.05)
 
     def checkReloginNotification(self):
-        " display a reboot required notification "
-        rb = "/usr/share/update-notifier/notify-reboot-required"
-        if (hasattr(self, "install_result") and 
-            self.install_result == 0 and
-            os.path.exists(rb)):
-            self.runAsRoot([rb])
+        #" display a reboot required notification "
+        #rb = "/usr/share/update-notifier/notify-reboot-required"
+        #if (hasattr(self, "install_result") and 
+        #    self.install_result == 0 and
+        #    os.path.exists(rb)):
+        #    self.runAsRoot([rb])
+        #    s = "/var/lib/update-notifier/dpkg-run-stamp"
+        #    if os.path.exists(s):
+        #        self.runAsRoot(["touch",s])
+        #return True
+        language_support_dir = '/usr/share/language-support'
+        update_notifier_dir = '/var/lib/update-notifier/user.d'
+        note = 'restart_session_required.note'
+        notepath = os.path.join(language_support_dir, note)
+        if os.path.exists(notepath):
+            if not os.path.exists(update_notifier_dir):
+                runAsRoot(["mkdir",update_notifier_dir])
+            s = os.path.join(update_notifier_dir, note)
+            if os.path.exists(s):
+                self.runAsRoot(["touch",s])
+            else :
+                rb = "cp %s %s" % (notepath, s)
+                self.runAsRoot([rb])
             s = "/var/lib/update-notifier/dpkg-run-stamp"
             if os.path.exists(s):
                 self.runAsRoot(["touch",s])
@@ -527,13 +639,27 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             sys.exit(1)
 
         languageList = self._cache.getLanguageInformation()
+        #print "ll size: ", len(languageList)
+        #print "ll type: ", type(languageList)
         for lang in languageList:
-            inconsistent = xor(lang.langPackInstalled,lang.langSupportInstalled)
+            #print "langInfo: %s" % lang
+            inconsistent = lang.inconsistent
             #if inconsistent:
             #    print "inconsistent", lang.language
-            installed = lang.langPackInstalled or lang.langSupportInstalled
+            installed = lang.fullInstalled
             self._langlist.append([_(lang.language), lang])
         self._langlist.set_sort_column_id(LIST_LANG, gtk.SORT_ASCENDING)
+        for button in ( 
+              "checkbutton_basic_translations",
+              "checkbutton_extra_translations",
+              "checkbutton_writing_aids",
+              "checkbutton_input_methods",
+              "checkbutton_extra",
+              "checkbutton_fonts"):
+            self.block_toggle = True
+            getattr(self, button).set_active(False)
+            getattr(self, button).set_sensitive(True)
+            self.block_toggle = False
 
     def writeSystemDefaultLang(self):
         combo = self.combobox_default_lang
@@ -546,7 +672,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         if old_code == code:
             return False
         self.setSystemDefaultLanguage(code)
-        self.showRebootRequired()
+        #self.showRebootRequired()
+        self.checkReloginNotification()
         return True
 
     def showRebootRequired(self):
