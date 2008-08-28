@@ -1,3 +1,9 @@
+language-selector (0.3.8) intrepid; urgency=low
+
+  * Depend on install-package not adept
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 28 Aug 2008 13:49:52 +0100
+
 language-selector (0.3.7) intrepid; urgency=low
 
   * use update-notifier to display "restart session required" message
