@@ -658,7 +658,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
               "checkbutton_fonts"):
             self.block_toggle = True
             getattr(self, button).set_active(False)
-            getattr(self, button).set_sensitive(True)
+            getattr(self, button).set_sensitive(False)
             self.block_toggle = False
 
     def writeSystemDefaultLang(self):

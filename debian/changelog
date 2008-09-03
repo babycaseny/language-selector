@@ -1,3 +1,10 @@
+language-selector (0.3.9) intrepid; urgency=low
+
+  * The details checkboxes can only be available when a language is selected
+    and the packages exists in the archive. (LP: #262764)
+
+ -- Arne Goetje <arne@ubuntu.com>  Wed, 03 Sep 2008 16:03:55 +0800
+
 language-selector (0.3.8) intrepid; urgency=low
 
   * Depend on install-package not adept
