@@ -122,13 +122,14 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         for langName in languages:
             lang = self._localeinfo.listviewStrToLangInfoMap[langName]
             elm = QListWidgetItem(utf8(lang.language), self.ui.listViewLanguages)
-            if lang.langPackInstalled and lang.langSupportInstalled:
+
+            if lang.fullInstalled:
                 if self.mode == "install":
                     elm.setFlags(Qt.ItemIsDropEnabled)  #not sure how to unset all flags, but this disables the item
                     elm.setToolTip(_("Already installed"))
                 else:
                     elm.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
-            elif lang.langPackInstalled or lang.langSupportInstalled:
+            elif lang.inconsistent:
                 elm.setToolTip(_("Partially Installed"))
             else:
                 if self.mode == "uninstall":

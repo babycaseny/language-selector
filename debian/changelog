@@ -1,3 +1,9 @@
+language-selector (0.3.10) intrepid; urgency=low
+
+  * Fix QtLanguageSelector.py for Arne's changes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Sep 2008 22:48:51 +0100
+
 language-selector (0.3.9) intrepid; urgency=low
 
   * The details checkboxes can only be available when a language is selected
