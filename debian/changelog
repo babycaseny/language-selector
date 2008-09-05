@@ -1,3 +1,10 @@
+language-selector (0.3.11) intrepid; urgency=low
+
+  * Bugfix: pull extra translation packages when language-packs are going to
+    be installed. (-gnome, -kde, etc.)
+
+ -- Arne Goetje <arne@ubuntu.com>  Fri, 05 Sep 2008 11:46:34 +0800
+
 language-selector (0.3.10) intrepid; urgency=low
 
   * Fix QtLanguageSelector.py for Arne's changes

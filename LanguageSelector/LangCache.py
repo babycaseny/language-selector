@@ -70,10 +70,10 @@ class LanguageSelectorPkgCache(apt.Cache):
     pkg_translations = [
         ("kdelibs-data", "language-pack-kde-"),
         ("libgnome2-common", "language-pack-gnome-"),
-        ("firefox-2", "mozilla-firefox-locale-"),
-        ("thunderbird", "language-support-translations-"),
-        ("openoffice.org", "language-support-translations-"),
-        ("openoffice.org", "language-support-translations-"),
+#        ("firefox-2", "mozilla-firefox-locale-"),
+#        ("thunderbird", "language-support-translations-"),
+#        ("openoffice.org", "language-support-translations-"),
+#        ("openoffice.org", "language-support-translations-"),
         ("libsword5c2a", "sword-language-pack-")
     ]
 
@@ -127,6 +127,24 @@ class LanguageSelectorPkgCache(apt.Cache):
                         self[item.pkgname_template % li.languageCode].markInstall()
                 except SystemError:
                     pass
+        # Check for additional translation packages
+        item = li.languagePkgList["languagePack"]
+        if ((item.installed and not item.doChange) or (item.available and not item.installed and item.doChange)):
+            for (pkg, translation) in self.pkg_translations:
+                if self.has_key(pkg) and \
+                   self[pkg].isInstalled and \
+                   self.has_key(translation+li.languageCode) and \
+                   not self[translation+li.languageCode].isInstalled:
+                   self[translation+li.languageCode].markInstall()
+                   #print ("Will pull: %s" % translation+li.languageCode)
+        elif ((not item.installed and not item.doChange) or (item.installed and item.doChange)) :
+            for (pkg, translation) in self.pkg_translations:
+                if self.has_key(pkg) and \
+                   self[pkg].isInstalled and \
+                   self.has_key(translation+li.languageCode) and \
+                   self[translation+li.languageCode].isInstalled:
+                   self[translation+li.languageCode].markDelete()
+                   #print ("Will remove: %s" % translation+li.languageCode)
         return
 
     def tryInstallLanguage(self, languageCode):
