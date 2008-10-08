@@ -1,3 +1,9 @@
+language-selector (0.3.12) intrepid; urgency=low
+
+  * Port verifyInstalledLangPacks to Qt frontend
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 08 Oct 2008 00:19:44 +0100
+
 language-selector (0.3.11) intrepid; urgency=low
 
   * Bugfix: pull extra translation packages when language-packs are going to

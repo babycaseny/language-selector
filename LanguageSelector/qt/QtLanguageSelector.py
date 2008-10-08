@@ -9,7 +9,7 @@ import sys
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from PyKDE4.kdecore import ki18n, KAboutData, KCmdLineArgs, KCmdLineOptions
-from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox
+from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox, KGuiItem
 
 from LanguageSelector.LanguageSelector import *
 from QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
@@ -77,6 +77,11 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         self.updateLanguagesList()
         self.updateSystemDefaultListbox()
 
+        # see if something is missing
+        if True: #options.verify_installed:
+            self.verifyInstalledLangPacks()
+
+
     def translateUI(self):
         """ translate the strings in the UI, needed because Qt designer doesn't use gettext """
         self.ui.defaultSystemLabel.setText(_("Default system language:"))
@@ -108,6 +113,57 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         if (not os.path.exists("/etc/alternatives/xinput-all_ALL") or
             not os.path.exists("/usr/bin/im-switch")):
             self.ui.enableInputMethods.setEnabled(False)
+
+    def verifyInstalledLangPacks(self):
+        """ called at the start to inform about possible missing
+            langpacks (e.g. gnome/kde langpack transition)
+        """
+        print "verifyInstalledLangPacks"
+        missing = []
+        
+        languageList = self._cache.getLanguageInformation()
+        #self._localeinfo.listviewStrToLangInfoMap = {}
+        for langInfo in languageList:
+            trans_package = "language-pack-%s" % langInfo.languageCode
+            # we have a langpack installed, see if we have all of it
+            # (for hoary -> breezy transition)
+            if self._cache.has_key(trans_package) and \
+               self._cache[trans_package].isInstalled:
+                #print "IsInstalled: %s " % trans_package
+                for (pkg, translation) in self._cache.pkg_translations:
+                    missing += self.missingTranslationPkgs(pkg, translation+langInfo.languageCode)
+
+        print "Missing: %s " % missing
+        if len(missing) > 0:
+            # FIXME: add "details"
+            yesText = _("_Install").replace("_", "&")
+            noText = _("_Remind Me Later").replace("_", "&")
+            yes = KGuiItem(yesText, "dialog-ok")
+            no = KGuiItem(noText, "process-stop")
+            text = "<big><b>%s</b></big>\n\n%s" % (
+                _("The language support is not installed completely"),
+                _("Some translations or writing aids available for your "
+                  "chosen languages are not installed yet. Do you want "
+                  "to install them now?"))
+            text = text.replace("\n", "<br />")
+            res = KMessageBox.questionYesNo(self, text, "", yes, no)
+            if res == KMessageBox.Yes:
+                self.setEnabled(False)
+                self.commit(missing, [])
+                self.updateLanguagesList()
+                self.setEnabled(True)
+
+    def commit(self, inst, rm):
+        # unlock here to make sure that lock/unlock are always run
+        # pair-wise (and don't explode on errors)
+        if len(inst) == 0 and len(rm) == 0:
+            return
+        lock = thread.allocate_lock()
+        lock.acquire()
+        t = thread.start_new_thread(self.run_pkg_manager,(lock,inst,rm))
+        while lock.locked():
+            self.parentApp.processEvents()
+            time.sleep(0.05)
 
     def updateLanguagesList(self):
         self.ui.listViewLanguages.clear()
