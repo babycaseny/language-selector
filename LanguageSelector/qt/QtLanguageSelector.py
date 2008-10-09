@@ -21,7 +21,7 @@ def utf8(str):
   return unicode(str, 'UTF-8')
 
 def _(string):
-    return unicode(i18n(string), "utf-8")
+    return utf8(i18n(string))
 
 class QtLanguageSelector(QWidget,LanguageSelectorBase):
     """ actual implementation of the qt GUI """
@@ -99,7 +99,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         defaultLangName = None
         defaultLangCode = self.getSystemDefaultLanguage()
         if defaultLangCode:
-            defaultLangName = self._localeinfo.translate(defaultLangCode)
+            defaultLangName = utf8(self._localeinfo.translate(defaultLangCode))
         locales = []
         for locale in self._localeinfo.generated_locales():
             name = utf8(self._localeinfo.translate(locale))
@@ -171,7 +171,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         languageList = self._cache.getLanguageInformation()
         self._localeinfo.listviewStrToLangInfoMap = {}
         for lang in languageList:
-            self._localeinfo.listviewStrToLangInfoMap[lang.language] = lang
+            self._localeinfo.listviewStrToLangInfoMap[utf8(lang.language)] = lang
         languages = self._localeinfo.listviewStrToLangInfoMap.keys()
         languages.sort()
 
@@ -239,7 +239,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         if scimOn:
             KMessageBox.information(self, _("Default system Language now set to %s.  Complex character input will be enabled when you next log in." % lang), _("Language Set"))
         else:
-            KMessageBox.information(self, _("Default system Language now set to %s." % lang), _("Language Set"))
+            KMessageBox.information(self, _("Default system Language now set to %s.") % lang, _("Language Set"))
         self.close()
 
     def __input_method_config_changed(self):
@@ -291,7 +291,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         items = self.ui.listViewLanguages.selectedItems()
         if len(items) == 1:
             elm = items[0]
-            li = self._localeinfo.listviewStrToLangInfoMap["%s"%elm.text().toUtf8()]
+            li = self._localeinfo.listviewStrToLangInfoMap[unicode(elm.text())]
             if self.mode == "uninstall":
                 self._cache.tryRemoveLanguage(li.languageCode)
             else:
@@ -320,9 +320,9 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
         #self.run_pkg_manager(to_inst, to_rm)
         if self.returncode == 0 and self.mode == "install":
-            KMessageBox.information( self, _("Translations and support have now been installed for %s.  Select them from the Add Language button." % str(items[0].text())), _("Language Installed") )
+            KMessageBox.information( self, _("Translations and support have now been installed for %s.  Select them from the Add Language button.") % unicode(items[0].text()), _("Language Installed") )
         elif self.returncode == 0 and self.mode == "uninstall":
-            KMessageBox.information( self, _("Translations and support have now been uninstalled for %s." % str(items[0].text())), _("Language Uninstalled") )
+            KMessageBox.information( self, _("Translations and support have now been uninstalled for %s.") % unicode(items[0].text()), _("Language Uninstalled") )
         else:
             KMessageBox.sorry(self, _("Failed to set system language."), _("Language Not Set"))
         self.close()

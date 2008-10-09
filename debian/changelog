@@ -1,3 +1,20 @@
+language-selector (0.3.13) intrepid; urgency=low
+
+  [ Jonathan Riddell ]
+  * QtLanguageSelector.py, fix unicode error
+
+  [ David Gaarenstroom ]
+  * Fix _ function in Qt frontend (LP: #279869).
+
+  [ Colin Watson ]
+  * Fix excessive capitalisation of "ubuntu" in e-mail addresses and URLs in
+    debian/control.
+
+  [ M. Vefa Bicakci ]
+  * Fix handling of Unicode language names in Qt frontend (LP: #266971).
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 09 Oct 2008 10:47:37 +0100
+
 language-selector (0.3.12) intrepid; urgency=low
 
   * Port verifyInstalledLangPacks to Qt frontend
