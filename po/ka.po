@@ -10,13 +10,14 @@ msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-26 01:08+0800\n"
-"PO-Revision-Date: 2006-05-12 22:30+0000\n"
-"Last-Translator: Vladimer Sichinava <alinux@siena.linux.it>\n"
+"PO-Revision-Date: 2008-10-15 18:34+0000\n"
+"Last-Translator: Vladimer Sichinava <vsichi@gnome.org>\n"
 "Language-Team: Georgian <gnome@inet.ge>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.1\n"
+"X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 msgid "Language"
@@ -36,6 +37,9 @@ msgid ""
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
+"ეს პროგრამის შესაძლებელი შეცდომაა. გთხოვთ შეგვატყობინოთ ამ შეცდომის შესახებ "
+"https://launchpad.net/bugs/bugs/+package/ მისამართზე პროგრამა 'language-"
+"selector'-ისთვის."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
 msgid "Could not install the full language support"
@@ -46,6 +50,8 @@ msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
+"როგორც წესი მოცემული შეცდომა დაკავშირებულია თქვენს პროგრამების მენეჯერთან. "
+"შეამოწმეთ პროგრამის პარამეტრები მენუდან \"ადმინისტრაცია\"."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
 msgid "The list of available languages on the system has been updated."
@@ -56,22 +62,18 @@ msgid "The language support is not installed completely"
 msgstr "ენის მხარდაჭერა არ არის ბოლომდე ჩაყენებული"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
-#, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"ვერ ვპოულობ ენის სრულყოფილი მხარდაჭერის პაკეტებს სისტემაში. გნებავთ მათი "
-"მყისვე ჩადგმა ?"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:583
-#, fuzzy
 msgid "_Remind Me Later"
-msgstr "_შემახსენე მომავალში"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
 msgid "_Install"
-msgstr "_ჩადგმა"
+msgstr "_დაყენება"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:587
 #: ../data/LanguageSelector.glade.h:13
@@ -81,7 +83,7 @@ msgstr "ცნობები"
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:626
 #: ../LanguageSelector/qt/QtLanguageSelector.py:72
 msgid "Software database is broken"
-msgstr ""
+msgstr "პროგრამების მონაცემთა ბაზა დაზიანებულია"
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
@@ -92,6 +94,9 @@ msgid ""
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
+"შეუძლებელია ნებისმიერი პროგრამის ინსტალაცია/მოშორება. პრობლემის "
+"გადასაწყვეტად გთხოვთ გამოიყენოთ \"სინაპტიკ\" პროგრამების მენეჯერი ან "
+"ტერმინალიდან \"sudo apt-get install -f\" ბრძანება."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Reboot required"
@@ -104,66 +109,61 @@ msgid ""
 msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:48
-#, fuzzy
 msgid "Uninstall"
-msgstr "_ჩადგმა"
+msgstr "ამოშლა"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:49
 msgid "Select language to uninstall:"
-msgstr ""
+msgstr "ამოსაშლელი ენის ამორჩევა:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:56
 msgid "Language Selector"
 msgstr "ენის მხარდაჭერა"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:85
-#, fuzzy
 msgid "Default system language:"
-msgstr "<b>ნაგულისხმევი ენა</b>"
+msgstr "<b>სისტემის ნაგულისხმევი ენა</b>"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid "Set System Language"
-msgstr ""
+msgstr "სისტემური ენის მითითება"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 #: ../data/LanguageSelector.glade.h:14
 msgid "Enable support to enter complex characters"
-msgstr ""
+msgstr "დამატებითი სიმბოლოების მხარდაჭერის ჩართვა"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:88
 #: ../LanguageSelector/qt/QtLanguageSelector.py:91
-#, fuzzy
 msgid "Cancel"
-msgstr "საფრანგეთი"
+msgstr "შეწყვეტა"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "Select language to install:"
-msgstr ""
+msgstr "ჩასადგმელი ენის ამორჩევა:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#, fuzzy
 msgid "Install"
-msgstr "_ჩადგმა"
+msgstr "ინსტალაცია"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Already installed"
-msgstr ""
+msgstr "უკვე ინსტალირებული"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:135
 msgid "Partially Installed"
-msgstr ""
+msgstr "არასრულად ინსტალირებული"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:139
 msgid "Not installed"
-msgstr ""
+msgstr "არ არის ინსტალირებული"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
-#, fuzzy
 msgid "Language Set"
-msgstr "ენის მხარდაჭერა"
+msgstr "ენა"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #, python-format
@@ -171,16 +171,17 @@ msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
+"ძირითადი სისტემური ენაა %s. დამატებითი სიმბოლოების შეყვანის შესაძლებლობა "
+"გააქტიურდება თქვენი შემდგომი სისტემაში რეგისტრაციისას."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "სისტემის ძირითადი ენა %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
-#, fuzzy
 msgid "Language Installed"
-msgstr "ენის მხარდაჭერა"
+msgstr "ინსტალირებული ენა"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
 #, python-format
@@ -188,24 +189,25 @@ msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
+"%s ენისთვის ინსტალირებულია ამავე ენის თარგმანის-პაკეტი. ამოირჩიეთ ისინი ენის "
+"დამატების ღილაკზე დაწკაპვით."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
 msgid "Language Uninstalled"
-msgstr ""
+msgstr "ენა მოშორებულია"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "მოშორებულია თარგმანი და ენის მხარდაჭერა ენისთვის:  %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
-#, fuzzy
 msgid "Language Not Set"
-msgstr "ენის მხარდაჭერა"
+msgstr "ენა არ არის მითითებული"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
 msgid "Failed to set system language."
-msgstr ""
+msgstr "შეუძლებელია სისტემული ენის მითითება."
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -217,7 +219,7 @@ msgstr "<b>ნაგულისხმევი ენა</b>"
 
 #: ../data/LanguageSelector.glade.h:3
 msgid "<b>Input method</b>"
-msgstr ""
+msgstr "<b>ტექსტის შეყვანის მეთოდი</b>"
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<b>Supported Languages</b>"
@@ -253,18 +255,16 @@ msgid ""
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:11
-#, fuzzy
 msgid "Basic Translations"
-msgstr "თარგმანი"
+msgstr ""
 
 #: ../data/LanguageSelector.glade.h:12
 msgid "Default language for new user accounts and the login screen:"
-msgstr ""
+msgstr "ძირითადი ენა ახალი მომხმარებლებისთვის და შემოსასვლელი სარკმლისთვის:"
 
 #: ../data/LanguageSelector.glade.h:15
-#, fuzzy
 msgid "Extra Translations"
-msgstr "თარგმანი"
+msgstr ""
 
 #: ../data/LanguageSelector.glade.h:16
 msgid "Extra software"
@@ -284,7 +284,7 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
 msgid "Language Support"
-msgstr "ენის მხარდაჭერა"
+msgstr "მხარდაჭერილი ენა"
 
 #: ../data/LanguageSelector.glade.h:20
 msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
@@ -301,21 +301,19 @@ msgid ""
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:23
-#, fuzzy
 msgid "Writing aids"
-msgstr "ლინგვისტიკა"
+msgstr ""
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr ""
+msgstr "თქვენს სისტემაში ძირითადი და სხვა ენების მხარდაჭერის კონფიგურაცია"
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:1
 #: ../data/incomplete-language-support-qt.note.in:1
-#, fuzzy
 msgid "Incomplete Language Support"
-msgstr "ენის მხარდაჭერა"
+msgstr ""
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -351,29 +349,31 @@ msgstr ""
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
-msgstr ""
+msgstr "შეწყვეტა"
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
-msgstr ""
+msgstr "ძალდატანება ცონფიგურაციის არსებობის მიუხედავად"
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
+msgstr "მოცემული ენისთვის fontconfig voodoo-ს დაყენება"
 
 #: ../fontconfig-voodoo:32
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"ირჩევს კონფიგურაციას LANGUAGE გარემოს მიხედვით. თუ ვერ მოიძებნა აბრუნებს "
+"ლოგიკურ 'none'-ს"
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
-msgstr ""
+msgstr "არსებული fontconfig-voodoo-ს პარამეტრების სიის ჩვენება"
 
 #: ../fontconfig-voodoo:40
 msgid "Show the current fontconfig-voodoo config"
-msgstr ""
+msgstr "მოცემული fontconfig-voodoo პარამეტრის ჩვენება"
 
 #: ../fontconfig-voodoo:43
 msgid "Remove the current fontconfig-voodoo config"
@@ -381,1358 +381,13 @@ msgstr ""
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr ""
+msgstr "არ არის კონფიგურირებული"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
+"კონფიგურაცია უკვე არსებობს. გამოიყენეთ '--force' ზემოდან გადაწერისთვის. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr ""
-
-#~ msgid "English"
-#~ msgstr "ინგლისური"
-
-#~ msgid "Afghanistan"
-#~ msgstr "ავღანეთი"
-
-#~ msgid "Åland Islands"
-#~ msgstr "ალანდის კუნძულები"
-
-#~ msgid "Albania"
-#~ msgstr "ალბანეთი"
-
-#~ msgid "Algeria"
-#~ msgstr "ალჟირი"
-
-#~ msgid "American Samoa"
-#~ msgstr "ამერიკული სამოა"
-
-#~ msgid "Andorra"
-#~ msgstr "ანდორა"
-
-#~ msgid "Angola"
-#~ msgstr "ანგოლა"
-
-#~ msgid "Anguilla"
-#~ msgstr "ანგუილა"
-
-#~ msgid "Antigua and Barbuda"
-#~ msgstr "ანტიგუა და ბარბუდა"
-
-#~ msgid "Argentina"
-#~ msgstr "არგენტინა"
-
-#~ msgid "Armenia"
-#~ msgstr "სასომხეთი"
-
-#~ msgid "Aruba"
-#~ msgstr "არუბა"
-
-#~ msgid "Australia"
-#~ msgstr "ავსტრალია"
-
-#~ msgid "Austria"
-#~ msgstr "ავსტრია"
-
-#~ msgid "Azerbaijan"
-#~ msgstr "აზერბაიჯანი"
-
-#~ msgid "Bahamas"
-#~ msgstr "ბაჰამები"
-
-#~ msgid "Bahrain"
-#~ msgstr "ბაჰრანი"
-
-#~ msgid "Bangladesh"
-#~ msgstr "ბანგლადეში"
-
-#~ msgid "Barbados"
-#~ msgstr "ბარბადოსი"
-
-#~ msgid "Belarus"
-#~ msgstr "ბელარუსი"
-
-#~ msgid "Belgium"
-#~ msgstr "ბელგია"
-
-#~ msgid "Belize"
-#~ msgstr "ბალიზე"
-
-#~ msgid "Benin"
-#~ msgstr "ბენინი"
-
-#~ msgid "Bermuda"
-#~ msgstr "ბერმუდა"
-
-#~ msgid "Bhutan"
-#~ msgstr "ბუტანი"
-
-#~ msgid "Bolivia"
-#~ msgstr "ბოლივია"
-
-#~ msgid "Bosnia and Herzegovina"
-#~ msgstr "ბოსნია და ჰეცოგოვინა"
-
-#~ msgid "Botswana"
-#~ msgstr "ბოთსვანა"
-
-#~ msgid "Brazil"
-#~ msgstr "ბრაზილია"
-
-#~ msgid "British Virgin Islands"
-#~ msgstr "ვირჯინიის ბრიტანული კუნძულები"
-
-#~ msgid "Brunei Darussalam"
-#~ msgstr "ბრუნეი დარესსალამი"
-
-#~ msgid "Bulgaria"
-#~ msgstr "ბულგარეთი"
-
-#~ msgid "Burkina Faso"
-#~ msgstr "ბურკინა ფასო"
-
-#~ msgid "Burundi"
-#~ msgstr "ბურუნდი"
-
-#~ msgid "Cambodia"
-#~ msgstr "კამბოჯა"
-
-#~ msgid "Cameroon"
-#~ msgstr "კამერუნი"
-
-#~ msgid "Canada"
-#~ msgstr "კანადა"
-
-#~ msgid "Cape Verde"
-#~ msgstr "მწვანე კონცხი"
-
-#~ msgid "Cayman Islands"
-#~ msgstr "კაიმანის კუნძულები"
-
-#~ msgid "Central African Republic"
-#~ msgstr "ცენტრალური აფრიკის რესპუბლიკა"
-
-#~ msgid "Chad"
-#~ msgstr "ჩადი"
-
-#~ msgid "Channel Islands"
-#~ msgstr "კანალის კუნძულები"
-
-#~ msgid "Chile"
-#~ msgstr "ჩილე"
-
-#~ msgid "China"
-#~ msgstr "ჩინეთი"
-
-#~ msgid "Hong Kong Special Administrative Region of China"
-#~ msgstr "ჰონკონგის ადმინისტრაციის ქვეშ მყოფი ჩინური რეგიონი"
-
-#~ msgid "Macau Special Administrative Region of China"
-#~ msgstr "მაკაუს რეგიონი ჩინეთის მმართველობის ქვეშ"
-
-#~ msgid "Colombia"
-#~ msgstr "კოლუმბია"
-
-#~ msgid "Comoros"
-#~ msgstr "კომორის კუნძულები"
-
-#~ msgid "Congo"
-#~ msgstr "კონგო"
-
-#~ msgid "Cook Islands"
-#~ msgstr "კუკის კუნძულები"
-
-#~ msgid "Costa Rica"
-#~ msgstr "კოსტა რიკა"
-
-#~ msgid "Côte d'Ivoire"
-#~ msgstr "კოტ დ'ივუარი"
-
-#~ msgid "Croatia"
-#~ msgstr "ხორვატია"
-
-#~ msgid "Cuba"
-#~ msgstr "კუბა"
-
-#~ msgid "Cyprus"
-#~ msgstr "კიპროსი"
-
-#~ msgid "Czech Republic"
-#~ msgstr "ჩეხური რესპუბლიკა"
-
-#~ msgid "Democratic People's Republic of Korea"
-#~ msgstr "კორეის სახალხო დემოკრატიული რესპუბლიკა"
-
-#~ msgid "Democratic Republic of the Congo"
-#~ msgstr "კონგოს დემოკრატიული რესპუბლიკა"
-
-#~ msgid "Denmark"
-#~ msgstr "დანია"
-
-#~ msgid "Djibouti"
-#~ msgstr "ჯიბუტი"
-
-#~ msgid "Dominica"
-#~ msgstr "დომინიკა"
-
-#~ msgid "Dominican Republic"
-#~ msgstr "დომინიკური რესპუბლიკა"
-
-#~ msgid "Ecuador"
-#~ msgstr "ეკვადორი"
-
-#~ msgid "Egypt"
-#~ msgstr "ეგვიპტე"
-
-#~ msgid "El Salvador"
-#~ msgstr "ელ სალვადორი"
-
-#~ msgid "Equatorial Guinea"
-#~ msgstr "ეკვატორული გვინეა"
-
-#~ msgid "Eritrea"
-#~ msgstr "ერითრეა"
-
-#~ msgid "Estonia"
-#~ msgstr "ესტონეტი"
-
-#~ msgid "Ethiopia"
-#~ msgstr "ეთიოპია"
-
-#~ msgid "Faeroe Islands"
-#~ msgstr "ფარერის კუნძულები"
-
-#~ msgid "Falkland Islands (Malvinas)"
-#~ msgstr "ფალკლენდის კუნძულები (მალბინის)"
-
-#~ msgid "Fiji"
-#~ msgstr "ფიჯი"
-
-#~ msgid "Finland"
-#~ msgstr "ფინეთი"
-
-#~ msgid "French Guiana"
-#~ msgstr "ფრანგული გვინეა"
-
-#~ msgid "French Polynesia"
-#~ msgstr "ფრანგული პოლინეზია"
-
-#~ msgid "Gabon"
-#~ msgstr "გაბონი"
-
-#~ msgid "Gambia"
-#~ msgstr "გამბია"
-
-#~ msgid "Georgia"
-#~ msgstr "საქართველო"
-
-#~ msgid "Germany"
-#~ msgstr "გერმანია"
-
-#~ msgid "Ghana"
-#~ msgstr "განა"
-
-#~ msgid "Gibraltar"
-#~ msgstr "გიბრალტარი"
-
-#~ msgid "Greece"
-#~ msgstr "საბერძნეთი"
-
-#~ msgid "Greenland"
-#~ msgstr "გრენლანდია"
-
-#~ msgid "Grenada"
-#~ msgstr "გრენადა"
-
-#~ msgid "Guadeloupe"
-#~ msgstr "გუადელუპე"
-
-#~ msgid "Guam"
-#~ msgstr "გუამი"
-
-#~ msgid "Guatemala"
-#~ msgstr "გუატემალა"
-
-#~ msgid "Guinea"
-#~ msgstr "გვინეა"
-
-#~ msgid "Guinea-Bissau"
-#~ msgstr "გუინეა-ბისო"
-
-#~ msgid "Guyana"
-#~ msgstr "გვიანა"
-
-#~ msgid "Haiti"
-#~ msgstr "ჰაიტი"
-
-#~ msgid "Holy See"
-#~ msgstr "წმინდა ზღვა"
-
-#~ msgid "Honduras"
-#~ msgstr "ჰონდურასი"
-
-#~ msgid "Hungary"
-#~ msgstr "უნგრეთი"
-
-#~ msgid "Iceland"
-#~ msgstr "ისლანდია"
-
-#~ msgid "India"
-#~ msgstr "ინდია"
-
-#~ msgid "Indonesia"
-#~ msgstr "ინდონეზია"
-
-#~ msgid "Iran (Islamic Republic of)"
-#~ msgstr "ირანი (ისლამური რესპუბლიკა)"
-
-#~ msgid "Iraq"
-#~ msgstr "ერაყი"
-
-#~ msgid "Ireland"
-#~ msgstr "ირლანდია"
-
-#~ msgid "Isle of Man"
-#~ msgstr "მანის კუნძული"
-
-#~ msgid "Israel"
-#~ msgstr "ისრაელი"
-
-#~ msgid "Italy"
-#~ msgstr "იტალია"
-
-#~ msgid "Jamaica"
-#~ msgstr "იამაიკა"
-
-#~ msgid "Japan"
-#~ msgstr "იაპონია"
-
-#~ msgid "Jordan"
-#~ msgstr "იორდანი"
-
-#~ msgid "Kazakhstan"
-#~ msgstr "ყაზახეთი"
-
-#~ msgid "Kenya"
-#~ msgstr "კენია"
-
-#~ msgid "Kiribati"
-#~ msgstr "კირიბატი"
-
-#~ msgid "Kuwait"
-#~ msgstr "ქუვეითი"
-
-#~ msgid "Kyrgyzstan"
-#~ msgstr "ყირგიზეთი"
-
-#~ msgid "Lao People's Democratic Republic"
-#~ msgstr "ლაოს დემოკრატიული რესპუბლიკა"
-
-#~ msgid "Latvia"
-#~ msgstr "ლატვია"
-
-#~ msgid "Lebanon"
-#~ msgstr "ლიბანი"
-
-#~ msgid "Lesotho"
-#~ msgstr "ლესოტო"
-
-#~ msgid "Liberia"
-#~ msgstr "ლიბერია"
-
-#~ msgid "Libyan Arab Jamahiriya"
-#~ msgstr "ლიბანის არაბული რესპუბლიკა"
-
-#~ msgid "Liechtenstein"
-#~ msgstr "ლიხტენშტეინი"
-
-#~ msgid "Lithuania"
-#~ msgstr "ლიტვა"
-
-#~ msgid "Luxembourg"
-#~ msgstr "ლუქსემბურგი"
-
-#~ msgid "Madagascar"
-#~ msgstr "მადაგასკარი"
-
-#~ msgid "Malawi"
-#~ msgstr "მალავი"
-
-#~ msgid "Malaysia"
-#~ msgstr "მალაზია"
-
-#~ msgid "Maldives"
-#~ msgstr "მალდივები"
-
-#~ msgid "Mali"
-#~ msgstr "მალი"
-
-#~ msgid "Malta"
-#~ msgstr "მალტა"
-
-#~ msgid "Marshall Islands"
-#~ msgstr "მარშალის კუნძულები"
-
-#~ msgid "Martinique"
-#~ msgstr "მარტინიკა"
-
-#~ msgid "Mauritania"
-#~ msgstr "მავრიტანია"
-
-#~ msgid "Mauritius"
-#~ msgstr "მავრიკის კუნძულები"
-
-#~ msgid "Mayotte"
-#~ msgstr "მაიოტი"
-
-#~ msgid "Mexico"
-#~ msgstr "მექსიკა"
-
-#~ msgid "Micronesia (Federated States of)"
-#~ msgstr "მიკრონეზიის ფედერაცია"
-
-#~ msgid "Monaco"
-#~ msgstr "მონაკო"
-
-#~ msgid "Mongolia"
-#~ msgstr "მონღოლეთი"
-
-#~ msgid "Montserrat"
-#~ msgstr "მონსერატტი"
-
-#~ msgid "Morocco"
-#~ msgstr "მოროკო"
-
-#~ msgid "Mozambique"
-#~ msgstr "მოზამბიკი"
-
-#~ msgid "Myanmar"
-#~ msgstr "მიანმა"
-
-#~ msgid "Namibia"
-#~ msgstr "ნამიბია"
-
-#~ msgid "Nauru"
-#~ msgstr "ნაურუ"
-
-#~ msgid "Nepal"
-#~ msgstr "ნეპალი"
-
-#~ msgid "Netherlands"
-#~ msgstr "ჰოლანდია"
-
-#~ msgid "Netherlands Antilles"
-#~ msgstr "დანიის ანტილები"
-
-#~ msgid "New Caledonia"
-#~ msgstr "ახალი კალედონია"
-
-#~ msgid "New Zealand"
-#~ msgstr "ახალი ზელანდია"
-
-#~ msgid "Nicaragua"
-#~ msgstr "ნიკარაგუა"
-
-#~ msgid "Niger"
-#~ msgstr "ნიგერი"
-
-#~ msgid "Nigeria"
-#~ msgstr "ნიგერია"
-
-#~ msgid "Niue"
-#~ msgstr "ნიუე"
-
-#~ msgid "Norfolk Island"
-#~ msgstr "ნორფოლკის კუნძული"
-
-#~ msgid "Northern Mariana Islands"
-#~ msgstr "ჩრდილოეთ მარიანის კუნძულები"
-
-#~ msgid "Norway"
-#~ msgstr "ნორვეგია"
-
-#~ msgid "Occupied Palestinian Territory"
-#~ msgstr "პალესტინის დაკავებული ტერიტორია"
-
-#~ msgid "Oman"
-#~ msgstr "ომანი"
-
-#~ msgid "Pakistan"
-#~ msgstr "პაკისტანი"
-
-#~ msgid "Palau"
-#~ msgstr "პალაუ"
-
-#~ msgid "Panama"
-#~ msgstr "პანამა"
-
-#~ msgid "Papua New Guinea"
-#~ msgstr "პაპუა ახალი გვინეა"
-
-#~ msgid "Paraguay"
-#~ msgstr "პარაგუაი"
-
-#~ msgid "Peru"
-#~ msgstr "პერუ"
-
-#~ msgid "Philippines"
-#~ msgstr "ფილიპინები"
-
-#~ msgid "Pitcairn"
-#~ msgstr "პიტკაირნი"
-
-#~ msgid "Poland"
-#~ msgstr "პოლონეთი"
-
-#~ msgid "Portugal"
-#~ msgstr "პორტუგალია"
-
-#~ msgid "Puerto Rico"
-#~ msgstr "პუერტო რიკა"
-
-#~ msgid "Qatar"
-#~ msgstr "ქათარი"
-
-#~ msgid "Republic of Korea"
-#~ msgstr "კორეის რესპუბლიკა"
-
-#~ msgid "Republic of Moldova"
-#~ msgstr "მოლდოვეთის რესპუბლიკა"
-
-#~ msgid "Réunion"
-#~ msgstr "რეუნიონი"
-
-#~ msgid "Romania"
-#~ msgstr "რუმინეთი"
-
-#~ msgid "Russian Federation"
-#~ msgstr "რუსული ფედერაცია"
-
-#~ msgid "Rwanda"
-#~ msgstr "რუანდა"
-
-#~ msgid "Saint Helena"
-#~ msgstr "წმინდა ელენა"
-
-#~ msgid "Saint Kitts and Nevis"
-#~ msgstr "სენთ ქისთი და ნევისი"
-
-#~ msgid "Saint Lucia"
-#~ msgstr "სენთ ლუსია"
-
-#~ msgid "Saint Pierre and Miquelon"
-#~ msgstr "სან-პიერი და მიკელონი"
-
-#~ msgid "Saint Vincent and the Grenadines"
-#~ msgstr "სენთ ვინსენთი და გრენადინები"
-
-#~ msgid "Samoa"
-#~ msgstr "სამოა"
-
-#~ msgid "San Marino"
-#~ msgstr "სან მარინო"
-
-#~ msgid "Sao Tome and Principe"
-#~ msgstr "სან ტომე და პრინსიპი"
-
-#~ msgid "Saudi Arabia"
-#~ msgstr "საუდიის არაბეთი"
-
-#~ msgid "Senegal"
-#~ msgstr "სენეგალი"
-
-#~ msgid "Serbia and Montenegro"
-#~ msgstr "სერბია და მონტენეგრო"
-
-#~ msgid "Seychelles"
-#~ msgstr "სეიშელის კუნძულები"
-
-#~ msgid "Sierra Leone"
-#~ msgstr "სიერა ლეონი"
-
-#~ msgid "Singapore"
-#~ msgstr "სინგაპური"
-
-#~ msgid "Slovakia"
-#~ msgstr "სლოვაკეთი"
-
-#~ msgid "Slovenia"
-#~ msgstr "სლოვენია"
-
-#~ msgid "Solomon Islands"
-#~ msgstr "სოლომონის კუნძულები"
-
-#~ msgid "Somalia"
-#~ msgstr "სომალია"
-
-#~ msgid "South Africa"
-#~ msgstr "სამხრეთ აფრიკა"
-
-#~ msgid "Spain"
-#~ msgstr "ესპანეთი"
-
-#~ msgid "Sri Lanka"
-#~ msgstr "შრი ლანკი"
-
-#~ msgid "Sudan"
-#~ msgstr "სუდანი"
-
-#~ msgid "Suriname"
-#~ msgstr "სურინამი"
-
-#~ msgid "Svalbard and Jan Mayen Islands"
-#~ msgstr "სვალბარდი და იან მაისენის კუნძულები"
-
-#~ msgid "Swaziland"
-#~ msgstr "სვაზილენდი"
-
-#~ msgid "Sweden"
-#~ msgstr "შვედეთი"
-
-#~ msgid "Switzerland"
-#~ msgstr "შვეიცარია"
-
-#~ msgid "Syrian Arab Republic"
-#~ msgstr "სირიის არაბული რესპუბლიკა"
-
-#~ msgid "Tajikistan"
-#~ msgstr "ტაჯიკეთი"
-
-#~ msgid "Thailand"
-#~ msgstr "ტაილანდი"
-
-#~ msgid "Macedonia, Republic of"
-#~ msgstr "მაკედონიის რესპუბლიკა"
-
-#~ msgid "Timor-Leste"
-#~ msgstr "ტიმორ-ლესტე"
-
-#~ msgid "Togo"
-#~ msgstr "ტოგო"
-
-#~ msgid "Tokelau"
-#~ msgstr "ტოკელაუ"
-
-#~ msgid "Tonga"
-#~ msgstr "ტონგა"
-
-#~ msgid "Trinidad and Tobago"
-#~ msgstr "თრინიდადი და თობაგო"
-
-#~ msgid "Tunisia"
-#~ msgstr "ტუნიზია"
-
-#~ msgid "Turkey"
-#~ msgstr "თურქეთი"
-
-#~ msgid "Turkmenistan"
-#~ msgstr "თურქმენეთი"
-
-#~ msgid "Turks and Caicos Islands"
-#~ msgstr "თურქეთის და ქაიკოს კუნძულები"
-
-#~ msgid "Tuvalu"
-#~ msgstr "ტუვალუ"
-
-#~ msgid "Uganda"
-#~ msgstr "უგანდა"
-
-#~ msgid "Ukraine"
-#~ msgstr "უკრაინა"
-
-#~ msgid "United Arab Emirates"
-#~ msgstr "შეერთებული არაბული ემირატები"
-
-#~ msgid "United Kingdom of Great Britain and Northern Ireland"
-#~ msgstr "დიდი ბრიტანეთის და ჩრდილო ირლანდიის სამეფო"
-
-#~ msgid "United Republic of Tanzania"
-#~ msgstr "ტანზანიის შეერთებული რესპუბლიკა"
-
-#~ msgid "United States of America"
-#~ msgstr "ამერიკის შეერთებული შტატები"
-
-#~ msgid "United States Virgin Islands"
-#~ msgstr "აშშ-ს ვირჯინიის კუნძულები"
-
-#~ msgid "Uruguay"
-#~ msgstr "ურუგვაი"
-
-#~ msgid "Uzbekistan"
-#~ msgstr "უზბეკეთი"
-
-#~ msgid "Vanuatu"
-#~ msgstr "ვანუატუ"
-
-#~ msgid "Venezuela"
-#~ msgstr "ვენესუელა"
-
-#~ msgid "Viet Nam"
-#~ msgstr "ვიეტნამი"
-
-#~ msgid "Wallis and Futuna Islands"
-#~ msgstr "ვალიშის და ფუტუნას კუნძულები"
-
-#~ msgid "Western Sahara"
-#~ msgstr "დასავლეთ სახარა"
-
-#~ msgid "Yemen"
-#~ msgstr "იემენი"
-
-#~ msgid "Zambia"
-#~ msgstr "ზამბია"
-
-#~ msgid "Zimbabwe"
-#~ msgstr "ზიმბაბვე"
-
-#~ msgid "Antarctica"
-#~ msgstr "ანტარქტიკა"
-
-#~ msgid "Bouvet Island"
-#~ msgstr "ბუვეს კუნძული"
-
-#~ msgid "British Indian Ocean Territory"
-#~ msgstr "ინდოეთის ოკეანეს ბრიტანული ტერიტორიები"
-
-#~ msgid "Christmas Island"
-#~ msgstr "შობის კუნძული"
-
-#~ msgid "Cocos (Keeling) Islands"
-#~ msgstr "კოკოსიური(კილინგის)კუნძულები"
-
-#~ msgid "French Southern Territories"
-#~ msgstr "სამხრეთ·ფრანგული·ტერიტორიები"
-
-#~ msgid "Heard Island and McDonald Islands"
-#~ msgstr "ჰერდისა და მაკდონალდის კუნძულები"
-
-#~ msgid "South Georgia and the South Sandwich Islands"
-#~ msgstr "სამხრეთ ჯორჯია და სამხრეთ სენდვიჩის კუნძულები"
-
-#~ msgid "Taiwan"
-#~ msgstr "ტაივანი"
-
-#~ msgid "United States Minor Outlying Islands"
-#~ msgstr "აშშ-ს მცირე გარე კუნძულები"
-
-#~ msgid "Afar"
-#~ msgstr "აფარ"
-
-#~ msgid "Abkhazian"
-#~ msgstr "აფხაზური"
-
-#~ msgid "Avestan"
-#~ msgstr "ავესტა"
-
-#~ msgid "Afrikaans"
-#~ msgstr "აფრიკაანსი"
-
-#~ msgid "Akan"
-#~ msgstr "აკან"
-
-#~ msgid "Amharic"
-#~ msgstr "არამეული"
-
-#~ msgid "Aragonese"
-#~ msgstr "არაგონული"
-
-#~ msgid "Arabic"
-#~ msgstr "არაბული"
-
-#~ msgid "Assamese"
-#~ msgstr "ასამური"
-
-#~ msgid "Asturian"
-#~ msgstr "ასტურიული"
-
-#~ msgid "Avaric"
-#~ msgstr "ავარული"
-
-#~ msgid "Aymara"
-#~ msgstr "აიმარა"
-
-#~ msgid "Azerbaijani"
-#~ msgstr "აზერბაიჯანული"
-
-#~ msgid "Bashkir"
-#~ msgstr "ბაშკირული"
-
-#~ msgid "Byelorussian"
-#~ msgstr "ბიელორუსული"
-
-#~ msgid "Bulgarian"
-#~ msgstr "ბულგარული"
-
-#~ msgid "Bihari"
-#~ msgstr "ბიჰარი"
-
-#~ msgid "Bislama"
-#~ msgstr "ბისმუთი"
-
-#~ msgid "Bambara"
-#~ msgstr "ბამბარა"
-
-#~ msgid "Bengali; Bangla"
-#~ msgstr "ბენგალი"
-
-#~ msgid "Tibetan"
-#~ msgstr "ტიბეტური"
-
-#~ msgid "Breton"
-#~ msgstr "ბრეტონული"
-
-#~ msgid "Bosnian"
-#~ msgstr "ბოსნიური"
-
-#~ msgid "Catalan"
-#~ msgstr "კატალანური"
-
-#~ msgid "Chechen"
-#~ msgstr "ჩეჩნური"
-
-#~ msgid "Chamorro"
-#~ msgstr "ჩამორო"
-
-#~ msgid "Corsican"
-#~ msgstr "კორსიკული"
-
-#~ msgid "Cree"
-#~ msgstr "ქრი"
-
-#~ msgid "Czech"
-#~ msgstr "ჩეხური"
-
-#~ msgid "Old Church Slavonic"
-#~ msgstr "ძველი საეკლესიო სლავური"
-
-#~ msgid "Chuvash"
-#~ msgstr "ჩუვაშური"
-
-#~ msgid "Welsh"
-#~ msgstr "შოტლანდიური"
-
-#~ msgid "Danish"
-#~ msgstr "დანიური"
-
-#~ msgid "German"
-#~ msgstr "გერმანული"
-
-#~ msgid "Divehi"
-#~ msgstr "დივეჰი"
-
-#~ msgid "Dzongkha"
-#~ msgstr "ჯონკა"
-
-#~ msgid "Ewe"
-#~ msgstr "ივი"
-
-#~ msgid "Greek, Modern"
-#~ msgstr "ბერძნული"
-
-#~ msgid "Esperanto"
-#~ msgstr "ესპერანტო"
-
-#~ msgid "Spanish"
-#~ msgstr "ესპანური"
-
-#~ msgid "Estonian"
-#~ msgstr "ესტონური"
-
-#~ msgid "Basque"
-#~ msgstr "ბასკური"
-
-#~ msgid "Persian"
-#~ msgstr "სპარსული"
-
-#~ msgid "Fulah"
-#~ msgstr "ფულახ"
-
-#~ msgid "Finnish"
-#~ msgstr "ფინური"
-
-#~ msgid "Faroese"
-#~ msgstr "ფარიესი"
-
-#~ msgid "French"
-#~ msgstr "ფრანგული"
-
-#~ msgid "Frisian"
-#~ msgstr "ფრიზიული"
-
-#~ msgid "Irish"
-#~ msgstr "ირლანდიური"
-
-#~ msgid "Scots Gaelic"
-#~ msgstr "შოტლანდიური გაელური"
-
-#~ msgid "Galician"
-#~ msgstr "გალიციური"
-
-#~ msgid "Guarani"
-#~ msgstr "გუარანი"
-
-#~ msgid "Gujarati"
-#~ msgstr "გუჯარათი"
-
-#~ msgid "Manx"
-#~ msgstr "მანქსი"
-
-#~ msgid "Hausa"
-#~ msgstr "ჰაუსა"
-
-#~ msgid "Hebrew"
-#~ msgstr "ივრითი"
-
-#~ msgid "Hindi"
-#~ msgstr "ინდური"
-
-#~ msgid "Hiri Motu"
-#~ msgstr "ხირიმოტუ"
-
-#~ msgid "Croatian"
-#~ msgstr "ხორვატიული"
-
-#~ msgid "Hungarian"
-#~ msgstr "უნგრული"
-
-#~ msgid "Armenian"
-#~ msgstr "სომხური"
-
-#~ msgid "Herero"
-#~ msgstr "გერერო"
-
-#~ msgid "Interlingua"
-#~ msgstr "ინტერლინგვა"
-
-#~ msgid "Indonesian"
-#~ msgstr "ინდონეზიური"
-
-#~ msgid "Interlingue"
-#~ msgstr "ინტერლინგუე"
-
-#~ msgid "Igbo"
-#~ msgstr "იგბო"
-
-#~ msgid "Sichuan Yi"
-#~ msgstr "სიჩუანური"
-
-#~ msgid "Inupiak"
-#~ msgstr "ინუპიაკ"
-
-#~ msgid "Ido"
-#~ msgstr "იდო"
-
-#~ msgid "Icelandic"
-#~ msgstr "ისლანდიური"
-
-#~ msgid "Italian"
-#~ msgstr "იტალიური"
-
-#~ msgid "Inuktitut"
-#~ msgstr "ინუკტიტუტი"
-
-#~ msgid "Japanese"
-#~ msgstr "იაპონური"
-
-#~ msgid "Javanese"
-#~ msgstr "ინდონეზიური"
-
-#~ msgid "Georgian"
-#~ msgstr "ქართული"
-
-#~ msgid "Kongo"
-#~ msgstr "კონგო"
-
-#~ msgid "Kikuyu"
-#~ msgstr "კიკუიუ"
-
-#~ msgid "Kuanyama"
-#~ msgstr "კუნიამა"
-
-#~ msgid "Kazakh"
-#~ msgstr "ყაზახური"
-
-#~ msgid "Greenlandic"
-#~ msgstr "გრენლანდიური"
-
-#~ msgid "Khmer"
-#~ msgstr "ქხმერული"
-
-#~ msgid "Kannada"
-#~ msgstr "კანადური"
-
-#~ msgid "Korean"
-#~ msgstr "კორეული"
-
-#~ msgid "Kanuri"
-#~ msgstr "კანური"
-
-#~ msgid "Kashmiri"
-#~ msgstr "ქაშმირული"
-
-#~ msgid "Kurdish"
-#~ msgstr "ქურთული"
-
-#~ msgid "Komi"
-#~ msgstr "კომი"
-
-#~ msgid "Cornish"
-#~ msgstr "კორნიული"
-
-#~ msgid "Kirghiz"
-#~ msgstr "ყირღიზული"
-
-#~ msgid "Latin"
-#~ msgstr "ლათინური"
-
-#~ msgid "Luxembourgish"
-#~ msgstr "ლუქსემბურგული"
-
-#~ msgid "Ganda"
-#~ msgstr "განდა"
-
-#~ msgid "Limburgan"
-#~ msgstr "ლიმბურგანი"
-
-#~ msgid "Lingala"
-#~ msgstr "ლინგალა"
-
-#~ msgid "Lao"
-#~ msgstr "ლაო"
-
-#~ msgid "Lithuanian"
-#~ msgstr "ლიტვური"
-
-#~ msgid "Luba-Katanga"
-#~ msgstr "ლუბა-კატანგა"
-
-#~ msgid "Latvian"
-#~ msgstr "ლატვიური"
-
-#~ msgid "Malagasy"
-#~ msgstr "მალგასი"
-
-#~ msgid "Marshallese"
-#~ msgstr "მარშალური"
-
-#~ msgid "Maori"
-#~ msgstr "მაორი"
-
-#~ msgid "Macedonian"
-#~ msgstr "მაკედონიური"
-
-#~ msgid "Malayalam"
-#~ msgstr "მალაიალამური"
-
-#~ msgid "Mongolian"
-#~ msgstr "მონღოლური"
-
-#~ msgid "Moldavian"
-#~ msgstr "მოლდავური"
-
-#~ msgid "Marathi"
-#~ msgstr "მარატი"
-
-#~ msgid "Malay"
-#~ msgstr "მალაიზიური"
-
-#~ msgid "Maltese"
-#~ msgstr "მალტური"
-
-#~ msgid "Burmese"
-#~ msgstr "ბურმესი"
-
-#~ msgid "Norwegian Bokmal"
-#~ msgstr "ნორვეგიული"
-
-#~ msgid "North Ndebele"
-#~ msgstr "ჩრდილოეთ ნდელე"
-
-#~ msgid "Nepali"
-#~ msgstr "ნეპალური"
-
-#~ msgid "Ndonga"
-#~ msgstr "ნდონგა"
-
-#~ msgid "Dutch"
-#~ msgstr "ჰოლანდიური"
-
-#~ msgid "Norwegian Nynorsk"
-#~ msgstr "ნორვეგიული"
-
-#~ msgid "Norwegian"
-#~ msgstr "ნორვეგიული"
-
-#~ msgid "South Ndebele"
-#~ msgstr "სამხრეთ ნდელე"
-
-#~ msgid "Navajo"
-#~ msgstr "ნავახო"
-
-#~ msgid "Occitan"
-#~ msgstr "ოსიტანი"
-
-#~ msgid "Ojibwa"
-#~ msgstr "ოჯიბვა"
-
-#~ msgid "Oromo"
-#~ msgstr "ორომო"
-
-#~ msgid "Oriya"
-#~ msgstr "ორიული"
-
-#~ msgid "Ossetian"
-#~ msgstr "ოსური"
-
-#~ msgid "Punjabi"
-#~ msgstr "პანჯაბი"
-
-#~ msgid "Pali"
-#~ msgstr "პალი"
-
-#~ msgid "Polish"
-#~ msgstr "პოლონური"
-
-#~ msgid "Pushto"
-#~ msgstr "პუშტუ"
-
-#~ msgid "Portuguese"
-#~ msgstr "პორტუგალიური"
-
-#~ msgid "Quechua"
-#~ msgstr "კეჩუა"
-
-#~ msgid "Rhaeto-Romance"
-#~ msgstr "რეტო-რომანული"
-
-#~ msgid "Rundi"
-#~ msgstr "რუნდი"
-
-#~ msgid "Romanian"
-#~ msgstr "რუმინული"
-
-#~ msgid "Russian"
-#~ msgstr "რუსული"
-
-#~ msgid "Kinyarwanda"
-#~ msgstr "კინიარვანდა"
-
-#~ msgid "Sanskrit"
-#~ msgstr "სანსკრიტი"
-
-#~ msgid "Sardinian"
-#~ msgstr "სარდინიული"
-
-#~ msgid "Sindhi"
-#~ msgstr "სინდჰი"
-
-#~ msgid "Northern Sami"
-#~ msgstr "ჩრიდილოეთ სამი"
-
-#~ msgid "Sango"
-#~ msgstr "სანგო"
-
-#~ msgid "Serbo-Croatian"
-#~ msgstr "სერბო-ხორვატიული"
-
-#~ msgid "Sinhalese"
-#~ msgstr "სინჰალური"
-
-#~ msgid "Slovak"
-#~ msgstr "სლოვაკური"
-
-#~ msgid "Slovenian"
-#~ msgstr "სლოვენური"
-
-#~ msgid "Samoan"
-#~ msgstr "სამოური"
-
-#~ msgid "Shona"
-#~ msgstr "შონა"
-
-#~ msgid "Somali"
-#~ msgstr "სომალური"
-
-#~ msgid "Albanian"
-#~ msgstr "ალბანური"
-
-#~ msgid "Serbian"
-#~ msgstr "სერბული"
-
-#~ msgid "Swati"
-#~ msgstr "სვატი"
-
-#~ msgid "Southern Sotho"
-#~ msgstr "სამხრეთ სოთო"
-
-#~ msgid "Sundanese"
-#~ msgstr "სუდანური"
-
-#~ msgid "Swedish"
-#~ msgstr "შვედური"
-
-#~ msgid "Swahili"
-#~ msgstr "სუახილი"
-
-#~ msgid "Tamil"
-#~ msgstr "თამილური"
-
-#~ msgid "Telugu"
-#~ msgstr "თელუგუ"
-
-#~ msgid "Tajik"
-#~ msgstr "ტაჯიკური"
-
-#~ msgid "Thai"
-#~ msgstr "ტაილანდური"
-
-#~ msgid "Tigrinya"
-#~ msgstr "ტიგრინია"
-
-#~ msgid "Turkmen"
-#~ msgstr "თურქმენული"
-
-#~ msgid "Tagalog"
-#~ msgstr "ტაგალოგი"
-
-#~ msgid "Tswana"
-#~ msgstr "ტსვანა"
-
-#~ msgid "Turkish"
-#~ msgstr "თურქული"
-
-#~ msgid "Tsonga"
-#~ msgstr "ტსონგა"
-
-#~ msgid "Tatar"
-#~ msgstr "თათრული"
-
-#~ msgid "Twi"
-#~ msgstr "ტუია"
-
-#~ msgid "Tahitian"
-#~ msgstr "ტაიტური"
-
-#~ msgid "Uighur"
-#~ msgstr "უიგური"
-
-#~ msgid "Ukrainian"
-#~ msgstr "უკრაინული"
-
-#~ msgid "Urdu"
-#~ msgstr "ურდუ"
-
-#~ msgid "Uzbek"
-#~ msgstr "უზბეკური"
-
-#~ msgid "Venda"
-#~ msgstr "ვენდა"
-
-#~ msgid "Vietnamese"
-#~ msgstr "ვიეტნამური"
-
-#~ msgid "Volapuk"
-#~ msgstr "ვოლაპუკი"
-
-#~ msgid "Walloon"
-#~ msgstr "ვალონური"
-
-#~ msgid "Wolof"
-#~ msgstr "ვოლოფი"
-
-#~ msgid "Xhosa"
-#~ msgstr "ქსოსა"
-
-#~ msgid "Yiddish"
-#~ msgstr "იდიში"
-
-#~ msgid "Yoruba"
-#~ msgstr "იორუბა"
-
-#~ msgid "Zhuang"
-#~ msgstr "ზუანგი"
-
-#~ msgid "Chinese"
-#~ msgstr "ჩინური"
-
-#~ msgid "Zulu"
-#~ msgstr "ზულუ"
-
-#~ msgid "Update language support?"
-#~ msgstr "შევასრულო ენის მხარდაჭერის განახლება ?"
-
-#~ msgid "Remind me again"
-#~ msgstr "შემახსენე მომავალში"
-
-#~ msgid "Install now"
-#~ msgstr "მყისვე დაყენება"
-
-#~ msgid "Internal error"
-#~ msgstr "შიდა შეცდომა"
-
-#~ msgid ""
-#~ "The internal cache couldn't be cleaned. Please report this as a error on "
-#~ "bugzilla.ubuntu.com."
-#~ msgstr ""
-#~ "შეუძლებელია შიდა შეცდომის შესწორება. გთხოვთ მიწეროთ უბუნტუს bugzilla."
-#~ "ubuntu.com მისამართზე."
-
-#~ msgid "Can not apply changes"
-#~ msgstr "შეუძლებელია ცვლილებების დამტკიცება"
-
-#~ msgid ""
-#~ "Some packages for full language support can't be installed on your "
-#~ "system. This usually means there is something wrong in the ubuntu archive "
-#~ "or with your 'apt' software settings."
-#~ msgstr ""
-#~ "ვერ იდგმება ზოგიერთი პაკეტი ენის სრული მხარდაჭერისთვის. ეს იმას ნიშნავს "
-#~ "რომ რაღაცა სჭირს თქვენს უბუნტუ არქივს ან მოიშალა apt მენეჯერის "
-#~ "პარამეტრები."
-
-#~ msgid "Unable to get exclusive lock"
-#~ msgstr "შეუძლებელია დაკეტვა"
-
-#~ msgid ""
-#~ "This usually means that another package management application (like apt-"
-#~ "get or aptitude) already running. Please close that application first"
-#~ msgstr ""
-#~ "ეტყობა რომ ჩართულია ერთდროულად ორი 'პროგრამების მენეჯერი' (მაგალითად apt-"
-#~ "get ან aptitude). გთხოვთ დახურეთ ერთ-ერთი მათგანი"
-
-#~ msgid "Package database inconsitent"
-#~ msgstr "პროგრამების მონაცემთა ბაზა დაზიანებულია"
-
-#~ msgid ""
-#~ "The package database on your system is in a inconsistent state (you have "
-#~ "broken packages on your system). It is not possible to continue. Please "
-#~ "use synaptic or apt-get to fix this first."
-#~ msgstr ""
-#~ "პროგრამების მონაცემთა ბაზა შეიცავს შეცდომებს (სისტემის ზოგიერთი პროგრამა "
-#~ "დაზიანებულია). შეუძლებელია გაგრძელება. გთხოვთ, პრობლემების მოსაგვარებლად."
-#~ "გამოიყენეთ synaptic ან apt-get."
-
-#~ msgid "<big><b>Reading available languages</b></big>"
-#~ msgstr "<big><b>არსებული ენების შემოწმება</b></big>"
-
-#~ msgid "Default language for new accounts and the login screen:"
-#~ msgstr "ნაგულისხმევი ენა კომპიუტერის მომხმარებლებისთვის:"
-
-#~ msgid ""
-#~ "Reading information about the available languages. Depending on the speed "
-#~ "of your computer this may take a bit."
-#~ msgstr "იკითხება ინფორმაცია მხარდაჭერილი ენების შესახებ. გთხოვთ მოითმინოთ."
-
-#~ msgid ""
-#~ "Translations include menus, dialogs and help. Writing aids include "
-#~ "dictionaries, grammar checkers and input methods. Please note, some "
-#~ "languages don't provide translations or wirting aids."
-#~ msgstr ""
-#~ "თარგმანის პაკეტი წარმოადგენს გრაფიკული გარსის, დახმარების და საინფორმაციო "
-#~ "შეტყობინებების ინტერნაციონალიზაციის შესაძლებლობას. ლინგვისტიკა, "
-#~ "წარმოადგენს მართლწერის მეთოდების და მართლწერისშემამოწმებელი პროგრამების "
-#~ "პაკეტს."
-
-#~ msgid "Install/remove language support"
-#~ msgstr "ენის მხარდაჭერის ჩადგმა/წაშლა"
+msgstr "არავითარი fontconfig-voodoo კონფიგურაცია ამორჩეული ლოკალისთვის"

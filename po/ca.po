@@ -1,0 +1,439 @@
+# Lluís M. García Sota <lluis.garcia@gmail.com>, 2006.
+# Josep Sànchez Mesegué <papapep@gmail.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-18 10:04+0100\n"
+"PO-Revision-Date: 2008-10-15 17:36+0000\n"
+"Last-Translator: David Planella <Unknown>\n"
+"Language-Team: Catalan <Ubuntu-l10n-ca@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
+msgid "Language"
+msgstr "Idioma"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
+msgid "Support"
+msgstr "Suport"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:420
+msgid "Could not install the selected language support"
+msgstr "No s'ha pogut instal·lar el suport d'idioma seleccionat"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:421
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
+msgstr ""
+"Això és possiblement un error de l'aplicació. Si us plau informeu de l'error "
+"a https://launchpad.net/bugs/bugs/+package/ al producte 'language-selector'."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
+msgid "Could not install the full language support"
+msgstr "No s'ha pogut instal·lar el suport d'idioma complet"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the menu \"Adminstration\"."
+msgstr ""
+"Normalment això està relacionat amb un error en el vostre fitxer o en el "
+"gestor de programari. Comproveu les preferències del vostre programari al "
+"menú \"Administració\"."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
+msgid "The list of available languages on the system has been updated."
+msgstr "S'ha actualitzat la llista d'idiomes disponibles al sistema."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
+#: ../LanguageSelector/qt/QtLanguageSelector.py:144
+msgid "The language support is not installed completely"
+msgstr "El suport d'idioma no està instal·lat completament"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
+#: ../LanguageSelector/qt/QtLanguageSelector.py:145
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"Encara no s'han instal·lat algunes traduccions o ajudes d'escriptura "
+"disponibles pel vostre idioma.Voleu fer-ho ara?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:588
+#: ../LanguageSelector/qt/QtLanguageSelector.py:140
+msgid "_Remind Me Later"
+msgstr "_Recorda-m'ho després"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:589
+#: ../LanguageSelector/qt/QtLanguageSelector.py:139
+msgid "_Install"
+msgstr "_Instal·la"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:592
+#: ../data/LanguageSelector.glade.h:13
+msgid "Details"
+msgstr "Detalls"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:631
+#: ../LanguageSelector/qt/QtLanguageSelector.py:71
+msgid "Software database is broken"
+msgstr "La base de dades de programari està trencada"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:632
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"És impossible instal·lar o eliminar qualsevol programari. Si us plau useu el "
+"gestor de paquets\"Synaptic\" o executeu \"sudo apt-get install -f\" en un "
+"terminal per a solucionar primer el problema"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:686
+msgid "Reboot required"
+msgstr "Cal que reinicieu el sistema"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
+msgid ""
+"To complete the changes a reboot is required so that the new functionality "
+"is activated."
+msgstr ""
+"Cal que reinicieu el sistema per poder completar els canvis i així poder "
+"activar les funcionalitats noves."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:47
+msgid "Uninstall"
+msgstr "Desinstal·la"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:48
+msgid "Select language to uninstall:"
+msgstr "Seleccioneu l'idioma a desinstal·lar:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:55
+msgid "Language Selector"
+msgstr "Selector d'idiomes:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"No es pot instal·lar o suprimir programari. Utilitzeu el gestor de paquets "
+"Adept o bé executeu la línia «sudo apt-get install -f» en un terminal per a "
+"solucionar aquest problema abans de fer res més."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:87
+msgid "Default system language:"
+msgstr "Idioma per defecte del sistema:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:88
+msgid "Set System Language"
+msgstr "Estableix l'idioma del sistema:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../data/LanguageSelector.glade.h:14
+msgid "Enable support to enter complex characters"
+msgstr "Habilita el suport per a introduir caràcters complexos:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:91
+msgid "Select language to install:"
+msgstr "Seleccioneu l'idioma a instal·lar:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:92
+msgid "Install"
+msgstr "Instal·lació"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:185
+msgid "Already installed"
+msgstr "Ja està instal·lat"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:189
+msgid "Partially Installed"
+msgstr "Està instal·lat parcialment"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:193
+msgid "Not installed"
+msgstr "No està instal·lat"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:240
+#, python-format
+msgid ""
+"Default system Language now set to %s.  Complex character input will be "
+"enabled when you next log in."
+msgstr ""
+"L'idioma per defecte del sistema establert és %s.  La introducció de "
+"caràcters complexos s'habilitarà quan torneu a registrar-vos."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:240
+#: ../LanguageSelector/qt/QtLanguageSelector.py:242
+msgid "Language Set"
+msgstr "Conjunt d'idiomes"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:242
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "L'idioma per defecte del sistema establert és %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:323
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr ""
+"S'han instal·lat les traduccions i el suport per a %s.  Trieu-los al botó "
+"Afegeix idioma."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:323
+msgid "Language Installed"
+msgstr "S'ha instal·lat l'idioma"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:325
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "S'han desinstal·lat les traduccions i el suport per a %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:325
+msgid "Language Uninstalled"
+msgstr "S'ha desinstal·lat l'idioma"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+msgid "Failed to set system language."
+msgstr "S'ha trobat un error en establir l'idioma del sistema"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+msgid "Language Not Set"
+msgstr "No s'ha establert l'idioma."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+msgid "Please run this software with administrative rights."
+msgstr "Cal que executeu aquest programa amb permisos d'administrador."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+msgid "Not Root User"
+msgstr "No sou l'usuari principal"
+
+#: ../data/LanguageSelector.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/LanguageSelector.glade.h:2
+msgid "<b>Default Language</b>"
+msgstr "<b>Idioma per defecte</b>"
+
+#: ../data/LanguageSelector.glade.h:3
+msgid "<b>Input method</b>"
+msgstr "<b>Mètode d'entrada</b>"
+
+#: ../data/LanguageSelector.glade.h:4
+msgid "<b>Supported Languages</b>"
+msgstr "<b>Idiomes suportats</b>"
+
+#: ../data/LanguageSelector.glade.h:5
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availablity of translations or writing aids can differ between languages."
+msgstr ""
+"<big><b>S'està comprovant el suport d'idioma disponible</b></big>\n"
+"\n"
+"La disponibilitat de les traduccions o ajudes a l'escriptura pot variar "
+"segons l'idioma."
+
+#: ../data/LanguageSelector.glade.h:8
+msgid "Additional Fonts"
+msgstr "Tipus de lletra addicionals"
+
+#: ../data/LanguageSelector.glade.h:9
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr ""
+"Tipus de lletra addicionals per a aquesta llengua que puguin ser d'interès "
+"general, com ara tipus de lletra decoratius per a imprimir documents."
+
+#: ../data/LanguageSelector.glade.h:10
+msgid ""
+"Additional software which might be of general interest for users using this "
+"language."
+msgstr ""
+"Programari addicional que pot ser d'interès general per als usuaris "
+"d'aquesta llengua."
+
+#: ../data/LanguageSelector.glade.h:11
+msgid "Basic Translations"
+msgstr "Traduccions bàsiques"
+
+#: ../data/LanguageSelector.glade.h:12
+msgid "Default language for new user accounts and the login screen:"
+msgstr ""
+"Idioma per defecte per a nous comptes d'usuari i per a la pantalla d'inici "
+"de sessió:"
+
+#: ../data/LanguageSelector.glade.h:15
+msgid "Extra Translations"
+msgstr "Traduccions addicionals"
+
+#: ../data/LanguageSelector.glade.h:16
+msgid "Extra software"
+msgstr "Programari addicional"
+
+#: ../data/LanguageSelector.glade.h:17
+msgid ""
+"Input Methods for languages with complex scripts. Scim modules or other "
+"relevant software which helps with typing complex characters."
+msgstr ""
+"Mètodes d'entrada per a llengües d'escriptura complexa, com ara mòduls de "
+"l'SCIM (mètode d'entrada comú intel·ligent) o altre programari auxiliar per "
+"a escriure caràcters complexos."
+
+#: ../data/LanguageSelector.glade.h:18
+msgid "Input methods"
+msgstr "Mètodes d'entrada"
+
+#: ../data/LanguageSelector.glade.h:19
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "Suport d'idioma"
+
+#: ../data/LanguageSelector.glade.h:20
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgstr ""
+"Traduccions i fitxers d'ajuda de l'OpenOffice.org, el Firefox, el "
+"Thunderbird, i el Pidgin."
+
+#: ../data/LanguageSelector.glade.h:21
+msgid "Translations for your desktop. Also known as language-pack."
+msgstr ""
+"Traduccions per a l'escriptori, altrament conegudes com a paquets de llengua "
+"(language-packs)."
+
+#: ../data/LanguageSelector.glade.h:22
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"Llistes de paraules, diccionaris, diccionaris de sinònims, etc. que poden "
+"ajudar a través del ressaltat, correcció o suggeriment de paraules."
+
+#: ../data/LanguageSelector.glade.h:23
+msgid "Writing aids"
+msgstr "Ajudes d'escriptura"
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "Configureu el suport d'idiomes múltiples i natiu al vostre sistema"
+
+#. Name
+#: ../data/incomplete-language-support-gnome.note.in:1
+#: ../data/incomplete-language-support-qt.note.in:1
+msgid "Incomplete Language Support"
+msgstr "Suport d'idioma incomplet"
+
+#. Description
+#: ../data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
+msgstr ""
+"Sembla ser que els fitxers de suport d'idioma per a la vostra llengua són "
+"incomplets. Podeu instal·lar els components que manquen si feu clic a "
+"«Executa ara aquesta acció» i seguiu les instruccions, cosa per la qual us "
+"caldrà una connexió activa a Internet. En cas que no vulgueu fer-ho ara sinó "
+"més endavant, utilitzeu l'entrada de menú «Sistema -> Administració -> Suport "
+"d'idioma» en lloc d'això."
+
+#. Description
+#: ../data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
+msgstr ""
+"Sembla ser que els fitxers de suport d'idioma per a la vostra llengua són "
+"incomplets. Podeu instal·lar els components que manquen si feu clic a "
+"«Executa ara aquesta acció» i seguiu les instruccions, cosa per la qual us "
+"caldrà una connexió activa a Internet. En cas que no vulgueu fer-ho ara sinó "
+"més endavant, utilitzeu l'entrada de menú «Configuració del sistema -> "
+"Configuració regional i d'idioma» en lloc d'això."
+
+#. Name
+#: ../data/restart_session_required.note.in:1
+msgid "Session Restart Required"
+msgstr "Cal tornar a iniciar la sessió"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr "Els paràmetres de llengua nous tindran efecte un cop hàgiu sortit."
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "S'està cancel·lant l'operació"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "Força l'operació encara que existeixi configuració prèvia"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "Defineix fontconfig voodoo per l'idioma seleccionat"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"Suposa una configuració basada en la variable d'entorn LANGUAGE. Es fixarà "
+"la configuració a 'cap' si no se'n troba una d'apropiada"
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "Llista les configuracions disponibles de fontconfig voodoo"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "Mostra la configuració actual de fontconfig voodoo"
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Esborra la configuració actual del fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "Sense configurar"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr ""
+"S'ha trobat una configuració prèvia. Empreu '--force' per a sobreescriure-"
+"la. "
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr ""
+"No s'ha trobat cap configuració de fontconfig voodoo per les locale "
+"seleccionades"

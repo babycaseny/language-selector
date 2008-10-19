@@ -9,12 +9,14 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-26 01:08+0800\n"
-"PO-Revision-Date: 2006-05-13 15:43+0000\n"
+"PO-Revision-Date: 2008-10-15 18:34+0000\n"
 "Last-Translator: Kostas Papadimas <pkst@gmx.net>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 msgid "Language"
@@ -59,18 +61,17 @@ msgid "The language support is not installed completely"
 msgstr "Η γλωσσική υποστήριξη δεν έχει εγκατασταθεί πλήρως"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
-#, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
 "Δεν έχουν εγκατασταθεί πλήρως όλες οι μεταφράσεις και τα βοηθήματα γραφής "
-"που είναι διαθέσιμα για τις υποστηριζόμενες γλώσσες στο σύστημα σας."
+"που είναι διαθέσιμα για τις επιλεγμένες γλώσσες στο σύστημα σας. Θέλετε να "
+"τις εγκαταστήσετε τώρα;"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:583
-#, fuzzy
 msgid "_Remind Me Later"
-msgstr "Υπεν_θύμιση ξανά"
+msgstr "Υπεν_θύμισε μου αργότερα"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
 msgid "_Install"
@@ -101,77 +102,70 @@ msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Reboot required"
-msgstr ""
+msgstr "Απαιτείται επανεκκίνηση"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:682
 msgid ""
 "To complete the changes a reboot is required so that the new functionality "
 "is activated."
-msgstr ""
+msgstr "Για να ολοκληρώσετε τις αλλαγές, επανεκκινήστε τον υπολογιστή σας."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:48
-#, fuzzy
 msgid "Uninstall"
-msgstr "_Εγκατάσταση"
+msgstr "Απεγκατάσταση"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:49
 msgid "Select language to uninstall:"
-msgstr ""
+msgstr "Επιλέξτε γλώσσα για απεγκατάσταση:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:56
-#, fuzzy
 msgid "Language Selector"
 msgstr "Επιλογέας γλώσσας"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:85
-#, fuzzy
 msgid "Default system language:"
-msgstr "Προεπιλεγμένη γλώσσα"
+msgstr "Προεπιλεγμένη γλώσσα συστήματος:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
-#, fuzzy
 msgid "Set System Language"
-msgstr "Υποστηριζόμενες γλώσσες"
+msgstr "Καθορισμός γλώσσας συστήματος"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 #: ../data/LanguageSelector.glade.h:14
 msgid "Enable support to enter complex characters"
-msgstr ""
+msgstr "Ενεργοποίηση υποστήριξης για εισαγωγή περίπλοκων χαρακτήρων"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:88
 #: ../LanguageSelector/qt/QtLanguageSelector.py:91
-#, fuzzy
 msgid "Cancel"
-msgstr "Γαλλία"
+msgstr "Ακύρωση"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "Select language to install:"
-msgstr ""
+msgstr "Επιλέξτε γλώσσα για εγκατάσταση:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#, fuzzy
 msgid "Install"
-msgstr "_Εγκατάσταση"
+msgstr "Εγκατάσταση"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Already installed"
-msgstr ""
+msgstr "Ήδη εγκατεστημένη"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:135
 msgid "Partially Installed"
-msgstr ""
+msgstr "Μερικώς εγκατεστημένη"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:139
 msgid "Not installed"
-msgstr ""
+msgstr "Μη εγκατεστημένη"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
-#, fuzzy
 msgid "Language Set"
-msgstr "Γλώσσα"
+msgstr "Ρύθμιση Γλώσσας"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #, python-format
@@ -179,16 +173,17 @@ msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
+"Η προεπιλεγμένη γλώσσα συστήματος καθορίστηκε τώρα σε %s. Η εισαγωγή "
+"περίπλοκων χαρακτήρων θα ενεργοποιηθεί την επόμενη φορά που θα συνδεθείτε."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "Η προεπιλεγμένη γλώσσα συστήματος καθορίστηκε τώρα σε %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
-#, fuzzy
 msgid "Language Installed"
-msgstr "Επιλογέας γλώσσας"
+msgstr "Η γλώσσα εγκαταστάθηκε"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
 #, python-format
@@ -196,25 +191,25 @@ msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
+"Οι μεταφράσεις και η υποστήριξη για %s εγκαταστάθηκαν. Επιλέξτε τις από το "
+"κουμπί Προσθήκη γλώσσας."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
-#, fuzzy
 msgid "Language Uninstalled"
-msgstr "Επιλογέας γλώσσας"
+msgstr "Η γλώσσα απεγκαταστάθηκε"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "Οι μεταφράσεις και η υποστήριξη για %s απεγκαταστάθηκαν."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
-#, fuzzy
 msgid "Language Not Set"
-msgstr "Γλωσσική υποστήριξη"
+msgstr "Η γλώσσα δεν ρυθμίστηκε"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
 msgid "Failed to set system language."
-msgstr ""
+msgstr "Αποτυχία καθορισμού γλώσσας συστήματος."
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -226,7 +221,7 @@ msgstr "<b>Προεπιλεγμένη γλώσσα</b>"
 
 #: ../data/LanguageSelector.glade.h:3
 msgid "<b>Input method</b>"
-msgstr ""
+msgstr "<b>Μέθοδος εισαγωγής</b>"
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<b>Supported Languages</b>"
@@ -261,9 +256,8 @@ msgid ""
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:11
-#, fuzzy
 msgid "Basic Translations"
-msgstr "Μετάφραση"
+msgstr ""
 
 #: ../data/LanguageSelector.glade.h:12
 msgid "Default language for new user accounts and the login screen:"
@@ -271,9 +265,8 @@ msgstr ""
 "Προεπιλεγμένη γλώσσα για λογαριασμούς νέων χρηστών και της οθόνης εισόδου:"
 
 #: ../data/LanguageSelector.glade.h:15
-#, fuzzy
 msgid "Extra Translations"
-msgstr "Μετάφραση"
+msgstr ""
 
 #: ../data/LanguageSelector.glade.h:16
 msgid "Extra software"
@@ -321,9 +314,8 @@ msgstr "Ρύθμιση πολλαπλής γλωσσικής υποστήριξ�
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:1
 #: ../data/incomplete-language-support-qt.note.in:1
-#, fuzzy
 msgid "Incomplete Language Support"
-msgstr "Γλωσσική υποστήριξη"
+msgstr "Ημιτελής γλωσσική υποστήριξη"
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -386,13 +378,12 @@ msgid "Show the current fontconfig-voodoo config"
 msgstr "Προβολής της τρέχουσας ρύθμισης fontconfig-voodoo"
 
 #: ../fontconfig-voodoo:43
-#, fuzzy
 msgid "Remove the current fontconfig-voodoo config"
-msgstr "Προβολής της τρέχουσας ρύθμισης fontconfig-voodoo"
+msgstr "Αφαίρεση της τρέχουσας ρύθμισης fontconfig-voodoo"
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr ""
+msgstr "Δεν έχει ρυθμιστεί"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
@@ -402,738 +393,3 @@ msgstr ""
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Δεν βρέθηκε ρύθμιση  fontconfig-voodoo για το επιλεγμένο locale."
-
-#~ msgid "Only one software management tool is allowed to run at the same time"
-#~ msgstr ""
-#~ "Επιτρέπεται η εκτέλεση μόνο ενός εργαλείο διαχείρισης λογισμικού την ίδια "
-#~ "στιγμή."
-
-#~ msgid ""
-#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
-#~ "or \"Synaptic\" at first."
-#~ msgstr ""
-#~ "Παρακαλώ κλείστε πρώτα την άλλη εφαρμογή π.χ \"Διαχείριση ενημερώσεων\", "
-#~ "\"aptitude\" ή το\"Synaptic\"."
-
-#~ msgid "You are not root"
-#~ msgstr "Δεν είστε rooy"
-
-#~ msgid "Please run this software with administrative rights."
-#~ msgstr ""
-#~ "Παρακαλώ χρησιμοποιήστε αυτό το λογισμικό με δικαιώματα διαχειριστή."
-
-#~ msgid "Close"
-#~ msgstr "Κλείσιμο"
-
-#~ msgid "Apply"
-#~ msgstr "Εφαρμογή"
-
-#~ msgid "English"
-#~ msgstr "Αγγλικά"
-
-#~ msgid "Afghanistan"
-#~ msgstr "Αφγανιστάν"
-
-#~ msgid "Åland Islands"
-#~ msgstr "Νήσοι Αλαντ"
-
-#~ msgid "Albania"
-#~ msgstr "Αλβανία"
-
-#~ msgid "Algeria"
-#~ msgstr "Αλγερία"
-
-#~ msgid "American Samoa"
-#~ msgstr "Αμερικανική Σαμόα"
-
-#~ msgid "Andorra"
-#~ msgstr "Ανδόρρα"
-
-#~ msgid "Angola"
-#~ msgstr "Αγγόλα"
-
-#~ msgid "Anguilla"
-#~ msgstr "Αγκίλα"
-
-#~ msgid "Antigua and Barbuda"
-#~ msgstr "Αντίγκουα και Μπαρμπούντα"
-
-#~ msgid "Argentina"
-#~ msgstr "Αργεντινή"
-
-#~ msgid "Armenia"
-#~ msgstr "Αρμενία"
-
-#~ msgid "Aruba"
-#~ msgstr "Αρούμπα"
-
-#~ msgid "Australia"
-#~ msgstr "Αυστραλία"
-
-#~ msgid "Austria"
-#~ msgstr "Αυστρία"
-
-#~ msgid "Azerbaijan"
-#~ msgstr "Αζερμπαϊτζάν"
-
-#~ msgid "Bahamas"
-#~ msgstr "Μπαχάμες"
-
-#~ msgid "Bahrain"
-#~ msgstr "Μπαχρέιν"
-
-#~ msgid "Bangladesh"
-#~ msgstr "Μπανγκλαντές"
-
-#~ msgid "Barbados"
-#~ msgstr "Μπαρμπάντος"
-
-#~ msgid "Belarus"
-#~ msgstr "Λευκορωσία"
-
-#~ msgid "Belgium"
-#~ msgstr "Βέλγιο"
-
-#~ msgid "Belize"
-#~ msgstr "Μπελίζ"
-
-#~ msgid "Benin"
-#~ msgstr "Μπενίν"
-
-#~ msgid "Bermuda"
-#~ msgstr "Βερμούδες"
-
-#~ msgid "Bhutan"
-#~ msgstr "Μπουτάν"
-
-#, fuzzy
-#~ msgid "Bolivia"
-#~ msgstr "Βολιβία"
-
-#~ msgid "Bosnia and Herzegovina"
-#~ msgstr "Βοσνία-Ερζεγοβίνη"
-
-#~ msgid "Botswana"
-#~ msgstr "Μποτσουάνα"
-
-#~ msgid "Brazil"
-#~ msgstr "Βραζιλία"
-
-#~ msgid "British Virgin Islands"
-#~ msgstr "Βρετανικές Παρθένοι Νήσοι"
-
-#~ msgid "Brunei Darussalam"
-#~ msgstr "Μπρουνέι Νταρουσαλάμ"
-
-#~ msgid "Bulgaria"
-#~ msgstr "Βουλγαρία"
-
-#~ msgid "Burkina Faso"
-#~ msgstr "Μπουρκίνα Φάσο"
-
-#~ msgid "Burundi"
-#~ msgstr "Μπουρούντι"
-
-#~ msgid "Cambodia"
-#~ msgstr "Καμπότζη"
-
-#~ msgid "Cameroon"
-#~ msgstr "Καμερούν"
-
-#~ msgid "Canada"
-#~ msgstr "Καναδάς"
-
-#~ msgid "Cape Verde"
-#~ msgstr "Πράσινο Ακρωτήριο"
-
-#~ msgid "Cayman Islands"
-#~ msgstr "Νήσοι Κέυμαν"
-
-#, fuzzy
-#~ msgid "Central African Republic"
-#~ msgstr "Δημοκρατία Κεντρικής Αφρικής"
-
-#~ msgid "Chad"
-#~ msgstr "Τσαντ"
-
-#~ msgid "Chile"
-#~ msgstr "Χιλή"
-
-#~ msgid "China"
-#~ msgstr "Κίνα"
-
-#~ msgid "Hong Kong Special Administrative Region of China"
-#~ msgstr "Χονγκ-Κονγκ Ειδική Διοικητική Περιοχή Κίνας"
-
-#~ msgid "Colombia"
-#~ msgstr "Κολομβία"
-
-#~ msgid "Comoros"
-#~ msgstr "Κομόρες"
-
-#~ msgid "Congo"
-#~ msgstr "Κονγκό"
-
-#~ msgid "Cook Islands"
-#~ msgstr "Νήσοι Κουκ"
-
-#~ msgid "Costa Rica"
-#~ msgstr "Κόστα Ρίκα"
-
-#~ msgid "Côte d'Ivoire"
-#~ msgstr "Ακτή Ελεφαντοστού"
-
-#~ msgid "Croatia"
-#~ msgstr "Κροατία"
-
-#~ msgid "Cuba"
-#~ msgstr "Κούβα"
-
-#~ msgid "Cyprus"
-#~ msgstr "Κύπρος"
-
-#~ msgid "Czech Republic"
-#~ msgstr "Τσεχία"
-
-#~ msgid "Democratic People's Republic of Korea"
-#~ msgstr "Λαϊκη Δημοκρατία της Κορέας"
-
-#~ msgid "Denmark"
-#~ msgstr "Δανία"
-
-#~ msgid "Djibouti"
-#~ msgstr "Τζιμπουτί"
-
-#~ msgid "Dominica"
-#~ msgstr "Ντομίνικα"
-
-#~ msgid "Dominican Republic"
-#~ msgstr "Δομηνικανή Δημοκρατία"
-
-#~ msgid "Ecuador"
-#~ msgstr "Ισημερινός"
-
-#~ msgid "Egypt"
-#~ msgstr "Αίγυπτος"
-
-#~ msgid "El Salvador"
-#~ msgstr "Ελ Σαλβαδόρ"
-
-#~ msgid "Equatorial Guinea"
-#~ msgstr "Ισημερινή Γουϊνέα"
-
-#~ msgid "Eritrea"
-#~ msgstr "Ερυθραία"
-
-#~ msgid "Estonia"
-#~ msgstr "Εσθονία"
-
-#~ msgid "Ethiopia"
-#~ msgstr "Αιθιοπία"
-
-#~ msgid "Falkland Islands (Malvinas)"
-#~ msgstr "Νήσοι Φώκλαντ (Μαλβίνες)"
-
-#~ msgid "Fiji"
-#~ msgstr "Φίτζι"
-
-#~ msgid "Finland"
-#~ msgstr "Φινλανδία"
-
-#~ msgid "French Guiana"
-#~ msgstr "Γαλλική Γουϊάνα"
-
-#~ msgid "French Polynesia"
-#~ msgstr "Γαλλική Πολυνησία"
-
-#~ msgid "Gabon"
-#~ msgstr "Γκαμπόν"
-
-#~ msgid "Gambia"
-#~ msgstr "Γκάμπια"
-
-#~ msgid "Georgia"
-#~ msgstr "Γεωργία"
-
-#~ msgid "Germany"
-#~ msgstr "Γερμανία"
-
-#~ msgid "Ghana"
-#~ msgstr "Γκάνα"
-
-#~ msgid "Gibraltar"
-#~ msgstr "Γιβραλτάρ"
-
-#~ msgid "Greece"
-#~ msgstr "Ελλάδα"
-
-#, fuzzy
-#~ msgid "Greenland"
-#~ msgstr "Γροιλανδία"
-
-#~ msgid "Grenada"
-#~ msgstr "Γρενάδα"
-
-#~ msgid "Guadeloupe"
-#~ msgstr "Γουαδελούπη"
-
-#~ msgid "Guam"
-#~ msgstr "Γκουάμ"
-
-#~ msgid "Guatemala"
-#~ msgstr "Γουατεμάλα"
-
-#~ msgid "Guinea"
-#~ msgstr "Γουϊνέα"
-
-#~ msgid "Guinea-Bissau"
-#~ msgstr "Γουϊνέα-Μπισάου"
-
-#~ msgid "Guyana"
-#~ msgstr "Γουϊάνα"
-
-#~ msgid "Haiti"
-#~ msgstr "Αϊτή"
-
-#~ msgid "Honduras"
-#~ msgstr "Ονδούρα"
-
-#~ msgid "Hungary"
-#~ msgstr "Ουγγαρία"
-
-#~ msgid "Iceland"
-#~ msgstr "Ισλανδία"
-
-#~ msgid "India"
-#~ msgstr "Ινδία"
-
-#~ msgid "Indonesia"
-#~ msgstr "Ινδονησία"
-
-#~ msgid "Iraq"
-#~ msgstr "Ιράκ"
-
-#~ msgid "Ireland"
-#~ msgstr "Ιρλανδία"
-
-#~ msgid "Israel"
-#~ msgstr "Ισραήλ"
-
-#~ msgid "Italy"
-#~ msgstr "Ιταλία"
-
-#~ msgid "Jamaica"
-#~ msgstr "Τζαμάικα"
-
-#~ msgid "Japan"
-#~ msgstr "Ιαπωνία"
-
-#~ msgid "Jordan"
-#~ msgstr "Ιορδανία"
-
-#~ msgid "Kazakhstan"
-#~ msgstr "Καζακστάν"
-
-#~ msgid "Kenya"
-#~ msgstr "Κένυα"
-
-#~ msgid "Kiribati"
-#~ msgstr "Κιριμπάτι"
-
-#, fuzzy
-#~ msgid "Kuwait"
-#~ msgstr "Κουβέιτ"
-
-#~ msgid "Kyrgyzstan"
-#~ msgstr "Κιργκιστάν"
-
-#~ msgid "Lao People's Democratic Republic"
-#~ msgstr "Λαϊκή Δημοκρατία του Λάο"
-
-#~ msgid "Latvia"
-#~ msgstr "Λεττονία"
-
-#~ msgid "Lebanon"
-#~ msgstr "Λίβανος"
-
-#, fuzzy
-#~ msgid "Lesotho"
-#~ msgstr "Λεσότο"
-
-#, fuzzy
-#~ msgid "Liberia"
-#~ msgstr "Λιβερία"
-
-#, fuzzy
-#~ msgid "Libyan Arab Jamahiriya"
-#~ msgstr "Αραβική Λυβική Jamahiriya"
-
-#~ msgid "Liechtenstein"
-#~ msgstr "Λιχτενστάιν"
-
-#~ msgid "Lithuania"
-#~ msgstr "Λιθουανία"
-
-#, fuzzy
-#~ msgid "Luxembourg"
-#~ msgstr "Λουξεμβούργο"
-
-#, fuzzy
-#~ msgid "Madagascar"
-#~ msgstr "Μαδαγασκάρη"
-
-#~ msgid "Malawi"
-#~ msgstr "Μαλάουϊ"
-
-#~ msgid "Malaysia"
-#~ msgstr "Μαλαισία"
-
-#~ msgid "Maldives"
-#~ msgstr "Μαλδίβες"
-
-#, fuzzy
-#~ msgid "Mali"
-#~ msgstr "Μάλι"
-
-#~ msgid "Malta"
-#~ msgstr "Μάλτα"
-
-#~ msgid "Marshall Islands"
-#~ msgstr "Νήσοι Μάρσαλ"
-
-#~ msgid "Martinique"
-#~ msgstr "Μαρτινίκα"
-
-#~ msgid "Mauritania"
-#~ msgstr "Μαυριτανία"
-
-#~ msgid "Mauritius"
-#~ msgstr "Μαυρίκιος"
-
-#~ msgid "Mayotte"
-#~ msgstr "Μαγιοτ"
-
-#~ msgid "Mexico"
-#~ msgstr "Μεξικό"
-
-#, fuzzy
-#~ msgid "Monaco"
-#~ msgstr "Μονακό"
-
-#~ msgid "Mongolia"
-#~ msgstr "Μογγολία"
-
-#~ msgid "Montserrat"
-#~ msgstr "Μονσεράτ"
-
-#~ msgid "Morocco"
-#~ msgstr "Μαρόκο"
-
-#, fuzzy
-#~ msgid "Mozambique"
-#~ msgstr "Μοζαμβίκη"
-
-#~ msgid "Myanmar"
-#~ msgstr "Μιανμάρ"
-
-#~ msgid "Namibia"
-#~ msgstr "Ναμίμπια"
-
-#~ msgid "Nauru"
-#~ msgstr "Ναούρου"
-
-#~ msgid "Nepal"
-#~ msgstr "Νεπάλ"
-
-#~ msgid "Netherlands"
-#~ msgstr "Ολλανδία"
-
-#~ msgid "Netherlands Antilles"
-#~ msgstr "Ολλανδικές Αντίλλες"
-
-#~ msgid "New Caledonia"
-#~ msgstr "Νέα Καληδονία"
-
-#~ msgid "New Zealand"
-#~ msgstr "Νέα Ζηλανδία"
-
-#~ msgid "Nicaragua"
-#~ msgstr "Νικαράγουα"
-
-#~ msgid "Niger"
-#~ msgstr "Νίγηρας"
-
-#~ msgid "Nigeria"
-#~ msgstr "Νιγηρία"
-
-#, fuzzy
-#~ msgid "Niue"
-#~ msgstr "Νίουε"
-
-#~ msgid "Norfolk Island"
-#~ msgstr "Νήσοι Νόρφολκ"
-
-#~ msgid "Northern Mariana Islands"
-#~ msgstr "Νήσοι Βορείων Μαριάννων"
-
-#~ msgid "Norway"
-#~ msgstr "Νορβηγία"
-
-#~ msgid "Occupied Palestinian Territory"
-#~ msgstr "Κατεχόμενη Περιοχή της Παλαιστίνης"
-
-#~ msgid "Oman"
-#~ msgstr "Ομάν"
-
-#~ msgid "Pakistan"
-#~ msgstr "Πακιστάν"
-
-#, fuzzy
-#~ msgid "Palau"
-#~ msgstr "Παλάου"
-
-#~ msgid "Panama"
-#~ msgstr "Παναμάς"
-
-#~ msgid "Papua New Guinea"
-#~ msgstr "Παπούα-Νέα Γουϊνέα"
-
-#~ msgid "Paraguay"
-#~ msgstr "Παραγουάη"
-
-#, fuzzy
-#~ msgid "Peru"
-#~ msgstr "Περού"
-
-#~ msgid "Philippines"
-#~ msgstr "Φιλιππίνες"
-
-#~ msgid "Pitcairn"
-#~ msgstr "Νήσοι Πίτκαιρν"
-
-#~ msgid "Poland"
-#~ msgstr "Πολωνία"
-
-#~ msgid "Portugal"
-#~ msgstr "Πορτογαλία"
-
-#~ msgid "Puerto Rico"
-#~ msgstr "Πουέρτο Ρίκο"
-
-#~ msgid "Qatar"
-#~ msgstr "Κατάρ"
-
-#~ msgid "Republic of Moldova"
-#~ msgstr "Δημοκρατία της Μολδαβίας"
-
-#~ msgid "Romania"
-#~ msgstr "Ρουμανία"
-
-#~ msgid "Russian Federation"
-#~ msgstr "Ρωσική Ομοσπονδία"
-
-#~ msgid "Rwanda"
-#~ msgstr "Ρουάντα"
-
-#~ msgid "Saint Helena"
-#~ msgstr "Νήσος Αγίας Ελένης"
-
-#~ msgid "Saint Kitts and Nevis"
-#~ msgstr "Σαιντ Κίτς και Νέβις"
-
-#~ msgid "Saint Lucia"
-#~ msgstr "Αγία Λουκία"
-
-#~ msgid "Saint Pierre and Miquelon"
-#~ msgstr "Σαιντ Πιερ και Μικελόν"
-
-#~ msgid "Saint Vincent and the Grenadines"
-#~ msgstr "Άγιος Βικέντιος και Γρεναδίνες"
-
-#~ msgid "Samoa"
-#~ msgstr "Σαμόα"
-
-#, fuzzy
-#~ msgid "San Marino"
-#~ msgstr "Άγιος Μαρίνος"
-
-#~ msgid "Sao Tome and Principe"
-#~ msgstr "Σάο Τομέ και Πρίνσιπε"
-
-#~ msgid "Saudi Arabia"
-#~ msgstr "Σαουδική Αραβία"
-
-#~ msgid "Senegal"
-#~ msgstr "Σενεγάλη"
-
-#~ msgid "Serbia and Montenegro"
-#~ msgstr "Σερβία και Μαυροβούνιο"
-
-#~ msgid "Seychelles"
-#~ msgstr "Σεϋχέλλες"
-
-#~ msgid "Sierra Leone"
-#~ msgstr "Σιέρρα Λεόνε"
-
-#~ msgid "Singapore"
-#~ msgstr "Σιγγαπούρη"
-
-#~ msgid "Slovakia"
-#~ msgstr "Σλοβακία"
-
-#~ msgid "Slovenia"
-#~ msgstr "Σλοβενία"
-
-#~ msgid "Solomon Islands"
-#~ msgstr "Νήσοι Σολομώντος"
-
-#~ msgid "Somalia"
-#~ msgstr "Σομαλία"
-
-#~ msgid "South Africa"
-#~ msgstr "Νότια Αφρική"
-
-#~ msgid "Spain"
-#~ msgstr "Ισπανία"
-
-#~ msgid "Sri Lanka"
-#~ msgstr "Σρι Λάνκα"
-
-#~ msgid "Sudan"
-#~ msgstr "Σουδάν"
-
-#~ msgid "Suriname"
-#~ msgstr "Σουρινάμ"
-
-#~ msgid "Swaziland"
-#~ msgstr "Σουαζιλάνδη"
-
-#~ msgid "Sweden"
-#~ msgstr "Σουηδία"
-
-#~ msgid "Switzerland"
-#~ msgstr "Ελβετία"
-
-#~ msgid "Syrian Arab Republic"
-#~ msgstr "Δημοκρατία Αραβικής Συρίας"
-
-#~ msgid "Tajikistan"
-#~ msgstr "Τατζικιστάν"
-
-#~ msgid "Thailand"
-#~ msgstr "Ταϊλάνδη"
-
-#~ msgid "Macedonia, Republic of"
-#~ msgstr "FYROM"
-
-#, fuzzy
-#~ msgid "Timor-Leste"
-#~ msgstr "Τιμόρ-Λέστε"
-
-#~ msgid "Togo"
-#~ msgstr "Τόγκο"
-
-#~ msgid "Tokelau"
-#~ msgstr "Τοκελάου"
-
-#~ msgid "Tonga"
-#~ msgstr "Τόγκα"
-
-#~ msgid "Trinidad and Tobago"
-#~ msgstr "Τρινιντάντ και Τομπάγκο"
-
-#~ msgid "Tunisia"
-#~ msgstr "Τυνησία"
-
-#~ msgid "Turkey"
-#~ msgstr "Τουρκία"
-
-#~ msgid "Turkmenistan"
-#~ msgstr "Τουρκμενιστάν"
-
-#~ msgid "Turks and Caicos Islands"
-#~ msgstr "Νήσοι Τούρκς και Καΐκος"
-
-#~ msgid "Tuvalu"
-#~ msgstr "Τουβαλού"
-
-#~ msgid "Uganda"
-#~ msgstr "Ουγκάντα"
-
-#~ msgid "Ukraine"
-#~ msgstr "Ουκρανία"
-
-#~ msgid "United Arab Emirates"
-#~ msgstr "Ηνωμένα Αραβικά Εμιράτα"
-
-#~ msgid "United Kingdom of Great Britain and Northern Ireland"
-#~ msgstr "Ηνωμένο Βασίλειο της Μεγάλης Βρετανίας και της Βόρειας Ιρλανδίας"
-
-#~ msgid "United Republic of Tanzania"
-#~ msgstr "Ενωμένη Δημοκρατία της Τανζανίας"
-
-#~ msgid "United States of America"
-#~ msgstr "Ηνωμένες Πολιτείες της Αμερικής"
-
-#~ msgid "Uruguay"
-#~ msgstr "Ουρουγουάη"
-
-#~ msgid "Uzbekistan"
-#~ msgstr "Ουζμπεκιστάν"
-
-#~ msgid "Vanuatu"
-#~ msgstr "Βανουάτου"
-
-#~ msgid "Venezuela"
-#~ msgstr "Βενεζουέλα"
-
-#~ msgid "Viet Nam"
-#~ msgstr "Βιετνάμ"
-
-#~ msgid "Western Sahara"
-#~ msgstr "Δυτική Σαχάρα"
-
-#~ msgid "Yemen"
-#~ msgstr "Υεμένη"
-
-#~ msgid "Zambia"
-#~ msgstr "Ζάμπια"
-
-#~ msgid "Zimbabwe"
-#~ msgstr "Ζιμπάμπουε"
-
-#~ msgid "Antarctica"
-#~ msgstr "Ανταρκτική"
-
-#~ msgid "Bouvet Island"
-#~ msgstr "Νήσος Μπουβέ"
-
-#~ msgid "British Indian Ocean Territory"
-#~ msgstr "Βρετανικά Εδάφη Ινδικού Ωκεανού"
-
-#~ msgid "Christmas Island"
-#~ msgstr "Νήσοι Χριστουγέννων"
-
-#~ msgid "Cocos (Keeling) Islands"
-#~ msgstr "Νήσοι Κόκος (Κήλινγκ)"
-
-#~ msgid "French Southern Territories"
-#~ msgstr "Γαλλικές Νότιες Περιοχές"
-
-#~ msgid "Heard Island and McDonald Islands"
-#~ msgstr "Νήσος Χερντ και Νήσοι ΜακΝτόναλντ"
-
-#~ msgid "South Georgia and the South Sandwich Islands"
-#~ msgstr "Νότια Γεωργία και Νότιο Νησί Σάντουϊτς"
-
-#~ msgid "Taiwan"
-#~ msgstr "Ταϊβάν"
-
-#~ msgid "United States Minor Outlying Islands"
-#~ msgstr "Μικρά απομονωμένα νησιά Ηνωμένων Πολιτειών"
-
-#~ msgid "Greek, Modern"
-#~ msgstr "Ελληνική"
-
-#~ msgid "Macedonian"
-#~ msgstr "FYROM"

@@ -1,34 +1,33 @@
-# Brazilian Portuguese translation for language-selector.
+# Arabic translation for language-selector
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
 # This file is distributed under the same license as the language-selector package.
-# Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2005.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-26 01:08+0800\n"
-"PO-Revision-Date: 2008-10-15 18:33+0000\n"
-"Last-Translator: LKRaider <paul@eipper.com.br>\n"
-"Language-Team: Ubuntu-BR <tradutores@listas.ubuntubrasil.org>\n"
+"POT-Creation-Date: 2008-10-18 10:04+0100\n"
+"PO-Revision-Date: 2007-06-18 17:57+0000\n"
+"Last-Translator: صقر بن عبدالله <Unknown>\n"
+"Language-Team: Arabic <ar@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
-"X-Poedit-Country: BRAZIL\n"
-"X-Poedit-Language: Portuguese\n"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 msgid "Language"
-msgstr "Idioma"
+msgstr "اللغة"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
 msgid "Support"
-msgstr "Suporte"
+msgstr "الدعم"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:420
 msgid "Could not install the selected language support"
-msgstr "Não foi possível instalar o suporte ao idioma selecionado"
+msgstr "تعذر تثبيت دعم اللغة المطلوب"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:421
 msgid ""
@@ -36,182 +35,190 @@ msgid ""
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
-"Isso parece ser um erro neste programa. Por favor preencha um relatório de "
-"erro em https://launchpad.net/bugs/bugs/+package/ sobre o produto 'language-"
-"selector'."
+"ربما تكون هذه علّة في التطبيق. من فضلك املأ تقرير بالعلة في https://launchpad."
+"net/bugs/bugs/+package/ ضد المنتج 'language-selector'."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
 msgid "Could not install the full language support"
-msgstr "Não foi possível instalar o suporte completo ao idioma"
+msgstr "تعذر تثبيت دعم اللغة الكامل"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
-"Geralmente isso é relacionado a um erro no seu arquivos de pacotes ou "
-"gerenciador de programas. Verifique suas preferências de programas no menu "
-"\"Administração\"."
+"في الغالب يعود هذا لخطأ في أرشيف برمجياتك أو في مدير البرمجيات. افحص تفضيلات "
+"برمجياتك في قائمة \"إدارة\"."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
 msgid "The list of available languages on the system has been updated."
-msgstr "A lista de idiomas no sistema foi atualizada."
+msgstr "لقد حُدِّثت قائمة اللغات المتوفرة على النظام."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
+#: ../LanguageSelector/qt/QtLanguageSelector.py:144
 msgid "The language support is not installed completely"
-msgstr "O suporte ao idioma não está instalado completamente"
+msgstr "لم يُثبت دعم اللغة كاملا"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
+#: ../LanguageSelector/qt/QtLanguageSelector.py:145
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"Alguns pacotes para suporte total a idiomas não estão instalados no sistema. "
-"Você gostaria de instalá-los agora?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:583
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:588
+#: ../LanguageSelector/qt/QtLanguageSelector.py:140
 msgid "_Remind Me Later"
-msgstr "_Lembre-me Mais Tarde"
+msgstr "_ذكرني لاحقاً"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:589
+#: ../LanguageSelector/qt/QtLanguageSelector.py:139
 msgid "_Install"
-msgstr "_Instalar"
+msgstr "_ثبِّت"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:587
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:592
 #: ../data/LanguageSelector.glade.h:13
 msgid "Details"
-msgstr "Detalhes"
+msgstr "التفاصيل"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:626
-#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:631
+#: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
-msgstr "A Base de Dados de programas está corrompida"
+msgstr "قاعدة بيانات البرمجيات معطوبة"
 
-#. FIXME: mention adept here instead of synaptic, but the
-#. change happend during string freeze
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:627
-#: ../LanguageSelector/qt/QtLanguageSelector.py:75
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:632
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Não é possível instalar ou remover qualquer programa. Por favor use o "
-"Gerenciador de Pacotes \"Synaptic\" ou execute \"sudo apt-get install -f\" "
-"em um terminal para resolver esse probelma primeiro."
+"من غير الممكن حذف أو تثبيت أي برمجيات. من فضلك استخدم مدير الحزم \"سينابتك\" "
+"أو شغِّل \"sudo apt-get install -f\" في الطرفية لإصلاح هذا الأمر أولا."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:686
 msgid "Reboot required"
-msgstr "Reinicialização necessária"
+msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:682
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
 msgid ""
 "To complete the changes a reboot is required so that the new functionality "
 "is activated."
 msgstr ""
-"Para completar as mudanças é necessário reiniciar para então as novas "
-"funcionalidades serem ativadas."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:47
+msgid "Uninstall"
+msgstr "احذف"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:48
-msgid "Uninstall"
-msgstr "Remover"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:49
 msgid "Select language to uninstall:"
-msgstr "Selecione o idioma a remover:"
+msgstr "انتقِ لغة لحذفها:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:56
+#: ../LanguageSelector/qt/QtLanguageSelector.py:55
 msgid "Language Selector"
-msgstr "Seletor de Idioma"
+msgstr "منتقي اللغات"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
-msgid "Default system language:"
-msgstr "Idioma padrão do sistema:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
-msgid "Set System Language"
-msgstr "Definir Idioma Padrão"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
-#: ../data/LanguageSelector.glade.h:14
-msgid "Enable support to enter complex characters"
-msgstr "Habilitar suporte a caracteres complexos"
+msgid "Default system language:"
+msgstr "لغة النظام الإفتراضية:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:88
-#: ../LanguageSelector/qt/QtLanguageSelector.py:91
-msgid "Cancel"
-msgstr "Cancelar"
+msgid "Set System Language"
+msgstr "اضبط لغة النظام"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
-msgid "Select language to install:"
-msgstr "Selecione o idioma a ser instalado:"
+#: ../data/LanguageSelector.glade.h:14
+msgid "Enable support to enter complex characters"
+msgstr "فعِّل دعم إدخال المحارف المعقدة"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "Cancel"
+msgstr "الغِ"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:91
+msgid "Select language to install:"
+msgstr "اختر لغة لتثبيتها:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:92
 msgid "Install"
-msgstr "Instalar"
+msgstr "ثبِّت"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:131
+#: ../LanguageSelector/qt/QtLanguageSelector.py:185
 msgid "Already installed"
-msgstr "Já instalado"
+msgstr "مثبّتة بالفعل"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:135
+#: ../LanguageSelector/qt/QtLanguageSelector.py:189
 msgid "Partially Installed"
-msgstr "Parcialmente instalado"
+msgstr "مثبّتة جزئيا"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:139
+#: ../LanguageSelector/qt/QtLanguageSelector.py:193
 msgid "Not installed"
-msgstr "Não instalado"
+msgstr "غير مثبّتة"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:185
-#: ../LanguageSelector/qt/QtLanguageSelector.py:187
-msgid "Language Set"
-msgstr "Conjunto de Idiomas"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:185
+#: ../LanguageSelector/qt/QtLanguageSelector.py:240
 #, python-format
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
-"O idioma padrão do sistema foi definido como %s. A entrada de caracteres "
-"complexos será habilitada em seu próximo login."
+"ضُبطت لغة النظام الإفتراضية إلى %s. سيُفعّل دعم إدخال المحارف المعقدة عند "
+"الولوج القادم."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:187
+#: ../LanguageSelector/qt/QtLanguageSelector.py:240
+#: ../LanguageSelector/qt/QtLanguageSelector.py:242
+msgid "Language Set"
+msgstr "ضُبطت اللغة"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:242
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr "O idioma padrão do sistema foi definido como %s."
+msgstr "ضُبطت لغة النظام الإفتراضية إلى %s."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:268
-msgid "Language Installed"
-msgstr "Idioma Instalado"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:268
+#: ../LanguageSelector/qt/QtLanguageSelector.py:323
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
-msgstr ""
-"As traduções e o suporte para %s foram instalados. Selecione-os a partir do "
-"botão Adicionar Idioma"
+msgstr "ثُبِّتت الترجمة والدعم لـ %s. اخترهم من زر أضف لغة."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:270
-msgid "Language Uninstalled"
-msgstr "Idioma Removido"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:323
+msgid "Language Installed"
+msgstr "ثُبِّتت اللغة"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:270
+#: ../LanguageSelector/qt/QtLanguageSelector.py:325
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr "As traduções e o suporte para %s foram desinstalados."
+msgstr "حُذِفت الترجمة والدعم لـ %s."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:272
-msgid "Language Not Set"
-msgstr "Idioma Não Definido"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:325
+msgid "Language Uninstalled"
+msgstr "حُذِفت اللغة"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:272
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
 msgid "Failed to set system language."
-msgstr "Falha ao definir idioma do sistema."
+msgstr "فشل ضبط لغة النظام."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+msgid "Language Not Set"
+msgstr "لم تضبط اللغة"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+msgid "Please run this software with administrative rights."
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+msgid "Not Root User"
+msgstr ""
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -219,27 +226,22 @@ msgstr "    "
 
 #: ../data/LanguageSelector.glade.h:2
 msgid "<b>Default Language</b>"
-msgstr "<b>Idioma Padrão</b>"
+msgstr "<b>اللغة الإفتراضية</b>"
 
 #: ../data/LanguageSelector.glade.h:3
 msgid "<b>Input method</b>"
-msgstr "<b>Método de entrada</b>"
+msgstr "<b>طريقة الإدخال</b>"
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<b>Supported Languages</b>"
-msgstr "<b>Idiomas Suportados</b>"
+msgstr "<b>اللغات المدعومة</b>"
 
 #: ../data/LanguageSelector.glade.h:5
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
-"The support for each language can differ in the amount of available "
-"translations or writing aids."
+"The availablity of translations or writing aids can differ between languages."
 msgstr ""
-"<big><b>Verificando suporte ao idioma</b></big>\n"
-"\n"
-"O suporte para cada idioma pode variar na quantidade de traduções ou "
-"auxílios à escrita disponíveis."
 
 #: ../data/LanguageSelector.glade.h:8
 msgid "Additional Fonts"
@@ -263,7 +265,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.glade.h:12
 msgid "Default language for new user accounts and the login screen:"
-msgstr "Idioma padrão para as novas contas de usuários e tela de entrada:"
+msgstr "اللغة الإفتراضية لحسابات المستخدمين الجديدة وشاشة الولوج:"
 
 #: ../data/LanguageSelector.glade.h:15
 msgid "Extra Translations"
@@ -287,7 +289,7 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
 msgid "Language Support"
-msgstr "Suporte a Idiomas"
+msgstr "دعم اللغات"
 
 #: ../data/LanguageSelector.glade.h:20
 msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
@@ -310,13 +312,13 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr "Configure suporte a vários idiomas nativos no seu sistema"
+msgstr "اضبط دعم العديد من اللغات على نظامك"
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:1
 #: ../data/incomplete-language-support-qt.note.in:1
 msgid "Incomplete Language Support"
-msgstr "Suporte de Idioma Incompleto"
+msgstr ""
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -327,11 +329,6 @@ msgid ""
 "If you would like to do this at a later time, please use \"System -> "
 "Administration -> Language Support\" instead."
 msgstr ""
-"Os arquivos de suporte de linguagem parecem estar incompletos. Você pode "
-"instalar os componentes que faltam clicando em \"Executar esta ação agora\" "
-"e seguir as instruções. Uma conexão de internet ativa é necessária. Se você "
-"deseja fazer isso depois, por favor use \"Sistema -> Administração -> "
-"Suporte a Idiomas\"."
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
@@ -349,54 +346,50 @@ msgid "Session Restart Required"
 msgstr ""
 
 #. Description
-#: ../data/restart_session_required.note.in:5
-msgid ""
-"In order to activate the changes you'll need to restart your session. Please "
-"logout and relogin at your earliest convenience."
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
 msgstr ""
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
-msgstr "Cancelando"
+msgstr "يجري الإجهاض"
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
-msgstr "Forçar mesmo quando uma configuração existe"
+msgstr "اجبر حتى لو كان الإعداد موجودا بالفعل"
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
-msgstr "Ajustar fontconfig voodoo para o idioma selecionado"
+msgstr "اضبط fontconfig voodoo للغة المنتقاة"
 
 #: ../fontconfig-voodoo:32
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
-"Criar uma configuração baseada na variável de ambiente LANGUAGE. Ajusta a "
-"configuração para 'nenhuma' se nada apropriado for encontrado"
+"خمِّن الإعداد معتمدا على بيئة LANGUAGE. تضبط الإعداد إلى 'none' إذا لم يُعثر "
+"على شيء مناسب"
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
-msgstr "Listar as configurações de fontconfig-voodoo disponíveis"
+msgstr "اسرد إعدادات fontconfig-voodoo المتوفرة"
 
 #: ../fontconfig-voodoo:40
 msgid "Show the current fontconfig-voodoo config"
-msgstr "Mostrar a configuração atual do fontconfig-voodoo"
+msgstr "اعرض إعداد fontconfig-voodoo الحالي"
 
 #: ../fontconfig-voodoo:43
 msgid "Remove the current fontconfig-voodoo config"
-msgstr "Remover a configuração atual fontconfi-voo-doo"
+msgstr ""
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr "Desconfigurado"
+msgstr "غير مُعدّ"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr "A configuração já existe. Usar '--force' para sobrescrevê-la. "
+msgstr "يوجد إعداد بالفعل. استخدم '--force' لتستبدله. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr ""
-"Nenhuma configuração de fontconfig-voodoo foi encontrada para a localização "
-"selecionada"
+msgstr "لم يُعثر على إعداد fontconfig-voodoo للمحلّية المنتقاة"

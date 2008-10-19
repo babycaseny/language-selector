@@ -3,27 +3,27 @@
 # This file is distributed under the same license as the language-selector package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-26 01:08+0800\n"
-"PO-Revision-Date: 2006-05-15 22:02+0000\n"
+"PO-Revision-Date: 2008-10-15 18:34+0000\n"
 "Last-Translator: Oublieuse <oublieuse@gmail.com>\n"
 "Language-Team: Breton <br@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 msgid "Language"
 msgstr "Yezh"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
-#, fuzzy
 msgid "Support"
-msgstr "Harp"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:420
 msgid "Could not install the selected language support"
@@ -64,9 +64,8 @@ msgid ""
 msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:583
-#, fuzzy
 msgid "_Remind Me Later"
-msgstr "Kaout _soñj ouzhin"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
 msgid "_Install"
@@ -103,28 +102,24 @@ msgid ""
 msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:48
-#, fuzzy
 msgid "Uninstall"
-msgstr "_Staliañ"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:49
 msgid "Select language to uninstall:"
 msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:56
-#, fuzzy
 msgid "Language Selector"
-msgstr "Duzer yezhoù"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:85
-#, fuzzy
 msgid "Default system language:"
-msgstr "Yezh dre-ziouer"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
-#, fuzzy
 msgid "Set System Language"
-msgstr "Yezhoù harpet"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 #: ../data/LanguageSelector.glade.h:14
@@ -141,9 +136,8 @@ msgid "Select language to install:"
 msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#, fuzzy
 msgid "Install"
-msgstr "_Staliañ"
+msgstr ""
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:131
@@ -161,9 +155,8 @@ msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
-#, fuzzy
 msgid "Language Set"
-msgstr "Yezh"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #, python-format
@@ -178,9 +171,8 @@ msgid "Default system Language now set to %s."
 msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
-#, fuzzy
 msgid "Language Installed"
-msgstr "Duzer yezhoù"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
 #, python-format
@@ -190,9 +182,8 @@ msgid ""
 msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
-#, fuzzy
 msgid "Language Uninstalled"
-msgstr "Duzer yezhoù"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
 #, python-format
@@ -200,9 +191,8 @@ msgid "Translations and support have now been uninstalled for %s."
 msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
-#, fuzzy
 msgid "Language Not Set"
-msgstr "Harp yezhel"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
 msgid "Failed to set system language."
@@ -249,18 +239,16 @@ msgid ""
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:11
-#, fuzzy
 msgid "Basic Translations"
-msgstr "Troidigezh"
+msgstr ""
 
 #: ../data/LanguageSelector.glade.h:12
 msgid "Default language for new user accounts and the login screen:"
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:15
-#, fuzzy
 msgid "Extra Translations"
-msgstr "Troidigezh"
+msgstr ""
 
 #: ../data/LanguageSelector.glade.h:16
 msgid "Extra software"
@@ -308,9 +296,8 @@ msgstr ""
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:1
 #: ../data/incomplete-language-support-qt.note.in:1
-#, fuzzy
 msgid "Incomplete Language Support"
-msgstr "Harp yezhel"
+msgstr ""
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -385,15 +372,3 @@ msgstr ""
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
-
-#~ msgid "Only one software management tool is allowed to run at the same time"
-#~ msgstr "Ne c'hellit loc'hañ nemet ur meziant merañ war ar memes tro"
-
-#~ msgid "Close"
-#~ msgstr "Serriñ"
-
-#~ msgid "Apply"
-#~ msgstr "Seveniñ"
-
-#~ msgid "English"
-#~ msgstr "Saozneg"

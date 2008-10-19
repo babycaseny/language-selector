@@ -8,12 +8,14 @@ msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-26 01:08+0800\n"
-"PO-Revision-Date: 2006-05-05 09:51+0000\n"
-"Last-Translator: seguso <maurizio.colucci@gmail.com>\n"
+"PO-Revision-Date: 2008-10-14 19:43+0000\n"
+"Last-Translator: Milo Casagrande <milo_casagrande@yahoo.it>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 msgid "Language"
@@ -33,44 +35,43 @@ msgid ""
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
-"Questo potrebbe essere un bug di questa applicazione. Notificare un bug su "
-"https://launchpad.net/bugs/bugs/+package/ scegliendo come prodotto «language-"
-"selector»."
+"Questo potrebbe dipendere da un bug di questa applicazione. Notificare un "
+"bug su https://launchpad.net/bugs/bugs/+package/ scegliendo come prodotto "
+"«language-selector»."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
 msgid "Could not install the full language support"
-msgstr "Impossibile installare il supporto completo per le lingue"
+msgstr "Impossibile installare il supporto completo alla lingua"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
-"Questo è dovuto in genere ad un errore nei propri archivi software o al "
-"Gestore Software. Verificare le proprie preferenze del software nel menu "
+"Questo è dovuto in genere a un errore nei propri archivi software o al "
+"gestore software. Verificare le proprie preferenze del software nel menù "
 "«Amministrazione»."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
 msgid "The list of available languages on the system has been updated."
-msgstr "Aggiornato l'elenco delle lingue disponibili nel sistema."
+msgstr ""
+"L'elenco delle lingue disponibili sul sistema in uso è stato aggiornato."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
 msgid "The language support is not installed completely"
 msgstr "Il supporto per le lingue non è installato completamente"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
-#, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"Alcuni pacchetti per un completo supporto alla lingua non sono installati "
-"sul sistema in uso. Installarli ora?"
+"Alcune traduzioni o aiuti alla scrittura disponibili per la lingua "
+"selezionata non sono ancora installati. Installarli ora?"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:583
-#, fuzzy
 msgid "_Remind Me Later"
-msgstr "_Ricordamelo in futuro"
+msgstr "_Ricorda in seguito"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
 msgid "_Install"
@@ -96,81 +97,77 @@ msgid ""
 "this issue at first."
 msgstr ""
 "Impossibile installare o rimuovere programmi. Utilizzare il gestore di "
-"pacchetti \"Synaptic\" o eseguire \"sudo apt-get install -f\" in un "
-"terminale per risolvere il problema."
+"pacchetti «Synaptic» o eseguire «sudo apt-get install -f» in un terminale per "
+"risolvere il problema."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Reboot required"
-msgstr ""
+msgstr "Richiesto riavvio"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:682
 msgid ""
 "To complete the changes a reboot is required so that the new functionality "
 "is activated."
 msgstr ""
+"Per completare le modifiche e attivare le nuove funzionalità è necessario "
+"riavviare il sistema."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:48
-#, fuzzy
 msgid "Uninstall"
-msgstr "_Installa"
+msgstr "Rimuovere"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:49
 msgid "Select language to uninstall:"
-msgstr ""
+msgstr "Selezionare la lingua da rimuovere:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:56
 msgid "Language Selector"
 msgstr "Selezione lingua"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:85
-#, fuzzy
 msgid "Default system language:"
-msgstr "Lingua predefinita"
+msgstr "Lingua predefinita:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
-#, fuzzy
 msgid "Set System Language"
-msgstr "Lingue supportate"
+msgstr "Impostare la lingua di sistema"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 #: ../data/LanguageSelector.glade.h:14
 msgid "Enable support to enter complex characters"
-msgstr ""
+msgstr "Abilitare il supporto per inserire caratteri complessi"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:88
 #: ../LanguageSelector/qt/QtLanguageSelector.py:91
-#, fuzzy
 msgid "Cancel"
-msgstr "Francia"
+msgstr "Annulla"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "Select language to install:"
-msgstr ""
+msgstr "Selezionare la lingua da installare:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#, fuzzy
 msgid "Install"
-msgstr "_Installa"
+msgstr "Installa"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Already installed"
-msgstr ""
+msgstr "Già installata"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:135
 msgid "Partially Installed"
-msgstr ""
+msgstr "Parzialmente installata"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:139
 msgid "Not installed"
-msgstr ""
+msgstr "Non installata"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
-#, fuzzy
 msgid "Language Set"
-msgstr "Selezione lingua"
+msgstr "Impostare lingua"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #, python-format
@@ -178,16 +175,17 @@ msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
+"Lingua predefinita di sistema impostata a %s. Il supporto per l'inserimento "
+"dei caratteri complessi sarà abilitato al prossimo login."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "Lingua predefinita di sistema impostata a %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
-#, fuzzy
 msgid "Language Installed"
-msgstr "Selezione lingua"
+msgstr "Lingua installata"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
 #, python-format
@@ -195,25 +193,25 @@ msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
+"Sono state installate le traduzioni e il supporto per %s. Selezionarle con "
+"il pulsante «Aggiungi lingua»."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
-#, fuzzy
 msgid "Language Uninstalled"
-msgstr "Selezione lingua"
+msgstr "Lingua rimossa"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "Sono state rimosse le traduzioni e il supporto per %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
-#, fuzzy
 msgid "Language Not Set"
-msgstr "Selezione lingua"
+msgstr "Lingua non impostata"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
 msgid "Failed to set system language."
-msgstr ""
+msgstr "Impossibile impostare la lingua di sistema."
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -225,7 +223,7 @@ msgstr "<b>Lingua predefinita</b>"
 
 #: ../data/LanguageSelector.glade.h:3
 msgid "<b>Input method</b>"
-msgstr ""
+msgstr "<b>Metodo di input</b>"
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<b>Supported Languages</b>"
@@ -245,24 +243,27 @@ msgstr ""
 
 #: ../data/LanguageSelector.glade.h:8
 msgid "Additional Fonts"
-msgstr ""
+msgstr "Caratteri aggiuntivi"
 
 #: ../data/LanguageSelector.glade.h:9
 msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
+"Tipi di carattere aggiuntivi per questa lingua che potrebbero risultare "
+"interessanti, come caratteri decorativi per la stampa di documenti."
 
 #: ../data/LanguageSelector.glade.h:10
 msgid ""
 "Additional software which might be of general interest for users using this "
 "language."
 msgstr ""
+"Software aggiuntivo che potrebbe risultare interessante agli utenti di "
+"questa lingua."
 
 #: ../data/LanguageSelector.glade.h:11
-#, fuzzy
 msgid "Basic Translations"
-msgstr "Traduzioni"
+msgstr "Traduzioni di base"
 
 #: ../data/LanguageSelector.glade.h:12
 msgid "Default language for new user accounts and the login screen:"
@@ -270,23 +271,24 @@ msgstr ""
 "Lingua predefinita per nuovi account utente e per la schermata di login:"
 
 #: ../data/LanguageSelector.glade.h:15
-#, fuzzy
 msgid "Extra Translations"
-msgstr "Traduzioni"
+msgstr "Traduzioni aggiuntive"
 
 #: ../data/LanguageSelector.glade.h:16
 msgid "Extra software"
-msgstr ""
+msgstr "Software aggiuntivo"
 
 #: ../data/LanguageSelector.glade.h:17
 msgid ""
 "Input Methods for languages with complex scripts. Scim modules or other "
 "relevant software which helps with typing complex characters."
 msgstr ""
+"Metodi di input per lingue con scritture complesse. Moduli SCIM o altro "
+"software utile alla scrittura di caratteri complessi."
 
 #: ../data/LanguageSelector.glade.h:18
 msgid "Input methods"
-msgstr ""
+msgstr "Metodi di input"
 
 #: ../data/LanguageSelector.glade.h:19
 #: ../data/language-selector.desktop.in.h:2
@@ -297,21 +299,23 @@ msgstr "Supporto lingue"
 #: ../data/LanguageSelector.glade.h:20
 msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
+"Traduzioni di OpenOffice.org, Firefox, Thunderbird, Gaim e dei file di aiuto."
 
 #: ../data/LanguageSelector.glade.h:21
 msgid "Translations for your desktop. Also known as language-pack."
-msgstr ""
+msgstr "Traduzioni del desktop, conosciute anche come «language-pack»."
 
 #: ../data/LanguageSelector.glade.h:22
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
 msgstr ""
+"Elenco di parole, dizionari, tesauri, ecc... utili durante la digitazione "
+"per evidenziare, correggere o suggerire le parole."
 
 #: ../data/LanguageSelector.glade.h:23
-#, fuzzy
 msgid "Writing aids"
-msgstr "Aiuti alla scrittura"
+msgstr "Linguistica"
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
@@ -322,9 +326,8 @@ msgstr ""
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:1
 #: ../data/incomplete-language-support-qt.note.in:1
-#, fuzzy
 msgid "Incomplete Language Support"
-msgstr "Supporto lingue"
+msgstr "Supporto lingue non completo"
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -335,6 +338,11 @@ msgid ""
 "If you would like to do this at a later time, please use \"System -> "
 "Administration -> Language Support\" instead."
 msgstr ""
+"Sembra che i file di supporto per la lingua selezionata siano incompleti. È "
+"possibile installare i componenti mancanti facendo clic su «Esegui questa "
+"azione ora» e seguendo le istruzioni. È richiesta una connessione a Internet "
+"attiva. Per eseguire l'installazione in un secondo momento, usare «Sistema -> "
+"Amministrazione -> Supporto lingue»."
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
@@ -345,11 +353,16 @@ msgid ""
 "If you would like to do this at a later time, please use \"System Settings -"
 "> Regional & Language\" instead."
 msgstr ""
+"Sembra che i file di supporto per la lingua selezionata siano incompleti. È "
+"possibile installare i componenti mancanti facendo clic su «Esegui ora» e "
+"seguendo le istruzioni. È richiesta una connessione a Internet attiva. Per "
+"eseguire l'installazione in un secondo, usare «Impostazioni di sistema -> "
+"Lingua e paese»."
 
 #. Name
 #: ../data/restart_session_required.note.in:1
 msgid "Session Restart Required"
-msgstr ""
+msgstr "Richiesto riavvio sessione"
 
 #. Description
 #: ../data/restart_session_required.note.in:5
@@ -376,7 +389,7 @@ msgid ""
 "'none' if nothing suitable was found"
 msgstr ""
 "Prova a indovinare una configurazione in base alla variabile d'ambiente "
-"LANGUAGE. Impostare la configurazione a \"none\" se non c'è nulla di adatto"
+"LANGUAGE. Impostare la configurazione a «none» se non c'è nulla di adatto"
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
@@ -387,1379 +400,19 @@ msgid "Show the current fontconfig-voodoo config"
 msgstr "Mostra la configurazione corrente di fontconfig-voodoo"
 
 #: ../fontconfig-voodoo:43
-#, fuzzy
 msgid "Remove the current fontconfig-voodoo config"
-msgstr "Mostra la configurazione corrente di fontconfig-voodoo"
+msgstr "Rimuovere la configurazione attuale di fontconfig-voodoo"
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr ""
+msgstr "Non configurato"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr "Esiste già una configurazione. Usare '--force' per sovrascriverla. "
+msgstr "Esiste già una configurazione. Usare «--force» per sovrascriverla. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Nessuna configurazione di fontconfig-voodoo trovata per la localizzazione "
 "selezionata"
-
-#~ msgid ""
-#~ "Not all translations or writing aids, that are available for the "
-#~ "supported languages on your system, are installed."
-#~ msgstr ""
-#~ "Non sono state installate tutte le traduzioni o aiuti alla scrittura che "
-#~ "sono disponibili per le lingue supportate."
-
-#~ msgid "Only one software management tool is allowed to run at the same time"
-#~ msgstr ""
-#~ "È consentita l'esecuzione di un solo strumento di gestione software alla "
-#~ "volta"
-
-#~ msgid ""
-#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
-#~ "or \"Synaptic\" at first."
-#~ msgstr ""
-#~ "Prima di procedere si prega di chiudere l'altra applicazione (ad es. "
-#~ "«Gestore aggiornamenti», «aptitude» o «Synaptic»)."
-
-#~ msgid "You are not root"
-#~ msgstr "Non sei l'amministratore"
-
-#~ msgid "Please run this software with administrative rights."
-#~ msgstr "Eseguire questo software con privilegi di ammiistrazione"
-
-#~ msgid "Translation"
-#~ msgstr "Traduzione"
-
-#~ msgid "Close"
-#~ msgstr "Chiudi"
-
-#~ msgid "Apply"
-#~ msgstr "Applica"
-
-#~ msgid "English"
-#~ msgstr "Inglese"
-
-#~ msgid "Afghanistan"
-#~ msgstr "Afghanistan"
-
-#~ msgid "Åland Islands"
-#~ msgstr "Isole Åland"
-
-#~ msgid "Albania"
-#~ msgstr "Albania"
-
-#~ msgid "Algeria"
-#~ msgstr "Algeria"
-
-#~ msgid "American Samoa"
-#~ msgstr "Samoa Americane"
-
-#~ msgid "Andorra"
-#~ msgstr "Andorra"
-
-#~ msgid "Angola"
-#~ msgstr "Angola"
-
-#~ msgid "Anguilla"
-#~ msgstr "Anguilla"
-
-#~ msgid "Antigua and Barbuda"
-#~ msgstr "Antigua e Barbuda"
-
-#~ msgid "Argentina"
-#~ msgstr "Argentina"
-
-#~ msgid "Armenia"
-#~ msgstr "Armenia"
-
-#~ msgid "Aruba"
-#~ msgstr "Aruba"
-
-#~ msgid "Australia"
-#~ msgstr "Australia"
-
-#~ msgid "Austria"
-#~ msgstr "Austria"
-
-#~ msgid "Azerbaijan"
-#~ msgstr "Azerbaijan"
-
-#~ msgid "Bahamas"
-#~ msgstr "Bahamas"
-
-#~ msgid "Bahrain"
-#~ msgstr "Bahrain"
-
-#~ msgid "Bangladesh"
-#~ msgstr "Bangladesh"
-
-#~ msgid "Barbados"
-#~ msgstr "Barbados"
-
-#~ msgid "Belarus"
-#~ msgstr "Bielorussia"
-
-#~ msgid "Belgium"
-#~ msgstr "Belgio"
-
-#~ msgid "Belize"
-#~ msgstr "Belize"
-
-#~ msgid "Benin"
-#~ msgstr "Benin"
-
-#~ msgid "Bermuda"
-#~ msgstr "Bermuda"
-
-#~ msgid "Bhutan"
-#~ msgstr "Bhutan"
-
-#~ msgid "Bolivia"
-#~ msgstr "Bolivia"
-
-#~ msgid "Bosnia and Herzegovina"
-#~ msgstr "Bosnia e Herzegovina"
-
-#~ msgid "Botswana"
-#~ msgstr "Botswana"
-
-#~ msgid "Brazil"
-#~ msgstr "Brasile"
-
-#~ msgid "British Virgin Islands"
-#~ msgstr "British Virgin Islands"
-
-#~ msgid "Brunei Darussalam"
-#~ msgstr "Brunei Darussalam"
-
-#~ msgid "Bulgaria"
-#~ msgstr "Bulgaria"
-
-#~ msgid "Burkina Faso"
-#~ msgstr "Burkina Faso"
-
-#~ msgid "Burundi"
-#~ msgstr "Burundi"
-
-#~ msgid "Cambodia"
-#~ msgstr "Cambogia"
-
-#~ msgid "Cameroon"
-#~ msgstr "Camerun"
-
-#~ msgid "Canada"
-#~ msgstr "Canada"
-
-#~ msgid "Cape Verde"
-#~ msgstr "Capo Verde"
-
-#~ msgid "Cayman Islands"
-#~ msgstr "Isole Cayman"
-
-#~ msgid "Central African Republic"
-#~ msgstr "Repubblica Centroafricana"
-
-#~ msgid "Chad"
-#~ msgstr "Ciad"
-
-#~ msgid "Channel Islands"
-#~ msgstr "Isole Channel"
-
-#~ msgid "Chile"
-#~ msgstr "Cile"
-
-#~ msgid "China"
-#~ msgstr "Cina"
-
-#~ msgid "Hong Kong Special Administrative Region of China"
-#~ msgstr "Hong Kong"
-
-#~ msgid "Macau Special Administrative Region of China"
-#~ msgstr "Macao"
-
-#~ msgid "Colombia"
-#~ msgstr "Colombia"
-
-#~ msgid "Comoros"
-#~ msgstr "Comoros"
-
-#~ msgid "Congo"
-#~ msgstr "Congo"
-
-#~ msgid "Cook Islands"
-#~ msgstr "Isole Cook"
-
-#~ msgid "Costa Rica"
-#~ msgstr "Costa Rica"
-
-#~ msgid "Côte d'Ivoire"
-#~ msgstr "Costa d'Avorio"
-
-#~ msgid "Croatia"
-#~ msgstr "Croazia"
-
-#~ msgid "Cuba"
-#~ msgstr "Cuba"
-
-#~ msgid "Cyprus"
-#~ msgstr "Cipro"
-
-#~ msgid "Czech Republic"
-#~ msgstr "Repubblica Ceca"
-
-#~ msgid "Democratic People's Republic of Korea"
-#~ msgstr "Repubblica democratica popolare della Corea"
-
-#~ msgid "Democratic Republic of the Congo"
-#~ msgstr "Repubblica democratica del Congo"
-
-#~ msgid "Denmark"
-#~ msgstr "Danimarca"
-
-#~ msgid "Djibouti"
-#~ msgstr "Gibuti"
-
-#~ msgid "Dominica"
-#~ msgstr "Dominica"
-
-#~ msgid "Dominican Republic"
-#~ msgstr "Repubblica Dominicana"
-
-#~ msgid "Ecuador"
-#~ msgstr "Equador"
-
-#~ msgid "Egypt"
-#~ msgstr "Egitto"
-
-#~ msgid "El Salvador"
-#~ msgstr "El Salvador"
-
-#~ msgid "Equatorial Guinea"
-#~ msgstr "Guina Equatoriale"
-
-#~ msgid "Eritrea"
-#~ msgstr "Eritrea"
-
-#~ msgid "Estonia"
-#~ msgstr "Estonia"
-
-#~ msgid "Ethiopia"
-#~ msgstr "Etiopia"
-
-#~ msgid "Faeroe Islands"
-#~ msgstr "Isole Faeroe"
-
-#~ msgid "Falkland Islands (Malvinas)"
-#~ msgstr "Isole Falkland (Malvine)"
-
-#~ msgid "Fiji"
-#~ msgstr "Fiji"
-
-#~ msgid "Finland"
-#~ msgstr "Finlandia"
-
-#~ msgid "French Guiana"
-#~ msgstr "Guiana Francese"
-
-#~ msgid "French Polynesia"
-#~ msgstr "Polinesia Francese"
-
-#~ msgid "Gabon"
-#~ msgstr "Gabon"
-
-#~ msgid "Gambia"
-#~ msgstr "Gambia"
-
-#~ msgid "Georgia"
-#~ msgstr "Georgia"
-
-#~ msgid "Germany"
-#~ msgstr "Germania"
-
-#~ msgid "Ghana"
-#~ msgstr "Ghana"
-
-#~ msgid "Gibraltar"
-#~ msgstr "Gibilterra"
-
-#~ msgid "Greece"
-#~ msgstr "Grecia"
-
-#~ msgid "Greenland"
-#~ msgstr "Groenlandia"
-
-#~ msgid "Grenada"
-#~ msgstr "Grenada"
-
-#~ msgid "Guadeloupe"
-#~ msgstr "Guadalupe"
-
-#~ msgid "Guam"
-#~ msgstr "Guam"
-
-#~ msgid "Guatemala"
-#~ msgstr "Guatemala"
-
-#~ msgid "Guinea"
-#~ msgstr "Guinea"
-
-#~ msgid "Guinea-Bissau"
-#~ msgstr "Guinea-Bissau"
-
-#~ msgid "Guyana"
-#~ msgstr "Guyana"
-
-#~ msgid "Haiti"
-#~ msgstr "Haiti"
-
-#~ msgid "Holy See"
-#~ msgstr "Holy See"
-
-#~ msgid "Honduras"
-#~ msgstr "Honduras"
-
-#~ msgid "Hungary"
-#~ msgstr "Ungheria"
-
-#~ msgid "Iceland"
-#~ msgstr "Islanda"
-
-#~ msgid "India"
-#~ msgstr "India"
-
-#~ msgid "Indonesia"
-#~ msgstr "Indonesia"
-
-#~ msgid "Iran (Islamic Republic of)"
-#~ msgstr "Iran (Repubblica Islamica dell')"
-
-#~ msgid "Iraq"
-#~ msgstr "Iraq"
-
-#~ msgid "Ireland"
-#~ msgstr "Irlanda"
-
-#~ msgid "Isle of Man"
-#~ msgstr "Isola di Man"
-
-#~ msgid "Israel"
-#~ msgstr "Israele"
-
-#~ msgid "Italy"
-#~ msgstr "Italia"
-
-#~ msgid "Jamaica"
-#~ msgstr "Giamaica"
-
-#~ msgid "Japan"
-#~ msgstr "Giappone"
-
-#~ msgid "Jordan"
-#~ msgstr "Giordania"
-
-#~ msgid "Kazakhstan"
-#~ msgstr "Kazakhstan"
-
-#~ msgid "Kenya"
-#~ msgstr "Kenia"
-
-#~ msgid "Kiribati"
-#~ msgstr "Kiribati"
-
-#~ msgid "Kuwait"
-#~ msgstr "Kuwait"
-
-#~ msgid "Kyrgyzstan"
-#~ msgstr "Kyrgyzstan"
-
-#~ msgid "Lao People's Democratic Republic"
-#~ msgstr "Repubblica Democratica Popolare del Lao"
-
-#~ msgid "Latvia"
-#~ msgstr "Latvia"
-
-#~ msgid "Lebanon"
-#~ msgstr "LIbano"
-
-#~ msgid "Lesotho"
-#~ msgstr "Lesotho"
-
-#~ msgid "Liberia"
-#~ msgstr "Liberia"
-
-#~ msgid "Libyan Arab Jamahiriya"
-#~ msgstr "Libia"
-
-#~ msgid "Liechtenstein"
-#~ msgstr "Liechtenstein"
-
-#~ msgid "Lithuania"
-#~ msgstr "Lituania"
-
-#~ msgid "Luxembourg"
-#~ msgstr "Lussemburgo"
-
-#~ msgid "Madagascar"
-#~ msgstr "Madagascar"
-
-#~ msgid "Malawi"
-#~ msgstr "Malawi"
-
-#~ msgid "Malaysia"
-#~ msgstr "Malesia"
-
-#~ msgid "Maldives"
-#~ msgstr "Maldive"
-
-#~ msgid "Mali"
-#~ msgstr "Mali"
-
-#~ msgid "Malta"
-#~ msgstr "Malta"
-
-#~ msgid "Marshall Islands"
-#~ msgstr "Isole Marshall"
-
-#~ msgid "Martinique"
-#~ msgstr "Martinica"
-
-#~ msgid "Mauritania"
-#~ msgstr "Mauritania"
-
-#~ msgid "Mauritius"
-#~ msgstr "Mauritius"
-
-#~ msgid "Mayotte"
-#~ msgstr "Mayotte"
-
-#~ msgid "Mexico"
-#~ msgstr "Messico"
-
-#~ msgid "Micronesia (Federated States of)"
-#~ msgstr "Micronesia"
-
-#~ msgid "Monaco"
-#~ msgstr "Monaco"
-
-#~ msgid "Mongolia"
-#~ msgstr "Mongolia"
-
-#~ msgid "Montserrat"
-#~ msgstr "Montserrat"
-
-#~ msgid "Morocco"
-#~ msgstr "Marocco"
-
-#~ msgid "Mozambique"
-#~ msgstr "Mozambico"
-
-#~ msgid "Myanmar"
-#~ msgstr "Myanmar"
-
-#~ msgid "Namibia"
-#~ msgstr "Namibia"
-
-#~ msgid "Nauru"
-#~ msgstr "Nauru"
-
-#~ msgid "Nepal"
-#~ msgstr "Nepal"
-
-#~ msgid "Netherlands"
-#~ msgstr "Olanda"
-
-#~ msgid "Netherlands Antilles"
-#~ msgstr "Antille Olandesi"
-
-#~ msgid "New Caledonia"
-#~ msgstr "Nuova Caldonia"
-
-#~ msgid "New Zealand"
-#~ msgstr "Nuova Zelanda"
-
-#~ msgid "Nicaragua"
-#~ msgstr "Nicaragua"
-
-#~ msgid "Niger"
-#~ msgstr "Niger"
-
-#~ msgid "Nigeria"
-#~ msgstr "Nigeria"
-
-#~ msgid "Niue"
-#~ msgstr "Niue"
-
-#~ msgid "Norfolk Island"
-#~ msgstr "Isole Norfolk"
-
-#~ msgid "Northern Mariana Islands"
-#~ msgstr "Isole Settentrionali Mariana"
-
-#~ msgid "Norway"
-#~ msgstr "Norvegia"
-
-#~ msgid "Occupied Palestinian Territory"
-#~ msgstr "Territori Occupati Palestinesi"
-
-#~ msgid "Oman"
-#~ msgstr "Oman"
-
-#~ msgid "Pakistan"
-#~ msgstr "Pakistan"
-
-#~ msgid "Palau"
-#~ msgstr "Palau"
-
-#~ msgid "Panama"
-#~ msgstr "Panama"
-
-#~ msgid "Papua New Guinea"
-#~ msgstr "Papua Nuova Guinea"
-
-#~ msgid "Paraguay"
-#~ msgstr "Paraguay"
-
-#~ msgid "Peru"
-#~ msgstr "Peru"
-
-#~ msgid "Philippines"
-#~ msgstr "Filippine"
-
-#~ msgid "Pitcairn"
-#~ msgstr "Pitcairn"
-
-#~ msgid "Poland"
-#~ msgstr "Polonia"
-
-#~ msgid "Portugal"
-#~ msgstr "Portogallo"
-
-#~ msgid "Puerto Rico"
-#~ msgstr "Porto Rico"
-
-#~ msgid "Qatar"
-#~ msgstr "Qatar"
-
-#~ msgid "Republic of Korea"
-#~ msgstr "Repubblica di Corea"
-
-#~ msgid "Republic of Moldova"
-#~ msgstr "Repubblica di Moldova"
-
-#~ msgid "Réunion"
-#~ msgstr "Réunion"
-
-#~ msgid "Romania"
-#~ msgstr "Romania"
-
-#~ msgid "Russian Federation"
-#~ msgstr "Federazione Russa"
-
-#~ msgid "Rwanda"
-#~ msgstr "Ruanda"
-
-#~ msgid "Saint Helena"
-#~ msgstr "Sant'Elena"
-
-#~ msgid "Saint Kitts and Nevis"
-#~ msgstr "San Kitts e Nevi"
-
-#~ msgid "Saint Lucia"
-#~ msgstr "Santa Lucia"
-
-#~ msgid "Saint Pierre and Miquelon"
-#~ msgstr "San Pierre e Miquelon"
-
-#~ msgid "Saint Vincent and the Grenadines"
-#~ msgstr "Saint Vincent e le Grenadine"
-
-#~ msgid "Samoa"
-#~ msgstr "Samoa"
-
-#~ msgid "San Marino"
-#~ msgstr "San Marino"
-
-#~ msgid "Sao Tome and Principe"
-#~ msgstr "San Tome e Principe"
-
-#~ msgid "Saudi Arabia"
-#~ msgstr "Arabia Saudita"
-
-#~ msgid "Senegal"
-#~ msgstr "Senegal"
-
-#~ msgid "Serbia and Montenegro"
-#~ msgstr "Serbia e Montenegro"
-
-#~ msgid "Seychelles"
-#~ msgstr "Seychelles"
-
-#~ msgid "Sierra Leone"
-#~ msgstr "Sierra Leone"
-
-#~ msgid "Singapore"
-#~ msgstr "Singapore"
-
-#~ msgid "Slovakia"
-#~ msgstr "Slovacchia"
-
-#~ msgid "Slovenia"
-#~ msgstr "Slovenia"
-
-#~ msgid "Solomon Islands"
-#~ msgstr "Isole Solomon"
-
-#~ msgid "Somalia"
-#~ msgstr "Somalia"
-
-#~ msgid "South Africa"
-#~ msgstr "Sudafrica"
-
-#~ msgid "Spain"
-#~ msgstr "Spagna"
-
-#~ msgid "Sri Lanka"
-#~ msgstr "Sri Lanka"
-
-#~ msgid "Sudan"
-#~ msgstr "Sudan"
-
-#~ msgid "Suriname"
-#~ msgstr "Suriname"
-
-#~ msgid "Svalbard and Jan Mayen Islands"
-#~ msgstr "Isole Svalbard e Jan Mayen"
-
-#~ msgid "Swaziland"
-#~ msgstr "Swaziland"
-
-#~ msgid "Sweden"
-#~ msgstr "Svezia"
-
-#~ msgid "Switzerland"
-#~ msgstr "Svizzera"
-
-#~ msgid "Syrian Arab Republic"
-#~ msgstr "Repubblica Araba della Siria"
-
-#~ msgid "Tajikistan"
-#~ msgstr "Tagikistan"
-
-#~ msgid "Thailand"
-#~ msgstr "Tailandia"
-
-#~ msgid "Macedonia, Republic of"
-#~ msgstr "Macedonia, Repubblica di"
-
-#~ msgid "Timor-Leste"
-#~ msgstr "Timor-Leste"
-
-#~ msgid "Togo"
-#~ msgstr "Togo"
-
-#~ msgid "Tokelau"
-#~ msgstr "Tokelau"
-
-#~ msgid "Tonga"
-#~ msgstr "Tonga"
-
-#~ msgid "Trinidad and Tobago"
-#~ msgstr "Trinidad e Tobago"
-
-#~ msgid "Tunisia"
-#~ msgstr "Tunisia"
-
-#~ msgid "Turkey"
-#~ msgstr "Turchia"
-
-#~ msgid "Turkmenistan"
-#~ msgstr "Turkmenistan"
-
-#~ msgid "Turks and Caicos Islands"
-#~ msgstr "Isole Turks e Caicos"
-
-#~ msgid "Tuvalu"
-#~ msgstr "Tuvalu"
-
-#~ msgid "Uganda"
-#~ msgstr "Uganda"
-
-#~ msgid "Ukraine"
-#~ msgstr "Ucraina"
-
-#~ msgid "United Arab Emirates"
-#~ msgstr "Emirati Arabi Uniti"
-
-#~ msgid "United Kingdom of Great Britain and Northern Ireland"
-#~ msgstr "Regno Unito della Gran Bretagna"
-
-#~ msgid "United Republic of Tanzania"
-#~ msgstr "Repubblica Unita della Tanzania"
-
-#~ msgid "United States of America"
-#~ msgstr "Stati Uniti d'America"
-
-#~ msgid "United States Virgin Islands"
-#~ msgstr "Isole Vergini"
-
-#~ msgid "Uruguay"
-#~ msgstr "Uruguay"
-
-#~ msgid "Uzbekistan"
-#~ msgstr "Uzbekistan"
-
-#~ msgid "Vanuatu"
-#~ msgstr "Vanuatu"
-
-#~ msgid "Venezuela"
-#~ msgstr "Venezuela"
-
-#~ msgid "Viet Nam"
-#~ msgstr "Vietnam"
-
-#~ msgid "Wallis and Futuna Islands"
-#~ msgstr "Isole Wallis e Fortuna"
-
-#~ msgid "Western Sahara"
-#~ msgstr "Sahara Occidentale"
-
-#~ msgid "Yemen"
-#~ msgstr "Yemen"
-
-#~ msgid "Zambia"
-#~ msgstr "Zambia"
-
-#~ msgid "Zimbabwe"
-#~ msgstr "Zimbabwe"
-
-#~ msgid "Antarctica"
-#~ msgstr "Antartide"
-
-#~ msgid "Bouvet Island"
-#~ msgstr "Isole Bouvet"
-
-#~ msgid "British Indian Ocean Territory"
-#~ msgstr "Territorio Britannico dell'Oceano Indiano"
-
-#~ msgid "Christmas Island"
-#~ msgstr "Isole Christmas"
-
-#~ msgid "Cocos (Keeling) Islands"
-#~ msgstr "Isole Cocos"
-
-#~ msgid "French Southern Territories"
-#~ msgstr "Territori Francesi Meridionali"
-
-#~ msgid "Heard Island and McDonald Islands"
-#~ msgstr "Isole Heard e McDonald"
-
-#~ msgid "South Georgia and the South Sandwich Islands"
-#~ msgstr "South Georgia and the South Sandwich Islands"
-
-#~ msgid "Taiwan"
-#~ msgstr "Taiwan"
-
-#~ msgid "United States Minor Outlying Islands"
-#~ msgstr "Isole minori degli Stati Uniti"
-
-#~ msgid "Afar"
-#~ msgstr "Afar"
-
-#~ msgid "Abkhazian"
-#~ msgstr "Abkhazian"
-
-#~ msgid "Avestan"
-#~ msgstr "Avestan"
-
-#~ msgid "Afrikaans"
-#~ msgstr "Afrikaans"
-
-#~ msgid "Akan"
-#~ msgstr "Akan"
-
-#~ msgid "Amharic"
-#~ msgstr "Amharic"
-
-#~ msgid "Aragonese"
-#~ msgstr "Aragonese"
-
-#~ msgid "Arabic"
-#~ msgstr "Arabo"
-
-#~ msgid "Assamese"
-#~ msgstr "Assamese"
-
-#~ msgid "Asturian"
-#~ msgstr "Asturio"
-
-#~ msgid "Avaric"
-#~ msgstr "Avarico"
-
-#~ msgid "Aymara"
-#~ msgstr "Aymara"
-
-#~ msgid "Azerbaijani"
-#~ msgstr "Azerbajano"
-
-#~ msgid "Bashkir"
-#~ msgstr "Bashkir"
-
-#~ msgid "Byelorussian"
-#~ msgstr "Bielorusso"
-
-#~ msgid "Bulgarian"
-#~ msgstr "Bulgaro"
-
-#~ msgid "Bihari"
-#~ msgstr "Bihari"
-
-#~ msgid "Bislama"
-#~ msgstr "Bislama"
-
-#~ msgid "Bambara"
-#~ msgstr "Bambara"
-
-#~ msgid "Bengali; Bangla"
-#~ msgstr "Bengali; Bangla"
-
-#~ msgid "Tibetan"
-#~ msgstr "Tibetano"
-
-#~ msgid "Breton"
-#~ msgstr "Bretone"
-
-#~ msgid "Bosnian"
-#~ msgstr "Bosniaco"
-
-#~ msgid "Catalan"
-#~ msgstr "Catalano"
-
-#~ msgid "Chechen"
-#~ msgstr "Ceceno"
-
-#~ msgid "Chamorro"
-#~ msgstr "Chamorro"
-
-#~ msgid "Corsican"
-#~ msgstr "Corso"
-
-#~ msgid "Cree"
-#~ msgstr "Cree"
-
-#~ msgid "Czech"
-#~ msgstr "Ceco"
-
-#~ msgid "Old Church Slavonic"
-#~ msgstr "Old·Church·Slavonic"
-
-#~ msgid "Chuvash"
-#~ msgstr "Chuvash"
-
-#~ msgid "Welsh"
-#~ msgstr "Welsh"
-
-#~ msgid "Danish"
-#~ msgstr "Danese"
-
-#~ msgid "German"
-#~ msgstr "Tedesco"
-
-#~ msgid "Divehi"
-#~ msgstr "Divehi"
-
-#~ msgid "Dzongkha"
-#~ msgstr "Dzongkha"
-
-#~ msgid "Ewe"
-#~ msgstr "Ewe"
-
-#~ msgid "Greek, Modern"
-#~ msgstr "Greco Moderno"
-
-#~ msgid "Esperanto"
-#~ msgstr "Esperanto"
-
-#~ msgid "Spanish"
-#~ msgstr "Spagnolo"
-
-#~ msgid "Estonian"
-#~ msgstr "Estone"
-
-#~ msgid "Basque"
-#~ msgstr "Basco"
-
-#~ msgid "Persian"
-#~ msgstr "Persiano"
-
-#~ msgid "Fulah"
-#~ msgstr "Fulah"
-
-#~ msgid "Finnish"
-#~ msgstr "Finlandese"
-
-#~ msgid "Faroese"
-#~ msgstr "Faroese"
-
-#~ msgid "French"
-#~ msgstr "Francese"
-
-#~ msgid "Frisian"
-#~ msgstr "Frisio"
-
-#~ msgid "Irish"
-#~ msgstr "Irlandese"
-
-#~ msgid "Scots Gaelic"
-#~ msgstr "Scozzese Gaelico"
-
-#~ msgid "Galician"
-#~ msgstr "Galizio"
-
-#~ msgid "Guarani"
-#~ msgstr "Guarani"
-
-#~ msgid "Gujarati"
-#~ msgstr "Gujarati"
-
-#~ msgid "Manx"
-#~ msgstr "Manx"
-
-#~ msgid "Hausa"
-#~ msgstr "Hausa"
-
-#~ msgid "Hebrew"
-#~ msgstr "Ebraico"
-
-#~ msgid "Hindi"
-#~ msgstr "Hindi"
-
-#~ msgid "Hiri Motu"
-#~ msgstr "Hiri·Motu"
-
-#~ msgid "Croatian"
-#~ msgstr "Croato"
-
-#~ msgid "Hungarian"
-#~ msgstr "Ungherese"
-
-#~ msgid "Armenian"
-#~ msgstr "Armeno"
-
-#~ msgid "Herero"
-#~ msgstr "Herero"
-
-#~ msgid "Interlingua"
-#~ msgstr "Interlingua"
-
-#~ msgid "Indonesian"
-#~ msgstr "Indonesiano"
-
-#~ msgid "Interlingue"
-#~ msgstr "Interlingue"
-
-#~ msgid "Igbo"
-#~ msgstr "Igbo"
-
-#~ msgid "Sichuan Yi"
-#~ msgstr "Sichuan·Yi"
-
-#~ msgid "Inupiak"
-#~ msgstr "Inupiak"
-
-#~ msgid "Ido"
-#~ msgstr "Ido"
-
-#~ msgid "Icelandic"
-#~ msgstr "Isalndese"
-
-#~ msgid "Italian"
-#~ msgstr "Italiano"
-
-#~ msgid "Inuktitut"
-#~ msgstr "Inuktitut"
-
-#~ msgid "Japanese"
-#~ msgstr "Giapponese"
-
-#~ msgid "Javanese"
-#~ msgstr "Giavanese"
-
-#~ msgid "Georgian"
-#~ msgstr "Georgiano"
-
-#~ msgid "Kongo"
-#~ msgstr "Congo"
-
-#~ msgid "Kikuyu"
-#~ msgstr "Kikuyu"
-
-#~ msgid "Kuanyama"
-#~ msgstr "Kuanyama"
-
-#~ msgid "Kazakh"
-#~ msgstr "Kazako"
-
-#~ msgid "Greenlandic"
-#~ msgstr "Groenlandese"
-
-#~ msgid "Khmer"
-#~ msgstr "Khmer"
-
-#~ msgid "Kannada"
-#~ msgstr "Kannada"
-
-#~ msgid "Korean"
-#~ msgstr "Coreano"
-
-#~ msgid "Kanuri"
-#~ msgstr "Kanuri"
-
-#~ msgid "Kashmiri"
-#~ msgstr "Kashmiri"
-
-#~ msgid "Kurdish"
-#~ msgstr "Curdo"
-
-#~ msgid "Komi"
-#~ msgstr "Komi"
-
-#~ msgid "Cornish"
-#~ msgstr "Cornish"
-
-#~ msgid "Kirghiz"
-#~ msgstr "Kirghiz"
-
-#~ msgid "Latin"
-#~ msgstr "Latino"
-
-#~ msgid "Luxembourgish"
-#~ msgstr "Lussemburghese"
-
-#~ msgid "Ganda"
-#~ msgstr "Ganda"
-
-#~ msgid "Limburgan"
-#~ msgstr "Limburgan"
-
-#~ msgid "Lingala"
-#~ msgstr "Lingala"
-
-#~ msgid "Lao"
-#~ msgstr "Laotiano"
-
-#~ msgid "Lithuanian"
-#~ msgstr "Lituano"
-
-#~ msgid "Luba-Katanga"
-#~ msgstr "Luba-Katanga"
-
-#~ msgid "Latvian"
-#~ msgstr "Lettone"
-
-#~ msgid "Malagasy"
-#~ msgstr "Malgascio"
-
-#~ msgid "Marshallese"
-#~ msgstr "Marshallese"
-
-#~ msgid "Maori"
-#~ msgstr "Maori"
-
-#~ msgid "Macedonian"
-#~ msgstr "Macedone"
-
-#~ msgid "Malayalam"
-#~ msgstr "Malayalam"
-
-#~ msgid "Mongolian"
-#~ msgstr "Mongolo"
-
-#~ msgid "Moldavian"
-#~ msgstr "Moldavo"
-
-#~ msgid "Marathi"
-#~ msgstr "Marathi"
-
-#~ msgid "Malay"
-#~ msgstr "Malay"
-
-#~ msgid "Maltese"
-#~ msgstr "Maltese"
-
-#~ msgid "Burmese"
-#~ msgstr "Burmese"
-
-#~ msgid "Norwegian Bokmal"
-#~ msgstr "Norvegese Bokmal"
-
-#~ msgid "North Ndebele"
-#~ msgstr "North Ndebele"
-
-#~ msgid "Nepali"
-#~ msgstr "Nepalese"
-
-#~ msgid "Ndonga"
-#~ msgstr "Ndonga"
-
-#~ msgid "Dutch"
-#~ msgstr "Olandese"
-
-#~ msgid "Norwegian Nynorsk"
-#~ msgstr "Norvegese Nynorsk"
-
-#~ msgid "Norwegian"
-#~ msgstr "Norvegese"
-
-#~ msgid "South Ndebele"
-#~ msgstr "South Ndebele"
-
-#~ msgid "Navajo"
-#~ msgstr "Navajo"
-
-#~ msgid "Occitan"
-#~ msgstr "Occitano"
-
-#~ msgid "Ojibwa"
-#~ msgstr "Ojibwa"
-
-#~ msgid "Oromo"
-#~ msgstr "Oromo"
-
-#~ msgid "Oriya"
-#~ msgstr "Oriya"
-
-#~ msgid "Ossetian"
-#~ msgstr "Ossetian"
-
-#~ msgid "Punjabi"
-#~ msgstr "Punjabi"
-
-#~ msgid "Pali"
-#~ msgstr "Polacco"
-
-#~ msgid "Polish"
-#~ msgstr "Polacco"
-
-#~ msgid "Pushto"
-#~ msgstr "Pushto"
-
-#~ msgid "Portuguese"
-#~ msgstr "Portoghese"
-
-#~ msgid "Quechua"
-#~ msgstr "Quechua"
-
-#~ msgid "Rhaeto-Romance"
-#~ msgstr "Retoromanzo"
-
-#~ msgid "Rundi"
-#~ msgstr "Rundi"
-
-#~ msgid "Romanian"
-#~ msgstr "Rumeno"
-
-#~ msgid "Russian"
-#~ msgstr "Russo"
-
-#~ msgid "Kinyarwanda"
-#~ msgstr "Kinyarwanda"
-
-#~ msgid "Sanskrit"
-#~ msgstr "Sanscrito"
-
-#~ msgid "Sardinian"
-#~ msgstr "Sardo"
-
-#~ msgid "Sindhi"
-#~ msgstr "Sindhi"
-
-#~ msgid "Northern Sami"
-#~ msgstr "Sami del Nord"
-
-#~ msgid "Sango"
-#~ msgstr "Sango"
-
-#~ msgid "Serbo-Croatian"
-#~ msgstr "Serbo-Croato"
-
-#~ msgid "Sinhalese"
-#~ msgstr "Sinhalese"
-
-#~ msgid "Slovak"
-#~ msgstr "Slovacco"
-
-#~ msgid "Slovenian"
-#~ msgstr "Sloveno"
-
-#~ msgid "Samoan"
-#~ msgstr "Samoano"
-
-#~ msgid "Shona"
-#~ msgstr "Shona"
-
-#~ msgid "Somali"
-#~ msgstr "Somalo"
-
-#~ msgid "Albanian"
-#~ msgstr "Albanese"
-
-#~ msgid "Serbian"
-#~ msgstr "Serbo"
-
-#~ msgid "Swati"
-#~ msgstr "Swati"
-
-#~ msgid "Southern Sotho"
-#~ msgstr "Southern Sotho"
-
-#~ msgid "Sundanese"
-#~ msgstr "Sundanese"
-
-#~ msgid "Swedish"
-#~ msgstr "Svedese"
-
-#~ msgid "Swahili"
-#~ msgstr "Swahili"
-
-#~ msgid "Tamil"
-#~ msgstr "Tamil"
-
-#~ msgid "Telugu"
-#~ msgstr "Telugu"
-
-#~ msgid "Tajik"
-#~ msgstr "Tajik"
-
-#~ msgid "Thai"
-#~ msgstr "Thailandese"
-
-#~ msgid "Tigrinya"
-#~ msgstr "Tigrinya"
-
-#~ msgid "Turkmen"
-#~ msgstr "Turkmeno"
-
-#~ msgid "Tagalog"
-#~ msgstr "Tagalog"
-
-#~ msgid "Tswana"
-#~ msgstr "Tswana"
-
-#~ msgid "Turkish"
-#~ msgstr "Turco"
-
-#~ msgid "Tsonga"
-#~ msgstr "Tsonga"
-
-#~ msgid "Tatar"
-#~ msgstr "Tatar"
-
-#~ msgid "Twi"
-#~ msgstr "Twi"
-
-#~ msgid "Tahitian"
-#~ msgstr "Tahitiano"
-
-#~ msgid "Uighur"
-#~ msgstr "Uighur"
-
-#~ msgid "Ukrainian"
-#~ msgstr "Ucraino"
-
-#~ msgid "Urdu"
-#~ msgstr "Urdu"
-
-#~ msgid "Uzbek"
-#~ msgstr "Uzbeko"
-
-#~ msgid "Venda"
-#~ msgstr "Venda"
-
-#~ msgid "Vietnamese"
-#~ msgstr "Vietnamese"
-
-#~ msgid "Volapuk"
-#~ msgstr "Volapük"
-
-#~ msgid "Walloon"
-#~ msgstr "Vallone"
-
-#~ msgid "Wolof"
-#~ msgstr "Wolof"
-
-#~ msgid "Xhosa"
-#~ msgstr "Xhosa"
-
-#~ msgid "Yiddish"
-#~ msgstr "Yiddish"
-
-#~ msgid "Yoruba"
-#~ msgstr "Yoruba"
-
-#~ msgid "Zhuang"
-#~ msgstr "Zhuang"
-
-#~ msgid "Chinese"
-#~ msgstr "Cinese"
-
-#~ msgid "Zulu"
-#~ msgstr "Zulu"
-
-#~ msgid "Update language support?"
-#~ msgstr "Aggiornare il supporto alla lingua?"
-
-#~ msgid "Remind me again"
-#~ msgstr "Ricordalo di nuovo"
-
-#~ msgid "Install now"
-#~ msgstr "Installa ora"
-
-#~ msgid "Can not apply changes"
-#~ msgstr "Impossibile applicare le modifiche"
-
-#~ msgid ""
-#~ "Some packages for full language support can't be installed on your "
-#~ "system. This usually means there is something wrong in the ubuntu archive "
-#~ "or with your 'apt' software settings."
-#~ msgstr ""
-#~ "Alcuni pacchetti per un completo supporto alla lingua non possono essere "
-#~ "installati sul sistema in uso. Ciò solitamente significa che c'è qualcosa "
-#~ "che non va nell'archivio ubuntu o nella configurazione del software 'apt' "
-#~ "in uso."
-
-#~ msgid "Unable to get exclusive lock"
-#~ msgstr "Impossibile ottenere un lock esclusivo"
-
-#~ msgid ""
-#~ "This usually means that another package management application (like apt-"
-#~ "get or aptitude) already running. Please close that application first"
-#~ msgstr ""
-#~ "Ciò significa che un'altra applicazione di gestione dei pacchetti (come "
-#~ "apt-get o aptitude) è in esecuzione. Chiudere prima quell'applicazione."
-
-#~ msgid "<b>Default language:</b>"
-#~ msgstr "<b>Lingua predefinita:</b>"
-
-#~ msgid "<b>Languages available to people using this system:</b>"
-#~ msgstr "<b>Lingua disponibili agli utenti di questo sistema:</b>"
-
-#~ msgid "Status:"
-#~ msgstr "Stato:"
-
-#~ msgid ""
-#~ "Translations include menus, dialogs and help. Writing Aids include "
-#~ "dictionaries, grammar checkers and input methods. Some translations may "
-#~ "not be available for some languages."
-#~ msgstr ""
-#~ "Le traduzioni includono i menu, le finestre e gli help. Gli aiuti alla "
-#~ "scrittura includono dizionari, correttori e metodi di input. Alcune "
-#~ "traduzioni potrebbero non essere disponibili per talune lingue."
-
-#~ msgid "Used for new accounts and the login screen."
-#~ msgstr "Usato per nuovi account e per lo schermo di login"
-
-#~ msgid "Install/remove language support"
-#~ msgstr "Installa/rimuovi il supporto per la lingua"

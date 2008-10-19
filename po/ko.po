@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the language-selector package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-26 01:08+0800\n"
-"PO-Revision-Date: 2006-05-12 02:56+0000\n"
-"Last-Translator: gilchris <gilchris@gilchris.org>\n"
+"PO-Revision-Date: 2008-09-24 15:30+0000\n"
+"Last-Translator: wariua <Unknown>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 msgid "Language"
@@ -47,29 +48,27 @@ msgid ""
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 "일반적으로 이것은 소프트웨어 저장소나 소프트웨어 관리자의 오류와 관련있습니"
-"다. \"Adminstration\" 메뉴에서 소프트웨어 기본 설정을 살펴보시기 바랍니다."
+"다. \"관리\" 메뉴에서 소프트웨어 설정을 살펴보시기 바랍니다."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
 msgid "The list of available languages on the system has been updated."
-msgstr "시스템에서 이용가능한 언어 목록이 업데이트 됐습니다."
+msgstr "시스템에서 이용가능한 언어 목록이 업데이트되었습니다."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
 msgid "The language support is not installed completely"
 msgstr "언어 지원이 완벽하게 설치되지 않았습니다."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
-#, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"시스템에서 지원 언어를 위하여 사용할 수 있는 모든 번역물과 도움글들이 모두 설"
-"치되지 않았습니다."
+"선택한 언어의 번역물 및 쓰기 지원 가운데 일부가 아직 설치되지 않았습니다. 지"
+"금 설치할까요?"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:583
-#, fuzzy
 msgid "_Remind Me Later"
-msgstr "다시 보여줌(_R)"
+msgstr "나중에 알림(_R)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
 msgid "_Install"
@@ -94,82 +93,75 @@ msgid ""
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"어떤 소프트웨어도 설치하거나 삭제할 수 없습니다. \"시냅틱\"이나 터미널에서 "
-"\"sudo apt-get install -f\"를 실행하여 이 문제를 먼저 해결하십시오"
+"어떤 소프트웨어도 설치하거나 삭제할 수 없습니다. \"시냅틱\"을 사용하거나 터미"
+"널에서 \"sudo apt-get install -f\"를 실행하여 이 문제를 먼저 해결하십시오."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Reboot required"
-msgstr ""
+msgstr "다시 시작해야 합니다"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:682
 msgid ""
 "To complete the changes a reboot is required so that the new functionality "
 "is activated."
-msgstr ""
+msgstr "시스템을 다시 시작해야 변경 작업이 완료되어 새로운 기능이 동작합니다."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:48
-#, fuzzy
 msgid "Uninstall"
-msgstr "설치(_I)"
+msgstr "삭제"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:49
 msgid "Select language to uninstall:"
-msgstr ""
+msgstr "설치할 언어 선택:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:56
-#, fuzzy
 msgid "Language Selector"
-msgstr "언어 선택기"
+msgstr "언어 선택"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:85
-#, fuzzy
 msgid "Default system language:"
-msgstr "기본 언어"
+msgstr "기본 시스템 언어:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
-#, fuzzy
 msgid "Set System Language"
-msgstr "지원되는 언어"
+msgstr "시스템 언어 설정"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 #: ../data/LanguageSelector.glade.h:14
 msgid "Enable support to enter complex characters"
-msgstr ""
+msgstr "복잡한 문자 입력 지원 설치"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:88
 #: ../LanguageSelector/qt/QtLanguageSelector.py:91
-#, fuzzy
 msgid "Cancel"
-msgstr "프랑스"
+msgstr "취소"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "Select language to install:"
-msgstr ""
+msgstr "설치할 언어 선택:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#, fuzzy
 msgid "Install"
-msgstr "설치(_I)"
+msgstr "설치"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Already installed"
-msgstr ""
+msgstr "이미 설치됨"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:135
 msgid "Partially Installed"
-msgstr ""
+msgstr "부분적으로 설치됨"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:139
 msgid "Not installed"
-msgstr ""
+msgstr "설치되지 않음"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
-#, fuzzy
 msgid "Language Set"
-msgstr "언어"
+msgstr "언어 선택"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #, python-format
@@ -177,16 +169,17 @@ msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
+"기본 시스템 언어가 %s(으)로 변경되었습니다. 복잡한 문자 입력은 다음 로그인부"
+"터 활성화됩니다."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "기본 시스템 언어가 %s(으)로 변경되었습니다."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
-#, fuzzy
 msgid "Language Installed"
-msgstr "언어 선택기"
+msgstr "언어 설치됨"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
 #, python-format
@@ -194,25 +187,25 @@ msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
+"%s을(를) 위한 번역 및 지원이 설치되었습니다. \"언어 추가\" 단추에서 선택하십"
+"시오."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
-#, fuzzy
 msgid "Language Uninstalled"
-msgstr "언어 선택기"
+msgstr "언어 삭제됨"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "%s을(를) 위한 번역 및 지원이 제거되었습니다."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
-#, fuzzy
 msgid "Language Not Set"
-msgstr "언어"
+msgstr "언어가 설정되지 않음"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
 msgid "Failed to set system language."
-msgstr ""
+msgstr "시스템 언어를 설정하지 못했습니다."
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -224,7 +217,7 @@ msgstr "<b>기본 언어</b>"
 
 #: ../data/LanguageSelector.glade.h:3
 msgid "<b>Input method</b>"
-msgstr ""
+msgstr "<b>입력 방법</b>"
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<b>Supported Languages</b>"
@@ -244,47 +237,48 @@ msgstr ""
 
 #: ../data/LanguageSelector.glade.h:8
 msgid "Additional Fonts"
-msgstr ""
+msgstr "추가 글꼴"
 
 #: ../data/LanguageSelector.glade.h:9
 msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
+"여러 사람들이 관심을 가질 만한 이 언어의 추가 글꼴. 문서 출력용 장식 글꼴 등."
 
 #: ../data/LanguageSelector.glade.h:10
 msgid ""
 "Additional software which might be of general interest for users using this "
 "language."
-msgstr ""
+msgstr "이 언어를 쓰는 사람들이 관심을 가질 만한 추가 소프트웨어."
 
 #: ../data/LanguageSelector.glade.h:11
-#, fuzzy
 msgid "Basic Translations"
-msgstr "번역"
+msgstr "기본적인 번역"
 
 #: ../data/LanguageSelector.glade.h:12
 msgid "Default language for new user accounts and the login screen:"
 msgstr "새로운 사용자와 로그인 화면에서 사용할 기본 언어:"
 
 #: ../data/LanguageSelector.glade.h:15
-#, fuzzy
 msgid "Extra Translations"
-msgstr "번역"
+msgstr "추가 번역"
 
 #: ../data/LanguageSelector.glade.h:16
 msgid "Extra software"
-msgstr ""
+msgstr "추가 소프트웨어"
 
 #: ../data/LanguageSelector.glade.h:17
 msgid ""
 "Input Methods for languages with complex scripts. Scim modules or other "
 "relevant software which helps with typing complex characters."
 msgstr ""
+"복잡한 모양의 언어를 위한 입력기. 복잡한 글자 입력을 도와주는 Scim  모듈 또"
+"는 기타 관련 소프트웨어."
 
 #: ../data/LanguageSelector.glade.h:18
 msgid "Input methods"
-msgstr ""
+msgstr "입력기"
 
 #: ../data/LanguageSelector.glade.h:19
 #: ../data/language-selector.desktop.in.h:2
@@ -294,21 +288,23 @@ msgstr "언어"
 
 #: ../data/LanguageSelector.glade.h:20
 msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-msgstr ""
+msgstr "오픈오피스, Firefox, Thunderbird, Pidgin의 번역 및 도움말 파일."
 
 #: ../data/LanguageSelector.glade.h:21
 msgid "Translations for your desktop. Also known as language-pack."
-msgstr ""
+msgstr "기본적으로 설치하는 번역물. 언어팩이라고도 함."
 
 #: ../data/LanguageSelector.glade.h:22
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
 msgstr ""
+"단어 목록, 사전, 동의어 사전 등. 글자를 입력할 때 단어를 강조 또는 교정해주거"
+"나 적절한 단어를 추천해줌."
 
 #: ../data/LanguageSelector.glade.h:23
 msgid "Writing aids"
-msgstr ""
+msgstr "맞춤법 교정"
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
@@ -318,9 +314,8 @@ msgstr "시스템 상에 복수 개의 모국어 지원 설정"
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:1
 #: ../data/incomplete-language-support-qt.note.in:1
-#, fuzzy
 msgid "Incomplete Language Support"
-msgstr "언어"
+msgstr "불완전한 언어 지원"
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -331,6 +326,10 @@ msgid ""
 "If you would like to do this at a later time, please use \"System -> "
 "Administration -> Language Support\" instead."
 msgstr ""
+"선택한 언어를 지원하기 위한 파일 가운데 일부가 빠져 있습니다. 설치 버튼을 누"
+"른 다음 지시에 따라 빠진 요소를 설치할 수 있습니다. 이를 위해선 인터넷 연결"
+"이 필요합니다. 나중에 설치하려면 \"시스템 -> 관리 -> 언어\" 메뉴를 사용하면 "
+"됩니다."
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
@@ -341,11 +340,15 @@ msgid ""
 "If you would like to do this at a later time, please use \"System Settings -"
 "> Regional & Language\" instead."
 msgstr ""
+"선택한 언어를 지원하기 위한 파일 가운데 일부가 빠져 있습니다. 설치 버튼을 누"
+"른 다음 지시에 따라 빠진 요소를 설치할 수 있습니다. 이를 위해선 인터넷 연결"
+"이 필요합니다. 나중에 설치하려면 \"System Settings -> Regional & Language\" "
+"메뉴를 사용하면 됩니다."
 
 #. Name
 #: ../data/restart_session_required.note.in:1
 msgid "Session Restart Required"
-msgstr ""
+msgstr "세션 재시작 필요"
 
 #. Description
 #: ../data/restart_session_required.note.in:5
@@ -383,13 +386,12 @@ msgid "Show the current fontconfig-voodoo config"
 msgstr "현재 fontconfig-voodoo 설정 보이기"
 
 #: ../fontconfig-voodoo:43
-#, fuzzy
 msgid "Remove the current fontconfig-voodoo config"
-msgstr "현재 fontconfig-voodoo 설정 보이기"
+msgstr "현재 fontconfig-voodoo 설정 지우기"
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr ""
+msgstr "설정되지 않음"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
@@ -399,1282 +401,3 @@ msgstr ""
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "선택된 로케일을 위한 fontconfig-voodoo 설정이 없습니다."
-
-#~ msgid "Only one software management tool is allowed to run at the same time"
-#~ msgstr "동시에 한 가지 소프트웨어 관리 도구만 실행할 수 있습니다."
-
-#~ msgid ""
-#~ "Please close the other application e.g. \"Update Manager\", \"aptitude\" "
-#~ "or \"Synaptic\" at first."
-#~ msgstr ""
-#~ "\"Update Manager\", \"aptitude\", \"시냅틱\"과 같은 프로그램을 먼저 닫은 "
-#~ "후에 실행하십시오."
-
-#~ msgid "You are not root"
-#~ msgstr "root가 아닙니다."
-
-#~ msgid "Please run this software with administrative rights."
-#~ msgstr "이 프로그램은 관리자 권한으로 실행 하십시오."
-
-#~ msgid "Close"
-#~ msgstr "닫기"
-
-#~ msgid "Apply"
-#~ msgstr "적용"
-
-#~ msgid "English"
-#~ msgstr "영어"
-
-#~ msgid "Afghanistan"
-#~ msgstr "아프카니스탄"
-
-#~ msgid "Åland Islands"
-#~ msgstr "아일랜드"
-
-#~ msgid "Albania"
-#~ msgstr "알바니아"
-
-#~ msgid "Algeria"
-#~ msgstr "알제리"
-
-#~ msgid "American Samoa"
-#~ msgstr "미국령 사모아"
-
-#~ msgid "Andorra"
-#~ msgstr "안도라"
-
-#~ msgid "Angola"
-#~ msgstr "앙골라"
-
-#~ msgid "Anguilla"
-#~ msgstr "앙귈라"
-
-#~ msgid "Antigua and Barbuda"
-#~ msgstr "안티과 바부다"
-
-#~ msgid "Argentina"
-#~ msgstr "아르헨티나"
-
-#~ msgid "Armenia"
-#~ msgstr "아르메니아"
-
-#~ msgid "Aruba"
-#~ msgstr "아루바"
-
-#~ msgid "Australia"
-#~ msgstr "오스트레일리아"
-
-#~ msgid "Austria"
-#~ msgstr "오스트리아"
-
-#~ msgid "Azerbaijan"
-#~ msgstr "아제르바이잔"
-
-#~ msgid "Bahamas"
-#~ msgstr "바하마"
-
-#~ msgid "Bahrain"
-#~ msgstr "바레인"
-
-#~ msgid "Bangladesh"
-#~ msgstr "방글라데시"
-
-#~ msgid "Barbados"
-#~ msgstr "바베이도스"
-
-#~ msgid "Belarus"
-#~ msgstr "벨로루시"
-
-#~ msgid "Belgium"
-#~ msgstr "벨기에"
-
-#~ msgid "Belize"
-#~ msgstr "벨리즈"
-
-#~ msgid "Benin"
-#~ msgstr "베닌"
-
-#~ msgid "Bermuda"
-#~ msgstr "버뮤다"
-
-#~ msgid "Bhutan"
-#~ msgstr "부탄"
-
-#~ msgid "Bolivia"
-#~ msgstr "볼리비아"
-
-#~ msgid "Bosnia and Herzegovina"
-#~ msgstr "보스니아 헤르체고비나"
-
-#~ msgid "Botswana"
-#~ msgstr "보츠와나"
-
-#~ msgid "Brazil"
-#~ msgstr "브라질"
-
-#~ msgid "British Virgin Islands"
-#~ msgstr "영국령 버진 제도"
-
-#~ msgid "Brunei Darussalam"
-#~ msgstr "브루나이 다루살람"
-
-#~ msgid "Bulgaria"
-#~ msgstr "불가리아"
-
-#~ msgid "Burkina Faso"
-#~ msgstr "부르키나 파소"
-
-#~ msgid "Burundi"
-#~ msgstr "브룬디"
-
-#~ msgid "Cambodia"
-#~ msgstr "캄보디아"
-
-#~ msgid "Cameroon"
-#~ msgstr "카메룬"
-
-#~ msgid "Canada"
-#~ msgstr "캐나다"
-
-#~ msgid "Cape Verde"
-#~ msgstr "카보베르데"
-
-#~ msgid "Cayman Islands"
-#~ msgstr "케이맨 군도"
-
-#~ msgid "Central African Republic"
-#~ msgstr "중앙 아프리카 공화국"
-
-#~ msgid "Chad"
-#~ msgstr "차드"
-
-#~ msgid "Channel Islands"
-#~ msgstr "채널 제도"
-
-#~ msgid "Chile"
-#~ msgstr "칠레"
-
-#~ msgid "China"
-#~ msgstr "중국"
-
-#~ msgid "Hong Kong Special Administrative Region of China"
-#~ msgstr "홍콩"
-
-#~ msgid "Macau Special Administrative Region of China"
-#~ msgstr "마카오"
-
-#~ msgid "Colombia"
-#~ msgstr "콜롬비아"
-
-#~ msgid "Comoros"
-#~ msgstr "코모로"
-
-#~ msgid "Congo"
-#~ msgstr "콩고"
-
-#~ msgid "Cook Islands"
-#~ msgstr "쿡 제도"
-
-#~ msgid "Costa Rica"
-#~ msgstr "코스타리카"
-
-#~ msgid "Côte d'Ivoire"
-#~ msgstr "코트디부아르"
-
-#~ msgid "Croatia"
-#~ msgstr "크로아티아"
-
-#~ msgid "Cuba"
-#~ msgstr "쿠바"
-
-#~ msgid "Cyprus"
-#~ msgstr "키프로스"
-
-#~ msgid "Czech Republic"
-#~ msgstr "체코"
-
-#~ msgid "Democratic People's Republic of Korea"
-#~ msgstr "조선민주주의인민공화국"
-
-#~ msgid "Democratic Republic of the Congo"
-#~ msgstr "콩고"
-
-#~ msgid "Denmark"
-#~ msgstr "덴마크"
-
-#~ msgid "Djibouti"
-#~ msgstr "지부티"
-
-#~ msgid "Dominica"
-#~ msgstr "도미니카"
-
-#~ msgid "Dominican Republic"
-#~ msgstr "도미니카 공화국"
-
-#~ msgid "Ecuador"
-#~ msgstr "에콰도르"
-
-#~ msgid "Egypt"
-#~ msgstr "이집트"
-
-#~ msgid "El Salvador"
-#~ msgstr "엘살바도르"
-
-#~ msgid "Equatorial Guinea"
-#~ msgstr "적도 기니"
-
-#~ msgid "Eritrea"
-#~ msgstr "에리트레아"
-
-#~ msgid "Estonia"
-#~ msgstr "에스토니아"
-
-#~ msgid "Ethiopia"
-#~ msgstr "에티오피아"
-
-#~ msgid "Faeroe Islands"
-#~ msgstr "페로 제도"
-
-#~ msgid "Falkland Islands (Malvinas)"
-#~ msgstr "포클랜드 제도"
-
-#~ msgid "Fiji"
-#~ msgstr "피지"
-
-#~ msgid "Finland"
-#~ msgstr "핀란드"
-
-#~ msgid "French Guiana"
-#~ msgstr "프랑스령 기아나"
-
-#~ msgid "French Polynesia"
-#~ msgstr "프랑스령 폴리네시아"
-
-#~ msgid "Gabon"
-#~ msgstr "가봉"
-
-#~ msgid "Gambia"
-#~ msgstr "감비아"
-
-#~ msgid "Georgia"
-#~ msgstr "그루지야"
-
-#~ msgid "Germany"
-#~ msgstr "독일"
-
-#~ msgid "Ghana"
-#~ msgstr "가나"
-
-#~ msgid "Gibraltar"
-#~ msgstr "지브롤터"
-
-#~ msgid "Greece"
-#~ msgstr "그리스"
-
-#~ msgid "Greenland"
-#~ msgstr "그린랜드"
-
-#~ msgid "Grenada"
-#~ msgstr "그레나다"
-
-#~ msgid "Guadeloupe"
-#~ msgstr "과들루프"
-
-#~ msgid "Guam"
-#~ msgstr "괌"
-
-#~ msgid "Guatemala"
-#~ msgstr "과테말라"
-
-#~ msgid "Guinea"
-#~ msgstr "기니"
-
-#~ msgid "Guinea-Bissau"
-#~ msgstr "기니비사우"
-
-#~ msgid "Guyana"
-#~ msgstr "가이아나"
-
-#~ msgid "Haiti"
-#~ msgstr "아이티"
-
-#~ msgid "Holy See"
-#~ msgstr "바티칸"
-
-#~ msgid "Honduras"
-#~ msgstr "온두라스"
-
-#~ msgid "Hungary"
-#~ msgstr "헝가리"
-
-#~ msgid "Iceland"
-#~ msgstr "아이슬란드"
-
-#~ msgid "India"
-#~ msgstr "인도"
-
-#~ msgid "Indonesia"
-#~ msgstr "인도네시아"
-
-#~ msgid "Iran (Islamic Republic of)"
-#~ msgstr "이란"
-
-#~ msgid "Iraq"
-#~ msgstr "이라크"
-
-#~ msgid "Ireland"
-#~ msgstr "아일랜드"
-
-#~ msgid "Isle of Man"
-#~ msgstr "맨 섬"
-
-#~ msgid "Israel"
-#~ msgstr "이스라엘"
-
-#~ msgid "Italy"
-#~ msgstr "이탈리아"
-
-#~ msgid "Jamaica"
-#~ msgstr "자메이카"
-
-#~ msgid "Japan"
-#~ msgstr "일본"
-
-#~ msgid "Jordan"
-#~ msgstr "요르단"
-
-#~ msgid "Kazakhstan"
-#~ msgstr "카자흐스탄"
-
-#~ msgid "Kenya"
-#~ msgstr "케냐"
-
-#~ msgid "Kiribati"
-#~ msgstr "키리바티"
-
-#~ msgid "Kuwait"
-#~ msgstr "쿠웨이트"
-
-#~ msgid "Kyrgyzstan"
-#~ msgstr "키르기즈스탄"
-
-#~ msgid "Lao People's Democratic Republic"
-#~ msgstr "라오스"
-
-#~ msgid "Latvia"
-#~ msgstr "라트비아"
-
-#~ msgid "Lebanon"
-#~ msgstr "레바논"
-
-#~ msgid "Lesotho"
-#~ msgstr "레소토"
-
-#~ msgid "Liberia"
-#~ msgstr "라이베리아"
-
-#~ msgid "Libyan Arab Jamahiriya"
-#~ msgstr "리비아 공화국"
-
-#~ msgid "Liechtenstein"
-#~ msgstr "리히텐슈타인"
-
-#~ msgid "Lithuania"
-#~ msgstr "리투아니아"
-
-#~ msgid "Luxembourg"
-#~ msgstr "룩셈부르크"
-
-#~ msgid "Madagascar"
-#~ msgstr "마다가스카르"
-
-#~ msgid "Malawi"
-#~ msgstr "말라위"
-
-#~ msgid "Malaysia"
-#~ msgstr "말레이시아"
-
-#~ msgid "Maldives"
-#~ msgstr "몰디브"
-
-#~ msgid "Mali"
-#~ msgstr "말리"
-
-#~ msgid "Malta"
-#~ msgstr "몰타"
-
-#~ msgid "Marshall Islands"
-#~ msgstr "마셜 군도"
-
-#~ msgid "Martinique"
-#~ msgstr "말티니크"
-
-#~ msgid "Mauritania"
-#~ msgstr "모리타니아"
-
-#~ msgid "Mauritius"
-#~ msgstr "모리셔스"
-
-#~ msgid "Mayotte"
-#~ msgstr "마요트"
-
-#~ msgid "Mexico"
-#~ msgstr "멕시코"
-
-#~ msgid "Micronesia (Federated States of)"
-#~ msgstr "마이크로네시아"
-
-#~ msgid "Monaco"
-#~ msgstr "모나코"
-
-#~ msgid "Mongolia"
-#~ msgstr "몽고"
-
-#~ msgid "Montserrat"
-#~ msgstr "몽세라트"
-
-#~ msgid "Morocco"
-#~ msgstr "모로코"
-
-#~ msgid "Mozambique"
-#~ msgstr "모잠비크"
-
-#~ msgid "Myanmar"
-#~ msgstr "미얀마"
-
-#~ msgid "Namibia"
-#~ msgstr "나미비아"
-
-#~ msgid "Nauru"
-#~ msgstr "나우루"
-
-#~ msgid "Nepal"
-#~ msgstr "네팔"
-
-#~ msgid "Netherlands"
-#~ msgstr "네덜란드"
-
-#~ msgid "Netherlands Antilles"
-#~ msgstr "네덜란드령 안틸레스"
-
-#~ msgid "New Caledonia"
-#~ msgstr "뉴 칼레도니아"
-
-#~ msgid "New Zealand"
-#~ msgstr "뉴질랜드"
-
-#~ msgid "Nicaragua"
-#~ msgstr "니카라과"
-
-#~ msgid "Niger"
-#~ msgstr "니제르"
-
-#~ msgid "Nigeria"
-#~ msgstr "나이제리아"
-
-#~ msgid "Niue"
-#~ msgstr "니우에"
-
-#~ msgid "Norfolk Island"
-#~ msgstr "노퍽 섬"
-
-#~ msgid "Northern Mariana Islands"
-#~ msgstr "북 마리아나 제도"
-
-#~ msgid "Norway"
-#~ msgstr "노르웨이"
-
-#~ msgid "Occupied Palestinian Territory"
-#~ msgstr "팔레스타인 자치 구역"
-
-#~ msgid "Oman"
-#~ msgstr "오만"
-
-#~ msgid "Pakistan"
-#~ msgstr "파키스탄"
-
-#~ msgid "Palau"
-#~ msgstr "팔라우"
-
-#~ msgid "Panama"
-#~ msgstr "파나마"
-
-#~ msgid "Papua New Guinea"
-#~ msgstr "파푸아뉴기니"
-
-#~ msgid "Paraguay"
-#~ msgstr "파라구와"
-
-#~ msgid "Peru"
-#~ msgstr "페루"
-
-#~ msgid "Philippines"
-#~ msgstr "필리핀"
-
-#~ msgid "Pitcairn"
-#~ msgstr "피트케언"
-
-#~ msgid "Poland"
-#~ msgstr "폴란드"
-
-#~ msgid "Portugal"
-#~ msgstr "포르투칼"
-
-#~ msgid "Puerto Rico"
-#~ msgstr "푸에르토리코"
-
-#~ msgid "Qatar"
-#~ msgstr "콰타르"
-
-#~ msgid "Republic of Korea"
-#~ msgstr "대한민국"
-
-#~ msgid "Republic of Moldova"
-#~ msgstr "몰도바 공화국"
-
-#~ msgid "Réunion"
-#~ msgstr "레위니옹"
-
-#~ msgid "Romania"
-#~ msgstr "루마니아"
-
-#~ msgid "Russian Federation"
-#~ msgstr "러시아"
-
-#~ msgid "Rwanda"
-#~ msgstr "르완다"
-
-#~ msgid "Saint Helena"
-#~ msgstr "세인트 헬레나"
-
-#~ msgid "Saint Kitts and Nevis"
-#~ msgstr "세인트 키츠 네비스"
-
-#~ msgid "Saint Lucia"
-#~ msgstr "세인트 루시아"
-
-#~ msgid "Saint Pierre and Miquelon"
-#~ msgstr "쌩 피에르 미켈론"
-
-#~ msgid "Saint Vincent and the Grenadines"
-#~ msgstr "세인트 빈센트 그레나다인즈"
-
-#~ msgid "Samoa"
-#~ msgstr "사모아"
-
-#~ msgid "San Marino"
-#~ msgstr "산마리노"
-
-#~ msgid "Sao Tome and Principe"
-#~ msgstr "상투메 프린시페"
-
-#~ msgid "Saudi Arabia"
-#~ msgstr "사우디아라비아"
-
-#~ msgid "Senegal"
-#~ msgstr "세네갈"
-
-#~ msgid "Serbia and Montenegro"
-#~ msgstr "세르비아 몬테네그로"
-
-#~ msgid "Seychelles"
-#~ msgstr "세이셸"
-
-#~ msgid "Sierra Leone"
-#~ msgstr "시에라리온"
-
-#~ msgid "Singapore"
-#~ msgstr "싱가포르"
-
-#~ msgid "Slovakia"
-#~ msgstr "슬로바키아"
-
-#~ msgid "Slovenia"
-#~ msgstr "슬로베니아"
-
-#~ msgid "Solomon Islands"
-#~ msgstr "솔로몬 군도"
-
-#~ msgid "Somalia"
-#~ msgstr "소말리아"
-
-#~ msgid "South Africa"
-#~ msgstr "남아프리카공화국"
-
-#~ msgid "Spain"
-#~ msgstr "스페인"
-
-#~ msgid "Sri Lanka"
-#~ msgstr "스리랑카"
-
-#~ msgid "Sudan"
-#~ msgstr "수단"
-
-#~ msgid "Suriname"
-#~ msgstr "수리남"
-
-#~ msgid "Svalbard and Jan Mayen Islands"
-#~ msgstr "스발바르와 잔 마옌 군도"
-
-#~ msgid "Swaziland"
-#~ msgstr "스와질란드"
-
-#~ msgid "Sweden"
-#~ msgstr "스웨덴"
-
-#~ msgid "Switzerland"
-#~ msgstr "스위스"
-
-#~ msgid "Syrian Arab Republic"
-#~ msgstr "시리아"
-
-#~ msgid "Tajikistan"
-#~ msgstr "타지키스탄"
-
-#~ msgid "Thailand"
-#~ msgstr "태국"
-
-#~ msgid "Macedonia, Republic of"
-#~ msgstr "마케도니아"
-
-#~ msgid "Timor-Leste"
-#~ msgstr "동티모르"
-
-#~ msgid "Togo"
-#~ msgstr "토고"
-
-#~ msgid "Tokelau"
-#~ msgstr "토켈로"
-
-#~ msgid "Tonga"
-#~ msgstr "통가"
-
-#~ msgid "Trinidad and Tobago"
-#~ msgstr "트리니다드토바고"
-
-#~ msgid "Tunisia"
-#~ msgstr "튀니지"
-
-#~ msgid "Turkey"
-#~ msgstr "터키"
-
-#~ msgid "Turkmenistan"
-#~ msgstr "투르크메니스탄"
-
-#~ msgid "Turks and Caicos Islands"
-#~ msgstr "터크스 카이코스 군도"
-
-#~ msgid "Tuvalu"
-#~ msgstr "투발루"
-
-#~ msgid "Uganda"
-#~ msgstr "우간다"
-
-#~ msgid "Ukraine"
-#~ msgstr "우크라이나"
-
-#~ msgid "United Arab Emirates"
-#~ msgstr "아랍에미레이트"
-
-#~ msgid "United Kingdom of Great Britain and Northern Ireland"
-#~ msgstr "영국"
-
-#~ msgid "United Republic of Tanzania"
-#~ msgstr "탄자니아"
-
-#~ msgid "United States of America"
-#~ msgstr "미국"
-
-#~ msgid "United States Virgin Islands"
-#~ msgstr "미국령 Virgin섬"
-
-#~ msgid "Uruguay"
-#~ msgstr "우루과이"
-
-#~ msgid "Uzbekistan"
-#~ msgstr "우즈베키스탄"
-
-#~ msgid "Vanuatu"
-#~ msgstr "바누아투"
-
-#~ msgid "Venezuela"
-#~ msgstr "베네주엘라"
-
-#~ msgid "Viet Nam"
-#~ msgstr "베트남"
-
-#~ msgid "Wallis and Futuna Islands"
-#~ msgstr "윌리스와 푸투나 군도"
-
-#~ msgid "Western Sahara"
-#~ msgstr "서부 사하라"
-
-#~ msgid "Yemen"
-#~ msgstr "예멘"
-
-#~ msgid "Zambia"
-#~ msgstr "잠비아"
-
-#~ msgid "Zimbabwe"
-#~ msgstr "짐바브웨"
-
-#~ msgid "Antarctica"
-#~ msgstr "남극"
-
-#~ msgid "Bouvet Island"
-#~ msgstr "보우벳 섬"
-
-#~ msgid "British Indian Ocean Territory"
-#~ msgstr "영국령 인도양 자치구역"
-
-#~ msgid "Christmas Island"
-#~ msgstr "크리스마스 섬"
-
-#~ msgid "Cocos (Keeling) Islands"
-#~ msgstr "코코스 (킬링) 제도"
-
-#~ msgid "French Southern Territories"
-#~ msgstr "프랑스령 남 자치구역"
-
-#~ msgid "Heard Island and McDonald Islands"
-#~ msgstr "허드 맥도널드 제도"
-
-#~ msgid "South Georgia and the South Sandwich Islands"
-#~ msgstr "남 조지아 & 남 샌드위치 제도"
-
-#~ msgid "Taiwan"
-#~ msgstr "대만"
-
-#~ msgid "United States Minor Outlying Islands"
-#~ msgstr "미국령 소군도"
-
-#~ msgid "Afar"
-#~ msgstr "아파르어"
-
-#~ msgid "Abkhazian"
-#~ msgstr "아브하즈어"
-
-#~ msgid "Avestan"
-#~ msgstr "아베스타어"
-
-#~ msgid "Afrikaans"
-#~ msgstr "남아프리카 공용어"
-
-#~ msgid "Akan"
-#~ msgstr "아칸어"
-
-#~ msgid "Amharic"
-#~ msgstr "암하라어"
-
-#~ msgid "Aragonese"
-#~ msgstr "아라곤어"
-
-#~ msgid "Arabic"
-#~ msgstr "아랍어"
-
-#~ msgid "Assamese"
-#~ msgstr "아샘어"
-
-#~ msgid "Asturian"
-#~ msgstr "아스투리아스어"
-
-#~ msgid "Avaric"
-#~ msgstr "애버 어"
-
-#~ msgid "Aymara"
-#~ msgstr "아이마라어"
-
-#~ msgid "Azerbaijani"
-#~ msgstr "아제르베이잔어"
-
-#~ msgid "Bashkir"
-#~ msgstr "바쉬키르어"
-
-#~ msgid "Byelorussian"
-#~ msgstr "벨로루시어"
-
-#~ msgid "Bulgarian"
-#~ msgstr "불가리아어"
-
-#~ msgid "Bihari"
-#~ msgstr "비하르어"
-
-#~ msgid "Bislama"
-#~ msgstr "비슬라마어"
-
-#~ msgid "Bambara"
-#~ msgstr "밤바라어"
-
-#~ msgid "Bengali; Bangla"
-#~ msgstr "벵골어"
-
-#~ msgid "Tibetan"
-#~ msgstr "티베르어"
-
-#~ msgid "Breton"
-#~ msgstr "브르타뉴어"
-
-#~ msgid "Bosnian"
-#~ msgstr "보스니아어"
-
-#~ msgid "Catalan"
-#~ msgstr "카탈로니아어"
-
-#~ msgid "Chechen"
-#~ msgstr "체첸어"
-
-#~ msgid "Chamorro"
-#~ msgstr "차모로어"
-
-#~ msgid "Corsican"
-#~ msgstr "코르시카어"
-
-#~ msgid "Cree"
-#~ msgstr "크리어"
-
-#~ msgid "Czech"
-#~ msgstr "체코어"
-
-#~ msgid "Old Church Slavonic"
-#~ msgstr "고대 교회 슬라브어"
-
-#~ msgid "Chuvash"
-#~ msgstr "츄바시어"
-
-#~ msgid "Welsh"
-#~ msgstr "웨일즈어"
-
-#~ msgid "Danish"
-#~ msgstr "덴마크어"
-
-#~ msgid "German"
-#~ msgstr "독일어"
-
-#~ msgid "Divehi"
-#~ msgstr "몰디브"
-
-#~ msgid "Dzongkha"
-#~ msgstr "종카어"
-
-#~ msgid "Ewe"
-#~ msgstr "에웨"
-
-#~ msgid "Greek, Modern"
-#~ msgstr "현대 그리스어"
-
-#~ msgid "Esperanto"
-#~ msgstr "에스페란토"
-
-#~ msgid "Spanish"
-#~ msgstr "스페인어"
-
-#~ msgid "Estonian"
-#~ msgstr "에스토니아어"
-
-#~ msgid "Basque"
-#~ msgstr "바스크어"
-
-#~ msgid "Persian"
-#~ msgstr "페르시아어"
-
-#~ msgid "Fulah"
-#~ msgstr "고대 서 아프리카 어"
-
-#~ msgid "Finnish"
-#~ msgstr "핀란드어"
-
-#~ msgid "Faroese"
-#~ msgstr "파로어"
-
-#~ msgid "French"
-#~ msgstr "프랑스어"
-
-#~ msgid "Frisian"
-#~ msgstr "프리지아어"
-
-#~ msgid "Irish"
-#~ msgstr "아일랜드어"
-
-#~ msgid "Scots Gaelic"
-#~ msgstr "스코틀랜드 게일어"
-
-#~ msgid "Galician"
-#~ msgstr "갈리시아어"
-
-#~ msgid "Guarani"
-#~ msgstr "과라니어"
-
-#~ msgid "Gujarati"
-#~ msgstr "구자라트어"
-
-#~ msgid "Manx"
-#~ msgstr "맨섬어"
-
-#~ msgid "Hausa"
-#~ msgstr "하우사어"
-
-#~ msgid "Hebrew"
-#~ msgstr "헤브라이어"
-
-#~ msgid "Hindi"
-#~ msgstr "힌디어"
-
-#~ msgid "Hiri Motu"
-#~ msgstr "파푸아 뉴기니 어"
-
-#~ msgid "Croatian"
-#~ msgstr "크로아티아어"
-
-#~ msgid "Hungarian"
-#~ msgstr "헝가리어"
-
-#~ msgid "Armenian"
-#~ msgstr "아르메니아어"
-
-#~ msgid "Herero"
-#~ msgstr "헤레로어"
-
-#~ msgid "Interlingua"
-#~ msgstr "과학자용 국제어"
-
-#~ msgid "Indonesian"
-#~ msgstr "인도네시아어"
-
-#~ msgid "Interlingue"
-#~ msgstr "인터리그 어"
-
-#~ msgid "Igbo"
-#~ msgstr "이그보 어"
-
-#~ msgid "Sichuan Yi"
-#~ msgstr "사천어"
-
-#~ msgid "Inupiak"
-#~ msgstr "이너픽 (북부 알래스카 어)"
-
-#~ msgid "Ido"
-#~ msgstr "이도어"
-
-#~ msgid "Icelandic"
-#~ msgstr "아이슬란드어"
-
-#~ msgid "Italian"
-#~ msgstr "이탈리아어"
-
-#~ msgid "Inuktitut"
-#~ msgstr "이누이트어"
-
-#~ msgid "Japanese"
-#~ msgstr "일본어"
-
-#~ msgid "Javanese"
-#~ msgstr "일본어"
-
-#~ msgid "Georgian"
-#~ msgstr "그루지아어"
-
-#~ msgid "Kongo"
-#~ msgstr "콩코어"
-
-#~ msgid "Kikuyu"
-#~ msgstr "키쿠유어"
-
-#~ msgid "Kuanyama"
-#~ msgstr "콴야마 (부탄 어)"
-
-#~ msgid "Kazakh"
-#~ msgstr "카자흐어"
-
-#~ msgid "Greenlandic"
-#~ msgstr "그린란드어"
-
-#~ msgid "Khmer"
-#~ msgstr "크메르어"
-
-#~ msgid "Kannada"
-#~ msgstr "카나다어"
-
-#~ msgid "Korean"
-#~ msgstr "한국어"
-
-#~ msgid "Kanuri"
-#~ msgstr "카누리어"
-
-#~ msgid "Kashmiri"
-#~ msgstr "카슈미르어"
-
-#~ msgid "Kurdish"
-#~ msgstr "쿠르드어"
-
-#~ msgid "Komi"
-#~ msgstr "코미어"
-
-#~ msgid "Cornish"
-#~ msgstr "영국 콘월어"
-
-#~ msgid "Kirghiz"
-#~ msgstr "키르기스어"
-
-#~ msgid "Latin"
-#~ msgstr "라틴어"
-
-#~ msgid "Luxembourgish"
-#~ msgstr "룩셈부르크어"
-
-#~ msgid "Ganda"
-#~ msgstr "헨트어"
-
-#~ msgid "Limburgan"
-#~ msgstr "림부르크어"
-
-#~ msgid "Lingala"
-#~ msgstr "링갈라어"
-
-#~ msgid "Lao"
-#~ msgstr "라오스어"
-
-#~ msgid "Lithuanian"
-#~ msgstr "리투아니아어"
-
-#~ msgid "Luba-Katanga"
-#~ msgstr "루바 카탕가"
-
-#~ msgid "Latvian"
-#~ msgstr "라트비아어"
-
-#~ msgid "Malagasy"
-#~ msgstr "마다가스카어"
-
-#~ msgid "Marshallese"
-#~ msgstr "마셜 군도어"
-
-#~ msgid "Maori"
-#~ msgstr "마오리어"
-
-#~ msgid "Macedonian"
-#~ msgstr "마케도니아어"
-
-#~ msgid "Malayalam"
-#~ msgstr "말라얄람어"
-
-#~ msgid "Mongolian"
-#~ msgstr "몽골어"
-
-#~ msgid "Moldavian"
-#~ msgstr "몰다비아어"
-
-#~ msgid "Marathi"
-#~ msgstr "마라티어"
-
-#~ msgid "Malay"
-#~ msgstr "말레이어"
-
-#~ msgid "Maltese"
-#~ msgstr "몰타어"
-
-#~ msgid "Burmese"
-#~ msgstr "버마어"
-
-#~ msgid "Norwegian Bokmal"
-#~ msgstr "노르웨이 불몰어"
-
-#~ msgid "Nepali"
-#~ msgstr "네팔어"
-
-#~ msgid "Dutch"
-#~ msgstr "네덜란드어"
-
-#~ msgid "Norwegian Nynorsk"
-#~ msgstr "노르웨이 뉘노시크어"
-
-#~ msgid "Norwegian"
-#~ msgstr "노르웨이어"
-
-#~ msgid "Navajo"
-#~ msgstr "나바호어"
-
-#~ msgid "Occitan"
-#~ msgstr "오크어"
-
-#~ msgid "Ojibwa"
-#~ msgstr "오지브웨이어"
-
-#~ msgid "Oromo"
-#~ msgstr "오로모어"
-
-#~ msgid "Oriya"
-#~ msgstr "오리야어"
-
-#~ msgid "Ossetian"
-#~ msgstr "오세티아어"
-
-#~ msgid "Punjabi"
-#~ msgstr "펀잡어"
-
-#~ msgid "Pali"
-#~ msgstr "팔리어"
-
-#~ msgid "Polish"
-#~ msgstr "폴란드어"
-
-#~ msgid "Pushto"
-#~ msgstr "아프가니스탄어"
-
-#~ msgid "Portuguese"
-#~ msgstr "포르투칼어"
-
-#~ msgid "Quechua"
-#~ msgstr "케추아어"
-
-#~ msgid "Rhaeto-Romance"
-#~ msgstr "레토로만어"
-
-#~ msgid "Rundi"
-#~ msgstr "룬디어"
-
-#~ msgid "Romanian"
-#~ msgstr "루마니아어"
-
-#~ msgid "Russian"
-#~ msgstr "러시아어"
-
-#~ msgid "Kinyarwanda"
-#~ msgstr "키냐완다"
-
-#~ msgid "Sanskrit"
-#~ msgstr "산스크리트"
-
-#~ msgid "Sardinian"
-#~ msgstr "사르디니아어"
-
-#~ msgid "Sindhi"
-#~ msgstr "신드어"
-
-#~ msgid "Sango"
-#~ msgstr "상고"
-
-#~ msgid "Serbo-Croatian"
-#~ msgstr "세르보크로아티아어"
-
-#~ msgid "Sinhalese"
-#~ msgstr "스리랑카어"
-
-#~ msgid "Slovak"
-#~ msgstr "슬로바키아어"
-
-#~ msgid "Slovenian"
-#~ msgstr "슬로베니아어"
-
-#~ msgid "Samoan"
-#~ msgstr "사모아어"
-
-#~ msgid "Shona"
-#~ msgstr "쇼나"
-
-#~ msgid "Somali"
-#~ msgstr "소말리어"
-
-#~ msgid "Albanian"
-#~ msgstr "알바니아어"
-
-#~ msgid "Serbian"
-#~ msgstr "세르비아어"
-
-#~ msgid "Swati"
-#~ msgstr "싸티 (고대 아프가니스탄 어)"
-
-#~ msgid "Southern Sotho"
-#~ msgstr "남부 소토어"
-
-#~ msgid "Sundanese"
-#~ msgstr "순다어"
-
-#~ msgid "Swedish"
-#~ msgstr "스웨덴어"
-
-#~ msgid "Swahili"
-#~ msgstr "스와힐리어"
-
-#~ msgid "Tamil"
-#~ msgstr "타밀어"
-
-#~ msgid "Telugu"
-#~ msgstr "텔루구어"
-
-#~ msgid "Tajik"
-#~ msgstr "타지크어"
-
-#~ msgid "Thai"
-#~ msgstr "태국어"
-
-#~ msgid "Tigrinya"
-#~ msgstr "티그리니아어"
-
-#~ msgid "Turkmen"
-#~ msgstr "투르크멘어"
-
-#~ msgid "Tagalog"
-#~ msgstr "타갈로그어"
-
-#~ msgid "Tswana"
-#~ msgstr "츠와나어"
-
-#~ msgid "Turkish"
-#~ msgstr "터키어"
-
-#~ msgid "Tsonga"
-#~ msgstr "통가어"
-
-#~ msgid "Tatar"
-#~ msgstr "타타르어"
-
-#~ msgid "Twi"
-#~ msgstr "츠위"
-
-#~ msgid "Tahitian"
-#~ msgstr "타히티어"
-
-#~ msgid "Uighur"
-#~ msgstr "위그루어"
-
-#~ msgid "Ukrainian"
-#~ msgstr "우크라이나어"
-
-#~ msgid "Urdu"
-#~ msgstr "우르두어"
-
-#~ msgid "Uzbek"
-#~ msgstr "우즈베키스탄어"
-
-#~ msgid "Venda"
-#~ msgstr "벤더어"
-
-#~ msgid "Vietnamese"
-#~ msgstr "베트남어"
-
-#~ msgid "Volapuk"
-#~ msgstr "볼라퓌크"
-
-#~ msgid "Walloon"
-#~ msgstr "왈론어"
-
-#~ msgid "Wolof"
-#~ msgstr "월로프어"
-
-#~ msgid "Xhosa"
-#~ msgstr "코사어"
-
-#~ msgid "Yiddish"
-#~ msgstr "이디시어"
-
-#~ msgid "Yoruba"
-#~ msgstr "요루바어"
-
-#~ msgid "Zhuang"
-#~ msgstr "쯔황 (중국 광시성의 옛 언어)"
-
-#~ msgid "Chinese"
-#~ msgstr "중국어"
-
-#~ msgid "Zulu"
-#~ msgstr "줄루어"

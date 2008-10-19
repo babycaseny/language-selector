@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the language-selector package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-26 01:08+0800\n"
-"PO-Revision-Date: 2006-05-05 22:43+0000\n"
-"Last-Translator: Jozef Kacer <quickparser@gmail.com>\n"
+"PO-Revision-Date: 2008-10-15 18:33+0000\n"
+"Last-Translator: Jozef Káčer <quickparser@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 msgid "Language"
@@ -26,7 +27,7 @@ msgstr "Podpora"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:420
 msgid "Could not install the selected language support"
-msgstr "Nepodarilo sa naištalovať zvolenú jazykovú podporu"
+msgstr "Nepodarilo sa nainštalovať zvolenú jazykovú podporu"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:421
 msgid ""
@@ -34,46 +35,45 @@ msgid ""
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
-"Toto je možno chyba tejto aplikácie. Prosím, zaznamenajte chybu na https://"
-"launchpad.net/bugs/bugs/+package/ pri 'language-selector'."
+"Toto je pravdepodobne chyba tejto aplikácie. Prosím, ohláste chybu na "
+"https://launchpad.net/bugs/bugs/+package/ tohoto programu (language-"
+"selector)."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
 msgid "Could not install the full language support"
-msgstr "Nepodarilo sa nainštalovať úplnú jazykovú podporu"
+msgstr "Nepodarilo sa nainštalovať plnú jazykovú podporu"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
-"Zvyčajne toto môže byť chyba vo vašom archíve softvéru alebo softérového "
-"manažéra. Skontrolujte si preferencie sofvéru v menu \"Administrácia\"."
+"Toto zvyčajne môže byť chyba vo vašom archíve softvéru alebo správcovi "
+"softéru. Skontrolujte Vlastnosti sofvéru v ponuke „Správa“."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
 msgid "The list of available languages on the system has been updated."
-msgstr ""
+msgstr "Zoznam dostupných jazykov bol aktualizovaný."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
 msgid "The language support is not installed completely"
 msgstr "Jazyková podpora nie je úplne nainštalovaná"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
-#, fuzzy
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
 "Nie všetky preklady či pomôcky pri písaní, ktoré sú dostupné pre podporované "
-"jazyky vo vašom systéme, sú nainštalované."
+"jazyky vo vašom systéme, sú nainštalované. Chcete ich teraz nainštalovať?"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:583
-#, fuzzy
 msgid "_Remind Me Later"
-msgstr "_Upozorni ma znova"
+msgstr "P_ripomenúť neskôr"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
 msgid "_Install"
-msgstr "_Nainštalovať"
+msgstr "_Inštalovať"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:587
 #: ../data/LanguageSelector.glade.h:13
@@ -83,7 +83,7 @@ msgstr "Podrobnosti"
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:626
 #: ../LanguageSelector/qt/QtLanguageSelector.py:72
 msgid "Software database is broken"
-msgstr ""
+msgstr "Databáza softvéru je poškodená"
 
 #. FIXME: mention adept here instead of synaptic, but the
 #. change happend during string freeze
@@ -94,79 +94,78 @@ msgid ""
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
+"V dôsledku chyby nie je možné nainštalovať alebo odstrániť žiadny program. "
+"Na odstránenie tohto problému použite správcu balíkov „Synaptic“ alebo "
+"spustite „sudo apt-get install -f“ v termáli."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Reboot required"
-msgstr ""
+msgstr "Je potrebný reštart"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:682
 msgid ""
 "To complete the changes a reboot is required so that the new functionality "
 "is activated."
 msgstr ""
+"Na dokončenie zmien je potrebný reštart, potom budú nové nastavenia "
+"aktivované."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:48
-#, fuzzy
 msgid "Uninstall"
-msgstr "_Nainštalovať"
+msgstr "Odinštalovať"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:49
 msgid "Select language to uninstall:"
-msgstr ""
+msgstr "Vyberte jazyk pre odinštaláciu:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:56
-#, fuzzy
 msgid "Language Selector"
-msgstr "Podpora jazykov"
+msgstr "Výber jazykov"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:85
-#, fuzzy
 msgid "Default system language:"
-msgstr "Východzí jazyk"
+msgstr "Predvolený jazyk systému:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid "Set System Language"
-msgstr ""
+msgstr "Nastaviť jazyk systému"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 #: ../data/LanguageSelector.glade.h:14
 msgid "Enable support to enter complex characters"
-msgstr ""
+msgstr "Zapnúť podporu pre zadávanie komplexných znakov"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:88
 #: ../LanguageSelector/qt/QtLanguageSelector.py:91
-#, fuzzy
 msgid "Cancel"
-msgstr "Francúzsko"
+msgstr "Zrušiť"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "Select language to install:"
-msgstr ""
+msgstr "Vyberte jazyk pre inštaláciu:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#, fuzzy
 msgid "Install"
-msgstr "_Nainštalovať"
+msgstr "Inštalovať"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Already installed"
-msgstr ""
+msgstr "Už nainštalované"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:135
 msgid "Partially Installed"
-msgstr ""
+msgstr "Čiastočne nainštalované"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:139
 msgid "Not installed"
-msgstr ""
+msgstr "Nenainštalované"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
-#, fuzzy
 msgid "Language Set"
-msgstr "Jazyk"
+msgstr "Jazyková sada"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:185
 #, python-format
@@ -174,16 +173,17 @@ msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
+"Štandardný jazyk systému bol nastavený na %s. Zadávanie komplexných znakov "
+"bude zapnuté po ďalšom prihlásení."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:187
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "Predvolený jazyk systému je teraz %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
-#, fuzzy
 msgid "Language Installed"
-msgstr "Jazyk"
+msgstr "Jazyk nainštalovaný"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:268
 #, python-format
@@ -191,24 +191,25 @@ msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
+"Preklady a podpora boli nainštalované pre jazyk %s. Vyberte ich tlačidlom "
+"Pridať jazyk."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
 msgid "Language Uninstalled"
-msgstr ""
+msgstr "Jazyk odinštalovaný"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:270
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "Preklady a podpora boli odinštalované pre jazyk %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
-#, fuzzy
 msgid "Language Not Set"
-msgstr "Podpora jazykov"
+msgstr "Jazyk nenastavený"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:272
 msgid "Failed to set system language."
-msgstr ""
+msgstr "Nepodarilo sa nastaviť jazyk systému"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -220,7 +221,7 @@ msgstr "<b>Predvolený jazyk</b>"
 
 #: ../data/LanguageSelector.glade.h:3
 msgid "<b>Input method</b>"
-msgstr ""
+msgstr "<b>Spôsob zadávania vstupných údajov</b>"
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<b>Supported Languages</b>"
@@ -284,7 +285,7 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
 msgid "Language Support"
-msgstr "Podpora jazykov"
+msgstr "Výber jazyka"
 
 #: ../data/LanguageSelector.glade.h:20
 msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
@@ -312,9 +313,8 @@ msgstr "Nastaviť podporu viacerých jazykov pre váš systém"
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:1
 #: ../data/incomplete-language-support-qt.note.in:1
-#, fuzzy
 msgid "Incomplete Language Support"
-msgstr "Podpora jazykov"
+msgstr "Neúplná podpora jazykov"
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -325,6 +325,11 @@ msgid ""
 "If you would like to do this at a later time, please use \"System -> "
 "Administration -> Language Support\" instead."
 msgstr ""
+"Súbory jazykovej podpory pre váš vybratý jazyk vyzerajú byť neúplné. "
+"Chýbajúce súčasti môžete nainštalovať kliknutím na \"Spustiť túto akciu teraz"
+"\" a nasledujte inštrukcie. Je potrebné aktívne pripojenie k internetu. Ak "
+"by ste to chceli urobiť neskôr, prosím, namiesto toho použite \"Systém -> "
+"Správa -> Výber jazykat\"."
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
@@ -350,7 +355,7 @@ msgstr ""
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
-msgstr "Končím"
+msgstr "Ruší sa"
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
@@ -358,529 +363,37 @@ msgstr "Vnútiť, aj keď konfigurácia už existuje"
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
+msgstr "Nastavte voodoo fontconfigu pre vybraný jazyk"
 
 #: ../fontconfig-voodoo:32
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"Odhadnúť konfiguráciu na základe premennej LANGUAGE. Nastaví konfiguráciu na "
+"„žiadny“, ak sa nenašiel vhodný"
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
-msgstr ""
+msgstr "Zoznam dostupných fontconfig-voodoo konfigurácií"
 
 #: ../fontconfig-voodoo:40
 msgid "Show the current fontconfig-voodoo config"
-msgstr ""
+msgstr "Zobraziť aktuálnu fontconfig-voodoo konfiguráciu"
 
 #: ../fontconfig-voodoo:43
 msgid "Remove the current fontconfig-voodoo config"
-msgstr ""
+msgstr "Odstrániť súčasné nastavenie fontconfig-voodoo"
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr ""
+msgstr "Nenakonfigurované"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
+msgstr "Konfigurácia už existuje. Použite „--force“ ak ju chcete prepísať. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
-
-#~ msgid "You are not root"
-#~ msgstr "Nemáte administrátorské práva"
-
-#~ msgid "Please run this software with administrative rights."
-#~ msgstr "Tento program musíte spustiť s administrátorskými právami."
-
-#~ msgid "English"
-#~ msgstr "Angličtina"
-
-#~ msgid "Afghanistan"
-#~ msgstr "Afganistan"
-
-#~ msgid "Åland Islands"
-#~ msgstr "Alandské ostrovy"
-
-#~ msgid "Albania"
-#~ msgstr "Albánsko"
-
-#~ msgid "Algeria"
-#~ msgstr "Alžírsko"
-
-#~ msgid "American Samoa"
-#~ msgstr "Americká Samoa"
-
-#~ msgid "Andorra"
-#~ msgstr "Andora"
-
-#~ msgid "Angola"
-#~ msgstr "Angola"
-
-#~ msgid "Anguilla"
-#~ msgstr "Anguilla"
-
-#~ msgid "Antigua and Barbuda"
-#~ msgstr "Antigua a Barbuda"
-
-#~ msgid "Argentina"
-#~ msgstr "Argentína"
-
-#~ msgid "Armenia"
-#~ msgstr "Arménsko"
-
-#~ msgid "Aruba"
-#~ msgstr "Aruba"
-
-#~ msgid "Australia"
-#~ msgstr "Austrália"
-
-#~ msgid "Austria"
-#~ msgstr "Rakúsko"
-
-#~ msgid "Azerbaijan"
-#~ msgstr "Azerbajdžan"
-
-#~ msgid "Bahamas"
-#~ msgstr "Bahamy"
-
-#~ msgid "Bahrain"
-#~ msgstr "Bahrajn"
-
-#~ msgid "Bangladesh"
-#~ msgstr "Bangladéš"
-
-#~ msgid "Barbados"
-#~ msgstr "Barbados"
-
-#~ msgid "Belarus"
-#~ msgstr "Bielorusko"
-
-#~ msgid "Belgium"
-#~ msgstr "Belgicko"
-
-#~ msgid "Belize"
-#~ msgstr "Belize"
-
-#~ msgid "Benin"
-#~ msgstr "Benin"
-
-#~ msgid "Bermuda"
-#~ msgstr "Bermudy"
-
-#~ msgid "Bhutan"
-#~ msgstr "Bután"
-
-#~ msgid "Bolivia"
-#~ msgstr "Bolívia"
-
-#~ msgid "Bosnia and Herzegovina"
-#~ msgstr "Bosna a Hercegovina"
-
-#~ msgid "Botswana"
-#~ msgstr "Botswana"
-
-#~ msgid "Brazil"
-#~ msgstr "Brazília"
-
-#~ msgid "Bulgaria"
-#~ msgstr "Bulharsko"
-
-#~ msgid "Burkina Faso"
-#~ msgstr "Burkina Faso"
-
-#~ msgid "Burundi"
-#~ msgstr "Burundi"
-
-#~ msgid "Cambodia"
-#~ msgstr "Kambodža"
-
-#~ msgid "Cameroon"
-#~ msgstr "Kamerun"
-
-#~ msgid "Canada"
-#~ msgstr "Kanada"
-
-#~ msgid "Cape Verde"
-#~ msgstr "Cape Verde"
-
-#~ msgid "Cayman Islands"
-#~ msgstr "Kajmanské ostrovy"
-
-#~ msgid "Central African Republic"
-#~ msgstr "Stredoafrická republika"
-
-#~ msgid "Chad"
-#~ msgstr "Čad"
-
-#~ msgid "Channel Islands"
-#~ msgstr "Normandské ostrovy"
-
-#~ msgid "Chile"
-#~ msgstr "Čile"
-
-#~ msgid "China"
-#~ msgstr "Čína"
-
-#~ msgid "Hong Kong Special Administrative Region of China"
-#~ msgstr "Hong Kong, špeciálna administratívne územie Číny"
-
-#~ msgid "Macau Special Administrative Region of China"
-#~ msgstr "Macau, špeciálne administratívne územie Číny"
-
-#~ msgid "Colombia"
-#~ msgstr "Kolumbia"
-
-#~ msgid "Comoros"
-#~ msgstr "Komory"
-
-#~ msgid "Congo"
-#~ msgstr "Kongo"
-
-#~ msgid "Costa Rica"
-#~ msgstr "Kostarika"
-
-#~ msgid "Côte d'Ivoire"
-#~ msgstr "Pobrežie Slonoviny"
-
-#~ msgid "Czech Republic"
-#~ msgstr "Česká Republika"
-
-#~ msgid "Dominica"
-#~ msgstr "Dominika"
-
-#~ msgid "Dominican Republic"
-#~ msgstr "Dominikánska republika"
-
-#~ msgid "Ecuador"
-#~ msgstr "Ekvádor"
-
-#~ msgid "Egypt"
-#~ msgstr "Egypt"
-
-#~ msgid "El Salvador"
-#~ msgstr "Salvádor"
-
-#~ msgid "Equatorial Guinea"
-#~ msgstr "Rovníková Guinea"
-
-#~ msgid "Eritrea"
-#~ msgstr "Eritrea"
-
-#~ msgid "Estonia"
-#~ msgstr "Estónsko"
-
-#~ msgid "Ethiopia"
-#~ msgstr "Etiópia"
-
-#~ msgid "Faeroe Islands"
-#~ msgstr "Faerské ostrovy"
-
-#~ msgid "Falkland Islands (Malvinas)"
-#~ msgstr "Falkandské ostrovy (Malvíny)"
-
-#~ msgid "Fiji"
-#~ msgstr "Fidži"
-
-#~ msgid "Finland"
-#~ msgstr "Fínsko"
-
-#~ msgid "French Guiana"
-#~ msgstr "Francúzska Guiana"
-
-#~ msgid "French Polynesia"
-#~ msgstr "Francúzska Polynézia"
-
-#~ msgid "Gabon"
-#~ msgstr "Gabon"
-
-#~ msgid "Gambia"
-#~ msgstr "Gambia"
-
-#~ msgid "Georgia"
-#~ msgstr "Gruzínsko"
-
-#~ msgid "Germany"
-#~ msgstr "Nemecko"
-
-#~ msgid "Ghana"
-#~ msgstr "Ghana"
-
-#~ msgid "Gibraltar"
-#~ msgstr "Gibraltár"
-
-#~ msgid "Greece"
-#~ msgstr "Grécko"
-
-#~ msgid "Greenland"
-#~ msgstr "Grónsko"
-
-#~ msgid "Grenada"
-#~ msgstr "Grenada"
-
-#~ msgid "Guadeloupe"
-#~ msgstr "Guadeloupe"
-
-#~ msgid "Guinea"
-#~ msgstr "Guinea"
-
-#~ msgid "Guinea-Bissau"
-#~ msgstr "Guinea-Bissau"
-
-#~ msgid "Guyana"
-#~ msgstr "Guyana"
-
-#~ msgid "Haiti"
-#~ msgstr "Haiti"
-
-#~ msgid "Honduras"
-#~ msgstr "Honduras"
-
-#~ msgid "Hungary"
-#~ msgstr "Maďarsko"
-
-#~ msgid "Iceland"
-#~ msgstr "Island"
-
-#~ msgid "India"
-#~ msgstr "India"
-
-#~ msgid "Indonesia"
-#~ msgstr "Indonézia"
-
-#~ msgid "Iraq"
-#~ msgstr "Irak"
-
-#~ msgid "Ireland"
-#~ msgstr "Írsko"
-
-#~ msgid "Israel"
-#~ msgstr "Izrael"
-
-#~ msgid "Italy"
-#~ msgstr "Taliansko"
-
-#~ msgid "Japan"
-#~ msgstr "Japonsko"
-
-#~ msgid "Kazakhstan"
-#~ msgstr "Kazachstan"
-
-#~ msgid "Kenya"
-#~ msgstr "Keňa"
-
-#~ msgid "Kuwait"
-#~ msgstr "Kuvajt"
-
-#~ msgid "Latvia"
-#~ msgstr "Lotyšsko"
-
-#~ msgid "Lebanon"
-#~ msgstr "Libanon"
-
-#~ msgid "Lesotho"
-#~ msgstr "Lesotho"
-
-#~ msgid "Liberia"
-#~ msgstr "Libéria"
-
-#~ msgid "Libyan Arab Jamahiriya"
-#~ msgstr "Líbijská Arabská Džahamíra"
-
-#~ msgid "Liechtenstein"
-#~ msgstr "Lichtenštajnsko"
-
-#~ msgid "Lithuania"
-#~ msgstr "Litva"
-
-#~ msgid "Luxembourg"
-#~ msgstr "Luxemburg"
-
-#~ msgid "Madagascar"
-#~ msgstr "Madagaskar"
-
-#~ msgid "Malawi"
-#~ msgstr "Malawi"
-
-#~ msgid "Malaysia"
-#~ msgstr "Malajzia"
-
-#~ msgid "Maldives"
-#~ msgstr "Maledivy"
-
-#~ msgid "Mali"
-#~ msgstr "Mali"
-
-#~ msgid "Malta"
-#~ msgstr "Malta"
-
-#~ msgid "Marshall Islands"
-#~ msgstr "Maršalové ostrovy"
-
-#~ msgid "Mexico"
-#~ msgstr "Mexiko"
-
-#~ msgid "Myanmar"
-#~ msgstr "Myanmar"
-
-#~ msgid "Namibia"
-#~ msgstr "Namíbia"
-
-#~ msgid "Nauru"
-#~ msgstr "Nauru"
-
-#~ msgid "Nepal"
-#~ msgstr "Nepál"
-
-#~ msgid "Netherlands"
-#~ msgstr "Holandsko"
-
-#~ msgid "Netherlands Antilles"
-#~ msgstr "Holandské Antily"
-
-#~ msgid "New Caledonia"
-#~ msgstr "Nová Kaledónia"
-
-#~ msgid "New Zealand"
-#~ msgstr "Nový Zéland"
-
-#~ msgid "Nicaragua"
-#~ msgstr "Nikaragua"
-
-#~ msgid "Niger"
-#~ msgstr "Niger"
-
-#~ msgid "Papua New Guinea"
-#~ msgstr "Papua Nová Guinea"
-
-#~ msgid "Paraguay"
-#~ msgstr "Paraguaj"
-
-#~ msgid "Peru"
-#~ msgstr "Peru"
-
-#~ msgid "Philippines"
-#~ msgstr "Filipíny"
-
-#~ msgid "Pitcairn"
-#~ msgstr "Pitcairn"
-
-#~ msgid "Poland"
-#~ msgstr "Poľsko"
-
-#~ msgid "Portugal"
-#~ msgstr "Portugalsko"
-
-#~ msgid "Puerto Rico"
-#~ msgstr "Puerto Rico"
-
-#~ msgid "Qatar"
-#~ msgstr "Qatar"
-
-#~ msgid "Republic of Korea"
-#~ msgstr "Kórejská republika"
-
-#~ msgid "Samoa"
-#~ msgstr "Samoa"
-
-#~ msgid "San Marino"
-#~ msgstr "San Maríno"
-
-#~ msgid "Sao Tome and Principe"
-#~ msgstr "Sao Tome a Principe"
-
-#~ msgid "Saudi Arabia"
-#~ msgstr "Saudská Arábia"
-
-#~ msgid "Senegal"
-#~ msgstr "Senegal"
-
-#~ msgid "Serbia and Montenegro"
-#~ msgstr "Srbsko a Čierna hora"
-
-#~ msgid "Seychelles"
-#~ msgstr "Seychelské ostrovy"
-
-#~ msgid "Sierra Leone"
-#~ msgstr "Sierra Leone"
-
-#~ msgid "Singapore"
-#~ msgstr "Sinagapúr"
-
-#~ msgid "Slovakia"
-#~ msgstr "Slovensko"
-
-#~ msgid "Sweden"
-#~ msgstr "Švédsko"
-
-#~ msgid "Switzerland"
-#~ msgstr "Švajčiarsko"
-
-#~ msgid "Syrian Arab Republic"
-#~ msgstr "Sýrska arabská republika"
-
-#~ msgid "Tajikistan"
-#~ msgstr "Tadžikistan"
-
-#~ msgid "Thailand"
-#~ msgstr "Thajsko"
-
-#~ msgid "Macedonia, Republic of"
-#~ msgstr "Macedónska republika"
-
-#~ msgid "Timor-Leste"
-#~ msgstr "Timor-Leste"
-
-#~ msgid "Togo"
-#~ msgstr "Togo"
-
-#~ msgid "Tokelau"
-#~ msgstr "Tokelau"
-
-#~ msgid "Tonga"
-#~ msgstr "Tonga"
-
-#~ msgid "United Republic of Tanzania"
-#~ msgstr "Tanzánska spoloková republika"
-
-#~ msgid "United States of America"
-#~ msgstr "Spojené štáty americké"
-
-#~ msgid "United States Virgin Islands"
-#~ msgstr "Spojené štáty Panenské ostrovy"
-
-#~ msgid "Uruguay"
-#~ msgstr "Uruguay"
-
-#~ msgid "Uzbekistan"
-#~ msgstr "Uzbekistan"
-
-#~ msgid "Vanuatu"
-#~ msgstr "Vanuatu"
-
-#~ msgid "Venezuela"
-#~ msgstr "Venezuela"
-
-#~ msgid "Viet Nam"
-#~ msgstr "Vietnam"
-
-#~ msgid "Wallis and Futuna Islands"
-#~ msgstr "Wallis a Futunské ostrovy"
-
-#~ msgid "Western Sahara"
-#~ msgstr "Západná Sahara"
-
-#~ msgid "South Georgia and the South Sandwich Islands"
-#~ msgstr "Južná Georgia a Južné Sandwitchové ostrovy"
-
-#~ msgid "Taiwan"
-#~ msgstr "Tchajvan"
-
-#~ msgid "United States Minor Outlying Islands"
-#~ msgstr "Spojené štáty drobných odľahlých ostrovov"
-
-#~ msgid "Afar"
-#~ msgstr "Afar"
+"Pre vybranú locale nebola nájdená žiadna fontconfig-voodoo konfigurácia"

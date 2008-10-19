@@ -1,16 +1,16 @@
-# Bengali translation for language-selector
+# Japanese translation for language-selector
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
 # This file is distributed under the same license as the language-selector package.
-# Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2006.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-26 01:08+0800\n"
-"PO-Revision-Date: 2008-10-15 18:34+0000\n"
-"Last-Translator: Khandakar Mujahidul Islam <suzan@bengalinux.org>\n"
-"Language-Team: Bengali <gnome-translation@bengalinux.org>\n"
+"POT-Creation-Date: 2008-10-18 10:04+0100\n"
+"PO-Revision-Date: 2008-10-09 14:15+0000\n"
+"Last-Translator: Kentaro Kazuhama <kazken3@gmail.com>\n"
+"Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 msgid "Language"
-msgstr "ভাষা"
+msgstr "言語"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
 msgid "Support"
-msgstr "সমর্থন"
+msgstr "サポート"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:420
 msgid "Could not install the selected language support"
-msgstr "নির্বাচিত ভাষা সমর্থন ইনস্টল করতে পারল না"
+msgstr "選択された言語サポートをインストールできません"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:421
 msgid ""
@@ -35,170 +35,197 @@ msgid ""
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
 "product."
 msgstr ""
-"সম্ভবত এটি এই অ্যাপ্লিকেশনটির একটি প্রোগ্রাম ত্রুটি। দয়া করে 'language-selector' "
-"প্রোডাক্টের বিপরীতে https://launchpad.net/bugs/bugs/+package/ এ একটি প্রোগ্রাম "
-"ত্রুটি রিপোর্ট করুন।"
+"これは、このアプリケーションのバグかもしれません。'language-selector' パッ"
+"ケージのバグとして、https://launchpad.net/bugs/bugs/+package/ に報告してくだ"
+"さい。"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
 msgid "Could not install the full language support"
-msgstr "পূর্ণ ভাষা সমর্থন ইনস্টল করতে পারল না"
+msgstr "すべての言語サポートがインストールできません"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
-"এটি সাধারণত আপনার সফটওয়্যার আর্কাইভ অথবা সফটওয়্যার ম্যানেজারের ত্রুটি সম্পর্কিত। মেনু"
-"\"Adminstration\"তে আপনার পছন্দের সফটওয়্যার পরীক্ষা করুন।"
+"通常、これはソフトウェア・アーカイブかソフトウェア・マネージャに関連するエ"
+"ラーです。\\\"システム管理\\\"メニューにあるソフトウェア・ソースを確認してく"
+"ださい。"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
 msgid "The list of available languages on the system has been updated."
-msgstr "সিস্টেমে পাওয়া যাচ্ছে এমন ভাষার তালিকা আপডেট করা হয়েছে।"
+msgstr "システムで利用可能な言語のリストがアップデートされました。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
+#: ../LanguageSelector/qt/QtLanguageSelector.py:144
 msgid "The language support is not installed completely"
-msgstr "ভাষা সমর্থন সম্পূর্ণভাবে ইনস্টল করা হল না"
+msgstr "言語サポートが完全にはインストールされていません"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
+#: ../LanguageSelector/qt/QtLanguageSelector.py:145
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
+"選択された言語で利用できる、翻訳や入力サポートがまだインストールされていませ"
+"ん。これらを今すぐインストールしますか？"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:583
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:588
+#: ../LanguageSelector/qt/QtLanguageSelector.py:140
 msgid "_Remind Me Later"
-msgstr ""
+msgstr "後で通知する(_R)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:589
+#: ../LanguageSelector/qt/QtLanguageSelector.py:139
 msgid "_Install"
-msgstr "ইনস্টল করুন (_I)"
+msgstr "インストール(_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:587
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:592
 #: ../data/LanguageSelector.glade.h:13
 msgid "Details"
-msgstr "বিস্তারিত"
+msgstr "詳細"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:626
-#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:631
+#: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
-msgstr "সফটওয়্যার ডাটাবেসটি ভাঙা"
+msgstr "ソフトウェアデータベースが壊れています"
 
-#. FIXME: mention adept here instead of synaptic, but the
-#. change happend during string freeze
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:627
-#: ../LanguageSelector/qt/QtLanguageSelector.py:75
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:632
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
+"どのソフトウェアも追加・削除することができません。\"Synapticパッケージ・マ"
+"ネージャ\"を使うか、端末で\"sudo apt-get install -f\"を実行し、まずこの問題を"
+"修復してください。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:686
 msgid "Reboot required"
-msgstr ""
+msgstr "再起動が必要です"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:682
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
 msgid ""
 "To complete the changes a reboot is required so that the new functionality "
 "is activated."
-msgstr ""
+msgstr "変更点を完全に適用し、新しい機能を有効にするためには再起動が必要です。"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:47
+msgid "Uninstall"
+msgstr "アンインストール"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:48
-msgid "Uninstall"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:49
 msgid "Select language to uninstall:"
-msgstr ""
+msgstr "アンインストールする言語を選択:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:56
+#: ../LanguageSelector/qt/QtLanguageSelector.py:55
 msgid "Language Selector"
-msgstr ""
+msgstr "言語セレクタ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
-msgid "Default system language:"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
-msgid "Set System Language"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
 msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
-#: ../data/LanguageSelector.glade.h:14
-msgid "Enable support to enter complex characters"
-msgstr ""
+msgid "Default system language:"
+msgstr "デフォルトのシステム言語:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:88
-#: ../LanguageSelector/qt/QtLanguageSelector.py:91
-msgid "Cancel"
-msgstr ""
+msgid "Set System Language"
+msgstr "システム言語を設定"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
-msgid "Select language to install:"
-msgstr ""
+#: ../data/LanguageSelector.glade.h:14
+msgid "Enable support to enter complex characters"
+msgstr "多言語入力のサポートを有効にする"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:91
+msgid "Select language to install:"
+msgstr "インストールする言語を選択:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:92
 msgid "Install"
-msgstr ""
+msgstr "インストール"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:131
+#: ../LanguageSelector/qt/QtLanguageSelector.py:185
 msgid "Already installed"
-msgstr ""
+msgstr "インストール済み"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:135
+#: ../LanguageSelector/qt/QtLanguageSelector.py:189
 msgid "Partially Installed"
-msgstr ""
+msgstr "一部のみインストール"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:139
+#: ../LanguageSelector/qt/QtLanguageSelector.py:193
 msgid "Not installed"
-msgstr ""
+msgstr "未インストール"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:185
-#: ../LanguageSelector/qt/QtLanguageSelector.py:187
-msgid "Language Set"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:185
+#: ../LanguageSelector/qt/QtLanguageSelector.py:240
 #, python-format
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
+"標準のシステム言語が %s に設定されました。多言語入力は、次回のログインより有"
+"効になります。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:187
+#: ../LanguageSelector/qt/QtLanguageSelector.py:240
+#: ../LanguageSelector/qt/QtLanguageSelector.py:242
+msgid "Language Set"
+msgstr "言語セット"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:242
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "標準のシステム言語が %s に設定されました。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:268
-msgid "Language Installed"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:268
+#: ../LanguageSelector/qt/QtLanguageSelector.py:323
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
+"翻訳とサポート %s がインストールされました。追加言語ボタンより選択してくださ"
+"い。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:270
-msgid "Language Uninstalled"
-msgstr ""
+#: ../LanguageSelector/qt/QtLanguageSelector.py:323
+msgid "Language Installed"
+msgstr "言語をインストールしました"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:270
+#: ../LanguageSelector/qt/QtLanguageSelector.py:325
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "翻訳とサポート %s がアンインストールされました。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:272
-msgid "Language Not Set"
-msgstr ""
+#: ../LanguageSelector/qt/QtLanguageSelector.py:325
+msgid "Language Uninstalled"
+msgstr "言語がインストールされていません"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:272
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
 msgid "Failed to set system language."
-msgstr ""
+msgstr "システム言語の設定に失敗しました"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+msgid "Language Not Set"
+msgstr "言語が設定されていません"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+msgid "Please run this software with administrative rights."
+msgstr "管理者権限でこのソフトを実行してください。"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+msgid "Not Root User"
+msgstr "ルートユーザでない"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid "    "
@@ -206,31 +233,29 @@ msgstr "    "
 
 #: ../data/LanguageSelector.glade.h:2
 msgid "<b>Default Language</b>"
-msgstr "<b>ডিফল্ট ভাষা</b>"
+msgstr "<b>標準の言語</b>"
 
 #: ../data/LanguageSelector.glade.h:3
 msgid "<b>Input method</b>"
-msgstr ""
+msgstr "<b>入力メソッド</b>"
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<b>Supported Languages</b>"
-msgstr "<b>সমর্থিত ভাষা</b>"
+msgstr "<b>サポートされている言語</b>"
 
 #: ../data/LanguageSelector.glade.h:5
-#, fuzzy
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
-"The support for each language can differ in the amount of available "
-"translations or writing aids."
+"The availablity of translations or writing aids can differ between languages."
 msgstr ""
-"<big><b>ভাষা সমর্থন পরীক্ষা করা যাচ্ছে</b></big>প্রত্যেক ভাষার জন্য\n"
+"<big><b>言語サポートが利用可能か確認しています</b></big>\n"
 "\n"
-"সমর্থন পাওয়া যাচ্ছে অনুবাদ অথবা writing সাহায্যের পরিমাণে differতে পারে।"
+"翻訳や記載補助の能力は言語間で差があります。"
 
 #: ../data/LanguageSelector.glade.h:8
 msgid "Additional Fonts"
-msgstr ""
+msgstr "追加フォント"
 
 #: ../data/LanguageSelector.glade.h:9
 msgid ""
@@ -250,7 +275,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.glade.h:12
 msgid "Default language for new user accounts and the login screen:"
-msgstr "নতুন ব্যবহারকারী অ্যাকাউন্টের জন্য ডিফল্ট ভাষা এবং লগিন পর্দা:"
+msgstr "新規ユーザアカウントとログイン画面で使用する標準の言語:"
 
 #: ../data/LanguageSelector.glade.h:15
 msgid "Extra Translations"
@@ -268,17 +293,17 @@ msgstr ""
 
 #: ../data/LanguageSelector.glade.h:18
 msgid "Input methods"
-msgstr ""
+msgstr "インプットメソッド"
 
 #: ../data/LanguageSelector.glade.h:19
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
 msgid "Language Support"
-msgstr "ভাষা সমর্থন"
+msgstr "言語サポート"
 
 #: ../data/LanguageSelector.glade.h:20
 msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-msgstr ""
+msgstr "OpenOffice.org, Firefox, Thunderbird, Gaimの翻訳とヘルプファイル"
 
 #: ../data/LanguageSelector.glade.h:21
 msgid "Translations for your desktop. Also known as language-pack."
@@ -297,7 +322,7 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr "আপনার সিস্টেমে একাধিক এবং স্থানীয় ভাষা সমর্থন কনফিগার করুন"
+msgstr "システムで利用する各言語と母国語を設定します"
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:1
@@ -328,53 +353,55 @@ msgstr ""
 #. Name
 #: ../data/restart_session_required.note.in:1
 msgid "Session Restart Required"
-msgstr ""
+msgstr "セッションの再起動が必要です"
 
 #. Description
-#: ../data/restart_session_required.note.in:5
-msgid ""
-"In order to activate the changes you'll need to restart your session. Please "
-"logout and relogin at your earliest convenience."
-msgstr ""
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr "新しい言語設定は一度ログアウトしてから効果がでるでしょう。"
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
-msgstr ""
+msgstr "中止しています"
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
-msgstr ""
+msgstr "設定が存在していても強行します"
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
+msgstr "選択された言語の fontconfig voodoo を設定してください"
 
 #: ../fontconfig-voodoo:32
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"LANGUAGE 環境変数にもとづいて設定を推測します。 適切なものがない場合は'none' "
+"を設定します。"
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
-msgstr ""
+msgstr "利用可能な fontconfig-voodoo 設定を記載してください"
 
 #: ../fontconfig-voodoo:40
 msgid "Show the current fontconfig-voodoo config"
-msgstr ""
+msgstr "現在の fontconfig-voodoo の設定を表示してください"
 
 #: ../fontconfig-voodoo:43
 msgid "Remove the current fontconfig-voodoo config"
-msgstr ""
+msgstr "現在のfontconfig-voodooの設定を削除します"
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr ""
+msgstr "未設定"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
+"すでに設定されています。上書きするには '--force' オプションを使用してくださ"
+"い。 "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr ""
+msgstr "選択されたロケールに対する fontconfig-voodoo 設定が見つかりません"

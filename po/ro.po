@@ -1,0 +1,435 @@
+# Romanian translation for language-selector
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-18 10:04+0100\n"
+"PO-Revision-Date: 2008-10-15 13:09+0000\n"
+"Last-Translator: Adi Roiban <adi@roiban.ro>\n"
+"Language-Team: Romanian <ro@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
+msgid "Language"
+msgstr "Limbă"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
+msgid "Support"
+msgstr "Suport"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:420
+msgid "Could not install the selected language support"
+msgstr "Nu am putut instala suportul pentru limba selectată"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:421
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
+msgstr ""
+"Probabil este o eroare a acestei aplicații. Vă rugăm să raportați eroarea la "
+"https://launchpad.net/bugs/bugs/+package/ pentru produsul 'language-"
+"selector'."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
+msgid "Could not install the full language support"
+msgstr "Nu s-a putut instala suportul complet pentru limbă"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the menu \"Adminstration\"."
+msgstr ""
+"De obicei acest lucru este legat de o eroare în arhivele software sau în "
+"administratorul de programe. Verificați preferințele pentru programe din "
+"meniul „Administrare”."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
+msgid "The list of available languages on the system has been updated."
+msgstr "Lista limbilor disponibile în sistem a fost actualizată."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
+#: ../LanguageSelector/qt/QtLanguageSelector.py:144
+msgid "The language support is not installed completely"
+msgstr "Suportul pentru limbă nu a fost complet instalat"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
+#: ../LanguageSelector/qt/QtLanguageSelector.py:145
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"Unele traduceri sau utilitare pentru scriere în limba dumneavoastră nu sunt "
+"încă instalate. Doriți să fie instalate acum?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:588
+#: ../LanguageSelector/qt/QtLanguageSelector.py:140
+msgid "_Remind Me Later"
+msgstr "_Reamintește-mi mai târziu"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:589
+#: ../LanguageSelector/qt/QtLanguageSelector.py:139
+msgid "_Install"
+msgstr "_Instalează"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:592
+#: ../data/LanguageSelector.glade.h:13
+msgid "Details"
+msgstr "Detalii"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:631
+#: ../LanguageSelector/qt/QtLanguageSelector.py:71
+msgid "Software database is broken"
+msgstr "Baza de date pentru programe este deteriorată"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:632
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Nu este posibilă instalarea sau dezinstalarea programelor. Vă rugăm să "
+"folosiți mai întâi administratorul de pachete „Synaptic” sau să tastați "
+"„sudo apt-get install -f” în terminal pentru a corecta această problemă."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:686
+msgid "Reboot required"
+msgstr "Este necesară repornirea"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
+msgid ""
+"To complete the changes a reboot is required so that the new functionality "
+"is activated."
+msgstr ""
+"Pentru a finaliza și aplica modificările, este necesară o reponire a "
+"sistemului."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:47
+msgid "Uninstall"
+msgstr "Dezinstalează"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:48
+msgid "Select language to uninstall:"
+msgstr "Alegeți limba pentru dezinstalare:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:55
+msgid "Language Selector"
+msgstr "Alegere limbi"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Instalarea sau dezinstalarea de programe nu este posibilă. Pentru a fixa mai "
+"întâi această problemă, folosiți administratorul de pachete „Synaptic” sau "
+"rulați „sudo apt-get install -f” într-un terminal."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:87
+msgid "Default system language:"
+msgstr "Limba implicită pentru sistem:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:88
+msgid "Set System Language"
+msgstr "Alegerea limbii sistemului"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../data/LanguageSelector.glade.h:14
+msgid "Enable support to enter complex characters"
+msgstr "Activeză suportul pentru introducerea caracterelor complexe"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+msgid "Cancel"
+msgstr "Renunță"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:91
+msgid "Select language to install:"
+msgstr "Alegeți limba pentru instalare:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:92
+msgid "Install"
+msgstr "Instalează"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:185
+msgid "Already installed"
+msgstr "Deja instalată"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:189
+msgid "Partially Installed"
+msgstr "Parțial Instalată"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:193
+msgid "Not installed"
+msgstr "Neinstalată"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:240
+#, python-format
+msgid ""
+"Default system Language now set to %s.  Complex character input will be "
+"enabled when you next log in."
+msgstr ""
+"Limba implicită a sistemului este acum %s. Introducerea caracterelor "
+"complexe se va activa la următoarea autentificare."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:240
+#: ../LanguageSelector/qt/QtLanguageSelector.py:242
+msgid "Language Set"
+msgstr "Limba aleasă"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:242
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "Limba implictă pentu sistem este acum %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:323
+#, python-format
+msgid ""
+"Translations and support have now been installed for %s.  Select them from "
+"the Add Language button."
+msgstr ""
+"Au fost instalate traducerile și suportul pentru %s. Le puteți alege "
+"folosind butonul „Adăugă limbi”."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:323
+msgid "Language Installed"
+msgstr "Limbă instalată"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:325
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "Au fost dezinstalate traducerile și suportul pentru %s"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:325
+msgid "Language Uninstalled"
+msgstr "Limbă dezinstalată"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+msgid "Failed to set system language."
+msgstr "S-a eșuat în definirea limbii pentru sistem."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+msgid "Language Not Set"
+msgstr "Limba nu este definită"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+msgid "Please run this software with administrative rights."
+msgstr "Rulați acest program cu drepturi de administrare."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+msgid "Not Root User"
+msgstr "Nu sunteți administrator"
+
+#: ../data/LanguageSelector.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/LanguageSelector.glade.h:2
+msgid "<b>Default Language</b>"
+msgstr "<b>Limbă Implicită</b>"
+
+#: ../data/LanguageSelector.glade.h:3
+msgid "<b>Input method</b>"
+msgstr "<b>Metodă intrare</b>"
+
+#: ../data/LanguageSelector.glade.h:4
+msgid "<b>Supported Languages</b>"
+msgstr "<b>Limbi suportate</b>"
+
+#: ../data/LanguageSelector.glade.h:5
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availablity of translations or writing aids can differ between languages."
+msgstr ""
+"<big><b>Se verifică limbile disponibile</b></big>\n"
+"\n"
+"Disponibilitatea traducerilor și a ajutoarelor de scriere poate varia de la "
+"o limbă la alta."
+
+#: ../data/LanguageSelector.glade.h:8
+msgid "Additional Fonts"
+msgstr "Fonturi adiționale"
+
+#: ../data/LanguageSelector.glade.h:9
+msgid ""
+"Additional fonts for this language which might be of general interest, e.g. "
+"decorative fonts for printing documents."
+msgstr ""
+"Fonturi adiționale pentru această limbă ce pot fi de interes general, ex. "
+"fonturi decorative pentru tipărirea documentelor."
+
+#: ../data/LanguageSelector.glade.h:10
+msgid ""
+"Additional software which might be of general interest for users using this "
+"language."
+msgstr ""
+"Software adițional ce poate fi de interes general pentru utilizatorii ce "
+"folosesc această limbă."
+
+#: ../data/LanguageSelector.glade.h:11
+msgid "Basic Translations"
+msgstr "Traduceri de bază"
+
+#: ../data/LanguageSelector.glade.h:12
+msgid "Default language for new user accounts and the login screen:"
+msgstr ""
+"Limba implicită pentru conturile noilor utilizatori și fereastra de "
+"autentificare:"
+
+#: ../data/LanguageSelector.glade.h:15
+msgid "Extra Translations"
+msgstr "Traduceri adiționale"
+
+#: ../data/LanguageSelector.glade.h:16
+msgid "Extra software"
+msgstr "Software adițional"
+
+#: ../data/LanguageSelector.glade.h:17
+msgid ""
+"Input Methods for languages with complex scripts. Scim modules or other "
+"relevant software which helps with typing complex characters."
+msgstr ""
+"Metoda de intrare pentru limbile cu scriericomplexe. Module Scim sau alte "
+"programe ce ajută la introducerea de caractere complexe."
+
+#: ../data/LanguageSelector.glade.h:18
+msgid "Input methods"
+msgstr "Metode intrare"
+
+#: ../data/LanguageSelector.glade.h:19
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "Suport limbă"
+
+#: ../data/LanguageSelector.glade.h:20
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgstr ""
+"Traduceri OpenOffice.org, Firefox, Thunderbird, Gaim și fișiere de ajutor."
+
+#: ../data/LanguageSelector.glade.h:21
+msgid "Translations for your desktop. Also known as language-pack."
+msgstr "Traduceri pentru calculator. Cunoscute și ca „language-pack”."
+
+#: ../data/LanguageSelector.glade.h:22
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
+msgstr ""
+"Liste cuvinte, dicționare, sinonime, etc care pot ajuta la scriere prin "
+"sublinierea, corectarea sau sugerarea de cuvinte."
+
+#: ../data/LanguageSelector.glade.h:23
+msgid "Writing aids"
+msgstr "Ajutor scriere"
+
+#: ../data/language-selector.desktop.in.h:1
+#: ../data/qt-language-selector.desktop.in.h:1
+msgid "Configure multiple and native language support on your system"
+msgstr "Configurează suport pentru limbi multiple și limba nativă din sistem"
+
+#. Name
+#: ../data/incomplete-language-support-gnome.note.in:1
+#: ../data/incomplete-language-support-qt.note.in:1
+msgid "Incomplete Language Support"
+msgstr "Suport limbă incomplet"
+
+#. Description
+#: ../data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
+msgstr ""
+"Fișierele pentru suportul limbi alese par să fie incomplete. Puteți instala "
+"componentele lipsă printr-un clic pe „Rulează această acțiune acum” și "
+"urmarea instrucțiunilor. Este necesară o conexiune la Internet activată. "
+"Dacă doriți să faceți acest lucru mai târziu, vă rugăm să folosiți „Sistem -"
+"> Administrare -> Suport limbă”."
+
+#. Description
+#: ../data/incomplete-language-support-qt.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
+msgstr ""
+"Fișierele pentru suportul limbi alese par să fie incomplete. Puteți instala "
+"componentele lipsă printr-un clic pe „Rulează această acțiune acum” și "
+"urmarea instrucțiunilor. Este necesară o conexiune la Internet activată. "
+"Dacă doriți să faceți acest lucru mai târziu, vă rugăm să folosiți "
+"„Configurări sistem -> Limbă și regiune”."
+
+#. Name
+#: ../data/restart_session_required.note.in:1
+msgid "Session Restart Required"
+msgstr "Este necesară repornirea sesiunii"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr ""
+"Noile configurări pentru limbă vor avea efect la următoarea autentificare."
+
+#: ../fontconfig-voodoo:18
+msgid "Aborting"
+msgstr "Se renunță"
+
+#: ../fontconfig-voodoo:26
+msgid "Force even when a configuration exists"
+msgstr "Forțează chiar și când există o configurație"
+
+#: ../fontconfig-voodoo:28
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "Setează fontconfig voodoo pentru limba selectată"
+
+#: ../fontconfig-voodoo:32
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"Alege automat o configurație în funcție de variabila de system LANGUAGE. În "
+"cazul în care nu s-a găsit o limbă corespunzătoare se configurează la "
+"valoarea „none”."
+
+#: ../fontconfig-voodoo:37
+msgid "List the available fontconfig-voodoo configs"
+msgstr "Afișează configurările disponibile fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:40
+msgid "Show the current fontconfig-voodoo config"
+msgstr "Afișează configurările curente fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:43
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Șterge configurările curente fontconfig-voodoo"
+
+#: ../fontconfig-voodoo:65
+msgid "Unconfigured"
+msgstr "Neconfigurat"
+
+#: ../fontconfig-voodoo:77
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr "Există deja o configurare. Folosiți „--force” pentru a o suprascrie. "
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr ""
+"Nu s-au găsti configurări fontconfig-voodoo pentru localizarea selectată"
