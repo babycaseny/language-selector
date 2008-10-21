@@ -1,8 +1,8 @@
-_Name: Incomplete Language Support
 Priority: High
 Terminal: False
 Command: kdesudo -- /usr/bin/qt-language-selector --mode install
 GettextDomain: language-selector
+_Name: Incomplete Language Support
 _Description:
  The language support files for your selected language seem to be incomplete.
  You can install the missing components by clicking on "Run this action now"

@@ -1,3 +1,14 @@
+language-selector (0.3.15) intrepid; urgency=low
+
+  * Rearrange fields in incomplete-language-support-*.note.in so that
+    intltool-merge stops forgetting to newline-separate translations of the
+    Name field (LP: #287046).
+  * Use intltool-debian's version of intltool-merge to generate
+    incomplete-language-support-*.note, since intltool fails to generate
+    translated Description fields.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 21 Oct 2008 18:16:29 +0100
+
 language-selector (0.3.14) intrepid; urgency=low
 
   * Update translations from Launchpad (see LP #277526).

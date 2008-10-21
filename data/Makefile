@@ -8,4 +8,4 @@ all: $(DESKTOP_FILES) $(NOTE_FILES)
 	intltool-merge -d ../po $< $@
 
 %.note: %.note.in
-	intltool-merge --rfc822deb-style ../po $< $@
+	/usr/share/intltool-debian/intltool-merge --rfc822deb-style ../po $< $@
