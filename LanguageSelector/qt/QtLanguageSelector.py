@@ -77,6 +77,26 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         self.updateLanguagesList()
         self.updateSystemDefaultListbox()
 
+        if not self.verifyPackageLists():
+            yesText = _("_Update").replace("_", "&")
+            noText = _("_Remind Me Later").replace("_", "&")
+            yes = KGuiItem(yesText, "dialog-ok")
+            no = KGuiItem(noText, "process-stop")
+            text = "<big><b>%s</b></big>\n\n%s" % (
+              _("No language information available"),
+              _("The system does not have information about the "
+                "available languages yet. Do you want to perform "
+                "a network update to get them now? "))
+            text = text.replace("\n", "<br />")
+            res = KMessageBox.questionYesNo(self, text, "", yes, no)
+            if res == KMessageBox.Yes:
+                self.setEnabled(False)
+                self.update()
+                self.openCache(apt.progress.OpProgress())
+                self.updateLanguagesList()
+                self.setEnabled(True)
+
+
         # see if something is missing
         if True: #options.verify_installed:
             self.verifyInstalledLangPacks()
@@ -153,6 +173,14 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                 self.updateLanguagesList()
                 self.setEnabled(True)
 
+    def update(self):
+        lock = thread.allocate_lock()
+        lock.acquire()
+        t = thread.start_new_thread(self.run_pkg_manager_update,(lock,))
+        while lock.locked():
+            self.parentApp.processEvents()
+            time.sleep(0.05)
+
     def commit(self, inst, rm):
         # unlock here to make sure that lock/unlock are always run
         # pair-wise (and don't explode on errors)
@@ -222,6 +250,11 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                 except KeyError:
                     print "ERROR: can not find new_locale: '%s'"%new_locale
 
+    def run_pkg_manager_update(self, lock):
+        self.returncode = 0
+        self.returncode = subprocess.call(["install-package","--update"])
+        lock.release()
+
     def run_pkg_manager(self, lock, to_inst, to_rm):
         self.returncode = 0
         if len(to_inst) > 0:
@@ -268,7 +301,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         # if something has changed - act!
         if self.__input_method_config_changed():
             if self.ui.enableInputMethods.checkState() == Qt.Checked:
-                os.system("im-switch -z %s -s scim" % code)
+                os.system("im-switch -z %s -s scim-bridge" % code)
                 return True
             else:
                 os.system("im-switch -z %s -a" % code)

@@ -38,6 +38,16 @@ class LanguageSelectorBase(object):
     def openCache(self, progress):
         self._cache = LanguageSelectorPkgCache(self._localeinfo, progress)
 
+    def verifyPackageLists(self):
+        " verify that a network package lists exists "
+        for metaindex in self._cache._list.List:
+            for indexfile in metaindex.IndexFiles:
+                if indexfile.ArchiveURI("").startswith("cdrom:"):
+                    continue
+                if indexfile.Exists and indexfile.HasPackages:
+                    return True
+        return False
+
     def getSystemDefaultLanguage(self):
         conffiles = ["/etc/default/locale", "/etc/environment"]
         for fname in conffiles:
@@ -127,4 +137,8 @@ class LanguageSelectorBase(object):
         return missing
         
 
+if __name__ == "__main__":
+    lsb = LanguageSelectorBase(datadir="..")
+    lsb.openCache(apt.progress.OpProgress())
+    print lsb.verifyPackageLists()
 

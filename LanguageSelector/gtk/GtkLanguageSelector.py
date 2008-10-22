@@ -120,6 +120,27 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         self.updateLanguageView()
         self.updateSystemDefaultCombo()
 
+        # check if the package list is up-to-date
+        if not self.verifyPackageLists():
+            d = gtk.MessageDialog(parent=self.window_main,
+                                  flags=gtk.DIALOG_MODAL,
+                                  type=gtk.MESSAGE_INFO,
+                                  buttons=gtk.BUTTONS_CANCEL)
+            d.set_markup("<big><b>%s</b></big>\n\n%s" % (
+                _("No language information available"),
+                _("The system does not have information about the "
+                  "available languages yet. Do you want to perform "
+                  "a network update to get them now? ")))
+            d.set_title=("")
+            d.add_button(_("_Update"), gtk.RESPONSE_YES)
+            res = d.run()
+            d.destroy()
+            if res == gtk.RESPONSE_YES:
+                self.setSensitive(False)
+                self.update()
+                self.updateLanguageView()
+                self.setSensitive(True)
+
         # see if something is missing
         if options.verify_installed:
             self.verifyInstalledLangPacks()
@@ -484,7 +505,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             self.updateLanguageView()
         self.updateSystemDefaultCombo()
 
-    def run_synaptic(self, lock, inst, rm, id):
+    def _run_synaptic(self, lock, inst, rm, id):
         # FIXME: use self.runAsRoot() here
         cmd = ["gksu", 
                "--desktop", "/usr/share/applications/language-selector.desktop", 
@@ -506,6 +527,27 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         subprocess.call(cmd)
         lock.release()
 
+    def _run_synaptic_update(self, lock, id):
+        cmd = ["gksu", 
+               "--desktop", "/usr/share/applications/language-selector.desktop", 
+               "--",
+               "/usr/sbin/synaptic", "--hide-main-window",
+               "--parent-window-id", "%s" % (id),
+               "--non-interactive", "--update-at-startup"
+               ]
+        subprocess.call(cmd)
+        lock.release()
+
+    def update(self):
+        " update the package lists via synaptic "
+        lock = thread.allocate_lock()
+        lock.acquire()
+        t = thread.start_new_thread(self._run_synaptic_update,(lock, self.window_main.window.xid))
+        while lock.locked():
+            while gtk.events_pending():
+                gtk.main_iteration()
+            time.sleep(0.05)
+
     def commit(self, inst, rm):
         # unlock here to make sure that lock/unlock are always run
         # pair-wise (and don't explode on errors)
@@ -513,7 +555,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             return
         lock = thread.allocate_lock()
         lock.acquire()
-        t = thread.start_new_thread(self.run_synaptic,(lock,inst,rm, self.window_main.window.xid))
+        t = thread.start_new_thread(self._run_synaptic,(lock,inst,rm, self.window_main.window.xid))
         while lock.locked():
             while gtk.events_pending():
                 gtk.main_iteration()

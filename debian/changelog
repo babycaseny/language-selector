@@ -1,3 +1,28 @@
+language-selector (0.3.16) intrepid; urgency=low
+
+  [ Michael Vogt ]
+  * LanguageSelector/LanguageSelector.py:
+    - add verifyPackageLists() method that checks if there are
+      actually packages available that are not on CD 
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - offer to update package list if no package information
+      is available (LP: #135752, LP: #277526)
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    - offer to update package list if no package information
+      is available (just like in the gtk frontend)
+  * data/LanguageSelector.glade:
+    - hide the details by default
+
+  [ Colin Watson ]
+  * Rearrange fields in restart_session_required.note.in to avoid a broken
+    Name field there as well (LP: #287573).
+
+  [ Jonathan Riddell ]
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    - imswitch should select scim-bridge, not scim
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 22 Oct 2008 16:19:30 +0200
+
 language-selector (0.3.15) intrepid; urgency=low
 
   * Rearrange fields in incomplete-language-support-*.note.in so that
