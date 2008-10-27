@@ -1,3 +1,11 @@
+language-selector (0.3.17) intrepid; urgency=low
+
+  * LanguageSelector/LanguageSelector.py:
+    - ignore "security.ubuntu.com" when checking if there are repositories
+      that contain language-packages (LP: #135752)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 27 Oct 2008 10:29:07 +0100
+
 language-selector (0.3.16) intrepid; urgency=low
 
   [ Michael Vogt ]

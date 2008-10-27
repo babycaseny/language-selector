@@ -44,6 +44,8 @@ class LanguageSelectorBase(object):
             for indexfile in metaindex.IndexFiles:
                 if indexfile.ArchiveURI("").startswith("cdrom:"):
                     continue
+                if indexfile.ArchiveURI("").startswith("http://security.ubuntu.com"):
+                    continue
                 if indexfile.Exists and indexfile.HasPackages:
                     return True
         return False
