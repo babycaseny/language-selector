@@ -6,6 +6,7 @@ import string
 import re            
 import subprocess
 import gettext
+import os.path
 
 from gettext import gettext as _
 from xml.etree.ElementTree import ElementTree
@@ -13,7 +14,7 @@ from xml.etree.ElementTree import ElementTree
 class LocaleInfo(object):
     " class with handy functions to parse the locale information "
     
-    environment = "/etc/environment"
+    environments = ["/etc/default/locale", "/etc/environment"]
     def __init__(self, languagelist_file):
         # map language to human readable name, e.g.:
         # "pt"->"Portugise", "de"->"German", "en"->"English"
@@ -131,16 +132,20 @@ class LocaleInfo(object):
 
     def getDefaultLanguage(self):
         """ returns the current default language (e.g. zh_CN) """
-        for line in open(self.environment).readlines():
-            line = line.strip()
-            if line.startswith("LANGUAGE="):
-                (key,value) = line.split("=")
-                value = value.strip('"')
-                return value.split(":")[0]
-        for line in open(self.environment).readlines():
-            match = re.match(r'LANG="([a-zA-Z_]*).*"$',line)
-            if match:
-                return match.group(1)
+        for environment in self.environments:
+            if not os.path.exists(environment):
+                continue
+            for line in open(environment).readlines():
+                line = line.strip()
+                if line.startswith("LANGUAGE="):
+                    (key,value) = line.split("=")
+                    value = value.strip('"')
+                    return value.split(":")[0]
+            for line in open(environment).readlines():
+                match = re.match(r'LANG="([a-zA-Z_]*).*"$',line)
+                if match:
+                    return match.group(1)
+        return None
 
 if __name__ == "__main__":
     datadir = "/usr/share/language-selector/"

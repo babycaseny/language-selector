@@ -86,6 +86,19 @@ class LanguageSelectorPkgCache(apt.Cache):
         self.to_inst = []
         self.to_rm = []
 
+    @property
+    def havePackageLists(self):
+        " verify that a network package lists exists "
+        for metaindex in self._list.List:
+            for indexfile in metaindex.IndexFiles:
+                if indexfile.ArchiveURI("").startswith("cdrom:"):
+                    continue
+                if indexfile.ArchiveURI("").startswith("http://security.ubuntu.com"):
+                    continue
+                if indexfile.Exists and indexfile.HasPackages:
+                    return True
+        return False
+
     def clear(self):
         """ clear the selections """
         self._depcache.Init()

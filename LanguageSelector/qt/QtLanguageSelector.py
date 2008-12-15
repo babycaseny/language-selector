@@ -77,7 +77,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         self.updateLanguagesList()
         self.updateSystemDefaultListbox()
 
-        if not self.verifyPackageLists():
+        if not self._cache.havePackageLists:
             yesText = _("_Update").replace("_", "&")
             noText = _("_Remind Me Later").replace("_", "&")
             yes = KGuiItem(yesText, "dialog-ok")
@@ -139,20 +139,8 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
             langpacks (e.g. gnome/kde langpack transition)
         """
         print "verifyInstalledLangPacks"
-        missing = []
+        missing = self.getMissingLangPacks()
         
-        languageList = self._cache.getLanguageInformation()
-        #self._localeinfo.listviewStrToLangInfoMap = {}
-        for langInfo in languageList:
-            trans_package = "language-pack-%s" % langInfo.languageCode
-            # we have a langpack installed, see if we have all of it
-            # (for hoary -> breezy transition)
-            if self._cache.has_key(trans_package) and \
-               self._cache[trans_package].isInstalled:
-                #print "IsInstalled: %s " % trans_package
-                for (pkg, translation) in self._cache.pkg_translations:
-                    missing += self.missingTranslationPkgs(pkg, translation+langInfo.languageCode)
-
         print "Missing: %s " % missing
         if len(missing) > 0:
             # FIXME: add "details"

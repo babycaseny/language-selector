@@ -38,17 +38,33 @@ class LanguageSelectorBase(object):
     def openCache(self, progress):
         self._cache = LanguageSelectorPkgCache(self._localeinfo, progress)
 
-    def verifyPackageLists(self):
-        " verify that a network package lists exists "
-        for metaindex in self._cache._list.List:
-            for indexfile in metaindex.IndexFiles:
-                if indexfile.ArchiveURI("").startswith("cdrom:"):
-                    continue
-                if indexfile.ArchiveURI("").startswith("http://security.ubuntu.com"):
-                    continue
-                if indexfile.Exists and indexfile.HasPackages:
-                    return True
-        return False
+    def getMissingLangPacks(self):
+        """
+        return a list of langauge packs that are not installed
+        but should be installed
+        """
+        missing = []
+        for langInfo in  self._cache.getLanguageInformation():
+            #print langInfo.languageCode
+            trans_package = "language-pack-%s" % langInfo.languageCode
+            # we have a langpack installed, see if we have all of them
+            if (self._cache.has_key(trans_package) and 
+                self._cache[trans_package].isInstalled):
+                #print "IsInstalled: %s " % trans_package
+                for (pkg, translation) in self._cache.pkg_translations:
+                    missing += self.missingTranslationPkgs(pkg, translation+langInfo.languageCode)
+
+        # now check for a missing default langauge
+        default_lang = self.getSystemDefaultLanguage()
+        if "_" in default_lang:
+            default_lang = default_lang.split("_")[0]
+        trans_package = "language-pack-%s" % default_lang
+        if (self._cache.has_key(trans_package) and 
+            not self._cache[trans_package].isInstalled):
+            missing += [trans_package]
+            for (pkg, translation) in self._cache.pkg_translations:
+                missing += self.missingTranslationPkgs(pkg, translation+default_lang)
+        return missing
 
     def getSystemDefaultLanguage(self):
         conffiles = ["/etc/default/locale", "/etc/environment"]

@@ -121,7 +121,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         self.updateSystemDefaultCombo()
 
         # check if the package list is up-to-date
-        if not self.verifyPackageLists():
+        if not self._cache.havePackageLists:
             d = gtk.MessageDialog(parent=self.window_main,
                                   flags=gtk.DIALOG_MODAL,
                                   type=gtk.MESSAGE_INFO,
@@ -605,16 +605,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             langpacks (e.g. gnome/kde langpack transition)
         """
         #print "verifyInstalledLangPacks"
-        missing = []
-        for (lang, langInfo) in self._langlist:
-            trans_package = "language-pack-%s" % langInfo.languageCode
-            # we have a langpack installed, see if we have all of it
-            # (for hoary -> breezy transition)
-            if self._cache.has_key(trans_package) and \
-               self._cache[trans_package].isInstalled:
-                #print "IsInstalled: %s " % trans_package
-                for (pkg, translation) in self._cache.pkg_translations:
-                    missing += self.missingTranslationPkgs(pkg, translation+langInfo.languageCode)
+        missing = self.getMissingLangPacks()
 
         #print "Missing: %s " % missing
         if len(missing) > 0:

@@ -708,7 +708,7 @@
 	  <property name="visible">True</property>
 	  <property name="label" translatable="yes">&lt;big&gt;&lt;b&gt;Checking available language support&lt;/b&gt;&lt;/big&gt;
 
-The availablity of translations or writing aids can differ between languages.</property>
+The availability of translations or writing aids can differ between languages.</property>
 	  <property name="use_underline">False</property>
 	  <property name="use_markup">True</property>
 	  <property name="justify">GTK_JUSTIFY_LEFT</property>

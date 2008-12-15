@@ -246,7 +246,8 @@ msgstr "<b>Supported Languages</b>"
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
-"The availablity of translations or writing aids can differ between languages."
+"The availability of translations or writing aids can differ between "
+"languages."
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:8

@@ -1,3 +1,27 @@
+language-selector (0.3.20) jaunty; urgency=low
+
+  [ Michael Vogt ]
+  * LanguageSelector/LangCache.py, LanguageSelector/LanguageSelector.py:
+    - move verifyPackageLists into the cache and rename it
+      to the havePackageLists property
+  * LanguageSelector/LocaleInfo.py:
+    - honor /etc/default/locale as well
+  * LanguageSelector/gtk/GtkLanguageSelector.py,
+    LanguageSelector/qt/QtLanguageSelector.py:
+    - check if we have a language-pack for the given default language 
+      (LP: #289165)
+  * LanguageSelector/LanguageSelector.py:
+    - move the check what language packs are missing into common 
+      code
+  * debian/rules:
+    - remove arch-build target, bzr-buildpackage is the way to
+      build it
+
+  [ Colin Watson ]
+  * Fix typo (availablity -> availability).
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 15 Dec 2008 15:00:50 +0100
+
 language-selector (0.3.17) intrepid; urgency=low
 
   * LanguageSelector/LanguageSelector.py:
