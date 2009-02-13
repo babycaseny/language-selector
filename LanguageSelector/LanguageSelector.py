@@ -54,7 +54,7 @@ class LanguageSelectorBase(object):
                 for (pkg, translation) in self._cache.pkg_translations:
                     missing += self.missingTranslationPkgs(pkg, translation+langInfo.languageCode)
 
-        # now check for a missing default langauge
+        # now check for a missing default language support
         default_lang = self.getSystemDefaultLanguage()
         if "_" in default_lang:
             default_lang = default_lang.split("_")[0]
@@ -64,6 +64,12 @@ class LanguageSelectorBase(object):
             missing += [trans_package]
             for (pkg, translation) in self._cache.pkg_translations:
                 missing += self.missingTranslationPkgs(pkg, translation+default_lang)
+        support_packages = LanguageSelectorPkgCache._getPkgList(self._cache, default_lang)
+        for support_package in support_packages:
+            if (self._cache.has_key(support_package) and 
+                not self._cache[support_package].isInstalled):
+                missing.append(support_package)
+
         return missing
 
     def getSystemDefaultLanguage(self):
