@@ -72,6 +72,18 @@ class LanguageSelectorBase(object):
 
         return missing
 
+    def getUserDefaultLanguage(self):
+        fname = os.path.expanduser("~/.dmrc")
+        if os.path.exists(fname):
+            for line in open(fname):
+                match = re.match(r'Language=(.*)$',line)
+                if match:
+                    if "." in match.group(1):
+                        return match.group(1).split(".")[0]
+                    else:
+                        return match.group(1)
+        return None
+
     def getSystemDefaultLanguage(self):
         conffiles = ["/etc/default/locale", "/etc/environment"]
         for fname in conffiles:
@@ -133,6 +145,39 @@ class LanguageSelectorBase(object):
                             "--set=%s" % defaultLanguageCode])
         else:
             self.runAsRoot(["fontconfig-voodoo","-f","--remove-current"])
+
+    def setUserDefaultLanguage(self, defaultLanguageCode):
+        " this updates the user default language "
+        fname = os.path.expanduser("~/.dmrc")
+        out = tempfile.NamedTemporaryFile()        
+        foundLang = False      # the Language var
+        if os.path.exists(fname):
+            # look for the line
+            for line in open(fname):
+                tmp = string.strip(line)
+                if tmp.startswith("Language="):
+                    foundLang = True
+                    # we always write utf8 languages
+                    line="Language=%s.UTF-8\n" % defaultLanguageCode
+                out.write(line)
+        # if we have not found them add them
+        if foundLang == False:
+            line="Language=%s.UTF-8\n" % defaultLanguageCode
+            out.write(line)
+        out.flush()
+        shutil.copy(out.name, fname)
+        os.chmod(fname, 0644)
+
+        # FIXME: This should be set on a per user base in ~/.fonts.conf
+        ## now set the fontconfig-voodoo
+        #fc = FontConfig.FontConfigHack()
+        ##print defaultLanguageCode
+        ##print fc.getAvailableConfigs()
+        #f defaultLanguageCode in fc.getAvailableConfigs():
+        #    self.runAsRoot(["fontconfig-voodoo", "-f",
+        #                    "--set=%s" % defaultLanguageCode])
+        #else:
+        #    self.runAsRoot(["fontconfig-voodoo","-f","--remove-current"])
 
     def missingTranslationPkgs(self, pkg, translation_pkg):
         """ this will check if the given pkg is installed and if

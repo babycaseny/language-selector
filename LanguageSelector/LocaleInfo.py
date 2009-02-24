@@ -17,7 +17,7 @@ class LocaleInfo(object):
     environments = ["/etc/default/locale", "/etc/environment"]
     def __init__(self, languagelist_file):
         # map language to human readable name, e.g.:
-        # "pt"->"Portugise", "de"->"German", "en"->"English"
+        # "pt"->"Portuguise", "de"->"German", "en"->"English"
         self._lang = {}
 
         # map country to human readable name, e.g.:
@@ -28,8 +28,7 @@ class LocaleInfo(object):
         # "pt_PT"->"pt_PT:pt:pt_BR:en_GB:en"
         self._languagelist = {}
         
-        # read lang file (we don't use iso_639_3 as it does crash there with:
-        # xml.parsers.expat.ExpatError: not well-formed (invalid token): line 52, column 11
+        # read lang file
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_639.xml")
         it = et.getiterator('iso_639_entry')
         for elm in it:
@@ -38,7 +37,14 @@ class LocaleInfo(object):
                 code = elm.attrib["iso_639_1_code"]
             else:
                 code = elm.attrib["iso_639_2T_code"]
-            self._lang[code] = gettext.dgettext('iso_639', lang)
+            self._lang[code] = lang
+        et = ElementTree(file="/usr/share/xml/iso-codes/iso_639_3.xml")
+        it = et.getiterator('iso_639_3_entry')
+        for elm in it:
+            lang = elm.attrib["name"]
+            code = elm.attrib["id"]
+            if not self._lang.has_key(code):
+                self._lang[code] = lang
             
         # read countries
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_3166.xml")
@@ -52,7 +58,7 @@ class LocaleInfo(object):
                 code = elm.attrib["alpha_2_code"]
             else:
                 code = elm.attrib["alpha_3_code"]
-            self._country[code] = gettext.dgettext('iso_3166',descr)
+            self._country[code] = descr
             
         # read the languagelist
         for line in open(languagelist_file):
@@ -82,8 +88,8 @@ class LocaleInfo(object):
         return ""
 
     def generated_locales(self):
-        """ return a list of locales avaialble on the system
-            (runing locale -a) """
+        """ return a list of locales available on the system
+            (running locale -a) """
         locales = []
         p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE)
         for line in string.split(p.communicate()[0], "\n"):
@@ -99,22 +105,42 @@ class LocaleInfo(object):
         #print locales
         return locales
 
+    def translate_locale(self, locale):
+        """
+        return translated language and country of the given
+        locale into the given locale, e.g. 
+        (Deutsch, Deutschland) for de_DE
+        """
+        (lang, country) = string.split(locale, "_")
+        current_language = None
+        if "LANGUAGE" in os.environ:
+            current_language = os.environ["LANGUAGE"]
+        os.environ["LANGUAGE"]=locale
+        lang_name = gettext.dgettext('iso_639', self._lang[lang])
+        if lang_name == self._lang[lang]:
+            lang_name = gettext.dgettext('iso_639_3', self._lang[lang])
+        country_name = gettext.dgettext('iso_3166', self._country[country])
+        if current_language:
+            os.environ["LANGUAGE"] = current_language
+        return (lang_name, country_name)
+
     def translate(self, locale):
         """ get a locale code and output a human readable name """
         if "_" in locale:
             (lang, country) = string.split(locale, "_")
+            (lang_name, country_name) = self.translate_locale(locale)
             # get all locales for this language
             l = filter(lambda k: k.startswith(lang+"_"), self.generated_locales())
             # only show region/country if we have more than one 
             if len(l) > 1:
                 mycountry = self.country(country)
                 if mycountry:
-                    return "%s (%s)" % (_(self.lang(lang)), _(mycountry))
+                    return "%s (%s)" % (lang_name, country_name)
                 else:
-                    return "%s" % (_(self.lang(lang)))
+                    return lang_name
             else:
-                return _(self.lang(lang))
-        return _(self.lang(locale))
+                return lang_name
+        return lang_name
 
     def makeEnvString(self, code):
         """ input is a language code, output a string that can be put in

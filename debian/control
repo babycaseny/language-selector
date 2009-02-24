@@ -1,7 +1,7 @@
 Source: language-selector
 Section: admin
 Priority: optional
-Maintainer: Michael Vogt <michael.vogt@ubuntu.com>
+Maintainer: Arne Goetje <arne@ubuntu.com>
 Build-Depends: debhelper (>= 5.0.38), python-dev, intltool, intltool-debian, python-central (>= 0.5.6)
 XS-Python-Version: current
 Standards-Version: 3.7.2

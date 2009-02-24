@@ -24,9 +24,12 @@ if __name__ == "__main__":
 	parser.add_option("-n", "--no-verify-installed-lang-support",
 			  action="store_false", dest="verify_installed",
 			  default=True,
-			  help="don't verify installed language support")
+			  help=_("don't verify installed language support"))
+	parser.add_option("-d", "--datadir",
+			  default="/usr/share/language-selector/",
+			  help=_("alternative datadir"))
 	(options, args) = parser.parse_args()
 
-	app = GtkLanguageSelector(datadir="/usr/share/language-selector/",
+	app = GtkLanguageSelector(datadir=options.datadir,
 				  options=options)
 	app.run()

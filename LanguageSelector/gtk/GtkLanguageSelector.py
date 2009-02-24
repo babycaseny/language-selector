@@ -26,6 +26,8 @@ import gettext
 import sys
 import tempfile
 import pwd
+import grp
+import os
 
 from gettext import gettext as _
 
@@ -43,6 +45,43 @@ from LanguageSelector.gtk.SimpleGladeApp import SimpleGladeApp
 from LanguageSelector.LocaleInfo import LocaleInfo
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
+
+
+def xor(a,b):
+    " helper to simplify the reading "
+    return a ^ b
+
+def blockSignals(f):
+    " decorator to ensure that the signals are blocked "
+    def wrapper(*args, **kwargs):
+        args[0]._blockSignals = True
+        res = f(*args, **kwargs)
+        args[0]._blockSignals = False
+        return res
+    return wrapper
+
+def honorBlockedSignals(f):
+    " decorator to ensure that the signals are blocked "
+    def wrapper(*args, **kwargs):
+        if args[0]._blockSignals:
+            return
+        res = f(*args, **kwargs)
+        return res
+    return wrapper
+
+def insensitive(f):
+    """
+    decorator to ensure that a given function is run insensitive
+    warning: this will not stack well so don't use it for nested
+    stuff (a @insensitive func calling a @insensitve one)
+    """
+    def wrapper(*args, **kwargs):
+        args[0].setSensitive(False)
+        res = f(*args, **kwargs)
+        args[0].setSensitive(True)
+    return wrapper
+
+
 
 # intervals of the start up progress
 # 3x caching and menu creation
@@ -87,8 +126,6 @@ class GtkProgress(apt.OpProgress):
     def hide(self):
         self._window.hide()
 
-def xor(a,b): return a ^ b
-
 class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
 
     def __init__(self, datadir, options):
@@ -97,28 +134,51 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
                                 datadir+"/data/LanguageSelector.glade",
                                 domain="language-selector")
 
-        #build the combobox (with model)
-        combo = self.combobox_default_lang
+        self.is_admin = grp.getgrnam("admin")[2] in os.getgroups()
+        # see if we have any other human users on this system
+        self.has_other_users = False
+        num = 0
+        for l in pwd.getpwall():
+            if l.pw_uid >= 500 and l.pw_uid < 65534:
+                num += 1
+            if num >= 2:
+                self.has_other_users = True
+                break
+        
+        #build the comboboxes (with model)
+        combo = self.combobox_system_language
         model = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
         cell = gtk.CellRendererText()
         combo.pack_start(cell, True)
         combo.add_attribute(cell, 'text', COMBO_LANGUAGE)
         combo.set_model(model)
-        self.combo_dirty = False
-        self.imSwitch = ImSwitch()
+        self.combo_syslang_dirty = False
 
-        # apply button
-        self.button_apply.set_sensitive(False)
+        combo = self.combobox_user_language
+        model = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
+        cell = gtk.CellRendererText()
+        combo.pack_start(cell, True)
+        combo.add_attribute(cell, 'text', COMBO_LANGUAGE)
+        combo.set_model(model)
+        self.combo_userlang_dirty = False
+        self.imSwitch = ImSwitch()
+        self.options = options
+        self._blockSignals = False
 
         # build the treeview
         self.setupTreeView()
+        self.updateLanguageView()
+        self.updateUserDefaultCombo()
+        self.updateSystemDefaultCombo()
+        self.check_input_methods()
+        self.updateSyncButton()
+        
+        # apply button
+        self.button_apply.set_sensitive(False)
 
         # show it
         self.window_main.show()
         self.setSensitive(False)
-       
-        self.updateLanguageView()
-        self.updateSystemDefaultCombo()
 
         # check if the package list is up-to-date
         if not self._cache.havePackageLists:
@@ -142,7 +202,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
                 self.setSensitive(True)
 
         # see if something is missing
-        if options.verify_installed:
+        if self.options.verify_installed:
             self.verifyInstalledLangPacks()
 
         if not self.imSwitch.available():
@@ -168,6 +228,29 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         ret = subprocess.call(cmd+userCmd)
         return (ret == 0)
 
+    @blockSignals
+    def updateSyncButton(self):
+        " check if the sync languages button should be enabled or not "
+        button = self.checkbutton_sync_languages
+        combo = self.combobox_system_language
+        # no admin user, gray out
+        if self.is_admin == False:
+            button.set_active(False)
+            button.set_sensitive(False)
+            combo.set_sensitive(False)
+            return
+        # admin user, check stuff
+        button.set_sensitive(True)
+        combo.set_sensitive(True)
+        # do not enable the keep the same button if the system has other
+        # users or if the language settings are inconsistent already
+        userlang = self.combobox_user_language.get_active()
+        systemlang = self.combobox_system_language.get_active()
+        if (not self.has_other_users and userlang == systemlang):
+            button.set_active(True)
+        else:
+            button.set_active(False)
+
     def setupTreeView(self):
         """ do all the treeview setup here """
         def toggle_cell_func(column, cell, model, iter):
@@ -178,27 +261,12 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             #if inconsistent:
             #    print "%s is inconsistent" % langInfo.language
 
-            # do we want to install or remove it?
-            #toInstall = (langInfo.languagePkgList["languagePack"].doChange and \
-            #            langInfo.languagePkgList["languageSupport"].doChange)
-            #toRemove = (not langInfo.languagePkgList["languagePack"].doChange and \
-            #            not langInfo.languagePkgList["languagePack"].doChange)
-            # if it is going to be installed or removed, it can't
-            # be inconsitent
-            #if inconsistent and (toInstall or toRemove):
-            #    inconsistent = False
-                
-            #cell.set_property("active", toInstall)
             cell.set_property("active", langInfo.fullInstalled)
             cell.set_property("inconsistent", inconsistent)
             
         def lang_view_func(cell_layout, renderer, model, iter):
             langInfo = model.get_value(iter, LIST_LANG_INFO)
             inconsistent = langInfo.inconsistent
-            #current = langInfo.languagePkgList["languagePack"].installed or langInfo.languagePkgList["languageSupport"].installed
-            #toInstall = langInfo.languagePkgList["languagePack"].doChange and langInfo.languagePkgList["languageSupport"].doChange
-            #toRemove =  not langInfo.languagePkgList["languagePack"].doChange and not langInfo.languagePkgList["languageSupport"].doChange
-            #if (not inconsistent and current != toInstall) or (inconsistent and (toInstall or toRemove)):
             if (langInfo.changes) :
                 markup = "<b>%s</b>" % langInfo.language
             else:
@@ -213,9 +281,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
 
         renderer= gtk.CellRendererToggle()
         renderer.connect("toggled", self.on_toggled)
-        column = gtk.TreeViewColumn(_("Support"), renderer)
-                                    #active=LIST_TRANSLATION,
-                                    #inconsistent=LIST_TRANSLATION_PARTIAL)
+        column = gtk.TreeViewColumn(_("Installed"), renderer)
         column.set_cell_data_func (renderer, toggle_cell_func)
         self.treeview_languages.append_column(column)
         # build the store
@@ -235,42 +301,42 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         if self.block_toggle: return
         langInfo = self._get_langinfo_on_cursor()
         langInfo.languagePkgList["languageSupportFonts"].doChange = not langInfo.languagePkgList["languageSupportFonts"].doChange
-        self.check_apply_button()
+        self.check_status()
         self.treeview_languages.queue_draw()
         #self.debug_pkg_status()
     def on_checkbutton_input_methods_clicked(self, button):
         if self.block_toggle: return
         langInfo = self._get_langinfo_on_cursor()
         langInfo.languagePkgList["languageSupportInputMethods"].doChange = not langInfo.languagePkgList["languageSupportInputMethods"].doChange
-        self.check_apply_button()
+        self.check_status()
         self.treeview_languages.queue_draw()
         #self.debug_pkg_status()
     def on_checkbutton_writing_aids_clicked(self, button):
         if self.block_toggle: return
         langInfo = self._get_langinfo_on_cursor()
         langInfo.languagePkgList["languageSupportWritingAids"].doChange = not langInfo.languagePkgList["languageSupportWritingAids"].doChange
-        self.check_apply_button()
+        self.check_status()
         self.treeview_languages.queue_draw()
         #self.debug_pkg_status()
     def on_checkbutton_basic_translations_clicked(self, button):
         if self.block_toggle: return
         langInfo = self._get_langinfo_on_cursor()
         langInfo.languagePkgList["languagePack"].doChange = not langInfo.languagePkgList["languagePack"].doChange
-        self.check_apply_button()
+        self.check_status()
         self.treeview_languages.queue_draw()
         #self.debug_pkg_status()
     def on_checkbutton_extra_translations_clicked(self, button):
         if self.block_toggle: return
         langInfo = self._get_langinfo_on_cursor()
         langInfo.languagePkgList["languageSupportTranslations"].doChange = not langInfo.languagePkgList["languageSupportTranslations"].doChange
-        self.check_apply_button()
+        self.check_status()
         self.treeview_languages.queue_draw()
         #self.debug_pkg_status()
     def on_checkbutton_extra_clicked(self, button):
         if self.block_toggle: return
         langInfo = self._get_langinfo_on_cursor()
         langInfo.languagePkgList["languageSupportExtra"].doChange = not langInfo.languagePkgList["languageSupportExtra"].doChange
-        self.check_apply_button()
+        self.check_status()
         self.treeview_languages.queue_draw()
         #self.debug_pkg_status()
 
@@ -281,12 +347,6 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         langInfo = self._langlist.get_value(iter, LIST_LANG_INFO)
 
         # special handling for inconsistent state
-        #inconsistent = False  #xor(langInfo.languagePkgList["languagePack"].installed, langInfo.languagePkgList["languageSupport"].installed)
-        # check if we already set remove 
-        #toInstall = langInfo.languagePkgList["languagePack"].doChange and langInfo.languagePkgList["languageSupport"].doChange
-        #toRemove = not langInfo.languagePkgList["languagePack"].doChange and not langInfo.languagePkgList["languageSupport"].doChange
-        # if it is inconistent and wasn't touched yet, set it for install
-        # from then on it will just work (tm)
         if langInfo.inconsistent :
             for pkg in langInfo.languagePkgList.values() :
                 if (pkg.available and not pkg.installed) : 
@@ -306,7 +366,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
                     elif (not pkg.installed and not pkg.doChange) :
                         pkg.doChange = True
 
-        self.check_apply_button()
+        self.check_status()
         self.treeview_languages.queue_draw()
         #self.debug_pkg_status()
 
@@ -329,27 +389,73 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             self.block_toggle = False
             #self.debug_pkg_status()
 
+    def on_button_install_remove_languages_clicked(self, widget):
+        self.window_installer.show()
+
     def debug_pkg_status(self):
         langInfo = self._get_langinfo_on_cursor()
         for pkg in langInfo.languagePkgList.items() :
             print ("%s, available: %s, installed: %s, doChange: %s" % (pkg[0], pkg[1].available, pkg[1].installed, pkg[1].doChange))
         print ("inconsistent? : %s" % langInfo.inconsistent)
 
-    def check_apply_button(self):
+    def check_status(self):
         changed = False
+        countInstall = 0
+        countRemove = 0
         for (lang, langInfo) in self._langlist:
             if langInfo.changes:
                 changed = True
-        if self.combo_dirty or changed:
+                for item in langInfo.languagePkgList.values():
+                    if item.doChange:
+                        if item.installed:
+                            countRemove = countRemove + 1
+                        else:
+                            countInstall = countInstall + 1
+        #print "%d to install, %d to remove" % (countInstall, countRemove)
+        textInstall = gettext.ngettext("%d to install", "%d to install", countInstall) % countInstall
+        textRemove = gettext.ngettext("%d to remove", "%d to remove", countRemove) % countRemove
+        if countRemove == 0 and countInstall == 0: 
+            self.label_install_remove.set_text("")
+        elif countRemove == 0: 
+            self.label_install_remove.set_text(textInstall)
+        elif countInstall == 0: 
+            self.label_install_remove.set_text(textRemove)
+        # Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+        else: 
+            self.label_install_remove.set_text(_("%s, %s") % (textInstall, textRemove))
+        
+        if changed:
             self.button_apply.set_sensitive(True)
         else:
             self.button_apply.set_sensitive(False)
 
-    def on_combobox_default_lang_changed(self, widget):
-        self.combo_dirty = True
-        self.check_input_methods()
-        self.check_apply_button()
+    @honorBlockedSignals
+    @insensitive
+    def on_combobox_system_language_changed(self, widget):
+        #print "on_combobox_system_language_changed()"
+        if self.writeSystemDefaultLang():
+            # queue a restart of gdm (if it is runing) to make the new
+            # locales usable
+            gdmscript = "/etc/init.d/gdm"
+            if os.path.exists("/var/run/gdm.pid") and os.path.exists(gdmscript):
+                self.runAsRoot(["invoke-rc.d","gdm","reload"])
+        self.updateSystemDefaultCombo()
+        if self.checkbutton_sync_languages.get_active() == True:
+            self.combobox_user_language.set_active(self.combobox_system_language.get_active())
+            self.updateUserDefaultCombo()
 
+    @honorBlockedSignals
+    @insensitive
+    def on_combobox_user_language_changed(self, widget):
+        #print "on_combobox_user_language_changed()"
+        self.check_input_methods()
+        self.writeUserDefaultLang()
+        self.updateUserDefaultCombo()
+        if self.checkbutton_sync_languages.get_active() == True:
+            self.combobox_system_language.set_active(self.combobox_user_language.get_active())
+            self.updateSystemDefaultCombo()
+
+    @blockSignals
     def check_input_methods(self):
         """ check if the selected langauge has input method support
             and set checkbutton_enable_input_methods accordingly
@@ -357,22 +463,20 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         if not self.imSwitch.available():
             return
         # get current selected default language
-        combo = self.combobox_default_lang
+        combo = self.combobox_user_language
         model = combo.get_model()
         if combo.get_active() < 0:
             return
         (lang, code) = model[combo.get_active()]
         # check if that has a im-switch config
         active = self.imSwitch.enabledForLocale(code)
-        self._blockSignals = True
         self.checkbutton_enable_input_methods.set_active(active)
-        self._blockSignals = False
 
     def writeInputMethodConfig(self):
         """ 
         write new input method defaults - currently we only support all_ALL
         """
-        combo = self.combobox_default_lang
+        combo = self.combobox_user_language
         model = combo.get_model()
         if combo.get_active() < 0:
             return
@@ -385,31 +489,26 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             else:
                 self.imSwitch.disable(code)
             #self.showRebootRequired()
-            self.checkReloginNotification()
+            #self.checkReloginNotification()
 
+    @honorBlockedSignals
     def on_checkbutton_enable_input_methods_toggled(self, widget):
-        if self._blockSignals:
-            return
         #print "on_checkbutton_enable_input_methods_toggled()"
         active = self.checkbutton_enable_input_methods.get_active()
-        self.combo_dirty = True
-        self.check_apply_button()
+        self.combo_userlang_dirty = True
+        self.setSensitive(False)
+        self.writeInputMethodConfig()
+        self.setSensitive(True)
 
+    @honorBlockedSignals
+    def on_checkbutton_sync_languages_toggled(self, widget):
+        #print "on_checkbutton_sync_languages_toggled()"
+        if self.checkbutton_sync_languages.get_active() == True:
+            self.combobox_user_language.set_active(self.combobox_system_language.get_active())
+            self.updateSystemDefaultCombo()
+        
     def build_commit_lists(self):
-        # FIXME: add support to install only subsets of the 
-        #        language - use langInfo.languagePkgList["languageSupport"]{Fonts,WritingAids,..}.{install,doChange} for this
         for (lang, langInfo) in self._langlist:
-            #inconsistent = xor(langInfo.languagePkgList["languagePack"].installed, langInfo.languagePkgList["languageSupport"].installed)
-
-            #wasInstalled = langInfo.languagePkgList["languagePack"].installed and langInfo.languagePkgList["languageSupport"].installed
-            #wasNotInstalled = not langInfo.languagePkgList["languagePack"].installed and not langInfo.languagePkgList["languageSupport"].installed
-
-            #toInstall = langInfo.languagePkgList["languagePack"].doChange and langInfo.languagePkgList["languageSupport"].doChange
-            #toRemove = not langInfo.languagePkgList["languagePack"].doChange and not langInfo.languagePkgList["languageSupport"].doChange
-            #if (inconsistent and toInstall) or (toInstall and wasNotInstalled):
-            #    self._cache.tryInstallLanguage(langInfo.languageCode)
-            #if (inconsistent and toRemove) or (toRemove and wasInstalled):
-            #    self._cache.tryRemoveLanguage(langInfo.languageCode)
             self._cache.tryChangeDetails(langInfo)
         (to_inst, to_rm) = self._cache.getChangesList()
         #print "inst: %s" % to_inst
@@ -484,7 +583,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         self.commit(inst_list, rm_list)
 
         # write input method config
-        self.writeInputMethodConfig()
+        #self.writeInputMethodConfig()
 
         # write the system default language
         if self.writeSystemDefaultLang():
@@ -496,13 +595,16 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         self.setSensitive(True)
         return len(inst_list)+len(rm_list)
 
+    # obsolete
     def on_button_ok_clicked(self, widget):
         self.commitAllChanges()
         gtk.main_quit()
 
     def on_button_apply_clicked(self, widget):
+        self.window_installer.hide()
         if self.commitAllChanges() > 0:
             self.updateLanguageView()
+        self.updateUserDefaultCombo()
         self.updateSystemDefaultCombo()
 
     def _run_synaptic(self, lock, inst, rm, id):
@@ -561,38 +663,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
                 gtk.main_iteration()
             time.sleep(0.05)
 
-    def checkReloginNotification(self):
-        #" display a reboot required notification "
-        #rb = "/usr/share/update-notifier/notify-reboot-required"
-        #if (hasattr(self, "install_result") and 
-        #    self.install_result == 0 and
-        #    os.path.exists(rb)):
-        #    self.runAsRoot([rb])
-        #    s = "/var/lib/update-notifier/dpkg-run-stamp"
-        #    if os.path.exists(s):
-        #        self.runAsRoot(["touch",s])
-        #return True
-        language_support_dir = '/usr/share/language-support'
-        update_notifier_dir = '/var/lib/update-notifier/user.d'
-        note = 'restart_session_required.note'
-        notepath = os.path.join(language_support_dir, note)
-        if os.path.exists(notepath):
-            if not os.path.exists(update_notifier_dir):
-                runAsRoot(["mkdir",update_notifier_dir])
-            s = os.path.join(update_notifier_dir, note)
-            if os.path.exists(s):
-                self.runAsRoot(["touch",s])
-            else :
-                rb = "cp %s %s" % (notepath, s)
-                self.runAsRoot([rb])
-            s = "/var/lib/update-notifier/dpkg-run-stamp"
-            if os.path.exists(s):
-                self.runAsRoot(["touch",s])
-        return True
-
     def on_button_cancel_clicked(self, widget):
         #print "button_cancel"
-        gtk.main_quit()
+        self.window_installer.hide()
 
     def on_delete_event(self, event, data):
         if self.window_main.get_property("sensitive") is False:
@@ -695,7 +768,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             self.block_toggle = False
 
     def writeSystemDefaultLang(self):
-        combo = self.combobox_default_lang
+        combo = self.combobox_system_language
         model = combo.get_model()
         if combo.get_active() < 0:
             return
@@ -705,29 +778,29 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         if old_code == code:
             return False
         self.setSystemDefaultLanguage(code)
-        #self.showRebootRequired()
-        self.checkReloginNotification()
         return True
 
-    def showRebootRequired(self):
-        " show a message box that a restart is required "
-        d = gtk.MessageDialog(parent=self.window_main,
-                              flags=gtk.DIALOG_MODAL,
-                              type=gtk.MESSAGE_INFO,
-                              buttons=gtk.BUTTONS_CLOSE)
-        d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("Reboot required"),
-                _("To complete the changes a reboot is required so "
-                  "that the new functionality is activated.")
-                ))
-        d.set_title=("")
-        res = d.run()
-        d.destroy()
-        
+    def writeUserDefaultLang(self):
+        combo = self.combobox_user_language
+        model = combo.get_model()
+        if combo.get_active() < 0:
+            return
+        (lang, code) = model[combo.get_active()]
+        temp = self.getUserDefaultLanguage()
+        if temp == None:
+            old_code = self._localeinfo.getDefaultLanguage()
+        else:
+            old_code = temp.split("\.")[0]
+        # no changes, nothing to do
+        if old_code == code:
+            return False
+        self.setUserDefaultLanguage(code)
+        return True
 
+    @blockSignals
     def updateSystemDefaultCombo(self):
         #print "updateSystemDefault()"
-        combo = self.combobox_default_lang
+        combo = self.combobox_system_language
         cell = combo.get_child().get_cell_renderers()[0]
         # FIXME: use something else than a hardcoded value here
         cell.set_property("wrap-width",300)
@@ -742,17 +815,50 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             defaultLangName = self._localeinfo.translate(defaultLangCode)
 
         # find out about the other options        
-        i=0
-        for locale in self._localeinfo.generated_locales():
+        for (i, locale) in enumerate(self._localeinfo.generated_locales()):
             iter = model.append()
             model.set(iter,
                       COMBO_LANGUAGE,self._localeinfo.translate(locale),
                       COMBO_CODE, locale)
-            if defaultLangName and \
-                   self._localeinfo.translate(locale) == defaultLangName:
+            if (defaultLangName and
+                   self._localeinfo.translate(locale) == defaultLangName):
                 combo.set_active(i)
-            i+=1
+
+        # reset the state of the apply button
+        self.combo_syslang_dirty = False
+        self.check_status()
+
+    # FIXME: updateUserDefaultCombo and updateSystemDefaultCombo
+    #        duplicate too much code
+    @blockSignals
+    def updateUserDefaultCombo(self):
+        #print "updateUserDefault()"
+        combo = self.combobox_user_language
+        cell = combo.get_child().get_cell_renderers()[0]
+        # FIXME: use something else than a hardcoded value here
+        cell.set_property("wrap-width",300)
+        cell.set_property("wrap-mode",pango.WRAP_WORD)
+        model = combo.get_model()
+        model.clear()
+
+        # find the default
+        defaultLangName = None
+        defaultLangCode = self.getUserDefaultLanguage()
+        if defaultLangCode == None:
+            defaultLangCode = self.getSystemDefaultLanguage()
+        if defaultLangCode:
+            defaultLangName = self._localeinfo.translate(defaultLangCode)
+
+        # find out about the other options        
+        for (i, locale) in enumerate(self._localeinfo.generated_locales()):
+            iter = model.append()
+            model.set(iter,
+                      COMBO_LANGUAGE,self._localeinfo.translate(locale),
+                      COMBO_CODE, locale)
+            if (defaultLangName and 
+                   self._localeinfo.translate(locale) == defaultLangName):
+                combo.set_active(i)
             
         # reset the state of the apply button
-        self.combo_dirty = False
-        self.check_apply_button()
+        self.combo_userlang_dirty = False
+        self.check_status()

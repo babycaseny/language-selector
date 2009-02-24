@@ -1,3 +1,15 @@
+language-selector (0.4.0) jaunty; urgency=low
+
+  * gnome-language-selector: GUI overhaul (for details see: 
+    https://wiki.ubuntu.com/JauntyLanguageSelectorImprovements )
+  * allow for different language settings per user
+  * for installed languages use the native language and country names in 
+    the comboboxes (LP: #241317)
+  * get rid of the reboot / session restart notification popup. This 
+    information is now integrated into the main UI. (LP: #260380)
+
+ -- Arne Goetje <arne@ubuntu.com>  Tue, 24 Feb 2009 01:40:14 +0800
+
 language-selector (0.3.21) jaunty; urgency=low
 
   * suggest to install full language support instead of
