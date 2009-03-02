@@ -862,3 +862,6 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
         # reset the state of the apply button
         self.combo_userlang_dirty = False
         self.check_status()
+    
+    def on_treeview_languages_row_activated(self, treeview, path, view_column):
+        self.on_toggled(None,str(path[0]))

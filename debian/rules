@@ -62,7 +62,7 @@ install: build
 	dh_installdirs
 
 	# Add here commands to install the package into debian/language-selector.
-	./setup.py install --prefix=$(CURDIR)/debian/tmp/usr
+	./setup.py install --prefix=$(CURDIR)/debian/tmp/usr --install-layout=deb
 	(cd po; intltool-update -p -g language-selector)
 
 # Build architecture-independent files here.

@@ -1,3 +1,14 @@
+language-selector (0.4.1) jaunty; urgency=low
+
+  * debian/rules:
+    - update for the new python policy
+  * better key support in langauge treeview (LP: #276737),
+    thanks to István Nyitrai
+  * LanguageSelector/LocaleInfo.py:
+    - fix crash (LP: #336425)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 02 Mar 2009 17:22:23 +0100
+
 language-selector (0.4.0) jaunty; urgency=low
 
   * gnome-language-selector: GUI overhaul (for details see: 

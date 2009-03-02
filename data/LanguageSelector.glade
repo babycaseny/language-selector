@@ -490,6 +490,7 @@ The availability of translations or writing aids can differ between languages.</
 		  <property name="hover_selection">False</property>
 		  <property name="hover_expand">False</property>
 		  <signal name="cursor_changed" handler="on_treeview_languages_cursor_changed" last_modification_time="Mon, 02 Feb 2009 16:43:32 GMT"/>
+		  <signal name="row_activated" handler="on_treeview_languages_row_activated" last_modification_time="Tue, 03 Mar 2009 10:59:04 GMT"/>
 		</widget>
 	      </child>
 	    </widget>

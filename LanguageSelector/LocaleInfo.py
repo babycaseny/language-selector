@@ -105,6 +105,13 @@ class LocaleInfo(object):
         #print locales
         return locales
 
+    def translate_language(self, lang):
+        "return translated language"
+        lang_name = gettext.dgettext('iso_639', self._lang[lang])
+        if lang_name == self._lang[lang]:
+            lang_name = gettext.dgettext('iso_639_3', self._lang[lang])
+        return lang_name
+
     def translate_locale(self, locale):
         """
         return translated language and country of the given
@@ -116,9 +123,7 @@ class LocaleInfo(object):
         if "LANGUAGE" in os.environ:
             current_language = os.environ["LANGUAGE"]
         os.environ["LANGUAGE"]=locale
-        lang_name = gettext.dgettext('iso_639', self._lang[lang])
-        if lang_name == self._lang[lang]:
-            lang_name = gettext.dgettext('iso_639_3', self._lang[lang])
+        lang_name = self.translate_language(lang)
         country_name = gettext.dgettext('iso_3166', self._country[country])
         if current_language:
             os.environ["LANGUAGE"] = current_language
@@ -140,7 +145,7 @@ class LocaleInfo(object):
                     return lang_name
             else:
                 return lang_name
-        return lang_name
+        return self.translate_language(locale)
 
     def makeEnvString(self, code):
         """ input is a language code, output a string that can be put in
