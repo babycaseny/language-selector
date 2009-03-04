@@ -1,3 +1,12 @@
+language-selector (0.4.2) jaunty; urgency=low
+
+  * UI change: 
+    - move the "Changes will take effect..." message down and rename
+      it to "All changes will take effect..."
+    - center the upper part of the main UI window
+
+ -- Arne Goetje <arne@ubuntu.com>  Wed, 04 Mar 2009 00:33:34 +0800
+
 language-selector (0.4.1) jaunty; urgency=low
 
   * debian/rules:
