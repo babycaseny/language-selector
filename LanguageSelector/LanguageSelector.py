@@ -56,6 +56,9 @@ class LanguageSelectorBase(object):
 
         # now check for a missing default language support
         default_lang = self.getSystemDefaultLanguage()
+        # if there is no default lang, return early
+        if default_lang is None:
+            return missing
         if "_" in default_lang:
             default_lang = default_lang.split("_")[0]
         trans_package = "language-pack-%s" % default_lang

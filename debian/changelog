@@ -1,3 +1,10 @@
+language-selector (0.4.2.1) jaunty; urgency=low
+
+  * LanguageSelector/LanguageSelector.py:
+    - do not crash if no default language can be read
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 23 Mar 2009 18:18:42 +0100
+
 language-selector (0.4.2) jaunty; urgency=low
 
   * UI change: 
