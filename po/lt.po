@@ -7,29 +7,69 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-18 10:04+0100\n"
-"PO-Revision-Date: 2006-08-06 14:00+0000\n"
+"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"PO-Revision-Date: 2008-10-29 05:37+0000\n"
 "Last-Translator: Linas Bukauskas <linas@sig.lt>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2008-10-18 01:21+0000\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2009-04-10 01:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:190
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+msgid "No language information available"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:191
+#: ../LanguageSelector/qt/QtLanguageSelector.py:87
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+msgid "_Update"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
+#: ../data/LanguageSelector.glade.h:21
 msgid "Language"
 msgstr "Kalba"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
-msgid "Support"
-msgstr "Palaikymas"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
+msgid "Installed"
+msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:420
+#. print "%d to install, %d to remove" % (countInstall, countRemove)
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
+#, python-format
+msgid "%d to install"
+msgid_plural "%d to install"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
+#, python-format
+msgid "%d to remove"
+msgid_plural "%d to remove"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:425
+#, python-format
+msgid "%s, %s"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:540
 msgid "Could not install the selected language support"
 msgstr "Nepavyko įdiegti pasirinktos kalbos palaikymo"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:421
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
@@ -39,54 +79,54 @@ msgstr ""
 "adresu https://launchpad.net/bugs/bugs/+package/ susijusę su 'language-"
 "selector' produktu."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:452
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid "Could not install the full language support"
 msgstr "Nepavyko įdiegti pilno kalbos palaikymo"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:495
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:584
-#: ../LanguageSelector/qt/QtLanguageSelector.py:144
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "Kalbos palaikymas nepilnai įdiegtas"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
-#: ../LanguageSelector/qt/QtLanguageSelector.py:145
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:588
-#: ../LanguageSelector/qt/QtLanguageSelector.py:140
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr ""
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:589
-#: ../LanguageSelector/qt/QtLanguageSelector.py:139
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "Į_diegti"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:592
-#: ../data/LanguageSelector.glade.h:13
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
 msgid "Details"
 msgstr "Smulkmenos"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:631
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:632
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -95,16 +135,6 @@ msgstr ""
 "Neįmanoma įdiegti ar pašalinti jokios programinės įrangos. Pirmiausia "
 "pasinaudokite „Synaptic“ arba terminale įvykdykite komandą „sudo apt-get "
 "install -f“, norėdami ištaisyti šią problemą."
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:686
-msgid "Reboot required"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
-msgid ""
-"To complete the changes a reboot is required so that the new functionality "
-"is activated."
-msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:47
 msgid "Uninstall"
@@ -125,116 +155,100 @@ msgid ""
 "this issue at first."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:87
+#: ../LanguageSelector/qt/QtLanguageSelector.py:107
 msgid "Default system language:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:88
+#: ../LanguageSelector/qt/QtLanguageSelector.py:108
 msgid "Set System Language"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:89
-#: ../data/LanguageSelector.glade.h:14
+#: ../LanguageSelector/qt/QtLanguageSelector.py:109
 msgid "Enable support to enter complex characters"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+#: ../LanguageSelector/qt/QtLanguageSelector.py:110
+#: ../LanguageSelector/qt/QtLanguageSelector.py:113
+#: ../data/LanguageSelector.glade.h:9
 msgid "Cancel"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:91
+#: ../LanguageSelector/qt/QtLanguageSelector.py:111
 msgid "Select language to install:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:92
+#: ../LanguageSelector/qt/QtLanguageSelector.py:112
 msgid "Install"
 msgstr ""
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:185
+#: ../LanguageSelector/qt/QtLanguageSelector.py:201
 msgid "Already installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:189
+#: ../LanguageSelector/qt/QtLanguageSelector.py:205
 msgid "Partially Installed"
 msgstr ""
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:193
+#: ../LanguageSelector/qt/QtLanguageSelector.py:209
 msgid "Not installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:240
+#: ../LanguageSelector/qt/QtLanguageSelector.py:261
 #, python-format
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:240
-#: ../LanguageSelector/qt/QtLanguageSelector.py:242
+#: ../LanguageSelector/qt/QtLanguageSelector.py:261
+#: ../LanguageSelector/qt/QtLanguageSelector.py:263
 msgid "Language Set"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:242
+#: ../LanguageSelector/qt/QtLanguageSelector.py:263
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:323
+#: ../LanguageSelector/qt/QtLanguageSelector.py:344
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:323
+#: ../LanguageSelector/qt/QtLanguageSelector.py:344
 msgid "Language Installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:325
+#: ../LanguageSelector/qt/QtLanguageSelector.py:346
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:325
+#: ../LanguageSelector/qt/QtLanguageSelector.py:346
 msgid "Language Uninstalled"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+#: ../LanguageSelector/qt/QtLanguageSelector.py:348
 msgid "Failed to set system language."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+#: ../LanguageSelector/qt/QtLanguageSelector.py:348
 msgid "Language Not Set"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+#: ../LanguageSelector/qt/QtLanguageSelector.py:396
 msgid "Please run this software with administrative rights."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:375
+#: ../LanguageSelector/qt/QtLanguageSelector.py:396
 msgid "Not Root User"
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:1
-msgid "    "
-msgstr "    "
-
-#: ../data/LanguageSelector.glade.h:2
-msgid "<b>Default Language</b>"
-msgstr "<b>Numatytoji kalba</b>"
-
-#: ../data/LanguageSelector.glade.h:3
-msgid "<b>Input method</b>"
-msgstr ""
-
-#: ../data/LanguageSelector.glade.h:4
-msgid "<b>Supported Languages</b>"
-msgstr "<b>Prižiūrimos kalbos</b>"
-
-#: ../data/LanguageSelector.glade.h:5
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -242,70 +256,103 @@ msgid ""
 "languages."
 msgstr ""
 
-#: ../data/LanguageSelector.glade.h:8
-msgid "Additional Fonts"
+#: ../data/LanguageSelector.glade.h:4
+msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
 
-#: ../data/LanguageSelector.glade.h:9
+#: ../data/LanguageSelector.glade.h:5
 msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
 
-#: ../data/LanguageSelector.glade.h:10
+#: ../data/LanguageSelector.glade.h:6
 msgid ""
 "Additional software which might be of general interest for users using this "
 "language."
 msgstr ""
 
+#: ../data/LanguageSelector.glade.h:7
+msgid "Apply Changes"
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:8
+msgid "Basic translations"
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:10
+msgid "Components:"
+msgstr ""
+
 #: ../data/LanguageSelector.glade.h:11
-msgid "Basic Translations"
+msgid "Extra fonts"
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:12
-msgid "Default language for new user accounts and the login screen:"
-msgstr "Numatytoji kalba, naujiems vartotojams ir jungimosi langams:"
-
-#: ../data/LanguageSelector.glade.h:15
-msgid "Extra Translations"
-msgstr ""
-
-#: ../data/LanguageSelector.glade.h:16
 msgid "Extra software"
 msgstr ""
 
-#: ../data/LanguageSelector.glade.h:17
+#: ../data/LanguageSelector.glade.h:13
+msgid "Extra translations"
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:14
+msgid "For everyone at startup and login, use:"
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:15
+msgid "For my menus and windows, use:"
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:16
 msgid ""
 "Input Methods for languages with complex scripts. Scim modules or other "
 "relevant software which helps with typing complex characters."
 msgstr ""
 
-#: ../data/LanguageSelector.glade.h:18
+#: ../data/LanguageSelector.glade.h:17
 msgid "Input methods"
 msgstr ""
 
-#: ../data/LanguageSelector.glade.h:19
-#: ../data/language-selector.desktop.in.h:2
-#: ../data/qt-language-selector.desktop.in.h:2
-msgid "Language Support"
-msgstr "Kalbos priežiūra"
-
-#: ../data/LanguageSelector.glade.h:20
-msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+#: ../data/LanguageSelector.glade.h:18
+msgid "Install / Remove Languages..."
 msgstr ""
 
-#: ../data/LanguageSelector.glade.h:21
-msgid "Translations for your desktop. Also known as language-pack."
+#: ../data/LanguageSelector.glade.h:19
+msgid "Installed Languages"
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:20
+msgid "Keep the same"
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:22
 msgid ""
-"Word lists, dictionaries, thesauruses, etc. which can help typing by "
-"highlighting, correcting or suggesting words."
+"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:23
-msgid "Writing aids"
+msgid "Spellchecking and writing aids"
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:24
+msgid "Translations for your desktop. Also known as language-pack."
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:25
+msgid "Use input method engines (IME) to enter complex characters"
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:26
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr ""
+
+#: ../data/LanguageSelector.glade.h:27
+msgid ""
+"Word lists, dictionaries, thesauruses, etc. which can help typing by "
+"highlighting, correcting or suggesting words."
 msgstr ""
 
 #: ../data/language-selector.desktop.in.h:1
@@ -313,9 +360,14 @@ msgstr ""
 msgid "Configure multiple and native language support on your system"
 msgstr ""
 
+#: ../data/language-selector.desktop.in.h:2
+#: ../data/qt-language-selector.desktop.in.h:2
+msgid "Language Support"
+msgstr "Kalbos priežiūra"
+
 #. Name
-#: ../data/incomplete-language-support-gnome.note.in:1
-#: ../data/incomplete-language-support-qt.note.in:1
+#: ../data/incomplete-language-support-gnome.note.in:5
+#: ../data/incomplete-language-support-qt.note.in:5
 msgid "Incomplete Language Support"
 msgstr ""
 
@@ -323,30 +375,38 @@ msgstr ""
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 
 #. Name
-#: ../data/restart_session_required.note.in:1
+#: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
 msgstr ""
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
+msgstr ""
+
+#: ../gnome-language-selector:27
+msgid "don't verify installed language support"
+msgstr ""
+
+#: ../gnome-language-selector:30
+msgid "alternative datadir"
 msgstr ""
 
 #: ../fontconfig-voodoo:18
@@ -390,3 +450,18 @@ msgstr ""
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "<b>Default Language</b>"
+#~ msgstr "<b>Numatytoji kalba</b>"
+
+#~ msgid "<b>Supported Languages</b>"
+#~ msgstr "<b>Prižiūrimos kalbos</b>"
+
+#~ msgid "Default language for new user accounts and the login screen:"
+#~ msgstr "Numatytoji kalba, naujiems vartotojams ir jungimosi langams:"
+
+#~ msgid "Support"
+#~ msgstr "Palaikymas"
