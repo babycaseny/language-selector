@@ -1,3 +1,11 @@
+language-selector (0.4.2.3) jaunty-proposed; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - escape "'" to workaround problem with gksu and its 
+      parameter parsing (LP: #241904)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 28 Apr 2009 18:50:12 +0200
+
 language-selector (0.4.2.2) jaunty; urgency=low
 
   * Final import of translations from Rosetta for NonLangPackFreeze
