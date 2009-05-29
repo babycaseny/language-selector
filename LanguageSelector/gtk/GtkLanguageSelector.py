@@ -609,14 +609,16 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
 
     def _run_synaptic(self, lock, inst, rm, id):
         # FIXME: use self.runAsRoot() here
+        msg = _("The list of available languages on the "
+                "system has been updated.")
+        msg = msg.replace("'","\\'")
         cmd = ["gksu", 
                "--desktop", "/usr/share/applications/language-selector.desktop", 
                "--",
                "/usr/sbin/synaptic", "--hide-main-window",
                "--non-interactive", 
                "--parent-window-id", "%s" % (id),
-               "--finish-str", _("The list of available languages on the "
-                                 "system has been updated.")
+               "--finish-str", msg
                ]
         f = tempfile.NamedTemporaryFile()        
         cmd.append("--set-selections-file")
