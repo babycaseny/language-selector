@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-04-07 17:56+0000\n"
 "Last-Translator: Vilson Gjeci <Unknown>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -71,38 +71,40 @@ msgid "Could not install the selected language support"
 msgstr "Nuk mund të instalojmë mbështetjen për gjuhën e përzgjedhur"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Ndoshta ky është një gabim i këtij programi. Ju lutemi kryeni një raportim "
 "të gabimeve tek https://launchpad.net/bugs/bugs/+package/ për produktin "
 "'përzgjedhësi i gjuhës'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "Nuk mund të instalojmë mbështetje të plotë për gjuhën"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 "Zakonisht kjo lidhet me një gabim në arkivin tuaj të programeve ose në "
 "menaxhuesin e programeve. Kontrolloni preferencat e programeve tuaja në "
 "menunë \"Administrimi\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "Lista e gjuhëve të disponueshme në sistem u përditësua."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "Mbështetja për gjuhët nuk është instaluar plotësisht"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -111,28 +113,28 @@ msgstr ""
 "Disa nga përkthimet apo ndihma me shkrim për gjuhën që keni përzgjedhur nuk "
 "janë instaluar akoma. Dëshironi t'i instaloni tani?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "_Kujtomë Më Vonë"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Instalo"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "Detajet"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "Baza e të dhënave për programet është dëmtuar"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -276,8 +278,8 @@ msgstr ""
 #: ../data/LanguageSelector.glade.h:4
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Të gjitha ndryshimet do të bëhen efektive herën tjetër që ju "
-"hyni.</small>"
+"<small>Të gjitha ndryshimet do të bëhen efektive herën tjetër që ju hyni.</"
+"small>"
 
 #: ../data/LanguageSelector.glade.h:5
 msgid ""
@@ -352,8 +354,7 @@ msgid "Keep the same"
 msgstr "Mba të njëjtat"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 "OpenOffice.org, Firefox, Thunderbird, Gaim Përkthimet dhe skedarët e ndihmës."
 
@@ -367,8 +368,7 @@ msgstr "Përkthime për dektopin tuaj. Të njohura edhe si paketa-gjuhësh."
 
 #: ../data/LanguageSelector.glade.h:25
 msgid "Use input method engines (IME) to enter complex characters"
-msgstr ""
-"Përdor motorët e metodës hyrëse (IME) për të vendosur gërma komplekse"
+msgstr "Përdor motorët e metodës hyrëse (IME) për të vendosur gërma komplekse"
 
 #: ../data/LanguageSelector.glade.h:26
 msgid ""
@@ -408,10 +408,10 @@ msgstr "Mbështetje Jo e Plotë Për Gjuhën"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Skedarët mbështetës për gjuhën e përzgjedhur prej jush duket se nuk janë të "
 "plotë. Ju mund të instaloni përbërësit që mungojnë duke klikuar \"Nise këtë "
@@ -423,10 +423,10 @@ msgstr ""
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Skedarët mbështetës për gjuhën e përzgjedhur prej jush duket se nuk janë të "
 "plotë. Ju mund të instaloni përbërësit që mungojnë duke klikuar \"Nise këtë "

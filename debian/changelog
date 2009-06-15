@@ -1,3 +1,22 @@
+language-selector (0.4.4) karmic; urgency=low
+
+  * Fix icon for Gtk+ version; the .glade file would use the icon property
+    instead of icon_name and was still referring to the old
+    language-selector.png icon instead of the current config-language icon
+    (for the Gtk+ version; the Qt version still uses language-selector.png).
+    Also add an icon_name property to the Installed Languages window.
+    LP: #164316.
+  * Use a direct URL to the ubg page of language-selector in Ubuntu when
+    suggesting users to file a bug; point at the System > Administration menu
+    when suggesting to fix software sources instead of "Adminstration"; thanks
+    Данило Шеган; LP: #307474; update po/*.po files.
+  * Bind the delete_event signal of the Installed Languages window to the
+    hide_on_delete callback and call gtk.Widget.hide_on_delete from our
+    wrapper; fixes empty Installed Languages window after closing it with the
+    window manager.
+
+ -- Loic Minier <lool@dooz.org>  Mon, 15 Jun 2009 14:49:10 +0200
+
 language-selector (0.4.3) karmic; urgency=low
 
   * LanguageSelector/LanguageSelector.py:

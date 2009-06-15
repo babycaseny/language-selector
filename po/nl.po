@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-03-01 16:28+0000\n"
 "Last-Translator: cumulus007 <cumulus0007@gmail.com>\n"
 "Language-Team: Dutch <nl@li.org>\n"
@@ -71,38 +71,40 @@ msgid "Could not install the selected language support"
 msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Dit is misschien een fout van dit programma. U kunt een foutenrapport "
 "indienen op https://launchpad.net/bugs/bugs/+package/ voor het product "
 "‘language-selector’."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "De taalondersteuning kon niet volledig geïnstalleerd worden"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 "De oorzaak hiervan ligt meestal aan een beschadigd software-archief of een "
 "fout in het softwarebeheer. Controleer uw instellingen voor software-"
 "eigenschappen in het menu ‘Systeembeheer’."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "De lijst met beschikbare talen op het systeem is bijgewerkt."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "De taalondersteuning is niet volledig geïnstalleerd"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -111,28 +113,28 @@ msgstr ""
 "In de talen van uw keuze zijn enkele vertalingen of schrijfhulpmiddelen "
 "beschikbaar die nog niet niet geïnstalleerd zijn. Wilt u deze nu installeren?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "He_rinner me later"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Installeren"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "Details"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "De software-database is beschadigd"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -174,8 +176,7 @@ msgstr "Systeemtaal instellen"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:109
 msgid "Enable support to enter complex characters"
-msgstr ""
-"Ondersteuning voor het invoeren van complexe lettertekens inschakelen"
+msgstr "Ondersteuning voor het invoeren van complexe lettertekens inschakelen"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:110
 #: ../LanguageSelector/qt/QtLanguageSelector.py:113
@@ -351,8 +352,7 @@ msgid "Keep the same"
 msgstr "Hetzelfde behouden"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 "Vertalingen van OpenOffice.org, Firefox, Thunderbird en Pidgin, en "
 "hulpbestanden."
@@ -406,10 +406,10 @@ msgstr "Onvolledige taalondersteuning"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "De bij uw taal behorende taalondersteuningsbestanden lijken onvolledig te "
 "zijn. U kunt de ontbrekende onderdelen installeren door op \"Deze actie nu "
@@ -421,10 +421,10 @@ msgstr ""
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "De bij uw taal behorende taalondersteuningsbestanden lijken onvolledig te "
 "zijn. U kunt de ontbrekende onderdelen installeren door op \"Deze actie nu "
@@ -519,8 +519,8 @@ msgstr ""
 #~ msgstr "Herstart vereist"
 
 #~ msgid ""
-#~ "To complete the changes a reboot is required so that the new functionality "
-#~ "is activated."
+#~ "To complete the changes a reboot is required so that the new "
+#~ "functionality is activated."
 #~ msgstr ""
 #~ "Om de wijzigingen te voltooien, is het nodig om de computer te herstarten "
 #~ "zodat de nieuwe functionaliteit wordt geactiveerd."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-03-12 21:18+0000\n"
 "Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -71,38 +71,40 @@ msgid "Could not install the selected language support"
 msgstr "Не може да инсталира избраната езикова поддръжка"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Това по всяка вероятност е грешка в програмата. Моля попълнете рапорт за "
 "грешка на https://launchpad.net/bugs/bugs/+package/ относно продукта "
 "'language-selector'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "Не може да инсталира пълната езикова поддръжка"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 "Обикновенно това е свързано с грешка във вашия софтуерен архив или софтуерен "
 "мениджър. Проверете вашите софтуерни предпочитания в меню \"Администрация на "
 "системата\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "Списъкът с наличните езици на системата беше обновен."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "Езиковата поддръжка не е инсталирана напълно"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -111,28 +113,28 @@ msgstr ""
 "Някои от преводите или помощите при писане, достъпни за избраните езици все "
 "още не са инсталирани. Искате ли да ги инсталирате сега?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "_Напомняне по-късно"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Инсталиране"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "Детайли"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "Софтуерната база данни е счупена"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -352,8 +354,7 @@ msgid "Keep the same"
 msgstr "Запази същия"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 "OpenOffice.org, Firefox, Thunderbird, Gaim Translations и помощни файлове."
 
@@ -406,14 +407,14 @@ msgstr "Непълна езикова поддръжка"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Файловете за поддръжка на език за вашия избран език изглеждат недовършени. "
-"Можете да инсталирате липсващите компоненти като натиснете \"Изпълняване "
-"сега\" и следвате инструкциите. Необходима е интернет връзка. Ако искате да "
+"Можете да инсталирате липсващите компоненти като натиснете \"Изпълняване сега"
+"\" и следвате инструкциите. Необходима е интернет връзка. Ако искате да "
 "направите това по-късно, моля използвайте \"Система -> Администриране -> "
 "Езикова поддръжка\""
 
@@ -421,14 +422,14 @@ msgstr ""
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Файловете за поддръжка на език за вашия избран език изглеждат недовършени. "
-"Можете да инсталирате липсващите компоненти като натиснете \"Изпълняване "
-"сега\" и следвате инструкциите. Необходима е интернет връзка. Ако искате да "
+"Можете да инсталирате липсващите компоненти като натиснете \"Изпълняване сега"
+"\" и следвате инструкциите. Необходима е интернет връзка. Ако искате да "
 "направите това по-късно, моля използвайте \"Системни настройки -> Регион и "
 "Език\" instead."
 

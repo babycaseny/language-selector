@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-04-02 07:24+0000\n"
 "Last-Translator: Elmaz Yu <Unknown>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
@@ -67,68 +67,73 @@ msgid "Could not install the selected language support"
 msgstr "無法安裝選定的語言支援"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"這可能是此應用程式的問題。請於 https://launchpad.net/bugs/bugs/+package/ 報告此『language-"
-"selector』的錯誤。"
+"這可能是此應用程式的問題。請於 https://launchpad.net/bugs/bugs/+package/ 報告"
+"此『language-selector』的錯誤。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "無法安裝完整語言支援"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
-msgstr "通常這和您軟體封存或軟體管理員的錯誤有關。請檢查「管理」選單中的軟體偏好設定。"
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+"通常這和您軟體封存或軟體管理員的錯誤有關。請檢查「管理」選單中的軟體偏好設"
+"定。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "已更新系統的可用語言清單。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "語言支援尚未完全安裝"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr "有一些您所選擇語言的翻譯或語言規則未被安裝。您現在想安裝它們嗎？"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "稍後提醒我(_R)"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "安裝(_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "詳細資料"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "軟體資料庫已損壞"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"無法安裝或移除任何軟體。請首先使用套件管理員 “Synaptic” 或在終端機中執行「sudo apt-get install -f」修正此問題。"
+"無法安裝或移除任何軟體。請首先使用套件管理員 “Synaptic” 或在終端機中執行"
+"「sudo apt-get install -f」修正此問題。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:47
 msgid "Uninstall"
@@ -148,7 +153,8 @@ msgid ""
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"無法安裝或移除任何軟體。請首先使用套件管理員 “Adept” 或在終端機執行「sudo apt-get install -f」修正此問題。"
+"無法安裝或移除任何軟體。請首先使用套件管理員 “Adept” 或在終端機執行「sudo "
+"apt-get install -f」修正此問題。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:107
 msgid "Default system language:"
@@ -325,8 +331,7 @@ msgid "Keep the same"
 msgstr "保持相同"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr "OpenOffice.org、Firefox、Thunderbird、Gaim 翻譯和幫助檔案。"
 
 #: ../data/LanguageSelector.glade.h:23
@@ -351,7 +356,8 @@ msgstr "當一種語言被安裝後，每個使用者可以在他們的語言設
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
-msgstr "字表、字典、同義詞典等。可以透過突出文字、改正或提議正字來協助鍵入文字。"
+msgstr ""
+"字表、字典、同義詞典等。可以透過突出文字、改正或提議正字來協助鍵入文字。"
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
@@ -373,24 +379,26 @@ msgstr "不完整的語言支援"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
-"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來安裝欠缺的元件。這需要有效的網際網路連線。如果您想稍後才執行，請使用「系統 -"
+"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來"
+"安裝欠缺的元件。這需要有效的網際網路連線。如果您想稍後才執行，請使用「系統 -"
 "> 管理 -> 語言支援」。"
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
-"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來安裝欠缺的元件。這需要有效的網際網路連線。如果您想稍後才執行，請使用「系統 -"
+"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來"
+"安裝欠缺的元件。這需要有效的網際網路連線。如果您想稍後才執行，請使用「系統 -"
 "> 設定 -> 區域與語言」。"
 
 #. Name
@@ -472,6 +480,6 @@ msgstr "找不到選取地域 (locale) 的 fontconfig-voodoo 配置"
 #~ msgstr "支援"
 
 #~ msgid ""
-#~ "To complete the changes a reboot is required so that the new functionality "
-#~ "is activated."
+#~ "To complete the changes a reboot is required so that the new "
+#~ "functionality is activated."
 #~ msgstr "要套用變更及啟動新功能，必須重新啟動電腦。"

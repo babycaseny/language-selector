@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-03-05 13:53+0000\n"
 "Last-Translator: Kainourgiakis Giorgos <kaingeo@yahoo.gr>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
@@ -72,37 +72,39 @@ msgid "Could not install the selected language support"
 msgstr "Αδυναμία εγκατάστασης της επιλεγμένης γλωσσικής υποστήριξης"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Αυτό μάλλον οφείλεται σε σφάλμα της εφαρμογής. Παρακαλώ αναφέρετε το σφάλμα "
 "στο https://launchpad.net/bugs/bugs/+package/ για το προϊόν 'language-"
 "selector'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "Αδυναμία εγκατάστασης πλήρους γλωσσικής υποστήριξης."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 "Συνήθως αυτό οφείλεται σε σφάλμα στην αρχειοθήκη λογισμικού ή στη διαχείριση "
 "λογισμικού. Ελέγξτε τις προτιμήσεις λογισμικού σας στο μενού \"Διαχείριση\""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "Ενημερώθηκε η λίστα των διαθέσιμων γλωσσών στο σύστημα σας."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "Η γλωσσική υποστήριξη δεν έχει εγκατασταθεί πλήρως"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -112,28 +114,28 @@ msgstr ""
 "που είναι διαθέσιμα για τις επιλεγμένες γλώσσες στο σύστημα σας. Θέλετε να "
 "τις εγκαταστήσετε τώρα;"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "Υπεν_θύμισε μου αργότερα"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Εγκατάσταση"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "Λεπτομέρειες"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "Η βάση δεδομένων λογισμικού είναι κατεστραμμένη."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -278,8 +280,8 @@ msgstr ""
 #: ../data/LanguageSelector.glade.h:4
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Όλες οι αλλαγές θα ισχύσουν από την επόμενη φορά που θα "
-"συνδεθείτε.</small>"
+"<small>Όλες οι αλλαγές θα ισχύσουν από την επόμενη φορά που θα συνδεθείτε.</"
+"small>"
 
 #: ../data/LanguageSelector.glade.h:5
 msgid ""
@@ -354,8 +356,7 @@ msgid "Keep the same"
 msgstr "Διατήρηση των ίδιων"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 "OpenOffice.org, Firefox, Thunderbird, Gaim Μεταφράσεις και αρχεία βοήθειας."
 
@@ -365,8 +366,7 @@ msgstr "Ορθογραφικός έλεγχος και βοηθήματα γρα
 
 #: ../data/LanguageSelector.glade.h:24
 msgid "Translations for your desktop. Also known as language-pack."
-msgstr ""
-"Μεταφράσεις για την επιφάνεια εργασίας. Γνωστό και ως γλωσσικό πακέτο."
+msgstr "Μεταφράσεις για την επιφάνεια εργασίας. Γνωστό και ως γλωσσικό πακέτο."
 
 #: ../data/LanguageSelector.glade.h:25
 msgid "Use input method engines (IME) to enter complex characters"
@@ -408,10 +408,10 @@ msgstr "Ημιτελής γλωσσική υποστήριξη"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Τα αρχεία υποστήριξης για την επιλεγμένη γλώσσα είναι ημιτελή. Μπορείτε να "
 "εγκαταστήσετε τα στοιχεία που δεν υπάρχουν, κάνοντας κλικ στο \"Εκτέλεση\" "
@@ -423,10 +423,10 @@ msgstr ""
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Τα αρχεία υποστήριξης για την επιλεγμένη γλώσσα είναι ημιτελή. Μπορείτε να "
 "εγκαταστήσετε τα στοιχεία που δεν υπάρχουν, κάνοντας κλικ στο \"Εκτέλεση\" "
@@ -522,6 +522,6 @@ msgstr "Δεν βρέθηκε ρύθμιση  fontconfig-voodoo για το επ
 #~ msgstr "Απαιτείται επανεκκίνηση"
 
 #~ msgid ""
-#~ "To complete the changes a reboot is required so that the new functionality "
-#~ "is activated."
+#~ "To complete the changes a reboot is required so that the new "
+#~ "functionality is activated."
 #~ msgstr "Για να ολοκληρώσετε τις αλλαγές, επανεκκινήστε τον υπολογιστή σας."

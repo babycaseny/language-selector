@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-04-10 01:32+0000\n"
 "Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
 "Language-Team: Finnish <ubuntu-fi@lists.ubuntu.com>\n"
@@ -72,36 +72,38 @@ msgid "Could not install the selected language support"
 msgstr "Ei voitu asentaa valittua kielitukea"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Tämä voi johtua ohjelmavirheestä. Tee asiasta virheraportti osoitteessa "
 "https://launchpad.net/bugs/bugs/+package/ 'language-selector'-tuotteelle."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "Täyttä kielitukea ei voitu asentaa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 "Yleensä tämä liittyy virheeseen ohjelmavarastossa tai pakettienhallinnassa. "
 "Tarkista ohjelma-asetukset valikossa \"Hallinta\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "Luettelo järjestelmän käytettävissä olevista kielistä on päivitetty."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "Kielitukea ei ole asennettu kokonaan"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -110,28 +112,28 @@ msgstr ""
 "Joitain valitsemiesi kielten käännöksiä tai kirjoitusaputyökaluja ei ole "
 "asennettu. Haluatko asentaa ne nyt?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "_Muistuta minua myöhemmin"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Asenna"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "Yksityiskohdat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "Ohjelmatietokanta on rikki"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -274,8 +276,8 @@ msgstr ""
 #: ../data/LanguageSelector.glade.h:4
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Kaikki muutokset tulevat voimaan seuraavalla "
-"kirjautumiskerralla.</small>"
+"<small>Kaikki muutokset tulevat voimaan seuraavalla kirjautumiskerralla.</"
+"small>"
 
 #: ../data/LanguageSelector.glade.h:5
 msgid ""
@@ -352,8 +354,7 @@ msgid "Keep the same"
 msgstr "Pidä samoina"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 "Käännökset ja ohjeet ohjelmille OpenOffice.org, Firefox, Thunderbird ja "
 "Pidgin."
@@ -409,14 +410,14 @@ msgstr "Kielituki vaillinainen"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Kaikkia kielituen vaatimia tiedostoja ei ole asennettu valitulle kielelle. "
-"Voit asentaa puuttuvat osat tuesta napsauttamalla \"Run this action now\" "
-"(\"Suorita tämä toiminto nyt\") ja seuraamalla ohjeita. Toiminnassa oleva "
+"Voit asentaa puuttuvat osat tuesta napsauttamalla \"Run this action now"
+"\" (\"Suorita tämä toiminto nyt\") ja seuraamalla ohjeita. Toiminnassa oleva "
 "Internet-yhteys vaaditaan. Jos haluat asentaa täyden kielituen myöhemmin, "
 "avaa \"System -> Administration -> Language Support\" (\"Järjestelmä -> "
 "Ylläpito -> Kieliasetukset\")."
@@ -425,10 +426,10 @@ msgstr ""
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Valitun kielen kielitukitiedostot vaikuttavat olevan puutteelliset. Voit "
 "asentaa puuttuvat osat napsauttamalla \"Suorita tämä toiminto nyt\" ja "
@@ -524,8 +525,8 @@ msgstr "Fontconfig-voodoo-asetuksia ei löydetty valitulle maa-asetustolle"
 #~ msgstr "Uudelleenkäynnistys vaaditaan"
 
 #~ msgid ""
-#~ "To complete the changes a reboot is required so that the new functionality "
-#~ "is activated."
+#~ "To complete the changes a reboot is required so that the new "
+#~ "functionality is activated."
 #~ msgstr ""
 #~ "Uudelleenkäynnistys vaaditaan, jotta muutokset ja uudet toiminnallisuudet "
 #~ "tulisivat voimaan."

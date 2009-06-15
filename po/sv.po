@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-03-05 19:42+0000\n"
 "Last-Translator: Daniel Nylander <yeager@ubuntu.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -71,38 +71,39 @@ msgid "Could not install the selected language support"
 msgstr "Kunde inte installera stöd för det valda språket"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"Det här är kanske ett fel i programmet. Skicka in en felrapport på "
-"https://launchpad.net/bugs/bugs/+package/ mot produkten \"language-"
-"selector\"."
+"Det här är kanske ett fel i programmet. Skicka in en felrapport på https://"
+"launchpad.net/bugs/bugs/+package/ mot produkten \"language-selector\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "Kunde inte installera fullständigt språkstöd"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 "Vanligtvis är detta relaterat till ett fel i dina programarkiv eller "
 "pakethanterare. Kontrollera dina programinställningar under menyn "
 "\"Administration\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "Listan över tillgängliga språk på systemet har uppdaterats."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "Språkstödet är inte fullständigt installerat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -111,28 +112,28 @@ msgstr ""
 "Vissa översättningar eller skrivhjälp finns tillgängliga för dina valda "
 "språk och är ännu inte installerade. Vill du installera dem nu?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "_Påminn mig senare"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Installera"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "Detaljer"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "Programdatabasen är trasig"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -275,8 +276,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<small>All changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Alla ändringar blir aktiverade nästa gång du loggar in.</small>"
+msgstr "<small>Alla ändringar blir aktiverade nästa gång du loggar in.</small>"
 
 #: ../data/LanguageSelector.glade.h:5
 msgid ""
@@ -351,8 +351,7 @@ msgid "Keep the same"
 msgstr "Behåll samma"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 "Översättningar för OpenOffice.org, Firefox, Thunderbird, Gaim och hjälpfiler."
 
@@ -405,10 +404,10 @@ msgstr "Språkstödet är inte komplett"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Filerna för språkstödet för ditt valda språk verkar inte vara kompletta. Du "
 "kan installera de saknade komponenterna genom att klicka på \"Kör denna "
@@ -420,15 +419,15 @@ msgstr ""
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Språkstödsfilerna för ditt valda språk verkar inte vara kompletta. Du kan "
-"installera de saknade komponenterna genom att klicka på \"Kör denna åtgärd "
-"nu\" och följa instruktionerna. En aktiv internetanslutning krävs. Om du "
-"vill göra det här vid ett senare tillfälle kan du istället använda "
+"installera de saknade komponenterna genom att klicka på \"Kör denna åtgärd nu"
+"\" och följa instruktionerna. En aktiv internetanslutning krävs. Om du vill "
+"göra det här vid ett senare tillfälle kan du istället använda "
 "\"Systeminställningar -> Regionalt och språk\"."
 
 #. Name
@@ -521,8 +520,8 @@ msgstr ""
 #~ msgstr "Omstart krävs"
 
 #~ msgid ""
-#~ "To complete the changes a reboot is required so that the new functionality "
-#~ "is activated."
+#~ "To complete the changes a reboot is required so that the new "
+#~ "functionality is activated."
 #~ msgstr ""
 #~ "En omstart krävs för att slutföra ändringarna så att den nya "
 #~ "funktionaliteten blir aktiverad."

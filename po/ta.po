@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta(langsel)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2008-10-29 05:41+0000\n"
-"Last-Translator: Launchpad Translations Administrators "
-"<rosetta@launchpad.net>\n"
+"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
+"net>\n"
 "Language-Team: tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -72,73 +72,74 @@ msgid "Could not install the selected language support"
 msgstr "தேர்ந்தெடுத்த மொழி ஆதரவை நிறுவ இயலவில்லை."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"இது அனேகமாக பயன்பாட்டில் உள்ள வழு. 'language-selector' பொருளுக்கு எதிராக "
-"https://launchpad.net/bugs/bugs/+package/ இல் ஒரு வழு அறிக்கையை தாக்கல் "
-"செய்யவும்."
+"இது அனேகமாக பயன்பாட்டில் உள்ள வழு. 'language-selector' பொருளுக்கு எதிராக https://"
+"launchpad.net/bugs/bugs/+package/ இல் ஒரு வழு அறிக்கையை தாக்கல் செய்யவும்."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "முழு மொழி ஆதரவை நிறுவ இயலவில்லை."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
-"வழக்கமாக இது மென்பொருள் காப்பகம் அல்லது மென்பொருள் மேலாளர் சம்பந்தப்பட்ட "
-"பிரச்சினை. \"Adminstration\" பட்டியில் விருப்பங்களை பார்க்கவும்."
+"வழக்கமாக இது மென்பொருள் காப்பகம் அல்லது மென்பொருள் மேலாளர் சம்பந்தப்பட்ட பிரச்சினை. "
+"\"Adminstration\" பட்டியில் விருப்பங்களை பார்க்கவும்."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "உங்கள் கணினியில் கிடைக்கும் மொழிகளின் பட்டியல் புதுப்பிக்கப் பட்டது."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "மொழி ஆதரவு முழுமையாக நிறுவப் படவில்லை."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr ""
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "நி_றுவல்"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "விவரங்கள்"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "மென்பொருள் தரவுத் தொட்டி உடைந்துவிட்டது"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"எந்த மென் பொருளையும் நிறுவுவதோ நீக்குவதோ இயலாது. இந்த பிரச்சினையை சரி செய்ய "
-"தயை செய்து சைனாப்டிக் (\"Synaptic\" ) உபயோகிக்கவும் அல்லது முனையத்தில் "
-"\"sudo apt-get install -f\" ஐ இயக்கவும்."
+"எந்த மென் பொருளையும் நிறுவுவதோ நீக்குவதோ இயலாது. இந்த பிரச்சினையை சரி செய்ய தயை "
+"செய்து சைனாப்டிக் (\"Synaptic\" ) உபயோகிக்கவும் அல்லது முனையத்தில் \"sudo apt-get "
+"install -f\" ஐ இயக்கவும்."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:47
 msgid "Uninstall"
@@ -331,8 +332,7 @@ msgid "Keep the same"
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 
 #: ../data/LanguageSelector.glade.h:23
@@ -379,20 +379,20 @@ msgstr ""
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 
 #. Name
@@ -430,8 +430,8 @@ msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
-"மொழி சூழ் நிலையை ஒட்டி ஒரு மொழியை ஊகம் செய்க. ஏதும் இல்லையெனில் ('none') "
-"'ஏதும் இல்லை' என அமைக்கும்."
+"மொழி சூழ் நிலையை ஒட்டி ஒரு மொழியை ஊகம் செய்க. ஏதும் இல்லையெனில் ('none') 'ஏதும் "
+"இல்லை' என அமைக்கும்."
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"

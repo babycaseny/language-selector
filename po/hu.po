@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lang-hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-03-07 02:43+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: <hu@li.org>\n"
@@ -73,37 +73,39 @@ msgid "Could not install the selected language support"
 msgstr "A kiválasztott nyelvi támogatás telepítése nem lehetséges"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Ez valószínűleg egy hiba ebben az alkalmazásban. Kérjük jelentse a hibát a "
 "https://launchpad.net/bugs/bugs/+package/ címen a \"language-selector\" "
 "csomaghoz."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "Nem lehet telepíteni a teljes nyelvi támogatást"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 "Ez általában a szoftverarchívum a vagy a szoftverkezelő hibájával "
 "kapcsolatos. Ellenőrizze szoftverbeállításait az \"Adminisztráció\" menüben."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "Az elérhető nyelvek listája frissült a rendszeren."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "A nyelvi támogatás nincs teljesen telepítve"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -112,28 +114,28 @@ msgstr ""
 "A kiválasztott nyelvekhez elérhető egyes fordítások vagy írási segédletek "
 "még nincsenek telepítve. Kívánja ezeket most telepíteni?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "_Emlékeztessen később"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Telepítés"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "Részletek"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "A szoftveradatbázis sérült"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -351,8 +353,7 @@ msgid "Keep the same"
 msgstr "Használja ugyanazt"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr "OpenOffice.org, Firefox, Thunderbird, Gaim fordítások és súgófájlok."
 
 #: ../data/LanguageSelector.glade.h:23
@@ -404,10 +405,10 @@ msgstr "Hiányos nyelvi támogatás"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Úgy tűnik, hogy az Ön által kiválasztott nyelvhez nincs teljes nyelvi "
 "támogatást biztosító fájl. A hiányzó elemeket a „Futtatás most” gombra "
@@ -420,10 +421,10 @@ msgstr ""
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Úgy tűnik, hogy az Ön által kiválasztott nyelvhez nincs teljes nyelvi "
 "támogatást biztosító fájl. A hiányzó elemeket a „Futtatás most” gombra "
@@ -514,7 +515,8 @@ msgstr ""
 
 #~ msgid "Default language for new user accounts and the login screen:"
 #~ msgstr ""
-#~ "Alapértelmezett nyelv az új felhasználók és a bejelentkező képernyő számára:"
+#~ "Alapértelmezett nyelv az új felhasználók és a bejelentkező képernyő "
+#~ "számára:"
 
 #~ msgid "Support"
 #~ msgstr "Támogatás"
@@ -523,8 +525,8 @@ msgstr ""
 #~ msgstr "Újraindítás szükséges"
 
 #~ msgid ""
-#~ "To complete the changes a reboot is required so that the new functionality "
-#~ "is activated."
+#~ "To complete the changes a reboot is required so that the new "
+#~ "functionality is activated."
 #~ msgstr ""
 #~ "A módosítások befejezéséhez és az új funkciók aktiválásához a számítógép "
 #~ "újraindítása szükséges."

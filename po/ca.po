@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-04-04 13:35+0000\n"
 "Last-Translator: David Planella <Unknown>\n"
 "Language-Team: Catalan <Ubuntu-l10n-ca@lists.ubuntu.com>\n"
@@ -69,37 +69,39 @@ msgid "Could not install the selected language support"
 msgstr "No s'ha pogut instal·lar el suport d'idioma seleccionat"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Això és possiblement un error de l'aplicació. Si us plau informeu de l'error "
 "a https://launchpad.net/bugs/bugs/+package/ al producte 'language-selector'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "No s'ha pogut instal·lar el suport d'idioma complet"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 "Normalment això està relacionat amb un error en el vostre fitxer o en el "
 "gestor de programari. Comproveu les preferències del vostre programari al "
 "menú \"Administració\"."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "S'ha actualitzat la llista d'idiomes disponibles al sistema."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "El suport d'idioma no està instal·lat completament"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -108,28 +110,28 @@ msgstr ""
 "Encara no s'han instal·lat algunes traduccions o ajudes d'escriptura "
 "disponibles pel vostre idioma.Voleu fer-ho ara?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "_Recorda-m'ho després"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Instal·la"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "Detalls"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "La base de dades de programari està trencada"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -349,8 +351,7 @@ msgid "Keep the same"
 msgstr "Utilitza el mateix"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 "Traduccions i fitxers d'ajuda de l'OpenOffice.org, el Firefox, el "
 "Thunderbird, i el Pidgin."
@@ -408,26 +409,26 @@ msgstr "Suport d'idioma incomplet"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Sembla ser que els fitxers de suport d'idioma per a la vostra llengua són "
 "incomplets. Podeu instal·lar els components que manquen si feu clic a "
 "«Executa ara aquesta acció» i seguiu les instruccions, cosa per la qual us "
 "caldrà una connexió activa a Internet. En cas que no vulgueu fer-ho ara sinó "
-"més endavant, utilitzeu l'entrada de menú «Sistema -> Administració -> "
-"Suport d'idioma» en lloc d'això."
+"més endavant, utilitzeu l'entrada de menú «Sistema -> Administració -> Suport "
+"d'idioma» en lloc d'això."
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Sembla ser que els fitxers de suport d'idioma per a la vostra llengua són "
 "incomplets. Podeu instal·lar els components que manquen si feu clic a "
@@ -519,8 +520,8 @@ msgstr ""
 
 #~ msgid "Default language for new user accounts and the login screen:"
 #~ msgstr ""
-#~ "Idioma per defecte per a nous comptes d'usuari i per a la pantalla d'inici "
-#~ "de sessió:"
+#~ "Idioma per defecte per a nous comptes d'usuari i per a la pantalla "
+#~ "d'inici de sessió:"
 
 #~ msgid "Support"
 #~ msgstr "Suport"
@@ -529,8 +530,8 @@ msgstr ""
 #~ msgstr "Cal que reinicieu el sistema"
 
 #~ msgid ""
-#~ "To complete the changes a reboot is required so that the new functionality "
-#~ "is activated."
+#~ "To complete the changes a reboot is required so that the new "
+#~ "functionality is activated."
 #~ msgstr ""
 #~ "Cal que reinicieu el sistema per poder completar els canvis i així poder "
 #~ "activar les funcionalitats noves."

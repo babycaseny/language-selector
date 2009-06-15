@@ -11,7 +11,7 @@
   <property name="modal">False</property>
   <property name="resizable">False</property>
   <property name="destroy_with_parent">False</property>
-  <property name="icon">language-selector.png</property>
+  <property name="icon_name">config-language</property>
   <property name="decorated">True</property>
   <property name="skip_taskbar_hint">True</property>
   <property name="skip_pager_hint">True</property>
@@ -80,7 +80,7 @@ The availability of translations or writing aids can differ between languages.</
   <property name="modal">False</property>
   <property name="resizable">True</property>
   <property name="destroy_with_parent">False</property>
-  <property name="icon">language-selector.png</property>
+  <property name="icon_name">config-language</property>
   <property name="decorated">True</property>
   <property name="skip_taskbar_hint">False</property>
   <property name="skip_pager_hint">False</property>
@@ -445,6 +445,7 @@ The availability of translations or writing aids can differ between languages.</
   <property name="default_width">550</property>
   <property name="resizable">True</property>
   <property name="destroy_with_parent">False</property>
+  <property name="icon_name">config-language</property>
   <property name="decorated">True</property>
   <property name="skip_taskbar_hint">False</property>
   <property name="skip_pager_hint">False</property>
@@ -452,6 +453,7 @@ The availability of translations or writing aids can differ between languages.</
   <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
   <property name="focus_on_map">True</property>
   <property name="urgency_hint">False</property>
+  <signal name="delete_event" handler="hide_on_delete"/>
 
   <child>
     <widget class="GtkAlignment" id="alignment6">

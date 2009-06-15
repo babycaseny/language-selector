@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-27 06:56+0000\n"
+"POT-Creation-Date: 2009-06-15 15:12+0200\n"
 "PO-Revision-Date: 2009-03-27 10:56+0000\n"
 "Last-Translator: Kamil Páral <ripper42@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -73,36 +73,38 @@ msgid "Could not install the selected language support"
 msgstr "Nemohu nainstalovat podporu vybraného jazyka"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Toto je možná chyba v aplikaci. Prosím nahlaste chybu v aplikaci 'language-"
 "selector' na adrese https://launchpad.net/bugs/bugs/+package/"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the full language support"
 msgstr "Nemohu nainstalovat plnou podporu jazyka"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#, fuzzy
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 "Toto obvykle souvisí s chybou ve vašem správci archivů či programů. "
 "Zkontrolujte nastavení možností programů v menu \"Správa\""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#. FIXME: use self.runAsRoot() here
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "The list of available languages on the system has been updated."
 msgstr "Seznam v systému dostupných jazyků byl aktualizován."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:690
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "Podpora jazyka není kompletně nainstalována"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -111,28 +113,28 @@ msgstr ""
 "Některé překlady nebo pomůcky pro psaní dostupné pro vámi zvolené jazyky "
 "nejsou ještě nainstalovány. Chcete je nainstalovat nyní?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:694
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "Upozo_rni mě později"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Nainstalovat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:698
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:737
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "Porušena databáze programů"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -161,8 +163,8 @@ msgid ""
 "this issue at first."
 msgstr ""
 "Není možné nainstalovat nebo odstranit jakýkoliv software. Prosím použijte "
-"správce balíků \"Adept\" nebo v terminálu spusťte \"sudo apt-get install -"
-"f\" a tak tento problém nejprve spravte."
+"správce balíků \"Adept\" nebo v terminálu spusťte \"sudo apt-get install -f"
+"\" a tak tento problém nejprve spravte."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:107
 msgid "Default system language:"
@@ -350,8 +352,7 @@ msgid "Keep the same"
 msgstr "Ponechat stejné"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr "Překlady a nápověda k OpenOffice.org, Firefox, Thunderbird, Gaim."
 
 #: ../data/LanguageSelector.glade.h:23
@@ -385,8 +386,7 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr ""
-"Nastavit národní jazykovou podporu společně s podporou dalších jazyků"
+msgstr "Nastavit národní jazykovou podporu společně s podporou dalších jazyků"
 
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
@@ -403,25 +403,25 @@ msgstr "Neúplná jazyková podpora"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Podpora pro váš zvolený jazyk se zdá být nekompletní. Můžete nainstalovat "
 "chybějící součásti kliknutím na \"Spustit tuto akci nyní\" a následováním "
 "instrukcí. Je vyžadováno funkční připojení k Internetu. Pokud byste to "
-"raději provedli později, prosím použijte \"Systém → Správa → Jazyková "
-"podpora\"."
+"raději provedli později, prosím použijte \"Systém → Správa → Jazyková podpora"
+"\"."
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Podpora jazyků pro zvolený jazyk se zdá být neúplná. Můžete doinstalovat "
 "chybějící součásti kliknutím na \"Spustit tuto akci nyní\" a následováním "
@@ -510,10 +510,11 @@ msgstr ""
 #~ msgstr "Je nutné restartovat počítač"
 
 #~ msgid ""
-#~ "To complete the changes a reboot is required so that the new functionality "
-#~ "is activated."
+#~ "To complete the changes a reboot is required so that the new "
+#~ "functionality is activated."
 #~ msgstr ""
-#~ "Pro dokončení změn je vyžadován restart, aby se mohly využít nové možnosti."
+#~ "Pro dokončení změn je vyžadován restart, aby se mohly využít nové "
+#~ "možnosti."
 
 #~ msgid "Writing aids"
 #~ msgstr "Pomůcky pro psaní"

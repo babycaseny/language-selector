@@ -540,8 +540,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
                 _("Could not install the selected language support"),
                 _("This is perhaps a bug of this application. Please "
                   "file a bug report at "
-                  "https://launchpad.net/bugs/bugs/+package/ against "
-                  "the 'language-selector' product.")))
+                  "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug")))
             d.set_title=("")
             res = d.run()
             d.destroy()
@@ -572,7 +571,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
                 _("Could not install the full language support"),
                 _("Usually this is related to an error in your "
                   "software archive or software manager. Check your "
-                  "software preferences in the menu \"Adminstration\".")))
+                  "software preferences in the System > Administration menu.")))
             d.set_title("")
             d.run()
             d.destroy()
@@ -674,6 +673,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
             return True
         else:
             gtk.main_quit()
+
+    def hide_on_delete(self, widget, event):
+        return gtk.Widget.hide_on_delete(widget)
 
     def verifyInstalledLangPacks(self):
         """ called at the start to inform about possible missing
