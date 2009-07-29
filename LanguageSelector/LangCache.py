@@ -68,7 +68,7 @@ class LanguageSelectorPkgCache(apt.Cache):
     # packages that need special translation packs (not covered by
     # the normal langpacks) 
     pkg_translations = [
-        ("kdelibs-data", "language-pack-kde-"),
+        ("kdelibs5-data", "language-pack-kde-"),
         ("libgnome2-common", "language-pack-gnome-"),
 #        ("firefox-2", "mozilla-firefox-locale-"),
 #        ("thunderbird", "language-support-translations-"),

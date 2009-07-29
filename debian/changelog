@@ -1,3 +1,9 @@
+language-selector (0.4.6) karmic; urgency=low
+
+  * Update is-KDE-installed test for KDE 4
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 29 Jul 2009 09:58:06 +0100
+
 language-selector (0.4.5) karmic; urgency=low
 
   [ Loïc Minier ]
