@@ -1,5 +1,5 @@
-# the glade files
-include data/LanguageSelector.glade 
+# the gtkbuilder files
+include data/LanguageSelector.ui
 
 # the language data
 include data/countries data/languagelist data/languages

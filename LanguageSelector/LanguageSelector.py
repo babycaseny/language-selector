@@ -92,8 +92,7 @@ class LanguageSelectorBase(object):
         for fname in conffiles:
             if os.path.exists(fname):
                 for line in open(fname):
-                    # deal with buggy entries that were written by
-                    # old versions of langague-selector
+                    # support both LANG="foo" and LANG=foo
                     if line.startswith("LANG"):
                         line = line.replace('"','')
                     match = re.match(r'LANG=(.*)$',line)
@@ -125,20 +124,20 @@ class LanguageSelectorBase(object):
                     tmp = string.strip(line)
                     if tmp.startswith("LANGUAGE="):
                         foundLanguage = True
-                        line="LANGUAGE=%s\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
+                        line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
                         #print line
                     if tmp.startswith("LANG="):
                         foundLang = True
                         # we always write utf8 languages
-                        line="LANG=%s.UTF-8\n" % defaultLanguageCode
+                        line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
                     out.write(line)
                     #print line
             # if we have not found them add them
             if foundLanguage == False:
-                line="LANGUAGE=%s\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
+                line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
                 out.write(line)
             if foundLang == False:
-                line="LANG=%s.UTF-8\n" % defaultLanguageCode
+                line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
                 out.write(line)
             out.flush()
             self.runAsRoot(["/bin/cp",out.name, fname])

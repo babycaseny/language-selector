@@ -17,8 +17,6 @@ from optparse import OptionParser
 if __name__ == "__main__":
         gettext.bindtextdomain("language-selector", "/usr/share/locale")
         gettext.textdomain("language-selector")
-        gtk.glade.bindtextdomain("language-selector", "/usr/share/locale")
-        gtk.glade.textdomain("language-selector")
 
 	parser = OptionParser()
 	parser.add_option("-n", "--no-verify-installed-lang-support",

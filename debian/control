@@ -9,7 +9,7 @@ XS-Vcs-Bzr: http://bazaar.launchpad.net/%7Eubuntu-core-dev/language-selector/ubu
 
 Package: language-selector
 Architecture: all
-Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, ${python:Depends}, python-gtk2, python-glade2, python-apt (>= 0.6.12), synaptic
+Depends: language-selector-common (= ${Source-Version}), ${shlibs:Depends}, ${python:Depends}, python-gtk2, python-apt (>= 0.6.12), synaptic
 XB-Python-Version: ${python:Versions}
 Description: Language selector for Ubuntu Linux
  This package let you change and install language packs

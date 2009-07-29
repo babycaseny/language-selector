@@ -1,3 +1,16 @@
+language-selector (0.4.5) karmic; urgency=low
+
+  [ Loïc Minier ]
+  * Revert the change of 0.4.3 partially: keep parsing both double-quoted and
+    non-quoted lines, but output double-quoted lines as in the past since this
+    is consistent with localechooser, supported by pam_env and now also
+    supported by sudo.
+
+    [ Sebastien Bacher ]
+  * Use gtkbuilder rather than libglade (lp: #403531)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 29 Jul 2009 10:10:55 +0200
+
 language-selector (0.4.4) karmic; urgency=low
 
   * Fix icon for Gtk+ version; the .glade file would use the icon property

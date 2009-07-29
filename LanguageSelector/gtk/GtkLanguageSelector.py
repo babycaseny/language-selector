@@ -8,7 +8,6 @@ import pygtk
 pygtk.require('2.0')
 import gtk
 import gtk.gdk
-import gtk.glade
 import pango
 import gobject
 import os.path
@@ -41,7 +40,7 @@ from gettext import gettext as _
 
 
 
-from LanguageSelector.gtk.SimpleGladeApp import SimpleGladeApp
+from LanguageSelector.gtk.SimpleGtkbuilderApp import SimpleGtkbuilderApp
 from LanguageSelector.LocaleInfo import LocaleInfo
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
@@ -126,13 +125,12 @@ class GtkProgress(apt.OpProgress):
     def hide(self):
         self._window.hide()
 
-class GtkLanguageSelector(LanguageSelectorBase,  SimpleGladeApp):
+class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
 
     def __init__(self, datadir, options):
         LanguageSelectorBase.__init__(self, datadir)
-        SimpleGladeApp.__init__(self,
-                                datadir+"/data/LanguageSelector.glade",
-                                domain="language-selector")
+        SimpleGtkbuilderApp.__init__(self,
+                                datadir+"/data/LanguageSelector.ui")
 
         self.is_admin = grp.getgrnam("admin")[2] in os.getgroups()
         # see if we have any other human users on this system
