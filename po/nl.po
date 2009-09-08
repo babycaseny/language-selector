@@ -7,23 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-15 15:12+0200\n"
-"PO-Revision-Date: 2009-03-01 16:28+0000\n"
+"POT-Creation-Date: 2009-05-08 17:40+0000\n"
+"PO-Revision-Date: 2009-05-08 19:28+0000\n"
 "Last-Translator: cumulus007 <cumulus0007@gmail.com>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-04-10 01:32+0000\n"
+"X-Launchpad-Export-Date: 2009-07-31 03:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:190
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid "No language information available"
 msgstr "Geen taalinformatie beschikbaar"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:191
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:189
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 msgid ""
 "The system does not have information about the available languages yet. Do "
@@ -32,79 +32,78 @@ msgstr ""
 "Het systeem heeft nog geen informatie over de beschikbare talen. Wilt u een "
 "update via het internet uitvoeren, en de beschikbare talen nu verkrijgen? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 #: ../LanguageSelector/qt/QtLanguageSelector.py:81
 msgid "_Update"
 msgstr "_Bijwerken"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
-#: ../data/LanguageSelector.glade.h:21
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:275
 msgid "Language"
 msgstr "Taal"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
 msgid "Installed"
 msgstr "Geïnstalleerd"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:413
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
 msgstr[0] "%d te installeren"
 msgstr[1] "%d te installeren"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:414
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
 msgstr[0] "%d te verwijderen"
 msgstr[1] "%d te verwijderen"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:425
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:423
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:540
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:538
 msgid "Could not install the selected language support"
 msgstr ""
+"Ondersteuning voor de geselecteerde taal kon niet geïnstalleerd worden"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
-#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
 msgstr ""
 "Dit is misschien een fout van dit programma. U kunt een foutenrapport "
 "indienen op https://launchpad.net/bugs/bugs/+package/ voor het product "
 "‘language-selector’."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid "Could not install the full language support"
 msgstr "De taalondersteuning kon niet volledig geïnstalleerd worden"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
-#, fuzzy
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
+"manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 "De oorzaak hiervan ligt meestal aan een beschadigd software-archief of een "
 "fout in het softwarebeheer. Controleer uw instellingen voor software-"
 "eigenschappen in het menu ‘Systeembeheer’."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:609
 msgid "The list of available languages on the system has been updated."
 msgstr "De lijst met beschikbare talen op het systeem is bijgewerkt."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "De taalondersteuning is niet volledig geïnstalleerd"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:693
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -113,28 +112,28 @@ msgstr ""
 "In de talen van uw keuze zijn enkele vertalingen of schrijfhulpmiddelen "
 "beschikbaar die nog niet niet geïnstalleerd zijn. Wilt u deze nu installeren?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "He_rinner me later"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:697
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Installeren"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:700
 msgid "Details"
 msgstr "Details"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "De software-database is beschadigd"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:740
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -150,11 +149,11 @@ msgstr "Verwijderen"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:48
 msgid "Select language to uninstall:"
-msgstr "Kies een te verwijderen taal:"
+msgstr "Kies een taal om te verwijderen:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:55
 msgid "Language Selector"
-msgstr ""
+msgstr "Taalkeuze"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:72
 msgid ""
@@ -176,11 +175,11 @@ msgstr "Systeemtaal instellen"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:109
 msgid "Enable support to enter complex characters"
-msgstr "Ondersteuning voor het invoeren van complexe lettertekens inschakelen"
+msgstr ""
+"Ondersteuning voor het invoeren van complexe lettertekens inschakelen"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:110
 #: ../LanguageSelector/qt/QtLanguageSelector.py:113
-#: ../data/LanguageSelector.glade.h:9
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -278,6 +277,8 @@ msgstr ""
 #: ../data/LanguageSelector.glade.h:4
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Alle wijzigingen worden de volgende keer dat u inlogt "
+"toegepast.</small>"
 
 #: ../data/LanguageSelector.glade.h:5
 msgid ""
@@ -352,7 +353,8 @@ msgid "Keep the same"
 msgstr "Hetzelfde behouden"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid ""
+"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
 "Vertalingen van OpenOffice.org, Firefox, Thunderbird en Pidgin, en "
 "hulpbestanden."
@@ -389,7 +391,7 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr ""
+msgstr "Instellen van ondersteuning voor meerdere talen op uw systeem"
 
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
@@ -406,10 +408,10 @@ msgstr "Onvolledige taalondersteuning"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "De bij uw taal behorende taalondersteuningsbestanden lijken onvolledig te "
 "zijn. U kunt de ontbrekende onderdelen installeren door op \"Deze actie nu "
@@ -421,10 +423,10 @@ msgstr ""
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "De bij uw taal behorende taalondersteuningsbestanden lijken onvolledig te "
 "zijn. U kunt de ontbrekende onderdelen installeren door op \"Deze actie nu "
@@ -443,11 +445,11 @@ msgid "The new language settings will take effect once you have logged out."
 msgstr ""
 "De nieuwe taalinstellingen zullen van kracht worden wanneer u bent uitgelogd."
 
-#: ../gnome-language-selector:27
+#: ../gnome-language-selector:25
 msgid "don't verify installed language support"
 msgstr "geïnstalleerde taalondersteuning niet verifiëren"
 
-#: ../gnome-language-selector:30
+#: ../gnome-language-selector:28
 msgid "alternative datadir"
 msgstr "alternatieve datadir"
 
@@ -496,31 +498,3 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Er is geen fontconfig-voodoo-configuratie gevonden voor de geselecteerde taal"
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "<b>Default Language</b>"
-#~ msgstr "<b>Standaardtaal</b>"
-
-#~ msgid "<b>Input method</b>"
-#~ msgstr "<b>Invoermethode</b>"
-
-#~ msgid "<b>Supported Languages</b>"
-#~ msgstr "<b>Ondersteunde talen</b>"
-
-#~ msgid "Default language for new user accounts and the login screen:"
-#~ msgstr "Standaardtaal voor nieuwe gebruikers en voor het aanmeldscherm:"
-
-#~ msgid "Support"
-#~ msgstr "Ondersteuning"
-
-#~ msgid "Reboot required"
-#~ msgstr "Herstart vereist"
-
-#~ msgid ""
-#~ "To complete the changes a reboot is required so that the new "
-#~ "functionality is activated."
-#~ msgstr ""
-#~ "Om de wijzigingen te voltooien, is het nodig om de computer te herstarten "
-#~ "zodat de nieuwe functionaliteit wordt geactiveerd."

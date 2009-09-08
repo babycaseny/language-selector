@@ -7,100 +7,100 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-15 15:12+0200\n"
-"PO-Revision-Date: 2008-10-29 05:23+0000\n"
+"POT-Creation-Date: 2009-05-08 17:40+0000\n"
+"PO-Revision-Date: 2009-05-08 19:28+0000\n"
 "Last-Translator: Áki G. Karlsson <aki@akademia.is>\n"
 "Language-Team: Icelandic <is@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-04-10 01:32+0000\n"
+"X-Launchpad-Export-Date: 2009-07-31 03:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:190
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid "No language information available"
-msgstr ""
+msgstr "Engar tungumálaupplýsingar í boði"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:191
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:189
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
+"Kerfið hefur ekki upplýsingar um möguleg tungumál sem stendur. Viltu uppfæra "
+"af netinu til að ná í þær núna? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 #: ../LanguageSelector/qt/QtLanguageSelector.py:81
 msgid "_Update"
-msgstr ""
+msgstr "_Uppfæra"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
-#: ../data/LanguageSelector.glade.h:21
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:275
 msgid "Language"
 msgstr "Tungumál"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
 msgid "Installed"
-msgstr ""
+msgstr "Uppsett"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:413
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d til að setja upp"
+msgstr[1] "%d til að setja upp"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:414
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d til að fjarlægja"
+msgstr[1] "%d til að fjarlægja"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:425
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:423
 #, python-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:540
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:538
 msgid "Could not install the selected language support"
 msgstr "Tókst ekki að setja inn valið tungumál"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
-#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
 msgstr ""
-"Kannski er þetta villa í þessu forriti. Láttu vita af villunni á https://"
-"launchpad.net/bugs/bugs/+pakki/ undir 'language-selector'."
+"Kannski er þetta villa í þessu forriti. Láttu vita af villunni á "
+"https://launchpad.net/bugs/bugs/+pakki/ undir 'language-selector'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid "Could not install the full language support"
 msgstr "Tóks ekki að setja inn fullan stuðning við tungumál."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
-#, fuzzy
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
+"manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 "Venjulega tengist þetta villu í hugbúnaðarsafninu eða hugbúnaðarstjóranum. "
 "Athugaðu hugbúnaðarstillingar þínar í valmyndinni „Stjórnun“."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:609
 msgid "The list of available languages on the system has been updated."
 msgstr "Listi yfir innsett tungumál var uppfærður."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "Tungumálastuðningur er ekki innsettur að fullu"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:693
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -109,28 +109,28 @@ msgstr ""
 "Sumar þýðingar og skriftæki sem til eru fyrir tungumálin þín hafa ekki verið "
 "innsett. Viltu setja þau inn núna?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "_Minna mig á síðar"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:697
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Setja upp"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:700
 msgid "Details"
 msgstr "Nánar"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "Hugbúnaðargrunnur er bilaður"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:740
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -158,6 +158,9 @@ msgid ""
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
+"Það er ómögulegt að setja upp eða fjarlæga hugbúnað. Vinsamlega notaðu "
+"pakkastjórann \"Adept\" eða keyrðu skipunina \"sudo apt-get install -f\" í "
+"útstöð til að laga þetta vandamál fyrst."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:107
 msgid "Default system language:"
@@ -173,7 +176,6 @@ msgstr "Virkja stuðning við samsett leturtákn"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:110
 #: ../LanguageSelector/qt/QtLanguageSelector.py:113
-#: ../data/LanguageSelector.glade.h:9
 msgid "Cancel"
 msgstr "Hætta við"
 
@@ -216,7 +218,7 @@ msgstr "Setja tungumál"
 #: ../LanguageSelector/qt/QtLanguageSelector.py:263
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "Aðaltungumál kerfisins er núna %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:344
 #, python-format
@@ -224,35 +226,37 @@ msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
+"Þýðingar og hjálp hafa verið sett upp fyrir %s. Veldu frá Bæta við tungumáli "
+"takkanum."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:344
 msgid "Language Installed"
-msgstr ""
+msgstr "Tungumál hefur verið sett upp"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:346
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "Búið er að fjarlægja þýðingar og stuðning við %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:346
 msgid "Language Uninstalled"
-msgstr ""
+msgstr "Tungumál hefur verið fjarlægt"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:348
 msgid "Failed to set system language."
-msgstr ""
+msgstr "Það mistókst að velja aðaltungumál."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:348
 msgid "Language Not Set"
-msgstr ""
+msgstr "Tungumál ekki valið"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:396
 msgid "Please run this software with administrative rights."
-msgstr ""
+msgstr "Þú verður að keyra þetta forrit með stjórnandaréttindum."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:396
 msgid "Not Root User"
-msgstr ""
+msgstr "Ekki rótarnotandi"
 
 #: ../data/LanguageSelector.glade.h:1
 msgid ""
@@ -261,54 +265,63 @@ msgid ""
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
+"<big><b>Leita að tungumálum</b></big>\n"
+"\n"
+"Hafðu í huga að fjöldi þýðinga fer eftir tungumálum, og rithjálp er einnig "
+"breytileg."
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Breytingar öðlast ekki gildi þangað til næsta skipti sem þú skráir "
+"þig aftur inn.</small>"
 
 #: ../data/LanguageSelector.glade.h:5
 msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
+"Auka letur fyrir þetta tungumál gætu verið áhugaverð, t.d. Skreytiletur til "
+"að prenta skjöl."
 
 #: ../data/LanguageSelector.glade.h:6
 msgid ""
 "Additional software which might be of general interest for users using this "
 "language."
 msgstr ""
+"Auka hugbúnaður sem gæti verið áhugaverður fyrir notendur þessa tungumáls."
 
 #: ../data/LanguageSelector.glade.h:7
 msgid "Apply Changes"
-msgstr ""
+msgstr "Virkja breytingar"
 
 #: ../data/LanguageSelector.glade.h:8
 msgid "Basic translations"
-msgstr ""
+msgstr "Grunnþýðingar"
 
 #: ../data/LanguageSelector.glade.h:10
 msgid "Components:"
-msgstr ""
+msgstr "Innifalið:"
 
 #: ../data/LanguageSelector.glade.h:11
 msgid "Extra fonts"
-msgstr ""
+msgstr "Aukaleturgerðir"
 
 #: ../data/LanguageSelector.glade.h:12
 msgid "Extra software"
-msgstr ""
+msgstr "Aukaforrit"
 
 #: ../data/LanguageSelector.glade.h:13
 msgid "Extra translations"
-msgstr ""
+msgstr "Aukaþýðingar"
 
 #: ../data/LanguageSelector.glade.h:14
 msgid "For everyone at startup and login, use:"
-msgstr ""
+msgstr "Þegar fólk skráir sig inn á tölvuna skal nota:"
 
 #: ../data/LanguageSelector.glade.h:15
 msgid "For my menus and windows, use:"
-msgstr ""
+msgstr "Fyrir mína glugga og valmyndir skal nota:"
 
 #: ../data/LanguageSelector.glade.h:16
 msgid ""
@@ -318,41 +331,44 @@ msgstr ""
 
 #: ../data/LanguageSelector.glade.h:17
 msgid "Input methods"
-msgstr ""
+msgstr "Innskráningaraðferðir"
 
 #: ../data/LanguageSelector.glade.h:18
 msgid "Install / Remove Languages..."
-msgstr ""
+msgstr "Setja upp eða fjarlægja tungumál..."
 
 #: ../data/LanguageSelector.glade.h:19
 msgid "Installed Languages"
-msgstr ""
+msgstr "Tungumál sem er búið að setja upp"
 
 #: ../data/LanguageSelector.glade.h:20
 msgid "Keep the same"
-msgstr ""
+msgstr "Halda sama"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-msgstr ""
+msgid ""
+"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgstr "OpenOffice.org, Firefox, Thunderbird, Gaim þýðingar og hjálparskrár."
 
 #: ../data/LanguageSelector.glade.h:23
 msgid "Spellchecking and writing aids"
-msgstr ""
+msgstr "Stafsetningarleiðrétting og rithjálp"
 
 #: ../data/LanguageSelector.glade.h:24
 msgid "Translations for your desktop. Also known as language-pack."
-msgstr ""
+msgstr "Þýðingar fyrir skjáborðið. Einnig þekkt sem language-pack."
 
 #: ../data/LanguageSelector.glade.h:25
 msgid "Use input method engines (IME) to enter complex characters"
-msgstr ""
+msgstr "Nota innskráningaraðferðarumgjörð (IME) Til að slá in flókna stafi"
 
 #: ../data/LanguageSelector.glade.h:26
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
+"Þegar búið er að setja upp tungumál geta einstakir notendur valið það í "
+"Tungumálastytlingum."
 
 #: ../data/LanguageSelector.glade.h:27
 msgid ""
@@ -374,43 +390,47 @@ msgstr "Tungumálastuðningur"
 #: ../data/incomplete-language-support-gnome.note.in:5
 #: ../data/incomplete-language-support-qt.note.in:5
 msgid "Incomplete Language Support"
-msgstr ""
+msgstr "Ekki allsherjarstuðningur við tungumál"
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
+"Tungumálastuðiningur fyrir valið tungumál virðist ekki vera tilbúinn. Þú "
+"getur sett upp þá hluta sem vantar með því að smellla á \"Keyra þessa aðgerð "
+"núna\" og fylgja upplýsingunum. Nettenging er nauðsynleg. Viljir þú gera "
+"þetta seinna, notaðu \"Kerfið -> Stjórnun -> Tungumálastuðningur\"."
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "Þú þarft að skrá þig út og aftur inn"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
-msgstr ""
+msgstr "Breytingar munu öðlast gildi þegar þú skráir þig næst inn."
 
-#: ../gnome-language-selector:27
+#: ../gnome-language-selector:25
 msgid "don't verify installed language support"
-msgstr ""
+msgstr "Ekki staðfesta uppsettann tungumálastuðning"
 
-#: ../gnome-language-selector:30
+#: ../gnome-language-selector:28
 msgid "alternative datadir"
 msgstr ""
 
@@ -420,25 +440,27 @@ msgstr "Hætti við..."
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
-msgstr ""
+msgstr "Neyða þegar stillingar eru til taks"
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
+msgstr "Setja leturgerð voodoo fyrir valið tungumál"
 
 #: ../fontconfig-voodoo:32
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"Giska á stillingar byggðar á TUNGUMÁLA viðmótinu. Setja stillingar á 'engar' "
+"ef ekkert ásættanlegt fannst"
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
-msgstr ""
+msgstr "Sýna mögulegar fintconfig-voodoo stillingar"
 
 #: ../fontconfig-voodoo:40
 msgid "Show the current fontconfig-voodoo config"
-msgstr ""
+msgstr "Sýna núverandi fontconfig-voodoo stillingar"
 
 #: ../fontconfig-voodoo:43
 msgid "Remove the current fontconfig-voodoo config"
@@ -446,30 +468,12 @@ msgstr ""
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr ""
+msgstr "Óstaðfest"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
+msgstr "Stillingar þegar til. Notaðu '--force' til að yfirrita þær. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "<b>Supported Languages</b>"
-#~ msgstr "<b>Studd Tungumál</b>"
-
-#~ msgid "Support"
-#~ msgstr "Aðstoð"
-
-#~ msgid "Reboot required"
-#~ msgstr "Endurræsing nauðsynleg"
-
-#~ msgid ""
-#~ "To complete the changes a reboot is required so that the new "
-#~ "functionality is activated."
-#~ msgstr ""
-#~ "Til að klára breytingarnar þarf að endurræsa til að virkja nýjar aðgerðir."

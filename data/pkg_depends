@@ -1,0 +1,30 @@
+# File format:
+# Column 1: category (tr: translations, fn: fonts, in: input method, wa: writing assistence)
+# Column 2: languange code for which the package should only be installed. If empty, install for all languages.
+# The language code will be appended in the specified format
+# Column 3: dependency package(s). Only install the package in column 4 when this dependency package is already installed.
+# Multiple dependencies (OR) are separated by |.
+# Column 4: Package to pull. Can contain language codes at the end if column 2 is empty.
+#
+# Format: %LCODE%
+tr::libgnome2-common:language-pack-gnome-
+tr::kdelibs5-data:language-pack-kde-
+# Format: %LCODE% or %LCODE%-%CCODE%
+tr::libgnome2-common:gnome-user-guide-
+tr::openoffice.org-common:openoffice.org-l10n-
+tr::thunderbird:thunderbird-locale-
+tr::enigmail:enigmail-locale-
+tr::lightning-extension:lightning-extension-locale-
+tr::sunbird:sunbird-locale-
+tr::sword-text-gerlut1545:sword-language-pack-
+tr::gimp:gimp-help-
+# Format: %LCODE% or %LCODE%%CCODE% or %LCODE%-%VARIANT%
+tr::kdelibs5-data:kde-l10n-
+# Format: %LCODE% or %LCODE%CCODE% or %LCODE%%VARIANT%
+#can be removed after quanta has been ported to KDE4
+tr::quanta:kde-i18n-
+#can be removed after karmic
+tr::koffice-libs:koffice-i18n-
+#writing support for Finnish
+wa:fi:firefox|thunderbird|seahorse|epiphany:mozvoikko
+wa:fi:openoffice.org-core:openoffice.org-voikko

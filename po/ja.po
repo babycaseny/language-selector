@@ -7,140 +7,131 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-15 15:12+0200\n"
-"PO-Revision-Date: 2009-03-29 21:18+0000\n"
+"POT-Creation-Date: 2009-05-08 17:40+0000\n"
+"PO-Revision-Date: 2009-05-08 19:28+0000\n"
 "Last-Translator: Shushi Kurose <md81bird@hitaki.net>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2009-04-10 01:32+0000\n"
+"X-Launchpad-Export-Date: 2009-07-31 03:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:190
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid "No language information available"
 msgstr "言語情報が利用できません"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:191
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:189
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
-msgstr ""
-"システムはまだ利用できる言語に関する情報を持っていません。いま言語情報を取得"
-"するためにネットワークアップデートを実行しますか? "
+msgstr "システムはまだ利用できる言語に関する情報を持っていません。いま言語情報を取得するためにネットワークアップデートを実行しますか? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 #: ../LanguageSelector/qt/QtLanguageSelector.py:81
 msgid "_Update"
 msgstr "アップデート(_U)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
-#: ../data/LanguageSelector.glade.h:21
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:275
 msgid "Language"
 msgstr "言語"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
 msgid "Installed"
 msgstr "インストール済"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:413
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
 msgstr[0] "%d のインストール"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:414
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
 msgstr[0] "%d の削除"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:425
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:423
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:540
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:538
 msgid "Could not install the selected language support"
 msgstr "選択された言語サポートをインストールできません"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
-#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
 msgstr ""
-"これは、このアプリケーションのバグかもしれません。'language-selector' パッ"
-"ケージのバグとして、https://launchpad.net/bugs/bugs/+package/ に報告してくだ"
-"さい。"
+"これは、このアプリケーションのバグかもしれません。'language-selector' "
+"パッケージのバグとして、https://launchpad.net/bugs/bugs/+package/ に報告してください。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid "Could not install the full language support"
 msgstr "すべての言語サポートがインストールできません"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
-#, fuzzy
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
+"manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
-"通常、これはソフトウェア・アーカイブかソフトウェア・マネージャに関連するエ"
-"ラーです。\\\"システム管理\\\"メニューにあるソフトウェア・ソースを確認してく"
-"ださい。"
+"通常、これはソフトウェア・アーカイブかソフトウェア・マネージャに関連するエラーです。\\\"システム管理\\"
+"\"メニューにあるソフトウェア・ソースを確認してください。"
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:609
 msgid "The list of available languages on the system has been updated."
 msgstr "システムで利用可能な言語のリストがアップデートされました。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "言語サポートが完全にはインストールされていません"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:693
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
-msgstr ""
-"選択された言語で利用できる、翻訳や入力サポートがまだインストールされていませ"
-"ん。これらを今すぐインストールしますか？"
+msgstr "選択された言語で利用できる、翻訳や入力サポートがまだインストールされていません。これらを今すぐインストールしますか？"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "後で通知する(_R)"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:697
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "インストール(_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:700
 msgid "Details"
 msgstr "詳細"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "ソフトウェアデータベースが壊れています"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:740
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"どのソフトウェアも追加・削除することができません。\"Synapticパッケージ・マ"
-"ネージャ\"を使うか、端末で\"sudo apt-get install -f\"を実行し、まずこの問題を"
-"修復してください。"
+"どのソフトウェアも追加・削除することができません。\"Synapticパッケージ・マネージャ\"を使うか、端末で\"sudo apt-get "
+"install -f\"を実行し、まずこの問題を修復してください。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:47
 msgid "Uninstall"
@@ -160,9 +151,8 @@ msgid ""
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"どのソフトウェアもインストールまたは削除することができません。\"Adeptパッケー"
-"ジマネージャ\"を使用するか、端末で\"sudo apt-get install -f\"を実行し、まずこ"
-"の問題を解決してください。"
+"どのソフトウェアもインストールまたは削除することができません。\"Adeptパッケージマネージャ\"を使用するか、端末で\"sudo apt-get "
+"install -f\"を実行し、まずこの問題を解決してください。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:107
 msgid "Default system language:"
@@ -178,7 +168,6 @@ msgstr "多言語入力のサポートを有効にする"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:110
 #: ../LanguageSelector/qt/QtLanguageSelector.py:113
-#: ../data/LanguageSelector.glade.h:9
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -209,9 +198,7 @@ msgstr "未インストール"
 msgid ""
 "Default system Language now set to %s.  Complex character input will be "
 "enabled when you next log in."
-msgstr ""
-"標準のシステム言語が %s に設定されました。多言語入力は、次回のログインより有"
-"効になります。"
+msgstr "標準のシステム言語が %s に設定されました。多言語入力は、次回のログインより有効になります。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 #: ../LanguageSelector/qt/QtLanguageSelector.py:263
@@ -228,9 +215,7 @@ msgstr "標準のシステム言語が %s に設定されました。"
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
-msgstr ""
-"翻訳とサポート %s がインストールされました。追加言語ボタンより選択してくださ"
-"い。"
+msgstr "翻訳とサポート %s がインストールされました。追加言語ボタンより選択してください。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:344
 msgid "Language Installed"
@@ -280,9 +265,7 @@ msgstr "<small>全ての変更は次回ログイン時に適用されます。</
 msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
-msgstr ""
-"一般的興味があるかもしれない、この言語用の追加字体、例えばドキュメント印刷用"
-"の装飾フォント。"
+msgstr "一般的興味があるかもしれない、この言語用の追加字体、例えばドキュメント印刷用の装飾フォント。"
 
 #: ../data/LanguageSelector.glade.h:6
 msgid ""
@@ -326,9 +309,7 @@ msgstr "このユーザのメニューとウィンドウで使用:"
 msgid ""
 "Input Methods for languages with complex scripts. Scim modules or other "
 "relevant software which helps with typing complex characters."
-msgstr ""
-"複合文字の言語用インプットメソッド。複合文字の入力を支援するScimやその他関連"
-"したソフトウェア。"
+msgstr "複合文字の言語用インプットメソッド。複合文字の入力を支援するScimやその他関連したソフトウェア。"
 
 #: ../data/LanguageSelector.glade.h:17
 msgid "Input methods"
@@ -347,7 +328,8 @@ msgid "Keep the same"
 msgstr "同じ言語にする"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid ""
+"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr "OpenOffice.org, Firefox, Thunderbird, Gaimの翻訳とヘルプファイル"
 
 #: ../data/LanguageSelector.glade.h:23
@@ -366,17 +348,13 @@ msgstr "複雑な文字を入力するためにインプット・メソッド・
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
-msgstr ""
-"言語をインストールすれば、各ユーザがそれぞれの言語設定を選択することができる"
-"ようになります。"
+msgstr "言語をインストールすれば、各ユーザがそれぞれの言語設定を選択することができるようになります。"
 
 #: ../data/LanguageSelector.glade.h:27
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
-msgstr ""
-"単語の強調、修正、または提案することによって入力を補助することができる単語表"
-"や辞書、百科事典など。"
+msgstr "単語の強調、修正、または提案することによって入力を補助することができる単語表や辞書、百科事典など。"
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
@@ -398,29 +376,27 @@ msgstr "不完全な言語サポート"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
-"あなたが選択した言語用向けの言語サポートファイルは不完全のようです。\"Run "
-"this action now\"をクリックし、指示に従うことで、足りないコンポーネントをイン"
-"ストールできます。インターネット接続が必要です。後でこれを実施したい場合は"
-"\"システム->システム管理->言語サポート\"を利用してください。"
+"あなたが選択した言語用向けの言語サポートファイルは不完全のようです。\"Run this action "
+"now\"をクリックし、指示に従うことで、足りないコンポーネントをインストールできます。インターネット接続が必要です。後でこれを実施したい場合は\"システ"
+"ム->システム管理->言語サポート\"を利用してください。"
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
-"あなたが選択した言語用向けの言語サポートファイルは不完全のようです。\"Run "
-"this action now\"をクリックし、指示に従うことで、足りないコンポーネントをイン"
-"ストールできます。インターネット接続が必要です。後でこれを実施したい場合は"
-"\"System Settings -> Regional & Language\" を利用してください。"
+"あなたが選択した言語用向けの言語サポートファイルは不完全のようです。\"Run this action "
+"now\"をクリックし、指示に従うことで、足りないコンポーネントをインストールできます。インターネット接続が必要です。後でこれを実施したい場合は\"Sys"
+"tem Settings -> Regional & Language\" を利用してください。"
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -432,11 +408,11 @@ msgstr "セッションの再起動が必要です"
 msgid "The new language settings will take effect once you have logged out."
 msgstr "新しい言語設定を有効にするには、一度ログアウトする必要があります。"
 
-#: ../gnome-language-selector:27
+#: ../gnome-language-selector:25
 msgid "don't verify installed language support"
 msgstr "インストールされた言語サポートを検証しない"
 
-#: ../gnome-language-selector:30
+#: ../gnome-language-selector:28
 msgid "alternative datadir"
 msgstr "他のデータディレクトリ"
 
@@ -456,9 +432,7 @@ msgstr "選択された言語の fontconfig voodoo を設定してください"
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
-msgstr ""
-"LANGUAGE 環境変数にもとづいて設定を推測します。 適切なものがない場合は'none' "
-"を設定します。"
+msgstr "LANGUAGE 環境変数にもとづいて設定を推測します。 適切なものがない場合は'none' を設定します。"
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
@@ -478,40 +452,8 @@ msgstr "未設定"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
-"すでに設定されています。上書きするには '--force' オプションを使用してくださ"
-"い。 "
+msgstr "すでに設定されています。上書きするには '--force' オプションを使用してください。 "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "選択されたロケールに対する fontconfig-voodoo 設定が見つかりません"
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "<b>Default Language</b>"
-#~ msgstr "<b>標準の言語</b>"
-
-#~ msgid "<b>Input method</b>"
-#~ msgstr "<b>入力メソッド</b>"
-
-#~ msgid "<b>Supported Languages</b>"
-#~ msgstr "<b>サポートされている言語</b>"
-
-#~ msgid "Additional Fonts"
-#~ msgstr "追加フォント"
-
-#~ msgid "Default language for new user accounts and the login screen:"
-#~ msgstr "新規ユーザアカウントとログイン画面で使用する標準の言語:"
-
-#~ msgid "Support"
-#~ msgstr "サポート"
-
-#~ msgid "Reboot required"
-#~ msgstr "再起動が必要です"
-
-#~ msgid ""
-#~ "To complete the changes a reboot is required so that the new "
-#~ "functionality is activated."
-#~ msgstr ""
-#~ "変更点を完全に適用し、新しい機能を有効にするためには再起動が必要です。"

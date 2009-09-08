@@ -9,10 +9,13 @@ import sys
 import subprocess
 
 class ImSwitch(object):
+    
+    # some global data
     global_confdir = "/etc/X11/xinit/xinput.d/"
     local_confdir = os.path.expanduser("~/.xinput.d/")
     bin = "/usr/bin/im-switch"
-    default_method = "scim-bridge"
+    default_method = "ibus"
+    blacklist_file = "/usr/share/language-selector/data/im-switch.blacklist"
 
     def __init__(self):
         pass
@@ -62,16 +65,24 @@ class ImSwitch(object):
                     return os.path.basename(os.path.realpath(target))
         return None
         
+    def setInputMethodForLocale(self, im, locale):
+        subprocess.call(["im-switch","-z",locale,"-s",im])
     
-    # -------------------------- stuff below is NOT USED
     def getAvailableInputMethods(self):
-        """ get the input methods available via im-switch """
+        """ return the input methods available via im-switch """
+        # load blacklist
+        blacklist = []
+        for l in open(self.blacklist_file):
+            l = l.strip()
+            if l and not l.startswith('#'):
+                blacklist.append(l)
+        # now get available methods 
         inputMethods = []
-        for dentry in os.listdir(self.confdir):
-            if not os.path.islink(self.confdir+dentry):
+        for dentry in os.listdir(self.global_confdir):
+            if (not os.path.islink(self.global_confdir+dentry) and 
+                not dentry in blacklist):
                 inputMethods.append(dentry)
-        inputMethods.sort()
-        return inputMethods
+        return ['none']+sorted(inputMethods)
 
     def setDefaultInputMethod(self, method, locale="all_ALL"):
         """ sets the default input method for the given locale
@@ -98,17 +109,17 @@ class ImSwitch(object):
         """ get the current default input method for the selected
             locale (in ll_CC form)
         """
-        return os.path.basename(os.path.realpath(self.confdir+locale))
+        return os.path.basename(os.path.realpath(self.local_confdir+locale))
         
 if __name__ == "__main__":
     im = ImSwitch()
-    print im.getInputMethodForLocale("ja_JP")
-    print im.enabledForLocale("all_ALL")
-    sys.exit(1)
+#    print im.getInputMethodForLocale("ja_JP")
+#    print im.enabledForLocale("all_ALL")
     print "available input methods: "
     print im.getAvailableInputMethods()
     print "current method: ",
     print im.getCurrentInputMethod()
+    sys.exit(1)
     print "switching to 'th-xim': ",
     print im.setDefaultInputMethod("th-xim")
     print "current method: ",

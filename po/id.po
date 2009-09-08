@@ -7,23 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-15 15:12+0200\n"
-"PO-Revision-Date: 2009-04-08 06:39+0000\n"
-"Last-Translator: Arief Setiadi Wibowo <Unknown>\n"
+"POT-Creation-Date: 2009-05-08 17:40+0000\n"
+"PO-Revision-Date: 2009-05-26 03:55+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2009-04-10 01:32+0000\n"
+"X-Launchpad-Export-Date: 2009-07-31 03:32+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:190
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
 #: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid "No language information available"
 msgstr "Tidak tersedia informasi bahasa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:191
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:189
 #: ../LanguageSelector/qt/QtLanguageSelector.py:87
 msgid ""
 "The system does not have information about the available languages yet. Do "
@@ -32,77 +32,75 @@ msgstr ""
 "Sistem tidak memiliki informasi tentang bahasa yang tersedia. Apakah Anda "
 "ingin menjalankan pembaruan melalui jaringan untuk mendapatkannya? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:195
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
 #: ../LanguageSelector/qt/QtLanguageSelector.py:81
 msgid "_Update"
 msgstr "Perbar_Ui"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:277
-#: ../data/LanguageSelector.glade.h:21
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:275
 msgid "Language"
 msgstr "Bahasa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
 msgid "Installed"
 msgstr "Telah Terinstal"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:413
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
 msgstr[0] "%d diinstal"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:414
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
 msgstr[0] "%d dibuang"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:425
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:423
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:540
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:538
 msgid "Could not install the selected language support"
 msgstr "Tidak dapat menginstal dukungan bahasa terpilih"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
-#, fuzzy
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
+"product."
 msgstr ""
 "Ini sepertinya sebuah bug dari aplikasi ini. Tolong berkaskan sebuah laporan "
 "bug di https://launchpad.net/bugs/bugs/+package/ bagian produk 'language-"
 "selector'."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid "Could not install the full language support"
 msgstr "Tidak dapat menginstal secara penuh dukungan bahasa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
-#, fuzzy
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
+"manager. Check your software preferences in the menu \"Adminstration\"."
 msgstr ""
 "Biasanya, hal ini berhubungan dengan sebuah kesalahan dalam arsip perangkat "
 "lunak Anda atau manajer perangkat lunak. Periksalah pilihan-pilihan "
 "perangkat lunak di menu \"Adminstration\"."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:609
 msgid "The list of available languages on the system has been updated."
 msgstr "Daftar ketersediaan bahasa-bahasa pada sistem telah diperbarui."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:691
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
 #: ../LanguageSelector/qt/QtLanguageSelector.py:152
 msgid "The language support is not installed completely"
 msgstr "Dukungan bahasa tidak terinstal sepenuhnya"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:693
 #: ../LanguageSelector/qt/QtLanguageSelector.py:153
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -112,28 +110,28 @@ msgstr ""
 "bahasa yang telah Anda pilih belum terinstal. Anda akan menginstalnya "
 "sekarang?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:695
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
 #: ../LanguageSelector/qt/QtLanguageSelector.py:82
 #: ../LanguageSelector/qt/QtLanguageSelector.py:148
 msgid "_Remind Me Later"
 msgstr "Ingatkan _Saya Lagi Nanti"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:697
 #: ../LanguageSelector/qt/QtLanguageSelector.py:147
 msgid "_Install"
 msgstr "_Instal"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:699
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:700
 msgid "Details"
 msgstr "Detail"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:738
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
 #: ../LanguageSelector/qt/QtLanguageSelector.py:71
 msgid "Software database is broken"
 msgstr "Database perangkat lunak rusak"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:740
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -179,7 +177,6 @@ msgstr "Aktifkan dukungan untuk memasukkan karakter-karakter yang kompleks"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:110
 #: ../LanguageSelector/qt/QtLanguageSelector.py:113
-#: ../data/LanguageSelector.glade.h:9
 msgid "Cancel"
 msgstr "Batalkan"
 
@@ -269,6 +266,10 @@ msgid ""
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
+"<big><b>Memeriksa dukungan bahasa yang tersedia</b></big>\n"
+"\n"
+"Ketersediaan terjemahan atau bantuan penulisan diantara banyak bahasa dapat "
+"berlainan."
 
 #: ../data/LanguageSelector.glade.h:4
 msgid "<small>All changes take effect next time you log in.</small>"
@@ -280,12 +281,16 @@ msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
+"Fonta tambahan untuk bahasa ini yang mungkin diminati, misalnya fonta hias "
+"untuk mencetak dokumen."
 
 #: ../data/LanguageSelector.glade.h:6
 msgid ""
 "Additional software which might be of general interest for users using this "
 "language."
 msgstr ""
+"Perangkat lunak tambahan yang mana mungkin menarik minat pengguna dalam "
+"menggunakan bahasa ini."
 
 #: ../data/LanguageSelector.glade.h:7
 msgid "Apply Changes"
@@ -313,61 +318,73 @@ msgstr "Terjemahan ekstra"
 
 #: ../data/LanguageSelector.glade.h:14
 msgid "For everyone at startup and login, use:"
-msgstr ""
+msgstr "Untuk startup dan login setiap orang, menggunakan:"
 
 #: ../data/LanguageSelector.glade.h:15
 msgid "For my menus and windows, use:"
-msgstr ""
+msgstr "Untuk menu dan jendela, menggunakan:"
 
 #: ../data/LanguageSelector.glade.h:16
 msgid ""
 "Input Methods for languages with complex scripts. Scim modules or other "
 "relevant software which helps with typing complex characters."
 msgstr ""
+"Metode masukan untuk bahasa dengan tulisan yang rumit. Modul-modul SCIM atau "
+"perangkat lunak lain sejenis yang mana membantu pengetikan dengan karakter "
+"huruf yang rumit."
 
 #: ../data/LanguageSelector.glade.h:17
 msgid "Input methods"
-msgstr ""
+msgstr "Metode-metode masukan"
 
 #: ../data/LanguageSelector.glade.h:18
 msgid "Install / Remove Languages..."
-msgstr ""
+msgstr "Tambahkan / Hapuskan bahasa..."
 
 #: ../data/LanguageSelector.glade.h:19
 msgid "Installed Languages"
-msgstr ""
+msgstr "Bahasa yang sudah diinstall"
 
 #: ../data/LanguageSelector.glade.h:20
 msgid "Keep the same"
-msgstr ""
+msgstr "Pertahankan sama"
 
 #: ../data/LanguageSelector.glade.h:22
-msgid "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+msgid ""
+"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 msgstr ""
+"Terjemahan OpenOffice.org, Firefox, Thunderbird, Gaim dan berkas bantuan."
 
 #: ../data/LanguageSelector.glade.h:23
 msgid "Spellchecking and writing aids"
-msgstr ""
+msgstr "Pemeriksa ejaan dan bantuan penulisan"
 
 #: ../data/LanguageSelector.glade.h:24
 msgid "Translations for your desktop. Also known as language-pack."
 msgstr ""
+"Terjemahan-terjemahan untuk desktop anda. Juga dikenal sebagai language-pack"
 
 #: ../data/LanguageSelector.glade.h:25
 msgid "Use input method engines (IME) to enter complex characters"
 msgstr ""
+"Menggunakan input method engines (IME) untuk memasukkan karakter huruf yang "
+"rumit"
 
 #: ../data/LanguageSelector.glade.h:26
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
+"Jika suatu bahasa telah diinstal, setiap pengguna dapat memilihnya didalam "
+"pengaturan bahasa mereka."
 
 #: ../data/LanguageSelector.glade.h:27
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
 msgstr ""
+"Daftar kata, kamus, thesaurus, dll., yang dapat membantu pengetikan dengan "
+"menandai, memperbaiki, atau menyarankan kata."
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
@@ -389,39 +406,52 @@ msgstr "Dukungan bahasa yang tidak kompatibel"
 #: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
+"Berkas-berkas untuk dukungan bahasa anda kelihatannya kurang lengkap. Anda "
+"dapat memasang komponen yang kurang dengan mengklik \"Jalankan sekarang\" "
+"dan ikuti penjelasan yang akan ditampilkan. Hal ini membutuhkan hubungan "
+"internet yang aktif. Bila anda tidak ingin melakukannya sekarang, nanti anda "
+"dapat menggunakan \"Sistem -> Administrasi -> Dukungan Bahasa\" untuk "
+"menjalankannya."
 
 #. Description
 #: ../data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
+"Berkas-berkas untuk dukungan bahasa anda kelihatannya kurang lengkap. Anda "
+"dapat memasang komponen yang kurang dengan mengklik \"Jalankan sekarang\" "
+"dan ikuti penjelasan yang akan ditampilkan. Hal ini membutuhkan hubungan "
+"internet yang aktif. Bila anda tidak ingin melakukannya sekarang, nanti anda "
+"dapat menggunakan \"Sistem -> Administrasi -> Dukungan Bahasa\" untuk "
+"menjalankannya."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "Start ulang sesi ini dibutuhkan"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
 msgstr ""
+"Konfigurasi bahasa yang baru akan mulai berlaku ketika anda sudah log out."
 
-#: ../gnome-language-selector:27
+#: ../gnome-language-selector:25
 msgid "don't verify installed language support"
-msgstr ""
+msgstr "jangan periksa dukungan bahasa yang dipasang"
 
-#: ../gnome-language-selector:30
+#: ../gnome-language-selector:28
 msgid "alternative datadir"
-msgstr ""
+msgstr "folder data alternatif"
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
@@ -466,31 +496,4 @@ msgstr "Konfigurasi telah ada. Gunakana '--force' untuk menimpanya. "
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "<b>Default Language</b>"
-#~ msgstr "<b>Default Bahasa</b>"
-
-#~ msgid "<b>Input method</b>"
-#~ msgstr "<b>Metode masukan</b>"
-
-#~ msgid "<b>Supported Languages</b>"
-#~ msgstr "<b>Bahasa-bahasa yg. Didukung</b>"
-
-#~ msgid "Default language for new user accounts and the login screen:"
-#~ msgstr "Bahasa utama untuk akun pengguna baru dan layar masuk:"
-
-#~ msgid "Support"
-#~ msgstr "Dukungan"
-
-#~ msgid "Reboot required"
-#~ msgstr "Diperlukan reboot"
-
-#~ msgid ""
-#~ "To complete the changes a reboot is required so that the new "
-#~ "functionality is activated."
-#~ msgstr ""
-#~ "Untuk melengkapi perubahan diperlukan reboot sehingga fungsi baru dapat "
-#~ "di aktifkan"
+"Konfigurasi fontconfig-voodoo untuk locale yang dipilih tak ditemukan"

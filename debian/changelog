@@ -1,3 +1,27 @@
+language-selector (0.4.8) karmic; urgency=low
+
+  * Fix Qt desktop file icon to fit in with app (LP: #316559)
+  * Change Hidden key to NoDisplay key in Qt desktop file (Hidden == Deleted)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Tue, 08 Sep 2009 17:16:40 +0200
+
+language-selector (0.4.7) karmic; urgency=low
+
+  * Add support for Chinese language-pack split
+  * Update translations from Launchpad
+  * Remove fontconfig/29-language-selector-zh (LP: #406132)
+  * Remove option to install obsolete language-support-extra-* packages
+  * Replace option to install additional translations
+    (language-support-translations-*) with code to automatically install 
+    additional translation packages on a per need basis.
+  * Added code to install mozvoikko and oo.o-voikko based on already
+    installed mozilla and oo.o packages for finnish users who have
+    "Writing Aids" enabled in language-selector (LP: #409764)
+  * Added combobox to choose the input method engine via im-switch
+  * Patch potfiles.in (Thanks to Gabor Kelemen) (LP: #420224)
+
+ -- Arne Goetje <arne@ubuntu.com>  Sun, 02 Aug 2009 11:29:17 +0100
+
 language-selector (0.4.6) karmic; urgency=low
 
   * Update is-KDE-installed test for KDE 4

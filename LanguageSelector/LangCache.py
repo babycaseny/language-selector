@@ -3,6 +3,9 @@ import warnings
 warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
 import apt
 import apt_pkg
+import os
+import os.path
+import macros
 
 from xml.etree.ElementTree import ElementTree
 
@@ -19,17 +22,19 @@ class LanguagePackageStatus(object):
 # the language-support information
 class LanguageInformation(object):
     def __init__(self):
+        #FIXME:
+        #needs a new structure:
+        #languagePkgList[LANGCODE][tr|fn|in|wa]=[packages available for that language in that category]
+        #@property for each category
+        #@property for each LANGCODE
         self.language = None
         self.languageCode = None
         # langPack/support status 
         self.languagePkgList = {}
         self.languagePkgList["languagePack"] = LanguagePackageStatus("language-pack-%s")
-        #self.languagePkgList["languageSupport"] = LanguagePackageStatus("language-support-%s")
         self.languagePkgList["languageSupportWritingAids"] = LanguagePackageStatus("language-support-writing-%s")
-        self.languagePkgList["languageSupportTranslations"] = LanguagePackageStatus("language-support-translations-%s")
         self.languagePkgList["languageSupportInputMethods"] = LanguagePackageStatus("language-support-input-%s")
         self.languagePkgList["languageSupportFonts"] = LanguagePackageStatus("language-support-fonts-%s")
-        self.languagePkgList["languageSupportExtra"] = LanguagePackageStatus("language-support-extra-%s")
         
     @property
     def inconsistent(self):
@@ -65,17 +70,9 @@ class ExceptionPkgCacheBroken(Exception):
 
 class LanguageSelectorPkgCache(apt.Cache):
 
-    # packages that need special translation packs (not covered by
-    # the normal langpacks) 
-    pkg_translations = [
-        ("kdelibs5-data", "language-pack-kde-"),
-        ("libgnome2-common", "language-pack-gnome-"),
-#        ("firefox-2", "mozilla-firefox-locale-"),
-#        ("thunderbird", "language-support-translations-"),
-#        ("openoffice.org", "language-support-translations-"),
-#        ("openoffice.org", "language-support-translations-"),
-        ("libsword5c2a", "sword-language-pack-")
-    ]
+    BLACKLIST = "/usr/share/language-selector/data/blacklist"
+    LANGCODE_TO_LOCALE = "/usr/share/language-selector/data/langcode2locale"
+    PACKAGE_DEPENDS = "/usr/share/language-selector/data/pkg_depends"
 
     def __init__(self, localeinfo, progress):
         apt.Cache.__init__(self, progress)
@@ -86,6 +83,95 @@ class LanguageSelectorPkgCache(apt.Cache):
         self.to_inst = []
         self.to_rm = []
 
+        # packages that need special translation packs (not covered by
+        # the normal langpacks)
+        self.langpack_locales = {}
+        self.pkg_translations = {}
+        self.pkg_writing = {}
+        filter_list = {}
+        blacklist = []
+        
+        for l in open(self.BLACKLIST):
+            l = l.strip()
+            if l.startswith('#'):
+                blacklist.append(l)
+        
+        for l in open(self.LANGCODE_TO_LOCALE):
+            try:
+                l = l.rstrip()
+                if ':' in l:
+                    (pkgcode, locale) = l.split(':')
+                else:
+                    pkgcode = l
+                    locale = l
+            except ValueError:
+                continue
+            self.langpack_locales[locale] = pkgcode
+        
+        for l in open(self.PACKAGE_DEPENDS):
+            if l.startswith('#'):
+                continue
+            try:
+                l = l.rstrip()
+                # sort out comments
+                if l.find('#') >= 0:
+                    continue
+                (c, lc, k, v) = l.split(':')
+            except ValueError:
+                continue
+            if (c == 'tr' and lc == ''):
+                filter_list[v] = k
+            elif (c == 'wa' and lc != ''):
+                if not self.pkg_writing.has_key(lc):
+                    self.pkg_writing[lc] = []
+                self.pkg_writing[lc].append(("%s" % k, "%s" % v))
+
+        # get list of all packages available on the system and filter them
+        for item in self.keys():
+            if item in blacklist: 
+                continue
+            for x in filter_list.keys():
+                if item.startswith(x) and not item.endswith('-base'):
+                    # parse language code
+                    langcode = item.replace(x, '')
+                    #print "%s\t%s" % (item, langcode)
+                    if langcode == 'zh':
+                        # special case: zh langpack split
+                        for langcode in ['zh-hans', 'zh-hant']:
+                            if not self.pkg_translations.has_key(langcode):
+                                self.pkg_translations[langcode] = []
+                            self.pkg_translations[langcode].append(("%s" % filter_list[x], "%s" % item))
+                    elif langcode in self.langpack_locales.values():
+                        # langcode == pkgcode
+                        if not self.pkg_translations.has_key(langcode):
+                            self.pkg_translations[langcode] = []
+                        self.pkg_translations[langcode].append(("%s" % filter_list[x], "%s" % item))
+                        #print self.pkg_translations[langcode]
+                    else:
+                        # need to scan for LL-CC and LL-VARIANT codes
+                        for locale in self.langpack_locales.keys():
+                            if '_' in locale or '@' in locale:
+                                if '@' in locale:
+                                    (locale, variant) = locale.split('@')
+                                else:
+                                    variant = ''
+                                (lcode, ccode) = locale.split('_')
+                                if langcode in ["%s-%s" % (lcode, ccode.lower()),
+                                                "%s%s" % (lcode, ccode.lower()),
+                                                "%s-%s" % (lcode, variant),
+                                                "%s%s" % (lcode, variant),
+                                                "%s-latn" % lcode,
+                                                "%slatn" % lcode,
+                                                "%s-%s-%s" % (lcode, ccode.lower(), variant),
+                                                "%s%s%s" % (lcode, ccode.lower(), variant)]:
+                                    # match found, get matching pkgcode
+                                    langcode = self.langpack_locales[locale]
+                                    if not self.pkg_translations.has_key(langcode):
+                                        self.pkg_translations[langcode] = []
+                                    self.pkg_translations[langcode].append(("%s" % filter_list[x], "%s" % item))
+                                    #print self.pkg_translations[langcode]
+                                    break
+         
     @property
     def havePackageLists(self):
         " verify that a network package lists exists "
@@ -119,13 +205,11 @@ class LanguageSelectorPkgCache(apt.Cache):
         pkg_list = ["language-support-input-%s"%languageCode,\
                     "language-support-writing-%s"%languageCode,\
                     "language-support-fonts-%s"%languageCode,\
-                    "language-support-translations-%s"%languageCode,\
-                    "language-support-extra-%s"%languageCode,\
-                      "language-pack-%s"%languageCode]
+                    "language-pack-%s"%languageCode]
         # see what additional pkgs are needed
-        for (pkg, translation) in self.pkg_translations:
-            if self.has_key(pkg) and self[pkg].isInstalled:
-                pkg_list.append(translation+languageCode)
+        #for (pkg, translation) in self.pkg_translations[languageCode]:
+        #    if self.has_key(pkg) and self[pkg].isInstalled:
+        #        pkg_list.append(translation)
         return pkg_list
         
     def tryChangeDetails(self, li):
@@ -143,21 +227,67 @@ class LanguageSelectorPkgCache(apt.Cache):
         # Check for additional translation packages
         item = li.languagePkgList["languagePack"]
         if ((item.installed and not item.doChange) or (item.available and not item.installed and item.doChange)):
-            for (pkg, translation) in self.pkg_translations:
-                if self.has_key(pkg) and \
-                   self[pkg].isInstalled and \
-                   self.has_key(translation+li.languageCode) and \
-                   not self[translation+li.languageCode].isInstalled:
-                   self[translation+li.languageCode].markInstall()
-                   #print ("Will pull: %s" % translation+li.languageCode)
+            if li.languageCode in self.pkg_translations:
+                for (pkg, translation) in self.pkg_translations[li.languageCode]:
+                    if self.has_key(pkg) and \
+                       self[pkg].isInstalled and \
+                       not self[translation].isInstalled:
+                        self[translation].markInstall()
+                        #print ("Will pull: %s" % translation)
         elif ((not item.installed and not item.doChange) or (item.installed and item.doChange)) :
-            for (pkg, translation) in self.pkg_translations:
-                if self.has_key(pkg) and \
-                   self[pkg].isInstalled and \
-                   self.has_key(translation+li.languageCode) and \
-                   self[translation+li.languageCode].isInstalled:
-                   self[translation+li.languageCode].markDelete()
-                   #print ("Will remove: %s" % translation+li.languageCode)
+            if li.languageCode in self.pkg_translations:
+                for (pkg, translation) in self.pkg_translations[li.languageCode]:
+                    if self.has_key(pkg) and \
+                       self[pkg].isInstalled and \
+                       self[translation].isInstalled:
+                           self[translation].markDelete()
+                           #print ("Will remove: %s" % translation)
+
+        # Check for additional writing aids packages
+        item = li.languagePkgList["languageSupportWritingAids"]
+        if ((item.installed and not item.doChange) or (item.available and not item.installed and item.doChange)):
+            if li.languageCode in self.pkg_writing:
+                for (pkg, pull_pkg) in self.pkg_writing[li.languageCode]:
+                    if not pull_pkg in self:
+                        continue
+                    if '|' in pkg:
+                        # multiple dependencies, if one of them is installed, pull the pull_pkg
+                        for p in pkg.split('|'):
+                            if self.has_key(p) and \
+                               self[p].isInstalled and \
+                               not self[pull_pkg].isInstalled:
+                                self[pull_pkg].markInstall()
+                                #print ("Will pull: %s" % pull_pkg)
+                    else:
+                        if self.has_key(pkg) and \
+                           self[pkg].isInstalled and \
+                           not self[pull_pkg].isInstalled:
+                            self[pull_pkg].markInstall()
+                            #print ("Will pull: %s" % pull_pkg)
+        elif ((not item.installed and not item.doChange) or (item.installed and item.doChange)) :
+            if li.languageCode in self.pkg_writing:
+                for (pkg, pull_pkg) in self.pkg_writing[li.languageCode]:
+                    if not self.has_key(pull_pkg):
+                        continue
+                    if '|' in pkg:
+                        # multiple dependencies, if at least one of them is installed, keep the pull_pkg
+                        # only remove pull_pkg if none of the dependencies are installed anymore
+                        count = 0
+                        for p in pkg.split('|'):
+                            if self.has_key(p) and \
+                               self[p].isInstalled and \
+                               not self[p].markDelete(True) and \
+                               not self[p].markInstall(True):
+                                count = count+1
+                            if count == 0 and self[pull_pkg].isInstalled:
+                                self[pull_pkg].markDelete()
+                                #print ("Will remove: %s" % pull_pkg)
+                    else:
+                        if self.has_key(pkg) and \
+                           self[pkg].isInstalled and \
+                           self[pull_pkg].isInstalled:
+                            self[pull_pkg].markDelete()
+                            #print ("Will remove: %s" % pull_pkg)
         return
 
     def tryInstallLanguage(self, languageCode):

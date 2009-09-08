@@ -7,6 +7,7 @@ import re
 import subprocess
 import gettext
 import os.path
+import macros
 
 from gettext import gettext as _
 from xml.etree.ElementTree import ElementTree
@@ -38,6 +39,12 @@ class LocaleInfo(object):
             else:
                 code = elm.attrib["iso_639_2T_code"]
             self._lang[code] = lang
+        # Hack for Chinese langpack split
+        # Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+        self._lang['zh-hans'] = _("Chinese (simplified)")
+        # Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+        self._lang['zh-hant'] = _("Chinese (traditional)")
+        # end hack
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_639_3.xml")
         it = et.getiterator('iso_639_3_entry')
         for elm in it:
@@ -45,7 +52,7 @@ class LocaleInfo(object):
             code = elm.attrib["id"]
             if not self._lang.has_key(code):
                 self._lang[code] = lang
-            
+        
         # read countries
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_3166.xml")
         it = et.getiterator('iso_3166_entry')
@@ -99,7 +106,7 @@ class LocaleInfo(object):
             # we are only interessted in the locale, not the codec
             locale = string.split(tmp)[0]
             locale = string.split(locale,".")[0]
-            locale = string.split(locale,"@")[0]
+            #locale = string.split(locale,"@")[0]
             if not locale in locales:
                 locales.append(locale)
         #print locales
@@ -118,12 +125,16 @@ class LocaleInfo(object):
         locale into the given locale, e.g. 
         (Deutsch, Deutschland) for de_DE
         """
-        (lang, country) = string.split(locale, "_")
+
+        macr = macros.LangpackMacros(locale)
+
+        #(lang, country) = string.split(locale, "_")
+        country = macr['CCODE']
         current_language = None
         if "LANGUAGE" in os.environ:
             current_language = os.environ["LANGUAGE"]
         os.environ["LANGUAGE"]=locale
-        lang_name = self.translate_language(lang)
+        lang_name = self.translate_language(macr['LCODE'])
         country_name = gettext.dgettext('iso_3166', self._country[country])
         if current_language:
             os.environ["LANGUAGE"] = current_language
@@ -131,14 +142,15 @@ class LocaleInfo(object):
 
     def translate(self, locale):
         """ get a locale code and output a human readable name """
+        macr = macros.LangpackMacros(locale)
         if "_" in locale:
-            (lang, country) = string.split(locale, "_")
+            #(lang, country) = string.split(locale, "_")
             (lang_name, country_name) = self.translate_locale(locale)
             # get all locales for this language
-            l = filter(lambda k: k.startswith(lang+"_"), self.generated_locales())
+            l = filter(lambda k: k.startswith(macr['LCODE']), self.generated_locales())
             # only show region/country if we have more than one 
             if len(l) > 1:
-                mycountry = self.country(country)
+                mycountry = self.country(macr['CCODE'])
                 if mycountry:
                     return "%s (%s)" % (lang_name, country_name)
                 else:
@@ -180,9 +192,7 @@ class LocaleInfo(object):
 
 if __name__ == "__main__":
     datadir = "/usr/share/language-selector/"
-    li = LocaleInfo("%s/data/languages" % datadir,
-                    "%s/data/countries" % datadir,
-                    "%s/data/languagelist" % datadir)
+    li = LocaleInfo("%s/data/languagelist" % datadir)
 
     print "default: '%s'" % li.getDefaultLanguage()
 

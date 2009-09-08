@@ -38,7 +38,8 @@ from gettext import gettext as _
 (COMBO_LANGUAGE,
  COMBO_CODE) = range(2)
 
-
+(IM_CHOICE,
+ IM_NAME) = range(2)
 
 from LanguageSelector.gtk.SimpleGtkbuilderApp import SimpleGtkbuilderApp
 from LanguageSelector.LocaleInfo import LocaleInfo
@@ -159,8 +160,15 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         combo.add_attribute(cell, 'text', COMBO_LANGUAGE)
         combo.set_model(model)
         self.combo_userlang_dirty = False
-        self.imSwitch = ImSwitch()
         self.options = options
+
+        combo = self.combobox_input_method
+        model = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
+        cell = gtk.CellRendererText()
+        combo.pack_start(cell, True)
+        combo.add_attribute(cell, 'text', IM_NAME)
+        combo.set_model(model)
+        self.imSwitch = ImSwitch()
         self._blockSignals = False
 
         # build the treeview
@@ -204,7 +212,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             self.verifyInstalledLangPacks()
 
         if not self.imSwitch.available():
-            self.checkbutton_enable_input_methods.set_sensitive(False)
+            self.combobox_input_method.set_sensitive(False)
         self.setSensitive(True)
 
     def setSensitive(self, value):
@@ -316,24 +324,10 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         self.check_status()
         self.treeview_languages.queue_draw()
         #self.debug_pkg_status()
-    def on_checkbutton_basic_translations_clicked(self, button):
+    def on_checkbutton_translations_clicked(self, button):
         if self.block_toggle: return
         langInfo = self._get_langinfo_on_cursor()
         langInfo.languagePkgList["languagePack"].doChange = not langInfo.languagePkgList["languagePack"].doChange
-        self.check_status()
-        self.treeview_languages.queue_draw()
-        #self.debug_pkg_status()
-    def on_checkbutton_extra_translations_clicked(self, button):
-        if self.block_toggle: return
-        langInfo = self._get_langinfo_on_cursor()
-        langInfo.languagePkgList["languageSupportTranslations"].doChange = not langInfo.languagePkgList["languageSupportTranslations"].doChange
-        self.check_status()
-        self.treeview_languages.queue_draw()
-        #self.debug_pkg_status()
-    def on_checkbutton_extra_clicked(self, button):
-        if self.block_toggle: return
-        langInfo = self._get_langinfo_on_cursor()
-        langInfo.languagePkgList["languageSupportExtra"].doChange = not langInfo.languagePkgList["languageSupportExtra"].doChange
         self.check_status()
         self.treeview_languages.queue_draw()
         #self.debug_pkg_status()
@@ -372,11 +366,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         #print "on_treeview_languages_cursor_changed()"
         langInfo = self._get_langinfo_on_cursor()
         for (button, attr) in ( 
-              ("checkbutton_basic_translations", langInfo.languagePkgList["languagePack"]),
-              ("checkbutton_extra_translations", langInfo.languagePkgList["languageSupportTranslations"]),
+              ("checkbutton_translations", langInfo.languagePkgList["languagePack"]),
               ("checkbutton_writing_aids", langInfo.languagePkgList["languageSupportWritingAids"]),
               ("checkbutton_input_methods", langInfo.languagePkgList["languageSupportInputMethods"]),
-              ("checkbutton_extra", langInfo.languagePkgList["languageSupportExtra"]),
               ("checkbutton_fonts", langInfo.languagePkgList["languageSupportFonts"])  ):
             self.block_toggle = True
             if ((attr.installed and not attr.doChange) or (not attr.installed and attr.doChange)) :
@@ -466,37 +458,75 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         if combo.get_active() < 0:
             return
         (lang, code) = model[combo.get_active()]
-        # check if that has a im-switch config
-        active = self.imSwitch.enabledForLocale(code)
-        self.checkbutton_enable_input_methods.set_active(active)
+        #print "Active language: "+code
 
-    def writeInputMethodConfig(self):
-        """ 
-        write new input method defaults - currently we only support all_ALL
-        """
+        combo = self.combobox_input_method
+        #cell = combo.get_child().get_cell_renderers()[0]
+        # FIXME: use something else than a hardcoded value here
+        #cell.set_property("wrap-width",300)
+        #cell.set_property("wrap-mode",pango.WRAP_WORD)
+        model = combo.get_model()
+        model.clear()
+
+        # find the default
+        currentIM = self.imSwitch.getInputMethodForLocale(code)
+        if currentIM == None:
+            currentIM = 'none'
+        #print "Current IM: "+currentIM
+
+        # find out about the other options
+        for (i, IM) in enumerate(self.imSwitch.getAvailableInputMethods()):
+            iter = model.append()
+            model.set(iter,
+                      IM_CHOICE,IM,
+                      IM_NAME, IM)
+            if IM == currentIM:
+                combo.set_active(i)
+        self.check_status()
+
+#    def writeInputMethodConfig(self):
+#        """ 
+#        write new input method defaults - currently we only support all_ALL
+#        """
+#        combo = self.combobox_user_language
+#        model = combo.get_model()
+#        if combo.get_active() < 0:
+#            return
+#        (lang, code) = model[combo.get_active()]
+#        # check if we need to do something
+#        new_value = self.checkbutton_enable_input_methods.get_active()
+#        if self.imSwitch.enabledForLocale(code) != new_value:
+#            if new_value:
+#                self.imSwitch.enable(code)
+#            else:
+#                self.imSwitch.disable(code)
+#            #self.showRebootRequired()
+#            #self.checkReloginNotification()
+
+#    @honorBlockedSignals
+#    def on_checkbutton_enable_input_methods_toggled(self, widget):
+#        #print "on_checkbutton_enable_input_methods_toggled()"
+#        active = self.checkbutton_enable_input_methods.get_active()
+#        self.combo_userlang_dirty = True
+#        self.setSensitive(False)
+#        self.writeInputMethodConfig()
+#        self.setSensitive(True)
+
+    @honorBlockedSignals
+    def on_combobox_input_method_changed(self, widget):
         combo = self.combobox_user_language
         model = combo.get_model()
         if combo.get_active() < 0:
             return
         (lang, code) = model[combo.get_active()]
-        # check if we need to do something
-        new_value = self.checkbutton_enable_input_methods.get_active()
-        if self.imSwitch.enabledForLocale(code) != new_value:
-            if new_value:
-                self.imSwitch.enable(code)
-            else:
-                self.imSwitch.disable(code)
-            #self.showRebootRequired()
-            #self.checkReloginNotification()
 
-    @honorBlockedSignals
-    def on_checkbutton_enable_input_methods_toggled(self, widget):
-        #print "on_checkbutton_enable_input_methods_toggled()"
-        active = self.checkbutton_enable_input_methods.get_active()
-        self.combo_userlang_dirty = True
-        self.setSensitive(False)
-        self.writeInputMethodConfig()
-        self.setSensitive(True)
+        combo = self.combobox_input_method
+        model = combo.get_model()
+        if combo.get_active() < 0:
+            return
+        (IM_choice, IM_name) = model[combo.get_active()]
+        print "IM: "+IM_choice+"\t"+code
+        self.imSwitch.setInputMethodForLocale(IM_choice, code)
 
     @honorBlockedSignals
     def on_checkbutton_sync_languages_toggled(self, widget):
@@ -750,6 +780,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         #print "ll size: ", len(languageList)
         #print "ll type: ", type(languageList)
         for lang in languageList:
+            if lang == 'zh':
+                continue
             #print "langInfo: %s" % lang
             inconsistent = lang.inconsistent
             #if inconsistent:
@@ -758,11 +790,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             self._langlist.append([_(lang.language), lang])
         self._langlist.set_sort_column_id(LIST_LANG, gtk.SORT_ASCENDING)
         for button in ( 
-              "checkbutton_basic_translations",
-              "checkbutton_extra_translations",
+              "checkbutton_translations",
               "checkbutton_writing_aids",
               "checkbutton_input_methods",
-              "checkbutton_extra",
               "checkbutton_fonts"):
             self.block_toggle = True
             getattr(self, button).set_active(False)
