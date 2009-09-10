@@ -1,6 +1,10 @@
-# (c) 2005 Canonical Ltd
+# -*- coding: utf-8 -*-
+#
+# © 2005 Canonical Ltd
+# © 2009 Harald Sitter
 # Author: Michael Vogt <michael.vogt@ubuntu.com>
 # Author: Jonathan Riddell <jriddell@ubuntu.com>
+# Author: Harald Sitter <apachelogger@ubuntu.com>
 #
 # Released under the GNU GPL version 2 or later
 #
@@ -12,6 +16,7 @@ from PyKDE4.kdecore import ki18n, KAboutData, KCmdLineArgs, KCmdLineOptions
 from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox, KGuiItem
 
 from LanguageSelector.LanguageSelector import *
+from LanguageSelector.ImSwitch import ImSwitch
 from QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
 from gettext import gettext as i18n
 
@@ -41,6 +46,8 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         self.ui.pushButtonCancel.setIcon(KIcon("dialog-cancel"))
         self.ui.pushButtonCancel_2.setIcon(KIcon("dialog-cancel"))
 
+        self.imSwitch = ImSwitch()
+
         self.mode = mode
         self.init()
         if mode == "uninstall":
@@ -53,11 +60,12 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
             self.ui.installLanguageFrame.hide()
             self.resize(self.sizeHint())
             self.setWindowTitle(_("Language Selector"))
+            self.checkInputMethods()
         else:
             print "ERROR: unknown mode"
 
         # connect the signals
-        app.connect(self.ui.listBoxDefaultLanguage, SIGNAL("itemSelectionChanged()"), self.check_input_methods)
+        app.connect(self.ui.listBoxDefaultLanguage, SIGNAL("itemSelectionChanged()"), self.checkInputMethods)
         app.connect(self.ui.pushButtonOk, SIGNAL("clicked()"), self.onPushButtonOk)
         app.connect(self.ui.pushButtonSetSystemLanguage, SIGNAL("clicked()"), self.onSystemPushButtonOk)
         app.connect(self.ui.pushButtonCancel, SIGNAL("clicked()"), self.close)
@@ -106,7 +114,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         """ translate the strings in the UI, needed because Qt designer doesn't use gettext """
         self.ui.defaultSystemLabel.setText(_("Default system language:"))
         self.ui.pushButtonSetSystemLanguage.setText(_("Set System Language"))
-        self.ui.enableInputMethods.setText(_("Enable support to enter complex characters"))
+        self.ui.labelInputMethod.setText(_("Keyboard input method:"))
         self.ui.pushButtonCancel_2.setText(_("Cancel"))
         self.ui.selectLanguageLabel.setText(_("Select language to install:"))
         self.ui.pushButtonOk.setText(_("Install"))
@@ -132,7 +140,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                 item.setSelected(True)
         if (not os.path.exists("/etc/alternatives/xinput-all_ALL") or
             not os.path.exists("/usr/bin/im-switch")):
-            self.ui.enableInputMethods.setEnabled(False)
+            self.ui.comboBoxInputMethod.setEnabled(False)
 
     def verifyInstalledLangPacks(self):
         """ called at the start to inform about possible missing
@@ -140,7 +148,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         """
         print "verifyInstalledLangPacks"
         missing = self.getMissingLangPacks()
-        
+
         print "Missing: %s " % missing
         if len(missing) > 0:
             # FIXME: add "details"
@@ -207,36 +215,29 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                 if self.mode == "uninstall":
                     elm.setFlags(Qt.ItemIsDropEnabled)  #not sure how to unset all flags, but this disables the item
                     elm.setToolTip(_("Not installed"))
+                    elm.hide()
                 else:
                     elm.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
 
-    def check_input_methods(self):
+    def checkInputMethods(self):
         """ check if the selected langauge has input method support
             and set checkbutton_enable_input_methods accordingly
         """
-        if (os.path.exists("/etc/alternatives/xinput-all_ALL") and
-            os.path.exists("/usr/bin/im-switch")):
-            items = self.ui.listBoxDefaultLanguage.selectedItems()
-            if len(items) == 1 and self.mode == "select":
-                item = items[0]
-                lang = item.text()
-                new_locale = ("%s"%lang)
-                try:
-                    code = self._localeinfo.localeToCodeMap[new_locale]
-                    # if we have a default in im-switch for this language, we
-                    # can't change it from here (unless the im-switch swamp in drained)
-                    default = os.path.exists("/etc/alternatives/xinput-%s" % code)
-                    self.ui.enableInputMethods.setEnabled(not default) 
-                    self.ui.enableInputMethods.setChecked(default)        # bah, Qt4 won't show it ticked when disabled
-                    if default:
-                        return
-                    # now check if we have overwritten this - we do this by checking
-                    # the setting for all_ALL (im-switch goodness again :/)
-                    target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
-                    active = (target != "default" and target != "none")
-                    self.ui.enableInputMethods.setChecked(active)
-                except KeyError:
-                    print "ERROR: can not find new_locale: '%s'"%new_locale
+        if not self.imSwitch.available():
+            return
+        (lang, code) = self.getSystemLanguage()
+
+        combo = self.ui.comboBoxInputMethod
+        combo.clear()
+
+        currentIM = self.imSwitch.getInputMethodForLocale(code)
+        if currentIM == None:
+            currentIM = 'none'
+
+        for (i, IM) in enumerate(self.imSwitch.getAvailableInputMethods()):
+            combo.insertItem(i,IM)
+            if IM == currentIM:
+                combo.setCurrentIndex(i)
 
     def run_pkg_manager_update(self, lock):
         self.returncode = 0
@@ -256,44 +257,13 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
     def onSystemPushButtonOk(self):
         (lang, code) = self.getSystemLanguage()
         self.setSystemDefaultLanguage(code)
-        scimOn = self.updateInputMethods()
-        if scimOn:
-            KMessageBox.information(self, _("Default system Language now set to %s.  Complex character input will be enabled when you next log in." % lang), _("Language Set"))
-        else:
-            KMessageBox.information(self, _("Default system Language now set to %s.") % lang, _("Language Set"))
+        self.updateInputMethods(code)
+        KMessageBox.information(self, _("Default system Language now set to %s.") % lang, _("Language Set"))
         self.close()
 
-    def __input_method_config_changed(self):
-        """ check if we changed the input method config here         
-        """
-        if (os.path.exists("/etc/alternatives/xinput-all_ALL") and
-            os.path.exists("/usr/bin/im-switch")):
-          (lang, code) = self.getSystemLanguage()
-          default = os.path.exists("/etc/alternatives/xinput-%s" % code)
-          if default:
-              return
-          # now check if we have overwritten this - we do this by checking
-          # the setting for all_ALL (im-switch goodness again :/)
-          target = os.path.basename(os.readlink("/etc/alternatives/xinput-all_ALL"))
-          current = (target != "default" and target != "none")
-          new = (self.ui.enableInputMethods.checkState() == Qt.Checked)
-          return (new != current)
-
-    def updateInputMethods(self):
-        """ write new input method defaults - currently we only support
-            "im-switch -a" to reset and
-            "im-switch -s scim" to set to scim (that is the default im
-                              for all CJK languages currently)
-        """
-        (lang, code) = self.getSystemLanguage()
-        # if something has changed - act!
-        if self.__input_method_config_changed():
-            if self.ui.enableInputMethods.checkState() == Qt.Checked:
-                os.system("im-switch -z %s -s scim-bridge" % code)
-                return True
-            else:
-                os.system("im-switch -z %s -a" % code)
-                return False
+    def updateInputMethods(self,code):
+        IM_choice = self.ui.comboBoxInputMethod.currentText()
+        self.imSwitch.setInputMethodForLocale(IM_choice, code)
 
     def getSystemLanguage(self):
         """ returns tuple of (lang, code) strings """
@@ -350,20 +320,21 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
 if __name__ == "__main__":
 
-    appName	= "language-selector"
-    catalog	= ""
+    appName     = "language-selector"
+    catalog     = ""
     programName = ki18n ("Language Selector")
-    version	= "0.3.4"
-    description	= ki18n ("Language Selector")
-    license	= KAboutData.License_GPL
-    copyright	= ki18n ("(c) 2008 Canonical Ltd")
-    text	= ki18n ("none")
-    homePage	= "https://launchpad.net/language-selector"
-    bugEmail	= ""
-    
+    version     = "0.3.4"
+    description = ki18n ("Language Selector")
+    license     = KAboutData.License_GPL
+    copyright   = ki18n ("(c) 2008 Canonical Ltd")
+    text        = ki18n ("none")
+    homePage    = "https://launchpad.net/language-selector"
+    bugEmail    = ""
+
     aboutData	= KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
-    
+
     aboutData.addAuthor(ki18n("Rob Bean"), ki18n("PyQt4 to PyKDE4 port"))
+    aboutData.addAuthor(ki18n("Harald Sitter"), ki18n("Developer"))
 
     options = KCmdLineOptions()
     options.add("!mode ", ki18n("REQUIRED: install, uninstall or select must follow"),  "select")
@@ -378,9 +349,9 @@ if __name__ == "__main__":
     gettext.textdomain("language-selector")
 
     app = KApplication()
-    
+
     args = KCmdLineArgs.parsedArgs()
-    
+
     if args.isSet("mode"):
         whattodo = args.getOption("mode")
         if whattodo in ["install", "uninstall", "select"]:
@@ -391,13 +362,15 @@ if __name__ == "__main__":
     else:
         print "Please review the usage."
         args.usage()
-        
+
     if os.getuid() != 0:
         KMessageBox.sorry(None, _("Please run this software with administrative rights."),  _("Not Root User"))
         sys.exit(1)
 
     lc = QtLanguageSelector(app, "/usr/share/language-selector/", whattodo)
-    
+
     lc.show()
 
     app.exec_()
+
+# kate: space-indent on; indent-width 4; mixedindent off; indent-mode python;

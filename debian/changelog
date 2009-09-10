@@ -1,3 +1,17 @@
+language-selector (0.4.9) karmic; urgency=low
+
+  * Implement input method subsystem into Qt UI
+  * Make the Qt UI's uninstall mode more usable by hiding not-installed
+    languages from the list view
+  * Port package build system to dh 7
+    + Build-depend on debhelper 7
+  * Bump standards version to 3.8.3
+  * Add misc depends to all packages
+  * Revise copyright file
+  * Add manpage for qt-lanaguage-selector (as produced by kdemangen.pl)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 10 Sep 2009 22:50:07 +0200
+
 language-selector (0.4.8) karmic; urgency=low
 
   * Fix Qt desktop file icon to fit in with app (LP: #316559)

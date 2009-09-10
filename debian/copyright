@@ -1,12 +1,20 @@
-This package was debianized by Michael Vogt <michael.vogt@ubuntu.com> on
-Fri,  31 May 2005 10:10:41 +0100.
+Upstream-Name: language-selector
+Upstream-Maintainer: Arne Goetje <arne@ubuntu.com>
+Upstream-Source: https://code.launchpad.net/~ubuntu-core-dev/language-selector/ubuntu
 
-It was downloaded via baz from
-http://people.ubuntu.com/~mvo/arch/ubuntu
-as 
-michael.vogt@ubuntu.com--2005/language-selector--main--0
+Files: *
+Copyright: Copyright 2005-2006, Canonical Ltd
+License: GPL-2+
 
-Upstream Author: Michael Vogt <michael.vogt@ubuntu.com>
+Files: LanguageSelector/qt/QtLanguageSelector.py
+Copyright: Copyright 2009, Harald Sitter <apachelogger@ubuntu.com>
+License: GPL-2+
 
-Copyright: GPL, see /usr/share/common-licenses/GPL
+Files: debian/*
+Copyright: Copyright 2009, Harald Sitter <apachelogger@ubuntu.com>
+Copyright: Copyright 2005-2006, Canonical Ltd
+License: GPL-2+
 
+License: GPL-2+
+ On Debian systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-2'.

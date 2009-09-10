@@ -525,7 +525,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         if combo.get_active() < 0:
             return
         (IM_choice, IM_name) = model[combo.get_active()]
-        print "IM: "+IM_choice+"\t"+code
+        #print "IM: "+IM_choice+"\t"+code
         self.imSwitch.setInputMethodForLocale(IM_choice, code)
 
     @honorBlockedSignals
