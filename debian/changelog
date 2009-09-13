@@ -1,3 +1,9 @@
+language-selector (0.4.10) karmic; urgency=low
+
+  * Fix crash in Qt's uninstall mode
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Sun, 13 Sep 2009 14:12:49 +0200
+
 language-selector (0.4.9) karmic; urgency=low
 
   * Implement input method subsystem into Qt UI

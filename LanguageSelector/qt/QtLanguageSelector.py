@@ -215,7 +215,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                 if self.mode == "uninstall":
                     elm.setFlags(Qt.ItemIsDropEnabled)  #not sure how to unset all flags, but this disables the item
                     elm.setToolTip(_("Not installed"))
-                    elm.hide()
+                    elm.setHidden(True)
                 else:
                     elm.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
 
