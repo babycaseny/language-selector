@@ -16,7 +16,7 @@ import os.path
 
 from LocaleInfo import LocaleInfo
 
-class ExceptionMultpleConfigurations(Exception):
+class ExceptionMultipleConfigurations(Exception):
     " error when multiple languages are symlinked "
     pass
 class ExceptionUnconfigured(Exception):

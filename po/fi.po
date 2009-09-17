@@ -7,25 +7,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-05-08 17:40+0000\n"
-"PO-Revision-Date: 2009-05-08 19:27+0000\n"
+"POT-Creation-Date: 2009-09-15 16:07+0800\n"
+"PO-Revision-Date: 2009-09-10 07:28+0000\n"
 "Last-Translator: Timo Jyrinki <timo-jyrinki@ubuntu.com>\n"
 "Language-Team: Finnish <ubuntu-fi@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-07-31 03:32+0000\n"
+"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 "X-Rosetta-Version: 0.1\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:44
+msgid "Chinese (simplified)"
+msgstr "kiina (yksinkertaistettu)"
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:46
+msgid "Chinese (traditional)"
+msgstr "kiina (perinteinen)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
 msgstr "Kielitietoja ei saatavilla"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:189
-#: ../LanguageSelector/qt/QtLanguageSelector.py:87
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:197
+#: ../LanguageSelector/qt/QtLanguageSelector.py:95
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -33,76 +44,78 @@ msgstr ""
 "Järjestelmällä ei ole vielä tietoja saatavilla olevista kielistä. Haluatko "
 "suorittaa verkkopäivityksen nyt tietojen noutamiseksi? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:201
+#: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
 msgstr "_Päivitä"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:275
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#: ../data/LanguageSelector.ui.h:26
 msgid "Language"
 msgstr "Kieli"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:290
 msgid "Installed"
 msgstr "Asennettu"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:413
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:405
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
 msgstr[0] "%d asennettava"
 msgstr[1] "%d asennettavaa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:414
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
 msgstr[0] "%d poistettava"
 msgstr[1] "%d poistettavaa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:423
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:538
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:568
 msgid "Could not install the selected language support"
 msgstr "Ei voitu asentaa valittua kielitukea"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"Tämä voi johtua ohjelmavirheestä. Tee asiasta virheraportti osoitteessa "
-"https://launchpad.net/bugs/bugs/+package/ 'language-selector'-tuotteelle."
+"Epäonnistuminen johtuu luultavasti tämän ohjelman virheestä. Tee "
+"virheraportti osoitteessa https://bugs.launchpad.net/ubuntu/+source/language-"
+"selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
 msgstr "Täyttä kielitukea ei voitu asentaa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
-"Yleensä tämä liittyy virheeseen ohjelmavarastossa tai pakettienhallinnassa. "
-"Tarkista ohjelma-asetukset valikossa \"Hallinta\"."
+"Tämä liittyy yleensä virheeseen ohjelmistovarastossa tai "
+"ohjelmistohallinnassa. Tarkista Ohjelmalähteet valikossa Järjestelmä -> "
+"Ylläpito."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:609
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
 msgid "The list of available languages on the system has been updated."
 msgstr "Luettelo järjestelmän käytettävissä olevista kielistä on päivitetty."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
-#: ../LanguageSelector/qt/QtLanguageSelector.py:152
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
 msgstr "Kielitukea ei ole asennettu kokonaan"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:693
-#: ../LanguageSelector/qt/QtLanguageSelector.py:153
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -110,28 +123,28 @@ msgstr ""
 "Joitain valitsemiesi kielten käännöksiä tai kirjoitusaputyökaluja ei ole "
 "asennettu. Haluatko asentaa ne nyt?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
-#: ../LanguageSelector/qt/QtLanguageSelector.py:82
-#: ../LanguageSelector/qt/QtLanguageSelector.py:148
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
+#: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
 msgstr "_Muistuta minua myöhemmin"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:697
-#: ../LanguageSelector/qt/QtLanguageSelector.py:147
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
+#: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "_Asenna"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:700
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
 msgid "Details"
 msgstr "Yksityiskohdat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
-#: ../LanguageSelector/qt/QtLanguageSelector.py:71
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:769
+#: ../LanguageSelector/qt/QtLanguageSelector.py:79
 msgid "Software database is broken"
 msgstr "Ohjelmatietokanta on rikki"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:740
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -141,19 +154,19 @@ msgstr ""
 "Synaptic-pakettienhallintaa tai komentoa \"sudo apt-get install -f\" "
 "päätteessä."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:47
+#: ../LanguageSelector/qt/QtLanguageSelector.py:54
 msgid "Uninstall"
 msgstr "Poista"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:48
+#: ../LanguageSelector/qt/QtLanguageSelector.py:55
 msgid "Select language to uninstall:"
 msgstr "Valitse poistettava kieli:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:55
+#: ../LanguageSelector/qt/QtLanguageSelector.py:62
 msgid "Language Selector"
 msgstr "Kieliasetukset"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -163,65 +176,57 @@ msgstr ""
 "\"Adept\"-pakettienhallintaa tai komentoa \"sudo apt-get install -f\" "
 "päätteessä."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:107
+#: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
 msgstr "Oletuskieli:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:108
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Set System Language"
 msgstr "Aseta järjestelmän kieli"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:109
-msgid "Enable support to enter complex characters"
-msgstr "Ota käyttöön monimutkaisten kirjainmerkkien syöttämisen tuki"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+#, fuzzy
+msgid "Keyboard input method:"
+msgstr "Näpppäimistön syöttötapajärjestelmä:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:110
-#: ../LanguageSelector/qt/QtLanguageSelector.py:113
+#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../data/LanguageSelector.ui.h:13
 msgid "Cancel"
 msgstr "Peru"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:111
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
 msgid "Select language to install:"
 msgstr "Valitse asennettava kieli:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:112
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Install"
 msgstr "Asenna"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:201
+#: ../LanguageSelector/qt/QtLanguageSelector.py:209
 msgid "Already installed"
 msgstr "Asennettu"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
 msgstr "Osittain asennettu"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:209
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
 msgid "Not installed"
 msgstr "Ei asennettu"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 #, python-format
-msgid ""
-"Default system Language now set to %s.  Complex character input will be "
-"enabled when you next log in."
-msgstr ""
-"Järjestelmän oletuskieli on nyt \"%s\". Monimutkaisten kirjainmerkkien "
-"syöttötuki otetaan käyttöön seuraavalla kirjautumiskerralla."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:261
-#: ../LanguageSelector/qt/QtLanguageSelector.py:263
-msgid "Language Set"
-msgstr "Kieli asetettu"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:263
-#, python-format
 msgid "Default system Language now set to %s."
 msgstr "Järjestelmän oletuskieli on nyt asetettu seuraavaksi: %s."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:344
+#: ../LanguageSelector/qt/QtLanguageSelector.py:261
+msgid "Language Set"
+msgstr "Kieli asetettu"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:314
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
@@ -230,36 +235,44 @@ msgstr ""
 "Käännökset ja tuki ovat nyt asennettuina kielelle %s. Valitse ne "
 "napsauttamalla \"Lisää kieli\"-painiketta."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:344
+#: ../LanguageSelector/qt/QtLanguageSelector.py:314
 msgid "Language Installed"
 msgstr "Kieli asennettu"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:346
+#: ../LanguageSelector/qt/QtLanguageSelector.py:316
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "Kielen %s käännökset ja tuki ovat nyt poistettu."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:346
+#: ../LanguageSelector/qt/QtLanguageSelector.py:316
 msgid "Language Uninstalled"
 msgstr "Kieli poistettu"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:348
+#: ../LanguageSelector/qt/QtLanguageSelector.py:318
 msgid "Failed to set system language."
 msgstr "Järjestelmän kieltä ei voitu asettaa"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:348
+#: ../LanguageSelector/qt/QtLanguageSelector.py:318
 msgid "Language Not Set"
 msgstr "Kieltä ei asetettu"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:396
+#: ../LanguageSelector/qt/QtLanguageSelector.py:367
 msgid "Please run this software with administrative rights."
 msgstr "Käynnistä tämä ohjelma hallintaoikeuksilla"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:396
+#: ../LanguageSelector/qt/QtLanguageSelector.py:367
 msgid "Not Root User"
 msgstr "Ei pääkäyttäjä"
 
-#: ../data/LanguageSelector.glade.h:1
+#: ../data/LanguageSelector.ui.h:1
+msgid "1234567.89"
+msgstr "1234567.89"
+
+#: ../data/LanguageSelector.ui.h:2
+msgid "<b>Example</b>"
+msgstr "<b>Esimerkki</b>"
+
+#: ../data/LanguageSelector.ui.h:3
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -270,13 +283,29 @@ msgstr ""
 "\n"
 "Käännösten määrä ja kirjoitusavujen saatavuus vaihtelee kielittäin."
 
-#: ../data/LanguageSelector.glade.h:4
+#: ../data/LanguageSelector.ui.h:6
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Kaikki muutokset tulevat voimaan seuraavalla "
-"kirjautumiskerralla.</small>"
+"<small>Kaikki muutokset tulevat voimaan seuraavalla kirjautumiskerralla.</"
+"small>"
 
-#: ../data/LanguageSelector.glade.h:5
+#: ../data/LanguageSelector.ui.h:7
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Raahaa kieliä asettaaksesi ne suosituimmuusjärjestykseen.\n"
+"Muutokset tulevat voimaan seuraavalla kirjautumiskerralla.</small>"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same language choices for startup and the login screen.</"
+"small>"
+msgstr ""
+"<small>Käytä samoja kielivalintoja käynnistyksessä ja kirjautumisruudussa.</"
+"small>"
+
+#: ../data/LanguageSelector.ui.h:10
 msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
@@ -285,93 +314,91 @@ msgstr ""
 "kiinnostavia, esimerkiksi koristeellisia kirjasimia asiakirjojen "
 "tulostamiseen."
 
-#: ../data/LanguageSelector.glade.h:6
-msgid ""
-"Additional software which might be of general interest for users using this "
-"language."
-msgstr ""
-"Ylimääräisiä ohjelmistoja, jotka saattavat olla yleisesti kiinnostavia tätä "
-"kieltä käyttäville käyttäjille."
-
-#: ../data/LanguageSelector.glade.h:7
+#: ../data/LanguageSelector.ui.h:11
 msgid "Apply Changes"
 msgstr "Toteuta muutokset"
 
-#: ../data/LanguageSelector.glade.h:8
-msgid "Basic translations"
-msgstr "Peruskäännökset"
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr "Toteuta järjestelmänlaajuisesti..."
 
-#: ../data/LanguageSelector.glade.h:10
+#: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
 msgstr "Osat:"
 
-#: ../data/LanguageSelector.glade.h:11
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr "Valuutta:"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr "Päiväys:"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr "Näytä numerot, päivämäärät ja rahasummat muodossa:"
+
+#: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
 msgstr "Lisäkirjasimet"
 
-#: ../data/LanguageSelector.glade.h:12
-msgid "Extra software"
-msgstr "Lisäohjelmistot"
-
-#: ../data/LanguageSelector.glade.h:13
-msgid "Extra translations"
-msgstr "Lisäkäännökset"
-
-#: ../data/LanguageSelector.glade.h:14
+#: ../data/LanguageSelector.ui.h:19
 msgid "For everyone at startup and login, use:"
 msgstr "Käytä kaikille käynnistyttäessä ja kirjautumisikkunassa:"
 
-#: ../data/LanguageSelector.glade.h:15
+#: ../data/LanguageSelector.ui.h:20
 msgid "For my menus and windows, use:"
 msgstr "Käytä tämän käyttäjän valikoissa ja ikkunoissa:"
 
-#: ../data/LanguageSelector.glade.h:16
-msgid ""
-"Input Methods for languages with complex scripts. Scim modules or other "
-"relevant software which helps with typing complex characters."
-msgstr ""
-"Syöttötavat kielille, joilla on monimutkainen kirjoitusasu. Sisältää Scim-"
-"moduulit ja muut oleelliset ohjelmat, jotka auttavat kirjainmerkkien "
-"kirjoittamisessa."
-
-#: ../data/LanguageSelector.glade.h:17
+#: ../data/LanguageSelector.ui.h:21
 msgid "Input methods"
 msgstr "Syöttötavat"
 
-#: ../data/LanguageSelector.glade.h:18
+#: ../data/LanguageSelector.ui.h:22
 msgid "Install / Remove Languages..."
 msgstr "Asenna tai poista kieliä..."
 
-#: ../data/LanguageSelector.glade.h:19
+#: ../data/LanguageSelector.ui.h:23
 msgid "Installed Languages"
 msgstr "Asennetut kielet"
 
-#: ../data/LanguageSelector.glade.h:20
+#: ../data/LanguageSelector.ui.h:24
 msgid "Keep the same"
 msgstr "Pidä samoina"
 
-#: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-msgstr ""
-"Käännökset ja ohjeet ohjelmille OpenOffice.org, Firefox, Thunderbird ja "
-"Pidgin."
+#: ../data/LanguageSelector.ui.h:25
+msgid "Keyboard input method system:"
+msgstr "Näpppäimistön syöttötapajärjestelmä:"
 
-#: ../data/LanguageSelector.glade.h:23
+#: ../data/LanguageSelector.ui.h:27
+msgid "Language & Text"
+msgstr "Kieli ja teksti"
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Language for menus and windows:"
+msgstr "Valikoiden ja ikkunoiden kieli:"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Number:"
+msgstr "Numero:"
+
+#: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
 msgstr "Oikoluku ja kirjoitusavut"
 
-#: ../data/LanguageSelector.glade.h:24
-msgid "Translations for your desktop. Also known as language-pack."
-msgstr "Käännökset työpöydälle. Tunnetaan myös kielipaketti-nimellä."
+#: ../data/LanguageSelector.ui.h:31
+msgid "Text"
+msgstr "Teksti"
 
-#: ../data/LanguageSelector.glade.h:25
-msgid "Use input method engines (IME) to enter complex characters"
-msgstr ""
-"Käytä syöttötapaohjelmia monimutkaisten \n"
-"kirjainmerkkien syöttämiseksi"
+#: ../data/LanguageSelector.ui.h:32
+msgid "Translations"
+msgstr "Käännökset"
 
-#: ../data/LanguageSelector.glade.h:26
+#: ../data/LanguageSelector.ui.h:33
+msgid "Translations for your desktop."
+msgstr "Työpöydän käännökset."
+
+#: ../data/LanguageSelector.ui.h:34
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -379,7 +406,7 @@ msgstr ""
 "Kun kieli on asennettu, käyttäjät voivat valita sen käyttöön Kieliasetukset-"
 "työkalussa."
 
-#: ../data/LanguageSelector.glade.h:27
+#: ../data/LanguageSelector.ui.h:35
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
@@ -399,35 +426,35 @@ msgid "Language Support"
 msgstr "Kieliasetukset"
 
 #. Name
-#: ../data/incomplete-language-support-gnome.note.in:5
-#: ../data/incomplete-language-support-qt.note.in:5
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
 msgid "Incomplete Language Support"
 msgstr "Kielituki vaillinainen"
 
 #. Description
-#: ../data/incomplete-language-support-gnome.note.in:6
+#: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Kaikkia kielituen vaatimia tiedostoja ei ole asennettu valitulle kielelle. "
-"Voit asentaa puuttuvat osat tuesta napsauttamalla \"Run this action now\" "
-"(\"Suorita tämä toiminto nyt\") ja seuraamalla ohjeita. Toiminnassa oleva "
+"Voit asentaa puuttuvat osat tuesta napsauttamalla \"Run this action now"
+"\" (\"Suorita tämä toiminto nyt\") ja seuraamalla ohjeita. Toiminnassa oleva "
 "Internet-yhteys vaaditaan. Jos haluat asentaa täyden kielituen myöhemmin, "
 "avaa \"System -> Administration -> Language Support\" (\"Järjestelmä -> "
 "Ylläpito -> Kieliasetukset\")."
 
 #. Description
-#: ../data/incomplete-language-support-qt.note.in:6
+#: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Valitun kielen kielitukitiedostot vaikuttavat olevan puutteelliset. Voit "
 "asentaa puuttuvat osat napsauttamalla \"Suorita tämä toiminto nyt\" ja "
@@ -497,3 +524,45 @@ msgstr ""
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Fontconfig-voodoo-asetuksia ei löydetty valitulle maa-asetustolle"
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Ota käyttöön monimutkaisten kirjainmerkkien syöttämisen tuki"
+
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "Järjestelmän oletuskieli on nyt \"%s\". Monimutkaisten kirjainmerkkien "
+#~ "syöttötuki otetaan käyttöön seuraavalla kirjautumiskerralla."
+
+#~ msgid ""
+#~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+#~ msgstr ""
+#~ "Käännökset ja ohjeet ohjelmille OpenOffice.org, Firefox, Thunderbird ja "
+#~ "Pidgin."
+
+#~ msgid ""
+#~ "Input Methods for languages with complex scripts. Scim modules or other "
+#~ "relevant software which helps with typing complex characters."
+#~ msgstr ""
+#~ "Syöttötavat kielille, joilla on monimutkainen kirjoitusasu. Sisältää Scim-"
+#~ "moduulit ja muut oleelliset ohjelmat, jotka auttavat kirjainmerkkien "
+#~ "kirjoittamisessa."
+
+#~ msgid "Extra software"
+#~ msgstr "Lisäohjelmistot"
+
+#~ msgid ""
+#~ "Additional software which might be of general interest for users using "
+#~ "this language."
+#~ msgstr ""
+#~ "Ylimääräisiä ohjelmistoja, jotka saattavat olla yleisesti kiinnostavia "
+#~ "tätä kieltä käyttäville käyttäjille."
+
+#~ msgid "Extra translations"
+#~ msgstr "Lisäkäännökset"
+
+#~ msgid "Use input method engines (IME) to enter complex characters"
+#~ msgstr ""
+#~ "Käytä syöttötapaohjelmia monimutkaisten \n"
+#~ "kirjainmerkkien syöttämiseksi"

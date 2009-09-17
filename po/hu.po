@@ -8,25 +8,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lang-hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-05-08 17:40+0000\n"
-"PO-Revision-Date: 2009-05-08 19:28+0000\n"
+"POT-Creation-Date: 2009-09-15 16:07+0800\n"
+"PO-Revision-Date: 2009-09-08 17:23+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-07-31 03:32+0000\n"
+"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 "X-Rosetta-Version: 0.1\n"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:188
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:44
+msgid "Chinese (simplified)"
+msgstr ""
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:46
+msgid "Chinese (traditional)"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
 msgstr "Nem érhetők el nyelvinformációk"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:189
-#: ../LanguageSelector/qt/QtLanguageSelector.py:87
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:197
+#: ../LanguageSelector/qt/QtLanguageSelector.py:95
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -34,77 +45,77 @@ msgstr ""
 "A rendszernek még nincsenek információi az elérhető nyelvekről. Kíván "
 "hálózati frissítést végezni a nyelvek listájának lekéréséhez? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:193
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:201
+#: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
 msgstr "_Frissítés"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:275
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#: ../data/LanguageSelector.ui.h:26
 msgid "Language"
 msgstr "Nyelv"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:282
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:290
 msgid "Installed"
 msgstr "Telepítve"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:413
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:405
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
 msgstr[0] "%d telepítendő"
 msgstr[1] "%d telepítendő"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:414
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
 msgstr[0] "%d eltávolítandó"
 msgstr[1] "%d eltávolítandó"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:423
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:538
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:568
 msgid "Could not install the selected language support"
 msgstr "A kiválasztott nyelvi támogatás telepítése nem lehetséges"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:541
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
-"https://launchpad.net/bugs/bugs/+package/ against the 'language-selector' "
-"product."
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"Ez valószínűleg egy hiba ebben az alkalmazásban. Kérjük jelentse a hibát a "
-"https://launchpad.net/bugs/bugs/+package/ címen a \"language-selector\" "
-"csomaghoz."
+"Ez talán ennek az alkalmazásnak a hibája. Kérjük jelentse itt: https://bugs."
+"launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
 msgstr "Nem lehet telepíteni a teljes nyelvi támogatást"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the menu \"Adminstration\"."
+"manager. Check your software preferences in the System > Administration menu."
 msgstr ""
-"Ez általában a szoftverarchívum a vagy a szoftverkezelő hibájával "
-"kapcsolatos. Ellenőrizze szoftverbeállításait az \"Adminisztráció\" menüben."
+"Ennek általában egy szoftverarchívumban, vagy a szoftverkezelőben lévő "
+"hibához van köze. Ellenőrizze a szoftverbeállításokat a Rendszer → "
+"Adminisztráció menüben."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:609
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
 msgid "The list of available languages on the system has been updated."
 msgstr "Az elérhető nyelvek listája frissült a rendszeren."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:692
-#: ../LanguageSelector/qt/QtLanguageSelector.py:152
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
 msgstr "A nyelvi támogatás nincs teljesen telepítve"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:693
-#: ../LanguageSelector/qt/QtLanguageSelector.py:153
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -112,28 +123,28 @@ msgstr ""
 "A kiválasztott nyelvekhez elérhető egyes fordítások vagy írási segédletek "
 "még nincsenek telepítve. Kívánja ezeket most telepíteni?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:696
-#: ../LanguageSelector/qt/QtLanguageSelector.py:82
-#: ../LanguageSelector/qt/QtLanguageSelector.py:148
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
+#: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
 msgstr "_Emlékeztessen később"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:697
-#: ../LanguageSelector/qt/QtLanguageSelector.py:147
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
+#: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "_Telepítés"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:700
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
 msgid "Details"
 msgstr "Részletek"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:739
-#: ../LanguageSelector/qt/QtLanguageSelector.py:71
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:769
+#: ../LanguageSelector/qt/QtLanguageSelector.py:79
 msgid "Software database is broken"
 msgstr "A szoftveradatbázis sérült"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:740
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -143,19 +154,19 @@ msgstr ""
 "csomagkezelőt, vagy futtassa a \"sudo apt-get install -f\" parancsot egy "
 "terminálban a probléma megoldása érdekében."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:47
+#: ../LanguageSelector/qt/QtLanguageSelector.py:54
 msgid "Uninstall"
 msgstr "Eltávolítás"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:48
+#: ../LanguageSelector/qt/QtLanguageSelector.py:55
 msgid "Select language to uninstall:"
 msgstr "Válassza ki az eltávolítandó nyelvet:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:55
+#: ../LanguageSelector/qt/QtLanguageSelector.py:62
 msgid "Language Selector"
 msgstr "Nyelvválasztó"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:72
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -165,65 +176,57 @@ msgstr ""
 "„Adept” csomagkezelőt, vagy futtassa terminálból a „sudo apt-get install -f” "
 "parancsot a hiba javításához."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:107
+#: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
 msgstr "A rendszer alapértelmezett nyelve:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:108
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Set System Language"
 msgstr "A rendszer nyelvének beállítása"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:109
-msgid "Enable support to enter complex characters"
-msgstr "Összetettkarakter-bevitel támogatásának engedélyezése"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+#, fuzzy
+msgid "Keyboard input method:"
+msgstr "Szövegbeviteli módok"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:110
-#: ../LanguageSelector/qt/QtLanguageSelector.py:113
+#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../data/LanguageSelector.ui.h:13
 msgid "Cancel"
 msgstr "Mégsem"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:111
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
 msgid "Select language to install:"
 msgstr "Válassza ki a telepítendő nyelvet:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:112
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Install"
 msgstr "Telepítés"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:201
+#: ../LanguageSelector/qt/QtLanguageSelector.py:209
 msgid "Already installed"
 msgstr "Már telepítve"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
 msgstr "Részben telepítve"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:209
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
 msgid "Not installed"
 msgstr "Nincs telepítve"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 #, python-format
-msgid ""
-"Default system Language now set to %s.  Complex character input will be "
-"enabled when you next log in."
-msgstr ""
-"A rendszer alapértelmezett nyelve mostantól %s. Az összetett karakterek "
-"beviltel engedélyezve lesz a következő bejelentkezéskor."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:261
-#: ../LanguageSelector/qt/QtLanguageSelector.py:263
-msgid "Language Set"
-msgstr "Nyelvhalmaz"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:263
-#, python-format
 msgid "Default system Language now set to %s."
 msgstr "A rendszer alapértelmezett nyelve mostantól %s."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:344
+#: ../LanguageSelector/qt/QtLanguageSelector.py:261
+msgid "Language Set"
+msgstr "Nyelvhalmaz"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:314
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
@@ -232,36 +235,44 @@ msgstr ""
 "A fordítások és támogatás telepítve a(z) %s nyelvhez. Válassza ki a Nyelv "
 "hozzáadása gomb segítségével."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:344
+#: ../LanguageSelector/qt/QtLanguageSelector.py:314
 msgid "Language Installed"
 msgstr "A nyelv telepítve"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:346
+#: ../LanguageSelector/qt/QtLanguageSelector.py:316
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "%s nyelv fordításai és támogatása eltávolítva."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:346
+#: ../LanguageSelector/qt/QtLanguageSelector.py:316
 msgid "Language Uninstalled"
 msgstr "A nyelv eltávolítva"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:348
+#: ../LanguageSelector/qt/QtLanguageSelector.py:318
 msgid "Failed to set system language."
 msgstr "A rendszer nyelvének beállítása meghiúsult"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:348
+#: ../LanguageSelector/qt/QtLanguageSelector.py:318
 msgid "Language Not Set"
 msgstr "A nyelv nem lett beállítva"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:396
+#: ../LanguageSelector/qt/QtLanguageSelector.py:367
 msgid "Please run this software with administrative rights."
 msgstr "Kérem, hogy adminisztrátori jogokkal futtassa ezt a szoftvert."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:396
+#: ../LanguageSelector/qt/QtLanguageSelector.py:367
 msgid "Not Root User"
 msgstr "Rendszergazdai jogokkal nem rendelkező felhasználó"
 
-#: ../data/LanguageSelector.glade.h:1
+#: ../data/LanguageSelector.ui.h:1
+msgid "1234567.89"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:2
+msgid "<b>Example</b>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:3
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -273,12 +284,24 @@ msgstr ""
 "A fordítások vagy a szövegbevitel támogatásának elérhetősége az egyes "
 "nyelvek között eltérő lehet."
 
-#: ../data/LanguageSelector.glade.h:4
+#: ../data/LanguageSelector.ui.h:6
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
 "<small>A változtatások a következő bejelentkezéskor lépnek életbe.</small>"
 
-#: ../data/LanguageSelector.glade.h:5
+#: ../data/LanguageSelector.ui.h:7
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:9
+msgid ""
+"<small>Uses the same language choices for startup and the login screen.</"
+"small>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:10
 msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
@@ -286,87 +309,91 @@ msgstr ""
 "További betűtípusok e nyelvhez, melyek valószínűleg sokakat érdekelhetnek, "
 "például szépen kidolgozott betűkészletek dokumentumok nyomtatásához."
 
-#: ../data/LanguageSelector.glade.h:6
-msgid ""
-"Additional software which might be of general interest for users using this "
-"language."
-msgstr "További szoftverek, melyek főként e nyelv használóit érdekelhetik."
-
-#: ../data/LanguageSelector.glade.h:7
+#: ../data/LanguageSelector.ui.h:11
 msgid "Apply Changes"
 msgstr "Változtatások alkalmazása"
 
-#: ../data/LanguageSelector.glade.h:8
-msgid "Basic translations"
-msgstr "Alapvető fordítások"
+#: ../data/LanguageSelector.ui.h:12
+msgid "Apply System-Wide..."
+msgstr ""
 
-#: ../data/LanguageSelector.glade.h:10
+#: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
 msgstr "Komponensek:"
 
-#: ../data/LanguageSelector.glade.h:11
+#: ../data/LanguageSelector.ui.h:15
+msgid "Currency:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:16
+msgid "Date:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
 msgstr "Extra betűkészletek"
 
-#: ../data/LanguageSelector.glade.h:12
-msgid "Extra software"
-msgstr "Extra szoftver"
-
-#: ../data/LanguageSelector.glade.h:13
-msgid "Extra translations"
-msgstr "Extra fordítások"
-
-#: ../data/LanguageSelector.glade.h:14
+#: ../data/LanguageSelector.ui.h:19
 msgid "For everyone at startup and login, use:"
 msgstr "Minden indításhoz és bejelentkezéshez használja:"
 
-#: ../data/LanguageSelector.glade.h:15
+#: ../data/LanguageSelector.ui.h:20
 msgid "For my menus and windows, use:"
 msgstr "A saját menükben és saját ablakokban használja:"
 
-#: ../data/LanguageSelector.glade.h:16
-msgid ""
-"Input Methods for languages with complex scripts. Scim modules or other "
-"relevant software which helps with typing complex characters."
-msgstr ""
-"Szövegbeviteli módok összetett írással rendelkező nyelvek számára. A SCIM "
-"modul vagy más alkalmas szoftver mely lehetővé tesz komplex karakterek "
-"bevitelét is."
-
-#: ../data/LanguageSelector.glade.h:17
+#: ../data/LanguageSelector.ui.h:21
 msgid "Input methods"
 msgstr "Szövegbeviteli módok"
 
-#: ../data/LanguageSelector.glade.h:18
+#: ../data/LanguageSelector.ui.h:22
 msgid "Install / Remove Languages..."
 msgstr "_Nyelvek telepítése vagy eltávolítása…"
 
-#: ../data/LanguageSelector.glade.h:19
+#: ../data/LanguageSelector.ui.h:23
 msgid "Installed Languages"
 msgstr "Telepített nyelvek"
 
-#: ../data/LanguageSelector.glade.h:20
+#: ../data/LanguageSelector.ui.h:24
 msgid "Keep the same"
 msgstr "Használja ugyanazt"
 
-#: ../data/LanguageSelector.glade.h:22
-msgid ""
-"OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-msgstr "OpenOffice.org, Firefox, Thunderbird, Gaim fordítások és súgófájlok."
+#: ../data/LanguageSelector.ui.h:25
+msgid "Keyboard input method system:"
+msgstr ""
 
-#: ../data/LanguageSelector.glade.h:23
+#: ../data/LanguageSelector.ui.h:27
+msgid "Language & Text"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "Language for menus and windows:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:29
+msgid "Number:"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
 msgstr "Helyesírás-ellenőrzés és írástámogatás"
 
-#: ../data/LanguageSelector.glade.h:24
-msgid "Translations for your desktop. Also known as language-pack."
-msgstr "Fordítások az asztali környezethez. Nyelvi csomagként is ismert."
+#: ../data/LanguageSelector.ui.h:31
+msgid "Text"
+msgstr ""
 
-#: ../data/LanguageSelector.glade.h:25
-msgid "Use input method engines (IME) to enter complex characters"
-msgstr "Bevitelimód-alrendszerek használata összetett karakterek bevitelére"
+#: ../data/LanguageSelector.ui.h:32
+msgid "Translations"
+msgstr ""
 
-#: ../data/LanguageSelector.glade.h:26
+#: ../data/LanguageSelector.ui.h:33
+msgid "Translations for your desktop."
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:34
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -374,7 +401,7 @@ msgstr ""
 "Ha egy nyelv telepítve van, a felhasználók kiválaszthatják azt a Nyelvi "
 "beállításokban."
 
-#: ../data/LanguageSelector.glade.h:27
+#: ../data/LanguageSelector.ui.h:35
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
@@ -394,19 +421,19 @@ msgid "Language Support"
 msgstr "Nyelvi támogatás"
 
 #. Name
-#: ../data/incomplete-language-support-gnome.note.in:5
-#: ../data/incomplete-language-support-qt.note.in:5
+#: ..//data/incomplete-language-support-gnome.note.in:5
+#: ..//data/incomplete-language-support-qt.note.in:5
 msgid "Incomplete Language Support"
 msgstr "Hiányos nyelvi támogatás"
 
 #. Description
-#: ../data/incomplete-language-support-gnome.note.in:6
+#: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Úgy tűnik, hogy az Ön által kiválasztott nyelvhez nincs teljes nyelvi "
 "támogatást biztosító fájl. A hiányzó elemeket a „Futtatás most” gombra "
@@ -416,13 +443,13 @@ msgstr ""
 "teheti meg."
 
 #. Description
-#: ../data/incomplete-language-support-qt.note.in:6
+#: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Úgy tűnik, hogy az Ön által kiválasztott nyelvhez nincs teljes nyelvi "
 "támogatást biztosító fájl. A hiányzó elemeket a „Futtatás most” gombra "
@@ -495,3 +522,40 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Nem található fontconfig-voodoo konfiguráció a kijelölt területi beállításhoz"
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Összetettkarakter-bevitel támogatásának engedélyezése"
+
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "A rendszer alapértelmezett nyelve mostantól %s. Az összetett karakterek "
+#~ "beviltel engedélyezve lesz a következő bejelentkezéskor."
+
+#~ msgid ""
+#~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+#~ msgstr ""
+#~ "OpenOffice.org, Firefox, Thunderbird, Gaim fordítások és súgófájlok."
+
+#~ msgid ""
+#~ "Input Methods for languages with complex scripts. Scim modules or other "
+#~ "relevant software which helps with typing complex characters."
+#~ msgstr ""
+#~ "Szövegbeviteli módok összetett írással rendelkező nyelvek számára. A SCIM "
+#~ "modul vagy más alkalmas szoftver mely lehetővé tesz komplex karakterek "
+#~ "bevitelét is."
+
+#~ msgid "Extra software"
+#~ msgstr "Extra szoftver"
+
+#~ msgid ""
+#~ "Additional software which might be of general interest for users using "
+#~ "this language."
+#~ msgstr "További szoftverek, melyek főként e nyelv használóit érdekelhetik."
+
+#~ msgid "Extra translations"
+#~ msgstr "Extra fordítások"
+
+#~ msgid "Use input method engines (IME) to enter complex characters"
+#~ msgstr "Bevitelimód-alrendszerek használata összetett karakterek bevitelére"

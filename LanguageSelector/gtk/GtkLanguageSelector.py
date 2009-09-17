@@ -548,10 +548,10 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         res = True
         try:
             for pkg in inst_list:
-                if self._cache.has_key(pkg):
+                if pkg in self._cache:
                     self._cache[pkg].markInstall()
             for pkg in rm_list:
-                if self._cache.has_key(pkg):
+                if pkg in self._cache:
                     self._cache[pkg].markDelete()
         except SystemError:
             res = False
@@ -780,8 +780,6 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         #print "ll size: ", len(languageList)
         #print "ll type: ", type(languageList)
         for lang in languageList:
-            if lang == 'zh':
-                continue
             #print "langInfo: %s" % lang
             inconsistent = lang.inconsistent
             #if inconsistent:

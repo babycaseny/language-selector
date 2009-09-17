@@ -49,7 +49,7 @@ class LanguageSelectorBase(object):
             #print langInfo.languageCode
             trans_package = "language-pack-%s" % langInfo.languageCode
             # we have a langpack installed, see if we have all of them
-            if (self._cache.has_key(trans_package) and 
+            if (trans_package in self._cache and 
                 self._cache[trans_package].isInstalled):
                 #print "IsInstalled: %s " % trans_package
                 #print self._cache.pkg_translations[langInfo.languageCode]
@@ -59,7 +59,7 @@ class LanguageSelectorBase(object):
                             missing.append(translation)
             trans_package = "language-support-writing-%s" % langInfo.languageCode
             # we have a langsupport-writing installed, see if we have all of them
-            if (self._cache.has_key(trans_package) and 
+            if (trans_package in self._cache and 
                 self._cache[trans_package].isInstalled):
                 #print "IsInstalled: %s " % trans_package
                 #print self._cache.pkg_writing[langInfo.languageCode]
@@ -87,10 +87,10 @@ class LanguageSelectorBase(object):
             return missing
         # Fallback is English
         pkgcode = 'en'
-        if self._cache.langpack_locales.has_key(default_lang):
+        if default_lang in self._cache.langpack_locales:
             pkgcode = self._cache.langpack_locales[default_lang]
         trans_package = "language-pack-%s" % pkgcode
-        if (self._cache.has_key(trans_package) and 
+        if (trans_package in self._cache and 
             not self._cache[trans_package].isInstalled):
             missing += [trans_package]
             if pkgcode in self._cache.pkg_translations:
@@ -99,7 +99,7 @@ class LanguageSelectorBase(object):
                         missing += translation
         support_packages = LanguageSelectorPkgCache._getPkgList(self._cache, pkgcode)
         for support_package in support_packages:
-            if (self._cache.has_key(support_package) and 
+            if (support_package in self._cache and 
                 not self._cache[support_package].isInstalled):
                 missing.append(support_package)
 
@@ -113,7 +113,7 @@ class LanguageSelectorBase(object):
                             not self._cache[pull_pkg].isInstalled:
                             missing.append(pull_pkg)
                 else:
-                    if self[pkg].isInstalled and \
+                    if self._cache[pkg].isInstalled and \
                         not self._cache[pull_pkg].isInstalled:
                         missing.append(pull_pkg)
 
@@ -124,12 +124,14 @@ class LanguageSelectorBase(object):
         if os.path.exists(fname):
             for line in open(fname):
                 match = re.match(r'Language=(.*)$',line)
-                if match:
+                if match and match.group(1) != 'C':
                     if "." in match.group(1):
                         return match.group(1).split(".")[0]
                     else:
                         return match.group(1)
-        return None
+        #return None
+        # fall back to 'en_US' in case the langcode has not been defined or is set to 'C'. We don't support 'C'.
+        return 'en_US'
 
     def getSystemDefaultLanguage(self):
         conffiles = ["/etc/default/locale", "/etc/environment"]
@@ -140,12 +142,14 @@ class LanguageSelectorBase(object):
                     if line.startswith("LANG"):
                         line = line.replace('"','')
                     match = re.match(r'LANG=(.*)$',line)
-                    if match:
+                    if match and match.group(1) != 'C':
                         if "." in match.group(1):
                             return match.group(1).split(".")[0]
                         else:
                             return match.group(1)
-        return None
+        #return None
+        # fall back to 'en_US' in case the langcode has not been defined or is set to 'C'. We don't support 'C'.
+        return 'en_US'
 
     def runAsRoot(self, cmd):
         " abstract interface for the frontends to run specific commands as root"
@@ -242,7 +246,7 @@ class LanguageSelectorBase(object):
 #        # -> see ../TODO for ideas how to fix it
 #        missing = []
 #        # check if the pkg itself is available and installed
-#        if not self._cache.has_key(pkg):
+#        if not pkg in self._cache:
 #            return missing
 #        if not self._cache[pkg].isInstalled:
 #            return missing

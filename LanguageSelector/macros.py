@@ -42,7 +42,7 @@ class LangcodeMacros:
                 continue
             if k.find('#') >= 0 or v.find('#') >= 0:
                 continue
-            if not locales.has_key(k):
+            if not k in locales:
                 locales[k] = []
             locales[k].append(v)
         self['LOCALES'] = locales[langCode]

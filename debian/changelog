@@ -1,3 +1,20 @@
+language-selector (0.4.11) karmic; urgency=low
+
+  * Fix crash in gnome-language-selector (LP: #427716)
+  * Fall back to 'en_US' locale if none has been defined or has been set
+    to 'C'. (LP: #386029) (LP: #346363) (LP: #347240)
+  * Fix crash when ~/.xinput/ is not present (LP: #219218)
+  * Add manpage for gnome-language-selector (Thanks to Alex Lourie)
+   (LP: #426642)
+  * Fix typo in LanguageSelector/FontConfig.py (LP: #219398)
+  * data/languagelist: add fallback codes for all English variations we 
+    have as locales (LP: #47280) (LP: #72952)
+  * Update translations from Launchpad
+  * Really remove now obsolete Chinese entry from language list
+    (LP: #431228)
+
+ -- Arne Goetje <arne@ubuntu.com>  Thu, 17 Sep 2009 22:41:58 +0800
+
 language-selector (0.4.10) karmic; urgency=low
 
   * Fix crash in Qt's uninstall mode

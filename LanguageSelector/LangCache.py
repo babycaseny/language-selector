@@ -122,7 +122,7 @@ class LanguageSelectorPkgCache(apt.Cache):
             if (c == 'tr' and lc == ''):
                 filter_list[v] = k
             elif (c == 'wa' and lc != ''):
-                if not self.pkg_writing.has_key(lc):
+                if not lc in self.pkg_writing:
                     self.pkg_writing[lc] = []
                 self.pkg_writing[lc].append(("%s" % k, "%s" % v))
 
@@ -138,12 +138,12 @@ class LanguageSelectorPkgCache(apt.Cache):
                     if langcode == 'zh':
                         # special case: zh langpack split
                         for langcode in ['zh-hans', 'zh-hant']:
-                            if not self.pkg_translations.has_key(langcode):
+                            if not langcode in self.pkg_translations:
                                 self.pkg_translations[langcode] = []
                             self.pkg_translations[langcode].append(("%s" % filter_list[x], "%s" % item))
                     elif langcode in self.langpack_locales.values():
                         # langcode == pkgcode
-                        if not self.pkg_translations.has_key(langcode):
+                        if not langcode in self.pkg_translations:
                             self.pkg_translations[langcode] = []
                         self.pkg_translations[langcode].append(("%s" % filter_list[x], "%s" % item))
                         #print self.pkg_translations[langcode]
@@ -166,7 +166,7 @@ class LanguageSelectorPkgCache(apt.Cache):
                                                 "%s%s%s" % (lcode, ccode.lower(), variant)]:
                                     # match found, get matching pkgcode
                                     langcode = self.langpack_locales[locale]
-                                    if not self.pkg_translations.has_key(langcode):
+                                    if not langcode in self.pkg_translations:
                                         self.pkg_translations[langcode] = []
                                     self.pkg_translations[langcode].append(("%s" % filter_list[x], "%s" % item))
                                     #print self.pkg_translations[langcode]
@@ -208,7 +208,7 @@ class LanguageSelectorPkgCache(apt.Cache):
                     "language-pack-%s"%languageCode]
         # see what additional pkgs are needed
         #for (pkg, translation) in self.pkg_translations[languageCode]:
-        #    if self.has_key(pkg) and self[pkg].isInstalled:
+        #    if pkg in self and self[pkg].isInstalled:
         #        pkg_list.append(translation)
         return pkg_list
         
@@ -229,7 +229,7 @@ class LanguageSelectorPkgCache(apt.Cache):
         if ((item.installed and not item.doChange) or (item.available and not item.installed and item.doChange)):
             if li.languageCode in self.pkg_translations:
                 for (pkg, translation) in self.pkg_translations[li.languageCode]:
-                    if self.has_key(pkg) and \
+                    if pkg in self and \
                        self[pkg].isInstalled and \
                        not self[translation].isInstalled:
                         self[translation].markInstall()
@@ -237,7 +237,7 @@ class LanguageSelectorPkgCache(apt.Cache):
         elif ((not item.installed and not item.doChange) or (item.installed and item.doChange)) :
             if li.languageCode in self.pkg_translations:
                 for (pkg, translation) in self.pkg_translations[li.languageCode]:
-                    if self.has_key(pkg) and \
+                    if pkg in self and \
                        self[pkg].isInstalled and \
                        self[translation].isInstalled:
                            self[translation].markDelete()
@@ -253,13 +253,13 @@ class LanguageSelectorPkgCache(apt.Cache):
                     if '|' in pkg:
                         # multiple dependencies, if one of them is installed, pull the pull_pkg
                         for p in pkg.split('|'):
-                            if self.has_key(p) and \
+                            if p in self and \
                                self[p].isInstalled and \
                                not self[pull_pkg].isInstalled:
                                 self[pull_pkg].markInstall()
                                 #print ("Will pull: %s" % pull_pkg)
                     else:
-                        if self.has_key(pkg) and \
+                        if pkg in self and \
                            self[pkg].isInstalled and \
                            not self[pull_pkg].isInstalled:
                             self[pull_pkg].markInstall()
@@ -267,14 +267,14 @@ class LanguageSelectorPkgCache(apt.Cache):
         elif ((not item.installed and not item.doChange) or (item.installed and item.doChange)) :
             if li.languageCode in self.pkg_writing:
                 for (pkg, pull_pkg) in self.pkg_writing[li.languageCode]:
-                    if not self.has_key(pull_pkg):
+                    if not pull_pkg in self:
                         continue
                     if '|' in pkg:
                         # multiple dependencies, if at least one of them is installed, keep the pull_pkg
                         # only remove pull_pkg if none of the dependencies are installed anymore
                         count = 0
                         for p in pkg.split('|'):
-                            if self.has_key(p) and \
+                            if p in self and \
                                self[p].isInstalled and \
                                not self[p].markDelete(True) and \
                                not self[p].markInstall(True):
@@ -283,7 +283,7 @@ class LanguageSelectorPkgCache(apt.Cache):
                                 self[pull_pkg].markDelete()
                                 #print ("Will remove: %s" % pull_pkg)
                     else:
-                        if self.has_key(pkg) and \
+                        if pkg in self and \
                            self[pkg].isInstalled and \
                            self[pull_pkg].isInstalled:
                             self[pull_pkg].markDelete()
@@ -294,7 +294,7 @@ class LanguageSelectorPkgCache(apt.Cache):
         """ mark the given language for install """
         to_inst = []
         for name in self._getPkgList(languageCode):
-            if self.has_key(name):
+            if name in self:
                 try:
                     self[name].markInstall()
                     to_inst.append(name)
@@ -310,7 +310,7 @@ class LanguageSelectorPkgCache(apt.Cache):
         """ mark the given language for remove """
         to_rm = []
         for name in self._getPkgList(languageCode):
-            if self.has_key(name):
+            if name in self:
                 try:
                     # purge
                     self[name].markDelete(True)
@@ -322,12 +322,14 @@ class LanguageSelectorPkgCache(apt.Cache):
         """ returns a list with language packs/support packages """
         res = []
         for (code,lang) in self._localeinfo._lang.items():
+            if code == 'zh':
+                continue
             li = LanguageInformation()
             li.languageCode = code
             li.language = lang
             for langpkg_status in li.languagePkgList.values() :
                 pkgname = langpkg_status.pkgname_template % code
-                langpkg_status.available = self.has_key(pkgname)
+                langpkg_status.available = pkgname in self
                 if langpkg_status.available:
                     langpkg_status.installed = self[pkgname].isInstalled
             if len(filter(lambda s: s.available, li.languagePkgList.values())) > 0:

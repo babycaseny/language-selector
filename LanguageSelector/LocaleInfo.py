@@ -34,11 +34,12 @@ class LocaleInfo(object):
         it = et.getiterator('iso_639_entry')
         for elm in it:
             lang = elm.attrib["name"]
-            if elm.attrib.has_key("iso_639_1_code"):
+            if "iso_639_1_code" in elm.attrib:
                 code = elm.attrib["iso_639_1_code"]
             else:
                 code = elm.attrib["iso_639_2T_code"]
-            self._lang[code] = lang
+            if not code in self._lang:
+                self._lang[code] = lang
         # Hack for Chinese langpack split
         # Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
         self._lang['zh-hans'] = _("Chinese (simplified)")
@@ -50,18 +51,18 @@ class LocaleInfo(object):
         for elm in it:
             lang = elm.attrib["name"]
             code = elm.attrib["id"]
-            if not self._lang.has_key(code):
+            if not code in self._lang:
                 self._lang[code] = lang
         
         # read countries
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_3166.xml")
         it = et.getiterator('iso_3166_entry')
         for elm in it:
-            if elm.attrib.has_key("common_name"):
+            if "common_name" in elm.attrib:
                 descr = elm.attrib["common_name"]
             else:
                 descr = elm.attrib["name"]
-            if elm.attrib.has_key("alpha_2_code"):
+            if "alpha_2_code" in elm.attrib:
                 code = elm.attrib["alpha_2_code"]
             else:
                 code = elm.attrib["alpha_3_code"]
@@ -84,13 +85,13 @@ class LocaleInfo(object):
 
     def lang(self, code):
         """ map language code to language name """
-        if self._lang.has_key(code):
+        if code in self._lang:
             return self._lang[code]
         return ""
 
     def country(self, code):
         """ map country code to country name"""
-        if self._country.has_key(code):
+        if code in self._country:
             return self._country[code]
         return ""
 
@@ -165,7 +166,7 @@ class LocaleInfo(object):
             E.g: en_DK -> en_DK:en
         """
         # first check if we got somethign from languagelist
-        if self._languagelist.has_key(code):
+        if code in self._languagelist:
             return self._languagelist[code]
         # if not, fall back to "dumb" behaviour
         if not "_" in code:

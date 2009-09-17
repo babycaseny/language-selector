@@ -59,13 +59,16 @@ class ImSwitch(object):
 
     def getInputMethodForLocale(self, locale):
         for dir in (self.local_confdir, self.global_confdir):
-            for name in (locale, "all_ALL"):
-                target = os.path.join(dir,name)
-                if os.path.exists(target):
-                    return os.path.basename(os.path.realpath(target))
+            if os.path.exists(dir):
+                for name in (locale, "all_ALL"):
+                    target = os.path.join(dir,name)
+                    if os.path.exists(target):
+                        return os.path.basename(os.path.realpath(target))
         return None
         
     def setInputMethodForLocale(self, im, locale):
+        if not os.path.exists(self.local_confdir):
+            os.mkdir(self.local_confdir)
         subprocess.call(["im-switch","-z",locale,"-s",im])
     
     def getAvailableInputMethods(self):
