@@ -224,7 +224,8 @@ class checkLanguageSupport(LanguageSelectorBase, apt.Cache):
             for pkgcode in pkgcodes:
                 self.getMissingPackages(pkgcode)
                     
-        print (' '.join(sorted(self.missing)))
+        if self.missing:
+            print (' '.join(sorted(self.missing)))
 
 if __name__ == "__main__":
 	parser = OptionParser()

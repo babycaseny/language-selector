@@ -1,3 +1,11 @@
+language-selector (0.4.13) karmic; urgency=low
+
+  * Fix typo in check-language-support(1) that caused a Lintian warning.
+  * Print nothing rather than a blank line if check-language-support finds
+    no missing packages.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 14 Oct 2009 13:18:15 +0100
+
 language-selector (0.4.12) karmic; urgency=low
 
   * Add openoffice.org-help-* and evolution-documentation-* to the 
