@@ -1,4 +1,5 @@
 usr/bin/fontconfig-voodoo
+usr/bin/check-language-support
 usr/lib/python*/*-packages/LanguageSelector/*.py
 usr/share/language-selector
 usr/share/locale

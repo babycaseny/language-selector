@@ -93,7 +93,7 @@ class LanguageSelectorPkgCache(apt.Cache):
         
         for l in open(self.BLACKLIST):
             l = l.strip()
-            if l.startswith('#'):
+            if not l.startswith('#'):
                 blacklist.append(l)
         
         for l in open(self.LANGCODE_TO_LOCALE):

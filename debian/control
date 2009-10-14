@@ -34,7 +34,7 @@ Description: Language selector for Kubuntu Linux
 
 Package: language-selector-common
 Architecture: all
-Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, iso-codes
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, iso-codes, python-apt
 Replaces: language-selector (<< 0.1.13)
 XB-Python-Version: ${python:Versions}
 Description: Language selector for Ubuntu Linux

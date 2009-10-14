@@ -12,12 +12,14 @@ tr::kdelibs5-data:language-pack-kde-
 # Format: %LCODE% or %LCODE%-%CCODE%
 tr::libgnome2-common:gnome-user-guide-
 tr::openoffice.org-common:openoffice.org-l10n-
+tr::openoffice.org-common:openoffice.org-help-
 tr::thunderbird:thunderbird-locale-
 tr::enigmail:enigmail-locale-
 tr::lightning-extension:lightning-extension-locale-
 tr::sunbird:sunbird-locale-
 tr::sword-text-gerlut1545:sword-language-pack-
 tr::gimp:gimp-help-
+tr::evolution:evolution-documentation-
 # Format: %LCODE% or %LCODE%%CCODE% or %LCODE%-%VARIANT%
 tr::kdelibs5-data:kde-l10n-
 # Format: %LCODE% or %LCODE%CCODE% or %LCODE%%VARIANT%

@@ -1,0 +1,251 @@
+#!/usr/bin/python
+
+import sys
+import os
+import gettext
+import apt
+import re
+
+from LanguageSelector.LanguageSelector import *
+
+from optparse import OptionParser
+from gettext import gettext as _
+
+class checkLanguageSupport(LanguageSelectorBase, apt.Cache):
+
+    def getMissingPackages(self, pkgcode):
+        if (self.system_pkgcode and pkgcode == self.system_pkgcode):
+            scanlist = ['language-pack', 'language-support-fonts', 'language-support-input', 'language-support-writing']
+        else:
+            scanlist = ['language-pack']
+        for x in scanlist:
+            pkg = '%s-%s' % (x, pkgcode)
+            if pkg in self and \
+                not self[pkg].isInstalled and \
+                not self[pkg].markedInstall:
+                self.missing.add(pkg)
+        if pkgcode in self.pkg_translations:
+            for (pkg, translation) in self.pkg_translations[pkgcode]:
+                if pkg in self and \
+                    (self[pkg].isInstalled or \
+                    self[pkg].markedInstall) and \
+                    not self[translation].isInstalled and \
+                    not self[translation].markedInstall:
+                    self.missing.add(translation)
+                    
+        if pkgcode in self.pkg_writing and \
+           (pkgcode == self.system_pkgcode or \
+           self['language-support-writing-%s' % pkgcode].isInstalled or \
+           self['language-support-writing-%s' % pkgcode].markInstall):
+            for (pkg, pull_pkg) in self.pkg_writing[pkgcode]:
+                if '|' in pkg:
+                    # multiple dependencies, if one of them is installed, pull the pull_pkg
+                    added = 0
+                    for p in pkg.split('|'):
+                        if p in self and \
+                            (self[p].isInstalled  or \
+                            self[p].markedInstall) and \
+                            pull_pkg in self and \
+                            not self[pull_pkg].isInstalled and \
+                            not self[pull_pkg].markedInstall and \
+                            added == 0:
+                            self.missing.add(pull_pkg)
+                            added = 1
+                else:
+                    if pkg in self and \
+                        (self[pkg].isInstalled or \
+                        self[pkg].markedInstall) and \
+                        pull_pkg in self and \
+                        not self[pull_pkg].isInstalled and \
+                        not self[pull_pkg].markedInstall:
+                        self.missing.add(pull_pkg)
+
+    def __init__(self, options):
+        self.BLACKLIST = os.path.join(options.datadir, 'data', 'blacklist')
+        self.LANGCODE_TO_LOCALE = os.path.join(options.datadir, 'data', 'langcode2locale')
+        self.PACKAGE_DEPENDS = os.path.join(options.datadir, 'data', 'pkg_depends')
+
+        LanguageSelectorBase.__init__(self, options.datadir)
+        apt.Cache.__init__(self)
+        if self._depcache.BrokenCount > 0:
+            print ("%s\n%s" % (
+                _("Software database is broken"),
+                _("It is impossible to install or remove any software. "
+                  "Please use the package manager \"Synaptic\" or run "
+                  "\"sudo apt-get install -f\" in a terminal to fix "
+                  "this issue at first.")))
+            sys.exit(1)
+        
+        self.langpack_locales = {}
+        self.pkg_translations = {}
+        self.pkg_writing = {}
+        filter_list = {}
+        blacklist = []
+        self.missing = set()
+        self.system_pkgcode = ''
+        
+        for l in open(self.BLACKLIST):
+            l = l.strip()
+            if not l.startswith('#'):
+                blacklist.append(l)
+        
+        for l in open(self.LANGCODE_TO_LOCALE):
+            try:
+                l = l.rstrip()
+                if ':' in l:
+                    (pkgcode, locale) = l.split(':')
+                else:
+                    pkgcode = l
+                    locale = l
+            except ValueError:
+                continue
+            self.langpack_locales[locale] = pkgcode
+        
+        for l in open(self.PACKAGE_DEPENDS):
+            if l.startswith('#'):
+                continue
+            try:
+                l = l.rstrip()
+                # sort out comments
+                if l.find('#') >= 0:
+                    continue
+                (c, lc, k, v) = l.split(':')
+            except ValueError:
+                continue
+            if (c == 'tr' and lc == ''):
+                filter_list[v] = k
+            elif (c == 'wa' and lc != ''):
+                if not lc in self.pkg_writing:
+                    self.pkg_writing[lc] = []
+                self.pkg_writing[lc].append(("%s" % k, "%s" % v))
+
+        # get list of all packages available on the system and filter them
+        for item in self.keys():
+            if item in blacklist: 
+                continue
+            for x in filter_list.keys():
+                if item.startswith(x) and not item.endswith('-base'):
+                    # parse language code
+                    langcode = item.replace(x, '')
+                    #print "%s\t%s" % (item, langcode)
+                    if langcode == 'zh':
+                        # special case: zh langpack split
+                        for langcode in ['zh-hans', 'zh-hant']:
+                            if not langcode in self.pkg_translations:
+                                self.pkg_translations[langcode] = []
+                            self.pkg_translations[langcode].append(("%s" % filter_list[x], "%s" % item))
+                    elif langcode in self.langpack_locales.values():
+                        # langcode == pkgcode
+                        if not langcode in self.pkg_translations:
+                            self.pkg_translations[langcode] = []
+                        self.pkg_translations[langcode].append(("%s" % filter_list[x], "%s" % item))
+                        #print self.pkg_translations[langcode]
+                    else:
+                        # need to scan for LL-CC and LL-VARIANT codes
+                        for locale in self.langpack_locales.keys():
+                            if '_' in locale or '@' in locale:
+                                if '@' in locale:
+                                    (locale, variant) = locale.split('@')
+                                else:
+                                    variant = ''
+                                (lcode, ccode) = locale.split('_')
+                                if langcode in ["%s-%s" % (lcode, ccode.lower()),
+                                                "%s%s" % (lcode, ccode.lower()),
+                                                "%s-%s" % (lcode, variant),
+                                                "%s%s" % (lcode, variant),
+                                                "%s-latn" % lcode,
+                                                "%slatn" % lcode,
+                                                "%s-%s-%s" % (lcode, ccode.lower(), variant),
+                                                "%s%s%s" % (lcode, ccode.lower(), variant)]:
+                                    # match found, get matching pkgcode
+                                    langcode = self.langpack_locales[locale]
+                                    if not langcode in self.pkg_translations:
+                                        self.pkg_translations[langcode] = []
+                                    self.pkg_translations[langcode].append(("%s" % filter_list[x], "%s" % item))
+                                    #print self.pkg_translations[langcode]
+                                    break
+
+        if options.language:
+            pkgcode = ''
+            if options.language == 'zh-hans' or options.language == 'zh-hant':
+                self.system_pkgcode = options.language
+            else:
+                # pkgcode = ll
+                if '_' in options.language:
+                    (self.system_pkgcode) = options.language.split('_')[0]
+                elif '@' in options.language:
+                    (self.system_pkgcode) = options.language.split('@')[0]
+                else:
+                    self.system_pkgcode = options.language
+
+            self.getMissingPackages(self.system_pkgcode)
+            
+        elif options.all:
+            # try all available languages
+            pkgcodes = []
+            for item in self.keys():
+                if item in blacklist:
+                    continue
+                if item.startswith('language-pack-') and \
+                   not item.startswith('language-pack-gnome') and \
+                   not item.startswith('language-pack-kde') and \
+                   not item.endswith('-base'):
+                    pkgcode = item.replace('language-pack-', '')
+                    pkgcodes.append(pkgcode)
+
+            for pkgcode in pkgcodes:
+                self.getMissingPackages(pkgcode)
+
+        else:
+            # get a list of language-packs we have already installed or are going to install
+            # 1. system locale
+            system_langcode = self.getSystemDefaultLanguage()
+            if system_langcode == None:
+                system_langcode = 'en_US'
+                if system_langcode in self.langpack_locales:
+                    self.system_pkgcode = self.langpack_locales[system_langcode]
+            # 2. installed language-packs
+            pkgcodes = []
+            for item in self.keys():
+                if item in blacklist: 
+                    continue
+                if item.startswith('language-pack-') and \
+                   not item.startswith('language-pack-gnome') and \
+                   not item.startswith('language-pack-kde') and \
+                   not item.endswith('-base') and \
+                   (self[item].isInstalled or \
+                   self[item].markedInstall):
+                    pkgcode = item.replace('language-pack-', '')
+                    pkgcodes.append(pkgcode)
+            if self.system_pkgcode and \
+               not self.system_pkgcode in pkgcodes:
+                pkgcodes.append(self.system_pkgcode)
+            
+            for pkgcode in pkgcodes:
+                self.getMissingPackages(pkgcode)
+                    
+        print (' '.join(sorted(self.missing)))
+
+if __name__ == "__main__":
+	parser = OptionParser()
+	parser.add_option("-l", "--language",
+			  help=_("target language code"))
+	parser.add_option("-d", "--datadir",
+			  default="/usr/share/language-selector/",
+			  help=_("alternative datadir"))
+	parser.add_option("-a", "--all", action='store_true', default=False,
+			  help=_("check all available languages"))
+	(options, args) = parser.parse_args()
+
+# sanity check for language code
+if options.language and \
+   not re.match('^([a-z]{2,3}(_[A-Z]{2})?(@[a-z]+)?|(zh-han[st]))$', options.language):
+    print ("Error: Unsupported language code format.\n\
+Supported formats: 'll' or 'lll'\n\
+                   'll_CC' or 'lll_CC'\n\
+                   'll@variant' or 'lll@variant'\n\
+                   'll_CC@variant' or 'lll_CC@variant'\n\
+Also supported are 'zh-hans' and 'zh-hant'.")
+    sys.exit(1)
+else:
+    checkLanguageSupport(options)

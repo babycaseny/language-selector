@@ -31,6 +31,8 @@ class SimpleGtkbuilderApp:
     def __init__(self, path):
         self.builder = gtk.Builder()
         self.builder.add_from_file(path)
+        # Temporary workaround for https://bugzilla.gnome.org/show_bug.cgi?id=574520
+        self.builder.set_translation_domain('language-selector')
         self.builder.connect_signals(self)
         for o in self.builder.get_objects():
             if issubclass(type(o), gtk.Buildable):

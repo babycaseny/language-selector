@@ -115,10 +115,13 @@ class LocaleInfo(object):
 
     def translate_language(self, lang):
         "return translated language"
-        lang_name = gettext.dgettext('iso_639', self._lang[lang])
-        if lang_name == self._lang[lang]:
-            lang_name = gettext.dgettext('iso_639_3', self._lang[lang])
-        return lang_name
+        if lang in self._lang:
+            lang_name = gettext.dgettext('iso_639', self._lang[lang])
+            if lang_name == self._lang[lang]:
+                lang_name = gettext.dgettext('iso_639_3', self._lang[lang])
+            return lang_name
+        else:
+            return lang
 
     def translate_locale(self, locale):
         """

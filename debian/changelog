@@ -1,3 +1,14 @@
+language-selector (0.4.12) karmic; urgency=low
+
+  * Add openoffice.org-help-* and evolution-documentation-* to the 
+    package dependencies (Thanks to Timo Jyrinki) (LP: #414753)
+  * add /usr/bin/check-language-support to query missing packages for a
+    given language code or all installed languages (LP: #434173)
+  * LanguageSelector/LangInfo.py: don't crash if langcode is not in the
+    ISO639 list (LP: #439728)
+
+ -- Arne Goetje <arne@ubuntu.com>  Wed, 14 Oct 2009 12:42:17 +0100
+
 language-selector (0.4.11) karmic; urgency=low
 
   * Fix crash in gnome-language-selector (LP: #427716)
