@@ -169,6 +169,8 @@ class checkLanguageSupport(LanguageSelectorBase, apt.Cache):
             pkgcode = ''
             if options.language == 'zh-hans' or options.language == 'zh-hant':
                 self.system_pkgcode = options.language
+            elif options.language in self.langpack_locales:
+                self.system_pkgcode = self.langpack_locales[options.language]
             else:
                 # pkgcode = ll
                 if '_' in options.language:

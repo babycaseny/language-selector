@@ -7,29 +7,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-08 17:23+0000\n"
-"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
-"net>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-02 03:14+0000\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <ar@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "الصينية (المبسطة)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "الصينية (التقليدية)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -47,7 +46,7 @@ msgstr ""
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:201
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
-msgstr "_حدّث"
+msgstr "_حدِّث"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
 #: ../data/LanguageSelector.ui.h:26
@@ -74,7 +73,7 @@ msgstr[5] "%d للتثبيت"
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
-msgstr[0] "لا شيء للإزالة"
+msgstr[0] "لا شيء لإزالته"
 msgstr[1] "واحد للإزالة"
 msgstr[2] "اثنين للإزالة"
 msgstr[3] "%d للإزالة"
@@ -95,6 +94,8 @@ msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
+"قد تكون هذه علة في التطبيق. من فضلك أبلغ عنها في "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -105,6 +106,8 @@ msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
 msgstr ""
+"عادة ما يكون هذا بسبب خطأ في أرشيف أو مدير البرمجيات. راجع تفضيلات البرمجيات "
+"في قائمة نظام > إدارة."
 
 #. FIXME: use self.runAsRoot() here
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
@@ -122,8 +125,8 @@ msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"بعض الترجمات أو إعانة الكتابة المتوفرة للغة التي اخترتها لم تُثبّت بعد. أتريد "
-"تثبيتها الآن؟"
+"بعض الترجمات أو إعانة الكتابة المتوفرة للغة التي اخترتها لم تُثبّت بعد. "
+"أتريد تثبيتها الآن؟"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
@@ -161,11 +164,11 @@ msgstr "احذف"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:55
 msgid "Select language to uninstall:"
-msgstr "انتقِ لغة لحذفها:"
+msgstr "اختر لغة لحذفها:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:62
 msgid "Language Selector"
-msgstr "منتقي اللغات"
+msgstr "اختيار اللغات"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid ""
@@ -185,9 +188,8 @@ msgid "Set System Language"
 msgstr "اضبط لغة النظام"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "طرق الإدخال"
+msgstr "طريقة إدخال لوحة المفاتيح"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -264,11 +266,11 @@ msgstr "لست الجذز"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>مثال</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -289,12 +291,14 @@ msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>اسحب اللغات لترتيبها طبقا لتفضيلها.\n"
+"يظهر تأثير التغييرات عند الولوج التالي.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
-msgstr ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr "<small>يستخدم نفس اختيارات اللغات للبدء وشاشة الولوج.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -310,7 +314,7 @@ msgstr "طبّق التغييرات"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "طبّق على كل النظام..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -318,15 +322,15 @@ msgstr "المكونات:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "العملة:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "التاريخ:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "اعرض الأرقام والتاريخ والعملة بتنسيق:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -358,19 +362,19 @@ msgstr "نفس الشيء"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "نظام إدخال لوحة المفاتيح:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "اللغة والنص"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "لغة القوائم والنوافذ"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "رقم:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -378,15 +382,15 @@ msgstr "التدقيق الإملائي وإعانة الكتابة"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "نص"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "ترجمات"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "ترجمات لسطح المكتب."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -422,24 +426,24 @@ msgstr "دعم لغة غير مكتمل"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "يبدو أن ملفات دعم اللغة التي اخترتها غير مكتملة. يمكنك تثبيت المكونات "
 "الناقصة بالنقر على \"قم بهذا الإجراء الآن\" ثم اتباع التعليمات. تحتاج لاتصال "
-"بالإنترنت. إذا أردت القيام بهذا لاحقا، فاستخدم \"نظام -> إدارة -> دعم اللغات"
-"\"."
+"بالإنترنت. إذا أردت القيام بهذا لاحقا، فاستخدم \"نظام -> إدارة -> دعم "
+"اللغات\"."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "يبدو أن ملفات دعم اللغة التي اخترتها غير مكتملة. يمكنك تثبيت المكونات "
 "الناقصة بالنقر على \"قم بهذا الإجراء الآن\" ثم اتباع التعليمات. تحتاج لاتصال "
@@ -511,6 +515,7 @@ msgstr "لم يُعثر على إعداد fontconfig-voodoo للمحلّية ا�
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "فعِّل دعم إدخال المحارف المعقدة"
 
+#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
@@ -519,8 +524,8 @@ msgstr "لم يُعثر على إعداد fontconfig-voodoo للمحلّية ا�
 #~ "الولوج القادم."
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr "برمجيات إضافية قد تهم مستخدمي هذه اللغة."
 
 #~ msgid ""

@@ -7,27 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-08 17:20+0000\n"
-"Last-Translator: Harald Sitter <apachelogger@ubuntu.com>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-21 21:38+0000\n"
+"Last-Translator: Kjetil Birkeland Moe <kjetilbi@stud.ntnu.no>\n"
 "Language-Team: Norwegian Bokmål <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Kinesisk (forenklet)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Kinesisk (tradisjonell)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -182,9 +182,8 @@ msgid "Set System Language"
 msgstr "Velg språk for systemet"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Inndatametoder"
+msgstr "Inntastingsmetode"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -263,11 +262,11 @@ msgstr "Ikke rootbruker"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567,89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Eksempel</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -289,12 +288,16 @@ msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Dra og slipp språk for å sette dem i ønsket rekkefølge.\n"
+"Endringer trer i kraft neste gang du logger inn.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>Benytter de samme språkvalgene ved oppstartsbilde og "
+"innlogging.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -310,7 +313,7 @@ msgstr "Utfør Endringer"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Bruk på hele systemet"
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -318,15 +321,15 @@ msgstr "Komponenter:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Valuta:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Dato:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "Vis tall, datoer og valuta på vanlig måte for:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -358,19 +361,19 @@ msgstr "Behold det samme"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "Valg for tastaturmetode:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Språk og tekst"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Språk for menyer og vinduer:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "Nummer:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -378,15 +381,15 @@ msgstr "Stavekontroll og skrivehjelp"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Oversettelser"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Oversettelser for ditt skrivebord."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -424,10 +427,10 @@ msgstr "Ufullstendig språkstøtte"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Språkets støttefiler for ditt valgte språk synes å være ufullstendige. Du "
 "kan installere de manglende komponenter ved å klikke på \"Kjør denne "
@@ -439,10 +442,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Språkets støttefiler for ditt valgte språk synes å være ufullstendige. Du "
 "kan installere de manglende komponenter ved å klikke på \"Kjør denne "
@@ -506,7 +509,8 @@ msgstr "Ikke konfigurert"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr "En konfigurasjon finnes allerede. Bruk «--force» for å overskrive den. "
+msgstr ""
+"En konfigurasjon finnes allerede. Bruk «--force» for å overskrive den. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
@@ -516,16 +520,17 @@ msgstr ""
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "Installer støtte for komplekse boksataver"
 
+#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
 #~ msgstr ""
-#~ "Standardspråk for systemet er nå satt til %s. Avanserte tegn vil bli "
-#~ "slått på neste gang du logger inn."
+#~ "Standardspråk for systemet er nå satt til %s. Avanserte tegn vil bli slått "
+#~ "på neste gang du logger inn."
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
 #~ "Tilleggsprogramvare som kan være av generell interesse for brukere som "
 #~ "bruker dette språket."

@@ -7,27 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-07-29 14:30+0000\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-01 00:19+0000\n"
 "Last-Translator: Yaron <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "סינית (מפושטת)‏"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "סינית (מסורתית)‏"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -86,8 +86,8 @@ msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"בעיה זו נגרמה עקב תקלה בתוכנה. נא למלא דיווח על תקלה בכתובת https://bugs."
-"launchpad.net/ubuntu/+source/language-selector/+filebug"
+"בעיה זו נגרמה עקב תקלה בתוכנה. נא למלא דיווח על תקלה בכתובת "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -180,9 +180,8 @@ msgid "Set System Language"
 msgstr "הגדרת שפת המערכת"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "שיטות קלט"
+msgstr "שיטת קלט המקלדת:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -260,11 +259,11 @@ msgstr "לא משתמש על"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>דוגמה</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -286,12 +285,15 @@ msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>יש לגרור את השפות כדי למיין אותן בסדר ההעדפה.\n"
+"השינויים יכנסו לתוקף בפעם הבאה שתתבצע כניסה לחשבון.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>יעשה שימוש באותה השפה שנבחרה עבור מסכי ההפעלה והכניסה.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -307,7 +309,7 @@ msgstr "החלת השינויים"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "החלה על כלל המערכת..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -315,15 +317,15 @@ msgstr "רכיבים:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "מטבע:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "תאריך:‏"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "הצגת כמויות של מספרים, תאריכים ומטבע באופן המקובל:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -343,7 +345,7 @@ msgstr "שיטות קלט"
 
 #: ../data/LanguageSelector.ui.h:22
 msgid "Install / Remove Languages..."
-msgstr "התקנת / הסרת שפות..."
+msgstr "התקנה / הסרה של שפות..."
 
 #: ../data/LanguageSelector.ui.h:23
 msgid "Installed Languages"
@@ -355,19 +357,19 @@ msgstr "השארת אותו הדבר"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "מערכת שיטת הקלט של המקלדת:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "שפה וטקסט"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "שפה עבור תפריטים וחלונות:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "מספר:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -375,15 +377,15 @@ msgstr "בדיקת איות ועזרי כתיבה"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "טקסט"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "תרגומים"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "תרגומים עבור שולחן העבודה שלך."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -419,29 +421,29 @@ msgstr "תמיכה חלקית בשפה"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "נראה קבצי התמיכה בשפה עבור השפה הנבחרת אינם שלמים. ניתן להתקין את הרכיבים "
 "החסקים על ידי לחיצה על \"הרצת פעולה זו כעת\" ולעקוב אחר ההוראות. יש צורך "
-"בחיבור אינטרנט פעיל. אם ברצונך לעשות זאת במועד מאוחר יותר, ניתן להשתמש ב־"
-"\"מערכת -> ניהול -> תמיכה בשפות\" במקום."
+"בחיבור אינטרנט פעיל. אם ברצונך לעשות זאת במועד מאוחר יותר, ניתן להשתמש "
+"ב־\"מערכת -> ניהול -> תמיכה בשפות\" במקום."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "נראה קבצי התמיכה בשפה עבור השפה הנבחרת אינם שלמים. ניתן להתקין את הרכיבים "
 "החסקים על ידי לחיצה על \"הרצת פעולה זו כעת\" ולעקוב אחר ההוראות. יש צורך "
-"בחיבור אינטרנט פעיל. אם ברצונך לעשות זאת במועד מאוחר יותר, ניתן להשתמש ב־"
-"\"הגדרות מערכת -> מיקום ושפות\" במקום."
+"בחיבור אינטרנט פעיל. אם ברצונך לעשות זאת במועד מאוחר יותר, ניתן להשתמש "
+"ב־\"הגדרות מערכת -> מיקום ושפות\" במקום."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -508,6 +510,7 @@ msgstr "לא נמצאה תצורת fontconfig-voodoo מתאימה עבור המ�
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "הפעלת התמיכה בהזנת תווים מורכבים"
 
+#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
@@ -516,8 +519,8 @@ msgstr "לא נמצאה תצורת fontconfig-voodoo מתאימה עבור המ�
 #~ "בכניסה הבאה למערכת."
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr "תוכנות נוספות העלולות לעורר את עניין המשתמשים בשפה זו."
 
 #~ msgid ""
@@ -535,8 +538,7 @@ msgstr "לא נמצאה תצורת fontconfig-voodoo מתאימה עבור המ�
 
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-#~ msgstr ""
-#~ "התרגומים וקבצי העזרה של OpenOffice.org, פיירפוקס, ת'אנדרבירד ו־Gaim."
+#~ msgstr "התרגומים וקבצי העזרה של OpenOffice.org, פיירפוקס, ת'אנדרבירד ו־Gaim."
 
 #~ msgid "Use input method engines (IME) to enter complex characters"
 #~ msgstr "השתמש במנוע שיטות הקלט (IME) להזנת תווים מורכבים"

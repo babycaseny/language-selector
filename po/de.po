@@ -5,27 +5,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-08 17:24+0000\n"
-"Last-Translator: Harald Sitter <apachelogger@ubuntu.com>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-01 20:23+0000\n"
+"Last-Translator: Jochen Skulj <jochen@jochenskulj.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Chinesisch (vereinfacht)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Chinesisch (traditionell)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -149,8 +149,9 @@ msgid ""
 "this issue at first."
 msgstr ""
 "Das Installieren und Entfernen von Software ist nicht möglich. Bitte "
-"verwenden Sie die Paketverwaltung »Synaptic« oder führen Sie den Befehl »sudo "
-"apt-get install -f« in einem Terminal aus, um dieses Problem zu beheben."
+"verwenden Sie die Paketverwaltung »Synaptic« oder führen Sie den Befehl "
+"»sudo apt-get install -f« in einem Terminal aus, um dieses Problem zu "
+"beheben."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:54
 msgid "Uninstall"
@@ -183,9 +184,8 @@ msgid "Set System Language"
 msgstr "Systemsprache festlegen"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Eingabemethoden"
+msgstr "Tastatureingabemethode"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -264,11 +264,11 @@ msgstr "Kein Root-Benutzer"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567,89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Beispiel</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -293,12 +293,17 @@ msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Ordnen Sie die Sprachen durch Ziehen nach Belieben an.\n"
+"Änderungen werden übernommen, sobald Sie sich das nächste Mal "
+"anmelden.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>Die gleiche Sprachauswahl  für den Start- und Anmeldebildschirm "
+"benutzen.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -314,7 +319,7 @@ msgstr "Änderungen anwenden"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Systemweit anwenden …"
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -322,15 +327,17 @@ msgstr "Bestandteile:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Währung:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Datum:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
 msgstr ""
+"Anzeige der Zahlen, Datumsangaben und Währungen in der üblichen Schreibweise "
+"für:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -362,19 +369,19 @@ msgstr "Beibehalten"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "System der Tastatureingabemethode:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Sprache & Text"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Sprache für Menüs und Fenster:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "Zahl:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -382,15 +389,15 @@ msgstr "Rechtschreibprüfung und Schreibhilfen"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Übersetzungen"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Übersetzungen für Ihre Arbeitsumgebung."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -428,33 +435,33 @@ msgstr "Unvollständige Sprachunterstützung"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Die Sprachunterstützung für die von Ihnen ausgewählte Sprache scheint "
 "unvollständig zu sein. Sie können fehlende Komponenten installieren, indem "
-"Sie auf »Aktion jetzt ausführen« klicken und den Anweisungen folgen. Dazu ist "
-"eine bestehende Internetverbindung erforderlich. Falls Sie dieses zu einem "
-"späteren Zeitpunkt durchführen möchten, verwenden Sie bitte stattdessen "
-"»System -> Systemverwaltung -> Sprachunterstützung«."
+"Sie auf »Aktion jetzt ausführen« klicken und den Anweisungen folgen. Dazu "
+"ist eine bestehende Internetverbindung erforderlich. Falls Sie dieses zu "
+"einem späteren Zeitpunkt durchführen möchten, verwenden Sie bitte "
+"stattdessen »System -> Systemverwaltung -> Sprachunterstützung«."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Die Sprachunterstützung für die von Ihnen ausgewählte Sprache scheint "
 "unvollständig zu sein. Sie können fehlende Komponenten installieren, indem "
-"Sie auf »Aktion jetzt ausführen« klicken und den Anweisungen folgen. Dazu ist "
-"eine bestehende Internetverbindung erforderlich. Falls Sie dieses zu einem "
-"späteren Zeitpunkt durchführen möchten, verwenden Sie bitte stattdessen "
-"»System -> Systemverwaltung -> Sprachunterstützung«."
+"Sie auf »Aktion jetzt ausführen« klicken und den Anweisungen folgen. Dazu "
+"ist eine bestehende Internetverbindung erforderlich. Falls Sie dieses zu "
+"einem späteren Zeitpunkt durchführen möchten, verwenden Sie bitte "
+"stattdessen »System -> Systemverwaltung -> Sprachunterstützung«."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -526,16 +533,6 @@ msgstr ""
 "Keine fontconfig-voodoo-Konfiguration für die ausgewählten "
 "Spracheinstellungen gefunden."
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "Unterstützung zur Eingabe komplexer Zeichen aktivieren"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr ""
-#~ "Die vorgegebene Systemsprache wurde jetzt auf %s gesetzt.  Die Eingabe "
-#~ "komplexer Zeichen wird aktiviert, wenn Sie sich das nächste Mal anmelden."
-
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr ""
@@ -550,11 +547,22 @@ msgstr ""
 #~ "andere Software, die Sie dabei unterstützt, komplexe Zeichen einzugeben."
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
 #~ "Zusätzliche Software, die von Benutzern, die diese Sprache verwenden, von "
 #~ "allgemeinen Interesse sein können"
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Unterstützung zur Eingabe komplexer Zeichen aktivieren"
+
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "Die vorgegebene Systemsprache wurde jetzt auf %s gesetzt.  Die Eingabe "
+#~ "komplexer Zeichen wird aktiviert, wenn Sie sich das nächste Mal anmelden."
 
 #~ msgid "Extra software"
 #~ msgstr "Besondere Software"

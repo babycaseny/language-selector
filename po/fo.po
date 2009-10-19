@@ -7,25 +7,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-07-18 12:01+0000\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-11 21:23+0000\n"
 "Last-Translator: Gunleif Joensen <Unknown>\n"
 "Language-Team: Faroese <fo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
 msgstr ""
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
 msgstr ""
 
@@ -87,12 +87,12 @@ msgid ""
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Hettar er møguliga ein lús á hesari nýtsluskipan. Vinarliga rita eitt lúsa-"
-"úrrit til https://bugs.launchpad.net/ubuntu/+source/language-selector/"
-"+filebug"
+"úrrit til https://bugs.launchpad.net/ubuntu/+source/language-"
+"selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
-msgstr ""
+msgstr "Kundi ikki leggja inn fulla mál-undirtøku"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
 msgid ""
@@ -121,17 +121,17 @@ msgstr ""
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
-msgstr ""
+msgstr "_Minn meg á tað seinni"
 
 #. FIXME: add "details"
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
 #: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
-msgstr ""
+msgstr "_Legg inn"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
 msgid "Details"
-msgstr ""
+msgstr "Nærri greining"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:769
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:54
 msgid "Uninstall"
-msgstr ""
+msgstr "Leggja út"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:55
 msgid "Select language to uninstall:"
@@ -155,7 +155,7 @@ msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:62
 msgid "Language Selector"
-msgstr ""
+msgstr "Mál veljari"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid ""
@@ -166,11 +166,11 @@ msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
-msgstr ""
+msgstr "Forsett kervismál"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Set System Language"
-msgstr ""
+msgstr "Set kervismál"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
 msgid "Keyboard input method:"
@@ -180,38 +180,38 @@ msgstr ""
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
 #: ../data/LanguageSelector.ui.h:13
 msgid "Cancel"
-msgstr ""
+msgstr "Ógilda"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:119
 msgid "Select language to install:"
-msgstr ""
+msgstr "Vel mál ið skal leggjast inn:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Install"
-msgstr ""
+msgstr "Legg inn"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:209
 msgid "Already installed"
-msgstr ""
+msgstr "Longu lagt inn"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
-msgstr ""
+msgstr "Lutvíst lagt inn"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:217
 msgid "Not installed"
-msgstr ""
+msgstr "Ikki lagt inn"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "Forsett kervismál er nú sett at vera %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 msgid "Language Set"
-msgstr ""
+msgstr "Vel mál"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:314
 #, python-format
@@ -222,7 +222,7 @@ msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:314
 msgid "Language Installed"
-msgstr ""
+msgstr "Málið er lagt inn"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:316
 #, python-format
@@ -239,7 +239,7 @@ msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:318
 msgid "Language Not Set"
-msgstr ""
+msgstr "Mál ikki sett"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:367
 msgid "Please run this software with administrative rights."
@@ -251,11 +251,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Dømi</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -268,6 +268,7 @@ msgstr ""
 #: ../data/LanguageSelector.ui.h:6
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Allar broytingar verða settar í verk, næstu ferð tú innritar.</small>"
 
 #: ../data/LanguageSelector.ui.h:7
 msgid ""
@@ -277,8 +278,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
@@ -289,15 +290,15 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:11
 msgid "Apply Changes"
-msgstr ""
+msgstr "Set broytingarnar í verk"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Set broytingarnar alkervis í verk..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
-msgstr ""
+msgstr "Lutir:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
@@ -305,7 +306,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Dato:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -313,7 +314,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
-msgstr ""
+msgstr "Eyka stavir"
 
 #: ../data/LanguageSelector.ui.h:19
 msgid "For everyone at startup and login, use:"
@@ -361,15 +362,15 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Tekstur"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Umsetingar"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Umsetingar fyri títt skriviborð."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -403,26 +404,26 @@ msgstr ""
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "Endurbyrjan av setu er kravd"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
@@ -469,7 +470,7 @@ msgstr ""
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr ""
+msgstr "Ósamansett"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "

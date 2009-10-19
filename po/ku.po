@@ -9,28 +9,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-08 17:20+0000\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-15 11:09+0000\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
 "Language-Team: Kurdish <gnu-ku-wergerandin@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 "X-Rosetta-Version: 0.1\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Çînî (hêsankirî)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Çînî (kevneşop)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -256,11 +256,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Mînak</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -282,8 +282,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
@@ -310,7 +310,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Roj:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -350,15 +350,15 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Ziman & Nivîs"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Zimanê pêşek û paceyan:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "Hejmar:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -366,15 +366,15 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Nivîs"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Werger"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Wergerên ji bo sermaseya te."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -408,20 +408,20 @@ msgstr ""
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 
 #. Name
@@ -484,7 +484,8 @@ msgstr "Mîhengek heye. Da ku binvîsî ser, '--force' bi kar bîne. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr "Ji bo locale ya hilbijartî, ti mîhengeke fontconfig-voodoo nehat dîtin"
+msgstr ""
+"Ji bo locale ya hilbijartî, ti mîhengeke fontconfig-voodoo nehat dîtin"
 
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."

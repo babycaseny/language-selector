@@ -7,25 +7,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-09 16:23+0000\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-30 13:58+0000\n"
 "Last-Translator: Paco Molinero <paco@byasl.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
 msgstr "Chino (simplificado)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
 msgstr "Chino (tradicional)"
 
@@ -149,8 +149,8 @@ msgid ""
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Es imposible instalar o desinstalar ningún programa. Por favor, use primero "
-"el gestor de paquetes «Synaptic» (o ejecute «sudo apt-get install -f» en una "
+"Es imposible instalar o desinstalar ningún programa. Use primero el gestor "
+"de paquetes «Synaptic» (o ejecute «sudo apt-get install -f» en una "
 "terminal), para corregir este problema."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:54
@@ -184,9 +184,8 @@ msgid "Set System Language"
 msgstr "Establecer idioma del sistema"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Sistema de método de entrada de teclado:"
+msgstr "Método de introducción de teclado:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -295,12 +294,12 @@ msgid ""
 "Changes take effect next time you log in.</small>"
 msgstr ""
 "<small>Arrastre idiomas para ponerlos en orden de preferencia.\n"
-"Los cambios tendrán efecto la próxima vez que acceda.</small>"
+"Los cambios tendrán efecto la próxima vez que inicie una sesión.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
 "<small>Usar el mismo idioma para el inicio y la pantalla de acceso.</small>"
 
@@ -343,7 +342,7 @@ msgstr "Tipografías extra"
 
 #: ../data/LanguageSelector.ui.h:19
 msgid "For everyone at startup and login, use:"
-msgstr "Para todo el mundo en el arranque y la entrada, usar:"
+msgstr "Para todo el mundo en el arranque y el acceso, usar:"
 
 #: ../data/LanguageSelector.ui.h:20
 msgid "For my menus and windows, use:"
@@ -433,10 +432,10 @@ msgstr "Soporte de idiomas incompleto"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Los archivos de soporte del idioma que ha seleccionado parecen estar "
 "incompletos. Puede instalar los componentes que faltan pulsando en «Ejecutar "
@@ -448,10 +447,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Los archivos de soporte de idioma para su idioma seleccionado parecen estar "
 "incompletos. Puede instalar los componentes que faltan pulsando en «Ejecutar "
@@ -517,7 +516,8 @@ msgstr "No configurado"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr "Ya existe una configuración. Utilice «--force» para sobreescribirla. "
+msgstr ""
+"Ya existe una configuración. Utilice «--force» para sobreescribirla. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
@@ -525,36 +525,26 @@ msgstr ""
 "No se ha encontrado ninguna configuración de fontconfig-voodoo para la "
 "localización seleccionada"
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "Activar el soporte para introducir caracteres complejos"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr ""
-#~ "El idioma predeterminado del sistema es ahora %s. La introducción de "
-#~ "caracteres complejos se activará la próxima vez que inicie una sesión."
-
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr ""
-#~ "Traducciones y archivos de ayuda para OpenOffice.org, Firefox, "
-#~ "Thunderbird y Gaim."
+#~ "Traducciones y archivos de ayuda para OpenOffice.org, Firefox, Thunderbird y "
+#~ "Gaim."
 
 #~ msgid ""
 #~ "Input Methods for languages with complex scripts. Scim modules or other "
 #~ "relevant software which helps with typing complex characters."
 #~ msgstr ""
-#~ "Métodos de entrada para idiomas con escritura compleja. Módulos Scim u "
-#~ "otro software de similares características que ayudan a la introducción "
-#~ "de caracteres complejos."
+#~ "Métodos de entrada para idiomas con escritura compleja. Módulos Scim u otro "
+#~ "software de similares características que ayudan a la introducción de "
+#~ "caracteres complejos."
 
 #~ msgid "Extra software"
 #~ msgstr "Software complementario"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
 #~ "Puede ser de interés general el uso de tipografías adicionales para los "
 #~ "usuarios de este idioma."
@@ -562,7 +552,17 @@ msgstr ""
 #~ msgid "Extra translations"
 #~ msgstr "Traducciones extra"
 
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "El idioma predeterminado del sistema es ahora %s. La introducción de "
+#~ "caracteres complejos se activará la próxima vez que inicie una sesión."
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Activar el soporte para introducir caracteres complejos"
+
 #~ msgid "Use input method engines (IME) to enter complex characters"
 #~ msgstr ""
-#~ "Usar motores de métodos de entrada (IME) para introducir caracteres "
-#~ "complejos"
+#~ "Usar motores de métodos de entrada (IME) para introducir caracteres complejos"

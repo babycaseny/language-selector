@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-08 17:24+0000\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-28 09:27+0000\n"
 "Last-Translator: Adi Roiban <adi@roiban.ro>\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Chineză (simplificată)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Chineză (tradițională)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -187,9 +187,8 @@ msgid "Set System Language"
 msgstr "Alegerea limbii sistemului"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Metode intrare"
+msgstr "Metodă intrare tastatură:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -268,11 +267,11 @@ msgstr "Nu sunteți administrator"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Exemplu</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -297,12 +296,16 @@ msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Trageți limbile pentru a le aranja în ordinea preferințelor.\n"
+"Modificările vor avea efect la următoarea autentificare.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>Folosește aceleași preferințe de limbă pentru pornire și ecranul de "
+"autentificare.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -318,7 +321,7 @@ msgstr "Aplică modificările"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Aplică în tot sistemul..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -326,15 +329,15 @@ msgstr "Componente:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Monedă:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Dată:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "Afișează numere, date și bani în formatul normal pentru:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -366,19 +369,19 @@ msgstr "Păstrează aceleași"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "Metodă intrare tastatură pentru sistem:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Limbă și text"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Limba pentru meniuri și ferestre:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "Număr:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -386,15 +389,15 @@ msgstr "Corectoare ortografice și utilitare procesare text"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Traduceri"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Traduceri pentru sistem."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -432,10 +435,10 @@ msgstr "Suport limbă incomplet"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Fișierele pentru suportul limbi alese par să fie incomplete. Puteți instala "
 "componentele lipsă printr-un clic pe „Rulează această acțiune acum” și "
@@ -447,10 +450,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Fișierele pentru suportul limbi alese par să fie incomplete. Puteți instala "
 "componentele lipsă printr-un clic pe „Rulează această acțiune acum” și "
@@ -516,22 +519,13 @@ msgstr "Neconfigurat"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr "Există deja o configurare. Folosiți „--force” pentru a o suprascrie. "
+msgstr ""
+"Există deja o configurare. Folosiți „--force” pentru a o suprascrie. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Nu s-au găsti configurări fontconfig-voodoo pentru localizarea selectată"
-
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "Activare suportul pentru introducerea caracterelor complexe"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr ""
-#~ "Limba implicită a sistemului este acum %s. Introducerea caracterelor "
-#~ "complexe se va activa la următoarea autentificare."
 
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
@@ -549,16 +543,26 @@ msgstr ""
 #~ msgstr "Software adițional"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
 #~ "Software adițional ce poate fi de interes general pentru utilizatorii ce "
 #~ "folosesc această limbă."
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Activare suportul pentru introducerea caracterelor complexe"
+
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "Limba implicită a sistemului este acum %s. Introducerea caracterelor "
+#~ "complexe se va activa la următoarea autentificare."
 
 #~ msgid "Extra translations"
 #~ msgstr "Traduceri adiționale"
 
 #~ msgid "Use input method engines (IME) to enter complex characters"
 #~ msgstr ""
-#~ "Pentru introducerea de caractere complexe folosește motoare de metode "
-#~ "intrare"
+#~ "Pentru introducerea de caractere complexe folosește motoare de metode intrare"

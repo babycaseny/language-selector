@@ -7,27 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-06-18 10:34+0000\n"
-"Last-Translator: NGUYỄN Mạnh Hùng <Unknown>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-01 19:56+0000\n"
+"Last-Translator: Phan Trọng Khanh <phantrongkhanh87@gmail.com>\n"
 "Language-Team: Vietnamese <vi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Tiếng Trung Quốc (phổ thông)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Trung Quốc (tuyền thống)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -84,6 +84,8 @@ msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
+"Có lẽ đây là một lỗi của ứng dụng. Vui lòng báo cáo lỗi tại "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -94,6 +96,8 @@ msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
 msgstr ""
+"Đây thường là lỗi liên quan đến lưu trữ phần mềm hoặc quản lý phần mềm của "
+"bạn. Kiểm tra tùy chỉnh phần mềm của bạn ở trình đơn Hệ thống > Quản lý."
 
 #. FIXME: use self.runAsRoot() here
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
@@ -176,9 +180,8 @@ msgid "Set System Language"
 msgstr "Thiết lập Ngôn ngữ Hệ thống"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Các phương thức nhập liệu"
+msgstr "Phương thức nhập của bàn phím:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -257,11 +260,11 @@ msgstr "Không phải người dùng root"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Ví dụ</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -285,12 +288,15 @@ msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Kéo ngôn ngữ để đặt chúng theo thứ tự tùy chọn.\n"
+"Thay đổi sẽ có tác dụng vào lần đăng nhập tiếp theo.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>Sử dụng cùng một ngôn ngữ cho khởi động và màn hình đăng nhập.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -306,7 +312,7 @@ msgstr "Áp dụng các Thay đổi"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Áp dụng trên hệ thống..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -314,15 +320,15 @@ msgstr "Các thành phần:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Tiền tệ:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Ngày tháng :"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "Hiển thị số, ngày tháng và tiền tệ ở cách thông thường cho:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -354,19 +360,19 @@ msgstr "Giữ cho giống"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "Hệ thống phương thức nhập vào của bàn phím:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Ngôn ngữ và Văn bản"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Ngôn ngữ cho trình đơn và cửa sổ:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "Số :"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -374,15 +380,15 @@ msgstr "Kiểm tra chính tả và hỗ trợ soạn thảo"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Văn bản"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Bản dịch"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Bản dịch cho máy tính của bạn."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -420,10 +426,10 @@ msgstr "Hỗ trợ Ngôn ngữ không đầy đủ"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Các tệp tin hỗ trợ ngôn ngữ cho ngôn ngữ mà bạn chọn có lẽ không đầy đủ. Bạn "
 "có thể cài đặt các thành phần còn thiết bằng cách nhận \"Thực hiện hành động "
@@ -435,10 +441,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Các tệp tin hỗ trợ ngôn ngữ cho ngôn ngữ mà bạn chọn có lẽ không đầy đủ. Bạn "
 "có thể cài đặt các thành phần còn thiết bằng cách nhận \"Thực hiện hành động "
@@ -512,6 +518,7 @@ msgstr ""
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "Kích hoạt tính năng hỗ trợ để nhập các ký tự phức tạp"
 
+#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."

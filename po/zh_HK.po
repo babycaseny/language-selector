@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
 "PO-Revision-Date: 2009-07-29 14:30+0000\n"
 "Last-Translator: Roy Chan <roy.chan@linux.org.hk>\n"
 "Language-Team: Chinese (Hong Kong) <zh_HK@li.org>\n"
@@ -15,17 +15,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
 msgstr ""
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
 msgstr ""
 
@@ -137,8 +137,7 @@ msgid ""
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"無法安裝或移除任何軟件。請首先使用套件管理員 “Synaptic” 或在終端機中執行"
-"「sudo apt-get install -f」修正此問題。"
+"無法安裝或移除任何軟件。請首先使用套件管理員 “Synaptic” 或在終端機中執行「sudo apt-get install -f」修正此問題。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:54
 msgid "Uninstall"
@@ -158,8 +157,7 @@ msgid ""
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"無法安裝或移除任何軟件。請首先使用套件管理員 “Adept” 或在終端機執行「sudo "
-"apt-get install -f」修正此問題。"
+"無法安裝或移除任何軟件。請首先使用套件管理員 “Adept” 或在終端機執行「sudo apt-get install -f」修正此問題。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
@@ -170,9 +168,8 @@ msgid "Set System Language"
 msgstr "設定系統語言"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "輸入法"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -278,8 +275,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
@@ -382,8 +379,7 @@ msgstr "當一種語言被安裝後，每個使用者可以在他們的語言設
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
-msgstr ""
-"字表、字典、同義詞典等。可以透過突出文字、改正或提議正字來協助鍵入文字。"
+msgstr "字表、字典、同義詞典等。可以透過突出文字、改正或提議正字來協助鍵入文字。"
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
@@ -405,27 +401,25 @@ msgstr "不完整的語言支援"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
-"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來"
-"安裝欠缺的元件。這需要有效的互聯網連線。如果您想稍後才執行，請使用「系統 -> "
-"管理 -> 語言支援」。"
+"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來安裝欠缺的元件。這需要有效的互聯網連線。如果您想稍後才執行，請使用「系統 -"
+"> 管理 -> 語言支援」。"
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
-"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來"
-"安裝欠缺的元件。這需要有效的互聯網連線。如果您想稍後才執行，請使用「系統 -> "
-"設定 -> 區域與語言」。"
+"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來安裝欠缺的元件。這需要有效的互聯網連線。如果您想稍後才執行，請使用「系統 -"
+"> 設定 -> 區域與語言」。"
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -487,14 +481,6 @@ msgstr "已有配置。使用「--force」蓋過它。 "
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "找不到已選語系的 fontconfig-voodoo 配置"
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "啟用支援輸入複雜字元"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr "預設系統語言現已設定為%s。複雜字元輸入會在您下次登入時啟用。"
-
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr "OpenOffice.org、Firefox、Thunderbird、Gaim 翻譯和幫助檔案。"
@@ -508,9 +494,18 @@ msgstr "找不到已選語系的 fontconfig-voodoo 配置"
 #~ msgstr "額外軟件"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr "使用此語言的使用者一般可能有興趣的額外軟件。"
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "啟用支援輸入複雜字元"
+
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr "預設系統語言現已設定為%s。複雜字元輸入會在您下次登入時啟用。"
 
 #~ msgid "Extra translations"
 #~ msgstr "額外翻譯"

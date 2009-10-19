@@ -24,11 +24,15 @@ import sys
 import re
 
 import gtk
+import gtk.glade
 
 # based on SimpleGladeApp
 class SimpleGtkbuilderApp:
 
     def __init__(self, path):
+        # Temporary workaround for https://bugzilla.gnome.org/show_bug.cgi?id=574520
+        gtk.glade.bindtextdomain("language-selector", "/usr/share/locale")
+        gtk.glade.textdomain("language-selector")
         self.builder = gtk.Builder()
         self.builder.add_from_file(path)
         # Temporary workaround for https://bugzilla.gnome.org/show_bug.cgi?id=574520

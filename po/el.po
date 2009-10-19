@@ -8,27 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-07-29 14:30+0000\n"
-"Last-Translator: Kainourgiakis Giorgos <kaingeo@yahoo.gr>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-12 18:53+0000\n"
+"Last-Translator: Thanos Lefteris <alefteris@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Κινέζικα (απλοποιημένα)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Κινέζικα (παραδοσιακά)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -88,8 +88,8 @@ msgid ""
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 "Πιθανόν πρόκειται για κάποια δυσλειτουργία αυτής της εφαρμογής. Παρακαλώ "
-"αναφέρετε αυτή τη δυσλειτουργία στο https://bugs.launchpad.net/ubuntu/"
-"+source/language-selector/+filebug"
+"αναφέρετε αυτή τη δυσλειτουργία στο "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -187,9 +187,8 @@ msgid "Set System Language"
 msgstr "Καθορισμός γλώσσας συστήματος"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Μέθοδοι εισαγωγής"
+msgstr "Μέθοδος γραφής:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -268,11 +267,11 @@ msgstr "Χρήστης χωρίς δικαιώματα διαχειριστή"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Παράδειγμα</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -289,20 +288,24 @@ msgstr ""
 #: ../data/LanguageSelector.ui.h:6
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Όλες οι αλλαγές θα ισχύσουν από την επόμενη φορά που θα συνδεθείτε.</"
-"small>"
+"<small>Όλες οι αλλαγές θα ισχύσουν από την επόμενη φορά που θα "
+"συνδεθείτε.</small>"
 
 #: ../data/LanguageSelector.ui.h:7
 msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Σύρτε τις γλώσσες για να τις οργανώσετε κατά σειρά προτίμησης.\n"
+"Οι αλλαγές θα εφαρμοστούν την επόμενη φορά που θα συνδεθείτε.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>Χρησιμοποιεί τις ίδιες επιλογές γλώσσας για την οθόνη εκκίνησης και "
+"σύνδεσης.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -318,7 +321,7 @@ msgstr "Εφαρμογή αλλαγών"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Εφαρμογή σε όλο το σύστημα..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -326,15 +329,16 @@ msgstr "Συστατικά:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Νόμισμα:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Ημερομηνία:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
 msgstr ""
+"Εμφάνιση αριθμών, ημερομηνίας και νομίσματος στη συνηθισμένη μορφή για:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -366,19 +370,19 @@ msgstr "Διατήρηση των ίδιων"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "Μέθοδος γραφής:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Γλώσσα και κείμενο"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Γλώσσα για μενού και παράθυρα:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "Αριθμός:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -386,15 +390,15 @@ msgstr "Ορθογραφικός έλεγχος και βοηθήματα γρα
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Κείμενο"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Μεταφράσεις"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Μεταφράσεις για την επιφάνεια εργασίας σας."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -432,10 +436,10 @@ msgstr "Ημιτελής γλωσσική υποστήριξη"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Τα αρχεία υποστήριξης για την επιλεγμένη γλώσσα είναι ημιτελή. Μπορείτε να "
 "εγκαταστήσετε τα στοιχεία που δεν υπάρχουν, κάνοντας κλικ στο \"Εκτέλεση\" "
@@ -447,10 +451,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Τα αρχεία υποστήριξης για την επιλεγμένη γλώσσα είναι ημιτελή. Μπορείτε να "
 "εγκαταστήσετε τα στοιχεία που δεν υπάρχουν, κάνοντας κλικ στο \"Εκτέλεση\" "
@@ -523,9 +527,32 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Δεν βρέθηκε ρύθμιση  fontconfig-voodoo για το επιλεγμένο locale."
 
+#~ msgid ""
+#~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+#~ msgstr ""
+#~ "OpenOffice.org, Firefox, Thunderbird, Gaim Μεταφράσεις και αρχεία βοήθειας."
+
+#~ msgid ""
+#~ "Input Methods for languages with complex scripts. Scim modules or other "
+#~ "relevant software which helps with typing complex characters."
+#~ msgstr ""
+#~ "Μέθοδοι εισαγωγής για γλώσσες με σύνθετη γραφή. Πρόσθετα τύπου Scim ή άλλου "
+#~ "σχετικού λογισμικού που βοηθάει στην πληκτρολόγηση σύνθετων χαρακτήρων."
+
+#~ msgid "Extra software"
+#~ msgstr "Επιπρόσθετο Λογισμικό"
+
+#~ msgid ""
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
+#~ msgstr ""
+#~ "Επιπρόσθετο λογισμικό το οποίο μπορεί να έχει γενικότερο ενδιαφέρον για τους "
+#~ "χρήστες αυτής της γλώσσας."
+
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "Ενεργοποίηση υποστήριξης για εισαγωγή περίπλοκων χαρακτήρων"
 
+#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
@@ -533,33 +560,8 @@ msgstr "Δεν βρέθηκε ρύθμιση  fontconfig-voodoo για το επ
 #~ "Η προεπιλεγμένη γλώσσα συστήματος καθορίστηκε τώρα σε %s. Η εισαγωγή "
 #~ "περίπλοκων χαρακτήρων θα ενεργοποιηθεί την επόμενη φορά που θα συνδεθείτε."
 
-#~ msgid ""
-#~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-#~ msgstr ""
-#~ "OpenOffice.org, Firefox, Thunderbird, Gaim Μεταφράσεις και αρχεία "
-#~ "βοήθειας."
-
-#~ msgid ""
-#~ "Input Methods for languages with complex scripts. Scim modules or other "
-#~ "relevant software which helps with typing complex characters."
-#~ msgstr ""
-#~ "Μέθοδοι εισαγωγής για γλώσσες με σύνθετη γραφή. Πρόσθετα τύπου Scim ή "
-#~ "άλλου σχετικού λογισμικού που βοηθάει στην πληκτρολόγηση σύνθετων "
-#~ "χαρακτήρων."
-
-#~ msgid "Extra software"
-#~ msgstr "Επιπρόσθετο Λογισμικό"
-
-#~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
-#~ msgstr ""
-#~ "Επιπρόσθετο λογισμικό το οποίο μπορεί να έχει γενικότερο ενδιαφέρον για "
-#~ "τους χρήστες αυτής της γλώσσας."
-
 #~ msgid "Extra translations"
 #~ msgstr "Πρόσθετες μεταφράσεις"
 
 #~ msgid "Use input method engines (IME) to enter complex characters"
-#~ msgstr ""
-#~ "Χρήση μηχανών εισαγωγής (IME) για την εισαγωγή πολύπλοκων χαρακτήρων"
+#~ msgstr "Χρήση μηχανών εισαγωγής (IME) για την εισαγωγή πολύπλοκων χαρακτήρων"

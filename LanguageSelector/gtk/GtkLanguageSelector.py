@@ -272,11 +272,12 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             
         def lang_view_func(cell_layout, renderer, model, iter):
             langInfo = model.get_value(iter, LIST_LANG_INFO)
+            langName = model.get_value(iter, LIST_LANG)
             inconsistent = langInfo.inconsistent
             if (langInfo.changes) :
-                markup = "<b>%s</b>" % langInfo.language
+                markup = "<b>%s</b>" % langName
             else:
-                markup = "%s" % langInfo.language
+                markup = "%s" % langName
             renderer.set_property("markup", markup)
 
         renderer = gtk.CellRendererText()
@@ -780,12 +781,13 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         #print "ll size: ", len(languageList)
         #print "ll type: ", type(languageList)
         for lang in languageList:
-            #print "langInfo: %s" % lang
+            #print "langInfo: %s (%s)" % (lang.language, lang.languageCode)
             inconsistent = lang.inconsistent
             #if inconsistent:
             #    print "inconsistent", lang.language
             installed = lang.fullInstalled
-            self._langlist.append([_(lang.language), lang])
+            lang_name = self._localeinfo.translate(lang.languageCode)
+            self._langlist.append([lang_name, lang])
         self._langlist.set_sort_column_id(LIST_LANG, gtk.SORT_ASCENDING)
         for button in ( 
               "checkbutton_translations",

@@ -7,25 +7,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-08 19:25+0000\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-20 19:41+0000\n"
 "Last-Translator: cumulus007 <cumulus0007@gmail.com>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
 msgstr "Chinees (vereenvoudigd)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
 msgstr "Chinees (traditioneel)"
 
@@ -79,15 +79,16 @@ msgstr "%s, %s"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:568
 msgid "Could not install the selected language support"
-msgstr "Ondersteuning voor de geselecteerde taal kon niet geïnstalleerd worden"
+msgstr ""
+"Ondersteuning voor de geselecteerde taal kon niet geïnstalleerd worden"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"Wellicht is dit een programmafout. Dien een foutenrapport in op https://bugs."
-"launchpad.net/ubuntu/+source/language-selector/+filebug"
+"Wellicht is dit een programmafout. Dien een foutenrapport in op "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -183,9 +184,8 @@ msgid "Set System Language"
 msgstr "Systeemtaal instellen"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Invoermethode voor toetsenbord:"
+msgstr "Invoermethode:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -285,8 +285,8 @@ msgstr ""
 #: ../data/LanguageSelector.ui.h:6
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Alle wijzigingen worden de volgende keer dat u inlogt toegepast.</"
-"small>"
+"<small>Alle wijzigingen worden de volgende keer dat u inlogt "
+"toegepast.</small>"
 
 #: ../data/LanguageSelector.ui.h:7
 msgid ""
@@ -294,16 +294,16 @@ msgid ""
 "Changes take effect next time you log in.</small>"
 msgstr ""
 "<small>Sleep de talen om ze in uw voorkeursvolgorde te plaatsen.\n"
-"Wijzigingen worden doorgevoerd bij de volgende keer dat u zich aanmeldt.</"
-"small>"
+"Wijzigingen worden doorgevoerd bij de volgende keer dat u zich "
+"aanmeldt.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
-"<small>Gebruikt dezelfde taalkeuzes voor opstarten en het aanmeldscherm.</"
-"small>"
+"<small>Gebruikt dezelfde taalkeuzes voor opstarten en het "
+"aanmeldscherm.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -335,7 +335,8 @@ msgstr "Datum:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr "Getallen, data en valuta weergeven in het gebruikelijke formaat voor:"
+msgstr ""
+"Getallen, data en valuta weergeven in het gebruikelijke formaat voor:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -433,10 +434,10 @@ msgstr "Onvolledige taalondersteuning"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "De bij uw taal behorende taalondersteuningsbestanden lijken onvolledig te "
 "zijn. U kunt de ontbrekende onderdelen installeren door op \"Deze actie nu "
@@ -448,10 +449,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "De bij uw taal behorende taalondersteuningsbestanden lijken onvolledig te "
 "zijn. U kunt de ontbrekende onderdelen installeren door op \"Deze actie nu "
@@ -528,6 +529,7 @@ msgstr ""
 #~ msgstr ""
 #~ "Ondersteuning voor het invoeren van complexe lettertekens inschakelen"
 
+#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
@@ -536,11 +538,11 @@ msgstr ""
 #~ "complexe lettertekens zal ingeschakeld zijn als u de volgende keer inlogt."
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
-#~ "Optionele software die wellicht interessant kan zijn voor sprekers van "
-#~ "deze taal."
+#~ "Optionele software die wellicht interessant kan zijn voor sprekers van deze "
+#~ "taal."
 
 #~ msgid ""
 #~ "Input Methods for languages with complex scripts. Scim modules or other "

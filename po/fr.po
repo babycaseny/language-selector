@@ -7,25 +7,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-13 09:33+0000\n"
-"Last-Translator: Bruno Patri <bruno.patri@gmail.com>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-15 13:43+0000\n"
+"Last-Translator: Milan Bouchet-Valat <nalimilan@club.fr>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
 msgstr "Chinois (simplifié)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
 msgstr "Chinois (traditionnel)"
 
@@ -106,7 +106,8 @@ msgstr ""
 #. FIXME: use self.runAsRoot() here
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
 msgid "The list of available languages on the system has been updated."
-msgstr "La liste des langues disponibles sur votre système a été mise à jour."
+msgstr ""
+"La liste des langues disponibles sur votre système a été mise à jour."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
@@ -173,8 +174,8 @@ msgid ""
 "this issue at first."
 msgstr ""
 "Il est impossible d'installer ou de supprimer des logiciels. Veuillez "
-"utiliser le gestionnaire de paquets « Adept » ou lancer « sudo apt-get install "
-"-f » dans un terminal pour corriger ce problème d'abord."
+"utiliser le gestionnaire de paquets « Adept » ou lancer « sudo apt-get "
+"install -f » dans un terminal pour corriger ce problème d'abord."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
@@ -185,9 +186,8 @@ msgid "Set System Language"
 msgstr "Définir la langue du système"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Système de saisie au clavier :"
+msgstr "Méthode de saisie au clavier :"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -287,8 +287,8 @@ msgstr ""
 #: ../data/LanguageSelector.ui.h:6
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Les modifications seront effectives lors de votre prochaine connexion."
-"</small>"
+"<small>Les modifications seront effectives lors de votre prochaine "
+"connexion.</small>"
 
 #: ../data/LanguageSelector.ui.h:7
 msgid ""
@@ -300,8 +300,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
 "<small>Utilise la même les mêmes choix de langue pour le démarrage et "
 "l'écran d'ouverture de session.</small>"
@@ -337,7 +337,8 @@ msgstr "Date :"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr "Afficher les nombres, dates et devises dans le format habituel pour :"
+msgstr ""
+"Afficher les nombres, dates et devises dans le format habituel pour :"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -419,50 +420,51 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr "Configurer la prise en charge multilingue et native sur votre système"
+msgstr ""
+"Configurer la langue par défaut du système et des langues supplémentaires"
 
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
 msgid "Language Support"
-msgstr "Prise en charge linguistique"
+msgstr "Prise en charge des langues"
 
 #. Name
 #: ..//data/incomplete-language-support-gnome.note.in:5
 #: ..//data/incomplete-language-support-qt.note.in:5
 msgid "Incomplete Language Support"
-msgstr "Prise en charge linguistique incomplète"
+msgstr "Prise en charge de la langue incomplète"
 
 #. Description
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
-"Les fichiers de prise en charge linguistique pour la langue sélectionnée "
-"semblent incomplets. Vous pouvez installer les composants manquants en "
-"cliquant sur « Lancer cette action maintenant » puis en suivant les "
-"instructions. Une connexion fonctionnelle à l'Internet est nécessaire. Si "
-"vous souhaitez le faire ultérieurement, veuillez utiliser « Système -> "
-"Administration -> Prise en charge linguistique » à la place."
+"Les fichiers de prise en charge de la langue sélectionnée semblent "
+"incomplets. Vous pouvez installer les composants manquants en cliquant sur "
+"« Lancer cette action maintenant » puis en suivant les instructions. Une "
+"connexion fonctionnelle à Internet est nécessaire. Si vous souhaitez le "
+"faire ultérieurement, veuillez utiliser « Système -> Administration -> Prise "
+"en charge des langues » à la place."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
-"Les fichiers de prise en charge linguistique pour la langue sélectionnée "
-"semblent incomplets. Vous pouvez installer les composants manquants en "
-"cliquant sur « Lancer cette action maintenant » puis en suivant les "
-"instructions. Une connexion fonctionnelle à l'Internet est nécessaire. Si "
-"vous souhaitez le faire ultérieurement, veuillez utiliser « Configuration du "
-"système -> Région et langue » à la place."
+"Les fichiers de prise en charge de la langue sélectionnée semblent "
+"incomplets. Vous pouvez installer les composants manquants en cliquant sur "
+"« Lancer cette action maintenant » puis en suivant les instructions. Une "
+"connexion fonctionnelle à Internet est nécessaire. Si vous souhaitez le "
+"faire ultérieurement, veuillez utiliser « Configuration du système -> Région "
+"et langue » à la place."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -530,31 +532,32 @@ msgstr ""
 "Aucune configuration de fontconfig-voodoo trouvée pour la localisation "
 "choisie"
 
+#~ msgid ""
+#~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
+#~ msgstr ""
+#~ "Fichiers d'aide et de traduction pour OpenOffice.org, Firefox, Thunderbird, "
+#~ "Gaim."
+
+#~ msgid "Extra software"
+#~ msgstr "Logiciels supplémentaires"
+
+#~ msgid ""
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
+#~ msgstr ""
+#~ "Logiciels supplémentaires pouvant être intéressants d'un point de vue "
+#~ "général pour les utilisateurs de cette langue."
+
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "Activer la prise en charge de la saisie de caractères complexes"
 
+#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
 #~ msgstr ""
 #~ "La langue par défaut du système est désormais %s.  L'utilisation des "
 #~ "caractères complexes sera disponible lors de votre prochaine session."
-
-#~ msgid ""
-#~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-#~ msgstr ""
-#~ "Fichiers d'aide et de traduction pour OpenOffice.org, Firefox, "
-#~ "Thunderbird, Gaim."
-
-#~ msgid "Extra software"
-#~ msgstr "Logiciels supplémentaires"
-
-#~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
-#~ msgstr ""
-#~ "Logiciels supplémentaires pouvant être intéressants d'un point de vue "
-#~ "général pour les utilisateurs de cette langue."
 
 #~ msgid "Extra translations"
 #~ msgstr "Traductions supplémentaires"
@@ -563,10 +566,9 @@ msgstr ""
 #~ "Input Methods for languages with complex scripts. Scim modules or other "
 #~ "relevant software which helps with typing complex characters."
 #~ msgstr ""
-#~ "Méthodes de saisie pour les langages avec graphie complexe. Modules SCIM "
-#~ "ou logiciels adéquats facilitant la saisie des caractères complexes."
+#~ "Méthodes de saisie pour les langages avec graphie complexe. Modules SCIM ou "
+#~ "logiciels adéquats facilitant la saisie des caractères complexes."
 
 #~ msgid "Use input method engines (IME) to enter complex characters"
 #~ msgstr ""
-#~ "Moteurs de méthode de saisie (IME) pour la gestion des caractères "
-#~ "complexes"
+#~ "Moteurs de méthode de saisie (IME) pour la gestion des caractères complexes"

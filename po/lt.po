@@ -7,33 +7,33 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-07-29 14:30+0000\n"
-"Last-Translator: Linas Bukauskas <linas@sig.lt>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-12 16:53+0000\n"
+"Last-Translator: Aurimas Fišeras <Unknown>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
-"100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Kinų (supaprastinta)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Kinų (tradicinė)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
-msgstr ""
+msgstr "Kalbos informacija neprieinama"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:197
 #: ../LanguageSelector/qt/QtLanguageSelector.py:95
@@ -41,11 +41,13 @@ msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
+"Sistema dar neturi informacijos apie prieinamas kalbas. Ar norite atlikti "
+"atnaujinimą per tinklą ir gauti informaciją dabar? "
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:201
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
-msgstr ""
+msgstr "At_naujinti"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
 #: ../data/LanguageSelector.ui.h:26
@@ -54,27 +56,29 @@ msgstr "Kalba"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:290
 msgid "Installed"
-msgstr ""
+msgstr "Įdiegta"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:405
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d įdiegti"
+msgstr[1] "%d įdiegti"
+msgstr[2] "%d įdiegti"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d pašalinti"
+msgstr[1] "%d pašalinti"
+msgstr[2] "%d pašalinti"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
 #, python-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:568
 msgid "Could not install the selected language support"
@@ -85,6 +89,8 @@ msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
+"Tai greičiausiai yra programos klaida. Prašome pranešti apie klaidą "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -95,11 +101,14 @@ msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
 msgstr ""
+"Paprastai tai susiję su klaida programinės įrangos archyve ar programinės "
+"įrangos tvarkytuvėje. Patikrinkite programinės įrangos nustatymus meniu "
+"Sistema > Administravimas."
 
 #. FIXME: use self.runAsRoot() here
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
 msgid "The list of available languages on the system has been updated."
-msgstr ""
+msgstr "Sistemoje prieinamų kalbų sąrašas buvo atnaujintas."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
@@ -112,12 +121,14 @@ msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
+"Kai kurie vertimai ir pagalbinės rašymo priemonės yra prieinami pasirinktoms "
+"kalboms, tačiau dar neįdiegti. Ar norite juos įdiegti dabar?"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
-msgstr ""
+msgstr "P_riminti vėliau"
 
 #. FIXME: add "details"
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
@@ -132,7 +143,7 @@ msgstr "Smulkmenos"
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:769
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
 msgid "Software database is broken"
-msgstr ""
+msgstr "Programinės įrangos duomenų bazė sugadinta"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
 msgid ""
@@ -146,15 +157,15 @@ msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:54
 msgid "Uninstall"
-msgstr ""
+msgstr "Pašalinti"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:55
 msgid "Select language to uninstall:"
-msgstr ""
+msgstr "Pasirinkite kalbą pašalinimui:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:62
 msgid "Language Selector"
-msgstr ""
+msgstr "Kalbos parinkiklis"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid ""
@@ -162,55 +173,58 @@ msgid ""
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
+"Yra neįmanoma įdiegti ar pašalinti programinės įrangos. Prašome naudoti "
+"paketų tvarkytuvę \"Adept\" ar paleiskite \"sudo apt-get install -f\" "
+"terminale problemai išspręsti."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
-msgstr ""
+msgstr "Numatytoji sistemos kalba:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Set System Language"
-msgstr ""
+msgstr "Nustatyti sistemos kalbą"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
 msgid "Keyboard input method:"
-msgstr ""
+msgstr "Klaviatūros įvedimo metodas:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
 #: ../data/LanguageSelector.ui.h:13
 msgid "Cancel"
-msgstr ""
+msgstr "Atsisakyti"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:119
 msgid "Select language to install:"
-msgstr ""
+msgstr "Pasirinkite kalbą diegimui:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Install"
-msgstr ""
+msgstr "Įdiegti"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:209
 msgid "Already installed"
-msgstr ""
+msgstr "Jau įdiegta"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
-msgstr ""
+msgstr "Dalinai įdiegta"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:217
 msgid "Not installed"
-msgstr ""
+msgstr "Neįdiegta"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "Numatytoji sistemos kalba nustatyta į %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 msgid "Language Set"
-msgstr ""
+msgstr "Kalba nustatyta"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:314
 #, python-format
@@ -218,43 +232,45 @@ msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
+"Vertimai ir palaikymas buvo įdiegti %s.  Pasirinkite juos mygtuku Pridėti "
+"kalbą."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:314
 msgid "Language Installed"
-msgstr ""
+msgstr "Kalba įdiegta"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:316
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "Vertimai ir palaikymas buvo pašalintas %s."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:316
 msgid "Language Uninstalled"
-msgstr ""
+msgstr "Kalba pašalinta"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:318
 msgid "Failed to set system language."
-msgstr ""
+msgstr "Nepavyko nustatyti sistemos kalbos."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:318
 msgid "Language Not Set"
-msgstr ""
+msgstr "Kalba nenustatyta"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:367
 msgid "Please run this software with administrative rights."
-msgstr ""
+msgstr "Prašome paleisti šią programą su administratoriaus teisėmis."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:367
 msgid "Not Root User"
-msgstr ""
+msgstr "Ne pagrindinis naudotojas"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567,89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Pavyzdys</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -263,129 +279,141 @@ msgid ""
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
+"<big><b>Tikrinamas prieinamas kalbų palaikymas</b></big>\n"
+"\n"
+"Vertimų ir rašymo priemonių prieinamumas gali skirtis tarp kalbų."
 
 #: ../data/LanguageSelector.ui.h:6
 msgid "<small>All changes take effect next time you log in.</small>"
-msgstr ""
+msgstr "<small>Visi pakeitimai įsigalios kitą kartą prisijungus.</small>"
 
 #: ../data/LanguageSelector.ui.h:7
 msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Tempkite kalbas norėdami išdėlioti jas reikiama tvarka.\n"
+"Pakeitimai įsigalioja kitą kartą prisijungus.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>Naudoją tą patį kalbos pasirinkimą paleidimui ir prisijungimo "
+"ekranui.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
+"Papildomi šriftai šiai kalbai, kurie gali būti bendros reikšmės, pvz., "
+"dekoratyvus šriftai dokumentų spausdinimui."
 
 #: ../data/LanguageSelector.ui.h:11
 msgid "Apply Changes"
-msgstr ""
+msgstr "Vykdyti pakitimus"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Pritaikyti visai sistemai..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
-msgstr ""
+msgstr "Komponentai:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Valiuta:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Data:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "Rodyti skaičius, datas ir valiutos kiekius įprastu formatu:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
-msgstr ""
+msgstr "Papildomi šriftai"
 
 #: ../data/LanguageSelector.ui.h:19
 msgid "For everyone at startup and login, use:"
-msgstr ""
+msgstr "Kiekvienam paleidimui ir prisijungimui naudoti:"
 
 #: ../data/LanguageSelector.ui.h:20
 msgid "For my menus and windows, use:"
-msgstr ""
+msgstr "Mano meniu ir langams naudoti:"
 
 #: ../data/LanguageSelector.ui.h:21
 msgid "Input methods"
-msgstr ""
+msgstr "Įvedimo metodai"
 
 #: ../data/LanguageSelector.ui.h:22
 msgid "Install / Remove Languages..."
-msgstr ""
+msgstr "Įdiegti / pašalinti kalbas..."
 
 #: ../data/LanguageSelector.ui.h:23
 msgid "Installed Languages"
-msgstr ""
+msgstr "Įdiegtos kalbos"
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Keep the same"
-msgstr ""
+msgstr "Palikti tą pačią"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "Klaviatūros įvesties metodo sistema:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Kalba ir tekstas"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Meniu ir langų kalba;"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "Skaičius:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
-msgstr ""
+msgstr "Rašybos tikrinimo ir rašymo priemonės"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Tekstas"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Vertimai"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Vertimai jūsų darbalaukiui."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
+"Kai kalba įdiegta, atskiri naudotojai gali ją pasirinkti kalbos nuostatose."
 
 #: ../data/LanguageSelector.ui.h:35
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
 msgstr ""
+"Žodžių sąrašai, žodynai, tezaurai ir t.t., kurie padeda rinkti tekstą "
+"paryškinant, taisant ir siūlant žodžius."
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr ""
+msgstr "Konfigūruoti daugybinį ir gimtosios kalbos palaikymą sistemoje"
 
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
@@ -396,84 +424,94 @@ msgstr "Kalbos priežiūra"
 #: ..//data/incomplete-language-support-gnome.note.in:5
 #: ..//data/incomplete-language-support-qt.note.in:5
 msgid "Incomplete Language Support"
-msgstr ""
+msgstr "Nepilnas kalbos palaikymas"
 
 #. Description
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
+"Kalbos palaikymo failai pasirinktai kalbai yra nepilni. Jūs galite įdiegti "
+"trūkstamus komponentus paspaudę \"Vykdyti šį veiksmą dabar\" ir sekdami "
+"instrukcijas. Reikalingas aktyvus interneto ryšys. Jei norite tai padaryti "
+"vėliau, naudokite \"Sistema -> Administravimas -> Kalbos priežiūra\"."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
+"Kalbos palaikymo failai pasirinktai kalbai yra nepilni. Jūs galite įdiegti "
+"trūkstamus komponentus paspaudę \"Vykdyti šį veiksmą dabar\" ir sekdami "
+"instrukcijas. Reikalingas aktyvus interneto ryšys. Jei norite tai padaryti "
+"vėliau, naudokite \"Sistema -> Regionai ir kalbos\"."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "Reikia paleisti seansą iš naujo"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
-msgstr ""
+msgstr "Nauji kalbos nustatymai įsigalios, kai atsijungsite."
 
 #: ../gnome-language-selector:25
 msgid "don't verify installed language support"
-msgstr ""
+msgstr "netikrinti įdiegto kalbos palaikymo"
 
 #: ../gnome-language-selector:28
 msgid "alternative datadir"
-msgstr ""
+msgstr "alternatyvus duomenų katalogas"
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
-msgstr ""
+msgstr "Nutraukiama"
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
-msgstr ""
+msgstr "Primesti, net jei egzistuoja konfigūracija"
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
+msgstr "Nustatyti „fontconfig voodoo“ pasirinktai kalbai"
 
 #: ../fontconfig-voodoo:32
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"Atspėti konfigūraciją remiantis LANGUAGE aplinka. Nustato į 'none', jei "
+"nerado nieko tinkamo."
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
-msgstr ""
+msgstr "Parodyti prieinamas „fontconfig-voodoo“ konfigūracijas"
 
 #: ../fontconfig-voodoo:40
 msgid "Show the current fontconfig-voodoo config"
-msgstr ""
+msgstr "Rodyti dabartinę „fontconfig-voodoo“ konfigūraciją"
 
 #: ../fontconfig-voodoo:43
 msgid "Remove the current fontconfig-voodoo config"
-msgstr ""
+msgstr "Pašalinti dabartinę „fontconfig-voodoo“ konfigūraciją"
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr ""
+msgstr "Nesukonfigūruota"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
+msgstr "Konfigūracija jau egzistuoja. Naudokite '--force' jai perrašyti. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr ""
+msgstr "Pasirinktai lokalei „fontconfig-voodoo“ konfigūracija nerasta"

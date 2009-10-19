@@ -8,28 +8,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lang-hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-08 17:23+0000\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-24 10:21+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 "X-Rosetta-Version: 0.1\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Kínai (egyszerűsített)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Kínai (hagyományos)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -88,8 +88,8 @@ msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"Ez talán ennek az alkalmazásnak a hibája. Kérjük jelentse itt: https://bugs."
-"launchpad.net/ubuntu/+source/language-selector/+filebug"
+"Ez talán ennek az alkalmazásnak a hibája. Kérjük jelentse itt: "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -185,9 +185,8 @@ msgid "Set System Language"
 msgstr "A rendszer nyelvének beállítása"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Szövegbeviteli módok"
+msgstr "Billentyűzetbeviteli mód:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -266,11 +265,11 @@ msgstr "Rendszergazdai jogokkal nem rendelkező felhasználó"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Példa</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -294,12 +293,16 @@ msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Húzza a nyelveket a kívánt használati sorrendbe.\n"
+"A módosítások a következő bejelentkezéskor lépnek életbe.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>Ugyanazon nyelv használata indulásnál és a bejelentkezési "
+"képernyőn.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -315,7 +318,7 @@ msgstr "Változtatások alkalmazása"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Alkalmazás rendszerszinten…"
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -323,15 +326,17 @@ msgstr "Komponensek:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Pénznem:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Dátum:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
 msgstr ""
+"Számok, dátumok és pénzegységek megjelenítése a következőhöz megszokott "
+"formátumban:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -363,19 +368,19 @@ msgstr "Használja ugyanazt"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "Billentyűzetbeviteli rendszer:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Nyelv és szöveg"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Menük és ablakok nyelve:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "Szám:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -383,15 +388,15 @@ msgstr "Helyesírás-ellenőrzés és írástámogatás"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Szöveg"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Fordítások"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Az asztali környezet fordításai"
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -430,10 +435,10 @@ msgstr "Hiányos nyelvi támogatás"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Úgy tűnik, hogy az Ön által kiválasztott nyelvhez nincs teljes nyelvi "
 "támogatást biztosító fájl. A hiányzó elemeket a „Futtatás most” gombra "
@@ -446,10 +451,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Úgy tűnik, hogy az Ön által kiválasztott nyelvhez nincs teljes nyelvi "
 "támogatást biztosító fájl. A hiányzó elemeket a „Futtatás most” gombra "
@@ -523,20 +528,9 @@ msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Nem található fontconfig-voodoo konfiguráció a kijelölt területi beállításhoz"
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "Összetettkarakter-bevitel támogatásának engedélyezése"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr ""
-#~ "A rendszer alapértelmezett nyelve mostantól %s. Az összetett karakterek "
-#~ "beviltel engedélyezve lesz a következő bejelentkezéskor."
-
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-#~ msgstr ""
-#~ "OpenOffice.org, Firefox, Thunderbird, Gaim fordítások és súgófájlok."
+#~ msgstr "OpenOffice.org, Firefox, Thunderbird, Gaim fordítások és súgófájlok."
 
 #~ msgid ""
 #~ "Input Methods for languages with complex scripts. Scim modules or other "
@@ -550,9 +544,20 @@ msgstr ""
 #~ msgstr "Extra szoftver"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr "További szoftverek, melyek főként e nyelv használóit érdekelhetik."
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Összetettkarakter-bevitel támogatásának engedélyezése"
+
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "A rendszer alapértelmezett nyelve mostantól %s. Az összetett karakterek "
+#~ "beviltel engedélyezve lesz a következő bejelentkezéskor."
 
 #~ msgid "Extra translations"
 #~ msgstr "Extra fordítások"

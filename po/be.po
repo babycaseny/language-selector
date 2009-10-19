@@ -7,28 +7,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-08 17:20+0000\n"
-"Last-Translator: Alexander Nyakhaychyk <nyakhaychyk@gmail.com>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-20 19:41+0000\n"
+"Last-Translator: Iryna Nikanchuk <defragbrain@gmail.com>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Кітайская (спрошчаная)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Кітайская (традыцыйная)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -89,8 +89,8 @@ msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"Магчыма гэта памылка праграмы. Просім паведаміць пра памылку па https://bugs."
-"launchpad.net/ubuntu/+source/language-selector/+filebug"
+"Магчыма гэта памылка праграмы. Просім паведаміць пра памылку па "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -172,8 +172,8 @@ msgid ""
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Нямагчыма дадаць ці выдаліць праграмы. Скарыстайце кіраўнік пакетаў \"Adept"
-"\" ці выканайце \"sudo apt-get install -f\" у тэрмінале каб выправіць."
+"Нямагчыма дадаць ці выдаліць праграмы. Скарыстайце кіраўнік пакетаў "
+"\"Adept\" ці выканайце \"sudo apt-get install -f\" у тэрмінале каб выправіць."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
@@ -262,11 +262,11 @@ msgstr "Не адміністратар"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Прыклад</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -288,8 +288,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
@@ -316,7 +316,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Дата:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -336,7 +336,7 @@ msgstr "Для маіх мэню й вокнаў, ужыць:"
 
 #: ../data/LanguageSelector.ui.h:21
 msgid "Input methods"
-msgstr ""
+msgstr "Мэтады ўводу"
 
 #: ../data/LanguageSelector.ui.h:22
 msgid "Install / Remove Languages..."
@@ -356,11 +356,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Мова і тэкст"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Мова для мэню й вокнаў:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
@@ -372,11 +372,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Тэкст"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Пераклады"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
@@ -414,10 +414,10 @@ msgstr "Няпоўная моўная падтрымка"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Файлы падтрымкі абранай мовы няпоўныя. Каб ўсталяваць патрэбныя кампаненты, "
 "націсніце \"Run this action now\" і выканайце інструкцыю. Дзейнае далучэньне "
@@ -428,10 +428,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Файлы падтрымкі абранай мовы няпоўныя. Каб усталяваць патрэбныя кампаненты, "
 "націсніце \"Run this action now\" і выканайце інструкцыю. Дзейнае далучэньне "
@@ -503,6 +503,7 @@ msgstr "Адсутнічае fontconfig-voodoo для вылучанай мяс�
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "Уключыць падтрымку ўводу складаных сымбаляў"
 
+#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."

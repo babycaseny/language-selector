@@ -7,25 +7,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-09 22:43+0000\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-18 22:24+0000\n"
 "Last-Translator: Daniel Nylander <yeager@ubuntu.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
 msgstr "Kinesiska (förenklad)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
 msgstr "Kinesiska (traditionell)"
 
@@ -86,8 +86,8 @@ msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"Det kan vara ett fel i programmet. Skicka in en felrapport på https://bugs."
-"launchpad.net/ubuntu/+source/language-selector/+filebug"
+"Det kan vara ett fel i programmet. Skicka in en felrapport på "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -183,7 +183,6 @@ msgid "Set System Language"
 msgstr "Ställ in systemspråk"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
 msgstr "Inmatningsmetod för tangentbord:"
 
@@ -284,7 +283,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:6
 msgid "<small>All changes take effect next time you log in.</small>"
-msgstr "<small>Alla ändringar blir aktiverade nästa gång du loggar in.</small>"
+msgstr ""
+"<small>Alla ändringar blir aktiverade nästa gång du loggar in.</small>"
 
 #: ../data/LanguageSelector.ui.h:7
 msgid ""
@@ -296,8 +296,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
 "<small>Använder samma språkval för uppstart och inloggningsskärm.</small>"
 
@@ -430,10 +430,10 @@ msgstr "Språkstödet är inte komplett"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Filerna för språkstödet för ditt valda språk verkar inte vara kompletta. Du "
 "kan installera de saknade komponenterna genom att klicka på \"Kör denna "
@@ -445,15 +445,15 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Språkstödsfilerna för ditt valda språk verkar inte vara kompletta. Du kan "
-"installera de saknade komponenterna genom att klicka på \"Kör denna åtgärd nu"
-"\" och följa instruktionerna. En aktiv internetanslutning krävs. Om du vill "
-"göra det här vid ett senare tillfälle kan du istället använda "
+"installera de saknade komponenterna genom att klicka på \"Kör denna åtgärd "
+"nu\" och följa instruktionerna. En aktiv internetanslutning krävs. Om du "
+"vill göra det här vid ett senare tillfälle kan du istället använda "
 "\"Systeminställningar -> Regionalt och språk\"."
 
 #. Name
@@ -521,21 +521,10 @@ msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Ingen konfiguration av fontconfig-voodoo hittades för den valda lokalen"
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "Aktivera stöd för att mata in komplexa tecken"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr ""
-#~ "Standardspråk i systemet är nu inställt till %s.  Inmatning av komplexa "
-#~ "tecken kommer att vara aktiverat nästa gång du loggar in."
-
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr ""
-#~ "Översättningar för OpenOffice.org, Firefox, Thunderbird, Gaim och "
-#~ "hjälpfiler."
+#~ "Översättningar för OpenOffice.org, Firefox, Thunderbird, Gaim och hjälpfiler."
 
 #~ msgid ""
 #~ "Input Methods for languages with complex scripts. Scim modules or other "
@@ -548,11 +537,22 @@ msgstr ""
 #~ msgstr "Extra programvara"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
 #~ "Ytterligare programvara som kan vara av allmänt intresse för användare av "
 #~ "det här språket."
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Aktivera stöd för att mata in komplexa tecken"
+
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "Standardspråk i systemet är nu inställt till %s.  Inmatning av komplexa "
+#~ "tecken kommer att vara aktiverat nästa gång du loggar in."
 
 #~ msgid "Extra translations"
 #~ msgstr "Extra översättningar"

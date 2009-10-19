@@ -7,26 +7,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-10 07:28+0000\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-18 22:24+0000\n"
 "Last-Translator: Timo Jyrinki <timo-jyrinki@ubuntu.com>\n"
 "Language-Team: Finnish <ubuntu-fi@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 "X-Rosetta-Version: 0.1\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
 msgstr "kiina (yksinkertaistettu)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
 msgstr "kiina (perinteinen)"
 
@@ -185,9 +185,8 @@ msgid "Set System Language"
 msgstr "Aseta järjestelmän kieli"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Näpppäimistön syöttötapajärjestelmä:"
+msgstr "Näppäimistön syöttötapa:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -286,8 +285,8 @@ msgstr ""
 #: ../data/LanguageSelector.ui.h:6
 msgid "<small>All changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Kaikki muutokset tulevat voimaan seuraavalla kirjautumiskerralla.</"
-"small>"
+"<small>Kaikki muutokset tulevat voimaan seuraavalla "
+"kirjautumiskerralla.</small>"
 
 #: ../data/LanguageSelector.ui.h:7
 msgid ""
@@ -299,11 +298,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
-"<small>Käytä samoja kielivalintoja käynnistyksessä ja kirjautumisruudussa.</"
-"small>"
+"<small>Käytä samoja kielivalintoja käynnistyksessä ja "
+"kirjautumisruudussa.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -435,14 +434,14 @@ msgstr "Kielituki vaillinainen"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Kaikkia kielituen vaatimia tiedostoja ei ole asennettu valitulle kielelle. "
-"Voit asentaa puuttuvat osat tuesta napsauttamalla \"Run this action now"
-"\" (\"Suorita tämä toiminto nyt\") ja seuraamalla ohjeita. Toiminnassa oleva "
+"Voit asentaa puuttuvat osat tuesta napsauttamalla \"Run this action now\" "
+"(\"Suorita tämä toiminto nyt\") ja seuraamalla ohjeita. Toiminnassa oleva "
 "Internet-yhteys vaaditaan. Jos haluat asentaa täyden kielituen myöhemmin, "
 "avaa \"System -> Administration -> Language Support\" (\"Järjestelmä -> "
 "Ylläpito -> Kieliasetukset\")."
@@ -451,10 +450,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Valitun kielen kielitukitiedostot vaikuttavat olevan puutteelliset. Voit "
 "asentaa puuttuvat osat napsauttamalla \"Suorita tämä toiminto nyt\" ja "
@@ -525,16 +524,6 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Fontconfig-voodoo-asetuksia ei löydetty valitulle maa-asetustolle"
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "Ota käyttöön monimutkaisten kirjainmerkkien syöttämisen tuki"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr ""
-#~ "Järjestelmän oletuskieli on nyt \"%s\". Monimutkaisten kirjainmerkkien "
-#~ "syöttötuki otetaan käyttöön seuraavalla kirjautumiskerralla."
-
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr ""
@@ -553,11 +542,22 @@ msgstr "Fontconfig-voodoo-asetuksia ei löydetty valitulle maa-asetustolle"
 #~ msgstr "Lisäohjelmistot"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
-#~ "Ylimääräisiä ohjelmistoja, jotka saattavat olla yleisesti kiinnostavia "
-#~ "tätä kieltä käyttäville käyttäjille."
+#~ "Ylimääräisiä ohjelmistoja, jotka saattavat olla yleisesti kiinnostavia tätä "
+#~ "kieltä käyttäville käyttäjille."
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Ota käyttöön monimutkaisten kirjainmerkkien syöttämisen tuki"
+
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "Järjestelmän oletuskieli on nyt \"%s\". Monimutkaisten kirjainmerkkien "
+#~ "syöttötuki otetaan käyttöön seuraavalla kirjautumiskerralla."
 
 #~ msgid "Extra translations"
 #~ msgstr "Lisäkäännökset"

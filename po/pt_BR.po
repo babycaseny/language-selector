@@ -6,27 +6,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-09 15:56+0000\n"
-"Last-Translator: André Gondim <andregondim@ubuntu.com>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-12 20:05+0000\n"
+"Last-Translator: Tiago Hillebrandt <tiagoscd@yahoo.com.br>\n"
 "Language-Team: Ubuntu-BR <tradutores@listas.ubuntubrasil.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-Language: Portuguese\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
 msgstr "Chinês (simplificado)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
 msgstr "Chinês (tradicional)"
 
@@ -41,8 +41,8 @@ msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
-"O sistema não possui informações sobre os idiomas disponíveis ainda. Você "
-"quer realizar uma atualização usando a internet para obtê-los agora? "
+"O sistema ainda não possui informações sobre os idiomas disponíveis. Você "
+"deseja realizar uma atualização usando a Internet para obtê-las agora? "
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:201
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
@@ -183,9 +183,8 @@ msgid "Set System Language"
 msgstr "Definir Idioma Padrão"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Método de entrada para o sistema de teclado:"
+msgstr "Método de entrada do teclado:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -261,7 +260,7 @@ msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:367
 msgid "Not Root User"
-msgstr "Não é super-usuário"
+msgstr "Não é superusuário"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
@@ -299,11 +298,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
-"<small>Usa a mesma escolha de linguagem para inicialização e tela de login.</"
-"small>"
+"<small>Usa a mesma escolha de linguagem para inicialização e tela de "
+"login.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -421,7 +420,7 @@ msgstr "Configure suporte a vários idiomas nativos no seu sistema"
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
 msgid "Language Support"
-msgstr "Suporte a Idiomas"
+msgstr "Suporte a idiomas"
 
 #. Name
 #: ..//data/incomplete-language-support-gnome.note.in:5
@@ -433,10 +432,10 @@ msgstr "Suporte de Idioma Incompleto"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Os arquivos de suporte de linguagem parecem estar incompletos. Você pode "
 "instalar os componentes que faltam clicando em \"Executar esta ação agora\" "
@@ -448,10 +447,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Os arquivos de suporte de idioma para o seu idioma selecionado parecem estar "
 "incompletos. Você pode instalar os componentes que faltam clicando em "
@@ -529,6 +528,7 @@ msgstr ""
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "Habilitar suporte a caracteres complexos"
 
+#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
@@ -537,8 +537,8 @@ msgstr ""
 #~ "complexos será habilitada em seu próximo login."
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
 #~ "Programas adicionais que podem ser de interesse geral para usuários deste "
 #~ "idioma."
@@ -546,16 +546,14 @@ msgstr ""
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr ""
-#~ "Traduções e arquivos de ajuda do OpenOffice.org, Firefox, Thunderbird, "
-#~ "Gaim."
+#~ "Traduções e arquivos de ajuda do OpenOffice.org, Firefox, Thunderbird, Gaim."
 
 #~ msgid ""
 #~ "Input Methods for languages with complex scripts. Scim modules or other "
 #~ "relevant software which helps with typing complex characters."
 #~ msgstr ""
-#~ "Métodos de entrada para idiomas com scripts complexos. Módulos SCIM ou "
-#~ "outro software relevante que ajuda com a digitação de caracteres "
-#~ "complexos."
+#~ "Métodos de entrada para idiomas com scripts complexos. Módulos SCIM ou outro "
+#~ "software relevante que ajuda com a digitação de caracteres complexos."
 
 #~ msgid "Extra software"
 #~ msgstr "Software Extra"

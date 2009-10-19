@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
 "PO-Revision-Date: 2009-07-29 14:29+0000\n"
 "Last-Translator: Kamil Páral <kamil.paral@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -15,17 +15,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
 msgstr ""
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
 msgstr ""
 
@@ -168,8 +168,8 @@ msgid ""
 "this issue at first."
 msgstr ""
 "Není možné nainstalovat nebo odstranit jakýkoliv software. Prosím použijte "
-"správce balíků \"Adept\" nebo v terminálu spusťte \"sudo apt-get install -f"
-"\" a tak tento problém nejprve spravte."
+"správce balíků \"Adept\" nebo v terminálu spusťte \"sudo apt-get install -"
+"f\" a tak tento problém nejprve spravte."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
@@ -180,9 +180,8 @@ msgid "Set System Language"
 msgstr "Nastavit jazyk systému"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Vstupní metody"
+msgstr ""
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -291,8 +290,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
@@ -406,7 +405,8 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr "Nastavit národní jazykovou podporu společně s podporou dalších jazyků"
+msgstr ""
+"Nastavit národní jazykovou podporu společně s podporou dalších jazyků"
 
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
@@ -423,25 +423,25 @@ msgstr "Neúplná jazyková podpora"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Podpora pro váš zvolený jazyk se zdá být nekompletní. Můžete nainstalovat "
 "chybějící součásti kliknutím na \"Spustit tuto akci nyní\" a následováním "
 "instrukcí. Je vyžadováno funkční připojení k Internetu. Pokud byste to "
-"raději provedli později, prosím použijte \"Systém → Správa → Jazyková podpora"
-"\"."
+"raději provedli později, prosím použijte \"Systém → Správa → Jazyková "
+"podpora\"."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Podpora jazyků pro zvolený jazyk se zdá být neúplná. Můžete doinstalovat "
 "chybějící součásti kliknutím na \"Spustit tuto akci nyní\" a následováním "
@@ -511,16 +511,6 @@ msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Žádná fontconfig-voodoo konfigurace nenalezena pro vybrané jazykové prostředí"
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "Aktivovat podporu pro zadávání složitých znaků"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr ""
-#~ "Výchozí jazyk systému je nyní nastaven na %s. Vkládání složitých znaků "
-#~ "bude aktivováno při vašem příštím přihlášení."
-
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr "Překlady a nápověda k OpenOffice.org, Firefox, Thunderbird, Gaim."
@@ -529,18 +519,29 @@ msgstr ""
 #~ "Input Methods for languages with complex scripts. Scim modules or other "
 #~ "relevant software which helps with typing complex characters."
 #~ msgstr ""
-#~ "Vstupní metody pro jazyky se složeným písmem. Scim moduly nebo další "
-#~ "vhodný software, který pomáhá se psaním složených znaků."
+#~ "Vstupní metody pro jazyky se složeným písmem. Scim moduly nebo další vhodný "
+#~ "software, který pomáhá se psaním složených znaků."
 
 #~ msgid "Extra software"
 #~ msgstr "Dodatečný software"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
-#~ "Dodatečný software, který může být obecně zajímavý pro uživatele "
-#~ "používající tento jazyk."
+#~ "Dodatečný software, který může být obecně zajímavý pro uživatele používající "
+#~ "tento jazyk."
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Aktivovat podporu pro zadávání složitých znaků"
+
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "Výchozí jazyk systému je nyní nastaven na %s. Vkládání složitých znaků bude "
+#~ "aktivováno při vašem příštím přihlášení."
 
 #~ msgid "Extra translations"
 #~ msgstr "Dodatečné překlady"

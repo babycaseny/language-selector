@@ -5,27 +5,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-09-08 17:24+0000\n"
-"Last-Translator: Michael Vogt <michael.vogt@ubuntu.com>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-10-14 06:01+0000\n"
+"Last-Translator: David Planella <Unknown>\n"
 "Language-Team: Catalan <Ubuntu-l10n-ca@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Xinès (simplificat)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Xinès (tradicional)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -176,9 +176,8 @@ msgid "Set System Language"
 msgstr "Estableix l'idioma del sistema:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "Mètodes d'entrada"
+msgstr "Mètode d'entrada del teclat:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -257,11 +256,11 @@ msgstr "No sou l'usuari principal"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid "1234567.89"
-msgstr ""
+msgstr "1234567.89"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Exemple</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -285,12 +284,17 @@ msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Arrosegueu les llengües per a organitzar-les per ordre de "
+"preferència.\n"
+"Els canvis tindran efecte en el pròxim inici de sessió.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>Utilitza la mateixa sel·lecció de llengua per a l'inici i la pantalla "
+"d'entrada.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -306,7 +310,7 @@ msgstr "Aplica els canvis"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Aplica-ho a tot el sistema..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -314,11 +318,11 @@ msgstr "Components:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Moneda:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Data:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -354,19 +358,19 @@ msgstr "Utilitza el mateix"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "Sistema de mètode d'entrada del teclat:"
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "Llengua i text"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "Llengua dels menús i les finestres:"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "Nombre:"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -374,15 +378,15 @@ msgstr "Ajudes de verificació de l'ortografia i d'escriptura"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "Traduccions"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "Traduccions per al vostre escriptori."
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -421,26 +425,26 @@ msgstr "Suport d'idioma incomplet"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Sembla ser que els fitxers de suport d'idioma per a la vostra llengua són "
 "incomplets. Podeu instal·lar els components que manquen si feu clic a "
 "«Executa ara aquesta acció» i seguiu les instruccions, cosa per la qual us "
 "caldrà una connexió activa a Internet. En cas que no vulgueu fer-ho ara sinó "
-"més endavant, utilitzeu l'entrada de menú «Sistema -> Administració -> Suport "
-"d'idioma» en lloc d'això."
+"més endavant, utilitzeu l'entrada de menú «Sistema -> Administració -> "
+"Suport d'idioma» en lloc d'això."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Sembla ser que els fitxers de suport d'idioma per a la vostra llengua són "
 "incomplets. Podeu instal·lar els components que manquen si feu clic a "
@@ -515,16 +519,6 @@ msgstr ""
 "No s'ha trobat cap configuració de fontconfig voodoo per les locale "
 "seleccionades"
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "Habilita el suport per a introduir caràcters complexos:"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr ""
-#~ "L'idioma per defecte del sistema establert és %s.  La introducció de "
-#~ "caràcters complexos s'habilitarà quan torneu a registrar-vos."
-
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr ""
@@ -536,18 +530,29 @@ msgstr ""
 #~ "relevant software which helps with typing complex characters."
 #~ msgstr ""
 #~ "Mètodes d'entrada per a llengües d'escriptura complexa, com ara mòduls de "
-#~ "l'SCIM (mètode d'entrada comú intel·ligent) o altre programari auxiliar "
-#~ "per a escriure caràcters complexos."
+#~ "l'SCIM (mètode d'entrada comú intel·ligent) o altre programari auxiliar per "
+#~ "a escriure caràcters complexos."
 
 #~ msgid "Extra software"
 #~ msgstr "Programari addicional"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr ""
 #~ "Programari addicional que pot ser d'interès general per als usuaris "
 #~ "d'aquesta llengua."
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "Habilita el suport per a introduir caràcters complexos:"
+
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr ""
+#~ "L'idioma per defecte del sistema establert és %s.  La introducció de "
+#~ "caràcters complexos s'habilitarà quan torneu a registrar-vos."
 
 #~ msgid "Extra translations"
 #~ msgstr "Traduccions addicionals"

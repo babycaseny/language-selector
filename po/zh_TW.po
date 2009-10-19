@@ -7,27 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 16:07+0800\n"
-"PO-Revision-Date: 2009-07-29 14:30+0000\n"
-"Last-Translator: Jonathan Riddell <jriddell@ubuntu.com>\n"
+"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"PO-Revision-Date: 2009-09-19 13:54+0000\n"
+"Last-Translator: josé <jlgdot369@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2009-09-15 08:04+0000\n"
+"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:44
+#: ../LanguageSelector/LocaleInfo.py:45
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "中文(簡體)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:46
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "中文(繁體)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
@@ -82,6 +82,8 @@ msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
+"這可能是程式的臭蟲。請在 https://bugs.launchpad.net/ubuntu/+source/language-"
+"selector/+filebug 提交臭蟲報告"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
 msgid "Could not install the full language support"
@@ -91,7 +93,7 @@ msgstr "無法安裝完整語言支援"
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
-msgstr ""
+msgstr "這通常與你的套件庫或是套件管理員裡的錯誤有關。請檢查你的套件設定（於 系統 > 管理 選單）"
 
 #. FIXME: use self.runAsRoot() here
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
@@ -137,8 +139,7 @@ msgid ""
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"無法安裝或移除任何軟體。請首先使用套件管理員 “Synaptic” 或在終端機中執行"
-"「sudo apt-get install -f」修正此問題。"
+"無法安裝或移除任何軟體。請首先使用套件管理員 “Synaptic” 或在終端機中執行「sudo apt-get install -f」修正此問題。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:54
 msgid "Uninstall"
@@ -158,8 +159,7 @@ msgid ""
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"無法安裝或移除任何軟體。請首先使用套件管理員 “Adept” 或在終端機執行「sudo "
-"apt-get install -f」修正此問題。"
+"無法安裝或移除任何軟體。請首先使用套件管理員 “Adept” 或在終端機執行「sudo apt-get install -f」修正此問題。"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
@@ -170,9 +170,8 @@ msgid "Set System Language"
 msgstr "設定系統語言"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
-#, fuzzy
 msgid "Keyboard input method:"
-msgstr "輸入法"
+msgstr "鍵盤輸入方法："
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -253,7 +252,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:2
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>範例</b>"
 
 #: ../data/LanguageSelector.ui.h:3
 msgid ""
@@ -275,12 +274,14 @@ msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>請依照喜好的順序來拖曳語言並安排他們。\n"
+"這將於下次您登入時生效。</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
-msgstr ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr "<small>為啟動和登入畫面使用相同語言。</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -294,7 +295,7 @@ msgstr "套用變更"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "套用於全系統..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -302,15 +303,15 @@ msgstr "組件："
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "貨幣："
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "日期："
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "使用慣用的格式顯示數字，日期和貨幣金額在："
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
@@ -342,19 +343,19 @@ msgstr "保持相同"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "鍵盤輸入法系統："
 
 #: ../data/LanguageSelector.ui.h:27
 msgid "Language & Text"
-msgstr ""
+msgstr "語言&文字"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "選單和視窗的語言："
 
 #: ../data/LanguageSelector.ui.h:29
 msgid "Number:"
-msgstr ""
+msgstr "數字："
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Spellchecking and writing aids"
@@ -362,15 +363,15 @@ msgstr "文法檢查和寫作輔助"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Text"
-msgstr ""
+msgstr "文字"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Translations"
-msgstr ""
+msgstr "翻譯"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "Translations for your desktop."
-msgstr ""
+msgstr "你的桌面翻譯。"
 
 #: ../data/LanguageSelector.ui.h:34
 msgid ""
@@ -382,8 +383,7 @@ msgstr "當一種語言被安裝後，每個使用者可以在他們的語言設
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
-msgstr ""
-"字表、字典、同義詞典等。可以透過突出文字、改正或提議正字來協助鍵入文字。"
+msgstr "字表、字典、同義詞典等。可以透過突出文字、改正或提議正字來協助鍵入文字。"
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
@@ -405,26 +405,24 @@ msgstr "不完整的語言支援"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
-"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來"
-"安裝欠缺的元件。這需要有效的網際網路連線。如果您想稍後才執行，請使用「系統 -"
+"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來安裝欠缺的元件。這需要有效的網際網路連線。如果您想稍後才執行，請使用「系統 -"
 "> 管理 -> 語言支援」。"
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
-"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來"
-"安裝欠缺的元件。這需要有效的網際網路連線。如果您想稍後才執行，請使用「系統 -"
+"供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來安裝欠缺的元件。這需要有效的網際網路連線。如果您想稍後才執行，請使用「系統 -"
 "> 設定 -> 區域與語言」。"
 
 #. Name
@@ -443,7 +441,7 @@ msgstr "不驗證已安裝之語言支援"
 
 #: ../gnome-language-selector:28
 msgid "alternative datadir"
-msgstr ""
+msgstr "替代的資料路徑"
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
@@ -487,14 +485,6 @@ msgstr "已有配置。使用「--force」蓋過它。 "
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "找不到選取地域 (locale) 的 fontconfig-voodoo 配置"
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "啟用支援輸入複雜字元"
-
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr "預設系統語言現已設定為%s。複雜字元輸入會在您下次登入時啟用。"
-
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr "OpenOffice.org、Firefox、Thunderbird、Gaim 翻譯和幫助檔案。"
@@ -508,9 +498,18 @@ msgstr "找不到選取地域 (locale) 的 fontconfig-voodoo 配置"
 #~ msgstr "額外軟體"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
+#~ "Additional software which might be of general interest for users using this "
+#~ "language."
 #~ msgstr "使用此語言的使用者一般可能有興趣的額外軟體。"
+
+#~ msgid "Enable support to enter complex characters"
+#~ msgstr "啟用支援輸入複雜字元"
+
+#, python-format
+#~ msgid ""
+#~ "Default system Language now set to %s.  Complex character input will be "
+#~ "enabled when you next log in."
+#~ msgstr "預設系統語言現已設定為%s。複雜字元輸入會在您下次登入時啟用。"
 
 #~ msgid "Use input method engines (IME) to enter complex characters"
 #~ msgstr "使用輸入法引擎（IME）以輸入複雜字元"
