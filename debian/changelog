@@ -1,3 +1,15 @@
+language-selector (0.4.16) karmic; urgency=low
+
+  * Add --show-installed option to check-language-support, so that ubiquity
+    can arrange to keep language support packages installed that are already
+    present in the live filesystem.
+  * Enable translation for check-language-support.
+  * Mark Arabic translations of "%d to install" and "%d to remove" as fuzzy,
+    until such time as they're corrected in Launchpad (LP: #409785).
+  * ... and likewise for Hebrew (LP: #363990).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 20 Oct 2009 13:02:27 +0100
+
 language-selector (0.4.15) karmic; urgency=low
 
   * Added fa_AF and kk translations

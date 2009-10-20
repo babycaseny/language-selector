@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"POT-Creation-Date: 2009-10-20 12:48+0100\n"
 "PO-Revision-Date: 2009-07-29 14:29+0000\n"
 "Last-Translator: Kamil Páral <kamil.paral@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -48,17 +48,17 @@ msgstr ""
 msgid "_Update"
 msgstr "Akt_ualizovat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
 #: ../data/LanguageSelector.ui.h:26
 msgid "Language"
 msgstr "Jazyk"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:290
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:291
 msgid "Installed"
 msgstr "Nainstalováno"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:405
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
@@ -66,7 +66,7 @@ msgstr[0] "%d k instalaci"
 msgstr[1] "%d k instalaci"
 msgstr[2] "%d k instalaci"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:407
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
@@ -74,42 +74,42 @@ msgstr[0] "%d k odstranění"
 msgstr[1] "%d k odstranění"
 msgstr[2] "%d k odstranění"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:568
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid "Could not install the selected language support"
 msgstr "Nemohu nainstalovat podporu vybraného jazyka"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:570
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
 msgid "Could not install the full language support"
 msgstr "Nemohu nainstalovat plnou podporu jazyka"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:601
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:640
 msgid "The list of available languages on the system has been updated."
 msgstr "Seznam v systému dostupných jazyků byl aktualizován."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
 msgstr "Podpora jazyka není kompletně nainstalována"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:724
 #: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -118,28 +118,30 @@ msgstr ""
 "Některé překlady nebo pomůcky pro psaní dostupné pro vámi zvolené jazyky "
 "nejsou ještě nainstalovány. Chcete je nainstalovat nyní?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
 msgstr "Upozo_rni mě později"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:728
 #: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "_Nainstalovat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:731
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:769
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
+#: ../check-language-support:80
 msgid "Software database is broken"
 msgstr "Porušena databáze programů"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:771
+#: ../check-language-support:81
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -168,8 +170,8 @@ msgid ""
 "this issue at first."
 msgstr ""
 "Není možné nainstalovat nebo odstranit jakýkoliv software. Prosím použijte "
-"správce balíků \"Adept\" nebo v terminálu spusťte \"sudo apt-get install -"
-"f\" a tak tento problém nejprve spravte."
+"správce balíků \"Adept\" nebo v terminálu spusťte \"sudo apt-get install -f"
+"\" a tak tento problém nejprve spravte."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
@@ -290,8 +292,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login "
-"screen.</small>"
+"<small>Uses the same language choices for startup and the login screen.</"
+"small>"
 msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
@@ -405,8 +407,7 @@ msgstr ""
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr ""
-"Nastavit národní jazykovou podporu společně s podporou dalších jazyků"
+msgstr "Nastavit národní jazykovou podporu společně s podporou dalších jazyků"
 
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
@@ -423,25 +424,25 @@ msgstr "Neúplná jazyková podpora"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Podpora pro váš zvolený jazyk se zdá být nekompletní. Můžete nainstalovat "
 "chybějící součásti kliknutím na \"Spustit tuto akci nyní\" a následováním "
 "instrukcí. Je vyžadováno funkční připojení k Internetu. Pokud byste to "
-"raději provedli později, prosím použijte \"Systém → Správa → Jazyková "
-"podpora\"."
+"raději provedli později, prosím použijte \"Systém → Správa → Jazyková podpora"
+"\"."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Podpora jazyků pro zvolený jazyk se zdá být neúplná. Můžete doinstalovat "
 "chybějící součásti kliknutím na \"Spustit tuto akci nyní\" a následováním "
@@ -462,7 +463,7 @@ msgstr "Nastavení nových jazyků vejde v platnost jakmile se odhlásíte."
 msgid "don't verify installed language support"
 msgstr "nekontrolovat podporu pro nainstalované jazyky"
 
-#: ../gnome-language-selector:28
+#: ../gnome-language-selector:28 ../check-language-support:251
 msgid "alternative datadir"
 msgstr "alternativní datový adresář"
 
@@ -511,6 +512,18 @@ msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Žádná fontconfig-voodoo konfigurace nenalezena pro vybrané jazykové prostředí"
 
+#: ../check-language-support:248
+msgid "target language code"
+msgstr ""
+
+#: ../check-language-support:253
+msgid "check all available languages"
+msgstr ""
+
+#: ../check-language-support:256
+msgid "show installed packages as well as missing ones"
+msgstr ""
+
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr "Překlady a nápověda k OpenOffice.org, Firefox, Thunderbird, Gaim."
@@ -519,29 +532,28 @@ msgstr ""
 #~ "Input Methods for languages with complex scripts. Scim modules or other "
 #~ "relevant software which helps with typing complex characters."
 #~ msgstr ""
-#~ "Vstupní metody pro jazyky se složeným písmem. Scim moduly nebo další vhodný "
-#~ "software, který pomáhá se psaním složených znaků."
+#~ "Vstupní metody pro jazyky se složeným písmem. Scim moduly nebo další "
+#~ "vhodný software, který pomáhá se psaním složených znaků."
 
 #~ msgid "Extra software"
 #~ msgstr "Dodatečný software"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using this "
-#~ "language."
+#~ "Additional software which might be of general interest for users using "
+#~ "this language."
 #~ msgstr ""
-#~ "Dodatečný software, který může být obecně zajímavý pro uživatele používající "
-#~ "tento jazyk."
+#~ "Dodatečný software, který může být obecně zajímavý pro uživatele "
+#~ "používající tento jazyk."
 
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "Aktivovat podporu pro zadávání složitých znaků"
 
-#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
 #~ msgstr ""
-#~ "Výchozí jazyk systému je nyní nastaven na %s. Vkládání složitých znaků bude "
-#~ "aktivováno při vašem příštím přihlášení."
+#~ "Výchozí jazyk systému je nyní nastaven na %s. Vkládání složitých znaků "
+#~ "bude aktivováno při vašem příštím přihlášení."
 
 #~ msgid "Extra translations"
 #~ msgstr "Dodatečné překlady"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"POT-Creation-Date: 2009-10-20 12:48+0100\n"
 "PO-Revision-Date: 2009-09-18 22:30+0000\n"
 "Last-Translator: Arne Goetje <arne.goetje@canonical.com>\n"
 "Language-Team: Gujarati <gu@li.org>\n"
@@ -40,107 +40,108 @@ msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
-"સિસ્ટમને ઉપલ્બધ ભાષાઓ વિશે હજી જાણકારી નથી. શું તમે તે મેળવવા માટે નેટવર્ક "
-"અપડેટ કરવા માગો છો? "
+"સિસ્ટમને ઉપલ્બધ ભાષાઓ વિશે હજી જાણકારી નથી. શું તમે તે મેળવવા માટે નેટવર્ક અપડેટ કરવા "
+"માગો છો? "
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:201
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
 msgstr "અપડેટ (_U)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
 #: ../data/LanguageSelector.ui.h:26
 msgid "Language"
 msgstr "ભાષા"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:290
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:291
 msgid "Installed"
 msgstr "સ્થાપિત"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:405
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
 msgstr[0] "%d સ્થાપિત થશે"
 msgstr[1] "%d સ્થાપિત થશે"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:407
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
 msgstr[0] "%d કાઢી નખાશે"
 msgstr[1] "%d કાઢી નખાશે"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:568
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid "Could not install the selected language support"
 msgstr "પસંદ કરેલી ભાષાની સુવિધા સ્થાપિત કરી શક્યા નહિ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:570
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"આ કદાચ આ કાર્યક્રમમાં રહેલ બગ છે. તમે "
-"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug માં બગ "
-"માહિતી પૂરી પાડી શકો છો."
+"આ કદાચ આ કાર્યક્રમમાં રહેલ બગ છે. તમે https://bugs.launchpad.net/ubuntu/+source/"
+"language-selector/+filebug માં બગ માહિતી પૂરી પાડી શકો છો."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
 msgid "Could not install the full language support"
 msgstr "સંપૂર્ણ ભાષાકીય સુવિધા સ્થાપિત કરી શક્યા નહિ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:601
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
 msgstr ""
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:640
 msgid "The list of available languages on the system has been updated."
 msgstr "તમારી સિસ્ટમ પર ઉપલબ્ધ ભાષાઓની યાદીને સુધારવામાં આવી છે."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
 msgstr "ભાષાકીય સુવિધા સંપૂર્ણ પણે સ્થાપિત થઇ નથી"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:724
 #: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"તમે પસંદ કરેલી ભાષા માટે કેટલાક ભાષાંતરો અથવા લખાણ ઉપકરણો સ્થાપિત થયેલા નથી. "
-"શું તમે તે અત્યારે સ્થાપિત કરવા માગો છો?"
+"તમે પસંદ કરેલી ભાષા માટે કેટલાક ભાષાંતરો અથવા લખાણ ઉપકરણો સ્થાપિત થયેલા નથી. શું તમે તે "
+"અત્યારે સ્થાપિત કરવા માગો છો?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
 msgstr "મને પછી યાદ કરાવો (_R)"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:728
 #: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "સ્થાપિત કરો (_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:731
 msgid "Details"
 msgstr "વિગતો"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:769
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
+#: ../check-language-support:80
 msgid "Software database is broken"
 msgstr "સોફ્ટવેર ડેટાબેઝ બગડી ગયો છે"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:771
+#: ../check-language-support:81
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -221,8 +222,8 @@ msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
-"%s માટેના ભાષાંતર અને સુવિધા સ્થાપિત કરવામાં આવી છે. તેમને ભાષા ઉમેરો બટન "
-"દ્વારા પસંદ કરો."
+"%s માટેના ભાષાંતર અને સુવિધા સ્થાપિત કરવામાં આવી છે. તેમને ભાષા ઉમેરો બટન દ્વારા પસંદ "
+"કરો."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:314
 msgid "Language Installed"
@@ -284,8 +285,8 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login "
-"screen.</small>"
+"<small>Uses the same language choices for startup and the login screen.</"
+"small>"
 msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
@@ -293,8 +294,8 @@ msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
-"આ ભાષા માટેના વધારાના ફોન્ટ જે સામાન્ય વપરાશમાં આવી શકે, દા.ત. છાપન માટેના "
-"શૃંગારિક ફોન્ટ"
+"આ ભાષા માટેના વધારાના ફોન્ટ જે સામાન્ય વપરાશમાં આવી શકે, દા.ત. છાપન માટેના શૃંગારિક "
+"ફોન્ટ"
 
 #: ../data/LanguageSelector.ui.h:11
 msgid "Apply Changes"
@@ -385,16 +386,16 @@ msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
-"જ્યારે ભાષા સ્થાપિત થાય છે, ત્યારે પ્રત્યેક વપરાશકર્તા તેને તેમના ભાષાકીય "
-"રુપરેખાંકનોમાં પસંદ કરી શકે છે."
+"જ્યારે ભાષા સ્થાપિત થાય છે, ત્યારે પ્રત્યેક વપરાશકર્તા તેને તેમના ભાષાકીય રુપરેખાંકનોમાં પસંદ "
+"કરી શકે છે."
 
 #: ../data/LanguageSelector.ui.h:35
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
 msgstr ""
-"શબ્દયાદી, શબ્દકોષ, થીસોરસ ઇત્યાદિ. જે લખતી વખતે હાઇલાઇટ કરી, સુધારી અને "
-"સૂચનો આપી મદદ કરી શકે છે."
+"શબ્દયાદી, શબ્દકોષ, થીસોરસ ઇત્યાદિ. જે લખતી વખતે હાઇલાઇટ કરી, સુધારી અને સૂચનો આપી "
+"મદદ કરી શકે છે."
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
@@ -416,20 +417,20 @@ msgstr "અધૂરી ભાષાકીય સુવિધા"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 
 #. Name
@@ -446,7 +447,7 @@ msgstr "એક વાર તમે લોગઆઉટ કરો, ત્યાર
 msgid "don't verify installed language support"
 msgstr "સ્થાપિત ભાષાઓની સુવિધાની ખાત્રી કરવી નહિ"
 
-#: ../gnome-language-selector:28
+#: ../gnome-language-selector:28 ../check-language-support:251
 msgid "alternative datadir"
 msgstr ""
 
@@ -492,13 +493,24 @@ msgstr ""
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 
+#: ../check-language-support:248
+msgid "target language code"
+msgstr ""
+
+#: ../check-language-support:253
+msgid "check all available languages"
+msgstr ""
+
+#: ../check-language-support:256
+msgid "show installed packages as well as missing ones"
+msgstr ""
+
 #~ msgid "Enable support to enter complex characters"
 #~ msgstr "મિશ્ર અક્ષરો લખવા માટે મદદ સક્રિય કરો"
 
-#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
 #~ msgstr ""
-#~ "સિસ્ટમની મૂળભુત ભાષા હવે %s છે. મિશ્ર અક્ષર લખાણ સુવિધા તમારા આવતા લોગઇન "
-#~ "વખતે સક્રિય કરવામાં આવશે."
+#~ "સિસ્ટમની મૂળભુત ભાષા હવે %s છે. મિશ્ર અક્ષર લખાણ સુવિધા તમારા આવતા લોગઇન વખતે "
+#~ "સક્રિય કરવામાં આવશે."

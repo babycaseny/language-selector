@@ -15,3 +15,4 @@ data/qt-language-selector.desktop.in
 [type: gettext/rfc822deb]data/restart_session_required.note.in
 gnome-language-selector
 fontconfig-voodoo
+check-language-support

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 16:11+0000\n"
+"POT-Creation-Date: 2009-10-20 12:48+0100\n"
 "PO-Revision-Date: 2009-09-25 19:58+0000\n"
 "Last-Translator: Milo Casagrande <milo@casagrande.name>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -49,40 +49,40 @@ msgstr ""
 msgid "_Update"
 msgstr "A_ggiorna"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:283
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
 #: ../data/LanguageSelector.ui.h:26
 msgid "Language"
 msgstr "Lingua"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:290
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:291
 msgid "Installed"
 msgstr "Installata"
 
 #. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:405
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%d to install"
 msgid_plural "%d to install"
 msgstr[0] "%d da installare"
 msgstr[1] "%d da installare"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:407
 #, python-format
 msgid "%d to remove"
 msgid_plural "%d to remove"
 msgstr[0] "%d da rimuovere"
 msgstr[1] "%d da rimuovere"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:415
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:568
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
 msgid "Could not install the selected language support"
 msgstr "Impossibile installare il supporto per la lingua selezionata"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:570
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -90,11 +90,11 @@ msgstr ""
 "Questo potrebbe essere un bug nell'applicazione. Segnalare un bug presso "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:599
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
 msgid "Could not install the full language support"
 msgstr "Impossibile installare il supporto completo per la lingua"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:601
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
@@ -104,17 +104,17 @@ msgstr ""
 "Amministrazione."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:639
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:640
 msgid "The list of available languages on the system has been updated."
 msgstr ""
 "L'elenco delle lingue disponibili sul sistema in uso è stato aggiornato."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
 msgstr "Il supporto per le lingue non è installato completamente"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:724
 #: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -123,36 +123,38 @@ msgstr ""
 "Alcune traduzioni o la linguistica disponibili per la lingua selezionata non "
 "sono ancora installate. Installarle ora?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
 msgstr "_Ricorda in seguito"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:728
 #: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "_Installa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:731
 msgid "Details"
 msgstr "Dettagli"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:769
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
+#: ../check-language-support:80
 msgid "Software database is broken"
 msgstr "Il database software è danneggiato"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:771
+#: ../check-language-support:81
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 "Impossibile installare o rimuovere programmi. Utilizzare il gestore di "
-"pacchetti «Synaptic» o eseguire «sudo apt-get install -f» in un terminale "
-"per risolvere il problema."
+"pacchetti «Synaptic» o eseguire «sudo apt-get install -f» in un terminale per "
+"risolvere il problema."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:54
 msgid "Uninstall"
@@ -298,11 +300,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login "
-"screen.</small>"
+"<small>Uses the same language choices for startup and the login screen.</"
+"small>"
 msgstr ""
-"<small>Utilizza la stessa lingua per l'avvio e la schermata di "
-"accesso.</small>"
+"<small>Utilizza la stessa lingua per l'avvio e la schermata di accesso.</"
+"small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -434,25 +436,25 @@ msgstr "Supporto lingue non completo"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System -> "
+"Administration -> Language Support\" instead."
 msgstr ""
 "Sembra che i file di supporto per la lingua selezionata siano incompleti. È "
 "possibile installare i componenti mancanti facendo clic su «Esegui questa "
 "azione ora» e seguendo le istruzioni. È richiesta una connessione a Internet "
-"attiva. Per eseguire l'installazione in un secondo momento, usare «Sistema -"
-"> Amministrazione -> Supporto lingue»."
+"attiva. Per eseguire l'installazione in un secondo momento, usare «Sistema -> "
+"Amministrazione -> Supporto lingue»."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action now"
+"\" and follow the instructions. An active internet connection is required. "
+"If you would like to do this at a later time, please use \"System Settings -"
+"> Regional & Language\" instead."
 msgstr ""
 "Sembra che i file di supporto per la lingua selezionata siano incompleti. È "
 "possibile installare i componenti mancanti facendo clic su «Esegui ora» e "
@@ -476,7 +478,7 @@ msgstr ""
 msgid "don't verify installed language support"
 msgstr "Non verifica il supporto per le lingue installate"
 
-#: ../gnome-language-selector:28
+#: ../gnome-language-selector:28 ../check-language-support:251
 msgid "alternative datadir"
 msgstr "Directory dati alternativa"
 
@@ -526,10 +528,23 @@ msgstr ""
 "Nessuna configurazione di fontconfig-voodoo trovata per la localizzazione "
 "selezionata"
 
+#: ../check-language-support:248
+msgid "target language code"
+msgstr ""
+
+#: ../check-language-support:253
+msgid "check all available languages"
+msgstr ""
+
+#: ../check-language-support:256
+msgid "show installed packages as well as missing ones"
+msgstr ""
+
 #~ msgid ""
 #~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
 #~ msgstr ""
-#~ "Traduzioni di OpenOffice.org, Firefox, Thunderbird, Gaim e dei file di aiuto."
+#~ "Traduzioni di OpenOffice.org, Firefox, Thunderbird, Gaim e dei file di "
+#~ "aiuto."
 
 #~ msgid ""
 #~ "Input Methods for languages with complex scripts. Scim modules or other "
@@ -542,8 +557,8 @@ msgstr ""
 #~ msgstr "Software aggiuntivo"
 
 #~ msgid ""
-#~ "Additional software which might be of general interest for users using this "
-#~ "language."
+#~ "Additional software which might be of general interest for users using "
+#~ "this language."
 #~ msgstr ""
 #~ "Software aggiuntivo che potrebbe risultare interessante agli utenti di "
 #~ "questa lingua."
@@ -555,12 +570,12 @@ msgstr ""
 #~ msgstr "Traduzioni aggiuntive"
 
 #~ msgid "Use input method engines (IME) to enter complex characters"
-#~ msgstr "Usare i motori per i metodi di inserimento per i caratteri complessi"
+#~ msgstr ""
+#~ "Usare i motori per i metodi di inserimento per i caratteri complessi"
 
-#, python-format
 #~ msgid ""
 #~ "Default system Language now set to %s.  Complex character input will be "
 #~ "enabled when you next log in."
 #~ msgstr ""
-#~ "Lingua predefinita di sistema impostata a %s. Il supporto per l'inserimento "
-#~ "dei caratteri complessi sarà abilitato al prossimo accesso."
+#~ "Lingua predefinita di sistema impostata a %s. Il supporto per "
+#~ "l'inserimento dei caratteri complessi sarà abilitato al prossimo accesso."
