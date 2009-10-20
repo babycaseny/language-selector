@@ -1,3 +1,11 @@
+language-selector (0.4.15) karmic; urgency=low
+
+  * Added fa_AF and kk translations
+  * Fix display of the Details box in gnome-language-selector (Thanks to
+    Markus Korn) (LP: #455370)
+
+ -- Arne Goetje <arne@ubuntu.com>  Tue, 20 Oct 2009 09:08:58 +0200
+
 language-selector (0.4.14) karmic; urgency=low
 
   * add workaround to enable translations (LP: #425368)

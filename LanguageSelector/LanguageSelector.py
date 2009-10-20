@@ -96,7 +96,7 @@ class LanguageSelectorBase(object):
             if pkgcode in self._cache.pkg_translations:
                 for (pkg, translation) in self._cache.pkg_translations[pkgcode]:
                     if (self._cache[pkg].isInstalled and not self._cache[translation].isInstalled):
-                        missing += translation
+                        missing.append(translation)
         support_packages = LanguageSelectorPkgCache._getPkgList(self._cache, pkgcode)
         for support_package in support_packages:
             if (support_package in self._cache and 
