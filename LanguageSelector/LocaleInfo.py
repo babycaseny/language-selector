@@ -142,6 +142,8 @@ class LocaleInfo(object):
         country_name = gettext.dgettext('iso_3166', self._country[country])
         if current_language:
             os.environ["LANGUAGE"] = current_language
+        else:
+            del os.environ["LANGUAGE"]
         return (lang_name, country_name)
 
     def translate(self, locale):

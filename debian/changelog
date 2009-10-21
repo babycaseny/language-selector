@@ -1,3 +1,11 @@
+language-selector (0.4.17) karmic; urgency=low
+
+  * LanguageSelector/LocaleInfo.py:
+    - when running without the LANGUAGE environment, do not
+      witch to english half-way through (LP: #457235)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 21 Oct 2009 17:01:07 +0200
+
 language-selector (0.4.16) karmic; urgency=low
 
   * Add --show-installed option to check-language-support, so that ubiquity
