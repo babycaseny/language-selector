@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-20 12:48+0100\n"
+"POT-Creation-Date: 2009-10-23 18:01+0100\n"
 "PO-Revision-Date: 2009-10-12 18:53+0000\n"
 "Last-Translator: Thanos Lefteris <alefteris@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
@@ -58,31 +58,31 @@ msgstr "Γλώσσα"
 msgid "Installed"
 msgstr "Εγκαταστάθηκε"
 
-#. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
-#, python-format
-msgid "%d to install"
-msgid_plural "%d to install"
-msgstr[0] "%d θα εγκατασταθεί"
-msgstr[1] "%d θα εγκατασταθούν"
-
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:407
-#, python-format
-msgid "%d to remove"
-msgid_plural "%d to remove"
-msgstr[0] "%d θα απομακρυνθεί"
-msgstr[1] "%d θα απομακρυνθούν"
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d θα εγκατασταθεί"
+msgstr[1] "%(INSTALL)d θα εγκατασταθούν"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:409
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d θα απομακρυνθεί"
+msgstr[1] "%(REMOVE)d θα απομακρυνθούν"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:418
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the selected language support"
 msgstr "Αδυναμία εγκατάστασης της επιλεγμένης γλωσσικής υποστήριξης"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:570
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -91,11 +91,11 @@ msgstr ""
 "αναφέρετε αυτή τη δυσλειτουργία στο https://bugs.launchpad.net/ubuntu/"
 "+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:602
 msgid "Could not install the full language support"
 msgstr "Αδυναμία εγκατάστασης πλήρους γλωσσικής υποστήριξης."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:601
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:603
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
@@ -105,16 +105,16 @@ msgstr ""
 "Διαχείριση συστήματος."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:640
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:642
 msgid "The list of available languages on the system has been updated."
 msgstr "Ενημερώθηκε η λίστα των διαθέσιμων γλωσσών στο σύστημα σας."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:725
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
 msgstr "Η γλωσσική υποστήριξη δεν έχει εγκατασταθεί πλήρως"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:724
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
 #: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -124,29 +124,29 @@ msgstr ""
 "που είναι διαθέσιμα για τις επιλεγμένες γλώσσες στο σύστημα σας. Θέλετε να "
 "τις εγκαταστήσετε τώρα;"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:729
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
 msgstr "Υπεν_θύμισε μου αργότερα"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:728
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
 #: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "_Εγκατάσταση"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:731
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:733
 msgid "Details"
 msgstr "Λεπτομέρειες"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:772
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
 #: ../check-language-support:80
 msgid "Software database is broken"
 msgstr "Η βάση δεδομένων λογισμικού είναι κατεστραμμένη."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:771
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:773
 #: ../check-language-support:81
 msgid ""
 "It is impossible to install or remove any software. Please use the package "

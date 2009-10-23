@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-20 12:48+0100\n"
+"POT-Creation-Date: 2009-10-23 18:01+0100\n"
 "PO-Revision-Date: 2009-09-19 16:34+0000\n"
 "Last-Translator: Roys Hengwatanakul <roysheng@gmail.com>\n"
 "Language-Team: Thai <th@li.org>\n"
@@ -57,29 +57,29 @@ msgstr "ภาษา"
 msgid "Installed"
 msgstr "ติดตั้งเแล้ว"
 
-#. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
-#, python-format
-msgid "%d to install"
-msgid_plural "%d to install"
-msgstr[0] "%d ที่จะติดตั้ง"
-
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:407
-#, python-format
-msgid "%d to remove"
-msgid_plural "%d to remove"
-msgstr[0] "%d ที่จะเอาออก"
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d ที่จะติดตั้ง"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:409
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d ที่จะเอาออก"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:418
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the selected language support"
 msgstr "ไม่สามารถทำการติดตั้งภาษาที่เลือกไว้"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:570
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -87,11 +87,11 @@ msgstr ""
 "นี่อาจเป็นบั๊กของโปรแกรมประยุกต์ตัวนี้. กรุณาส่งรายงานบั๊กไปที่ https://bugs.launchpad.net/"
 "ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:602
 msgid "Could not install the full language support"
 msgstr "ไม่สามารถติดตั้งการสนับสนุนภาษาได้อย่างสมบรูณ์"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:601
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:603
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
@@ -101,16 +101,16 @@ msgstr ""
 "ตรวจสอบการปรับแต่งซอฟต์แวร์ของคุณที่ ระบบ > สำหรับผู้ดูแลระบบ."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:640
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:642
 msgid "The list of available languages on the system has been updated."
 msgstr "รายการของภาษาที่เลือกใช้ได้ของระบบถูกปรับปรุงแล้ว"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:725
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
 msgstr "ระบบภาษาไม่ได้ติดตั้งทุกอย่าง"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:724
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
 #: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -119,29 +119,29 @@ msgstr ""
 "คำแปลและตัวช่วยในการเขียนสำหรับภาษาที่คุณเลือกยังไม่ได้ติดตั้ง "
 "คุณต้องการที่จะเริ่มทำการติดตั้งเดี๋ยวนี้หรือเปล่า?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:729
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
 msgstr "เ_ตือนอีกคราวหน้า"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:728
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
 #: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "_ติดตั้ง"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:731
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:733
 msgid "Details"
 msgstr "รายละเอียด"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:772
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
 #: ../check-language-support:80
 msgid "Software database is broken"
 msgstr "ฐานข้อมูลของซอฟต์แวร์ใช้ไม่ได้"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:771
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:773
 #: ../check-language-support:81
 msgid ""
 "It is impossible to install or remove any software. Please use the package "

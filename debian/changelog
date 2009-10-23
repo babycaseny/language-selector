@@ -1,3 +1,15 @@
+language-selector (0.4.18) karmic; urgency=low
+
+  * Use dictionary-based format string substitution for "%d to install" and
+    "%d to remove" (now "%(INSTALL)d to install" and "%(REMOVE)d to
+    remove"), so that gnome-language-selector doesn't crash when a
+    translation intentionally uses fixed strings for some of its plural
+    forms (LP: #409785).
+  * Remove fuzzy markers on the respective Arabic and Hebrew translations
+    (see 0.4.16) since they no longer cause a crash.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 23 Oct 2009 18:50:30 +0100
+
 language-selector (0.4.17) karmic; urgency=low
 
   * LanguageSelector/LocaleInfo.py:

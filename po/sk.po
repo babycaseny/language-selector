@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-20 12:48+0100\n"
+"POT-Creation-Date: 2009-10-23 18:01+0100\n"
 "PO-Revision-Date: 2009-10-14 15:47+0000\n"
 "Last-Translator: helix84 <Unknown>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -57,33 +57,33 @@ msgstr "Jazyk"
 msgid "Installed"
 msgstr "Nainštalované"
 
-#. print "%d to install, %d to remove" % (countInstall, countRemove)
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
-#, python-format
-msgid "%d to install"
-msgid_plural "%d to install"
-msgstr[0] "%d sa má inštalovať"
-msgstr[1] "%d sa má inštalovať"
-msgstr[2] "%d sa má inštalovať"
-
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:407
-#, python-format
-msgid "%d to remove"
-msgid_plural "%d to remove"
-msgstr[0] "%d sa má odstrániť"
-msgstr[1] "%d sa majú odstrániť"
-msgstr[2] "%d sa má odstrániť"
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d sa má inštalovať"
+msgstr[1] "%(INSTALL)d sa má inštalovať"
+msgstr[2] "%(INSTALL)d sa má inštalovať"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:416
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:409
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d sa má odstrániť"
+msgstr[1] "%(REMOVE)d sa majú odstrániť"
+msgstr[2] "%(REMOVE)d sa má odstrániť"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:418
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:569
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 msgid "Could not install the selected language support"
 msgstr "Nepodarilo sa nainštalovať zvolenú jazykovú podporu"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:570
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -91,11 +91,11 @@ msgstr ""
 "Toto je pravdepodobne chyba tejto aplikácie. Prosím, ohláste chybu na "
 "stránke https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:600
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:602
 msgid "Could not install the full language support"
 msgstr "Nepodarilo sa nainštalovať úplnú jazykovú podporu"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:601
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:603
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
@@ -104,16 +104,16 @@ msgstr ""
 "softéru. Skontrolujte nastavenia  sofvéru v ponuke „Systém“ > „Správa“."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:640
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:642
 msgid "The list of available languages on the system has been updated."
 msgstr "Zoznam dostupných jazykov bol aktualizovaný."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:725
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
 msgstr "Jazyková podpora nie je úplne nainštalovaná"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:724
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
 #: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
@@ -122,29 +122,29 @@ msgstr ""
 "Nie všetky preklady či pomôcky pri písaní, ktoré sú dostupné pre podporované "
 "jazyky vo vašom systéme, sú nainštalované. Chcete ich teraz nainštalovať?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:727
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:729
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
 msgstr "P_ripomenúť neskôr"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:728
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
 #: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "Na_inštalovať"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:731
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:733
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:770
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:772
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
 #: ../check-language-support:80
 msgid "Software database is broken"
 msgstr "Databáza softvéru je poškodená"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:771
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:773
 #: ../check-language-support:81
 msgid ""
 "It is impossible to install or remove any software. Please use the package "

@@ -402,9 +402,11 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
                             countRemove = countRemove + 1
                         else:
                             countInstall = countInstall + 1
-        #print "%d to install, %d to remove" % (countInstall, countRemove)
-        textInstall = gettext.ngettext("%d to install", "%d to install", countInstall) % countInstall
-        textRemove = gettext.ngettext("%d to remove", "%d to remove", countRemove) % countRemove
+        #print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+        # Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+        textInstall = gettext.ngettext("%(INSTALL)d to install", "%(INSTALL)d to install", countInstall) % {'INSTALL': countInstall}
+        # Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+        textRemove = gettext.ngettext("%(REMOVE)d to remove", "%(REMOVE)d to remove", countRemove) % {'REMOVE': countRemove}
         if countRemove == 0 and countInstall == 0: 
             self.label_install_remove.set_text("")
         elif countRemove == 0: 
