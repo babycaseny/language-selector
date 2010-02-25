@@ -16,7 +16,9 @@ class LocaleInfo(object):
     " class with handy functions to parse the locale information "
     
     environments = ["/etc/default/locale", "/etc/environment"]
-    def __init__(self, languagelist_file):
+    def __init__(self, languagelist_file, datadir):
+        self._datadir = datadir
+        LANGUAGELIST = os.path.join(datadir, 'data', languagelist_file)
         # map language to human readable name, e.g.:
         # "pt"->"Portuguise", "de"->"German", "en"->"English"
         self._lang = {}
@@ -69,7 +71,7 @@ class LocaleInfo(object):
             self._country[code] = descr
             
         # read the languagelist
-        for line in open(languagelist_file):
+        for line in open(LANGUAGELIST):
             tmp = line.strip()
             if tmp.startswith("#") or tmp == "":
                 continue
@@ -105,9 +107,8 @@ class LocaleInfo(object):
             if tmp.startswith("#") or tmp == "" or tmp == "C" or tmp == "POSIX":
                 continue
             # we are only interessted in the locale, not the codec
-            locale = string.split(tmp)[0]
-            locale = string.split(locale,".")[0]
-            #locale = string.split(locale,"@")[0]
+            macr = macros.LangpackMacros(self._datadir, tmp)
+            locale = macr["LOCALE"]
             if not locale in locales:
                 locales.append(locale)
         #print locales
@@ -123,84 +124,177 @@ class LocaleInfo(object):
         else:
             return lang
 
-    def translate_locale(self, locale):
+    def translate_country(self, country):
         """
         return translated language and country of the given
         locale into the given locale, e.g. 
         (Deutsch, Deutschland) for de_DE
         """
 
-        macr = macros.LangpackMacros(locale)
+#        macr = macros.LangpackMacros(self._datadir, locale)
 
-        #(lang, country) = string.split(locale, "_")
-        country = macr['CCODE']
-        current_language = None
-        if "LANGUAGE" in os.environ:
-            current_language = os.environ["LANGUAGE"]
-        os.environ["LANGUAGE"]=locale
-        lang_name = self.translate_language(macr['LCODE'])
-        country_name = gettext.dgettext('iso_3166', self._country[country])
-        if current_language:
-            os.environ["LANGUAGE"] = current_language
+#        #(lang, country) = string.split(locale, "_")
+#        country = macr['CCODE']
+#        current_language = None
+#        if "LANGUAGE" in os.environ:
+#            current_language = os.environ["LANGUAGE"]
+#        os.environ["LANGUAGE"]=locale
+#        lang_name = self.translate_language(macr['LCODE'])
+        if country in self._country:
+            country_name = gettext.dgettext('iso_3166', self._country[country])
+            return country_name
         else:
-            del os.environ["LANGUAGE"]
-        return (lang_name, country_name)
+            return country
+#        if current_language:
+#            os.environ["LANGUAGE"] = current_language
+#        else:
+#            del os.environ["LANGUAGE"]
+#        return (lang_name, country_name)
 
-    def translate(self, locale):
+    def translate(self, locale, native=False, allCountries=False):
         """ get a locale code and output a human readable name """
-        macr = macros.LangpackMacros(locale)
-        if "_" in locale:
-            #(lang, country) = string.split(locale, "_")
-            (lang_name, country_name) = self.translate_locale(locale)
+        returnVal = ''
+        macr = macros.LangpackMacros(self._datadir, locale)
+        if native == True:
+            current_language = None
+            if "LANGUAGE" in os.environ:
+                current_language = os.environ["LANGUAGE"]
+            os.environ["LANGUAGE"] = macr["LOCALE"]
+
+        lang_name = self.translate_language(macr["LCODE"])
+        returnVal = lang_name
+        if len(macr["CCODE"]) > 0:
+            country_name = self.translate_country(macr["CCODE"])
             # get all locales for this language
             l = filter(lambda k: k.startswith(macr['LCODE']), self.generated_locales())
             # only show region/country if we have more than one 
-            if len(l) > 1:
+            if (allCountries == False and len(l) > 1) or allCountries == True:
                 mycountry = self.country(macr['CCODE'])
                 if mycountry:
-                    return "%s (%s)" % (lang_name, country_name)
-                else:
-                    return lang_name
+                    returnVal = "%s (%s)" % (lang_name, country_name)
+        if len(macr["VARIANT"]) > 0:
+            returnVal = "%s - %s" % (returnVal, macr["VARIANT"])
+        
+        if native == True:
+            if current_language:
+                os.environ["LANGUAGE"] = current_language
             else:
-                return lang_name
-        return self.translate_language(locale)
+                del os.environ["LANGUAGE"]
+        return returnVal
+         
+#        if "_" in locale:
+#            #(lang, country) = string.split(locale, "_")
+#            (lang_name, country_name) = self.translate_locale(locale)
+#            # get all locales for this language
+#            l = filter(lambda k: k.startswith(macr['LCODE']), self.generated_locales())
+#            # only show region/country if we have more than one 
+#            if len(l) > 1:
+#                mycountry = self.country(macr['CCODE'])
+#                if mycountry:
+#                    return "%s (%s)" % (lang_name, country_name)
+#                else:
+#                    return lang_name
+#            else:
+#                return lang_name
+#        return self.translate_language(locale)
 
     def makeEnvString(self, code):
         """ input is a language code, output a string that can be put in
             the LANGUAGE enviroment variable.
             E.g: en_DK -> en_DK:en
         """
+        macr = macros.LangpackMacros(self._datadir, code)
+        langcode = macr['LCODE']
+        locale = macr['LOCALE']
         # first check if we got somethign from languagelist
-        if code in self._languagelist:
-            return self._languagelist[code]
+        if locale in self._languagelist:
+            return self._languagelist[locale]
         # if not, fall back to "dumb" behaviour
-        if not "_" in code:
-            return code
-        (lang, region) = string.split(code, "_")
-        return "%s:%s" % (code, lang)
+        if locale == langcode:
+            return locale
+        return "%s:%s" % (locale, langcode)
 
-    def getDefaultLanguage(self):
-        """ returns the current default language (e.g. zh_CN) """
-        for environment in self.environments:
-            if not os.path.exists(environment):
-                continue
-            for line in open(environment).readlines():
-                line = line.strip()
-                if line.startswith("LANGUAGE="):
-                    (key,value) = line.split("=")
-                    value = value.strip('"')
-                    return value.split(":")[0]
-            for line in open(environment).readlines():
-                match = re.match(r'LANG="([a-zA-Z_]*).*"$',line)
-                if match:
-                    return match.group(1)
-        return None
+    def getUserDefaultLanguage(self):
+        """
+        Reads '~/.profile' if present and '~/.dmrc' otherwise or if '~/.profile' doesn't set
+        any values.
+        Scans for LANG and LANGUAGE variable settings and returns a list [LANG, LANGUAGE].
+        In case of '~/.dmrc', we only have the locale as a value, not the full LANGUAGE
+        variable compatible string. Therefor we need to generate one from the provided locale.
+        Likewise, if LANGUAGE is not defined, generate a string from the provided LANG value.
+        """
+        lang = ''
+        language = ''
+        result = []
+        fname = os.path.expanduser("~/.profile")
+        if os.path.exists(fname):
+            for line in open(fname):
+                match_lang = re.match(r'export LANG=(.*)$',line)
+                if match_lang:
+                    lang = match_lang.group(1).strip('"')
+                match_language = re.match(r'export LANGUAGE=(.*)$',line)
+                if match_language:
+                    language = match_language.group(1).strip('"')
+        if len(lang) == 0:
+            fname = os.path.expanduser("~/.dmrc")
+            if os.path.exists(fname):
+                for line in open(fname):
+                    match = re.match(r'Language=(.*)$',line)
+                    if match:
+                        lang = match.group(1)
+        if len(lang) == 0 and "LANG" in os.environ:
+            lang = os.environ["LANG"]
+        if len(lang) > 0:
+            if len(language) == 0:
+                if "LANGUAGE" in os.environ and os.environ["LANGUAGE"] != lang:
+                    language = os.environ["LANGUAGE"]
+                else:
+                    language = self.makeEnvString(lang)
+        result.append(lang)
+        result.append(language)
+        return result
+
+    def getSystemDefaultLanguage(self):
+        """
+        Reads '/etc/default/locale' if present, and if not '/etc/environment'.
+        Scans for LANG and LANGUAGE variable settings and returns a list [LANG, LANGUAGE].
+        """
+        lang = ''
+        language = ''
+        result = []
+        for fname in self.environments:
+            if os.path.exists(fname):
+                for line in open(fname):
+                    # support both LANG="foo" and LANG=foo
+                    if line.startswith("LANG"):
+                        line = line.replace('"','')
+                    match_lang = re.match(r'LANG=(.*)$',line)
+                    if match_lang:
+                        lang = match_lang.group(1).strip('"')
+                    if line.startswith("LANGUAGE"):
+                        line = line.replace('"','')
+                    match_language = re.match(r'LANGUAGE=(.*)$',line)
+                    if match_language:
+                        language = match_language.group(1).strip('"')
+                if len(lang) > 0:
+                    break
+        if len(lang) == 0:
+            # fall back is 'en_US'
+            lang = 'en_US.UTF-8'
+        if len(language) == 0:
+            # LANGUAGE has not been defined, generate a string from the provided LANG value
+            language = self.makeEnvString(lang)
+        result.append(lang)
+        result.append(language)
+        return result
+
 
 if __name__ == "__main__":
     datadir = "/usr/share/language-selector/"
-    li = LocaleInfo("%s/data/languagelist" % datadir)
+    li = LocaleInfo("languagelist", datadir)
 
-    print "default: '%s'" % li.getDefaultLanguage()
+    print "default system locale and languages: '%s'" % li.getSystemDefaultLanguage()
+    print "default user locale and languages: '%s'" % li.getUserDefaultLanguage()
 
     print li._lang
     print li._country

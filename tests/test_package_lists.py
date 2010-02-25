@@ -14,21 +14,22 @@ class TestLanguageSelector(unittest.TestCase):
         " test for non networked sources "
         apt_pkg.Config.Set("Dir::State::lists","./test-data/var/lib/apt/lists")
         apt_pkg.Config.Set("Dir::State::status","./test-data/empty")
-        apt_pkg.Config.Set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.fail")
+        apt_pkg.Config.Set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.good")
+        apt_pkg.Config.Set("Dir::Etc::SourceParts","./xxx")
         ls = LanguageSelectorBase(datadir="../")
         ls.openCache(apt.progress.OpProgress())
-        self.assert_(ls.verifyPackageLists() == False,
-                      "verifyPackageLists returned True for a empty list")
+        self.assert_(ls._cache.havePackageLists == True,
+                      "verifyPackageLists returned False for a good list")
 
     def test_package_lists_fail(self):
         " test for non networked sources "
         apt_pkg.Config.Set("Dir::State::lists","./test-data/var/lib/apt/lists")
         apt_pkg.Config.Set("Dir::State::status","./test-data/empty")
-        apt_pkg.Config.Set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.good")
+        apt_pkg.Config.Set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.fail")
         ls = LanguageSelectorBase(datadir="../")
         ls.openCache(apt.progress.OpProgress())
-        self.assert_(ls.verifyPackageLists() == True,
-                      "verifyPackageLists returned False for a good list")
+        self.assert_(ls._cache.havePackageLists == False,
+                      "verifyPackageLists returned True for a list with missing indexfiles")
         
 
 

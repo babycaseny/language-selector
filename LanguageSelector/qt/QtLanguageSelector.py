@@ -125,12 +125,12 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         self._localeinfo.localeToCodeMap = {}
         # get the current default lang
         defaultLangName = None
-        defaultLangCode = self.getSystemDefaultLanguage()
+        defaultLangCode = self._localeinfo.getSystemDefaultLanguage()[0]
         if defaultLangCode:
-            defaultLangName = utf8(self._localeinfo.translate(defaultLangCode))
+            defaultLangName = utf8(self._localeinfo.translate(defaultLangCode, native=True))
         locales = []
         for locale in self._localeinfo.generated_locales():
-            name = utf8(self._localeinfo.translate(locale))
+            name = utf8(self._localeinfo.translate(locale, native=True))
             locales.append(name)
             self._localeinfo.localeToCodeMap[name] = locale
         locales.sort()

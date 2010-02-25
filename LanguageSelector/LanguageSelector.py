@@ -33,7 +33,7 @@ class LanguageSelectorBase(object):
     def __init__(self, datadir=""):
         self._datadir = datadir
         # load the localeinfo "database"
-        self._localeinfo = LocaleInfo("%s/data/languagelist" % self._datadir)
+        self._localeinfo = LocaleInfo("languagelist", self._datadir)
         self._cache = None
 
     def openCache(self, progress):
@@ -81,14 +81,17 @@ class LanguageSelectorBase(object):
                                 missing.append(pull_pkg)
 
         # now check for a missing default language support
-        default_lang = self.getSystemDefaultLanguage()
-        # if there is no default lang, return early
-        if default_lang is None:
-            return missing
-        # Fallback is English
-        pkgcode = 'en'
-        if default_lang in self._cache.langpack_locales:
-            pkgcode = self._cache.langpack_locales[default_lang]
+        default_lang = self._localeinfo.getSystemDefaultLanguage()[0]
+        macr = macros.LangpackMacros(self._datadir, default_lang)
+        default_lang = macr["LOCALE"]
+        pkgcode = macr["PKGCODE"]
+#        # if there is no default lang, return early
+#        if default_lang is None:
+#            return missing
+#        # Fallback is English
+#        pkgcode = 'en'
+#        if default_lang in self._cache.langpack_locales:
+#            pkgcode = self._cache.langpack_locales[default_lang]
         trans_package = "language-pack-%s" % pkgcode
         if (trans_package in self._cache and 
             not self._cache[trans_package].isInstalled):
@@ -119,38 +122,6 @@ class LanguageSelectorBase(object):
 
         return missing
 
-    def getUserDefaultLanguage(self):
-        fname = os.path.expanduser("~/.dmrc")
-        if os.path.exists(fname):
-            for line in open(fname):
-                match = re.match(r'Language=(.*)$',line)
-                if match and match.group(1) != 'C':
-                    if "." in match.group(1):
-                        return match.group(1).split(".")[0]
-                    else:
-                        return match.group(1)
-        #return None
-        # fall back to 'en_US' in case the langcode has not been defined or is set to 'C'. We don't support 'C'.
-        return 'en_US'
-
-    def getSystemDefaultLanguage(self):
-        conffiles = ["/etc/default/locale", "/etc/environment"]
-        for fname in conffiles:
-            if os.path.exists(fname):
-                for line in open(fname):
-                    # support both LANG="foo" and LANG=foo
-                    if line.startswith("LANG"):
-                        line = line.replace('"','')
-                    match = re.match(r'LANG=(.*)$',line)
-                    if match and match.group(1) != 'C':
-                        if "." in match.group(1):
-                            return match.group(1).split(".")[0]
-                        else:
-                            return match.group(1)
-        #return None
-        # fall back to 'en_US' in case the langcode has not been defined or is set to 'C'. We don't support 'C'.
-        return 'en_US'
-
     def runAsRoot(self, cmd):
         " abstract interface for the frontends to run specific commands as root"
         # compatibilty code for frontends that already run as root
@@ -159,79 +130,136 @@ class LanguageSelectorBase(object):
         # 
         raise AttributeError, "this method needs to be overwriten by the subclass"
 
-    def setSystemDefaultLanguage(self, defaultLanguageCode):
-        " this updates the system default language "
-        conffiles = ["/etc/default/locale", "/etc/environment"]
+    def writeLanguageSettings(self, sysLang=None, sysLanguage=None, userLang=None, userLanguage=None):
+        conffiles = []
+
+        if sysLang or sysLanguage:
+            conffiles = ["/etc/default/locale", "/etc/environment"]
+        elif userLang or userLanguage:
+            conffiles.append(os.path.expanduser("~/.profile"))
+        else:
+            # no arguments given, nothing to do.
+            return None
+
+        if sysLang:
+            macr = macros.LangpackMacros(self._datadir, sysLang)
+            findString = "LANG="
+            setString = "LANG=\"%s\"\n" % macr["SYSLOCALE"]
+        elif sysLanguage:
+            findString = "LANGUAGE="
+            setString = "LANGUAGE=\"%s\"\n" % sysLanguage
+        elif userLang:
+            macr = macros.LangpackMacros(self._datadir, userLang)
+            findString = "export LANG="
+            setString = "export LANG=\"%s\"\n" % macr["SYSLOCALE"]
+        elif userLanguage:
+            findString = "export LANGUAGE="
+            setString = "export LANGUAGE=\"%s\"\n" % userLanguage
+
         for fname in conffiles:
             out = tempfile.NamedTemporaryFile()        
-            foundLanguage = False  # the LANGUAGE var
-            foundLang = False      # the LANG var
+            foundString = False
             if os.path.exists(fname):
                 # look for the line
                 for line in open(fname):
                     tmp = string.strip(line)
-                    if tmp.startswith("LANGUAGE="):
-                        foundLanguage = True
-                        line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
-                        #print line
-                    if tmp.startswith("LANG="):
-                        foundLang = True
-                        # we always write utf8 languages
-                        line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
+                    if tmp.startswith(findString):
+                        foundString = True
+                        line = setString
                     out.write(line)
-                    #print line
             # if we have not found them add them
-            if foundLanguage == False:
-                line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
-                out.write(line)
-            if foundLang == False:
-                line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
-                out.write(line)
+            if foundString == False:
+                out.write(setString)
             out.flush()
-            self.runAsRoot(["/bin/cp",out.name, fname])
+            if sysLang or sysLanguage:
+                self.runAsRoot(["/bin/cp",out.name, fname])
+            else:
+                shutil.copy(out.name, fname)
+                os.chmod(fname, 0644)
 
         # now set the fontconfig-voodoo
-        fc = FontConfig.FontConfigHack()
-        #print defaultLanguageCode
-        #print fc.getAvailableConfigs()
-        if defaultLanguageCode in fc.getAvailableConfigs():
-            self.runAsRoot(["fontconfig-voodoo", "-f",
-                            "--set=%s" % defaultLanguageCode])
-        else:
-            self.runAsRoot(["fontconfig-voodoo","-f","--remove-current"])
+        if sysLanguage:
+            fc = FontConfig.FontConfigHack()
+            defaultLanguageCode = sysLanguage.split(':')[0]
+            if defaultLanguageCode in fc.getAvailableConfigs():
+                self.runAsRoot(["fontconfig-voodoo", "-f",
+                                "--set=%s" % defaultLanguageCode])
+            else:
+                self.runAsRoot(["fontconfig-voodoo","-f","--remove-current"])
 
-    def setUserDefaultLanguage(self, defaultLanguageCode):
-        " this updates the user default language "
-        fname = os.path.expanduser("~/.dmrc")
-        out = tempfile.NamedTemporaryFile()
-        foundLang = False      # the Language var
-        if os.path.exists(fname):
-            # look for the line
-            for line in open(fname):
-                tmp = string.strip(line)
-                if tmp.startswith("Language="):
-                    foundLang = True
-                    # we always write utf8 languages
-                    line="Language=%s.UTF-8\n" % defaultLanguageCode
-                out.write(line)
-        # if we have not found them add them
-        if foundLang == False:
-            line="Language=%s.UTF-8\n" % defaultLanguageCode
-            out.write(line)
-        out.flush()
-        shutil.copy(out.name, fname)
-        os.chmod(fname, 0644)
+#    def setSystemDefaultLanguage(self, defaultLanguageCode):
+#        " this updates the system default language "
+#        conffiles = ["/etc/default/locale", "/etc/environment"]
+#        for fname in conffiles:
+#            out = tempfile.NamedTemporaryFile()        
+#            foundLanguage = False  # the LANGUAGE var
+#            foundLang = False      # the LANG var
+#            if os.path.exists(fname):
+#                # look for the line
+#                for line in open(fname):
+#                    tmp = string.strip(line)
+#                    if tmp.startswith("LANGUAGE="):
+#                        foundLanguage = True
+#                        line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
+#                        #print line
+#                    if tmp.startswith("LANG="):
+#                        foundLang = True
+#                        # we always write utf8 languages
+#                        line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
+#                    out.write(line)
+#                    #print line
+#            # if we have not found them add them
+#            if foundLanguage == False:
+#                line="LANGUAGE=\"%s\"\n" % self._localeinfo.makeEnvString(defaultLanguageCode)
+#                out.write(line)
+#            if foundLang == False:
+#                line="LANG=\"%s.UTF-8\"\n" % defaultLanguageCode
+#                out.write(line)
+#            out.flush()
+#            self.runAsRoot(["/bin/cp",out.name, fname])
 
-        # FIXME: This should be set on a per user base in ~/.fonts.conf
-        ## now set the fontconfig-voodoo
-        #fc = FontConfig.FontConfigHack()
-        ##print defaultLanguageCode
-        ##print fc.getAvailableConfigs()
-        #f defaultLanguageCode in fc.getAvailableConfigs():
-        #    self.runAsRoot(["fontconfig-voodoo", "-f",
-        #                    "--set=%s" % defaultLanguageCode])
-        #else:
-        #    self.runAsRoot(["fontconfig-voodoo","-f","--remove-current"])
+#        # now set the fontconfig-voodoo
+#        fc = FontConfig.FontConfigHack()
+#        #print defaultLanguageCode
+#        #print fc.getAvailableConfigs()
+#        if defaultLanguageCode in fc.getAvailableConfigs():
+#            self.runAsRoot(["fontconfig-voodoo", "-f",
+#                            "--set=%s" % defaultLanguageCode])
+#        else:
+#            self.runAsRoot(["fontconfig-voodoo","-f","--remove-current"])
+
+#    def setUserDefaultLanguage(self, defaultLanguageCode):
+#        " this updates the user default language "
+#        fname = os.path.expanduser("~/.dmrc")
+#        out = tempfile.NamedTemporaryFile()
+#        foundLang = False      # the Language var
+#        if os.path.exists(fname):
+#            # look for the line
+#            for line in open(fname):
+#                tmp = string.strip(line)
+#                if tmp.startswith("Language="):
+#                    foundLang = True
+#                    # we always write utf8 languages
+#                    line="Language=%s.UTF-8\n" % defaultLanguageCode
+#                out.write(line)
+#        # if we have not found them add them
+#        if foundLang == False:
+#            line="Language=%s.UTF-8\n" % defaultLanguageCode
+#            out.write(line)
+#        out.flush()
+#        shutil.copy(out.name, fname)
+#        os.chmod(fname, 0644)
+
+#        # FIXME: This should be set on a per user base in ~/.fonts.conf
+#        ## now set the fontconfig-voodoo
+#        #fc = FontConfig.FontConfigHack()
+#        ##print defaultLanguageCode
+#        ##print fc.getAvailableConfigs()
+#        #f defaultLanguageCode in fc.getAvailableConfigs():
+#        #    self.runAsRoot(["fontconfig-voodoo", "-f",
+#        #                    "--set=%s" % defaultLanguageCode])
+#        #else:
+#        #    self.runAsRoot(["fontconfig-voodoo","-f","--remove-current"])
 
     # obsolete
 #    def missingTranslationPkgs(self, pkg, translation_pkg):

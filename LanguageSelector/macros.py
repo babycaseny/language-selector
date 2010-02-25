@@ -3,7 +3,7 @@ substitution functions.
 
 The following macros are available:
 
-  LCODE CCODE PKGCODE
+  LCODE CCODE PKGCODE LOCALE
 '''
 
 import re, os.path, os
@@ -58,38 +58,51 @@ class LangcodeMacros:
         return self.macros.__contains__(item)
 
 class LangpackMacros:
-
-    LOCALE_TO_LANGPACK = '/usr/share/language-selector/data/locale2langpack'    
-
-    def __init__(self, locale):
+    def __init__(self, datadir,locale):
         '''Initialize values of macros.
 
         This uses information from maps/, config/, some hardcoded aggregate
         strings (such as package names), and some external input:
         
         - locale: Standard locale representation (e. g. pt_BR.UTF-8)
+                  Format is: ll[_CC][.UTF-8][@variant]
         '''
+
+        self.LOCALE_TO_LANGPACK = os.path.join(datadir, 'data', 'locale2langpack')
         self.macros = {}
-        # chop .* and @* suffixes to get encoding-agnostic locale
-        self['LOCALE'] = (locale.split('.')[0])
-        try:
-            (self['LLCC'], self['VARIANT']) = self['LOCALE'].split('@')
-        except ValueError:
-            self['LLCC'] = self['LOCALE']
-            self['VARIANT'] = ''
-
-        # language and country
-        try:
-            (self['LCODE'], self['CCODE']) = self['LLCC'].split('_')
-        except ValueError:
-            self['LCODE'] = self['LLCC']
-
-        if not self['LCODE']:
-            raise Exception, 'Internal error: LCODE is empty'
+        self['LCODE'] = ''      # the language code
+        self['CCODE'] = ''      # the country code if present
+        self['VARIANT'] = ''    # the part behind the @ if present
+        self['LOCALE'] = ''     # the locale with the .UTF-8 stripped off
+        self['PKGCODE'] = ''    # the language code used in the language-packs
+        self['SYSLOCALE'] = ''  # a generated full locale identifier, e.g. ca_ES.UTF-8@valencia
+        # 'C' and 'POSIX' are not supported as locales, fall back to 'en_US'
+        if locale == 'C' or locale == 'POSIX':
+            locale = 'en_US'
+        if '@' in locale:
+            (locale, self['VARIANT']) = locale.split('@')
+        if '.' in locale:
+            locale = locale.split('.')[0]
+        if '_' in locale:
+            (self['LCODE'], self['CCODE']) = locale.split('_')
+        else:
+            self['LCODE'] = locale
+        if len(self['VARIANT']) > 0:
+            self['LOCALE'] = "%s@%s" % (locale, self['VARIANT'])
+        else:
+            self['LOCALE'] = locale
+        # generate a SYSLOCALE from given components
+        if len(self['LCODE']) > 0:
+            if len(self['CCODE']) > 0:
+                self['SYSLOCALE'] = "%s_%s.UTF-8" % (self["LCODE"], self["CCODE"])
+            else:
+                self['SYSLOCALE'] = "%s.UTF-8" % self['LCODE']
+            if len(self['VARIANT']) > 0:
+                self['SYSLOCALE'] = "%s@%s" % (self['SYSLOCALE'], self['VARIANT'])
 
         # package code
         try:
-            self['PKGCODE'] = _file_map(self.LOCALE_TO_LANGPACK, '%s-%s' % (self['LCODE'], self['CCODE'].lower()), ':')
+            self['PKGCODE'] = _file_map(self.LOCALE_TO_LANGPACK, self['LOCALE'], ':')
         except KeyError:
             self['PKGCODE'] = self['LCODE']
 
@@ -130,10 +143,11 @@ class LangpackMacros:
                 self.subst_file(os.path.join(root, path, f))
 
 if __name__ == '__main__':
-    for locale in ['de', 'de_DE', 'de_DE.UTF-8', 'de_DE.UTF-8@euro', 'fr_BE@latin', 'zh_CN.UTF-8', 'zh_TW.UTF-8', 'zh_HK.UTF-8']:
-        l = LangpackMacros(locale)
+    datadir = '/usr/share/language-selector'
+    for locale in ['de', 'de_DE', 'de_DE.UTF-8', 'de_DE.UTF-8@euro', 'fr_BE@latin', 'zh_CN.UTF-8', 'zh_TW.UTF-8', 'zh_HK.UTF-8', 'invalid_Locale']:
+        l = LangpackMacros(datadir, locale)
         print '-------', locale, '---------------'
-        template = '"%PKGCODE%: %LCODE% %CCODE% %VARIANT%"'
+        template = '"%PKGCODE%: %LCODE% %CCODE% %VARIANT% %LOCALE% %SYSLOCALE%"'
         print 'string:', l.subst_string(template)
 
         open('testtest', 'w').write(template)

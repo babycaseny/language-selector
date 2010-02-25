@@ -15,6 +15,7 @@ import string
 import os.path
 
 from LocaleInfo import LocaleInfo
+import macros
 
 class ExceptionMultipleConfigurations(Exception):
     " error when multiple languages are symlinked "
@@ -32,8 +33,9 @@ class FontConfigHack(object):
                  datadir="/usr/share/language-selector/",
                  globalConfDir="/etc/fonts"):
         self.datadir="%s/fontconfig" % datadir
+        self._datadir = datadir
         self.globalConfDir=globalConfDir
-        self.li = LocaleInfo("%s/data/languagelist" % datadir)
+        self.li = LocaleInfo("languagelist", datadir)
     def _getLocaleCountryFromFileName(self, name):
         """ 
         internal helper to extracr from our fontconfig filenames
@@ -83,16 +85,17 @@ class FontConfigHack(object):
         """ set the configuration for 'locale'. if locale can't be
             found a NoConfigurationForLocale exception it thrown
         """
+        macr = macros.LangpackMacros(self._datadir, locale)
+        locale = macr["LOCALE"]
         # check if we have a config
         if locale not in self.getAvailableConfigs():
             raise ExceptionNoConfigForLocale()
         # remove old symlink
         self.removeConfig()
-        (ll,cc) = locale.split('_')
         # do the symlinks, link from /etc/fonts/conf.avail in /etc/fonts/conf.d
         basedir = "%s/conf.avail/" % self.globalConfDir
-        for pattern in ["*-language-selector-%s-%s.conf" % (ll, cc.lower()),
-                        "*-language-selector-%s.conf" % ll,
+        for pattern in ["*-language-selector-%s-%s.conf" % (macr["LCODE"], macr["CCODE"].lower()),
+                        "*-language-selector-%s.conf" % macr["LCODE"],
                        ]:
             for f in glob.glob(os.path.join(basedir,pattern)):
                 fname = os.path.basename(f)
@@ -107,7 +110,10 @@ class FontConfigHack(object):
             'none'
             Can throw a exception
         """
-        lang = self.li.getDefaultLanguage()
+        lang = self.li.getUserDefaultLanguage()[1]
+        if len(lang) == 0:
+            lang = self.li.getSystemDefaultLanguage()[1]
+        lang = lang.split(':')[0]
         self.setConfig(lang)
         
 

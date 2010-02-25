@@ -181,6 +181,8 @@ class LanguageSelectorPkgCache(apt.Cache):
                     continue
                 if indexfile.ArchiveURI("").startswith("http://security.ubuntu.com"):
                     continue
+                if indexfile.Label != "Debian Package Index":
+                    continue
                 if indexfile.Exists and indexfile.HasPackages:
                     return True
         return False
@@ -341,7 +343,7 @@ if __name__ == "__main__":
 
     from LocaleInfo import LocaleInfo
     datadir = "/usr/share/language-selector"
-    li = LocaleInfo("%s/data/languagelist" % datadir)
+    li = LocaleInfo("languagelist", datadir)
 
     lc = LanguageSelectorPkgCache(li,apt.progress.OpProgress())
     print "available language information"

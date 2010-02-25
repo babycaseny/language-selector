@@ -47,8 +47,8 @@ The availability of translations or writing aids can differ between languages.</
       </object>
     </child>
   </object>
-  <object class="GtkWindow" id="window_main">
-    <property name="visible">True</property>
+  <object class="GtkWindow" id="window_main_old">
+    <property name="sensitive">False</property>
     <property name="title" translatable="yes">Language</property>
     <property name="icon_name">config-language</property>
     <signal name="delete_event" handler="on_delete_event"/>
@@ -210,7 +210,7 @@ The availability of translations or writing aids can differ between languages.</
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="combobox_input_method">
+                      <object class="GtkComboBox" id="combobox_input_method_old">
                         <property name="visible">True</property>
                         <signal name="changed" handler="on_combobox_input_method_changed"/>
                       </object>
@@ -250,7 +250,7 @@ The availability of translations or writing aids can differ between languages.</
               <object class="GtkHBox" id="hbox2">
                 <property name="visible">True</property>
                 <child>
-                  <object class="GtkButton" id="button_install_remove_languages">
+                  <object class="GtkButton" id="button_install_remove_languages_old">
                     <property name="label" translatable="yes">Install / Remove Languages...</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
@@ -569,9 +569,12 @@ The availability of translations or writing aids can differ between languages.</
       </object>
     </child>
   </object>
-  <object class="GtkWindow" id="window_main_new">
+  <object class="GtkWindow" id="window_main">
+    <property name="visible">True</property>
     <property name="title" translatable="yes">Language &amp; Text</property>
     <property name="destroy_with_parent">True</property>
+    <signal name="key_press_event" handler="on_window_main_key_press_event"/>
+    <signal name="delete_event" handler="on_delete_event"/>
     <child>
       <object class="GtkAlignment" id="alignment5">
         <property name="visible">True</property>
@@ -616,11 +619,20 @@ The availability of translations or writing aids can differ between languages.</
                           <object class="GtkTreeView" id="treeview_locales">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="tooltip_text" translatable="yes">This setting only affects the language your desktop and applications are displayed in. It does not set the system environment, like currency or date format settings. For that, use the settings in the Text tab.
+The order of the values displayed here decides which translations to use for your desktop. If translations for the first language are not available, the next one in this list will be tried. The last entry of this list is always "English".
+Every entry below "English" will be ignored.</property>
                             <property name="headers_visible">False</property>
                             <property name="headers_clickable">False</property>
                             <property name="reorderable">True</property>
                             <property name="hover_selection">True</property>
                             <property name="enable_grid_lines">horizontal</property>
+                            <signal name="drag_failed" handler="on_treeview_locales_drag_failed"/>
+                            <signal name="drag_begin" handler="on_treeview_locales_drag_begin"/>
+                            <signal name="drag_drop" handler="on_treeview_locales_drag_drop"/>
+                            <signal name="drag_end" handler="on_treeview_locales_drag_end"/>
+                            <signal name="drag_leave" handler="on_treeview_locales_drag_leave"/>
+                            <signal name="drag_data_received" handler="on_treeview_locales_drag_data_received"/>
                           </object>
                         </child>
                       </object>
@@ -647,14 +659,14 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                       <object class="GtkHBox" id="hbox4">
                         <property name="visible">True</property>
                         <child>
-                          <object class="GtkButton" id="button_apply_system_wide">
+                          <object class="GtkButton" id="button_apply_system_wide_languages">
                             <property name="label" translatable="yes">Apply System-Wide...</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
-                            <property name="receives_default">True</property>
+                            <property name="receives_default">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
-                            <signal name="clicked" handler="on_button_apply_system_wide_clicked"/>
+                            <signal name="clicked" handler="on_button_apply_system_wide_languages_clicked"/>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -689,11 +701,11 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                       <object class="GtkHBox" id="hbox5">
                         <property name="visible">True</property>
                         <child>
-                          <object class="GtkButton" id="button_install_remove_languages1">
+                          <object class="GtkButton" id="button_install_remove_languages">
                             <property name="label" translatable="yes">Install / Remove Languages...</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
-                            <property name="receives_default">True</property>
+                            <property name="receives_default">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
                             <signal name="clicked" handler="on_button_install_remove_languages_clicked"/>
@@ -730,8 +742,12 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBox" id="combobox_input_method1">
+                          <object class="GtkComboBox" id="combobox_input_method">
                             <property name="visible">True</property>
+                            <property name="tooltip_text" translatable="yes">If you need to type in languages, which require more complex input methods than just a simple key to letter mapping, you may want to enable this function.
+For example, you will need this function for typing Chinese, Japanese, Korean or Vietnamese.
+The recommended value for Ubuntu is "ibus".
+If you want to use alternative input method systems, install the corresponding packages first and then choose the desired system here.</property>
                             <signal name="changed" handler="on_combobox_input_method_changed"/>
                           </object>
                           <packing>
@@ -775,7 +791,6 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                     <child>
                       <object class="GtkLabel" id="label9">
                         <property name="visible">True</property>
-                        <property name="sensitive">False</property>
                         <property name="xalign">0</property>
                         <property name="yalign">0</property>
                         <property name="label" translatable="yes">Display numbers, dates and currency amounts in the usual format for:</property>
@@ -793,6 +808,9 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                         <child>
                           <object class="GtkComboBox" id="combobox_locale_chooser">
                             <property name="visible">True</property>
+                            <property name="tooltip_text" translatable="yes">This will set the system environment like shown below and will also affect the preferred paper format and other territory specific settings.
+If you want to display the desktop in a different language than this, please select it in the "Language" tab.
+Hence you should set this to a sensible value for the territory you are located in.</property>
                             <signal name="changed" handler="on_combobox_locale_chooser_changed"/>
                           </object>
                           <packing>
@@ -810,6 +828,60 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                       </packing>
                     </child>
                     <child>
+                      <object class="GtkLabel" id="label19">
+                        <property name="visible">True</property>
+                        <property name="xalign">0</property>
+                        <property name="yalign">0</property>
+                        <property name="label" translatable="yes">&lt;small&gt;Changes take effect next time you log in.&lt;/small&gt;</property>
+                        <property name="use_markup">True</property>
+                      </object>
+                      <packing>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkHBox" id="hbox13">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkButton" id="button_apply_system_wide_locale">
+                            <property name="label" translatable="yes">Apply System-Wide...</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">False</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">0</property>
+                            <signal name="clicked" handler="on_button_apply_system_wide_locale_clicked"/>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">False</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="padding">6</property>
+                        <property name="position">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label20">
+                        <property name="visible">True</property>
+                        <property name="xalign">0</property>
+                        <property name="yalign">0</property>
+                        <property name="ypad">1</property>
+                        <property name="label" translatable="yes">&lt;small&gt;Uses the same text format choice for startup and the login screen.&lt;/small&gt;</property>
+                        <property name="use_markup">True</property>
+                      </object>
+                      <packing>
+                        <property name="position">4</property>
+                      </packing>
+                    </child>
+                    <child>
                       <object class="GtkFrame" id="frame3">
                         <property name="visible">True</property>
                         <property name="label_xalign">0</property>
@@ -824,7 +896,6 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                             <child>
                               <object class="GtkTable" id="table1">
                                 <property name="visible">True</property>
-                                <property name="sensitive">False</property>
                                 <property name="n_rows">3</property>
                                 <property name="n_columns">2</property>
                                 <property name="column_spacing">12</property>
@@ -875,10 +946,8 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                                 <child>
                                   <object class="GtkLabel" id="label_example_number">
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
                                     <property name="xalign">0</property>
                                     <property name="yalign">0</property>
-                                    <property name="label" translatable="yes">1234567.89</property>
                                   </object>
                                   <packing>
                                     <property name="left_attach">1</property>
@@ -890,7 +959,6 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                                 <child>
                                   <object class="GtkLabel" id="label_example_date">
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
                                     <property name="xalign">0</property>
                                     <property name="yalign">0</property>
                                   </object>
@@ -906,7 +974,6 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                                 <child>
                                   <object class="GtkLabel" id="label_example_currency">
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
                                     <property name="xalign">0</property>
                                     <property name="yalign">0</property>
                                   </object>
@@ -926,7 +993,6 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                         <child type="label">
                           <object class="GtkLabel" id="label18">
                             <property name="visible">True</property>
-                            <property name="sensitive">False</property>
                             <property name="label" translatable="yes">&lt;b&gt;Example&lt;/b&gt;</property>
                             <property name="use_markup">True</property>
                           </object>
@@ -935,7 +1001,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                       <packing>
                         <property name="expand">False</property>
                         <property name="padding">12</property>
-                        <property name="position">2</property>
+                        <property name="position">5</property>
                       </packing>
                     </child>
                     <child>
