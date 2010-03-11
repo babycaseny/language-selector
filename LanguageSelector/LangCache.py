@@ -88,6 +88,7 @@ class LanguageSelectorPkgCache(apt.Cache):
         self.langpack_locales = {}
         self.pkg_translations = {}
         self.pkg_writing = {}
+        self.multilang = {} # packages which service multiple languages (e.g. openoffice.org-hyphenation)
         filter_list = {}
         blacklist = []
         
@@ -122,9 +123,18 @@ class LanguageSelectorPkgCache(apt.Cache):
             if (c == 'tr' and lc == ''):
                 filter_list[v] = k
             elif (c == 'wa' and lc != ''):
-                if not lc in self.pkg_writing:
-                    self.pkg_writing[lc] = []
-                self.pkg_writing[lc].append(("%s" % k, "%s" % v))
+                if '|' in lc:
+                    if not v in self.multilang:
+                        self.multilang[v] = []
+                    for l in lc.split('|'):
+                        if not l in self.pkg_writing:
+                            self.pkg_writing[l] = []
+                        self.pkg_writing[l].append(("%s" % k, "%s" % v))
+                        self.multilang[v].append(l)
+                else:
+                    if not lc in self.pkg_writing:
+                        self.pkg_writing[lc] = []
+                    self.pkg_writing[lc].append(("%s" % k, "%s" % v))
 
         # get list of all packages available on the system and filter them
         for item in self.keys():
@@ -232,16 +242,23 @@ class LanguageSelectorPkgCache(apt.Cache):
             if li.languageCode in self.pkg_translations:
                 for (pkg, translation) in self.pkg_translations[li.languageCode]:
                     if pkg in self and \
-                       self[pkg].isInstalled and \
-                       not self[translation].isInstalled:
+                       (self[pkg].isInstalled or \
+                       self[pkg].markedInstall or \
+                       self[pkg].markedUpgrade) and \
+                       translation in self and \
+                       ((not self[translation].isInstalled and \
+                       not self[translation].markedInstall and \
+                       not self[translation].markedUpgrade) or \
+                       self[translation].markedDelete):
                         self[translation].markInstall()
                         #print ("Will pull: %s" % translation)
         elif ((not item.installed and not item.doChange) or (item.installed and item.doChange)) :
             if li.languageCode in self.pkg_translations:
                 for (pkg, translation) in self.pkg_translations[li.languageCode]:
-                    if pkg in self and \
-                       self[pkg].isInstalled and \
-                       self[translation].isInstalled:
+                    if translation in self and \
+                       (self[translation].isInstalled or \
+                       self[translation].markedInstall or \
+                       self[translation].markedUpgrade):
                            self[translation].markDelete()
                            #print ("Will remove: %s" % translation)
 
@@ -256,14 +273,24 @@ class LanguageSelectorPkgCache(apt.Cache):
                         # multiple dependencies, if one of them is installed, pull the pull_pkg
                         for p in pkg.split('|'):
                             if p in self and \
-                               self[p].isInstalled and \
-                               not self[pull_pkg].isInstalled:
+                               (self[p].isInstalled or \
+                               self[p].markedInstall or \
+                               self[p].markedUpgrade) and \
+                               ((not self[pull_pkg].isInstalled and \
+                               not self[pull_pkg].markedInstall and \
+                               not self[pull_pkg].markedUpgrade) or \
+                               self[pull_pkg].markedDelete):
                                 self[pull_pkg].markInstall()
                                 #print ("Will pull: %s" % pull_pkg)
                     else:
                         if pkg in self and \
-                           self[pkg].isInstalled and \
-                           not self[pull_pkg].isInstalled:
+                           (self[pkg].isInstalled or \
+                           self[pkg].markedInstall or \
+                           self[pkg].markedUpgrade) and \
+                           ((not self[pull_pkg].isInstalled and \
+                           not self[pull_pkg].markedInstall and \
+                           not self[pull_pkg].markedUpgrade) or \
+                           self[pull_pkg].markedDelete):
                             self[pull_pkg].markInstall()
                             #print ("Will pull: %s" % pull_pkg)
         elif ((not item.installed and not item.doChange) or (item.installed and item.doChange)) :
@@ -271,25 +298,35 @@ class LanguageSelectorPkgCache(apt.Cache):
                 for (pkg, pull_pkg) in self.pkg_writing[li.languageCode]:
                     if not pull_pkg in self:
                         continue
+                    lcount = 0
+                    pcount = 0
+                    if pull_pkg in self.multilang:
+                        # package serves multiple languages.
+                        # check if other languages on this system still need this package.
+                        for l in self.multilang[pull_pkg]:
+                            p = "language-support-writing-%s" % l
+                            if p in self and \
+                               (self[p].isInstalled or \
+                               self[p].markedInstall or \
+                               self[p].markedUpgrade) and \
+                               not self[p].markedDelete:
+                                lcount = lcount+1
                     if '|' in pkg:
                         # multiple dependencies, if at least one of them is installed, keep the pull_pkg
                         # only remove pull_pkg if none of the dependencies are installed anymore
-                        count = 0
                         for p in pkg.split('|'):
                             if p in self and \
-                               self[p].isInstalled and \
-                               not self[p].markDelete(True) and \
-                               not self[p].markInstall(True):
-                                count = count+1
-                            if count == 0 and self[pull_pkg].isInstalled:
-                                self[pull_pkg].markDelete()
-                                #print ("Will remove: %s" % pull_pkg)
-                    else:
-                        if pkg in self and \
-                           self[pkg].isInstalled and \
-                           self[pull_pkg].isInstalled:
-                            self[pull_pkg].markDelete()
-                            #print ("Will remove: %s" % pull_pkg)
+                               (self[p].isInstalled or \
+                               self[p].markedInstall or \
+                               self[p].markedUpgrade) and \
+                               not self[p].markedDelete:
+                                pcount = pcount+1
+                    if pcount == 0  and lcount == 0 and \
+                        (self[pull_pkg].isInstalled or \
+                        self[pull_pkg].markedInstall or \
+                        self[pull_pkg].markedUpgrade):
+                        self[pull_pkg].markDelete()
+                        #print ("Will remove: %s" % pull_pkg)
         return
 
     def tryInstallLanguage(self, languageCode):

@@ -5,6 +5,7 @@ Albanian;2;sq_AL.UTF-8;sq_AL.UTF-8;sq;AL;sq_AL:sq:en_GB:en;kbd=lat0-sun16(utf8)
 Arabic;2;ar;ar_EG.UTF-8;ar;EG;ar_EG:en_GB:en;
 Basque;1;eu;eu_ES.UTF-8;eu;ES;eu_ES:eu:en_GB:en;kbd=lat0-sun16(utf8)
 Belarusian;2;be_BY.UTF-8;be_BY.UTF-8;be;BY;be_BY:be:en_GB:en;cyr=uni,16,utf-8,by(ctrl_shift_toggle)
+Belarusian (Latin);2;be_BY.UTF-8@latin;be_BY.UTF-8@latin;be@latin;BY;be_BY@latin:be@latin:be_BY:be:en_GB:en;cyr=uni,16,utf-8,by(ctrl_shift_toggle)
 Bengali;3;bn;bn_BD;bn;BD;bn_BD:bn:en_IN:en_GB:en;
 Bosnian;2;bs_BA.UTF-8;bs_BA.UTF-8;bs;BA;bs_BA:bs:en_GB:en;kbd=ter-v16f(utf8)
 Bulgarian;2;bg_BG.UTF-8;bg_BG.UTF-8;bg;BG;bg_BG:bg:en_GB:en;kbd=ruscii_8x16(utf8)
@@ -63,6 +64,8 @@ Korean;2;ko_KR.UTF-8;ko_KR.UTF-8;ko;KR;ko_KR:ko:en_GB:en;
 Kurdish;2;ku_TR.UTF-8;ku_TR.UTF-8;ku;TR;ku_TR:ku:en_GB:en;kbd=ter-916f(utf8)
 Latvian;2;lv_LV.UTF-8;lv_LV.UTF-8;lv;LV;lv_LV:lv:en_GB:en;kbd=lat7-14(utf8)
 Lithuanian;2;lt_LT.UTF-8;lt_LT.UTF-8;lt;LT;lt_LT:lt:en_GB:en;kbd=LatArCyrHeb-16(utf8)
+Low German (DE);1;nds_DE.UTF-8;nds_DE.UTF-8;nds;DE;nds_DE:nds:de_DE:de:en_GB:en;kbd=lat0-sun16(utf8)
+Low German (NL);1;nds_NL.UTF-8;nds_NL.UTF-8;nds;NL;nds_NL:nds:nl_NL:nl:en_GB:en;kbd=lat0-sun16(utf8)
 Malagasy;1;mg_MG.UTF-8;mg_MG.UTF-8;mg;MG;mg_MG:fr_FR:fr:en_GB:en;kbd=lat0-sun16(utf8)
 #X Malayalam;3;ml_IN;ml_IN;ml;IN;ml_IN:ml:en_IN:en_GB:en;
 Macedonian;2;mk_MK.UTF-8;mk_MK.UTF-8;mk;MK;mk_MK:mk:en_GB:en;kbd=iso05.f16(utf8)
