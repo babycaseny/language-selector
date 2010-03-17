@@ -256,7 +256,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
     def onSystemPushButtonOk(self):
         (lang, code) = self.getSystemLanguage()
-        self.setSystemDefaultLanguage(code)
+        self.writeLanguageSettings(sysLanguage=code, sysLang=code)
         self.updateInputMethods(code)
         KMessageBox.information(self, _("Default system Language now set to %s.") % lang, _("Language Set"))
         self.close()

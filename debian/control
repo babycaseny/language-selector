@@ -12,7 +12,7 @@ Package: language-selector
 Architecture: all
 Depends: language-selector-common (= ${binary:Version}), ${shlibs:Depends},
  ${misc:Depends}, ${python:Depends}, python-gtk2, python-apt (>= 0.6.12),
- synaptic
+ python-glade2, gksu, synaptic
 XB-Python-Version: ${python:Versions}
 Description: Language selector for Ubuntu Linux
  This package let you change and install language packs

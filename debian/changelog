@@ -1,3 +1,11 @@
+language-selector (0.5.2) lucid; urgency=low
+
+  * [KDE] It seems that the function we were using to write the system lang/
+    locale got commented out... Use the new API
+  * [GTK] Add missing depends on python-glade2 and gksu
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Wed, 17 Mar 2010 17:19:44 -0400
+
 language-selector (0.5.1) lucid; urgency=low
 
   * add fallbacks for nds_DE and nds_NL to data/languagelist (LP: #531422)
