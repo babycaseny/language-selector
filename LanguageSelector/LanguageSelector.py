@@ -49,13 +49,26 @@ class LanguageSelectorBase(object):
             #print langInfo.languageCode
             trans_package = "language-pack-%s" % langInfo.languageCode
             # we have a langpack installed, see if we have all of them
-            if (trans_package in self._cache and 
-                self._cache[trans_package].isInstalled):
+            if (trans_package in self._cache and \
+               (self._cache[trans_package].isInstalled or \
+               self._cache[trans_package].markedInstall or \
+               self._cache[trans_package].markedUpgrade) and \
+               not self._cache[trans_package].markedDelete):
                 #print "IsInstalled: %s " % trans_package
                 #print self._cache.pkg_translations[langInfo.languageCode]
                 if langInfo.languageCode in self._cache.pkg_translations:
                     for (pkg, translation) in self._cache.pkg_translations[langInfo.languageCode]:
-                        if (self._cache[pkg].isInstalled and not self._cache[translation].isInstalled):
+                        if (pkg in self._cache and \
+                           (self._cache[pkg].isInstalled or \
+                           self._cache[pkg].markedInstall or \
+                           self._cache[pkg].markedUpgrade) and \
+                           not self._cache[pkg].markedDelete and \
+                           translation in self._cache and \
+                           ((not self._cache[translation].isInstalled and \
+                           not self._cache[translation].markedInstall and \
+                           not self._cache[translation].markedUpgrade) or \
+                           self._cache[translation].markedDelete) and \
+                           not translation in missing):
                             missing.append(translation)
             trans_package = "language-support-writing-%s" % langInfo.languageCode
             # we have a langsupport-writing installed, see if we have all of them

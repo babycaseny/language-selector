@@ -44,7 +44,7 @@ Also supported are 'zh-hans' and 'zh-hant'.")
 		packages = []
 		if options.package:
 			packages = options.package.split(',')
-		missing = cl.getMissingPackages(options.language, options.all, packages)
+		missing = cl.getMissingPackages(language=options.language, all=options.all, packages=packages, showInstalled=options.show_installed)
 		if missing:
 			print (' '.join(sorted(missing)))
         except SoftwareIndexBroken:

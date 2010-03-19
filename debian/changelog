@@ -1,3 +1,22 @@
+language-selector (0.5.3) lucid; urgency=low
+
+  [ Michael Vogt ]
+  * when checking for is_admin check for uid == 0 too
+
+  [ Arne Goetje ]
+  * GtkLanguageSelector.py: move a Translators comment to the right
+    location, so that it ends up in the.pot file. (LP: #456290)
+  * Added fallback for Frisian (fy_NL and fy_DE) to data/languagelist.
+    (LP: #537540)
+  * check if the dependency package for translations is available in the
+    cache (LP: #527891)
+  * restored --show-installed option in check-language-support
+  * fix language-selector.desktop.in (Thanks to Stéphane Loeuillet)
+    (LP: #146973)
+  * fix a crash when language-selector is run by a non-admin user
+
+ -- Arne Goetje <arne@ubuntu.com>  Fri, 19 Mar 2010 17:54:18 +0800
+
 language-selector (0.5.2) lucid; urgency=low
 
   * [KDE] It seems that the function we were using to write the system lang/

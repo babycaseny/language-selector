@@ -138,7 +138,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
                                 datadir+"/data/LanguageSelector.ui")
 
         self._datadir = datadir
-        self.is_admin = grp.getgrnam("admin")[2] in os.getgroups()
+        self.is_admin = (os.getuid() == 0 or
+                         grp.getgrnam("admin")[2] in os.getgroups())
 
         # see if we have any other human users on this system
         self.has_other_users = False
@@ -178,9 +179,10 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         self._blockSignals = False
 
         # build the treeview
-        self.setupInstallerTreeView()
         self.setupLanguageTreeView()
-        self.updateLanguageView()
+        if self.is_admin:
+            self.setupInstallerTreeView()
+            self.updateLanguageView()
 #        self.updateUserDefaultCombo()
         self.updateLocaleChooserCombo()
         self.check_input_methods()
@@ -203,30 +205,31 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         self.window_main.show()
         self.setSensitive(False)
 
-        # check if the package list is up-to-date
-        if not self._cache.havePackageLists:
-            d = gtk.MessageDialog(parent=self.window_main,
-                                  flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_INFO,
-                                  buttons=gtk.BUTTONS_CANCEL)
-            d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("No language information available"),
-                _("The system does not have information about the "
-                  "available languages yet. Do you want to perform "
-                  "a network update to get them now? ")))
-            d.set_title=("")
-            d.add_button(_("_Update"), gtk.RESPONSE_YES)
-            res = d.run()
-            d.destroy()
-            if res == gtk.RESPONSE_YES:
-                self.setSensitive(False)
-                self.update()
-                self.updateLanguageView()
-                self.setSensitive(True)
+        if self.is_admin:
+            # check if the package list is up-to-date
+            if not self._cache.havePackageLists:
+                d = gtk.MessageDialog(parent=self.window_main,
+                                      flags=gtk.DIALOG_MODAL,
+                                      type=gtk.MESSAGE_INFO,
+                                      buttons=gtk.BUTTONS_CANCEL)
+                d.set_markup("<big><b>%s</b></big>\n\n%s" % (
+                    _("No language information available"),
+                    _("The system does not have information about the "
+                      "available languages yet. Do you want to perform "
+                      "a network update to get them now? ")))
+                d.set_title=("")
+                d.add_button(_("_Update"), gtk.RESPONSE_YES)
+                res = d.run()
+                d.destroy()
+                if res == gtk.RESPONSE_YES:
+                    self.setSensitive(False)
+                    self.update()
+                    self.updateLanguageView()
+                    self.setSensitive(True)
 
-        # see if something is missing
-        if self.options.verify_installed:
-            self.verifyInstalledLangPacks()
+            # see if something is missing
+            if self.options.verify_installed:
+                self.verifyInstalledLangPacks()
 
         if not self.imSwitch.available():
             self.combobox_input_method.set_sensitive(False)
@@ -383,8 +386,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             self.label_install_remove.set_text(textInstall)
         elif countInstall == 0: 
             self.label_install_remove.set_text(textRemove)
-        # Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
         else: 
+            # Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
             self.label_install_remove.set_text(_("%s, %s") % (textInstall, textRemove))
         
         if changed:
@@ -455,7 +458,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
                       IM_NAME, IM)
             if IM == currentIM:
                 combo.set_active(i)
-        self.check_status()
+#        self.check_status()
 
 #    def writeInputMethodConfig(self):
 #        """ 
