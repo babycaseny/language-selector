@@ -1,3 +1,11 @@
+language-selector (0.5.4) lucid; urgency=low
+
+  * QtLanguageSelector.py: fix to not need to run language-selector
+    twice in order to install all needed packages (LP: #499381)
+    (LP: #441321)
+
+ -- Arne Goetje <arne@ubuntu.com>  Fri, 26 Mar 2010 14:55:16 +0800
+
 language-selector (0.5.3) lucid; urgency=low
 
   [ Michael Vogt ]

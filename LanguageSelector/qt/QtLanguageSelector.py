@@ -285,11 +285,22 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
             li = self._localeinfo.listviewStrToLangInfoMap[unicode(elm.text())]
             if self.mode == "uninstall":
 #                self._cache.tryRemoveLanguage(li.languageCode)
-                self._cache.tryChangeDetails(li.languageCode)
+                for pkg in li.languagePkgList.values():
+                    if pkg.available:
+                        if pkg.installed:
+                            pkg.doChange = True
+                        else:
+                            pkg.doChange = False
             else:
 #                self._cache.tryInstallLanguage(li.languageCode)
-                self._cache.tryChangeDetails(li.languageCode)
+                for pkg in li.languagePkgList.values():
+                    if pkg.available:
+                        if not pkg.installed:
+                            pkg.doChange = True
+                        else:
+                            pkg.doChange = False
 
+        self._cache.tryChangeDetails(li)
         (to_inst, to_rm) = self._cache.getChangesList()
         if len(to_inst) == len(to_rm) == 0:
             self.close()
