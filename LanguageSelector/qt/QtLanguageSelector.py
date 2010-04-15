@@ -48,6 +48,9 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
         self.imSwitch = ImSwitch()
 
+        # remove dangling ImSwitch symlinks if present
+        self.imSwitch.removeDanglingSymlinks()
+
         self.mode = mode
         self.init()
         if mode == "uninstall":
@@ -300,7 +303,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                         else:
                             pkg.doChange = False
 
-        self._cache.tryChangeDetails(li)
+            self._cache.tryChangeDetails(li)
         (to_inst, to_rm) = self._cache.getChangesList()
         if len(to_inst) == len(to_rm) == 0:
             self.close()

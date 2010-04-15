@@ -1,3 +1,17 @@
+language-selector (0.5.5) lucid; urgency=low
+
+  * QtLanguageSelector.py: fix crash when no language is selected
+    in the install window (LP: #553729)
+  * LanguageSelector.py: if gdm is running, write the user LANG setting
+    to ~/.dmrc and /var/cache/gdm/$USER/dmrc (LP: #553162)
+  * updated translations from launchpad
+  * remove dangling ImSwitch symlinks on startup (LP: #500594)
+  * check for write permission on ~/.profile (LP: #560881)
+  * check for read permission on /etc/default/locale and
+    /etc/environment (LP: #554617)
+
+ -- Arne Goetje <arne@ubuntu.com>  Thu, 15 Apr 2010 23:41:40 +0800
+
 language-selector (0.5.4) lucid; urgency=low
 
   * QtLanguageSelector.py: fix to not need to run language-selector

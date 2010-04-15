@@ -178,6 +178,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         self.imSwitch = ImSwitch()
         self._blockSignals = False
 
+        # remove dangling ImSwitch symlinks if present
+        self.imSwitch.removeDanglingSymlinks()
+
         # build the treeview
         self.setupLanguageTreeView()
         if self.is_admin:

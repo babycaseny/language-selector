@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
 import apt
 import apt_pkg
-import os.path
+import os
 import shutil
 import subprocess
 import thread
@@ -205,7 +205,8 @@ class LanguageSelectorBase(object):
         for fname in conffiles:
             out = tempfile.NamedTemporaryFile()        
             foundString = False
-            if os.path.exists(fname):
+            if os.path.exists(fname) and \
+               os.access(fname, R_OK):
                 # look for the line
                 for line in open(fname):
                     tmp = string.strip(line)
@@ -220,8 +221,52 @@ class LanguageSelectorBase(object):
             if sysLang or sysLanguage:
                 self.runAsRoot(["/bin/cp",out.name, fname])
             else:
+                if os.access(fname, W_OK):
+                    shutil.copy(out.name, fname)
+                    os.chmod(fname, 0644)
+
+        if userLang:
+            # Special handler for GDM
+            gdmscript = "/etc/init.d/gdm"
+            if os.path.exists("/var/run/gdm.pid") and os.path.exists(gdmscript):
+                fname = os.path.expanduser("~/.dmrc")
+                out = tempfile.NamedTemporaryFile()
+                foundLang = False      # the Language var
+                foundDesktop = False   # the [Desktop] entry
+                filebuffer = []
+                macr = macros.LangpackMacros(self._datadir, userLang)
+                if os.path.exists(fname):
+                    # look for the line
+                    for line in open(fname):
+                        tmp = string.strip(line)
+                        if len(tmp) > 0:
+                            filebuffer.append(tmp)
+                        if tmp == '[Desktop]':
+                            foundDesktop = True
+                        if tmp.startswith("Language="):
+                            foundLang = True
+                # if we have not found them add them
+                if foundDesktop == False:
+                    line="\n[Desktop]\n"
+                    out.write(line)
+                if foundLang == False:
+                    line="Language=%s\n" % macr["SYSLOCALE"]
+                    out.write(line)
+                for line in filebuffer:
+                    if line.startswith("Language="):
+                        line = "Language=%s\n" % macr["SYSLOCALE"]
+                    else:
+                        line = line+"\n"
+                    out.write(line)
+                out.flush()
                 shutil.copy(out.name, fname)
                 os.chmod(fname, 0644)
+                if 'USER' in os.environ:
+                    userid = os.environ["USER"]
+                    path = '/var/cache/gdm/%s' % userid
+                    if os.path.exists(path):
+                        shutil.copy(fname, "%s/dmrc" % path)
+                        os.chmod("%s/dmrc" % path, 0644)
 
         # now set the fontconfig-voodoo
         if sysLanguage:

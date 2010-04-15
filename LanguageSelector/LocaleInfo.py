@@ -6,7 +6,7 @@ import string
 import re            
 import subprocess
 import gettext
-import os.path
+import os
 import macros
 
 from gettext import gettext as _
@@ -263,7 +263,8 @@ class LocaleInfo(object):
         language = ''
         result = []
         for fname in self.environments:
-            if os.path.exists(fname):
+            if os.path.exists(fname) and \
+               os.access(fname, R_OK):
                 for line in open(fname):
                     # support both LANG="foo" and LANG=foo
                     if line.startswith("LANG"):

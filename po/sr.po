@@ -7,35 +7,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-23 18:01+0100\n"
-"PO-Revision-Date: 2009-09-20 22:51+0000\n"
-"Last-Translator: Данило Шеган <Unknown>\n"
+"POT-Creation-Date: 2010-03-26 15:13+0000\n"
+"PO-Revision-Date: 2010-04-09 20:05+0000\n"
+"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <sr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2010-04-15 02:12+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:45
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Кинески (поједностављен)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:47
+#: ../LanguageSelector/LocaleInfo.py:49
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Кинески (традиционални)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:216
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
 msgstr "Нису доступни подаци о језику"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:197
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:217
 #: ../LanguageSelector/qt/QtLanguageSelector.py:95
 msgid ""
 "The system does not have information about the available languages yet. Do "
@@ -44,23 +44,25 @@ msgstr ""
 "Систем још увек нема податке о доступним језицима. Желите ли да их довучете "
 "преко мреже? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:201
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:221
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
 msgstr "_Освежи"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
-#: ../data/LanguageSelector.ui.h:26
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:304
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:342
+#: ../data/LanguageSelector.ui.h:27
 msgid "Language"
 msgstr "Језик"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:291
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:311
 msgid "Installed"
 msgstr "Инсталирано"
 
 #. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:407
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:380
+#, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
 msgstr[0] "Инсталираће %(INSTALL)d"
@@ -68,23 +70,25 @@ msgstr[1] "Инсталираће %(INSTALL)d"
 msgstr[2] "Инсталираће %(INSTALL)d"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:409
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:382
+#, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
 msgstr[0] "а уклонити %(REMOVE)d пакет"
 msgstr[1] "а уклонити %(REMOVE)d пакета"
 msgstr[2] "а уклонити %(REMOVE)d пакета"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:418
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:528
 msgid "Could not install the selected language support"
 msgstr "Није могуће инсталирати подршку за одабрани језик"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:529
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -92,11 +96,11 @@ msgstr ""
 "Могућа грешка у овом програму. Молимо пошаљите извештај са грешком на "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:602
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
 msgid "Could not install the full language support"
 msgstr "Није могуће инсталирати пуну језичку подршку"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:603
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
@@ -106,48 +110,48 @@ msgstr ""
 "Администрација."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:642
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:591
 msgid "The list of available languages on the system has been updated."
 msgstr "Списак језика доступних на систему је освежен."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:725
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
 msgstr "Језичка подршка није потпуно инсталирана"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
 #: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"Део превода или помоћи при писању доступних за Ваш језик још није "
-"инсталиран. Да ли желите да их сада инсталирате?"
+"Неки преводи или помоћи у писаном облику доступних за ваш језик још нису "
+"инсталирани. Да ли желите да их сада инсталирате?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:729
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
 msgstr "_Подсети ме касније"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:669
 #: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "_Инсталирај"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:733
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:672
 msgid "Details"
 msgstr "Појединости"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:772
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
-#: ../check-language-support:80
+#: ../check-language-support:52
 msgid "Software database is broken"
 msgstr "База пакета је неисправна"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:773
-#: ../check-language-support:81
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:712
+#: ../check-language-support:53
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -176,8 +180,8 @@ msgid ""
 "this issue at first."
 msgstr ""
 "Немогуће је инсталирати или уклонити било какав софтвер. Користите управник "
-"пакетима „adept“ или покрените „sudo apt-get install -f“ у терминалу да прво "
-"средите овај проблем."
+"пакетима \"Adept\" или покрените „sudo apt-get install -f“ у терминалу да "
+"прво средите овај проблем."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
@@ -189,7 +193,7 @@ msgstr "Постави језик на систему"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
 msgid "Keyboard input method:"
-msgstr ""
+msgstr "Метод уноса тастатуре:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -199,7 +203,7 @@ msgstr "Одустани"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:119
 msgid "Select language to install:"
-msgstr "Одабери језик за инсталирање:"
+msgstr "Одаберите језик за инсталирање:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Install"
@@ -226,89 +230,98 @@ msgstr "Подразумевани језик на систему је сада 
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 msgid "Language Set"
-msgstr "Сет језика"
+msgstr "Поставке језика"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:314
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
-"Преводи и подршка за %s су инсталирани. Одабери их преко \"Додај језик\" "
+"Преводи и подршка за %s су инсталирани. Одаберите их преко \"Додај језик\" "
 "дугмета."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:314
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
 msgid "Language Installed"
 msgstr "Језик је инсталиран"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:316
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "Преводи и подршка за %s су уклоњени."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:316
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
 msgid "Language Uninstalled"
 msgstr "Језик је уклоњен"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:318
+#: ../LanguageSelector/qt/QtLanguageSelector.py:331
 msgid "Failed to set system language."
 msgstr "Поставка језика није успела."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:318
+#: ../LanguageSelector/qt/QtLanguageSelector.py:331
 msgid "Language Not Set"
 msgstr "Језик није постављен"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:367
+#: ../LanguageSelector/qt/QtLanguageSelector.py:380
 msgid "Please run this software with administrative rights."
 msgstr "Покрените овај програм са администраторским правима."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:367
+#: ../LanguageSelector/qt/QtLanguageSelector.py:380
 msgid "Not Root User"
 msgstr "Нисте администратор"
 
 #: ../data/LanguageSelector.ui.h:1
-msgid "1234567.89"
-msgstr ""
+msgid "<b>Example</b>"
+msgstr "<b>Пример</b>"
 
 #: ../data/LanguageSelector.ui.h:2
-msgid "<b>Example</b>"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:3
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
-"<big><b>Проверава за које језике је подршка доступна</b></big>\n"
+"<big><b>Провера за доступном језичком подршком</b></big>\n"
 "\n"
-"Доступност превода или помоћи за писање се разликује од језика до језика."
+"Доступност превода или помоћи у писаном облику се разликује од језика до "
+"језика."
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Промене ће бити доступне када се следећи пут пријавите на "
+"систем.</small>"
 
 #: ../data/LanguageSelector.ui.h:6
-msgid "<small>All changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Све промене ће узети маха када по следећој пријави на систем.</small>"
-
-#: ../data/LanguageSelector.ui.h:7
 msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Превуците језике да бисте их поређали по жељеном редоследу.\n"
+"Измене ступају на снагу када се пријавите следећи пут.</small>"
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Користити исти избор језика за екран покретања и пријављивања.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
 msgstr ""
+"<small>Користити исти формат текста за екран покретања и "
+"пријављивања.</small>"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
-"Допунски фонтови за овај језик који су од општег интереса, на пример украсни "
-"фонтови за штампање докумената."
+"Додатни фонтови за овај језик који могу бити од општег интереса, на пр. "
+"украсни фонтови за штампање докумената."
 
 #: ../data/LanguageSelector.ui.h:11
 msgid "Apply Changes"
@@ -316,85 +329,128 @@ msgstr "Примени измене"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Примени на Свеопшти-Систем..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
-msgstr "Одељци:"
+msgstr "Компоненте:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Валута:"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Датум:"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "Прикажи тотале бројева, датума и валуте у уобичајеном формату за:"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
 msgstr "Додатни фонтови"
 
 #: ../data/LanguageSelector.ui.h:19
-msgid "For everyone at startup and login, use:"
-msgstr "За свакога при покретању и пријави, користи:"
+msgid ""
+"If you need to type in languages, which require more complex input methods "
+"than just a simple key to letter mapping, you may want to enable this "
+"function.\n"
+"For example, you will need this function for typing Chinese, Japanese, "
+"Korean or Vietnamese.\n"
+"The recommended value for Ubuntu is \"ibus\".\n"
+"If you want to use alternative input method systems, install the "
+"corresponding packages first and then choose the desired system here."
+msgstr ""
+"Ако имате потребу да куцате на језицима, који захтевају сложеније начине "
+"уношења а не једноставне словне ознаке тастера, требали бисте да омогућите "
+"ову функцију.\n"
+"На пример, ова функција ће вам бити потребна да бисте куцали на кинеском, "
+"јапанском, кореанском или вијетнамском.\n"
+"Препоручена вредност за Убунту је \"ibus\".\n"
+"Ако желите да користите неки други начин уношења , инсталирајте одговарајуће "
+"пакете, а затим изаберите жељени систем овде."
 
-#: ../data/LanguageSelector.ui.h:20
-msgid "For my menus and windows, use:"
-msgstr "За моје меније и прозоре, користи:"
-
-#: ../data/LanguageSelector.ui.h:21
+#: ../data/LanguageSelector.ui.h:23
 msgid "Input methods"
 msgstr "Начини уноса"
 
-#: ../data/LanguageSelector.ui.h:22
+#: ../data/LanguageSelector.ui.h:24
 msgid "Install / Remove Languages..."
 msgstr "Инсталирај / Уклони језике..."
 
-#: ../data/LanguageSelector.ui.h:23
+#: ../data/LanguageSelector.ui.h:25
 msgid "Installed Languages"
 msgstr "Доступни језици"
 
-#: ../data/LanguageSelector.ui.h:24
-msgid "Keep the same"
-msgstr "Држи на истом"
-
-#: ../data/LanguageSelector.ui.h:25
+#: ../data/LanguageSelector.ui.h:26
 msgid "Keyboard input method system:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:27
-msgid "Language & Text"
-msgstr ""
+msgstr "Начин уноса тастатуре:"
 
 #: ../data/LanguageSelector.ui.h:28
-msgid "Language for menus and windows:"
-msgstr ""
+msgid "Language & Text"
+msgstr "Језик & Текст"
 
 #: ../data/LanguageSelector.ui.h:29
-msgid "Number:"
-msgstr ""
+msgid "Language for menus and windows:"
+msgstr "Језик за меније и прозоре"
 
 #: ../data/LanguageSelector.ui.h:30
+msgid "Number:"
+msgstr "Број:"
+
+#: ../data/LanguageSelector.ui.h:31
 msgid "Spellchecking and writing aids"
 msgstr "Провера и помоћ у писању"
 
-#: ../data/LanguageSelector.ui.h:31
-msgid "Text"
-msgstr ""
-
 #: ../data/LanguageSelector.ui.h:32
-msgid "Translations"
-msgstr ""
+msgid "Text"
+msgstr "Текст"
 
 #: ../data/LanguageSelector.ui.h:33
-msgid "Translations for your desktop."
+msgid ""
+"This setting only affects the language your desktop and applications are "
+"displayed in. It does not set the system environment, like currency or date "
+"format settings. For that, use the settings in the Text tab.\n"
+"The order of the values displayed here decides which translations to use for "
+"your desktop. If translations for the first language are not available, the "
+"next one in this list will be tried. The last entry of this list is always "
+"\"English\".\n"
+"Every entry below \"English\" will be ignored."
 msgstr ""
+"Ова подешавања утичу само на језик који користите за радну површ и "
+"апликације. Не врши подешавања системског окружења, као валуте или изабраног "
+"формата датума. За то, користите подешавања у Текст одељку.\n"
+"Редослед овде приказаних вредности одлучује који ће преводи бити коришћени "
+"за вашу радну површ. Ако преводи за први језик нису доступни, биће коришћен "
+"следећи са листе. Последњи члан ове листе је увек ''English''.\n"
+"Сваки други после ''English'' неће бити узет у обзир."
 
-#: ../data/LanguageSelector.ui.h:34
+#: ../data/LanguageSelector.ui.h:36
+msgid ""
+"This will set the system environment like shown below and will also affect "
+"the preferred paper format and other territory specific settings.\n"
+"If you want to display the desktop in a different language than this, please "
+"select it in the \"Language\" tab.\n"
+"Hence you should set this to a sensible value for the territory you are "
+"located in."
+msgstr ""
+"То ће подесити окружење система као што је показано и такође ће утицати на "
+"формат хартије и остала специфична територијална подешавања.\n"
+"Ако желите да прикажете радну површ користећи неки други језик, можете га "
+"изабрати у одељку за ''Језик''.\n"
+"Одатле бисте то требали да подесите на осетљиве вредности за територију у "
+"којој се налазите."
+
+#: ../data/LanguageSelector.ui.h:39
+msgid "Translations"
+msgstr "Преводи"
+
+#: ../data/LanguageSelector.ui.h:40
+msgid "Translations for your desktop."
+msgstr "Преводи за вашу радну површ."
+
+#: ../data/LanguageSelector.ui.h:41
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -402,7 +458,7 @@ msgstr ""
 "Када је језик инсталиран, сваки корисник га може одабрати у његовим језичким "
 "подешавањима."
 
-#: ../data/LanguageSelector.ui.h:35
+#: ../data/LanguageSelector.ui.h:42
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
@@ -430,10 +486,10 @@ msgstr "Непотпуна језичка подршка"
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
 "Чини се да су датотеке за подршку вашег језика непотпуне. Можете инсталирати "
 "оно што недостаје кликом на „Уради ово одмах“ и затим пратећи упутства. "
@@ -444,10 +500,10 @@ msgstr ""
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
 "Чини се да су датотеке за подршку вашег језика непотпуне. Можете инсталирати "
 "оно што недостаје кликом на „Уради ово одмах“ и затим пратећи упутства. "
@@ -468,7 +524,7 @@ msgstr "Нова подешавања језика ће узети маха по
 msgid "don't verify installed language support"
 msgstr "не проверавај инсталирану подршку за језик"
 
-#: ../gnome-language-selector:28 ../check-language-support:251
+#: ../gnome-language-selector:28 ../check-language-support:22
 msgid "alternative datadir"
 msgstr "алтернативни директоријум са подацима"
 
@@ -489,8 +545,8 @@ msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
-"Погоди језик на основу LANGUAGE променљиве окружења. Постави подешавање на "
-"'none' (ништа) ако одговарајуће не буде пронађено."
+"Погоди конфигурацију на основу ЈЕЗИЧКОГ окружења. Постави на 'нема' ако "
+"ништа одговарајуће није пронађено."
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
@@ -506,7 +562,7 @@ msgstr "Уклони текућа подешавања за fontconfig-voodoo"
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr "Није подешено"
+msgstr "Неподешено"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
@@ -516,52 +572,27 @@ msgstr "Подешавање већ постоји. Користи '--force' д�
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Нису пронађене fontconfig-voodoo поставке за одабрану локализацију"
 
-#: ../check-language-support:248
+#: ../check-language-support:19
 msgid "target language code"
-msgstr ""
+msgstr "код циљног језика"
 
-#: ../check-language-support:253
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr "провери само за задати(е) пакет(е) -- одвој зарезом имена пакета"
+
+#: ../check-language-support:25
 msgid "check all available languages"
-msgstr ""
+msgstr "провери све доступне језике"
 
-#: ../check-language-support:256
+#: ../check-language-support:28
 msgid "show installed packages as well as missing ones"
-msgstr ""
+msgstr "покажи инсталиране пакете али и оне који недостају"
 
-#~ msgid "Enable support to enter complex characters"
-#~ msgstr "Омогући подршку за унос сложених карактера"
+#~ msgid "For my menus and windows, use:"
+#~ msgstr "За моје меније и прозоре, користи:"
 
-#~ msgid ""
-#~ "Default system Language now set to %s.  Complex character input will be "
-#~ "enabled when you next log in."
-#~ msgstr ""
-#~ "Подразумевани језик на систему је сада подешен на %s. Подршка за унос "
-#~ "сложених карактера ће бити омогућена при наредној пријави."
+#~ msgid "For everyone at startup and login, use:"
+#~ msgstr "За свакога при покретању и пријави, користи:"
 
-#~ msgid "Extra translations"
-#~ msgstr "Додатни преводи"
-
-#~ msgid ""
-#~ "Additional software which might be of general interest for users using "
-#~ "this language."
-#~ msgstr ""
-#~ "Допунски програми који могу бити од општег интереса за кориснике овог "
-#~ "језика."
-
-#~ msgid "Extra software"
-#~ msgstr "Додатни програми"
-
-#~ msgid ""
-#~ "OpenOffice.org, Firefox, Thunderbird, Gaim Translations and help files."
-#~ msgstr ""
-#~ "OpenOffice.org, Firefox, Thunderbird, Gaim преводи и датотеке помоћи."
-
-#~ msgid ""
-#~ "Input Methods for languages with complex scripts. Scim modules or other "
-#~ "relevant software which helps with typing complex characters."
-#~ msgstr ""
-#~ "Начини уноса за језике који користе сложена писма. Scim модули и остали "
-#~ "наменски програми који помажу у уносу сложених знакова."
-
-#~ msgid "Use input method engines (IME) to enter complex characters"
-#~ msgstr "Користи механизме начина уноса (IME) за унос сложених знакова"
+#~ msgid "Keep the same"
+#~ msgstr "Држи на истом"

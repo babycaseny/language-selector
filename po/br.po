@@ -7,142 +7,157 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-23 18:01+0100\n"
-"PO-Revision-Date: 2009-09-08 17:24+0000\n"
+"POT-Creation-Date: 2010-03-26 15:13+0000\n"
+"PO-Revision-Date: 2010-03-27 01:56+0000\n"
 "Last-Translator: Oublieuse <oublieuse@gmail.com>\n"
 "Language-Team: Breton <br@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2009-10-17 13:52+0000\n"
+"X-Launchpad-Export-Date: 2010-04-15 02:12+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:45
+#: ../LanguageSelector/LocaleInfo.py:47
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "Sinaeg (eeunaet)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:47
+#: ../LanguageSelector/LocaleInfo.py:49
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "Sinaeg (hengounel)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:196
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:216
 #: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
-msgstr "N'eus ket titouroù yezh da vak"
+msgstr "N'eus ket titouroù yezh hegerz"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:197
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:217
 #: ../LanguageSelector/qt/QtLanguageSelector.py:95
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
-"N'eus ket ar sistem titouroù ebet war yezhoù da vak bremañ.C'hoant hoc'h eus "
-"d'ober un hizivaadur evit a-benn kaout anezho? "
+"Ar reizhiad n'en deus titour ebet diwar-benn ar yezhoù hegerz evit poent. Ha "
+"c'hoant ho peus da hizivaat evit kaout anezho bremañ ? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:201
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:221
 #: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
 msgstr "_Hizivaat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:284
-#: ../data/LanguageSelector.ui.h:26
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:304
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:342
+#: ../data/LanguageSelector.ui.h:27
 msgid "Language"
 msgstr "Yezh"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:291
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:311
 msgid "Installed"
 msgstr "Staliet"
 
 #. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:407
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:380
+#, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
 msgstr[0] "%(INSTALL)d da staliañ"
 msgstr[1] "%(INSTALL)d da staliañ"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:409
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:382
+#, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
 msgstr[0] "%(REMOVE)d da zilemel"
 msgstr[1] "%(REMOVE)d da zilemel"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:418
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:528
 msgid "Could not install the selected language support"
-msgstr "Dibosupl eo staliañ an harp yezhel diuzet"
+msgstr "Dibosupl eo staliañ ar skor yezhel diuzet"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:529
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
+"Se zo un draen eus an arload-mañ marteze. Leuniit un danevell draen (e "
+"saozneg) war https://bugs.launchpad.net/ubuntu/+source/language-"
+"selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:602
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
 msgid "Could not install the full language support"
-msgstr "Dibosupl eo staliañ an harp yezhel klok"
+msgstr "Dibosupl eo staliañ ar skor yezhel klok"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:603
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
 msgstr ""
+"Se zo liammet gant ur fazi en ho mirlec'hioù pe en ho merour pakadoù "
+"peurliesañ. Gwiriekait ho kefluniadur el lañser Reizhiad > Melestradur."
 
 #. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:642
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:591
 msgid "The list of available languages on the system has been updated."
-msgstr "Hizivaet eo bet roll ar yezhoù hegerz evit ar sistem."
+msgstr "Hizivaet eo bet roll ar yezhoù hegerz evit ar reizhiad."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:725
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
 #: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "The language support is not installed completely"
-msgstr "N'eo ket peurstaliet an harp yezhel"
+msgstr "N'eo ket peurstaliet ar skor yezhel"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:726
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
 #: ../LanguageSelector/qt/QtLanguageSelector.py:161
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
+"Un droidigezh pe skoazell bizskrivañ bennak hegerz evit ar yezh ho peus "
+"dibabet n'int ket staliet c'hoazh. Ha c'hoant ho peus da staliañ anezho "
+"bremañ ?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:729
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
 #: ../LanguageSelector/qt/QtLanguageSelector.py:90
 #: ../LanguageSelector/qt/QtLanguageSelector.py:156
 msgid "_Remind Me Later"
-msgstr ""
+msgstr "_En em lakaat da soñjal diwezhatoc'h"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:730
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:669
 #: ../LanguageSelector/qt/QtLanguageSelector.py:155
 msgid "_Install"
 msgstr "_Staliañ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:733
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:672
 msgid "Details"
 msgstr "Munudoù"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:772
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 #: ../LanguageSelector/qt/QtLanguageSelector.py:79
-#: ../check-language-support:80
+#: ../check-language-support:52
 msgid "Software database is broken"
-msgstr "Torr eo diaz-titouroù ar meziantoù"
+msgstr "Torret eo diaz-roadennoù ar meziantoù"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:773
-#: ../check-language-support:81
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:712
+#: ../check-language-support:53
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
+"N'haller ket staliañ pe zilemel meziantoù. Implijt ar \"merour pakadoù "
+"Synaptic\" da gentañ pe loc'hit \"sudo apt-get install -f\" en un termenell "
+"evit ratreañ ar gudenn."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:54
 msgid "Uninstall"
@@ -162,6 +177,9 @@ msgid ""
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
+"N'haller ket staliañ pe zilemel meziantoù. Implijt ar merour pakadoù "
+"\"Adept\" da gentañ pe loc'hit \"sudo apt-get install -f\" en un termenell "
+"evit ratreañ ar gudenn."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
@@ -169,11 +187,11 @@ msgstr "Yezh dre ziouer:"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Set System Language"
-msgstr ""
+msgstr "Termeniñ yezh ar reizhiad"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:117
 msgid "Keyboard input method:"
-msgstr ""
+msgstr "Doare bizskrivañ ar c'hlavier :"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:118
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
@@ -192,92 +210,105 @@ msgstr "Staliañ"
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:209
 msgid "Already installed"
-msgstr ""
+msgstr "Staliet endeo"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
-msgstr ""
+msgstr "Damstaliet"
 
 #. not sure how to unset all flags, but this disables the item
 #: ../LanguageSelector/qt/QtLanguageSelector.py:217
 msgid "Not installed"
-msgstr "Na-staliet"
+msgstr "N'eo ket staliet"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr "Bremañ eo %s ar yezh dre ziouer ar sistem."
+msgstr "Bremañ eo %s ar yezh dre ziouer ar reizhiad."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:261
 msgid "Language Set"
 msgstr "Yezh termenet"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:314
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
+"Troidigezhioù ha skoazell e %s zo staliet bremañ. Gallout a rit diuzañ ar "
+"yezh-se gant ar bouton \"Ouzhpenn ur yezh\"."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:314
+#: ../LanguageSelector/qt/QtLanguageSelector.py:327
 msgid "Language Installed"
 msgstr "Yezh staliet"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:316
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "Troidigezhioù ha skoazell e %s zo bet dilamet."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:316
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
 msgid "Language Uninstalled"
 msgstr "Yezh distaliet"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:318
+#: ../LanguageSelector/qt/QtLanguageSelector.py:331
 msgid "Failed to set system language."
-msgstr ""
+msgstr "Dibosupl eo da termeniñ yezh ar reizhiad."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:318
+#: ../LanguageSelector/qt/QtLanguageSelector.py:331
 msgid "Language Not Set"
-msgstr "Yezh na dermenet"
+msgstr "N'eo ket termenet ar yezh"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:367
+#: ../LanguageSelector/qt/QtLanguageSelector.py:380
 msgid "Please run this software with administrative rights."
-msgstr ""
+msgstr "Loc'hit ar goulev-mañ gant aotreoù an ardead mar plij."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:367
+#: ../LanguageSelector/qt/QtLanguageSelector.py:380
 msgid "Not Root User"
-msgstr "N'eo ket root an implijour"
+msgstr "An arveriad n'eo ket an ardead (root)"
 
 #: ../data/LanguageSelector.ui.h:1
-msgid "1234567.89"
-msgstr ""
+msgid "<b>Example</b>"
+msgstr "<b>Skouerenn</b>"
 
 #: ../data/LanguageSelector.ui.h:2
-msgid "<b>Example</b>"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:3
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
+"<big><b>O wiriekaat ar skor yezhel</b></big>\n"
+"\n"
+"Hegerzded an troidigezhioù pe skoazelloù bizskrivañ a c'hall bezañ disheñvel "
+"hervez ar yezhoù."
+
+#: ../data/LanguageSelector.ui.h:5
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:6
-msgid "<small>All changes take effect next time you log in.</small>"
-msgstr "<small>Cheñchamantoù a vo graet e-pad ar gevread nevez a zeu.</small>"
-
-#: ../data/LanguageSelector.ui.h:7
 msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Lakaat ar yezhoù da riklañ evit urzhiañ da gentañ an hini zo gwell "
+"ganeoc'h.\n"
+"Kemmoù a vo graet e-pad a gevread nevez a zeu.</small>"
+
+#: ../data/LanguageSelector.ui.h:8
+msgid ""
+"<small>Uses the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Implijout ar memes dibab yezh evit al loc'hañ hag ar skramm "
+"lugañ.</small>"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid ""
-"<small>Uses the same language choices for startup and the login screen.</"
-"small>"
+"<small>Uses the same text format choice for startup and the login "
+"screen.</small>"
 msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
@@ -285,14 +316,16 @@ msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
+"Nodrezhoù ouzhpenn evit ar yezh-mañ a c'hall bezañ dedennus, nodrezhoù "
+"kinklañ evit moullañ dielloù da skouer."
 
 #: ../data/LanguageSelector.ui.h:11
 msgid "Apply Changes"
-msgstr ""
+msgstr "Seveniñ kemmoù"
 
 #: ../data/LanguageSelector.ui.h:12
 msgid "Apply System-Wide..."
-msgstr ""
+msgstr "Seveniñ d'ar reizhiad a-bezh..."
 
 #: ../data/LanguageSelector.ui.h:14
 msgid "Components:"
@@ -300,195 +333,236 @@ msgstr "Parzhoù:"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Currency:"
-msgstr ""
+msgstr "Moneiz :"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid "Date:"
-msgstr ""
+msgstr "Deiziad :"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Display numbers, dates and currency amounts in the usual format for:"
 msgstr ""
+"Diskwel an niverennoù, deiziadoù ha moneizoù e mentrezh kustum evit :"
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Extra fonts"
-msgstr ""
+msgstr "Nodrezhoù ouzhpenn"
 
 #: ../data/LanguageSelector.ui.h:19
-msgid "For everyone at startup and login, use:"
+msgid ""
+"If you need to type in languages, which require more complex input methods "
+"than just a simple key to letter mapping, you may want to enable this "
+"function.\n"
+"For example, you will need this function for typing Chinese, Japanese, "
+"Korean or Vietnamese.\n"
+"The recommended value for Ubuntu is \"ibus\".\n"
+"If you want to use alternative input method systems, install the "
+"corresponding packages first and then choose the desired system here."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:20
-msgid "For my menus and windows, use:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:21
+#: ../data/LanguageSelector.ui.h:23
 msgid "Input methods"
-msgstr ""
+msgstr "Doareoù bizskrivañ"
 
-#: ../data/LanguageSelector.ui.h:22
+#: ../data/LanguageSelector.ui.h:24
 msgid "Install / Remove Languages..."
 msgstr "Staliañ / Distaliañ yezhoù..."
 
-#: ../data/LanguageSelector.ui.h:23
+#: ../data/LanguageSelector.ui.h:25
 msgid "Installed Languages"
 msgstr "Yezhoù staliet"
 
-#: ../data/LanguageSelector.ui.h:24
-msgid "Keep the same"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:25
+#: ../data/LanguageSelector.ui.h:26
 msgid "Keyboard input method system:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:27
-msgid "Language & Text"
-msgstr ""
+msgstr "Sistem doare bizskrivañ d'ar c'hlavier :"
 
 #: ../data/LanguageSelector.ui.h:28
-msgid "Language for menus and windows:"
-msgstr ""
+msgid "Language & Text"
+msgstr "Yezh ha testenn"
 
 #: ../data/LanguageSelector.ui.h:29
-msgid "Number:"
-msgstr ""
+msgid "Language for menus and windows:"
+msgstr "Yezh al lañserioù hag ar prenestroù :"
 
 #: ../data/LanguageSelector.ui.h:30
-msgid "Spellchecking and writing aids"
-msgstr ""
+msgid "Number:"
+msgstr "Niverenn :"
 
 #: ../data/LanguageSelector.ui.h:31
-msgid "Text"
-msgstr ""
+msgid "Spellchecking and writing aids"
+msgstr "Gwiriekaat reizhskrivadur ha skoazelloù skrivañ"
 
 #: ../data/LanguageSelector.ui.h:32
-msgid "Translations"
-msgstr ""
+msgid "Text"
+msgstr "Testenn"
 
 #: ../data/LanguageSelector.ui.h:33
-msgid "Translations for your desktop."
+msgid ""
+"This setting only affects the language your desktop and applications are "
+"displayed in. It does not set the system environment, like currency or date "
+"format settings. For that, use the settings in the Text tab.\n"
+"The order of the values displayed here decides which translations to use for "
+"your desktop. If translations for the first language are not available, the "
+"next one in this list will be tried. The last entry of this list is always "
+"\"English\".\n"
+"Every entry below \"English\" will be ignored."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:34
+#: ../data/LanguageSelector.ui.h:36
+msgid ""
+"This will set the system environment like shown below and will also affect "
+"the preferred paper format and other territory specific settings.\n"
+"If you want to display the desktop in a different language than this, please "
+"select it in the \"Language\" tab.\n"
+"Hence you should set this to a sensible value for the territory you are "
+"located in."
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:39
+msgid "Translations"
+msgstr "Troidigezhioù"
+
+#: ../data/LanguageSelector.ui.h:40
+msgid "Translations for your desktop."
+msgstr "Troidigezhioù evit ho endro burev."
+
+#: ../data/LanguageSelector.ui.h:41
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
+"Pa vez staliet ur yezh, an arveriaded a c'hall dibab anezhi en o arventennoù "
+"yezh."
 
-#: ../data/LanguageSelector.ui.h:35
+#: ../data/LanguageSelector.ui.h:42
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
 msgstr ""
+"Rolloù gerioù, geriadurioù, geriadurioù an heñvelsterioù, etc. a c'hall "
+"skoazell da vizskrivañ en ur usskediñ, reizhañ pe ginnig gerioù."
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
 msgid "Configure multiple and native language support on your system"
-msgstr ""
+msgstr "Kefluniañ yezh dre ziouer ar reizhiad hag ar yezhoù ouzhpenn"
 
 #: ../data/language-selector.desktop.in.h:2
 #: ../data/qt-language-selector.desktop.in.h:2
 msgid "Language Support"
-msgstr "Harp yezhel"
+msgstr "Skor yezhel"
 
 #. Name
 #: ..//data/incomplete-language-support-gnome.note.in:5
 #: ..//data/incomplete-language-support-qt.note.in:5
 msgid "Incomplete Language Support"
-msgstr ""
+msgstr "Skor ar yezh n'eo ket klok"
 
 #. Description
 #: ..//data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System -> "
-"Administration -> Language Support\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System -"
+"> Administration -> Language Support\" instead."
 msgstr ""
+"Restroù ar skor yezh evit ar yezh diuzet a seblant bezañ diglok. Gallout a "
+"rit staliañ ar parzhoù a vank en ur glikañ war \"Loc'hañ an ober-mañ "
+"bremañ\" ha grit diouzh ar c'hemennoù. Ret eo kaout ur c'hevreadur ouzh ar "
+"Genrouedad a ya en-dro. M'ho peus c'hoant hen ober diwezhatoc'h, implijit "
+"\"Reizhiad -> Melestradur -> Skor yezhel\" kentoc'h."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action now"
-"\" and follow the instructions. An active internet connection is required. "
-"If you would like to do this at a later time, please use \"System Settings -"
-"> Regional & Language\" instead."
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
 msgstr ""
+"Restroù ar skor yezh evit ar yezh diuzet a seblant bezañ diglok. Gallout a "
+"rit staliañ ar parzhoù a vank en ur glikañ war \"Loc'hañ an ober-mañ "
+"bremañ\" ha grit diouzh ar c'hemennoù. Ret eo kaout ur c'hevreadur ouzh ar "
+"Genrouedad a ya en-dro. M'ho pes c'hoant hen ober diwezhatoc'h, implijit "
+"\"Kefluniañ ar reizhiad -> Rannvro ha yezh\" kentoc'h."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "Ret eo adloc'hañ an estez"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
-msgstr ""
+msgstr "Arventennoù nevez ar yezh a vo sevenet goude bezañ diluget."
 
 #: ../gnome-language-selector:25
 msgid "don't verify installed language support"
-msgstr ""
+msgstr "chom hep gwiriekaat skor ar yezh staliet"
 
-#: ../gnome-language-selector:28 ../check-language-support:251
+#: ../gnome-language-selector:28 ../check-language-support:22
 msgid "alternative datadir"
-msgstr ""
+msgstr "Eil teuliad roadennoù"
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
-msgstr "Nulladur"
+msgstr "O nullañ"
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
-msgstr ""
+msgstr "Forsiñ memes pa'z eus ur c'hefluniadur a zo anezhañ endeo"
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
+msgstr "Termeniñ fontconfig-voodoo evit ar yezh diuzet"
 
 #: ../fontconfig-voodoo:32
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"Prizañ ur c'hefluniadur en ur diaezezañ war argemmus endro LANGUAGE. Se a "
+"dermen ar c'hefluniadur war \"netra\" ma n'eus netra a-feson kavet."
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
-msgstr ""
+msgstr "Rollañ ar c'hefluniadurioù fontconfig-voodoo hegerz"
 
 #: ../fontconfig-voodoo:40
 msgid "Show the current fontconfig-voodoo config"
-msgstr "Diskouez ar c'hefluniadur a-vremañ fontconfig-voodoo"
+msgstr "Diskouez ar c'hefluniadur fontconfig-voodoo a-vremañ"
 
 #: ../fontconfig-voodoo:43
 msgid "Remove the current fontconfig-voodoo config"
-msgstr "Dilemel ar c'hefluniadur a-vremañ fontconfig-voodoo"
+msgstr "Dilemel ar c'hefluniadur fontconfig-voodoo a-vremañ"
 
 #: ../fontconfig-voodoo:65
 msgid "Unconfigured"
-msgstr "Na gefluniet"
+msgstr "N'eo ket kefluniet"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
+"Ur c'hefluniadur zo anezhañ endeo. Implijet '--force' evit flastrañ anezhañ. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr ""
+msgstr "N'eus kefluniadur fontconfig-voodoo ebet kavet evit ar yezh dibabet"
 
-#: ../check-language-support:248
+#: ../check-language-support:19
 msgid "target language code"
+msgstr "Kod ar yezh dibabet"
+
+#: ../check-language-support:23
+msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 
-#: ../check-language-support:253
+#: ../check-language-support:25
 msgid "check all available languages"
-msgstr ""
+msgstr "gwiriekaat holl ar yezhoù hegerz"
 
-#: ../check-language-support:256
+#: ../check-language-support:28
 msgid "show installed packages as well as missing ones"
-msgstr ""
-
-#~ msgid "Extra software"
-#~ msgstr "Meziantoù ouzhpenn"
+msgstr "diskwel ar pakadoù staliet hag ar re a vank"

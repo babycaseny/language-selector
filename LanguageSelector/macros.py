@@ -64,8 +64,8 @@ class LangpackMacros:
         This uses information from maps/, config/, some hardcoded aggregate
         strings (such as package names), and some external input:
         
-        - locale: Standard locale representation (e. g. pt_BR.UTF-8)
-                  Format is: ll[_CC][.UTF-8][@variant]
+        - locale: Standard locale representation (e. g. pt_BR.utf8)
+                  Format is: ll[_CC][.utf8][@variant]
         '''
 
         self.LOCALE_TO_LANGPACK = os.path.join(datadir, 'data', 'locale2langpack')
@@ -73,7 +73,7 @@ class LangpackMacros:
         self['LCODE'] = ''      # the language code
         self['CCODE'] = ''      # the country code if present
         self['VARIANT'] = ''    # the part behind the @ if present
-        self['LOCALE'] = ''     # the locale with the .UTF-8 stripped off
+        self['LOCALE'] = ''     # the locale with the .utf8 stripped off
         self['PKGCODE'] = ''    # the language code used in the language-packs
         self['SYSLOCALE'] = ''  # a generated full locale identifier, e.g. ca_ES.UTF-8@valencia
         # 'C' and 'POSIX' are not supported as locales, fall back to 'en_US'
@@ -94,9 +94,9 @@ class LangpackMacros:
         # generate a SYSLOCALE from given components
         if len(self['LCODE']) > 0:
             if len(self['CCODE']) > 0:
-                self['SYSLOCALE'] = "%s_%s.UTF-8" % (self["LCODE"], self["CCODE"])
+                self['SYSLOCALE'] = "%s_%s.utf8" % (self["LCODE"], self["CCODE"])
             else:
-                self['SYSLOCALE'] = "%s.UTF-8" % self['LCODE']
+                self['SYSLOCALE'] = "%s.utf8" % self['LCODE']
             if len(self['VARIANT']) > 0:
                 self['SYSLOCALE'] = "%s@%s" % (self['SYSLOCALE'], self['VARIANT'])
 

@@ -4,7 +4,7 @@
 #
 
 from LocaleInfo import LocaleInfo
-import os.path
+import os
 import sys
 import subprocess
 
@@ -23,6 +23,13 @@ class ImSwitch(object):
     def available(self):
         " return True if im-switch is available at all "
         return os.path.exists(self.bin)
+
+    def removeDanglingSymlinks(self):
+        for dir in (self.local_confdir, self.global_confdir):
+            if os.path.exists(dir):
+                for dentry in os.listdir(dir):
+                    if not os.path.exists("%s/%s" % (dir, dentry)):
+                        os.unlink("%s/%s" % (dir, dentry))
     
     def enabledForLocale(self, locale):
         " check if we have a config for this specifc locale (e.g. ja_JP) "
