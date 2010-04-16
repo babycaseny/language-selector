@@ -206,7 +206,7 @@ class LanguageSelectorBase(object):
             out = tempfile.NamedTemporaryFile()        
             foundString = False
             if os.path.exists(fname) and \
-               os.access(fname, R_OK):
+               os.access(fname, os.R_OK):
                 # look for the line
                 for line in open(fname):
                     tmp = string.strip(line)
@@ -221,7 +221,7 @@ class LanguageSelectorBase(object):
             if sysLang or sysLanguage:
                 self.runAsRoot(["/bin/cp",out.name, fname])
             else:
-                if os.access(fname, W_OK):
+                if os.access(fname, os.W_OK):
                     shutil.copy(out.name, fname)
                     os.chmod(fname, 0644)
 

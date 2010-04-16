@@ -1,3 +1,10 @@
+language-selector (0.5.6) lucid; urgency=low
+
+  * bugfix: use os.R_OK and os.W_OK to check file permissions.
+    (LP: #564317)
+
+ -- Arne Goetje <arne@ubuntu.com>  Fri, 16 Apr 2010 14:39:58 +0800
+
 language-selector (0.5.5) lucid; urgency=low
 
   * QtLanguageSelector.py: fix crash when no language is selected

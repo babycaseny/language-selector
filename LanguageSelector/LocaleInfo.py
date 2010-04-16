@@ -264,7 +264,7 @@ class LocaleInfo(object):
         result = []
         for fname in self.environments:
             if os.path.exists(fname) and \
-               os.access(fname, R_OK):
+               os.access(fname, os.R_OK):
                 for line in open(fname):
                     # support both LANG="foo" and LANG=foo
                     if line.startswith("LANG"):
