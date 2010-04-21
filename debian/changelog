@@ -1,3 +1,17 @@
+language-selector (0.5.7) lucid; urgency=low
+
+  * Change fontconfig settings:
+    - zh-*: reorder font priority lists, put DejaVu and Bitstream Vera in front
+    (LP: #149944)
+    - zh-*: add WenQuanYi Microhei, Droid Sans Fallback and HYSong
+    - ja: add entries for Takao and IPA fonts, reorder and merge
+    required rendering options from the 29-language-selector-ja-jp.conf file
+    (LP: #535582)
+    - update 30-cjk-aliases.conf to include localized font names and fonts used
+    in Windows 7.
+
+ -- Arne Goetje <arne@ubuntu.com>  Wed, 21 Apr 2010 17:49:18 +0200
+
 language-selector (0.5.6) lucid; urgency=low
 
   * bugfix: use os.R_OK and os.W_OK to check file permissions.
