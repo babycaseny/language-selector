@@ -7,8 +7,10 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
 
     def __init__(self, datadir, cache=None):
         LanguageSelectorBase.__init__(self, datadir)
-        if cache is None: self._cache = apt.Cache()
-        else: self._cache = cache
+        if cache is None: 
+            self._cache = apt.Cache()
+        else: 
+            self._cache = cache
         self._localeinfo = LocaleInfo("languagelist", datadir)
         self.BLACKLIST = os.path.join(datadir, 'data', 'blacklist')
         self.LANGCODE_TO_LOCALE = os.path.join(datadir, 'data', 'langcode2locale')
@@ -145,6 +147,7 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
         self.pkg_writing = {}
         filter_list = {}
         blacklist = []
+        show = []
         self.missing = set()
         self.installed = set()
         self.system_pkgcode = ''
@@ -310,8 +313,8 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
             show = self.missing | self.installed
         else:
             show = self.missing
-        if show:
-            return show
+
+        return show
 
 if __name__ == "__main__":
         cl = CheckLanguageSupport(".")

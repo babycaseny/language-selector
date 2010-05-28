@@ -12,29 +12,34 @@ from xml.etree.ElementTree import ElementTree
 from gettext import gettext as _
 
 class LanguagePackageStatus(object):
-    def __init__(self, pkg_template):
+    def __init__(self, languageCode, pkg_template):
+        self.languageCode = languageCode
         self.pkgname_template = pkg_template
         self.available = False
         self.installed = False
         self.doChange = False
 
-
 # the language-support information
 class LanguageInformation(object):
-    def __init__(self):
+    def __init__(self, cache, languageCode=None, language=None):
         #FIXME:
         #needs a new structure:
         #languagePkgList[LANGCODE][tr|fn|in|wa]=[packages available for that language in that category]
         #@property for each category
         #@property for each LANGCODE
-        self.language = None
-        self.languageCode = None
+        self.languageCode = languageCode
+        self.language = language
         # langPack/support status 
         self.languagePkgList = {}
-        self.languagePkgList["languagePack"] = LanguagePackageStatus("language-pack-%s")
-        self.languagePkgList["languageSupportWritingAids"] = LanguagePackageStatus("language-support-writing-%s")
-        self.languagePkgList["languageSupportInputMethods"] = LanguagePackageStatus("language-support-input-%s")
-        self.languagePkgList["languageSupportFonts"] = LanguagePackageStatus("language-support-fonts-%s")
+        self.languagePkgList["languagePack"] = LanguagePackageStatus(languageCode, "language-pack-%s")
+        self.languagePkgList["languageSupportWritingAids"] = LanguagePackageStatus(languageCode, "language-support-writing-%s")
+        self.languagePkgList["languageSupportInputMethods"] = LanguagePackageStatus(languageCode, "language-support-input-%s")
+        self.languagePkgList["languageSupportFonts"] = LanguagePackageStatus(languageCode, "language-support-fonts-%s")
+        for langpkg_status in self.languagePkgList.itervalues():
+            pkgname = langpkg_status.pkgname_template % languageCode
+            langpkg_status.available = pkgname in cache
+            if langpkg_status.available:
+                langpkg_status.installed = cache[pkgname].isInstalled
         
     @property
     def inconsistent(self):
@@ -200,6 +205,14 @@ class LanguageSelectorPkgCache(apt.Cache):
     def clear(self):
         """ clear the selections """
         self._depcache.Init()
+
+    def verify_no_unexpected_changes(self):
+        (to_inst, to_rm) = self.getChangesList()
+        # FIXME for Arne (20100527): 
+        #   add code that tests if the to_rm list contains
+        #   only stuff that we expect
+        #....
+        return True
         
     def getChangesList(self):
         to_inst = []
@@ -227,20 +240,31 @@ class LanguageSelectorPkgCache(apt.Cache):
     def tryChangeDetails(self, li):
         " change the status of the support details (fonts, input methods) "
         #print li
-        for item in li.languagePkgList.values():
+        # we iterate over items of type LanguagePackageStatus
+        for (key, item) in li.languagePkgList.iteritems():
             if item.doChange:
+                #print "doChange for", li
                 try:
+                    pkgname = item.pkgname_template % li.languageCode
                     if item.installed:
-                        self[item.pkgname_template % li.languageCode].markDelete()
+                        self[pkgname].markDelete()
                     else:
-                        self[item.pkgname_template % li.languageCode].markInstall()
+                        self[pkgname].markInstall()
+                    # FIXME: this sucks a bit but is better what we
+                    #        had before. ideally this would be part
+                    #        LanguagePackageInformation or somesuch
+                    if key == "languagePack":
+                        self._mark_additional_translation_packages(item)
+                    if key == "languageSupportWritingAids":
+                        self._mark_additional_writing_aids(item)
                 except SystemError:
-                    pass
-        # Check for additional translation packages
-        item = li.languagePkgList["languagePack"]
-        if ((item.installed and not item.doChange) or (item.available and not item.installed and item.doChange)):
-            if li.languageCode in self.pkg_translations:
-                for (pkg, translation) in self.pkg_translations[li.languageCode]:
+                    raise ExceptionPkgCacheBroken()
+
+    def _mark_additional_translation_packages(self, lang_pack_status):
+        if not lang_pack_status.languageCode in self.pkg_translations:
+            return
+        if lang_pack_status.available and not lang_pack_status.installed:
+                for (pkg, translation) in self.pkg_translations[lang_pack_status.languageCode]:
                     if pkg in self and \
                        (self[pkg].isInstalled or \
                        self[pkg].markedInstall or \
@@ -252,9 +276,8 @@ class LanguageSelectorPkgCache(apt.Cache):
                        self[translation].markedDelete):
                         self[translation].markInstall()
                         #print ("Will pull: %s" % translation)
-        elif ((not item.installed and not item.doChange) or (item.installed and item.doChange)) :
-            if li.languageCode in self.pkg_translations:
-                for (pkg, translation) in self.pkg_translations[li.languageCode]:
+        elif lang_pack_status.installed:
+                for (pkg, translation) in self.pkg_translations[lang_pack_status.languageCode]:
                     if translation in self and \
                        (self[translation].isInstalled or \
                        self[translation].markedInstall or \
@@ -262,11 +285,11 @@ class LanguageSelectorPkgCache(apt.Cache):
                            self[translation].markDelete()
                            #print ("Will remove: %s" % translation)
 
-        # Check for additional writing aids packages
-        item = li.languagePkgList["languageSupportWritingAids"]
-        if ((item.installed and not item.doChange) or (item.available and not item.installed and item.doChange)):
-            if li.languageCode in self.pkg_writing:
-                for (pkg, pull_pkg) in self.pkg_writing[li.languageCode]:
+    def _mark_additional_writing_aids(self, writing_aid_status):
+        if not writing_aid_status.languageCode in self.pkg_writing:
+            return
+        if writing_aid_status.available and not writing_aid_status.installed:
+                for (pkg, pull_pkg) in self.pkg_writing[writing_aid_status.languageCode]:
                     if not pull_pkg in self:
                         continue
                     if '|' in pkg:
@@ -293,9 +316,8 @@ class LanguageSelectorPkgCache(apt.Cache):
                            self[pull_pkg].markedDelete):
                             self[pull_pkg].markInstall()
                             #print ("Will pull: %s" % pull_pkg)
-        elif ((not item.installed and not item.doChange) or (item.installed and item.doChange)) :
-            if li.languageCode in self.pkg_writing:
-                for (pkg, pull_pkg) in self.pkg_writing[li.languageCode]:
+        elif writing_aid_status.installed and writing_aid_status.doChange:
+                for (pkg, pull_pkg) in self.pkg_writing[writing_aid_status.languageCode]:
                     if not pull_pkg in self:
                         continue
                     lcount = 0
@@ -327,18 +349,13 @@ class LanguageSelectorPkgCache(apt.Cache):
                         self[pull_pkg].markedUpgrade):
                         self[pull_pkg].markDelete()
                         #print ("Will remove: %s" % pull_pkg)
-        return
+
 
     def tryInstallLanguage(self, languageCode):
         """ mark the given language for install """
         to_inst = []
         for name in self._getPkgList(languageCode):
             if name in self:
-                try:
-                    self[name].markInstall()
-                    to_inst.append(name)
-                except SystemError:
-                    pass
                 try:
                     self[name].markInstall()
                     to_inst.append(name)
@@ -360,19 +377,13 @@ class LanguageSelectorPkgCache(apt.Cache):
     def getLanguageInformation(self):
         """ returns a list with language packs/support packages """
         res = []
-        for (code,lang) in self._localeinfo._lang.items():
+        for (code, lang) in self._localeinfo._lang.items():
             if code == 'zh':
                 continue
-            li = LanguageInformation()
-            li.languageCode = code
-            li.language = lang
-            for langpkg_status in li.languagePkgList.values() :
-                pkgname = langpkg_status.pkgname_template % code
-                langpkg_status.available = pkgname in self
-                if langpkg_status.available:
-                    langpkg_status.installed = self[pkgname].isInstalled
-            if len(filter(lambda s: s.available, li.languagePkgList.values())) > 0:
+            li = LanguageInformation(self, code, lang)
+            if [s for s in li.languagePkgList.itervalues() if s.available]:
                 res.append(li)
+
         return res
 
 

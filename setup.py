@@ -17,6 +17,7 @@ if sys.argv[1] == "build":
     assert(os.system("cd data; make") == 0)
     assert(os.system("cd LanguageSelector/qt; make") == 0)
     assert(os.system("cd po; make update-po") == 0)
+    assert(os.system("cd dbus_backend; make") == 0)
     
 setup(name='language-selector',
       version='0.1',
@@ -39,6 +40,16 @@ setup(name='language-selector',
                     "data/LanguageSelector.ui"]),
                   ('share/applications',
                    glob.glob("data/*.desktop")),
+                  # dbus stuff
+                  ('share/dbus-1/system-services',
+                   ['dbus_backend/com.ubuntu.LanguageSelector.service']),
+                  ('../etc/dbus-1/system.d/',
+                   ["dbus_backend/com.ubuntu.LanguageSelector.conf"]),
+                  ('lib/language-selector/',
+                   ["dbus_backend/ls-dbus-backend"]),
+                  ('share/polkit-1/actions/',
+                   ["dbus_backend/com.ubuntu.languageselector.policy"]),
+                  # pretty pictures
                   ('share/pixmaps',
                    ["data/language-selector.png"]),
                   ]+I18NFILES,

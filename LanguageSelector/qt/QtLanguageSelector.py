@@ -84,7 +84,8 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                   "Please use the package manager \"Adept\" or run "
                   "\"sudo apt-get install -f\" in a terminal to fix "
                   "this issue at first.")
-            KMessageBox.Error(self, t, s)
+            KMessageBox.error(self, t, s)
+            sys.exit(1)
         self.updateLanguagesList()
         self.updateSystemDefaultListbox()
 
@@ -259,7 +260,8 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
     def onSystemPushButtonOk(self):
         (lang, code) = self.getSystemLanguage()
-        self.writeLanguageSettings(sysLanguage=code, sysLang=code)
+        self.writeSysLanguageSetting(code)
+        self.writeSysLangSetting(code)
         self.updateInputMethods(code)
         KMessageBox.information(self, _("Default system Language now set to %s.") % lang, _("Language Set"))
         self.close()
@@ -302,8 +304,17 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                             pkg.doChange = True
                         else:
                             pkg.doChange = False
+            try:
+                self._cache.tryChangeDetails(li)
+            except ExceptionPkgCacheBroken:
+                s = _("Software database is broken")
+                t = _("It is impossible to install or remove any software. "
+                      "Please use the package manager \"Adept\" or run "
+                      "\"sudo apt-get install -f\" in a terminal to fix "
+                      "this issue at first.")
+                KMessageBox.error(self, t, s)
+                sys.exit(1)
 
-            self._cache.tryChangeDetails(li)
         (to_inst, to_rm) = self._cache.getChangesList()
         if len(to_inst) == len(to_rm) == 0:
             self.close()

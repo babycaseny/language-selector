@@ -3,6 +3,13 @@
 #
 # Released under the GPL
 #
+import apt
+import apt_pkg
+
+import aptdaemon.client
+from aptdaemon.enums import *
+from aptdaemon.gtkwidgets import AptErrorDialog, \
+                                 AptProgressDialog
 
 import pygtk
 pygtk.require('2.0')
@@ -10,27 +17,29 @@ import gtk
 import gtk.gdk
 import pango
 import gobject
-import os.path
-import string
-import warnings
-warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
-import apt
-import apt_pkg
-import os.path
+
+import gettext
+import grp
+import locale
+import os
+import pwd
+
 import shutil
+import string
 import subprocess
+import sys
+
 import thread
 import time
-import gettext
-import sys
 import tempfile
-import pwd
-import grp
-import os
-import locale
 
 from gettext import gettext as _
 
+from LanguageSelector.gtk.SimpleGtkbuilderApp import SimpleGtkbuilderApp
+from LanguageSelector.LocaleInfo import LocaleInfo
+from LanguageSelector.LanguageSelector import *
+from LanguageSelector.ImSwitch import ImSwitch
+from LanguageSelector.macros import *
  
 (LIST_LANG,                     # language (i18n/human-readable)
  LIST_LANG_INFO                 # the short country code (e.g. de, pt_BR)
@@ -45,11 +54,6 @@ from gettext import gettext as _
 (IM_CHOICE,
  IM_NAME) = range(2)
 
-from LanguageSelector.gtk.SimpleGtkbuilderApp import SimpleGtkbuilderApp
-from LanguageSelector.LocaleInfo import LocaleInfo
-from LanguageSelector.LanguageSelector import *
-from LanguageSelector.ImSwitch import ImSwitch
-from LanguageSelector.macros import *
 
 def xor(a,b):
     " helper to simplify the reading "
@@ -169,6 +173,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
 #        self.combo_userlang_dirty = False
         self.options = options
 
+        # get aptdaemon client
+        self.ac = aptdaemon.client.AptClient()
+
         combo = self.combobox_input_method
         model = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
         cell = gtk.CellRendererText()
@@ -247,15 +254,6 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             self.window_main.window.set_cursor(gtk.gdk.Cursor(gtk.gdk.WATCH))
         while gtk.events_pending():
             gtk.main_iteration()
-
-    def runAsRoot(self, userCmd):
-        " run the given command as root using gksu "
-        cmd = ["/usr/bin/gksu", 
-               "--desktop", 
-               "/usr/share/applications/language-selector.desktop", 
-               "--"]
-        ret = subprocess.call(cmd+userCmd)
-        return (ret == 0)
 
 #    @blockSignals
 #    def updateSyncButton(self):
@@ -499,12 +497,38 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
 #            self.updateSystemDefaultCombo()
         
     def build_commit_lists(self):
-        for (lang, langInfo) in self._langlist:
-            self._cache.tryChangeDetails(langInfo)
+        print self._cache.getChanges()
+
+        try:
+            for (lang, langInfo) in self._langlist:
+                self._cache.tryChangeDetails(langInfo)
+        except ExceptionPkgCacheBroken:
+            self.error(
+                _("Software database is broken"),
+                _("It is impossible to install or remove any software. "
+                  "Please use the package manager \"Synaptic\" or run "
+                  "\"sudo apt-get install -f\" in a terminal to fix "
+                  "this issue at first."))
+            sys.exit(1)
         (to_inst, to_rm) = self._cache.getChangesList()
         #print "inst: %s" % to_inst
         #print "rm: %s" % to_rm
+        print self._cache.getChanges()
         return (to_inst, to_rm)
+
+    def error(self, summary, msg):
+        d = gtk.MessageDialog(parent=self.window_main,
+                              flags=gtk.DIALOG_MODAL,
+                              type=gtk.MESSAGE_ERROR,
+                              buttons=gtk.BUTTONS_CLOSE)
+        d.set_markup("<big><b>%s</b></big>\n\n%s" % (summary, msg))
+        d.set_title=("")
+        res = d.run()
+        d.destroy()
+
+    def _show_error_dialog(self, error):
+        msg = str(error)
+        self.error(msg, "")
 
     def verify_commit_lists(self, inst_list, rm_list):
         """ verify if the selected package can actually be installed """
@@ -519,22 +543,18 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         except SystemError:
             res = False
 
+        # check if we don't have unexpected changes
+        if not self._cache.verify_no_unexpected_changes():
+            return False
+
         # undo the selections
         self._cache.clear()
         if self._cache._depcache.BrokenCount != 0:
-            # undoing the selections was impossible, 
-            d = gtk.MessageDialog(parent=self.window_main,
-                                  flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_ERROR,
-                                  buttons=gtk.BUTTONS_CLOSE)
-            d.set_markup("<big><b>%s</b></big>\n\n%s" % (
-                _("Could not install the selected language support"),
-                _("This is perhaps a bug of this application. Please "
-                  "file a bug report at "
-                  "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug")))
-            d.set_title=("")
-            res = d.run()
-            d.destroy()
+            self.error(_("Could not install the selected language support"),
+                       _("This is perhaps a bug of this application. Please "
+                         "file a bug report at "
+                         "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"))
+
             # something went pretty bad, re-get a cache
             progress = GtkProgress(self.dialog_progress,
                                    self.progressbar_cache,
@@ -554,98 +574,46 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         # install the new packages (if any)
         (inst_list, rm_list) = self.build_commit_lists()
         if not self.verify_commit_lists(inst_list, rm_list):
-            d = gtk.MessageDialog(parent=self.window_main,
-                                  flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_ERROR,
-                                  buttons=gtk.BUTTONS_CLOSE)
-            d.set_markup("<big><b>%s</b></big>\n\n%s" % (
+            self.error(
                 _("Could not install the full language support"),
                 _("Usually this is related to an error in your "
                   "software archive or software manager. Check your "
-                  "software preferences in the System > Administration menu.")))
-            d.set_title("")
-            d.run()
-            d.destroy()
+                  "software preferences in the System > Administration menu."))
             self.setSensitive(True)
             return 0
         #print "inst_list: %s " % inst_list
         #print "rm_list: %s " % rm_list
         self.commit(inst_list, rm_list)
 
-        # write input method config
-        #self.writeInputMethodConfig()
-
-        # write the system default language
-        if self.writeSystemDefaultLang():
-            # queue a restart of gdm (if it is runing) to make the new
-            # locales usable
-            gdmscript = "/etc/init.d/gdm"
-            if os.path.exists("/var/run/gdm.pid") and os.path.exists(gdmscript):
-                self.runAsRoot(["invoke-rc.d","gdm","reload"])
         self.setSensitive(True)
         return len(inst_list)+len(rm_list)
 
-#    def on_button_ok_clicked(self, widget):
-#        self.commitAllChanges()
-#        gtk.main_quit()
+    
+    def _run_transaction(self, transaction):
+        dia = AptProgressDialog(transaction, parent=self.window_main)
+        dia.run(close_on_finished=True, show_error=True,
+                reply_handler=lambda: True, error_handler=self._show_error_dialog)
 
-    def _run_synaptic(self, lock, inst, rm, id):
-        # FIXME: use self.runAsRoot() here
-        msg = _("The list of available languages on the "
-                "system has been updated.")
-        msg = msg.replace("'","\\'")
-        cmd = ["gksu", 
-               "--desktop", "/usr/share/applications/language-selector.desktop", 
-               "--",
-               "/usr/sbin/synaptic", "--hide-main-window",
-               "--non-interactive", 
-               "--parent-window-id", "%s" % (id),
-               "--finish-str", msg
-               ]
-        f = tempfile.NamedTemporaryFile()        
-        cmd.append("--set-selections-file")
-        cmd.append(f.name)
-        for s in inst:
-            f.write("%s\tinstall\n" % s)
-        for s in rm:
-            f.write("%s\tdeinstall\n" % s)
-        f.flush()
-        subprocess.call(cmd)
-        lock.release()
+    def update_aptdaemon(self):
+        try:
+            trans = self.ac.update_cache()
+            self._run_transaction(trans)
+        except Exception, e:
+            self._show_error_dialog(e)
 
-    def _run_synaptic_update(self, lock, id):
-        cmd = ["gksu", 
-               "--desktop", "/usr/share/applications/language-selector.desktop", 
-               "--",
-               "/usr/sbin/synaptic", "--hide-main-window",
-               "--parent-window-id", "%s" % (id),
-               "--non-interactive", "--update-at-startup"
-               ]
-        subprocess.call(cmd)
-        lock.release()
-
-    def update(self):
-        " update the package lists via synaptic "
-        lock = thread.allocate_lock()
-        lock.acquire()
-        t = thread.start_new_thread(self._run_synaptic_update,(lock, self.window_main.window.xid))
-        while lock.locked():
-            while gtk.events_pending():
-                gtk.main_iteration()
-            time.sleep(0.05)
-
-    def commit(self, inst, rm):
-        # unlock here to make sure that lock/unlock are always run
-        # pair-wise (and don't explode on errors)
+    def commit_aptdaemon(self, inst, rm):
         if len(inst) == 0 and len(rm) == 0:
             return
-        lock = thread.allocate_lock()
-        lock.acquire()
-        t = thread.start_new_thread(self._run_synaptic,(lock,inst,rm, self.window_main.window.xid))
-        while lock.locked():
-            while gtk.events_pending():
-                gtk.main_iteration()
-            time.sleep(0.05)
+        try:
+            trans = self.ac.commit_packages(install=inst, reinstall=[],
+                                            remove=rm, purge=[], upgrade=[])
+            self._run_transaction(trans)
+        except Exception, e:
+            self._show_error_dialog(e)
+
+    # we default with update/commit to aptdaemon
+    update = update_aptdaemon
+    commit = commit_aptdaemon
 
     def hide_on_delete(self, widget, event):
         return gtk.Widget.hide_on_delete(widget)
@@ -706,19 +674,12 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             self.openCache(progress)
             progress.hide()
         except ExceptionPkgCacheBroken:
-            d = gtk.MessageDialog(parent=self.window_main,
-                                  flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_ERROR,
-                                  buttons=gtk.BUTTONS_CLOSE)
-            d.set_markup("<big><b>%s</b></big>\n\n%s" % (
+            self.error(
                 _("Software database is broken"),
                 _("It is impossible to install or remove any software. "
                   "Please use the package manager \"Synaptic\" or run "
                   "\"sudo apt-get install -f\" in a terminal to fix "
-                  "this issue at first.")))
-            d.set_title("")
-            d.run()
-            d.destroy()
+                  "this issue at first."))
             sys.exit(1)
 
         languageList = self._cache.getLanguageInformation()
@@ -747,14 +708,14 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         combo = self.combobox_locale_chooser
         model = combo.get_model()
         if combo.get_active() < 0:
-            return
+            return False
         (lang, code) = model[combo.get_active()]
         old_code = self._localeinfo.getSystemDefaultLanguage()[0]
         # no changes, nothing to do
         macr = macros.LangpackMacros(self._datadir, old_code)
         if macr["LOCALE"] == code:
             return False
-        self.writeLanguageSettings(sysLang=code)
+        self.writeSysLangSetting(sysLang=code)
         return True
 
     def writeUserDefaultLang(self):
@@ -772,7 +733,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         macr = macros.LangpackMacros(self._datadir, old_code)
         if macr["LOCALE"] == code:
             return False
-        self.writeLanguageSettings(userLang=code)
+        self.writeUserLangSetting(userLang=code)
         return True
 
     def writeSystemLanguage(self, languageString):
@@ -780,7 +741,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         # no changes, nothing to do
         if old_string == languageString:
             return False
-        self.writeLanguageSettings(sysLanguage=languageString)
+        self.writeSysLanguageSetting(sysLanguage=languageString)
         return True
 
     def writeUserLanguage(self, languageString):
@@ -792,7 +753,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         # no changes, nothing to do
         if old_string == languageString:
             return False
-        self.writeLanguageSettings(userLanguage=languageString)
+        self.writeUserLanguageSetting(userLanguage=languageString)
         return True
 
     @blockSignals

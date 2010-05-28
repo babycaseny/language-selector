@@ -2,7 +2,9 @@
 
 set -e
 
-for p in *.py; do
+for p in test_*.py; do
     echo "Running: $p"
-    python $p
+    PYTHONPATH=.. python $p
 done
+
+find ./test-data/var/lib/apt/ -type f | xargs rm -f
