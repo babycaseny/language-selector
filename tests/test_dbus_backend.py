@@ -16,10 +16,10 @@ dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
 class TestDbusBackend(unittest.TestCase):
 
     def setUp(self):
-        apt_pkg.Config.Set("Dir::State::lists","./test-data/var/lib/apt/lists.cl")
-        apt_pkg.Config.Set("Dir::State::status","./test-data/var/lib/dpkg/status")
-        apt_pkg.Config.Set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.cl")
-        apt_pkg.Config.Set("Dir::Etc::SourceParts","x")
+        apt_pkg.Config.set("Dir::State::lists","./test-data/var/lib/apt/lists.cl")
+        apt_pkg.Config.set("Dir::State::status","./test-data/var/lib/dpkg/status")
+        apt_pkg.Config.set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.cl")
+        apt_pkg.Config.set("Dir::Etc::SourceParts","x")
         logging.info("updating the cache")
         self.cache = apt.Cache()
         self.cache.update()
@@ -46,5 +46,5 @@ class TestDbusBackend(unittest.TestCase):
         self.assertTrue("openoffice.org-help-de" in self.pkgs)
 
 if __name__ == "__main__":
-    apt_pkg.Config.Set("Apt::Architecture","i386")
+    apt_pkg.Config.set("Apt::Architecture","i386")
     unittest.main()

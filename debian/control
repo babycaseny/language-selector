@@ -3,7 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Arne Goetje <arne@ubuntu.com>
 Build-Depends: debhelper (>= 7.0.50~), python-dev, intltool,
- intltool-debian, python-central (>= 0.5.6)
+ intltool-debian, python-central (>= 0.5.6), pyqt4-dev-tools
 XS-Python-Version: current
 Standards-Version: 3.8.3
 Vcs-Bzr: http://bazaar.launchpad.net/%7Eubuntu-core-dev/language-selector/ubuntu/

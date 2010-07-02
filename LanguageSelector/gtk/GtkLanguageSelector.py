@@ -7,6 +7,7 @@ import apt
 import apt_pkg
 
 import aptdaemon.client
+from aptdaemon.defer import inline_callbacks
 from aptdaemon.enums import *
 from aptdaemon.gtkwidgets import AptErrorDialog, \
                                  AptProgressDialog
@@ -24,6 +25,7 @@ import locale
 import os
 import pwd
 
+import time
 import shutil
 import string
 import subprocess
@@ -95,7 +97,7 @@ def insensitive(f):
 # 3x caching and menu creation
 STEPS_UPDATE_CACHE = [33, 66, 100]
 
-class GtkProgress(apt.OpProgress):
+class GtkProgress(apt.progress.base.OpProgress):
     def __init__(self, host_window, progressbar, parent,
                  steps=STEPS_UPDATE_CACHE):
         # used for the "one run progressbar"
@@ -497,7 +499,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
 #            self.updateSystemDefaultCombo()
         
     def build_commit_lists(self):
-        print self._cache.getChanges()
+        print self._cache.get_changes()
 
         try:
             for (lang, langInfo) in self._langlist:
@@ -513,7 +515,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         (to_inst, to_rm) = self._cache.getChangesList()
         #print "inst: %s" % to_inst
         #print "rm: %s" % to_rm
-        print self._cache.getChanges()
+        print self._cache.get_changes()
         return (to_inst, to_rm)
 
     def error(self, summary, msg):
@@ -536,10 +538,10 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         try:
             for pkg in inst_list:
                 if pkg in self._cache:
-                    self._cache[pkg].markInstall()
+                    self._cache[pkg].mark_install()
             for pkg in rm_list:
                 if pkg in self._cache:
-                    self._cache[pkg].markDelete()
+                    self._cache[pkg].mark_delete()
         except SystemError:
             res = False
 
@@ -549,7 +551,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
 
         # undo the selections
         self._cache.clear()
-        if self._cache._depcache.BrokenCount != 0:
+        if self._cache._depcache.broken_count != 0:
             self.error(_("Could not install the selected language support"),
                        _("This is perhaps a bug of this application. Please "
                          "file a bug report at "
@@ -590,23 +592,35 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
 
     
     def _run_transaction(self, transaction):
+        self._transaction_finished = False
         dia = AptProgressDialog(transaction, parent=self.window_main)
-        dia.run(close_on_finished=True, show_error=True,
-                reply_handler=lambda: True, error_handler=self._show_error_dialog)
+        dia.connect("finished", self._on_finished)
+        dia.run()
+        while not self._transaction_finished:
+            while gtk.events_pending():
+                gtk.main_iteration()
+            time.sleep(0.02)
 
+    def _on_finished(self, dialog):
+        dialog.hide()
+        self._transaction_finished = True
+
+    @inline_callbacks
     def update_aptdaemon(self):
         try:
-            trans = self.ac.update_cache()
+            trans = yield self.ac.update_cache(defer=True)
             self._run_transaction(trans)
         except Exception, e:
             self._show_error_dialog(e)
 
+    @inline_callbacks
     def commit_aptdaemon(self, inst, rm):
         if len(inst) == 0 and len(rm) == 0:
             return
         try:
-            trans = self.ac.commit_packages(install=inst, reinstall=[],
-                                            remove=rm, purge=[], upgrade=[])
+            trans = yield self.ac.commit_packages(
+                install=inst, reinstall=[], remove=rm, purge=[], upgrade=[],
+                defer=True)
             self._run_transaction(trans)
         except Exception, e:
             self._show_error_dialog(e)

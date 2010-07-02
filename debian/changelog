@@ -1,3 +1,25 @@
+language-selector (0.6.1) maverick; urgency=low
+
+  [ Michael Vogt ]
+  * fix dialog returning too early (issue with latest aptdaemon)
+  * fix deprecation warning
+  * build with include-links
+  * dbus_backend/ls-dbus-backend: move dbus.mainloop.glib integration way up
+    to avoid crash on startup (LP: #598619) (LP: #596603)
+
+  [ Arne Goetje ]
+  * clean up data/pkg-depends:
+    - remove enigmail-locale- (LP: #588254)
+    - remove obsolete kde-i18n- and koffice-i18n- entries, packages have
+      been removed from archive in Lucid.
+  * update fontconfig/69-language-selector-ja-jp.conf: change binding to
+    'strong' (LP: #569442)
+  * LocaleInfo.py: check for file permissions (LP: #598802)
+  * fix depreciation warnings
+  * debian/control: add pyqt4-dev-tools to Build-Depends
+
+ -- Arne Goetje <arne@ubuntu.com>  Fri, 02 Jul 2010 17:21:08 +0800
+
 language-selector (0.6.0) maverick; urgency=low
 
   [ Michael Vogt ]

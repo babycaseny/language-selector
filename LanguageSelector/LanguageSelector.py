@@ -52,32 +52,32 @@ class LanguageSelectorBase(object):
             trans_package = "language-pack-%s" % langInfo.languageCode
             # we have a langpack installed, see if we have all of them
             if (trans_package in self._cache and \
-               (self._cache[trans_package].isInstalled or \
-               self._cache[trans_package].markedInstall or \
-               self._cache[trans_package].markedUpgrade) and \
-               not self._cache[trans_package].markedDelete):
+               (self._cache[trans_package].is_installed or \
+               self._cache[trans_package].marked_install or \
+               self._cache[trans_package].marked_upgrade) and \
+               not self._cache[trans_package].marked_delete):
                 #print "IsInstalled: %s " % trans_package
                 #print self._cache.pkg_translations[langInfo.languageCode]
                 if langInfo.languageCode in self._cache.pkg_translations:
                     for (pkg, translation) in self._cache.pkg_translations[langInfo.languageCode]:
                         if (pkg in self._cache and \
-                           (self._cache[pkg].isInstalled or \
-                           self._cache[pkg].markedInstall or \
-                           self._cache[pkg].markedUpgrade) and \
-                           not self._cache[pkg].markedDelete and \
+                           (self._cache[pkg].is_installed or \
+                           self._cache[pkg].marked_install or \
+                           self._cache[pkg].marked_upgrade) and \
+                           not self._cache[pkg].marked_delete and \
                            translation in self._cache and \
-                           ((not self._cache[translation].isInstalled and \
-                           not self._cache[translation].markedInstall and \
-                           not self._cache[translation].markedUpgrade) or \
-                           self._cache[translation].markedDelete) and \
+                           ((not self._cache[translation].is_installed and \
+                           not self._cache[translation].marked_install and \
+                           not self._cache[translation].marked_upgrade) or \
+                           self._cache[translation].marked_delete) and \
                            not translation in missing):
                             missing.append(translation)
             trans_package = "language-support-writing-%s" % langInfo.languageCode
             # we have a langsupport-writing installed, see if we have all of them
             if (trans_package in self._cache and 
-               (self._cache[trans_package].isInstalled or \
-               self._cache[trans_package].markedInstall or \
-               self._cache[trans_package].markedUpgrade)):
+               (self._cache[trans_package].is_installed or \
+               self._cache[trans_package].marked_install or \
+               self._cache[trans_package].marked_upgrade)):
                 #print "IsInstalled: %s " % trans_package
                 #print self._cache.pkg_writing[langInfo.languageCode]
                 if langInfo.languageCode in self._cache.pkg_writing:
@@ -86,28 +86,28 @@ class LanguageSelectorBase(object):
                             # multiple dependencies, if one of them is installed, pull the pull_pkg
                             for p in pkg.split('|'):
                                 if self._cache[p] and \
-                                   (self._cache[p].isInstalled or \
-                                   self._cache[p].markedInstall or \
-                                   self._cache[p].markedUpgrade) and \
-                                   not self._cache[p].markedDelete and \
+                                   (self._cache[p].is_installed or \
+                                   self._cache[p].marked_install or \
+                                   self._cache[p].marked_upgrade) and \
+                                   not self._cache[p].marked_delete and \
                                    pull_pkg in self._cache and \
-                                   ((not self._cache[pull_pkg].isInstalled and \
-                                   not self._cache[pull_pkg].markedInstall and \
-                                   not self._cache[pull_pkg].markedUpgrade) or \
-                                   self._cache[pull_pkg].markedDelete) and \
+                                   ((not self._cache[pull_pkg].is_installed and \
+                                   not self._cache[pull_pkg].marked_install and \
+                                   not self._cache[pull_pkg].marked_upgrade) or \
+                                   self._cache[pull_pkg].marked_delete) and \
                                    not pull_pkg in missing:
                                     missing.append(pull_pkg)
                         else:
                             if pkg in self._cache and \
-                               (self._cache[pkg].isInstalled or \
-                               self._cache[pkg].markedInstall or \
-                               self._cache[pkg].markedUpgrade) and \
-                               not self._cache[pkg].markedDelete and \
+                               (self._cache[pkg].is_installed or \
+                               self._cache[pkg].marked_install or \
+                               self._cache[pkg].marked_upgrade) and \
+                               not self._cache[pkg].marked_delete and \
                                pull_pkg in self._cache and \
-                               ((not self._cache[pull_pkg].isInstalled and \
-                               not self._cache[pull_pkg].markedInstall and \
-                               not self._cache[pull_pkg].markedUpgrade) or \
-                               self._cache[pull_pkg].markedDelete) and \
+                               ((not self._cache[pull_pkg].is_installed and \
+                               not self._cache[pull_pkg].marked_install and \
+                               not self._cache[pull_pkg].marked_upgrade) or \
+                               self._cache[pull_pkg].marked_delete) and \
                                not pull_pkg in missing:
                                 missing.append(pull_pkg)
 
@@ -125,16 +125,16 @@ class LanguageSelectorBase(object):
 #            pkgcode = self._cache.langpack_locales[default_lang]
         trans_package = "language-pack-%s" % pkgcode
         if (trans_package in self._cache and 
-            not self._cache[trans_package].isInstalled):
+            not self._cache[trans_package].is_installed):
             missing += [trans_package]
             if pkgcode in self._cache.pkg_translations:
                 for (pkg, translation) in self._cache.pkg_translations[pkgcode]:
-                    if (self._cache[pkg].isInstalled and not self._cache[translation].isInstalled):
+                    if (self._cache[pkg].is_installed and not self._cache[translation].is_installed):
                         missing.append(translation)
         support_packages = LanguageSelectorPkgCache._getPkgList(self._cache, pkgcode)
         for support_package in support_packages:
             if (support_package in self._cache and 
-                not self._cache[support_package].isInstalled):
+                not self._cache[support_package].is_installed):
                 missing.append(support_package)
 
         if pkgcode in self._cache.pkg_writing:
@@ -143,28 +143,28 @@ class LanguageSelectorBase(object):
                     # multiple dependencies, if one of them is installed, pull the pull_pkg
                     for p in pkg.split('|'):
                         if self._cache[p] and \
-                           (self._cache[p].isInstalled or \
-                           self._cache[p].markedInstall or \
-                           self._cache[p].markedUpgrade) and \
-                           not self._cache[p].markedDelete and \
+                           (self._cache[p].is_installed or \
+                           self._cache[p].marked_install or \
+                           self._cache[p].marked_upgrade) and \
+                           not self._cache[p].marked_delete and \
                            pull_pkg in self._cache and \
-                           ((not self._cache[pull_pkg].isInstalled and \
-                           not self._cache[pull_pkg].markedInstall and \
-                           not self._cache[pull_pkg].markedUpgrade) or \
-                           self._cache[pull_pkg].markedDelete) and \
+                           ((not self._cache[pull_pkg].is_installed and \
+                           not self._cache[pull_pkg].marked_install and \
+                           not self._cache[pull_pkg].marked_upgrade) or \
+                           self._cache[pull_pkg].marked_delete) and \
                            not pull_pkg in missing:
                             missing.append(pull_pkg)
                 else:
                     if pkg in self._cache and \
-                       (self._cache[pkg].isInstalled or \
-                       self._cache[pkg].markedInstall or \
-                       self._cache[pkg].markedUpgrade) and \
-                       not self._cache[pkg].markedDelete and \
+                       (self._cache[pkg].is_installed or \
+                       self._cache[pkg].marked_install or \
+                       self._cache[pkg].marked_upgrade) and \
+                       not self._cache[pkg].marked_delete and \
                        pull_pkg in self._cache and \
-                       ((not self._cache[pull_pkg].isInstalled and \
-                       not self._cache[pull_pkg].markedInstall and \
-                       not self._cache[pull_pkg].markedUpgrade) or \
-                       self._cache[pull_pkg].markedDelete) and \
+                       ((not self._cache[pull_pkg].is_installed and \
+                       not self._cache[pull_pkg].marked_install and \
+                       not self._cache[pull_pkg].marked_upgrade) or \
+                       self._cache[pull_pkg].marked_delete) and \
                        not pull_pkg in missing:
                         missing.append(pull_pkg)
 

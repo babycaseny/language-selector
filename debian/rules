@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
+
+export DH_PYCENTRAL=include-links
+
 %:
 	dh --with python-central $@
 

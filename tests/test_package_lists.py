@@ -12,10 +12,10 @@ class TestLanguageSelector(unittest.TestCase):
 
     def test_package_lists_good(self):
         " test for non networked sources "
-        apt_pkg.Config.Set("Dir::State::lists","./test-data/var/lib/apt/lists")
-        apt_pkg.Config.Set("Dir::State::status","./test-data/empty")
-        apt_pkg.Config.Set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.good")
-        apt_pkg.Config.Set("Dir::Etc::SourceParts","./xxx")
+        apt_pkg.Config.set("Dir::State::lists","./test-data/var/lib/apt/lists")
+        apt_pkg.Config.set("Dir::State::status","./test-data/empty")
+        apt_pkg.Config.set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.good")
+        apt_pkg.Config.set("Dir::Etc::SourceParts","./xxx")
         ls = LanguageSelectorBase(datadir="../")
         ls.openCache(apt.progress.OpProgress())
         self.assert_(ls._cache.havePackageLists == True,
@@ -23,9 +23,9 @@ class TestLanguageSelector(unittest.TestCase):
 
     def test_package_lists_fail(self):
         " test for non networked sources "
-        apt_pkg.Config.Set("Dir::State::lists","./test-data/var/lib/apt/lists")
-        apt_pkg.Config.Set("Dir::State::status","./test-data/empty")
-        apt_pkg.Config.Set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.fail")
+        apt_pkg.Config.set("Dir::State::lists","./test-data/var/lib/apt/lists")
+        apt_pkg.Config.set("Dir::State::status","./test-data/empty")
+        apt_pkg.Config.set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.fail")
         ls = LanguageSelectorBase(datadir="../")
         ls.openCache(apt.progress.OpProgress())
         self.assert_(ls._cache.havePackageLists == False,
@@ -34,5 +34,5 @@ class TestLanguageSelector(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    apt_pkg.Config.Set("Apt::Architecture","i386")
+    apt_pkg.Config.set("Apt::Architecture","i386")
     unittest.main()

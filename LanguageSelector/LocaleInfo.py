@@ -227,7 +227,8 @@ class LocaleInfo(object):
         language = ''
         result = []
         fname = os.path.expanduser("~/.profile")
-        if os.path.exists(fname):
+        if os.path.exists(fname) and \
+           os.access(fname, os.R_OK):
             for line in open(fname):
                 match_lang = re.match(r'export LANG=(.*)$',line)
                 if match_lang:
@@ -237,7 +238,8 @@ class LocaleInfo(object):
                     language = match_language.group(1).strip('"')
         if len(lang) == 0:
             fname = os.path.expanduser("~/.dmrc")
-            if os.path.exists(fname):
+            if os.path.exists(fname) and \
+           	os.access(fname, os.R_OK):
                 for line in open(fname):
                     match = re.match(r'Language=(.*)$',line)
                     if match:

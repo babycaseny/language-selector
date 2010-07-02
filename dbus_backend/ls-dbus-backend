@@ -2,6 +2,7 @@
 
 import dbus
 import dbus.mainloop.glib 
+dbus.mainloop.glib.DBusGMainLoop(set_as_default=True) 
 import dbus.service
 import glib
 import gobject
@@ -138,7 +139,6 @@ if __name__ == "__main__":
         # FIXME: use argparse
         if len(sys.argv) > 1 and sys.argv[1] == "--debug":
             logging.basicConfig(level=logging.DEBUG)
-	dbus.mainloop.glib.DBusGMainLoop(set_as_default=True) 
 	server = LanguageSelectorServer()
 	gobject.MainLoop().run()
 

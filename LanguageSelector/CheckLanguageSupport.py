@@ -33,8 +33,8 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
             for x in scanlist:
                 pkg = '%s-%s' % (x, pkgcode)
                 if pkg in self._cache:
-                    if not self._cache[pkg].isInstalled and \
-                       not self._cache[pkg].markedInstall:
+                    if not self._cache[pkg].is_installed and \
+                       not self._cache[pkg].marked_install:
                         self.missing.add(pkg)
                     else:
                         self.installed.add(pkg)
@@ -45,23 +45,23 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
                     if pkg in packages and \
                        pkg in self._cache and \
                        translation in self._cache:
-                        if ((not self._cache[translation].isInstalled and \
-                           not self._cache[translation].markedInstall and \
-                           not self._cache[translation].markedUpgrade) or \
-                           self._cache[translation].markedDelete):
+                        if ((not self._cache[translation].is_installed and \
+                           not self._cache[translation].marked_install and \
+                           not self._cache[translation].marked_upgrade) or \
+                           self._cache[translation].marked_delete):
                             self.missing.add(translation)
                         else:
                             self.installed.add(translation)
                 else:
                     if pkg in self._cache and \
-                       (self._cache[pkg].isInstalled or \
-                       self._cache[pkg].markedInstall or \
-                       self._cache[pkg].markedUpgrade) and \
+                       (self._cache[pkg].is_installed or \
+                       self._cache[pkg].marked_install or \
+                       self._cache[pkg].marked_upgrade) and \
                        translation in self._cache:
-                        if ((not self._cache[translation].isInstalled and \
-                           not self._cache[translation].markedInstall and \
-                           not self._cache[translation].markedUpgrade) or \
-                           self._cache[translation].markedDelete):
+                        if ((not self._cache[translation].is_installed and \
+                           not self._cache[translation].marked_install and \
+                           not self._cache[translation].marked_upgrade) or \
+                           self._cache[translation].marked_delete):
                             self.missing.add(translation)
                         else:
                             self.installed.add(translation)
@@ -69,9 +69,9 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
         if pkgcode in self.pkg_writing and \
            (pkgcode == self.system_pkgcode or \
            ('language-support-writing-%s' % pkgcode in self._cache and \
-           self._cache['language-support-writing-%s' % pkgcode].isInstalled) or \
+           self._cache['language-support-writing-%s' % pkgcode].is_installed) or \
            ('language-support-writing-%s' % pkgcode in self._cache and \
-           self._cache['language-support-writing-%s' % pkgcode].markInstall) or \
+           self._cache['language-support-writing-%s' % pkgcode].mark_install) or \
            ('language-support-writing-%s' % pkgcode in self._cache and \
            self._cache['language-support-writing-%s' % pkgcode].markUpgrade)):
             for (pkg, pull_pkg) in self.pkg_writing[pkgcode]:
@@ -82,24 +82,24 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
                             if p in packages and \
                                p in self._cache and \
                                pull_pkg in self._cache:
-                                if ((not self._cache[pull_pkg].isInstalled and \
-                                   not self._cache[pull_pkg].markedInstall and \
-                                   not self._cache[pull_pkg].markedUpgrade) or \
-                                   self._cache[pull_pkg].markedDelete):
+                                if ((not self._cache[pull_pkg].is_installed and \
+                                   not self._cache[pull_pkg].marked_install and \
+                                   not self._cache[pull_pkg].marked_upgrade) or \
+                                   self._cache[pull_pkg].marked_delete):
                                     self.missing.add(pull_pkg)
                                 else:
                                     self.installed.add(pull_pkg)
                                 break
                         else:
                             if p in self._cache and \
-                               (self._cache[p].isInstalled  or \
-                               self._cache[p].markedInstall or \
-                               self._cache[p].markedUpgrade) and \
+                               (self._cache[p].is_installed  or \
+                               self._cache[p].marked_install or \
+                               self._cache[p].marked_upgrade) and \
                                pull_pkg in self._cache:
-                                if ((not self._cache[pull_pkg].isInstalled and \
-                                   not self._cache[pull_pkg].markedInstall and \
-                                   not self._cache[pull_pkg].markedUpgrade) or \
-                                   self._cache[pull_pkg].markedDelete):
+                                if ((not self._cache[pull_pkg].is_installed and \
+                                   not self._cache[pull_pkg].marked_install and \
+                                   not self._cache[pull_pkg].marked_upgrade) or \
+                                   self._cache[pull_pkg].marked_delete):
                                     self.missing.add(pull_pkg)
                                 else:
                                     self.installed.add(pull_pkg)
@@ -109,23 +109,23 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
                         if pkg in packages and \
                            pkg in self._cache and \
                            pull_pkg in self._cache:
-                            if ((not self._cache[pull_pkg].isInstalled and \
-                               not self._cache[pull_pkg].markedInstall and \
-                               not self._cache[pull_pkg].markedUpgrade) or \
-                               self._cache[pull_pkg].markedDelete):
+                            if ((not self._cache[pull_pkg].is_installed and \
+                               not self._cache[pull_pkg].marked_install and \
+                               not self._cache[pull_pkg].marked_upgrade) or \
+                               self._cache[pull_pkg].marked_delete):
                                 self.missing.add(pull_pkg)
                             else:
                                 self.installed.add(pull_pkg)
                     else:
                         if pkg in self._cache and \
-                           (self._cache[pkg].isInstalled or \
-                           self._cache[pkg].markedInstall or \
-                           self._cache[pkg].markedUpgrade) and \
+                           (self._cache[pkg].is_installed or \
+                           self._cache[pkg].marked_install or \
+                           self._cache[pkg].marked_upgrade) and \
                            pull_pkg in self._cache:
-                            if ((not self._cache[pull_pkg].isInstalled and \
-                               not self._cache[pull_pkg].markedInstall and \
-                               not self._cache[pull_pkg].markedUpgrade) or \
-                               self._cache[pull_pkg].markedDelete):
+                            if ((not self._cache[pull_pkg].is_installed and \
+                               not self._cache[pull_pkg].marked_install and \
+                               not self._cache[pull_pkg].marked_upgrade) or \
+                               self._cache[pull_pkg].marked_delete):
                                 self.missing.add(pull_pkg)
                             else:
                                 self.installed.add(pull_pkg)
@@ -295,8 +295,8 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
                    not item.startswith('language-pack-gnome') and \
                    not item.startswith('language-pack-kde') and \
                    not item.endswith('-base') and \
-                   (self._cache[item].isInstalled or \
-                   self._cache[item].markedInstall):
+                   (self._cache[item].is_installed or \
+                   self._cache[item].marked_install):
                     pkgcode = item.replace('language-pack-', '')
                     pkgcodes.append(pkgcode)
             if self.system_pkgcode and \

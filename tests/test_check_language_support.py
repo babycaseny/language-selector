@@ -13,10 +13,10 @@ from LanguageSelector.CheckLanguageSupport import *
 class TestCheckLanguageSupport(unittest.TestCase):
 
     def setUp(self):
-        apt_pkg.Config.Set("Dir::State::lists","./test-data/var/lib/apt/lists.cl")
-        apt_pkg.Config.Set("Dir::State::status","./test-data/var/lib/dpkg/status")
-        apt_pkg.Config.Set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.cl")
-        apt_pkg.Config.Set("Dir::Etc::SourceParts","x")
+        apt_pkg.Config.set("Dir::State::lists","./test-data/var/lib/apt/lists.cl")
+        apt_pkg.Config.set("Dir::State::status","./test-data/var/lib/dpkg/status")
+        apt_pkg.Config.set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.cl")
+        apt_pkg.Config.set("Dir::Etc::SourceParts","x")
         logging.info("updating the cache")
         self.cache = apt.Cache()
         self.cache.update()
@@ -54,5 +54,5 @@ class TestCheckLanguageSupport(unittest.TestCase):
 
 if __name__ == "__main__":
     #logging.basicConfig(level=logging.DEBUG)
-    apt_pkg.Config.Set("Apt::Architecture","i386")
+    apt_pkg.Config.set("Apt::Architecture","i386")
     unittest.main()

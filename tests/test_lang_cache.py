@@ -13,10 +13,10 @@ from LanguageSelector.LangCache import LanguageSelectorPkgCache, LanguageInforma
 class TestLangCache(unittest.TestCase):
 
     def setUp(self):
-        apt_pkg.Config.Set("Dir::State::lists","./test-data/var/lib/apt/lists.cl")
-        apt_pkg.Config.Set("Dir::State::status","./test-data/var/lib/dpkg/status")
-        apt_pkg.Config.Set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.cl")
-        apt_pkg.Config.Set("Dir::Etc::SourceParts","x")
+        apt_pkg.Config.set("Dir::State::lists","./test-data/var/lib/apt/lists.cl")
+        apt_pkg.Config.set("Dir::State::status","./test-data/var/lib/dpkg/status")
+        apt_pkg.Config.set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.cl")
+        apt_pkg.Config.set("Dir::Etc::SourceParts","x")
         logging.info("updating the cache")
         localeinfo = LocaleInfo("languagelist", "..")
         self.lang_cache = LanguageSelectorPkgCache(
@@ -50,15 +50,15 @@ class TestLangCache(unittest.TestCase):
         li.languagePkgList["languageSupportWritingAids"].doChange = True
         #li.languagePkgList["languageSupportWritingAids"].installed = False
         self.lang_cache.tryChangeDetails(li)
-        self.assertTrue(self.lang_cache["language-pack-de"].markedInstall)
-        self.assertTrue(self.lang_cache["openoffice.org-hyphenation-de"].markedInstall)
+        self.assertTrue(self.lang_cache["language-pack-de"].marked_install)
+        self.assertTrue(self.lang_cache["openoffice.org-hyphenation-de"].marked_install)
         # now test langaugePack change only
         self.lang_cache.clear()
         li.languagePkgList["languageSupportWritingAids"].doChange = False
         self.lang_cache.tryChangeDetails(li)
-        self.assertTrue(self.lang_cache["language-pack-de"].markedInstall)
-        self.assertFalse(self.lang_cache["openoffice.org-hyphenation-de"].markedInstall)
+        self.assertTrue(self.lang_cache["language-pack-de"].marked_install)
+        self.assertFalse(self.lang_cache["openoffice.org-hyphenation-de"].marked_install)
 
 if __name__ == "__main__":
-    apt_pkg.Config.Set("Apt::Architecture","i386")
+    apt_pkg.Config.set("Apt::Architecture","i386")
     unittest.main()
