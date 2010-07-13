@@ -23,7 +23,7 @@ Description: Language selector for Ubuntu Linux
 Package: language-selector-qt
 Architecture: all
 Depends: language-selector-common (= ${binary:Version}), ${shlibs:Depends},
- ${misc:Depends}, ${python:Depends}, python-qt4, install-package,
+ ${misc:Depends}, ${python:Depends}, python-qt4, qapt-batch,
  python-apt
 XB-Python-Version: ${python:Versions}
 Description: Language selector for Kubuntu Linux

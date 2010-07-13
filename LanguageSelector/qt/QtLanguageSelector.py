@@ -245,17 +245,17 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
     def run_pkg_manager_update(self, lock):
         self.returncode = 0
-        self.returncode = subprocess.call(["install-package","--update"])
+        self.returncode = subprocess.call(["qapt-batch","--update"])
         lock.release()
 
     def run_pkg_manager(self, lock, to_inst, to_rm):
         self.returncode = 0
         if len(to_inst) > 0:
-            print str(["install-package","--install"]+to_inst)
-            self.returncode = subprocess.call(["install-package","--install"]+to_inst)
+            print str(["qapt-batch","--install"]+to_inst)
+            self.returncode = subprocess.call(["qapt-batch","--install"]+to_inst)
         # then remove
         if len(to_rm) > 0:
-            self.returncode = subprocess.call(["install-package","--uninstall"]+to_rm)
+            self.returncode = subprocess.call(["qapt-batch","--uninstall"]+to_rm)
         lock.release()
 
     def onSystemPushButtonOk(self):

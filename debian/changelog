@@ -1,3 +1,16 @@
+language-selector (0.6.2) maverick; urgency=low
+
+  [ Colin Watson ]
+  * Use 'dh $@ --options' rather than 'dh --options $@', for
+    forward-compatibility with debhelper v8.
+
+  [ Jonathan Thomas ]
+  * Port language-selector-qt to qapt-batch
+  * Replace the dependency on install-package to qapt-batch in
+    debian/control (LP: #497803)
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 13 Jul 2010 10:57:58 +0100
+
 language-selector (0.6.1) maverick; urgency=low
 
   [ Michael Vogt ]
