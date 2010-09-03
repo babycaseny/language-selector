@@ -592,10 +592,11 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
 
     
     def _run_transaction(self, transaction):
-        self._transaction_finished = False
         dia = AptProgressDialog(transaction, parent=self.window_main)
         dia.connect("finished", self._on_finished)
         dia.run()
+        
+    def _wait_for_aptdaemon_finish(self):
         while not self._transaction_finished:
             while gtk.events_pending():
                 gtk.main_iteration()
@@ -605,16 +606,26 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         dialog.hide()
         self._transaction_finished = True
 
-    @inline_callbacks
     def update_aptdaemon(self):
+        self._transaction_finished = False
+        self._update_aptdaemon()
+        self._wait_for_aptdaemon_finish()
+
+    @inline_callbacks
+    def _update_aptdaemon(self):
         try:
             trans = yield self.ac.update_cache(defer=True)
             self._run_transaction(trans)
         except Exception, e:
             self._show_error_dialog(e)
 
-    @inline_callbacks
     def commit_aptdaemon(self, inst, rm):
+        self._transaction_finished = False
+        self._commit_aptdaemon(inst, rm)
+        self._wait_for_aptdaemon_finish()
+
+    @inline_callbacks
+    def _commit_aptdaemon(self, inst, rm):
         if len(inst) == 0 and len(rm) == 0:
             return
         try:
@@ -1006,6 +1017,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             return True
         else:
             gtk.main_quit()
+
+    def on_button_quit_clicked(self, widget):
+        gtk.main_quit()
 
     @honorBlockedSignals
     def on_window_main_key_press_event(self, widget, event):

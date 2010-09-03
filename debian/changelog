@@ -1,3 +1,14 @@
+language-selector (0.6.3) maverick; urgency=low
+
+  [ Martin Pitt ]
+  * data/LanguageSelector.ui, LanguageSelector/gtk/GtkLanguageSelector.py: Add
+    a Close button. (LP: #345113)
+  
+  [ Michael Vogt ]
+  * fix aptdaemon install/update (LP: #612825)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 03 Sep 2010 18:54:47 +0200
+
 language-selector (0.6.2) maverick; urgency=low
 
   [ Colin Watson ]
