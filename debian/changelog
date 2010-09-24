@@ -1,3 +1,18 @@
+language-selector (0.6.5) maverick; urgency=low
+
+  * Switch back to using os.rename in find_string_and_replace, as we require
+    atomicity.  Instead, always create the temporary file in the same
+    directory as the original (thanks, Scott Kitterman; LP: #645774).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 24 Sep 2010 14:29:08 +0100
+
+language-selector (0.6.4) maverick; urgency=low
+
+  * Use shutil.move rather than os.rename in find_string_and_replace
+    (thanks, TualatriX; LP: #645774).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 24 Sep 2010 12:37:07 +0100
+
 language-selector (0.6.3) maverick; urgency=low
 
   [ Martin Pitt ]

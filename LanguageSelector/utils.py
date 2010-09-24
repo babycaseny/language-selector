@@ -14,7 +14,8 @@ def find_string_and_replace(findString, setString, file_list,
         setString
     """
     for fname in file_list:
-        out = tempfile.NamedTemporaryFile(delete=False)        
+        out = tempfile.NamedTemporaryFile(delete=False,
+                                          dir=os.path.dirname(fname))
         foundString = False
         if (os.path.exists(fname) and
             os.access(fname, os.R_OK)):
