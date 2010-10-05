@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
 export DH_PYCENTRAL=include-links
+export NO_PKG_MANGLE=1
 
 %:
 	dh $@ --with python-central

@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-26 15:13+0000\n"
-"PO-Revision-Date: 2010-04-12 13:01+0000\n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-04-29 07:15+0000\n"
 "Last-Translator: Gheyret T.Kenji <Unknown>\n"
 "Language-Team: Uighur <ug@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2010-04-15 02:12+0000\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
+"Language: ug\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
@@ -29,13 +30,13 @@ msgstr "ئاددى خەنزۇچە"
 msgid "Chinese (traditional)"
 msgstr "مۇرەككەپ خەنزۇچە"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:216
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
 msgid "No language information available"
 msgstr "تىل ئۇچۇرلىرى يوق ئىكەن"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:217
-#: ../LanguageSelector/qt/QtLanguageSelector.py:95
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -43,47 +44,67 @@ msgstr ""
 "سېستېمىدا بار تىللار ھەققىدە ئۇچۇرلار تېخى يوق ئىكەن. ئۇلارغا ئېرىشىش ئۈچۈن "
 "ھازىرلا توردا يېڭىلامسىز؟ "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:221
-#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
 msgid "_Update"
 msgstr "يېڭىلاش (_U)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:304
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:342
-#: ../data/LanguageSelector.ui.h:27
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "تىل"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:311
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
 msgid "Installed"
 msgstr "قاچىلانغىنى"
 
 #. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:380
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
 msgstr[0] "قاچىلىنىدىغانلىرى %(INSTALL)d"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:382
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
 msgstr[0] "چىقىرىۋېتىلىدىغانلىرى %(REMOVE)d"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:528
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
+#: ../check-language-support:52
+msgid "Software database is broken"
+msgstr "يۇمشاق دېتال ئامبىرى بۇزۇلغان"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
+#: ../check-language-support:53
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"ھېچقانداق يۇمشاق دېتالنى ئۆچۈرۈشكە ياكى ئورنىتىشقا بولمايدۇ. شۇڭا ئالدى "
+"بىلەن \"Synaptic\" ياكى تېرمىنالدا \"sudo apt-get install -f\" نى ئىجرا "
+"قىلىپ بۇ مەسىلىنى تۈزۈتۈڭ."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid "Could not install the selected language support"
 msgstr "تاللانغان تىل قوللىشىنى قاچىلىغىلى بولمىدى"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:529
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -91,11 +112,11 @@ msgstr ""
 "گە تاپشۇرۇڭhttps://bugs.launchpad.net/ubuntu/+source/language-"
 "selector/+filebugنى  bug بۇ .bugبۇ ئېھتىمال بىر"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid "Could not install the full language support"
 msgstr "تولۇق تىل توللىشىنى قاچىلىغىلى بولمىدى"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your software preferences in the System > Administration menu."
@@ -104,18 +125,13 @@ msgstr ""
 "مۇناسىۋەتلىك  خاتالىق. سېستىما›  سېستىما باشقۇرغۇچ ئىچىدىن يۇمتال تەڭشىكىنى "
 "تەكشۈرۈڭ"
 
-#. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:591
-msgid "The list of available languages on the system has been updated."
-msgstr "سىستىمىدىكى قاچىلاسقا بولىدىغان تىللار تىزىملىكى يىڭىلاندىي"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
-#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
 msgid "The language support is not installed completely"
 msgstr "تىل قوللىشى تولۇق قاچىلانمىدى"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
-#: ../LanguageSelector/qt/QtLanguageSelector.py:161
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -123,105 +139,95 @@ msgstr ""
 "قىسمەن تىللارنىڭ ئىشلىتىشكە بۇلىدىغان تەرجىمىسىنى تاللاڭ ياكى يېزىش "
 "ياردەمچىسى تېخى قاچىلانمىغان،سىز بۇنى ھازىر قاچىلامسىز؟"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
-#: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#: ../LanguageSelector/qt/QtLanguageSelector.py:156
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
 msgid "_Remind Me Later"
 msgstr "كېيىنچە ئەسكەرت (_R)"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:669
-#: ../LanguageSelector/qt/QtLanguageSelector.py:155
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
 msgid "_Install"
 msgstr "قاچىلا (_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:672
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
 msgid "Details"
 msgstr "تەپسىلاتى"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
-#: ../LanguageSelector/qt/QtLanguageSelector.py:79
-#: ../check-language-support:52
-msgid "Software database is broken"
-msgstr "يۇمشاق دېتال ئامبىرى بۇزۇلغان"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:712
-#: ../check-language-support:53
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:54
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
 msgid "Uninstall"
 msgstr "چىقىرىۋەت"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:55
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
 msgid "Select language to uninstall:"
 msgstr "چىقىرىۋېتىدىغان تىلنى تاللاڭ:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:62
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
 msgid "Language Selector"
 msgstr "تىل تاللىغۇچ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
+"ھېچقانداق يۇمشاق دېتالنى ئۆچۈرۈشكە ياكى ئورنىتىشقا بولمايدۇ. شۇڭا ئالدى "
+"بىلەن \"Adept\" ياكى تېرمىنالدا \"sudo apt-get install -f\" نى ئىجرا قىلىپ "
+"بۇ مەسىلىنى تۈزۈتۈڭ."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
 msgid "Default system language:"
 msgstr "كۆڭۈلدىكى سېستېما تىلى:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Set System Language"
 msgstr "سېستېما تىلىنى بەلگىلەش"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
 msgid "Keyboard input method:"
 msgstr "كۇنۇپكا كىرگۈزۈش شەكلى"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:118
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
 #: ../data/LanguageSelector.ui.h:13
 msgid "Cancel"
 msgstr "ۋاز كەچ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
 msgid "Select language to install:"
 msgstr "قاچىلايدىغان تىلنى تاللاڭ:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
 msgid "Install"
 msgstr "قاچىلا"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:209
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Already installed"
 msgstr "قاچىلانغان"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
 msgid "Partially Installed"
 msgstr "قىسمەن قاچىلانغان"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
 msgid "Not installed"
 msgstr "قاچىلانمىغان"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:261
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr "كۆڭۈلدىكى سېستېما تىلى %s غا تەڭشەلدى."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:261
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
 msgid "Language Set"
 msgstr "تىل بەلگىلەش"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
@@ -230,32 +236,32 @@ msgstr ""
 "تەرجىمە ۋە تىل ياردىمى قاچىلىنىپ بولدى. سىز تىل قۇشۇش كۇنۇپكىسى ئارقىلىق "
 "ئۇلارنى تاللىسىڭىز بۇلىدۇ %s"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
 msgid "Language Installed"
 msgstr "تىل قاچىلاندى"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "%s تىلىنىڭ تەرجىمە ۋە قوللاشلىرى چىقىرىۋېتىلدى."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
 msgid "Language Uninstalled"
 msgstr "تىل چىقىرىۋېتىلدى"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:331
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
 msgid "Failed to set system language."
 msgstr "سېستېما تىلىنى بەلگىلەش مەغلۇپ بولدى"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:331
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
 msgid "Language Not Set"
 msgstr "تىل بەلگىلەنمىدى"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:380
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
 msgid "Please run this software with administrative rights."
 msgstr "بۇ يۇمتالنى باشقۇرغىچىلىق سالاھىيىتىدە قوزغىتىڭ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:380
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
 msgid "Not Root User"
 msgstr "باشقۇرغۇچى ئەمەس"
 
@@ -307,6 +313,8 @@ msgid ""
 "Additional fonts for this language which might be of general interest, e.g. "
 "decorative fonts for printing documents."
 msgstr ""
+"بۇ تىلدا ئىشلىتىلىدىغان قوشۇمچە فونتلار، ئادەتتە بۇلار ھۆسن خەت "
+"قاتارلىقلاردا ئىشلىتىلىدۇ"
 
 #: ../data/LanguageSelector.ui.h:11
 msgid "Apply Changes"
@@ -339,94 +347,65 @@ msgid "Extra fonts"
 msgstr "ئالاھىدە فونتلار"
 
 #: ../data/LanguageSelector.ui.h:19
-msgid ""
-"If you need to type in languages, which require more complex input methods "
-"than just a simple key to letter mapping, you may want to enable this "
-"function.\n"
-"For example, you will need this function for typing Chinese, Japanese, "
-"Korean or Vietnamese.\n"
-"The recommended value for Ubuntu is \"ibus\".\n"
-"If you want to use alternative input method systems, install the "
-"corresponding packages first and then choose the desired system here."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:23
 msgid "Input methods"
 msgstr "كىرگۈزگۈچ"
 
-#: ../data/LanguageSelector.ui.h:24
+#: ../data/LanguageSelector.ui.h:20
 msgid "Install / Remove Languages..."
 msgstr "تىل قوشۇش ياكى چىقىرىۋېتىش"
 
-#: ../data/LanguageSelector.ui.h:25
+#: ../data/LanguageSelector.ui.h:21
 msgid "Installed Languages"
 msgstr "قوشۇلغان تىللار"
 
-#: ../data/LanguageSelector.ui.h:26
+#: ../data/LanguageSelector.ui.h:22
 msgid "Keyboard input method system:"
 msgstr "باستاختىدا ئىشلىتىلىدىغان كىرگۈزگۈچ"
 
-#: ../data/LanguageSelector.ui.h:28
+#: ../data/LanguageSelector.ui.h:24
 msgid "Language & Text"
 msgstr "تىل ۋە تېكىست"
 
-#: ../data/LanguageSelector.ui.h:29
+#: ../data/LanguageSelector.ui.h:25
 msgid "Language for menus and windows:"
 msgstr "Menu ۋە كۆزنەكنىڭ تىلى"
 
-#: ../data/LanguageSelector.ui.h:30
+#: ../data/LanguageSelector.ui.h:26
 msgid "Number:"
 msgstr "رەقەم:"
 
-#: ../data/LanguageSelector.ui.h:31
+#: ../data/LanguageSelector.ui.h:27
 msgid "Spellchecking and writing aids"
 msgstr "ئىملا تەكشۈرۈش ۋە writing aids"
 
-#: ../data/LanguageSelector.ui.h:32
+#: ../data/LanguageSelector.ui.h:28
 msgid "Text"
 msgstr "تېكست"
 
-#: ../data/LanguageSelector.ui.h:33
-msgid ""
-"This setting only affects the language your desktop and applications are "
-"displayed in. It does not set the system environment, like currency or date "
-"format settings. For that, use the settings in the Text tab.\n"
-"The order of the values displayed here decides which translations to use for "
-"your desktop. If translations for the first language are not available, the "
-"next one in this list will be tried. The last entry of this list is always "
-"\"English\".\n"
-"Every entry below \"English\" will be ignored."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:36
-msgid ""
-"This will set the system environment like shown below and will also affect "
-"the preferred paper format and other territory specific settings.\n"
-"If you want to display the desktop in a different language than this, please "
-"select it in the \"Language\" tab.\n"
-"Hence you should set this to a sensible value for the territory you are "
-"located in."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:39
+#: ../data/LanguageSelector.ui.h:29
 msgid "Translations"
 msgstr "تەرجىمىسى"
 
-#: ../data/LanguageSelector.ui.h:40
+#: ../data/LanguageSelector.ui.h:30
 msgid "Translations for your desktop."
 msgstr "ئۇستەل يۈزىڭىزنىڭ تەرجىمىسى"
 
-#: ../data/LanguageSelector.ui.h:41
+#: ../data/LanguageSelector.ui.h:31
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
+"تىل بولىقى ئورنىتىلسا، باشقا ئىشلەتكۈچىلەرمۇ تىل تەڭشىكىدە بۇ تىلنى تاللاپ "
+"ئىشلىتەلەيدۇ."
 
-#: ../data/LanguageSelector.ui.h:42
+#: ../data/LanguageSelector.ui.h:32
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
 msgstr ""
+"سۆزلۈكلەر، لۇغەتلەر، thesauruses قاتارلىقلار تېكىست كىرگۈزگەندە كۆرۈلگەن "
+"خاتالىقلارنى يورۇتۇپ ياكى نامزات سۆزلەرنى كۆرسىتىپ خاتالىقلارنى تۈزىتىشتە "
+"ياردەمدە بولىدۇ."
 
 #: ../data/language-selector.desktop.in.h:1
 #: ../data/qt-language-selector.desktop.in.h:1
@@ -453,6 +432,10 @@ msgid ""
 "required. If you would like to do this at a later time, please use \"System -"
 "> Administration -> Language Support\" instead."
 msgstr ""
+"تاللانغان تىل ھۆججىتى چالىدەك قىلىدۇ. \"بۇ ھەرىكەتنى ھازىرلا قىل\" نى چېكىپ "
+"كەم component نى تولۇقلاڭ. بۇنىڭ ئۈچۈن كومپيۇتېر ئىنتېرنېتقا باغلانغان "
+"بولۇشى كېرەك. بۇ ئىشنى كېيىن قىلماقچى بولسىڭىز \"سىستېما-›باشقۇرۇش-›تىللار\" "
+"نى ئىشلىتىڭ."
 
 #. Description
 #: ..//data/incomplete-language-support-qt.note.in:6
@@ -463,6 +446,10 @@ msgid ""
 "required. If you would like to do this at a later time, please use \"System "
 "Settings -> Regional & Language\" instead."
 msgstr ""
+"تاللانغان تىل ھۆججىتى چالىدەك قىلىدۇ. \"بۇ ھەرىكەتنى ھازىرلا قىل\" نى چېكىپ "
+"كەم component نى تولۇقلاڭ. بۇنىڭ ئۈچۈن كومپيۇتېر ئىنتېرنېتقا باغلانغان "
+"بولۇشى كېرەك. بۇ ئىشنى كېيىن قىلماقچى بولسىڭىز \"سىستېما تەڭشىكى-›رايون ۋە "
+"تىل\" نى ئىشلىتىڭ."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -476,11 +463,11 @@ msgstr "قايتا كىرسىىز تىل تەڭشىكى ئەمەلگە ئاشى�
 
 #: ../gnome-language-selector:25
 msgid "don't verify installed language support"
-msgstr ""
+msgstr "ئورنىتىلغان تىل بولىقىنى تەكشۈرمە"
 
 #: ../gnome-language-selector:28 ../check-language-support:22
 msgid "alternative datadir"
-msgstr ""
+msgstr "باشقا datadir"
 
 #: ../fontconfig-voodoo:18
 msgid "Aborting"
@@ -488,17 +475,19 @@ msgstr "قالدۇرۇش"
 
 #: ../fontconfig-voodoo:26
 msgid "Force even when a configuration exists"
-msgstr ""
+msgstr "سەپلىمە مەۋجۇت بولسىمۇ قىلىۋەرسۇن."
 
 #: ../fontconfig-voodoo:28
 msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
+msgstr "تاللانغان تىلنىڭ fontconfig voodoo سېنى بەلگىلە"
 
 #: ../fontconfig-voodoo:32
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"LANGUAGE مۇھىت ئۆزگەرگۈچىنىڭ قىممىتىگە ئاساسەن تەڭشەش ئېلىپ بارىدۇ. ئەگەر "
+"مۇۋاپىق نەرسىنى تاپالمىسا 'none'  نى ئىشلىتىدۇ."
 
 #: ../fontconfig-voodoo:37
 msgid "List the available fontconfig-voodoo configs"
@@ -518,7 +507,7 @@ msgstr "سەپلەنمىگەن"
 
 #: ../fontconfig-voodoo:77
 msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
+msgstr "سەپلىمە بار ئىكەن. '--force' ئىشلەتسە قاپلاپ يېزىشقا بولىدۇ. "
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
@@ -530,7 +519,7 @@ msgstr "نىشان تىل كودى"
 
 #: ../check-language-support:23
 msgid "check for the given package(s) only -- separate packagenames by comma"
-msgstr ""
+msgstr "كۆرسىتىلگەن بولاقنى تەكشۈرسۇن -- بولاق ناملىرىنى پەش بىلەن ئايرىلسۇن"
 
 #: ../check-language-support:25
 msgid "check all available languages"
@@ -539,3 +528,6 @@ msgstr "ھەممە تىللارنى تەكشۇرۇش"
 #: ../check-language-support:28
 msgid "show installed packages as well as missing ones"
 msgstr "ئۆچۈرۈلگەن بولاقنىمۇ ئورنىتىلغان بولاق بىلەن بىرگە كۆرسىتىش"
+
+#~ msgid "The list of available languages on the system has been updated."
+#~ msgstr "سىستىمىدىكى قاچىلاسقا بولىدىغان تىللار تىزىملىكى يىڭىلاندىي"

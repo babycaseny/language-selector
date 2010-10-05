@@ -1,3 +1,13 @@
+language-selector (0.6.6) maverick; urgency=low
+
+  * debian/rules: Disable pkgbinarymangler, to keep translations in the
+    package. In Natty this blacklisting will happen in the pkgbinarymangler
+    package (so that the programs other than pkgstriptranslations will still
+    apply), but this is a less invasive shortcut for Maverick. (LP: #654548)
+  * po/*: Update translations from Launchpad.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 05 Oct 2010 12:26:19 +0200
+
 language-selector (0.6.5) maverick; urgency=low
 
   * Switch back to using os.rename in find_string_and_replace, as we require

@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-26 15:13+0000\n"
-"PO-Revision-Date: 2009-09-18 22:29+0000\n"
-"Last-Translator: Arne Goetje <arne.goetje@canonical.com>\n"
+"POT-Creation-Date: 2010-09-24 13:55+0000\n"
+"PO-Revision-Date: 2010-09-24 17:23+0000\n"
+"Last-Translator: Arne Goetje <Unknown>\n"
 "Language-Team: Javanese <jv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 0;\n"
-"X-Launchpad-Export-Date: 2010-04-15 02:12+0000\n"
+"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
+"Language: jv\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
@@ -29,36 +30,36 @@ msgstr ""
 msgid "Chinese (traditional)"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:216
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/qt/QtLanguageSelector.py:98
 msgid "No language information available"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:217
-#: ../LanguageSelector/qt/QtLanguageSelector.py:95
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/qt/QtLanguageSelector.py:99
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:221
-#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/qt/QtLanguageSelector.py:93
 msgid "_Update"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:304
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:342
-#: ../data/LanguageSelector.ui.h:27
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Basa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:311
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
 msgid "Installed"
 msgstr "Diinstal"
 
 #. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:380
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -66,7 +67,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:382
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -74,71 +75,21 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:528
-msgid "Could not install the selected language support"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:529
-msgid ""
-"This is perhaps a bug of this application. Please file a bug report at "
-"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:559
-msgid "Could not install the full language support"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
-msgid ""
-"Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
-msgstr ""
-
-#. FIXME: use self.runAsRoot() here
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:591
-msgid "The list of available languages on the system has been updated."
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
-#: ../LanguageSelector/qt/QtLanguageSelector.py:160
-msgid "The language support is not installed completely"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
-#: ../LanguageSelector/qt/QtLanguageSelector.py:161
-msgid ""
-"Some translations or writing aids available for your chosen languages are "
-"not installed yet. Do you want to install them now?"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
-#: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#: ../LanguageSelector/qt/QtLanguageSelector.py:156
-msgid "_Remind Me Later"
-msgstr ""
-
-#. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:669
-#: ../LanguageSelector/qt/QtLanguageSelector.py:155
-msgid "_Install"
-msgstr "_Instal"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:672
-msgid "Details"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
-#: ../LanguageSelector/qt/QtLanguageSelector.py:79
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
+#: ../LanguageSelector/qt/QtLanguageSelector.py:82
+#: ../LanguageSelector/qt/QtLanguageSelector.py:310
 #: ../check-language-support:52
 msgid "Software database is broken"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:712
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
 #: ../check-language-support:53
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
@@ -146,107 +97,156 @@ msgid ""
 "this issue at first."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:54
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid "Could not install the selected language support"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid "Could not install the full language support"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your software preferences in the System > Administration menu."
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
+#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+msgid "The language support is not installed completely"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
+#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+msgid "_Remind Me Later"
+msgstr ""
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
+#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+msgid "_Install"
+msgstr "_Instal"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+msgid "Details"
+msgstr ""
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:57
 msgid "Uninstall"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:55
+#: ../LanguageSelector/qt/QtLanguageSelector.py:58
 msgid "Select language to uninstall:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:62
+#: ../LanguageSelector/qt/QtLanguageSelector.py:65
 msgid "Language Selector"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/qt/QtLanguageSelector.py:83
+#: ../LanguageSelector/qt/QtLanguageSelector.py:311
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
 msgid "Default system language:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
 msgid "Set System Language"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
 msgid "Keyboard input method:"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:118
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
 #: ../data/LanguageSelector.ui.h:13
 msgid "Cancel"
 msgstr "Wurung"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
 msgid "Select language to install:"
 msgstr "Pilih basa kanggo nginstal:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
 msgid "Install"
 msgstr "Instal"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:209
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Already installed"
 msgstr "Sampun diinstal"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+#: ../LanguageSelector/qt/QtLanguageSelector.py:217
 msgid "Partially Installed"
 msgstr "Diinstal sebagian"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+#: ../LanguageSelector/qt/QtLanguageSelector.py:221
 msgid "Not installed"
 msgstr "Mboten diinstal"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:261
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:261
+#: ../LanguageSelector/qt/QtLanguageSelector.py:266
 msgid "Language Set"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
 #, python-format
 msgid ""
 "Translations and support have now been installed for %s.  Select them from "
 "the Add Language button."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:327
+#: ../LanguageSelector/qt/QtLanguageSelector.py:341
 msgid "Language Installed"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+#: ../LanguageSelector/qt/QtLanguageSelector.py:343
 msgid "Language Uninstalled"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:331
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
 msgid "Failed to set system language."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:331
+#: ../LanguageSelector/qt/QtLanguageSelector.py:345
 msgid "Language Not Set"
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:380
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
 msgid "Please run this software with administrative rights."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:380
+#: ../LanguageSelector/qt/QtLanguageSelector.py:394
 msgid "Not Root User"
 msgstr "Dudu Root"
 
@@ -319,90 +319,56 @@ msgid "Extra fonts"
 msgstr "Font tambahan"
 
 #: ../data/LanguageSelector.ui.h:19
-msgid ""
-"If you need to type in languages, which require more complex input methods "
-"than just a simple key to letter mapping, you may want to enable this "
-"function.\n"
-"For example, you will need this function for typing Chinese, Japanese, "
-"Korean or Vietnamese.\n"
-"The recommended value for Ubuntu is \"ibus\".\n"
-"If you want to use alternative input method systems, install the "
-"corresponding packages first and then choose the desired system here."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:23
 msgid "Input methods"
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:24
+#: ../data/LanguageSelector.ui.h:20
 msgid "Install / Remove Languages..."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:25
+#: ../data/LanguageSelector.ui.h:21
 msgid "Installed Languages"
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:26
+#: ../data/LanguageSelector.ui.h:22
 msgid "Keyboard input method system:"
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:28
+#: ../data/LanguageSelector.ui.h:24
 msgid "Language & Text"
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:29
+#: ../data/LanguageSelector.ui.h:25
 msgid "Language for menus and windows:"
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:30
+#: ../data/LanguageSelector.ui.h:26
 msgid "Number:"
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:31
+#: ../data/LanguageSelector.ui.h:27
 msgid "Spellchecking and writing aids"
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:32
+#: ../data/LanguageSelector.ui.h:28
 msgid "Text"
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:33
-msgid ""
-"This setting only affects the language your desktop and applications are "
-"displayed in. It does not set the system environment, like currency or date "
-"format settings. For that, use the settings in the Text tab.\n"
-"The order of the values displayed here decides which translations to use for "
-"your desktop. If translations for the first language are not available, the "
-"next one in this list will be tried. The last entry of this list is always "
-"\"English\".\n"
-"Every entry below \"English\" will be ignored."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:36
-msgid ""
-"This will set the system environment like shown below and will also affect "
-"the preferred paper format and other territory specific settings.\n"
-"If you want to display the desktop in a different language than this, please "
-"select it in the \"Language\" tab.\n"
-"Hence you should set this to a sensible value for the territory you are "
-"located in."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:39
+#: ../data/LanguageSelector.ui.h:29
 msgid "Translations"
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:40
+#: ../data/LanguageSelector.ui.h:30
 msgid "Translations for your desktop."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:41
+#: ../data/LanguageSelector.ui.h:31
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:42
+#: ../data/LanguageSelector.ui.h:32
 msgid ""
 "Word lists, dictionaries, thesauruses, etc. which can help typing by "
 "highlighting, correcting or suggesting words."
@@ -519,6 +485,3 @@ msgstr ""
 #: ../check-language-support:28
 msgid "show installed packages as well as missing ones"
 msgstr ""
-
-#~ msgid "Keep the same"
-#~ msgstr "Dipadhak'ke"
