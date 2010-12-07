@@ -3,41 +3,34 @@
 #
 # Released under the GPL
 #
-import apt
-import apt_pkg
-
-import aptdaemon.client
-from aptdaemon.defer import inline_callbacks
-from aptdaemon.enums import *
-from aptdaemon.gtkwidgets import AptErrorDialog, \
-                                 AptProgressDialog
-
-import pygtk
-pygtk.require('2.0')
-import gtk
-import gtk.gdk
-import pango
-import gobject
 
 import gettext
 import grp
 import locale
 import os
 import pwd
-
 import time
 import shutil
 import string
 import subprocess
 import sys
-
 import thread
 import time
 import tempfile
-
 from gettext import gettext as _
 
-from LanguageSelector.gtk.SimpleGtkbuilderApp import SimpleGtkbuilderApp
+import gobject
+from gi.repository import Gdk, Gtk, Pango
+Gtk.require_version('3.0')
+
+import apt
+import apt_pkg
+
+import aptdaemon.client
+from defer import inline_callbacks
+from aptdaemon.enums import *
+from aptdaemon.gtk3widgets import AptProgressDialog
+
 from LanguageSelector.LocaleInfo import LocaleInfo
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
@@ -46,9 +39,6 @@ from LanguageSelector.macros import *
 (LIST_LANG,                     # language (i18n/human-readable)
  LIST_LANG_INFO                 # the short country code (e.g. de, pt_BR)
  ) = range(2)
-
-(COMBO_LANGUAGE,
- COMBO_CODE) = range(2)
 
 (LANGTREEVIEW_LANGUAGE,
  LANGTREEVIEW_CODE) = range(2)
@@ -110,8 +100,9 @@ class GtkProgress(apt.progress.base.OpProgress):
         self._window = host_window
         self._progressbar = progressbar
         self._window.realize()
-        host_window.window.set_functions(gtk.gdk.FUNC_MOVE)
+        host_window.get_window().set_functions(Gdk.WMFunction.MOVE)
         self._window.set_transient_for(parent)
+
     def update(self, percent):
         #print percent
         #print self.Op
@@ -129,21 +120,24 @@ class GtkProgress(apt.progress.base.OpProgress):
         progress = self.base + percent/100 * (self.next - self.base)
         self.old = percent
         self._progressbar.set_fraction(progress/100.0)
-        while gtk.events_pending():
-            gtk.main_iteration()
+        while Gtk.events_pending():
+            Gtk.main_iteration()
     def done(self):
         self._parent.set_sensitive(True)
     def hide(self):
         self._window.hide()
 
-class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
+class GtkLanguageSelector(LanguageSelectorBase):
 
     def __init__(self, datadir, options):
         LanguageSelectorBase.__init__(self, datadir)
-        SimpleGtkbuilderApp.__init__(self,
-                                datadir+"/data/LanguageSelector.ui")
-
         self._datadir = datadir
+
+        self.widgets = Gtk.Builder()
+        self.widgets.set_translation_domain('language-selector')
+        self.widgets.add_from_file(datadir+"/data/LanguageSelector.ui")
+        self.widgets.connect_signals(self)
+
         self.is_admin = (os.getuid() == 0 or
                          grp.getgrnam("admin")[2] in os.getgroups())
 
@@ -159,16 +153,16 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         
         #build the comboboxes (with model)
         combo = self.combobox_locale_chooser
-        model = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
-        cell = gtk.CellRendererText()
+        model = Gtk.ListStore.newv([gobject.TYPE_STRING, gobject.TYPE_STRING])
+        cell = Gtk.CellRendererText()
         combo.pack_start(cell, True)
-        combo.add_attribute(cell, 'text', COMBO_LANGUAGE)
+        combo.add_attribute(cell, 'text', LANGTREEVIEW_LANGUAGE)
         combo.set_model(model)
 #        self.combo_syslang_dirty = False
 
 #        combo = self.combobox_user_language
-#        model = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
-#        cell = gtk.CellRendererText()
+#        model = Gtk.ListStore.newv([gobject.TYPE_STRING, gobject.TYPE_STRING])
+#        cell = Gtk.CellRendererText()
 #        combo.pack_start(cell, True)
 #        combo.add_attribute(cell, 'text', COMBO_LANGUAGE)
 #        combo.set_model(model)
@@ -179,8 +173,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         self.ac = aptdaemon.client.AptClient()
 
         combo = self.combobox_input_method
-        model = gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
-        cell = gtk.CellRendererText()
+        model = Gtk.ListStore.newv([gobject.TYPE_STRING, gobject.TYPE_STRING])
+        cell = Gtk.CellRendererText()
         combo.pack_start(cell, True)
         combo.add_attribute(cell, 'text', IM_NAME)
         combo.set_model(model)
@@ -220,20 +214,20 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         if self.is_admin:
             # check if the package list is up-to-date
             if not self._cache.havePackageLists:
-                d = gtk.MessageDialog(parent=self.window_main,
-                                      flags=gtk.DIALOG_MODAL,
-                                      type=gtk.MESSAGE_INFO,
-                                      buttons=gtk.BUTTONS_CANCEL)
+                d = Gtk.MessageDialog(parent=self.window_main,
+                                      flags=Gtk.DialogFlags.MODAL,
+                                      type=Gtk.MessageType.INFO,
+                                      buttons=Gtk.ButtonsType.CANCEL)
                 d.set_markup("<big><b>%s</b></big>\n\n%s" % (
                     _("No language information available"),
                     _("The system does not have information about the "
                       "available languages yet. Do you want to perform "
                       "a network update to get them now? ")))
                 d.set_title=("")
-                d.add_button(_("_Update"), gtk.RESPONSE_YES)
+                d.add_button(_("_Update"), Gtk.ResponseType.YES)
                 res = d.run()
                 d.destroy()
-                if res == gtk.RESPONSE_YES:
+                if res == Gtk.ResponseType.YES:
                     self.setSensitive(False)
                     self.update()
                     self.updateLanguageView()
@@ -247,15 +241,26 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             self.combobox_input_method.set_sensitive(False)
         self.setSensitive(True)
 
+    def __getattr__(self, name):
+        '''Convenient access to GtkBuilder objects'''
+
+        o = self.widgets.get_object(name)
+        if o is None:
+            raise AttributeError, 'No such widget: ' + name
+        return o
+
+    def run(self):
+        Gtk.main()
+
     def setSensitive(self, value):
         if value:
             self.window_main.set_sensitive(True)
-            self.window_main.window.set_cursor(None)
+            self.window_main.get_window().set_cursor(None)
         else:
             self.window_main.set_sensitive(False)
-            self.window_main.window.set_cursor(gtk.gdk.Cursor(gtk.gdk.WATCH))
-        while gtk.events_pending():
-            gtk.main_iteration()
+            self.window_main.get_window().set_cursor(Gdk.Cursor.new(Gdk.CursorType.WATCH))
+        while Gtk.events_pending():
+            Gtk.main_iteration()
 
 #    @blockSignals
 #    def updateSyncButton(self):
@@ -282,7 +287,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
 
     def setupInstallerTreeView(self):
         """ do all the treeview setup here """
-        def toggle_cell_func(column, cell, model, iter):
+        def toggle_cell_func(column, cell, model, iter, data):
             langInfo = model.get_value(iter, LIST_LANG_INFO)
 
             # check for active and inconsitent 
@@ -293,7 +298,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             cell.set_property("active", langInfo.fullInstalled)
             cell.set_property("inconsistent", inconsistent)
             
-        def lang_view_func(cell_layout, renderer, model, iter):
+        def lang_view_func(cell_layout, renderer, model, iter, data):
             langInfo = model.get_value(iter, LIST_LANG_INFO)
             langName = model.get_value(iter, LIST_LANG)
             inconsistent = langInfo.inconsistent
@@ -303,24 +308,24 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
                 markup = "%s" % langName
             renderer.set_property("markup", markup)
 
-        renderer = gtk.CellRendererText()
-        column = gtk.TreeViewColumn(_("Language"), renderer, text=LIST_LANG)
+        renderer = Gtk.CellRendererText()
+        column = Gtk.TreeViewColumn(_("Language"), renderer, text=LIST_LANG)
         column.set_property("expand", True)
-        column.set_cell_data_func (renderer, lang_view_func)
+        column.set_cell_data_func (renderer, lang_view_func, None)
         self.treeview_languages.append_column(column)
 
-        renderer= gtk.CellRendererToggle()
+        renderer= Gtk.CellRendererToggle()
         renderer.connect("toggled", self.on_toggled)
-        column = gtk.TreeViewColumn(_("Installed"), renderer)
-        column.set_cell_data_func (renderer, toggle_cell_func)
+        column = Gtk.TreeViewColumn(_("Installed"), renderer)
+        column.set_cell_data_func (renderer, toggle_cell_func, None)
         self.treeview_languages.append_column(column)
         # build the store
-        self._langlist = gtk.ListStore(str, gobject.TYPE_PYOBJECT)
+        self._langlist = Gtk.ListStore.newv([str, gobject.TYPE_PYOBJECT])
         self.treeview_languages.set_model(self._langlist)
 
     def setupLanguageTreeView(self):
         """ do all the treeview setup here """
-        def lang_view_func(cell_layout, renderer, model, iter):
+        def lang_view_func(cell_layout, renderer, model, iter, data):
             langInfo = model.get_value(iter, LANGTREEVIEW_CODE)
             langName = model.get_value(iter, LANGTREEVIEW_LANGUAGE)
             greyFlag = False
@@ -341,14 +346,14 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
                 markup = "%s" % self._localeinfo.translate(langInfo, native=True, allCountries=True)
             renderer.set_property("markup", markup)
 
-        renderer = gtk.CellRendererText()
-        column = gtk.TreeViewColumn(_("Language"), renderer, text=COMBO_LANGUAGE)
+        renderer = Gtk.CellRendererText()
+        column = Gtk.TreeViewColumn(_("Language"), renderer, text=LANGTREEVIEW_LANGUAGE)
         column.set_property("expand", True)
-        column.set_cell_data_func (renderer, lang_view_func)
+        column.set_cell_data_func (renderer, lang_view_func, None)
         self.treeview_locales.append_column(column)
 
         # build the store
-        self._localelist = gtk.ListStore(str, gobject.TYPE_PYOBJECT)
+        self._localelist = Gtk.ListStore.newv([gobject.TYPE_STRING, gobject.TYPE_STRING])
         self.treeview_locales.set_model(self._localelist)
 
     def _get_langinfo_on_cursor(self):
@@ -443,7 +448,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         #cell = combo.get_child().get_cell_renderers()[0]
         # FIXME: use something else than a hardcoded value here
         #cell.set_property("wrap-width",300)
-        #cell.set_property("wrap-mode",pango.WRAP_WORD)
+        #cell.set_property("wrap-mode",Pango.WRAP_WORD)
         model = combo.get_model()
         model.clear()
 
@@ -456,9 +461,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         # find out about the other options
         for (i, IM) in enumerate(self.imSwitch.getAvailableInputMethods()):
             iter = model.append()
-            model.set(iter,
-                      IM_CHOICE,IM,
-                      IM_NAME, IM)
+            model.set_value(iter, IM_CHOICE, IM)
+            model.set_value(iter, IM_NAME, IM)
             if IM == currentIM:
                 combo.set_active(i)
 #        self.check_status()
@@ -519,10 +523,10 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         return (to_inst, to_rm)
 
     def error(self, summary, msg):
-        d = gtk.MessageDialog(parent=self.window_main,
-                              flags=gtk.DIALOG_MODAL,
-                              type=gtk.MESSAGE_ERROR,
-                              buttons=gtk.BUTTONS_CLOSE)
+        d = Gtk.MessageDialog(parent=self.window_main,
+                              flags=Gtk.DialogFlags.MODAL,
+                              type=Gtk.MessageType.ERROR,
+                              buttons=Gtk.ButtonsType.CLOSE)
         d.set_markup("<big><b>%s</b></big>\n\n%s" % (summary, msg))
         d.set_title=("")
         res = d.run()
@@ -598,8 +602,8 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         
     def _wait_for_aptdaemon_finish(self):
         while not self._transaction_finished:
-            while gtk.events_pending():
-                gtk.main_iteration()
+            while Gtk.events_pending():
+                Gtk.main_iteration()
             time.sleep(0.02)
 
     def _on_finished(self, dialog):
@@ -631,7 +635,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         try:
             trans = yield self.ac.commit_packages(
                 install=inst, reinstall=[], remove=rm, purge=[], upgrade=[],
-                defer=True)
+                downgrade=[], defer=True)
             self._run_transaction(trans)
         except Exception, e:
             self._show_error_dialog(e)
@@ -641,7 +645,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
     commit = commit_aptdaemon
 
     def hide_on_delete(self, widget, event):
-        return gtk.Widget.hide_on_delete(widget)
+        return Gtk.Widget.hide_on_delete(widget)
 
     def verifyInstalledLangPacks(self):
         """ called at the start to inform about possible missing
@@ -653,37 +657,37 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         #print "Missing: %s " % missing
         if len(missing) > 0:
             # FIXME: add "details"
-            d = gtk.MessageDialog(parent=self.window_main,
-                                  flags=gtk.DIALOG_MODAL,
-                                  type=gtk.MESSAGE_QUESTION)
+            d = Gtk.MessageDialog(parent=self.window_main,
+                                  flags=Gtk.DialogFlags.MODAL,
+                                  type=Gtk.MessageType.QUESTION)
             d.set_markup("<big><b>%s</b></big>\n\n%s" % (
                 _("The language support is not installed completely"),
                 _("Some translations or writing aids available for your "
                   "chosen languages are not installed yet. Do you want "
                   "to install them now?")))
-            d.add_buttons(_("_Remind Me Later"), gtk.RESPONSE_NO,
-                          _("_Install"), gtk.RESPONSE_YES)
-            d.set_default_response(gtk.RESPONSE_YES)
+            d.add_buttons(_("_Remind Me Later"), Gtk.ResponseType.NO,
+                          _("_Install"), Gtk.ResponseType.YES)
+            d.set_default_response(Gtk.ResponseType.YES)
             d.set_title("")
-            expander = gtk.Expander(_("Details"))
-            scroll = gtk.ScrolledWindow()
-            scroll.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
-            textview = gtk.TextView()
+            expander = Gtk.Expander.new(_("Details"))
+            scroll = Gtk.ScrolledWindow()
+            scroll.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+            textview = Gtk.TextView()
             textview.set_cursor_visible(False)
             textview.set_editable(False)
             buf = textview.get_buffer()
             pkgs = ""
             for pkg in missing:
                 pkgs += "%s\n" % pkg
-            buf.set_text(pkgs)
+            buf.set_text(pkgs, -1)
             buf.place_cursor(buf.get_start_iter())
             expander.add(scroll)
             scroll.add(textview)
-            d.vbox.pack_start(expander)
+            d.get_message_area().pack_start(expander, True, True, 0)
             expander.show_all()
             res = d.run()
             d.destroy()
-            if res == gtk.RESPONSE_YES:
+            if res == Gtk.ResponseType.YES:
                 self.setSensitive(False)
                 self.commit(missing, [])
                 self.updateLanguageView()
@@ -718,7 +722,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
             installed = lang.fullInstalled
             lang_name = self._localeinfo.translate(lang.languageCode)
             self._langlist.append([lang_name, lang])
-        self._langlist.set_sort_column_id(LIST_LANG, gtk.SORT_ASCENDING)
+        self._langlist.set_sort_column_id(LIST_LANG, Gtk.SortType.ASCENDING)
         for button in ( 
               "checkbutton_translations",
               "checkbutton_writing_aids",
@@ -785,10 +789,11 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
     def updateLocaleChooserCombo(self):
         #print "updateLocaleChooserCombo()"
         combo = self.combobox_locale_chooser
-        cell = combo.get_child().get_cell_renderers()[0]
+        #XXX get_cell_renderers does not exist in GTK3
+        #cell = combo.get_child().get_cell_renderers()[0]
         # FIXME: use something else than a hardcoded value here
-        cell.set_property("wrap-width",300)
-        cell.set_property("wrap-mode",pango.WRAP_WORD)
+        #cell.set_property("wrap-width",300)
+        #cell.set_property("wrap-mode",Pango.WRAP_WORD)
         model = combo.get_model()
         model.clear()
 
@@ -809,12 +814,9 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         mylist = []
         for (i, locale) in enumerate(self._localeinfo.generated_locales()):
             iter = model.append()
-            model.set(iter,
-                      COMBO_LANGUAGE,self._localeinfo.translate(locale, native=True),
-                      COMBO_CODE, locale)
-            model.set(iter,
-                      LANGTREEVIEW_LANGUAGE,self._localeinfo.translate(locale, native=True),
-                      LANGTREEVIEW_CODE, locale)
+            model.set_value(iter, LANGTREEVIEW_LANGUAGE,
+                    self._localeinfo.translate(locale, native=True))
+            model.set_value(iter, LANGTREEVIEW_CODE, locale)
             if (defaultLangName and
                    self._localeinfo.translate(locale, native=True) == defaultLangName):
                 combo.set_active(i)
@@ -875,7 +877,7 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
 #        cell = combo.get_child().get_cell_renderers()[0]
 #        # FIXME: use something else than a hardcoded value here
 #        cell.set_property("wrap-width",300)
-#        cell.set_property("wrap-mode",pango.WRAP_WORD)
+#        cell.set_property("wrap-mode",Pango.WRAP_WORD)
 #        model = combo.get_model()
 #        model.clear()
 
@@ -1016,17 +1018,17 @@ class GtkLanguageSelector(LanguageSelectorBase,  SimpleGtkbuilderApp):
         if self.window_main.get_property("sensitive") is False:
             return True
         else:
-            gtk.main_quit()
+            Gtk.main_quit()
 
     def on_button_quit_clicked(self, widget):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     @honorBlockedSignals
     def on_window_main_key_press_event(self, widget, event):
-        keyname = gtk.gdk.keyval_name(event.keyval)
-        if (event.state & gtk.gdk.CONTROL_MASK):
+        keyname = Gdk.keyval_name(event.keyval)
+        if (event.get_state() & Gdk.EventMask.CONTROL_MASK):
             if (keyname == "w"):
-                gtk.main_quit()
+                Gtk.main_quit()
         return None
 
     ####################################################

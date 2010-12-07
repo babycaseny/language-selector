@@ -16,7 +16,7 @@ for filepath in glob.glob("po/mo/*/LC_MESSAGES/*.mo"):
 if sys.argv[1] == "build":
     assert(os.system("cd data; make") == 0)
     assert(os.system("cd LanguageSelector/qt; make") == 0)
-    assert(os.system("cd po; make update-po") == 0)
+    assert(os.system("make -C po") == 0)
     assert(os.system("cd dbus_backend; make") == 0)
     
 setup(name='language-selector',

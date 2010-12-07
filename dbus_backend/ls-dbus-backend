@@ -43,7 +43,7 @@ class LanguageSelectorServer(dbus.service.Object):
         pid = info.GetConnectionUnixProcessID(sender)
         subject = ('unix-process',
                    { 'pid' : dbus.UInt32(pid, variant_level=1),
-                     'start-time' : 0,
+                     'start-time' : dbus.UInt64(0),
                    }
                   )
         details = { '' : '' }

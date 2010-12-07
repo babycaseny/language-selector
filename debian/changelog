@@ -1,3 +1,31 @@
+language-selector (0.7) natty; urgency=low
+
+  * gnome-language-selector: Drop unnecessary GTK/glade imports.
+  * Eliminate LanguageSelector/gtk/SimpleGtkbuilderApp.py, and put the
+    GtkBuilder loading into LanguageSelector/gtk/GtkLanguageSelector.py
+    directly. Remove from po/POTFILES.in.
+  * debian/control: Set Maintainer to u-d-d@ mailing list.
+  * dbus_backend/ls-dbus-backend: Fix data type of "start-time" argument for
+    polkit call.
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Port from pygtk2 to GTK 3.0
+    and gobject-introspection. Also port to aptdaemon 0.40 API, as we require
+    the GTK3.0/gi port of python-aptdaemon-gtk.
+  * debian/control: Replace python-gtk2 dependency with python-gobject and
+    gir1.0-gtk-3.0.
+  * debian/control: Wrap build dependencies.
+  * Switch to "3.0 (native)" source package format.
+  * debian/control: Drop unnecessary pyqt4-dev-tools build dependency.
+  * debian/control, debian/rules: Switch from pycentral to dh_python2, drop
+    python-central build dependency. Also specify XS-Python-Version properly.
+  * debian/control: Drop unnecessary shlibs:Depends, this is pure Python.
+  * debian/control: Bump Standards-Version to 3.9.1.
+  * po/Makefile, setup.py: Don't merge po files during build, just update the
+    PO template.
+  * Remove po/language-selector.pot from bzr, it's built automatically and
+    just causes eternal noise.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 07 Dec 2010 11:52:26 +0100
+
 language-selector (0.6.6) maverick; urgency=low
 
   * debian/rules: Disable pkgbinarymangler, to keep translations in the

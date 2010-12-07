@@ -3,8 +3,9 @@ top_srcdir = ..
 
 PO_FILES := $(wildcard *.po)
 
+default: language-selector.pot $(patsubst %.po,%.mo,$(wildcard *.po))
 
-update-po: language-selector.pot $(patsubst %.po,%.mo,$(wildcard *.po))
+update-po: language-selector.pot
 	# update the po files 
 	#for f in $(PO_FILES); do \
 	#	intltool-update -r $${f%.po}  -g language-selector ; \
