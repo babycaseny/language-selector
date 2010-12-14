@@ -216,16 +216,27 @@ class LocaleInfo(object):
 
     def getUserDefaultLanguage(self):
         """
-        Reads '~/.profile' if present and '~/.dmrc' otherwise or if '~/.profile' doesn't set
-        any values.
+        Reads '/var/cache/gdm/[USER]/dmrc' and '~/.profile' if present and '~/.dmrc' otherwise
+        or if some value wasn't set.
         Scans for LANG and LANGUAGE variable settings and returns a list [LANG, LANGUAGE].
-        In case of '~/.dmrc', we only have the locale as a value, not the full LANGUAGE
-        variable compatible string. Therefor we need to generate one from the provided locale.
+        In case of '~/.dmrc', we may only have the locale as a value, not the full LANGUAGE
+        variable compatible string. Therefore we generate one from the provided locale.
         Likewise, if LANGUAGE is not defined, generate a string from the provided LANG value.
         """
         lang = ''
         language = ''
         result = []
+        if os.path.exists('/var/run/gdm.pid') and os.path.exists('/etc/init.d/gdm'):
+            is_gdm = True
+        else:
+            is_gdm = False
+        if is_gdm and 'USER' in os.environ:
+            fname = '/var/cache/gdm/%s/dmrc' % os.environ['USER']
+            if os.path.exists(fname) and os.access(fname, os.R_OK):
+                for line in open(fname):
+                    match = re.match(r'Langlist=(.*)$',line)
+                    if match:
+                        language = match.group(1)
         fname = os.path.expanduser("~/.profile")
         if os.path.exists(fname) and \
            os.access(fname, os.R_OK):
@@ -233,10 +244,19 @@ class LocaleInfo(object):
                 match_lang = re.match(r'export LANG=(.*)$',line)
                 if match_lang:
                     lang = match_lang.group(1).strip('"')
-                match_language = re.match(r'export LANGUAGE=(.*)$',line)
-                if match_language:
-                    language = match_language.group(1).strip('"')
-        if len(lang) == 0:
+                if len(language) == 0:
+                    match_language = re.match(r'export LANGUAGE=(.*)$',line)
+                    if match_language:
+                        language = match_language.group(1).strip('"')
+        if len(language) == 0 and is_gdm:
+            fname = os.path.expanduser("~/.dmrc")
+            if os.path.exists(fname) and \
+           	os.access(fname, os.R_OK):
+                for line in open(fname):
+                    match = re.match(r'Language=(.*)$',line)
+                    if match:
+                        language = self.makeEnvString( match.group(1) )
+        if len(lang) == 0 and not is_gdm:
             fname = os.path.expanduser("~/.dmrc")
             if os.path.exists(fname) and \
            	os.access(fname, os.R_OK):

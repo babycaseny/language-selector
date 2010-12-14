@@ -1,3 +1,15 @@
+language-selector (0.8) natty; urgency=low
+
+  * Set LC_MESSAGES for applications that don't recognize LANGUAGE
+    (LP: #553162).
+  * GDM related fixes (LP: #553162):
+    - Update dmrc when LANGUAGE and LC_MESSAGES are set, not when LANG
+      is set.
+    - Use the new dmrc fields "Langlist" and "LCMess" to store the
+      LANGUAGE and LC_MESSAGES values on disk.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Tue, 14 Dec 2010 22:20:37 +0100
+
 language-selector (0.7) natty; urgency=low
 
   * gnome-language-selector: Drop unnecessary GTK/glade imports.

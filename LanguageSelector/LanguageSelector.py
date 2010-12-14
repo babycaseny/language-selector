@@ -178,7 +178,7 @@ class LanguageSelectorBase(object):
         iface.SetSystemDefaultLangEnv(sysLang)
 
     def writeSysLanguageSetting(self, sysLanguage):
-        """ write the system "LANGUAGE" variable (e.g. de) """
+        """ write the system "LANGUAGE" and "LC_MESSAGES" variables """
         bus = dbus.SystemBus()
         obj = bus.get_object('com.ubuntu.LanguageSelector','/')
         iface = dbus.Interface(obj,dbus_interface="com.ubuntu.LanguageSelector")
@@ -191,25 +191,53 @@ class LanguageSelectorBase(object):
         findString = "export LANG="
         setString = "export LANG=\"%s\"\n" % macr["SYSLOCALE"]
         find_string_and_replace(findString, setString, conffiles)
-        self._update_gdm_dmrc(userLang)
 
     def writeUserLanguageSetting(self, userLanguage):
-        """ write the user "LANGUAGE" variable (e.g. de) """
+        # This function is not called in the KDE/Qt version of language-selector,
+        # and otherwise the settings written to ~/.profile aren't normally used,
+        # since the user language settings are primarily written to and read from
+        # GDM's dmrc files. We still update ~/.profile for backwards compatibility
+        # in certain kinds of networks, and to provide a generic storage model
+        # for the case language-selector is used together with some other login
+        # program but GDM or KDE.
+
         conffiles = [ os.path.expanduser("~/.profile") ]
+
+        """ write the user "LANGUAGE" variable (e.g. de_DE:de:en_GB:en) """
         findString = "export LANGUAGE="
         setString = "export LANGUAGE=\"%s\"\n" % userLanguage
         find_string_and_replace(findString, setString, conffiles)
 
-    def _update_gdm_dmrc(self, userLang):
-        if userLang:
+        """ write the user "LC_MESSAGES" variable (e.g. de_DE.utf8) """
+        userLCMess = language2locale(userLanguage)
+        findString = "export LC_MESSAGES="
+        setString = "export LC_MESSAGES=\"%s\"\n" % userLCMess
+        find_string_and_replace(findString, setString, conffiles)
+
+        self._update_gdm_dmrc(userLanguage.split(':')[0], userLanguage, userLCMess)
+
+
+    def _update_gdm_dmrc(self, firstLanguage, userLanguage, userLCMess):
+        if firstLanguage:
             gdmscript = "/etc/init.d/gdm"
             if os.path.exists("/var/run/gdm.pid") and os.path.exists(gdmscript):
-                fname = os.path.expanduser("~/.dmrc")
+                if 'USER' in os.environ:
+                    path = '/var/cache/gdm/%s' % os.environ['USER']
+                    if os.path.exists(path):
+                        fname = '%s/dmrc' % path
+                    else:
+                        # this should never be the case since GDM
+                        # creates the directory at first login
+                        return
+                else:
+                    return
                 out = tempfile.NamedTemporaryFile()
                 foundLang = False      # the Language var
                 foundDesktop = False   # the [Desktop] entry
+                foundLanglist = False  # the Langlist var
+                foundLCMess = False    # the LCMess var
                 filebuffer = []
-                macr = macros.LangpackMacros(self._datadir, userLang)
+                macr = macros.LangpackMacros(self._datadir, firstLanguage)
                 if os.path.exists(fname):
                     # look for the line
                     for line in open(fname):
@@ -220,6 +248,10 @@ class LanguageSelectorBase(object):
                             foundDesktop = True
                         if tmp.startswith("Language="):
                             foundLang = True
+                        if tmp.startswith('Langlist='):
+                            foundLanglist = True
+                        if tmp.startswith('LCMess='):
+                            foundLCMess = True
                 # if we have not found them add them
                 if foundDesktop == False:
                     line="\n[Desktop]\n"
@@ -227,21 +259,28 @@ class LanguageSelectorBase(object):
                 if foundLang == False:
                     line="Language=%s\n" % macr["SYSLOCALE"]
                     out.write(line)
+                if foundLanglist == False:
+                    line="Langlist=%s\n" % userLanguage
+                    out.write(line)
+                if foundLCMess == False:
+                    line="LCMess=%s\n" % userLCMess
+                    out.write(line)
                 for line in filebuffer:
                     if line.startswith("Language="):
                         line = "Language=%s\n" % macr["SYSLOCALE"]
+                    elif line.startswith("Langlist="):
+                        line = "Langlist=%s\n" % userLanguage
+                    elif line.startswith("LCMess="):
+                        line = "LCMess=%s\n" % userLCMess
                     else:
                         line = line+"\n"
                     out.write(line)
                 out.flush()
                 shutil.copy(out.name, fname)
                 os.chmod(fname, 0644)
-                if 'USER' in os.environ:
-                    userid = os.environ["USER"]
-                    path = '/var/cache/gdm/%s' % userid
-                    if os.path.exists(path):
-                        shutil.copy(fname, "%s/dmrc" % path)
-                        os.chmod("%s/dmrc" % path, 0644)
+                fnameHome = os.path.expanduser("~/.dmrc")
+                shutil.copy(fname, fnameHome)
+                os.chmod(fnameHome, 0644)
 
 
 if __name__ == "__main__":

@@ -60,13 +60,16 @@ class LanguageSelectorServer(dbus.service.Object):
 			 sender_keyword='sender')
     def SetSystemDefaultLanguageEnv(self, sysLanguage, sender, connection):
         """ 
-        sysLanguage - the default system LANGUAGE (e.g. de)
+        sysLanguage - the default system LANGUAGE and LC_MESSAGES
         """
         logging.debug("SetSystemDefaultLanguage")
         self._authWithPolicyKit(sender, connection, "com.ubuntu.languageselector.setsystemdefaultlanguage")
         conffiles = ["/etc/default/locale", "/etc/environment"]
         findString = "LANGUAGE="
         setString = "LANGUAGE=\"%s\"\n" % sysLanguage
+        find_string_and_replace(findString, setString, conffiles)
+        findString = "LC_MESSAGES="
+        setString = "LC_MESSAGES=\"%s\"\n" % language2locale(sysLanguage)
         find_string_and_replace(findString, setString, conffiles)
         # update fontconfig voodoo
         fc = LanguageSelector.FontConfig.FontConfigHack()
