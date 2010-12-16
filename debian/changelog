@@ -1,3 +1,10 @@
+language-selector (0.9) natty; urgency=low
+
+  * debian/control:
+    - Update Depends for gir abi change
+
+ -- Michael Terry <mterry@ubuntu.com>  Thu, 16 Dec 2010 13:49:33 -0500
+
 language-selector (0.8) natty; urgency=low
 
   * Set LC_MESSAGES for applications that don't recognize LANGUAGE
