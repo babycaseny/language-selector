@@ -8,6 +8,7 @@ import os
 import string
 import tempfile
 import subprocess
+import re
 
 def find_string_and_replace(findString, setString, file_list, 
                             startswith=True, append=True):
@@ -41,16 +42,21 @@ def find_string_and_replace(findString, setString, file_list,
 def language2locale(language):
     firstLanguage = language.split(':')[0]
     locales = []
+    locale = ''
     p = subprocess.Popen(['locale', '-a'], stdout=subprocess.PIPE)
-    for locale in p.communicate()[0].split("\n"):
-        if locale.endswith('.utf8'):
-            locales.append( locale.split('.')[0] )
-    if firstLanguage in locales:
-        locale = firstLanguage + '.utf8'
-    else:
+    for loc in p.communicate()[0].split("\n"):
+        if loc.find('.utf8') > 0:
+            locales.append(loc)
+    for loc in locales:
+        if firstLanguage == loc.replace('.utf8', ''):
+            locale = loc
+            break
+    if not locale:
         for loc in locales:
-            if firstLanguage == loc.split('_')[0]:
-                locale = loc + '.utf8'
+            if re.split('[_@]', firstLanguage)[0] == re.split('[._@]', loc)[0]:
+                locale = loc
                 break
+    if not locale:
+        locale = 'en_GB.utf8'
     return locale
 

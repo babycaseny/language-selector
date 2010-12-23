@@ -1,3 +1,10 @@
+language-selector (0.10) natty; urgency=low
+
+  * LanguageSelector/utils.py:
+    - Ability to deal with @variants in locale names restored.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Thu, 23 Dec 2010 00:19:14 +0100
+
 language-selector (0.9) natty; urgency=low
 
   * debian/control:
