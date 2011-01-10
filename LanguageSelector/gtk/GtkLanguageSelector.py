@@ -21,7 +21,7 @@ from gettext import gettext as _
 
 import gobject
 from gi.repository import Gdk, Gtk, Pango
-Gtk.require_version('3.0')
+Gtk.require_version('2.0')
 
 import apt
 import apt_pkg
