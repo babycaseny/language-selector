@@ -5,10 +5,12 @@
 #
 
 import os
+import re
 import string
 import tempfile
-import subprocess
-import re
+
+import macros
+from LocaleInfo import LocaleInfo
 
 def find_string_and_replace(findString, setString, file_list, 
                             startswith=True, append=True):
@@ -39,24 +41,40 @@ def find_string_and_replace(findString, setString, file_list,
         os.rename(out.name, fname)
         os.chmod(fname, 0644)
 
-def language2locale(language):
-    firstLanguage = language.split(':')[0]
+def language2locale(language, datadir):
+    """ generate locale name for the LC_MESSAGES environment variable
+    """
+    first_elem = language.split(':')[0]
+    macr = macros.LangpackMacros(datadir, first_elem)
     locales = []
-    locale = ''
-    p = subprocess.Popen(['locale', '-a'], stdout=subprocess.PIPE)
-    for loc in p.communicate()[0].split("\n"):
-        if loc.find('.utf8') > 0:
-            locales.append(loc)
-    for loc in locales:
-        if firstLanguage == loc.replace('.utf8', ''):
-            locale = loc
-            break
-    if not locale:
-        for loc in locales:
-            if re.split('[_@]', firstLanguage)[0] == re.split('[._@]', loc)[0]:
-                locale = loc
+    localeinfo = LocaleInfo('languagelist', datadir)
+    for locale in localeinfo.generated_locales():
+        if re.split('[_@]', locale)[0] == macr['LCODE']:
+            locales.append(locale)        
+    # exact match
+    if macr['LOCALE'] in locales:
+        return macr['SYSLOCALE']
+    if not macr['CCODE']:
+        # try the "main" country code if any
+        f = open(os.path.join(datadir, 'data', 'main-countries'), 'r')
+        for line in f.readlines():
+            if line.startswith('#') or not line.strip(): continue
+            (lcode, ll_CC) = line.split()
+            if lcode == macr['LCODE']:
+                try_me = first_elem.replace(lcode, ll_CC, 1)
+                macr = macros.LangpackMacros(datadir, try_me)
+                if macr['LOCALE'] in locales:
+                    return macr['SYSLOCALE']
                 break
-    if not locale:
-        locale = 'en_GB.utf8'
-    return locale
+        # try out fitting locale with any country code
+        for locale in locales:
+            m = re.match('(([a-z]+)_[A-Z]+)', locale)
+            if m:
+                ll_CC, lcode = m.groups()
+                try_me = first_elem.replace(lcode, ll_CC, 1)
+                macr = macros.LangpackMacros(datadir, try_me)
+                if macr['LOCALE'] in locales:
+                    return macr['SYSLOCALE']
+    # failed
+    return ''
 

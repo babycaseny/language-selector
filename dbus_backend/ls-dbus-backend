@@ -69,7 +69,7 @@ class LanguageSelectorServer(dbus.service.Object):
         setString = "LANGUAGE=\"%s\"\n" % sysLanguage
         find_string_and_replace(findString, setString, conffiles)
         findString = "LC_MESSAGES="
-        setString = "LC_MESSAGES=\"%s\"\n" % language2locale(sysLanguage)
+        setString = "LC_MESSAGES=\"%s\"\n" % language2locale(sysLanguage, self._datadir)
         find_string_and_replace(findString, setString, conffiles)
         # update fontconfig voodoo
         fc = LanguageSelector.FontConfig.FontConfigHack()

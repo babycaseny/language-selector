@@ -9,7 +9,7 @@ import grp
 import locale
 import os
 import pwd
-import time
+import re
 import shutil
 import string
 import subprocess
@@ -153,7 +153,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         
         #build the comboboxes (with model)
         combo = self.combobox_locale_chooser
-        model = Gtk.ListStore.newv([gobject.TYPE_STRING, gobject.TYPE_STRING])
+        model = Gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
         cell = Gtk.CellRendererText()
         combo.pack_start(cell, True)
         combo.add_attribute(cell, 'text', LANGTREEVIEW_LANGUAGE)
@@ -161,7 +161,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
 #        self.combo_syslang_dirty = False
 
 #        combo = self.combobox_user_language
-#        model = Gtk.ListStore.newv([gobject.TYPE_STRING, gobject.TYPE_STRING])
+#        model = Gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
 #        cell = Gtk.CellRendererText()
 #        combo.pack_start(cell, True)
 #        combo.add_attribute(cell, 'text', COMBO_LANGUAGE)
@@ -173,7 +173,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         self.ac = aptdaemon.client.AptClient()
 
         combo = self.combobox_input_method
-        model = Gtk.ListStore.newv([gobject.TYPE_STRING, gobject.TYPE_STRING])
+        model = Gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
         cell = Gtk.CellRendererText()
         combo.pack_start(cell, True)
         combo.add_attribute(cell, 'text', IM_NAME)
@@ -320,7 +320,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         column.set_cell_data_func (renderer, toggle_cell_func, None)
         self.treeview_languages.append_column(column)
         # build the store
-        self._langlist = Gtk.ListStore.newv([str, gobject.TYPE_PYOBJECT])
+        self._langlist = Gtk.ListStore(str, gobject.TYPE_PYOBJECT)
         self.treeview_languages.set_model(self._langlist)
 
     def setupLanguageTreeView(self):
@@ -353,8 +353,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
         self.treeview_locales.append_column(column)
 
         # build the store
-        self._localelist = Gtk.ListStore.newv([gobject.TYPE_STRING, gobject.TYPE_STRING])
-        self.treeview_locales.set_model(self._localelist)
+        self._language_options = Gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
+        self.treeview_locales.set_model(self._language_options)
 
     def _get_langinfo_on_cursor(self):
         (path, column) = self.treeview_languages.get_cursor()
@@ -808,24 +808,54 @@ class GtkLanguageSelector(LanguageSelectorBase):
             defaultLangName = self._localeinfo.translate(defaultLangCode, native=True)
 
         # find out about the other options        
+        avail_locales = self._localeinfo.generated_locales()
 
-        self._localelist.clear()
-        installedLangList = []
+        """ languages for message translation """
+        self._language_options.clear()
+
+        # to facilitate lookups: extend the list of available locales with items
+        # without country code
+        extended_localelist = {}
+        for loc in avail_locales:
+            lang = re.sub('_[A-Z]+', '', loc)
+            for string in loc, lang:
+                extended_localelist[string] = 1
+
+        # get the union of /usr/share/locale-langpack and /usr/share/locale
+        translation_dirs = {}
+        for t_dir in os.listdir('/usr/share/locale-langpack'):
+            translation_dirs[t_dir] = 1
+        for t_dir in os.listdir('/usr/share/locale'):
+            translation_dirs[t_dir] = 1
+
+        # get the intersection of available translation_dirs and the extended
+        # locale list
+        intersection = {}
+        for loc in extended_localelist:
+            if loc in translation_dirs:
+                intersection[loc] = 1
+
+        # Remove items without country code if country code items in the same
+        # language (and variant, if any) exist, since gettext won't find a
+        # translation under e.g. 'de_DE' if the first item in LANGUAGE is 'de'.
+        count = {}
+        for lang in intersection:
+            if re.match('en[^a-z]', lang):
+                continue
+            no_country = re.sub('_[A-Z]+', '', lang)
+            if no_country in count:
+                count[no_country] += 1
+            else:
+                count[no_country] = 1
+        for k in count:
+            if count[k] > 1 and k in intersection:
+                del intersection[k]
+
+        # prepare the list for the Language combo box by adding human readable
+        # languages and countries, sorting etc.
         mylist = []
-        for (i, locale) in enumerate(self._localeinfo.generated_locales()):
-            iter = model.append()
-            model.set_value(iter, LANGTREEVIEW_LANGUAGE,
-                    self._localeinfo.translate(locale, native=True))
-            model.set_value(iter, LANGTREEVIEW_CODE, locale)
-            if (defaultLangName and
-                   self._localeinfo.translate(locale, native=True) == defaultLangName):
-                combo.set_active(i)
-            mylist.append([self._localeinfo.translate(locale, native=True), locale])
-            macr = macros.LangpackMacros(self._datadir, locale)
-            langcode = macr["LCODE"]
-            if '_' in locale and not langcode in installedLangList:
-                installedLangList.append(langcode)
-                mylist.append([self._localeinfo.translate(langcode, native=True), langcode])
+        for (i, option) in enumerate( intersection.keys() ):
+            mylist.append([self._localeinfo.translate(option, native=True), option])
         if len(languageString) > 0:
             self.userEnvLanguage = languageString
             languages = languageString.split(":")
@@ -838,7 +868,17 @@ class GtkLanguageSelector(LanguageSelectorBase):
                 languages = self.userEnvLanguage.split(":")
         mylist_sorted = self.bubbleSort(mylist, languages)
         for i in mylist_sorted:
-            self._localelist.append(i)
+            self._language_options.append(i)
+
+        """ locales for misc. format preferences """
+        for (i, locale) in enumerate(avail_locales):
+            iter = model.append()
+            model.set_value(iter, LANGTREEVIEW_LANGUAGE,
+                    self._localeinfo.translate(locale, native=True))
+            model.set_value(iter, LANGTREEVIEW_CODE, locale)
+            if (defaultLangName and
+                   self._localeinfo.translate(locale, native=True) == defaultLangName):
+                combo.set_active(i)
         self.updateExampleBox()
 
     def bubbleSort(self, sortlist, presort=None):

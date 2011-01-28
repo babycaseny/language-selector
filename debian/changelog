@@ -1,3 +1,36 @@
+language-selector (0.12) natty; urgency=low
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - Show only options corresponding to available translations in the
+      combo box on language-selector's "Language" tab (LP: #693337).
+  * LanguageSelector/LanguageSelector.py:
+    - Skip the encoding part in the dmrc "Language" value. It's not
+      a locale name, so let's not give the impression it is.
+  * data/LanguageSelector.ui:
+    - Clearer labels to describe the second ("Text") tab.
+    - Icon added to taskbar. Thanks to Pavol Klačanský (LP: #648109).
+    - Texts that inform the user about the need to restart for changes
+      to system settings to take effect (LP: #127356, #612991).
+    - Ellipses removed from the labels on the "Apply System-Wide"
+      buttons (LP: #531799).
+    - Layout tweaking of the "Format" (previously "Text") tab
+      (LP: #697606).
+  * data/main-countries:
+    - Provide main or origin country for languages with multiple country
+      codes present among the languages' available locales.
+  * LanguageSelector/utils.py:
+    - Take main country code into account when language2locale()
+      generates a locale name for LC_MESSAGES.
+    - language2locale() rewritten to make use of other language-selector
+      functions.
+
+  [ Martin Pitt ]
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Update ListStore construction
+    to also work with the next pygobject release.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Fri, 28 Jan 2011 15:50:50 +0100
+
 language-selector (0.11) natty; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py: Force GTK 2 for now, as we do

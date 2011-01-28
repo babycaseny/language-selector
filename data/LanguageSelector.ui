@@ -337,7 +337,8 @@ The availability of translations or writing aids can differ between languages.</
   </object>
   <object class="GtkWindow" id="window_main">
     <property name="visible">True</property>
-    <property name="title" translatable="yes">Language &amp; Text</property>
+    <property name="title" translatable="yes">Language &amp; Format</property>
+    <property name="icon_name">config-language</property>
     <property name="destroy_with_parent">True</property>
     <signal name="key_press_event" handler="on_window_main_key_press_event"/>
     <signal name="delete_event" handler="on_delete_event"/>
@@ -421,7 +422,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                             <property name="visible">True</property>
                             <child>
                               <object class="GtkButton" id="button_apply_system_wide_languages">
-                                <property name="label" translatable="yes">Apply System-Wide...</property>
+                                <property name="label" translatable="yes">Apply System-Wide</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -450,7 +451,8 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                             <property name="visible">True</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
-                            <property name="label" translatable="yes">&lt;small&gt;Uses the same language choices for startup and the login screen.&lt;/small&gt;</property>
+                            <property name="label" translatable="yes">&lt;small&gt;Use the same language choices for startup and the login screen.
+Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                             <property name="use_markup">True</property>
                           </object>
                           <packing>
@@ -577,6 +579,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
+                            <property name="padding">3</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -597,7 +600,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                             <property name="visible">True</property>
                             <child>
                               <object class="GtkButton" id="button_apply_system_wide_locale">
-                                <property name="label" translatable="yes">Apply System-Wide...</property>
+                                <property name="label" translatable="yes">Apply System-Wide</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -617,7 +620,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
-                            <property name="padding">6</property>
+                            <property name="padding">3</property>
                             <property name="position">3</property>
                           </packing>
                         </child>
@@ -626,8 +629,8 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                             <property name="visible">True</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
-                            <property name="ypad">1</property>
-                            <property name="label" translatable="yes">&lt;small&gt;Uses the same text format choice for startup and the login screen.&lt;/small&gt;</property>
+                            <property name="label" translatable="yes">&lt;small&gt;Use the same format choice for startup and the login screen.
+Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                             <property name="use_markup">True</property>
                           </object>
                           <packing>
@@ -638,11 +641,11 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                           <object class="GtkFrame" id="frame3">
                             <property name="visible">True</property>
                             <property name="label_xalign">0</property>
-                            <property name="shadow_type">in</property>
+                            <property name="shadow_type">none</property>
                             <child>
                               <object class="GtkAlignment" id="alignment14">
                                 <property name="visible">True</property>
-                                <property name="top_padding">18</property>
+                                <property name="top_padding">6</property>
                                 <property name="bottom_padding">18</property>
                                 <property name="left_padding">18</property>
                                 <property name="right_padding">18</property>
@@ -651,12 +654,12 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                                     <property name="visible">True</property>
                                     <property name="n_rows">3</property>
                                     <property name="n_columns">2</property>
-                                    <property name="column_spacing">12</property>
+                                    <property name="column_spacing">6</property>
                                     <property name="row_spacing">6</property>
                                     <child>
                                       <object class="GtkLabel" id="label3">
                                         <property name="visible">True</property>
-                                        <property name="xalign">1</property>
+                                        <property name="xalign">0</property>
                                         <property name="yalign">0</property>
                                         <property name="label" translatable="yes">Number:</property>
                                         <property name="justify">right</property>
@@ -669,7 +672,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                                     <child>
                                       <object class="GtkLabel" id="label2">
                                         <property name="visible">True</property>
-                                        <property name="xalign">1</property>
+                                        <property name="xalign">0</property>
                                         <property name="yalign">0</property>
                                         <property name="label" translatable="yes">Date:</property>
                                         <property name="justify">right</property>
@@ -684,7 +687,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                                     <child>
                                       <object class="GtkLabel" id="label11">
                                         <property name="visible">True</property>
-                                        <property name="xalign">1</property>
+                                        <property name="xalign">0</property>
                                         <property name="yalign">0</property>
                                         <property name="label" translatable="yes">Currency:</property>
                                         <property name="justify">right</property>
@@ -771,7 +774,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                   <object class="GtkLabel" id="Text">
                     <property name="visible">True</property>
                     <property name="xpad">6</property>
-                    <property name="label" translatable="yes">Text</property>
+                    <property name="label" translatable="yes">Format preferences for dates etc.</property>
                   </object>
                   <packing>
                     <property name="position">1</property>

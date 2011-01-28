@@ -209,7 +209,7 @@ class LanguageSelectorBase(object):
         find_string_and_replace(findString, setString, conffiles)
 
         """ write the user "LC_MESSAGES" variable (e.g. de_DE.utf8) """
-        userLCMess = language2locale(userLanguage)
+        userLCMess = language2locale(userLanguage, self._datadir)
         findString = "export LC_MESSAGES="
         setString = "export LC_MESSAGES=\"%s\"\n" % userLCMess
         find_string_and_replace(findString, setString, conffiles)
@@ -257,7 +257,7 @@ class LanguageSelectorBase(object):
                     line="\n[Desktop]\n"
                     out.write(line)
                 if foundLang == False:
-                    line="Language=%s\n" % macr["SYSLOCALE"]
+                    line="Language=%s\n" % macr["LOCALE"]
                     out.write(line)
                 if foundLanglist == False:
                     line="Langlist=%s\n" % userLanguage
@@ -267,7 +267,7 @@ class LanguageSelectorBase(object):
                     out.write(line)
                 for line in filebuffer:
                     if line.startswith("Language="):
-                        line = "Language=%s\n" % macr["SYSLOCALE"]
+                        line = "Language=%s\n" % macr["LOCALE"]
                     elif line.startswith("Langlist="):
                         line = "Langlist=%s\n" % userLanguage
                     elif line.startswith("LCMess="):
