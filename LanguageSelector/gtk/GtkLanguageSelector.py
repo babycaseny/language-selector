@@ -823,10 +823,14 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
         # get the union of /usr/share/locale-langpack and /usr/share/locale
         translation_dirs = {}
-        for t_dir in os.listdir('/usr/share/locale-langpack'):
-            translation_dirs[t_dir] = 1
-        for t_dir in os.listdir('/usr/share/locale'):
-            translation_dirs[t_dir] = 1
+        lp_dir = '/usr/share/locale-langpack'
+        if os.path.isdir(lp_dir):
+            for t_dir in os.listdir(lp_dir):
+                translation_dirs[t_dir] = 1
+        loc_dir = '/usr/share/locale'
+        if os.path.isdir(loc_dir):
+            for t_dir in os.listdir(loc_dir):
+                translation_dirs[t_dir] = 1
 
         # get the intersection of available translation_dirs and the extended
         # locale list
@@ -835,9 +839,19 @@ class GtkLanguageSelector(LanguageSelectorBase):
             if loc in translation_dirs:
                 intersection[loc] = 1
 
-        # Remove items without country code if country code items in the same
-        # language (and variant, if any) exist, since gettext won't find a
-        # translation under e.g. 'de_DE' if the first item in LANGUAGE is 'de'.
+        # If country code items in a language exist:
+        # - Remove the item without country code, since gettext won't find a
+        #   translation under e.g. 'de_DE' if the first item in LANGUAGE is 'de'
+        #   (see https://launchpad.net/bugs/700213). 'en' is kept, though, since
+        #   it's always the last item in LANGUAGE per design.
+        # - Make sure that the main dialect of the language is represented among
+        #   the country code items (see https://launchpad.net/bugs/710148).
+        main = {}
+        for line in open(os.path.join(self._datadir, 'data', 'main-countries')):
+            if re.match('\s*(?:#|$)', line):
+                continue
+            k, v = line.split()
+            main[k] = v
         count = {}
         for lang in intersection:
             if re.match('en[^a-z]', lang):
@@ -847,9 +861,15 @@ class GtkLanguageSelector(LanguageSelectorBase):
                 count[no_country] += 1
             else:
                 count[no_country] = 1
-        for k in count:
-            if count[k] > 1 and k in intersection:
-                del intersection[k]
+        for langcode in count:
+            if count[langcode] > 1:
+                if langcode in intersection:
+                    del intersection[langcode]
+                if langcode in main:
+                    intersection[ main[langcode] ] = 1
+
+        if len(intersection) == 0:
+            intersection['en'] = 1
 
         # prepare the list for the Language combo box by adding human readable
         # languages and countries, sorting etc.
@@ -1100,7 +1120,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             if str == "en":
                 break
             myiter = model.iter_next(myiter)
-        print (envLanguage)
+        #print (envLanguage)
         self.writeUserLanguage(envLanguage)
         self.userEnvLanguage = envLanguage
         #os.environ["LANGUAGE"]=envLanguage

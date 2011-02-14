@@ -774,7 +774,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                   <object class="GtkLabel" id="Text">
                     <property name="visible">True</property>
                     <property name="xpad">6</property>
-                    <property name="label" translatable="yes">Format preferences for dates etc.</property>
+                    <property name="label" translatable="yes">Regional Formats</property>
                   </object>
                   <packing>
                     <property name="position">1</property>

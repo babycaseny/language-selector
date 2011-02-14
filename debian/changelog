@@ -1,3 +1,20 @@
+language-selector (0.13) natty; urgency=low
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - Ensure that main or origin country is included when country
+      specific options for a language are shown (LP: #710148).
+    - Do not let an absent translation directory make the program crash
+      (LP: #714093).
+  * data/LanguageSelector.ui:
+    - Shorter label to describe the second tab (LP: #709855).
+  * LanguageSelector/macros.py:
+    - Use locale names with '.UTF-8' instead of '.utf8' when setting
+      LC_* or LANG environment variables (LP: #666565, #700619).
+      Thanks to Lauri Tirkkonen for the patch!
+
+ -- Evan Dandrea <ev@ubuntu.com>  Mon, 14 Feb 2011 16:13:04 +0000
+
 language-selector (0.12) natty; urgency=low
 
   [ Gunnar Hjalmarsson ]

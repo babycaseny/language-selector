@@ -208,7 +208,7 @@ class LanguageSelectorBase(object):
         setString = "export LANGUAGE=\"%s\"\n" % userLanguage
         find_string_and_replace(findString, setString, conffiles)
 
-        """ write the user "LC_MESSAGES" variable (e.g. de_DE.utf8) """
+        """ write the user "LC_MESSAGES" variable (e.g. de_DE.UTF-8) """
         userLCMess = language2locale(userLanguage, self._datadir)
         findString = "export LC_MESSAGES="
         setString = "export LC_MESSAGES=\"%s\"\n" % userLCMess
