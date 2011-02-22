@@ -5,6 +5,7 @@ import glob
 import os
 import sys
 
+PREFIX=sys.prefix
 GETTEXT_NAME="language-selector"
 I18NFILES = []
 for filepath in glob.glob("po/mo/*/LC_MESSAGES/*.mo"):
@@ -18,14 +19,17 @@ if sys.argv[1] == "build":
     assert(os.system("cd LanguageSelector/qt; make") == 0)
     assert(os.system("make -C po") == 0)
     assert(os.system("cd dbus_backend; make") == 0)
-    
+elif sys.argv[1] == "install":
+    for arg in sys.argv[2:]:
+        if "--prefix" in arg:
+            PREFIX=arg.split("=")[1]
+
 setup(name='language-selector',
       version='0.1',
       packages=['LanguageSelector',
                 'LanguageSelector.gtk',
                 'LanguageSelector.qt'],
-      scripts=['qt-language-selector',
-               'gnome-language-selector',
+      scripts=['gnome-language-selector',
                'check-language-support',
                'fontconfig-voodoo'],
       data_files=[('share/language-selector/data',
@@ -40,7 +44,12 @@ setup(name='language-selector',
                     "data/im-switch.blacklist",
                     "data/LanguageSelector.ui"]),
                   ('share/applications',
-                   glob.glob("data/*.desktop")),
+                   ['data/language-selector.desktop']),
+                  # kcm stuff
+                  ('share/kde4/services',
+                   ['data/kde-language-selector.desktop']),
+                  ('share/kde4/apps/language-selector',
+                   ['kde-language-selector']),
                   # dbus stuff
                   ('share/dbus-1/system-services',
                    ['dbus_backend/com.ubuntu.LanguageSelector.service']),
@@ -55,5 +64,6 @@ setup(name='language-selector',
                    ["data/language-selector.png"]),
                   ]+I18NFILES,
       )
-
-
+if sys.argv[1] == "install":
+    os.rename(PREFIX+"/share/kde4/services/kde-language-selector.desktop", PREFIX+"/share/kde4/services/language-selector.desktop")
+    os.rename(PREFIX+"/share/kde4/apps/language-selector/kde-language-selector", PREFIX+"/share/kde4/apps/language-selector/language-selector.py")

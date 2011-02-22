@@ -13,7 +13,7 @@ import sys
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from PyKDE4.kdecore import ki18n, KAboutData, KCmdLineArgs, KCmdLineOptions
-from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox, KGuiItem
+from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox, KGuiItem, KCModule, KWindowSystem
 
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
@@ -28,51 +28,30 @@ def utf8(str):
 def _(string):
     return utf8(i18n(string))
 
-class QtLanguageSelector(QWidget,LanguageSelectorBase):
+class QtLanguageSelector(KCModule, LanguageSelectorBase):
     """ actual implementation of the qt GUI """
 
-    def __init__(self, app, datadir, mode):
+    def __init__(self, datadir, component_data=None, parent=None):
         LanguageSelectorBase.__init__(self, datadir)
-        QWidget.__init__(self)
-        Ui_QtLanguageSelectorGUI.__init__(self)
+        KCModule.__init__(self, component_data, parent)
+        
+        self.parentApp = KApplication.kApplication()
         self.ui = Ui_QtLanguageSelectorGUI()
         self.ui.setupUi(self)
-
-        self.parentApp = app
-
+        self.about = MakeAboutData()
+        self.setAboutData(self.about)
+        
         self.setWindowIcon(KIcon("preferences-desktop-locale"))
-        self.ui.pushButtonSetSystemLanguage.setIcon(KIcon("dialog-ok"))
-        self.ui.pushButtonOk.setIcon(KIcon("dialog-ok"))
-        self.ui.pushButtonCancel.setIcon(KIcon("dialog-cancel"))
-        self.ui.pushButtonCancel_2.setIcon(KIcon("dialog-cancel"))
-
+        
         self.imSwitch = ImSwitch()
-
         # remove dangling ImSwitch symlinks if present
         self.imSwitch.removeDanglingSymlinks()
-
-        self.mode = mode
         self.init()
-        if mode == "uninstall":
-            self.ui.pushButtonOk.setText(_("Uninstall"))
-            self.ui.selectLanguageLabel.setText(_("Select language to uninstall:"))
-            self.ui.systemLanguageFrame.hide()
-        elif mode == "install":
-            self.ui.systemLanguageFrame.hide()
-        elif mode == "select":
-            self.ui.installLanguageFrame.hide()
-            self.resize(self.sizeHint())
-            self.setWindowTitle(_("Language Selector"))
-            self.checkInputMethods()
-        else:
-            print "ERROR: unknown mode"
 
         # connect the signals
-        app.connect(self.ui.listBoxDefaultLanguage, SIGNAL("itemSelectionChanged()"), self.checkInputMethods)
-        app.connect(self.ui.pushButtonOk, SIGNAL("clicked()"), self.onPushButtonOk)
-        app.connect(self.ui.pushButtonSetSystemLanguage, SIGNAL("clicked()"), self.onSystemPushButtonOk)
-        app.connect(self.ui.pushButtonCancel, SIGNAL("clicked()"), self.close)
-        app.connect(self.ui.pushButtonCancel_2, SIGNAL("clicked()"), self.close)
+        self.connect(self.ui.listViewLanguagesInst, SIGNAL("itemSelectionChanged()"), self.checkInstallableComponents)
+        self.connect(self.ui.listViewLanguagesUninst, SIGNAL("itemSelectionChanged()"), self.onChanged)
+        self.connect(self.ui.listBoxDefaultLanguage, SIGNAL("itemSelectionChanged()"), self.checkInputMethods)
 
     def init(self):
         self.translateUI()
@@ -113,17 +92,28 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
         if True: #options.verify_installed:
             self.verifyInstalledLangPacks()
 
+    def save(self):
+        idx = self.ui.ktabwidget.currentIndex()
+
+        if idx == 0:
+            self.pkgChanges("install")
+        elif idx == 1:
+            self.pkgChanges("uninstall")
+        else:
+            self.onSystemLanguageApply()
 
     def translateUI(self):
         """ translate the strings in the UI, needed because Qt designer doesn't use gettext """
         self.ui.defaultSystemLabel.setText(_("Default system language:"))
-        self.ui.pushButtonSetSystemLanguage.setText(_("Set System Language"))
         self.ui.labelInputMethod.setText(_("Keyboard input method:"))
-        self.ui.pushButtonCancel_2.setText(_("Cancel"))
         self.ui.selectLanguageLabel.setText(_("Select language to install:"))
-        self.ui.pushButtonOk.setText(_("Install"))
-        self.ui.pushButtonCancel.setText(_("Cancel"))
-
+        self.ui.selectLanguageLabel_2.setText(_("Select language to uninstall:"))
+        self.ui.checkBoxTr.setText(_("Translations"))
+        self.ui.checkBoxIm.setText(_("Input methods"))
+        self.ui.checkBoxSpell.setText(_("Spellchecking and writing aids"))
+        self.ui.checkBoxFonts.setText(_("Extra fonts"))
+        self.ui.ComponentsLabel.setText(_("Components:"))
+         
     def updateSystemDefaultListbox(self):
         self.ui.listBoxDefaultLanguage.clear()
         self._localeinfo.localeToCodeMap = {}
@@ -139,7 +129,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
             self._localeinfo.localeToCodeMap[name] = locale
         locales.sort()
         for localeName in locales:
-            item = QListWidgetItem(localeName, self.ui.listBoxDefaultLanguage)
+            item = QListWidgetItem(utf8(localeName), self.ui.listBoxDefaultLanguage)
             if defaultLangName == localeName:
                 item.setSelected(True)
         if (not os.path.exists("/etc/alternatives/xinput-all_ALL") or
@@ -174,61 +164,70 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                 self.setEnabled(True)
 
     def update(self):
-        lock = thread.allocate_lock()
-        lock.acquire()
-        t = thread.start_new_thread(self.run_pkg_manager_update,(lock,))
-        while lock.locked():
-            self.parentApp.processEvents()
-            time.sleep(0.05)
+        self.run_pkg_manager_update()
 
     def commit(self, inst, rm):
         # unlock here to make sure that lock/unlock are always run
         # pair-wise (and don't explode on errors)
         if len(inst) == 0 and len(rm) == 0:
             return
-        lock = thread.allocate_lock()
-        lock.acquire()
-        t = thread.start_new_thread(self.run_pkg_manager,(lock,inst,rm))
-        while lock.locked():
-            self.parentApp.processEvents()
-            time.sleep(0.05)
+        self.run_pkg_manager(inst,rm)
 
     def updateLanguagesList(self):
-        self.ui.listViewLanguages.clear()
+        self.ui.listViewLanguagesInst.clear()
+        self.ui.listViewLanguagesUninst.clear()
         # get the language names and sort them alphabetically
         languageList = self._cache.getLanguageInformation()
         self._localeinfo.listviewStrToLangInfoMap = {}
         for lang in languageList:
-            self._localeinfo.listviewStrToLangInfoMap[utf8(lang.language)] = lang
+            self._localeinfo.listviewStrToLangInfoMap[utf8(self._localeinfo.translate(lang.languageCode))] = lang
         languages = self._localeinfo.listviewStrToLangInfoMap.keys()
         languages.sort()
 
         for langName in languages:
             lang = self._localeinfo.listviewStrToLangInfoMap[langName]
-            elm = QListWidgetItem(utf8(lang.language), self.ui.listViewLanguages)
-
+            elmIn = QListWidgetItem(utf8(self._localeinfo.translate(lang.languageCode)), self.ui.listViewLanguagesInst)
+            elmUn = QListWidgetItem(utf8(self._localeinfo.translate(lang.languageCode)), self.ui.listViewLanguagesUninst)
+            
             if lang.fullInstalled:
-                if self.mode == "install":
-                    elm.setFlags(Qt.ItemIsDropEnabled)  #not sure how to unset all flags, but this disables the item
-                    elm.setToolTip(_("Already installed"))
-                else:
-                    elm.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
+                elmIn.setFlags(Qt.ItemIsDropEnabled)  #not sure how to unset all flags, but this disables the item
+                elmIn.setToolTip(_("Already installed"))
+                elmUn.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
             elif lang.inconsistent:
-                elm.setToolTip(_("Partially Installed"))
+                elmIn.setToolTip(_("Partially Installed"))
             else:
-                if self.mode == "uninstall":
-                    elm.setFlags(Qt.ItemIsDropEnabled)  #not sure how to unset all flags, but this disables the item
-                    elm.setToolTip(_("Not installed"))
-                    elm.setHidden(True)
-                else:
-                    elm.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
+                elmUn.setFlags(Qt.ItemIsDropEnabled)  #not sure how to unset all flags, but this disables the item
+                elmUn.setToolTip(_("Not installed"))
+                elmUn.setHidden(True)
+                elmIn.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
 
+    def onChanged(self):
+        self.changed()
+
+    def checkInstallableComponents(self):
+        """ check available components for the selected language
+            and set/unset the corresponding checkbutton accordingly
+        """
+        items = self.ui.listViewLanguagesInst.selectedItems()
+
+        if len(items) == 1:
+            self.changed()
+            li = self._localeinfo.listviewStrToLangInfoMap[unicode(items[0].text())]
+            for (button, langPkg) in (
+              ("checkBoxTr", li.languagePkgList["languagePack"]),
+              ("checkBoxIm", li.languagePkgList["languageSupportInputMethods"]),
+              ("checkBoxSpell", li.languagePkgList["languageSupportWritingAids"]),
+              ("checkBoxFonts", li.languagePkgList["languageSupportFonts"]) ):
+                getattr(self.ui, button).setChecked(langPkg.installed)
+                getattr(self.ui, button).setEnabled(langPkg.available)
+        
     def checkInputMethods(self):
-        """ check if the selected langauge has input method support
+        """ check if the selected language has input method support
             and set checkbutton_enable_input_methods accordingly
         """
-        if not self.imSwitch.available():
+        if (not self.imSwitch.available()) or (not self.getSystemLanguage()):
             return
+        self.changed()
         (lang, code) = self.getSystemLanguage()
 
         combo = self.ui.comboBoxInputMethod
@@ -243,28 +242,26 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
             if IM == currentIM:
                 combo.setCurrentIndex(i)
 
-    def run_pkg_manager_update(self, lock):
+    def run_pkg_manager_update(self):
         self.returncode = 0
-        self.returncode = subprocess.call(["qapt-batch","--update"])
-        lock.release()
+        self.returncode = subprocess.call(["qapt-batch", "--attach", str(self.winId()), "--update"])
 
-    def run_pkg_manager(self, lock, to_inst, to_rm):
+    def run_pkg_manager(self, to_inst, to_rm):
         self.returncode = 0
         if len(to_inst) > 0:
             print str(["qapt-batch","--install"]+to_inst)
-            self.returncode = subprocess.call(["qapt-batch","--install"]+to_inst)
+            self.returncode = subprocess.call(["qapt-batch", "--attach", str(self.winId()), "--install"]+to_inst)
         # then remove
         if len(to_rm) > 0:
-            self.returncode = subprocess.call(["qapt-batch","--uninstall"]+to_rm)
-        lock.release()
+            print str(["qapt-batch","--uninstall"]+to_rm)
+            self.returncode = subprocess.call(["qapt-batch", "--attach", str(self.winId()), "--uninstall"]+to_rm)
 
-    def onSystemPushButtonOk(self):
+    def onSystemLanguageApply(self):
         (lang, code) = self.getSystemLanguage()
         self.writeSysLanguageSetting(code)
         self.writeSysLangSetting(code)
         self.updateInputMethods(code)
         KMessageBox.information(self, _("Default system Language now set to %s.") % lang, _("Language Set"))
-        self.close()
 
     def updateInputMethods(self,code):
         IM_choice = self.ui.comboBoxInputMethod.currentText()
@@ -273,7 +270,7 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
     def getSystemLanguage(self):
         """ returns tuple of (lang, code) strings """
         items = self.ui.listBoxDefaultLanguage.selectedItems()
-        if len(items) == 1 and self.mode == "select":
+        if len(items) == 1:
             item = items[0]
             lang = item.text()
             new_locale = ("%s"%lang)
@@ -282,30 +279,32 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
                 return (lang, code)
             except KeyError:
                 print "ERROR: can not find new_locale: '%s'"%new_locale
+      
+    def pkgChanges(self, mode):
 
-    def onPushButtonOk(self):
-        items = self.ui.listViewLanguages.selectedItems()
+        if mode == "install":
+            items = self.ui.listViewLanguagesInst.selectedItems()
+        else:
+            items = self.ui.listViewLanguagesUninst.selectedItems()
+            
         if len(items) == 1:
             elm = items[0]
             li = self._localeinfo.listviewStrToLangInfoMap[unicode(elm.text())]
-            if self.mode == "uninstall":
-#                self._cache.tryRemoveLanguage(li.languageCode)
-                for pkg in li.languagePkgList.values():
-                    if pkg.available:
-                        if pkg.installed:
-                            pkg.doChange = True
-                        else:
-                            pkg.doChange = False
-            else:
 #                self._cache.tryInstallLanguage(li.languageCode)
-                for pkg in li.languagePkgList.values():
-                    if pkg.available:
-                        if not pkg.installed:
-                            pkg.doChange = True
-                        else:
-                            pkg.doChange = False
+            for (button, langPkg) in (
+              ("checkBoxTr", li.languagePkgList["languagePack"]),
+              ("checkBoxIm", li.languagePkgList["languageSupportInputMethods"]),
+              ("checkBoxSpell", li.languagePkgList["languageSupportWritingAids"]),
+              ("checkBoxFonts", li.languagePkgList["languageSupportFonts"]) ):
+              if langPkg.available:
+                if (mode == "install") and (not langPkg.installed):
+                  langPkg.doChange = getattr(self.ui, button).isChecked()
+                elif (mode == "uninstall") and langPkg.installed:
+                  langPkg.doChange = True
             try:
                 self._cache.tryChangeDetails(li)
+                for langPkg in li.languagePkgList.values():
+                  langPkg.doChange = False
             except ExceptionPkgCacheBroken:
                 s = _("Software database is broken")
                 t = _("It is impossible to install or remove any software. "
@@ -317,33 +316,51 @@ class QtLanguageSelector(QWidget,LanguageSelectorBase):
 
         (to_inst, to_rm) = self._cache.getChangesList()
         if len(to_inst) == len(to_rm) == 0:
-            self.close()
             return
-
         # first install
         self.setCursor(Qt.WaitCursor)
         self.setEnabled(False)
-        lock = thread.allocate_lock()
-        lock.acquire()
-        t = thread.start_new_thread(self.run_pkg_manager,(lock,to_inst,to_rm))
-        while lock.locked():
-            self.parentApp.processEvents()
-            time.sleep(0.05)
+        self.run_pkg_manager(to_inst,to_rm)
         self.setCursor(Qt.ArrowCursor)
         self.setEnabled(True)
-
-        kdmscript = "/etc/init.d/kdm"
-        if os.path.exists("/var/run/kdm.pid") and os.path.exists(kdmscript):
-            subprocess.call(["invoke-rc.d","kdm","reload"])
+        
+#        kdmscript = "/etc/init.d/kdm"
+#        if os.path.exists("/var/run/kdm.pid") and os.path.exists(kdmscript):
+#            subprocess.call(["invoke-rc.d","kdm","reload"])
 
         #self.run_pkg_manager(to_inst, to_rm)
-        if self.returncode == 0 and self.mode == "install":
-            KMessageBox.information( self, _("Translations and support have now been installed for %s.  Select them from the Add Language button.") % unicode(items[0].text()), _("Language Installed") )
-        elif self.returncode == 0 and self.mode == "uninstall":
-            KMessageBox.information( self, _("Translations and support have now been uninstalled for %s.") % unicode(items[0].text()), _("Language Uninstalled") )
+
+        if self.returncode == 0:
+            if (mode == "install"):
+                KMessageBox.information( self, _("All selected components have now been installed for %s.  Select them from Country/Region & Language.") % unicode(items[0].text()), _("Language Installed") )
+            elif (mode == "uninstall"):
+                KMessageBox.information( self, _("Translations and support have now been uninstalled for %s.") % unicode(items[0].text()), _("Language Uninstalled") )
+            # Resync the cache to match packageManager changes, then update views
+            self._cache.open(None)
+            self.updateLanguagesList()
+            self.updateSystemDefaultListbox()
         else:
             KMessageBox.sorry(self, _("Failed to set system language."), _("Language Not Set"))
-        self.close()
+            self._cache.clear() # undo all selections
+            
+def MakeAboutData():
+  appName     = "language-selector"
+  catalog     = ""
+  programName = ki18n ("Language Selector")
+  version     = "0.3.4"
+  description = ki18n ("Language Selector")
+  license     = KAboutData.License_GPL
+  copyright   = ki18n ("(c) 2008 Canonical Ltd")
+  text        = ki18n ("none")
+  homePage    = "https://launchpad.net/language-selector"
+  bugEmail    = ""
+
+  aboutData   = KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
+  aboutData.addAuthor(ki18n("Michael Vogt"), ki18n("Developer"))
+  aboutData.addAuthor(ki18n("Jonathan Riddell"), ki18n("Developer"))
+  aboutData.addAuthor(ki18n("Harald Sitter"), ki18n("Developer"))
+  
+  return aboutData
 
 if __name__ == "__main__":
 
@@ -394,7 +411,7 @@ if __name__ == "__main__":
         KMessageBox.sorry(None, _("Please run this software with administrative rights."),  _("Not Root User"))
         sys.exit(1)
 
-    lc = QtLanguageSelector(app, "/usr/share/language-selector/", whattodo)
+    lc = QtLanguageSelector("/usr/share/language-selector/")
 
     lc.show()
 

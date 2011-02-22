@@ -8,9 +8,9 @@ LanguageSelector/qt/QtLanguageSelector.py
 LanguageSelector/qt/QtLanguageSelectorGUI.py
 [type: gettext/glade]data/LanguageSelector.ui
 data/language-selector.desktop.in
-data/qt-language-selector.desktop.in
+data/kde-language-selector.desktop.in
 [type: gettext/rfc822deb]/data/incomplete-language-support-gnome.note.in
-[type: gettext/rfc822deb]/data/incomplete-language-support-qt.note.in
+[type: gettext/rfc822deb]/data/incomplete-language-support-kde.note.in
 [type: gettext/rfc822deb]data/restart_session_required.note.in
 gnome-language-selector
 fontconfig-voodoo
