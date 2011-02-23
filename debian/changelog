@@ -1,3 +1,11 @@
+language-selector (0.16) natty; urgency=low
+
+  * Create a transitional binary package for language-selector-qt to install
+    language-selector-kde. Otherwise language-selector-qt just gets
+    uninstalled and international users are just left hanging.
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Wed, 23 Feb 2011 19:17:32 -0500
+
 language-selector (0.15) natty; urgency=low
 
   [ Romain Perier ]

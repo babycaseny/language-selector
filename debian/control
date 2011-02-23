@@ -38,14 +38,22 @@ Depends: language-selector-common (= ${binary:Version}),
  python-qt4,
  qapt-batch,
  python-apt
-Replaces: language-selector-qt
-Conflicts: language-selector-qt
+Replaces: language-selector-qt (<< 0.16)
+Conflicts: language-selector-qt (<< 0.16)
 XB-Python-Version: ${python:Versions}
 Description: Language selector for Kubuntu
  This package let you change and install language packs
  in Kubuntu.
  .
  This package contains the KDE frontend.
+
+Package: language-selector-qt
+Architecture: all
+Depends: ${misc:Depends},
+ language-selector-kde
+Description: Language selector for Kubuntu (transitional package)
+ This package is a transitional package that can safely be removed
+ after you have installed language-selector-kde
 
 Package: language-selector-common
 Architecture: all
