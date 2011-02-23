@@ -1,6 +1,6 @@
 Priority: High
 Terminal: False
-Command: kdesudo -- /usr/bin/qt-language-selector --mode install
+Command: kcmshell4 language-selector
 GettextDomain: language-selector
 _Name: Incomplete Language Support
 _Description:

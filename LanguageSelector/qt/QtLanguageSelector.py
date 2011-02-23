@@ -51,6 +51,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         # connect the signals
         self.connect(self.ui.listViewLanguagesInst, SIGNAL("itemSelectionChanged()"), self.checkInstallableComponents)
         self.connect(self.ui.listViewLanguagesUninst, SIGNAL("itemSelectionChanged()"), self.onChanged)
+        self.connect(self.ui.ktabwidget, SIGNAL("currentChanged(int)"), self.onTabChangeRevertApply)
         self.connect(self.ui.listBoxDefaultLanguage, SIGNAL("itemSelectionChanged()"), self.checkInputMethods)
 
     def init(self):
@@ -203,6 +204,12 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
 
     def onChanged(self):
         self.changed()
+
+    def onTabChangeRevertApply(self):
+        self.ui.listViewLanguagesInst.clearSelection()
+        self.ui.listViewLanguagesUninst.clearSelection()
+        self.ui.listBoxDefaultLanguage.clearSelection()
+        self.emit(SIGNAL("changed(bool)"), False)
 
     def checkInstallableComponents(self):
         """ check available components for the selected language

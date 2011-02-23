@@ -1,3 +1,24 @@
+language-selector (0.15) natty; urgency=low
+
+  [ Romain Perier ]
+  * LanguageSelector/qt/QtLanguageSelector.py:
+   - Unapply changes on changing tab
+  * data/incomplete-language-support-kde.note.in
+   - Run kcontrol module
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/LocaleInfo.py:
+    - Ensure that generated_locales() only returns UTF-8 locales
+      (LP: #533159).
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - Make setlocale() errors non-fatal (LP: #651582).
+  * Changed Korean fonts settings as suggested by jincreator:
+    - fontconfig/29-language-selector-ko-kr.conf removed (LP: #715742).
+    - fontconfig/69-language-selector-ko-kr.conf edited (LP: #716872).
+      Thanks for the patch!
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Wed, 23 Feb 2011 13:49:05 -0800
+
 language-selector (0.14) natty; urgency=low
 
   * LanguageSelector/qt/QtLanguageSelector.py:
