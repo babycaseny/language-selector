@@ -206,9 +206,11 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         self.changed()
 
     def onTabChangeRevertApply(self):
-        self.ui.listViewLanguagesInst.clearSelection()
-        self.ui.listViewLanguagesUninst.clearSelection()
-        self.ui.listBoxDefaultLanguage.clearSelection()
+        for listView in [ "listViewLanguagesInst", "listViewLanguagesUninst", "listBoxDefaultLanguage" ]:
+          getattr(self.ui, listView).clearSelection()
+        for button in [ "checkBoxTr", "checkBoxIm", "checkBoxSpell", "checkBoxFonts" ]:
+          getattr(self.ui, button).setChecked(False)
+          getattr(self.ui, button).setEnabled(False)
         self.emit(SIGNAL("changed(bool)"), False)
 
     def checkInstallableComponents(self):
