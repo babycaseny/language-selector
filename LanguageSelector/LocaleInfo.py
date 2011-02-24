@@ -104,7 +104,7 @@ class LocaleInfo(object):
         p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE)
         for line in string.split(p.communicate()[0], "\n"):
             tmp = line.strip()
-            if tmp.startswith("#") or tmp == "" or tmp == "C" or tmp == "POSIX":
+            if tmp.find('.utf8') < 0:
                 continue
             # we are only interessted in the locale, not the codec
             macr = macros.LangpackMacros(self._datadir, tmp)

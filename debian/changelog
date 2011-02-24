@@ -1,3 +1,10 @@
+language-selector (0.18) natty; urgency=low
+
+  * Restore changes from 0.15 which were accidentally dropped in 0.17 due to
+    bzr branch confusion.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Thu, 24 Feb 2011 12:16:21 +0100
+
 language-selector (0.17) natty; urgency=low
 
   * Clean up after the gratutitous renaming in 0.14:
