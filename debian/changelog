@@ -1,3 +1,10 @@
+language-selector (0.20) natty; urgency=low
+
+  * debian/control: Replace transitional python-aptdaemon-gtk dependency with
+    the current name python-aptdaemon.gtkwidgets.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 25 Feb 2011 09:51:56 +0100
+
 language-selector (0.19) natty; urgency=low
 
   * LanguageSelector/qt/QtLanguageSelector.py:
