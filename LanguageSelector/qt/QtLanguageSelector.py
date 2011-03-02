@@ -53,6 +53,10 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         self.connect(self.ui.listViewLanguagesUninst, SIGNAL("itemSelectionChanged()"), self.onChanged)
         self.connect(self.ui.ktabwidget, SIGNAL("currentChanged(int)"), self.onTabChangeRevertApply)
         self.connect(self.ui.listBoxDefaultLanguage, SIGNAL("itemSelectionChanged()"), self.checkInputMethods)
+        self.connect(self.ui.checkBoxTr, SIGNAL("stateChanged(int)"), self.onChanged)
+        self.connect(self.ui.checkBoxIm, SIGNAL("stateChanged(int)"), self.onChanged)
+        self.connect(self.ui.checkBoxSpell, SIGNAL("stateChanged(int)"), self.onChanged)
+        self.connect(self.ui.checkBoxFonts, SIGNAL("stateChanged(int)"), self.onChanged)
 
     def init(self):
         self.translateUI()
@@ -202,8 +206,14 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
                 elmUn.setHidden(True)
                 elmIn.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
 
-    def onChanged(self):
-        self.changed()
+    def onChanged(self, state = 1):
+        if state:
+            self.changed()
+        else:
+            for button in [ "checkBoxTr", "checkBoxIm", "checkBoxSpell", "checkBoxFonts" ]:
+                if getattr(self.ui, button).isEnabled() and getattr(self.ui, button).isChecked():
+                    return
+            self.emit(SIGNAL("changed(bool)"), False)
 
     def onTabChangeRevertApply(self):
         for listView in [ "listViewLanguagesInst", "listViewLanguagesUninst", "listBoxDefaultLanguage" ]:
@@ -220,15 +230,22 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         items = self.ui.listViewLanguagesInst.selectedItems()
 
         if len(items) == 1:
-            self.changed()
             li = self._localeinfo.listviewStrToLangInfoMap[unicode(items[0].text())]
             for (button, langPkg) in (
               ("checkBoxTr", li.languagePkgList["languagePack"]),
               ("checkBoxIm", li.languagePkgList["languageSupportInputMethods"]),
               ("checkBoxSpell", li.languagePkgList["languageSupportWritingAids"]),
               ("checkBoxFonts", li.languagePkgList["languageSupportFonts"]) ):
-                getattr(self.ui, button).setChecked(langPkg.installed)
                 getattr(self.ui, button).setEnabled(langPkg.available)
+                getattr(self.ui, button).setChecked(False)
+                if langPkg.installed:
+                    getattr(self.ui, button).setChecked(True)
+                    getattr(self.ui, button).setEnabled(False)
+                    getattr(self.ui, button).setToolTip(_("Component already installed"))
+                elif not langPkg.available:
+                    getattr(self.ui, button).setToolTip(_("Component not available"))
+                else:
+                    getattr(self.ui, button).setToolTip(_("Component not installed"))
         
     def checkInputMethods(self):
         """ check if the selected language has input method support
@@ -348,6 +365,8 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
             self._cache.open(None)
             self.updateLanguagesList()
             self.updateSystemDefaultListbox()
+            if mode == "install":
+                self.checkInstallableComponents()
         else:
             KMessageBox.sorry(self, _("Failed to set system language."), _("Language Not Set"))
             self._cache.clear() # undo all selections

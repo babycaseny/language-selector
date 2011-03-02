@@ -1,3 +1,14 @@
+language-selector (0.23) natty; urgency=low
+
+  * LanguageSelector/qt/QtLanguageSelector.py:
+   - Enable checkboxes only when the corresponding components are available and
+     not installed yet. Otherwise it cannot be checked
+   - Make apply clickable only when a checkbox is clicked.
+   - Clear checkboxes on item change
+   - Add tooltips in order to be less confusing
+
+ -- Romain Perier <romain.perier@gmail.com>  Wed, 02 Mar 2011 19:38:39 +0100
+
 language-selector (0.22) natty; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py: Update require_version() call
