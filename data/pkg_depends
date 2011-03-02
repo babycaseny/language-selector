@@ -23,7 +23,7 @@ tr::evolution:evolution-documentation-
 tr::kdelibs5-data:kde-l10n-
 #writing support for Finnish
 wa:fi:firefox|thunderbird|seahorse|epiphany:mozvoikko
-wa:fi:openoffice.org-core:openoffice.org-voikko
+wa:fi:libreoffice-core:libreoffice-voikko
 #openoffice.org stuff
 wa:af:openoffice.org-common:openoffice.org-hyphenation-af
 wa:ca:openoffice.org-common:openoffice.org-hyphenation-ca

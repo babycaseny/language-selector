@@ -1,3 +1,14 @@
+language-selector (0.21) natty; urgency=low
+
+  [ Timo Jyrinki ]
+  * Replace openoffice.org-voikko with libreoffice-voikko. (LP: #724151)
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/LanguageSelector.py:
+    - Fix of faulty logic in code for updating dmrc.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 02 Mar 2011 10:32:32 +0100
+
 language-selector (0.20) natty; urgency=low
 
   * debian/control: Replace transitional python-aptdaemon-gtk dependency with

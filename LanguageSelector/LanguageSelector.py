@@ -252,6 +252,16 @@ class LanguageSelectorBase(object):
                             foundLanglist = True
                         if tmp.startswith('LCMess='):
                             foundLCMess = True
+                for line in filebuffer:
+                    if line.startswith("Language="):
+                        line = "Language=%s\n" % macr["LOCALE"]
+                    elif line.startswith("Langlist="):
+                        line = "Langlist=%s\n" % userLanguage
+                    elif line.startswith("LCMess="):
+                        line = "LCMess=%s\n" % userLCMess
+                    else:
+                        line = line+"\n"
+                    out.write(line)
                 # if we have not found them add them
                 if foundDesktop == False:
                     line="\n[Desktop]\n"
@@ -264,16 +274,6 @@ class LanguageSelectorBase(object):
                     out.write(line)
                 if foundLCMess == False:
                     line="LCMess=%s\n" % userLCMess
-                    out.write(line)
-                for line in filebuffer:
-                    if line.startswith("Language="):
-                        line = "Language=%s\n" % macr["LOCALE"]
-                    elif line.startswith("Langlist="):
-                        line = "Langlist=%s\n" % userLanguage
-                    elif line.startswith("LCMess="):
-                        line = "LCMess=%s\n" % userLCMess
-                    else:
-                        line = line+"\n"
                     out.write(line)
                 out.flush()
                 shutil.copy(out.name, fname)
