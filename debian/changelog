@@ -1,3 +1,12 @@
+language-selector (0.22) natty; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Update require_version() call
+    to current pygobject API. Bump python-gobject dependency accordingly.
+  * debian/control: Fix aptdaemon dependency: we actually use and need
+    python-aptdaemon.gtk3widgets (with GI), not gtkwidgets.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 03 Mar 2011 17:23:42 +0100
+
 language-selector (0.21) natty; urgency=low
 
   [ Timo Jyrinki ]

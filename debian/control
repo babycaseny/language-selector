@@ -15,12 +15,12 @@ Architecture: all
 Depends: language-selector-common (= ${binary:Version}),
  ${misc:Depends},
  ${python:Depends},
- python-gobject (>= 2.27),
+ python-gobject (>= 2.27.91),
  gir1.2-gtk-2.0 (>= 2.23.90-0ubuntu3),
  gir1.2-vte-0.0,
  python-apt (>= 0.6.12),
  aptdaemon (>= 0.40+bzr527),
- python-aptdaemon.gtkwidgets
+ python-aptdaemon.gtk3widgets
 Replaces: language-selector (<< 0.17)
 Conflicts: language-selector (<< 0.17)
 XB-Python-Version: ${python:Versions}

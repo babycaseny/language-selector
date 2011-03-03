@@ -19,9 +19,11 @@ import time
 import tempfile
 from gettext import gettext as _
 
-import gobject
+import gobject, gi
+gi.require_version('Gtk', '2.0')
+gi.require_version('Gdk', '2.0')
+gi.require_version('Vte', '0.0')
 from gi.repository import Gdk, Gtk, Pango
-Gtk.require_version('2.0')
 
 import apt
 import apt_pkg
