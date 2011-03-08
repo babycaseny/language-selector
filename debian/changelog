@@ -1,3 +1,10 @@
+language-selector (0.24) natty; urgency=low
+
+  * debian/rules: Drop NO_PKG_MANGLE. This is now fixed properly in
+    pkgbinarymangler, and this fixes LP translations import.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 08 Mar 2011 14:19:34 +0100
+
 language-selector (0.23) natty; urgency=low
 
   * LanguageSelector/qt/QtLanguageSelector.py:

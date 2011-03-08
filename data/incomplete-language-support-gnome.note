@@ -1,0 +1,205 @@
+Priority: High
+Terminal: False
+Command: /usr/bin/gnome-language-selector
+GettextDomain: language-selector
+Name: Incomplete Language Support
+Name-af.UTF-8: Onvolledige taalondersteuning
+Name-am.UTF-8: ያልተሟላ የቋንቋ ድጋፍ
+Name-ar.UTF-8: دعم لغة غير مكتمل
+Name-ast.UTF-8: Sofitu a llingua incompletu
+Name-az.UTF-8: Yarımçıq Dil Dəstəyi
+Name-be.UTF-8: Няпоўная моўная падтрымка
+Name-bg.UTF-8: Непълна езикова поддръжка
+Name-br.UTF-8: Skor ar yezh n'eo ket klok
+Name-bs.UTF-8: Nekompletna Jezična Podrška
+Name-ca.UTF-8: Suport d'idioma incomplet
+Name-crh.UTF-8: Eksik Til Destegi
+Name-cs.UTF-8: Neúplná jazyková podpora
+Name-csb.UTF-8: Niefùlwôrtné wspiarcé dlô jãzëka
+Name-da.UTF-8: Ufuldstændig sprogunderstøttelse
+Name-de.UTF-8: Unvollständige Sprachunterstützung
+Name-el.UTF-8: Ημιτελής γλωσσική υποστήριξη
+Name-en_AU.UTF-8: Incomplete Language Support
+Name-en_CA.UTF-8: Incomplete Language Support
+Name-en_GB.UTF-8: Incomplete Language Support
+Name-eo.UTF-8: Nekompleta lingva subteno
+Name-es.UTF-8: Soporte de idiomas incompleto
+Name-et.UTF-8: Mittetäielik keeletoetus
+Name-eu.UTF-8: Osatu gabe dago Hizkuntza Sostengua
+Name-fi.UTF-8: Kielituki vaillinainen
+Name-fo.UTF-8: Ófullfíggjað mál undirtøka
+Name-fr.UTF-8: Prise en charge de la langue incomplète
+Name-fur.UTF-8: Supuart di Lenghe no Complet
+Name-gl.UTF-8: Dispoñibilidade de idioma incompleta
+Name-gu.UTF-8: અધૂરી ભાષાકીય સુવિધા
+Name-gv.UTF-8: Cha nel dy lioor cooney çhengey
+Name-he.UTF-8: תמיכה חלקית בשפה
+Name-hi.UTF-8: अपूर्ण भाषा समर्थन
+Name-hr.UTF-8: Nepotpuna jezična podrška
+Name-hu.UTF-8: Hiányos nyelvi támogatás
+Name-id.UTF-8: Dukungan bahasa yang tidak kompatibel
+Name-is.UTF-8: Tungumálið er ekki fullstutt
+Name-it.UTF-8: Supporto lingue non completo
+Name-ja.UTF-8: 不完全な言語サポート
+Name-kk.UTF-8: Тілдің қолдауы толығымен қамтылмаған
+Name-km.UTF-8: គាំទ្រ​ភាសា​មិនពេញលេញ
+Name-ko.UTF-8: 불완전한 언어 지원
+Name-lt.UTF-8: Nepilnas kalbos palaikymas
+Name-lv.UTF-8: Nepilnīgs valodu atbalsts
+Name-mr.UTF-8: अपूर्ण भाषा आधार
+Name-ms.UTF-8: Sokongan Bahasa Tidak Lengkap
+Name-nb.UTF-8: Ufullstendig språkstøtte
+Name-nds.UTF-8: De Sprakunnerstütten is nich vollständig
+Name-nl.UTF-8: Onvolledige taalondersteuning
+Name-nn.UTF-8: Uferdig språkstøtte
+Name-oc.UTF-8: Presa en carga de la lenga incompleta
+Name-pa.UTF-8: ਅਧੂਰਾ ਭਾਸ਼ਾ ਸਹਿਯੋਗ
+Name-pl.UTF-8: Niekompletna obsługa języka
+Name-pt.UTF-8: Suporte de Língua Incompleto
+Name-pt_BR.UTF-8: Suporte de Idioma Incompleto
+Name-ro.UTF-8: Suport lingvistic incomplet
+Name-ru.UTF-8: Поддержка языка установлена не полностью
+Name-sc.UTF-8: Suportu limba incumpletu
+Name-si.UTF-8: අසම්පූර්‍ණ භාෂා සහය
+Name-sk.UTF-8: Neúplná podpora jazykov
+Name-sl.UTF-8: Nepopolna jezikovna podpora
+Name-sq.UTF-8: Mbështetje Jo e Plotë Për Gjuhën
+Name-sr.UTF-8: Непотпуна језичка подршка
+Name-sv.UTF-8: Språkstödet är inte komplett
+Name-ta.UTF-8: அரைகுறை மொழி ஆதரவு
+Name-th.UTF-8: สนับสนุนภาษาได้บางส่วน
+Name-tr.UTF-8: Yetersiz Dil Desteği
+Name-ug.UTF-8: تولۇقسىز تىل قوللىشى
+Name-uk.UTF-8: Неповна Підтримка Мови
+Name-vi.UTF-8: Hỗ trợ ngôn ngữ không đầy đủ
+Name-zh_CN.UTF-8: 不完整的语言支持
+Name-zh_HK.UTF-8: 不完整的語言支援
+Name-zh_TW.UTF-8: 不完整的語言支援
+Description:
+ The language support files for your selected language seem to be incomplete.
+ You can install the missing components by clicking on "Run this action now"
+ and follow the instructions. An active internet connection is required.
+ If you would like to do this at a later time, please use "System ->
+ Administration -> Language Support" instead.
+Description-ar.UTF-8:
+ يبدو أن ملفات دعم اللغة التي اخترتها غير مكتملة. يمكنك تثبيت المكونات الناقصة بالنقر على "قم بهذا الإجراء الآن" ثم اتباع التعليمات. تحتاج لاتصال بالإنترنت. إذا أردت القيام بهذا لاحقا، فاستخدم "نظام -> إدارة -> دعم اللغات".
+Description-ast.UTF-8:
+ El sofitu a llingües pa la so llingua seleicionada paez incompletu. Pue instalar los componentes que falten calcando en "executar esta aición agora" y seguir les instrucciones. Requierse tar coneutáu a Internet. Si deseya facer esto más sero, use Sistema->Alministración -> Seleutor de llingües.
+Description-be.UTF-8:
+ Файлы падтрымкі абранай мовы няпоўныя. Каб ўсталяваць патрэбныя кампаненты, націсніце "Run this action now" і выканайце інструкцыю. Дзейнае далучэньне да Інтэрнету абавязковае. Калі вы жадаеце зрабіць гэта пазьней, скарыстайце меню "Сыстэма -> Адміністраваньне -> Моўная падтрымка".
+Description-bg.UTF-8:
+ Файловете за поддръжка на език за Вашия избран език изглежда са непълни. Можете да инсталирате липсващите елементи като натиснете "Изпълняване сега" и следвате инструкциите. Необходима е интернет връзка. Ако искате да направите това по-късно, моля използвайте "Система -> Администрация -> Езикова поддръжка".
+Description-br.UTF-8:
+ Restroù ar skor yezh evit ar yezh diuzet a seblant bezañ diglok. Gallout a rit staliañ ar parzhioù a vank en ur glikañ war "Loc'hañ ar gwezh-mañ bremañ" ha grit diouzh an titouroù. Ret eo kaout ur c'hennask ouzh ar Genrouedad a ya en-dro. M'ho peus c'hoant d'hen ober diwezhatoc'h, implijit "Reizhiad -> Melestradur -> Skor yezhel" kentoc'h.
+Description-bs.UTF-8:
+ Podrška za ovaj jezik izgleda nekompletna. Možete instalirati nedostajuće komponente klikom na "Izvrši akciju sada" i pratiti instrukcije. Potrebna je aktivna Internet veza. Ako to želite uraditi kasnije, koristite "Sistem -> Administracija -> Jezička podrška" .
+Description-ca.UTF-8:
+ Sembla ser que els fitxers de suport d'idioma per a la vostra llengua són incomplets. Podeu instal·lar els components que manquen si feu clic a «Executa ara aquesta acció» i seguiu les instruccions, cosa per la qual us caldrà una connexió activa a Internet. En cas que no vulgueu fer-ho ara sinó més endavant, utilitzeu l'entrada de menú «Sistema -> Administració -> Suport d'idioma» en lloc d'això.
+Description-crh.UTF-8:
+ Saylağanıñız til içün olğan til destegi dosyeleri eksik körüne. Eksik komponentlerni "Bu amelni şimdi çaptır" üzerine çertip talimatnı taqip eterek qura bilirsiñiz. Faal bir internet bağlantısı şarttır. Bunı daa soñra yapmağa isteseñiz, lütfen "Sistem -> İdare -> Til Destegi"ni qullanıñız.
+Description-cs.UTF-8:
+ Podpora pro váš zvolený jazyk se zdá být nekompletní. Můžete nainstalovat chybějící součásti kliknutím na "Spustit tuto akci nyní" a následováním instrukcí. Je vyžadováno funkční připojení k Internetu. Pokud byste to raději provedli později, prosím použijte "Systém → Správa → Jazyková podpora".
+Description-csb.UTF-8:
+ Wëbróné wspiarcé dlô jãzëka wëzdrzi na niefùlwôrtné. Mòże winstalowac felącé kòmpònentë klëkając na "Zrëszë no dzejanié terô" ë jisc dali za intrukcëją. je nót aktiwnegò sparłãczenia z internetã. Mòże to zrobic téż pòzdze, proszã brëkòwac do tegò "Systema -> Sprôwianié -> Jãzëczi".
+Description-da.UTF-8:
+ Sprogfilerne til understøttelse af dit valgte sprog ser ud til at være ufuldstændige. Du kan installere de manglende komponenter ved at klikke på "Kør denne handling nu" og følge instruktionerne. Der kræves en aktiv internetforbindelse. Hvis du vil gøre dette på et senere tidspunkt, skal du i stedet bruge "System -> Administration -> Sprogunderstøttelse".
+Description-de.UTF-8:
+ Die Sprachunterstützung für die von Ihnen ausgewählte Sprache scheint unvollständig zu sein. Sie können die fehlenden Komponenten installieren, indem Sie auf »Aktion jetzt ausführen« klicken und den Anweisungen folgen. Dazu ist eine bestehende Internetverbindung erforderlich. Falls Sie dies zu einem späteren Zeitpunkt durchführen möchten, verwenden Sie bitte stattdessen »System -> Systemverwaltung -> Sprachunterstützung«.
+Description-el.UTF-8:
+ Τα αρχεία υποστήριξης για την επιλεγμένη γλώσσα είναι ημιτελή. Μπορείτε να εγκαταστήσετε τα στοιχεία που δεν υπάρχουν, κάνοντας κλικ στο "Εκτέλεση" και ακολουθήστε τις οδηγίες. Χρειάζεται μια σύνδεση στο διαδίκτυο. Αν θέλετε να το κάνετε αργότερα παρακαλούμε να επιλέξετε "Σύστημα > Διαχείριση συστήματος > Γλωσσική υποστήριξη".
+Description-en_AU.UTF-8:
+ The language support files for your selected language seem to be incomplete. You can install the missing components by clicking on "Run this action now" and follow the instructions. An active Internet connection is required. If you would like to do this at a later time, please use "System -> Administration -> Language Support" instead.
+Description-en_CA.UTF-8:
+ The language support files for your selected language seem to be incomplete. You can install the missing components by clicking on "Run this action now" and follow the instructions. An active Internet connection is required. If you would like to do this at a later time, please use "System -> Administration -> Language Support" instead.
+Description-en_GB.UTF-8:
+ The language support files for your selected language seem to be incomplete.  You can install the missing components by clicking on "Run this action now" and follow the instructions.  An active internet connection is required. If you would like to do this at a later time, please use "System -> Administration -> Language Support" at that time.
+Description-eo.UTF-8:
+ La subteno por via elektita lingvo ŝajnas esti nekompleta. Vi povas instali la mankantajn komponantojn klakante al "Nun rulu tiun agon" kaj sekvante la instrukciojn. Aktiva retkonekto necesas. Se vi preferas fari tion iam poste, bonvolu uzi la menueron "Sistemo -> Administrado -> Lingvosubteno".
+Description-es.UTF-8:
+ Los archivos de soporte del idioma que ha seleccionado parecen estar incompletos. Puede instalar los componentes que faltan pulsando en «Ejecutar esta acción ahora» y siguiendo las instrucciones. Necesitará estar conectado a Internet. Si desea hacerlo más tarde, use «Sistema -> Administración -> Soporte de idiomas».
+Description-et.UTF-8:
+ Paistab, et toetus sinu valitud keelele pole täielik. Sa võid puuduvad komponendid paigaldada klõpsates nupul "Käivita see tegevus kohe" ning järgides juhiseid. Selleks on vaja toimivat internetiühendust. Kui soovid seda teha hiljem, leiad selle menüüst "Arvuti -> Haldamine -> Keeletoetus".
+Description-eu.UTF-8:
+ Hautatu duzun hizkuntzaren sostengu fitxategiak ez daude osorik. Falta diren osagaiak instala ditzakezu  "Exekutatu ekintza hau orain" botoia klikatuz eta argibideak jarraituz. Honetarako internet konexioa beharrezkoa da. Hau beranduago egin nahi baduzu, mesedez erabili "Sistema -> Administrazioa -> Hizkuntza sostengua".
+Description-fi.UTF-8:
+ Kaikkia kielituen vaatimia tiedostoja ei ole asennettu valitulle kielelle. Voit asentaa puuttuvat osat tuesta napsauttamalla ”Run this action now” (”Suorita tämä toiminto nyt”) -painiketta ja seuraamalla ohjeita. Koneen tulee olla yhteydessä Internetiin. Jos haluat asentaa täyden kielituen myöhemmin, avaa ”System -> Administration -> Language Support” (”Järjestelmä -> Ylläpito -> Kieliasetukset”).
+Description-fr.UTF-8:
+ Les fichiers de prise en charge de la langue sélectionnée semblent incomplets. Vous pouvez installer les composants manquants en cliquant sur « Lancer cette action maintenant » puis en suivant les instructions. Une connexion fonctionnelle à Internet est nécessaire. Si vous souhaitez le faire ultérieurement, veuillez utiliser « Système -> Administration -> Prise en charge des langues » à la place.
+Description-fur.UTF-8:
+ Somee che i files dal supuart pa to lenghe a no sedin complets. Si pues instalà ce ca mancje fracant il boton "Fâlu cumò" e lant daûr i conseis. Une conession di ret a scugne. Se invezit tu vuelis fâlu dopo, dopre par plasè "Sisteme -> Aministrazion -> Supuart pa Lenghe".
+Description-gl.UTF-8:
+ Os ficheiros de dispoñibilidade de idioma parecen estar incompletos. Pode instalar os compoñentes que faltan premendo sobre «Executar esta acción agora» e seguir as instrucións. Requírese unha conexión de Internet activa. De desexar facer iso despois, use «Sistema -> Administración -> Dispoñibilidade de idioma».
+Description-he.UTF-8:
+ נראה כי קובצי התמיכה בשפה עבור השפה הנבחרת אינם שלמים. ניתן להתקין את הרכיבים החסרים על ידי לחיצה על "הרצת פעולה זו כעת" ולעקוב אחר ההוראות. יש צורך בחיבור אינטרנט פעיל. אם ברצונך לעשות זאת במועד מאוחר יותר, ניתן להשתמש ב־"מערכת -> ניהול -> תמיכה בשפות" במקום.
+Description-hi.UTF-8:
+ आपके द्वारा चुने गए भाषा हेतु भाषा समर्थन अपूर्ण प्रतिक होता है. आप छुटे हुए घटक को संस्थापित करने हेतु "इस कार्रवाई को चलाएं" पर क्लिक कर दिए गए निर्देशों का पालन करें. इसके लिए सक्रिय इंटरनेट संबंध की जरुरत होगी. इसे आप बाद में कभी करना चाहते हैं, तो कृपया "तंत्र -> प्रशासन -> भाषा समर्थन" का इस्तेमाल करें.
+Description-hr.UTF-8:
+ Datoteke jezične podrške koju ste odabrali su nepotpune. Nedostajuće komponente možete instalirati pritiskom na tipku "Pokreni akciju sada" i prateći upute. Aktivna veza s Internetom je neophodna. Ukoliko biste ovo htjeli obaviti kasnije, to možete učiniti odlaskom u "Sustav -> Administracija -> Jezična podrška".
+Description-hu.UTF-8:
+ Úgy tűnik, hogy az Ön által kiválasztott nyelvhez nincs teljes nyelvi támogatást biztosító fájl. A hiányzó elemeket a „Futtatás most” gombra kattintva telepítheti, majd kövesse a megjelenő utasításokat. Ehhez aktív internetkapcsolat szükséges. Ha később szeretné elvégezni ezt a műveletet, akkor azt a „Rendszer -> Adminisztráció -> Nyelvi támogatás” kiválasztásával teheti meg.
+Description-id.UTF-8:
+ Berkas-berkas untuk dukungan bahasa anda kelihatannya kurang lengkap. Anda dapat memasang komponen yang kurang dengan mengklik "Jalankan sekarang" dan ikuti penjelasan yang akan ditampilkan. Hal ini membutuhkan hubungan internet yang aktif. Bila anda tidak ingin melakukannya sekarang, nanti anda dapat menggunakan "Sistem -> Administrasi -> Dukungan Bahasa" untuk menjalankannya.
+Description-is.UTF-8:
+ Tungumálastuðiningur fyrir valið tungumál virðist ekki vera tilbúinn. Þú getur sett upp þá hluta sem vantar með því að smellla á "Keyra þessa aðgerð núna" og fylgja upplýsingunum. Nettenging er nauðsynleg. Viljir þú gera þetta seinna, notaðu "Kerfið -> Stjórnun -> Tungumálastuðningur".
+Description-it.UTF-8:
+ Sembra che i file di supporto per la lingua selezionata siano incompleti. È possibile installare i componenti mancanti facendo clic su «Esegui questa azione ora» e seguendo le istruzioni. È richiesta una connessione a Internet attiva. Per eseguire l'installazione in un secondo momento, scegliere «System → Administration → Language Support» (Sistema → Amministrazione → Supporto lingue).
+Description-ja.UTF-8:
+ 選択された言語向けの言語サポートファイルが不完全なようです。"このアクションをすぐに実行する" をクリックし指示に従うことで、足りないコンポーネントをインストールできます。インターネット接続が必要です。後でこれを行いたい場合は、 "システム->システム管理->言語サポート" を利用してください。
+Description-kk.UTF-8:
+ Таңдалған тілдің қолдау файлдары толығымен орнатылмаған. Жетіспеген компоненттерді орнату үшін, "Қазір орнату" батырмасын басып, кейінгі нұсқауларымен еріңіз. Орнатылым жүзеге асыру үшін интернет-қосылыс қажет. Кейінірік жасаймын десеңіз, "Жүйе -> Әкімшілік -> Тіл локализациясы".
+Description-km.UTF-8:
+ ឯកសារ​គាំទ្រ​ភាសា​ សម្រាប់​ភាសា​ដែល​អ្នក​បាន​ជ្រើសហាក់ដូចជា​មិនពេញ​លេញឡើយ​​ ។​ អ្នក​អាច​ដំឡើង​សមាសភាគ​ដែល​បាត់​​ដោយ​ចុចលើ​ "​​ដំណើរការ​​​សកម្មភាព​វា​ឥឡូវ​​" ហើយ​បំពេញ​ការ​ណែនាំ​ ។ ការ​តភ្ជាប់​អ៊ីនធឺណិត​សកម្មត្រូវ​បានទាមទារ​ ។​ បើ​អ្នក​ចង់​ធ្វើ​វា​នៅ​ពេល​ក្រោយ​​ សូម​ប្រើ​​ "ប្រព័ន្ធ​​ -> ការ​គ្រប់គ្រង​ -> គាំទ្រ​ភាសា​​" ជំនួស​ ។
+Description-ko.UTF-8:
+ 선택한 언어를 지원하기 위한 파일 가운데 일부가 빠져 있습니다. 설치 버튼을 누른 다음 지시에 따라 빠진 요소를 설치할 수 있습니다. 이를 위해선 인터넷 연결이 필요합니다. 나중에 설치하려면 "시스템 -> 관리 -> 언어" 메뉴를 사용하면 됩니다.
+Description-lt.UTF-8:
+ Kalbos palaikymo failai pasirinktai kalbai yra nepilni. Jūs galite įdiegti trūkstamus komponentus paspaudę "Vykdyti šį veiksmą dabar" ir sekdami instrukcijas. Reikalingas aktyvus interneto ryšys. Jei norite tai padaryti vėliau, naudokite "Sistema -> Administravimas -> Kalbos priežiūra".
+Description-lv.UTF-8:
+ Atbalsts jūsu izvēlētajai valodai nav pilnīgs. Trūkstošās komponentes varat uzlikt izvēloties "Veikt šo darbību tagad" un sekojot instrukcijām uz ekrāna. Ja vēlaties veikt šo darbību vēlāk, izmantojiet "Sistēma -> Administrēšana -> Valodas atbalsts".
+Description-ms.UTF-8:
+ Fail sokongan bahasa untuk bahasa terpilih nampaknya tidak lengkap. Anda boleh memasang komponen tidak lengkap dengan mengklik pada "Jalankan tindakan ini sekarang" dan ikut arahan diberikan. Sambungan aktf internet diperlukan. Jika anda ingin lakukan ini kemudian, sila gunakan "Sistem-> Pentadbiran -> Sokongan Bahasa".
+Description-nb.UTF-8:
+ Filene for språkstøtte for ditt valgte språk ser ut til å være ufullstendige. Du kan installére de manglende komponentene ved å trykke på «Utfør denne handlingen nå», og følge instruksjonene. En aktiv Internett-tilkobling er nødvendig. Dersom du vil gjøre dette senere, bruk «System -> Administrasjon -> Språkstøtte» i stedet.
+Description-nl.UTF-8:
+ De bij uw taal behorende taalondersteuningsbestanden lijken onvolledig te zijn. U kunt de ontbrekende onderdelen installeren door op "Deze actie nu uitvoeren" te klikken en de instructies te volgen. Dit vereist een werkende internetverbinding. Als u dit op een later tijdstip wilt doen, gebruikt u "Systeem -> Beheer -> Taalondersteuning".
+Description-nn.UTF-8:
+ Språkstøttefilene for ditt valde språk ser ut til å vere uferdige. Du kan installera dei manglande komponentane ved å trykka på «Utfør denne handlinga no» og følgja instruksjonane. Ei aktiv internettilknyting er påkravd. Dersom du vil gjere dette seinare, bruk «System -> Administrasjon -> Språkstøtte» istaden.
+Description-oc.UTF-8:
+ Los fichièrs de presa en carga lingüistica per la lenga seleccionada semblan incomplets. Podètz installar los compausants mancants en clicant sus « Aviar aquesta accion ara » puèi en seguissent las instruccions. Una connexion foncionala a l'Internet es necessària. S'o volètz far ulteriorament, utilizatz « Sistèma -> Administracion -> Presa en carga lingüistica » a la plaça.
+Description-pl.UTF-8:
+ Pliki obsługi wybranego języka wyglądają na niekompletne. Można zainstalować brakujące komponenty klikając na "Uruchom działanie teraz" i postępując według instrukcji. Wymagane jest aktywne połączenie z Internetem. Można tego dokonać później, wybierając "System -> Administracja -> Języki".
+Description-pt.UTF-8:
+ Os ficheiros de suporte para a língua seleccionada parecem estar incompletos. Pode instalar as componentes em falta clicando em "Executar esta acção agora" e seguindo as instruções. É necessária ligação à Internet. Se desejar fazer isto posteriormente, por favor use "Sistema -> Administração -> Suporte de Idioma".
+Description-pt_BR.UTF-8:
+ Os arquivos de suporte de linguagem parecem estar incompletos. Você pode instalar os componentes que faltam clicando em "Executar esta ação agora" e seguir as instruções. Uma conexão de internet ativa é necessária. Se você deseja fazer isso depois, por favor use "Sistema -> Administração -> Suporte a Idiomas".
+Description-ro.UTF-8:
+ Fișierele de suport lingvistic pentru limba selectată par a fi incomplete. Puteți instala componentele lipsă dacă dați un clic pe „Execută acum această acțiune” și urmați instrucțiunile. Este necesară o conexiune activă la Internet. Dacă doriți să faceți acest lucru mai târziu, utilizați în schimb „Sistem -> Administrare -> Suport limbă”.
+Description-ru.UTF-8:
+ Файлы поддержки для выбранного вами языка установлены не полностью. Для установки недостающих компонентов, кликните «Установить сейчас» и следуйте инструкциям. Для установки потребуется активное интернет-соединение. Если вы захотите сделать это позже, пожалуйста, используйте «Система -> Администрирование -> Язык системы».
+Description-sc.UTF-8:
+ Sos archìvios de su suportu limbìsticu chi as seletzionadu paret chi sient incumpletos. Podes installare sos cumponentes chi mancant in custu modu: «imposta custa atzione como» e sighende sas istrutziones. Est netzessàriu èssere cullegadu a Internet. Si lu cheres fàgher pius a tardu, imprea «Sistema -> Aministratzione -> Suportu limba».
+Description-sk.UTF-8:
+ Súbory jazykovej podpory pre jazyk, ktorý ste si vybrali vyzerajú byť neúplné. Chýbajúce súčasti môžete nainštalovať kliknutím na „Spustiť túto operáciu teraz“ a nasledovaním inštrukcií. Je potrebné fungujúce pripojenie k internetu. Ak by ste to chceli urobiť neskôr, prosím, namiesto toho použite „Systém -> Správa -> Výber jazyka“.
+Description-sl.UTF-8:
+ Datoteke jezikovne podpore za jezik, ki ste ga izbrali, so nepopolne. Manjkajoče sestavne dele lahko namestite s klikom na "Poženi to dejanje sedaj" in sledenjem navodilom. Potrebovali boste dejavno internetno povezavo. Če želite to storiti kasneje, uporabite "Sistem -> Skrbništvo -> Jezikovna podpora".
+Description-sq.UTF-8:
+ Skedarët mbështetës për gjuhën e përzgjedhur prej jush duket se nuk janë të plotë. Ju mund të instaloni përbërësit që mungojnë duke klikuar "Nise këtë veprim tani" dhe duke ndjekur udhëzimet. Një lidhje aktive me internetin është e domosdoshme. Nëse dëshironi ta bëni këtë më vonë, ju lutemi përdorni "Sistemi -> Administrimi -> Mbështetja Gjuhësore" në vend të saj.
+Description-sr.UTF-8:
+ Чини се да су датотеке за подршку вашег језика непотпуне. Можете инсталирати оно што недостаје кликом на „Уради ово одмах“ и затим пратећи упутства. Неопходна је веза са интернетом. Ако желите да ово урадите касније, користите „Систем -> Администрација -> Језичка подршка“.
+Description-sv.UTF-8:
+ Filerna för språkstödet för ditt valda språk verkar inte vara kompletta. Du kan installera de saknade komponenterna genom att klicka på "Kör denna åtgärd nu" och följa instruktionerna. En fungerande internetanslutning krävs. Om du vill göra det här senare så kan du istället använda "System -> Administration -> Språkstöd".
+Description-th.UTF-8:
+ ไฟล์ที่ใช้สนับสนุนภาษาที่คุณเลือกดูเหมือนจะมีไม่ครบ คุณสามารถติดตั้งส่วนที่หายไปโดยคลิกที่ "Run this action now" และทำตามขั้นตอนที่บอกไว้ ต้องใช้การเชื่อมต่อทางอินเทอร์เน็ต ถ้าคุณต้องการที่จะทำภายหลัง กรุณาไปที่ "ระบบ -> ดูแลระบบ -> สนับสนุนภาษา" แทน
+Description-tr.UTF-8:
+ Seçtiğiniz dil için olan dil destek dosyaları eksik görünüyor. Kayıp bileşenleri "Bu eylemi şimdi çalıştır" üzerine tıklayıp yönergeleri izleyerek yükleyebilirsiniz. Etkin bir internet bağlantısı gereklidir. Bunun yerine daha sonra yapmak isterseniz, lütfen "Sistem -> Yönetim -> Dil Desteği"ni kullanın.
+Description-ug.UTF-8:
+ تاللانغان تىل ھۆججىتى چالىدەك قىلىدۇ. "بۇ ھەرىكەتنى ھازىرلا قىل" نى چېكىپ كەم component نى تولۇقلاڭ. بۇنىڭ ئۈچۈن كومپيۇتېر ئىنتېرنېتقا باغلانغان بولۇشى كېرەك. بۇ ئىشنى كېيىن قىلماقچى بولسىڭىز "سىستېما-›باشقۇرۇش-›تىللار" نى ئىشلىتىڭ.
+Description-uk.UTF-8:
+ Файли Підтримки Мови для вибраної мови неповні. Ви можете встановити відсутні компоненти, натиснувши на кнопку "Виконати цю операцію зараз" та слідкуйте за вказівками на екрані. Потрібне активне підключення до Інтернету. Якщо ви бажаєте зробити це пізніше, будь ласка, використайте "Система -> Адміністрування -> Мовна підтримка".
+Description-vi.UTF-8:
+ Các tệp tin hỗ trợ ngôn ngữ cho ngôn ngữ mà bạn chọn có lẽ không đầy đủ. Bạn có thể cài đặt các thành phần còn thiết bằng cách nhận "Thực hiện hành động này" và làm theo các chỉ dẫn. Bạn cần có kết nối Internet. Nếu bạn chưa muốn thực hiện bây giờ, sau này bạn có thể sử dụng "Hệ thống -> Quản trị -> Hỗ trợ ngôn ngữ".
+Description-zh_CN.UTF-8:
+ 您选择的语言的支持文件似乎不完整。您可以通过点击 "现在运行这个操作" 来安装缺失的组件并按指示操作。需要一个活动的网络连接。如果您想以后再进行，请使用 "系统 -> 系统管理 -> 语言支持"。
+Description-zh_HK.UTF-8:
+ 供您所選語言的語言支援檔案似乎並不完整。您可以按「現在執行此動作」並依指示來安裝欠缺的元件。這需要有效的互聯網連線。如果您想稍後才執行，請使用「系統 -> 管理 -> 語言支援」。
+Description-zh_TW.UTF-8:
+ 供您所選語言使用的支援檔案似乎不完整。您可以點擊「現在執行此動作」並依照指示來安裝欠缺的元件。此動作需要啟用網際網路連線。如果您想要稍後才執行它，請使用「系統 -> 管理 -> 語言支援」替代。
