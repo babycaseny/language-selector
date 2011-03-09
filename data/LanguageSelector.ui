@@ -390,6 +390,9 @@ The availability of translations or writing aids can differ between languages.</
                               <object class="GtkTreeView" id="treeview_locales">
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
+                                <property name="tooltip_text" translatable="yes">This setting only affects the language your desktop and applications are displayed in. It does not set the system environment, like currency or date format settings. For that, use the settings in the Regional Formats tab.
+The order of the values displayed here decides which translations to use for your desktop. If translations for the first language are not available, the next one in this list will be tried. The last entry of this list is always "English".
+Every entry below "English" will be ignored.</property>
                                 <property name="headers_visible">False</property>
                                 <property name="reorderable">True</property>
                                 <property name="hover_selection">True</property>
@@ -507,6 +510,10 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                             <child>
                               <object class="GtkComboBox" id="combobox_input_method">
                                 <property name="visible">True</property>
+                                <property name="tooltip_text" translatable="yes">If you need to type in languages, which require more complex input methods than just a simple key to letter mapping, you may want to enable this function.
+For example, you will need this function for typing Chinese, Japanese, Korean or Vietnamese.
+The recommended value for Ubuntu is "ibus".
+If you want to use alternative input method systems, install the corresponding packages first and then choose the desired system here.</property>
                                 <signal name="changed" handler="on_combobox_input_method_changed"/>
                               </object>
                               <packing>
@@ -566,6 +573,9 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                             <child>
                               <object class="GtkComboBox" id="combobox_locale_chooser">
                                 <property name="visible">True</property>
+                                <property name="tooltip_text" translatable="yes">This will set the system environment like shown below and will also affect the preferred paper format and other region specific settings.
+If you want to display the desktop in a different language than this, please select it in the "Language" tab.
+Hence you should set this to a sensible value for the region in which you are located.</property>
                                 <signal name="changed" handler="on_combobox_locale_chooser_changed"/>
                               </object>
                               <packing>

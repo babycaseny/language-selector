@@ -1,3 +1,10 @@
+language-selector (0.25) natty; urgency=low
+
+  * data/LanguageSelector.ui:
+    - Reinsertion of tooltips that were dropped in version 0.6.3.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Wed, 09 Mar 2011 15:20:41 +0100
+
 language-selector (0.24) natty; urgency=low
 
   * debian/rules: Drop NO_PKG_MANGLE. This is now fixed properly in
