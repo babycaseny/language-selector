@@ -1092,7 +1092,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
     @honorBlockedSignals
     def on_window_main_key_press_event(self, widget, event):
         keyname = Gdk.keyval_name(event.keyval)
-        if (event.get_state() & Gdk.EventMask.CONTROL_MASK):
+        if (event.get_state() & Gdk.ModifierType.CONTROL_MASK):
             if (keyname == "w"):
                 Gtk.main_quit()
         return None

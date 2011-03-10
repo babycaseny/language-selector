@@ -1,3 +1,10 @@
+language-selector (0.26) natty; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Fix CONTROL_MASK constant.
+    This brings back Ctrl+W to close the window. (LP: #732484)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 10 Mar 2011 15:28:57 +0100
+
 language-selector (0.25) natty; urgency=low
 
   * data/LanguageSelector.ui:
