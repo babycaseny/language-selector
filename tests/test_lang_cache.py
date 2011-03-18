@@ -51,13 +51,13 @@ class TestLangCache(unittest.TestCase):
         #li.languagePkgList["languageSupportWritingAids"].installed = False
         self.lang_cache.tryChangeDetails(li)
         self.assertTrue(self.lang_cache["language-pack-de"].marked_install)
-        self.assertTrue(self.lang_cache["openoffice.org-hyphenation-de"].marked_install)
+        self.assertTrue(self.lang_cache["hyphen-de"].marked_install)
         # now test langaugePack change only
         self.lang_cache.clear()
         li.languagePkgList["languageSupportWritingAids"].doChange = False
         self.lang_cache.tryChangeDetails(li)
         self.assertTrue(self.lang_cache["language-pack-de"].marked_install)
-        self.assertFalse(self.lang_cache["openoffice.org-hyphenation-de"].marked_install)
+        self.assertFalse(self.lang_cache["hyphen-de"].marked_install)
 
 if __name__ == "__main__":
     apt_pkg.Config.set("Apt::Architecture","i386")

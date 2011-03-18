@@ -319,7 +319,7 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
 if __name__ == "__main__":
         cl = CheckLanguageSupport(".")
         print cl.getMissingPackages("ar", True, None)
-        print cl.getMissingPackages("ar", True, ["openoffice.org-common"])
+        print cl.getMissingPackages("ar", True, ["libreoffice-common"])
 
         print cl.getMissingPackages("fi", True, ["firefox"])
         print cl.getMissingPackages("fi", True, ["firefox", "thunderbird"])

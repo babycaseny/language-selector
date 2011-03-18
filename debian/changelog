@@ -1,3 +1,12 @@
+language-selector (0.27) natty; urgency=low
+
+  * data/pkg_depends: Update for libreoffice and changed thesaurus/hyphenation
+    package names. Update test cases accordingly.
+  * data/pkg_depends: Add poppler-data for Arabic, Chinese, Japanese, and
+    Korean. (LP: #623825)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 18 Mar 2011 18:37:04 +0100
+
 language-selector (0.26) natty; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py: Fix CONTROL_MASK constant.

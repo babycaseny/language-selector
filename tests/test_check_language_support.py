@@ -37,8 +37,8 @@ class TestCheckLanguageSupport(unittest.TestCase):
         # contains a bunch of entries
         self.assertTrue(len(missing) > 5, "missing list very small")
 
-        missing = cl.getMissingPackages("ar", True, ["openoffice.org-common"])
-        self.assure_in_missing("openoffice.org-l10n-ar", missing)
+        missing = cl.getMissingPackages("ar", True, ["libreoffice-common"])
+        self.assure_in_missing("libreoffice-l10n-ar", missing)
 
         missing = cl.getMissingPackages("fi", True, ["firefox"])
         self.assure_in_missing("mozvoikko", missing)

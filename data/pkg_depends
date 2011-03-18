@@ -11,8 +11,8 @@ tr::libgnome2-common:language-pack-gnome-
 tr::kdelibs5-data:language-pack-kde-
 # Format: %LCODE% or %LCODE%-%CCODE%
 tr::gnome-panel:gnome-user-guide-
-tr::openoffice.org-common:openoffice.org-l10n-
-tr::openoffice.org-common:openoffice.org-help-
+tr::libreoffice-common:libreoffice-l10n-
+tr::libreoffice-common:libreoffice-help-
 tr::thunderbird:thunderbird-locale-
 tr::lightning-extension:lightning-extension-locale-
 tr::sunbird:sunbird-locale-
@@ -24,34 +24,31 @@ tr::kdelibs5-data:kde-l10n-
 #writing support for Finnish
 wa:fi:firefox|thunderbird|seahorse|epiphany:mozvoikko
 wa:fi:libreoffice-core:libreoffice-voikko
-#openoffice.org stuff
-wa:af:openoffice.org-common:openoffice.org-hyphenation-af
-wa:ca:openoffice.org-common:openoffice.org-hyphenation-ca
-wa:cs|da|de|el|en|es|ga|id|is|nl|pt|ru|sk|sv|uk:openoffice.org-common:openoffice.org-hyphenation
-wa:de:openoffice.org-common:openoffice.org-hyphenation-de
-wa:en:openoffice.org-common:openoffice.org-hyphenation-en-us
-wa:fr:openoffice.org-common:openoffice.org-hyphenation-fr
-wa:hr:openoffice.org-common:openoffice.org-hyphenation-hr
-wa:hu:openoffice.org-common:openoffice.org-hyphenation-hu
-wa:it:openoffice.org-common:openoffice.org-hyphenation-it
-wa:lt:openoffice.org-common:openoffice.org-hyphenation-lt
-wa:pl:openoffice.org-common:openoffice.org-hyphenation-pl
-wa:ro:openoffice.org-common:openoffice.org-hyphenation-ro
-wa:sh:openoffice.org-common:openoffice.org-hyphenation-sh
-wa:sl:openoffice.org-common:openoffice.org-hyphenation-sl
-wa:sr:openoffice.org-common:openoffice.org-hyphenation-sr
-wa:zu:openoffice.org-common:openoffice.org-hyphenation-zu
-wa:ca:openoffice.org-common:openoffice.org-thesaurus-ca
-wa:cs:openoffice.org-common:openoffice.org-thesaurus-cs
-wa:de:openoffice.org-common:openoffice.org-thesaurus-de
-wa:de:openoffice.org-common:openoffice.org-thesaurus-de-ch
-wa:en:openoffice.org-common:openoffice.org-thesaurus-en-au
-wa:en:openoffice.org-common:openoffice.org-thesaurus-en-us
-wa:fr:openoffice.org-common:openoffice.org-thesaurus-fr
-wa:hu:openoffice.org-common:openoffice.org-thesaurus-hu
-wa:it:openoffice.org-common:openoffice.org-thesaurus-it
-wa:ne:openoffice.org-common:openoffice.org-thesaurus-ne
-wa:pl:openoffice.org-common:openoffice.org-thesaurus-pl
-wa:ro:openoffice.org-common:openoffice.org-thesaurus-ro
-wa:ru:openoffice.org-common:openoffice.org-thesaurus-ru
-wa:sk:openoffice.org-common:openoffice.org-thesaurus-sk
+#libreoffice stuff
+wa:af:libreoffice-common:hyphen-af
+wa:ca:libreoffice-common:hyphen-ca
+wa:de:libreoffice-common:hyphen-de
+wa:en:libreoffice-common:hyphen-en-us
+wa:fr:libreoffice-common:hyphen-fr
+wa:hu:libreoffice-common:hyphen-hu
+wa:ro:libreoffice-common:hyphen-ro
+wa:sh:libreoffice-common:hyphen-sh
+wa:sl:libreoffice-common:hyphen-sl
+wa:sr:libreoffice-common:hyphen-sr
+wa:zu:libreoffice-common:hyphen-zu
+wa:ca:libreoffice-common:mythes-ca
+wa:cs:libreoffice-common:mythes-cs
+wa:de:libreoffice-common:mythes-de
+wa:de:libreoffice-common:mythes-de-ch
+wa:en:libreoffice-common:mythes-en-us
+wa:fr:libreoffice-common:mythes-fr
+wa:hu:libreoffice-common:mythes-hu
+wa:ne:libreoffice-common:mythes-ne
+wa:ro:libreoffice-common:mythes-ro
+wa:ru:libreoffice-common:mythes-ru
+wa:sk:libreoffice-common:mythes-sk
+# poppler-data is useful for CJK
+wa:ar:poppler-utils:poppler-data
+wa:ja:poppler-utils:poppler-data
+wa:ko:poppler-utils:poppler-data
+wa:zh:poppler-utils:poppler-data

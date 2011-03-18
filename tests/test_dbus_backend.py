@@ -30,7 +30,7 @@ class TestDbusBackend(unittest.TestCase):
 
     def test_dbus_server(self):
         pkgs = self.lss.GetMissingPackages("de", None, None)
-        self.assertTrue("openoffice.org-help-de" in pkgs)
+        self.assertTrue("libreoffice-help-de" in pkgs)
 
     def test_dbus_server_async(self):
         def _signal(pkgs):
@@ -43,7 +43,7 @@ class TestDbusBackend(unittest.TestCase):
         main_loop = glib.main_context_default()
         while not self.pkgs:
             main_loop.iteration()
-        self.assertTrue("openoffice.org-help-de" in self.pkgs)
+        self.assertTrue("libreoffice-help-de" in self.pkgs)
 
 if __name__ == "__main__":
     apt_pkg.Config.set("Apt::Architecture","i386")
