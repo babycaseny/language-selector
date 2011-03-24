@@ -32,6 +32,7 @@ wa:en:libreoffice-common:hyphen-en-us
 wa:fr:libreoffice-common:hyphen-fr
 wa:hu:libreoffice-common:hyphen-hu
 wa:ro:libreoffice-common:hyphen-ro
+wa:pl:libreoffice-common:hyphen-pl
 wa:sh:libreoffice-common:hyphen-sh
 wa:sl:libreoffice-common:hyphen-sl
 wa:sr:libreoffice-common:hyphen-sr
@@ -44,9 +45,25 @@ wa:en:libreoffice-common:mythes-en-us
 wa:fr:libreoffice-common:mythes-fr
 wa:hu:libreoffice-common:mythes-hu
 wa:ne:libreoffice-common:mythes-ne
+wa:pl:libreoffice-common:mythes-pl
 wa:ro:libreoffice-common:mythes-ro
 wa:ru:libreoffice-common:mythes-ru
 wa:sk:libreoffice-common:mythes-sk
+wa:cs:libreoffice-common:openoffice.org-hyphenation
+wa:da:libreoffice-common:openoffice.org-hyphenation
+wa:el:libreoffice-common:openoffice.org-hyphenation
+wa:en:libreoffice-common:openoffice.org-hyphenation
+wa:es:libreoffice-common:openoffice.org-hyphenation
+wa:fi:libreoffice-common:openoffice.org-hyphenation
+wa:ga:libreoffice-common:openoffice.org-hyphenation
+wa:id:libreoffice-common:openoffice.org-hyphenation
+wa:is:libreoffice-common:openoffice.org-hyphenation
+wa:nl:libreoffice-common:openoffice.org-hyphenation
+wa:pt:libreoffice-common:openoffice.org-hyphenation
+wa:ru:libreoffice-common:openoffice.org-hyphenation
+wa:sk:libreoffice-common:openoffice.org-hyphenation
+wa:sv:libreoffice-common:openoffice.org-hyphenation
+wa:uk:libreoffice-common:openoffice.org-hyphenation
 # poppler-data is useful for CJK
 wa:ar:poppler-utils:poppler-data
 wa:ja:poppler-utils:poppler-data

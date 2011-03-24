@@ -1,3 +1,12 @@
+language-selector (0.28) natty; urgency=low
+
+  * data/pkg_depends: Install openoffice.org-hyphenation for the languages
+    that it supports, when libreoffice-common is installed.
+  * data/pkg_depends: Add mythes-pl.
+  * data/pkg_depends: Add hyphen-pl.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 24 Mar 2011 14:14:53 +0100
+
 language-selector (0.27) natty; urgency=low
 
   * data/pkg_depends: Update for libreoffice and changed thesaurus/hyphenation
