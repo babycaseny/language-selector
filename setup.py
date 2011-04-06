@@ -59,6 +59,9 @@ setup(name='language-selector',
                    ["dbus_backend/ls-dbus-backend"]),
                   ('share/polkit-1/actions/',
                    ["dbus_backend/com.ubuntu.languageselector.policy"]),
+                  # help
+                  ('share/gnome/help/language-selector/C',
+                   ['help/C/language-selector.xml']),
                   # pretty pictures
                   ('share/pixmaps',
                    ["data/language-selector.png"]),

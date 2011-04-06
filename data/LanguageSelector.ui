@@ -337,7 +337,7 @@ The availability of translations or writing aids can differ between languages.</
   </object>
   <object class="GtkWindow" id="window_main">
     <property name="visible">True</property>
-    <property name="title" translatable="yes">Language &amp; Format</property>
+    <property name="title" translatable="yes">Language Support</property>
     <property name="icon_name">config-language</property>
     <property name="destroy_with_parent">True</property>
     <signal name="key_press_event" handler="on_window_main_key_press_event"/>
@@ -800,7 +800,19 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
               <object class="GtkHBox" id="hbox1">
                 <property name="visible">True</property>
                 <child>
-                  <placeholder/>
+                  <object class="GtkLinkButton" id="button_help">
+                    <property name="visible">True</property>
+                    <property name="relief">GTK_RELIEF_NORMAL</property>
+                    <property name="use_stock">True</property>
+                    <property name="label">gtk-help</property>
+                    <property name="uri">ghelp:language-selector</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="pack_type">start</property>
+                    <property name="position">1</property>
+                  </packing>
                 </child>
                 <child>
                   <object class="GtkButton" id="button_quit">

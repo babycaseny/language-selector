@@ -1,4 +1,5 @@
 usr/bin/gnome-language-selector
 usr/lib/python*/*-packages/LanguageSelector/gtk
 usr/share/applications/language-selector.desktop
+usr/share/gnome/help
 ../../data/incomplete-language-support-gnome.note usr/share/language-support

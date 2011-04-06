@@ -975,12 +975,13 @@ class GtkLanguageSelector(LanguageSelectorBase):
         mylocale = macr["SYSLOCALE"]
         try:
             locale.setlocale(locale.LC_ALL, mylocale)
-            self.label_example_currency.set_text(locale.currency(20457.99))
-            self.label_example_number.set_text(locale.format("%.2f", 1234567.89, grouping=True))
-            self.label_example_date.set_text(time.strftime(locale.nl_langinfo(locale.D_T_FMT)))
         except locale.Error as detail:
-            self.label_example_number.set_text('[ '
+            self.label_example_date.set_text('[ '
             + _("Failed to apply the '%s' format choice:") % mylocale + "\n%s ]" % detail)
+            return
+        self.label_example_currency.set_text(locale.currency(20457.99))
+        self.label_example_number.set_text(locale.format("%.2f", 1234567.89, grouping=True))
+        self.label_example_date.set_text(time.strftime(locale.nl_langinfo(locale.D_T_FMT)))
 
 
     ####################################################

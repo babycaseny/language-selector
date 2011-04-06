@@ -1,3 +1,25 @@
+language-selector (0.29) natty; urgency=low
+
+  [ Gunnar Hjalmarsson ]
+  * help/C/language-selector.xml:
+    - Addition of DocBook document with help about Ubuntu i18n handling
+      in general and language-selector in particular (LP: #742857).
+  * data/LanguageSelector.ui:
+    - "Help" button added (LP: #742857).
+    - Title of the main window changed to "Language Support", i.e.
+      same as the name of the app/tool.
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - Modified code for setlocale() exception handling.
+  * data/main-countries:
+    - Changed the main country of English from GB to US. Not that the
+      latter is more 'right' or something, but it may prevent failures
+      in certain situations, since en_US locales are more widespread.
+
+  [ Martin Pitt ]
+  * data/pkg_depends: Add hunspell-sh.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Wed, 06 Apr 2011 11:29:23 +0200
+
 language-selector (0.28) natty; urgency=low
 
   * data/pkg_depends: Install openoffice.org-hyphenation for the languages
