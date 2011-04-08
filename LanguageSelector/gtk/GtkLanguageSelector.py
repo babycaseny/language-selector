@@ -1005,7 +1005,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             #self.debug_pkg_status()
 
     def on_treeview_languages_row_activated(self, treeview, path, view_column):
-        self.on_toggled(None,str(path[0]))
+        self.on_toggled(None, path.to_string())
 
     # details checkboxes
     def on_checkbutton_fonts_clicked(self, button):
