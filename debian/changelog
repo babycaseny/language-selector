@@ -1,9 +1,15 @@
+language-selector (0.31) natty; urgency=low
+
+  * help/C/language-selector.xml: Tweaking of help document, LP: #742857
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Mon, 11 Apr 2011 07:24:00 +0200
+
 language-selector (0.30) natty; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py: Fix crash when
     double-clicking language row. (LP: #703097)
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 08 Apr 2011 18:59:34 +0200
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 08 Apr 2011 18:57:12 +0200
 
 language-selector (0.29) natty; urgency=low
 

@@ -68,9 +68,20 @@
 
 <tip>
 
-	<para>If you look for specific context help, you may want to go directly to the section <ulink type="help" url="ghelp:language-selector#support-tool"><application>Language Support</application> Tool</ulink>.</para>
+	<para>If you look for specific context help, you may want to go directly to the <application><link linkend="support-tool">Language Support</link></application> section.</para>
 
 </tip>
+
+<!-- Can this link be shown below the TOC?
+<variablelist>
+
+	<varlistentry>
+		<term><emphasis role="strong">More About</emphasis></term>
+		<listitem><para><ulink type="help" url="ghelp:gnome-help#prefs">User &amp; system settings</ulink></para></listitem>
+	</varlistentry>
+
+</variablelist>
+-->
 
 <!-- ============== Introduction ============================== -->
 
@@ -81,17 +92,22 @@
 
 </sect1>
 
-<!-- ============ gettext Language Handling =================== -->
+<!-- ============ Language handling caveats =================== -->
 
-<sect1 id="lang-handling">
-	<title>gettext Language Handling</title>
+<sect1 id="caveats">
+	<title>Language handling caveats</title>
 
-	<para>Ubuntu uses the <application><ulink url="http://www.gnu.org/software/gettext/gettext.html">GNU gettext</ulink></application> technology to deal with languages and related matters. One GNU specific feature is the <emphasis>language priority list</emphasis> (which is hold by the <command>LANGUAGE</command> environment variable). A couple of advantages and limitations with the priority list are described below.</para>
+	<para>For two reasons, messages are not always displayed in the preferred language:</para>
+
+	<orderedlist>
+	  <listitem><para>Not all messages have been translated into all the available languages at each point of time.</para></listitem>
+	  <listitem><para>Some applications are not <ulink url="http://www.gnu.org/">GNU</ulink> compatible in that they do not recognize one or both of the two variables (<command>LANGUAGE</command> and <command>LC_MESSAGES</command>) that Ubuntu uses for setting language.</para></listitem>
+	</orderedlist>
 
 	<sect2 id="priority-list">
-		<title>Language Priority List</title>
+		<title>Language priority list</title>
 
-		<para>Not all messages have been translated into all the available languages at each point of time. To deal with that, Ubuntu lets you set more than one language in your order of preference. As an example, this is what the list of a German user might look like:</para>
+		<para>Ubuntu uses the <application><ulink url="http://www.gnu.org/software/gettext/gettext.html">GNU gettext</ulink></application> technology to deal with languages and related matters. One GNU specific feature is the <emphasis>language priority list</emphasis>, which lets you set more than one language in your order of preference. As an example, this is what the list of a German user might look like:</para>
 
 		<itemizedlist>
 		  <listitem><para>German</para></listitem>
@@ -99,9 +115,9 @@
 		  <listitem><para>English</para></listitem>
 		</itemizedlist>
 
-		<para>If there is no German translation of a message, Ubuntu will try Spanish, and if no Spanish translation of the message is available either, it will be displayed in English.</para>
+		<para>If there is no German translation of a message, GNU compatible applications will try Spanish, and if no Spanish translation of the message is available either, it will be displayed in English.</para>
 
-		<para>English is always available as a fallback to users who prefer a language other than English. Thus setting multiple fallback languages makes a difference if:</para>
+		<para>English is always the last item in the list. Thus setting fallback language(s) makes a difference if:</para>
 
 		<orderedlist>
 		  <listitem><para>a non-English language is your first choice,</para></listitem>
@@ -112,9 +128,13 @@
 	</sect2>
 
 	<sect2 id="non-gnu">
-		<title>Non-GNU Applications</title>
+		<title>Non-GNU applications</title>
 
-		<para>Besides incomplete translations, there is another caveat worth mentioning: Some applications, especially non-GNU applications such as <application>Mozilla Firefox</application>, do not honor the priority list feature. To display menus and windows of those applications in the first choice language, Ubuntu ensures that the value of the <command>LC_MESSAGES</command> environment variable matches that language.</para>
+		<para>Some applications, especially non-GNU applications such as <application>Mozilla Firefox</application>, do not honor the priority list feature. To display menus and windows of those applications in the first choice language, Ubuntu ensures that the value of the <command>LC_MESSAGES</command> environment variable matches that language.</para>
+
+		<para>If a message has not yet been translated into the first choice language, Ubuntu tries the value of the <command>LANG</command> environment variable. However, since <command>LANG</command> is used by Ubuntu for other purposes than message translation (see <link linkend="format-tab">Regional formats</link>), it may or may not result in a suitable display language; it's a matter of chance.</para>
+
+		<para>A few applications ignore both the <command>LANGUAGE</command> and <command>LC_MESSAGES</command> variables, and only check the <command>LANG</command> variable when determining display language.</para>
 
 		<note>
 		  <para>Unless set explicitly, <command>LC_MESSAGES</command> inherits the <command>LANG</command> value. Consequently, if <command>LANG</command> does not correspond with the first choice language, Ubuntu sets <command>LC_MESSAGES</command> explicitly. However, this will make <command>LC_MESSAGES</command> be exported if you connect to some other computer via <application>ssh</application>, which might mess up the language environment there. You may want to avoid that side effect by unsetting <command>LC_MESSAGES</command> before running the <application>ssh</application> command:</para>
@@ -126,23 +146,23 @@
 
 </sect1>
 
-<!-- ================ Language Support Tool =============== -->
+<!-- ================ Language Support ==================== -->
 
 <sect1 id="support-tool">
-	<title><application>Language Support</application> Tool</title>
+	<title><application>Language Support</application></title>
 
 	<para>The desired display language(s) and related settings can be set from the <application>Language Support</application> tool. You open it by choosing:</para>
 
 	<para>&language-support;</para>
 
-	<para>There are both system wide and user specific settings. The controls for system wide settings are the <guibutton>Apply System Wide</guibutton> buttons and the <guibutton>Install / Remove Languages...</guibutton> button. Those controls are only available to users with access to administer the system; to other users they are greyed out.</para>
+	<para>There are both system wide and user specific settings. The controls for system wide settings are the <guibutton>Apply System Wide</guibutton> buttons and the <guibutton>Install / Remove Languages...</guibutton> button. Those controls are only available to users with access to administer the system; to other users - if any - they are greyed out.</para>
 
 	<para>The <guilabel>Language Support</guilabel> window includes two tabs: <guilabel>Language</guilabel> and <guilabel>Regional Formats</guilabel>.</para>
 
 	<sect2 id="lang-tab">
 		<title>Language</title>
 
-		<para>The box <guilabel>Language for menus and windows</guilabel> contains items representing the translations that are available on the system. The current <ulink type="help" url="ghelp:language-selector#priority-list">language priority list</ulink> consists of the first items with black characters. Below, displayed in grey, are the other available translations. To add a translation to the language list, you pick a greyed item and drag it upwards to a position above the <quote>English</quote> item.</para>
+		<para>The box <guilabel>Language for menus and windows</guilabel> contains items representing the translations that are available on the system. The current <link linkend="priority-list">language priority list</link> consists of the first items with black characters. Below, displayed in grey, are the other available translations. To add a translation to the language list, you pick a greyed item and drag it upwards to a position above the <quote>English</quote> item.</para>
 
 		<para>By clicking the <guibutton>Apply System-Wide</guibutton> button, the system language list is set to the same items as your own current list. The system language setting controls the display language at startup and on the login screen. It also serves as the default language when a new user logs in for the first time.</para>
 
@@ -153,12 +173,12 @@
 	</sect2>
 
 	<sect2 id="format-tab">
-		<title>Regional Formats</title>
+		<title>Regional formats</title>
 
 		<para>Typically there are country or region based conventions for how numbers, date and time, currency, etc. are denoted, and each item in the drop-down list at the top of the <guilabel>Regional Formats</guilabel> tab represents a set of format rules. If you change the setting, examples of what the new setting results in are instantly shown at the bottom of the tab.</para>
 
 		<note>
-		  <para>While this setting populates the <command>LANG</command> environment variable, it is actually the <command>LC_NUMERIC</command>, <command>LC_TIME</command> and <command>LC_MONETARY</command> variables that control how numbers, dates respective currency are formated. As long as the latter variables are not set explicitly, they inherit the <command>LANG</command> value, and the displayed format examples are applicable. However, to the extent one or more of those variables have been set explicitly (see <ulink type="help" url="ghelp:language-selector#format-advanced">Advanced Format Settings</ulink>), the displayed examples do not reflect the formats that will actually be applied.</para>
+		  <para>While this setting populates the <command>LANG</command> environment variable, it is actually the <command>LC_NUMERIC</command>, <command>LC_TIME</command> and <command>LC_MONETARY</command> variables that control how numbers, dates respective currency are formated. As long as the latter variables are not set explicitly, they inherit the <command>LANG</command> value, and the displayed format examples are applicable. However, to the extent one or more of those variables have been set explicitly (see <link linkend="format-advanced">Advanced format settings</link>), the displayed examples do not reflect the formats that will actually be applied.</para>
 		</note>
 
 		<para>By clicking the <guibutton>Apply System-Wide</guibutton> button, the system value is set out from your own current setting. The system format setting controls the display formats at startup and on the login screen. It also serves as a default value for users who have not set a user format setting.</para>
@@ -167,23 +187,23 @@
 
 </sect1>
 
-<!-- =============== Login Screen ============================= -->
+<!-- =============== Login screen ============================= -->
 
 <sect1 id="login-screen">
-	<title>Login Screen</title>
+	<title>Login screen</title>
 
 	<para>The Ubuntu login screen provides an alternative control for setting the user language. It is visible only when a user has been selected.</para>
 
-	<para>Unlike the <guilabel>Language</guilabel> tab in <application>Language Support</application>, the language control on the login screen does not let you compose a complete <ulink type="help" url="ghelp:language-selector#priority-list">priority list</ulink>. Instead the one language you select is prepended to the previous list.</para>
+	<para>Unlike the <guilabel>Language</guilabel> tab in <application>Language Support</application>, the language control on the login screen does not let you compose a complete <link linkend="priority-list">priority list</link>. Instead the one language you select is prepended to the previous list.</para>
 
 </sect1>
 
-<!-- ============= Advanced Format Settings =================== -->
+<!-- ============= Advanced format settings =================== -->
 
 <sect1 id="format-advanced">
-	<title>Advanced Format Settings</title>
+	<title>Advanced format settings</title>
 
-	<para>The <application><ulink type="help" url="ghelp:language-selector#support-tool">Language Support</ulink></application> method for setting regional formats assumes that one language-country combination (<ulink url="http://en.wikipedia.org/wiki/Locale">locale</ulink>) is sufficient to set all the format aspects in accordance with your preferences. Even if that is often the case, situations when you want more fine tuned format settings may occur. For such a case, below are some variables that you may want to assign other locale names than what else would have been inherited from the <command>LANG</command> variable. You can do so by editing the <filename>.profile</filename> configuration file in your home folder.</para>
+	<para>The <application><link linkend="support-tool">Language Support</link></application> method for setting regional formats assumes that one language-country combination (<ulink url="http://en.wikipedia.org/wiki/Locale">locale</ulink>) is sufficient to set all the format aspects in accordance with your preferences. Even if that is often the case, situations when you want more fine tuned format settings may occur. For such a case, below are some variables that you may want to assign other locale names than what else would have been inherited from the <command>LANG</command> variable. You can do so by editing the <filename>.profile</filename> configuration file in your home folder.</para>
 
 	<variablelist>
 
@@ -218,12 +238,12 @@
 
 	<para><emphasis role="strong">An Example</emphasis></para>
 
-	<para>Take a user in the US who choose <quote>English (United States)</quote> in the drop-down list on the <ulink type="help" url="ghelp:language-selector#format-tab">Regional Formats</ulink> tab. If s/he prefers that dates and times are displayed more like what <ulink url="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</ulink> prescribes than what's typically the case in the US, the below line may be added to the <filename>.profile</filename> file:</para>
+	<para>Take a user in the US who choose <quote>English (United States)</quote> in the drop-down list on the <link linkend="format-tab">Regional Formats</link> tab. If s/he prefers that dates and times are displayed more like what <ulink url="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</ulink> prescribes than what's typically the case in the US, the below line may be added to the <filename>.profile</filename> file:</para>
 
 	<para><code>export LC_TIME="en_DK.UTF-8"</code></para>
 
 	<note>
-		<para>The side effect of setting the <command>LC_MESSAGES</command> variable explicitly, as described in the <ulink type="help" url="ghelp:language-selector#format-tab">Regional Formats</ulink> section, is applicable to explicitly setting other <command>LC_*</command> variables as well.</para>
+		<para>The side effect of setting the <command>LC_MESSAGES</command> variable explicitly, as described in the <link linkend="format-tab">Regional formats</link> section, is applicable to explicitly setting other <command>LC_*</command> variables as well.</para>
 	</note> 
 
 </sect1>
