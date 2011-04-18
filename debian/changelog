@@ -1,3 +1,11 @@
+language-selector (0.32) natty; urgency=low
+
+  * help/C/language-selector.xml:
+    - Description of how to open language-selector changed to also fit
+      Unity.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Mon, 18 Apr 2011 10:38:11 +0200
+
 language-selector (0.31) natty; urgency=low
 
   * help/C/language-selector.xml: Tweaking of help document, LP: #742857

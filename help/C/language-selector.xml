@@ -151,9 +151,12 @@
 <sect1 id="support-tool">
 	<title><application>Language Support</application></title>
 
-	<para>The desired display language(s) and related settings can be set from the <application>Language Support</application> tool. You open it by choosing:</para>
+	<para>The desired display language(s) and related settings can be set from <application>Language Support</application>. To open the tool:</para>
 
-	<para>&language-support;</para>
+	<itemizedlist>
+		<listitem><para>Click the icon at the very right of the <emphasis>top bar</emphasis> and select <guilabel>System Settings</guilabel>, which takes you to the <guilabel>Control Center</guilabel>.</para></listitem>
+		<listitem><para>Go to the <guilabel>System</guilabel> group and click <guilabel>Language Support</guilabel>.</para></listitem>
+	</itemizedlist>
 
 	<para>There are both system wide and user specific settings. The controls for system wide settings are the <guibutton>Apply System Wide</guibutton> buttons and the <guibutton>Install / Remove Languages...</guibutton> button. Those controls are only available to users with access to administer the system; to other users - if any - they are greyed out.</para>
 
@@ -162,7 +165,7 @@
 	<sect2 id="lang-tab">
 		<title>Language</title>
 
-		<para>The box <guilabel>Language for menus and windows</guilabel> contains items representing the translations that are available on the system. The current <link linkend="priority-list">language priority list</link> consists of the first items with black characters. Below, displayed in grey, are the other available translations. To add a translation to the language list, you pick a greyed item and drag it upwards to a position above the <quote>English</quote> item.</para>
+		<para>The box <guilabel>Language for menus and windows</guilabel> contains items representing the translations that are available on the system. The current <link linkend="priority-list">language priority list</link> consists of the first items with black characters. Below, displayed in grey, are the other available translations. To add a translation to the language list, you pick a greyed item, drag it upwards, and drop it at a position above the <quote>English</quote> item.</para>
 
 		<para>By clicking the <guibutton>Apply System-Wide</guibutton> button, the system language list is set to the same items as your own current list. The system language setting controls the display language at startup and on the login screen. It also serves as the default language when a new user logs in for the first time.</para>
 
