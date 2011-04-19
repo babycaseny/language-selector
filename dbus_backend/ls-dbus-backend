@@ -9,6 +9,7 @@ import gobject
 import logging
 import os
 import os.path
+import re
 import shutil
 import string
 import subprocess
@@ -28,6 +29,7 @@ class LanguageSelectorServer(dbus.service.Object):
 					    bus=bus)
 	    dbus.service.Object.__init__(self, bus_name, '/')
             self._datadir = "/usr/share/language-selector/"
+            self._re_locale = re.compile(r'^[\w.@:-]+$')
 
     def _authWithPolicyKit(self, sender, connection, priv):
         logging.debug("_authWithPolicyKit")
@@ -63,7 +65,11 @@ class LanguageSelectorServer(dbus.service.Object):
         sysLanguage - the default system LANGUAGE and LC_MESSAGES
         """
         logging.debug("SetSystemDefaultLanguage")
-        self._authWithPolicyKit(sender, connection, "com.ubuntu.languageselector.setsystemdefaultlanguage")
+        if not self._re_locale.search(sysLanguage):
+            logging.error('SetSystemDefaultLanguage: Invalid locale "%s", rejecting', sysLanguage)
+            return False
+        if not self._authWithPolicyKit(sender, connection, "com.ubuntu.languageselector.setsystemdefaultlanguage"):
+            return False
         conffiles = ["/etc/default/locale", "/etc/environment"]
         findString = "LANGUAGE="
         setString = "LANGUAGE=\"%s\"\n" % sysLanguage
@@ -91,7 +97,11 @@ class LanguageSelectorServer(dbus.service.Object):
         sysLang: the default LANG (de_DE.UTF-8)
         """
         logging.debug("SetSystemDefaultLangEnv")
-        self._authWithPolicyKit(sender, connection, "com.ubuntu.languageselector.setsystemdefaultlanguage")
+        if not self._re_locale.search(sysLang):
+            logging.error('SetSystemDefaultLangEnv: Invalid locale "%s", rejecting', sysLang)
+            return False
+        if not self._authWithPolicyKit(sender, connection, "com.ubuntu.languageselector.setsystemdefaultlanguage"):
+            return False
         conffiles = ["/etc/default/locale", "/etc/environment"]
         macr = LanguageSelector.macros.LangpackMacros(self._datadir, sysLang)
         findString = "LANG="

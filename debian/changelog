@@ -1,3 +1,22 @@
+language-selector (0.33) natty; urgency=low
+
+  * dbus_backend/ls-dbus-backend: Actually look at the PolicyKit check result
+    and only proceed if it succeeded. Thanks to Romain Perier for finding this
+    and providing the patch! This fixes a local root privilege escalation, as
+    this allows any authenticated user to write arbitrary shell commands into
+    /etc/default/locale. (LP: #764397) [CVE-2011-0729]
+  * dbus_backend/ls-dbus-backend: Reject locale names with invalid characters
+    in it, to further prevent injecting shell code into /etc/default/locale
+    for authenticated users. Thanks to Felix Geyer for the initial patch!
+    (LP: #764397)
+  * dbus_backend/com.ubuntu.LanguageSelector.conf: Allow access to standard
+    D-BUS introspection and properties interfaces. There's no reason to deny
+    it, and it causes warnings.
+  * debian/language-selector-common.postinst: Stop running D-BUS backend on
+    upgrade.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 19 Apr 2011 20:20:44 +0200
+
 language-selector (0.32) natty; urgency=low
 
   * help/C/language-selector.xml:
