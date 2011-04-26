@@ -1,3 +1,10 @@
+language-selector (0.34) natty-proposed; urgency=low
+
+  * data/pkg_depends: Remove gnome-user-guide-*. The per-language packages
+    were removed in gnome-user-docs 2.91.90+git20110306ubuntu1. (LP: #771176)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 26 Apr 2011 13:07:21 +0200
+
 language-selector (0.33) natty; urgency=low
 
   * dbus_backend/ls-dbus-backend: Actually look at the PolicyKit check result

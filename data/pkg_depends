@@ -10,7 +10,6 @@
 tr::libgnome2-common:language-pack-gnome-
 tr::kdelibs5-data:language-pack-kde-
 # Format: %LCODE% or %LCODE%-%CCODE%
-tr::gnome-panel:gnome-user-guide-
 tr::libreoffice-common:libreoffice-l10n-
 tr::libreoffice-common:libreoffice-help-
 tr::thunderbird:thunderbird-locale-
