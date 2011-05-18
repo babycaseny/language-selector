@@ -16,6 +16,7 @@ import os.path
 
 from LocaleInfo import LocaleInfo
 import macros
+from utils import language2locale
 
 class ExceptionMultipleConfigurations(Exception):
     " error when multiple languages are symlinked "
@@ -114,7 +115,8 @@ class FontConfigHack(object):
         if len(lang) == 0:
             lang = self.li.getSystemDefaultLanguage()[1]
         lang = lang.split(':')[0]
-        self.setConfig(lang)
+        locale = language2locale(lang, self._datadir)
+        self.setConfig(locale)
         
 
 if __name__ == "__main__":

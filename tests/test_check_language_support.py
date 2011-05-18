@@ -32,7 +32,7 @@ class TestCheckLanguageSupport(unittest.TestCase):
         cl = CheckLanguageSupport("..", self.cache)
 
         missing = cl.getMissingPackages("ar", True, None)
-        self.assure_in_missing("gnome-user-guide-ar", missing)
+        self.assure_in_missing("libreoffice-l10n-ar", missing)
         # 5 is picked at random, just need to ensure that the list 
         # contains a bunch of entries
         self.assertTrue(len(missing) > 5, "missing list very small")

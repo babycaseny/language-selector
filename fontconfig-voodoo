@@ -69,6 +69,10 @@ def main():
         print "\n".join(fc.getAvailableConfigs())
         sys.exit(0)
         
+    if options.remove_current:
+        fc.removeConfig()
+        sys.exit(0)
+
     if not options.force:
         try:
             fc.getCurrentConfig()
@@ -83,11 +87,8 @@ def main():
         try:
             fc.setConfigBasedOnLocale()
         except FontConfig.ExceptionNoConfigForLocale:
-            pass
-
-    if options.remove_current:
-        fc.removeConfig()
-        sys.exit(0)
+            abort(_("No fontconfig-voodoo configuration found for the "
+                    "current LANGUAGE"))
 
     if options.lang:
         try:

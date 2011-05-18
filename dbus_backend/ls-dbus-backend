@@ -74,17 +74,19 @@ class LanguageSelectorServer(dbus.service.Object):
         findString = "LANGUAGE="
         setString = "LANGUAGE=\"%s\"\n" % sysLanguage
         find_string_and_replace(findString, setString, conffiles)
+        defaultLanguageLocale = language2locale(sysLanguage, self._datadir)
         findString = "LC_MESSAGES="
-        setString = "LC_MESSAGES=\"%s\"\n" % language2locale(sysLanguage, self._datadir)
+        setString = "LC_MESSAGES=\"%s\"\n" % defaultLanguageLocale
         find_string_and_replace(findString, setString, conffiles)
         # update fontconfig voodoo
         fc = LanguageSelector.FontConfig.FontConfigHack()
-        defaultLanguageCode = sysLanguage.split(':')[0]
+        macr = LanguageSelector.macros.LangpackMacros(self._datadir, defaultLanguageLocale)
+        defaultLanguageCode = macr["LOCALE"]
         if defaultLanguageCode in fc.getAvailableConfigs():
             subprocess.call(["fontconfig-voodoo", "-f",
                              "--set=%s" % defaultLanguageCode])
         else:
-            subprocess.call(["fontconfig-voodoo","-f","--remove-current"])
+            subprocess.call(["fontconfig-voodoo", "--remove-current"])
         return True
 
     @dbus.service.method(dbus_interface='com.ubuntu.LanguageSelector',

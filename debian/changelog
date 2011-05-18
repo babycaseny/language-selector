@@ -1,3 +1,28 @@
+language-selector (0.35) oneiric; urgency=low
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/FontConfig.py:
+    - Make the fontconfig-voodoo --auto option work also when the first
+      LANGUAGE item is just 'ja' or 'ko', i.e. without country code
+      (LP: #778869).
+  * dbus_backend/ls-dbus-backend:
+    - When applying the language settings system-wide, set the fonts
+      configuration also when the first LANGUAGE item is just 'ja' or
+      'ko' (LP: #778869).
+  * fontconfig-voodoo:
+    - Do not require --force when removing the current config using the
+      fontconfig-voodoo -r option.
+    - Print an exception message if the --auto option fails to find a
+      suitable configuration.
+
+  [ Martin Pitt ]
+  * tests/test_check_language_support.py: Fix test case for removed
+    gnome-user-guide-XX packages.
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Stop forcing GTK2, moving to
+    GTK 3 now. Update GIR dependencies to the GTK 3 versions.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 18 May 2011 09:35:29 +0200
+
 language-selector (0.34) natty-proposed; urgency=low
 
   * data/pkg_depends: Remove gnome-user-guide-*. The per-language packages
