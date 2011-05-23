@@ -1,3 +1,18 @@
+language-selector (0.36) oneiric; urgency=low
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    Hack for Vietnamese users: Make the language names in the list over
+    installable languages be displayed in respective native language when
+    the current language is Vietnamese (LP: #783090).
+  * fontconfig/69-language-selector-ja-jp.conf:
+    Drop DejaVu (LP: #759882).
+
+  [ Martin Pitt ]
+  * data/pkg_depends: Install firefox-locale-*.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Mon, 23 May 2011 14:45:22 +0200
+
 language-selector (0.35) oneiric; urgency=low
 
   [ Gunnar Hjalmarsson ]

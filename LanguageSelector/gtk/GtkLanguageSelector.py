@@ -719,7 +719,18 @@ class GtkLanguageSelector(LanguageSelectorBase):
             #if inconsistent:
             #    print "inconsistent", lang.language
             installed = lang.fullInstalled
-            lang_name = self._localeinfo.translate(lang.languageCode)
+
+            # hack for Vietnamese users; see https://launchpad.net/bugs/783090
+            # Even if calling self._localeinfo.translate() with native=True triggers
+            # a UnicodeWarning for Norwegian Bokmaal, the output should be correct.
+            lang_name = None
+            if 'LANGUAGE' in os.environ:
+                current_language = os.environ['LANGUAGE']
+                if re.match('vi[^a-z]', current_language):
+                    lang_name = self._localeinfo.translate(lang.languageCode, native=True)
+            if not lang_name:
+                lang_name = self._localeinfo.translate(lang.languageCode)
+
             self._langlist.append([lang_name, lang])
         self._langlist.set_sort_column_id(LIST_LANG, Gtk.SortType.ASCENDING)
         for button in ( 
