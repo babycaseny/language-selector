@@ -1,3 +1,14 @@
+language-selector (0.37) oneiric; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py (LP: #663776):
+    - When setting an input method system, map it to the current
+      language, not the current regional formats setting.
+    - When changing the top-most language in the combobox on the first
+      tab, update instantly the active value on the input method system
+      drop down list to reflect the language switch.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Wed, 25 May 2011 09:48:47 +0200
+
 language-selector (0.36) oneiric; urgency=low
 
   [ Gunnar Hjalmarsson ]

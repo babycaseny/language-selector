@@ -34,6 +34,7 @@ from LanguageSelector.LocaleInfo import LocaleInfo
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
 from LanguageSelector.macros import *
+from LanguageSelector.utils import language2locale
  
 (LIST_LANG,                     # language (i18n/human-readable)
  LIST_LANG_INFO                 # the short country code (e.g. de, pt_BR)
@@ -435,13 +436,9 @@ class GtkLanguageSelector(LanguageSelectorBase):
         """
         if not self.imSwitch.available():
             return
-        # get current selected default language
-        combo = self.combobox_locale_chooser
-        model = combo.get_model()
-        if combo.get_active() < 0:
-            return
-        (lang, code) = model[combo.get_active()]
-        #print "Active language: "+code
+        # get the current first item in the user LANGUAGE list
+        locale = language2locale(self.userEnvLanguage, self._datadir)
+        code = re.split('[.@]', locale)[0]
 
         combo = self.combobox_input_method
         #cell = combo.get_child().get_cell_renderers()[0]
@@ -1138,6 +1135,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         #print (envLanguage)
         self.writeUserLanguage(envLanguage)
         self.userEnvLanguage = envLanguage
+        self.check_input_methods()
         #os.environ["LANGUAGE"]=envLanguage
 
 #    @honorBlockedSignals
@@ -1159,11 +1157,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
     @honorBlockedSignals
     def on_combobox_input_method_changed(self, widget):
-        combo = self.combobox_locale_chooser
-        model = combo.get_model()
-        if combo.get_active() < 0:
-            return
-        (lang, code) = model[combo.get_active()]
+        locale = language2locale(self.userEnvLanguage, self._datadir)
+        code = re.split('[.@]', locale)[0]
 
         combo = self.combobox_input_method
         model = combo.get_model()
