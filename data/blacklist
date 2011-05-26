@@ -1,9 +1,2 @@
 # blacklist:
 # these packages are metapackages and therefor should be ignored
-language-pack-zh
-language-pack-gnome-zh
-language-pack-kde-zh
-language-support-fonts-zh
-language-support-input-zh
-language-support-writing-zh
-

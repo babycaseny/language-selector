@@ -26,18 +26,13 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
         This function is to be called from getMissingPackages().
         """
         if not packages:
-            if (self.system_pkgcode and pkgcode == self.system_pkgcode):
-                scanlist = ['language-pack', 'language-support-fonts', 'language-support-input', 'language-support-writing']
-            else:
-                scanlist = ['language-pack']
-            for x in scanlist:
-                pkg = '%s-%s' % (x, pkgcode)
-                if pkg in self._cache:
-                    if not self._cache[pkg].is_installed and \
-                       not self._cache[pkg].marked_install:
-                        self.missing.add(pkg)
-                    else:
-                        self.installed.add(pkg)
+            pkg = 'language-pack-%s' % pkgcode
+            if pkg in self._cache:
+                if not self._cache[pkg].is_installed and \
+                   not self._cache[pkg].marked_install:
+                    self.missing.add(pkg)
+                else:
+                    self.installed.add(pkg)
                     
         if pkgcode in self.pkg_translations:
             for (pkg, translation) in self.pkg_translations[pkgcode]:
@@ -66,14 +61,7 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
                         else:
                             self.installed.add(translation)
                     
-        if pkgcode in self.pkg_writing and \
-           (pkgcode == self.system_pkgcode or \
-           ('language-support-writing-%s' % pkgcode in self._cache and \
-           self._cache['language-support-writing-%s' % pkgcode].is_installed) or \
-           ('language-support-writing-%s' % pkgcode in self._cache and \
-           self._cache['language-support-writing-%s' % pkgcode].mark_install) or \
-           ('language-support-writing-%s' % pkgcode in self._cache and \
-           self._cache['language-support-writing-%s' % pkgcode].markUpgrade)):
+        if pkgcode in self.pkg_writing and pkgcode == self.system_pkgcode:
             for (pkg, pull_pkg) in self.pkg_writing[pkgcode]:
                 if '|' in pkg:
                     # multiple dependencies, if one of them is installed, pull the pull_pkg
@@ -117,10 +105,11 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
                             else:
                                 self.installed.add(pull_pkg)
                     else:
-                        if pkg in self._cache and \
+                        # pkg might be empty for installing unconditionally (i. e. no dependency)
+                        if (pkg == '' or (pkg in self._cache and \
                            (self._cache[pkg].is_installed or \
                            self._cache[pkg].marked_install or \
-                           self._cache[pkg].marked_upgrade) and \
+                           self._cache[pkg].marked_upgrade))) and \
                            pull_pkg in self._cache:
                             if ((not self._cache[pull_pkg].is_installed and \
                                not self._cache[pull_pkg].marked_install and \
@@ -180,9 +169,9 @@ class CheckLanguageSupport(LanguageSelectorBase, apt.Cache):
                 (c, lc, k, v) = l.split(':')
             except ValueError:
                 continue
-            if (c == 'tr' and lc == ''):
+            if (c in ['tr', 'wa'] and lc == ''):
                 filter_list[v] = k
-            elif (c == 'wa' and lc != ''):
+            elif (c in ['wa', 'fn', 'im'] and lc != ''):
                 if '|' in lc:
                     for l in lc.split('|'):
                         if not l in self.pkg_writing:

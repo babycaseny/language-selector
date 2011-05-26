@@ -1,3 +1,24 @@
+language-selector (0.38) oneiric; urgency=low
+
+  * LanguageSelector/CheckLanguageSupport.py, LanguageSelector/LangCache.py:
+    Allow pkg_depends to do language/locale suffix patterns for writing aids
+    ('wa') as well. This will make it a lot easier and robust to add hyphen-*,
+    mythes-* and friends.
+  * data/pkg_depends: Replace per-language mythes-*/hyphen-* lists with a
+    pattern.
+  * LanguageSelector/CheckLanguageSupport.py, LanguageSelector/LangCache.py:
+    Support empty dependencies, in which case install the package
+    unconditionally for this language.
+  * LanguageSelector/CheckLanguageSupport.py, LanguageSelector/LangCache.py:
+    Implement missing handling of fonts ("fn:") and input support ("im:") in
+    pkg_depends.
+  * data/pkg_depends: Add all remaining dependencies which we previously
+    carried in language-support-* (which will go away).
+  * data/blacklist: Remove all packages, none of them exist any more.
+  * Remove language-support-* handling, they will go away in oneiric.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 26 May 2011 11:41:04 +0200
+
 language-selector (0.37) oneiric; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py (LP: #663776):

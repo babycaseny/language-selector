@@ -125,9 +125,9 @@ class LanguageSelectorPkgCache(apt.Cache):
                 (c, lc, k, v) = l.split(':')
             except ValueError:
                 continue
-            if (c == 'tr' and lc == ''):
+            if (c in ['tr', 'wa'] and lc == ''):
                 filter_list[v] = k
-            elif (c == 'wa' and lc != ''):
+            elif (c in ['wa', 'fn', 'im'] and lc != ''):
                 if '|' in lc:
                     if not v in self.multilang:
                         self.multilang[v] = []
@@ -227,10 +227,7 @@ class LanguageSelectorPkgCache(apt.Cache):
     def _getPkgList(self, languageCode):
         """ helper that returns the list of needed pkgs for the language """
         # normal langpack+support first
-        pkg_list = ["language-support-input-%s"%languageCode,\
-                    "language-support-writing-%s"%languageCode,\
-                    "language-support-fonts-%s"%languageCode,\
-                    "language-pack-%s"%languageCode]
+        pkg_list = ["language-pack-%s"%languageCode]
         # see what additional pkgs are needed
         #for (pkg, translation) in self.pkg_translations[languageCode]:
         #    if pkg in self and self[pkg].is_installed:
@@ -306,10 +303,11 @@ class LanguageSelectorPkgCache(apt.Cache):
                                 self[pull_pkg].mark_install()
                                 #print ("Will pull: %s" % pull_pkg)
                     else:
-                        if pkg in self and \
+                        # pkg might be empty for installing unconditionally (i. e. no dependency)
+                        if (pkg == '' or (pkg in self and \
                            (self[pkg].is_installed or \
                            self[pkg].marked_install or \
-                           self[pkg].marked_upgrade) and \
+                           self[pkg].marked_upgrade))) and \
                            ((not self[pull_pkg].is_installed and \
                            not self[pull_pkg].marked_install and \
                            not self[pull_pkg].marked_upgrade) or \
@@ -322,17 +320,6 @@ class LanguageSelectorPkgCache(apt.Cache):
                         continue
                     lcount = 0
                     pcount = 0
-                    if pull_pkg in self.multilang:
-                        # package serves multiple languages.
-                        # check if other languages on this system still need this package.
-                        for l in self.multilang[pull_pkg]:
-                            p = "language-support-writing-%s" % l
-                            if p in self and \
-                               (self[p].is_installed or \
-                               self[p].marked_install or \
-                               self[p].marked_upgrade) and \
-                               not self[p].marked_delete:
-                                lcount = lcount+1
                     if '|' in pkg:
                         # multiple dependencies, if at least one of them is installed, keep the pull_pkg
                         # only remove pull_pkg if none of the dependencies are installed anymore

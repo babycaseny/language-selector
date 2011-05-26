@@ -72,44 +72,6 @@ class LanguageSelectorBase(object):
                            self._cache[translation].marked_delete) and \
                            not translation in missing):
                             missing.append(translation)
-            trans_package = "language-support-writing-%s" % langInfo.languageCode
-            # we have a langsupport-writing installed, see if we have all of them
-            if (trans_package in self._cache and 
-               (self._cache[trans_package].is_installed or \
-               self._cache[trans_package].marked_install or \
-               self._cache[trans_package].marked_upgrade)):
-                #print "IsInstalled: %s " % trans_package
-                #print self._cache.pkg_writing[langInfo.languageCode]
-                if langInfo.languageCode in self._cache.pkg_writing:
-                    for (pkg, pull_pkg) in self._cache.pkg_writing[langInfo.languageCode]:
-                        if '|' in pkg:
-                            # multiple dependencies, if one of them is installed, pull the pull_pkg
-                            for p in pkg.split('|'):
-                                if self._cache[p] and \
-                                   (self._cache[p].is_installed or \
-                                   self._cache[p].marked_install or \
-                                   self._cache[p].marked_upgrade) and \
-                                   not self._cache[p].marked_delete and \
-                                   pull_pkg in self._cache and \
-                                   ((not self._cache[pull_pkg].is_installed and \
-                                   not self._cache[pull_pkg].marked_install and \
-                                   not self._cache[pull_pkg].marked_upgrade) or \
-                                   self._cache[pull_pkg].marked_delete) and \
-                                   not pull_pkg in missing:
-                                    missing.append(pull_pkg)
-                        else:
-                            if pkg in self._cache and \
-                               (self._cache[pkg].is_installed or \
-                               self._cache[pkg].marked_install or \
-                               self._cache[pkg].marked_upgrade) and \
-                               not self._cache[pkg].marked_delete and \
-                               pull_pkg in self._cache and \
-                               ((not self._cache[pull_pkg].is_installed and \
-                               not self._cache[pull_pkg].marked_install and \
-                               not self._cache[pull_pkg].marked_upgrade) or \
-                               self._cache[pull_pkg].marked_delete) and \
-                               not pull_pkg in missing:
-                                missing.append(pull_pkg)
 
         # now check for a missing default language support
         default_lang = self._localeinfo.getSystemDefaultLanguage()[0]
