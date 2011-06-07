@@ -101,7 +101,7 @@
 
 	<orderedlist>
 	  <listitem><para>Not all messages have been translated into all the available languages at each point of time.</para></listitem>
-	  <listitem><para>Some applications are not <ulink url="http://www.gnu.org/">GNU</ulink> compatible in that they do not recognize one or both of the two variables (<command>LANGUAGE</command> and <command>LC_MESSAGES</command>) that Ubuntu uses for setting language.</para></listitem>
+	  <listitem><para>Some applications are not <ulink url="http://www.gnu.org/">GNU</ulink> compatible in that they do not recognize one or both of the two variables (<command>LANGUAGE</command> and <command>LC_MESSAGES</command>) that Ubuntu uses for setting display language.</para></listitem>
 	</orderedlist>
 
 	<sect2 id="priority-list">
@@ -137,9 +137,9 @@
 		<para>A few applications ignore both the <command>LANGUAGE</command> and <command>LC_MESSAGES</command> variables, and only check the <command>LANG</command> variable when determining display language.</para>
 
 		<note>
-		  <para>Unless set explicitly, <command>LC_MESSAGES</command> inherits the <command>LANG</command> value. Consequently, if <command>LANG</command> does not correspond with the first choice language, Ubuntu sets <command>LC_MESSAGES</command> explicitly. However, this will make <command>LC_MESSAGES</command> be exported if you connect to some other computer via <application>ssh</application>, which might mess up the language environment there. You may want to avoid that side effect by unsetting <command>LC_MESSAGES</command> before running the <application>ssh</application> command:</para>
+		  <para>Unless set explicitly, <command>LC_MESSAGES</command> inherits the <command>LANG</command> value. Consequently, if <command>LANG</command> does not correspond with the first choice language, Ubuntu sets <command>LC_MESSAGES</command> explicitly. However, this will make <command>LC_MESSAGES</command> be exported if you connect to some other computer via <application>ssh</application>, which might mess up the language environment there. You may want to avoid that side effect by unsetting <command>LC_MESSAGES</command> - and a couple of other language related variables that are treated like <command>LC_MESSAGES</command> - before running the <application>ssh</application> command:</para>
 
-		  <para><code>unset LC_MESSAGES; ssh username@host</code></para>
+		  <para><code>unset LC_MESSAGES LC_CTYPE LC_COLLATE; ssh username@host</code></para>
 		</note>
 
 	</sect2>
@@ -171,7 +171,9 @@
 
 		<para>The button <guibutton>Install / Remove Languages...</guibutton> opens the <guilabel>Installed Languages</guilabel> window with a list of all the languages that can be downloaded and installed on the system. Currently available languages are the checked items in the list. To install a new language, you check it in the list and click the <guibutton>Apply Changes</guibutton> button. That will download and install both the language's translations and other related components if any.</para>
 
-		<para>To type certain languages, such as Chinese, Japanese or Korean, a more complex input method than just a simple key to character mapping is required. There is a <guilabel>Keyboard input method system</guilabel> drop-down list to make this selection, and the recommended value for Ubuntu is <quote>ibus</quote>. If you want to use alternative input method systems, <ulink type="help" url="ghelp:add-applications#installing">install</ulink> the corresponding packages first and then choose the desired system from the drop-down list.</para>
+		<para>To type certain languages, such as Chinese, Japanese or Korean, a more complex input method than just a simple key to character mapping is required. Through the <guilabel>Keyboard input method system</guilabel> drop-down list you can set a framework for input methods that will be started automatically at login. Please note that this value is set for the current language. If for instance <quote>ibus</quote> is the selected input method system when the top-most language in the <link linkend="priority-list">language priority list</link> is Japanese, IBus is started automatically if Japanese is the current language.</para>
+
+		<para>The recommended input method system for Ubuntu is <quote>ibus</quote>. If you want to use alternative systems, <ulink type="help" url="ghelp:gnome-help#addremove-install">install</ulink> the corresponding packages first and then choose the desired system from the drop-down list.</para>
 
 	</sect2>
 
@@ -211,11 +213,6 @@
 	<variablelist>
 
 		<varlistentry>
-		  <term><command>LC_CTYPE</command></term>
-		  <listitem><para>How characters are classified as letters, numbers etc. This determines things like how characters are converted between upper and lower case.</para></listitem>
-		</varlistentry>
-
-		<varlistentry>
 		  <term><command>LC_NUMERIC</command></term>
 		  <listitem><para>How you format your numbers. For example, in many countries a point is used as a decimal separator, while others use a comma.</para></listitem>
 		</varlistentry>
@@ -223,11 +220,6 @@
 		<varlistentry>
 		  <term><command>LC_TIME</command></term>
 		  <listitem><para>How your time and date are formatted.</para></listitem>
-		</varlistentry>
-
-		<varlistentry>
-		  <term><command>LC_COLLATE</command></term>
-		  <listitem><para>How strings (file names...) are alphabetically sorted.</para></listitem>
 		</varlistentry>
 
 		<varlistentry>

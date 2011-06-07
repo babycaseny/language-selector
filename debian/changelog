@@ -1,3 +1,18 @@
+language-selector (0.39) oneiric; urgency=low
+
+  * help/C/language-selector.xml:
+    Clarification of the input method system section and modifications
+    due to new treatment of LC_CTYPE and LC_COLLATE.
+  * Set LC_CTYPE and LC_COLLATE to the same locale name as LC_MESSAGES
+    (LP: #786986).
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    Show "none" instead of an empty string as the input method system
+    when there is no explicit value for the current language.
+  * "none" option in the input method drop-down list selector made
+    translatable (LP: #531801).
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Tue, 07 Jun 2011 07:43:20 +0200
+
 language-selector (0.38) oneiric; urgency=low
 
   * LanguageSelector/CheckLanguageSupport.py, LanguageSelector/LangCache.py:

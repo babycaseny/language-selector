@@ -450,15 +450,16 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
         # find the default
         currentIM = self.imSwitch.getInputMethodForLocale(code)
-        if currentIM == None:
+        if currentIM in (None, 'default'):
             currentIM = 'none'
         #print "Current IM: "+currentIM
 
         # find out about the other options
         for (i, IM) in enumerate(self.imSwitch.getAvailableInputMethods()):
             iter = model.append()
+            name = _('none') if IM == 'none' else IM
             model.set_value(iter, IM_CHOICE, IM)
-            model.set_value(iter, IM_NAME, IM)
+            model.set_value(iter, IM_NAME, name)
             if IM == currentIM:
                 combo.set_active(i)
 #        self.check_status()

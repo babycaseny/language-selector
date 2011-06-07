@@ -61,8 +61,8 @@ class LanguageSelectorServer(dbus.service.Object):
                          connection_keyword='connection',
 			 sender_keyword='sender')
     def SetSystemDefaultLanguageEnv(self, sysLanguage, sender, connection):
-        """ 
-        sysLanguage - the default system LANGUAGE and LC_MESSAGES
+        """ sysLanguage - the default system LANGUAGE and
+            other language related environment variables
         """
         logging.debug("SetSystemDefaultLanguage")
         if not self._re_locale.search(sysLanguage):
@@ -75,9 +75,10 @@ class LanguageSelectorServer(dbus.service.Object):
         setString = "LANGUAGE=\"%s\"\n" % sysLanguage
         find_string_and_replace(findString, setString, conffiles)
         defaultLanguageLocale = language2locale(sysLanguage, self._datadir)
-        findString = "LC_MESSAGES="
-        setString = "LC_MESSAGES=\"%s\"\n" % defaultLanguageLocale
-        find_string_and_replace(findString, setString, conffiles)
+        for var in 'LC_MESSAGES', 'LC_CTYPE', 'LC_COLLATE':
+            findString = "%s=" % var
+            setString = "%s=\"%s\"\n" % (var, defaultLanguageLocale)
+            find_string_and_replace(findString, setString, conffiles)
         # update fontconfig voodoo
         fc = LanguageSelector.FontConfig.FontConfigHack()
         macr = LanguageSelector.macros.LangpackMacros(self._datadir, defaultLanguageLocale)

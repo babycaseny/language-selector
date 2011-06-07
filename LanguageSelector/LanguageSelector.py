@@ -170,11 +170,12 @@ class LanguageSelectorBase(object):
         setString = "export LANGUAGE=\"%s\"\n" % userLanguage
         find_string_and_replace(findString, setString, conffiles)
 
-        """ write the user "LC_MESSAGES" variable (e.g. de_DE.UTF-8) """
+        """ write other language related env. variables (e.g. de_DE.UTF-8) """
         userLCMess = language2locale(userLanguage, self._datadir)
-        findString = "export LC_MESSAGES="
-        setString = "export LC_MESSAGES=\"%s\"\n" % userLCMess
-        find_string_and_replace(findString, setString, conffiles)
+        for var in 'LC_MESSAGES', 'LC_CTYPE', 'LC_COLLATE':
+            findString = "export %s=" % var
+            setString = "export %s=\"%s\"\n" % (var, userLCMess)
+            find_string_and_replace(findString, setString, conffiles)
 
         self._update_gdm_dmrc(userLanguage.split(':')[0], userLanguage, userLCMess)
 

@@ -42,7 +42,7 @@ def find_string_and_replace(findString, setString, file_list,
         os.chmod(fname, 0644)
 
 def language2locale(language, datadir):
-    """ generate locale name for the LC_MESSAGES environment variable
+    """ generate locale name for LC_* environment variables
     """
     first_elem = language.split(':')[0]
     macr = macros.LangpackMacros(datadir, first_elem)
