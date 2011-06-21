@@ -158,10 +158,10 @@ class LanguageSelectorBase(object):
         # This function is not called in the KDE/Qt version of language-selector,
         # and otherwise the settings written to ~/.profile aren't normally used,
         # since the user language settings are primarily written to and read from
-        # GDM's dmrc files. We still update ~/.profile for backwards compatibility
-        # in certain kinds of networks, and to provide a generic storage model
-        # for the case language-selector is used together with some other login
-        # program but GDM or KDE.
+        # GDM's or LightDM's dmrc files. We still update ~/.profile for backwards
+        # compatibility in certain kinds of networks, and to provide a generic
+        # storage model for the case language-selector is used together with some
+        # other login program but GDM, LightDM or KDE.
 
         conffiles = [ os.path.expanduser("~/.profile") ]
 
@@ -177,73 +177,77 @@ class LanguageSelectorBase(object):
             setString = "export %s=\"%s\"\n" % (var, userLCMess)
             find_string_and_replace(findString, setString, conffiles)
 
-        self._update_gdm_dmrc(userLanguage.split(':')[0], userLanguage, userLCMess)
+        if 'USER' in os.environ:
+            self._update_dmrc(userLanguage.split(':')[0], userLanguage, userLCMess)
 
 
-    def _update_gdm_dmrc(self, firstLanguage, userLanguage, userLCMess):
-        if firstLanguage:
-            gdmscript = "/etc/init.d/gdm"
-            if os.path.exists("/var/run/gdm.pid") and os.path.exists(gdmscript):
-                if 'USER' in os.environ:
-                    path = '/var/cache/gdm/%s' % os.environ['USER']
-                    if os.path.exists(path):
-                        fname = '%s/dmrc' % path
-                    else:
-                        # this should never be the case since GDM
-                        # creates the directory at first login
-                        return
-                else:
-                    return
-                out = tempfile.NamedTemporaryFile()
-                foundLang = False      # the Language var
-                foundDesktop = False   # the [Desktop] entry
-                foundLanglist = False  # the Langlist var
-                foundLCMess = False    # the LCMess var
-                filebuffer = []
-                macr = macros.LangpackMacros(self._datadir, firstLanguage)
-                if os.path.exists(fname):
-                    # look for the line
-                    for line in open(fname):
-                        tmp = string.strip(line)
-                        if len(tmp) > 0:
-                            filebuffer.append(tmp)
-                        if tmp == '[Desktop]':
-                            foundDesktop = True
-                        if tmp.startswith("Language="):
-                            foundLang = True
-                        if tmp.startswith('Langlist='):
-                            foundLanglist = True
-                        if tmp.startswith('LCMess='):
-                            foundLCMess = True
-                for line in filebuffer:
-                    if line.startswith("Language="):
-                        line = "Language=%s\n" % macr["LOCALE"]
-                    elif line.startswith("Langlist="):
-                        line = "Langlist=%s\n" % userLanguage
-                    elif line.startswith("LCMess="):
-                        line = "LCMess=%s\n" % userLCMess
-                    else:
-                        line = line+"\n"
-                    out.write(line)
-                # if we have not found them add them
-                if foundDesktop == False:
-                    line="\n[Desktop]\n"
-                    out.write(line)
-                if foundLang == False:
-                    line="Language=%s\n" % macr["LOCALE"]
-                    out.write(line)
-                if foundLanglist == False:
-                    line="Langlist=%s\n" % userLanguage
-                    out.write(line)
-                if foundLCMess == False:
-                    line="LCMess=%s\n" % userLCMess
-                    out.write(line)
-                out.flush()
-                shutil.copy(out.name, fname)
-                os.chmod(fname, 0644)
-                fnameHome = os.path.expanduser("~/.dmrc")
-                shutil.copy(fname, fnameHome)
-                os.chmod(fnameHome, 0644)
+    def _update_dmrc(self, firstLanguage, userLanguage, userLCMess):
+        if os.path.exists('/var/run/gdm.pid') and os.path.exists('/etc/init.d/gdm'):
+            # GDM
+            path = '/var/cache/gdm/%s' % os.environ['USER']
+            if os.path.exists(path):
+                fname = '%s/dmrc' % path
+            else:
+                # this should never be the case since GDM
+                # creates the directory at first login
+                return
+        elif os.path.exists('/var/run/lightdm.pid') and os.path.exists('/etc/init.d/lightdm'):
+            # LightDM
+            fname = '/var/cache/lightdm/dmrc/%s.dmrc' % os.environ['USER']
+            if not os.path.exists(fname):
+                return
+        else:
+            return
+        out = tempfile.NamedTemporaryFile()
+        foundLang = False      # the Language var
+        foundDesktop = False   # the [Desktop] entry
+        foundLanglist = False  # the Langlist var
+        foundLCMess = False    # the LCMess var
+        filebuffer = []
+        macr = macros.LangpackMacros(self._datadir, firstLanguage)
+        if os.path.exists(fname):
+            # look for the line
+            for line in open(fname):
+                tmp = string.strip(line)
+                if len(tmp) > 0:
+                    filebuffer.append(tmp)
+                if tmp == '[Desktop]':
+                    foundDesktop = True
+                if tmp.startswith("Language="):
+                    foundLang = True
+                if tmp.startswith('Langlist='):
+                    foundLanglist = True
+                if tmp.startswith('LCMess='):
+                    foundLCMess = True
+        for line in filebuffer:
+            if line.startswith("Language="):
+                line = "Language=%s\n" % macr["LOCALE"]
+            elif line.startswith("Langlist="):
+                line = "Langlist=%s\n" % userLanguage
+            elif line.startswith("LCMess="):
+                line = "LCMess=%s\n" % userLCMess
+            else:
+                line = line+"\n"
+            out.write(line)
+        # if we have not found them add them
+        if foundDesktop == False:
+            line="\n[Desktop]\n"
+            out.write(line)
+        if foundLang == False:
+            line="Language=%s\n" % macr["LOCALE"]
+            out.write(line)
+        if foundLanglist == False:
+            line="Langlist=%s\n" % userLanguage
+            out.write(line)
+        if foundLCMess == False:
+            line="LCMess=%s\n" % userLCMess
+            out.write(line)
+        out.flush()
+        shutil.copy(out.name, fname)
+        os.chmod(fname, 0644)
+        fnameHome = os.path.expanduser("~/.dmrc")
+        shutil.copy(fname, fnameHome)
+        os.chmod(fnameHome, 0644)
 
 
 if __name__ == "__main__":

@@ -216,8 +216,8 @@ class LocaleInfo(object):
 
     def getUserDefaultLanguage(self):
         """
-        Reads '/var/cache/gdm/[USER]/dmrc' and '~/.profile' if present and '~/.dmrc' otherwise
-        or if some value wasn't set.
+        Reads '/var/cache/gdm/[USER]/dmrc' or '/var/cache/lightdm/dmrc/[USER].dmrc' and
+        '~/.profile' if present and '~/.dmrc' otherwise or if some value wasn't set.
         Scans for LANG and LANGUAGE variable settings and returns a list [LANG, LANGUAGE].
         In case of '~/.dmrc', we may only have the locale as a value, not the full LANGUAGE
         variable compatible string. Therefore we generate one from the provided locale.
@@ -226,12 +226,17 @@ class LocaleInfo(object):
         lang = ''
         language = ''
         result = []
-        if os.path.exists('/var/run/gdm.pid') and os.path.exists('/etc/init.d/gdm'):
-            is_gdm = True
-        else:
-            is_gdm = False
-        if is_gdm and 'USER' in os.environ:
-            fname = '/var/cache/gdm/%s/dmrc' % os.environ['USER']
+        is_cache = False
+        if 'USER' in os.environ:
+            if os.path.exists('/var/run/gdm.pid') and os.path.exists('/etc/init.d/gdm'):
+                # GDM
+                is_cache = True
+                fname = '/var/cache/gdm/%s/dmrc' % os.environ['USER']
+            elif os.path.exists('/var/run/lightdm.pid') and os.path.exists('/etc/init.d/lightdm'):
+                # LightDM
+                is_cache = True
+                fname = '/var/cache/lightdm/dmrc/%s.dmrc' % os.environ['USER']
+        if is_cache:
             if os.path.exists(fname) and os.access(fname, os.R_OK):
                 for line in open(fname):
                     match = re.match(r'Langlist=(.*)$',line)
@@ -248,7 +253,7 @@ class LocaleInfo(object):
                     match_language = re.match(r'export LANGUAGE=(.*)$',line)
                     if match_language:
                         language = match_language.group(1).strip('"')
-        if len(language) == 0 and is_gdm:
+        if len(language) == 0 and is_cache:
             fname = os.path.expanduser("~/.dmrc")
             if os.path.exists(fname) and \
            	os.access(fname, os.R_OK):
@@ -256,7 +261,7 @@ class LocaleInfo(object):
                     match = re.match(r'Language=(.*)$',line)
                     if match:
                         language = self.makeEnvString( match.group(1) )
-        if len(lang) == 0 and not is_gdm:
+        if len(lang) == 0 and not is_cache:
             fname = os.path.expanduser("~/.dmrc")
             if os.path.exists(fname) and \
            	os.access(fname, os.R_OK):

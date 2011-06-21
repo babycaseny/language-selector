@@ -1,3 +1,11 @@
+language-selector (0.41) oneiric; urgency=low
+
+  * LanguageSelector/LanguageSelector.py and LanguageSelector/LocaleInfo.py:
+    Take also LightDM's dmrc files into account when reading and saving
+    data (LP: #793366).
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Tue, 21 Jun 2011 14:58:24 +0200
+
 language-selector (0.40) oneiric; urgency=low
 
   [ Julien Lavergne ]
