@@ -19,6 +19,8 @@ tr::sunbird:sunbird-locale-
 tr::sword-text-gerlut1545:sword-language-pack-
 tr::gimp:gimp-help-
 tr::evolution:evolution-documentation-
+tr::chromium-browser:chromium-browser-l10n
+tr::sylpheed:sylpheed-i18n
 # Format: %LCODE% or %LCODE%%CCODE% or %LCODE%-%VARIANT%
 tr::kdelibs5-data:kde-l10n-
 
@@ -94,6 +96,10 @@ wa:ru:libreoffice-common:openoffice.org-hyphenation
 wa:sk:libreoffice-common:openoffice.org-hyphenation
 wa:sv:libreoffice-common:openoffice.org-hyphenation
 wa:uk:libreoffice-common:openoffice.org-hyphenation
+
+# Aspell support for Sylpheed and Abiword
+wa::sylpheed:aspell-
+wa::abiword:aspell-
 
 # poppler-data is useful for CJK
 wa:ar:poppler-utils:poppler-data
