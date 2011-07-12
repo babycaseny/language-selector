@@ -1,75 +1,9 @@
 #!/usr/bin/python
 
-import sys
-
-from PyKDE4.kdecore import ki18n, KAboutData, KCmdLineArgs, KCmdLineOptions
-from PyKDE4.kdeui import KApplication, KMessageBox
-
-from PyKDE4.kdecore import *
-from PyKDE4.kdeui import *
-
-from LanguageSelector.LanguageSelector import *
+import gettext
 from LanguageSelector.qt.QtLanguageSelector import QtLanguageSelector
-from gettext import gettext as i18n
-
-def _(string):
-    return unicode(i18n(string), "utf-8")
 
 def CreatePlugin(widget_parent, parent, component_data):
     gettext.bindtextdomain("language-selector", "/usr/share/locale")
     gettext.textdomain("language-selector")
     return QtLanguageSelector("/usr/share/language-selector/", component_data, widget_parent)
-
-if __name__ == "__main__":
-
-    appName	= "language-selector"
-    catalog	= ""
-    programName = ki18n ("Language Selector")
-    version	= "0.3.4"
-    description	= ki18n ("Language Selector")
-    license	= KAboutData.License_GPL
-    copyright	= ki18n ("(c) 2008 Canonical Ltd")
-    text	= ki18n ("none")
-    homePage	= "https://launchpad.net/language-selector"
-    bugEmail	= ""
-    
-    aboutData	= KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
-    
-    aboutData.addAuthor(ki18n("Rob Bean"), ki18n("PyQt4 to PyKDE4 port"))
-
-    options = KCmdLineOptions()
-    options.add("!mode ", ki18n("REQUIRED: install, uninstall or select must follow"),  "select")
-    options.add("+[install]", ki18n("install a language"))
-    options.add("+[uninstall]", ki18n("uninstall a language"))
-    options.add("+[select]", ki18n("select a language"))
-
-    KCmdLineArgs.init (sys.argv, aboutData)
-    KCmdLineArgs.addCmdLineOptions(options)
-
-    gettext.bindtextdomain("language-selector", "/usr/share/locale")
-    gettext.textdomain("language-selector")
-
-    app = KApplication()
-    
-    args = KCmdLineArgs.parsedArgs()
-    
-    if args.isSet("mode"):
-        whattodo = args.getOption("mode")
-        if whattodo in ["install", "uninstall", "select"]:
-            pass
-        else:
-            print whattodo, "is not a valid argument"
-            args.usage()
-    else:
-        print "Please review the usage."
-        args.usage()
-        
-    if os.getuid() != 0:
-        KMessageBox.sorry(None, _("Please run this software with administrative rights."),  _("Not Root User"))
-        sys.exit(1)
-
-    lc = QtLanguageSelector(app, "/usr/share/language-selector/", whattodo)
-    
-    lc.show()
-
-    app.exec_()

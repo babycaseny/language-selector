@@ -105,7 +105,8 @@ wa::abiword:aspell-
 wa:ar:poppler-utils:poppler-data
 wa:ja:poppler-utils:poppler-data
 wa:ko:poppler-utils:poppler-data
-wa:zh:poppler-utils:poppler-data
+wa:zh-hans:poppler-utils:poppler-data
+wa:zh-hant:poppler-utils:poppler-data
 
 # word lists
 wa:bg::wbulgarian
@@ -181,7 +182,7 @@ im:ko:ibus:ibus-hangul
 im:ko:ibus:nabi
 im:th:ibus:gtk-im-libthai
 im:vi:ibus:ibus-unikey
-im:zh-hans:ibus:ibus-pinyin | fcitx 
-im:zh-hans:ibus:ibus-table-wubi | fcitx-table-wubi
+im:zh-hans:ibus:ibus-sunpinyin
+im:zh-hans:ibus:ibus-table-wubi
 im:zh-hant:ibus:ibus-chewing
 im:zh-hant:ibus:ibus-table-cangjie

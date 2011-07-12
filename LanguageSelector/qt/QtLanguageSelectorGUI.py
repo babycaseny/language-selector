@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'QtLanguageSelectorGUI.ui'
 #
-# Created: Tue Feb 22 18:52:25 2011
+# Created: Tue Jun 21 14:19:40 2011
 #      by: PyQt4 UI code generator 4.8.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -110,6 +110,6 @@ class Ui_QtLanguageSelectorGUI(object):
         self.ktabwidget.setTabText(self.ktabwidget.indexOf(self.UninstallTab), QtGui.QApplication.translate("QtLanguageSelectorGUI", "Uninstall", None, QtGui.QApplication.UnicodeUTF8))
         self.defaultSystemLabel.setText(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Default system language:", None, QtGui.QApplication.UnicodeUTF8))
         self.labelInputMethod.setText(QtGui.QApplication.translate("QtLanguageSelectorGUI", "Keyboard input method:", None, QtGui.QApplication.UnicodeUTF8))
-        self.ktabwidget.setTabText(self.ktabwidget.indexOf(self.SystemDefaultTab), QtGui.QApplication.translate("QtLanguageSelectorGUI", "System Default", None, QtGui.QApplication.UnicodeUTF8))
+        self.ktabwidget.setTabText(self.ktabwidget.indexOf(self.SystemDefaultTab), QtGui.QApplication.translate("QtLanguageSelectorGUI", "Set System Language", None, QtGui.QApplication.UnicodeUTF8))
 
 from PyKDE4.kdeui import KTabWidget

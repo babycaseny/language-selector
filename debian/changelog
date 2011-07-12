@@ -1,3 +1,24 @@
+language-selector (0.42) oneiric; urgency=low
+
+  [ Romain Perier ]
+  * LanguageSelector/qt/QtLanguageSelectorGUI.ui:
+    Use a translated string as label for the last tab
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    - Don't show the missing language dialog before the GUI is displayed
+    - Change authors
+  * kde-language-selector:
+    Remove old "main" code as the KDE frontend is now a kcmodule
+
+  [ Martin Pitt ]
+  * data/pkg_depends: Fix Chinese match for poppler-data.
+  * data/pkg_depends: Move default zh-hans input support from ibus-pinyin to
+    ibus-sunpinyin (see UbuntuSpec:desktop-o-qin-ubuntu-china). Drop the
+    alternative to ibus-table-wubi, as this breaks check-language-support,
+    and does not help here -- we will only install the preferred alternative
+    anyway.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 12 Jul 2011 14:38:52 +0200
+
 language-selector (0.41) oneiric; urgency=low
 
   * LanguageSelector/LanguageSelector.py and LanguageSelector/LocaleInfo.py:

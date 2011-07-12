@@ -2,9 +2,11 @@
 #
 # © 2005 Canonical Ltd
 # © 2009 Harald Sitter
+# © 2011 Romain Perier
 # Author: Michael Vogt <michael.vogt@ubuntu.com>
 # Author: Jonathan Riddell <jriddell@ubuntu.com>
 # Author: Harald Sitter <apachelogger@ubuntu.com>
+# Author: Romain Perier <romain.perier@gmail.com>
 #
 # Released under the GNU GPL version 2 or later
 #
@@ -92,10 +94,9 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
                 self.updateLanguagesList()
                 self.setEnabled(True)
 
-
-        # see if something is missing
-        if True: #options.verify_installed:
-            self.verifyInstalledLangPacks()
+    def load(self):
+      # See if something is missing
+      self.verifyInstalledLangPacks()
 
     def save(self):
         idx = self.ui.ktabwidget.currentIndex()
@@ -109,6 +110,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
 
     def translateUI(self):
         """ translate the strings in the UI, needed because Qt designer doesn't use gettext """
+        self.ui.ktabwidget.setTabText(self.ui.ktabwidget.indexOf(self.ui.SystemDefaultTab), _("Set System Language"))
         self.ui.defaultSystemLabel.setText(_("Default system language:"))
         self.ui.labelInputMethod.setText(_("Keyboard input method:"))
         self.ui.selectLanguageLabel.setText(_("Select language to install:"))
@@ -387,6 +389,7 @@ def MakeAboutData():
   aboutData.addAuthor(ki18n("Michael Vogt"), ki18n("Developer"))
   aboutData.addAuthor(ki18n("Jonathan Riddell"), ki18n("Developer"))
   aboutData.addAuthor(ki18n("Harald Sitter"), ki18n("Developer"))
+  aboutData.addAuthor(ki18n("Romain Perier"), ki18n("Developer"))
   
   return aboutData
 

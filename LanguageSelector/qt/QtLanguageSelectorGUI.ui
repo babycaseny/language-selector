@@ -112,7 +112,7 @@
      </widget>
      <widget class="QWidget" name="SystemDefaultTab">
       <attribute name="title">
-       <string>System Default</string>
+       <string>Set System Language</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
