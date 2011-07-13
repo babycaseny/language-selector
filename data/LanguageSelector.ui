@@ -381,6 +381,7 @@ The availability of translations or writing aids can differ between languages.</
                         </child>
                         <child>
                           <object class="GtkScrolledWindow" id="scrolledwindow1">
+                            <property name="height_request">120</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="border_width">1</property>

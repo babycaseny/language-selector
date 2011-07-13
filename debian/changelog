@@ -1,3 +1,13 @@
+language-selector (0.43) oneiric; urgency=low
+
+  * data/LanguageSelector.ui:
+    Expand the height of the combo box on the "Language" tab.
+  * fontconfig/69-language-selector-zh-tw.conf:
+    Make Chinese fonts be selected before Latin fonts (LP: #713950).
+    Thanks to Cheng-Chia Tseng for the patch!
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Wed, 13 Jul 2011 17:00:04 +0200
+
 language-selector (0.42) oneiric; urgency=low
 
   [ Romain Perier ]
