@@ -1,3 +1,12 @@
+language-selector (0.44) oneiric; urgency=low
+
+  * data/pkg_depends: libgnome2-common is not an appropriate indicator for
+    GNOMEish-ness any more, as it fell of the CDs now. Move to gvfs, which is
+    going to be around for a while, and equally used in GNOME 2 and 3
+    desktops.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 21 Jul 2011 17:44:27 +0200
+
 language-selector (0.43) oneiric; urgency=low
 
   * data/LanguageSelector.ui:
