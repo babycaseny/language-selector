@@ -13,6 +13,7 @@ Vcs-Bzr: http://bazaar.launchpad.net/%7Eubuntu-core-dev/language-selector/ubuntu
 Package: language-selector-gnome
 Architecture: all
 Depends: language-selector-common (= ${binary:Version}),
+ accountsservice (>= 0.6.13-1ubuntu2),
  ${misc:Depends},
  ${python:Depends},
  python-gobject (>= 2.27.91),
@@ -71,7 +72,8 @@ Depends: ${python:Depends},
  ${misc:Depends},
  iso-codes,
  python-apt (>= 0.7.12.0),
- python-dbus
+ python-dbus,
+ accountsservice (>= 0.6.13-1ubuntu2)
 XB-Python-Version: ${python:Versions}
 Description: Language selector for Ubuntu Linux
  This package let you change and install language packs

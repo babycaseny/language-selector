@@ -78,12 +78,12 @@ The availability of translations or writing aids can differ between languages.</
             </child>
             <child>
               <object class="GtkScrolledWindow" id="scrolledwindow2">
+                <property name="height_request">300</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkTreeView" id="treeview_languages">
-                    <property name="height_request">150</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <signal name="cursor_changed" handler="on_treeview_languages_cursor_changed"/>

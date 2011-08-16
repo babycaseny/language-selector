@@ -5,8 +5,8 @@
 #
 
 import os
-import re
 import string
+import subprocess
 import tempfile
 
 import macros
@@ -41,40 +41,10 @@ def find_string_and_replace(findString, setString, file_list,
         os.rename(out.name, fname)
         os.chmod(fname, 0644)
 
-def language2locale(language, datadir):
+def language2locale(language):
     """ generate locale name for LC_* environment variables
     """
     first_elem = language.split(':')[0]
-    macr = macros.LangpackMacros(datadir, first_elem)
-    locales = []
-    localeinfo = LocaleInfo('languagelist', datadir)
-    for locale in localeinfo.generated_locales():
-        if re.split('[_@]', locale)[0] == macr['LCODE']:
-            locales.append(locale)        
-    # exact match
-    if macr['LOCALE'] in locales:
-        return macr['SYSLOCALE']
-    if not macr['CCODE']:
-        # try the "main" country code if any
-        f = open(os.path.join(datadir, 'data', 'main-countries'), 'r')
-        for line in f.readlines():
-            if line.startswith('#') or not line.strip(): continue
-            (lcode, ll_CC) = line.split()
-            if lcode == macr['LCODE']:
-                try_me = first_elem.replace(lcode, ll_CC, 1)
-                macr = macros.LangpackMacros(datadir, try_me)
-                if macr['LOCALE'] in locales:
-                    return macr['SYSLOCALE']
-                break
-        # try out fitting locale with any country code
-        for locale in locales:
-            m = re.match('(([a-z]+)_[A-Z]+)', locale)
-            if m:
-                ll_CC, lcode = m.groups()
-                try_me = first_elem.replace(lcode, ll_CC, 1)
-                macr = macros.LangpackMacros(datadir, try_me)
-                if macr['LOCALE'] in locales:
-                    return macr['SYSLOCALE']
-    # failed
-    return ''
+    locale = subprocess.check_output(['/usr/share/language-tools/language2locale', first_elem])
+    return locale.rstrip()
 

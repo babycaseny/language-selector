@@ -114,8 +114,7 @@ class FontConfigHack(object):
         lang = self.li.getUserDefaultLanguage()[1]
         if len(lang) == 0:
             lang = self.li.getSystemDefaultLanguage()[1]
-        lang = lang.split(':')[0]
-        locale = language2locale(lang, self._datadir)
+        locale = language2locale(lang)
         self.setConfig(locale)
         
 

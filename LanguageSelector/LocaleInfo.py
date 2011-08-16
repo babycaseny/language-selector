@@ -7,6 +7,7 @@ import re
 import subprocess
 import gettext
 import os
+import dbus
 import macros
 
 from gettext import gettext as _
@@ -216,32 +217,16 @@ class LocaleInfo(object):
 
     def getUserDefaultLanguage(self):
         """
-        Reads '/var/cache/gdm/[USER]/dmrc' or '/var/cache/lightdm/dmrc/[USER].dmrc' and
-        '~/.profile' if present and '~/.dmrc' otherwise or if some value wasn't set.
+        Reads '~/.profile' if present; otherwise - or if '~/.profile' doesn't set any
+        values - AccountsService is queried.
         Scans for LANG and LANGUAGE variable settings and returns a list [LANG, LANGUAGE].
-        In case of '~/.dmrc', we may only have the locale as a value, not the full LANGUAGE
-        variable compatible string. Therefore we generate one from the provided locale.
+        In the case of AccountsService, we only have one language, not the full LANGUAGE
+        variable compatible string. Therefore we generate one from the provided language.
         Likewise, if LANGUAGE is not defined, generate a string from the provided LANG value.
         """
         lang = ''
         language = ''
         result = []
-        is_cache = False
-        if 'USER' in os.environ:
-            if os.path.exists('/var/run/gdm.pid') and os.path.exists('/etc/init.d/gdm'):
-                # GDM
-                is_cache = True
-                fname = '/var/cache/gdm/%s/dmrc' % os.environ['USER']
-            elif os.path.exists('/var/run/lightdm.pid') and os.path.exists('/etc/init.d/lightdm'):
-                # LightDM
-                is_cache = True
-                fname = '/var/cache/lightdm/dmrc/%s.dmrc' % os.environ['USER']
-        if is_cache:
-            if os.path.exists(fname) and os.access(fname, os.R_OK):
-                for line in open(fname):
-                    match = re.match(r'Langlist=(.*)$',line)
-                    if match:
-                        language = match.group(1)
         fname = os.path.expanduser("~/.profile")
         if os.path.exists(fname) and \
            os.access(fname, os.R_OK):
@@ -249,26 +234,16 @@ class LocaleInfo(object):
                 match_lang = re.match(r'export LANG=(.*)$',line)
                 if match_lang:
                     lang = match_lang.group(1).strip('"')
-                if len(language) == 0:
-                    match_language = re.match(r'export LANGUAGE=(.*)$',line)
-                    if match_language:
-                        language = match_language.group(1).strip('"')
-        if len(language) == 0 and is_cache:
-            fname = os.path.expanduser("~/.dmrc")
-            if os.path.exists(fname) and \
-           	os.access(fname, os.R_OK):
-                for line in open(fname):
-                    match = re.match(r'Language=(.*)$',line)
-                    if match:
-                        language = self.makeEnvString( match.group(1) )
-        if len(lang) == 0 and not is_cache:
-            fname = os.path.expanduser("~/.dmrc")
-            if os.path.exists(fname) and \
-           	os.access(fname, os.R_OK):
-                for line in open(fname):
-                    match = re.match(r'Language=(.*)$',line)
-                    if match:
-                        lang = match.group(1)
+                match_language = re.match(r'export LANGUAGE=(.*)$',line)
+                if match_language:
+                    language = match_language.group(1).strip('"')
+        if len(language) == 0:
+            bus = dbus.SystemBus()
+            obj = bus.get_object('org.freedesktop.Accounts',
+                                '/org/freedesktop/Accounts/User' + `os.getuid()`)
+            iface = dbus.Interface(obj, dbus_interface='org.freedesktop.DBus.Properties')
+            firstLanguage = iface.Get('org.freedesktop.Accounts.User', 'Language')
+            language = self.makeEnvString(firstLanguage)
         if len(lang) == 0 and "LANG" in os.environ:
             lang = os.environ["LANG"]
         if len(lang) > 0:

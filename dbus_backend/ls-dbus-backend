@@ -74,7 +74,7 @@ class LanguageSelectorServer(dbus.service.Object):
         findString = "LANGUAGE="
         setString = "LANGUAGE=\"%s\"\n" % sysLanguage
         find_string_and_replace(findString, setString, conffiles)
-        defaultLanguageLocale = language2locale(sysLanguage, self._datadir)
+        defaultLanguageLocale = language2locale(sysLanguage)
         for var in 'LC_MESSAGES', 'LC_CTYPE', 'LC_COLLATE':
             findString = "%s=" % var
             setString = "%s=\"%s\"\n" % (var, defaultLanguageLocale)

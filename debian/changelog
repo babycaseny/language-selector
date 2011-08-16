@@ -1,3 +1,16 @@
+language-selector (0.45) oneiric; urgency=low
+
+  * Use AccountsService to save changes of the user language settings.
+  * data/main-countries:
+    File moved to AccountsService and deleted here.
+  * Use the help files provided by AccountsService when applicable
+    instead of language-selector specific code.
+  * Code for reading from and updating ~/.dmrc dropped.
+  * Fixed collapsed language window within the "Installed Languages"
+    window by specifying the height (LP: #823837).
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Tue, 16 Aug 2011 08:38:20 +0200
+
 language-selector (0.44) oneiric; urgency=low
 
   * data/pkg_depends: libgnome2-common is not an appropriate indicator for

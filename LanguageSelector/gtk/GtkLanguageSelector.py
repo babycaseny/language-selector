@@ -436,8 +436,9 @@ class GtkLanguageSelector(LanguageSelectorBase):
         """
         if not self.imSwitch.available():
             return
-        # get the current first item in the user LANGUAGE list
-        locale = language2locale(self.userEnvLanguage, self._datadir)
+        # get the current first item in the user LANGUAGE list,
+        # but with country code added if not already present
+        locale = language2locale(self.userEnvLanguage)
         code = re.split('[.@]', locale)[0]
 
         combo = self.combobox_input_method
@@ -816,73 +817,12 @@ class GtkLanguageSelector(LanguageSelectorBase):
             defaultLangName = self._localeinfo.translate(defaultLangCode, native=True)
 
         # find out about the other options        
-        avail_locales = self._localeinfo.generated_locales()
 
         """ languages for message translation """
         self._language_options.clear()
-
-        # to facilitate lookups: extend the list of available locales with items
-        # without country code
-        extended_localelist = {}
-        for loc in avail_locales:
-            lang = re.sub('_[A-Z]+', '', loc)
-            for string in loc, lang:
-                extended_localelist[string] = 1
-
-        # get the union of /usr/share/locale-langpack and /usr/share/locale
-        translation_dirs = {}
-        lp_dir = '/usr/share/locale-langpack'
-        if os.path.isdir(lp_dir):
-            for t_dir in os.listdir(lp_dir):
-                translation_dirs[t_dir] = 1
-        loc_dir = '/usr/share/locale'
-        if os.path.isdir(loc_dir):
-            for t_dir in os.listdir(loc_dir):
-                translation_dirs[t_dir] = 1
-
-        # get the intersection of available translation_dirs and the extended
-        # locale list
-        intersection = {}
-        for loc in extended_localelist:
-            if loc in translation_dirs:
-                intersection[loc] = 1
-
-        # If country code items in a language exist:
-        # - Remove the item without country code, since gettext won't find a
-        #   translation under e.g. 'de_DE' if the first item in LANGUAGE is 'de'
-        #   (see https://launchpad.net/bugs/700213). 'en' is kept, though, since
-        #   it's always the last item in LANGUAGE per design.
-        # - Make sure that the main dialect of the language is represented among
-        #   the country code items (see https://launchpad.net/bugs/710148).
-        main = {}
-        for line in open(os.path.join(self._datadir, 'data', 'main-countries')):
-            if re.match('\s*(?:#|$)', line):
-                continue
-            k, v = line.split()
-            main[k] = v
-        count = {}
-        for lang in intersection:
-            if re.match('en[^a-z]', lang):
-                continue
-            no_country = re.sub('_[A-Z]+', '', lang)
-            if no_country in count:
-                count[no_country] += 1
-            else:
-                count[no_country] = 1
-        for langcode in count:
-            if count[langcode] > 1:
-                if langcode in intersection:
-                    del intersection[langcode]
-                if langcode in main:
-                    intersection[ main[langcode] ] = 1
-
-        if len(intersection) == 0:
-            intersection['en'] = 1
-
-        # prepare the list for the Language combo box by adding human readable
-        # languages and countries, sorting etc.
+        options = subprocess.check_output(['/usr/share/language-tools/language-options'])
         mylist = []
-        for (i, option) in enumerate( intersection.keys() ):
+        for (i, option) in enumerate( options.split("\n") ):
             mylist.append([self._localeinfo.translate(option, native=True), option])
         if len(languageString) > 0:
             self.userEnvLanguage = languageString
@@ -899,7 +839,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             self._language_options.append(i)
 
         """ locales for misc. format preferences """
-        for (i, locale) in enumerate(avail_locales):
+        for (i, locale) in enumerate( self._localeinfo.generated_locales() ):
             iter = model.append()
             model.set_value(iter, LANGTREEVIEW_LANGUAGE,
                     self._localeinfo.translate(locale, native=True))
@@ -1158,7 +1098,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
     @honorBlockedSignals
     def on_combobox_input_method_changed(self, widget):
-        locale = language2locale(self.userEnvLanguage, self._datadir)
+        locale = language2locale(self.userEnvLanguage)
         code = re.split('[.@]', locale)[0]
 
         combo = self.combobox_input_method
