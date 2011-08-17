@@ -239,11 +239,15 @@ class LocaleInfo(object):
                     language = match_language.group(1).strip('"')
         if len(language) == 0:
             bus = dbus.SystemBus()
-            obj = bus.get_object('org.freedesktop.Accounts',
-                                '/org/freedesktop/Accounts/User' + `os.getuid()`)
-            iface = dbus.Interface(obj, dbus_interface='org.freedesktop.DBus.Properties')
-            firstLanguage = iface.Get('org.freedesktop.Accounts.User', 'Language')
-            language = self.makeEnvString(firstLanguage)
+            try:
+                obj = bus.get_object('org.freedesktop.Accounts',
+                                    '/org/freedesktop/Accounts/User%i' % os.getuid())
+                iface = dbus.Interface(obj, dbus_interface='org.freedesktop.DBus.Properties')
+                firstLanguage = iface.Get('org.freedesktop.Accounts.User', 'Language')
+                language = self.makeEnvString(firstLanguage)
+            except dbus.exceptions.DBusException:
+                # accountsservice not available, or unknown user
+                pass
         if len(lang) == 0 and "LANG" in os.environ:
             lang = os.environ["LANG"]
         if len(lang) > 0:
