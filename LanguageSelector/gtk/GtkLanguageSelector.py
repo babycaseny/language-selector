@@ -19,8 +19,7 @@ import time
 import tempfile
 from gettext import gettext as _
 
-import gobject
-from gi.repository import Gdk, Gtk, Pango
+from gi.repository import GObject, Gdk, Gtk, Pango
 
 import apt
 import apt_pkg
@@ -153,7 +152,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         
         #build the comboboxes (with model)
         combo = self.combobox_locale_chooser
-        model = Gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
+        model = Gtk.ListStore(GObject.TYPE_STRING, GObject.TYPE_STRING)
         cell = Gtk.CellRendererText()
         combo.pack_start(cell, True)
         combo.add_attribute(cell, 'text', LANGTREEVIEW_LANGUAGE)
@@ -161,7 +160,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
 #        self.combo_syslang_dirty = False
 
 #        combo = self.combobox_user_language
-#        model = Gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
+#        model = Gtk.ListStore(GObject.TYPE_STRING, GObject.TYPE_STRING)
 #        cell = Gtk.CellRendererText()
 #        combo.pack_start(cell, True)
 #        combo.add_attribute(cell, 'text', COMBO_LANGUAGE)
@@ -173,7 +172,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         self.ac = aptdaemon.client.AptClient()
 
         combo = self.combobox_input_method
-        model = Gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
+        model = Gtk.ListStore(GObject.TYPE_STRING, GObject.TYPE_STRING)
         cell = Gtk.CellRendererText()
         combo.pack_start(cell, True)
         combo.add_attribute(cell, 'text', IM_NAME)
@@ -320,7 +319,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         column.set_cell_data_func (renderer, toggle_cell_func, None)
         self.treeview_languages.append_column(column)
         # build the store
-        self._langlist = Gtk.ListStore(str, gobject.TYPE_PYOBJECT)
+        self._langlist = Gtk.ListStore(str, GObject.TYPE_PYOBJECT)
         self.treeview_languages.set_model(self._langlist)
 
     def setupLanguageTreeView(self):
@@ -353,7 +352,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         self.treeview_locales.append_column(column)
 
         # build the store
-        self._language_options = Gtk.ListStore(gobject.TYPE_STRING, gobject.TYPE_STRING)
+        self._language_options = Gtk.ListStore(GObject.TYPE_STRING, GObject.TYPE_STRING)
         self.treeview_locales.set_model(self._language_options)
 
     def _get_langinfo_on_cursor(self):

@@ -1,3 +1,10 @@
+language-selector (0.47) oneiric; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Move from static gobject to
+    GI GObject module, to be compatible to upcoming pygobject 3.0.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 18 Aug 2011 17:22:50 +0200
+
 language-selector (0.46) oneiric; urgency=low
 
   * LanguageSelector/LocaleInfo.py: Fix crash if accountsservice does not know
