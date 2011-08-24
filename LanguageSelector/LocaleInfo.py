@@ -248,7 +248,7 @@ class LocaleInfo(object):
                 language = self.makeEnvString(firstLanguage)
             except Exception as msg:
                 # a failure here shouldn't trigger a fatal error
-                warnings.warn(msg)
+                warnings.warn(str(msg))
                 pass
         if len(lang) == 0 and "LANG" in os.environ:
             lang = os.environ["LANG"]
