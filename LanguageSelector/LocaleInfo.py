@@ -8,6 +8,7 @@ import subprocess
 import gettext
 import os
 import dbus
+import warnings
 import macros
 
 from gettext import gettext as _
@@ -245,8 +246,9 @@ class LocaleInfo(object):
                 iface = dbus.Interface(obj, dbus_interface='org.freedesktop.DBus.Properties')
                 firstLanguage = iface.Get('org.freedesktop.Accounts.User', 'Language')
                 language = self.makeEnvString(firstLanguage)
-            except dbus.exceptions.DBusException:
-                # accountsservice not available, or unknown user
+            except Exception as msg:
+                # a failure here shouldn't trigger a fatal error
+                warnings.warn(msg)
                 pass
         if len(lang) == 0 and "LANG" in os.environ:
             lang = os.environ["LANG"]

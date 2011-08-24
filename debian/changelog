@@ -1,3 +1,11 @@
+language-selector (0.48) oneiric; urgency=low
+
+  * LanguageSelector/LocaleInfo.py:
+    Make any failure in getUserDefaultLanguage(), to get the language
+    from AccountsService, non-fatal (LP: #827412, #830938).
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Wed, 24 Aug 2011 15:31:06 +0200
+
 language-selector (0.47) oneiric; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py: Move from static gobject to
