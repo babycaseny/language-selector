@@ -238,7 +238,7 @@ class LocaleInfo(object):
                 match_language = re.match(r'export LANGUAGE=(.*)$',line)
                 if match_language:
                     language = match_language.group(1).strip('"')
-        if len(language) == 0:
+        if len(language) == 0 and os.getuid() != 0:
             bus = dbus.SystemBus()
             try:
                 obj = bus.get_object('org.freedesktop.Accounts',

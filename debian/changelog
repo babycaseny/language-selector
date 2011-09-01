@@ -1,3 +1,14 @@
+language-selector (0.50) oneiric; urgency=low
+
+  * data/language-selector.desktop.in:
+    - Include GNOME in the environments that shall show the launcher,
+      so it gets searchable in the Unity dash.
+    - Keywords modified.
+  * LanguageSelector/LocaleInfo.py:
+    - Don't attempt to query AccountsService when run as root.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Thu, 01 Sep 2011 12:20:25 +0200
+
 language-selector (0.49) oneiric; urgency=low
 
   [ Gunnar Hjalmarsson ]
