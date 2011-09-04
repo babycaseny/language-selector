@@ -581,7 +581,9 @@ class GtkLanguageSelector(LanguageSelectorBase):
                 _("Could not install the full language support"),
                 _("Usually this is related to an error in your "
                   "software archive or software manager. Check your "
-                  "software preferences in the System > Administration menu."))
+                  "preferences in Software Sources (click the icon "
+                  "at the very right of the top bar and select "
+                  "\"System Settings... -> Software Sources\")."))
             self.setSensitive(True)
             return 0
         #print "inst_list: %s " % inst_list

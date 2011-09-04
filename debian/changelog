@@ -1,3 +1,12 @@
+language-selector (0.51) oneiric; urgency=low
+
+  * data/incomplete-language-support-gnome.note.in:
+    - Guidance how to find Language Support changed (LP: #839880).
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - Guidance how to find Software Sources changed (LP: #839880).
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Sun, 04 Sep 2011 23:23:00 +0200
+
 language-selector (0.50) oneiric; urgency=low
 
   * data/language-selector.desktop.in:
