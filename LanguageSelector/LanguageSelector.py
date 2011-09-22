@@ -155,9 +155,13 @@ class LanguageSelectorBase(object):
         write the user "LANGUAGE" variable (e.g. de:en_GB:en) and other
         language related environment variables (e.g. de_DE.UTF-8)
         """
+        uid = os.getuid()
+        if uid == 0:
+            warnings.warn("No language saved for user '%s'." % os.getenv('USER'))
+            return
         bus = dbus.SystemBus()
         obj = bus.get_object('org.freedesktop.Accounts',
-                            '/org/freedesktop/Accounts/User' + `os.getuid()`)
+                            '/org/freedesktop/Accounts/User%i' % uid)
         iface = dbus.Interface(obj, dbus_interface='org.freedesktop.Accounts.User')
         iface.SetLanguage(userLanguage)
 

@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
         "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % globalent SYSTEM "../../libs/global.ent">
-%globalent;
-<!ENTITY % xinclude SYSTEM "../../libs/xinclude.mod">
-%xinclude;
-<!ENTITY % gnome-menus-C SYSTEM "../../libs/gnome-menus-C.ent">
-%gnome-menus-C;
 
 <!-- for translations, change lang to appropriate code -->
 <!ENTITY language "en">
@@ -59,7 +53,7 @@
 
 	<copyright>
 		<year>2011</year>
-		<holder>&canonical-name;</holder>
+		<holder>Canonical Ltd.</holder>
 	</copyright>
 
 </articleinfo>
@@ -151,12 +145,7 @@
 <sect1 id="support-tool">
 	<title><application>Language Support</application></title>
 
-	<para>The desired display language(s) and related settings can be set from <application>Language Support</application>. To open the tool:</para>
-
-	<itemizedlist>
-		<listitem><para>Click the icon at the very right of the <emphasis>top bar</emphasis> and select <guilabel>System Settings</guilabel>, which takes you to the <guilabel>Control Center</guilabel>.</para></listitem>
-		<listitem><para>Go to the <guilabel>System</guilabel> group and click <guilabel>Language Support</guilabel>.</para></listitem>
-	</itemizedlist>
+	<para>The desired display language(s) and related settings can be set from <application>Language Support</application>. To open the tool, click the icon at the very right of the top bar and select <guilabel>System Settings...</guilabel> -> <guilabel>Language Support</guilabel>.</para>
 
 	<para>There are both system wide and user specific settings. The controls for system wide settings are the <guibutton>Apply System Wide</guibutton> buttons and the <guibutton>Install / Remove Languages...</guibutton> button. Those controls are only available to users with access to administer the system; to other users - if any - they are greyed out.</para>
 
@@ -167,7 +156,7 @@
 
 		<para>The box <guilabel>Language for menus and windows</guilabel> contains items representing the translations that are available on the system. The current <link linkend="priority-list">language priority list</link> consists of the first items with black characters. Below, displayed in grey, are the other available translations. To add a translation to the language list, you pick a greyed item, drag it upwards, and drop it at a position above the <quote>English</quote> item.</para>
 
-		<para>By clicking the <guibutton>Apply System-Wide</guibutton> button, the system language list is set to the same items as your own current list. The system language setting controls the display language at startup and on the login screen. It also serves as the default language when a new user logs in for the first time.</para>
+		<para>By clicking the <guibutton>Apply System-Wide</guibutton> button, the system language list is set to the same items as your own current list. The system language setting controls the display language at startup and on the login screen.</para>
 
 		<para>The button <guibutton>Install / Remove Languages...</guibutton> opens the <guilabel>Installed Languages</guilabel> window with a list of all the languages that can be downloaded and installed on the system. Currently available languages are the checked items in the list. To install a new language, you check it in the list and click the <guibutton>Apply Changes</guibutton> button. That will download and install both the language's translations and other related components if any.</para>
 
@@ -192,14 +181,14 @@
 
 </sect1>
 
-<!-- =============== Login screen ============================= -->
+<!-- =============== User Accounts ============================= -->
 
-<sect1 id="login-screen">
-	<title>Login screen</title>
+<sect1 id="user-accounts">
+	<title><application>User Accounts</application></title>
 
-	<para>The Ubuntu login screen provides an alternative control for setting the user language. It is visible only when a user has been selected.</para>
+	<para>To access the <application>User Accounts</application> tool, you click the icon at the very right of the top bar and select <guilabel>System Settings...</guilabel> -> <guilabel>User Accounts</guilabel>. It provides an alternative control for setting the own user language, and lets users with access to administer the system set the initial language at the creation of a new user account.</para>
 
-	<para>Unlike the <guilabel>Language</guilabel> tab in <application>Language Support</application>, the language control on the login screen does not let you compose a complete <link linkend="priority-list">priority list</link>. Instead the one language you select is prepended to the previous list.</para>
+	<para>Unlike the <guilabel>Language</guilabel> tab in <application>Language Support</application>, this control does not let you compose a complete <link linkend="priority-list">priority list</link>. Instead the one language you select is prepended to the previous list.</para>
 
 </sect1>
 

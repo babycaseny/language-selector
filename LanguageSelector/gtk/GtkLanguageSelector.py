@@ -749,12 +749,17 @@ class GtkLanguageSelector(LanguageSelectorBase):
         if combo.get_active() < 0:
             return False
         (lang, code) = model[combo.get_active()]
-        old_code = self._localeinfo.getSystemDefaultLanguage()[0]
+        (old_code, language_string) = self._localeinfo.getSystemDefaultLanguage()
         # no changes, nothing to do
         macr = macros.LangpackMacros(self._datadir, old_code)
         if macr["LOCALE"] == code:
             return False
         self.writeSysLangSetting(sysLang=code)
+        if self._localeinfo.isCompleteSystemLanguage():
+            return True
+        # set the system language completely in order to prevent surprises
+        # (the installer does not set system LC_* variables)
+        self.writeSysLanguageSetting(sysLanguage=language_string)
         return True
 
     def writeUserDefaultLang(self):

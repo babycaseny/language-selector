@@ -7,6 +7,8 @@ import re
 import subprocess
 import gettext
 import os
+import pwd
+import sys
 import dbus
 import warnings
 import macros
@@ -205,16 +207,11 @@ class LocaleInfo(object):
             the LANGUAGE enviroment variable.
             E.g: en_DK -> en_DK:en
         """
-        macr = macros.LangpackMacros(self._datadir, code)
-        langcode = macr['LCODE']
-        locale = macr['LOCALE']
-        # first check if we got somethign from languagelist
-        if locale in self._languagelist:
-            return self._languagelist[locale]
-        # if not, fall back to "dumb" behaviour
-        if locale == langcode:
-            return locale
-        return "%s:%s" % (locale, langcode)
+        validate_script = '/usr/share/language-tools/language-validate'
+        language = subprocess.check_output([ validate_script, code.split(':')[0] ]).rstrip()
+        if language == 'en':
+            return 'en'
+        return '%s:en' % language
 
     def getUserDefaultLanguage(self):
         """
@@ -238,17 +235,25 @@ class LocaleInfo(object):
                 match_language = re.match(r'export LANGUAGE=(.*)$',line)
                 if match_language:
                     language = match_language.group(1).strip('"')
-        if len(language) == 0 and os.getuid() != 0:
+        if len(language) == 0:
             bus = dbus.SystemBus()
+            if 'fontconfig-voodoo' in sys.argv[0] and os.getenv('SUDO_USER'):
+                # handle 'sudo fontconfig-voodoo --auto' correctly
+                user_name = os.environ['SUDO_USER']
+            else:
+                user_name = pwd.getpwuid(os.geteuid()).pw_name
             try:
-                obj = bus.get_object('org.freedesktop.Accounts',
-                                    '/org/freedesktop/Accounts/User%i' % os.getuid())
+                obj = bus.get_object('org.freedesktop.Accounts', '/org/freedesktop/Accounts')
+                iface = dbus.Interface(obj, dbus_interface='org.freedesktop.Accounts')
+                user_path = iface.FindUserByName(user_name)
+
+                obj = bus.get_object('org.freedesktop.Accounts', user_path)
                 iface = dbus.Interface(obj, dbus_interface='org.freedesktop.DBus.Properties')
                 firstLanguage = iface.Get('org.freedesktop.Accounts.User', 'Language')
                 language = self.makeEnvString(firstLanguage)
             except Exception as msg:
                 # a failure here shouldn't trigger a fatal error
-                warnings.warn(str(msg))
+                warnings.warn(msg.args[0].encode('UTF-8'))
                 pass
         if len(lang) == 0 and "LANG" in os.environ:
             lang = os.environ["LANG"]
@@ -296,6 +301,18 @@ class LocaleInfo(object):
         result.append(lang)
         result.append(language)
         return result
+
+    def isCompleteSystemLanguage(self):
+        if not os.access(self.environments[0], os.R_OK):
+            return False
+        language_vars = {}
+        for line in open(self.environments[0]):
+            for var in 'LANGUAGE', 'LC_MESSAGES', 'LC_CTYPE', 'LC_COLLATE':
+                if line.startswith("%s=" % var):
+                    language_vars[var] = 1
+        if len(language_vars) < 4:
+            return False
+        return True
 
 
 if __name__ == "__main__":

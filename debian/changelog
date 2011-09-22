@@ -1,3 +1,25 @@
+language-selector (0.52) oneiric; urgency=low
+
+  * LanguageSelector/LocaleInfo.py:
+    - getUserDefaultLanguage() modified so that
+      "sudo fontconfig-voodoo --auto" does the right thing even if
+      LANGUAGE cannot be obtained from ~/.profile.
+    - Encoding issue fixed (LP: #832292).
+    - makeEnvString() rewritten to use accountsservice's
+      language-validate script.
+    - New function for testing whether the system language is set
+      completely.
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - When setting the system-wide regional formats, ensure that the
+      system language is set completely in order to prevent surprise
+      changes of the display language.
+  * LanguageSelector/LanguageSelector.py:
+    - Do not let 'root' save user language.
+  * help/C/language-selector.xml:
+    - Oneiric updates.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Thu, 22 Sep 2011 10:26:45 +0200
+
 language-selector (0.51) oneiric; urgency=low
 
   * data/incomplete-language-support-gnome.note.in:
