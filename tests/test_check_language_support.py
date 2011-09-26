@@ -33,9 +33,9 @@ class TestCheckLanguageSupport(unittest.TestCase):
 
         missing = cl.getMissingPackages("ar", True, None)
         self.assure_in_missing("libreoffice-l10n-ar", missing)
-        # 5 is picked at random, just need to ensure that the list 
+        # 3 is picked at random, just need to ensure that the list 
         # contains a bunch of entries
-        self.assertTrue(len(missing) > 5, "missing list very small")
+        self.assertTrue(len(missing) > 3, "missing list very small")
 
         missing = cl.getMissingPackages("ar", True, ["libreoffice-common"])
         self.assure_in_missing("libreoffice-l10n-ar", missing)

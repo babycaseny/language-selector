@@ -40,24 +40,16 @@ class TestLangCache(unittest.TestCase):
         self.assertEqual(len(self.lang_cache.get_changes()), 0)
         # create LanguageInformation object and test basic properties
         li = LanguageInformation(self.lang_cache, "de", "german")
-        self.assertFalse(li.languagePkgList["languageSupportWritingAids"].installed)
-        self.assertTrue(li.languagePkgList["languageSupportWritingAids"].available)
+        self.assertFalse(li.languagePkgList["languagePack"].installed)
+        self.assertTrue(li.languagePkgList["languagePack"].available)
 
     def test_try_change_details(self):
         li = LanguageInformation(self.lang_cache, "de", "german")
         # test if writing aids get installed 
         li.languagePkgList["languagePack"].doChange = True
-        li.languagePkgList["languageSupportWritingAids"].doChange = True
-        #li.languagePkgList["languageSupportWritingAids"].installed = False
         self.lang_cache.tryChangeDetails(li)
         self.assertTrue(self.lang_cache["language-pack-de"].marked_install)
         self.assertTrue(self.lang_cache["hyphen-de"].marked_install)
-        # now test langaugePack change only
-        self.lang_cache.clear()
-        li.languagePkgList["languageSupportWritingAids"].doChange = False
-        self.lang_cache.tryChangeDetails(li)
-        self.assertTrue(self.lang_cache["language-pack-de"].marked_install)
-        self.assertFalse(self.lang_cache["hyphen-de"].marked_install)
 
 if __name__ == "__main__":
     apt_pkg.Config.set("Apt::Architecture","i386")

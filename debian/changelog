@@ -1,3 +1,33 @@
+language-selector (0.53) oneiric; urgency=low
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/LocaleInfo.py:
+    - Change of makeEnvString() in v. 0.52 reversed. Didn't work
+      as expected; old simpler code sufficient for now
+      (fixes LP: #858184).
+    - New function for testing whether the user language is set
+      completely.
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - When setting the own regional formats, ensure that the user
+      language is set completely in order to prevent a surprise change
+      of the display language.
+
+  [ Martin Pitt ]
+  * debian/control: Explicitly depend on "dbus", to ensure that it is
+    configured at the time the postinst runs. Might help for bugs like
+    LP #856975.
+  * LanguageSelector/LangCache.py: Add a __str__() method to
+    LanguagePackageStatus class, to ease debugging.
+  * debian/control: Add missing python-kde4 dependency to l-s-kde.
+  * Drop the details expander from the GTK UI for the "fonts/writing
+    aids/etc." checkboxes. These were used to install language-support-*-XX
+    metapackages which got dropped. (LP: #856217)
+  * tests/test_check_language_support.py: Fix test case for current number of
+    language support packages: -ar installs exactly 5, so reduce the "> 5"
+    check to "> 3".
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 26 Sep 2011 15:29:50 +0200
+
 language-selector (0.52) oneiric; urgency=low
 
   * LanguageSelector/LocaleInfo.py:

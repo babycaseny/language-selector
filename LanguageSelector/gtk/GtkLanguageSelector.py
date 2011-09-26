@@ -733,15 +733,6 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
             self._langlist.append([lang_name, lang])
         self._langlist.set_sort_column_id(LIST_LANG, Gtk.SortType.ASCENDING)
-        for button in ( 
-              "checkbutton_translations",
-              "checkbutton_writing_aids",
-              "checkbutton_input_methods",
-              "checkbutton_fonts"):
-            self.block_toggle = True
-            getattr(self, button).set_active(False)
-            getattr(self, button).set_sensitive(False)
-            self.block_toggle = False
 
     def writeSystemDefaultLang(self):
         combo = self.combobox_locale_chooser
@@ -768,7 +759,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         if combo.get_active() < 0:
             return
         (lang, code) = model[combo.get_active()]
-        temp = self._localeinfo.getUserDefaultLanguage()[0]
+        (temp, languageString) = self._localeinfo.getUserDefaultLanguage()
         if temp == None:
             old_code = self._localeinfo.getSystemDefaultLanguage()[0]
         else:
@@ -778,6 +769,12 @@ class GtkLanguageSelector(LanguageSelectorBase):
         if macr["LOCALE"] == code:
             return False
         self.writeUserLangSetting(userLang=code)
+        if self._localeinfo.isCompleteUserLanguage():
+            return True
+        # set the user language completely in order to prevent surprises
+        # (the installer does not set the user language for the user that
+        # is created at installation)
+        self.writeUserLanguageSetting(userLanguage=languageString)
         return True
 
     def writeSystemLanguage(self, languageString):
@@ -939,55 +936,9 @@ class GtkLanguageSelector(LanguageSelectorBase):
     ####################################################
     # window_installer signal handlers                 #
     ####################################################
-    def on_treeview_languages_cursor_changed(self, treeview):
-        #print "on_treeview_languages_cursor_changed()"
-        langInfo = self._get_langinfo_on_cursor()
-        for (button, attr) in ( 
-              ("checkbutton_translations", langInfo.languagePkgList["languagePack"]),
-              ("checkbutton_writing_aids", langInfo.languagePkgList["languageSupportWritingAids"]),
-              ("checkbutton_input_methods", langInfo.languagePkgList["languageSupportInputMethods"]),
-              ("checkbutton_fonts", langInfo.languagePkgList["languageSupportFonts"])  ):
-            self.block_toggle = True
-            if ((attr.installed and not attr.doChange) or (not attr.installed and attr.doChange)) :
-                getattr(self, button).set_active(True)
-            else :
-                getattr(self, button).set_active(False)
-            getattr(self, button).set_sensitive(attr.available)
-            self.block_toggle = False
-            #self.debug_pkg_status()
 
     def on_treeview_languages_row_activated(self, treeview, path, view_column):
         self.on_toggled(None, path.to_string())
-
-    # details checkboxes
-    def on_checkbutton_fonts_clicked(self, button):
-        if self.block_toggle: return
-        langInfo = self._get_langinfo_on_cursor()
-        langInfo.languagePkgList["languageSupportFonts"].doChange = not langInfo.languagePkgList["languageSupportFonts"].doChange
-        self.check_status()
-        self.treeview_languages.queue_draw()
-        #self.debug_pkg_status()
-    def on_checkbutton_input_methods_clicked(self, button):
-        if self.block_toggle: return
-        langInfo = self._get_langinfo_on_cursor()
-        langInfo.languagePkgList["languageSupportInputMethods"].doChange = not langInfo.languagePkgList["languageSupportInputMethods"].doChange
-        self.check_status()
-        self.treeview_languages.queue_draw()
-        #self.debug_pkg_status()
-    def on_checkbutton_writing_aids_clicked(self, button):
-        if self.block_toggle: return
-        langInfo = self._get_langinfo_on_cursor()
-        langInfo.languagePkgList["languageSupportWritingAids"].doChange = not langInfo.languagePkgList["languageSupportWritingAids"].doChange
-        self.check_status()
-        self.treeview_languages.queue_draw()
-        #self.debug_pkg_status()
-    def on_checkbutton_translations_clicked(self, button):
-        if self.block_toggle: return
-        langInfo = self._get_langinfo_on_cursor()
-        langInfo.languagePkgList["languagePack"].doChange = not langInfo.languagePkgList["languagePack"].doChange
-        self.check_status()
-        self.treeview_languages.queue_draw()
-        #self.debug_pkg_status()
 
     # the global toggle
     def on_toggled(self, renderer, path_string):

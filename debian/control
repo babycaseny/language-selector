@@ -37,6 +37,7 @@ Depends: language-selector-common (= ${binary:Version}),
  ${misc:Depends},
  ${python:Depends},
  python-qt4,
+ python-kde4,
  qapt-batch,
  python-apt
 Replaces: language-selector-qt (<< 0.16)
@@ -73,6 +74,7 @@ Depends: ${python:Depends},
  iso-codes,
  python-apt (>= 0.7.12.0),
  python-dbus,
+ dbus,
  accountsservice (>= 0.6.13-1ubuntu2)
 XB-Python-Version: ${python:Versions}
 Description: Language selector for Ubuntu Linux

@@ -19,6 +19,11 @@ class LanguagePackageStatus(object):
         self.installed = False
         self.doChange = False
 
+    def __str__(self):
+        return 'LanguagePackageStatus(langcode: %s, pkgname %s, available: %s, installed: %s, doChange: %s' % (
+                self.languageCode, self.pkgname_template, str(self.available),
+                str(self.installed), str(self.doChange))
+
 # the language-support information
 class LanguageInformation(object):
     def __init__(self, cache, languageCode=None, language=None):
@@ -252,7 +257,6 @@ class LanguageSelectorPkgCache(apt.Cache):
                     #        LanguagePackageInformation or somesuch
                     if key == "languagePack":
                         self._mark_additional_translation_packages(item)
-                    if key == "languageSupportWritingAids":
                         self._mark_additional_writing_aids(item)
                 except SystemError:
                     raise ExceptionPkgCacheBroken()

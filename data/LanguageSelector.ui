@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk+" version="2.16"/>
-  <!-- interface-naming-policy project-wide -->
+  <object class="GtkActionGroup" id="actiongroup1"/>
   <object class="GtkWindow" id="dialog_progress">
+    <property name="can_focus">False</property>
     <property name="border_width">12</property>
     <property name="resizable">False</property>
     <property name="window_position">center-on-parent</property>
@@ -13,11 +14,13 @@
     <child>
       <object class="GtkVBox" id="vbox8">
         <property name="visible">True</property>
+        <property name="can_focus">False</property>
         <property name="border_width">6</property>
         <property name="spacing">12</property>
         <child>
           <object class="GtkLabel" id="label1">
             <property name="visible">True</property>
+            <property name="can_focus">False</property>
             <property name="xalign">0</property>
             <property name="yalign">0</property>
             <property name="label" translatable="yes">&lt;big&gt;&lt;b&gt;Checking available language support&lt;/b&gt;&lt;/big&gt;
@@ -35,6 +38,7 @@ The availability of translations or writing aids can differ between languages.</
         <child>
           <object class="GtkProgressBar" id="progressbar_cache">
             <property name="visible">True</property>
+            <property name="can_focus">False</property>
             <property name="pulse_step">0</property>
           </object>
           <packing>
@@ -47,13 +51,15 @@ The availability of translations or writing aids can differ between languages.</
     </child>
   </object>
   <object class="GtkWindow" id="window_installer">
+    <property name="can_focus">False</property>
     <property name="title" translatable="yes">Installed Languages</property>
     <property name="default_width">550</property>
     <property name="icon_name">config-language</property>
-    <signal name="delete_event" handler="hide_on_delete"/>
+    <signal name="delete-event" handler="hide_on_delete" swapped="no"/>
     <child>
       <object class="GtkAlignment" id="alignment6">
         <property name="visible">True</property>
+        <property name="can_focus">False</property>
         <property name="top_padding">12</property>
         <property name="bottom_padding">12</property>
         <property name="left_padding">12</property>
@@ -61,10 +67,12 @@ The availability of translations or writing aids can differ between languages.</
         <child>
           <object class="GtkVBox" id="vbox15">
             <property name="visible">True</property>
+            <property name="can_focus">False</property>
             <property name="spacing">12</property>
             <child>
               <object class="GtkLabel" id="label13">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="xalign">0</property>
                 <property name="yalign">0</property>
                 <property name="label" translatable="yes">When a language is installed, individual users can choose it in their Language settings.</property>
@@ -86,136 +94,42 @@ The availability of translations or writing aids can differ between languages.</
                   <object class="GtkTreeView" id="treeview_languages">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <signal name="cursor_changed" handler="on_treeview_languages_cursor_changed"/>
-                    <signal name="row_activated" handler="on_treeview_languages_row_activated"/>
-                  </object>
-                </child>
-              </object>
-              <packing>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkExpander" id="expander_components">
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="expanded">True</property>
-                <child>
-                  <object class="GtkVBox" id="vbox16">
-                    <property name="visible">True</property>
-                    <child>
-                      <object class="GtkTable" id="table2">
-                        <property name="visible">True</property>
-                        <property name="n_rows">2</property>
-                        <property name="n_columns">2</property>
-                        <property name="column_spacing">18</property>
-                        <child>
-                          <object class="GtkCheckButton" id="checkbutton_writing_aids">
-                            <property name="label" translatable="yes">Spellchecking and writing aids</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="receives_default">False</property>
-                            <property name="tooltip_text" translatable="yes">Word lists, dictionaries, thesauruses, etc. which can help typing by highlighting, correcting or suggesting words.</property>
-                            <property name="use_underline">True</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="clicked" handler="on_checkbutton_writing_aids_clicked"/>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="right_attach">2</property>
-                            <property name="x_options">GTK_FILL</property>
-                            <property name="y_options"></property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkCheckButton" id="checkbutton_fonts">
-                            <property name="label" translatable="yes">Extra fonts</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="receives_default">False</property>
-                            <property name="tooltip_text" translatable="yes">Additional fonts for this language which might be of general interest, e.g. decorative fonts for printing documents.</property>
-                            <property name="use_underline">True</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="clicked" handler="on_checkbutton_fonts_clicked"/>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="right_attach">2</property>
-                            <property name="top_attach">1</property>
-                            <property name="bottom_attach">2</property>
-                            <property name="x_options">GTK_FILL</property>
-                            <property name="y_options"></property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkCheckButton" id="checkbutton_translations">
-                            <property name="label" translatable="yes">Translations</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="receives_default">False</property>
-                            <property name="tooltip_text" translatable="yes">Translations for your desktop.</property>
-                            <property name="use_underline">True</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="clicked" handler="on_checkbutton_translations_clicked"/>
-                          </object>
-                          <packing>
-                            <property name="x_options">GTK_FILL</property>
-                            <property name="y_options"></property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkCheckButton" id="checkbutton_input_methods">
-                            <property name="label" translatable="yes">Input methods</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="receives_default">False</property>
-                            <property name="use_underline">True</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="clicked" handler="on_checkbutton_input_methods_clicked"/>
-                          </object>
-                          <packing>
-                            <property name="top_attach">1</property>
-                            <property name="bottom_attach">2</property>
-                            <property name="x_options">GTK_FILL</property>
-                            <property name="y_options"></property>
-                          </packing>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="position">0</property>
-                      </packing>
+                    <signal name="cursor-changed" handler="on_treeview_languages_cursor_changed" swapped="no"/>
+                    <signal name="row-activated" handler="on_treeview_languages_row_activated" swapped="no"/>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection" id="treeview-selection1"/>
                     </child>
                   </object>
                 </child>
-                <child type="label">
-                  <object class="GtkLabel" id="label14">
-                    <property name="visible">True</property>
-                    <property name="label" translatable="yes">Components:</property>
-                  </object>
-                </child>
               </object>
               <packing>
-                <property name="expand">False</property>
-                <property name="position">2</property>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkHBox" id="hbox8">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <child>
                   <object class="GtkLabel" id="label_install_remove">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="xalign">0</property>
                     <property name="use_markup">True</property>
                     <property name="wrap">True</property>
                   </object>
                   <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkHButtonBox" id="hbuttonbox2">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="spacing">6</property>
                     <child>
                       <object class="GtkButton" id="button_cancel">
@@ -223,19 +137,23 @@ The availability of translations or writing aids can differ between languages.</
                         <property name="can_focus">True</property>
                         <property name="can_default">True</property>
                         <property name="receives_default">False</property>
-                        <signal name="clicked" handler="on_button_cancel_clicked"/>
+                        <property name="use_action_appearance">False</property>
+                        <signal name="clicked" handler="on_button_cancel_clicked" swapped="no"/>
                         <child>
                           <object class="GtkAlignment" id="alignment7">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <property name="xscale">0</property>
                             <property name="yscale">0</property>
                             <child>
                               <object class="GtkHBox" id="hbox9">
                                 <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="spacing">2</property>
                                 <child>
                                   <object class="GtkImage" id="image1">
                                     <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
                                     <property name="stock">gtk-cancel</property>
                                   </object>
                                   <packing>
@@ -247,6 +165,7 @@ The availability of translations or writing aids can differ between languages.</
                                 <child>
                                   <object class="GtkLabel" id="label15">
                                     <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
                                     <property name="label" translatable="yes">Cancel</property>
                                     <property name="use_underline">True</property>
                                   </object>
@@ -273,19 +192,23 @@ The availability of translations or writing aids can differ between languages.</
                         <property name="can_focus">True</property>
                         <property name="can_default">True</property>
                         <property name="receives_default">False</property>
-                        <signal name="clicked" handler="on_button_apply_clicked"/>
+                        <property name="use_action_appearance">False</property>
+                        <signal name="clicked" handler="on_button_apply_clicked" swapped="no"/>
                         <child>
                           <object class="GtkAlignment" id="alignment8">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <property name="xscale">0</property>
                             <property name="yscale">0</property>
                             <child>
                               <object class="GtkHBox" id="hbox10">
                                 <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="spacing">2</property>
                                 <child>
                                   <object class="GtkImage" id="image2">
                                     <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
                                     <property name="stock">gtk-apply</property>
                                   </object>
                                   <packing>
@@ -297,6 +220,7 @@ The availability of translations or writing aids can differ between languages.</
                                 <child>
                                   <object class="GtkLabel" id="label16">
                                     <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
                                     <property name="label" translatable="yes">Apply Changes</property>
                                     <property name="use_underline">True</property>
                                   </object>
@@ -327,7 +251,8 @@ The availability of translations or writing aids can differ between languages.</
               </object>
               <packing>
                 <property name="expand">False</property>
-                <property name="position">3</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
               </packing>
             </child>
           </object>
@@ -337,14 +262,16 @@ The availability of translations or writing aids can differ between languages.</
   </object>
   <object class="GtkWindow" id="window_main">
     <property name="visible">True</property>
+    <property name="can_focus">False</property>
     <property name="title" translatable="yes">Language Support</property>
-    <property name="icon_name">config-language</property>
     <property name="destroy_with_parent">True</property>
-    <signal name="key_press_event" handler="on_window_main_key_press_event"/>
-    <signal name="delete_event" handler="on_delete_event"/>
+    <property name="icon_name">config-language</property>
+    <signal name="key-press-event" handler="on_window_main_key_press_event" swapped="no"/>
+    <signal name="delete-event" handler="on_delete_event" swapped="no"/>
     <child>
       <object class="GtkAlignment" id="alignment1">
         <property name="visible">True</property>
+        <property name="can_focus">False</property>
         <property name="top_padding">10</property>
         <property name="bottom_padding">10</property>
         <property name="left_padding">10</property>
@@ -352,6 +279,7 @@ The availability of translations or writing aids can differ between languages.</
         <child>
           <object class="GtkVBox" id="vbox1">
             <property name="visible">True</property>
+            <property name="can_focus">False</property>
             <property name="spacing">5</property>
             <child>
               <object class="GtkNotebook" id="notebook1">
@@ -360,6 +288,7 @@ The availability of translations or writing aids can differ between languages.</
                 <child>
                   <object class="GtkAlignment" id="alignment12">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="top_padding">12</property>
                     <property name="bottom_padding">12</property>
                     <property name="left_padding">12</property>
@@ -367,15 +296,18 @@ The availability of translations or writing aids can differ between languages.</
                     <child>
                       <object class="GtkVBox" id="vbox2">
                         <property name="visible">True</property>
+                        <property name="can_focus">False</property>
                         <child>
                           <object class="GtkLabel" id="label4">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
                             <property name="label" translatable="yes">Language for menus and windows:</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
+                            <property name="fill">True</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
@@ -385,8 +317,6 @@ The availability of translations or writing aids can differ between languages.</
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="border_width">1</property>
-                            <property name="hscrollbar_policy">automatic</property>
-                            <property name="vscrollbar_policy">automatic</property>
                             <child>
                               <object class="GtkTreeView" id="treeview_locales">
                                 <property name="visible">True</property>
@@ -398,17 +328,23 @@ Every entry below "English" will be ignored.</property>
                                 <property name="reorderable">True</property>
                                 <property name="hover_selection">True</property>
                                 <property name="enable_grid_lines">horizontal</property>
-                                <signal name="drag_end" handler="on_treeview_locales_drag_end"/>
+                                <signal name="drag-end" handler="on_treeview_locales_drag_end" swapped="no"/>
+                                <child internal-child="selection">
+                                  <object class="GtkTreeSelection" id="treeview-selection2"/>
+                                </child>
                               </object>
                             </child>
                           </object>
                           <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
                         <child>
                           <object class="GtkLabel" id="label5">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
                             <property name="label" translatable="yes">&lt;small&gt;Drag languages to arrange them in order of preference.
@@ -417,6 +353,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
+                            <property name="fill">True</property>
                             <property name="padding">6</property>
                             <property name="position">2</property>
                           </packing>
@@ -424,15 +361,17 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                         <child>
                           <object class="GtkHBox" id="hbox4">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <child>
                               <object class="GtkButton" id="button_apply_system_wide_languages">
                                 <property name="label" translatable="yes">Apply System-Wide</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
+                                <property name="use_action_appearance">False</property>
                                 <property name="xalign">0</property>
                                 <property name="yalign">0</property>
-                                <signal name="clicked" handler="on_button_apply_system_wide_languages_clicked"/>
+                                <signal name="clicked" handler="on_button_apply_system_wide_languages_clicked" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -446,6 +385,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
+                            <property name="fill">True</property>
                             <property name="padding">6</property>
                             <property name="position">3</property>
                           </packing>
@@ -453,6 +393,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                         <child>
                           <object class="GtkLabel" id="label6">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
                             <property name="label" translatable="yes">&lt;small&gt;Use the same language choices for startup and the login screen.
@@ -461,24 +402,28 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
+                            <property name="fill">True</property>
                             <property name="position">4</property>
                           </packing>
                         </child>
                         <child>
                           <object class="GtkHBox" id="hbox5">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <child>
                               <object class="GtkButton" id="button_install_remove_languages">
                                 <property name="label" translatable="yes">Install / Remove Languages...</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
+                                <property name="use_action_appearance">False</property>
                                 <property name="xalign">0</property>
                                 <property name="yalign">0</property>
-                                <signal name="clicked" handler="on_button_install_remove_languages_clicked"/>
+                                <signal name="clicked" handler="on_button_install_remove_languages_clicked" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
+                                <property name="fill">True</property>
                                 <property name="position">0</property>
                               </packing>
                             </child>
@@ -496,9 +441,11 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                         <child>
                           <object class="GtkHBox" id="hbox11">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <child>
                               <object class="GtkLabel" id="label8">
                                 <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="xalign">0</property>
                                 <property name="label" translatable="yes">Keyboard input method system:</property>
                               </object>
@@ -511,14 +458,16 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                             <child>
                               <object class="GtkComboBox" id="combobox_input_method">
                                 <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="tooltip_text" translatable="yes">If you need to type in languages, which require more complex input methods than just a simple key to letter mapping, you may want to enable this function.
 For example, you will need this function for typing Chinese, Japanese, Korean or Vietnamese.
 The recommended value for Ubuntu is "ibus".
 If you want to use alternative input method systems, install the corresponding packages first and then choose the desired system here.</property>
-                                <signal name="changed" handler="on_combobox_input_method_changed"/>
+                                <signal name="changed" handler="on_combobox_input_method_changed" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
+                                <property name="fill">True</property>
                                 <property name="padding">6</property>
                                 <property name="position">1</property>
                               </packing>
@@ -526,6 +475,7 @@ If you want to use alternative input method systems, install the corresponding p
                           </object>
                           <packing>
                             <property name="expand">False</property>
+                            <property name="fill">True</property>
                             <property name="position">6</property>
                           </packing>
                         </child>
@@ -536,6 +486,7 @@ If you want to use alternative input method systems, install the corresponding p
                 <child type="tab">
                   <object class="GtkLabel" id="Language">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="xpad">6</property>
                     <property name="label" translatable="yes">Language</property>
                     <property name="use_markup">True</property>
@@ -547,6 +498,7 @@ If you want to use alternative input method systems, install the corresponding p
                 <child>
                   <object class="GtkAlignment" id="alignment13">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="top_padding">12</property>
                     <property name="bottom_padding">12</property>
                     <property name="left_padding">12</property>
@@ -554,9 +506,11 @@ If you want to use alternative input method systems, install the corresponding p
                     <child>
                       <object class="GtkVBox" id="vbox3">
                         <property name="visible">True</property>
+                        <property name="can_focus">False</property>
                         <child>
                           <object class="GtkLabel" id="label9">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
                             <property name="label" translatable="yes">Display numbers, dates and currency amounts in the usual format for:</property>
@@ -571,16 +525,19 @@ If you want to use alternative input method systems, install the corresponding p
                         <child>
                           <object class="GtkHBox" id="hbox12">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <child>
                               <object class="GtkComboBox" id="combobox_locale_chooser">
                                 <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="tooltip_text" translatable="yes">This will set the system environment like shown below and will also affect the preferred paper format and other region specific settings.
 If you want to display the desktop in a different language than this, please select it in the "Language" tab.
 Hence you should set this to a sensible value for the region in which you are located.</property>
-                                <signal name="changed" handler="on_combobox_locale_chooser_changed"/>
+                                <signal name="changed" handler="on_combobox_locale_chooser_changed" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
+                                <property name="fill">True</property>
                                 <property name="position">0</property>
                               </packing>
                             </child>
@@ -590,6 +547,7 @@ Hence you should set this to a sensible value for the region in which you are lo
                           </object>
                           <packing>
                             <property name="expand">False</property>
+                            <property name="fill">True</property>
                             <property name="padding">3</property>
                             <property name="position">1</property>
                           </packing>
@@ -597,27 +555,32 @@ Hence you should set this to a sensible value for the region in which you are lo
                         <child>
                           <object class="GtkLabel" id="label19">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
                             <property name="label" translatable="yes">&lt;small&gt;Changes take effect next time you log in.&lt;/small&gt;</property>
                             <property name="use_markup">True</property>
                           </object>
                           <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
                             <property name="position">2</property>
                           </packing>
                         </child>
                         <child>
                           <object class="GtkHBox" id="hbox13">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <child>
                               <object class="GtkButton" id="button_apply_system_wide_locale">
                                 <property name="label" translatable="yes">Apply System-Wide</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
+                                <property name="use_action_appearance">False</property>
                                 <property name="xalign">0</property>
                                 <property name="yalign">0</property>
-                                <signal name="clicked" handler="on_button_apply_system_wide_locale_clicked"/>
+                                <signal name="clicked" handler="on_button_apply_system_wide_locale_clicked" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="expand">False</property>
@@ -631,6 +594,7 @@ Hence you should set this to a sensible value for the region in which you are lo
                           </object>
                           <packing>
                             <property name="expand">False</property>
+                            <property name="fill">True</property>
                             <property name="padding">3</property>
                             <property name="position">3</property>
                           </packing>
@@ -638,6 +602,7 @@ Hence you should set this to a sensible value for the region in which you are lo
                         <child>
                           <object class="GtkLabel" id="label20">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
                             <property name="label" translatable="yes">&lt;small&gt;Use the same format choice for startup and the login screen.
@@ -645,17 +610,21 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                             <property name="use_markup">True</property>
                           </object>
                           <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
                             <property name="position">4</property>
                           </packing>
                         </child>
                         <child>
                           <object class="GtkFrame" id="frame3">
                             <property name="visible">True</property>
+                            <property name="can_focus">False</property>
                             <property name="label_xalign">0</property>
                             <property name="shadow_type">none</property>
                             <child>
                               <object class="GtkAlignment" id="alignment14">
                                 <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="top_padding">6</property>
                                 <property name="bottom_padding">18</property>
                                 <property name="left_padding">18</property>
@@ -663,6 +632,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                                 <child>
                                   <object class="GtkTable" id="table1">
                                     <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
                                     <property name="n_rows">3</property>
                                     <property name="n_columns">2</property>
                                     <property name="column_spacing">6</property>
@@ -670,6 +640,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                                     <child>
                                       <object class="GtkLabel" id="label3">
                                         <property name="visible">True</property>
+                                        <property name="can_focus">False</property>
                                         <property name="xalign">0</property>
                                         <property name="yalign">0</property>
                                         <property name="label" translatable="yes">Number:</property>
@@ -683,6 +654,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                                     <child>
                                       <object class="GtkLabel" id="label2">
                                         <property name="visible">True</property>
+                                        <property name="can_focus">False</property>
                                         <property name="xalign">0</property>
                                         <property name="yalign">0</property>
                                         <property name="label" translatable="yes">Date:</property>
@@ -698,6 +670,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                                     <child>
                                       <object class="GtkLabel" id="label11">
                                         <property name="visible">True</property>
+                                        <property name="can_focus">False</property>
                                         <property name="xalign">0</property>
                                         <property name="yalign">0</property>
                                         <property name="label" translatable="yes">Currency:</property>
@@ -713,6 +686,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                                     <child>
                                       <object class="GtkLabel" id="label_example_number">
                                         <property name="visible">True</property>
+                                        <property name="can_focus">False</property>
                                         <property name="xalign">0</property>
                                         <property name="yalign">0</property>
                                       </object>
@@ -726,6 +700,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                                     <child>
                                       <object class="GtkLabel" id="label_example_date">
                                         <property name="visible">True</property>
+                                        <property name="can_focus">False</property>
                                         <property name="xalign">0</property>
                                         <property name="yalign">0</property>
                                       </object>
@@ -741,6 +716,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                                     <child>
                                       <object class="GtkLabel" id="label_example_currency">
                                         <property name="visible">True</property>
+                                        <property name="can_focus">False</property>
                                         <property name="xalign">0</property>
                                         <property name="yalign">0</property>
                                       </object>
@@ -760,6 +736,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                             <child type="label">
                               <object class="GtkLabel" id="label18">
                                 <property name="visible">True</property>
+                                <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">&lt;b&gt;Example&lt;/b&gt;</property>
                                 <property name="use_markup">True</property>
                               </object>
@@ -767,6 +744,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
+                            <property name="fill">True</property>
                             <property name="padding">12</property>
                             <property name="position">5</property>
                           </packing>
@@ -784,6 +762,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                 <child type="tab">
                   <object class="GtkLabel" id="Text">
                     <property name="visible">True</property>
+                    <property name="can_focus">False</property>
                     <property name="xpad">6</property>
                     <property name="label" translatable="yes">Regional Formats</property>
                   </object>
@@ -794,24 +773,28 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                 </child>
               </object>
               <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
                 <property name="position">0</property>
               </packing>
             </child>
             <child>
               <object class="GtkHBox" id="hbox1">
                 <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <child>
                   <object class="GtkLinkButton" id="button_help">
-                    <property name="visible">True</property>
-                    <property name="relief">GTK_RELIEF_NORMAL</property>
-                    <property name="use_stock">True</property>
                     <property name="label">gtk-help</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">False</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="use_stock">True</property>
                     <property name="uri">ghelp:language-selector</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
-                    <property name="pack_type">start</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
@@ -821,8 +804,9 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="use_stock">True</property>
-                    <signal name="clicked" handler="on_button_quit_clicked"/>
+                    <signal name="clicked" handler="on_button_quit_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -844,5 +828,4 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
       </object>
     </child>
   </object>
-  <object class="GtkActionGroup" id="actiongroup1"/>
 </interface>

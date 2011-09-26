@@ -207,11 +207,16 @@ class LocaleInfo(object):
             the LANGUAGE enviroment variable.
             E.g: en_DK -> en_DK:en
         """
-        validate_script = '/usr/share/language-tools/language-validate'
-        language = subprocess.check_output([ validate_script, code.split(':')[0] ]).rstrip()
-        if language == 'en':
-            return 'en'
-        return '%s:en' % language
+        macr = macros.LangpackMacros(self._datadir, code)
+        langcode = macr['LCODE']
+        locale = macr['LOCALE']
+        # first check if we got somethign from languagelist
+        if locale in self._languagelist:
+            return self._languagelist[locale]
+        # if not, fall back to "dumb" behaviour
+        if locale == langcode:
+            return locale
+        return "%s:%s" % (locale, langcode)
 
     def getUserDefaultLanguage(self):
         """
@@ -309,6 +314,21 @@ class LocaleInfo(object):
         for line in open(self.environments[0]):
             for var in 'LANGUAGE', 'LC_MESSAGES', 'LC_CTYPE', 'LC_COLLATE':
                 if line.startswith("%s=" % var):
+                    language_vars[var] = 1
+        if len(language_vars) < 4:
+            return False
+        return True
+
+    def isCompleteUserLanguage(self):
+        fname = os.path.expanduser('~/.profile')
+        if not os.access(fname, os.R_OK):
+            return False
+        language_vars = {}
+        for line in open(fname):
+            if not line.startswith('export'):
+                continue
+            for var in 'LANGUAGE', 'LC_MESSAGES', 'LC_CTYPE', 'LC_COLLATE':
+                if line.startswith('export %s=' % var):
                     language_vars[var] = 1
         if len(language_vars) < 4:
             return False
