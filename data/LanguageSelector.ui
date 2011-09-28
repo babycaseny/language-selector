@@ -94,7 +94,6 @@ The availability of translations or writing aids can differ between languages.</
                   <object class="GtkTreeView" id="treeview_languages">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <signal name="cursor-changed" handler="on_treeview_languages_cursor_changed" swapped="no"/>
                     <signal name="row-activated" handler="on_treeview_languages_row_activated" swapped="no"/>
                     <child internal-child="selection">
                       <object class="GtkTreeSelection" id="treeview-selection1"/>
@@ -790,6 +789,7 @@ Changes take effect only after a restart of the system.&lt;/small&gt;</property>
                     <property name="receives_default">False</property>
                     <property name="use_action_appearance">False</property>
                     <property name="use_stock">True</property>
+                    <property name="relief">GTK_RELIEF_NORMAL</property>
                     <property name="uri">ghelp:language-selector</property>
                   </object>
                   <packing>

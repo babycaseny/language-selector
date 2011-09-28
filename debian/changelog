@@ -1,3 +1,17 @@
+language-selector (0.54) oneiric; urgency=low
+
+  * data/LanguageSelector.ui:
+    - Reference to the handler "on_treeview_languages_cursor_changed",
+      which was removed in v. 0.53, dropped (LP: #859961).
+    - Property "relief" for help button reinserted.
+  * LanguageSelector/LangCache.py [change not affecting KDE]:
+    - Don't confuse the UI by testing whether dropped metapackages
+      are installed. Makes a difference on upgraded systems where
+      (traces of) such packages are left on disk from previous
+      language installations (should affect LP: #841712).
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Wed, 28 Sep 2011 17:21:13 +0200
+
 language-selector (0.53) oneiric; urgency=low
 
   [ Gunnar Hjalmarsson ]

@@ -5,6 +5,7 @@ import apt
 import apt_pkg
 import os
 import os.path
+import sys
 import macros
 
 from xml.etree.ElementTree import ElementTree
@@ -37,9 +38,10 @@ class LanguageInformation(object):
         # langPack/support status 
         self.languagePkgList = {}
         self.languagePkgList["languagePack"] = LanguagePackageStatus(languageCode, "language-pack-%s")
-        self.languagePkgList["languageSupportWritingAids"] = LanguagePackageStatus(languageCode, "language-support-writing-%s")
-        self.languagePkgList["languageSupportInputMethods"] = LanguagePackageStatus(languageCode, "language-support-input-%s")
-        self.languagePkgList["languageSupportFonts"] = LanguagePackageStatus(languageCode, "language-support-fonts-%s")
+        if 'gnome-' not in sys.argv[0]:
+            self.languagePkgList["languageSupportWritingAids"] = LanguagePackageStatus(languageCode, "language-support-writing-%s")
+            self.languagePkgList["languageSupportInputMethods"] = LanguagePackageStatus(languageCode, "language-support-input-%s")
+            self.languagePkgList["languageSupportFonts"] = LanguagePackageStatus(languageCode, "language-support-fonts-%s")
         for langpkg_status in self.languagePkgList.itervalues():
             pkgname = langpkg_status.pkgname_template % languageCode
             langpkg_status.available = pkgname in cache
