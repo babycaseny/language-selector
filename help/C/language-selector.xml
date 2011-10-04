@@ -131,7 +131,7 @@
 		<para>A few applications ignore both the <command>LANGUAGE</command> and <command>LC_MESSAGES</command> variables, and only check the <command>LANG</command> variable when determining display language.</para>
 
 		<note>
-		  <para>Unless set explicitly, <command>LC_MESSAGES</command> inherits the <command>LANG</command> value. Consequently, if <command>LANG</command> does not correspond with the first choice language, Ubuntu sets <command>LC_MESSAGES</command> explicitly. However, this will make <command>LC_MESSAGES</command> be exported if you connect to some other computer via <application>ssh</application>, which might mess up the language environment there. You may want to avoid that side effect by unsetting <command>LC_MESSAGES</command> - and a couple of other language related variables that are treated like <command>LC_MESSAGES</command> - before running the <application>ssh</application> command:</para>
+		  <para><command>LC_MESSAGES</command> is exported if you connect to some other computer via <application>ssh</application>, which might mess up the language environment there. You may want to avoid that side effect by unsetting <command>LC_MESSAGES</command> - and a couple of other language related variables that are treated like <command>LC_MESSAGES</command> - before running the <application>ssh</application> command:</para>
 
 		  <para><code>unset LC_MESSAGES LC_CTYPE LC_COLLATE; ssh username@host</code></para>
 		</note>
@@ -227,7 +227,7 @@
 	<para><code>export LC_TIME="en_DK.UTF-8"</code></para>
 
 	<note>
-		<para>The side effect of setting the <command>LC_MESSAGES</command> variable explicitly, as described in the <link linkend="format-tab">Regional formats</link> section, is applicable to explicitly setting other <command>LC_*</command> variables as well.</para>
+		<para>The side effect of setting the <command>LC_MESSAGES</command> variable, as described in the <link linkend="format-tab">Regional formats</link> section, is applicable to other <command>LC_*</command> variables as well.</para>
 	</note> 
 
 </sect1>

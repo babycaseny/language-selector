@@ -1,3 +1,9 @@
+language-selector (0.55) oneiric; urgency=low
+
+  * Minor tweaking of help/C/language-selector.xml.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Tue, 04 Oct 2011 10:50:43 +0200
+
 language-selector (0.54) oneiric; urgency=low
 
   * data/LanguageSelector.ui:
