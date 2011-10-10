@@ -1,3 +1,11 @@
+language-selector (0.56) oneiric; urgency=low
+
+  * LanguageSelector/LangCache.py: Fix crash when "sys.argv" does not exist,
+    which happens when being called from the KDE control center.
+    (LP: #871922)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 10 Oct 2011 20:03:34 +0200
+
 language-selector (0.55) oneiric; urgency=low
 
   * Minor tweaking of help/C/language-selector.xml.

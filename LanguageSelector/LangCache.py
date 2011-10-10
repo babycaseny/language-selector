@@ -38,7 +38,7 @@ class LanguageInformation(object):
         # langPack/support status 
         self.languagePkgList = {}
         self.languagePkgList["languagePack"] = LanguagePackageStatus(languageCode, "language-pack-%s")
-        if 'gnome-' not in sys.argv[0]:
+        if not hasattr(sys, 'argv') or 'gnome-' not in sys.argv[0]:
             self.languagePkgList["languageSupportWritingAids"] = LanguagePackageStatus(languageCode, "language-support-writing-%s")
             self.languagePkgList["languageSupportInputMethods"] = LanguagePackageStatus(languageCode, "language-support-input-%s")
             self.languagePkgList["languageSupportFonts"] = LanguagePackageStatus(languageCode, "language-support-fonts-%s")
