@@ -9,5 +9,5 @@ usr/share/language-selector
 usr/share/locale
 usr/share/pixmaps
 ../../fontconfig/[0-9][0-9]-*.conf etc/fonts/conf.avail
-../../data/restart_session_required.note usr/share/language-support
+usr/share/language-support/restart_session_required.note
 

@@ -1,8 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --with python2
+	dh $@ --with python2,translations
 
 override_dh_auto_install:
 	python ./setup.py install --prefix=$(CURDIR)/debian/tmp/usr --install-layout=deb
-	(cd po; intltool-update -p -g language-selector)
