@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 7.0.50~),
  python,
+ python-distutils-extra,
  intltool,
  intltool-debian,
  dh-translations
