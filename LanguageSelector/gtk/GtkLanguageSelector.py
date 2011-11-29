@@ -137,8 +137,16 @@ class GtkLanguageSelector(LanguageSelectorBase):
         self.widgets.add_from_file(datadir+"/data/LanguageSelector.ui")
         self.widgets.connect_signals(self)
 
-        self.is_admin = (os.getuid() == 0 or
-                         grp.getgrnam("admin")[2] in os.getgroups())
+        try:
+            in_grp_admin = grp.getgrnam("admin")[2] in os.getgroups()
+        except KeyError:
+            in_grp_admin = False
+        try:
+            in_grp_sudo = grp.getgrnam("sudo")[2] in os.getgroups()
+        except KeyError:
+            in_grp_sudo = False
+
+        self.is_admin = (os.getuid() == 0 or in_grp_sudo or in_grp_admin)
 
         # see if we have any other human users on this system
         self.has_other_users = False
