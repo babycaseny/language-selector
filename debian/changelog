@@ -1,3 +1,17 @@
+language-selector (0.60) precise; urgency=low
+
+  [ Martin Pitt ]
+  * debian/control: Move from transitional python-gobject to python-gi.
+  * Drop fontconfig/69-language-selector-ko-kr.conf: Obsolete now with the
+    move to fonts-nanum.
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Work around python2.7 crash
+    when passing an unicode value to setlocale(). (LP: #905429)
+
+  [ Jinkyu Yi ]
+  * data/pkg_depends: Add fonts-nanum*.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 19 Dec 2011 10:34:41 +0100
+
 language-selector (0.59) precise; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py: Fix crash if "admin" group

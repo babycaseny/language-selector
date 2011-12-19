@@ -929,7 +929,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             return
         (lang, code) = model[combo.get_active()]
         macr = macros.LangpackMacros(self._datadir, code)
-        mylocale = macr["SYSLOCALE"]
+        mylocale = macr["SYSLOCALE"].encode('UTF-8')
         try:
             locale.setlocale(locale.LC_ALL, mylocale)
         except locale.Error as detail:

@@ -153,7 +153,9 @@ fn:ja::ttf-takao-mincho
 fn:ja::ttf-takao-gothic
 fn:km::ttf-khmeros
 fn:kn::ttf-kannada-fonts
-fn:ko::ttf-unfonts-extra
+fn:ko::fonts-nanum
+fn:ko::fonts-nanum-coding
+fn:ko::fonts-nanum-extra
 fn:ko::ttf-alee
 fn:lo::ttf-lao
 fn:ml::ttf-malayalam-fonts
