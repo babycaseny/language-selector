@@ -1,3 +1,25 @@
+language-selector (0.61) precise; urgency=low
+
+  * data/pkg_depends:
+    - Replace ttf-tmuni with fonts-tibetan-machine.
+    - Replace ttf-sil-abyssinica with fonts-sil-abyssinica.
+    - Replace ttf-arabeyes with fonts-arabeyes.
+    - Replace ttf-kacst with fonts-kacst.
+    - Replace ttf-mgopen with fonts-mgopen.
+    - Replace ttf-farsiweb with fonts-farsiweb.
+    - Replace ttf-sil-scheherazade with fonts-sil-scheherazade.
+    - Replace ttf-sil-ezra with fonts-sil-ezra.
+    - Replace ttf-sil-yi with fonts-sil-nuosusil.
+    - Replace ttf-takao-mincho with fonts-takao-mincho.
+    - Replace ttf-takao-gothic with fonts-takao-gothic.
+    - Replace ttf-khmeros with fonts-khmeros.
+    - Replace ttf-lao with fonts-lao.
+    - Replace ttf-manchufont with fonts-manchufont.
+    - Replace ttf-sil-padauk with fonts-sil-padauk.
+    - Replace ttf-nafees with fonts-nafees.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 03 Jan 2012 14:27:27 +0000
+
 language-selector (0.60) precise; urgency=low
 
   [ Martin Pitt ]
