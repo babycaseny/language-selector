@@ -3,10 +3,10 @@
 # Column 2: languange code for which the package should only be installed. If empty, install for all languages.
 # The language code will be appended in the specified format
 # Column 3: dependency package(s). Only install the package in column 4 when this dependency package is already installed.
-# Multiple dependencies (OR) are separated by |.
 # Column 4: Package to pull. Can contain language codes at the end if column 2 is empty.
 #
 # Format: %LCODE%
+tr:::language-pack-
 tr::gvfs:language-pack-gnome-
 tr::kdelibs5-data:language-pack-kde-
 # Format: %LCODE% or %LCODE%-%CCODE%
@@ -25,7 +25,10 @@ tr::sylpheed:sylpheed-i18n
 tr::kdelibs5-data:kde-l10n-
 
 # Finnish support for voikko
-wa:fi:firefox|thunderbird|seahorse|epiphany:mozvoikko
+wa:fi:firefox:mozvoikko
+wa:fi:thunderbird:mozvoikko
+wa:fi:seahorse:mozvoikko
+wa:fi:epiphany:mozvoikko
 wa:fi:libreoffice-core:libreoffice-voikko
 wa:fi:ispell:tmispell-voikko
 wa:fi::libenchant-voikko
@@ -173,10 +176,10 @@ fn:ur::fonts-nafees
 fn:ur::fonts-sil-scheherazade
 fn:yi::fonts-sil-ezra
 fn:zh-hans::ttf-wqy-zenhei
-fn:zh-hans::ttf-arphic-uming
+fn:zh-hans::fonts-arphic-uming
 fn:zh-hans::ttf-arphic-ukai
 fn:zh-hant::ttf-wqy-zenhei
-fn:zh-hant::ttf-arphic-uming
+fn:zh-hant::fonts-arphic-uming
 fn:zh-hant::ttf-arphic-ukai
 
 # input methods

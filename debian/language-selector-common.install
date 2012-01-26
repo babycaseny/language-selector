@@ -4,7 +4,9 @@ usr/share/polkit-1
 usr/lib/language-selector
 usr/bin/fontconfig-voodoo
 usr/bin/check-language-support
+usr/lib/python*/*-packages/*.egg-info
 usr/lib/python*/*-packages/LanguageSelector/*.py
+usr/lib/python*/*-packages/language_support_pkgs*.py
 usr/share/language-selector
 usr/share/locale
 usr/share/pixmaps

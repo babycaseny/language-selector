@@ -1,3 +1,41 @@
+language-selector (0.62) precise; urgency=low
+
+  [ Colin Watson ]
+  * data/pkg_depends:
+    - Replace ttf-arphic-uming with fonts-arphic-uming.
+  
+  [ Martin Pitt ]
+  * data/pkg_depends: Drop usage of '|'. It unnecessarily complicates the
+    logic, does not add any expressiveness, and was only used once anyway.
+  * data/pkg_depends: Add generic language-pack- pattern (without a trigger
+    package), so that we do not need to special-case it in the code.
+  * Add language_support_pkgs.py and tests/test_language_support_pkgs.py:
+    Complete rewrite of the check-language-support and
+    LanguageSelector/CheckLanguageSupport.py functionality. The old code was
+    terrible and hard to maintain, the new one now makes it very easy to
+    integrate into installers or an aptdaemon plugin and does not have any
+    dependencies to any of the old language-selector code (which will
+    eventually be dropped).
+  * check-language-support: Rewrite using language_support_pkgs. CLI API stays
+    the same.
+  * setup.py, debian/language-selector-common.install: Install
+    language_support_pkgs.py.
+  * language_support_pkgs.py: Add apt_cache_add_language_packs() function
+    which uses LanguageSupport to mark all corresponding language support
+    packages for installation for an apt.Cache() object with to-be-installed
+    packages. This is a suitable function to use as an aptdaemon plugin.
+  * setup.py, debian/rules: Move to python-setuptools, as we are going to need
+    it for registering an aptdaemon plugin through "entry_points". Add
+    python-setuptools build dependency.
+  * setup.py, debian/language-selector-common.install: Register
+    apt_cache_add_language_packs as aptdaemon "modify_cache_after" plugin and
+    install this package's egg-info.  With this, installing a new package
+    through aptdaemon (i. e.  software-center or any other desktop
+    integration) will automatically install the corresponding language packs
+    and support packages as well.  (LP: #396414)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 26 Jan 2012 16:20:53 +0100
+
 language-selector (0.61) precise; urgency=low
 
   * data/pkg_depends:

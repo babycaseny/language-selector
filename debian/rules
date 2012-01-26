@@ -4,4 +4,4 @@
 	dh $@ --with python2,translations
 
 override_dh_auto_install:
-	python ./setup.py install --prefix=$(CURDIR)/debian/tmp/usr --install-layout=deb
+	python ./setup.py install --root=$(CURDIR)/debian/tmp --prefix=/usr --install-layout=deb

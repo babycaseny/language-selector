@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup
 from DistUtilsExtra.command import (build_extra, build_i18n, build_help,
                                     build_icons)
 import glob
 import os
 import sys
 
-PREFIX=sys.prefix
+PREFIX='/usr/local'
+ROOT='/'
 
 if sys.argv[1] == "build":
     assert(os.system("cd LanguageSelector/qt; make") == 0)
@@ -15,9 +16,12 @@ elif sys.argv[1] == "install":
     for arg in sys.argv[2:]:
         if "--prefix" in arg:
             PREFIX=arg.split("=")[1]
+        if "--root" in arg:
+            ROOT=arg.split("=")[1]
 
 setup(name='language-selector',
       version='0.1',
+      py_modules = ['language_support_pkgs'],
       packages=['LanguageSelector',
                 'LanguageSelector.gtk',
                 'LanguageSelector.qt'],
@@ -51,6 +55,9 @@ setup(name='language-selector',
                   ('share/pixmaps',
                    ["data/language-selector.png"]),
                   ],
+      entry_points='''[aptdaemon.plugins]
+modify_cache_after=language_support_pkgs:apt_cache_add_language_packs
+''',
       cmdclass={"build": build_extra.build_extra,
                 "build_i18n": build_i18n.build_i18n,
                 "build_help": build_help.build_help,
@@ -59,5 +66,5 @@ setup(name='language-selector',
 
       )
 if sys.argv[1] == "install":
-    os.rename(PREFIX+"/share/kde4/services/kde-language-selector.desktop", PREFIX+"/share/kde4/services/language-selector.desktop")
-    os.rename(PREFIX+"/share/kde4/apps/language-selector/kde-language-selector", PREFIX+"/share/kde4/apps/language-selector/language-selector.py")
+    os.rename(ROOT+"/"+PREFIX+"/share/kde4/services/kde-language-selector.desktop", ROOT+"/"+PREFIX+"/share/kde4/services/language-selector.desktop")
+    os.rename(ROOT+"/"+PREFIX+"/share/kde4/apps/language-selector/kde-language-selector", ROOT+"/"+PREFIX+"/share/kde4/apps/language-selector/language-selector.py")
