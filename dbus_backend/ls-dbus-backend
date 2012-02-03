@@ -61,9 +61,7 @@ class LanguageSelectorServer(dbus.service.Object):
                          connection_keyword='connection',
 			 sender_keyword='sender')
     def SetSystemDefaultLanguageEnv(self, sysLanguage, sender, connection):
-        """ sysLanguage - the default system LANGUAGE and
-            other language related environment variables
-        """
+        """ sysLanguage - the default system LANGUAGE and LANG """
         logging.debug("SetSystemDefaultLanguage")
         if not self._re_locale.search(sysLanguage):
             logging.error('SetSystemDefaultLanguage: Invalid locale "%s", rejecting', sysLanguage)
@@ -75,10 +73,9 @@ class LanguageSelectorServer(dbus.service.Object):
         setString = "LANGUAGE=\"%s\"\n" % sysLanguage
         find_string_and_replace(findString, setString, conffiles)
         defaultLanguageLocale = language2locale(sysLanguage)
-        for var in 'LC_MESSAGES', 'LC_CTYPE', 'LC_COLLATE':
-            findString = "%s=" % var
-            setString = "%s=\"%s\"\n" % (var, defaultLanguageLocale)
-            find_string_and_replace(findString, setString, conffiles)
+        findString = "LANG="
+        setString = "LANG=\"%s\"\n" % defaultLanguageLocale
+        find_string_and_replace(findString, setString, conffiles)
         # update fontconfig voodoo
         fc = LanguageSelector.FontConfig.FontConfigHack()
         macr = LanguageSelector.macros.LangpackMacros(self._datadir, defaultLanguageLocale)
@@ -95,61 +92,22 @@ class LanguageSelectorServer(dbus.service.Object):
 			 out_signature="b",
                          connection_keyword='connection',
 			 sender_keyword='sender')
-    def SetSystemDefaultLangEnv(self, sysLang, sender, connection):
-        """ 
-        sysLang: the default LANG (de_DE.UTF-8)
-        """
-        logging.debug("SetSystemDefaultLangEnv")
-        if not self._re_locale.search(sysLang):
-            logging.error('SetSystemDefaultLangEnv: Invalid locale "%s", rejecting', sysLang)
+    def SetSystemDefaultFormatsEnv(self, sysFormats, sender, connection):
+        """ sysFormats: various LC_* variables (de_DE.UTF-8) """
+        logging.debug("SetSystemDefaultFormatsEnv")
+        if not self._re_locale.search(sysFormats):
+            logging.error('SetSystemDefaultFormatsEnv: Invalid locale "%s", rejecting', sysFormats)
             return False
         if not self._authWithPolicyKit(sender, connection, "com.ubuntu.languageselector.setsystemdefaultlanguage"):
             return False
         conffiles = ["/etc/default/locale", "/etc/environment"]
-        macr = LanguageSelector.macros.LangpackMacros(self._datadir, sysLang)
-        findString = "LANG="
-        setString = "LANG=\"%s\"\n" % macr["SYSLOCALE"]
-        find_string_and_replace(findString, setString, conffiles)
+        macr = LanguageSelector.macros.LangpackMacros(self._datadir, sysFormats)
+        for var in 'LC_NUMERIC', 'LC_TIME', 'LC_MONETARY', 'LC_PAPER', \
+                   'LC_NAME', 'LC_ADDRESS', 'LC_TELEPHONE', 'LC_MEASUREMENT':
+            findString = "%s=" % var
+            setString = "%s=\"%s\"\n" % (var, macr["SYSLOCALE"])
+            find_string_and_replace(findString, setString, conffiles)
         return True
-
-    def _get_missing_pkgs(self, language):
-        from LanguageSelector.CheckLanguageSupport import CheckLanguageSupport
-        cl = CheckLanguageSupport(DATADIR)
-        pkgs = cl.getMissingPackages(language, all=True)
-        return pkgs
-
-    @dbus.service.method(dbus_interface='com.ubuntu.LanguageSelector',
-			 in_signature="s", 
-			 out_signature="as",
-                         connection_keyword='connection',
-			 sender_keyword='sender')
-    def GetMissingPackages(self, language, sender, connection):
-        """ 
-        Get the missing packages
-        """
-        logging.debug("GetMissingPackages")
-        return self._get_missing_pkgs(language)
-
-    @dbus.service.method(dbus_interface='com.ubuntu.LanguageSelector',
-			 in_signature="s", 
-			 out_signature="as",
-                         connection_keyword='connection',
-			 sender_keyword='sender')
-    def GetMissingPackagesAsync(self, language, sender, connection):
-        """ 
-        Get the missing packages
-        """
-        logging.debug("GetMissingPackagesAsync")
-        glib.timeout_add(10, self._get_missing_pkgs_async, language)
-
-    def _get_missing_pkgs_async(self, language):
-        pkgs = self._get_missing_pkgs(language)
-        self.MissingLanguagePackages(pkgs)
-
-    @dbus.service.signal(dbus_interface='com.ubuntu.LanguageSelector',
-                         signature='as')
-    def MissingLanguagePackages(self, missing_pkgs):
-        pass
 
 if __name__ == "__main__":
         # FIXME: use argparse

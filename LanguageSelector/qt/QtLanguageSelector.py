@@ -20,6 +20,7 @@ from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox, KGuiItem, KCModule, 
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
 from QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
+from LanguageSelector.LangCache import ExceptionPkgCacheBroken
 from gettext import gettext as i18n
 
 def utf8(str):
@@ -234,10 +235,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         if len(items) == 1:
             li = self._localeinfo.listviewStrToLangInfoMap[unicode(items[0].text())]
             for (button, langPkg) in (
-              ("checkBoxTr", li.languagePkgList["languagePack"]),
-              ("checkBoxIm", li.languagePkgList["languageSupportInputMethods"]),
-              ("checkBoxSpell", li.languagePkgList["languageSupportWritingAids"]),
-              ("checkBoxFonts", li.languagePkgList["languageSupportFonts"]) ):
+                    ("checkBoxTr", li.languagePkgList["languagePack"])):
                 getattr(self.ui, button).setEnabled(langPkg.available)
                 getattr(self.ui, button).setChecked(False)
                 if langPkg.installed:
@@ -318,12 +316,8 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         if len(items) == 1:
             elm = items[0]
             li = self._localeinfo.listviewStrToLangInfoMap[unicode(elm.text())]
-#                self._cache.tryInstallLanguage(li.languageCode)
             for (button, langPkg) in (
-              ("checkBoxTr", li.languagePkgList["languagePack"]),
-              ("checkBoxIm", li.languagePkgList["languageSupportInputMethods"]),
-              ("checkBoxSpell", li.languagePkgList["languageSupportWritingAids"]),
-              ("checkBoxFonts", li.languagePkgList["languageSupportFonts"]) ):
+                ("checkBoxTr", li.languagePkgList["languagePack"])):
               if langPkg.available:
                 if (mode == "install") and (not langPkg.installed):
                   langPkg.doChange = getattr(self.ui, button).isChecked()

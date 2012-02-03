@@ -34,6 +34,7 @@ from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
 from LanguageSelector.macros import *
 from LanguageSelector.utils import language2locale
+from LanguageSelector.LangCache import ExceptionPkgCacheBroken
  
 (LIST_LANG,                     # language (i18n/human-readable)
  LIST_LANG_INFO                 # the short country code (e.g. de, pt_BR)
@@ -742,32 +743,27 @@ class GtkLanguageSelector(LanguageSelectorBase):
             self._langlist.append([lang_name, lang])
         self._langlist.set_sort_column_id(LIST_LANG, Gtk.SortType.ASCENDING)
 
-    def writeSystemDefaultLang(self):
+    def writeSystemFormats(self):
         combo = self.combobox_locale_chooser
         model = combo.get_model()
         if combo.get_active() < 0:
             return False
         (lang, code) = model[combo.get_active()]
-        (old_code, language_string) = self._localeinfo.getSystemDefaultLanguage()
+        old_code = self._localeinfo.getSystemDefaultLanguage()[0]
         # no changes, nothing to do
         macr = macros.LangpackMacros(self._datadir, old_code)
         if macr["LOCALE"] == code:
             return False
-        self.writeSysLangSetting(sysLang=code)
-        if self._localeinfo.isCompleteSystemLanguage():
-            return True
-        # set the system language completely in order to prevent surprises
-        # (the installer does not set system LC_* variables)
-        self.writeSysLanguageSetting(sysLanguage=language_string)
+        self.writeSysFormatsSetting(sysFormats=code)
         return True
 
-    def writeUserDefaultLang(self):
+    def writeUserFormats(self):
         combo = self.combobox_locale_chooser
         model = combo.get_model()
         if combo.get_active() < 0:
             return
         (lang, code) = model[combo.get_active()]
-        (temp, languageString) = self._localeinfo.getUserDefaultLanguage()
+        temp = self._localeinfo.getUserDefaultLanguage()[0]
         if temp == None:
             old_code = self._localeinfo.getSystemDefaultLanguage()[0]
         else:
@@ -776,21 +772,20 @@ class GtkLanguageSelector(LanguageSelectorBase):
         macr = macros.LangpackMacros(self._datadir, old_code)
         if macr["LOCALE"] == code:
             return False
-        self.writeUserLangSetting(userLang=code)
-        if self._localeinfo.isCompleteUserLanguage():
-            return True
-        # set the user language completely in order to prevent surprises
-        # (the installer does not set the user language for the user that
-        # is created at installation)
-        self.writeUserLanguageSetting(userLanguage=languageString)
+        self.writeUserFormatsSetting(userFormats=code)
         return True
 
     def writeSystemLanguage(self, languageString):
-        old_string = self._localeinfo.getSystemDefaultLanguage()[1]
+        (formats_locale, old_string) = self._localeinfo.getSystemDefaultLanguage()
         # no changes, nothing to do
         if old_string == languageString:
             return False
         self.writeSysLanguageSetting(sysLanguage=languageString)
+        if self._localeinfo.isSetSystemFormats():
+            return True
+        # set the system formats (certain LC_* variables) explicitly
+        # in order to prevent surprises when LANG is changed
+        self.writeSysFormatsSetting(sysFormats=formats_locale)
         return True
 
     def writeUserLanguage(self, languageString):
@@ -1082,13 +1077,13 @@ class GtkLanguageSelector(LanguageSelectorBase):
     @insensitive
     def on_combobox_locale_chooser_changed(self, widget):
         self.check_input_methods()
-        self.writeUserDefaultLang()
+        self.writeUserFormats()
         self.updateLocaleChooserCombo()
         self.updateExampleBox()
 
     @honorBlockedSignals
     @insensitive
     def on_button_apply_system_wide_locale_clicked(self, widget):
-        self.writeSystemDefaultLang()
+        self.writeSystemFormats()
         return None
 

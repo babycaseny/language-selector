@@ -395,8 +395,7 @@ Changes take effect next time you log in.&lt;/small&gt;</property>
                             <property name="can_focus">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
-                            <property name="label" translatable="yes">&lt;small&gt;Use the same language choices for startup and the login screen.
-Changes take effect only after a restart of the system.&lt;/small&gt;</property>
+                            <property name="label" translatable="yes">&lt;small&gt;Use the same language choices for startup and the login screen.&lt;/small&gt;</property>
                             <property name="use_markup">True</property>
                           </object>
                           <packing>
@@ -604,8 +603,7 @@ Hence you should set this to a sensible value for the region in which you are lo
                             <property name="can_focus">False</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
-                            <property name="label" translatable="yes">&lt;small&gt;Use the same format choice for startup and the login screen.
-Changes take effect only after a restart of the system.&lt;/small&gt;</property>
+                            <property name="label" translatable="yes">&lt;small&gt;Use the same format choice for startup and the login screen.&lt;/small&gt;</property>
                             <property name="use_markup">True</property>
                           </object>
                           <packing>

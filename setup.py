@@ -35,7 +35,6 @@ setup(name='language-selector',
                     "data/locale2langpack",
                     "data/pkg_depends",
                     "data/variants",
-                    "data/blacklist",
                     "data/im-switch.blacklist",
                     "data/LanguageSelector.ui"]),
                   # kcm stuff
@@ -57,6 +56,8 @@ setup(name='language-selector',
                   ],
       entry_points='''[aptdaemon.plugins]
 modify_cache_after=language_support_pkgs:apt_cache_add_language_packs
+[packagekit.apt.plugins]
+what_provides=language_support_pkgs:packagekit_what_provides_locale
 ''',
       cmdclass={"build": build_extra.build_extra,
                 "build_i18n": build_i18n.build_i18n,

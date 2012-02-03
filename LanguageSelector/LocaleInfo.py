@@ -177,7 +177,7 @@ class LocaleInfo(object):
                 if mycountry:
                     returnVal = "%s (%s)" % (lang_name, country_name)
         if len(macr["VARIANT"]) > 0:
-            returnVal = "%s - %s" % (returnVal, macr["VARIANT"])
+            returnVal = "%s - %s" % (returnVal, macr["VARIANT"].encode('UTF-8'))
         
         if native == True:
             if current_language:
@@ -212,72 +212,63 @@ class LocaleInfo(object):
         locale = macr['LOCALE']
         # first check if we got somethign from languagelist
         if locale in self._languagelist:
-            return self._languagelist[locale]
+            langlist = self._languagelist[locale]
         # if not, fall back to "dumb" behaviour
-        if locale == langcode:
-            return locale
-        return "%s:%s" % (locale, langcode)
+        elif locale == langcode:
+            langlist = locale
+        else:
+            langlist = "%s:%s" % (locale, langcode)
+        if not (langlist.endswith(':en') or langlist == 'en'):
+            langlist = "%s:en" % langlist
+        return langlist
 
     def getUserDefaultLanguage(self):
-        """
-        Reads '~/.profile' if present; otherwise - or if '~/.profile' doesn't set any
-        values - AccountsService is queried.
-        Scans for LANG and LANGUAGE variable settings and returns a list [LANG, LANGUAGE].
-        In the case of AccountsService, we only have one language, not the full LANGUAGE
-        variable compatible string. Therefore we generate one from the provided language.
-        Likewise, if LANGUAGE is not defined, generate a string from the provided LANG value.
-        """
-        lang = ''
+        formats = ''
         language = ''
         result = []
-        fname = os.path.expanduser("~/.profile")
+        fname = os.path.expanduser("~/.pam_environment")
         if os.path.exists(fname) and \
            os.access(fname, os.R_OK):
             for line in open(fname):
-                match_lang = re.match(r'export LANG=(.*)$',line)
-                if match_lang:
-                    lang = match_lang.group(1).strip('"')
-                match_language = re.match(r'export LANGUAGE=(.*)$',line)
+                match_language = re.match(r'LANGUAGE=(.*)$',line)
                 if match_language:
-                    language = match_language.group(1).strip('"')
-        if len(language) == 0:
-            bus = dbus.SystemBus()
-            if 'fontconfig-voodoo' in sys.argv[0] and os.getenv('SUDO_USER'):
-                # handle 'sudo fontconfig-voodoo --auto' correctly
-                user_name = os.environ['SUDO_USER']
-            else:
-                user_name = pwd.getpwuid(os.geteuid()).pw_name
-            try:
-                obj = bus.get_object('org.freedesktop.Accounts', '/org/freedesktop/Accounts')
-                iface = dbus.Interface(obj, dbus_interface='org.freedesktop.Accounts')
-                user_path = iface.FindUserByName(user_name)
+                    language = match_language.group(1)
+        bus = dbus.SystemBus()
+        if 'fontconfig-voodoo' in sys.argv[0] and os.getenv('SUDO_USER'):
+            # handle 'sudo fontconfig-voodoo --auto' correctly
+            user_name = os.environ['SUDO_USER']
+        else:
+            user_name = pwd.getpwuid(os.geteuid()).pw_name
+        try:
+            obj = bus.get_object('org.freedesktop.Accounts', '/org/freedesktop/Accounts')
+            iface = dbus.Interface(obj, dbus_interface='org.freedesktop.Accounts')
+            user_path = iface.FindUserByName(user_name)
 
-                obj = bus.get_object('org.freedesktop.Accounts', user_path)
-                iface = dbus.Interface(obj, dbus_interface='org.freedesktop.DBus.Properties')
+            obj = bus.get_object('org.freedesktop.Accounts', user_path)
+            iface = dbus.Interface(obj, dbus_interface='org.freedesktop.DBus.Properties')
+            formats = iface.Get('org.freedesktop.Accounts.User', 'FormatsLocale')
+            if len(language) == 0:
                 firstLanguage = iface.Get('org.freedesktop.Accounts.User', 'Language')
                 language = self.makeEnvString(firstLanguage)
-            except Exception as msg:
-                # a failure here shouldn't trigger a fatal error
-                warnings.warn(msg.args[0].encode('UTF-8'))
-                pass
-        if len(lang) == 0 and "LANG" in os.environ:
-            lang = os.environ["LANG"]
-        if len(lang) > 0:
-            if len(language) == 0:
-                if "LANGUAGE" in os.environ and os.environ["LANGUAGE"] != lang:
-                    language = os.environ["LANGUAGE"]
-                else:
-                    language = self.makeEnvString(lang)
-        result.append(lang)
+        except Exception as msg:
+            # a failure here shouldn't trigger a fatal error
+            warnings.warn(msg.args[0].encode('UTF-8'))
+            pass
+        if len(language) == 0 and "LANGUAGE" in os.environ:
+            language = os.environ["LANGUAGE"]
+        if len(formats) == 0 and "LC_NAME" in os.environ:
+            formats = os.environ["LC_NAME"]
+        if len(formats) == 0 and "LANG" in os.environ:
+            formats = os.environ["LANG"]
+        if len(formats) > 0 and len(language) == 0:
+            language = self.makeEnvString(formats)
+        result.append(formats)
         result.append(language)
         return result
 
     def getSystemDefaultLanguage(self):
-        """
-        Reads '/etc/default/locale' if present, and if not '/etc/environment'.
-        Scans for LANG and LANGUAGE variable settings and returns a list [LANG, LANGUAGE].
-        """
         lang = ''
+        formats = ''
         language = ''
         result = []
         for fname in self.environments:
@@ -289,12 +280,17 @@ class LocaleInfo(object):
                         line = line.replace('"','')
                     match_lang = re.match(r'LANG=(.*)$',line)
                     if match_lang:
-                        lang = match_lang.group(1).strip('"')
+                        lang = match_lang.group(1)
+                    if line.startswith("LC_TIME"):
+                        line = line.replace('"','')
+                    match_formats = re.match(r'LC_TIME=(.*)$',line)
+                    if match_formats:
+                        formats = match_formats.group(1)
                     if line.startswith("LANGUAGE"):
                         line = line.replace('"','')
                     match_language = re.match(r'LANGUAGE=(.*)$',line)
                     if match_language:
-                        language = match_language.group(1).strip('"')
+                        language = match_language.group(1)
                 if len(lang) > 0:
                     break
         if len(lang) == 0:
@@ -303,36 +299,19 @@ class LocaleInfo(object):
         if len(language) == 0:
             # LANGUAGE has not been defined, generate a string from the provided LANG value
             language = self.makeEnvString(lang)
-        result.append(lang)
+        if len(formats) == 0:
+            formats = lang
+        result.append(formats)
         result.append(language)
         return result
 
-    def isCompleteSystemLanguage(self):
+    def isSetSystemFormats(self):
         if not os.access(self.environments[0], os.R_OK):
             return False
-        language_vars = {}
         for line in open(self.environments[0]):
-            for var in 'LANGUAGE', 'LC_MESSAGES', 'LC_CTYPE', 'LC_COLLATE':
-                if line.startswith("%s=" % var):
-                    language_vars[var] = 1
-        if len(language_vars) < 4:
-            return False
-        return True
-
-    def isCompleteUserLanguage(self):
-        fname = os.path.expanduser('~/.profile')
-        if not os.access(fname, os.R_OK):
-            return False
-        language_vars = {}
-        for line in open(fname):
-            if not line.startswith('export'):
-                continue
-            for var in 'LANGUAGE', 'LC_MESSAGES', 'LC_CTYPE', 'LC_COLLATE':
-                if line.startswith('export %s=' % var):
-                    language_vars[var] = 1
-        if len(language_vars) < 4:
-            return False
-        return True
+            if line.startswith("LC_TIME="):
+                return True
+        return False
 
 
 if __name__ == "__main__":

@@ -1,3 +1,55 @@
+language-selector (0.63) precise; urgency=low
+
+  [ Martin Pitt ]
+  * LanguageSelector/LanguageSelector.py: Fix KeyError crash on a nonexisting
+    package. (LP: #843430)
+  * language_support_pkgs.py: Add PackageKit WhatProvides() plugin for
+    "locale()" search. Register it in setup.py.
+  * LanguageSelector/LangCache.py, data/blacklist, setup.py: Drop support for
+    data/blacklist, we haven't needed it for a long time, and don't intend to
+    bring back this hack.
+  * dbus_backend/ls-dbus-backend: Drop GetMissingPackages{,Async} methods. The
+    current code isn't using them, and there is no need to have this in a
+    D-BUS service. language_support_pkgs works fine as user in frontends.
+  * Drop tests/test_dbus_backend.py. It only exercised above method, not the
+    "set system-wide locale" bits.
+  * Drop LanguageSelector/CheckLanguageSupport.py,
+    dbus_backend/ls-dbus-backend: Not used by anything any more, obsoleted by
+    language_support_pkgs.py.
+  * LanguageSelector/LanguageSelector.py: Reimplement getMissingLangPacks()
+    using language_support_pkgs.py. This gets rid of a lot of redundant and
+    bad code.
+  * Change code to use the LanguageSelector.LangCache namespace more
+    explicitly, to make it easier to get rid of LangCache.
+  * LanguageSelector/LangCache.py: Remove yet another copy of the pkg_depends
+    evaluation logic, and some more dead code, rewrite using
+    language_support_pkgs.
+  * Drop tests.moved/. Unused, no automatic tests, not very useful.
+  * LanguageSelector/LangCache.py, LanguageSelector/qt/QtLanguageSelector.py:
+    Drop last remainders of the languageSupport* info, language-support-* were
+    dropped several cycles ago.
+
+  [ Gunnar Hjalmarsson ]
+  * Make the LANG variable, which up to now has represented regional
+    formats, denote the display language instead (LP: #877610).
+  * Make use of accountsservice's FormatsLocale property and
+    SetFormatsLocale method when selecting a user's regional formats.
+    (LP: #866062)
+  * When setting the system-wide language, ensure that the system
+    regional formats locale is set in order to prevent surprise
+    changes of the formats.
+  * data/LanguageSelector.ui: Text about rebooting no longer
+    applicable, so removed.
+  * LanguageSelector/LocaleInfo.py: Encode @variant string in the
+    translate() function as UTF-8 to avoid a UnicodeDecodeError if a
+    locale with @variant is selected for regional formats.
+  * debian/control: Bump accountsservice dependency to >= 0.6.15-2ubuntu3,
+    to ensure that we have the new SetFormatsLocale method.
+  * debian/control: Make im-switch a dependency of language-selector-gnome,
+    since it's no longer a dependency of ibus (LP: #908762).
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 03 Feb 2012 07:01:24 +0100
+
 language-selector (0.62) precise; urgency=low
 
   [ Colin Watson ]

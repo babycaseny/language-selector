@@ -253,3 +253,14 @@ def apt_cache_add_language_packs(resolver, cache, depends_file=None):
     for pkg in support_pkgs:
         cache[pkg].mark_install(from_user=False)
 
+def packagekit_what_provides_locale(cache, type, search, depends_file=None):
+    '''PackageKit WhatProvides plugin for locale().'''
+
+    if not search.startswith('locale('):
+        return NotImplementedError('cannot handle query type ' + search)
+
+    locale = search.split('(', 1)[1][:-1]
+    ls = LanguageSupport(cache, depends_file)
+    pkgs = ls.by_locale(locale, installed=True)
+    return [cache[p] for p in pkgs]
+
