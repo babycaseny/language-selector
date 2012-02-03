@@ -257,7 +257,7 @@ def packagekit_what_provides_locale(cache, type, search, depends_file=None):
     '''PackageKit WhatProvides plugin for locale().'''
 
     if not search.startswith('locale('):
-        return NotImplementedError('cannot handle query type ' + search)
+        raise NotImplementedError('cannot handle query type ' + search)
 
     locale = search.split('(', 1)[1][:-1]
     ls = LanguageSupport(cache, depends_file)
