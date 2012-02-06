@@ -21,6 +21,8 @@ class TestLangCache(unittest.TestCase):
         localeinfo = LocaleInfo("languagelist", "..")
         self.lang_cache = LanguageSelectorPkgCache(
             localeinfo, apt.progress.base.OpProgress())
+        self.lang_cache.update()
+        self.lang_cache.open()
 
     def test_get_language_information(self):
         """ test if getLanguagenformation returns values """

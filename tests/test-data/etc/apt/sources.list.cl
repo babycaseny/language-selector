@@ -1,2 +1,2 @@
-deb http://archive.ubuntu.com/ubuntu natty main restricted universe
+deb http://archive.ubuntu.com/ubuntu precise main
 
