@@ -6,12 +6,12 @@ Build-Depends: debhelper (>= 7.0.50~),
  python,
  python-distutils-extra,
  python-setuptools,
+ pyqt4-dev-tools,
  intltool,
  intltool-debian,
  dh-translations
-XS-Python-Version: >= 2.6
-Standards-Version: 3.9.1
-Vcs-Bzr: http://bazaar.launchpad.net/%7Eubuntu-core-dev/language-selector/ubuntu/
+X-Python-Version: >= 2.6
+Standards-Version: 3.9.2
 
 Package: language-selector-gnome
 Architecture: all
@@ -55,6 +55,7 @@ Description: Language selector for Kubuntu
 
 Package: language-selector-qt
 Section: oldlibs
+Priority: extra
 Architecture: all
 Depends: ${misc:Depends},
  language-selector-kde
@@ -64,6 +65,7 @@ Description: Language selector for Kubuntu (transitional package)
 
 Package: language-selector
 Section: oldlibs
+Priority: extra
 Architecture: all
 Depends: ${misc:Depends},
  language-selector-gnome

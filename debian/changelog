@@ -1,3 +1,32 @@
+language-selector (0.65) precise; urgency=low
+
+  [ Colin Watson ]
+  * check-language-support: Ignore errors from locale.setlocale.  We might
+    well be running from the installer before locales have been properly
+    configured (LP: #925330).
+  * Clean up lots of pyflakes warnings.
+  * LanguageSelector/FontConfig.py, LanguageSelector/LocaleInfo.py,
+    LanguageSelector/utils.py: Use string methods rather than deprecated
+    string functions.
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/LocaleInfo.py: Prevent makeEnvString() from
+    processing the empty string (LP: #926049).
+  * fontconfig/30-cjk-aliases.conf: Changes due to Korean migration to
+    fonts-nanum (LP: #792471).
+  * debian/control: pyqt4-dev-tools added to build-depends (the pyuic4
+    program is called from LanguageSelector/qt/Makefile).
+
+  [ Martin Pitt ]
+  * debian/control: Use standard X-Python-Version field.
+  * debian/control: Bump Standards-Version to 3.9.2.
+  * debian/control: Move transitional packages to Priority: Extra to quiesce
+    lintian.
+  * debian/control: Drop Vcs-Bzr. We move to the standard
+    lp:ubuntu/language-selector branch now.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 06 Feb 2012 07:23:43 +0100
+
 language-selector (0.64) precise; urgency=low
 
   * language_support_pkgs.py: Fix raising of NotImplementedError.

@@ -2,8 +2,6 @@
 
 import unittest
 import sys
-import apt
-import apt_pkg
 sys.path.insert(0, "../")
 
 from LanguageSelector.utils import *
@@ -16,7 +14,7 @@ line
 search_text and more
 line 17
 """
-    
+
     def test_find_replace(self):
         open("foo.txt","w").write(self.test_string)
         find_string_and_replace("search_text", "lala", ["foo.txt"])

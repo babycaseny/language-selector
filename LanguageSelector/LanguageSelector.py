@@ -7,17 +7,9 @@
 import warnings
 warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
 import apt
-import apt_pkg
 import dbus
-import gettext
 import os
-import string
-import time
-import thread
-import sys
 
-import FontConfig
-from gettext import gettext as _
 from LocaleInfo import LocaleInfo
 
 import language_support_pkgs

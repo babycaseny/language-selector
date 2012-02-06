@@ -15,7 +15,7 @@ import sys
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from PyKDE4.kdecore import ki18n, KAboutData, KCmdLineArgs, KCmdLineOptions
-from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox, KGuiItem, KCModule, KWindowSystem
+from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox, KGuiItem, KCModule
 
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch

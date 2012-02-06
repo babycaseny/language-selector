@@ -3,7 +3,6 @@
 from setuptools import setup
 from DistUtilsExtra.command import (build_extra, build_i18n, build_help,
                                     build_icons)
-import glob
 import os
 import sys
 

@@ -10,26 +10,20 @@ import locale
 import os
 import pwd
 import re
-import shutil
-import string
 import subprocess
 import sys
-import thread
 import time
-import tempfile
 from gettext import gettext as _
 
-from gi.repository import GObject, Gdk, Gtk, Pango
+from gi.repository import GObject, Gdk, Gtk #, Pango
 
 import apt
-import apt_pkg
 
 import aptdaemon.client
 from defer import inline_callbacks
 from aptdaemon.enums import *
 from aptdaemon.gtk3widgets import AptProgressDialog
 
-from LanguageSelector.LocaleInfo import LocaleInfo
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
 from LanguageSelector.macros import *
@@ -79,6 +73,7 @@ def insensitive(f):
         args[0].setSensitive(False)
         res = f(*args, **kwargs)
         args[0].setSensitive(True)
+        return res
     return wrapper
 
 
@@ -309,7 +304,6 @@ class GtkLanguageSelector(LanguageSelectorBase):
         def lang_view_func(cell_layout, renderer, model, iter, data):
             langInfo = model.get_value(iter, LIST_LANG_INFO)
             langName = model.get_value(iter, LIST_LANG)
-            inconsistent = langInfo.inconsistent
             if (langInfo.changes) :
                 markup = "<b>%s</b>" % langName
             else:
@@ -335,7 +329,6 @@ class GtkLanguageSelector(LanguageSelectorBase):
         """ do all the treeview setup here """
         def lang_view_func(cell_layout, renderer, model, iter, data):
             langInfo = model.get_value(iter, LANGTREEVIEW_CODE)
-            langName = model.get_value(iter, LANGTREEVIEW_LANGUAGE)
             greyFlag = False
             myiter = model.get_iter_first()
             while myiter:
@@ -446,8 +439,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
             return
         # get the current first item in the user LANGUAGE list,
         # but with country code added if not already present
-        locale = language2locale(self.userEnvLanguage)
-        code = re.split('[.@]', locale)[0]
+        loc = language2locale(self.userEnvLanguage)
+        code = re.split('[.@]', loc)[0]
 
         combo = self.combobox_input_method
         #cell = combo.get_child().get_cell_renderers()[0]
@@ -535,7 +528,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
                               buttons=Gtk.ButtonsType.CLOSE)
         d.set_markup("<big><b>%s</b></big>\n\n%s" % (summary, msg))
         d.set_title=("")
-        res = d.run()
+        d.run()
         d.destroy()
 
     def _show_error_dialog(self, error):
@@ -724,10 +717,9 @@ class GtkLanguageSelector(LanguageSelectorBase):
         #print "ll type: ", type(languageList)
         for lang in languageList:
             #print "langInfo: %s (%s)" % (lang.language, lang.languageCode)
-            inconsistent = lang.inconsistent
+            #inconsistent = lang.inconsistent
             #if inconsistent:
             #    print "inconsistent", lang.language
-            installed = lang.fullInstalled
 
             # hack for Vietnamese users; see https://launchpad.net/bugs/783090
             # Even if calling self._localeinfo.translate() with native=True triggers
@@ -845,13 +837,13 @@ class GtkLanguageSelector(LanguageSelectorBase):
             self._language_options.append(i)
 
         """ locales for misc. format preferences """
-        for (i, locale) in enumerate( self._localeinfo.generated_locales() ):
+        for (i, loc) in enumerate( self._localeinfo.generated_locales() ):
             iter = model.append()
             model.set_value(iter, LANGTREEVIEW_LANGUAGE,
-                    self._localeinfo.translate(locale, native=True))
-            model.set_value(iter, LANGTREEVIEW_CODE, locale)
+                    self._localeinfo.translate(loc, native=True))
+            model.set_value(iter, LANGTREEVIEW_CODE, loc)
             if (defaultLangName and
-                   self._localeinfo.translate(locale, native=True) == defaultLangName):
+                   self._localeinfo.translate(loc, native=True) == defaultLangName):
                 combo.set_active(i)
         self.updateExampleBox()
 
@@ -904,13 +896,13 @@ class GtkLanguageSelector(LanguageSelectorBase):
 #            defaultLangName = self._localeinfo.translate(defaultLangCode)
 
 #        # find out about the other options        
-#        for (i, locale) in enumerate(self._localeinfo.generated_locales()):
+#        for (i, loc) in enumerate(self._localeinfo.generated_locales()):
 #            iter = model.append()
 #            model.set(iter,
-#                      COMBO_LANGUAGE,self._localeinfo.translate(locale),
-#                      COMBO_CODE, locale)
+#                      COMBO_LANGUAGE,self._localeinfo.translate(loc),
+#                      COMBO_CODE, loc)
 #            if (defaultLangName and 
-#                   self._localeinfo.translate(locale) == defaultLangName):
+#                   self._localeinfo.translate(loc) == defaultLangName):
 #                combo.set_active(i)
 #            
 #        # reset the state of the apply button
@@ -1058,8 +1050,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
     @honorBlockedSignals
     def on_combobox_input_method_changed(self, widget):
-        locale = language2locale(self.userEnvLanguage)
-        code = re.split('[.@]', locale)[0]
+        loc = language2locale(self.userEnvLanguage)
+        code = re.split('[.@]', loc)[0]
 
         combo = self.combobox_input_method
         model = combo.get_model()

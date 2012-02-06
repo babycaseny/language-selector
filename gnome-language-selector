@@ -1,9 +1,6 @@
 #!/usr/bin/python
 
-
 import gettext
-import sys
-import os
 
 from LanguageSelector.gtk.GtkLanguageSelector import GtkLanguageSelector
 from gettext import gettext as _

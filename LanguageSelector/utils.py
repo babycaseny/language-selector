@@ -5,12 +5,8 @@
 #
 
 import os
-import string
 import subprocess
 import tempfile
-
-import macros
-from LocaleInfo import LocaleInfo
 
 def find_string_and_replace(findString, setString, file_list, 
                             startswith=True, append=True):
@@ -25,7 +21,7 @@ def find_string_and_replace(findString, setString, file_list,
             os.access(fname, os.R_OK)):
             # look for the line
             for line in open(fname):
-                tmp = string.strip(line)
+                tmp = line.strip()
                 if startswith and tmp.startswith(findString):
                     foundString = True
                     line = setString

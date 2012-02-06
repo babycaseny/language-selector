@@ -2,7 +2,6 @@
 #
 # a helper class to get locale info
 
-import string
 import re            
 import subprocess
 import gettext
@@ -106,7 +105,7 @@ class LocaleInfo(object):
             (running locale -a) """
         locales = []
         p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE)
-        for line in string.split(p.communicate()[0], "\n"):
+        for line in p.communicate()[0].split("\n"):
             tmp = line.strip()
             if tmp.find('.utf8') < 0:
                 continue
@@ -137,7 +136,7 @@ class LocaleInfo(object):
 
 #        macr = macros.LangpackMacros(self._datadir, locale)
 
-#        #(lang, country) = string.split(locale, "_")
+#        #(lang, country) = locale.split("_")
 #        country = macr['CCODE']
 #        current_language = None
 #        if "LANGUAGE" in os.environ:
@@ -187,7 +186,7 @@ class LocaleInfo(object):
         return returnVal
          
 #        if "_" in locale:
-#            #(lang, country) = string.split(locale, "_")
+#            #(lang, country) = locale.split("_")
 #            (lang_name, country_name) = self.translate_locale(locale)
 #            # get all locales for this language
 #            l = filter(lambda k: k.startswith(macr['LCODE']), self.generated_locales())
@@ -207,6 +206,8 @@ class LocaleInfo(object):
             the LANGUAGE enviroment variable.
             E.g: en_DK -> en_DK:en
         """
+        if not code:
+            return ''
         macr = macros.LangpackMacros(self._datadir, code)
         langcode = macr['LCODE']
         locale = macr['LOCALE']

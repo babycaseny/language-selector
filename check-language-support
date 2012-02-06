@@ -10,7 +10,12 @@ from gettext import gettext as _
 import language_support_pkgs
 
 if __name__ == "__main__":
-    locale.setlocale(locale.LC_ALL, '')
+    try:
+        locale.setlocale(locale.LC_ALL, '')
+    except locale.Error:
+        # We might well be running from the installer before locales have
+        # been properly configured.
+        pass
 
     parser = OptionParser()
     parser.add_option("-l", "--language",

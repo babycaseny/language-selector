@@ -6,7 +6,8 @@ The following macros are available:
   LCODE CCODE PKGCODE LOCALE
 '''
 
-import re, os.path, os
+import os
+import re
 
 def _file_map(file, key, sep = None):
     '''Look up key in given file ("key value" lines). Throw an exception if

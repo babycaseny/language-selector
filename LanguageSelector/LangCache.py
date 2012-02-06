@@ -1,16 +1,6 @@
-
 import warnings
 warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
 import apt
-import apt_pkg
-import os
-import os.path
-import sys
-import macros
-
-from xml.etree.ElementTree import ElementTree
-
-from gettext import gettext as _
 
 import language_support_pkgs
 

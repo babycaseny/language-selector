@@ -3,7 +3,6 @@
 # This file implements a interface to im-switch
 #
 
-from LocaleInfo import LocaleInfo
 import os
 import sys
 import subprocess

@@ -1,4 +1,4 @@
-import libxml2, sys
+import libxml2
 
 class Variant:
 	def __init__(self, name, desc, raw_desc):

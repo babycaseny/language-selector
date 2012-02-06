@@ -11,7 +11,6 @@
 # configuration we got from the CJK community
 
 import glob
-import string
 import os.path
 
 from LocaleInfo import LocaleInfo
@@ -46,7 +45,7 @@ class FontConfigHack(object):
         returns string of the form locale_COUTNRY (e.g. zh_TW)
         """
         fname = os.path.splitext(os.path.basename(name))[0]
-        (head, ll, cc) = string.rsplit(fname, "-", 2)
+        (head, ll, cc) = fname.rsplit("-", 2)
         return "%s_%s" % (ll, cc.upper())
     def getAvailableConfigs(self):
         """ get the configurations we have as a list of languages
