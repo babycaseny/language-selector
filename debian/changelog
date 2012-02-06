@@ -1,4 +1,4 @@
-language-selector (0.66) UNRELEASED; urgency=low
+language-selector (0.66) precise; urgency=low
 
   * LanguageSelector/LangCache.py, tests/test_lang_cache.py: Drop some dead
     code.
@@ -11,7 +11,7 @@ language-selector (0.66) UNRELEASED; urgency=low
   * tests/test_lang_cache.py: Update the cache before the tests, so that they
     can actually succeed.
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 06 Feb 2012 11:51:57 +0100
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 06 Feb 2012 12:33:54 +0100
 
 language-selector (0.65) precise; urgency=low
 
