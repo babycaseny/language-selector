@@ -3,6 +3,10 @@ language-selector (0.66) UNRELEASED; urgency=low
   * LanguageSelector/LangCache.py, tests/test_lang_cache.py: Drop some dead
     code.
   * data/pkg_depends: Install poppler-data for all languages. (LP: #893920)
+  * tests/test_language_support_pkgs.py: Fix test case for a package which is
+    not a pattern, but a full name ("chromium-browser-l10n").
+  * language_support_pkgs.py: Also consider the pattern itself a package name.
+    Fixes installation of chromium-browser-l10n and poppler-data.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 06 Feb 2012 11:51:57 +0100
 

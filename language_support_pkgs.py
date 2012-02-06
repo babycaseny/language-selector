@@ -188,7 +188,8 @@ class LanguageSupport:
         except ValueError:
             lang = locale
 
-        pkgs = ['%s%s' % (pattern, lang)]
+        pkgs = [pattern,
+                '%s%s' % (pattern, lang)]
 
         if country:
             pkgs.append('%s%s%s' % (pattern, lang, country))

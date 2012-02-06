@@ -94,7 +94,7 @@ class T(unittest.TestCase):
         # without locale suffix
         result = ls.by_package_and_locale('chromium-browser', 'dv_MV', True)
         self._check_valid_pkgs(result)
-        self.assertFalse('chromium-browser-l10n' in result)
+        self.assertTrue('chromium-browser-l10n' in result)
 
     def test_by_package_and_locale_generic(self):
         '''by_package_and_locale() for generic support'''
