@@ -106,11 +106,7 @@ wa::abiword:aspell-
 wa::gedit:aspell-
 
 # poppler-data is useful for CJK
-wa:ar:poppler-utils:poppler-data
-wa:ja:poppler-utils:poppler-data
-wa:ko:poppler-utils:poppler-data
-wa:zh-hans:poppler-utils:poppler-data
-wa:zh-hant:poppler-utils:poppler-data
+wa::poppler-utils:poppler-data
 
 # word lists
 wa:bg::wbulgarian

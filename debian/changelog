@@ -2,6 +2,7 @@ language-selector (0.66) UNRELEASED; urgency=low
 
   * LanguageSelector/LangCache.py, tests/test_lang_cache.py: Drop some dead
     code.
+  * data/pkg_depends: Install poppler-data for all languages. (LP: #893920)
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Mon, 06 Feb 2012 11:51:57 +0100
 
