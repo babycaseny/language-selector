@@ -96,14 +96,6 @@ class LanguageSelectorPkgCache(apt.Cache):
         """ clear the selections """
         self._depcache.init()
 
-    def verify_no_unexpected_changes(self):
-        (to_inst, to_rm) = self.getChangesList()
-        # FIXME for Arne (20100527): 
-        #   add code that tests if the to_rm list contains
-        #   only stuff that we expect
-        #....
-        return True
-        
     def getChangesList(self):
         to_inst = []
         to_rm = []

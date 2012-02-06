@@ -28,13 +28,6 @@ class TestLangCache(unittest.TestCase):
         self.assertTrue(len(language_info) > 1)
         self.assertEqual(len([x for x in language_info if x.languageCode == "de"]), 1)
 
-    def test_verify_no_unexpected_changes(self):
-        self.lang_cache.clear()
-        self.lang_cache["gnome-panel"].mark_delete()
-        # FIXME for Arne (20100527): 
-        #  uncomment to test verify_no_unexpected_changes()
-        #self.assertFalse(self.lang_cache.verify_no_unexpected_changes())
-
     def test_lang_info(self):
         """ test if tryChangeDetails works """
         self.assertEqual(len(self.lang_cache.get_changes()), 0)
