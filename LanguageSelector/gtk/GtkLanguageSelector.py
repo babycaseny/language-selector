@@ -548,10 +548,6 @@ class GtkLanguageSelector(LanguageSelectorBase):
         except SystemError:
             res = False
 
-        # check if we don't have unexpected changes
-        if not self._cache.verify_no_unexpected_changes():
-            return False
-
         # undo the selections
         self._cache.clear()
         if self._cache._depcache.broken_count != 0:

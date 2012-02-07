@@ -1,3 +1,10 @@
+language-selector (0.67) UNRELEASED; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Remove call for the
+    dropped function verify_no_unexpected_changes() (LP: #927814).
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Tue, 07 Feb 2012 07:45:00 +0100
+
 language-selector (0.66) precise; urgency=low
 
   * LanguageSelector/LangCache.py, tests/test_lang_cache.py: Drop some dead
