@@ -83,8 +83,8 @@ Depends: ${python:Depends},
  dbus,
  accountsservice (>= 0.6.15-2ubuntu3)
 XB-Python-Version: ${python:Versions}
-Description: Language selector for Ubuntu Linux
+Description: Language selector for Ubuntu
  This package let you change and install language packs
- in Ubuntu Linux.
+ in Ubuntu.
  .
  This package contains the common part of language-selector
