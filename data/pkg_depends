@@ -101,9 +101,9 @@ wa:sv:libreoffice-common:openoffice.org-hyphenation
 wa:uk:libreoffice-common:openoffice.org-hyphenation
 
 # Aspell support for Sylpheed and Abiword
-wa::sylpheed:aspell-
+wa::sylpheed:hunspell-
 wa::abiword:aspell-
-wa::gedit:aspell-
+wa::gedit:hunspell-
 
 # poppler-data is useful for CJK
 wa::poppler-utils:poppler-data
