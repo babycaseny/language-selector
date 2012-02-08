@@ -234,18 +234,17 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
 
         if len(items) == 1:
             li = self._localeinfo.listviewStrToLangInfoMap[unicode(items[0].text())]
-            for (button, langPkg) in (
-                    ("checkBoxTr", li.languagePkgList["languagePack"])):
-                getattr(self.ui, button).setEnabled(langPkg.available)
-                getattr(self.ui, button).setChecked(False)
-                if langPkg.installed:
-                    getattr(self.ui, button).setChecked(True)
-                    getattr(self.ui, button).setEnabled(False)
-                    getattr(self.ui, button).setToolTip(_("Component already installed"))
-                elif not langPkg.available:
-                    getattr(self.ui, button).setToolTip(_("Component not available"))
-                else:
-                    getattr(self.ui, button).setToolTip(_("Component not installed"))
+            langPkg = li.languagePkgList["languagePack"]
+            self.ui.checkBoxTr.setEnabled(langPkg.available)
+            self.ui.checkBoxTr.setChecked(False)
+            if langPkg.installed:
+                self.ui.checkBoxTr.setChecked(True)
+                self.ui.checkBoxTr.setEnabled(False)
+                self.ui.checkBoxTr.setToolTip(_("Component already installed"))
+            elif not langPkg.available:
+                self.ui.checkBoxTr.setToolTip(_("Component not available"))
+            else:
+                self.ui.checkBoxTr.setToolTip(_("Component not installed"))
         
     def checkInputMethods(self):
         """ check if the selected language has input method support
@@ -316,13 +315,12 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         if len(items) == 1:
             elm = items[0]
             li = self._localeinfo.listviewStrToLangInfoMap[unicode(elm.text())]
-            for (button, langPkg) in (
-                ("checkBoxTr", li.languagePkgList["languagePack"])):
-              if langPkg.available:
+            langPkg = li.languagePkgList["languagePack"]
+            if langPkg.available:
                 if (mode == "install") and (not langPkg.installed):
-                  langPkg.doChange = getattr(self.ui, button).isChecked()
+                    langPkg.doChange = self.ui.checkBoxTr.isChecked()
                 elif (mode == "uninstall") and langPkg.installed:
-                  langPkg.doChange = True
+                    langPkg.doChange = True
             try:
                 self._cache.tryChangeDetails(li)
                 for langPkg in li.languagePkgList.values():
