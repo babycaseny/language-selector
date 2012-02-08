@@ -25,10 +25,10 @@ tr::sylpheed:sylpheed-i18n
 tr::kdelibs5-data:kde-l10n-
 
 # Finnish support for voikko
-wa:fi:firefox:mozvoikko
-wa:fi:thunderbird:mozvoikko
-wa:fi:seahorse:mozvoikko
-wa:fi:epiphany:mozvoikko
+wa:fi:firefox:xul-ext-mozvoikko
+wa:fi:thunderbird:xul-ext-mozvoikko
+wa:fi:seahorse:xul-ext-mozvoikko
+wa:fi:epiphany:xul-ext-mozvoikko
 wa:fi:libreoffice-core:libreoffice-voikko
 wa:fi:ispell:tmispell-voikko
 wa:fi::libenchant-voikko
