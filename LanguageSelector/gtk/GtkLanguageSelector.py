@@ -595,7 +595,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
     def _run_transaction(self, transaction):
         dia = AptProgressDialog(transaction, parent=self.window_main)
         dia.connect("finished", self._on_finished)
-        dia.run()
+        dia.run(error_handler=self._on_error)
         
     def _wait_for_aptdaemon_finish(self):
         while not self._transaction_finished:
@@ -605,6 +605,18 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
     def _on_finished(self, dialog):
         dialog.hide()
+        self._transaction_finished = True
+
+    def _on_error(self, error):
+        if hasattr(error, 'get_dbus_name') and error.get_dbus_name() == \
+                    'org.freedesktop.PolicyKit.Error.NotAuthorized':
+                self.error(
+                        _("Could not install the full language support"),
+                        _('Failed to authorize to install packages.'))
+        else:
+            self.error(
+                    _("Could not install the full language support"),
+                    str(error))
         self._transaction_finished = True
 
     def update_aptdaemon(self):
