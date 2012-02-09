@@ -7,6 +7,7 @@ language-selector (0.69) UNRELEASED; urgency=low
   * data/pkg_depends: Move mozvoikko to xul-ext-mozvoikko.
   * data/pkg_depends: gedit and sylpheed use libenchant now, move these from
     aspell to hunspell dictionaries.
+  * Close window on "Esc". (LP: #614933)
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Wed, 08 Feb 2012 15:30:58 +0100
 
