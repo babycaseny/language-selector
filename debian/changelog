@@ -1,3 +1,10 @@
+language-selector (0.70) UNRELEASED; urgency=low
+
+  * data/pkg_depends: Add support for translated documentation of amarok
+    and calligra.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Tue, 14 Feb 2012 13:31:57 +0100
+
 language-selector (0.69) precise; urgency=low
 
   * LanguageSelector/LocaleInfo.py, getUserDefaultLanguage(): Fix crash if
