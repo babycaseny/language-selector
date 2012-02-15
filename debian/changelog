@@ -1,3 +1,15 @@
+language-selector (0.70) UNRELEASED; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    Clear the example box values before trying to generate new ones.
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    Call for the no longer existing writeSysLangSetting() function
+    removed (LP: #928400). writeSysLanguageSetting() now sets LANG.
+    This change needs to be followed-up by Kubuntu users/developers
+    (please see discussion in the bug report).
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Wed, 15 Feb 2012 06:56:00 +0100
+
 language-selector (0.69) precise; urgency=low
 
   * LanguageSelector/LocaleInfo.py, getUserDefaultLanguage(): Fix crash if
