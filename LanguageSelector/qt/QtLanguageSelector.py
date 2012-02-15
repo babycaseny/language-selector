@@ -284,7 +284,6 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
     def onSystemLanguageApply(self):
         (lang, code) = self.getSystemLanguage()
         self.writeSysLanguageSetting(code)
-        self.writeSysLangSetting(code)
         self.updateInputMethods(code)
         KMessageBox.information(self, _("Default system Language now set to %s.") % lang, _("Language Set"))
 
