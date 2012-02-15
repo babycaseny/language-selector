@@ -1,3 +1,13 @@
+language-selector (0.70) precise; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    Clear the example box values before trying to generate new ones.
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    Call for the no longer existing writeSysLangSetting() function
+    removed (LP: #928400). writeSysLanguageSetting() now sets LANG.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Wed, 15 Feb 2012 07:42:06 +0100
+
 language-selector (0.69) precise; urgency=low
 
   * LanguageSelector/LocaleInfo.py, getUserDefaultLanguage(): Fix crash if

@@ -922,6 +922,9 @@ class GtkLanguageSelector(LanguageSelectorBase):
         model = combo.get_model()
         if combo.get_active() < 0:
             return
+        self.label_example_currency.set_text('')
+        self.label_example_number.set_text('')
+        self.label_example_date.set_text('')
         (lang, code) = model[combo.get_active()]
         macr = macros.LangpackMacros(self._datadir, code)
         mylocale = macr["SYSLOCALE"].encode('UTF-8')
