@@ -1,8 +1,12 @@
 language-selector (0.71) UNRELEASED; urgency=low
 
+  [ Gunnar Hjalmarsson ]
   * LanguageSelector/gtk/GtkLanguageSelector.py:
     Modified wording of the error message shown if the example box
     fails to apply the current locale (LP: #930785).
+
+  [ Martin Pitt ]
+  * data/pkg_depends: Drop myspell-ru, we have hunspell-ru now.
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Fri, 17 Feb 2012 03:48:00 +0100
 
