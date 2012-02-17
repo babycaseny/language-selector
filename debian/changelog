@@ -1,3 +1,12 @@
+language-selector (0.71) precise; urgency=low
+
+  * data/pkg_depends:
+    - Add fonts-unfonts-core for fonts-nanum's fallback
+    - Remove ttf-alee, fonts-nanum-extra to reduce ko-related packages
+    - (refer to task-korean-desktop at Debian)
+
+ -- Jinkyu Yi <jincreator@jincreator.net>  Fri, 17 Feb 2012 15:51:29 +0900
+
 language-selector (0.70) precise; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py:

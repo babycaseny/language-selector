@@ -154,8 +154,7 @@ fn:km::fonts-khmeros
 fn:kn::ttf-kannada-fonts
 fn:ko::fonts-nanum
 fn:ko::fonts-nanum-coding
-fn:ko::fonts-nanum-extra
-fn:ko::ttf-alee
+fn:ko::fonts-unfonts-core
 fn:lo::fonts-lao
 fn:ml::ttf-malayalam-fonts
 fn:mn::fonts-manchufont
