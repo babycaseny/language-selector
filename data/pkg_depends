@@ -177,6 +177,13 @@ fn:zh-hant::ttf-wqy-zenhei
 fn:zh-hant::fonts-arphic-uming
 fn:zh-hant::ttf-arphic-ukai
 
+# GhostScript CJK resources
+fn:ja:gs-cjk-resource:cmap-adobe-japan1
+fn:ja:gs-cjk-resource:fonts-ipafont-mincho
+fn:ko:gs-cjk-resource:cmap-adobe-korea1
+fn:zh-hans:gs-cjk-resource:cmap-adobe-gb1
+fn:zh-hant:gs-cjk-resource:cmap-adobe-cns1
+
 # input methods
 im:ja:ibus:ibus-anthy
 im:ko:ibus:ibus-hangul
