@@ -1,11 +1,15 @@
-language-selector (0.71) precise; urgency=low
+language-selector (0.71) UNRELEASED; urgency=low
 
-  * data/pkg_depends:
-    - Add fonts-unfonts-core for fonts-nanum's fallback
-    - Remove ttf-alee, fonts-nanum-extra to reduce ko-related packages
-    - (refer to task-korean-desktop at Debian)
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    Modified wording of the error message shown if the example box
+    fails to apply the current locale (LP: #930785).
 
- -- Jinkyu Yi <jincreator@jincreator.net>  Fri, 17 Feb 2012 15:51:29 +0900
+  [ Martin Pitt ]
+  * data/pkg_depends: Drop myspell-ru, we have hunspell-ru now.
+  * data/pkg_depends: Add cmap-adobe-* packages for ghostscript.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Fri, 17 Feb 2012 03:48:00 +0100
 
 language-selector (0.70) precise; urgency=low
 
