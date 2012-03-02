@@ -1,4 +1,4 @@
-language-selector (0.71) UNRELEASED; urgency=low
+language-selector (0.71) precise; urgency=low
 
   [ Gunnar Hjalmarsson ]
   * LanguageSelector/gtk/GtkLanguageSelector.py:
@@ -7,9 +7,9 @@ language-selector (0.71) UNRELEASED; urgency=low
 
   [ Martin Pitt ]
   * data/pkg_depends: Drop myspell-ru, we have hunspell-ru now.
-  * data/pkg_depends: Add cmap-adobe-* packages for ghostscript.
+  * data/pkg_depends: Add cmap-adobe-* packages for ghostscript. (LP: #496012)
 
- -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Fri, 17 Feb 2012 03:48:00 +0100
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 02 Mar 2012 06:54:37 +0100
 
 language-selector (0.70) precise; urgency=low
 
