@@ -7,7 +7,7 @@ language-selector (0.71) UNRELEASED; urgency=low
 
   [ Martin Pitt ]
   * data/pkg_depends: Drop myspell-ru, we have hunspell-ru now.
-  * data/pkg_depends: Add cmap-adobe-* packages for ghostscript.
+  * data/pkg_depends: Add cmap-adobe-* packages for ghostscript. (LP: #496012)
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Fri, 17 Feb 2012 03:48:00 +0100
 
