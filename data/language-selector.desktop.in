@@ -9,4 +9,4 @@ Categories=GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-Per
 X-Ubuntu-Gettext-Domain=language-selector
 NotShowIn=KDE;
 X-GNOME-Settings-Panel=language
-X-GNOME-Keywords=Language;Input method;Region;Format;
+Keywords=Language;Input method;Region;Format;

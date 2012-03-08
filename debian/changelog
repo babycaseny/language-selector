@@ -1,3 +1,10 @@
+language-selector (0.72) UNRELEASED; urgency=low
+
+  * data/language-selector.desktop.in:
+    - use official "Keywords" rather than "X-GNOME-Keywords"
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 08 Mar 2012 12:34:15 +0100
+
 language-selector (0.71) precise; urgency=low
 
   [ Gunnar Hjalmarsson ]
