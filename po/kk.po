@@ -171,10 +171,10 @@ msgstr "Тілдер менеджері"
 #: ../LanguageSelector/qt/QtLanguageSelector.py:311
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Бағдарламаларды орнату немесе жою мүмкін емес. Мәселені шешу үшін \"Adept\" "
+"Бағдарламаларды орнату немесе жою мүмкін емес. Мәселені шешу үшін \"Muon\" "
 "пакеттер менеджерін қолданыңыз немесе терминалда \"sudo apt-get install -f\" "
 "орындаңыз."
 

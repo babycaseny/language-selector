@@ -171,11 +171,11 @@ msgstr "Impuestâ Lenghe"
 #: ../LanguageSelector/qt/QtLanguageSelector.py:311
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 "So si pues instalà o tirà vie nissun software. Dopre il gjestôr dai pacuts "
-"\"Adept\" o invie ta un terminâl \"sudo apt-get install -f\" par risolvi "
+"\"Muon\" o invie ta un terminâl \"sudo apt-get install -f\" par risolvi "
 "chest probleme par prin."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:119

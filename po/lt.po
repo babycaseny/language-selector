@@ -176,11 +176,11 @@ msgstr "Kalbos parinkiklis"
 #: ../LanguageSelector/qt/QtLanguageSelector.py:311
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 "Yra neįmanoma įdiegti ar pašalinti programinės įrangos. Prašome naudoti "
-"paketų tvarkytuvę \"Adept\" ar paleiskite \"sudo apt-get install -f\" "
+"paketų tvarkytuvę \"Muon\" ar paleiskite \"sudo apt-get install -f\" "
 "terminale problemai išspręsti."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:119

@@ -173,11 +173,11 @@ msgstr "កម្មវិធីជ្រើសរើស​​ភាសា"
 #: ../LanguageSelector/qt/QtLanguageSelector.py:311
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 "វាមិន​​អាច​ដំឡើង​ ឬ​យកកម្មវិធី​មួយ​ចំនួន​ចេញ​បានឡើយ​​ ។​ "
-"សូម​ប្រើ​កម្មវិធី​គ្រប់​គ្រង​កញ្ចប់​ \"Adept\" ឬ ដំណើរការ​​ \"sudo apt-get "
+"សូម​ប្រើ​កម្មវិធី​គ្រប់​គ្រង​កញ្ចប់​ \"Muon\" ឬ ដំណើរការ​​ \"sudo apt-get "
 "install -f\" ក្នុង​ស្ថានីយ​ត្រូវ​​កែសម្រួល​កំហុស​ជាដំបូង​ ។"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:119

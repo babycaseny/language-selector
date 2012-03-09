@@ -68,7 +68,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         except ExceptionPkgCacheBroken:
             s = _("Software database is broken")
             t = _("It is impossible to install or remove any software. "
-                  "Please use the package manager \"Adept\" or run "
+                  "Please use the package manager \"Muon\" or run "
                   "\"sudo apt-get install -f\" in a terminal to fix "
                   "this issue at first.")
             KMessageBox.error(self, t, s)

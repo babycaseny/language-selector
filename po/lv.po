@@ -175,11 +175,11 @@ msgstr "Valodu izvēle"
 #: ../LanguageSelector/qt/QtLanguageSelector.py:311
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 "Nav iespējams uzinstalēt vai noņemt programmatūru. Lūdzu, vispirms "
-"izmantojiet \"Adept\" pakotņu pārvaldnieku vai termināļa komandrindā "
+"izmantojiet \"Muon\" pakotņu pārvaldnieku vai termināļa komandrindā "
 "izpildiet komandu \"sudo apt-get install -f\", lai šo problēmu novērstu."
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:119
