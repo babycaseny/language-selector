@@ -31,8 +31,10 @@ get_pid() {
 case "$1" in
     configure)
         # stop any old daemon
-        pid=$(get_pid com.ubuntu.LanguageSelector)
-        kill $pid 2>/dev/null || true
+        pid=$(get_pid com.ubuntu.LanguageSelector) || true
+        if [ -n "$pid" ]; then
+            kill $pid 2>/dev/null || true
+        fi
 
 	fontconfig-voodoo --auto --quiet || true
     ;;
