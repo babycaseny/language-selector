@@ -810,6 +810,10 @@ class GtkLanguageSelector(LanguageSelectorBase):
         #cell.set_property("wrap-width",300)
         #cell.set_property("wrap-mode",Pango.WRAP_WORD)
         model = combo.get_model()
+
+        if not model:
+            return
+
         model.clear()
 
         # find the default

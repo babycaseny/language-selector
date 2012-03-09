@@ -8,6 +8,8 @@ language-selector (0.72) UNRELEASED; urgency=low
   * LanguageSelector/qt/QtLanguageSelector.py: Kubuntu's package manager is
     "Muon", not "Adept". Also update all messages in po/*.po to avoid breaking
     existing translations. (LP: #628653)
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Fix crash in
+    updateLocaleChooserCombo() if tree model is not yet set. (LP: #945494)
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 08 Mar 2012 12:34:15 +0100
 
