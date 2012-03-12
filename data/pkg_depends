@@ -21,8 +21,10 @@ tr::gimp:gimp-help-
 tr::evolution:evolution-documentation-
 tr::chromium-browser:chromium-browser-l10n
 tr::sylpheed:sylpheed-i18n
+tr::amarok:amarok-help-
 # Format: %LCODE% or %LCODE%%CCODE% or %LCODE%-%VARIANT%
 tr::kdelibs5-data:kde-l10n-
+tr::calligra-libs:calligra-l10n-
 
 # Finnish support for voikko
 wa:fi:firefox:xul-ext-mozvoikko

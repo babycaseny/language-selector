@@ -1,3 +1,10 @@
+language-selector (0.73) precise; urgency=low
+
+  * data/pkg_depends: Add support for translated documentation of amarok
+    and calligra.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Mon, 12 Mar 2012 11:39:45 -0400
+
 language-selector (0.72) precise; urgency=low
 
   [ Sebastien Bacher ]
