@@ -169,6 +169,7 @@ fn:pa::ttf-punjabi-fonts
 fn:ta::ttf-tamil-fonts
 fn:te::ttf-telugu-fonts
 fn:th::ttf-thai-tlwg
+fn:ug::fonts-ukij-uyghur
 fn:ur::fonts-nafees
 fn:ur::fonts-sil-scheherazade
 fn:yi::fonts-sil-ezra
