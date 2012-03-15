@@ -1,9 +1,9 @@
-language-selector (0.74) UNRELEASED; urgency=low
+language-selector (0.74) precise; urgency=low
 
   * data/pkg_depends: Add fonts-ukij-uyghur for Uyghur. Thanks to Eagle
     Burkut for pointing this out.
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 15 Mar 2012 15:22:10 +0100
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 15 Mar 2012 15:22:54 +0100
 
 language-selector (0.73) precise; urgency=low
 
