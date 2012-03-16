@@ -155,8 +155,7 @@ fn:km::fonts-khmeros
 fn:kn::ttf-kannada-fonts
 fn:ko::fonts-nanum
 fn:ko::fonts-nanum-coding
-fn:ko::fonts-nanum-extra
-fn:ko::ttf-alee
+fn:ko::fonts-unfonts-core
 fn:lo::fonts-lao
 fn:ml::ttf-malayalam-fonts
 fn:mn::fonts-manchufont
@@ -190,7 +189,6 @@ fn:zh-hant:gs-cjk-resource:cmap-adobe-cns1
 # input methods
 im:ja:ibus:ibus-anthy
 im:ko:ibus:ibus-hangul
-im:ko:ibus:nabi
 im:th:ibus:gtk-im-libthai
 im:vi:ibus:ibus-unikey
 im:zh-hans:ibus:ibus-sunpinyin
