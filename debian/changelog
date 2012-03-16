@@ -1,4 +1,4 @@
-language-selector (0.75) UNRELEASED; urgency=low
+language-selector (0.75) precise; urgency=low
 
   [ Jinkyu Yi ]
   * data/pkg_depends:
@@ -7,7 +7,7 @@ language-selector (0.75) UNRELEASED; urgency=low
       (refer to task-korean-desktop at Debian)
     - remove nabi, Unity can't support it
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 16 Mar 2012 11:26:49 +0100
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 16 Mar 2012 11:27:49 +0100
 
 language-selector (0.74) precise; urgency=low
 
