@@ -178,6 +178,13 @@ class LanguageSupport:
     def _expand_pkg_pattern(klass, pattern, locale):
         '''Return all possible suffixes for given pattern and locale'''
 
+        # people might call this with the pseudo-locales "zh-han[st]", support
+        # these as well; we can only guess the country here.
+        if locale == 'zh-hans':
+            locale = 'zh_CN'
+        elif locale == 'zh-hant':
+            locale = 'zh_TW'
+
         locale = locale.split('.', 1)[0].lower()
         variant = None
         country = None
