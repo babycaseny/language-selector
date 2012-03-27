@@ -129,7 +129,7 @@ class T(unittest.TestCase):
         self.assertEqual(result, ['wbritish'])
         result = ls.by_package_and_locale('firefox', 'en_GB.UTF-8', False)
         self.assertEqual(result, [])
-        result = ls.by_package_and_locale('gedit', 'en_GB.UTF-8', False)
+        result = ls.by_package_and_locale('abiword', 'en_GB.UTF-8', False)
         self.assertEqual(result, ['aspell-en'])
 
         # if we specify a country, do not give us stuff for other countries

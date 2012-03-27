@@ -2,6 +2,9 @@ language-selector (0.77) UNRELEASED; urgency=low
 
   * dbus_backend/ls-dbus-backend: Set LC_IDENTIFICATION as well, to comply
     with what Ubiquity does. (LP: #926207)
+  * tests/test_language_support_pkgs.py: Fix
+    test_by_package_and_locale_noinstalled() for current pkg_depends: gedit
+    does not need aspell any more, use abiword as trigger package.
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 27 Mar 2012 08:02:00 +0200
 
