@@ -96,7 +96,7 @@ class LanguageSelectorServer(dbus.service.Object):
             return False
         conffiles = ["/etc/default/locale", "/etc/environment"]
         macr = LanguageSelector.macros.LangpackMacros(self._datadir, sysFormats)
-        for var in 'LC_NUMERIC', 'LC_TIME', 'LC_MONETARY', 'LC_PAPER', \
+        for var in 'LC_NUMERIC', 'LC_TIME', 'LC_MONETARY', 'LC_PAPER', 'LC_IDENTIFICATION', \
                    'LC_NAME', 'LC_ADDRESS', 'LC_TELEPHONE', 'LC_MEASUREMENT':
             findString = "%s=" % var
             setString = "%s=\"%s\"\n" % (var, macr["SYSLOCALE"])
