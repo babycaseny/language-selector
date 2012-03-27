@@ -4,6 +4,11 @@ set -e
 
 #DEBHELPER#
 
+dpkg-maintscript-helper rm_conffile \
+	/etc/fonts/conf.avail/69-language-selector-ko-kr.conf 0.75 -- "$@"
+dpkg-maintscript-helper rm_conffile \
+	/etc/fonts/conf.avail/29-language-selector-ko-kr.conf 0.75 -- "$@"
+
 case "$1" in
 install|upgrade)
   # old versions had a symlink to "none" meaning unconfigured

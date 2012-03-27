@@ -1,3 +1,9 @@
+language-selector (0.76) UNRELEASED; urgency=low
+
+  * Add conffile upgrade handling for ko-kr conffiles dropped since lucid.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 26 Mar 2012 22:18:54 -0700
+
 language-selector (0.75) precise; urgency=low
 
   [ Jinkyu Yi ]

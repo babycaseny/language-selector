@@ -75,6 +75,7 @@ Description: Language selector for Ubuntu (transitional package)
 
 Package: language-selector-common
 Architecture: all
+Pre-Depends: dpkg (>= 1.15.7.2)
 Depends: ${python:Depends},
  ${misc:Depends},
  iso-codes,
