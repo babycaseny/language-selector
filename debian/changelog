@@ -1,4 +1,4 @@
-language-selector (0.77) UNRELEASED; urgency=low
+language-selector (0.77) precise; urgency=low
 
   * dbus_backend/ls-dbus-backend: Set LC_IDENTIFICATION as well, to comply
     with what Ubiquity does. (LP: #926207)
@@ -10,7 +10,7 @@ language-selector (0.77) UNRELEASED; urgency=low
     assumes this works. So let these mean "zh_CN" and "zh_TW" respectively.
     Add a test case to tests/test_language_support_pkgs.py. (LP: #963460)
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 27 Mar 2012 08:02:00 +0200
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 30 Mar 2012 12:42:15 +0200
 
 language-selector (0.76) precise; urgency=low
 
