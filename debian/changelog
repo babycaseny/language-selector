@@ -1,8 +1,8 @@
-language-selector (0.78) UNRELEASED; urgency=low
+language-selector (0.78) precise; urgency=low
 
-  * Updated translations from launchpad
+  * Updated translations from launchpad (lp: #980842)
 
- -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 13 Apr 2012 16:16:45 +0200
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 13 Apr 2012 16:21:24 +0200
 
 language-selector (0.77) precise; urgency=low
 
