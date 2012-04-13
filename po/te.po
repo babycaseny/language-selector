@@ -7,61 +7,61 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-24 13:55+0000\n"
-"PO-Revision-Date: 2010-04-27 16:49+0000\n"
-"Last-Translator: Arne Goetje <arne@linux.org.tw>\n"
+"POT-Creation-Date: 2012-03-30 10:53+0000\n"
+"PO-Revision-Date: 2012-03-17 04:38+0000\n"
+"Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
 "Language-Team: Telugu <te@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
 "Language: te\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:47
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "చైనీస్ (సరళ)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:49
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "చైనీస్ (సాంప్రదాయిక)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
-#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
-msgstr "భాషలను గూర్చి సమాచారము అందుబాటులో లేదు."
+msgstr "భాషను గూర్చి సమాచారము అందుబాటులో లేదు"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
-#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
-"అందుబాటులో గల భాషల గురించిన సమాచారం ఇంకా లేదు. దాన్ని ఇప్పుడు పొందేందుకు "
-"నెట్ వర్కును తాజాకరించమంటారా? "
+"అందుబాటులో గల భాషల గురించిన సమాచారం వ్యవస్థ ఇంతవరకూ కలిగిలేదు. వాటిని "
+"ఇప్పుడు పొందేందుకు నెట్‌వర్కు నవీకరణ చేయాలనుకుంటున్నారా? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
-#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
-msgstr "_తాజాకరించు"
+msgstr "నవీకరించు(_U)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "భాష"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
-msgstr "స్థాపించబడిన"
+msgstr "స్థాపించబడినవి"
 
 #. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -69,7 +69,7 @@ msgstr[0] "%(INSTALL)d ను స్థాపనకు"
 msgstr[1] "సంస్థాపించవలసిన %(INSTALL)d"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -77,339 +77,414 @@ msgstr[0] "%(REMOVE)d ను తొలగింపుకు"
 msgstr[1] "తొలగించవలసినది %(REMOVE)d"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
-#: ../LanguageSelector/qt/QtLanguageSelector.py:82
-#: ../LanguageSelector/qt/QtLanguageSelector.py:310
-#: ../check-language-support:52
-msgid "Software database is broken"
-msgstr ""
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+msgid "none"
+msgstr "ఏదీకాదు"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
-#: ../check-language-support:53
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+msgid "Software database is broken"
+msgstr "సాఫ్ట్‍వేర్ డేటాబేసు విరిగినది"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
+"ఏ సాఫ్ట్‍వేర్‌నైనా స్థాపించుట లేదా తొలగించుట అసాధ్యం. దయచేసి ప్యాకేజీ "
+"నిర్వాహకి \"Synaptic\" వాడు లేదా మొదట ఈ విషయాన్ని పరిష్కరించుటకు "
+"టెర్మినల్‌లో ఈ కమాండు నడుపు\"sudo apt-get install -f\""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+msgid "Could not install the selected language support"
+msgstr "మీరు ఎంచుకున్న భాష మద్ధతును స్థాపించుట సాధ్యపడదు"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
-msgid "Could not install the selected language support"
-msgstr "మీరు ఎంచుకున్న భాష సపోర్టును స్థాపించలేకపోయాం"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"బహుశా ఇది ఈ ఉపకరణంలోని దోషం కావచ్చు. "
+"బహుశా ఇది ఈ అనువర్తనంలోని బగ్ కావచ్చు. దయచేసి "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug వద్ద "
-"దోష నివేదికను పెట్టండి"
+"బగ్ నివేదికను దాఖలుచేయండి"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+msgid "Could not install the full language support"
+msgstr "పూర్తి భాషా మద్ధతును స్థాపించుట సాధ్యం కాదు"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
-msgid "Could not install the full language support"
-msgstr "పూర్తి భాష సపోర్టును స్తాపించలేకపోయాం"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
+"manager. Check your preferences in Software Sources (click the icon at the "
+"very right of the top bar and select \"System Settings... -> Software "
+"Sources\")."
 msgstr ""
-"మామూలుగా ఇది మీ సాఫ్టువేరు సంగ్రహం లేదా సాఫ్టువేరు నిర్వాహకంలోని లోపానికి "
-"సంబంధినది కావచ్చు. వ్యవస్థ > నిర్వహణ మెనూలో మీ సాఫ్టువేరు అభిరుచులను "
-"ఒక్కసారి సరిచూసుకోండి."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
-#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+msgid "Failed to authorize to install packages."
+msgstr "ప్యాకేజీలను స్థాపించుటకు ధృవీకరించుటలో విఫలమైంది"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
-msgstr ""
+msgstr "భాష మద్ధతు పూర్తిగా స్థాపించబడలేదు"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
-#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
+"మీరు ఎంచుకున్న భాషలలో కొన్ని అనువాదాలు లేదా వ్రాత సహాయకాలు లభ్యతలో ఉన్నాయి "
+"కాని వాటిని ఇంకా స్థాపించలేదు. మీరు ఇపుడు వాటిని స్థాపించాలనుకుంటున్నారా?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
-#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
-msgstr ""
+msgstr "నాకు తరువాత గుర్తుచేయి(_R)"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
-#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
-msgstr ""
+msgstr "స్థాపించు (_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
+msgstr "వివరాలు"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#, python-format
+msgid ""
+"Failed to apply the '%s' format\n"
+"choice. The examples may show up if you\n"
+"close and re-open Language Support."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:57
-msgid "Uninstall"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:58
-msgid "Select language to uninstall:"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:65
-msgid "Language Selector"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:83
-#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+#: ../LanguageSelector/qt/QtLanguageSelector.py:70
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:114
+msgid "Set System Language"
+msgstr "వ్యవస్థ భాషను అమర్చు"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:115
 msgid "Default system language:"
-msgstr ""
+msgstr "వ్యవస్థ అప్రమేయ భాష"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+msgid "Keyboard input method:"
+msgstr "కీబోర్డు ఇన్‌పుట్ పద్ధతి:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+msgid "Select language to install:"
+msgstr "స్థాపించుటకు భాషను ఎంచుకోండి:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+msgid "Select language to uninstall:"
+msgstr "తొలగించుటకు భాషను ఎంచుకోండి:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Translations"
+msgstr "అనువాదాలు"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:120
-msgid "Set System Language"
-msgstr ""
+msgid "Input methods"
+msgstr "ఇన్‌పుట్ పద్ధతులు"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:121
-msgid "Keyboard input method:"
-msgstr ""
+msgid "Spellchecking and writing aids"
+msgstr "లేఖనక్రమాన్నిసరిచూచుట మరియు వ్రాత సహాయం"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:122
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-#: ../data/LanguageSelector.ui.h:13
-msgid "Cancel"
-msgstr ""
+msgid "Extra fonts"
+msgstr "అదనపు ఫాంట్లు"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:123
-msgid "Select language to install:"
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Install"
-msgstr ""
+msgid "Components:"
+msgstr "అంశాలు:"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+#: ../LanguageSelector/qt/QtLanguageSelector.py:202
 msgid "Already installed"
-msgstr ""
+msgstr "ఇదివరకే స్థాపించబడింది"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+#: ../LanguageSelector/qt/QtLanguageSelector.py:205
 msgid "Partially Installed"
-msgstr ""
+msgstr "పాక్షికంగా స్థాపించబడింది"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+#: ../LanguageSelector/qt/QtLanguageSelector.py:208
 msgid "Not installed"
-msgstr ""
+msgstr "స్థాపించబడలేదు"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+msgid "Component already installed"
+msgstr "ఈ అంశం ఇంతకుముందే స్థాపించబడింది"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+msgid "Component not available"
+msgstr "అంశం అందుబాటులో లేదు"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+msgid "Component not installed"
+msgstr "అంశం స్థాపించబడలేదు"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr ""
+msgstr "అప్రమేయ వ్యవస్థ భాషను ఇపుడు %s కి అమర్చు."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
 msgid "Language Set"
-msgstr ""
+msgstr "భాషను అమర్చు"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"సాఫ్ట్వేర్ స్థాపన లేక తొలగింపు వీలుకాదు. ఈ సమస్య తొలగించటానికి పాకేజి "
+"నిర్వాహకి  ఎడెప్ట్ (Adept) వాడు లేక \"sudo apt-get install -f\" టర్మినల్ లో "
+"నడుపు."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 #, python-format
 msgid ""
-"Translations and support have now been installed for %s.  Select them from "
-"the Add Language button."
+"All selected components have now been installed for %s.  Select them from "
+"Country/Region & Language."
 msgstr ""
+"%s కొరకు ఎంపికచేసిన భాగాలన్నీ స్థాపించబడ్డాయి.  దేశం/ప్రాంతం మరియు భాష "
+"ద్వారా ఎంపికచేసుకోవచ్చు."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 msgid "Language Installed"
-msgstr ""
+msgstr "భాష స్థాపించబడింది"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr ""
+msgstr "%s కోసం ఉన్న అనువాదాలు మరియు మద్ధతు ఇపుడు తొలగించబడినవి."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 msgid "Language Uninstalled"
-msgstr ""
+msgstr "భాష తొలగించబడింది"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Failed to set system language."
-msgstr ""
+msgstr "వ్యవస్థ భాషను అమర్చుటలో విఫలమైంది."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Language Not Set"
-msgstr ""
+msgstr "భాష అమర్చబడలేదు"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Please run this software with administrative rights."
-msgstr ""
+msgstr "దయచేసి ఈ సాఫ్ట్‍వేర్‌ని నిర్వాహక హక్కులతో నడుపు."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Not Root User"
-msgstr ""
+msgstr "రూట్ వాడుకరి కాదు"
 
 #: ../data/LanguageSelector.ui.h:1
-msgid "<b>Example</b>"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
+"<big><b>అందుబాటులో ఉన్న భాష మద్దతును తనిఖీచేస్తుంది</b></big>\n"
+"\n"
+"అనువాదాల లేదా వ్రాత సహాయకాల అందుబాటు భాష భాషకి మారవచ్చు."
+
+#: ../data/LanguageSelector.ui.h:4
+msgid "Installed Languages"
+msgstr "స్థాపించబడిన భాషలు"
 
 #: ../data/LanguageSelector.ui.h:5
-msgid "<small>Changes take effect next time you log in.</small>"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:6
-msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
-"Changes take effect next time you log in.</small>"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:8
-msgid ""
-"<small>Uses the same language choices for startup and the login "
-"screen.</small>"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:9
-msgid ""
-"<small>Uses the same text format choice for startup and the login "
-"screen.</small>"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:10
-msgid ""
-"Additional fonts for this language which might be of general interest, e.g. "
-"decorative fonts for printing documents."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:11
-msgid "Apply Changes"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:12
-msgid "Apply System-Wide..."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:14
-msgid "Components:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:15
-msgid "Currency:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:16
-msgid "Date:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:17
-msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:18
-msgid "Extra fonts"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:19
-msgid "Input methods"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:20
-msgid "Install / Remove Languages..."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:21
-msgid "Installed Languages"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:22
-msgid "Keyboard input method system:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:24
-msgid "Language & Text"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:25
-msgid "Language for menus and windows:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:26
-msgid "Number:"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:27
-msgid "Spellchecking and writing aids"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:28
-msgid "Text"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:29
-msgid "Translations"
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:30
-msgid "Translations for your desktop."
-msgstr ""
-
-#: ../data/LanguageSelector.ui.h:31
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
+"ఎపుడైతే ఒక భాష స్థాపించబడిందో, వ్యక్తిగత వాడుకరులు స్థాపించబడినదానిని వారి "
+"భాష అమరికల నుండి ఎంపిక చేసుకోవచ్చు."
+
+#: ../data/LanguageSelector.ui.h:6
+msgid "Cancel"
+msgstr "రద్దుచేయి"
+
+#: ../data/LanguageSelector.ui.h:7
+msgid "Apply Changes"
+msgstr "మార్పులను అనువర్తించు"
+
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "భాష మద్ధతు"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid "Language for menus and windows:"
+msgstr "మెనూలు మరియు విండోల కొరకు భాష:"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"This setting only affects the language your desktop and applications are "
+"displayed in. It does not set the system environment, like currency or date "
+"format settings. For that, use the settings in the Regional Formats tab.\n"
+"The order of the values displayed here decides which translations to use for "
+"your desktop. If translations for the first language are not available, the "
+"next one in this list will be tried. The last entry of this list is always "
+"\"English\".\n"
+"Every entry below \"English\" will be ignored."
+msgstr ""
+"ఈ అమరిక మీ రంగస్థలం మరియు అనువర్తనాలు చూపబడే భాషని మాత్రమే ప్రభావితం "
+"చేస్తుంది. వ్యవస్థ పర్యావరణం అమరికలైన ద్రవ్యం, తేదీ రూపులను మార్చదు. "
+"దానికొరకు  ప్రాంతీయ ఆకృతీకరణలు(Regional Formats) టాబ్లోని అమరికలు వాడు.\n"
+"ఈ విలువల క్రమం, మీ రంగస్థలానికి వాడే భాష అనువాదాల నిర్ణయం జరుగుతుంది. మొదటి "
+"భాషకి అనువాదాలు లేకపోతే తర్వాత భాషఅనువాదాలు ప్రయత్నించబడుతాయి. దీనిలో చివరి "
+"నమోదు తప్పనిసరిగా ఇంగ్లీషు.\n"
+"ఇంగ్లీషు తర్వాత నమోదులు విస్మరించబడతాయి."
+
+#: ../data/LanguageSelector.ui.h:13
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>ప్రాధాన్యతను బట్టి క్రమంలో అమర్చుటకు భాషలను లాగు.\n"
+"మీ తదుపరి లాగిన్‌లో మార్పుల ప్రభావాలు అమర్చబడతాయి.</small>"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Apply System-Wide"
+msgstr "వ్యవస్థ అంతటికీ అనువర్తించు"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid ""
+"<small>Use the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Install / Remove Languages..."
+msgstr "భాషలను స్థాపించు / తొలగించు..."
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Keyboard input method system:"
+msgstr "కీబోర్డు ఇన్‌పుట్ పద్ధతుల వ్యవస్థ:"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid ""
+"If you need to type in languages, which require more complex input methods "
+"than just a simple key to letter mapping, you may want to enable this "
+"function.\n"
+"For example, you will need this function for typing Chinese, Japanese, "
+"Korean or Vietnamese.\n"
+"The recommended value for Ubuntu is \"ibus\".\n"
+"If you want to use alternative input method systems, install the "
+"corresponding packages first and then choose the desired system here."
+msgstr ""
+"మీరు సంక్లిష్ట ప్రవేశపెట్టు పద్దతులు కల భాషలలో టైప్ చేయాలంటే, మీరు దీనిని "
+"చేతనం చేయాలి. \n"
+"ఉదాహరణకు,  చైనీస్, జపనీస్, కొరియన్, వియత్నమీస్  లేక భారతీయభాషల కొరకు ఈ చర్య "
+"కావాలి.\n"
+"ఉబుంటు కొరకు సిఫారస్ చేయబడినదాని విలువ \"ibus\".\n"
+"ఇతర ప్రవేశ పద్ధతులు వాడదలచుకుంటే, వాటికి కావలసిన పాకేజీలను స్థాపించి ఆ "
+"తరువాత మీకు కావలసినదానినిఇక్కడ ఎంపికచేయండి."
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+"సంఖ్యలను, తేదీలను మరియు ద్రవ్యాల మొ త్తాలను సాధారణ ఫార్మేటులో చూపించుటకు:"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid ""
+"This will set the system environment like shown below and will also affect "
+"the preferred paper format and other region specific settings.\n"
+"If you want to display the desktop in a different language than this, please "
+"select it in the \"Language\" tab.\n"
+"Hence you should set this to a sensible value for the region in which you "
+"are located."
+msgstr ""
+"ఇది క్రిందచూపబడిన వ్యవస్థ పర్యావరణ అమరికలు మరియు ఇష్టమైన పేపరు తీరు మరియు "
+"ఇతర ప్రాంతీయ ఎంపికలు చేతనంచేస్తాయి.\n"
+"మీ రంగస్థలం వేరే భాషలో కావాలంటే  భాష (\"Language\") టాబ్ ఎంపికచేయండి.\n"
+"అందువలన మీ ప్రాంతానికి తగినైన విలువని ఇక్కడ ఇవ్వాలి."
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr "<small>మీ తదుపరి లాగిన్‌లో మార్పుల ప్రభావాలు అమర్చబడతాయి.</small>"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid ""
+"<small>Use the same format choice for startup and the login screen.</small>"
+msgstr ""
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Number:"
+msgstr "సంఖ్య:"
+
+#: ../data/LanguageSelector.ui.h:31
+msgid "Date:"
+msgstr "తేదీ:"
 
 #: ../data/LanguageSelector.ui.h:32
-msgid ""
-"Word lists, dictionaries, thesauruses, etc. which can help typing by "
-"highlighting, correcting or suggesting words."
-msgstr ""
+msgid "Currency:"
+msgstr "ద్రవ్యం:"
 
-#: ../data/language-selector.desktop.in.h:1
-#: ../data/qt-language-selector.desktop.in.h:1
-msgid "Configure multiple and native language support on your system"
-msgstr ""
+#: ../data/LanguageSelector.ui.h:33
+msgid "<b>Example</b>"
+msgstr "<b>ఉదాహరణ</b>"
+
+#: ../data/LanguageSelector.ui.h:34
+msgid "Regional Formats"
+msgstr "ప్రాంతీయ ఫార్మేట్లు"
 
 #: ../data/language-selector.desktop.in.h:2
-#: ../data/qt-language-selector.desktop.in.h:2
-msgid "Language Support"
-msgstr ""
+msgid "Configure multiple and native language support on your system"
+msgstr "అనేక, మాతృ భాషా మద్ధతులను మీ వ్యవస్థనందు స్వరూపించు"
+
+#: ../data/kde-language-selector.desktop.in.h:1
+msgid "System Languages"
+msgstr "వ్యవస్థ భాషలు"
+
+#: ../data/kde-language-selector.desktop.in.h:2
+msgid "Install and set system languages"
+msgstr "స్థాపించు  మరియు వ్యవస్థ భాషలను అమర్చు"
 
 #. Name
-#: ..//data/incomplete-language-support-gnome.note.in:5
-#: ..//data/incomplete-language-support-qt.note.in:5
+#: ../data/incomplete-language-support-gnome.note.in:5
+#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
-msgstr ""
+msgstr "అసంపూర్ణ భాషా మద్ధతు"
 
 #. Description
-#: ..//data/incomplete-language-support-gnome.note.in:6
+#: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
 "now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"required. If you would like to do this at a later time, please use Language "
+"Support instead (click the icon at the very right of the top bar and select "
+"\"System Settings... -> Language Support\")."
 msgstr ""
 
 #. Description
-#: ..//data/incomplete-language-support-qt.note.in:6
+#: ../data/incomplete-language-support-kde.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
@@ -417,79 +492,161 @@ msgid ""
 "required. If you would like to do this at a later time, please use \"System "
 "Settings -> Regional & Language\" instead."
 msgstr ""
+"మీరు ఎంచుకున్న భాషకు సంబంధించిన భాషా మద్ధతు ఫైళ్ళు  అసంపూర్ణంగా "
+"కనబడుతున్నాయి. అదృశ్యమైన వాటిని \"Run this action now\" నొక్కడం ద్వారా "
+"స్థాపించుకోవచ్చు మరియు సూచనలను అనుసరించండి. ఇందుకు ఒక క్రియాశీల అంతర్జాల "
+"అనుసంధానం అవసరం. ఈ పనిని మీరు తరువాత చేయదలచుకుంటే, దయచేసి దీనికి బదులుగా "
+"ఇలాచేయండి. \"System Settings -> Regional & Language\""
 
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "చర్యాకాలపు పున:ప్రారంభం అవసరం"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
 msgstr ""
+"ఒకసారి మీరు లాగౌట్ అయిన తరువాత కొత్త భాష అమరికల ప్రభావాన్ని తీసుకుంటాయి."
 
-#: ../gnome-language-selector:25
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
+msgid "Set system default language"
+msgstr "వ్యవస్థ అప్రమేయ భాషను అమర్చండి"
+
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
+msgid "System policy prevented setting default language"
+msgstr "అప్రమేయ భాష అమరికను వ్యవస్థ పాలసీ నిరోధించింది"
+
+#: ../gnome-language-selector:17
 msgid "don't verify installed language support"
-msgstr ""
+msgstr "స్థాపించబడిన భాష మద్ధతును తనిఖీ చేయవద్దు"
 
-#: ../gnome-language-selector:28 ../check-language-support:22
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
-msgstr ""
+msgstr "ప్రత్యామ్నాయ datadir"
 
-#: ../fontconfig-voodoo:18
+#: ../fontconfig-voodoo:17
 msgid "Aborting"
-msgstr ""
+msgstr "మధ్యలోరద్దుచేయబడుతోంది"
 
-#: ../fontconfig-voodoo:26
+#: ../fontconfig-voodoo:25
 msgid "Force even when a configuration exists"
-msgstr ""
+msgstr "ఒక కాన్ఫిగరేషన్ ఉన్నప్పటికీ బలవంతంగాచేయి"
 
-#: ../fontconfig-voodoo:28
+#: ../fontconfig-voodoo:27
 msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
+msgstr "ఎంచుకున్న భాషకి fontconfig voodoo అమర్చు"
 
-#: ../fontconfig-voodoo:32
+#: ../fontconfig-voodoo:31
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
 msgstr ""
+"భాషా పరిసరాల మీద ఆధారపడిన ఒక కాన్ఫిగరేషన్‌ని ఊహించు. ఒకవేళ తగినది దొరకకపోతే "
+"config ని 'none' కి అమర్చు"
 
-#: ../fontconfig-voodoo:37
+#: ../fontconfig-voodoo:36
 msgid "List the available fontconfig-voodoo configs"
-msgstr ""
+msgstr "లభ్యతలో ఉన్న fontconfig-voodoo configs జాబితాగా చూపు"
 
-#: ../fontconfig-voodoo:40
+#: ../fontconfig-voodoo:39
 msgid "Show the current fontconfig-voodoo config"
-msgstr ""
+msgstr "ప్రస్థుత fontconfig-voodoo config చూపించు"
 
-#: ../fontconfig-voodoo:43
+#: ../fontconfig-voodoo:42
 msgid "Remove the current fontconfig-voodoo config"
-msgstr ""
+msgstr "ప్రస్థుత fontconfig-voodoo config ని తొలగించు"
 
-#: ../fontconfig-voodoo:65
+#: ../fontconfig-voodoo:64
 msgid "Unconfigured"
-msgstr ""
+msgstr "స్వరూపించబడనిది"
 
-#: ../fontconfig-voodoo:77
+#: ../fontconfig-voodoo:80
 msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr ""
+"ఒక కాన్ఫిగరేషన్ ఇంతకుముందే ఉంది. '--force' వాడి దీనిని దిద్దివ్రాయి. "
+
+#: ../fontconfig-voodoo:89
+msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
 msgstr ""
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr ""
+msgstr "ఎంచుకున్న స్థానికానికి fontconfig-voodoo కాన్ఫిగరేషన్ కనబడలేదు"
 
-#: ../check-language-support:19
+#: ../check-language-support:22
 msgid "target language code"
-msgstr ""
+msgstr "లక్ష్య భాష కోడ్"
 
-#: ../check-language-support:23
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
-
-#: ../check-language-support:25
-msgid "check all available languages"
-msgstr ""
+"నిర్దిష్ట ప్యాకేజీ(ల) కోసం మాత్రమే పరీక్షించు -- ప్యాకేజీ పేరులను కామాతో "
+"వేరుచేయి"
 
 #: ../check-language-support:28
-msgid "show installed packages as well as missing ones"
+msgid "output all available language support packages for all languages"
 msgstr ""
+
+#: ../check-language-support:31
+msgid "show installed packages as well as missing ones"
+msgstr "స్థాపించబడిన ప్యాకేజీలను అదేవిధంగా అదృశ్యమయిన ప్యాకేజీలను చూపించు"
+
+#~ msgid ""
+#~ "Usually this is related to an error in your software archive or software "
+#~ "manager. Check your software preferences in the System > Administration menu."
+#~ msgstr ""
+#~ "మామూలుగా ఇది మీ సాఫ్ట్‍వేర్ సంగ్రహం లేదా సాఫ్ట్‍వేర్ నిర్వాహకిలోని దోషానికి "
+#~ "సంబంధించినది కావచ్చు. వ్యవస్థ > నిర్వహణ మెనూలో మీ సాఫ్ట్‍వేర్ ప్రాధాన్యతలను "
+#~ "ఒక్కసారి సరిచూసుకోండి."
+
+#~ msgid ""
+#~ "Additional fonts for this language which might be of general interest, e.g. "
+#~ "decorative fonts for printing documents."
+#~ msgstr ""
+#~ "ఈ భాష కోసం అదనపు ఫాంట్లు(సాధారణ ఆసక్తిని బట్టి ), ఉదా. పత్రాలను ముద్రించుటకు "
+#~ "అలంకరణ ఫాంట్లు."
+
+#~ msgid ""
+#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
+#~ "highlighting, correcting or suggesting words."
+#~ msgstr ""
+#~ "పద జాబితా, నిఘంటువులు, పదకోశాలు, ఇతర. టైపింగు చేసిన వాటిని ప్రత్యేకంగా "
+#~ "చూపడం, సరిచేయడం లేదా పదాలను సూచించడం వంటివి చేయడం ద్వారా ఇది సహాయపడగలదు."
+
+#~ msgid "Translations for your desktop."
+#~ msgstr "మీ డెస్క్‍టాప్‌ కొరకు అనువాదాలు."
+
+#~ msgid ""
+#~ "The language support files for your selected language seem to be incomplete. "
+#~ "You can install the missing components by clicking on \"Run this action "
+#~ "now\" and follow the instructions. An active internet connection is "
+#~ "required. If you would like to do this at a later time, please use \"System -"
+#~ "> Administration -> Language Support\" instead."
+#~ msgstr ""
+#~ "మీరు ఎంచుకున్న భాషకు సంబంధించిన భాషా మద్ధతు ఫైళ్ళు  అసంపూర్ణంగా "
+#~ "కనబడుతున్నాయి. అదృశ్యమైన వాటిని \"Run this action now\" నొక్కడం ద్వారా "
+#~ "స్థాపించుకోవచ్చు మరియు సూచనలను అనుసరించండి. ఇందుకు ఒక క్రియాశీల అంతర్జాల "
+#~ "అనుసంధానం అవసరం. ఈ పనిని మీరు తరువాత చేయదలచుకుంటే, దయచేసి దీనికి బదులుగా "
+#~ "ఇలాచేయండి. \"వ్యవస్థ -> నిర్వహణ -> భాష మద్ధతు\""
+
+#~ msgid "check all available languages"
+#~ msgstr "లభ్యతలో ఉన్న అన్ని భాషలను పరిశీలించు"
+
+#, python-format
+#~ msgid "Failed to apply the '%s' format choice:"
+#~ msgstr "'%s' రూపు ఎంపిక  వాడటంలో విఫలం:"
+
+#~ msgid ""
+#~ "<small>Use the same language choices for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small> ప్రారంభానికి, లాగిన్ తెరకు భాషా ఎంపికలు ఒకటిగానే వుంచుము.\n"
+#~ "వ్యవస్థ తిరిగి ప్రారంభించినపుడు మార్పులు చేతనమవుతాయి.</small>"
+
+#~ msgid ""
+#~ "<small>Use the same format choice for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small> ప్రారంభానికి మరియు లాగ్ ఇన్ తెరకు ఒకటే ఆకృతీకరణ వాడండి.\n"
+#~ "మార్పులు మీ వ్యవస్థ తిరిగి ప్రారంభించినపుడు మాత్రమే చేతనమవుతాయి.</small>"

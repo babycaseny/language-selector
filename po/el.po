@@ -8,36 +8,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-24 13:55+0000\n"
-"PO-Revision-Date: 2010-09-24 17:18+0000\n"
-"Last-Translator: Μάριος Ζηντίλης <m.zindilis@dmajor.org>\n"
+"POT-Creation-Date: 2012-03-30 10:53+0000\n"
+"PO-Revision-Date: 2012-03-09 19:36+0000\n"
+"Last-Translator: Marios Zindilis <Unknown>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
 "Language: el\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:47
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "Κινέζικα (απλοποιημένα)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:49
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "Κινέζικα (παραδοσιακά)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
-#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
 msgstr "Οι πληροφορίες για τις γλώσσες δεν είναι διαθέσιμες"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
-#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -45,24 +45,24 @@ msgstr ""
 "Το σύστημα δεν έχει πληροφορίες για τις διαθέσιμες γλώσσες ακόμα. Θέλετε να "
 "γίνει μια ενημέρωση για να ληφθούν οι πληροφορίες αυτές; "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
-#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
 msgstr "_Ενημέρωση"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Γλώσσα"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
 msgstr "Εγκαταστάθηκε"
 
 #. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -70,7 +70,7 @@ msgstr[0] "%(INSTALL)d θα εγκατασταθεί"
 msgstr[1] "%(INSTALL)d θα εγκατασταθούν"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -78,22 +78,24 @@ msgstr[0] "%(REMOVE)d θα απομακρυνθεί"
 msgstr[1] "%(REMOVE)d θα απομακρυνθούν"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
-#: ../LanguageSelector/qt/QtLanguageSelector.py:82
-#: ../LanguageSelector/qt/QtLanguageSelector.py:310
-#: ../check-language-support:52
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+msgid "none"
+msgstr "καμμία"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "Η βάση δεδομένων λογισμικού είναι κατεστραμμένη."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
-#: ../check-language-support:53
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -103,11 +105,11 @@ msgstr ""
 "χρησιμοποιήστε το διαχειριστή πακέτων \"Synaptic\" ή εκτελέστε την εντολή "
 "\"sudo apt-get install -f\" σε ένα τερματικό για να διορθώσετε το πρόβλημα."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
 msgid "Could not install the selected language support"
 msgstr "Αδυναμία εγκατάστασης της επιλεγμένης γλωσσικής υποστήριξης"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -116,26 +118,35 @@ msgstr ""
 "αναφέρετε αυτή τη δυσλειτουργία στο "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "Αδυναμία εγκατάστασης πλήρους γλωσσικής υποστήριξης."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
+"manager. Check your preferences in Software Sources (click the icon at the "
+"very right of the top bar and select \"System Settings... -> Software "
+"Sources\")."
 msgstr ""
-"Συνήθως αυτό σχετίζεται με κάποιο σφάλμα στο ευρετήριο λογισμικού σας ή στην "
-"διαχείριση πακέτων. Ελέγξτε τις προτιμήσεις λογισμικού στο μενού Σύστημα > "
-"Διαχείριση συστήματος."
+"Συνήθως αυτό σχετίζεται με ένα σφάλμα στο αρχείο του λογισμικού σας ή του "
+"διαχειριστή του λογισμικού. Ελέγξτε τις προτιμήσεις σας στις Πηγές "
+"λογισμικού (κάντε κλικ στο εικονίδιο στα δεξιά στην επάνω γραμμή και "
+"επιλέξτε «Διαχείριση συστήματος… → Πηγές λογισμικού»)."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
-#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+msgid "Failed to authorize to install packages."
+msgstr "Απέτυχε η ταυτοποίηση για την εγκατάσταση πακέτων."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "Η γλωσσική υποστήριξη δεν έχει εγκατασταθεί πλήρως"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
-#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -144,36 +155,34 @@ msgstr ""
 "που είναι διαθέσιμα για τις επιλεγμένες γλώσσες στο σύστημα σας. Θέλετε να "
 "τις εγκαταστήσετε τώρα;"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
-#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
 msgstr "Υπεν_θύμισε μου αργότερα"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
-#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "_Εγκατάσταση"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "Λεπτομέρειες"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:57
-msgid "Uninstall"
-msgstr "Απεγκατάσταση"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#, python-format
+msgid ""
+"Failed to apply the '%s' format\n"
+"choice. The examples may show up if you\n"
+"close and re-open Language Support."
+msgstr ""
+"Αποτυχία εφαρμογής της επιλογής μορφοποίησης «%s».\n"
+"Τα παραδείγματα μπορεί να εμφανιστούν αν\n"
+"κλείσετε και ανοίξετε ξανά τη Γλωσσική υποστήριξη."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:58
-msgid "Select language to uninstall:"
-msgstr "Επιλέξτε γλώσσα για απεγκατάσταση:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:65
-msgid "Language Selector"
-msgstr "Επιλογέας γλώσσας"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:83
-#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+#: ../LanguageSelector/qt/QtLanguageSelector.py:70
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -184,98 +193,131 @@ msgstr ""
 "σε ένα τερματικό την εντολή \"sudo apt-get install -f\" για να διορθώσετε το "
 "πρόβλημα αυτό."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
-msgid "Default system language:"
-msgstr "Προεπιλεγμένη γλώσσα συστήματος:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:114
 msgid "Set System Language"
 msgstr "Καθορισμός γλώσσας συστήματος"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+msgid "Default system language:"
+msgstr "Προεπιλεγμένη γλώσσα συστήματος:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Keyboard input method:"
 msgstr "Μέθοδος γραφής:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:122
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-#: ../data/LanguageSelector.ui.h:13
-msgid "Cancel"
-msgstr "Ακύρωση"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+#: ../LanguageSelector/qt/QtLanguageSelector.py:117
 msgid "Select language to install:"
 msgstr "Επιλέξτε γλώσσα για εγκατάσταση:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Install"
-msgstr "Εγκατάσταση"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+msgid "Select language to uninstall:"
+msgstr "Επιλέξτε γλώσσα για απεγκατάσταση:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Translations"
+msgstr "Μεταφράσεις"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Input methods"
+msgstr "Μέθοδοι εισαγωγής"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Spellchecking and writing aids"
+msgstr "Ορθογραφικός έλεγχος και βοηθήματα γραφής"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+msgid "Extra fonts"
+msgstr "Πρόσθετες γραμματοσειρές"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Components:"
+msgstr "Συστατικά:"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+#: ../LanguageSelector/qt/QtLanguageSelector.py:202
 msgid "Already installed"
 msgstr "Ήδη εγκατεστημένη"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+#: ../LanguageSelector/qt/QtLanguageSelector.py:205
 msgid "Partially Installed"
 msgstr "Μερικώς εγκατεστημένη"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+#: ../LanguageSelector/qt/QtLanguageSelector.py:208
 msgid "Not installed"
 msgstr "Μη εγκατεστημένη"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+msgid "Component already installed"
+msgstr "Το στοιχείο είναι ήδη εγκατεστημένο"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+msgid "Component not available"
+msgstr "Το στοιχείο δεν είναι διαθέσιμο"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+msgid "Component not installed"
+msgstr "Το στοιχείο δεν είναι εγκατεστημένο"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr "Η προεπιλεγμένη γλώσσα συστήματος καθορίστηκε τώρα σε %s."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
 msgid "Language Set"
 msgstr "Ρύθμιση Γλώσσας"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Είναι αδύνατο να εγκατασταθεί ή να απομακρυνθεί οποιοδήποτε λογισμικό. "
+"Παρακαλούμε να χρησιμοποιήσετε τον διαχειριστή πακέτων Adept ή να εκτελέσετε "
+"σε ένα τερματικό την εντολή \"sudo apt-get install -f\" για να διορθώσετε το "
+"πρόβλημα αυτό."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 #, python-format
 msgid ""
-"Translations and support have now been installed for %s.  Select them from "
-"the Add Language button."
+"All selected components have now been installed for %s.  Select them from "
+"Country/Region & Language."
 msgstr ""
-"Οι μεταφράσεις και η υποστήριξη για %s εγκαταστάθηκαν. Επιλέξτε τις από το "
-"κουμπί Προσθήκη γλώσσας."
+"Όλα τα επιλεγμένα στοιχεία έχουν εγκατασταθεί τώρα για %s. Επιλέξτε τα από "
+"το Χώρα/Περιοχή & Γλώσσα."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 msgid "Language Installed"
 msgstr "Η γλώσσα εγκαταστάθηκε"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "Οι μεταφράσεις και η υποστήριξη για %s απεγκαταστάθηκαν."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 msgid "Language Uninstalled"
 msgstr "Η γλώσσα απεγκαταστάθηκε"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Failed to set system language."
 msgstr "Αποτυχία καθορισμού γλώσσας συστήματος."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Language Not Set"
 msgstr "Η γλώσσα δεν ρυθμίστηκε"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Please run this software with administrative rights."
 msgstr "Παρακαλούμε εκτελέστε αυτό το λογισμικό με δικαιώματα διαχειριστή."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Not Root User"
 msgstr "Χρήστης χωρίς δικαιώματα διαχειριστή"
 
 #: ../data/LanguageSelector.ui.h:1
-msgid "<b>Example</b>"
-msgstr "<b>Παράδειγμα</b>"
-
-#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -287,117 +329,11 @@ msgstr ""
 "Η διαθεσιμότητα μεταφράσεων ή γραπτής βοήθειας μπορεί να διαφέρει από γλώσσα "
 "σε γλώσσα."
 
-#: ../data/LanguageSelector.ui.h:5
-msgid "<small>Changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Οι αλλαγές θα εφαρμοστούν την επόμενη φορά που θα συνδεθείτε.</small>"
-
-#: ../data/LanguageSelector.ui.h:6
-msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
-"Changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Σύρτε τις γλώσσες για να τις οργανώσετε κατά σειρά προτίμησης.\n"
-"Οι αλλαγές θα εφαρμοστούν την επόμενη φορά που θα συνδεθείτε.</small>"
-
-#: ../data/LanguageSelector.ui.h:8
-msgid ""
-"<small>Uses the same language choices for startup and the login "
-"screen.</small>"
-msgstr ""
-"<small>Χρησιμοποιεί τις ίδιες επιλογές γλώσσας για την οθόνη εκκίνησης και "
-"σύνδεσης.</small>"
-
-#: ../data/LanguageSelector.ui.h:9
-msgid ""
-"<small>Uses the same text format choice for startup and the login "
-"screen.</small>"
-msgstr ""
-"<small>Χρησιμοποιεί την ίδια μορφή κειμένου για την εκκίνηση και για την "
-"οθόνη εισόδου.</small>"
-
-#: ../data/LanguageSelector.ui.h:10
-msgid ""
-"Additional fonts for this language which might be of general interest, e.g. "
-"decorative fonts for printing documents."
-msgstr ""
-"Οι πρόσθετες γραμματοσειρές για την γλώσσα αυτή μπορεί να έχουν γενικό "
-"ενδιαφέρον, πχ διακοσμητικούς χαρακτήρες για εκτύπωση κειμένων."
-
-#: ../data/LanguageSelector.ui.h:11
-msgid "Apply Changes"
-msgstr "Εφαρμογή αλλαγών"
-
-#: ../data/LanguageSelector.ui.h:12
-msgid "Apply System-Wide..."
-msgstr "Εφαρμογή σε όλο το σύστημα..."
-
-#: ../data/LanguageSelector.ui.h:14
-msgid "Components:"
-msgstr "Συστατικά:"
-
-#: ../data/LanguageSelector.ui.h:15
-msgid "Currency:"
-msgstr "Νόμισμα:"
-
-#: ../data/LanguageSelector.ui.h:16
-msgid "Date:"
-msgstr "Ημερομηνία:"
-
-#: ../data/LanguageSelector.ui.h:17
-msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
-"Εμφάνιση αριθμών, ημερομηνίας και νομίσματος στη συνηθισμένη μορφή για:"
-
-#: ../data/LanguageSelector.ui.h:18
-msgid "Extra fonts"
-msgstr "Πρόσθετες γραμματοσειρές"
-
-#: ../data/LanguageSelector.ui.h:19
-msgid "Input methods"
-msgstr "Μέθοδοι εισαγωγής"
-
-#: ../data/LanguageSelector.ui.h:20
-msgid "Install / Remove Languages..."
-msgstr "Εγκατάσταση / Απομάκρυνση γλωσσών"
-
-#: ../data/LanguageSelector.ui.h:21
+#: ../data/LanguageSelector.ui.h:4
 msgid "Installed Languages"
 msgstr "Εγκατεστημένες γλώσσες"
 
-#: ../data/LanguageSelector.ui.h:22
-msgid "Keyboard input method system:"
-msgstr "Μέθοδος γραφής:"
-
-#: ../data/LanguageSelector.ui.h:24
-msgid "Language & Text"
-msgstr "Γλώσσα και κείμενο"
-
-#: ../data/LanguageSelector.ui.h:25
-msgid "Language for menus and windows:"
-msgstr "Γλώσσα για μενού και παράθυρα:"
-
-#: ../data/LanguageSelector.ui.h:26
-msgid "Number:"
-msgstr "Αριθμός:"
-
-#: ../data/LanguageSelector.ui.h:27
-msgid "Spellchecking and writing aids"
-msgstr "Ορθογραφικός έλεγχος και βοηθήματα γραφής"
-
-#: ../data/LanguageSelector.ui.h:28
-msgid "Text"
-msgstr "Κείμενο"
-
-#: ../data/LanguageSelector.ui.h:29
-msgid "Translations"
-msgstr "Μεταφράσεις"
-
-#: ../data/LanguageSelector.ui.h:30
-msgid "Translations for your desktop."
-msgstr "Μεταφράσεις για την επιφάνεια εργασίας σας."
-
-#: ../data/LanguageSelector.ui.h:31
+#: ../data/LanguageSelector.ui.h:5
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -405,47 +341,183 @@ msgstr ""
 "Όταν μια γλώσσα εγκαθίσταται, οι χρήστες μπορούν να την επιλέγουν από τις "
 "γλωσσικές ρυθμίσεις."
 
-#: ../data/LanguageSelector.ui.h:32
-msgid ""
-"Word lists, dictionaries, thesauruses, etc. which can help typing by "
-"highlighting, correcting or suggesting words."
-msgstr ""
-"Λίστες λέξεων, λεξικά, θησαυροί λέξεων κτλ, τα οποία βοηθούν στην "
-"πληκτρολόγηση κειμένων με επισήμανση, διορθώνοντας ή προτείνοντας λέξεις."
+#: ../data/LanguageSelector.ui.h:6
+msgid "Cancel"
+msgstr "Ακύρωση"
 
-#: ../data/language-selector.desktop.in.h:1
-#: ../data/qt-language-selector.desktop.in.h:1
-msgid "Configure multiple and native language support on your system"
-msgstr "Ρύθμιση πολλαπλής γλωσσικής υποστήριξης στο σύστημα σας"
+#: ../data/LanguageSelector.ui.h:7
+msgid "Apply Changes"
+msgstr "Εφαρμογή αλλαγών"
 
-#: ../data/language-selector.desktop.in.h:2
-#: ../data/qt-language-selector.desktop.in.h:2
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
 msgstr "Γλωσσική υποστήριξη"
 
+#: ../data/LanguageSelector.ui.h:9
+msgid "Language for menus and windows:"
+msgstr "Γλώσσα για μενού και παράθυρα:"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"This setting only affects the language your desktop and applications are "
+"displayed in. It does not set the system environment, like currency or date "
+"format settings. For that, use the settings in the Regional Formats tab.\n"
+"The order of the values displayed here decides which translations to use for "
+"your desktop. If translations for the first language are not available, the "
+"next one in this list will be tried. The last entry of this list is always "
+"\"English\".\n"
+"Every entry below \"English\" will be ignored."
+msgstr ""
+"Αυτή η ρύθμιση επηρεάζει μόνο τη γλώσσα της επιφάνειας εργασίας σας και των "
+"εφαρμογών σας. Δεν ορίζει το περιβάλλον του συστήματος, όπως τις ρυθμίσεις "
+"για νόμισμα και ημερομηνία. Γι' αυτές, χρησιμοποιήστε τις ρυθμίσεις στην "
+"καρτέλα Τοπικές Ρυθμίσεις.\n"
+"Η σειρά των τιμών που εμφανίζονται εδώ καθορίζουν ποιες μεταφράσεις θα "
+"χρησιμοποιηθούν για την επιφάνεια εργασίας σας. Αν οι μεταφράσεις για την "
+"πρώτη γλώσσα δεν είναι διαθέσιμες, θα γίνει δοκιμή για την επόμενη στη "
+"λίστα. Η τελευταία καταχώρηση αυτής της λίστας είναι πάντα «Αγγλικά».\n"
+"Κάθε καταχώρηση μετά τα «Αγγλικά» θα αγνοηθεί."
+
+#: ../data/LanguageSelector.ui.h:13
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Σύρτε τις γλώσσες για να τις οργανώσετε κατά σειρά προτίμησης.\n"
+"Οι αλλαγές θα εφαρμοστούν την επόμενη φορά που θα συνδεθείτε.</small>"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Apply System-Wide"
+msgstr "Εφαρμογή σε όλο το σύστημα"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid ""
+"<small>Use the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Χρησιμοποίηση των ίδιων επιλογών γλώσσας για τις οθόνες εκκίνησης και "
+"σύνδεσης..</small>"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Install / Remove Languages..."
+msgstr "Εγκατάσταση / Απομάκρυνση γλωσσών"
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Keyboard input method system:"
+msgstr "Μέθοδος γραφής:"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid ""
+"If you need to type in languages, which require more complex input methods "
+"than just a simple key to letter mapping, you may want to enable this "
+"function.\n"
+"For example, you will need this function for typing Chinese, Japanese, "
+"Korean or Vietnamese.\n"
+"The recommended value for Ubuntu is \"ibus\".\n"
+"If you want to use alternative input method systems, install the "
+"corresponding packages first and then choose the desired system here."
+msgstr ""
+"Αν χρειάζεται να πληκτρολογείτε σε διάφορες γλώσσες, οι οποίες απαιτούν πιο "
+"πολύπλοκες μεθόδους εισαγωγής κειμένου από την απλή αντιστοίχηση ενός "
+"πλήκτρου με ένα γράμμα, τότε ίσως χρειαστεί να ενεργοποιήσετε αυτή τη "
+"λειτουργία.\n"
+"Για παράδειγμα, θα χρειαστείτε αυτή τη λειτουργία αν πληκτρολογείτε "
+"Κινέζικα, Ιαπωνικά, Κορεατικά ή Βιετναμέζικα.\n"
+"Η προτεινόμενη τιμή για το Ubuntu είναι «ibus».\n"
+"Αν θέλετε να χρησιμοποιείτε εναλλακτικές μεθόδους εισαγωγής, εγκαταστήστε "
+"πρώτα τα αντίστοιχα πακέτα και μετά επιλέξτε από εδώ το επιθυμητό σύστημα."
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+"Εμφάνιση αριθμών, ημερομηνίας και νομίσματος στη συνηθισμένη μορφή για:"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid ""
+"This will set the system environment like shown below and will also affect "
+"the preferred paper format and other region specific settings.\n"
+"If you want to display the desktop in a different language than this, please "
+"select it in the \"Language\" tab.\n"
+"Hence you should set this to a sensible value for the region in which you "
+"are located."
+msgstr ""
+"Αυτό θα καθορίσει το περιβάλλον του συστήματος όπως φαίνεται παρακάτω και θα "
+"επηρεάσει επίσης την προτιμώμενη μορφή χαρτιού και άλλες ειδικότερες τοπικές "
+"ρυθμίσεις.\n"
+"Αν θέλετε να εμφανίζεται η επιφάνεια εργασίας σε διαφορετική γλώσσα από "
+"αυτή, παρακαλούμε επιλέξτε τη στην καρτέλα «Γλώσσα».\n"
+"Έτσι θα πρέπει να την ορίσετε σε μια τιμή που να έχει νόημα για την περιοχή "
+"που βρίσκεστε."
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Οι αλλαγές θα εφαρμοστούν την επόμενη φορά που θα συνδεθείτε.</small>"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid ""
+"<small>Use the same format choice for startup and the login screen.</small>"
+msgstr ""
+"<small>Χρησιμοποίηση των ίδιων επιλογών μορφής για τις οθόνες εκκίνησης και "
+"σύνδεσης.</small>"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Number:"
+msgstr "Αριθμός:"
+
+#: ../data/LanguageSelector.ui.h:31
+msgid "Date:"
+msgstr "Ημερομηνία:"
+
+#: ../data/LanguageSelector.ui.h:32
+msgid "Currency:"
+msgstr "Νόμισμα:"
+
+#: ../data/LanguageSelector.ui.h:33
+msgid "<b>Example</b>"
+msgstr "<b>Παράδειγμα</b>"
+
+#: ../data/LanguageSelector.ui.h:34
+msgid "Regional Formats"
+msgstr "Τοπικές διαμορφώσεις"
+
+#: ../data/language-selector.desktop.in.h:2
+msgid "Configure multiple and native language support on your system"
+msgstr "Ρύθμιση πολλαπλής γλωσσικής υποστήριξης στο σύστημα σας"
+
+#: ../data/kde-language-selector.desktop.in.h:1
+msgid "System Languages"
+msgstr "Γλώσσες συστήματος"
+
+#: ../data/kde-language-selector.desktop.in.h:2
+msgid "Install and set system languages"
+msgstr "Εγκατάσταση και ορισμός γλωσσών συστήματος"
+
 #. Name
-#: ..//data/incomplete-language-support-gnome.note.in:5
-#: ..//data/incomplete-language-support-qt.note.in:5
+#: ../data/incomplete-language-support-gnome.note.in:5
+#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "Ημιτελής γλωσσική υποστήριξη"
 
 #. Description
-#: ..//data/incomplete-language-support-gnome.note.in:6
+#: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
 "now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"required. If you would like to do this at a later time, please use Language "
+"Support instead (click the icon at the very right of the top bar and select "
+"\"System Settings... -> Language Support\")."
 msgstr ""
-"Τα αρχεία υποστήριξης για την επιλεγμένη γλώσσα είναι ημιτελή. Μπορείτε να "
-"εγκαταστήσετε τα στοιχεία που δεν υπάρχουν, κάνοντας κλικ στο \"Εκτέλεση\" "
-"και ακολουθήστε τις οδηγίες. Χρειάζεται μια σύνδεση στο διαδίκτυο. Αν θέλετε "
-"να το κάνετε αργότερα παρακαλούμε να επιλέξετε \"Σύστημα > Διαχείριση "
-"συστήματος > Γλωσσική υποστήριξη\"."
+"Τα αρχεία γλωσσικής υποστήριξης για την επιλεγμένη γλώσσα σας φαίνεται να "
+"μην είναι πλήρη. Μπορείτε να εγκαταστήσετε τα πακέτα που λείπουν, με κλικ "
+"στο «Εκτέλεση» και ακολουθήστε τις οδηγίες. Μια ενεργή σύνδεση στο διαδίκτυο "
+"είναι απαραίτητη. Αν θέλετε να το κάνετε αργότερα, τότε παρακαλούμε επιλέξτε "
+"τη Γλωσσική υποστήριξη (κάντε κλικ στο εικονίδιο στα δεξιά στην επάνω γραμμή "
+"και επιλέξτε «Διαχείριση συστήματος… → Γλωσσική υποστήριξη»)."
 
 #. Description
-#: ..//data/incomplete-language-support-qt.note.in:6
+#: ../data/incomplete-language-support-kde.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
@@ -471,27 +543,37 @@ msgstr ""
 "Οι ρυθμίσεις της νέας γλώσσας θα ενεργοποιηθεί από την στιγμή που θα κάνετε "
 "αποσύνδεση."
 
-#: ../gnome-language-selector:25
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
+msgid "Set system default language"
+msgstr "Καθορίστε την προεπιλεγμένη γλώσσα συστήματος"
+
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
+msgid "System policy prevented setting default language"
+msgstr ""
+"Η πολιτική του συστήματος εμπόδισε τον καθορισμό προεπιλεγμένης ρύθμισης "
+"γλώσσας"
+
+#: ../gnome-language-selector:17
 msgid "don't verify installed language support"
 msgstr "αδυναμία επιβεβαίωσης εγκατεστημένης γλωσσικής υποστήριξης"
 
-#: ../gnome-language-selector:28 ../check-language-support:22
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "εναλλακτικό datadir"
 
-#: ../fontconfig-voodoo:18
+#: ../fontconfig-voodoo:17
 msgid "Aborting"
 msgstr "Εγκατάλειψη"
 
-#: ../fontconfig-voodoo:26
+#: ../fontconfig-voodoo:25
 msgid "Force even when a configuration exists"
 msgstr "Εξαναγκασμός ακόμα και αν μια ρύθμιση υπάρχει ήδη."
 
-#: ../fontconfig-voodoo:28
+#: ../fontconfig-voodoo:27
 msgid "Set fontconfig voodoo for the selected language"
 msgstr "Ορισμός fontconfig voodoo για την επιλεγμένη γλώσσα"
 
-#: ../fontconfig-voodoo:32
+#: ../fontconfig-voodoo:31
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
@@ -499,103 +581,110 @@ msgstr ""
 "Επιλογή ρύθμισης με βάση το περιβάλλον LANGUAGE.  Ορίζει τις ρυθμίσεις σε "
 "'καμία' αν δεν βρεθεί κάτι κατάλληλο."
 
-#: ../fontconfig-voodoo:37
+#: ../fontconfig-voodoo:36
 msgid "List the available fontconfig-voodoo configs"
 msgstr "Λίστα των διαθέσιμων ρυθμίσεων fontconfig-voodoo"
 
-#: ../fontconfig-voodoo:40
+#: ../fontconfig-voodoo:39
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Προβολής της τρέχουσας ρύθμισης fontconfig-voodoo"
 
-#: ../fontconfig-voodoo:43
+#: ../fontconfig-voodoo:42
 msgid "Remove the current fontconfig-voodoo config"
 msgstr "Αφαίρεση της τρέχουσας ρύθμισης fontconfig-voodoo"
 
-#: ../fontconfig-voodoo:65
+#: ../fontconfig-voodoo:64
 msgid "Unconfigured"
 msgstr "Δεν έχει ρυθμιστεί"
 
-#: ../fontconfig-voodoo:77
+#: ../fontconfig-voodoo:80
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
 "Μια ρύθμιση υπάρχει ήδη. Χρησιμοποιήστε  '--force' για να αντικατασταθεί. "
+
+#: ../fontconfig-voodoo:89
+msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
+msgstr "Δεν βρέθηκαν ρυθμίσεις fontconfig-voodoo για την τρέχουσα ΓΛΩΣΣΑ"
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr "Δεν βρέθηκε ρύθμιση  fontconfig-voodoo για το επιλεγμένο locale."
 
-#: ../check-language-support:19
+#: ../check-language-support:22
 msgid "target language code"
 msgstr "κωδικός γλώσσας"
 
-#: ../check-language-support:23
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "έλεγχος μόνο για τα επιλεγμένα πακέτα - διαχωρίστε τα πακέτα με κόμμα"
 
-#: ../check-language-support:25
-msgid "check all available languages"
-msgstr "έλεγχος όλων των διαθέσιμων γλωσσών"
-
 #: ../check-language-support:28
+msgid "output all available language support packages for all languages"
+msgstr ""
+"προβολή όλων των διαθέσιμων πακέτων γλωσσικής υποστήριξης για όλες τις "
+"γλώσσες"
+
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr "εμφάνιση των εγκατεστημένων πακέτων καθώς και αυτών που λείπουν"
 
-#~ msgid "The list of available languages on the system has been updated."
-#~ msgstr "Ενημερώθηκε η λίστα των διαθέσιμων γλωσσών στο σύστημα σας."
+#~ msgid ""
+#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
+#~ "highlighting, correcting or suggesting words."
+#~ msgstr ""
+#~ "Λίστες λέξεων, λεξικά, θησαυροί λέξεων κτλ, τα οποία βοηθούν στην "
+#~ "πληκτρολόγηση κειμένων με επισήμανση, διορθώνοντας ή προτείνοντας λέξεις."
 
 #~ msgid ""
-#~ "This will set the system environment like shown below and will also affect "
-#~ "the preferred paper format and other territory specific settings.\n"
-#~ "If you want to display the desktop in a different language than this, please "
-#~ "select it in the \"Language\" tab.\n"
-#~ "Hence you should set this to a sensible value for the territory you are "
-#~ "located in."
+#~ "Additional fonts for this language which might be of general interest, e.g. "
+#~ "decorative fonts for printing documents."
 #~ msgstr ""
-#~ "Αυτό θα ορίσει το περιβάλλον του συστήματος όπως φαίνεται πιο κάτω, και θα "
-#~ "επηρεάσει επίσης την προτιμόμενη μορφή χαρτιού και άλλες ρυθμίσεις σχετικές "
-#~ "με την περιοχή σας.\n"
-#~ "Αν θέλετε να εμφανίζεται η επιφάνεια εργασίας σας σε μια διαφορετική γλώσσα "
-#~ "από αυτήν, επιλέξτε την στην καρτέλα «Γλώσσα».\n"
-#~ "Επομένως, θα πρέπει να την ορίσετε σε μια λογική τιμή για την περιοχή στην "
-#~ "οποία βρίσκεστε."
+#~ "Οι πρόσθετες γραμματοσειρές για την γλώσσα αυτή μπορεί να έχουν γενικό "
+#~ "ενδιαφέρον, πχ διακοσμητικούς χαρακτήρες για εκτύπωση κειμένων."
 
 #~ msgid ""
-#~ "This setting only affects the language your desktop and applications are "
-#~ "displayed in. It does not set the system environment, like currency or date "
-#~ "format settings. For that, use the settings in the Text tab.\n"
-#~ "The order of the values displayed here decides which translations to use for "
-#~ "your desktop. If translations for the first language are not available, the "
-#~ "next one in this list will be tried. The last entry of this list is always "
-#~ "\"English\".\n"
-#~ "Every entry below \"English\" will be ignored."
+#~ "The language support files for your selected language seem to be incomplete. "
+#~ "You can install the missing components by clicking on \"Run this action "
+#~ "now\" and follow the instructions. An active internet connection is "
+#~ "required. If you would like to do this at a later time, please use \"System -"
+#~ "> Administration -> Language Support\" instead."
 #~ msgstr ""
-#~ "Αυτή η ρύθμιση επηρεάζει μόνο τη γλώσσα στην οποία εμφανίζονται η επιφάνεια "
-#~ "εργασίας και οι εφαρμογές σας. Δεν καθορίζει το περιβάλλον του συστήματος, "
-#~ "όπως το τοπικό νόμισμα ή τη μορφή εμφάνισης της ημερομηνίας. Για αυτά, "
-#~ "χρησιμοποιήστε τις ρυθμίσεις στην καρτέλα Κείμενο.\n"
-#~ "Η σειρά των τιμών που εμφανίζονται εδώ καθορίζει ποιές μεταφράσεις θα "
-#~ "χρησιμοποιηθούν στην επιφάνεια εργασίας σας. Αν δεν είναι διαθέσιμες "
-#~ "μεταφράσεις για την πρώτη επιλογή, τότε δοκιμάζεται η επόμενη στη λίστα. Η "
-#~ "τελευταία καταχώρηση σε αυτή τη λίστα είναι πάντα τα «Αγγλικά».\n"
-#~ "Κάθε άλλη καταχώρηση μετά τα «Αγγλικά» θα αγνοείται."
+#~ "Τα αρχεία υποστήριξης για την επιλεγμένη γλώσσα είναι ημιτελή. Μπορείτε να "
+#~ "εγκαταστήσετε τα στοιχεία που δεν υπάρχουν, κάνοντας κλικ στο \"Εκτέλεση\" "
+#~ "και ακολουθήστε τις οδηγίες. Χρειάζεται μια σύνδεση στο διαδίκτυο. Αν θέλετε "
+#~ "να το κάνετε αργότερα παρακαλούμε να επιλέξετε \"Σύστημα > Διαχείριση "
+#~ "συστήματος > Γλωσσική υποστήριξη\"."
 
 #~ msgid ""
-#~ "If you need to type in languages, which require more complex input methods "
-#~ "than just a simple key to letter mapping, you may want to enable this "
-#~ "function.\n"
-#~ "For example, you will need this function for typing Chinese, Japanese, "
-#~ "Korean or Vietnamese.\n"
-#~ "The recommended value for Ubuntu is \"ibus\".\n"
-#~ "If you want to use alternative input method systems, install the "
-#~ "corresponding packages first and then choose the desired system here."
+#~ "Usually this is related to an error in your software archive or software "
+#~ "manager. Check your software preferences in the System > Administration menu."
 #~ msgstr ""
-#~ "Αν χρειάζεται να πληκτρολογείτε σε διάφορες γλώσσες, οι οποίες απαιτούν πιο "
-#~ "πολύπλοκες μεθόδους εισαγωγής κειμένου από την απλή αντιστοίχηση ενός "
-#~ "πλήκτρου με ένα γράμμα, τότε ίσως χρειαστεί να ενεργοποιήσετε αυτή τη "
-#~ "λειτουργία.\n"
-#~ "Για παράδειγμα, θα χρειαστείτε αυτή τη λειτουργία αν πληκτρολογείτε "
-#~ "Κινέζικα, Ιαπωνικά, Κορεατικά ή Βιετναμέζικα.\n"
-#~ "Η προτεινόμενη τιμή για το Ubuntu είναι «ibus».\n"
-#~ "Αν θέλετε να χρησιμοποιείτε εναλλακτικές μεθόδους εισαγωγής, εγκαταστήστε "
-#~ "πρώτα τα αντίστοιχα πακέτα και μετά επιλέξτε από εδώ το επιθυμητό σύστημα."
+#~ "Συνήθως αυτό σχετίζεται με κάποιο σφάλμα στο ευρετήριο λογισμικού σας ή στην "
+#~ "διαχείριση πακέτων. Ελέγξτε τις προτιμήσεις λογισμικού στο μενού Σύστημα > "
+#~ "Διαχείριση συστήματος."
+
+#~ msgid "Translations for your desktop."
+#~ msgstr "Μεταφράσεις για την επιφάνεια εργασίας σας."
+
+#~ msgid "check all available languages"
+#~ msgstr "έλεγχος όλων των διαθέσιμων γλωσσών"
+
+#, python-format
+#~ msgid "Failed to apply the '%s' format choice:"
+#~ msgstr "Αποτυχία εφαρμογής της επιλογμένης μορφής '%s' :"
+
+#~ msgid ""
+#~ "<small>Use the same language choices for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small>Χρήση των ίδιων επιλογών γλώσσας για την εκκίνηση και την οθόνη "
+#~ "σύνδεσης.\n"
+#~ "Οι αλλαγές θα εφαρμοστούν μόνο μετά από επανεκκίνηση του συστήματος.</small>"
+
+#~ msgid ""
+#~ "<small>Use the same format choice for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small>Χρήση της ίδιας μορφής για την εκκίνηση και την οθόνη σύνδεσης.\n"
+#~ "Οι αλλαγές θα εφαρμοστούν μόνο μετά από επανεκκίνηση του συστήματος.</small>"

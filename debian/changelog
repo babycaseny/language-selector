@@ -1,3 +1,9 @@
+language-selector (0.78) UNRELEASED; urgency=low
+
+  * Updated translations from launchpad
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 13 Apr 2012 16:16:45 +0200
+
 language-selector (0.77) precise; urgency=low
 
   * dbus_backend/ls-dbus-backend: Set LC_IDENTIFICATION as well, to comply

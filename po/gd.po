@@ -1,0 +1,694 @@
+# Gaelic; Scottish translation for language-selector
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: language-selector\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-03-30 10:53+0000\n"
+"PO-Revision-Date: 2012-03-10 01:03+0000\n"
+"Last-Translator: alasdair caimbeul <Unknown>\n"
+"Language-Team: Gaelic; Scottish <gd@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n < 2 ? 0 : n == 2 ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
+
+#. Hack for Chinese langpack split
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:50
+msgid "Chinese (simplified)"
+msgstr "Sìnis (Shimplichte)"
+
+#. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
+#: ../LanguageSelector/LocaleInfo.py:52
+msgid "Chinese (traditional)"
+msgstr "Sìnis (Thradaiseanta)"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+msgid "No language information available"
+msgstr "Às aonais mion-fhiosrach cànan ri-làimh"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+msgid ""
+"The system does not have information about the available languages yet. Do "
+"you want to perform a network update to get them now? "
+msgstr ""
+"Chan eil a fiosrachadh aig an t-siostam mu dheidhinn na cànanan ri làimh "
+"fhathast. Bheil thu ag iarraidh dèanamh ùrachadh lìonra airson faighinn iad "
+"an dràsta? "
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+msgid "_Update"
+msgstr "_Ùrachadh"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "Cànan"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+msgid "Installed"
+msgstr "Stàlaichte"
+
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#, python-format
+msgid "%(INSTALL)d to install"
+msgid_plural "%(INSTALL)d to install"
+msgstr[0] "%(INSTALL)d ri stàladh"
+msgstr[1] "%(INSTALL)d ri stàladh"
+msgstr[2] "%(INSTALL)d ri stàladh"
+
+#. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#, python-format
+msgid "%(REMOVE)d to remove"
+msgid_plural "%(REMOVE)d to remove"
+msgstr[0] "%(REMOVE)d dubh às"
+msgstr[1] "%(REMOVE)d dubh às"
+msgstr[2] "%(REMOVE)d dubhadh às"
+
+#. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#, python-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+msgid "none"
+msgstr "Noeni"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+msgid "Software database is broken"
+msgstr "Stòr dàta bhathar-bog tha briste"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Tha e do-dhèanta stàladh no dubhadh às bathar-bòg sam bith. Cleachd sibh am "
+"manaidsear pacaid \"Synaptic\" no ruith \"sudo apt-get install -f\" ann an "
+"tèirmineal son càradh a' chuis an tòiseach."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+msgid "Could not install the selected language support"
+msgstr "Cha b'urrain stàladh taic a' chànan roghnaichte."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+msgid ""
+"This is perhaps a bug of this application. Please file a bug report at "
+"https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
+msgstr ""
+"Is dòcha gun e buga anns am phrògram tha seo. Nach faidhlich sibh aithris "
+"buga aig https://bugs.launchpad.net/ubuntu/ +source /language-"
+"selector/+filebug"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+msgid "Could not install the full language support"
+msgstr "Cha b'urrainn stàladh làn taic a' chànan"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+msgid ""
+"Usually this is related to an error in your software archive or software "
+"manager. Check your preferences in Software Sources (click the icon at the "
+"very right of the top bar and select \"System Settings... -> Software "
+"Sources\")."
+msgstr ""
+"Tha seo mar as àbhaist ceangailte ri mearachd anns an tasglann bathar-bog "
+"agad no manaidsear bathar-bog. Sgrùd do roghainnean anns na Bunan Bathar-bog "
+"(briog an ìomhaigheag aig an fhìor dheas den bhàr-mullaich agus tagh "
+"\"Suidheachaidhean Siostam... -> Bunan Bathar-bog\")."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+msgid "Failed to authorize to install packages."
+msgstr "Dh'fhàillig ùghdarachadh gu stàladh pacaidean."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+msgid "The language support is not installed completely"
+msgstr "Chan eil taic cànan air stàladh gu iomlan"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+msgid ""
+"Some translations or writing aids available for your chosen languages are "
+"not installed yet. Do you want to install them now?"
+msgstr ""
+"Chan eil eadar-theangachadh no uidheam-cuideachaidh sgrìobhadh airson do "
+"chànan roghnaich air nan stàladh fhathast . Bheil thu ag iarraidh stàladh "
+"iad an dràsta?"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+msgid "_Remind Me Later"
+msgstr "_ Cuir nam cuimhne ás dhéidh"
+
+#. FIXME: add "details"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+msgid "_Install"
+msgstr "_Stàladh"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+msgid "Details"
+msgstr "Mion-fhiosrachadh"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#, python-format
+msgid ""
+"Failed to apply the '%s' format\n"
+"choice. The examples may show up if you\n"
+"close and re-open Language Support."
+msgstr ""
+"Dh'fhàillig cuir an taghadh fòrmat '%s' an\n"
+"gnìomh. Dh'fhaodadh na eisimpleirean nochdadh ma\n"
+"dhùineas agus ath-fhosgaileas  thu Taic Cànan."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Tha e neo-chomasach stàladh no toirt às bathar-bog sam bith. Cleachd sibh am "
+"manaidsear pacaid “Moun” no ruith \"sudo apt-get install -f\" ann an "
+"tèirmineal son càradh a' chùis seo an thoiseach."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:114
+msgid "Set System Language"
+msgstr "Stèidhich Cànan Siostam"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+msgid "Default system language:"
+msgstr "Cànan siostam bunaiteach:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+msgid "Keyboard input method:"
+msgstr "Dòigh ion-chur meur-chlàr:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+msgid "Select language to install:"
+msgstr "Tagh cànan a stàladh:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+msgid "Select language to uninstall:"
+msgstr "Tagh cànan a di-stàladh:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Translations"
+msgstr "Eadar-theangachaidhean"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Input methods"
+msgstr "Dòighean ion-chur"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Spellchecking and writing aids"
+msgstr "Dearbhadh litreachadh agus innealan cuideachadh sgrìobhadh"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+msgid "Extra fonts"
+msgstr "Clo-cruth a bharrachd"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Components:"
+msgstr "Co-phàirtean:"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:202
+msgid "Already installed"
+msgstr "Stàlaichte mar-tha"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+msgid "Partially Installed"
+msgstr "Stàlaichte leth-phàirteach"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:208
+msgid "Not installed"
+msgstr "Gun stàladh"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+msgid "Component already installed"
+msgstr "Co-phàirt stàlaichte mar thà"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+msgid "Component not available"
+msgstr "Chan eil co-phàirt ri làimh"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+msgid "Component not installed"
+msgstr "Co-phàirt gun stàladh"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "Cànan siostam bunaiteach a-nis stèidhich gu %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+msgid "Language Set"
+msgstr "Seat Cànan"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Tha e do-dhèanta stàladh no dubhadh às bathar-bòg sam bith. Cleachd sibh am "
+"manaidsear paca \"Adept\" no ruith \"sudo apt-get install -f\" ann an "
+"tèirmineal son càradh a' chuis an tòiseach."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#, python-format
+msgid ""
+"All selected components have now been installed for %s.  Select them from "
+"Country/Region & Language."
+msgstr ""
+"Tha na h-uile co-phàirtean taghta a-nis stàlaichte son %s. Tagh iad bhon "
+"Dùthaich/Ceàrn & Cànan."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+msgid "Language Installed"
+msgstr "Cànan stàlaichte"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "Tha eadar-theangachaidhean agus taic a-nis di-stàlaichte son %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+msgid "Language Uninstalled"
+msgstr "Cànan di-stàlaichte"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+msgid "Failed to set system language."
+msgstr "D'fhàilig stèidhich cànan siostam"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+msgid "Language Not Set"
+msgstr "Cànan gun stèidhte"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+msgid "Please run this software with administrative rights."
+msgstr "Ruith sibh an bathar-bog seo le ceadaichean riaghlach"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+msgid "Not Root User"
+msgstr "Chan e cleachdaiche freumhaich"
+
+#: ../data/LanguageSelector.ui.h:1
+msgid ""
+"<big><b>Checking available language support</b></big>\n"
+"\n"
+"The availability of translations or writing aids can differ between "
+"languages."
+msgstr ""
+"<big><b>Sgrùdadh taic cànan ri làimh</b></big>\n"
+"\n"
+"Dh'fhaodadh eadar-theangachaidhean no innealan cuidich sgrìobhadh ri "
+"fhaighinn bhith diofaraichte eadar cànain."
+
+#: ../data/LanguageSelector.ui.h:4
+msgid "Installed Languages"
+msgstr "Cànain Stàlaichte"
+
+#: ../data/LanguageSelector.ui.h:5
+msgid ""
+"When a language is installed, individual users can choose it in their "
+"Language settings."
+msgstr ""
+"Nuair tha cànan air stàladh, faodadh cleachdaiche fa leth taghadh e anns na "
+"suidheachaidhean Cànan aca."
+
+#: ../data/LanguageSelector.ui.h:6
+msgid "Cancel"
+msgstr "Cuir dheth"
+
+#: ../data/LanguageSelector.ui.h:7
+msgid "Apply Changes"
+msgstr "Cuir ris atharraichean"
+
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "Taic Cànan"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid "Language for menus and windows:"
+msgstr "Cànan son clàran-iùil agus uinneagan:"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"This setting only affects the language your desktop and applications are "
+"displayed in. It does not set the system environment, like currency or date "
+"format settings. For that, use the settings in the Regional Formats tab.\n"
+"The order of the values displayed here decides which translations to use for "
+"your desktop. If translations for the first language are not available, the "
+"next one in this list will be tried. The last entry of this list is always "
+"\"English\".\n"
+"Every entry below \"English\" will be ignored."
+msgstr ""
+"Tha na suidheachaidhean seo toirt buaidh a-mhàin air an cànan sa bheil bàrr-"
+"deasc agus prògraman air fhoillseachadh. Chan eil  e stèidheachadh "
+"àrainneachd an t-siostam, mar ruith-airgead, no suidheachaidhean fòrmatan "
+"deat. Son sin cleachd na suidheachaidhean anns an taba Fòrmatan Roinneil.\n"
+"Tha an òrdugh den luachan air fhoillseachadh an seo a co-dhùnadh dè na eadar-"
+"theangachaidhean a' chleachdadh son a' bhàrr-deasc agad. Mur bheil eadar-"
+"theangachaidhean son a chiad cànan ri làimh, thig an ath fhear anns an "
+"liosta fheuchainn. “Beurla” an còmhnaidh an ion-chuir mu dheireadh air an "
+"liosta seo.\n"
+"Thig a h-uile ion-chuir fo “Beurla” leigeil seachad."
+
+#: ../data/LanguageSelector.ui.h:13
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Dragh cànain gu cuir air dòigh ann an òrdugh roghainn.\n"
+"Atharraichean tighinn gu buil an ath turas dèanas tu log a-steach.</small>"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Apply System-Wide"
+msgstr "Cuir ris tarsainn an t-siostam"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid ""
+"<small>Use the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Cleachd na h-aon roghainnean cànan son tòiseachadh agus an sgrin log "
+"a-steach.</small>"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Install / Remove Languages..."
+msgstr "Stàladh/Dubh às Cànain..."
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Keyboard input method system:"
+msgstr "Siostam modh ion-chur meur-chlàr:"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid ""
+"If you need to type in languages, which require more complex input methods "
+"than just a simple key to letter mapping, you may want to enable this "
+"function.\n"
+"For example, you will need this function for typing Chinese, Japanese, "
+"Korean or Vietnamese.\n"
+"The recommended value for Ubuntu is \"ibus\".\n"
+"If you want to use alternative input method systems, install the "
+"corresponding packages first and then choose the desired system here."
+msgstr ""
+"Ma dh'fheumas tu taidhpeadh ann an cànain,  cò aca dhiubh ag iarraidh modhan "
+"ion-chuir nas eadar-fhillte na dìreach mapa simplidh putan gu litir, "
+"dh'fhaodadh gu bheil thu ag iarraidh dèanamh a feumalachd seo comasach.\n"
+"Mar eisimpleir, feumaidh tu na feumalachdan seo airson taidhpeadh Sìnis, "
+"Seapanais, Coirèanais no Bhiet-Namais.\n"
+"Tha air moladh luach \"ibus\" son Ubuntu.\n"
+"Ma tha thu ag iarraidh cleachdadh dòighean siostaman modh ion-chuir eile, "
+"stàlaich na pacaidean co-fhreagarrach an tòiseach agus nuair sin tagh an t-"
+"siostam miannach an seo."
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+"Foillsich àireamhan, deataichean agus suimeannan ruith-airgead anns am "
+"fòrmat àbhaisteach son:"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid ""
+"This will set the system environment like shown below and will also affect "
+"the preferred paper format and other region specific settings.\n"
+"If you want to display the desktop in a different language than this, please "
+"select it in the \"Language\" tab.\n"
+"Hence you should set this to a sensible value for the region in which you "
+"are located."
+msgstr ""
+"Suidheachaidh seo àrainneachd an t-siostam mar tha foillseachadh gu ìosal "
+"agus cuideachd a bheir buaidh air roghainn fòrmat paipear agus  "
+"suidheachaidhean ceàrnan àraid eile.\n"
+"Ma tha thu ag iarraidh foillsich am bhàrr-deasca ann an cànan eadar-"
+"dhealaichte na fhear seo , tagh sibh e anns an taba “Cànan”\n"
+"Às a seo bu chòir dhuibh suidheachaidh e gu luach ciallach airson an ceàrn "
+"anns a bheil sibh suidhichte."
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Atharraichean thoirt gu buil an ath turas logadh tu a-steach.</small>"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid ""
+"<small>Use the same format choice for startup and the login screen.</small>"
+msgstr ""
+"<small>Cleachd an aon roghainn cànan son tòiseachadh agus an sgrin log a-"
+"steach..</small>"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Number:"
+msgstr "Àireamh:"
+
+#: ../data/LanguageSelector.ui.h:31
+msgid "Date:"
+msgstr "Deat:"
+
+#: ../data/LanguageSelector.ui.h:32
+msgid "Currency:"
+msgstr "Ruith-airgead:"
+
+#: ../data/LanguageSelector.ui.h:33
+msgid "<b>Example</b>"
+msgstr "<b>Eisimpleir</b>"
+
+#: ../data/LanguageSelector.ui.h:34
+msgid "Regional Formats"
+msgstr "Fòrmatan Roinneil"
+
+#: ../data/language-selector.desktop.in.h:2
+msgid "Configure multiple and native language support on your system"
+msgstr "Rèiteachadh iomadach agus taic tùsail cànan  air an t-siostam agad"
+
+#: ../data/kde-language-selector.desktop.in.h:1
+msgid "System Languages"
+msgstr "Cànain Siostam"
+
+#: ../data/kde-language-selector.desktop.in.h:2
+msgid "Install and set system languages"
+msgstr "Stàladh agus suidheachaidh cànain siostam"
+
+#. Name
+#: ../data/incomplete-language-support-gnome.note.in:5
+#: ../data/incomplete-language-support-kde.note.in:5
+msgid "Incomplete Language Support"
+msgstr "Taic Cànan neo-chrìochnaichte"
+
+#. Description
+#: ../data/incomplete-language-support-gnome.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use Language "
+"Support instead (click the icon at the very right of the top bar and select "
+"\"System Settings... -> Language Support\")."
+msgstr ""
+"Tha coltach gu bheil na faidhlichean taic chànan son do chànan taghte neo-"
+"crìochnaichte. Faodadh tu stàladh na co-phàirtean tha a dhith le briogadh "
+"“Ruith a gnìomh an dràsta”  agus lean ris an stiùireadh. Tha ceangal beò "
+"eadar-lìon feumail.  Ma b' fheàrr leat seo a dèanamh aig àm eile, "
+"cleachdaibh Taic Cànan an àite (briog an ìomhaigheag aig an fhìor dheas den "
+"bhàr-mullaich agus tagh \"Suidheachaidhean Siostam... -> Taic Cànan\")."
+
+#. Description
+#: ../data/incomplete-language-support-kde.note.in:6
+msgid ""
+"The language support files for your selected language seem to be incomplete. "
+"You can install the missing components by clicking on \"Run this action "
+"now\" and follow the instructions. An active internet connection is "
+"required. If you would like to do this at a later time, please use \"System "
+"Settings -> Regional & Language\" instead."
+msgstr ""
+"Tha coltas ann gu bheil na faidhlichean taic cànan son an cànan taghte agad "
+"neo-crìochnaichte. Faodadh tu stàladh na co-phàirtean a dhith le briogadh "
+"air “Ruith an gnìomh seo an dràsta” agus lean ris an stiùireadh. Tha ceangal "
+"beò eadar-lìon feumail. Ma b' fheàrr leat seo a dèanamh aig àm eile, cleachd "
+"sibh “Siostam -> Suidheachaidhean -> Roinneil & Cànan\"  an àite."
+
+#. Name
+#: ../data/restart_session_required.note.in:5
+msgid "Session Restart Required"
+msgstr "Iarrtas Ath-thòiseachadh Seisean"
+
+#. Description
+#: ../data/restart_session_required.note.in:6
+msgid "The new language settings will take effect once you have logged out."
+msgstr ""
+"Thig na suidheachaidhean cànan ùr gu buil aon uair 's gu logadh tu a-mach."
+
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
+msgid "Set system default language"
+msgstr "Stèidhich cànan siostam bunaiteach"
+
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
+msgid "System policy prevented setting default language"
+msgstr "Poileasaidh an t-siostam a' bacadh stèidheachadh cànan bunaiteach"
+
+#: ../gnome-language-selector:17
+msgid "don't verify installed language support"
+msgstr "na dearbh taic cànan stàlaichte."
+
+#: ../gnome-language-selector:20 ../check-language-support:25
+msgid "alternative datadir"
+msgstr "dàtadir eile"
+
+#: ../fontconfig-voodoo:17
+msgid "Aborting"
+msgstr "An-torrachadh"
+
+#: ../fontconfig-voodoo:25
+msgid "Force even when a configuration exists"
+msgstr "Co-èiginn eadhon nuair tha rèiteachadh maireannach."
+
+#: ../fontconfig-voodoo:27
+msgid "Set fontconfig voodoo for the selected language"
+msgstr "Stèidhich \"fontconfig voodoo\" airson an cànan taghte."
+
+#: ../fontconfig-voodoo:31
+msgid ""
+"Guess a configuration based on the LANGUAGE environment. Sets the config to "
+"'none' if nothing suitable was found"
+msgstr ""
+"Tomhais an rèiteachadh stèidhte air an CÀNAN àrainneachd. Suidheachadh an "
+"rian gu 'neoni' mur a bheil càil freagarrach air lorg"
+
+#: ../fontconfig-voodoo:36
+msgid "List the available fontconfig-voodoo configs"
+msgstr "Liosta rèitich fontconfig-voodoo ri làimh"
+
+#: ../fontconfig-voodoo:39
+msgid "Show the current fontconfig-voodoo config"
+msgstr "Seall rèitich fontconfig-voodoo cuartach"
+
+#: ../fontconfig-voodoo:42
+msgid "Remove the current fontconfig-voodoo config"
+msgstr "Dubh às rèitich fontconfig-voodoo cuartach"
+
+#: ../fontconfig-voodoo:64
+msgid "Unconfigured"
+msgstr "Mì-rèiteachadh"
+
+#: ../fontconfig-voodoo:80
+msgid "A configuration exists already. Use '--force' to overwrite it. "
+msgstr ""
+"Tha rèiteachadh maireannach ann mar thà. Cleachd  '--co-èiginn' gu tar-"
+"sgrìobh e. "
+
+#: ../fontconfig-voodoo:89
+msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
+msgstr ""
+"Chan eil rèiteachadh “fontconfig-voodoo” air a lorg son an CÀNAN cuartach"
+
+#: ../fontconfig-voodoo:96
+msgid "No fontconfig-voodoo configuration found for the selected locale"
+msgstr ""
+"Chan eil rèiteachadh “fontconfig-voodoo” air a lorg son an sgeama ionadail "
+"taghte"
+
+#: ../check-language-support:22
+msgid "target language code"
+msgstr "Targaid còd cànan"
+
+#: ../check-language-support:26
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr ""
+"Sgrùd airson an pacaid(n) air thoirt a-mhàin – sgar ainmean-pacaid le camag"
+
+#: ../check-language-support:28
+msgid "output all available language support packages for all languages"
+msgstr ""
+"Chur a-mach h-uile pacaidean taic cànan ri fhaighinn son h-uile cànain"
+
+#: ../check-language-support:31
+msgid "show installed packages as well as missing ones"
+msgstr "Seall na pacaidean stàlaichte còmhla ri an fheadhainn a dhith"
+
+#~ msgid ""
+#~ "Usually this is related to an error in your software archive or software "
+#~ "manager. Check your software preferences in the System > Administration menu."
+#~ msgstr ""
+#~ "Mar as trice tha seo co-cheangailte ri mearachd anns  an tasglann bathar-bog "
+#~ "no manaidsear bathar bog agaibh. Sgrùd nan roghainnean bathar-bog agaibh "
+#~ "anns an t-Siostam >Clàr-iùil Riaghlach."
+
+#, python-format
+#~ msgid "Failed to apply the '%s' format choice:"
+#~ msgstr "D'fhàilig  cuir ris an '%s' roghainn fòrmat:"
+
+#~ msgid ""
+#~ "<small>Use the same format choice for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small>Cleachd na h-aon taghadh fòrmat son tòiseachadh agus son sgrìn log a-"
+#~ "steach.\n"
+#~ "Atharraichean tighinn gu buil às dhèidh an t-siostam ath-thòiseachadh. "
+#~ "</small>"
+
+#~ msgid ""
+#~ "<small>Use the same language choices for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small>Cleachd na h-aon taghaidhean cànan son tòiseachadh agus an sgrìn log "
+#~ "a-steach. \n"
+#~ "Atharraichean tighinn gu buil às dhèidh an t-siostam ath-"
+#~ "thòiseachadh.</small>"
+
+#~ msgid ""
+#~ "Additional fonts for this language which might be of general interest, e.g. "
+#~ "decorative fonts for printing documents."
+#~ msgstr ""
+#~ "Barrachd cruthan-clò airson an cànan seo dh'fhaodadh bhith na ùidh "
+#~ "coitcheann, m.e  cruthan-clò sgeadachadh son clò-bhualadh sgrìobhainnean."
+
+#~ msgid "Translations for your desktop."
+#~ msgstr "Eadar-theangachaidhean son do bhàrr-deasc."
+
+#~ msgid "check all available languages"
+#~ msgstr "Sgrùd na h-uile cànanan ri làimh"
+
+#~ msgid ""
+#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
+#~ "highlighting, correcting or suggesting words."
+#~ msgstr ""
+#~ "Liostaichean facal, faclairean, co-ainmearan, msaa, dh'fhaodadh cuideachadh "
+#~ "taidhpeadh le soillseachadh, ceartachadh no moladh faclan."
+
+#~ msgid ""
+#~ "The language support files for your selected language seem to be incomplete. "
+#~ "You can install the missing components by clicking on \"Run this action "
+#~ "now\" and follow the instructions. An active internet connection is "
+#~ "required. If you would like to do this at a later time, please use \"System -"
+#~ "> Administration -> Language Support\" instead."
+#~ msgstr ""
+#~ "Tha coltas ann gu bheil na faidhlichean taic cànan son an cànan taghte agad "
+#~ "neo-crìochnaichte. Faodadh tu stàladh na co-phàirtean a dhith le briogadh "
+#~ "air “Ruith an gnìomh seo an dràsta” agus lean ris an stiùireadh. Tha ceangal "
+#~ "beò eadar-lìon feumail. Ma b' fheàrr leat seo a dèanamh aig àm eile, cleachd "
+#~ "sibh “Siostam -> Riaghladair  -> Taic Cànan\" an àite."

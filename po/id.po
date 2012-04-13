@@ -7,36 +7,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-24 13:55+0000\n"
-"PO-Revision-Date: 2010-09-24 17:24+0000\n"
+"POT-Creation-Date: 2012-03-30 10:53+0000\n"
+"PO-Revision-Date: 2012-04-09 11:37+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
 "Language: id\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:47
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "China (disederhanakan)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:49
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "China (tradisional)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
-#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
 msgstr "Tidak tersedia informasi bahasa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
-#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -44,53 +44,55 @@ msgstr ""
 "Sistem tidak memiliki informasi tentang bahasa yang tersedia. Apakah Anda "
 "ingin menjalankan pembaruan melalui jaringan untuk mendapatkannya? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
-#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
 msgstr "Perbar_Ui"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Bahasa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
 msgstr "Telah Terinstal"
 
 #. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
 msgstr[0] "%(INSTALL)d diinstal"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
 msgstr[0] "%(REMOVE)d dibuang"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
-#: ../LanguageSelector/qt/QtLanguageSelector.py:82
-#: ../LanguageSelector/qt/QtLanguageSelector.py:310
-#: ../check-language-support:52
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+msgid "none"
+msgstr "kosong"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "Database perangkat lunak rusak"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
-#: ../check-language-support:53
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -100,11 +102,11 @@ msgstr ""
 "Silakan gunakan manajer paket \"Synaptic\" atau jalankan \"sudo apt-get "
 "install -f\" dalam terminal untuk memperbaiki persoalan ini."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
 msgid "Could not install the selected language support"
 msgstr "Tidak dapat menginstal dukungan bahasa terpilih"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -112,26 +114,35 @@ msgstr ""
 "Mungkin ini suatu kutu dari aplikasi ini. Silahkan mengisi laporan kutu pada "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "Tidak dapat menginstal secara penuh dukungan bahasa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
+"manager. Check your preferences in Software Sources (click the icon at the "
+"very right of the top bar and select \"System Settings... -> Software "
+"Sources\")."
 msgstr ""
-"Biasanya ini berhubungan dengan suatu galat pada arsip perangkat lunak atau "
-"manajer perangkat lunak Anda. Periksa preferensi perangkat lunak Anda di "
-"menu Sistem > Administrasi."
+"Biasanya ini terkait dengan galat dalam arsip perangkat lunak atau manajer "
+"perangkat lunak Anda. Periksa preferensi Anda dalam Sumber Perangkat Lunak "
+"(klik ikon di paling kanan pada bilah puncak dan pilih \"Pengaturan "
+"Sistem... -> Sumber Perangkat Lunak\")."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
-#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+msgid "Failed to authorize to install packages."
+msgstr "Gagal mengotorisasi untuk memasang paket."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "Dukungan bahasa tidak terinstal sepenuhnya"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
-#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -140,36 +151,35 @@ msgstr ""
 "bahasa yang telah Anda pilih belum terinstal. Anda akan menginstalnya "
 "sekarang?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
-#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
 msgstr "Ingatkan _Saya Lagi Nanti"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
-#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "_Instal"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "Detail"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:57
-msgid "Uninstall"
-msgstr "Uninstall"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#, python-format
+msgid ""
+"Failed to apply the '%s' format\n"
+"choice. The examples may show up if you\n"
+"close and re-open Language Support."
+msgstr ""
+"Gagal menerapkan pilihan format\n"
+"'%s'. Contoh mungkin muncul bila Anda\n"
+"menutup dan membuka ulang Dukungan\n"
+"Bahasa."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:58
-msgid "Select language to uninstall:"
-msgstr "Pilih bahasa yang akan di uninstall:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:65
-msgid "Language Selector"
-msgstr "Pemilih Bahasa"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:83
-#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+#: ../LanguageSelector/qt/QtLanguageSelector.py:70
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -179,98 +189,130 @@ msgstr ""
 "paket manajer \"Muon\" atau jalankan \"sudo apt-get install -f\" pada "
 "terminal untuk memperbaiki masalah ini."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
-msgid "Default system language:"
-msgstr "Defaul bahasa sistem:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:114
 msgid "Set System Language"
 msgstr "Atur Bahasa Sistem"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+msgid "Default system language:"
+msgstr "Defaul bahasa sistem:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
 msgid "Keyboard input method:"
 msgstr "Metoda masukan papan ketik:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:122
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-#: ../data/LanguageSelector.ui.h:13
-msgid "Cancel"
-msgstr "Batalkan"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+#: ../LanguageSelector/qt/QtLanguageSelector.py:117
 msgid "Select language to install:"
 msgstr "Pilih bahasa untuk diinstal:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Install"
-msgstr "Pasang"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+msgid "Select language to uninstall:"
+msgstr "Pilih bahasa yang akan di uninstall:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Translations"
+msgstr "Terjemahan"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Input methods"
+msgstr "Metode-metode masukan"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Spellchecking and writing aids"
+msgstr "Pemeriksa ejaan dan bantuan penulisan"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+msgid "Extra fonts"
+msgstr "Font ekstra"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Components:"
+msgstr "Komponen:"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
+#: ../LanguageSelector/qt/QtLanguageSelector.py:202
 msgid "Already installed"
 msgstr "Telah terpasang"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:217
+#: ../LanguageSelector/qt/QtLanguageSelector.py:205
 msgid "Partially Installed"
 msgstr "Telah terpasang sebagian"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:221
+#: ../LanguageSelector/qt/QtLanguageSelector.py:208
 msgid "Not installed"
 msgstr "Belum terpasang"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+msgid "Component already installed"
+msgstr "Komponen sudah terpasang"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+msgid "Component not available"
+msgstr "Komponen tidak tersedia"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+msgid "Component not installed"
+msgstr "Komponen tidak terpasang"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr "Bahasa utama sistem sekarang adalah %s."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
 msgid "Language Set"
 msgstr "Kumpulan Bahasa"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Tidak memungkinkan untuk menginstall atau membuang software. Mohon gunakan "
+"paket manajer \"Adept\" atau jalankan \"sudo apt-get install -f\" pada "
+"terminal untuk memperbaiki masalah ini."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 #, python-format
 msgid ""
-"Translations and support have now been installed for %s.  Select them from "
-"the Add Language button."
+"All selected components have now been installed for %s.  Select them from "
+"Country/Region & Language."
 msgstr ""
-"Terjemahan-terjemahan dan dukungan telah diinstal untuk %s. Pilihlah dari "
-"tombol Tambah Bahasa"
+"Semua komponen yang dipilih kini telah diinstal untuk% s. Memilih mereka "
+"dari Country / Region & Language."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 msgid "Language Installed"
 msgstr "Bahasa Terpasang"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "Terjemahan-terjemahan dan dukungan telah dibuang untuk %s."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 msgid "Language Uninstalled"
 msgstr "Bahasa Telah Dibuang"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Failed to set system language."
 msgstr "Gagal untuk mengatur bahasa sistem"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Language Not Set"
 msgstr "Bahasa Tidak Diatur"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Please run this software with administrative rights."
 msgstr "Mohon jalankan software ini dengan hak administratif"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Not Root User"
 msgstr "Bukan Root"
 
 #: ../data/LanguageSelector.ui.h:1
-msgid "<b>Example</b>"
-msgstr "<b>Contoh</b>"
-
-#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -282,116 +324,11 @@ msgstr ""
 "Ketersediaan terjemahan atau bantuan penulisan diantara banyak bahasa dapat "
 "berlainan."
 
-#: ../data/LanguageSelector.ui.h:5
-msgid "<small>Changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Perubahan akan berdampak saat Anda log masuk berikutnya.</small>"
-
-#: ../data/LanguageSelector.ui.h:6
-msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
-"Changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Seret bahasa untuk menata mereka dalam urutan kesukaan.\n"
-"Perubahan akan berefek saat berikutnya Anda log masuk.</small>"
-
-#: ../data/LanguageSelector.ui.h:8
-msgid ""
-"<small>Uses the same language choices for startup and the login "
-"screen.</small>"
-msgstr ""
-"<small>Pakai pilihan bahasa yang sama bagi layar startup dan login.</small>"
-
-#: ../data/LanguageSelector.ui.h:9
-msgid ""
-"<small>Uses the same text format choice for startup and the login "
-"screen.</small>"
-msgstr ""
-"<small>Gunakan pilihan bentuk teks yang sama bagi awalan dan layar log "
-"masuk.</small>"
-
-#: ../data/LanguageSelector.ui.h:10
-msgid ""
-"Additional fonts for this language which might be of general interest, e.g. "
-"decorative fonts for printing documents."
-msgstr ""
-"Fonta tambahan untuk bahasa ini yang mungkin diminati, misalnya fonta hias "
-"untuk mencetak dokumen."
-
-#: ../data/LanguageSelector.ui.h:11
-msgid "Apply Changes"
-msgstr "Terapkan Perubahan"
-
-#: ../data/LanguageSelector.ui.h:12
-msgid "Apply System-Wide..."
-msgstr "Terapkan ke Seluruh Sistem..."
-
-#: ../data/LanguageSelector.ui.h:14
-msgid "Components:"
-msgstr "Komponen:"
-
-#: ../data/LanguageSelector.ui.h:15
-msgid "Currency:"
-msgstr "Mata uang:"
-
-#: ../data/LanguageSelector.ui.h:16
-msgid "Date:"
-msgstr "Tanggal:"
-
-#: ../data/LanguageSelector.ui.h:17
-msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
-"Tampilkan angka, tanggal, dan mata uang dalam bentuk yang biasa bagi:"
-
-#: ../data/LanguageSelector.ui.h:18
-msgid "Extra fonts"
-msgstr "Font ekstra"
-
-#: ../data/LanguageSelector.ui.h:19
-msgid "Input methods"
-msgstr "Metode-metode masukan"
-
-#: ../data/LanguageSelector.ui.h:20
-msgid "Install / Remove Languages..."
-msgstr "Tambahkan / Hapuskan bahasa..."
-
-#: ../data/LanguageSelector.ui.h:21
+#: ../data/LanguageSelector.ui.h:4
 msgid "Installed Languages"
 msgstr "Bahasa yang sudah diinstall"
 
-#: ../data/LanguageSelector.ui.h:22
-msgid "Keyboard input method system:"
-msgstr "Sistem metoda masukan papan ketik:"
-
-#: ../data/LanguageSelector.ui.h:24
-msgid "Language & Text"
-msgstr "Bahasa & Teks"
-
-#: ../data/LanguageSelector.ui.h:25
-msgid "Language for menus and windows:"
-msgstr "Bahasa bagi menu dan jendela:"
-
-#: ../data/LanguageSelector.ui.h:26
-msgid "Number:"
-msgstr "Angka:"
-
-#: ../data/LanguageSelector.ui.h:27
-msgid "Spellchecking and writing aids"
-msgstr "Pemeriksa ejaan dan bantuan penulisan"
-
-#: ../data/LanguageSelector.ui.h:28
-msgid "Text"
-msgstr "Teks"
-
-#: ../data/LanguageSelector.ui.h:29
-msgid "Translations"
-msgstr "Terjemahan"
-
-#: ../data/LanguageSelector.ui.h:30
-msgid "Translations for your desktop."
-msgstr "Terjemahan bagi desktop Anda."
-
-#: ../data/LanguageSelector.ui.h:31
+#: ../data/LanguageSelector.ui.h:5
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -399,48 +336,182 @@ msgstr ""
 "Jika suatu bahasa telah diinstal, setiap pengguna dapat memilihnya didalam "
 "pengaturan bahasa mereka."
 
-#: ../data/LanguageSelector.ui.h:32
-msgid ""
-"Word lists, dictionaries, thesauruses, etc. which can help typing by "
-"highlighting, correcting or suggesting words."
-msgstr ""
-"Daftar kata, kamus, thesaurus, dll., yang dapat membantu pengetikan dengan "
-"menandai, memperbaiki, atau menyarankan kata."
+#: ../data/LanguageSelector.ui.h:6
+msgid "Cancel"
+msgstr "Batalkan"
 
-#: ../data/language-selector.desktop.in.h:1
-#: ../data/qt-language-selector.desktop.in.h:1
-msgid "Configure multiple and native language support on your system"
-msgstr "Mengonfigurasi dukungan bahasa multi dan asal pada sitem Anda"
+#: ../data/LanguageSelector.ui.h:7
+msgid "Apply Changes"
+msgstr "Terapkan Perubahan"
 
-#: ../data/language-selector.desktop.in.h:2
-#: ../data/qt-language-selector.desktop.in.h:2
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
 msgstr "Dukungan Bahasa"
 
+#: ../data/LanguageSelector.ui.h:9
+msgid "Language for menus and windows:"
+msgstr "Bahasa bagi menu dan jendela:"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"This setting only affects the language your desktop and applications are "
+"displayed in. It does not set the system environment, like currency or date "
+"format settings. For that, use the settings in the Regional Formats tab.\n"
+"The order of the values displayed here decides which translations to use for "
+"your desktop. If translations for the first language are not available, the "
+"next one in this list will be tried. The last entry of this list is always "
+"\"English\".\n"
+"Every entry below \"English\" will be ignored."
+msgstr ""
+"Pengaturan ini hanya mempengaruhi bahasa desktop dan aplikasi yang "
+"ditampilkan masuk ini tidak mengatur lingkungan sistem, seperti pengaturan "
+"format mata uang atau tanggal. Untuk itu, gunakan pengaturan pada tab Format "
+"Daerah.\n"
+"Urutan nilai yang ditampilkan di sini memutuskan terjemahan digunakan untuk "
+"desktop Anda. Jika terjemahan untuk bahasa pertama tidak tersedia, yang "
+"berikutnya dalam daftar ini akan dicoba. Masuknya terakhir dari daftar ini "
+"selalu \"Bahasa Inggris\".\n"
+"Setiap entri di bawah \"bahasa Inggris\" akan diabaikan."
+
+#: ../data/LanguageSelector.ui.h:13
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Seret bahasa untuk menata mereka dalam urutan kesukaan.\n"
+"Perubahan akan berefek saat berikutnya Anda log masuk.</small>"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Apply System-Wide"
+msgstr "Terapkan System-Wide"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid ""
+"<small>Use the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Pakai pilihan bahasa yang sama bagi awal mula dan layar log "
+"masuk.</small>"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Install / Remove Languages..."
+msgstr "Tambahkan / Hapuskan bahasa..."
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Keyboard input method system:"
+msgstr "Sistem metoda masukan papan ketik:"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid ""
+"If you need to type in languages, which require more complex input methods "
+"than just a simple key to letter mapping, you may want to enable this "
+"function.\n"
+"For example, you will need this function for typing Chinese, Japanese, "
+"Korean or Vietnamese.\n"
+"The recommended value for Ubuntu is \"ibus\".\n"
+"If you want to use alternative input method systems, install the "
+"corresponding packages first and then choose the desired system here."
+msgstr ""
+"Bila Anda perlu mengetik dalam bahasa yang memerlukan metoda masukan yang "
+"lebih rumit daripada sekedar pemetaan sederhana dari kunci ke huruf, mungkin "
+"Anda ingin mengaktifkan fungsi ini.\n"
+"Sebagai contoh, Anda akan perlu fungsi ini untuk mengetikkan bahasa Cina, "
+"Jepang, Korea, atau Vietnam.\n"
+"Nilai yang disarankan bagi Ubuntu adalah \"ibus\".\n"
+"Bila Anda ingin memakai sistem metoda masukan alternatif, pasanglah dulu "
+"paket yang terkait dan kemudian pilih sistem yang diinginkan disini."
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+"Tampilkan angka, tanggal, dan mata uang dalam bentuk yang biasa bagi:"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid ""
+"This will set the system environment like shown below and will also affect "
+"the preferred paper format and other region specific settings.\n"
+"If you want to display the desktop in a different language than this, please "
+"select it in the \"Language\" tab.\n"
+"Hence you should set this to a sensible value for the region in which you "
+"are located."
+msgstr ""
+"Ini akan menetapkan lingkungan sistem seperti ditunjukkan di bawah ini dan "
+"juga akan mempengaruhi format kertas yang diinginkan dan pengaturan wilayah "
+"lain yang spesifik.\n"
+"Jika Anda ingin menampilkan desktop dalam bahasa yang berbeda dari ini, "
+"silahkan pilih pada tab \"Language\".\n"
+"Oleh karena itu Anda harus mengatur ini ke nilai yang masuk akal untuk "
+"daerah di mana Anda berada."
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Perubahan akan berdampak saat Anda log masuk berikutnya.</small>"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid ""
+"<small>Use the same format choice for startup and the login screen.</small>"
+msgstr ""
+"<small>Pakai pilihan format yang sama untuk awal mula dan layar log "
+"masuk.</small>"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Number:"
+msgstr "Angka:"
+
+#: ../data/LanguageSelector.ui.h:31
+msgid "Date:"
+msgstr "Tanggal:"
+
+#: ../data/LanguageSelector.ui.h:32
+msgid "Currency:"
+msgstr "Mata uang:"
+
+#: ../data/LanguageSelector.ui.h:33
+msgid "<b>Example</b>"
+msgstr "<b>Contoh</b>"
+
+#: ../data/LanguageSelector.ui.h:34
+msgid "Regional Formats"
+msgstr "Regional Format"
+
+#: ../data/language-selector.desktop.in.h:2
+msgid "Configure multiple and native language support on your system"
+msgstr "Mengonfigurasi dukungan bahasa multi dan asal pada sitem Anda"
+
+#: ../data/kde-language-selector.desktop.in.h:1
+msgid "System Languages"
+msgstr "Bahasa Sistem"
+
+#: ../data/kde-language-selector.desktop.in.h:2
+msgid "Install and set system languages"
+msgstr "Memasang dan mengatur bahasa sistem"
+
 #. Name
-#: ..//data/incomplete-language-support-gnome.note.in:5
-#: ..//data/incomplete-language-support-qt.note.in:5
+#: ../data/incomplete-language-support-gnome.note.in:5
+#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "Dukungan bahasa yang tidak kompatibel"
 
 #. Description
-#: ..//data/incomplete-language-support-gnome.note.in:6
+#: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
 "now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"required. If you would like to do this at a later time, please use Language "
+"Support instead (click the icon at the very right of the top bar and select "
+"\"System Settings... -> Language Support\")."
 msgstr ""
-"Berkas-berkas untuk dukungan bahasa anda kelihatannya kurang lengkap. Anda "
-"dapat memasang komponen yang kurang dengan mengklik \"Jalankan sekarang\" "
-"dan ikuti penjelasan yang akan ditampilkan. Hal ini membutuhkan hubungan "
-"internet yang aktif. Bila anda tidak ingin melakukannya sekarang, nanti anda "
-"dapat menggunakan \"Sistem -> Administrasi -> Dukungan Bahasa\" untuk "
-"menjalankannya."
+"Berkas dukungan bahasa bagi bahasa yang Anda pilih sepertinya tak lengkap. "
+"Anda dapat memasang komponen yang hilang dengan mengklik \"Jalankan aksi ini "
+"sekarang\" dan mengikuti petunjuknya. Diperlukan sambungan internet aktif. "
+"Bila Anda ingin melakukan ini nanti, silakan pakai Dukungan Bahasa (klik "
+"pada ikon di paling kanan dari bilah puncak dan pilih \"Pengaturan Sistem... "
+"-> Dukungan Bahasa\")."
 
 #. Description
-#: ..//data/incomplete-language-support-qt.note.in:6
+#: ../data/incomplete-language-support-kde.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
@@ -466,27 +537,35 @@ msgid "The new language settings will take effect once you have logged out."
 msgstr ""
 "Konfigurasi bahasa yang baru akan mulai berlaku ketika anda sudah log out."
 
-#: ../gnome-language-selector:25
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
+msgid "Set system default language"
+msgstr "Tata bahasa baku sistem"
+
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
+msgid "System policy prevented setting default language"
+msgstr "Kebijakan sistem mencegah penataan bahasa baku"
+
+#: ../gnome-language-selector:17
 msgid "don't verify installed language support"
 msgstr "jangan periksa dukungan bahasa yang dipasang"
 
-#: ../gnome-language-selector:28 ../check-language-support:22
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "folder data alternatif"
 
-#: ../fontconfig-voodoo:18
+#: ../fontconfig-voodoo:17
 msgid "Aborting"
 msgstr "Membatalkan"
 
-#: ../fontconfig-voodoo:26
+#: ../fontconfig-voodoo:25
 msgid "Force even when a configuration exists"
 msgstr "Paksa seragam jika telah ada konfigurasinya"
 
-#: ../fontconfig-voodoo:28
+#: ../fontconfig-voodoo:27
 msgid "Set fontconfig voodoo for the selected language"
 msgstr "Set fontconfig voodoo untuk bahasa terpilih"
 
-#: ../fontconfig-voodoo:32
+#: ../fontconfig-voodoo:31
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
@@ -494,47 +573,110 @@ msgstr ""
 "Mengira-kira konfigurasi berdasarkan lingkungan BAHASA. Set konfigurasi ke "
 "'none' jika tidak menemukan kecocokan."
 
-#: ../fontconfig-voodoo:37
+#: ../fontconfig-voodoo:36
 msgid "List the available fontconfig-voodoo configs"
 msgstr "Daftar konfigurasi fontconfig-voodoo yang tersedia"
 
-#: ../fontconfig-voodoo:40
+#: ../fontconfig-voodoo:39
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Tampilkan konfigurasi fontconfig-voodoo yang sekarang"
 
-#: ../fontconfig-voodoo:43
+#: ../fontconfig-voodoo:42
 msgid "Remove the current fontconfig-voodoo config"
 msgstr "Buang konfigurasi fontconfig-voodoo yang ada sekarang"
 
-#: ../fontconfig-voodoo:65
+#: ../fontconfig-voodoo:64
 msgid "Unconfigured"
 msgstr "Belum dikonfigurasi"
 
-#: ../fontconfig-voodoo:77
+#: ../fontconfig-voodoo:80
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr "Konfigurasi telah ada. Gunakana '--force' untuk menimpanya. "
+
+#: ../fontconfig-voodoo:89
+msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
+msgstr ""
+"Tidak ditemukan konfigurasi fontconfig-voodoo untuk bahasa (LANGUAGE) yang "
+"sedang aktif saat ini."
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Konfigurasi fontconfig-voodoo untuk locale yang dipilih tak ditemukan"
 
-#: ../check-language-support:19
+#: ../check-language-support:22
 msgid "target language code"
 msgstr "target kode bahasa"
 
-#: ../check-language-support:23
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "periksa hanya bagi paket yang diberikan -- pisahkan nama paket dengan koma"
 
-#: ../check-language-support:25
-msgid "check all available languages"
-msgstr "periksa semua bahasa yang tersedia"
-
 #: ../check-language-support:28
+msgid "output all available language support packages for all languages"
+msgstr "keluaran semua paket dukungan bahasa yang tersedia bagi semua bahasa"
+
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr "tampilkan paket terpasang, termasuk paket yang hilang"
 
-#~ msgid "The list of available languages on the system has been updated."
-#~ msgstr "Daftar ketersediaan bahasa-bahasa pada sistem telah diperbarui."
+#~ msgid ""
+#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
+#~ "highlighting, correcting or suggesting words."
+#~ msgstr ""
+#~ "Daftar kata, kamus, thesaurus, dll., yang dapat membantu pengetikan dengan "
+#~ "menandai, memperbaiki, atau menyarankan kata."
+
+#~ msgid ""
+#~ "Additional fonts for this language which might be of general interest, e.g. "
+#~ "decorative fonts for printing documents."
+#~ msgstr ""
+#~ "Fonta tambahan untuk bahasa ini yang mungkin diminati, misalnya fonta hias "
+#~ "untuk mencetak dokumen."
+
+#~ msgid ""
+#~ "The language support files for your selected language seem to be incomplete. "
+#~ "You can install the missing components by clicking on \"Run this action "
+#~ "now\" and follow the instructions. An active internet connection is "
+#~ "required. If you would like to do this at a later time, please use \"System -"
+#~ "> Administration -> Language Support\" instead."
+#~ msgstr ""
+#~ "Berkas-berkas untuk dukungan bahasa anda kelihatannya kurang lengkap. Anda "
+#~ "dapat memasang komponen yang kurang dengan mengklik \"Jalankan sekarang\" "
+#~ "dan ikuti penjelasan yang akan ditampilkan. Hal ini membutuhkan hubungan "
+#~ "internet yang aktif. Bila anda tidak ingin melakukannya sekarang, nanti anda "
+#~ "dapat menggunakan \"Sistem -> Administrasi -> Dukungan Bahasa\" untuk "
+#~ "menjalankannya."
+
+#~ msgid ""
+#~ "Usually this is related to an error in your software archive or software "
+#~ "manager. Check your software preferences in the System > Administration menu."
+#~ msgstr ""
+#~ "Biasanya ini berhubungan dengan suatu galat pada arsip perangkat lunak atau "
+#~ "manajer perangkat lunak Anda. Periksa preferensi perangkat lunak Anda di "
+#~ "menu Sistem > Administrasi."
+
+#~ msgid "Translations for your desktop."
+#~ msgstr "Terjemahan bagi desktop Anda."
+
+#~ msgid "check all available languages"
+#~ msgstr "periksa semua bahasa yang tersedia"
+
+#, python-format
+#~ msgid "Failed to apply the '%s' format choice:"
+#~ msgstr "Gagal menerapkan pilihan format '% s':"
+
+#~ msgid ""
+#~ "<small>Use the same language choices for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small> Gunakan pilihan bahasa yang sama untuk startup dan layar login.\n"
+#~ "Perubahan berlaku hanya setelah me-restart sistem. </ small>"
+
+#~ msgid ""
+#~ "<small>Use the same format choice for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small> Gunakan pilihan format yang sama untuk startup dan layar login.\n"
+#~ "Perubahan berlaku hanya setelah me-restart sistem. </ small>"
