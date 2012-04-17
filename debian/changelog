@@ -1,3 +1,9 @@
+language-selector (0.79) UNRELEASED; urgency=low
+
+  * Update of help document (LP: #983951).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 17 Apr 2012 15:32:00 +0200
+
 language-selector (0.78) precise; urgency=low
 
   * Updated translations from launchpad (lp: #980842)
