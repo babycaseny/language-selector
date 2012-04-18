@@ -1,8 +1,8 @@
-language-selector (0.79) UNRELEASED; urgency=low
+language-selector (0.79) precise; urgency=low
 
   * Update of help document (LP: #983951).
 
- -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 17 Apr 2012 15:32:00 +0200
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Wed, 18 Apr 2012 08:09:49 +0200
 
 language-selector (0.78) precise; urgency=low
 
