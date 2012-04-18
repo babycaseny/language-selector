@@ -47,12 +47,10 @@
 
 		  <para>This documentation is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE AS DESCRIBED IN THE DISCLAIMER.</para>
 
-		  <para>A copy of the license is available here: <ulink url="/usr/share/ubuntu-docs/libs/C/ccbysa.xml">Creative Commons ShareAlike License</ulink>.</para>
-
 	</legalnotice>
 
 	<copyright>
-		<year>2011</year>
+		<year>2011-2012</year>
 		<holder>Canonical Ltd.</holder>
 	</copyright>
 
@@ -62,20 +60,9 @@
 
 <tip>
 
-	<para>If you look for specific context help, you may want to go directly to the <application><link linkend="support-tool">Language Support</link></application> section.</para>
+	<para>If you look for specific context help, you may want to go directly to the <application>Language Support</application> section of this document.</para>
 
 </tip>
-
-<!-- Can this link be shown below the TOC?
-<variablelist>
-
-	<varlistentry>
-		<term><emphasis role="strong">More About</emphasis></term>
-		<listitem><para><ulink type="help" url="ghelp:gnome-help#prefs">User &amp; system settings</ulink></para></listitem>
-	</varlistentry>
-
-</variablelist>
--->
 
 <!-- ============== Introduction ============================== -->
 
@@ -84,19 +71,7 @@
 
 	<para>While English is the original language, Ubuntu has been translated to a large number of languages, and the translations are updated continuously by the community of translation teams around the world. As a result, most Ubuntu users can have menus and windows be displayed in their language of choice.</para>
 
-</sect1>
-
-<!-- ============ Language handling caveats =================== -->
-
-<sect1 id="caveats">
-	<title>Language handling caveats</title>
-
-	<para>For two reasons, messages are not always displayed in the preferred language:</para>
-
-	<orderedlist>
-	  <listitem><para>Not all messages have been translated into all the available languages at each point of time.</para></listitem>
-	  <listitem><para>Some applications are not <ulink url="http://www.gnu.org/">GNU</ulink> compatible in that they do not recognize one or both of the two variables (<command>LANGUAGE</command> and <command>LC_MESSAGES</command>) that Ubuntu uses for setting display language.</para></listitem>
-	</orderedlist>
+	<para>However, messages are not always displayed in the preferred language, since not all messages have been translated into all the available languages at each point of time.</para>
 
 	<sect2 id="priority-list">
 		<title>Language priority list</title>
@@ -124,17 +99,7 @@
 	<sect2 id="non-gnu">
 		<title>Non-GNU applications</title>
 
-		<para>Some applications, especially non-GNU applications such as <application>Mozilla Firefox</application>, do not honor the priority list feature. To display menus and windows of those applications in the first choice language, Ubuntu ensures that the value of the <command>LC_MESSAGES</command> environment variable matches that language.</para>
-
-		<para>If a message has not yet been translated into the first choice language, Ubuntu tries the value of the <command>LANG</command> environment variable. However, since <command>LANG</command> is used by Ubuntu for other purposes than message translation (see <link linkend="format-tab">Regional formats</link>), it may or may not result in a suitable display language; it's a matter of chance.</para>
-
-		<para>A few applications ignore both the <command>LANGUAGE</command> and <command>LC_MESSAGES</command> variables, and only check the <command>LANG</command> variable when determining display language.</para>
-
-		<note>
-		  <para><command>LC_MESSAGES</command> is exported if you connect to some other computer via <application>ssh</application>, which might mess up the language environment there. You may want to avoid that side effect by unsetting <command>LC_MESSAGES</command> - and a couple of other language related variables that are treated like <command>LC_MESSAGES</command> - before running the <application>ssh</application> command:</para>
-
-		  <para><code>unset LC_MESSAGES LC_CTYPE LC_COLLATE; ssh username@host</code></para>
-		</note>
+		<para>Some applications, especially non-GNU applications such as <application>Mozilla Firefox</application>, do not honor the priority list feature. Hence a message will be displayed in the first choice language, if a translation into that language is available, or else it will simply be displayed in English.</para>
 
 	</sect2>
 
@@ -162,7 +127,8 @@
 
 		<para>To type certain languages, such as Chinese, Japanese or Korean, a more complex input method than just a simple key to character mapping is required. Through the <guilabel>Keyboard input method system</guilabel> drop-down list you can set a framework for input methods that will be started automatically at login. Please note that this value is set for the current language. If for instance <quote>ibus</quote> is the selected input method system when the top-most language in the <link linkend="priority-list">language priority list</link> is Japanese, IBus is started automatically if Japanese is the current language.</para>
 
-		<para>The recommended input method system for Ubuntu is <quote>ibus</quote>. If you want to use alternative systems, <ulink type="help" url="ghelp:gnome-help#addremove-install">install</ulink> the corresponding packages first and then choose the desired system from the drop-down list.</para>
+
+		<para>The recommended input method system for Ubuntu is <quote>ibus</quote>. If you want to use alternative systems, install the corresponding packages first and then choose the desired system from the drop-down list.</para>
 
 	</sect2>
 
@@ -171,24 +137,41 @@
 
 		<para>Typically there are country or region based conventions for how numbers, date and time, currency, etc. are denoted, and each item in the drop-down list at the top of the <guilabel>Regional Formats</guilabel> tab represents a set of format rules. If you change the setting, examples of what the new setting results in are instantly shown at the bottom of the tab.</para>
 
-		<note>
-		  <para>While this setting populates the <command>LANG</command> environment variable, it is actually the <command>LC_NUMERIC</command>, <command>LC_TIME</command> and <command>LC_MONETARY</command> variables that control how numbers, dates respective currency are formated. As long as the latter variables are not set explicitly, they inherit the <command>LANG</command> value, and the displayed format examples are applicable. However, to the extent one or more of those variables have been set explicitly (see <link linkend="format-advanced">Advanced format settings</link>), the displayed examples do not reflect the formats that will actually be applied.</para>
-		</note>
-
 		<para>By clicking the <guibutton>Apply System-Wide</guibutton> button, the system value is set out from your own current setting. The system format setting controls the display formats at startup and on the login screen. It also serves as a default value for users who have not set a user format setting.</para>
 
 	</sect2>
 
 </sect1>
 
-<!-- =============== User Accounts ============================= -->
+<!-- =============== Alternative language settings ============= -->
 
-<sect1 id="user-accounts">
-	<title><application>User Accounts</application></title>
+<sect1 id="alt-language">
+	<title>Alternative language settings</title>
 
-	<para>To access the <application>User Accounts</application> tool, you click the icon at the very right of the top bar and select <guilabel>System Settings...</guilabel> -> <guilabel>User Accounts</guilabel>. It provides an alternative control for setting the own user language, and lets users with access to administer the system set the initial language at the creation of a new user account.</para>
+	<para>Unlike the <guilabel>Language</guilabel> tab in <application>Language Support</application>, the below language controls do not let you compose a complete <emphasis>priority list</emphasis>. Instead the one language you select is prepended to the previous list.</para>
 
-	<para>Unlike the <guilabel>Language</guilabel> tab in <application>Language Support</application>, this control does not let you compose a complete <link linkend="priority-list">priority list</link>. Instead the one language you select is prepended to the previous list.</para>
+	<sect2 id="login-screen">
+		<title>Login screen</title>
+
+		<para>One of the <application><ulink url="http://www.freedesktop.org/wiki/Software/LightDM">LightDM</ulink></application> compatible login greeters, <emphasis>lightdm-gtk-greeter</emphasis>, provides an alternative control for setting the own user language.</para>
+
+		<!-- a link to "addremove-install.page" might be appropriate here -->
+		<para>To get a language chooser on the login screen, please install the package <emphasis>lightdm-gtk-greeter</emphasis> if it's not installed already. Then, to enable it:</para>
+
+		<itemizedlist>
+		  <listitem><para>In <code>/etc/lightdm/lightdm-gtk-greeter-ubuntu.conf</code>, set: <code>show-language-selector=true</code></para></listitem>
+		  <listitem><para>In <code>/etc/lightdm/lightdm.conf</code>, set: <code>greeter-session=lightdm-gtk-greeter</code></para></listitem>
+		  <listitem><para>Reboot</para></listitem>
+		</itemizedlist>
+
+	</sect2>
+
+	<sect2 id="user-accounts">
+		<title><application>User Accounts</application></title>
+
+		<para>To access the <application>User Accounts</application> tool, you click the icon at the very right of the top bar and select <guilabel>System Settings...</guilabel> -> <guilabel>User Accounts</guilabel>. It provides an alternative control for setting the own user language, and lets users with access to administer the system set the initial language at the creation of a new user account.</para>
+
+	</sect2>
 
 </sect1>
 
@@ -197,7 +180,7 @@
 <sect1 id="format-advanced">
 	<title>Advanced format settings</title>
 
-	<para>The <application><link linkend="support-tool">Language Support</link></application> method for setting regional formats assumes that one language-country combination (<ulink url="http://en.wikipedia.org/wiki/Locale">locale</ulink>) is sufficient to set all the format aspects in accordance with your preferences. Even if that is often the case, situations when you want more fine tuned format settings may occur. For such a case, below are some variables that you may want to assign other locale names than what else would have been inherited from the <command>LANG</command> variable. You can do so by editing the <filename>.profile</filename> configuration file in your home folder.</para>
+	<para>The <application>Language Support</application> method for setting regional formats assumes that one language-country combination (<ulink url="http://en.wikipedia.org/wiki/Locale">locale</ulink>) is sufficient to set all the format aspects in accordance with your preferences. Even if that is often the case, situations when you want more fine tuned format settings may occur. For such a case, below are some variables that you may want to assign locale names individually. You can do so by editing the <filename>.profile</filename> configuration file in your home folder.</para>
 
 	<variablelist>
 
@@ -220,15 +203,11 @@
 
 	<para><ulink url="https://help.ubuntu.com/community/Locale">Click here</ulink> for more <command>LC_*</command> variables with explanations.</para>
 
-	<para><emphasis role="strong">An Example</emphasis></para>
+	<para><emphasis role="strong">An example</emphasis></para>
 
-	<para>Take a user in the US who choose <quote>English (United States)</quote> in the drop-down list on the <link linkend="format-tab">Regional Formats</link> tab. If s/he prefers that dates and times are displayed more like what <ulink url="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</ulink> prescribes than what's typically the case in the US, the below line may be added to the <filename>.profile</filename> file:</para>
+	<para>Take a user in the US who choose <quote>English (United States)</quote> in the drop-down list on the <guilabel>Regional Formats</guilabel> tab. If s/he prefers that dates and times are displayed more like what <ulink url="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</ulink> prescribes than what's typically the case in the US, the below line may be added to the <filename>.profile</filename> file:</para>
 
 	<para><code>export LC_TIME="en_DK.UTF-8"</code></para>
-
-	<note>
-		<para>The side effect of setting the <command>LC_MESSAGES</command> variable, as described in the <link linkend="format-tab">Regional formats</link> section, is applicable to other <command>LC_*</command> variables as well.</para>
-	</note> 
 
 </sect1>
 
