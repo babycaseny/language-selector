@@ -7,6 +7,7 @@ language-selector (0.70) UNRELEASED; urgency=low
     - Use "raise Exception(value)" syntax rather than the old-style "raise
       Exception, value".
     - Use list comprehensions rather than filter.
+    - Use new-style octal literals.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 

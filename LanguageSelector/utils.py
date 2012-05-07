@@ -35,7 +35,7 @@ def find_string_and_replace(findString, setString, file_list,
         out.flush()
         # rename is atomic
         os.rename(out.name, fname)
-        os.chmod(fname, 0644)
+        os.chmod(fname, 0o644)
 
 def language2locale(language):
     """ generate locale name for LC_* environment variables
