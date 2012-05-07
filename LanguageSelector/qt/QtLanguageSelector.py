@@ -25,10 +25,15 @@ from QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
 from LanguageSelector.LangCache import ExceptionPkgCacheBroken
 from gettext import gettext as i18n
 
-def utf8(str):
-  if isinstance(str, unicode):
-      return str
-  return unicode(str, 'UTF-8')
+if sys.version >= '3':
+    text_type = str
+else:
+    text_type = unicode
+
+def utf8(s):
+    if isinstance(s, text_type):
+        return s
+    return text_type(s, 'UTF-8')
 
 def _(string):
     return utf8(i18n(string))
@@ -235,7 +240,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         items = self.ui.listViewLanguagesInst.selectedItems()
 
         if len(items) == 1:
-            li = self._localeinfo.listviewStrToLangInfoMap[unicode(items[0].text())]
+            li = self._localeinfo.listviewStrToLangInfoMap[text_type(items[0].text())]
             langPkg = li.languagePkgList["languagePack"]
             self.ui.checkBoxTr.setEnabled(langPkg.available)
             self.ui.checkBoxTr.setChecked(False)
@@ -316,7 +321,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
             
         if len(items) == 1:
             elm = items[0]
-            li = self._localeinfo.listviewStrToLangInfoMap[unicode(elm.text())]
+            li = self._localeinfo.listviewStrToLangInfoMap[text_type(elm.text())]
             langPkg = li.languagePkgList["languagePack"]
             if langPkg.available:
                 if (mode == "install") and (not langPkg.installed):
@@ -354,9 +359,9 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
 
         if self.returncode == 0:
             if (mode == "install"):
-                KMessageBox.information( self, _("All selected components have now been installed for %s.  Select them from Country/Region & Language.") % unicode(items[0].text()), _("Language Installed") )
+                KMessageBox.information( self, _("All selected components have now been installed for %s.  Select them from Country/Region & Language.") % text_type(items[0].text()), _("Language Installed") )
             elif (mode == "uninstall"):
-                KMessageBox.information( self, _("Translations and support have now been uninstalled for %s.") % unicode(items[0].text()), _("Language Uninstalled") )
+                KMessageBox.information( self, _("Translations and support have now been uninstalled for %s.") % text_type(items[0].text()), _("Language Uninstalled") )
             # Resync the cache to match packageManager changes, then update views
             self._cache.open(None)
             self.updateLanguagesList()
