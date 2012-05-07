@@ -171,7 +171,7 @@ class LocaleInfo(object):
         if len(macr["CCODE"]) > 0:
             country_name = self.translate_country(macr["CCODE"])
             # get all locales for this language
-            l = filter(lambda k: k.startswith(macr['LCODE']), self.generated_locales())
+            l = [k for k in self.generated_locales() if k.startswith(macr['LCODE'])]
             # only show region/country if we have more than one 
             if (allCountries == False and len(l) > 1) or allCountries == True:
                 mycountry = self.country(macr['CCODE'])
@@ -191,7 +191,7 @@ class LocaleInfo(object):
 #            #(lang, country) = locale.split("_")
 #            (lang_name, country_name) = self.translate_locale(locale)
 #            # get all locales for this language
-#            l = filter(lambda k: k.startswith(macr['LCODE']), self.generated_locales())
+#            l = [k for k in self.generated_locales() if k.startswith(macr['LCODE'])]
 #            # only show region/country if we have more than one 
 #            if len(l) > 1:
 #                mycountry = self.country(macr['CCODE'])
