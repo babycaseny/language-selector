@@ -120,7 +120,8 @@ class LanguageSupport:
         by_package_and_locale(), etc.
         '''
         languages = set()
-        locales = subprocess.check_output(['locale', '-a']).decode()
+        locales = subprocess.check_output(
+            ['locale', '-a'], universal_newlines=True)
         for locale in locales.splitlines():
             locale = locale.split('.')[0]
             if '_' not in locale:

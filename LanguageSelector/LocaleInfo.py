@@ -106,7 +106,8 @@ class LocaleInfo(object):
         """ return a list of locales available on the system
             (running locale -a) """
         locales = []
-        p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE)
+        p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE,
+                             universal_newlines=True)
         for line in p.communicate()[0].split("\n"):
             tmp = line.strip()
             if tmp.find('.utf8') < 0:

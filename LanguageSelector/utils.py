@@ -41,6 +41,8 @@ def language2locale(language):
     """ generate locale name for LC_* environment variables
     """
     first_elem = language.split(':')[0]
-    locale = subprocess.check_output(['/usr/share/language-tools/language2locale', first_elem])
+    locale = subprocess.check_output(
+        ['/usr/share/language-tools/language2locale', first_elem],
+        universal_newlines=True)
     return locale.rstrip()
 

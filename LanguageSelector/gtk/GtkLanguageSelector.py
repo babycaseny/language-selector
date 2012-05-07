@@ -828,7 +828,9 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
         """ languages for message translation """
         self._language_options.clear()
-        options = subprocess.check_output(['/usr/share/language-tools/language-options'])
+        options = subprocess.check_output(
+            ['/usr/share/language-tools/language-options'],
+            universal_newlines=True)
         mylist = []
         for (i, option) in enumerate( options.split("\n") ):
             mylist.append([self._localeinfo.translate(option, native=True), option])
