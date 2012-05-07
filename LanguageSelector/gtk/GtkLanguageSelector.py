@@ -631,7 +631,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         try:
             trans = yield self.ac.update_cache(defer=True)
             self._run_transaction(trans)
-        except Exception, e:
+        except Exception as e:
             self._show_error_dialog(e)
 
     def commit_aptdaemon(self, inst, rm):
@@ -648,7 +648,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
                 install=inst, reinstall=[], remove=rm, purge=[], upgrade=[],
                 downgrade=[], defer=True)
             self._run_transaction(trans)
-        except Exception, e:
+        except Exception as e:
             self._show_error_dialog(e)
 
     # we default with update/commit to aptdaemon

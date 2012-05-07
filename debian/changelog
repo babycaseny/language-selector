@@ -2,6 +2,8 @@ language-selector (0.70) UNRELEASED; urgency=low
 
   * Port to Python 3:
     - Use Python 3-style print functions.
+    - Use "except Exception as e" syntax rather than the old-style "except
+      Exception, e".
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 
