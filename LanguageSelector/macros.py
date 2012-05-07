@@ -27,7 +27,7 @@ def _file_map(file, key, sep = None):
         if k == key:
             val = v.strip()
     if val == None:
-        raise KeyError, 'Key %s not found in %s' % (key, file)
+        raise KeyError('Key %s not found in %s' % (key, file))
     return val
 
 class LangcodeMacros:

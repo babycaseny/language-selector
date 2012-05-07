@@ -251,7 +251,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
         o = self.widgets.get_object(name)
         if o is None:
-            raise AttributeError, 'No such widget: ' + name
+            raise AttributeError('No such widget: ' + name)
         return o
 
     def run(self):
