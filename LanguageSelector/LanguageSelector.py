@@ -4,6 +4,8 @@
 # Released under the GPL
 #
 
+from __future__ import print_function
+
 import warnings
 warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
 import apt
@@ -86,6 +88,6 @@ class LanguageSelectorBase(object):
 if __name__ == "__main__":
     lsb = LanguageSelectorBase(datadir="..")
     lsb.openCache(apt.progress.OpProgress())
-    print lsb.verifyPackageLists()
+    print(lsb.verifyPackageLists())
 
 

@@ -11,6 +11,8 @@
 # Released under the GNU GPL version 2 or later
 #
 
+from __future__ import print_function
+
 import sys
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
@@ -148,10 +150,10 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         """ called at the start to inform about possible missing
             langpacks (e.g. gnome/kde langpack transition)
         """
-        print "verifyInstalledLangPacks"
+        print("verifyInstalledLangPacks")
         missing = self.getMissingLangPacks()
 
-        print "Missing: %s " % missing
+        print("Missing: %s " % missing)
         if len(missing) > 0:
             # FIXME: add "details"
             yesText = _("_Install").replace("_", "&")
@@ -274,11 +276,11 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
     def run_pkg_manager(self, to_inst, to_rm):
         self.returncode = 0
         if len(to_inst) > 0:
-            print str(["qapt-batch","--install"]+to_inst)
+            print(str(["qapt-batch","--install"]+to_inst))
             self.returncode = subprocess.call(["qapt-batch", "--attach", str(self.winId()), "--install"]+to_inst)
         # then remove
         if len(to_rm) > 0:
-            print str(["qapt-batch","--uninstall"]+to_rm)
+            print(str(["qapt-batch","--uninstall"]+to_rm))
             self.returncode = subprocess.call(["qapt-batch", "--attach", str(self.winId()), "--uninstall"]+to_rm)
 
     def onSystemLanguageApply(self):
@@ -303,7 +305,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
                 code = self._localeinfo.localeToCodeMap[new_locale]
                 return (lang, code)
             except KeyError:
-                print "ERROR: can not find new_locale: '%s'"%new_locale
+                print("ERROR: can not find new_locale: '%s'"%new_locale)
       
     def pkgChanges(self, mode):
 
@@ -424,10 +426,10 @@ if __name__ == "__main__":
         if whattodo in ["install", "uninstall", "select"]:
             pass
         else:
-            print whattodo, "is not a valid argument"
+            print(whattodo, "is not a valid argument")
             args.usage()
     else:
-        print "Please review the usage."
+        print("Please review the usage.")
         args.usage()
 
     if os.getuid() != 0:

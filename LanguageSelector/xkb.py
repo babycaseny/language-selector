@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import libxml2
 
 class Variant:
@@ -76,7 +78,7 @@ def get_layouts(lang):
 
 if __name__ == "__main__":
 	for i in get_layouts("fr"): 
-		print i
+		print(i)
 
 	for i in get_all_layout_possibilities():
-		print i
+		print(i)

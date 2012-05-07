@@ -4,6 +4,8 @@
 # Released under the GPL
 #
 
+from __future__ import print_function
+
 import gettext
 import grp
 import locale
@@ -99,9 +101,9 @@ class GtkProgress(apt.progress.base.OpProgress):
         self._window.set_transient_for(parent)
 
     def update(self, percent):
-        #print percent
-        #print self.Op
-        #print self.SubOp
+        #print(percent)
+        #print(self.Op)
+        #print(self.SubOp)
         self._window.show()
         self._parent.set_sensitive(False)
         # if the old percent was higher, a new progress was started
@@ -296,7 +298,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             # check for active and inconsitent 
             inconsistent = langInfo.inconsistent
             #if inconsistent:
-            #    print "%s is inconsistent" % langInfo.language
+            #    print("%s is inconsistent" % langInfo.language)
 
             cell.set_property("active", langInfo.fullInstalled)
             cell.set_property("inconsistent", inconsistent)
@@ -368,8 +370,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
     def debug_pkg_status(self):
         langInfo = self._get_langinfo_on_cursor()
         for pkg in langInfo.languagePkgList.items() :
-            print ("%s, available: %s, installed: %s, doChange: %s" % (pkg[0], pkg[1].available, pkg[1].installed, pkg[1].doChange))
-        print ("inconsistent? : %s" % langInfo.inconsistent)
+            print("%s, available: %s, installed: %s, doChange: %s" % (pkg[0], pkg[1].available, pkg[1].installed, pkg[1].doChange))
+        print("inconsistent? : %s" % langInfo.inconsistent)
 
     def check_status(self):
         changed = False
@@ -384,7 +386,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
                             countRemove = countRemove + 1
                         else:
                             countInstall = countInstall + 1
-        #print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+        #print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
         # Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
         textInstall = gettext.ngettext("%(INSTALL)d to install", "%(INSTALL)d to install", countInstall) % {'INSTALL': countInstall}
         # Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
@@ -407,7 +409,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
 #    @honorBlockedSignals
 #    @insensitive
 #    def on_combobox_system_language_changed(self, widget):
-#        #print "on_combobox_system_language_changed()"
+#        #print("on_combobox_system_language_changed()")
 #        if self.writeSystemDefaultLang():
 #            # queue a restart of gdm (if it is runing) to make the new
 #            # locales usable
@@ -422,7 +424,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
 #    @honorBlockedSignals
 #    @insensitive
 #    def on_combobox_user_language_changed(self, widget):
-#        #print "on_combobox_user_language_changed()"
+#        #print("on_combobox_user_language_changed()")
 #        self.check_input_methods()
 #        self.writeUserDefaultLang()
 #        self.updateUserDefaultCombo()
@@ -454,7 +456,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         currentIM = self.imSwitch.getInputMethodForLocale(code)
         if currentIM in (None, 'default'):
             currentIM = 'none'
-        #print "Current IM: "+currentIM
+        #print("Current IM: "+currentIM)
 
         # find out about the other options
         for (i, IM) in enumerate(self.imSwitch.getAvailableInputMethods()):
@@ -487,7 +489,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
 #    @honorBlockedSignals
 #    def on_checkbutton_enable_input_methods_toggled(self, widget):
-#        #print "on_checkbutton_enable_input_methods_toggled()"
+#        #print("on_checkbutton_enable_input_methods_toggled()")
 #        active = self.checkbutton_enable_input_methods.get_active()
 #        self.combo_userlang_dirty = True
 #        self.setSensitive(False)
@@ -496,13 +498,13 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
 #    @honorBlockedSignals
 #    def on_checkbutton_sync_languages_toggled(self, widget):
-#        #print "on_checkbutton_sync_languages_toggled()"
+#        #print("on_checkbutton_sync_languages_toggled()")
 #        if self.checkbutton_sync_languages.get_active() == True:
 #            self.combobox_user_language.set_active(self.combobox_system_language.get_active())
 #            self.updateSystemDefaultCombo()
         
     def build_commit_lists(self):
-        print self._cache.get_changes()
+        print(self._cache.get_changes())
 
         try:
             for (lang, langInfo) in self._langlist:
@@ -516,9 +518,9 @@ class GtkLanguageSelector(LanguageSelectorBase):
                   "this issue at first."))
             sys.exit(1)
         (to_inst, to_rm) = self._cache.getChangesList()
-        #print "inst: %s" % to_inst
-        #print "rm: %s" % to_rm
-        print self._cache.get_changes()
+        #print("inst: %s" % to_inst)
+        #print("rm: %s" % to_rm)
+        print(self._cache.get_changes())
         return (to_inst, to_rm)
 
     def error(self, summary, msg):
@@ -584,8 +586,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
                   "\"System Settings... -> Software Sources\")."))
             self.setSensitive(True)
             return 0
-        #print "inst_list: %s " % inst_list
-        #print "rm_list: %s " % rm_list
+        #print("inst_list: %s " % inst_list)
+        #print("rm_list: %s " % rm_list)
         self.commit(inst_list, rm_list)
 
         self.setSensitive(True)
@@ -660,10 +662,10 @@ class GtkLanguageSelector(LanguageSelectorBase):
         """ called at the start to inform about possible missing
             langpacks (e.g. gnome/kde langpack transition)
         """
-        #print "verifyInstalledLangPacks"
+        #print("verifyInstalledLangPacks")
         missing = self.getMissingLangPacks()
 
-        #print "Missing: %s " % missing
+        #print("Missing: %s " % missing)
         if len(missing) > 0:
             # FIXME: add "details"
             d = Gtk.MessageDialog(parent=self.window_main,
@@ -703,7 +705,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
                 self.setSensitive(True)
 
     def updateLanguageView(self):
-        #print "updateLanguageView()"
+        #print("updateLanguageView()")
         self._langlist.clear()
 
         progress = GtkProgress(self.dialog_progress, self.progressbar_cache,
@@ -721,13 +723,13 @@ class GtkLanguageSelector(LanguageSelectorBase):
             sys.exit(1)
 
         languageList = self._cache.getLanguageInformation()
-        #print "ll size: ", len(languageList)
-        #print "ll type: ", type(languageList)
+        #print("ll size: ", len(languageList))
+        #print("ll type: ", type(languageList))
         for lang in languageList:
-            #print "langInfo: %s (%s)" % (lang.language, lang.languageCode)
+            #print("langInfo: %s (%s)" % (lang.language, lang.languageCode))
             #inconsistent = lang.inconsistent
             #if inconsistent:
-            #    print "inconsistent", lang.language
+            #    print("inconsistent", lang.language)
 
             # hack for Vietnamese users; see https://launchpad.net/bugs/783090
             # Even if calling self._localeinfo.translate() with native=True triggers
@@ -802,7 +804,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
     @blockSignals
     def updateLocaleChooserCombo(self):
-        #print "updateLocaleChooserCombo()"
+        #print("updateLocaleChooserCombo()")
         combo = self.combobox_locale_chooser
         #XXX get_cell_renderers does not exist in GTK3
         #cell = combo.get_child().get_cell_renderers()[0]
@@ -886,7 +888,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
     #        duplicate too much code
 #    @blockSignals
 #    def updateUserDefaultCombo(self):
-#        #print "updateUserDefault()"
+#        #print("updateUserDefault()")
 #        combo = self.combobox_user_language
 #        cell = combo.get_child().get_cell_renderers()[0]
 #        # FIXME: use something else than a hardcoded value here
@@ -974,7 +976,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         #self.debug_pkg_status()
 
     def on_button_cancel_clicked(self, widget):
-        #print "button_cancel"
+        #print("button_cancel")
         self.window_installer.hide()
 
     def on_button_apply_clicked(self, widget):
@@ -1022,7 +1024,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
     @honorBlockedSignals
     def on_treeview_locales_drag_end(self, widget, drag_content):
-        #print ("on_treeview_locales_drag_end")
+        #print("on_treeview_locales_drag_end")
         model = widget.get_model()
         myiter = model.get_iter_first()
         envLanguage = ""
@@ -1034,7 +1036,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             if str == "en":
                 break
             myiter = model.iter_next(myiter)
-        #print (envLanguage)
+        #print(envLanguage)
         self.writeUserLanguage(envLanguage)
         self.userEnvLanguage = envLanguage
         self.check_input_methods()
@@ -1067,7 +1069,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         if combo.get_active() < 0:
             return
         (IM_choice, IM_name) = model[combo.get_active()]
-        #print "IM: "+IM_choice+"\t"+code
+        #print("IM: "+IM_choice+"\t"+code)
         self.imSwitch.setInputMethodForLocale(IM_choice, code)
 
     

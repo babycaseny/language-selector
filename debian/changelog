@@ -1,3 +1,10 @@
+language-selector (0.70) UNRELEASED; urgency=low
+
+  * Port to Python 3:
+    - Use Python 3-style print functions.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
+
 language-selector (0.69) precise; urgency=low
 
   * LanguageSelector/LocaleInfo.py, getUserDefaultLanguage(): Fix crash if

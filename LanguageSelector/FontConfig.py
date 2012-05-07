@@ -10,6 +10,8 @@
 # so this file implements a hack to add prefered languages based on the
 # configuration we got from the CJK community
 
+from __future__ import print_function
+
 import glob
 import os.path
 
@@ -120,29 +122,29 @@ class FontConfigHack(object):
 if __name__ == "__main__":
     fc = FontConfigHack()
     # available
-    print "available: ", fc.getAvailableConfigs()
+    print("available: ", fc.getAvailableConfigs())
 
     # current 
     try:
         config = fc.getCurrentConfig()
     except ExceptionUnconfigured:
-        print "unconfigured"
+        print("unconfigured")
 
     # set config
-    print "set config: ", fc.setConfig("zh_CN")
-    print "current: ", fc.getCurrentConfig()
+    print("set config: ", fc.setConfig("zh_CN"))
+    print("current: ", fc.getCurrentConfig())
 
     # auto mode
     try:
-        print "run auto mode: ", fc.setConfigBasedOnLocale()
+        print("run auto mode: ", fc.setConfigBasedOnLocale())
     except ExceptionNoConfigForLocale:
-        print "no config for this locale"
+        print("no config for this locale")
 
     # remove
-    print "removeConfig()"
+    print("removeConfig()")
     fc.removeConfig()
     try:
         config = fc.getCurrentConfig()
-        print "ERROR: have config after calling removeConfig()"
+        print("ERROR: have config after calling removeConfig()")
     except ExceptionUnconfigured:
-        print "unconfigured (as expected)"
+        print("unconfigured (as expected)")

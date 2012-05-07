@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+from __future__ import print_function
+
 import sys
 import re
 import os.path
@@ -34,12 +36,12 @@ if __name__ == "__main__":
     # sanity check for language code
     if (options.language and 
             not re.match('^([a-z]{2,3}(_[A-Z]{2})?(@[a-z]+)?|(zh-han[st]))$', options.language)):
-        print ("Error: Unsupported language code format.\n\
-                Supported formats: 'll' or 'lll'\n\
-                'll_CC' or 'lll_CC'\n\
-                'll@variant' or 'lll@variant'\n\
-                'll_CC@variant' or 'lll_CC@variant'\n\
-                Also supported are 'zh-hans' and 'zh-hant'.")
+        print("Error: Unsupported language code format.\n\
+               Supported formats: 'll' or 'lll'\n\
+               'll_CC' or 'lll_CC'\n\
+               'll@variant' or 'lll@variant'\n\
+               'll_CC@variant' or 'lll_CC@variant'\n\
+               Also supported are 'zh-hans' and 'zh-hant'.")
         sys.exit(1)
 
     if options.datadir:

@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import warnings
 warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
 import apt
@@ -112,7 +114,7 @@ class LanguageSelectorPkgCache(apt.Cache):
         for (key, item) in li.languagePkgList.iteritems():
             if item.doChange:
                 pkgs = self.lang_support.by_locale(li.languageCode, installed=item.installed)
-                #print "XXX pkg list for lang %s, installed: %s" % (item.languageCode, str(item.installed))
+                #print("XXX pkg list for lang %s, installed: %s" % (item.languageCode, str(item.installed)))
                 try:
                     if item.installed:
                         for pkgname in pkgs:
@@ -143,5 +145,5 @@ if __name__ == "__main__":
     li = LocaleInfo("languagelist", datadir)
 
     lc = LanguageSelectorPkgCache(li,apt.progress.OpProgress())
-    print "available language information"
-    print ", ".join(["%s" %x for x in lc.getLanguageInformation()])
+    print("available language information")
+    print(", ".join(["%s" %x for x in lc.getLanguageInformation()]))

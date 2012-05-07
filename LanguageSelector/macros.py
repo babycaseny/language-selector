@@ -6,6 +6,8 @@ The following macros are available:
   LCODE CCODE PKGCODE LOCALE
 '''
 
+from __future__ import print_function
+
 import os
 import re
 
@@ -147,12 +149,12 @@ if __name__ == '__main__':
     datadir = '/usr/share/language-selector'
     for locale in ['de', 'de_DE', 'de_DE.UTF-8', 'de_DE.UTF-8@euro', 'fr_BE@latin', 'zh_CN.UTF-8', 'zh_TW.UTF-8', 'zh_HK.UTF-8', 'invalid_Locale']:
         l = LangpackMacros(datadir, locale)
-        print '-------', locale, '---------------'
+        print('-------', locale, '---------------')
         template = '"%PKGCODE%: %LCODE% %CCODE% %VARIANT% %LOCALE% %SYSLOCALE%"'
-        print 'string:', l.subst_string(template)
+        print('string:', l.subst_string(template))
 
         open('testtest', 'w').write(template)
         l.subst_file('testtest')
-        print 'file  :', open('testtest').read()
+        print('file  :', open('testtest').read())
         os.unlink('testtest')
 

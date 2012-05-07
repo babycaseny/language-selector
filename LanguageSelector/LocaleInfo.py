@@ -1,6 +1,8 @@
-# LoclaeInfo.py (c) 2006 Canonical, released under the GPL
+# LocaleInfo.py (c) 2006 Canonical, released under the GPL
 #
 # a helper class to get locale info
+
+from __future__ import print_function
 
 import re            
 import subprocess
@@ -36,7 +38,7 @@ class LocaleInfo(object):
         
         # read lang file
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_639.xml")
-        it = et.getiterator('iso_639_entry')
+        it = et.iter('iso_639_entry')
         for elm in it:
             lang = elm.attrib["name"]
             if "iso_639_1_code" in elm.attrib:
@@ -52,7 +54,7 @@ class LocaleInfo(object):
         self._lang['zh-hant'] = _("Chinese (traditional)")
         # end hack
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_639_3.xml")
-        it = et.getiterator('iso_639_3_entry')
+        it = et.iter('iso_639_3_entry')
         for elm in it:
             lang = elm.attrib["name"]
             code = elm.attrib["id"]
@@ -61,7 +63,7 @@ class LocaleInfo(object):
         
         # read countries
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_3166.xml")
-        it = et.getiterator('iso_3166_entry')
+        it = et.iter('iso_3166_entry')
         for elm in it:
             if "common_name" in elm.attrib:
                 descr = elm.attrib["common_name"]
@@ -85,7 +87,7 @@ class LocaleInfo(object):
             # - the interessting question is what to do
             # if LANGUAGE is already set and the new
             localeenv = w[6].split(":")
-            #print localeenv
+            #print(localeenv)
             self._languagelist[localeenv[0]] = '%s' % w[6]
 
     def lang(self, code):
@@ -114,7 +116,7 @@ class LocaleInfo(object):
             locale = macr["LOCALE"]
             if not locale in locales:
                 locales.append(locale)
-        #print locales
+        #print(locales)
         return locales
 
     def translate_language(self, lang):
@@ -319,10 +321,10 @@ if __name__ == "__main__":
     datadir = "/usr/share/language-selector/"
     li = LocaleInfo("languagelist", datadir)
 
-    print "default system locale and languages: '%s'" % li.getSystemDefaultLanguage()
-    print "default user locale and languages: '%s'" % li.getUserDefaultLanguage()
+    print("default system locale and languages: '%s'" % li.getSystemDefaultLanguage())
+    print("default user locale and languages: '%s'" % li.getUserDefaultLanguage())
 
-    print li._lang
-    print li._country
-    print li._languagelist
-    print li.generated_locales()
+    print(li._lang)
+    print(li._country)
+    print(li._languagelist)
+    print(li.generated_locales())
