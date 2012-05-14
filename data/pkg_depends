@@ -25,6 +25,7 @@ tr::amarok:amarok-help-
 # Format: %LCODE% or %LCODE%%CCODE% or %LCODE%-%VARIANT%
 tr::kdelibs5-data:kde-l10n-
 tr::calligra-libs:calligra-l10n-
+tr::gcompris:gcompris-sound-
 
 # Finnish support for voikko
 wa:fi:firefox:xul-ext-mozvoikko
