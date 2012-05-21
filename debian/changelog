@@ -11,6 +11,7 @@ language-selector (0.70) UNRELEASED; urgency=low
     - Use str() rather than unicode() in Python 3.
     - Open subprocesses with universal_newlines=True when expecting to read
       text from them.
+    - Cope with changes in dict method return types in Python 3.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 

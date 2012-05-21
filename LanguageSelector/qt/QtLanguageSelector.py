@@ -196,8 +196,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         self._localeinfo.listviewStrToLangInfoMap = {}
         for lang in languageList:
             self._localeinfo.listviewStrToLangInfoMap[utf8(self._localeinfo.translate(lang.languageCode))] = lang
-        languages = self._localeinfo.listviewStrToLangInfoMap.keys()
-        languages.sort()
+        languages = sorted(self._localeinfo.listviewStrToLangInfoMap.keys())
 
         for langName in languages:
             lang = self._localeinfo.listviewStrToLangInfoMap[langName]

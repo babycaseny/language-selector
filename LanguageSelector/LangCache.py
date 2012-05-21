@@ -32,7 +32,7 @@ class LanguageInformation(object):
         # langPack/support status 
         self.languagePkgList = {}
         self.languagePkgList["languagePack"] = LanguagePackageStatus(languageCode, "language-pack-%s")
-        for langpkg_status in self.languagePkgList.itervalues():
+        for langpkg_status in self.languagePkgList.values():
             pkgname = langpkg_status.pkgname_template % languageCode
             langpkg_status.available = pkgname in cache
             if langpkg_status.available:
@@ -111,7 +111,7 @@ class LanguageSelectorPkgCache(apt.Cache):
     def tryChangeDetails(self, li):
         " commit changed status of list items"""
         # we iterate over items of type LanguagePackageStatus
-        for (key, item) in li.languagePkgList.iteritems():
+        for (key, item) in li.languagePkgList.items():
             if item.doChange:
                 pkgs = self.lang_support.by_locale(li.languageCode, installed=item.installed)
                 #print("XXX pkg list for lang %s, installed: %s" % (item.languageCode, str(item.installed)))
@@ -132,7 +132,7 @@ class LanguageSelectorPkgCache(apt.Cache):
             if code == 'zh':
                 continue
             li = LanguageInformation(self, code, lang)
-            if [s for s in li.languagePkgList.itervalues() if s.available]:
+            if [s for s in li.languagePkgList.values() if s.available]:
                 res.append(li)
 
         return res
