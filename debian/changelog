@@ -1,3 +1,10 @@
+language-selector (0.81) UNRELEASED; urgency=low
+
+  * data/pkg_depends: replace cmap-adobe- depends by poppler-data 
+    (lp: #1009052)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 07 Jun 2012 12:29:28 +0200
+
 language-selector (0.80) quantal; urgency=low
 
   * Add gcompris to pkg_depends (for gcompris-sound-* in Edubuntu)
