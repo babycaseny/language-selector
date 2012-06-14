@@ -3,14 +3,14 @@ Section: admin
 Priority: optional
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 7.0.50~),
- python,
- python-distutils-extra,
- python-setuptools,
+ python3,
+ python3-distutils-extra,
+ python3-setuptools,
  pyqt4-dev-tools,
  intltool,
  intltool-debian,
  dh-translations
-X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
 Standards-Version: 3.9.2
 
 Package: language-selector-gnome
@@ -18,17 +18,16 @@ Architecture: all
 Depends: language-selector-common (= ${binary:Version}),
  accountsservice (>= 0.6.15-2ubuntu3),
  ${misc:Depends},
- ${python:Depends},
- python-gi,
+ ${python3:Depends},
+ python3-gi,
  gir1.2-gtk-3.0,
  gir1.2-vte-2.90,
- python-apt (>= 0.6.12),
+ python3-apt,
  aptdaemon (>= 0.40+bzr527),
- python-aptdaemon.gtk3widgets,
+ python3-aptdaemon.gtk3widgets,
  im-switch
 Replaces: language-selector (<< 0.17)
 Conflicts: language-selector (<< 0.17)
-XB-Python-Version: ${python:Versions}
 Description: Language selector for Ubuntu
  This package let you change and install language packs
  in Ubuntu.
@@ -39,14 +38,13 @@ Package: language-selector-kde
 Architecture: all
 Depends: language-selector-common (= ${binary:Version}),
  ${misc:Depends},
- ${python:Depends},
- python-qt4,
- python-kde4,
+ ${python3:Depends},
+ python3-pyqt4,
+ python3-pykde4,
  qapt-batch,
- python-apt
+ python3-apt
 Replaces: language-selector-qt (<< 0.16)
 Conflicts: language-selector-qt (<< 0.16)
-XB-Python-Version: ${python:Versions}
 Description: Language selector for Kubuntu
  This package let you change and install language packs
  in Kubuntu.
@@ -76,14 +74,13 @@ Description: Language selector for Ubuntu (transitional package)
 Package: language-selector-common
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.7.2)
-Depends: ${python:Depends},
+Depends: ${python3:Depends},
  ${misc:Depends},
  iso-codes,
- python-apt (>= 0.7.12.0),
- python-dbus,
+ python3-apt (>= 0.7.12.0),
+ python3-dbus,
  dbus,
  accountsservice (>= 0.6.15-2ubuntu3)
-XB-Python-Version: ${python:Versions}
 Description: Language selector for Ubuntu
  This package let you change and install language packs
  in Ubuntu.

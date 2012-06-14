@@ -1,3 +1,37 @@
+language-selector (0.82) UNRELEASED; urgency=low
+
+  [ Colin Watson ]
+  * Port to Python 3:
+    - Use Python 3-style print functions.
+    - Use "except Exception as e" syntax rather than the old-style "except
+      Exception, e".
+    - Use "raise Exception(value)" syntax rather than the old-style "raise
+      Exception, value".
+    - Use list comprehensions rather than filter.
+    - Use new-style octal literals.
+    - Use str() rather than unicode() in Python 3.
+    - Open subprocesses with universal_newlines=True when expecting to read
+      text from them.
+    - Cope with changes in dict method return types in Python 3.
+
+  [ Martin Pitt ]
+  * tests/runner.sh: Run with $PYTHON if specified, to make it easier to run
+    with a different Python version.
+  * Consistent str vs. bytes handling, to work with Python 3.
+  * Convert tests to current apt API.
+  * Python 3 compatible import statements.
+  * Properly close files, to avoid ResourceWarnings.
+  * Convert all tabs to spaces.
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Pass a string to setlocale(),
+    not bytes.
+  * LanguageSelector/qt/QtLanguageSelector.py: Fix for Python 3.
+  * LanguageSelector/gtk/GtkLanguageSelector.py: python3-dbus now sometimes
+    calls OpProgress.update() without any argument. Support this and pulsate
+    the progress bar in this case.
+  * Switch all hashbangs and dependencies to Python 3.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
+
 language-selector (0.81) quantal; urgency=low
 
   * data/pkg_depends: replace cmap-adobe- depends by poppler-data 

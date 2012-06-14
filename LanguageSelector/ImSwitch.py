@@ -3,6 +3,8 @@
 # This file implements a interface to im-switch
 #
 
+from __future__ import print_function
+
 import os
 import sys
 import subprocess
@@ -35,13 +37,13 @@ class ImSwitch(object):
         for dir in (self.local_confdir, self.global_confdir):
             for name in (locale, "all_ALL"):
                 target = os.path.join(dir,name)
-                #print "checking im-switch config: ", target, os.path.basename(os.path.realpath(target))
+                #print("checking im-switch config: ", target, os.path.basename(os.path.realpath(target)))
                 if os.path.exists(target):
                     im_name = os.path.basename(os.path.realpath(target))
                     if im_name in ("none", "default"):
-                        #print "points to none or default"
+                        #print("points to none or default")
                         return False
-                    #print "points to real config"
+                    #print("points to real config")
                     return True
         return False
 
@@ -122,18 +124,18 @@ class ImSwitch(object):
         
 if __name__ == "__main__":
     im = ImSwitch()
-#    print im.getInputMethodForLocale("ja_JP")
-#    print im.enabledForLocale("all_ALL")
-    print "available input methods: "
-    print im.getAvailableInputMethods()
-    print "current method: ",
-    print im.getCurrentInputMethod()
+#    print(im.getInputMethodForLocale("ja_JP"))
+#    print(im.enabledForLocale("all_ALL"))
+    print("available input methods: ")
+    print(im.getAvailableInputMethods())
+    print("current method: ", end="")
+    print(im.getCurrentInputMethod())
     sys.exit(1)
-    print "switching to 'th-xim': ",
-    print im.setDefaultInputMethod("th-xim")
-    print "current method: ",
-    print im.getCurrentInputMethod()
-    print "reset default: ",
-    print im.resetDefaultInputMethod()
-    print "current method: ",
-    print im.getCurrentInputMethod()
+    print("switching to 'th-xim': ", end="")
+    print(im.setDefaultInputMethod("th-xim"))
+    print("current method: ", end="")
+    print(im.getCurrentInputMethod())
+    print("reset default: ", end="")
+    print(im.resetDefaultInputMethod())
+    print("current method: ", end="")
+    print(im.getCurrentInputMethod())

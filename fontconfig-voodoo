@@ -1,4 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+
+from __future__ import print_function
 
 import sys
 from optparse import OptionParser
@@ -13,8 +15,8 @@ def main():
         " helper for a clean abort "
         if not options.silent:
             if msg:
-                print msg
-            print _("Aborting")
+                print(msg)
+            print(_("Aborting"))
         sys.exit(1)
 
     usage = "usage: %prog [options]"
@@ -57,15 +59,15 @@ def main():
     if options.show_current:
         try:
             if options.silent:
-                print fc.getCurrentConfig()
+                print(fc.getCurrentConfig())
             else:
-                print "Current config: %s" % fc.getCurrentConfig()
+                print("Current config: %s" % fc.getCurrentConfig())
         except FontConfig.ExceptionUnconfigured:
-            print _("Unconfigured")
+            print(_("Unconfigured"))
         sys.exit(0)
 
     if options.list:
-        print "\n".join(fc.getAvailableConfigs())
+        print("\n".join(fc.getAvailableConfigs()))
         sys.exit(0)
         
     if options.remove_current:

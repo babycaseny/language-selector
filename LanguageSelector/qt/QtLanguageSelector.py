@@ -11,7 +11,12 @@
 # Released under the GNU GPL version 2 or later
 #
 
+from __future__ import print_function
+
 import sys
+import gettext
+from gettext import gettext as i18n
+
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from PyKDE4.kdecore import ki18n, KAboutData, KCmdLineArgs, KCmdLineOptions
@@ -19,14 +24,18 @@ from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox, KGuiItem, KCModule
 
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
-from QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
+from LanguageSelector.qt.QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
 from LanguageSelector.LangCache import ExceptionPkgCacheBroken
-from gettext import gettext as i18n
 
-def utf8(str):
-  if isinstance(str, unicode):
-      return str
-  return unicode(str, 'UTF-8')
+if sys.version >= '3':
+    text_type = str
+else:
+    text_type = unicode
+
+def utf8(s):
+    if isinstance(s, text_type):
+        return s
+    return text_type(s, 'UTF-8')
 
 def _(string):
     return utf8(i18n(string))
@@ -148,10 +157,10 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         """ called at the start to inform about possible missing
             langpacks (e.g. gnome/kde langpack transition)
         """
-        print "verifyInstalledLangPacks"
+        print("verifyInstalledLangPacks")
         missing = self.getMissingLangPacks()
 
-        print "Missing: %s " % missing
+        print("Missing: %s " % missing)
         if len(missing) > 0:
             # FIXME: add "details"
             yesText = _("_Install").replace("_", "&")
@@ -189,8 +198,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         self._localeinfo.listviewStrToLangInfoMap = {}
         for lang in languageList:
             self._localeinfo.listviewStrToLangInfoMap[utf8(self._localeinfo.translate(lang.languageCode))] = lang
-        languages = self._localeinfo.listviewStrToLangInfoMap.keys()
-        languages.sort()
+        languages = sorted(self._localeinfo.listviewStrToLangInfoMap.keys())
 
         for langName in languages:
             lang = self._localeinfo.listviewStrToLangInfoMap[langName]
@@ -233,7 +241,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
         items = self.ui.listViewLanguagesInst.selectedItems()
 
         if len(items) == 1:
-            li = self._localeinfo.listviewStrToLangInfoMap[unicode(items[0].text())]
+            li = self._localeinfo.listviewStrToLangInfoMap[text_type(items[0].text())]
             langPkg = li.languagePkgList["languagePack"]
             self.ui.checkBoxTr.setEnabled(langPkg.available)
             self.ui.checkBoxTr.setChecked(False)
@@ -274,11 +282,11 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
     def run_pkg_manager(self, to_inst, to_rm):
         self.returncode = 0
         if len(to_inst) > 0:
-            print str(["qapt-batch","--install"]+to_inst)
+            print(str(["qapt-batch","--install"]+to_inst))
             self.returncode = subprocess.call(["qapt-batch", "--attach", str(self.winId()), "--install"]+to_inst)
         # then remove
         if len(to_rm) > 0:
-            print str(["qapt-batch","--uninstall"]+to_rm)
+            print(str(["qapt-batch","--uninstall"]+to_rm))
             self.returncode = subprocess.call(["qapt-batch", "--attach", str(self.winId()), "--uninstall"]+to_rm)
 
     def onSystemLanguageApply(self):
@@ -302,7 +310,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
                 code = self._localeinfo.localeToCodeMap[new_locale]
                 return (lang, code)
             except KeyError:
-                print "ERROR: can not find new_locale: '%s'"%new_locale
+                print("ERROR: can not find new_locale: '%s'"%new_locale)
       
     def pkgChanges(self, mode):
 
@@ -313,7 +321,7 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
             
         if len(items) == 1:
             elm = items[0]
-            li = self._localeinfo.listviewStrToLangInfoMap[unicode(elm.text())]
+            li = self._localeinfo.listviewStrToLangInfoMap[text_type(elm.text())]
             langPkg = li.languagePkgList["languagePack"]
             if langPkg.available:
                 if (mode == "install") and (not langPkg.installed):
@@ -351,9 +359,9 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
 
         if self.returncode == 0:
             if (mode == "install"):
-                KMessageBox.information( self, _("All selected components have now been installed for %s.  Select them from Country/Region & Language.") % unicode(items[0].text()), _("Language Installed") )
+                KMessageBox.information( self, _("All selected components have now been installed for %s.  Select them from Country/Region & Language.") % text_type(items[0].text()), _("Language Installed") )
             elif (mode == "uninstall"):
-                KMessageBox.information( self, _("Translations and support have now been uninstalled for %s.") % unicode(items[0].text()), _("Language Uninstalled") )
+                KMessageBox.information( self, _("Translations and support have now been uninstalled for %s.") % text_type(items[0].text()), _("Language Uninstalled") )
             # Resync the cache to match packageManager changes, then update views
             self._cache.open(None)
             self.updateLanguagesList()
@@ -367,20 +375,20 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
 def MakeAboutData():
   appName     = "language-selector"
   catalog     = ""
-  programName = ki18n ("Language Selector")
+  programName = ki18n (b"Language Selector")
   version     = "0.3.4"
-  description = ki18n ("Language Selector")
+  description = ki18n (b"Language Selector")
   license     = KAboutData.License_GPL
-  copyright   = ki18n ("(c) 2008 Canonical Ltd")
-  text        = ki18n ("none")
+  copyright   = ki18n (b"(c) 2008 Canonical Ltd")
+  text        = ki18n (b"none")
   homePage    = "https://launchpad.net/language-selector"
   bugEmail    = ""
 
   aboutData   = KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
-  aboutData.addAuthor(ki18n("Michael Vogt"), ki18n("Developer"))
-  aboutData.addAuthor(ki18n("Jonathan Riddell"), ki18n("Developer"))
-  aboutData.addAuthor(ki18n("Harald Sitter"), ki18n("Developer"))
-  aboutData.addAuthor(ki18n("Romain Perier"), ki18n("Developer"))
+  aboutData.addAuthor(ki18n(b"Michael Vogt"), ki18n(b"Developer"))
+  aboutData.addAuthor(ki18n(b"Jonathan Riddell"), ki18n(b"Developer"))
+  aboutData.addAuthor(ki18n(b"Harald Sitter"), ki18n(b"Developer"))
+  aboutData.addAuthor(ki18n(b"Romain Perier"), ki18n(b"Developer"))
   
   return aboutData
 
@@ -388,25 +396,25 @@ if __name__ == "__main__":
 
     appName     = "language-selector"
     catalog     = ""
-    programName = ki18n ("Language Selector")
+    programName = ki18n (b"Language Selector")
     version     = "0.3.4"
-    description = ki18n ("Language Selector")
+    description = ki18n (b"Language Selector")
     license     = KAboutData.License_GPL
-    copyright   = ki18n ("(c) 2008 Canonical Ltd")
-    text        = ki18n ("none")
+    copyright   = ki18n (b"(c) 2008 Canonical Ltd")
+    text        = ki18n (b"none")
     homePage    = "https://launchpad.net/language-selector"
     bugEmail    = ""
 
-    aboutData	= KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
+    aboutData   = KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
 
-    aboutData.addAuthor(ki18n("Rob Bean"), ki18n("PyQt4 to PyKDE4 port"))
-    aboutData.addAuthor(ki18n("Harald Sitter"), ki18n("Developer"))
+    aboutData.addAuthor(ki18n(b"Rob Bean"), ki18n(b"PyQt4 to PyKDE4 port"))
+    aboutData.addAuthor(ki18n(b"Harald Sitter"), ki18n(b"Developer"))
 
     options = KCmdLineOptions()
-    options.add("!mode ", ki18n("REQUIRED: install, uninstall or select must follow"),  "select")
-    options.add("+[install]", ki18n("install a language"))
-    options.add("+[uninstall]", ki18n("uninstall a language"))
-    options.add("+[select]", ki18n("select a language"))
+    options.add("!mode ", ki18n(b"REQUIRED: install, uninstall or select must follow"),  "select")
+    options.add("+[install]", ki18n(b"install a language"))
+    options.add("+[uninstall]", ki18n(b"uninstall a language"))
+    options.add("+[select]", ki18n(b"select a language"))
 
     KCmdLineArgs.init (sys.argv, aboutData)
     KCmdLineArgs.addCmdLineOptions(options)
@@ -423,10 +431,10 @@ if __name__ == "__main__":
         if whattodo in ["install", "uninstall", "select"]:
             pass
         else:
-            print whattodo, "is not a valid argument"
+            print(whattodo, "is not a valid argument")
             args.usage()
     else:
-        print "Please review the usage."
+        print("Please review the usage.")
         args.usage()
 
     if os.getuid() != 0:

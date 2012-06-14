@@ -4,7 +4,7 @@ set -e
 
 for p in test_*.py; do
     echo "Running: $p"
-    PYTHONPATH=.. python $p
+    PYTHONPATH=.. ${PYTHON:-python} $p
 done
 
 # cleanup 

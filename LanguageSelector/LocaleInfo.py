@@ -1,6 +1,9 @@
-# LoclaeInfo.py (c) 2006 Canonical, released under the GPL
+# LocaleInfo.py (c) 2006 Canonical, released under the GPL
 #
 # a helper class to get locale info
+
+from __future__ import print_function
+from __future__ import absolute_import
 
 import re            
 import subprocess
@@ -10,7 +13,8 @@ import pwd
 import sys
 import dbus
 import warnings
-import macros
+
+from LanguageSelector import macros
 
 from gettext import gettext as _
 from xml.etree.ElementTree import ElementTree
@@ -36,7 +40,7 @@ class LocaleInfo(object):
         
         # read lang file
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_639.xml")
-        it = et.getiterator('iso_639_entry')
+        it = et.iter('iso_639_entry')
         for elm in it:
             lang = elm.attrib["name"]
             if "iso_639_1_code" in elm.attrib:
@@ -52,7 +56,7 @@ class LocaleInfo(object):
         self._lang['zh-hant'] = _("Chinese (traditional)")
         # end hack
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_639_3.xml")
-        it = et.getiterator('iso_639_3_entry')
+        it = et.iter('iso_639_3_entry')
         for elm in it:
             lang = elm.attrib["name"]
             code = elm.attrib["id"]
@@ -61,7 +65,7 @@ class LocaleInfo(object):
         
         # read countries
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_3166.xml")
-        it = et.getiterator('iso_3166_entry')
+        it = et.iter('iso_3166_entry')
         for elm in it:
             if "common_name" in elm.attrib:
                 descr = elm.attrib["common_name"]
@@ -74,19 +78,20 @@ class LocaleInfo(object):
             self._country[code] = descr
             
         # read the languagelist
-        for line in open(LANGUAGELIST):
-            tmp = line.strip()
-            if tmp.startswith("#") or tmp == "":
-                continue
-            w = tmp.split(";")
-            # FIXME: the latest localechoosers "languagelist" does
-            # no longer have this field for most languages, so
-            # deal with it and don't set LANGUAGE then
-            # - the interessting question is what to do
-            # if LANGUAGE is already set and the new
-            localeenv = w[6].split(":")
-            #print localeenv
-            self._languagelist[localeenv[0]] = '%s' % w[6]
+        with open(LANGUAGELIST) as f:
+            for line in f:
+                tmp = line.strip()
+                if tmp.startswith("#") or tmp == "":
+                    continue
+                w = tmp.split(";")
+                # FIXME: the latest localechoosers "languagelist" does
+                # no longer have this field for most languages, so
+                # deal with it and don't set LANGUAGE then
+                # - the interessting question is what to do
+                # if LANGUAGE is already set and the new
+                localeenv = w[6].split(":")
+                #print(localeenv)
+                self._languagelist[localeenv[0]] = '%s' % w[6]
 
     def lang(self, code):
         """ map language code to language name """
@@ -104,7 +109,8 @@ class LocaleInfo(object):
         """ return a list of locales available on the system
             (running locale -a) """
         locales = []
-        p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE)
+        p = subprocess.Popen(["locale", "-a"], stdout=subprocess.PIPE,
+                             universal_newlines=True)
         for line in p.communicate()[0].split("\n"):
             tmp = line.strip()
             if tmp.find('.utf8') < 0:
@@ -114,7 +120,7 @@ class LocaleInfo(object):
             locale = macr["LOCALE"]
             if not locale in locales:
                 locales.append(locale)
-        #print locales
+        #print(locales)
         return locales
 
     def translate_language(self, lang):
@@ -169,7 +175,7 @@ class LocaleInfo(object):
         if len(macr["CCODE"]) > 0:
             country_name = self.translate_country(macr["CCODE"])
             # get all locales for this language
-            l = filter(lambda k: k.startswith(macr['LCODE']), self.generated_locales())
+            l = [k for k in self.generated_locales() if k.startswith(macr['LCODE'])]
             # only show region/country if we have more than one 
             if (allCountries == False and len(l) > 1) or allCountries == True:
                 mycountry = self.country(macr['CCODE'])
@@ -189,7 +195,7 @@ class LocaleInfo(object):
 #            #(lang, country) = locale.split("_")
 #            (lang_name, country_name) = self.translate_locale(locale)
 #            # get all locales for this language
-#            l = filter(lambda k: k.startswith(macr['LCODE']), self.generated_locales())
+#            l = [k for k in self.generated_locales() if k.startswith(macr['LCODE'])]
 #            # only show region/country if we have more than one 
 #            if len(l) > 1:
 #                mycountry = self.country(macr['CCODE'])
@@ -230,10 +236,11 @@ class LocaleInfo(object):
         fname = os.path.expanduser("~/.pam_environment")
         if os.path.exists(fname) and \
            os.access(fname, os.R_OK):
-            for line in open(fname):
-                match_language = re.match(r'LANGUAGE=(.*)$',line)
-                if match_language:
-                    language = match_language.group(1)
+            with open(fname) as f:
+                for line in f:
+                    match_language = re.match(r'LANGUAGE=(.*)$',line)
+                    if match_language:
+                        language = match_language.group(1)
         if 'fontconfig-voodoo' in sys.argv[0] and os.getenv('SUDO_USER'):
             # handle 'sudo fontconfig-voodoo --auto' correctly
             user_name = os.environ['SUDO_USER']
@@ -275,23 +282,24 @@ class LocaleInfo(object):
         for fname in self.environments:
             if os.path.exists(fname) and \
                os.access(fname, os.R_OK):
-                for line in open(fname):
-                    # support both LANG="foo" and LANG=foo
-                    if line.startswith("LANG"):
-                        line = line.replace('"','')
-                    match_lang = re.match(r'LANG=(.*)$',line)
-                    if match_lang:
-                        lang = match_lang.group(1)
-                    if line.startswith("LC_TIME"):
-                        line = line.replace('"','')
-                    match_formats = re.match(r'LC_TIME=(.*)$',line)
-                    if match_formats:
-                        formats = match_formats.group(1)
-                    if line.startswith("LANGUAGE"):
-                        line = line.replace('"','')
-                    match_language = re.match(r'LANGUAGE=(.*)$',line)
-                    if match_language:
-                        language = match_language.group(1)
+                with open(fname) as f:
+                    for line in f:
+                        # support both LANG="foo" and LANG=foo
+                        if line.startswith("LANG"):
+                            line = line.replace('"','')
+                        match_lang = re.match(r'LANG=(.*)$',line)
+                        if match_lang:
+                            lang = match_lang.group(1)
+                        if line.startswith("LC_TIME"):
+                            line = line.replace('"','')
+                        match_formats = re.match(r'LC_TIME=(.*)$',line)
+                        if match_formats:
+                            formats = match_formats.group(1)
+                        if line.startswith("LANGUAGE"):
+                            line = line.replace('"','')
+                        match_language = re.match(r'LANGUAGE=(.*)$',line)
+                        if match_language:
+                            language = match_language.group(1)
                 if len(lang) > 0:
                     break
         if len(lang) == 0:
@@ -309,9 +317,10 @@ class LocaleInfo(object):
     def isSetSystemFormats(self):
         if not os.access(self.environments[0], os.R_OK):
             return False
-        for line in open(self.environments[0]):
-            if line.startswith("LC_TIME="):
-                return True
+        with open(self.environments[0]) as f:
+            for line in f:
+                if line.startswith("LC_TIME="):
+                    return True
         return False
 
 
@@ -319,10 +328,10 @@ if __name__ == "__main__":
     datadir = "/usr/share/language-selector/"
     li = LocaleInfo("languagelist", datadir)
 
-    print "default system locale and languages: '%s'" % li.getSystemDefaultLanguage()
-    print "default user locale and languages: '%s'" % li.getUserDefaultLanguage()
+    print("default system locale and languages: '%s'" % li.getSystemDefaultLanguage())
+    print("default user locale and languages: '%s'" % li.getUserDefaultLanguage())
 
-    print li._lang
-    print li._country
-    print li._languagelist
-    print li.generated_locales()
+    print(li._lang)
+    print(li._country)
+    print(li._languagelist)
+    print(li.generated_locales())

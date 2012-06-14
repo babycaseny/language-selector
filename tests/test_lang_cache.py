@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import apt
 import apt_pkg
 import logging
@@ -13,10 +13,10 @@ from LanguageSelector.LangCache import LanguageSelectorPkgCache, LanguageInforma
 class TestLangCache(unittest.TestCase):
 
     def setUp(self):
-        apt_pkg.Config.set("Dir::State::lists","./test-data/var/lib/apt/lists.cl")
-        apt_pkg.Config.set("Dir::State::status","./test-data/var/lib/dpkg/status")
-        apt_pkg.Config.set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.cl")
-        apt_pkg.Config.set("Dir::Etc::SourceParts","x")
+        apt_pkg.config.set("Dir::State::lists","./test-data/var/lib/apt/lists.cl")
+        apt_pkg.config.set("Dir::State::status","./test-data/var/lib/dpkg/status")
+        apt_pkg.config.set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.cl")
+        apt_pkg.config.set("Dir::Etc::SourceParts","x")
         logging.info("updating the cache")
         localeinfo = LocaleInfo("languagelist", "..")
         self.lang_cache = LanguageSelectorPkgCache(
@@ -47,5 +47,5 @@ class TestLangCache(unittest.TestCase):
         self.assertTrue(self.lang_cache["hyphen-de"].marked_install)
 
 if __name__ == "__main__":
-    apt_pkg.Config.set("Apt::Architecture","i386")
+    apt_pkg.config.set("Apt::Architecture","i386")
     unittest.main()
