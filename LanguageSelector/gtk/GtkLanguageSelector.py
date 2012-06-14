@@ -935,7 +935,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         self.label_example_date.set_text('')
         (lang, code) = model[combo.get_active()]
         macr = macros.LangpackMacros(self._datadir, code)
-        mylocale = macr["SYSLOCALE"].encode('UTF-8')
+        mylocale = macr["SYSLOCALE"]
         try:
             locale.setlocale(locale.LC_ALL, mylocale)
         except locale.Error:
