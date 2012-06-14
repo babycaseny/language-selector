@@ -3,6 +3,7 @@
 # a helper class to get locale info
 
 from __future__ import print_function
+from __future__ import absolute_import
 
 import re            
 import subprocess
@@ -12,7 +13,8 @@ import pwd
 import sys
 import dbus
 import warnings
-import macros
+
+from LanguageSelector import macros
 
 from gettext import gettext as _
 from xml.etree.ElementTree import ElementTree

@@ -19,6 +19,7 @@ language-selector (0.82) UNRELEASED; urgency=low
     with a different Python version.
   * Consistent str vs. bytes handling, to work with Python 3.
   * Convert tests to current apt API.
+  * Python 3 compatible import statements.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 

@@ -5,6 +5,7 @@
 #
 
 from __future__ import print_function
+from __future__ import absolute_import
 
 import warnings
 warnings.filterwarnings("ignore", "apt API not stable yet", FutureWarning)
@@ -12,12 +13,11 @@ import apt
 import dbus
 import os
 
-from LocaleInfo import LocaleInfo
-
 import language_support_pkgs
-import LangCache
-from utils import *
-import macros
+from LanguageSelector.LocaleInfo import LocaleInfo
+import LanguageSelector.LangCache
+from LanguageSelector.utils import *
+from LanguageSelector import macros
 
 # the language-selector abstraction
 class LanguageSelectorBase(object):
@@ -30,7 +30,7 @@ class LanguageSelectorBase(object):
         self._cache = None
 
     def openCache(self, progress):
-        self._cache = LangCache.LanguageSelectorPkgCache(self._localeinfo, progress)
+        self._cache = LanguageSelector.LangCache.LanguageSelectorPkgCache(self._localeinfo, progress)
 
     def getMissingLangPacks(self):
         """
