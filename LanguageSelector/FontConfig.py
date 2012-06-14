@@ -11,13 +11,14 @@
 # configuration we got from the CJK community
 
 from __future__ import print_function
+from __future__ import absolute_import
 
 import glob
 import os.path
 
-from LocaleInfo import LocaleInfo
-import macros
-from utils import language2locale
+from LanguageSelector.LocaleInfo import LocaleInfo
+from LanguageSelector import macros
+from LanguageSelector.utils import language2locale
 
 class ExceptionMultipleConfigurations(Exception):
     " error when multiple languages are symlinked "
