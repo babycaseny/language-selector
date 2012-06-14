@@ -100,23 +100,27 @@ class GtkProgress(apt.progress.base.OpProgress):
         host_window.get_window().set_functions(Gdk.WMFunction.MOVE)
         self._window.set_transient_for(parent)
 
-    def update(self, percent):
+    def update(self, percent=None):
         #print(percent)
         #print(self.Op)
         #print(self.SubOp)
         self._window.show()
         self._parent.set_sensitive(False)
-        # if the old percent was higher, a new progress was started
-        if self.old > percent:
-            # set the borders to the next interval
-            self.base = self.next
-            try:
-                self.next = int(self.steps.pop(0))
-            except:
-                pass
-        progress = self.base + percent/100 * (self.next - self.base)
-        self.old = percent
-        self._progressbar.set_fraction(progress/100.0)
+        if percent is None:
+            self.old = 0
+            self._progressbar.pulse()
+        else:
+            # if the old percent was higher, a new progress was started
+            if self.old > percent:
+                # set the borders to the next interval
+                self.base = self.next
+                try:
+                    self.next = int(self.steps.pop(0))
+                except:
+                    pass
+            progress = self.base + percent/100 * (self.next - self.base)
+            self.old = percent
+            self._progressbar.set_fraction(progress/100.0)
         while Gtk.events_pending():
             Gtk.main_iteration()
     def done(self):

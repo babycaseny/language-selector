@@ -25,6 +25,9 @@ language-selector (0.82) UNRELEASED; urgency=low
   * LanguageSelector/gtk/GtkLanguageSelector.py: Pass a string to setlocale(),
     not bytes.
   * LanguageSelector/qt/QtLanguageSelector.py: Fix for Python 3.
+  * LanguageSelector/gtk/GtkLanguageSelector.py: python3-dbus now sometimes
+    calls OpProgress.update() without any argument. Support this and pulsate
+    the progress bar in this case.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 
