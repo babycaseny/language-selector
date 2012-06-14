@@ -28,6 +28,7 @@ language-selector (0.82) UNRELEASED; urgency=low
   * LanguageSelector/gtk/GtkLanguageSelector.py: python3-dbus now sometimes
     calls OpProgress.update() without any argument. Support this and pulsate
     the progress bar in this case.
+  * Switch all hashbangs and dependencies to Python 3.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 
