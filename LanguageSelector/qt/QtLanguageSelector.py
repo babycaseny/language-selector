@@ -14,6 +14,9 @@
 from __future__ import print_function
 
 import sys
+import gettext
+from gettext import gettext as i18n
+
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from PyKDE4.kdecore import ki18n, KAboutData, KCmdLineArgs, KCmdLineOptions
@@ -21,9 +24,8 @@ from PyKDE4.kdeui import KApplication, KIcon,  KMessageBox, KGuiItem, KCModule
 
 from LanguageSelector.LanguageSelector import *
 from LanguageSelector.ImSwitch import ImSwitch
-from QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
+from LanguageSelector.qt.QtLanguageSelectorGUI import Ui_QtLanguageSelectorGUI
 from LanguageSelector.LangCache import ExceptionPkgCacheBroken
-from gettext import gettext as i18n
 
 if sys.version >= '3':
     text_type = str
@@ -373,20 +375,20 @@ class QtLanguageSelector(KCModule, LanguageSelectorBase):
 def MakeAboutData():
   appName     = "language-selector"
   catalog     = ""
-  programName = ki18n ("Language Selector")
+  programName = ki18n (b"Language Selector")
   version     = "0.3.4"
-  description = ki18n ("Language Selector")
+  description = ki18n (b"Language Selector")
   license     = KAboutData.License_GPL
-  copyright   = ki18n ("(c) 2008 Canonical Ltd")
-  text        = ki18n ("none")
+  copyright   = ki18n (b"(c) 2008 Canonical Ltd")
+  text        = ki18n (b"none")
   homePage    = "https://launchpad.net/language-selector"
   bugEmail    = ""
 
   aboutData   = KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
-  aboutData.addAuthor(ki18n("Michael Vogt"), ki18n("Developer"))
-  aboutData.addAuthor(ki18n("Jonathan Riddell"), ki18n("Developer"))
-  aboutData.addAuthor(ki18n("Harald Sitter"), ki18n("Developer"))
-  aboutData.addAuthor(ki18n("Romain Perier"), ki18n("Developer"))
+  aboutData.addAuthor(ki18n(b"Michael Vogt"), ki18n(b"Developer"))
+  aboutData.addAuthor(ki18n(b"Jonathan Riddell"), ki18n(b"Developer"))
+  aboutData.addAuthor(ki18n(b"Harald Sitter"), ki18n(b"Developer"))
+  aboutData.addAuthor(ki18n(b"Romain Perier"), ki18n(b"Developer"))
   
   return aboutData
 
@@ -394,25 +396,25 @@ if __name__ == "__main__":
 
     appName     = "language-selector"
     catalog     = ""
-    programName = ki18n ("Language Selector")
+    programName = ki18n (b"Language Selector")
     version     = "0.3.4"
-    description = ki18n ("Language Selector")
+    description = ki18n (b"Language Selector")
     license     = KAboutData.License_GPL
-    copyright   = ki18n ("(c) 2008 Canonical Ltd")
-    text        = ki18n ("none")
+    copyright   = ki18n (b"(c) 2008 Canonical Ltd")
+    text        = ki18n (b"none")
     homePage    = "https://launchpad.net/language-selector"
     bugEmail    = ""
 
     aboutData   = KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
 
-    aboutData.addAuthor(ki18n("Rob Bean"), ki18n("PyQt4 to PyKDE4 port"))
-    aboutData.addAuthor(ki18n("Harald Sitter"), ki18n("Developer"))
+    aboutData.addAuthor(ki18n(b"Rob Bean"), ki18n(b"PyQt4 to PyKDE4 port"))
+    aboutData.addAuthor(ki18n(b"Harald Sitter"), ki18n(b"Developer"))
 
     options = KCmdLineOptions()
-    options.add("!mode ", ki18n("REQUIRED: install, uninstall or select must follow"),  "select")
-    options.add("+[install]", ki18n("install a language"))
-    options.add("+[uninstall]", ki18n("uninstall a language"))
-    options.add("+[select]", ki18n("select a language"))
+    options.add("!mode ", ki18n(b"REQUIRED: install, uninstall or select must follow"),  "select")
+    options.add("+[install]", ki18n(b"install a language"))
+    options.add("+[uninstall]", ki18n(b"uninstall a language"))
+    options.add("+[select]", ki18n(b"select a language"))
 
     KCmdLineArgs.init (sys.argv, aboutData)
     KCmdLineArgs.addCmdLineOptions(options)

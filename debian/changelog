@@ -24,6 +24,7 @@ language-selector (0.82) UNRELEASED; urgency=low
   * Convert all tabs to spaces.
   * LanguageSelector/gtk/GtkLanguageSelector.py: Pass a string to setlocale(),
     not bytes.
+  * LanguageSelector/qt/QtLanguageSelector.py: Fix for Python 3.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 
