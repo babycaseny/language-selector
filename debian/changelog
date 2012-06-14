@@ -1,5 +1,6 @@
 language-selector (0.82) UNRELEASED; urgency=low
 
+  [ Colin Watson ]
   * Port to Python 3:
     - Use Python 3-style print functions.
     - Use "except Exception as e" syntax rather than the old-style "except
@@ -12,6 +13,10 @@ language-selector (0.82) UNRELEASED; urgency=low
     - Open subprocesses with universal_newlines=True when expecting to read
       text from them.
     - Cope with changes in dict method return types in Python 3.
+
+  [ Martin Pitt ]
+  * tests/runner.sh: Run with $PYTHON if specified, to make it easier to run
+    with a different Python version.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 
