@@ -18,6 +18,7 @@ language-selector (0.82) UNRELEASED; urgency=low
   * tests/runner.sh: Run with $PYTHON if specified, to make it easier to run
     with a different Python version.
   * Consistent str vs. bytes handling, to work with Python 3.
+  * Convert tests to current apt API.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 
