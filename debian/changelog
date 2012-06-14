@@ -29,6 +29,8 @@ language-selector (0.82) UNRELEASED; urgency=low
     calls OpProgress.update() without any argument. Support this and pulsate
     the progress bar in this case.
   * Switch all hashbangs and dependencies to Python 3.
+  * debian/control: Drop now obsolete language-selector and
+    language-selector-qt transitional packages.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
 

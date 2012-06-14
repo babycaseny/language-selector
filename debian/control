@@ -51,26 +51,6 @@ Description: Language selector for Kubuntu
  .
  This package contains the KDE frontend.
 
-Package: language-selector-qt
-Section: oldlibs
-Priority: extra
-Architecture: all
-Depends: ${misc:Depends},
- language-selector-kde
-Description: Language selector for Kubuntu (transitional package)
- This package is a transitional package that can safely be removed
- after you have installed language-selector-kde
-
-Package: language-selector
-Section: oldlibs
-Priority: extra
-Architecture: all
-Depends: ${misc:Depends},
- language-selector-gnome
-Description: Language selector for Ubuntu (transitional package)
- This package is a transitional package that can safely be removed
- after you have installed language-selector-gnome
-
 Package: language-selector-common
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.7.2)
