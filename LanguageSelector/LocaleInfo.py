@@ -78,19 +78,20 @@ class LocaleInfo(object):
             self._country[code] = descr
             
         # read the languagelist
-        for line in open(LANGUAGELIST):
-            tmp = line.strip()
-            if tmp.startswith("#") or tmp == "":
-                continue
-            w = tmp.split(";")
-            # FIXME: the latest localechoosers "languagelist" does
-            # no longer have this field for most languages, so
-            # deal with it and don't set LANGUAGE then
-            # - the interessting question is what to do
-            # if LANGUAGE is already set and the new
-            localeenv = w[6].split(":")
-            #print(localeenv)
-            self._languagelist[localeenv[0]] = '%s' % w[6]
+        with open(LANGUAGELIST) as f:
+            for line in f:
+                tmp = line.strip()
+                if tmp.startswith("#") or tmp == "":
+                    continue
+                w = tmp.split(";")
+                # FIXME: the latest localechoosers "languagelist" does
+                # no longer have this field for most languages, so
+                # deal with it and don't set LANGUAGE then
+                # - the interessting question is what to do
+                # if LANGUAGE is already set and the new
+                localeenv = w[6].split(":")
+                #print(localeenv)
+                self._languagelist[localeenv[0]] = '%s' % w[6]
 
     def lang(self, code):
         """ map language code to language name """
@@ -235,10 +236,11 @@ class LocaleInfo(object):
         fname = os.path.expanduser("~/.pam_environment")
         if os.path.exists(fname) and \
            os.access(fname, os.R_OK):
-            for line in open(fname):
-                match_language = re.match(r'LANGUAGE=(.*)$',line)
-                if match_language:
-                    language = match_language.group(1)
+            with open(fname) as f:
+                for line in f:
+                    match_language = re.match(r'LANGUAGE=(.*)$',line)
+                    if match_language:
+                        language = match_language.group(1)
         if 'fontconfig-voodoo' in sys.argv[0] and os.getenv('SUDO_USER'):
             # handle 'sudo fontconfig-voodoo --auto' correctly
             user_name = os.environ['SUDO_USER']
@@ -280,23 +282,24 @@ class LocaleInfo(object):
         for fname in self.environments:
             if os.path.exists(fname) and \
                os.access(fname, os.R_OK):
-                for line in open(fname):
-                    # support both LANG="foo" and LANG=foo
-                    if line.startswith("LANG"):
-                        line = line.replace('"','')
-                    match_lang = re.match(r'LANG=(.*)$',line)
-                    if match_lang:
-                        lang = match_lang.group(1)
-                    if line.startswith("LC_TIME"):
-                        line = line.replace('"','')
-                    match_formats = re.match(r'LC_TIME=(.*)$',line)
-                    if match_formats:
-                        formats = match_formats.group(1)
-                    if line.startswith("LANGUAGE"):
-                        line = line.replace('"','')
-                    match_language = re.match(r'LANGUAGE=(.*)$',line)
-                    if match_language:
-                        language = match_language.group(1)
+                with open(fname) as f:
+                    for line in f:
+                        # support both LANG="foo" and LANG=foo
+                        if line.startswith("LANG"):
+                            line = line.replace('"','')
+                        match_lang = re.match(r'LANG=(.*)$',line)
+                        if match_lang:
+                            lang = match_lang.group(1)
+                        if line.startswith("LC_TIME"):
+                            line = line.replace('"','')
+                        match_formats = re.match(r'LC_TIME=(.*)$',line)
+                        if match_formats:
+                            formats = match_formats.group(1)
+                        if line.startswith("LANGUAGE"):
+                            line = line.replace('"','')
+                        match_language = re.match(r'LANGUAGE=(.*)$',line)
+                        if match_language:
+                            language = match_language.group(1)
                 if len(lang) > 0:
                     break
         if len(lang) == 0:
@@ -314,9 +317,10 @@ class LocaleInfo(object):
     def isSetSystemFormats(self):
         if not os.access(self.environments[0], os.R_OK):
             return False
-        for line in open(self.environments[0]):
-            if line.startswith("LC_TIME="):
-                return True
+        with open(self.environments[0]) as f:
+            for line in f:
+                if line.startswith("LC_TIME="):
+                    return True
         return False
 
 
