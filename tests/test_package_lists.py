@@ -18,7 +18,7 @@ class TestLanguageSelector(unittest.TestCase):
         apt_pkg.config.set("Dir::Etc::SourceParts","./xxx")
         ls = LanguageSelectorBase(datadir="../")
         ls.openCache(apt.progress.base.OpProgress())
-        self.assert_(ls._cache.havePackageLists == True,
+        self.assertTrue(ls._cache.havePackageLists == True,
                       "verifyPackageLists returned False for a good list")
 
     def test_package_lists_fail(self):
@@ -28,7 +28,7 @@ class TestLanguageSelector(unittest.TestCase):
         apt_pkg.config.set("Dir::Etc::SourceList","./test-data/etc/apt/sources.list.fail")
         ls = LanguageSelectorBase(datadir="../")
         ls.openCache(apt.progress.base.OpProgress())
-        self.assert_(ls._cache.havePackageLists == False,
+        self.assertTrue(ls._cache.havePackageLists == False,
                       "verifyPackageLists returned True for a list with missing indexfiles")
         
 
