@@ -3,5 +3,16 @@
 %:
 	dh $@ --with python3,translations
 
+override_dh_auto_clean:
+	./setup.py clean -a
+	rm -rf build
+
+override_dh_auto_build:
+	set -ex; for python in $(shell py3versions -r); do \
+	        $$python setup.py build; \
+	done
+
 override_dh_auto_install:
-	python3 ./setup.py install --root=$(CURDIR)/debian/tmp --prefix=/usr --install-layout=deb
+	set -ex; for python in $(shell py3versions -r); do \
+		$$python ./setup.py install --root=$(CURDIR)/debian/tmp --prefix=/usr --install-layout=deb; \
+	done

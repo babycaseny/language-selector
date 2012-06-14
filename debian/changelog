@@ -1,3 +1,10 @@
+language-selector (0.83) UNRELEASED; urgency=low
+
+  * debian/rules: Override dh_auto_* commands to build with Python 3. (See
+    Debian #597105)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 14 Jun 2012 10:09:23 +0200
+
 language-selector (0.82) quantal; urgency=low
 
   [ Colin Watson ]
