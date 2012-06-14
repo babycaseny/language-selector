@@ -403,7 +403,7 @@ if __name__ == "__main__":
     homePage    = "https://launchpad.net/language-selector"
     bugEmail    = ""
 
-    aboutData	= KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
+    aboutData   = KAboutData (appName, catalog, programName, version, description, license, copyright, text, homePage, bugEmail)
 
     aboutData.addAuthor(ki18n("Rob Bean"), ki18n("PyQt4 to PyKDE4 port"))
     aboutData.addAuthor(ki18n("Harald Sitter"), ki18n("Developer"))
