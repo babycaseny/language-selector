@@ -21,8 +21,11 @@ tr::gimp:gimp-help-
 tr::evolution:evolution-documentation-
 tr::chromium-browser:chromium-browser-l10n
 tr::sylpheed:sylpheed-i18n
+tr::amarok:amarok-help-
 # Format: %LCODE% or %LCODE%%CCODE% or %LCODE%-%VARIANT%
 tr::kdelibs5-data:kde-l10n-
+tr::calligra-libs:calligra-l10n-
+tr::gcompris:gcompris-sound-
 
 # Finnish support for voikko
 wa:fi:firefox:xul-ext-mozvoikko
@@ -69,7 +72,6 @@ wa:nr:libreoffice-common:myspell-nr
 wa:ns:libreoffice-common:myspell-ns
 wa:pl:libreoffice-common:myspell-pl
 wa:pt:libreoffice-common:myspell-pt
-wa:ru:libreoffice-common:myspell-ru
 wa:sk:libreoffice-common:myspell-sk
 wa:sl:libreoffice-common:myspell-sl
 wa:ss:libreoffice-common:myspell-ss
@@ -154,8 +156,7 @@ fn:km::fonts-khmeros
 fn:kn::ttf-kannada-fonts
 fn:ko::fonts-nanum
 fn:ko::fonts-nanum-coding
-fn:ko::fonts-nanum-extra
-fn:ko::ttf-alee
+fn:ko::fonts-unfonts-core
 fn:lo::fonts-lao
 fn:ml::ttf-malayalam-fonts
 fn:mn::fonts-manchufont
@@ -168,6 +169,7 @@ fn:pa::ttf-punjabi-fonts
 fn:ta::ttf-tamil-fonts
 fn:te::ttf-telugu-fonts
 fn:th::ttf-thai-tlwg
+fn:ug::fonts-ukij-uyghur
 fn:ur::fonts-nafees
 fn:ur::fonts-sil-scheherazade
 fn:yi::fonts-sil-ezra
@@ -178,10 +180,16 @@ fn:zh-hant::ttf-wqy-zenhei
 fn:zh-hant::fonts-arphic-uming
 fn:zh-hant::ttf-arphic-ukai
 
+# GhostScript CJK resources
+fn:ja:gs-cjk-resource:poppler-data
+fn:ja:gs-cjk-resource:fonts-ipafont-mincho
+fn:ko:gs-cjk-resource:poppler-data
+fn:zh-hans:gs-cjk-resource:poppler-data
+fn:zh-hant:gs-cjk-resource:poppler-data
+
 # input methods
 im:ja:ibus:ibus-anthy
 im:ko:ibus:ibus-hangul
-im:ko:ibus:nabi
 im:th:ibus:gtk-im-libthai
 im:vi:ibus:ibus-unikey
 im:zh-hans:ibus:ibus-sunpinyin

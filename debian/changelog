@@ -1,4 +1,4 @@
-language-selector (0.70) UNRELEASED; urgency=low
+language-selector (0.82) UNRELEASED; urgency=low
 
   * Port to Python 3:
     - Use Python 3-style print functions.
@@ -14,6 +14,116 @@ language-selector (0.70) UNRELEASED; urgency=low
     - Cope with changes in dict method return types in Python 3.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Mon, 07 May 2012 16:13:22 +0100
+
+language-selector (0.81) quantal; urgency=low
+
+  * data/pkg_depends: replace cmap-adobe- depends by poppler-data 
+    (lp: #1009052)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 07 Jun 2012 12:45:28 +0200
+
+language-selector (0.80) quantal; urgency=low
+
+  * Add gcompris to pkg_depends (for gcompris-sound-* in Edubuntu)
+
+ -- Stéphane Graber <stgraber@ubuntu.com>  Mon, 14 May 2012 17:14:12 -0400
+
+language-selector (0.79) precise; urgency=low
+
+  * Update of help document (LP: #983951).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Wed, 18 Apr 2012 08:09:49 +0200
+
+language-selector (0.78) precise; urgency=low
+
+  * Updated translations from launchpad (lp: #980842)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 13 Apr 2012 16:21:24 +0200
+
+language-selector (0.77) precise; urgency=low
+
+  * dbus_backend/ls-dbus-backend: Set LC_IDENTIFICATION as well, to comply
+    with what Ubiquity does. (LP: #926207)
+  * tests/test_language_support_pkgs.py: Fix
+    test_by_package_and_locale_noinstalled() for current pkg_depends: gedit
+    does not need aspell any more, use abiword as trigger package.
+  * language_support_pkgs.py, _expand_pkg_pattern(): Special-case "zh-han[st]"
+    values for the locale. These are not actual locales, but e. g. Ubiquity
+    assumes this works. So let these mean "zh_CN" and "zh_TW" respectively.
+    Add a test case to tests/test_language_support_pkgs.py. (LP: #963460)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 30 Mar 2012 12:42:15 +0200
+
+language-selector (0.76) precise; urgency=low
+
+  * Add conffile upgrade handling for ko-kr conffiles dropped since lucid.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 26 Mar 2012 22:20:17 -0700
+
+language-selector (0.75) precise; urgency=low
+
+  [ Jinkyu Yi ]
+  * data/pkg_depends:
+    - Add fonts-unfonts-core for fonts-nanum's fallback
+    - Remove ttf-alee, fonts-nanum-extra to reduce ko-related packages
+      (refer to task-korean-desktop at Debian)
+    - remove nabi, Unity can't support it
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 16 Mar 2012 11:27:49 +0100
+
+language-selector (0.74) precise; urgency=low
+
+  * data/pkg_depends: Add fonts-ukij-uyghur for Uyghur. Thanks to Eagle
+    Burkut for pointing this out.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Thu, 15 Mar 2012 15:22:54 +0100
+
+language-selector (0.73) precise; urgency=low
+
+  * data/pkg_depends: Add support for translated documentation of amarok
+    and calligra.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Mon, 12 Mar 2012 11:39:45 -0400
+
+language-selector (0.72) precise; urgency=low
+
+  [ Sebastien Bacher ]
+  * data/language-selector.desktop.in:
+    - use official "Keywords" rather than "X-GNOME-Keywords" (LP: #949849)
+
+  [ Martin Pitt ]
+  * LanguageSelector/qt/QtLanguageSelector.py: Kubuntu's package manager is
+    "Muon", not "Adept". Also update all messages in po/*.po to avoid breaking
+    existing translations. (LP: #628653)
+  * LanguageSelector/gtk/GtkLanguageSelector.py: Fix crash in
+    updateLocaleChooserCombo() if tree model is not yet set. (LP: #945494)
+  * debian/language-selector-common.postinst: Do not fail configuring if D-BUS
+    does not give us the PID of a running ls-dbus-backend. (LP: #766672)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 09 Mar 2012 16:34:49 +0100
+
+language-selector (0.71) precise; urgency=low
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    Modified wording of the error message shown if the example box
+    fails to apply the current locale (LP: #930785).
+
+  [ Martin Pitt ]
+  * data/pkg_depends: Drop myspell-ru, we have hunspell-ru now.
+  * data/pkg_depends: Add cmap-adobe-* packages for ghostscript. (LP: #496012)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 02 Mar 2012 06:54:37 +0100
+
+language-selector (0.70) precise; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    Clear the example box values before trying to generate new ones.
+  * LanguageSelector/qt/QtLanguageSelector.py:
+    Call for the no longer existing writeSysLangSetting() function
+    removed (LP: #928400). writeSysLanguageSetting() now sets LANG.
+
+ -- Gunnar Hjalmarsson <ubuntu@gunnar.cc>  Wed, 15 Feb 2012 07:42:06 +0100
 
 language-selector (0.69) precise; urgency=low
 

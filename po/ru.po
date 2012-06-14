@@ -7,62 +7,62 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-24 13:55+0000\n"
-"PO-Revision-Date: 2010-09-24 17:22+0000\n"
-"Last-Translator: Артём Попов <artfwo@gmail.com>\n"
+"POT-Creation-Date: 2012-03-30 10:53+0000\n"
+"PO-Revision-Date: 2012-03-09 19:38+0000\n"
+"Last-Translator: Artem Popov <artfwo@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
 "Language: ru\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:47
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "Китайский (упрощённый)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:49
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "Китайский (традиционный)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
-#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
 msgstr "Нет доступной информации о языке"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
-#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
-"Система всё ещё не имеет информации о доступных языках. Хотите ли вы "
-"выполнить обновление для получения данной информации сейчас? "
+"В системе отсутствуют сведения о перечне доступных языков. Вы действительно "
+"хотите выполнить обновление сведений? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
-#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
-msgstr "_Обновить"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
-#: ../data/LanguageSelector.ui.h:23
-msgid "Language"
-msgstr "Язык"
+msgstr "Обнов_ить"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../data/LanguageSelector.ui.h:23
+msgid "Language"
+msgstr "Языки"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
-msgstr "Установлено"
+msgstr "Установленные"
 
 #. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -71,7 +71,7 @@ msgstr[1] "%(INSTALL)d для установки"
 msgstr[2] "%(INSTALL)d для установки"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -80,36 +80,38 @@ msgstr[1] "%(REMOVE)d для удаления"
 msgstr[2] "%(REMOVE)d для удаления"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
-#: ../LanguageSelector/qt/QtLanguageSelector.py:82
-#: ../LanguageSelector/qt/QtLanguageSelector.py:310
-#: ../check-language-support:52
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+msgid "none"
+msgstr "не задано"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "Ошибка в базе данных пакетов"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
-#: ../check-language-support:53
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Невозможно выполнить установку или удаление программ. Для исправления этой "
-"ситуации используйте менеджер пакетов Synaptic или запустите в терминале "
-"команду «sudo apt-get install -f»."
+"Установка или удаление программ невозможны. Для исправления этой проблемы "
+"используйте менеджер пакетов \"Synaptic\" или запустите в терминале \"sudo "
+"apt-get install -f\"."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+msgid "Could not install the selected language support"
+msgstr "Не удалось установить поддержку выбранного языка"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
-msgid "Could not install the selected language support"
-msgstr "Не удалось установить выбранную поддержку языка"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -118,163 +120,203 @@ msgstr ""
 "по адресу https://bugs.launchpad.net/ubuntu/+source/language-"
 "selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "Не удалось установить полную поддержку языка"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
+"manager. Check your preferences in Software Sources (click the icon at the "
+"very right of the top bar and select \"System Settings... -> Software "
+"Sources\")."
 msgstr ""
-"Обычно это связано с ошибкой в вашем архиве программ или менеджере пакетов. "
-"Проверьте настройки программ в меню Система > Администрирование."
+"Обычно это связано с ошибкой в архиве приложений или менеджере приложений. "
+"Проверьте ваши настройки в Источниках приложений (Нажмите на самый правый "
+"значок в верхней панели и выберите «Настройки системы -> Источники "
+"приложений»)."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
-#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+msgid "Failed to authorize to install packages."
+msgstr "Ошибка авторизации для установки пакетов."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "Поддержка языка установлена не полностью"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
-#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"Установлены не все переводы или методы ввода, доступные для выбранных вами "
-"языков. Хотите ли вы установить их сейчас?"
+"Установлены не все переводы или методы ввода для выбранных вами языков. "
+"Хотите установить их сейчас?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
-#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
 msgstr "_Напомнить позже"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
-#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "_Установить"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "Подробности"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:57
-msgid "Uninstall"
-msgstr "Удалить"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#, python-format
+msgid ""
+"Failed to apply the '%s' format\n"
+"choice. The examples may show up if you\n"
+"close and re-open Language Support."
+msgstr ""
+"Ошибка применение выбранного формата '%s'. \n"
+"Примеры могут быть показаны после закрытия и \n"
+"очередного открытия службы Языковой поддержки."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Невозможно выполнить установку или удаление программ. Для исправления этой "
+"ситуации используйте менеджер пакетов Muon или запустите в терминале команду "
+"«sudo apt-get install -f»."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:114
+msgid "Set System Language"
+msgstr "Настроить системный язык"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+msgid "Default system language:"
+msgstr "Язык по умолчанию"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+msgid "Keyboard input method:"
+msgstr "Метод ввода с клавиатуры:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+msgid "Select language to install:"
+msgstr "Выберите язык для установки:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:118
 msgid "Select language to uninstall:"
 msgstr "Выберите язык для удаления:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:65
-msgid "Language Selector"
-msgstr "Менеджер языков"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Translations"
+msgstr "Переводы"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:83
-#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Input methods"
+msgstr "Методы ввода"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Spellchecking and writing aids"
+msgstr "Орфография и лингвистика"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+msgid "Extra fonts"
+msgstr "Дополнительные шрифты"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Components:"
+msgstr "Компоненты:"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:202
+msgid "Already installed"
+msgstr "Установленные"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+msgid "Partially Installed"
+msgstr "Частично установленные"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:208
+msgid "Not installed"
+msgstr "Не установленные"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+msgid "Component already installed"
+msgstr "Компонент уже установлен"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+msgid "Component not available"
+msgstr "Компонент недоступен"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+msgid "Component not installed"
+msgstr "Компонент не установлен"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "Язык системы по умолчанию теперь %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+msgid "Language Set"
+msgstr "Язык выбран"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Невозможно выполнить установку или удаление программ. Для исправления этой "
-"ситуации используйте менеджер пакетов Adept или запустите в терминале "
-"команду «sudo apt-get install -f»."
+"Установка или удаление программ невозможны. Для исправления этой проблемы "
+"используйте менеджер пакетов Adept или запустите в терминале команду «sudo "
+"apt-get install -f»."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
-msgid "Default system language:"
-msgstr "Основной язык системы:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
-msgid "Set System Language"
-msgstr "Настроить системный язык"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
-msgid "Keyboard input method:"
-msgstr "Метод ввода с клавиатуры:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:122
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-#: ../data/LanguageSelector.ui.h:13
-msgid "Cancel"
-msgstr "Отменить"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
-msgid "Select language to install:"
-msgstr "Выберите язык для установки:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Install"
-msgstr "Установить"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
-msgid "Already installed"
-msgstr "Уже установленные"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:217
-msgid "Partially Installed"
-msgstr "Частично установленные"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:221
-msgid "Not installed"
-msgstr "Не установленные"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
-#, python-format
-msgid "Default system Language now set to %s."
-msgstr "Язык системы по умолчанию теперь %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
-msgid "Language Set"
-msgstr "Язык выбран"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 #, python-format
 msgid ""
-"Translations and support have now been installed for %s.  Select them from "
-"the Add Language button."
+"All selected components have now been installed for %s.  Select them from "
+"Country/Region & Language."
 msgstr ""
-"Переводы и поддержка теперь установлены для %s. Выберите их, используя "
-"кнопку «Добавить язык»."
+"Все выбранные компоненты были установлены для %s. Выберите их из меню "
+"Страна/Регион и Язык."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 msgid "Language Installed"
 msgstr "Язык установлен"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "Переводы и поддержка для %s удалены."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 msgid "Language Uninstalled"
 msgstr "Язык удалён"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Failed to set system language."
 msgstr "Не удалось установить системный язык."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Language Not Set"
 msgstr "Язык не выбран"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Please run this software with administrative rights."
 msgstr "Пожалуйста, запустите эту программу с правами администратора."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Not Root User"
 msgstr "Вы не являетесь администратором"
 
 #: ../data/LanguageSelector.ui.h:1
-msgid "<b>Example</b>"
-msgstr "<b>Пример</b>"
-
-#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -285,116 +327,11 @@ msgstr ""
 "\n"
 "Доступность переводов может отличаться для разных языков."
 
-#: ../data/LanguageSelector.ui.h:5
-msgid "<small>Changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Изменения вступят в силу после следующего входа в систему.</small>"
-
-#: ../data/LanguageSelector.ui.h:6
-msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
-"Changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Расположите языки в порядке ваших предпочтений.\n"
-"Изменения вступят в силу после следующего входа в систему</small>"
-
-#: ../data/LanguageSelector.ui.h:8
-msgid ""
-"<small>Uses the same language choices for startup and the login "
-"screen.</small>"
-msgstr ""
-"<small>Использовать один и тот же язык при загрузке системы и экране входа в "
-"систему</small>"
-
-#: ../data/LanguageSelector.ui.h:9
-msgid ""
-"<small>Uses the same text format choice for startup and the login "
-"screen.</small>"
-msgstr ""
-"<small>Используется тот же самый текстовый формат для экрана запуска и "
-"экрана входа в систему.</small>"
-
-#: ../data/LanguageSelector.ui.h:10
-msgid ""
-"Additional fonts for this language which might be of general interest, e.g. "
-"decorative fonts for printing documents."
-msgstr ""
-"Дополнительные шрифты для этого языка, которые могут представлять общий "
-"интерес (например, декоративные шрифты для печати документов)."
-
-#: ../data/LanguageSelector.ui.h:11
-msgid "Apply Changes"
-msgstr "Применить изменения"
-
-#: ../data/LanguageSelector.ui.h:12
-msgid "Apply System-Wide..."
-msgstr "Применить ко всей системе..."
-
-#: ../data/LanguageSelector.ui.h:14
-msgid "Components:"
-msgstr "Компоненты:"
-
-#: ../data/LanguageSelector.ui.h:15
-msgid "Currency:"
-msgstr "Валюта:"
-
-#: ../data/LanguageSelector.ui.h:16
-msgid "Date:"
-msgstr "Дата:"
-
-#: ../data/LanguageSelector.ui.h:17
-msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr "Отображать числа, даты, валюту в обычном формате для:"
-
-#: ../data/LanguageSelector.ui.h:18
-msgid "Extra fonts"
-msgstr "Дополнительные шрифты"
-
-#: ../data/LanguageSelector.ui.h:19
-msgid "Input methods"
-msgstr "Методы ввода"
-
-#: ../data/LanguageSelector.ui.h:20
-msgid "Install / Remove Languages..."
-msgstr "Установка / удаление языков..."
-
-#: ../data/LanguageSelector.ui.h:21
+#: ../data/LanguageSelector.ui.h:4
 msgid "Installed Languages"
 msgstr "Установленные языки"
 
-#: ../data/LanguageSelector.ui.h:22
-msgid "Keyboard input method system:"
-msgstr "Метод ввода с клавиатуры:"
-
-#: ../data/LanguageSelector.ui.h:24
-msgid "Language & Text"
-msgstr "Язык и текст"
-
-#: ../data/LanguageSelector.ui.h:25
-msgid "Language for menus and windows:"
-msgstr "Язык для меню и окон:"
-
-#: ../data/LanguageSelector.ui.h:26
-msgid "Number:"
-msgstr "Количество:"
-
-#: ../data/LanguageSelector.ui.h:27
-msgid "Spellchecking and writing aids"
-msgstr "Орфография и лингвистика"
-
-#: ../data/LanguageSelector.ui.h:28
-msgid "Text"
-msgstr "Текст"
-
-#: ../data/LanguageSelector.ui.h:29
-msgid "Translations"
-msgstr "Переводы"
-
-#: ../data/LanguageSelector.ui.h:30
-msgid "Translations for your desktop."
-msgstr "Переводы для вашего рабочего стола."
-
-#: ../data/LanguageSelector.ui.h:31
+#: ../data/LanguageSelector.ui.h:5
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -402,49 +339,184 @@ msgstr ""
 "После того, как язык установлен, пользователи могут выбрать его в их "
 "языковых настройках."
 
-#: ../data/LanguageSelector.ui.h:32
-msgid ""
-"Word lists, dictionaries, thesauruses, etc. which can help typing by "
-"highlighting, correcting or suggesting words."
-msgstr ""
-"Списки слов, словари и тезаурусы, которые обеспечивают подсветку, коррекцию "
-"или предложения синонимов при наборе слов."
+#: ../data/LanguageSelector.ui.h:6
+msgid "Cancel"
+msgstr "Отменить"
 
-#: ../data/language-selector.desktop.in.h:1
-#: ../data/qt-language-selector.desktop.in.h:1
+#: ../data/LanguageSelector.ui.h:7
+msgid "Apply Changes"
+msgstr "Применить изменения"
+
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "Язык системы"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid "Language for menus and windows:"
+msgstr "Язык для меню и окон:"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"This setting only affects the language your desktop and applications are "
+"displayed in. It does not set the system environment, like currency or date "
+"format settings. For that, use the settings in the Regional Formats tab.\n"
+"The order of the values displayed here decides which translations to use for "
+"your desktop. If translations for the first language are not available, the "
+"next one in this list will be tried. The last entry of this list is always "
+"\"English\".\n"
+"Every entry below \"English\" will be ignored."
+msgstr ""
+"Этот параметр влияет только на язык вашей рабочей среды и приложений. Он не "
+"меняет настройки системного окружения, такие, как настройки валюты или "
+"формат даты. Для этого используйте настройки на вкладке «Региональные "
+"форматы».\n"
+"Порядок отображаемых здесь значений определяет, какие переводы использовать "
+"для рабочего окружения. Если перевод на первом языке отсутствует, будет "
+"использоваться следующий перевод в этом списке. Последняя запись в этом "
+"списке всегда «English».\n"
+"Каждая запись ниже записи «English» будет пропущена."
+
+#: ../data/LanguageSelector.ui.h:13
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Расположите языки в порядке ваших предпочтений.\n"
+"Изменения вступят в силу после следующего входа в систему.</small>"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Apply System-Wide"
+msgstr "Применить для всей системы"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid ""
+"<small>Use the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Использовать тот же набор языков для экранов запуска и входа в "
+"систему.</small>"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Install / Remove Languages..."
+msgstr "Установка / удаление языков..."
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Keyboard input method system:"
+msgstr "Метод ввода с клавиатуры:"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid ""
+"If you need to type in languages, which require more complex input methods "
+"than just a simple key to letter mapping, you may want to enable this "
+"function.\n"
+"For example, you will need this function for typing Chinese, Japanese, "
+"Korean or Vietnamese.\n"
+"The recommended value for Ubuntu is \"ibus\".\n"
+"If you want to use alternative input method systems, install the "
+"corresponding packages first and then choose the desired system here."
+msgstr ""
+"Если вам нужно печатать на языках, которые требуют более сложных методов "
+"ввода, чем только простые клавиши для ввода букв, вы, возможно, захотите "
+"включить эту функцию.\n"
+"Например, вам понадобится эта функция для печати на китайском, японском, "
+"корейском или вьетнамском языках.\n"
+"Рекомендуемое значение для Ubuntu - \"ibus\".\n"
+"Если вы хотите использовать альтернативные системы метода ввода, то "
+"установите соответствующие пакеты, а затем вернитесь и выберите желаемую "
+"систему."
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr "Отображать числа, даты, валюту в обычном формате для:"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid ""
+"This will set the system environment like shown below and will also affect "
+"the preferred paper format and other region specific settings.\n"
+"If you want to display the desktop in a different language than this, please "
+"select it in the \"Language\" tab.\n"
+"Hence you should set this to a sensible value for the region in which you "
+"are located."
+msgstr ""
+"Это позволит установить системное окружение, как показано ниже, а также "
+"повлияет на предпочитаемый формат бумаги и другие настройки, специфические "
+"для данного региона.\n"
+"Если вы хотите видеть рабочее окружение на языке, отличном от этого, "
+"пожалуйста, выберите его на вкладке \"Язык\".\n"
+"Следовательно, вы должны установить это значение соотвествующим региону, в "
+"котором вы находитесь."
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Изменения вступят в силу после следующего входа в систему.</small>"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid ""
+"<small>Use the same format choice for startup and the login screen.</small>"
+msgstr ""
+"<small>Использовать тот же формат для экранов запуска и входа в "
+"систему.</small>"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Number:"
+msgstr "Количество:"
+
+#: ../data/LanguageSelector.ui.h:31
+msgid "Date:"
+msgstr "Дата:"
+
+#: ../data/LanguageSelector.ui.h:32
+msgid "Currency:"
+msgstr "Валюта:"
+
+#: ../data/LanguageSelector.ui.h:33
+msgid "<b>Example</b>"
+msgstr "<b>Пример</b>"
+
+#: ../data/LanguageSelector.ui.h:34
+msgid "Regional Formats"
+msgstr "Региональные форматы"
+
+#: ../data/language-selector.desktop.in.h:2
 msgid "Configure multiple and native language support on your system"
 msgstr ""
 "Выбор и установка поддержки основного и дополнительных языков операционной "
 "системы"
 
-#: ../data/language-selector.desktop.in.h:2
-#: ../data/qt-language-selector.desktop.in.h:2
-msgid "Language Support"
-msgstr "Язык системы"
+#: ../data/kde-language-selector.desktop.in.h:1
+msgid "System Languages"
+msgstr "Системные языки"
+
+#: ../data/kde-language-selector.desktop.in.h:2
+msgid "Install and set system languages"
+msgstr "Установить и выбрать языки системы"
 
 #. Name
-#: ..//data/incomplete-language-support-gnome.note.in:5
-#: ..//data/incomplete-language-support-qt.note.in:5
+#: ../data/incomplete-language-support-gnome.note.in:5
+#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "Поддержка языка установлена не полностью"
 
 #. Description
-#: ..//data/incomplete-language-support-gnome.note.in:6
+#: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
 "now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"required. If you would like to do this at a later time, please use Language "
+"Support instead (click the icon at the very right of the top bar and select "
+"\"System Settings... -> Language Support\")."
 msgstr ""
 "Файлы поддержки для выбранного вами языка установлены не полностью. Для "
 "установки недостающих компонентов, кликните «Установить сейчас» и следуйте "
-"инструкциям. Для установки потребуется активное интернет-соединение. Если вы "
-"захотите сделать это позже, пожалуйста, используйте «Система -> "
-"Администрирование -> Язык системы»."
+"инструкциям. Для установки потребуется активное интернет-соединение.  Если "
+"вы хотите сделать это позже, используйте Язык системы (Нажмите на самый "
+"правый значок в верхней панели и выберите «Настройки системы -> Язык "
+"системы»)."
 
 #. Description
-#: ..//data/incomplete-language-support-qt.note.in:6
+#: ../data/incomplete-language-support-kde.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
@@ -470,27 +542,35 @@ msgstr ""
 "Новые языковые параметры вступят в силу только после повторного входа в "
 "систему."
 
-#: ../gnome-language-selector:25
-msgid "don't verify installed language support"
-msgstr "Не проверять поддержку установленного языка"
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
+msgid "Set system default language"
+msgstr "Установить системный язык по умолчанию"
 
-#: ../gnome-language-selector:28 ../check-language-support:22
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
+msgid "System policy prevented setting default language"
+msgstr "Политика системы не допускает назначение языка по умолчанию"
+
+#: ../gnome-language-selector:17
+msgid "don't verify installed language support"
+msgstr "не проверять поддержку установленного языка"
+
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "другой datadir"
 
-#: ../fontconfig-voodoo:18
+#: ../fontconfig-voodoo:17
 msgid "Aborting"
 msgstr "Прерывание"
 
-#: ../fontconfig-voodoo:26
+#: ../fontconfig-voodoo:25
 msgid "Force even when a configuration exists"
-msgstr "Делать даже если конфигурация существует"
+msgstr "Применить, даже если конфигурация существует"
 
-#: ../fontconfig-voodoo:28
+#: ../fontconfig-voodoo:27
 msgid "Set fontconfig voodoo for the selected language"
 msgstr "Установить fontconfig voodoo для выбранного языка"
 
-#: ../fontconfig-voodoo:32
+#: ../fontconfig-voodoo:31
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
@@ -498,102 +578,107 @@ msgstr ""
 "Подобрать конфигурацию на основе окружения LANGUAGE. Если ничего подходящего "
 "не найдено, возвращает «none»"
 
-#: ../fontconfig-voodoo:37
+#: ../fontconfig-voodoo:36
 msgid "List the available fontconfig-voodoo configs"
 msgstr "Показать доступные настройки fontconfig-voodoo"
 
-#: ../fontconfig-voodoo:40
+#: ../fontconfig-voodoo:39
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Показать текущую настройку fontconfig-voodoo"
 
-#: ../fontconfig-voodoo:43
+#: ../fontconfig-voodoo:42
 msgid "Remove the current fontconfig-voodoo config"
 msgstr "Удалить текущую конфигурацию fontconfig-voodoo"
 
-#: ../fontconfig-voodoo:65
+#: ../fontconfig-voodoo:64
 msgid "Unconfigured"
 msgstr "Не настроено"
 
-#: ../fontconfig-voodoo:77
+#: ../fontconfig-voodoo:80
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr ""
 "Конфигурация уже существует. Чтобы перезаписать используйте «--force». "
 
+#: ../fontconfig-voodoo:89
+msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
+msgstr ""
+"Не найдена fontconfig-voodoo конфигурация для текущего ЯЗЫКА (LANGUAGE)"
+
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr "Для выбранной локали не найдена конфигурация fontconfig-voodoo."
+msgstr "Для выбранной локали не найдена конфигурация fontconfig-voodoo"
 
-#: ../check-language-support:19
+#: ../check-language-support:22
 msgid "target language code"
 msgstr "код нужного языка"
 
-#: ../check-language-support:23
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "проверить только данный(ые) пакет(ы) -- список пакетов, разделенный запятыми"
 
-#: ../check-language-support:25
-msgid "check all available languages"
-msgstr "проверить все доступные языки"
-
 #: ../check-language-support:28
+msgid "output all available language support packages for all languages"
+msgstr "показать все доступные пакеты языковой поддержки для всех языков"
+
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr "показать как установленные, так и отсутствующие пакеты"
 
-#~ msgid "The list of available languages on the system has been updated."
-#~ msgstr "Обновлён список доступных в системе языков."
+#~ msgid ""
+#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
+#~ "highlighting, correcting or suggesting words."
+#~ msgstr ""
+#~ "Списки слов, словари и тезаурусы, которые обеспечивают подсветку, коррекцию "
+#~ "или предложения синонимов при наборе слов."
 
 #~ msgid ""
-#~ "This will set the system environment like shown below and will also affect "
-#~ "the preferred paper format and other territory specific settings.\n"
-#~ "If you want to display the desktop in a different language than this, please "
-#~ "select it in the \"Language\" tab.\n"
-#~ "Hence you should set this to a sensible value for the territory you are "
-#~ "located in."
+#~ "Additional fonts for this language which might be of general interest, e.g. "
+#~ "decorative fonts for printing documents."
 #~ msgstr ""
-#~ "Здесь Вы можете настроить системные форматы, так же эти настройки затронут "
-#~ "предпочтительный формат бумаги и другие настройки специфичные для вашего "
-#~ "местоположения.\n"
-#~ "Если Вы желаете использовать другой язык для отображения вашего рабочего "
-#~ "стола и приложений, перейдите на вкладку \"Язык\".\n"
-#~ "Далее Вы должны выбрать привычные вам способы отображения указанных значений."
+#~ "Дополнительные шрифты для этого языка, которые могут представлять общий "
+#~ "интерес (например, декоративные шрифты для печати документов)."
 
 #~ msgid ""
-#~ "This setting only affects the language your desktop and applications are "
-#~ "displayed in. It does not set the system environment, like currency or date "
-#~ "format settings. For that, use the settings in the Text tab.\n"
-#~ "The order of the values displayed here decides which translations to use for "
-#~ "your desktop. If translations for the first language are not available, the "
-#~ "next one in this list will be tried. The last entry of this list is always "
-#~ "\"English\".\n"
-#~ "Every entry below \"English\" will be ignored."
+#~ "Usually this is related to an error in your software archive or software "
+#~ "manager. Check your software preferences in the System > Administration menu."
 #~ msgstr ""
-#~ "Эта настройка затронет только язык отображения вашего рабочего стола и "
-#~ "приложений. Она не изменит настройки системного окружения, такие как форматы "
-#~ "отображений валюты и даты. Для их настройки, перейдите на вкладку "
-#~ "\"Текст\".\n"
-#~ "Порядок значений, представленных здесь, отображает порядок перевода "
-#~ "приложения. Если отсутствует верхний перевод, система попытается включить "
-#~ "тот, который расположен ниже. Последним пунктом в списке всегда является "
-#~ "\"English\".\n"
-#~ "Любой пункт ниже пункта \"English\" будет проигнорирован."
+#~ "Обычно это связано с ошибкой в вашем архиве программ или менеджере пакетов. "
+#~ "Проверьте настройки программ в меню Система > Администрирование."
+
+#~ msgid "Translations for your desktop."
+#~ msgstr "Переводы для вашего рабочего стола."
+
+#~ msgid "check all available languages"
+#~ msgstr "проверить все доступные языки"
+
+#, python-format
+#~ msgid "Failed to apply the '%s' format choice:"
+#~ msgstr "Не удалось применить формат '%s':"
 
 #~ msgid ""
-#~ "If you need to type in languages, which require more complex input methods "
-#~ "than just a simple key to letter mapping, you may want to enable this "
-#~ "function.\n"
-#~ "For example, you will need this function for typing Chinese, Japanese, "
-#~ "Korean or Vietnamese.\n"
-#~ "The recommended value for Ubuntu is \"ibus\".\n"
-#~ "If you want to use alternative input method systems, install the "
-#~ "corresponding packages first and then choose the desired system here."
+#~ "<small>Use the same language choices for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
 #~ msgstr ""
-#~ "Если Вам нужно печатать на языках, которые требуют более сложных методов "
-#~ "ввода, чем только простые клавиши для ввода букв, Вы, возможно, захотите "
-#~ "включить эту функцию.\n"
-#~ "Например, Вам точно понадобится эта функция для печати на китайском, "
-#~ "японском, корейском или вьетнамском языках.\n"
-#~ "Рекомендуемое значение для Ubuntu - \"ibus\".\n"
-#~ "Если Вы хотите использовать альтернативные системы метода ввода, то "
-#~ "установите соответствующие пакеты, а затем вернитесь и выберите желаемую "
-#~ "систему."
+#~ "<small>Выберите такой же язык для загрузки и экрана входа в систему.\n"
+#~ "Изменения вступят в действие после перезагрузки системы.</small>"
+
+#~ msgid ""
+#~ "<small>Use the same format choice for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small>Выберите такой же формат для загрузки и экрана входа в систему.\n"
+#~ "Изменения вступят в действие после перезагрузки системы.</small>"
+
+#~ msgid ""
+#~ "The language support files for your selected language seem to be incomplete. "
+#~ "You can install the missing components by clicking on \"Run this action "
+#~ "now\" and follow the instructions. An active internet connection is "
+#~ "required. If you would like to do this at a later time, please use \"System -"
+#~ "> Administration -> Language Support\" instead."
+#~ msgstr ""
+#~ "Файлы поддержки для выбранного вами языка установлены не полностью. Для "
+#~ "установки недостающих компонентов, нажмите «Установить сейчас» и следуйте "
+#~ "инструкциям. Для установки потребуется активное интернет-соединение. Если вы "
+#~ "захотите сделать это позже, пожалуйста, используйте «Система -> "
+#~ "Администрирование -> Язык системы»."

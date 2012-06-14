@@ -812,6 +812,10 @@ class GtkLanguageSelector(LanguageSelectorBase):
         #cell.set_property("wrap-width",300)
         #cell.set_property("wrap-mode",Pango.WRAP_WORD)
         model = combo.get_model()
+
+        if not model:
+            return
+
         model.clear()
 
         # find the default
@@ -926,14 +930,19 @@ class GtkLanguageSelector(LanguageSelectorBase):
         model = combo.get_model()
         if combo.get_active() < 0:
             return
+        self.label_example_currency.set_text('')
+        self.label_example_number.set_text('')
+        self.label_example_date.set_text('')
         (lang, code) = model[combo.get_active()]
         macr = macros.LangpackMacros(self._datadir, code)
         mylocale = macr["SYSLOCALE"].encode('UTF-8')
         try:
             locale.setlocale(locale.LC_ALL, mylocale)
-        except locale.Error as detail:
+        except locale.Error:
             self.label_example_date.set_text('[ '
-            + _("Failed to apply the '%s' format choice:") % mylocale + "\n%s ]" % detail)
+            + _("Failed to apply the '%s' format\n"
+                "choice. The examples may show up if you\n"
+                "close and re-open Language Support.") % mylocale + ' ]')
             return
         self.label_example_currency.set_text(locale.currency(20457.99))
         self.label_example_number.set_text(locale.format("%.2f", 1234567.89, grouping=True))

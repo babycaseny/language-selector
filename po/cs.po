@@ -7,61 +7,61 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector 0.0+baz20050823\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-24 13:55+0000\n"
-"PO-Revision-Date: 2010-09-24 17:17+0000\n"
-"Last-Translator: Kamil Páral <kamil.paral@gmail.com>\n"
+"POT-Creation-Date: 2012-03-30 10:53+0000\n"
+"PO-Revision-Date: 2012-03-13 22:47+0000\n"
+"Last-Translator: Ondřej Surý <ondrej@sury.org>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2010-10-05 09:20+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
+"X-Generator: Launchpad (build 15070)\n"
 "Language: cs\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:47
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "Čínština (zjednodušená)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:49
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "Čínština (tradiční)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
-#: ../LanguageSelector/qt/QtLanguageSelector.py:98
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
-msgstr "O jazyku nejsou dostupné žádné informace"
+msgstr "Nejsou dostupné žádné informace o jazycích"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
-#: ../LanguageSelector/qt/QtLanguageSelector.py:99
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
 "Systém zatím nemá žádné informace o dostupných jazycích. Chcete nyní provést "
-"aktualizaci přes síť a získat je? "
+"aktualizaci po síti a získat je? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
-#: ../LanguageSelector/qt/QtLanguageSelector.py:93
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
-msgstr "_Aktualizovat"
+msgstr "Akt_ualizovat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:307
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:345
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Jazyk"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
 msgstr "Nainstalováno"
 
 #. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:383
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -70,7 +70,7 @@ msgstr[1] "%(INSTALL)d k instalaci"
 msgstr[2] "%(INSTALL)d k instalaci"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:385
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -79,36 +79,38 @@ msgstr[1] "%(REMOVE)d k odstranění"
 msgstr[2] "%(REMOVE)d k odstranění"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:509
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:703
-#: ../LanguageSelector/qt/QtLanguageSelector.py:82
-#: ../LanguageSelector/qt/QtLanguageSelector.py:310
-#: ../check-language-support:52
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+msgid "none"
+msgstr "žádný"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "Databáze softwaru je poškozena"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:510
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:704
-#: ../check-language-support:53
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Není možné nainstalovat nebo odinstalovat žádný program. Prosím použijte "
-"správce balíčků \"Synaptic\" nebo nejdříve spusťe v terminálu \"sudo apt-get "
-"install -f\" pro opravu tohoto problému."
+"Není možné instalovat ani odebírat programy. Prosím použijte správce balíků "
+"\"Synaptic\" nebo nejdříve spusťte v terminálu \"sudo apt-get install -f\" "
+"pro nápravu tohoto problému."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
 msgid "Could not install the selected language support"
 msgstr "Nelze nainstalovat podporu vybraného jazyka"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:556
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -116,25 +118,35 @@ msgstr ""
 "Toto je nejspíše chyba aplikace. Prosím, vyplňte hlášení o chybě na "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "Nelze nainstalovat plnou podporu jazyka"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:581
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
-"manager. Check your software preferences in the System > Administration menu."
+"manager. Check your preferences in Software Sources (click the icon at the "
+"very right of the top bar and select \"System Settings... -> Software "
+"Sources\")."
 msgstr ""
-"Toto obvykle souvisí s chybou archívu nebo správce softwaru. Zkontrolujte "
-"nastavení softwaru v nabídce Systém > Správa."
+"Tato chyba je obvykle spjata s chybou ve vašem softwarovém archivu nebo ve "
+"správci softwaru. Zkontrolujte nastavení ve Zdrojích softwaru (klikněte na "
+"ikonu zcela vpravo nahoře a zvolte \"Nastavení systému...->Zdroje "
+"softwaru\")."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:660
-#: ../LanguageSelector/qt/QtLanguageSelector.py:164
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+msgid "Failed to authorize to install packages."
+msgstr "Selhala autorizace nutná pro instalaci balíku."
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "Podpora jazyků není úplně nainstalována."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:661
-#: ../LanguageSelector/qt/QtLanguageSelector.py:165
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -142,137 +154,167 @@ msgstr ""
 "Některé překlady nebo pomůcky pro psaní dostupné pro vámi zvolené jazyky "
 "nejsou ještě nainstalovány. Chcete je nainstalovat nyní?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:664
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
-#: ../LanguageSelector/qt/QtLanguageSelector.py:160
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
-msgstr "Upozo_rnit mě později"
+msgstr "Připo_menout později"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:665
-#: ../LanguageSelector/qt/QtLanguageSelector.py:159
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "_Nainstalovat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:57
-msgid "Uninstall"
-msgstr "Odinstalovat"
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#, python-format
+msgid ""
+"Failed to apply the '%s' format\n"
+"choice. The examples may show up if you\n"
+"close and re-open Language Support."
+msgstr ""
+"Selhalo nastavení formátu '%s'\n"
+"voleb. Ukázky se objeví pokud\n"
+"uzavřete a znovu spustíte Jazykovou podporu"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:58
+#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+msgid ""
+"It is impossible to install or remove any software. Please use the package "
+"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
+"this issue at first."
+msgstr ""
+"Není možné nainstalovat nebo odstranit jakýkoliv software. Nejdříve prosím "
+"odstraňte problém pomocí správce balíků \"Muon\" nebo spuštěním „sudo apt-"
+"get install -f“ v terminálu."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:114
+msgid "Set System Language"
+msgstr "Nastavit jazyk systému"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+msgid "Default system language:"
+msgstr "Výchozí jazyk systému:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+msgid "Keyboard input method:"
+msgstr "Způsob rozložení klávesnice:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+msgid "Select language to install:"
+msgstr "Zvolte jazyk pro instalaci:"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:118
 msgid "Select language to uninstall:"
-msgstr "Vyberte jazyk k odinstalování:"
+msgstr "Zvolte jazyk pro odstranění:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:65
-msgid "Language Selector"
-msgstr "Výběr jazyka"
+#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+msgid "Translations"
+msgstr "Překlady"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:83
-#: ../LanguageSelector/qt/QtLanguageSelector.py:311
+#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+msgid "Input methods"
+msgstr "Metody zadávání znaků"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+msgid "Spellchecking and writing aids"
+msgstr "Pomůcky pro psaní a kontrolu pravopisu"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+msgid "Extra fonts"
+msgstr "Dodatečná písma"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+msgid "Components:"
+msgstr "Součásti:"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:202
+msgid "Already installed"
+msgstr "Již nainstalováno"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+msgid "Partially Installed"
+msgstr "Částečně nainstalováno"
+
+#. not sure how to unset all flags, but this disables the item
+#: ../LanguageSelector/qt/QtLanguageSelector.py:208
+msgid "Not installed"
+msgstr "Nenainstalováno"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+msgid "Component already installed"
+msgstr "Tato součást je už nainstalována"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+msgid "Component not available"
+msgstr "Tato součást není k dispozici"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+msgid "Component not installed"
+msgstr "Tato součást není nainstalována"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#, python-format
+msgid "Default system Language now set to %s."
+msgstr "Výchozí jazyk systému je nyní nastaven na %s."
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+msgid "Language Set"
+msgstr "Jazyk nastaven"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:329
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Není možné nainstalovat nebo odstranit jakýkoliv software. Nejdříve prosím "
-"odstraňte problém pomocí správce balíků \"Adept\" nebo spuštěním „sudo apt-"
-"get install -f“ v terminálu."
+"Není možné nainstalovat nebo odstranit jakýkoliv software. Prosím použijte "
+"správce balíků \"Adept\" nebo v terminálu spusťte \"sudo apt-get install -"
+"f\" a tak tento problém nejprve spravte."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
-msgid "Default system language:"
-msgstr "Výchozí jazyk systému:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
-msgid "Set System Language"
-msgstr "Nastavit jazyk systému"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
-msgid "Keyboard input method:"
-msgstr "Způsob rozložení klávesnice:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:122
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-#: ../data/LanguageSelector.ui.h:13
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
-msgid "Select language to install:"
-msgstr "Vyberte jazyk k instalaci:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Install"
-msgstr "Instalovat"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
-msgid "Already installed"
-msgstr "Již nainstalováno"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:217
-msgid "Partially Installed"
-msgstr "Částečně nainstalováno"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:221
-msgid "Not installed"
-msgstr "Nenainstalováno"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
-#, python-format
-msgid "Default system Language now set to %s."
-msgstr "Výchozí jazyk systému je nyní nastaven na %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:266
-msgid "Language Set"
-msgstr "Jazyk nastaven"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 #, python-format
 msgid ""
-"Translations and support have now been installed for %s.  Select them from "
-"the Add Language button."
+"All selected components have now been installed for %s.  Select them from "
+"Country/Region & Language."
 msgstr ""
-"Překlady a podpora byly nyní nainstalovány pro %s. Vyberte je tlačítkem "
-"Přidat jazyk."
+"Všechny vybrané součásti pro %s byly nyní nainstalovány. Vyberte je z "
+"nabídky Země/oblast a jazyk."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:341
+#: ../LanguageSelector/qt/QtLanguageSelector.py:354
 msgid "Language Installed"
 msgstr "Jazyk nainstalován"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "Překlady a podpora byli nyní odinstalovány pro %s."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:343
+#: ../LanguageSelector/qt/QtLanguageSelector.py:356
 msgid "Language Uninstalled"
-msgstr "Jazyk odinstalován"
+msgstr "Jazyk odstraněn"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Failed to set system language."
-msgstr "Selhalo nastavení jazyka systému."
+msgstr "Nepodařilo se nastavit jazyk systému."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:345
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Language Not Set"
 msgstr "Jazyk nenastaven"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Please run this software with administrative rights."
-msgstr "Spusťte prosím tento program s administrátorskými právy."
+msgstr "Prosím spusťte tento program s administrátorskými právy."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:394
+#: ../LanguageSelector/qt/QtLanguageSelector.py:433
 msgid "Not Root User"
-msgstr "Nejste superuživatel"
+msgstr "Nejste uživatelem root"
 
 #: ../data/LanguageSelector.ui.h:1
-msgid "<b>Example</b>"
-msgstr "<b>Příklad</b>"
-
-#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -284,116 +326,11 @@ msgstr ""
 "Dostupnost překladů nebo pomůcek pro psaní se může mezi jednotlivými jazyky "
 "lišit."
 
-#: ../data/LanguageSelector.ui.h:5
-msgid "<small>Changes take effect next time you log in.</small>"
-msgstr "<small>Změny se projeví při dalším přihlášení.</small>"
-
-#: ../data/LanguageSelector.ui.h:6
-msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
-"Changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Přetažením seřaďte jazyky podle vašich priorit.\n"
-"Změny se projeví při dalším přihlášení.</small>"
-
-#: ../data/LanguageSelector.ui.h:8
-msgid ""
-"<small>Uses the same language choices for startup and the login "
-"screen.</small>"
-msgstr ""
-"<small>Použije stejné jazykové nastavení pro spouštěcí a přihlašovací "
-"obrazovku.</small>"
-
-#: ../data/LanguageSelector.ui.h:9
-msgid ""
-"<small>Uses the same text format choice for startup and the login "
-"screen.</small>"
-msgstr ""
-"<small>Použije stejné nastavení formátu textu pro spouštěcí a přihlašovací "
-"obrazovku.</small>"
-
-#: ../data/LanguageSelector.ui.h:10
-msgid ""
-"Additional fonts for this language which might be of general interest, e.g. "
-"decorative fonts for printing documents."
-msgstr ""
-"Dodatečná písma pro tento jazyk, která mohou být obecně zajímavá, např. "
-"ozdobná písma pro tisk dokumentů."
-
-#: ../data/LanguageSelector.ui.h:11
-msgid "Apply Changes"
-msgstr "Uplatnit změny"
-
-#: ../data/LanguageSelector.ui.h:12
-msgid "Apply System-Wide..."
-msgstr "Uplatnit v rámci celého systému..."
-
-#: ../data/LanguageSelector.ui.h:14
-msgid "Components:"
-msgstr "Součásti:"
-
-#: ../data/LanguageSelector.ui.h:15
-msgid "Currency:"
-msgstr "Měna:"
-
-#: ../data/LanguageSelector.ui.h:16
-msgid "Date:"
-msgstr "Datum:"
-
-#: ../data/LanguageSelector.ui.h:17
-msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
-"Zobrazit čísla, kalendářní data a peněžní hodnoty v běžném formátu pro:"
-
-#: ../data/LanguageSelector.ui.h:18
-msgid "Extra fonts"
-msgstr "Dodatečná písma"
-
-#: ../data/LanguageSelector.ui.h:19
-msgid "Input methods"
-msgstr "Metody zadávání znaků"
-
-#: ../data/LanguageSelector.ui.h:20
-msgid "Install / Remove Languages..."
-msgstr "Přidat/odstranit jazyky..."
-
-#: ../data/LanguageSelector.ui.h:21
+#: ../data/LanguageSelector.ui.h:4
 msgid "Installed Languages"
 msgstr "Nainstalované jazyky"
 
-#: ../data/LanguageSelector.ui.h:22
-msgid "Keyboard input method system:"
-msgstr "Způsob rozložení klávesnice:"
-
-#: ../data/LanguageSelector.ui.h:24
-msgid "Language & Text"
-msgstr "Jazyk a text"
-
-#: ../data/LanguageSelector.ui.h:25
-msgid "Language for menus and windows:"
-msgstr "Jazyk pro nabídky a okna:"
-
-#: ../data/LanguageSelector.ui.h:26
-msgid "Number:"
-msgstr "Číslo:"
-
-#: ../data/LanguageSelector.ui.h:27
-msgid "Spellchecking and writing aids"
-msgstr "Pomůcky pro psaní a kontrolu pravopisu"
-
-#: ../data/LanguageSelector.ui.h:28
-msgid "Text"
-msgstr "Text"
-
-#: ../data/LanguageSelector.ui.h:29
-msgid "Translations"
-msgstr "Překlady"
-
-#: ../data/LanguageSelector.ui.h:30
-msgid "Translations for your desktop."
-msgstr "Překlady pro vaše pracovní prostředí."
-
-#: ../data/LanguageSelector.ui.h:31
+#: ../data/LanguageSelector.ui.h:5
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -401,48 +338,179 @@ msgstr ""
 "Poté, co je jazyk nainstalován, si jej uživatelé mohou zvolit ve své "
 "jazykové podpoře."
 
-#: ../data/LanguageSelector.ui.h:32
-msgid ""
-"Word lists, dictionaries, thesauruses, etc. which can help typing by "
-"highlighting, correcting or suggesting words."
-msgstr ""
-"Seznamy slov, slovníky, thesaurusy, atd., což pomáhá při psaní "
-"zvýrazňováním, opravováním nebo navrhováním slov."
+#: ../data/LanguageSelector.ui.h:6
+msgid "Cancel"
+msgstr "Zrušit"
 
-#: ../data/language-selector.desktop.in.h:1
-#: ../data/qt-language-selector.desktop.in.h:1
+#: ../data/LanguageSelector.ui.h:7
+msgid "Apply Changes"
+msgstr "Uplatnit změny"
+
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "Jazyková podpora"
+
+#: ../data/LanguageSelector.ui.h:9
+msgid "Language for menus and windows:"
+msgstr "Jazyk pro nabídky a okna:"
+
+#: ../data/LanguageSelector.ui.h:10
+msgid ""
+"This setting only affects the language your desktop and applications are "
+"displayed in. It does not set the system environment, like currency or date "
+"format settings. For that, use the settings in the Regional Formats tab.\n"
+"The order of the values displayed here decides which translations to use for "
+"your desktop. If translations for the first language are not available, the "
+"next one in this list will be tried. The last entry of this list is always "
+"\"English\".\n"
+"Every entry below \"English\" will be ignored."
+msgstr ""
+"Toto nastavení ovlivní pouze jazyk, ve kterém je zobrazeno vaše pracovní "
+"prostředí a aplikace. Nemění prostředí systému jako nastavení formátu měny "
+"nebo data. K tomu použijte nastavení na kartě Místní formáty.\n"
+"Pořadí zde uvedených hodnot rozhoduje, jaké překlady se použijí pro vaše "
+"pracovní prostředí. Pokud nejsou překlady pro první jazyk dostupné, použijí "
+"se další z tohoto seznamu. Poslední položkou tohoto seznamu je vždy "
+"\"English\".\n"
+"Každá položka pod \"English\" bude ignorována."
+
+#: ../data/LanguageSelector.ui.h:13
+msgid ""
+"<small>Drag languages to arrange them in order of preference.\n"
+"Changes take effect next time you log in.</small>"
+msgstr ""
+"<small>Přetažením seřaďte jazyky podle vašich priorit.\n"
+"Změny se projeví při dalším přihlášení.</small>"
+
+#: ../data/LanguageSelector.ui.h:15
+msgid "Apply System-Wide"
+msgstr "Uplatnit v rámci celého systému"
+
+#: ../data/LanguageSelector.ui.h:16
+msgid ""
+"<small>Use the same language choices for startup and the login "
+"screen.</small>"
+msgstr ""
+"<small>Použít stejné nastavení jazyka při startování a pro přihlašovací "
+"obrazovku.</small>"
+
+#: ../data/LanguageSelector.ui.h:17
+msgid "Install / Remove Languages..."
+msgstr "Přidat/odstranit jazyky..."
+
+#: ../data/LanguageSelector.ui.h:18
+msgid "Keyboard input method system:"
+msgstr "Způsob rozložení klávesnice:"
+
+#: ../data/LanguageSelector.ui.h:19
+msgid ""
+"If you need to type in languages, which require more complex input methods "
+"than just a simple key to letter mapping, you may want to enable this "
+"function.\n"
+"For example, you will need this function for typing Chinese, Japanese, "
+"Korean or Vietnamese.\n"
+"The recommended value for Ubuntu is \"ibus\".\n"
+"If you want to use alternative input method systems, install the "
+"corresponding packages first and then choose the desired system here."
+msgstr ""
+"Pokud potřebujete psát v jazycích, které vyžadují zadávání složitějších "
+"znaků než jen jednoduchých, měli byste zapnout tuto funkci.\n"
+"Například, tuto funkci budete potřebovat při psaní v čínštině, japonštině, "
+"korejštině nebo vietnamštině.\n"
+"Doporučená hodnota pro Ubuntu je \"ibus\".\n"
+"Pokud chcete použít alternativní metody zadávání znaků, nainstalujte "
+"nejdříve příslušné balíky a pak zde zvolte požadovaný systém."
+
+#: ../data/LanguageSelector.ui.h:24
+msgid "Display numbers, dates and currency amounts in the usual format for:"
+msgstr ""
+"Zobrazit čísla, kalendářní data a peněžní hodnoty v běžném formátu pro:"
+
+#: ../data/LanguageSelector.ui.h:25
+msgid ""
+"This will set the system environment like shown below and will also affect "
+"the preferred paper format and other region specific settings.\n"
+"If you want to display the desktop in a different language than this, please "
+"select it in the \"Language\" tab.\n"
+"Hence you should set this to a sensible value for the region in which you "
+"are located."
+msgstr ""
+"Tímto nastavíte prostředí systému jak je níže uvedeno a také ovlivníte "
+"preferovaný formát papíru a další místní specifická nastavení.\n"
+"Pokud chcete zobrazit pracovní prostředí v jiném jazyce než tomto, zvolte "
+"jej prosím na kartě \"Jazyk\".\n"
+"Proto byste měli nastavit tuto hodnotu podle toho, v jaké oblasti se "
+"nacházíte."
+
+#: ../data/LanguageSelector.ui.h:28
+msgid "<small>Changes take effect next time you log in.</small>"
+msgstr "<small>Změny se projeví při dalším přihlášení.</small>"
+
+#: ../data/LanguageSelector.ui.h:29
+msgid ""
+"<small>Use the same format choice for startup and the login screen.</small>"
+msgstr ""
+"<small>Použít stejný formát při startování a pro přihlašovací "
+"obrazovku.</small>"
+
+#: ../data/LanguageSelector.ui.h:30
+msgid "Number:"
+msgstr "Číslo:"
+
+#: ../data/LanguageSelector.ui.h:31
+msgid "Date:"
+msgstr "Datum:"
+
+#: ../data/LanguageSelector.ui.h:32
+msgid "Currency:"
+msgstr "Měna:"
+
+#: ../data/LanguageSelector.ui.h:33
+msgid "<b>Example</b>"
+msgstr "<b>Příklad</b>"
+
+#: ../data/LanguageSelector.ui.h:34
+msgid "Regional Formats"
+msgstr "Místní formáty"
+
+#: ../data/language-selector.desktop.in.h:2
 msgid "Configure multiple and native language support on your system"
 msgstr ""
 "Nastavit národní jazykovou podporu společně s podporou dalších jazyků"
 
-#: ../data/language-selector.desktop.in.h:2
-#: ../data/qt-language-selector.desktop.in.h:2
-msgid "Language Support"
-msgstr "Jazyková podpora"
+#: ../data/kde-language-selector.desktop.in.h:1
+msgid "System Languages"
+msgstr "Jazyky systému"
+
+#: ../data/kde-language-selector.desktop.in.h:2
+msgid "Install and set system languages"
+msgstr "Nainstalovat a nastavit jazyky systému"
 
 #. Name
-#: ..//data/incomplete-language-support-gnome.note.in:5
-#: ..//data/incomplete-language-support-qt.note.in:5
+#: ../data/incomplete-language-support-gnome.note.in:5
+#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "Neúplná jazyková podpora"
 
 #. Description
-#: ..//data/incomplete-language-support-gnome.note.in:6
+#: ../data/incomplete-language-support-gnome.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
 "now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System -"
-"> Administration -> Language Support\" instead."
+"required. If you would like to do this at a later time, please use Language "
+"Support instead (click the icon at the very right of the top bar and select "
+"\"System Settings... -> Language Support\")."
 msgstr ""
-"Podpora pro váš zvolený jazyk se zdá být nekompletní. Můžete nainstalovat "
-"chybějící součásti kliknutím na \"Spustit tuto akci nyní\" a následováním "
-"instrukcí. Je vyžadováno funkční připojení k Internetu. Pokud byste to "
-"raději provedli později, prosím použijte \"Systém → Správa → Jazyková "
-"podpora\"."
+"Soubor podpory jazyka zvoleného jazyka je nekompatibilní nebo nekompletní. "
+"Můžete nainstalovat chybějící komponenty kliknutím na \"Spustit tuto akci "
+"nyní\" a následováním instrukcí. Je vyžadováno aktivní internetové "
+"připojení. Pokud byste toto chtěli udělat později, prosím použijte Jazykovou "
+"podporu (klikněte na ikonu nejvíce vpravo nahoře a zvolte \"Nastavení "
+"systému...->Jazyková podpora\")."
 
 #. Description
-#: ..//data/incomplete-language-support-qt.note.in:6
+#: ../data/incomplete-language-support-kde.note.in:6
 msgid ""
 "The language support files for your selected language seem to be incomplete. "
 "You can install the missing components by clicking on \"Run this action "
@@ -452,8 +520,8 @@ msgid ""
 msgstr ""
 "Podpora jazyků pro zvolený jazyk se zdá být neúplná. Můžete doinstalovat "
 "chybějící součásti kliknutím na \"Spustit tuto akci nyní\" a následováním "
-"instrukcí. Je vyžadováno funkční připojení k Internetu. Pokud to chcete "
-"udělat později, využijte prosím \"Systémová nastavení -> Oblast a jazyk\"."
+"instrukcí. Je vyžadováno funkční internetové připojení. Pokud to chcete "
+"udělat později, prosím využijte \"Systémová nastavení -> Region & Jazyk\"."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -465,27 +533,35 @@ msgstr "Vyžadován restart sezení"
 msgid "The new language settings will take effect once you have logged out."
 msgstr "Nastavení nových jazyků vejde v platnost jakmile se odhlásíte."
 
-#: ../gnome-language-selector:25
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
+msgid "Set system default language"
+msgstr "Nastavit výchozí jazyk systému"
+
+#: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
+msgid "System policy prevented setting default language"
+msgstr "Systémová politika neumožnila nastavení výchozího jazyka"
+
+#: ../gnome-language-selector:17
 msgid "don't verify installed language support"
 msgstr "nekontrolovat podporu pro nainstalované jazyky"
 
-#: ../gnome-language-selector:28 ../check-language-support:22
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "alternativní datový adresář"
 
-#: ../fontconfig-voodoo:18
+#: ../fontconfig-voodoo:17
 msgid "Aborting"
 msgstr "Ukončování"
 
-#: ../fontconfig-voodoo:26
+#: ../fontconfig-voodoo:25
 msgid "Force even when a configuration exists"
 msgstr "Vynutit i když konfigurace existuje"
 
-#: ../fontconfig-voodoo:28
+#: ../fontconfig-voodoo:27
 msgid "Set fontconfig voodoo for the selected language"
 msgstr "Nastavit fontconfig voodoo pro zvolený jazyk"
 
-#: ../fontconfig-voodoo:32
+#: ../fontconfig-voodoo:31
 msgid ""
 "Guess a configuration based on the LANGUAGE environment. Sets the config to "
 "'none' if nothing suitable was found"
@@ -493,95 +569,107 @@ msgstr ""
 "Odhadnout konfiguraci dle jazykového prostředí. Nastaví konfiguraci na "
 "'none' pokud nebude nalezeno nic odpovídajícího"
 
-#: ../fontconfig-voodoo:37
+#: ../fontconfig-voodoo:36
 msgid "List the available fontconfig-voodoo configs"
 msgstr "Vypsat dostupné fontconfig-voodoo konfigurace"
 
-#: ../fontconfig-voodoo:40
+#: ../fontconfig-voodoo:39
 msgid "Show the current fontconfig-voodoo config"
 msgstr "Zobrazit aktuální fontconfig-voodoo konfiguraci"
 
-#: ../fontconfig-voodoo:43
+#: ../fontconfig-voodoo:42
 msgid "Remove the current fontconfig-voodoo config"
 msgstr "Odstranit aktuální nastavení fontconfig-voodoo"
 
-#: ../fontconfig-voodoo:65
+#: ../fontconfig-voodoo:64
 msgid "Unconfigured"
 msgstr "Nenastaveno"
 
-#: ../fontconfig-voodoo:77
+#: ../fontconfig-voodoo:80
 msgid "A configuration exists already. Use '--force' to overwrite it. "
 msgstr "Konfigurace již existuje. Použijte '--force' k jejímu přepsání. "
+
+#: ../fontconfig-voodoo:89
+msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
+msgstr "Žádné nastavení aktuálního jazyku pro fontconfig-voodoo"
 
 #: ../fontconfig-voodoo:96
 msgid "No fontconfig-voodoo configuration found for the selected locale"
 msgstr ""
 "Žádná fontconfig-voodoo konfigurace nenalezena pro vybrané jazykové prostředí"
 
-#: ../check-language-support:19
+#: ../check-language-support:22
 msgid "target language code"
 msgstr "kód cílového jazyka"
 
-#: ../check-language-support:23
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr "zkontrolovat pouze pro určené balíky -- názvy balíků oddělit čárkou"
 
-#: ../check-language-support:25
-msgid "check all available languages"
-msgstr "zkontrolovat všechny dostupné jazyky"
-
 #: ../check-language-support:28
+msgid "output all available language support packages for all languages"
+msgstr "vypsat všechny dostupné balíky jazykové podpory pro všechny jazyky"
+
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr "zobrazit nainstalované balíky včetně chybějících"
 
 #~ msgid ""
-#~ "If you need to type in languages, which require more complex input methods "
-#~ "than just a simple key to letter mapping, you may want to enable this "
-#~ "function.\n"
-#~ "For example, you will need this function for typing Chinese, Japanese, "
-#~ "Korean or Vietnamese.\n"
-#~ "The recommended value for Ubuntu is \"ibus\".\n"
-#~ "If you want to use alternative input method systems, install the "
-#~ "corresponding packages first and then choose the desired system here."
+#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
+#~ "highlighting, correcting or suggesting words."
 #~ msgstr ""
-#~ "Pokud potřebujete psát v jazycích, které vyžadují zadávání složitějších "
-#~ "znaků než jen jednoduchých, měli byste zapnout tuto funkci.\n"
-#~ "Například, tuto funkci budete potřebovat při psaní v čínštině, japonštině, "
-#~ "korejštině nebo vietnamštině.\n"
-#~ "Doporučená hodnota pro Ubuntu je \"ibus\".\n"
-#~ "Pokud chcete použít alternativní metody zadávání znaků, nainstalujte "
-#~ "nejdříve příslušné balíky a pak zde zvolte požadovaný systém."
+#~ "Seznamy slov, slovníky, thesaurusy, atd., což pomáhá při psaní "
+#~ "zvýrazňováním, opravováním nebo navrhováním slov."
 
 #~ msgid ""
-#~ "This will set the system environment like shown below and will also affect "
-#~ "the preferred paper format and other territory specific settings.\n"
-#~ "If you want to display the desktop in a different language than this, please "
-#~ "select it in the \"Language\" tab.\n"
-#~ "Hence you should set this to a sensible value for the territory you are "
-#~ "located in."
+#~ "Additional fonts for this language which might be of general interest, e.g. "
+#~ "decorative fonts for printing documents."
 #~ msgstr ""
-#~ "Toto nastaví prostředí systému, jak je zobrazeno níže a ovlivní také "
-#~ "upřednostňovaný formát papíru a další nastavení typická pro danou oblast.\n"
-#~ "Pokud chcete zobrazit pracovní prostředí v jiném jazyce než tomto, vyberte "
-#~ "jej prosím na kartě \"Jazyk\".\n"
-#~ "Proto byste měli nastavit tuto hodnotu rozumně s ohledem na oblast, ve které "
-#~ "se nacházíte."
+#~ "Dodatečná písma pro tento jazyk, která mohou být obecně zajímavá, např. "
+#~ "ozdobná písma pro tisk dokumentů."
 
 #~ msgid ""
-#~ "This setting only affects the language your desktop and applications are "
-#~ "displayed in. It does not set the system environment, like currency or date "
-#~ "format settings. For that, use the settings in the Text tab.\n"
-#~ "The order of the values displayed here decides which translations to use for "
-#~ "your desktop. If translations for the first language are not available, the "
-#~ "next one in this list will be tried. The last entry of this list is always "
-#~ "\"English\".\n"
-#~ "Every entry below \"English\" will be ignored."
+#~ "The language support files for your selected language seem to be incomplete. "
+#~ "You can install the missing components by clicking on \"Run this action "
+#~ "now\" and follow the instructions. An active internet connection is "
+#~ "required. If you would like to do this at a later time, please use \"System -"
+#~ "> Administration -> Language Support\" instead."
 #~ msgstr ""
-#~ "Toto nastavení ovlivňuje pouze jazyk, ve kterém jsou zobrazeny vaše pracovní "
-#~ "prostředí a aplikace. Nenastavuje prostředí systému jako nastavení měny nebo "
-#~ "formátu data. Pro tento případ použijte nastavení na kartě Text.\n"
-#~ "Pořadí zde zobrazených hodnot rozhoduje, jaké překlady se použijí pro vaše "
-#~ "pracovní prostředí. Pokud nejsou překlady pro první jazyk dostupné, bude "
-#~ "zvolen další z tohoto seznamu. Poslední položkou tohoto seznamu je vždy "
-#~ "\"angličtina\".\n"
-#~ "Každá položka pod \"angličtinou\" bude ignorována."
+#~ "Podpora pro váš zvolený jazyk se zdá být nekompletní. Můžete nainstalovat "
+#~ "chybějící součásti kliknutím na \"Spustit tuto akci nyní\" a následováním "
+#~ "instrukcí. Je vyžadováno funkční připojení k Internetu. Pokud byste to "
+#~ "raději provedli později, prosím použijte \"Systém → Správa → Jazyková "
+#~ "podpora\"."
+
+#~ msgid "check all available languages"
+#~ msgstr "zkontrolovat všechny dostupné jazyky"
+
+#~ msgid ""
+#~ "Usually this is related to an error in your software archive or software "
+#~ "manager. Check your software preferences in the System > Administration menu."
+#~ msgstr ""
+#~ "Toto obvykle souvisí s chybou archívu nebo správce softwaru. Zkontrolujte "
+#~ "nastavení softwaru v nabídce Systém > Správa."
+
+#~ msgid "Translations for your desktop."
+#~ msgstr "Překlady pro vaše pracovní prostředí."
+
+#, python-format
+#~ msgid "Failed to apply the '%s' format choice:"
+#~ msgstr "Nepodařilo se uplatnit nastavení formátu '%s':"
+
+#~ msgid ""
+#~ "<small>Use the same language choices for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small>Použije stejné jazykové nastavení pro spouštěcí a přihlašovací "
+#~ "obrazovku.\n"
+#~ "Změny se projeví až po restartování systému.</small>"
+
+#~ msgid ""
+#~ "<small>Use the same format choice for startup and the login screen.\n"
+#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgstr ""
+#~ "<small>Použije stejné nastavení formátu pro spouštěcí a přihlašovací "
+#~ "obrazovku.\n"
+#~ "Změny se projeví až po restartování systému.</small>"

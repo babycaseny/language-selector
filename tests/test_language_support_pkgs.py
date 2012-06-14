@@ -129,7 +129,7 @@ class T(unittest.TestCase):
         self.assertEqual(result, ['wbritish'])
         result = ls.by_package_and_locale('firefox', 'en_GB.UTF-8', False)
         self.assertEqual(result, [])
-        result = ls.by_package_and_locale('gedit', 'en_GB.UTF-8', False)
+        result = ls.by_package_and_locale('abiword', 'en_GB.UTF-8', False)
         self.assertEqual(result, ['aspell-en'])
 
         # if we specify a country, do not give us stuff for other countries
@@ -163,6 +163,32 @@ class T(unittest.TestCase):
 
         # no duplicated items in result list
         self.assertEqual(sorted(set(result)), sorted(result))
+
+    def test_by_locale_zh(self):
+        '''by_locale() for Chinese'''
+
+        ls = self._fake_apt_language_support(['libreoffice-common', 'firefox',
+            'ibus'], ['libreoffice-l10n-zh-cn', 'libreoffice-l10n-zh-tw',
+                'ibus-sunpinyin', 'ibus-chewing', 'firefox-locale-zh-hans',
+                'firefox-locale-zh-hant'])
+
+        result = set(ls.by_locale('zh_CN', True))
+        self.assertEqual(result, set(['libreoffice-l10n-zh-cn',
+            'ibus-sunpinyin', 'firefox-locale-zh-hans']))
+
+        # accepts both variants of specifying the locale; this is not
+        # originally supposed to work, but some programs assume it does
+        result = set(ls.by_locale('zh-hans', True))
+        self.assertEqual(result, set(['libreoffice-l10n-zh-cn',
+            'ibus-sunpinyin', 'firefox-locale-zh-hans']))
+
+        result = set(ls.by_locale('zh_TW', True))
+        self.assertEqual(result, set(['libreoffice-l10n-zh-tw',
+            'ibus-chewing', 'firefox-locale-zh-hant']))
+
+        result = set(ls.by_locale('zh-hant', True))
+        self.assertEqual(result, set(['libreoffice-l10n-zh-tw',
+            'ibus-chewing', 'firefox-locale-zh-hant']))
 
     def test_by_locale_noinstalled(self):
         '''by_locale() without installed packages'''
