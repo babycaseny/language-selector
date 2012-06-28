@@ -1,3 +1,9 @@
+language-selector (0.84) UNRELEASED; urgency=low
+
+  * data/pkg_depends: Add fonts-lklug-sinhala for Sinhala.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 28 Jun 2012 14:42:18 +0100
+
 language-selector (0.83) quantal; urgency=low
 
   * debian/rules: Override dh_auto_* commands to build with Python 3. (See

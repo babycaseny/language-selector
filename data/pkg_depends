@@ -166,6 +166,7 @@ fn:my::fonts-sil-padauk
 fn:ne::ttf-devanagari-fonts
 fn:or::ttf-oriya-fonts
 fn:pa::ttf-punjabi-fonts
+fn:si::fonts-lklug-sinhala
 fn:ta::ttf-tamil-fonts
 fn:te::ttf-telugu-fonts
 fn:th::ttf-thai-tlwg
