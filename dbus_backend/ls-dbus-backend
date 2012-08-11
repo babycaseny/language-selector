@@ -4,7 +4,7 @@ import dbus
 import dbus.mainloop.glib
 dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
 import dbus.service
-import gobject
+from gi.repository import GObject
 import logging
 import re
 import subprocess
@@ -19,9 +19,9 @@ DATADIR="/usr/share/language-selector/"
 
 class LanguageSelectorServer(dbus.service.Object):
     def __init__(self, bus=dbus.SystemBus(), datadir=DATADIR):
-	    bus_name = dbus.service.BusName('com.ubuntu.LanguageSelector',
-					    bus=bus)
-	    dbus.service.Object.__init__(self, bus_name, '/')
+            bus_name = dbus.service.BusName('com.ubuntu.LanguageSelector',
+                                            bus=bus)
+            dbus.service.Object.__init__(self, bus_name, '/')
             self._datadir = "/usr/share/language-selector/"
             self._re_locale = re.compile(r'^[\w.@:-]+$')
 
@@ -107,6 +107,6 @@ if __name__ == "__main__":
         # FIXME: use argparse
         if len(sys.argv) > 1 and sys.argv[1] == "--debug":
             logging.basicConfig(level=logging.DEBUG)
-	server = LanguageSelectorServer()
-	gobject.MainLoop().run()
+        server = LanguageSelectorServer()
+        GObject.MainLoop().run()
 
