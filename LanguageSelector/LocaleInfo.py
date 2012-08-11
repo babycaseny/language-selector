@@ -22,7 +22,7 @@ from xml.etree.ElementTree import ElementTree
 class LocaleInfo(object):
     " class with handy functions to parse the locale information "
     
-    environments = ["/etc/default/locale", "/etc/environment"]
+    environments = ["/etc/default/locale"]
     def __init__(self, languagelist_file, datadir):
         self._datadir = datadir
         LANGUAGELIST = os.path.join(datadir, 'data', languagelist_file)
@@ -300,8 +300,6 @@ class LocaleInfo(object):
                         match_language = re.match(r'LANGUAGE=(.*)$',line)
                         if match_language:
                             language = match_language.group(1)
-                if len(lang) > 0:
-                    break
         if len(lang) == 0:
             # fall back is 'en_US'
             lang = 'en_US.UTF-8'

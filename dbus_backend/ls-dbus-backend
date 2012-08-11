@@ -62,7 +62,7 @@ class LanguageSelectorServer(dbus.service.Object):
             return False
         if not self._authWithPolicyKit(sender, connection, "com.ubuntu.languageselector.setsystemdefaultlanguage"):
             return False
-        conffiles = ["/etc/default/locale", "/etc/environment"]
+        conffiles = ["/etc/default/locale"]
         findString = "LANGUAGE="
         setString = "LANGUAGE=\"%s\"\n" % sysLanguage
         find_string_and_replace(findString, setString, conffiles)
@@ -94,7 +94,7 @@ class LanguageSelectorServer(dbus.service.Object):
             return False
         if not self._authWithPolicyKit(sender, connection, "com.ubuntu.languageselector.setsystemdefaultlanguage"):
             return False
-        conffiles = ["/etc/default/locale", "/etc/environment"]
+        conffiles = ["/etc/default/locale"]
         macr = LanguageSelector.macros.LangpackMacros(self._datadir, sysFormats)
         for var in 'LC_NUMERIC', 'LC_TIME', 'LC_MONETARY', 'LC_PAPER', 'LC_IDENTIFICATION', \
                    'LC_NAME', 'LC_ADDRESS', 'LC_TELEPHONE', 'LC_MEASUREMENT':

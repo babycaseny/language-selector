@@ -1,6 +1,9 @@
-language-selector (0.84ubuntu1) UNRELEASED; urgency=low
+language-selector (0.85) UNRELEASED; urgency=low
 
   * ls-dbus-backend: fix for python3 compatibility.  LP: #1014429.
+  * Do not touch /etc/environment; we should be updating /etc/default/locale
+    exclusively.  On upgrade, clean up any references that have been left
+    behind in /etc/environment. LP: #1035498.
 
  -- Steve Langasek <steve.langasek@ubuntu.com>  Fri, 10 Aug 2012 18:42:53 -0700
 

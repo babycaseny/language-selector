@@ -33,6 +33,24 @@ dpkg-maintscript-helper rm_conffile \
 dpkg-maintscript-helper rm_conffile \
 	/etc/fonts/conf.avail/29-language-selector-ko-kr.conf 0.75 -- "$@"
 
+# Clean up duplicate entries in /etc/environment created by language-selector.
+if dpkg --compare-versions "$2" lt-nl 0.85 && [ -e /etc/default/locale ] \
+   && [ -e /etc/environment ]
+then
+	. /etc/default/locale
+	for var in LANGUAGE LANG LC_NUMERIC LC_TIME LC_MONETARY LC_PAPER \
+	           LC_IDENTIFICATION LC_NAME LC_ADDRESS LC_TELEPHONE \
+	           LC_MEASUREMENT
+	do
+		match=$(sed -n -e"s/^$var=\"*\([^\"]*\)\"*/\1/p" /etc/environment)
+		if [ -n "$match" ] && [ "$match" = $(eval echo \$$var) ]
+		then
+			sed -i -e"/^$var=/d" /etc/environment
+		fi
+	done
+
+fi
+
 case "$1" in
     configure)
         # stop any old daemon
