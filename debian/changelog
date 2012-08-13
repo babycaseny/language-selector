@@ -1,3 +1,9 @@
+language-selector (0.86) UNRELEASED; urgency=low
+
+  * Apply ja-jp fontconfig config file only when locale matches
+
+ -- Iain Lane <iain.lane@canonical.com>  Mon, 13 Aug 2012 11:35:34 +0100
+
 language-selector (0.85) quantal; urgency=low
 
   * ls-dbus-backend: fix for python3 compatibility.  LP: #1014429.
