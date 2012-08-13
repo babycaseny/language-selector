@@ -1,6 +1,6 @@
 language-selector (0.86) UNRELEASED; urgency=low
 
-  * Apply ja-jp fontconfig config file only when locale matches
+  * Apply all (ja-jp, zh-*) fontconfig config files only when locale matches
 
  -- Iain Lane <iain.lane@canonical.com>  Mon, 13 Aug 2012 11:35:34 +0100
 
