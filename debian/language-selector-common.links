@@ -1,6 +1,6 @@
-/etc/fonts/conf.d/69-language-selector-ja-jp.conf /etc/fonts/conf.d/69-language-selector-ja-jp.conf
-/etc/fonts/conf.d/69-language-selector-zh-cn.conf /etc/fonts/conf.d/69-language-selector-zh-cn.conf
-/etc/fonts/conf.d/69-language-selector-zh-hk.conf /etc/fonts/conf.d/69-language-selector-zh-hk.conf
-/etc/fonts/conf.d/69-language-selector-zh-mo.conf /etc/fonts/conf.d/69-language-selector-zh-mo.conf
-/etc/fonts/conf.d/69-language-selector-zh-sg.conf /etc/fonts/conf.d/69-language-selector-zh-sg.conf
-/etc/fonts/conf.d/69-language-selector-zh-tw.conf /etc/fonts/conf.d/69-language-selector-zh-tw.conf
+/etc/fonts/conf.avail/69-language-selector-ja-jp.conf /etc/fonts/conf.d/69-language-selector-ja-jp.conf
+/etc/fonts/conf.avail/69-language-selector-zh-cn.conf /etc/fonts/conf.d/69-language-selector-zh-cn.conf
+/etc/fonts/conf.avail/69-language-selector-zh-hk.conf /etc/fonts/conf.d/69-language-selector-zh-hk.conf
+/etc/fonts/conf.avail/69-language-selector-zh-mo.conf /etc/fonts/conf.d/69-language-selector-zh-mo.conf
+/etc/fonts/conf.avail/69-language-selector-zh-sg.conf /etc/fonts/conf.d/69-language-selector-zh-sg.conf
+/etc/fonts/conf.avail/69-language-selector-zh-tw.conf /etc/fonts/conf.d/69-language-selector-zh-tw.conf
