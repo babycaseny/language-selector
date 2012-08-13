@@ -1,6 +1,8 @@
 language-selector (0.86) UNRELEASED; urgency=low
 
   * Apply all (ja-jp, zh-*) fontconfig config files only when locale matches
+  * Remove 69-language-selector-ka-ge.conf — it's going to its corresponding
+    font package fonts-bpg-georgian.
 
  -- Iain Lane <iain.lane@canonical.com>  Mon, 13 Aug 2012 11:35:34 +0100
 
