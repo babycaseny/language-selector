@@ -27,7 +27,7 @@ install|upgrade)
   # preinst becaue we're unconditionally installing symlinks with the same
   # name, for now.
   if dpkg --compare-versions "$2" lt-nl "0.86"; then
-      rm /etc/fonts/conf.d/69-language-selector-*.conf || true
+      rm -f /etc/fonts/conf.d/69-language-selector-*.conf
   fi
   ;;
 
