@@ -11,7 +11,7 @@ Build-Depends: debhelper (>= 7.0.50~),
  intltool-debian,
  dh-translations
 X-Python3-Version: >= 3.2
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 
 Package: language-selector-gnome
 Architecture: all

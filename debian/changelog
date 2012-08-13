@@ -7,6 +7,7 @@ language-selector (0.86) UNRELEASED; urgency=low
     installed symlinks on upgrade.
   * Enable all config files that might have been previously installed by
     fontconfig-voodoo now that they are all guarded by locale.
+  * Standards-Version → 3.9.3, no changes required
 
  -- Iain Lane <iain.lane@canonical.com>  Mon, 13 Aug 2012 11:35:34 +0100
 
