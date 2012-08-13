@@ -22,4 +22,13 @@ install|upgrade)
       fi
     fi
   fi
+
+  # Remove old symlinks now that the hack has gone away. This should be in the
+  # preinst becaue we're unconditionally installing symlinks with the same
+  # name, for now.
+  if dpkg --compare-versions "$2" lt-nl "0.86"; then
+      rm /etc/fonts/conf.avail/69-language-selector-*.conf || true
+  fi
+  ;;
+
 esac

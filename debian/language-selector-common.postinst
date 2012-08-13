@@ -61,9 +61,7 @@ case "$1" in
             kill $pid 2>/dev/null || true
         fi
 
-	fontconfig-voodoo --auto --quiet || true
     ;;
-
     abort-upgrade|abort-remove|abort-deconfigure)
 
     ;;

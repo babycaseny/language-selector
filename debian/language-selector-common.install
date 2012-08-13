@@ -2,7 +2,6 @@ etc/dbus-1
 usr/share/dbus-1
 usr/share/polkit-1
 usr/lib/language-selector
-usr/bin/fontconfig-voodoo
 usr/bin/check-language-support
 usr/lib/python*/*-packages/*.egg-info
 usr/lib/python*/*-packages/LanguageSelector/*.py

@@ -11,7 +11,6 @@ import subprocess
 import sys
 
 import LanguageSelector.macros
-import LanguageSelector.FontConfig
 
 from LanguageSelector.utils import *
 
@@ -70,15 +69,6 @@ class LanguageSelectorServer(dbus.service.Object):
         findString = "LANG="
         setString = "LANG=\"%s\"\n" % defaultLanguageLocale
         find_string_and_replace(findString, setString, conffiles)
-        # update fontconfig voodoo
-        fc = LanguageSelector.FontConfig.FontConfigHack()
-        macr = LanguageSelector.macros.LangpackMacros(self._datadir, defaultLanguageLocale)
-        defaultLanguageCode = macr["LOCALE"]
-        if defaultLanguageCode in fc.getAvailableConfigs():
-            subprocess.call(["fontconfig-voodoo", "-f",
-                             "--set=%s" % defaultLanguageCode])
-        else:
-            subprocess.call(["fontconfig-voodoo", "--remove-current"])
         return True
 
     @dbus.service.method(dbus_interface='com.ubuntu.LanguageSelector',
