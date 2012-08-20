@@ -1,4 +1,4 @@
-language-selector (0.86) UNRELEASED; urgency=low
+language-selector (0.86) quantal; urgency=low
 
   * Apply all (ja-jp, zh-*) fontconfig config files only when locale matches
   * Remove 69-language-selector-ka-ge.conf — it's going to its corresponding
