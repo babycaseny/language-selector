@@ -241,11 +241,7 @@ class LocaleInfo(object):
                     match_language = re.match(r'LANGUAGE=(.*)$',line)
                     if match_language:
                         language = match_language.group(1)
-        if 'fontconfig-voodoo' in sys.argv[0] and os.getenv('SUDO_USER'):
-            # handle 'sudo fontconfig-voodoo --auto' correctly
-            user_name = os.environ['SUDO_USER']
-        else:
-            user_name = pwd.getpwuid(os.geteuid()).pw_name
+        user_name = pwd.getpwuid(os.geteuid()).pw_name
         try:
             bus = dbus.SystemBus()
             obj = bus.get_object('org.freedesktop.Accounts', '/org/freedesktop/Accounts')
