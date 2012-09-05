@@ -1,3 +1,14 @@
+language-selector (0.87) quantal; urgency=low
+
+  * Fix bad testing sections. LP: #1034928 
+    - fontconfig/69-language-selector-ja-jp.conf: Separate matching
+      patterns for non-bitmap/non-hinting sections. And remove legacy
+      font lists.
+    - fontconfig/69-language-selector-zh-tw.conf: Separate matching
+      patterns at "Bind AR PL UMing with DejaVu Serif" section.
+
+ -- Fumihito YOSHIDA <hito@kugutsu.org>  Wed, 22 Aug 2012 11:35:26 +0900
+
 language-selector (0.86) quantal; urgency=low
 
   * Apply all (ja-jp, zh-*) fontconfig config files only when locale matches
