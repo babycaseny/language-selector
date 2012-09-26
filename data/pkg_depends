@@ -26,6 +26,7 @@ tr::amarok:amarok-help-
 tr::kdelibs5-data:kde-l10n-
 tr::calligra-libs:calligra-l10n-
 tr::gcompris:gcompris-sound-
+tr::kdevelop-php:kdevelop-php-l10n
 
 # Finnish support for voikko
 wa:fi:firefox:xul-ext-mozvoikko
