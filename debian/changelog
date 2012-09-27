@@ -1,3 +1,10 @@
+language-selector (0.89) UNRELEASED; urgency=low
+
+  * check-language-support: De-duplicate output for a single target language
+    (LP: #1056689).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 27 Sep 2012 13:02:42 +0100
+
 language-selector (0.88) quantal; urgency=low
 
   * data/pkg_depends: Add kdevelop-php-l10n to translations category for
