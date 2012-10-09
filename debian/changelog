@@ -1,8 +1,8 @@
-language-selector (0.90) UNRELEASED; urgency=low
+language-selector (0.90) quantal; urgency=low
 
   * Updated launchpad translations
 
- -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 09 Oct 2012 14:47:06 +0200
+ -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 09 Oct 2012 15:59:39 +0200
 
 language-selector (0.89) quantal; urgency=low
 
