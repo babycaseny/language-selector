@@ -7,90 +7,90 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-30 10:53+0000\n"
-"PO-Revision-Date: 2012-03-09 19:37+0000\n"
-"Last-Translator: Arne Goetje <arne@linux.org.tw>\n"
+"POT-Creation-Date: 2012-09-27 22:00+0000\n"
+"PO-Revision-Date: 2012-08-11 08:14+0000\n"
+"Last-Translator: Walter Cheuk <wwycheuk@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-10-09 12:41+0000\n"
+"X-Generator: Launchpad (build 16112)\n"
 "Language: \n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:54
 msgid "Chinese (simplified)"
 msgstr "中文(簡體)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (traditional)"
 msgstr "中文(繁體)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
 msgstr "無可用語言資訊"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
+#: ../LanguageSelector/qt/QtLanguageSelector.py:95
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr "系統尚無可用語言資訊。您想現在進行網路更新以取得嗎？ "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
+#: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
 msgstr "更新(_U)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "語言"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
 msgid "Installed"
 msgstr "已安裝"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
-msgstr[0] "安裝 %(INSTALL)d"
+msgstr[0] "安裝 %(INSTALL)d 個項目"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
-msgstr[0] "移除 %(REMOVE)d"
+msgstr[0] "移除 %(REMOVE)d 個項目"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%s, %s"
-msgstr "%s，%s"
+msgstr "%s並%s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
 msgid "none"
 msgstr "無"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/qt/QtLanguageSelector.py:78
+#: ../LanguageSelector/qt/QtLanguageSelector.py:336
 msgid "Software database is broken"
 msgstr "軟體資料庫損毀"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -98,11 +98,11 @@ msgid ""
 msgstr ""
 "無法安裝或移除軟體。請先使用「Synaptic 套件管理員」或在終端機內執行「sudo apt-get install -f」修正此問題。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
 msgid "Could not install the selected language support"
 msgstr "無法安裝所選的語言支援"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -110,13 +110,13 @@ msgstr ""
 "這可能是此程式的錯誤。請於 https://bugs.launchpad.net/ubuntu/+source/language-"
 "selector/+filebug 提交臭蟲報告"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
 msgid "Could not install the full language support"
 msgstr "無法安裝完整語言支援"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -125,173 +125,173 @@ msgid ""
 msgstr ""
 "通常這與您的軟體封存或軟體管理員的錯誤有關。請檢查您「軟體來源」內的偏好設定 (點擊頂端列的最右端圖示，並選取「系統設定值」... -> 「軟體來源」)。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
 msgid "Failed to authorize to install packages."
 msgstr "無法授權以安裝套件。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
+#: ../LanguageSelector/qt/QtLanguageSelector.py:171
 msgid "The language support is not installed completely"
 msgstr "安裝的語言支援尚未完備"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
+#: ../LanguageSelector/qt/QtLanguageSelector.py:172
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr "您所選擇的語言有一些可用的翻譯或是文書輔助工具尚未安裝。想要現在安裝嗎？"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
+#: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 msgid "_Remind Me Later"
 msgstr "稍後提醒我(_R)"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
+#: ../LanguageSelector/qt/QtLanguageSelector.py:166
 msgid "_Install"
 msgstr "安裝(_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
 msgid "Details"
 msgstr "詳細資料"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
 "choice. The examples may show up if you\n"
 "close and re-open Language Support."
 msgstr ""
-"無法套用「%s」格式選擇。\n"
+"未能套用「%s」格式選擇。\n"
 "若您關閉且重新開啟「語言\n"
-"支援」範例可能出現。"
+"支援」，範例可能出現。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:79
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
-msgstr "無法安裝或移除任何軟體。請先使用「Muon」套件管理員或在終端機內執行「sudo apt-get install -f」修正此問題。"
+msgstr "無法安裝或移除軟體。請先以「Muon」套件管理員或在終端機執行「sudo apt-get install -f」修正此問題。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:114
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
 msgid "Set System Language"
 msgstr "設定系統語言"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
 msgid "Default system language:"
 msgstr "預設系統語言："
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
 msgid "Keyboard input method:"
 msgstr "鍵盤輸入方法："
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+#: ../LanguageSelector/qt/QtLanguageSelector.py:126
 msgid "Select language to install:"
 msgstr "選取要安裝語言："
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+#: ../LanguageSelector/qt/QtLanguageSelector.py:127
 msgid "Select language to uninstall:"
 msgstr "選取要移除語言："
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:128
 msgid "Translations"
 msgstr "翻譯"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:129
 msgid "Input methods"
 msgstr "輸入法"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../LanguageSelector/qt/QtLanguageSelector.py:130
 msgid "Spellchecking and writing aids"
 msgstr "拼字檢查和文書輔助工具"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Extra fonts"
 msgstr "額外字型"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+#: ../LanguageSelector/qt/QtLanguageSelector.py:132
 msgid "Components:"
-msgstr "部件："
+msgstr "元件："
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:202
+#: ../LanguageSelector/qt/QtLanguageSelector.py:210
 msgid "Already installed"
 msgstr "已安裝"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
 msgstr "部份已安裝"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:208
+#: ../LanguageSelector/qt/QtLanguageSelector.py:216
 msgid "Not installed"
 msgstr "未安裝"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 msgid "Component already installed"
-msgstr "部件已經安裝"
+msgstr "已安裝元件"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+#: ../LanguageSelector/qt/QtLanguageSelector.py:253
 msgid "Component not available"
-msgstr "部件無法使用"
+msgstr "無元件提供"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+#: ../LanguageSelector/qt/QtLanguageSelector.py:255
 msgid "Component not installed"
-msgstr "部件尚未安裝"
+msgstr "尚未安裝元件"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr "預設系統語言現在設定為 %s。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 msgid "Language Set"
 msgstr "語言集"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+#: ../LanguageSelector/qt/QtLanguageSelector.py:337
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
-msgstr "無法安裝或移除任何軟體。請先使用「Adept」套件管理員或在終端機內執行「sudo apt-get install -f」修正此問題。"
+msgstr "無法安裝或移除軟體。請先以 Adept 套件管理員或在終端機執行「sudo apt-get install -f」修正此問題。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 #, python-format
 msgid ""
 "All selected components have now been installed for %s.  Select them from "
 "Country/Region & Language."
-msgstr "現在已經為 %s 安裝所有選取的部件。請從國家/區域與語言來選取它們。"
+msgstr "已為「%s」安裝所有選取的元件。請於「國家/區域與語言」選取。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 msgid "Language Installed"
-msgstr "語言已安裝"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
-#, python-format
-msgid "Translations and support have now been uninstalled for %s."
-msgstr "現在已移除 %s 的翻譯與支援。"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
-msgid "Language Uninstalled"
-msgstr "語言已移除"
+msgstr "已安裝語言"
 
 #: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#, python-format
+msgid "Translations and support have now been uninstalled for %s."
+msgstr "已移除%s翻譯和語文支援。"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+msgid "Language Uninstalled"
+msgstr "已移除語言"
+
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Failed to set system language."
 msgstr "未能設定系統語言。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Language Not Set"
 msgstr "未設定語言"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Please run this software with administrative rights."
-msgstr "請以管理員權力執行此軟體。"
+msgstr "請以管理員權限執行此軟體。"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Not Root User"
-msgstr "不是  Root 使用者"
+msgstr "並非  Root 使用者"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid ""
@@ -300,9 +300,9 @@ msgid ""
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
-"<big><b>檢查可用語言支援</b></big>\n"
+"<big><b>檢查可提供之語言支援</b></big>\n"
 "\n"
-"不同語言的可用翻譯或文書輔助工具可能有異。"
+"個別語言不一定提供翻譯或所有文書輔助工具。"
 
 #: ../data/LanguageSelector.ui.h:4
 msgid "Installed Languages"
@@ -328,7 +328,7 @@ msgstr "語言支援"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
-msgstr "供選單與視窗使用的語言："
+msgstr "選單和視窗語言："
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -341,9 +341,9 @@ msgid ""
 "\"English\".\n"
 "Every entry below \"English\" will be ignored."
 msgstr ""
-"此設定僅影響您桌面與應用程式所要顯示的語言。它不會設定系統環境，包括貨幣、日期格式等設定。若要設定系統環境，請使用「區域格式」分頁內的設定值。\n"
-"這裡所顯示的值其順序將決定您桌面鎖鑰使用的翻譯。若第一個語言尚未有翻譯，接著將嘗試清單中的下一個語言。最後一個清單項目會是「英文」。\n"
-"任何「英文」之下的項目都會被忽略。"
+"此設定僅影響桌面與應用程式所要顯示的語言而不會設定系統環境，包括貨幣、日期格式等設定。若要設定系統環境，請使用「區域格式」分頁的設定。\n"
+"此處顯示次序會決定桌面環境使用的翻譯。若尚未有第一個語言的翻譯，接著會嘗試清單中的下一個語言。清單的最後一個項目一定是「英文」。\n"
+"系統不理會「英文」以下的項目。"
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
@@ -382,14 +382,14 @@ msgid ""
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
-"如果您需要以某語言輸入，而它需求更複雜的輸入方式而不只是簡單的字母對應的話，您可能想要啟用此功能。\n"
-"舉例來說，您若要輸入中文、日文、韓文或是越南文時，會需要此功能。\n"
+"如您要輸入某種語言，而其需要的不只是簡單的字母對應而是更複雜輸入方式，您可能就要啟用此功能。\n"
+"例如輸入中文、日文、韓文或越南文都會需要此功能。\n"
 "Ubuntu 建議的值為「ibus」。\n"
-"如果您想要使用額外的輸入法系統，請先安裝對應的套件，接著在這裡選擇偏好的系統。"
+"如果想使用額外的輸入法系統，請先安裝對應套件，然後在此選擇喜好的系統。"
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr "使用以下地區之慣用格式顯示數字、日期和貨幣金額："
+msgstr "以下列地區慣用格式顯示數字、日期和貨幣："
 
 #: ../data/LanguageSelector.ui.h:25
 msgid ""
@@ -400,13 +400,13 @@ msgid ""
 "Hence you should set this to a sensible value for the region in which you "
 "are located."
 msgstr ""
-"這會設定如下方所顯示的系統環境，並且會影響偏好的紙張格式與其他特定區域設定。\n"
-"若您想要以與此不同的語言顯示桌面，請在「語言」分頁內選取它。\n"
+"這會設定如下方所顯示的系統環境，並且會影響偏好的紙張格式與其他區域性設定。\n"
+"若想要以與此不同的語言顯示桌面，請在「語言」分頁選取。\n"
 "因此您應該將它設為您所在區域的合理值。"
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "<small>Changes take effect next time you log in.</small>"
-msgstr "<small>變更將於下次登入時生效。</small>"
+msgstr "<small>變更會於下次登入時生效。</small>"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid ""
@@ -435,7 +435,7 @@ msgstr "區域格式"
 
 #: ../data/language-selector.desktop.in.h:2
 msgid "Configure multiple and native language support on your system"
-msgstr "於您的系統配置多重及原生語言支援"
+msgstr "在系統配置多重及原生語言支援"
 
 #: ../data/kde-language-selector.desktop.in.h:1
 msgid "System Languages"
@@ -461,7 +461,7 @@ msgid ""
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
 msgstr ""
-"您所選語言的支援檔案似乎不完整。您可以透過點擊「立刻執行此動作」按鈕，並遵照指示安裝遺失的元件。此動作需要網路連線。若您想要稍後執行，請改用「語言支援」 "
+"您所選語言的支援檔案似乎不完備。您可以點擊「立刻執行此動作」按鈕，並遵照指示安裝缺少的元件。此動作需要網路連線。若想要稍後執行，請改用「語言支援」 "
 "(點擊頂端列的最右端圖示，並選取「系統設定值」...-> 「語言支援」)。"
 
 #. Description
@@ -498,117 +498,57 @@ msgstr "系統政策防止設定預設語言"
 msgid "don't verify installed language support"
 msgstr "不要驗證已安裝的語言支援"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:20 ../check-language-support:27
 msgid "alternative datadir"
-msgstr "替代的資料路徑"
+msgstr "後備資料路徑"
 
-#: ../fontconfig-voodoo:17
-msgid "Aborting"
-msgstr "正在中止"
-
-#: ../fontconfig-voodoo:25
-msgid "Force even when a configuration exists"
-msgstr "即使已有配置仍強制執行"
-
-#: ../fontconfig-voodoo:27
-msgid "Set fontconfig voodoo for the selected language"
-msgstr "為所選語言設定 fontconfig voodoo"
-
-#: ../fontconfig-voodoo:31
-msgid ""
-"Guess a configuration based on the LANGUAGE environment. Sets the config to "
-"'none' if nothing suitable was found"
-msgstr "根據 LANGUAGE 環境變量猜測配置。如果找不到合適配置時設定為「無」"
-
-#: ../fontconfig-voodoo:36
-msgid "List the available fontconfig-voodoo configs"
-msgstr "列出可用的 fontconfig-voodoo 配置"
-
-#: ../fontconfig-voodoo:39
-msgid "Show the current fontconfig-voodoo config"
-msgstr "顯示目前的 fontconfig-voodoo 配置"
-
-#: ../fontconfig-voodoo:42
-msgid "Remove the current fontconfig-voodoo config"
-msgstr "移除目前的 fontconfig-voodoo 設定"
-
-#: ../fontconfig-voodoo:64
-msgid "Unconfigured"
-msgstr "未配置"
-
-#: ../fontconfig-voodoo:80
-msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr "已有配置。以「--force」蓋過。 "
-
-#: ../fontconfig-voodoo:89
-msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
-msgstr "找不到目前 LANGUAGE 的 fontconfig-voodoo 組態"
-
-#: ../fontconfig-voodoo:96
-msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr "找不到所選地域 (locale) 之 fontconfig-voodoo 配置"
-
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "目標語言代碼"
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr "只檢查給予的套件 -- 使用逗號 \",\" 隔開套件名稱"
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr "輸出所有語言其所有可用的語言支援套件"
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "顯示已安裝與欠缺的套件"
 
-#~ msgid "check all available languages"
-#~ msgstr "檢查所有可用語言"
+#~ msgid "Aborting"
+#~ msgstr "正在中止"
 
-#~ msgid "Translations for your desktop."
-#~ msgstr "供您桌面使用的翻譯。"
+#~ msgid "Unconfigured"
+#~ msgstr "未配置"
 
-#~ msgid ""
-#~ "Usually this is related to an error in your software archive or software "
-#~ "manager. Check your software preferences in the System > Administration menu."
-#~ msgstr "這通常與您的軟體存檔或是軟體管理程式的錯誤有關。請檢查於「系統」>「管理」選單內的軟體偏好設定。"
+#~ msgid "Force even when a configuration exists"
+#~ msgstr "即使已有配置仍強制執行"
 
-#~ msgid ""
-#~ "Additional fonts for this language which might be of general interest, e.g. "
-#~ "decorative fonts for printing documents."
-#~ msgstr "此語言提供可能對一般人有用的額外字型，例如用於列印文件的美工字型。"
+#~ msgid "List the available fontconfig-voodoo configs"
+#~ msgstr "列出可用的 fontconfig-voodoo 配置"
 
-#~ msgid ""
-#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
-#~ "highlighting, correcting or suggesting words."
-#~ msgstr "字詞清單、字典、同義字表...等，可以突顯、校正或建議字詞等方式幫助輸入文字。"
+#~ msgid "Remove the current fontconfig-voodoo config"
+#~ msgstr "移除目前的 fontconfig-voodoo 設定"
 
-#~ msgid ""
-#~ "The language support files for your selected language seem to be incomplete. "
-#~ "You can install the missing components by clicking on \"Run this action "
-#~ "now\" and follow the instructions. An active internet connection is "
-#~ "required. If you would like to do this at a later time, please use \"System -"
-#~ "> Administration -> Language Support\" instead."
-#~ msgstr ""
-#~ "供您所選語言使用的支援檔案似乎未完備。您可點擊「現在執行此動作」並依照指示來安裝欠缺的部件。此動作需要啟用網際網路連線。如果您想要稍後才執行，請使用「系統"
-#~ " -> 管理 -> 語言支援」。"
+#~ msgid "Show the current fontconfig-voodoo config"
+#~ msgstr "顯示目前的 fontconfig-voodoo 配置"
 
-#, python-format
-#~ msgid "Failed to apply the '%s' format choice:"
-#~ msgstr "無法套用「%s」格式選擇："
+#~ msgid "A configuration exists already. Use '--force' to overwrite it. "
+#~ msgstr "已有配置。以「--force」蓋過。 "
+
+#~ msgid "No fontconfig-voodoo configuration found for the selected locale"
+#~ msgstr "找不到所選地域 (locale) 之 fontconfig-voodoo 配置"
 
 #~ msgid ""
-#~ "<small>Use the same language choices for startup and the login screen.\n"
-#~ "Changes take effect only after a restart of the system.</small>"
-#~ msgstr ""
-#~ "<small>起始與登入畫面使用相同的語言選擇。\n"
-#~ "重新啟動系統後所做的更動才能生效。</small>"
+#~ "Guess a configuration based on the LANGUAGE environment. Sets the config to "
+#~ "'none' if nothing suitable was found"
+#~ msgstr "根據 LANGUAGE 環境變量猜測配置。如果找不到合適配置時設定為「無」"
 
-#~ msgid ""
-#~ "<small>Use the same format choice for startup and the login screen.\n"
-#~ "Changes take effect only after a restart of the system.</small>"
-#~ msgstr ""
-#~ "<small>起始與登入畫面使用相同的格式選擇。\n"
-#~ "在重新啟動系統後所做的更動才能生效。</small>"
+#~ msgid "Set fontconfig voodoo for the selected language"
+#~ msgstr "為所選語言設定 fontconfig voodoo"
+
+#~ msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
+#~ msgstr "找不到目前 LANGUAGE 的 fontconfig-voodoo 組態"

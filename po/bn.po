@@ -9,36 +9,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-30 10:53+0000\n"
-"PO-Revision-Date: 2012-03-13 11:06+0000\n"
-"Last-Translator: Jamal Uddin <Unknown>\n"
+"POT-Creation-Date: 2012-09-27 22:00+0000\n"
+"PO-Revision-Date: 2012-06-20 06:09+0000\n"
+"Last-Translator: Israt Jahan <Unknown>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-10-09 12:41+0000\n"
+"X-Generator: Launchpad (build 16112)\n"
 "Language: bn\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:54
 msgid "Chinese (simplified)"
 msgstr "চীনা (সরলীকৃত)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (traditional)"
 msgstr "চীনা (প্রথাগত)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
 msgstr "ভাষা সম্পর্কিত কোন তথ্য বিদ্যমান নেই"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
+#: ../LanguageSelector/qt/QtLanguageSelector.py:95
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -46,24 +46,24 @@ msgstr ""
 "সিস্টেমে এখনও বিদ্যমান ভাষা সম্পর্কিত কোন তথ্য নেই। এই তথ্য পেতে আপনি কি এখন "
 "একবার নেটওয়ার্ক হালনাগাদ চালাতে চান? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
+#: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
 msgstr "হালনাগাদ (_U)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "ভাষা"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
 msgid "Installed"
 msgstr "ইনস্টলকৃত"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -71,7 +71,7 @@ msgstr[0] "%(INSTALL)d টি ইনস্টল করা বাকি"
 msgstr[1] "%(INSTALL)d টি ইনস্টল করা বাকি"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -79,24 +79,24 @@ msgstr[0] "%(REMOVE)d অপসারণ করা হবে"
 msgstr[1] "%(REMOVE)d অপসারণ করা হবে"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
 msgid "none"
 msgstr "কোনটি না"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/qt/QtLanguageSelector.py:78
+#: ../LanguageSelector/qt/QtLanguageSelector.py:336
 msgid "Software database is broken"
 msgstr "সফটওয়্যারের ডাটাবেস অসম্পূর্ণ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -106,11 +106,11 @@ msgstr ""
 "\"Synaptic\" প্যাকেজ ব্যবস্থাপক ব্যবহার করুন অথবা টার্মিনালে \"sudo apt-get "
 "install -f\" কমান্ডটি চালান।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
 msgid "Could not install the selected language support"
 msgstr "নির্বাচিত ভাষা সহায়তা ইনস্টল করা যায়নি"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -119,13 +119,13 @@ msgstr ""
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug ঠিকানায় "
 "একটি বাগ রিপোর্ট করুন।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
 msgid "Could not install the full language support"
 msgstr "সম্পূর্ণ ভাষা সহায়তা ইনস্টল করা যায়নি"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -137,17 +137,17 @@ msgstr ""
 "শীর্ষ বারের ডানে ক্লিক করুন এবং নির্বাচন করুন \"সিস্টেম সেটিং... -> "
 "সফ্টওয়্যার উৎস\")।"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
 msgid "Failed to authorize to install packages."
 msgstr "প্যাকেজ ইনস্টল করার অনুমোদন প্রদান করতে ব্যর্থ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
+#: ../LanguageSelector/qt/QtLanguageSelector.py:171
 msgid "The language support is not installed completely"
 msgstr "ভাষা সহায়তা সম্পূর্ণভাবে ইনস্টল করা হয়নি"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
+#: ../LanguageSelector/qt/QtLanguageSelector.py:172
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -155,23 +155,23 @@ msgstr ""
 "আপনার নির্বাচিত ভাষাগুলোর জন্য বিদ্যমান কিছু অনুবাদ বা লেখা সহায়িকা এখনও "
 "ইনস্টল করা হয়নি। আপনি কি এগুলো এখন ইনস্টল করতে চান?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
+#: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 msgid "_Remind Me Later"
 msgstr "পরে মনে করিয়ে দেওয়া হবে (_R)"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
+#: ../LanguageSelector/qt/QtLanguageSelector.py:166
 msgid "_Install"
 msgstr "ইনস্টল (_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
 msgid "Details"
 msgstr "বিস্তারিত"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -182,7 +182,7 @@ msgstr ""
 "ভাষা সমর্থন বন্ধ করে আবার চালু করলে\n"
 "উদাহরণটি দেখা দিতে পারে।"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:79
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -192,82 +192,82 @@ msgstr ""
 "করে \"এডেপ্ট প্যাকেজ ম্যানেজার\" ব্যবহার করুন অথবা টারমিনালে \"sudo apt-get "
 "install -f\" কমান্ডটি চালান।"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:114
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
 msgid "Set System Language"
 msgstr "সিস্টেমের ভাষা নির্ধারণ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
 msgid "Default system language:"
 msgstr "সিস্টেমের পূর্বনির্ধারিত ভাষা:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
 msgid "Keyboard input method:"
 msgstr "কীবোর্ড ইনপুট মেথড:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+#: ../LanguageSelector/qt/QtLanguageSelector.py:126
 msgid "Select language to install:"
 msgstr "ইনস্টল করার জন্য ভাষা নির্বাচন:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+#: ../LanguageSelector/qt/QtLanguageSelector.py:127
 msgid "Select language to uninstall:"
 msgstr "আনইনস্টল করার জন্য ভাষা নির্বাচন:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:128
 msgid "Translations"
 msgstr "অনুবাদ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:129
 msgid "Input methods"
 msgstr "ইনপুট মেথড"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../LanguageSelector/qt/QtLanguageSelector.py:130
 msgid "Spellchecking and writing aids"
 msgstr "বানান পরীক্ষণ ও লেখা সহায়িকা"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Extra fonts"
 msgstr "অতিরিক্ত ফন্ট"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+#: ../LanguageSelector/qt/QtLanguageSelector.py:132
 msgid "Components:"
 msgstr "বিষয়বস্তু:"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:202
+#: ../LanguageSelector/qt/QtLanguageSelector.py:210
 msgid "Already installed"
 msgstr "ইতিমধ্যেই ইনস্টল করা হয়েছে"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
 msgstr "আংশিক ইনস্টল করা হয়েছে"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:208
+#: ../LanguageSelector/qt/QtLanguageSelector.py:216
 msgid "Not installed"
 msgstr "ইন্সটল করা নেই"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 msgid "Component already installed"
 msgstr "কম্পোনেন্ট ইতোমধ্যে ইনস্টলকৃত"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+#: ../LanguageSelector/qt/QtLanguageSelector.py:253
 msgid "Component not available"
 msgstr "কম্পোনেন্ট পাওয়া যায়না"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+#: ../LanguageSelector/qt/QtLanguageSelector.py:255
 msgid "Component not installed"
 msgstr "কম্পোনেন্ট ইনস্টল করা হয়নি"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr "%s'র জন্য পূর্বনির্ধারিত সিস্টেমের ভাষা নির্ধারণ করা হয়েছে।"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 msgid "Language Set"
 msgstr "ভাষা নির্ধারণ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+#: ../LanguageSelector/qt/QtLanguageSelector.py:337
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -277,7 +277,7 @@ msgstr ""
 "\"Adept\" প্যাকেজ ব্যবস্থাপক ব্যবহার করুন অথবা টার্মিনালে \"sudo apt-get "
 "install -f\" কমান্ডটি চালান।"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 #, python-format
 msgid ""
 "All selected components have now been installed for %s.  Select them from "
@@ -286,32 +286,32 @@ msgstr ""
 "সব নির্বাচিত কম্পোনেন্ট %s এখন ইনস্টল করা হয়েছে। দেশ/এলাকা এবং ভাষা থেকে "
 "এগুলো নির্বাচন।"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 msgid "Language Installed"
 msgstr "ভাষা ইনস্টল করা হয়েছে"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "%s'র জন্য অনুবাদ ও সহায়তা আনইনস্টল করা হয়েছে।"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Language Uninstalled"
 msgstr "ভাষা আনইনস্টল করা হয়েছে"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Failed to set system language."
 msgstr "সিস্টেমের ভাষা নির্ধারণ করতে ব্যর্থ।"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Language Not Set"
 msgstr "ভাষা নির্ধারণ করা হয়নি"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Please run this software with administrative rights."
 msgstr "অনুগ্রহ করে সফটওয়্যারটি প্রশাসনিক অধিকার নিয়ে চালান।"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Not Root User"
 msgstr "রুট ব্যবহারকারী নয়"
 
@@ -543,133 +543,63 @@ msgstr "সিস্টেম পলিসি ডিফল্ট ভাষা �
 msgid "don't verify installed language support"
 msgstr "ইনস্টলকৃত ভাষা সহায়তা যাচাই করা হবে না"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:20 ../check-language-support:27
 msgid "alternative datadir"
 msgstr "বিকল্প datadir"
 
-#: ../fontconfig-voodoo:17
-msgid "Aborting"
-msgstr "বাতিল করা হচ্ছে"
-
-#: ../fontconfig-voodoo:25
-msgid "Force even when a configuration exists"
-msgstr "কনফিগারেশন বিদ্যমান থাকা সত্ত্বেও জোর করা হবে"
-
-#: ../fontconfig-voodoo:27
-msgid "Set fontconfig voodoo for the selected language"
-msgstr "নির্বাচিত ভাষার জন্য fontconfig voodoo নির্ধারণ করুন"
-
-#: ../fontconfig-voodoo:31
-msgid ""
-"Guess a configuration based on the LANGUAGE environment. Sets the config to "
-"'none' if nothing suitable was found"
-msgstr ""
-"ল্যাংগুয়েজ এনভায়রনমেন্টের উপর ভিত্তি করে কনফিগারেশন অনুমান করুন। উপযুক্ত কোন "
-"কিছু পাওয়া না গেলে কনফিগে 'কোনটি না' নির্ধারণ করুন"
-
-#: ../fontconfig-voodoo:36
-msgid "List the available fontconfig-voodoo configs"
-msgstr "বিদ্যমান fontconfig-voodoo কনফিগের তালিকা"
-
-#: ../fontconfig-voodoo:39
-msgid "Show the current fontconfig-voodoo config"
-msgstr "বর্তমান fontconfig-voodoo কনফিগ প্রদর্শন"
-
-#: ../fontconfig-voodoo:42
-msgid "Remove the current fontconfig-voodoo config"
-msgstr "বর্তমান fontconfig-voodoo কনফিগ অপসারণ"
-
-#: ../fontconfig-voodoo:64
-msgid "Unconfigured"
-msgstr "কনফিগার করা নয়"
-
-#: ../fontconfig-voodoo:80
-msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
-"ইতিমধ্যেই একটি কনফিগারেশন বিদ্যমান। এটি প্রতিস্থাপন করতে '--force' ব্যবহার "
-"করুন। "
-
-#: ../fontconfig-voodoo:89
-msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
-msgstr "বর্তমান ভাষার জন্য কোন fontconfig-voodoo কনফিগারেশন পাওয়া যায়নি"
-
-#: ../fontconfig-voodoo:96
-msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr ""
-"নির্বাচিত লোক্যালের জন্য কোন fontconfig-voodoo কনফিগারেশন পাওয়া যায়নি"
-
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "লক্ষ্যকৃত ভাষার কোড"
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "শুধুমাত্র প্রদত্ত প্যাকেজ খোঁজা হবে -- প্যাকেজের নাম কমা দিয়ে আলাদা করা হবে"
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr "সকল ভাষার সহজলভ্য সকল ভাষা সমর্থন প্যাকেজ প্রদর্শন করুন।"
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "ইনস্টলকৃত ও অনুপস্থিত প্যাকেজ প্রদর্শন"
 
-#~ msgid ""
-#~ "Usually this is related to an error in your software archive or software "
-#~ "manager. Check your software preferences in the System > Administration menu."
-#~ msgstr ""
-#~ "সাধারণত এটি আপনার সফটওয়্যার আর্কাইভ বা সফটওয়্যার ব্যবস্থাপকের কোন ত্রুটির "
-#~ "সাথে সম্পর্কিত। সিস্টেম > প্রশাসন মেনু থেকে আপনার সফটওয়্যারের পছন্দসমূহ "
-#~ "পরীক্ষা করুন।"
+#~ msgid "Aborting"
+#~ msgstr "বাতিল করা হচ্ছে"
+
+#~ msgid "Force even when a configuration exists"
+#~ msgstr "কনফিগারেশন বিদ্যমান থাকা সত্ত্বেও জোর করা হবে"
+
+#~ msgid "Set fontconfig voodoo for the selected language"
+#~ msgstr "নির্বাচিত ভাষার জন্য fontconfig voodoo নির্ধারণ করুন"
 
 #~ msgid ""
-#~ "Additional fonts for this language which might be of general interest, e.g. "
-#~ "decorative fonts for printing documents."
+#~ "Guess a configuration based on the LANGUAGE environment. Sets the config to "
+#~ "'none' if nothing suitable was found"
 #~ msgstr ""
-#~ "এই ভাষার অতিরিক্ত ফন্ট যা সাধারণ আগ্রহের জন্য হতে পারে, যেমন: নথি মুদ্রণের "
-#~ "জন্য সৌন্দর্যবর্ধক ফন্ট।"
+#~ "ল্যাংগুয়েজ এনভায়রনমেন্টের উপর ভিত্তি করে কনফিগারেশন অনুমান করুন। উপযুক্ত কোন "
+#~ "কিছু পাওয়া না গেলে কনফিগে 'কোনটি না' নির্ধারণ করুন"
 
-#~ msgid "Translations for your desktop."
-#~ msgstr "আপনার ডেস্কটপের জন্য অনুবাদ।"
+#~ msgid "List the available fontconfig-voodoo configs"
+#~ msgstr "বিদ্যমান fontconfig-voodoo কনফিগের তালিকা"
 
-#~ msgid ""
-#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
-#~ "highlighting, correcting or suggesting words."
+#~ msgid "Show the current fontconfig-voodoo config"
+#~ msgstr "বর্তমান fontconfig-voodoo কনফিগ প্রদর্শন"
+
+#~ msgid "Remove the current fontconfig-voodoo config"
+#~ msgstr "বর্তমান fontconfig-voodoo কনফিগ অপসারণ"
+
+#~ msgid "Unconfigured"
+#~ msgstr "কনফিগার করা নয়"
+
+#~ msgid "A configuration exists already. Use '--force' to overwrite it. "
 #~ msgstr ""
-#~ "শব্দ তালিকা, অভিধান, শব্দকোষ ইত্যাদি আপনাকে শব্দ হাইলাইট করা, সঠিক করা বা "
-#~ "পরামর্শ প্রদানের মাধ্যমে টাইপ করার সময় সহায়তা করতে পারে।"
+#~ "ইতিমধ্যেই একটি কনফিগারেশন বিদ্যমান। এটি প্রতিস্থাপন করতে '--force' ব্যবহার "
+#~ "করুন। "
 
-#~ msgid ""
-#~ "The language support files for your selected language seem to be incomplete. "
-#~ "You can install the missing components by clicking on \"Run this action "
-#~ "now\" and follow the instructions. An active internet connection is "
-#~ "required. If you would like to do this at a later time, please use \"System -"
-#~ "> Administration -> Language Support\" instead."
+#~ msgid "No fontconfig-voodoo configuration found for the selected locale"
 #~ msgstr ""
-#~ "আপনার নির্বাচিত ভাষার জন্য ভাষা সহায়তা ফাইলগুলো অসম্পূর্ণ বলে মনে হচ্ছে। "
-#~ "অনুপস্থিত বিষয়বস্তুগুলো ইনস্টল করার জন্য \"কাজটি এখনই চালানো হবে\" ক্লিক করে "
-#~ "পরবর্তী নির্দেশনাগুলো অনুসরণ করুন। এজন্য একটি সক্রিয় ইন্টারনেট সংযোগ আবশ্যক। "
-#~ "আপনি যদি এটা পরবর্তীতে করতে চান, তবে অনুগ্রহ করে \"সিস্টেম -> প্রশাসন -> "
-#~ "ভাষা সহায়তা\" ব্যবহার করুন।"
+#~ "নির্বাচিত লোক্যালের জন্য কোন fontconfig-voodoo কনফিগারেশন পাওয়া যায়নি"
 
-#~ msgid "check all available languages"
-#~ msgstr "বিদ্যমান সব ভাষা পরীক্ষা"
-
-#, python-format
-#~ msgid "Failed to apply the '%s' format choice:"
-#~ msgstr "'%s' ফরম্যাট পছন্দ প্রয়োগ করতে ব্যর্থ:"
-
-#~ msgid ""
-#~ "<small>Use the same format choice for startup and the login screen.\n"
-#~ "Changes take effect only after a restart of the system.</small>"
-#~ msgstr ""
-#~ "<small>আরম্ভ করা এবং লগইন স্ক্রিনের জন্য একই ফরম্যাট ব্যবহার।\n"
-#~ "সিস্টেম রিস্টার্ট করার পর পরিবর্তন প্রয়োগ হবে।</small>"
-
-#~ msgid ""
-#~ "<small>Use the same language choices for startup and the login screen.\n"
-#~ "Changes take effect only after a restart of the system.</small>"
-#~ msgstr ""
-#~ "<small>আরম্ভ করা এবং লগইন স্ক্রিনের জন্য একই ফরম্যাট ব্যবহার।\n"
-#~ "সিস্টেম রিস্টার্ট করার পর পরিবর্তন প্রয়োগ হবে।</small>"
+#~ msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
+#~ msgstr "বর্তমান ভাষার জন্য কোন fontconfig-voodoo কনফিগারেশন পাওয়া যায়নি"

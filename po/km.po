@@ -9,36 +9,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po_language-selector-km\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2012-03-30 10:53+0000\n"
-"PO-Revision-Date: 2012-03-19 03:52+0000\n"
+"POT-Creation-Date: 2012-09-27 22:00+0000\n"
+"PO-Revision-Date: 2012-06-20 06:11+0000\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-10-09 12:40+0000\n"
+"X-Generator: Launchpad (build 16112)\n"
 "Language: km\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:54
 msgid "Chinese (simplified)"
 msgstr "ចិន​​ (សាមញ្ញ)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (traditional)"
 msgstr "ចិន​ (ទំនៀមទំលាប់​)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
 msgstr "គ្មានព័ត៌មាន​ភាសាដែល​អាច​រក​បានឡើយ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
+#: ../LanguageSelector/qt/QtLanguageSelector.py:95
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -47,55 +47,55 @@ msgstr ""
 "តើ​អ្នក​ចង់​ដំណើរការ​បណ្តាញ​បច្ចុប្បន្នភាព​ "
 "ដើម្បី​ទទួល​បាន​ព័ត៌មាន​​ឥឡូវ​នេះ​ឬ​ ? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
+#: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
 msgstr "_បច្ចុប្បន្នភាព"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "ភាសា"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
 msgid "Installed"
 msgstr "បាន​ដំឡើង"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
 msgstr[0] "%(INSTALL)d ត្រូវ​យកចេញ"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
 msgstr[0] "%(REMOVE)d ត្រូវ​យកចេញ"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
 msgid "none"
 msgstr "គ្មាន"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/qt/QtLanguageSelector.py:78
+#: ../LanguageSelector/qt/QtLanguageSelector.py:336
 msgid "Software database is broken"
 msgstr "មូល​ដ្ឋាន​ទិន្នន័យ​របស់​កម្មវិធី​ខូច​ហើយ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -105,11 +105,11 @@ msgstr ""
 "សូម​ប្រើ​កម្មវិធី​គ្រប់គ្រងកញ្ចប់​​ \"Synaptic\" ឬ ដំណើរការ \"sudo apt-get "
 "install -f\" ក្នុង​ស្ថានីយ​​ ដើម្បី​បញ្ចេញ​ជាដំបូង​ ។"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
 msgid "Could not install the selected language support"
 msgstr "មិនអាច​ដំឡើង​ការ​គាំទ្រ​ភាសាដែល​បាន​ជ្រើស​ឡើយ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -117,13 +117,13 @@ msgstr ""
 "វា​ប្រហែល​មានកំហុស​ក្នុង​ការ​ដំឡើង​នេះ​ ។​ សូម​រាយការណ៍​កំហុស​ឯកសារ​នៅ "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
 msgid "Could not install the full language support"
 msgstr "មិន​អាច​ដំឡើង​ការ​គាំទ្រ​ភាសា​ពេញ​លេញ​​ឡើយ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -136,17 +136,17 @@ msgstr ""
 "(ចុច​រូបតំណាង​នៅ​ខាង​ស្ដាំ​ផ្នែក​ខាង​លើ​របារ​ ហើយ​ជ្រើស "
 "\"ការ​កំណត់​ប្រព័ន្ធ... -> ប្រភព​កម្មវិធី\") ។"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
 msgid "Failed to authorize to install packages."
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ផ្ដល់​សិទ្ធិ ដើម្បី​ដំឡើង​កញ្ចប់ ។"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
+#: ../LanguageSelector/qt/QtLanguageSelector.py:171
 msgid "The language support is not installed completely"
 msgstr "គាំទ្រ​ភាសា​ត្រូវ​បាន​ដំឡើង​ដោយ​ពេញលេញ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
+#: ../LanguageSelector/qt/QtLanguageSelector.py:172
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -155,23 +155,23 @@ msgstr ""
 "សម្រាប់​ភាសា​ដែល​អ្នក​បាន​ជ្រើសមិន​​ត្រូវ​បានដំឡើង​នៅឡើយ​ទេ​​ ។ "
 "ឥឡូវ​តើ​អ្នក​ចង់​ដំឡើង​វាឬ​ ?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
+#: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 msgid "_Remind Me Later"
 msgstr "_រំលឹក​ខ្ញុំ​ពេល​ក្រោយ"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
+#: ../LanguageSelector/qt/QtLanguageSelector.py:166
 msgid "_Install"
 msgstr "_ដំឡើង"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
 msgid "Details"
 msgstr "សេច​ក្តី​លម្អិត"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -181,7 +181,7 @@ msgstr ""
 "បាន​បរាជ័យ​ក្នុងកា​រអនុវត្ត​ជម្រើស​ទ្រង់ទ្រាយ​ '%s' ។ ឧទាហរណ៍​អាច​បង្ហាញ​ "
 "ប្រសិន​បើ​អ្នក​បិទ ហើយ​បើក​ការ​គាំទ្រ​ភាសា​ឡើង​វិញ ។"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:79
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -191,82 +191,82 @@ msgstr ""
 "សូម​ប្រើ​កម្មវិធី​គ្រប់​គ្រង​កញ្ចប់​ \"Muon\" ឬ ដំណើរការ​​ \"sudo apt-get "
 "install -f\" ក្នុង​ស្ថានីយ​ត្រូវ​​កែសម្រួល​កំហុស​ជាដំបូង​ ។"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:114
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
 msgid "Set System Language"
 msgstr "កំណត់​ភាសា​ប្រព័ន្ធ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
 msgid "Default system language:"
 msgstr "ភាសា​ប្រព័ន្ធ​​លំនាំដើម​ ៖"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
 msgid "Keyboard input method:"
 msgstr "វិធីសាស្ត្រ​បញ្ចូល​ក្តារ​ចុច​ ៖"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+#: ../LanguageSelector/qt/QtLanguageSelector.py:126
 msgid "Select language to install:"
 msgstr "ជ្រើស​ភាសា​ត្រូវ​ដំឡើង​ ៖"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+#: ../LanguageSelector/qt/QtLanguageSelector.py:127
 msgid "Select language to uninstall:"
 msgstr "ជ្រើស​ភាសា​មិន​ត្រូវ​ដំឡើង​ ៖"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:128
 msgid "Translations"
 msgstr "ការ​បកប្រែ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:129
 msgid "Input methods"
 msgstr "វិធីសាស្ត្រ​​បញ្ចូល"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../LanguageSelector/qt/QtLanguageSelector.py:130
 msgid "Spellchecking and writing aids"
 msgstr "ការពិនិត្យ​អក្ខរាវិវុទ្ធ និង​ជំនួយ​សរសេរ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Extra fonts"
 msgstr "ពុម្ពអក្សរ​ខាង​ក្រៅ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+#: ../LanguageSelector/qt/QtLanguageSelector.py:132
 msgid "Components:"
 msgstr "សមាសភាគ​ ៖"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:202
+#: ../LanguageSelector/qt/QtLanguageSelector.py:210
 msgid "Already installed"
 msgstr "បាន​ដំឡើង​រួច​ហើយ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
 msgstr "បានដំឡើង​តាម​ភាគ"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:208
+#: ../LanguageSelector/qt/QtLanguageSelector.py:216
 msgid "Not installed"
 msgstr "មិន​បាន​ដំឡើង"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 msgid "Component already installed"
 msgstr "បាន​ដំឡើង​សមាសភាគ​រួច​ហើយ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+#: ../LanguageSelector/qt/QtLanguageSelector.py:253
 msgid "Component not available"
 msgstr "មិនមាន​សមាសភាគ​ទេ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+#: ../LanguageSelector/qt/QtLanguageSelector.py:255
 msgid "Component not installed"
 msgstr "មិនបាន​ដំឡើង​សមាសភាគ​ទេ"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 #, python-format
 msgid "Default system Language now set to %s."
 msgstr "ឥឡូវ​កំណត់​ភាសា​ប្រព័ន្ធ​លំនាំដើម​ទៅកាន់​ %s ។"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 msgid "Language Set"
 msgstr "កំណត់​ភាសា"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+#: ../LanguageSelector/qt/QtLanguageSelector.py:337
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -276,7 +276,7 @@ msgstr ""
 "សូម​ប្រើ​កម្មវិធី​គ្រប់​គ្រង​កញ្ចប់​ \"Adept\" ឬ ដំណើរការ​​ \"sudo apt-get "
 "install -f\" ក្នុង​ស្ថានីយ​ត្រូវ​​កែសម្រួល​កំហុស​ជាដំបូង​ ។"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 #, python-format
 msgid ""
 "All selected components have now been installed for %s.  Select them from "
@@ -285,32 +285,32 @@ msgstr ""
 "សមាសភាគ​ដែល​បាន​ជ្រើស​ទាំងអស់​ត្រូវ​បាន​ដំឡើង​សម្រាប់ %s ។ ជ្រើស​ពួក​វា​ពី​ "
 "តំបន់/ប្រទេស និង​ភាសា ។"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 msgid "Language Installed"
 msgstr "ភាសា​ដែល​បាន​បន្ថែម"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "ឥឡូវ​ការ​​បកប្រែ​ និង​ការ​គាំទ្រ​ត្រូវ​បាន​ដំឡើង​​សម្រាប់​ %s ហើយ​។"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Language Uninstalled"
 msgstr "ភាសា​ដែល​មិនបានដំឡើង"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Failed to set system language."
 msgstr "បាន​បរាជ័យ​ ដើម្បី​កំណត់​ភាសា​ប្រព័ន្ធ​ ។"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Language Not Set"
 msgstr "មិន​បាន​កំណត់​ភាសា"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Please run this software with administrative rights."
 msgstr "សូម​ដំណើរ​ការ​កម្មវិធី​នេះ​​ជាមួយ​សិទ្ធ​ដែល​គ្រប់​គ្រង​ ។"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Not Root User"
 msgstr "គ្មាន​អ្នក​ប្រើ​ជា​​ Root"
 
@@ -552,138 +552,65 @@ msgstr "គោលនយោបាយ​ប្រព័ន្ធ​បាន​ក
 msgid "don't verify installed language support"
 msgstr "កុំ​ផ្ទៀង​ផ្ទាត់​ការ​គាំទ្រ​ភាសា​ដែល​បាន​ដំឡើង"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:20 ../check-language-support:27
 msgid "alternative datadir"
 msgstr "datadir ដែល​ផ្លាស់ប្តូរ"
 
-#: ../fontconfig-voodoo:17
-msgid "Aborting"
-msgstr "បោះបង់"
-
-#: ../fontconfig-voodoo:25
-msgid "Force even when a configuration exists"
-msgstr "បង្ខំ​នៅពេល​មាន​ការ​កំណត់​រចនាសម្ព័ន្ធ"
-
-#: ../fontconfig-voodoo:27
-msgid "Set fontconfig voodoo for the selected language"
-msgstr "កំណត់​រចនាសម្ព័ន្ធ​ពុម្ពអក្សរ​ voodoo សម្រាប់​ភាសា​ដែល​បាន​ជ្រើស"
-
-#: ../fontconfig-voodoo:31
-msgid ""
-"Guess a configuration based on the LANGUAGE environment. Sets the config to "
-"'none' if nothing suitable was found"
-msgstr ""
-"ស្មានការ​កំណត់​រចនាសម្ព័ន្ធ​មាន​មូល​ដ្ឋាន​លើបរិ​​ស្ថាន​​​ភាសា​ ។  "
-"កំណត់រចនាសម្ព័ន្ធ 'គ្មាន​' បើរកមិន​ឃើញ​អ្វី​ដែល​​សមរម្យ"
-
-#: ../fontconfig-voodoo:36
-msgid "List the available fontconfig-voodoo configs"
-msgstr "បញ្ជីកំណត់រចនា​សម្ព័ន្ធ​ fontconfig-voodoo"
-
-#: ../fontconfig-voodoo:39
-msgid "Show the current fontconfig-voodoo config"
-msgstr "បង្ហាញ​ការកំណត់រចនាសម្ព័ន្ធ​ fontconfig-voodoo បច្ចុប្បន្ន"
-
-#: ../fontconfig-voodoo:42
-msgid "Remove the current fontconfig-voodoo config"
-msgstr "យក​ការកំណត់​រចនាសម្ព័ន្ធ​​ fontconfig-voodoo បច្ចុប្បន្នចេញ"
-
-#: ../fontconfig-voodoo:64
-msgid "Unconfigured"
-msgstr "មិន​បានកំណត់​រចនាសម្ព័ន្ធ"
-
-#: ../fontconfig-voodoo:80
-msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
-"មានការ​កំណត់​រចនាសម្ព័ន្ធ​រួចហើយ​ ។ ប្រើ​​ '--force' "
-"ដើម្បី​សរសេរ​ជាន់​លើ​វា​ ។ "
-
-#: ../fontconfig-voodoo:89
-msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
-msgstr ""
-"រក​មិន​ឃើញ​ការ​កំណត់​រចនាសម្ព័ន្ធ fontconfig-voodoo សម្រាប់​ភាសា​បច្ចុប្បន្ន"
-
-#: ../fontconfig-voodoo:96
-msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr ""
-"រកមិនឃើញ​ការកំណត់​រចនាសម្ព័ន្ធ​ fontconfig-voodoo "
-"​សម្រាប់​ទីតាំង​ដែល​បានជ្រើស​ឡើយ"
-
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "កូដ​ភាសា​គោលដៅ"
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "ពិនិត្យ​មើល​តែ​កញ្ចប់​ដែល​បាន​ផ្តល់​​ -- ឈ្មោះ​កញ្ចប់​បំបែក​ដោយ​សញ្ញា​ក្បៀស"
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr "បង្ហាញ​កញ្ចប់​គាំទ្រ​ភាសា​ដែល​មាន​ទាំងអស់​សម្រាប់​គ្រប់​ភាសា"
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "បង្ហាញ​កញ្ចប់​ដែល​បាន​ដំឡើង​ដូច​កញ្ចប់​មួយ​ដែល​បាត់"
 
-#~ msgid ""
-#~ "Usually this is related to an error in your software archive or software "
-#~ "manager. Check your software preferences in the System > Administration menu."
-#~ msgstr ""
-#~ "តាម​ធម្មតា​វា​​​​​​មាន​​កំហុស​ក្នុង​ប័ណ្ណសារកម្មវិធី​ "
-#~ "ឬ​កម្មវិធី​គ្រប់គ្រង​កម្មវិធី​របស់​អ្នក ។ "
-#~ "ពិនិត្យ​មើល​កម្មវិធី​​របស់​​អ្នកក្នុងប្រព័ន្ធ​ > ការ​គ្រប់គ្រង​ម៉ឺនុយ​​ ។"
+#~ msgid "Aborting"
+#~ msgstr "បោះបង់"
+
+#~ msgid "Force even when a configuration exists"
+#~ msgstr "បង្ខំ​នៅពេល​មាន​ការ​កំណត់​រចនាសម្ព័ន្ធ"
+
+#~ msgid "Set fontconfig voodoo for the selected language"
+#~ msgstr "កំណត់​រចនាសម្ព័ន្ធ​ពុម្ពអក្សរ​ voodoo សម្រាប់​ភាសា​ដែល​បាន​ជ្រើស"
 
 #~ msgid ""
-#~ "Additional fonts for this language which might be of general interest, e.g. "
-#~ "decorative fonts for printing documents."
+#~ "Guess a configuration based on the LANGUAGE environment. Sets the config to "
+#~ "'none' if nothing suitable was found"
 #~ msgstr ""
-#~ "ពុម្ពអក្សរដែល​បន្ថែម​ សម្រាប់​​ភាសា​នេះ​​ ​​អាច​ជា​ផល​ប្រយោជន៍​ទូទៅ​ ឧ. "
-#~ "ពុម្ព​អក្សរ​ដែល​តុបតែង​ សម្រាប់​ឯកសារ​បោះពុម្ព​ ។"
+#~ "ស្មានការ​កំណត់​រចនាសម្ព័ន្ធ​មាន​មូល​ដ្ឋាន​លើបរិ​​ស្ថាន​​​ភាសា​ ។  "
+#~ "កំណត់រចនាសម្ព័ន្ធ 'គ្មាន​' បើរកមិន​ឃើញ​អ្វី​ដែល​​សមរម្យ"
 
-#~ msgid "Translations for your desktop."
-#~ msgstr "ការ​បកប្រែ​ សម្រាប់​ផ្ទៃតុ​របស់​អ្នក​ ។"
+#~ msgid "List the available fontconfig-voodoo configs"
+#~ msgstr "បញ្ជីកំណត់រចនា​សម្ព័ន្ធ​ fontconfig-voodoo"
 
-#~ msgid ""
-#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
-#~ "highlighting, correcting or suggesting words."
+#~ msgid "Show the current fontconfig-voodoo config"
+#~ msgstr "បង្ហាញ​ការកំណត់រចនាសម្ព័ន្ធ​ fontconfig-voodoo បច្ចុប្បន្ន"
+
+#~ msgid "Remove the current fontconfig-voodoo config"
+#~ msgstr "យក​ការកំណត់​រចនាសម្ព័ន្ធ​​ fontconfig-voodoo បច្ចុប្បន្នចេញ"
+
+#~ msgid "Unconfigured"
+#~ msgstr "មិន​បានកំណត់​រចនាសម្ព័ន្ធ"
+
+#~ msgid "A configuration exists already. Use '--force' to overwrite it. "
 #~ msgstr ""
-#~ "បញ្ជីពាក្យ​​ វចនានុក្រម​ កម្រងវេវចនៈសព្ទ ។ល។ "
-#~ "ដែល​អាច​ជាជំនួយ​ការ​វាយ​ដោយ​បន្លិច​​ ការកែសម្រួល​ ឬ​ពាក្យ​ដែល​បានផ្តល់យោបល់ ។"
+#~ "មានការ​កំណត់​រចនាសម្ព័ន្ធ​រួចហើយ​ ។ ប្រើ​​ '--force' "
+#~ "ដើម្បី​សរសេរ​ជាន់​លើ​វា​ ។ "
 
-#~ msgid ""
-#~ "The language support files for your selected language seem to be incomplete. "
-#~ "You can install the missing components by clicking on \"Run this action "
-#~ "now\" and follow the instructions. An active internet connection is "
-#~ "required. If you would like to do this at a later time, please use \"System -"
-#~ "> Administration -> Language Support\" instead."
+#~ msgid "No fontconfig-voodoo configuration found for the selected locale"
 #~ msgstr ""
-#~ "ឯកសារ​គាំទ្រ​ភាសា​ សម្រាប់​ភាសា​ដែល​អ្នក​បាន​ជ្រើសហាក់ដូចជា​មិនពេញ​លេញឡើយ​​ "
-#~ "។​ អ្នក​អាច​ដំឡើង​សមាសភាគ​ដែល​បាត់​​ដោយ​ចុចលើ​ "
-#~ "\"​​ដំណើរការ​​​សកម្មភាព​វា​ឥឡូវ​​\" ហើយ​បំពេញ​ការ​ណែនាំ​ ។ "
-#~ "ការ​តភ្ជាប់​អ៊ីនធឺណិត​សកម្មត្រូវ​បានទាមទារ​ ។​ "
-#~ "បើ​អ្នក​ចង់​ធ្វើ​វា​នៅ​ពេល​ក្រោយ​​ សូម​ប្រើ​​ \"ប្រព័ន្ធ​​ -> ការ​គ្រប់គ្រង​ "
-#~ "-> គាំទ្រ​ភាសា​​\" ជំនួស​ ។"
+#~ "រកមិនឃើញ​ការកំណត់​រចនាសម្ព័ន្ធ​ fontconfig-voodoo "
+#~ "​សម្រាប់​ទីតាំង​ដែល​បានជ្រើស​ឡើយ"
 
-#~ msgid "check all available languages"
-#~ msgstr "ធីក​គ្រប់​ភាសា​ទាំងអស់​​ដែល​មាន"
-
-#, python-format
-#~ msgid "Failed to apply the '%s' format choice:"
-#~ msgstr "បាន​បរាជ័យ​ក្នុង​ការ​អនុវត្ត​ជម្រើស​ទ្រង់ទ្រាយ '%s' ៖"
-
-#~ msgid ""
-#~ "<small>Use the same language choices for startup and the login screen.\n"
-#~ "Changes take effect only after a restart of the system.</small>"
+#~ msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
 #~ msgstr ""
-#~ "<small>ប្រើ​ជម្រើស​ទ្រង់ទ្រាយ​ដូច​គ្នា​សម្រាប់​ចាប់ផ្តើម និង​អេក្រង់​ចូល ។\n"
-#~ "ការ​ផ្លាស់ប្តូរ​នឹង​មាន​ប្រសិទ្ធភាព​តែ​ពី​ការ​ចាប់ផ្ដើម​ប្រព័ន្ធ​ឡើងវិញ​ប៉ុណ្"
-#~ "ណោះ ។</small>"
-
-#~ msgid ""
-#~ "<small>Use the same format choice for startup and the login screen.\n"
-#~ "Changes take effect only after a restart of the system.</small>"
-#~ msgstr ""
-#~ "<small>ប្រើ​ជម្រើស​ទ្រង់ទ្រាយ​ដូច​គ្នា​សម្រាប់​ចាប់ផ្តើម និង​អេក្រង់​ចូល ។\n"
-#~ "ការ​ផ្លាស់ប្តូរ​នឹង​មាន​ប្រសិទ្ធភាព​តែ​ពី​ការ​ចាប់ផ្ដើម​ប្រព័ន្ធ​ឡើងវិញ​ប៉ុណ្"
-#~ "ណោះ ។</small>"
+#~ "រក​មិន​ឃើញ​ការ​កំណត់​រចនាសម្ព័ន្ធ fontconfig-voodoo សម្រាប់​ភាសា​បច្ចុប្បន្ន"

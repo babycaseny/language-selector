@@ -1,3 +1,9 @@
+language-selector (0.90) UNRELEASED; urgency=low
+
+  * Updated launchpad translations
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 09 Oct 2012 14:47:06 +0200
+
 language-selector (0.89) quantal; urgency=low
 
   * check-language-support: De-duplicate output for a single target language

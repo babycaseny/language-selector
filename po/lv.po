@@ -4,65 +4,66 @@
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010.
-# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011.
+# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-30 10:53+0000\n"
-"PO-Revision-Date: 2012-04-09 09:29+0000\n"
+"POT-Creation-Date: 2012-09-27 22:00+0000\n"
+"PO-Revision-Date: 2012-10-06 00:57+0000\n"
 "Last-Translator: Rūdolfs Mazurs <Unknown>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-10-09 12:41+0000\n"
+"X-Generator: Launchpad (build 16112)\n"
+"Language: lv\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:54
 msgid "Chinese (simplified)"
 msgstr "Ķīniešu (vienkāršota)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (traditional)"
 msgstr "Ķīniešu (tradicionāla)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
 msgstr "Informācija par valodām nav pieejama"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
+#: ../LanguageSelector/qt/QtLanguageSelector.py:95
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
 "Sistēmā pagaidām nav atrodama informācija par pieejamajām valodām. Vai "
-"vēlaties veikt atjaunināšanu no tīkla, lai iegūtu to? "
+"vēlaties veikt atjaunināšanu no tīkla, lai to iegūtu? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
+#: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
 msgstr "Atja_unināt"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Valoda"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
 msgid "Installed"
 msgstr "Instalēta"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -71,7 +72,7 @@ msgstr[1] "Jāinstalē %(INSTALL)d"
 msgstr[2] "Jāinstalē %(INSTALL)d"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -80,38 +81,38 @@ msgstr[1] "Jānoņem %(REMOVE)d"
 msgstr[2] "Jānoņem %(REMOVE)d"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
 msgid "none"
 msgstr "nekāds"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/qt/QtLanguageSelector.py:78
+#: ../LanguageSelector/qt/QtLanguageSelector.py:336
 msgid "Software database is broken"
 msgstr "Programmatūras datubāze ir bojāta"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 "Nevar uzinstalēt vai noņemt programmatūru. Lūdzu, vispirms izmantojiet "
-"\"Synaptic\" pakotņu pārvaldnieku vai termināļa komandrindā izpildiet "
-"komandu \"sudo apt-get install -f\", lai šo problēmu novērstu."
+"“Synaptic” pakotņu pārvaldnieku vai termināļa komandrindā izpildiet komandu "
+"“sudo apt-get install -f”, lai šo problēmu novērstu."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
 msgid "Could not install the selected language support"
 msgstr "Neizdevās uzinstalēt izvēlētās valodas atbalstu"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -119,13 +120,13 @@ msgstr ""
 "Šī, iespējams, ir kļūda šajā lietotnē. Lūdzu, ziņojiet par to "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
 msgid "Could not install the full language support"
 msgstr "Neizdevās uzinstalēt pilnu valodas atbalstu"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -135,19 +136,19 @@ msgstr ""
 "Parasti tas ir saistīts ar kļūdu programmatūras arhīvā vai programmatūras "
 "pārvaldniekā. Pārbaudiet iestatījumus programmatūras avotos (klikšķiniet uz "
 "ikonas augšējā joslā labajā stūrī (lietotāja izvēlne) un izvēlieties "
-"\"Sistēmas iestatījumi\" -> \"Programmatūras avoti\")."
+"“Sistēmas iestatījumi” -> “Programmatūras avoti”)."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
 msgid "Failed to authorize to install packages."
 msgstr "Neizdevās autorizēties, lai instalētu pakotnes."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
+#: ../LanguageSelector/qt/QtLanguageSelector.py:171
 msgid "The language support is not installed completely"
 msgstr "Valodas atbalsts nav pilnībā uzinstalēts."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
+#: ../LanguageSelector/qt/QtLanguageSelector.py:172
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -155,165 +156,165 @@ msgstr ""
 "Daļa tulkojumu vai rakstīšanas palīgrīku jūsu izvēlētajai valodai nav vēl "
 "uzinstalēti. Vai tos instalēt tagad?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
+#: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 msgid "_Remind Me Later"
 msgstr "_Atgādiniet man vēlāk"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
+#: ../LanguageSelector/qt/QtLanguageSelector.py:166
 msgid "_Install"
 msgstr "_Instalēt"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
 msgid "Details"
-msgstr "Detaļas"
+msgstr "Sīkāka informācija"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
 "choice. The examples may show up if you\n"
 "close and re-open Language Support."
 msgstr ""
-"Neizdevās pielietot '%s' formāta izvēli.\n"
+"Neizdevās pielietot “%s” formāta izvēli.\n"
 "Izmaiņas varētu būt redzamas, ja aizvērsiet \n"
-"un atkal atvērsiet Valodu atbalstu."
+"un atkal atvērsiet “valodu atbalstu”."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:79
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 "Nav iespējams uzinstalēt vai noņemt programmatūru. Lūdzu, vispirms "
-"izmantojiet \"Muon\" pakotņu pārvaldnieku vai termināļa komandrindā "
-"izpildiet komandu \"sudo apt-get install -f\", lai šo problēmu novērstu."
+"izmantojiet “Muon” pakotņu pārvaldnieku vai termināļa komandrindā izpildiet "
+"komandu \"sudo apt-get install -f\", lai šo problēmu novērstu."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:114
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
 msgid "Set System Language"
 msgstr "Iestatiet sistēmas valodu"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
 msgid "Default system language:"
-msgstr "Noklusētā sistēmas valoda:"
+msgstr "Noklusējuma sistēmas valoda:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
 msgid "Keyboard input method:"
 msgstr "Tastatūras ievades metode:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+#: ../LanguageSelector/qt/QtLanguageSelector.py:126
 msgid "Select language to install:"
 msgstr "Izvēlieties valodu, kuru instalēt:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+#: ../LanguageSelector/qt/QtLanguageSelector.py:127
 msgid "Select language to uninstall:"
 msgstr "Izvēlieties valodu, kuru noņemt:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:128
 msgid "Translations"
 msgstr "Tulkojumi"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:129
 msgid "Input methods"
 msgstr "Ievades metodes"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../LanguageSelector/qt/QtLanguageSelector.py:130
 msgid "Spellchecking and writing aids"
 msgstr "Pareizrakstības pārbaude un rakstīšanas palīgrīki"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Extra fonts"
 msgstr "Papildu fonti"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+#: ../LanguageSelector/qt/QtLanguageSelector.py:132
 msgid "Components:"
 msgstr "Komponentes:"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:202
+#: ../LanguageSelector/qt/QtLanguageSelector.py:210
 msgid "Already installed"
 msgstr "Jau ir instalēta"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
 msgstr "Daļēji instalēta"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:208
+#: ../LanguageSelector/qt/QtLanguageSelector.py:216
 msgid "Not installed"
 msgstr "Nav instalēta"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 msgid "Component already installed"
 msgstr "Komponente jau ir instalēta"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+#: ../LanguageSelector/qt/QtLanguageSelector.py:253
 msgid "Component not available"
 msgstr "Komponente nav pieejama"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+#: ../LanguageSelector/qt/QtLanguageSelector.py:255
 msgid "Component not installed"
 msgstr "Komponente nav instalēta"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr "%s valoda tika iestatīta kā noklusētā sistēmas valoda."
+msgstr "%s valoda tika iestatīta kā noklusējuma sistēmas valoda."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 msgid "Language Set"
-msgstr "Valodu kopa"
+msgstr "Valodas iestatījums"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+#: ../LanguageSelector/qt/QtLanguageSelector.py:337
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 "Nevar uzinstalēt vai noņemt programmatūru. Lūdzu, vispirms izmantojiet "
-"\"Adept\" pakotņu pārvaldnieku vai termināļa komandrindā izpildiet komandu "
-"\"sudo apt-get install -f\", lai šo problēmu novērstu."
+"“Adept” pakotņu pārvaldnieku vai termināļa komandrindā izpildiet komandu "
+"“sudo apt-get install -f”, lai šo problēmu novērstu."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 #, python-format
 msgid ""
 "All selected components have now been installed for %s.  Select them from "
 "Country/Region & Language."
 msgstr ""
 "Visas izvēlētās %s komponentes ir instalētas. Izvēlieties tās no "
-"'Valsts/reģions un valoda'."
+"“Valsts/reģions un valoda”."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 msgid "Language Installed"
 msgstr "Valoda ir uzinstalēta"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
 msgstr "%s valodai tika noņemti tulkojumi un atbalsts."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Language Uninstalled"
 msgstr "Valoda noņemta"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Failed to set system language."
 msgstr "Neizdevās iestatīt sistēmas valodu."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Language Not Set"
 msgstr "Valoda nav iestatīta"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Please run this software with administrative rights."
 msgstr "Lūdzu, darbiniet šo programmatūru ar administratora tiesībām."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Not Root User"
-msgstr "Nav 'root' lietotājs"
+msgstr "Nav “root” lietotājs"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid ""
@@ -367,11 +368,11 @@ msgid ""
 msgstr ""
 "Šis iestatījums ietekmē to, kādā valodā tiek attēlota darbvirsma un "
 "lietotnes. Tas neiestata sistēmas vidi, piemēram, valūtu vai datuma formāta "
-"iestatījumus. Lai mainītu tos, izmantojiet cilnes 'Reģiona formāti' cilni.\n"
+"iestatījumus. Lai mainītu tos, izmantojiet cilnes “Reģiona formāti” cilni.\n"
 "Šeit attēloto vērtību secība nosaka, kura valoda tiks izmantota darbvirsmai. "
 "Ja pirmajai valodai nav pieejams tulkojums, tiks mēģināta otra valoda. Šī "
-"saraksta pēdējā valoda vienmēr ir \"English\" (angļu).\n"
-"Visi ieraksti zem \"English\" tiks ignorēti."
+"saraksta pēdējā valoda vienmēr ir “English” (angļu).\n"
+"Visi ieraksti zem “English” tiks ignorēti."
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
@@ -379,7 +380,7 @@ msgid ""
 "Changes take effect next time you log in.</small>"
 msgstr ""
 "<small>Velciet valodas, lai tās sakārtotu jums vēlamajā kārtībā.\n"
-"Izmaiņas stāsies spēkā jūsu nākošās pieteikšanās laikā.</small>"
+"Izmaiņas stāsies spēkā nākošās ierakstīšanās laikā.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -417,7 +418,7 @@ msgstr ""
 "vēlēties aktivēt šo funkciju.\n"
 "Piemēram, šī funkcija jums būs nepieciešama ievadot tekstus ķīniešu, japāņu, "
 "korejiešu vai vjetnamiešu valodās.\n"
-"Ieteicamā vērtība Ubuntu ir \"ibus\".\n"
+"Ieteicamā vērtība Ubuntu ir “ibus”.\n"
 "Ja jūs vēlaties izmantot alternatīvas ievades metodes sistēmas, vispirms "
 "instalējiet atbilstošās pakotnes, un tad izvēlieties vēlamo sistēmu šeit."
 
@@ -436,14 +437,12 @@ msgid ""
 msgstr ""
 "Tas iestatīs sistēmas vidi kā parādīts zemāk, un arī ietekmēs vēlamo papīra "
 "formātu un citus reģionam specifiskos iestatījumus.\n"
-"Ja vēlaties attēlot darbvirsmu citā valodā, izvēlieties to cilnē "
-"\"Valoda\".\n"
+"Ja vēlaties attēlot darbvirsmu citā valodā, izvēlieties to cilnē “Valoda”.\n"
 "Tāpēc šo vajadzētu iestatīt uz atbilstošu vērtību reģionam, kurā atrodaties."
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "<small>Changes take effect next time you log in.</small>"
-msgstr ""
-"<small>Izmaiņas stāsies spēkā jūsu nākošās pieteikšanās laikā.</small>"
+msgstr "<small>Izmaiņas stāsies spēkā nākošās ierakstīšanās laikā.</small>"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid ""
@@ -474,7 +473,7 @@ msgstr "Reģiona formāti"
 
 #: ../data/language-selector.desktop.in.h:2
 msgid "Configure multiple and native language support on your system"
-msgstr "Konfigurējiet vairāku un noklusēto valodu atbalstu jūsu sistēmā"
+msgstr "Konfigurējiet vairāku un noklusējuma valodu atbalstu jūsu sistēmā"
 
 #: ../data/kde-language-selector.desktop.in.h:1
 msgid "System Languages"
@@ -500,12 +499,12 @@ msgid ""
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
 msgstr ""
-"Valodas atbalsta faili izvēlētajai valodai nav pilnīgi. Jūs varat uzinstalēt "
-"trūkstošās komponentes, spiežot \"Izpildīt šo darbību tagad\" un izpildot "
-"šīs instrukcijas. Tam ir vajadzīgs savienojums ar internetu. Ja vēlaties to "
-"darīt vēlāk, tā vietā izmantojiet \"Valodu atbalstu\" (klikšķiniet uz ikonas "
-"augšējā joslā labajā stūrī (lietotāja izvēlne) un izvēlieties \"Sistēmas "
-"iestatījumi\" -> \"Valodu atbalsts\")."
+"Valodas atbalsta datnes izvēlētajai valodai nav pilnīgas. Jūs varat "
+"uzinstalēt trūkstošās komponentes, spiežot “Izpildīt šo darbību tagad” un "
+"izpildot šīs instrukcijas. Tam ir vajadzīgs savienojums ar internetu. Ja "
+"vēlaties to darīt vēlāk, tā vietā izmantojiet “Valodu atbalstu” (klikšķiniet "
+"uz ikonas augšējā joslā labajā stūrī (lietotāja izvēlne) un izvēlieties "
+"“Sistēmas iestatījumi -> Valodu atbalsts”)."
 
 #. Description
 #: ../data/incomplete-language-support-kde.note.in:6
@@ -517,9 +516,9 @@ msgid ""
 "Settings -> Regional & Language\" instead."
 msgstr ""
 "Atbalsts jūsu izvēlētajai valodai nav pilnīgs. Trūkstošās komponentes varat "
-"uzinstalēt, izvēloties \"Veikt šo darbību tagad\" un sekojot instrukcijām uz "
-"ekrāna. Ja vēlaties veikt šo darbību vēlāk izmantojiet \"Sistēmas "
-"iestatījumi -> Reģions un valoda\"."
+"uzinstalēt, izvēloties “Veikt šo darbību tagad” un sekojot instrukcijām uz "
+"ekrāna. Ja vēlaties veikt šo darbību vēlāk izmantojiet “Sistēmas iestatījumi "
+"-> Reģions un valoda”."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -545,132 +544,61 @@ msgstr "Sistēmas politika neļauj iestatīt noklusēto valodu"
 msgid "don't verify installed language support"
 msgstr "nepārbaudīt instalēto valodu atbalstu"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:20 ../check-language-support:27
 msgid "alternative datadir"
 msgstr "Alternatīva datu direktorija"
 
-#: ../fontconfig-voodoo:17
-msgid "Aborting"
-msgstr "Pārtrauc"
-
-#: ../fontconfig-voodoo:25
-msgid "Force even when a configuration exists"
-msgstr "Forsēt, pat ja jau eksistē konfigurācija"
-
-#: ../fontconfig-voodoo:27
-msgid "Set fontconfig voodoo for the selected language"
-msgstr "Iestatīt fontconfig voodoo izvēlētajai valodai"
-
-#: ../fontconfig-voodoo:31
-msgid ""
-"Guess a configuration based on the LANGUAGE environment. Sets the config to "
-"'none' if nothing suitable was found"
-msgstr ""
-"Uzminēt konfigurāciju no LANGUAGE vides mainīgā. Iestata konfigurāciju uz "
-"\"nekas\", ja netiek atrasts nekas atbilstošs"
-
-#: ../fontconfig-voodoo:36
-msgid "List the available fontconfig-voodoo configs"
-msgstr "Saraksts ar pieejamajām fontconfig-voodoo konfigurācijām"
-
-#: ../fontconfig-voodoo:39
-msgid "Show the current fontconfig-voodoo config"
-msgstr "Parādīt esošo fontconfig-voodoo konfigurāciju"
-
-#: ../fontconfig-voodoo:42
-msgid "Remove the current fontconfig-voodoo config"
-msgstr "Noņemt pašreizējo fontconfig-voodoo konfigurāciju"
-
-#: ../fontconfig-voodoo:64
-msgid "Unconfigured"
-msgstr "Nekonfigurēts"
-
-#: ../fontconfig-voodoo:80
-msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
-"Konfigurācija jau eksistē. Izmantojiet '--force', lai to pārrakstītu. "
-
-#: ../fontconfig-voodoo:89
-msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
-msgstr "Šai valodai (LANGUAGE) nav atrasta fontconfig-voodoo konfigurācija"
-
-#: ../fontconfig-voodoo:96
-msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr "Izvēlētajai lokālei netika atrasta fontconfig-voodoo konfigurācija"
-
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "mērķa valodas kods"
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
-"pārbaudīt tikai sekojošajām pakotnēm - atdaliet pakotņu nosaukumus ar komatu"
+"pārbaudīt tikai sekojošajām pakotnēm — atdaliet pakotņu nosaukumus ar komatu"
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr "izvadīt visas pieejamās valodas atbalsta pakotnes visām valodām"
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "parādīt gan instalētās pakotnes, gan trūkstošās"
 
-#~ msgid ""
-#~ "Usually this is related to an error in your software archive or software "
-#~ "manager. Check your software preferences in the System > Administration menu."
+#~ msgid "Aborting"
+#~ msgstr "Pārtrauc"
+
+#~ msgid "Unconfigured"
+#~ msgstr "Nekonfigurēts"
+
+#~ msgid "List the available fontconfig-voodoo configs"
+#~ msgstr "Saraksts ar pieejamajām fontconfig-voodoo konfigurācijām"
+
+#~ msgid "A configuration exists already. Use '--force' to overwrite it. "
 #~ msgstr ""
-#~ "Parasti tas ir saistīts ar kļūdu jūsu programmatūras arhīvā vai "
-#~ "programmatūras pārvaldniekā. Pārbaudiet jūsu programmatūras iestatījumus "
-#~ "Sistēma > Administrēšana."
+#~ "Konfigurācija jau eksistē. Izmantojiet '--force', lai to pārrakstītu. "
 
-#~ msgid "Translations for your desktop."
-#~ msgstr "Tulkojumi jūsu darbvirsmai."
-
-#~ msgid "check all available languages"
-#~ msgstr "pārbaudīt visas pieejamās valodas"
-
-#~ msgid ""
-#~ "Word lists, dictionaries, thesauruses, etc. which can help typing by "
-#~ "highlighting, correcting or suggesting words."
-#~ msgstr ""
-#~ "Vārdu saraksti, vārdnīcas, sinonīmu vārdnīcas u.c. lietas, kas palīdz "
-#~ "rakstīt izgaismojot, labojot un iesakot vārdus."
-
-#, python-format
-#~ msgid "Failed to apply the '%s' format choice:"
-#~ msgstr "Neizdevās pielietot '%s' formāta izvēli:"
+#~ msgid "Set fontconfig voodoo for the selected language"
+#~ msgstr "Iestatīt fontconfig voodoo izvēlētajai valodai"
 
 #~ msgid ""
-#~ "<small>Use the same format choice for startup and the login screen.\n"
-#~ "Changes take effect only after a restart of the system.</small>"
+#~ "Guess a configuration based on the LANGUAGE environment. Sets the config to "
+#~ "'none' if nothing suitable was found"
 #~ msgstr ""
-#~ "<small>Izmantot to pašu formāta izvēli sistēmas startēšanai un pieteikšanās "
-#~ "ekrānam.\n"
-#~ "Šīs izmaiņas stāsies spēkā tikai pēc sistēmas pārstartēšanas.</small>"
+#~ "Uzminēt konfigurāciju no LANGUAGE vides mainīgā. Iestata konfigurāciju uz "
+#~ "\"nekas\", ja netiek atrasts nekas atbilstošs"
 
-#~ msgid ""
-#~ "<small>Use the same language choices for startup and the login screen.\n"
-#~ "Changes take effect only after a restart of the system.</small>"
-#~ msgstr ""
-#~ "<small>Izmantot tās pašas valodas izvēli sistēmas startēšanai un "
-#~ "pieteikšanās ekrānam.\n"
-#~ "Šīs izmaiņas stāsies spēkā tikai pēc sistēmas pārstartēšanas.</small>"
+#~ msgid "Force even when a configuration exists"
+#~ msgstr "Forsēt, pat ja jau eksistē konfigurācija"
 
-#~ msgid ""
-#~ "Additional fonts for this language which might be of general interest, e.g. "
-#~ "decorative fonts for printing documents."
-#~ msgstr ""
-#~ "Papildu fonti šai valodai, kas varētu interesēt daudzus, piem., dekoratīvi "
-#~ "fonti drukātiem dokumentiem."
+#~ msgid "Show the current fontconfig-voodoo config"
+#~ msgstr "Parādīt esošo fontconfig-voodoo konfigurāciju"
 
-#~ msgid ""
-#~ "The language support files for your selected language seem to be incomplete. "
-#~ "You can install the missing components by clicking on \"Run this action "
-#~ "now\" and follow the instructions. An active internet connection is "
-#~ "required. If you would like to do this at a later time, please use \"System -"
-#~ "> Administration -> Language Support\" instead."
-#~ msgstr ""
-#~ "Atbalsts jūsu izvēlētajai valodai nav pilnīgs. Trūkstošās komponentes varat "
-#~ "uzinstalēt, izvēloties \"Veikt šo darbību tagad\" un sekojot instrukcijām uz "
-#~ "ekrāna. Ja vēlaties veikt šo darbību vēlāk, izmantojiet \"Sistēma -> "
-#~ "Administrēšana -> Valodas atbalsts\"."
+#~ msgid "No fontconfig-voodoo configuration found for the selected locale"
+#~ msgstr "Izvēlētajai lokālei netika atrasta fontconfig-voodoo konfigurācija"
+
+#~ msgid "Remove the current fontconfig-voodoo config"
+#~ msgstr "Noņemt pašreizējo fontconfig-voodoo konfigurāciju"
+
+#~ msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
+#~ msgstr "Šai valodai (LANGUAGE) nav atrasta fontconfig-voodoo konfigurācija"

@@ -2,66 +2,66 @@
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
 # This file is distributed under the same license as the language-selector package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# Dawid de Jager <dawid.dejager@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-30 10:53+0000\n"
-"PO-Revision-Date: 2012-03-09 19:38+0000\n"
-"Last-Translator: Martin Pitt <martin.pitt@ubuntu.com>\n"
-"Language-Team: Afrikaans <af@li.org>\n"
+"POT-Creation-Date: 2012-09-27 22:00+0000\n"
+"PO-Revision-Date: 2012-09-28 00:22+0000\n"
+"Last-Translator: Arthur Rilke <Unknown>\n"
+"Language-Team: Ubuntu Afrikaans Translators\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-04-13 13:48+0000\n"
-"X-Generator: Launchpad (build 15070)\n"
+"X-Launchpad-Export-Date: 2012-10-09 12:41+0000\n"
+"X-Generator: Launchpad (build 16112)\n"
 "Language: af\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:54
 msgid "Chinese (simplified)"
 msgstr "Sjinees (vereenvoudig)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (traditional)"
 msgstr "Sjinees (tradisioneel)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
+#: ../LanguageSelector/qt/QtLanguageSelector.py:94
 msgid "No language information available"
 msgstr "Geen taal informasie beskikbaar nie"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
+#: ../LanguageSelector/qt/QtLanguageSelector.py:95
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
-"Die sisteem het nog nie informasie oor die beskikbare tale nie. Wil u nou 'n "
-"netwerk opdatering doen om hulle  te kry? "
+"Die stelsel het nog nie inligting oor beskikbare tale nie. Wil u 'n netwerk "
+"bywerking uitvoer om hul nou te kry? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
+#: ../LanguageSelector/qt/QtLanguageSelector.py:89
 msgid "_Update"
-msgstr "_Opdateer"
+msgstr "Bywerk"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Taal"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
 msgid "Installed"
 msgstr "Geïnstalleer"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -69,7 +69,7 @@ msgstr[0] "%(INSTALL)d om te installeer"
 msgstr[1] "%(INSTALL)d om te installeer"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -77,231 +77,240 @@ msgstr[0] "%(REMOVE)d om te verwyder"
 msgstr[1] "%(REMOVE)d om te verwyder"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
 msgid "none"
-msgstr ""
+msgstr "geen"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
+#: ../LanguageSelector/qt/QtLanguageSelector.py:78
+#: ../LanguageSelector/qt/QtLanguageSelector.py:336
 msgid "Software database is broken"
-msgstr "Die sagteware databasis is gebroke"
+msgstr "Sagteware databasis is gebreek"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Dit is nie moontlik om enige sagteware te installeer of verwyder nie. Maak "
-"asseblief van die pakketbestuurder \"Synaptic\" gebruik, of loop \"sudo apt-"
-"get install -f\" in 'n terminaal, om hierdie probleem te probeer oplos."
+"Dit is onmoontlik om enige sagteware te installeer of verwyder. Gebruik "
+"asseblief die pakket bestuurder \"Synaptic\", of hardloop \"sudo apt-get "
+"install -f\" in 'n terminaal om hierdie probleem eerste op te los."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
 msgid "Could not install the selected language support"
-msgstr "Kon nie die geselekteerde taalondersteuning installeer nie"
+msgstr "Kon nie die gekose taal ondersteuning installeer nie"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
-"Hierdie is dalk 'n programsfout. Rapporteer dit asseblief by "
+"Hierdie is dalk 'n gogga in die toepassing. Rapporteer dit asseblief by "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
 msgid "Could not install the full language support"
-msgstr "Kon nie die volledige taalpakket instaleer nie"
+msgstr "Kon nie die volledige taal ondersteuning installeer nie"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
 "very right of the top bar and select \"System Settings... -> Software "
 "Sources\")."
 msgstr ""
+"Gewoonlik hou hierdie verband met 'n fout in u sagteware argief of sagteware "
+"bestuurder. Gaan asseblief u voorkeure na in Sagteware Bronne (kliek die "
+"ikoon heel regs op die boonste balk en kies \"Stelsel Instellings... -> "
+"Sagteware Bronne\")."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
 msgid "Failed to authorize to install packages."
-msgstr ""
+msgstr "Misluk om pakkette te magtig en te installeer."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
+#: ../LanguageSelector/qt/QtLanguageSelector.py:171
 msgid "The language support is not installed completely"
-msgstr "Die taalpakket is nie volledig geïnstalleer nie"
+msgstr "Die taal ondersteuning is nie volledig geïnstalleer nie"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
+#: ../LanguageSelector/qt/QtLanguageSelector.py:172
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"Sommige vertalings of skryf-hulpmiddels wat vir u gekose taal beskikbaar is, "
-"is nog nie geïnstalleer nie. Wil u dit nou installeer?"
+"Sommige vertalings of skryf hulpmiddelle wat vir u gekose taal beskikbaar "
+"is, is nog nie geïnstalleer nie. Wil u dit nou installeer?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
+#: ../LanguageSelector/qt/QtLanguageSelector.py:90
+#: ../LanguageSelector/qt/QtLanguageSelector.py:167
 msgid "_Remind Me Later"
-msgstr "He_rinner my later"
+msgstr "He_rinner My Later"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
+#: ../LanguageSelector/qt/QtLanguageSelector.py:166
 msgid "_Install"
 msgstr "_Installeer"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
 msgid "Details"
 msgstr "Besonderhede"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
 "choice. The examples may show up if you\n"
 "close and re-open Language Support."
 msgstr ""
+"Misluk om die '%s' formaat keuse\n"
+"toe te pas. Die voorbeelde mag wys indien u\n"
+"Taal Ondersteuning toemaak en weer oop."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:70
+#: ../LanguageSelector/qt/QtLanguageSelector.py:79
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Dit is nie moontlik om enige sagteware te installeer of verwyder nie. Maak "
-"asseblief van die pakketbestuurder \"Muon\" gebruik, of loop \"sudo apt-get "
-"install -f\" in 'n terminaal, om hierdie probleem te probeer oplos."
+"Dit is onmoontlik om enige sagteware te installeer of verwyder. Gebruik "
+"asseblief die pakket bestuurder \"Muon\", of hardloop \"sudo apt-get install "
+"-f\" in 'n terminaal om hierdie probleem eerste op te los."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:114
+#: ../LanguageSelector/qt/QtLanguageSelector.py:123
 msgid "Set System Language"
-msgstr "Verstel sisteemtaal"
+msgstr "Stel Stelsel Taal"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:115
+#: ../LanguageSelector/qt/QtLanguageSelector.py:124
 msgid "Default system language:"
-msgstr "Verstek sisteemtaal"
+msgstr "Verstek stelsel taal:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:116
+#: ../LanguageSelector/qt/QtLanguageSelector.py:125
 msgid "Keyboard input method:"
-msgstr "Sleutelbord invoermetode:"
+msgstr "Sleutelbord Inset Metode:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:117
+#: ../LanguageSelector/qt/QtLanguageSelector.py:126
 msgid "Select language to install:"
 msgstr "Kies taal om te installeer:"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:118
+#: ../LanguageSelector/qt/QtLanguageSelector.py:127
 msgid "Select language to uninstall:"
 msgstr "Kies taal om te verwyder"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:119
+#: ../LanguageSelector/qt/QtLanguageSelector.py:128
 msgid "Translations"
 msgstr "Vertalings"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:120
+#: ../LanguageSelector/qt/QtLanguageSelector.py:129
 msgid "Input methods"
-msgstr "Toevoer metodes"
+msgstr "Insetr metodes"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:121
+#: ../LanguageSelector/qt/QtLanguageSelector.py:130
 msgid "Spellchecking and writing aids"
 msgstr "Speltoetser en skryf-hulpmiddels"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:122
+#: ../LanguageSelector/qt/QtLanguageSelector.py:131
 msgid "Extra fonts"
-msgstr ""
+msgstr "Ekstra skryfkuns"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
+#: ../LanguageSelector/qt/QtLanguageSelector.py:132
 msgid "Components:"
 msgstr "Komponente:"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:202
+#: ../LanguageSelector/qt/QtLanguageSelector.py:210
 msgid "Already installed"
 msgstr "Reeds geïnstalleer"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:205
+#: ../LanguageSelector/qt/QtLanguageSelector.py:213
 msgid "Partially Installed"
 msgstr "Gedeeltelik geïnstalleer"
 
 #. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:208
+#: ../LanguageSelector/qt/QtLanguageSelector.py:216
 msgid "Not installed"
 msgstr "Nie geïnstalleer nie"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:243
+#: ../LanguageSelector/qt/QtLanguageSelector.py:251
 msgid "Component already installed"
-msgstr ""
+msgstr "Komponente reeds geïnstalleer"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:245
+#: ../LanguageSelector/qt/QtLanguageSelector.py:253
 msgid "Component not available"
-msgstr ""
+msgstr "Komponent nie beskikbaar nie"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:247
+#: ../LanguageSelector/qt/QtLanguageSelector.py:255
 msgid "Component not installed"
-msgstr ""
+msgstr "Komponente nie geïnstalleer nie"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 #, python-format
 msgid "Default system Language now set to %s."
-msgstr "Verstek sisteemtaal verander na %s"
+msgstr "Verstek stelsel taal nou gestel as %s"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:288
+#: ../LanguageSelector/qt/QtLanguageSelector.py:296
 msgid "Language Set"
-msgstr "Taal stel"
+msgstr "Taal Stel"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:329
+#: ../LanguageSelector/qt/QtLanguageSelector.py:337
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"Dit is nie moontlik om enige sagteware te installeer of verwyder nie. Maak "
-"asseblief van die pakketbestuurder \"Adept\" gebruik, of loop \"sudo apt-get "
-"install -f\" in 'n terminaal, om hierdie probleem te probeer oplos."
+"Dit is onmoontlik om enige sagteware te installeer of verwyder. Gebruik "
+"asseblief die pakket bestuurder \"Adept\", of hardloop \"sudo apt-get "
+"install -f\" in 'n terminaal om hierdie probleem eerste op te los."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 #, python-format
 msgid ""
 "All selected components have now been installed for %s.  Select them from "
 "Country/Region & Language."
 msgstr ""
+"Alle gekose komponente is nou geïnstalleer vir %s.  Kies hul vanaf "
+"Land/Streek & Taal."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:354
+#: ../LanguageSelector/qt/QtLanguageSelector.py:362
 msgid "Language Installed"
-msgstr "Taal bygevoeg"
+msgstr "Taal Geïnstalleer"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 #, python-format
 msgid "Translations and support have now been uninstalled for %s."
-msgstr "Vertaling en ondersteuning is nou uitgewis vir %s."
+msgstr "Vertaling en ondersteuning vir %s is nou verwyder."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:356
+#: ../LanguageSelector/qt/QtLanguageSelector.py:364
 msgid "Language Uninstalled"
-msgstr "Taal verwyder"
+msgstr "Taal Verwyder"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Failed to set system language."
-msgstr "Verstelling van sisteemtaal het misluk."
+msgstr "Verstelling van stelsel taal het misluk."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
+#: ../LanguageSelector/qt/QtLanguageSelector.py:372
 msgid "Language Not Set"
-msgstr "Taal is nie gestel nie"
+msgstr "Taal Nie Gestel Nie"
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Please run this software with administrative rights."
-msgstr "Loop asseblief hierdie sagteware met administrateursregte."
+msgstr "Hardloop asseblief hierdie sagteware met administrateursregte."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:433
+#: ../LanguageSelector/qt/QtLanguageSelector.py:441
 msgid "Not Root User"
-msgstr "Nie stamgebruiker nie"
+msgstr "Nie Root Gebruiker"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid ""
@@ -312,17 +321,20 @@ msgid ""
 msgstr ""
 "<big><b>Kyk vir beskikbare taal ondersteuning</b></big>\n"
 "\n"
-"Die beskikbaarheid van vertalings of skryf behore kan verskil tussen tale."
+"Die beskikbaarheid van vertalings of skryf hulpmiddele kan verskil tussen "
+"tale."
 
 #: ../data/LanguageSelector.ui.h:4
 msgid "Installed Languages"
-msgstr "Tale reeds geïnstalleer"
+msgstr "Geïnstalleerde Tale"
 
 #: ../data/LanguageSelector.ui.h:5
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
+"Wanneer 'n taal geïnstalleer is, kan individuele gebruikers dit kies in hul "
+"Taal instellings."
 
 #: ../data/LanguageSelector.ui.h:6
 msgid "Cancel"
@@ -330,11 +342,11 @@ msgstr "Kanselleer"
 
 #: ../data/LanguageSelector.ui.h:7
 msgid "Apply Changes"
-msgstr "Wend veranderinge aan"
+msgstr "Wend Veranderinge Aan"
 
 #: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
-msgstr "Taalondersteuning"
+msgstr "Taal Ondersteuning"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
@@ -351,30 +363,42 @@ msgid ""
 "\"English\".\n"
 "Every entry below \"English\" will be ignored."
 msgstr ""
+"Hierdie instelling beïnvloed slegs die taal waarin u werkskerm en "
+"toepassings vertoon word. Dit stel nie die stelsel omgewing, soos "
+"geldeenheid of datum formaat instellings nie. Daarvoor, gebruik die "
+"instellings in die Streeksformate oortjie.\n"
+"Die orde waarin die waarde hieronder vertoon word bepaal watter vertaling om "
+"vir u werkskerm te gebruik. Indien vertalings nie vir die eerste taal "
+"beskikbaar is nie, sal die volgende een in die lys probeer word. Die laaste "
+"inskrywing in hierdie lys is altyd\".\n"
+"Elke inskrywing onder \"English\" sal geïgnoreer word."
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
 "<small>Drag languages to arrange them in order of preference.\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Sleep tale om hulle te rangskik in orde van voorkeur.\n"
+"Veranderinge sal invloed neem die volgende keer wat u inteken.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
-msgstr ""
+msgstr "Pas Stelselwyd Toe"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid ""
 "<small>Use the same language choices for startup and the login "
 "screen.</small>"
 msgstr ""
+"<small>Gebruik dieselfde taalkeuse vir laaiing en intekeningskerm.</small>"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Install / Remove Languages..."
-msgstr "Voeg by / verwyder tale"
+msgstr "Voeg by / Verwyder Tale..."
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "Sleutelbord inset metode stelsel:"
 
 #: ../data/LanguageSelector.ui.h:19
 msgid ""
@@ -387,6 +411,14 @@ msgid ""
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
+"Indien u nodig het om meer ingewikkelde tale te tik, wat meer ingewikkelde "
+"insetmetodes vereis as bloot sleutel-na-letter kaartwerk, mag u hierdie "
+"funksie wil instel.\n"
+"Byvoorbeeld, u sal hierdie funksie nodig kry om te tik in Sjinees, Japanees, "
+"Koreaans of Vietnamees.\n"
+"Die aanbevole waarde vir Ubuntu is \"ibus\".\n"
+"Indien u 'n alternatiewe inset metode stelsel wil gebruik, installeer eers "
+"die ooreenstemmende pakkette en kies dan die verlangde stelsel hier."
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -405,11 +437,14 @@ msgstr ""
 #: ../data/LanguageSelector.ui.h:28
 msgid "<small>Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Veranderinge sal invloed neem die volgende keer wat u inteken.</small>"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid ""
 "<small>Use the same format choice for startup and the login screen.</small>"
 msgstr ""
+"<small>Gebruik dieselfde formaat keuse vir laaiing en "
+"intekeningskerm.</small>"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Number:"
@@ -429,7 +464,7 @@ msgstr "<b>Voorbeeld</b>"
 
 #: ../data/LanguageSelector.ui.h:34
 msgid "Regional Formats"
-msgstr ""
+msgstr "Streeksformate"
 
 #: ../data/language-selector.desktop.in.h:2
 msgid "Configure multiple and native language support on your system"
@@ -437,17 +472,17 @@ msgstr "Stel veelvoudige en inheemse taalondersteuning in vir jou stelsel"
 
 #: ../data/kde-language-selector.desktop.in.h:1
 msgid "System Languages"
-msgstr ""
+msgstr "Stelsel Tale"
 
 #: ../data/kde-language-selector.desktop.in.h:2
 msgid "Install and set system languages"
-msgstr ""
+msgstr "Installeer en stel stelsel tale"
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 #: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
-msgstr "Onvolledige taalondersteuning"
+msgstr "Onvolledige Taal Ondersteuning"
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -459,6 +494,12 @@ msgid ""
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
 msgstr ""
+"Die taal ondersteuning lêers vir u gekose taal blyk onvolledig te wees. U "
+"kan die vermiste komponente installeer deur te klein op \"Hardloop hierdie "
+"aksie nou\" en die aanwysinggs te volg. 'n Aktiewe internet verbinding word "
+"vereis. Indien u hierdie op 'n latere stadium wil doen, gebruik eerder Taal "
+"Ondersteuning (kliek die ikoon heel regs op die boonste balk en kies "
+"\"Stelsel Instellings... -> Taal Ondersteuning\")."
 
 #. Description
 #: ../data/incomplete-language-support-kde.note.in:6
@@ -469,105 +510,56 @@ msgid ""
 "required. If you would like to do this at a later time, please use \"System "
 "Settings -> Regional & Language\" instead."
 msgstr ""
+"Die taal ondersteuning lêers vir u gekose taal blyk onvolledig te wees. U "
+"kan die vermiste komponente installeer deur te klein op \"Hardloop hierdie "
+"aksie nou\" en die aanwysinggs te volg. 'n Aktiewe internet verbinding word "
+"vereis. Indien u hierdie op 'n latere stadium wil doen, gebruik asseblief "
+"eerder \"Stelsel Instellings... -> Streek & Taal\")."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "Sessie Herbegin Vereis"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
-msgstr ""
+msgstr "Die nuwe taal instellings sal invloed neem sodra u uitgeteken het."
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
 msgid "Set system default language"
-msgstr ""
+msgstr "Stel stelsel verstek taal"
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
 msgid "System policy prevented setting default language"
-msgstr ""
+msgstr "Stelsel beleid verhoed die instelling van verstek taal"
 
 #: ../gnome-language-selector:17
 msgid "don't verify installed language support"
-msgstr ""
+msgstr "moenie geïnstalleerde taal ondersteuning bevestig nie"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:20 ../check-language-support:27
 msgid "alternative datadir"
-msgstr ""
+msgstr "alternatiewe datadir"
 
-#: ../fontconfig-voodoo:17
-msgid "Aborting"
-msgstr "Besig om te kanselleer"
-
-#: ../fontconfig-voodoo:25
-msgid "Force even when a configuration exists"
-msgstr ""
-
-#: ../fontconfig-voodoo:27
-msgid "Set fontconfig voodoo for the selected language"
-msgstr ""
-
-#: ../fontconfig-voodoo:31
-msgid ""
-"Guess a configuration based on the LANGUAGE environment. Sets the config to "
-"'none' if nothing suitable was found"
-msgstr ""
-
-#: ../fontconfig-voodoo:36
-msgid "List the available fontconfig-voodoo configs"
-msgstr ""
-
-#: ../fontconfig-voodoo:39
-msgid "Show the current fontconfig-voodoo config"
-msgstr ""
-
-#: ../fontconfig-voodoo:42
-msgid "Remove the current fontconfig-voodoo config"
-msgstr ""
-
-#: ../fontconfig-voodoo:64
-msgid "Unconfigured"
-msgstr "Nie ingestel"
-
-#: ../fontconfig-voodoo:80
-msgid "A configuration exists already. Use '--force' to overwrite it. "
-msgstr ""
-
-#: ../fontconfig-voodoo:89
-msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
-msgstr ""
-
-#: ../fontconfig-voodoo:96
-msgid "No fontconfig-voodoo configuration found for the selected locale"
-msgstr ""
-
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "teiken taalkode"
 
-#: ../check-language-support:26
-msgid "check for the given package(s) only -- separate packagenames by comma"
-msgstr ""
-
 #: ../check-language-support:28
+msgid "check for the given package(s) only -- separate packagenames by comma"
+msgstr "kyk vir die gegewe pakket(te) allenlik -- skei pakketname met komma"
+
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
-msgstr ""
+msgstr "lewer alle beskikbare taal ondersteuning pakkette vir alle tale"
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
-msgstr "Toon geïnstalleerde sowel as nie-geïnstalleerde pakette"
+msgstr "wys geïnstalleerde asook vermiste pakkette"
 
-#~ msgid ""
-#~ "Usually this is related to an error in your software archive or software "
-#~ "manager. Check your software preferences in the System > Administration menu."
-#~ msgstr ""
-#~ "Hierdie hou gewoonlik verband met 'n fout in u sagteware-argief of -"
-#~ "bestuurder. Gaan asseblief u sagteware voorkeure na in die Sisteem > "
-#~ "Administrasie kieslys."
+#~ msgid "Unconfigured"
+#~ msgstr "Nie ingestel"
 
-#~ msgid "Translations for your desktop."
-#~ msgstr "Vertalings vir u werkskerm."
-
-#~ msgid "check all available languages"
-#~ msgstr "Sien na alle beskikbare tale"
+#~ msgid "Aborting"
+#~ msgstr "Besig om te kanselleer"
