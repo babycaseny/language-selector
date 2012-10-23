@@ -39,29 +39,24 @@ class LocaleInfo(object):
         self._languagelist = {}
         
         # read lang file
-        et = ElementTree(file="/usr/share/xml/iso-codes/iso_639.xml")
-        it = et.iter('iso_639_entry')
+        et = ElementTree(file="/usr/share/xml/iso-codes/iso_639_3.xml")
+        it = et.iter('iso_639_3_entry')
         for elm in it:
-            lang = elm.attrib["name"]
-            if "iso_639_1_code" in elm.attrib:
-                code = elm.attrib["iso_639_1_code"]
+            if "common_name" in elm.attrib:
+                lang = elm.attrib["common_name"]
             else:
-                code = elm.attrib["iso_639_2T_code"]
-            if not code in self._lang:
-                self._lang[code] = lang
+                lang = elm.attrib["name"]
+            if "part1_code" in elm.attrib:
+                code = elm.attrib["part1_code"]
+            else:
+                code = elm.attrib["id"]
+            self._lang[code] = lang
         # Hack for Chinese langpack split
         # Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
         self._lang['zh-hans'] = _("Chinese (simplified)")
         # Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
         self._lang['zh-hant'] = _("Chinese (traditional)")
         # end hack
-        et = ElementTree(file="/usr/share/xml/iso-codes/iso_639_3.xml")
-        it = et.iter('iso_639_3_entry')
-        for elm in it:
-            lang = elm.attrib["name"]
-            code = elm.attrib["id"]
-            if not code in self._lang:
-                self._lang[code] = lang
         
         # read countries
         et = ElementTree(file="/usr/share/xml/iso-codes/iso_3166.xml")
