@@ -258,9 +258,6 @@ class GtkLanguageSelector(LanguageSelectorBase):
             raise AttributeError('No such widget: ' + name)
         return o
 
-    def run(self):
-        Gtk.main()
-
     def setSensitive(self, value):
         if value:
             self.window_main.set_sensitive(True)
@@ -1005,21 +1002,26 @@ class GtkLanguageSelector(LanguageSelectorBase):
     # window_main signal handlers                      #
     ####################################################
     def on_delete_event(self, event, data):
-        if self.window_main.get_property("sensitive") is False:
-            return True
-        else:
-            Gtk.main_quit()
+        app = self.window_main.get_application()
+        if app:
+            app.remove_window(self.window_main)
 
     def on_button_quit_clicked(self, widget):
-        Gtk.main_quit()
+        app = self.window_main.get_application()
+        if app:
+            app.remove_window(self.window_main)
 
     @honorBlockedSignals
     def on_window_main_key_press_event(self, widget, event):
         keyname = Gdk.keyval_name(event.keyval)
         if event.get_state() & Gdk.ModifierType.CONTROL_MASK and keyname == "w":
-            Gtk.main_quit()
-        if event.get_state() == 0 and keyname == "Escape":
-            Gtk.main_quit()
+            app = self.window_main.get_application()
+            if app:
+                app.remove_window(self.window_main)
+        if (event.get_state() | Gdk.ModifierType.MOD2_MASK) == Gdk.ModifierType.MOD2_MASK and keyname == "Escape":
+            app = self.window_main.get_application()
+            if app:
+                app.remove_window(self.window_main)
         return None
 
     ####################################################
