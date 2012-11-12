@@ -1,10 +1,10 @@
-language-selector (0.92) UNRELEASED; urgency=low
+language-selector (0.92) raring; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py,
   gnome-language-selector: Add single instance support for gnome-language-selector
   and fix the Escape key malfunction when num lock is on.
 
- -- Shih-Yuan Lee (FourDollars) <sylee@ubuntu.com>  Fri, 02 Nov 2012 00:12:03 +0800
+ -- Shih-Yuan Lee (FourDollars) <sylee@ubuntu.com>  Mon, 12 Nov 2012 09:55:43 +0100
 
 language-selector (0.91) raring; urgency=low
 
