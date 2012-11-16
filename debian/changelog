@@ -1,3 +1,11 @@
+language-selector (0.93) UNRELEASED; urgency=low
+
+  * LanguageSelector/LocaleInfo.py:
+    Look first for a common_name field when grabbing a language name
+    (LP: #991002).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 23 Oct 2012 17:28:00 +0200
+
 language-selector (0.92) raring; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py,
