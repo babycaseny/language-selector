@@ -1,3 +1,11 @@
+language-selector (0.94) UNRELEASED; urgency=low
+
+  * data/language-selector.desktop.in:
+    - Use equivalent 'preferences-desktop-locale' icon instead of
+      'config-language' since the High Contrast theme is missing a symlink
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Fri, 23 Nov 2012 22:14:55 -0500
+
 language-selector (0.93) raring; urgency=low
 
   * LanguageSelector/LocaleInfo.py:
