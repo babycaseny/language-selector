@@ -225,7 +225,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             if not self._cache.havePackageLists:
                 d = Gtk.MessageDialog(parent=self.window_main,
                                       flags=Gtk.DialogFlags.MODAL,
-                                      type=Gtk.MessageType.INFO,
+                                      message_type=Gtk.MessageType.INFO,
                                       buttons=Gtk.ButtonsType.CANCEL)
                 d.set_markup("<big><b>%s</b></big>\n\n%s" % (
                     _("No language information available"),
@@ -527,7 +527,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
     def error(self, summary, msg):
         d = Gtk.MessageDialog(parent=self.window_main,
                               flags=Gtk.DialogFlags.MODAL,
-                              type=Gtk.MessageType.ERROR,
+                              message_type=Gtk.MessageType.ERROR,
                               buttons=Gtk.ButtonsType.CLOSE)
         d.set_markup("<big><b>%s</b></big>\n\n%s" % (summary, msg))
         d.set_title=("")
@@ -671,7 +671,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             # FIXME: add "details"
             d = Gtk.MessageDialog(parent=self.window_main,
                                   flags=Gtk.DialogFlags.MODAL,
-                                  type=Gtk.MessageType.QUESTION)
+                                  message_type=Gtk.MessageType.QUESTION)
             d.set_markup("<big><b>%s</b></big>\n\n%s" % (
                 _("The language support is not installed completely"),
                 _("Some translations or writing aids available for your "
