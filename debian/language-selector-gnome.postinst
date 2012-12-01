@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+# some cleaning due to the removal of im-switch
+if dpkg --compare-versions "$2" lt-nl 0.95; then
+	echo 'Removing im-switch config files ...'
+
+	rm -f /etc/X11/Xsession.d/80im-switch \
+	      /etc/X11/xinit/xinput.d/default-xim \
+	      /etc/X11/xinit/xinput.d/th-gtk \
+	      /etc/X11/xinit/xinput.d/none \
+	      /etc/X11/xinit/xinput.d/default \
+	      /etc/X11/xinit/xinput.d/th-xim \
+	      /etc/X11/xinit/xinput.d/lo-gtk
+
+	rm -rf "$HOME/.xinput.d"
+fi
+
+exit 0
+

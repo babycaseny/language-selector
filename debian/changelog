@@ -3,6 +3,11 @@ language-selector (0.95) UNRELEASED; urgency=low
   * LanguageSelector/gtk/GtkLanguageSelector.py:
     - Deprecated keyword "type" in Gtk.MessageDialog constructors
       replaced by "message_type".
+  * debian/control, LanguageSelector/gtk/GtkLanguageSelector.py,
+    LanguageSelector/ImConfig.py, data/LanguageSelector.ui,
+    debian/language-selector-gnome.postinst:
+    - Transition from the im-switch framework for handling input
+      method systems to im-config (LP: #1076975).
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Fri, 30 Nov 2012 05:36:00 +0100
 

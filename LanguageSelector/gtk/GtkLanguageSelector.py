@@ -27,7 +27,7 @@ from aptdaemon.enums import *
 from aptdaemon.gtk3widgets import AptProgressDialog
 
 from LanguageSelector.LanguageSelector import *
-from LanguageSelector.ImSwitch import ImSwitch
+from LanguageSelector.ImConfig import ImConfig
 from LanguageSelector.macros import *
 from LanguageSelector.utils import language2locale
 from LanguageSelector.LangCache import ExceptionPkgCacheBroken
@@ -187,11 +187,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
         combo.pack_start(cell, True)
         combo.add_attribute(cell, 'text', IM_NAME)
         combo.set_model(model)
-        self.imSwitch = ImSwitch()
+        self.ImConfig = ImConfig()
         self._blockSignals = False
-
-        # remove dangling ImSwitch symlinks if present
-        self.imSwitch.removeDanglingSymlinks()
 
         # build the treeview
         self.setupLanguageTreeView()
@@ -246,7 +243,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             if self.options.verify_installed:
                 self.verifyInstalledLangPacks()
 
-        if not self.imSwitch.available():
+        if not self.ImConfig.available():
             self.combobox_input_method.set_sensitive(False)
         self.setSensitive(True)
 
@@ -435,34 +432,22 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
     @blockSignals
     def check_input_methods(self):
-        """ check if the selected langauge has input method support
-            and set checkbutton_enable_input_methods accordingly
-        """
-        if not self.imSwitch.available():
+        if not self.ImConfig.available():
             return
-        # get the current first item in the user LANGUAGE list,
-        # but with country code added if not already present
-        loc = language2locale(self.userEnvLanguage)
-        code = re.split('[.@]', loc)[0]
 
         combo = self.combobox_input_method
-        #cell = combo.get_child().get_cell_renderers()[0]
-        # FIXME: use something else than a hardcoded value here
-        #cell.set_property("wrap-width",300)
-        #cell.set_property("wrap-mode",Pango.WRAP_WORD)
         model = combo.get_model()
         model.clear()
 
         # find the default
-        currentIM = self.imSwitch.getInputMethodForLocale(code)
-        if currentIM in (None, 'default'):
-            currentIM = 'none'
-        #print("Current IM: "+currentIM)
+        currentIM = self.ImConfig.getCurrentInputMethod()
 
         # find out about the other options
-        for (i, IM) in enumerate(self.imSwitch.getAvailableInputMethods()):
+        names = dict(none=_('none'), default=_('default'), ibus='IBus',
+          scim='SCIM', hangul='Hangul', thai='Thai')
+        for (i, IM) in enumerate(self.ImConfig.getAvailableInputMethods()):
+            name = names[IM] if IM in names else IM
             iter = model.append()
-            name = _('none') if IM == 'none' else IM
             model.set_value(iter, IM_CHOICE, IM)
             model.set_value(iter, IM_NAME, name)
             if IM == currentIM:
@@ -1078,16 +1063,12 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
     @honorBlockedSignals
     def on_combobox_input_method_changed(self, widget):
-        loc = language2locale(self.userEnvLanguage)
-        code = re.split('[.@]', loc)[0]
-
         combo = self.combobox_input_method
         model = combo.get_model()
         if combo.get_active() < 0:
             return
         (IM_choice, IM_name) = model[combo.get_active()]
-        #print("IM: "+IM_choice+"\t"+code)
-        self.imSwitch.setInputMethodForLocale(IM_choice, code)
+        self.ImConfig.setInputMethod(IM_choice)
 
     
     ####################################################
