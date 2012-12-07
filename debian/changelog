@@ -1,4 +1,4 @@
-language-selector (0.95) UNRELEASED; urgency=low
+language-selector (0.95) raring; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py:
     - Deprecated keyword "type" in Gtk.MessageDialog constructors
