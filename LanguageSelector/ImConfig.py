@@ -16,23 +16,8 @@ class ImConfig(object):
         return os.path.exists('/usr/bin/im-config')
 
     def getAvailableInputMethods(self):
-        # FIXME: This function is a little hackish. It should be
-        # possible to make use of im-config code instead.
-        inputMethods = []
-        packages_to_check = ['ibus', 'fcitx', 'uim', 'hime', 'gcin',
-                             'scim', 'nabi', 'gtk3-im-libthai']
-        packinfo = subprocess.Popen(['dpkg-query', '-l'] +
-          packages_to_check, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-          universal_newlines=True).communicate()[0]
-        for pack in packages_to_check:
-            if 'ii  %s' % pack in packinfo:
-                if pack == 'nabi':
-                    inputMethods.append('hangul')
-                elif pack == 'gtk3-im-libthai':
-                    inputMethods.append('thai')
-                else:
-                    inputMethods.append(pack)
-        return ['default'] + sorted(inputMethods) + ['none']
+        inputMethods = subprocess.check_output(['im-config', '-l']).decode().split()
+        return ['default'] + sorted(inputMethods)
 
     def getCurrentInputMethod(self):
         user_conf_file = os.path.expanduser('~/.xinputrc')
