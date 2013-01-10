@@ -1,4 +1,4 @@
-language-selector (0.99) UNRELEASED; urgency=low
+language-selector (0.99) raring; urgency=low
 
   * LanguageSelector/ImConfig.py,
     LanguageSelector/gtk/GtkLanguageSelector.py:
