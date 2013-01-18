@@ -25,7 +25,8 @@ Depends: language-selector-common (= ${binary:Version}),
  python3-apt,
  aptdaemon (>= 0.40+bzr527),
  python3-aptdaemon.gtk3widgets,
- im-config (>= 0.19ubuntu1~)
+ im-config (>= 0.19ubuntu2~)
+Recommends: yelp
 Replaces: language-selector (<< 0.17)
 Conflicts: language-selector (<< 0.17)
 Description: Language selector for Ubuntu

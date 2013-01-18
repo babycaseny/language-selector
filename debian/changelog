@@ -1,4 +1,4 @@
-language-selector (0.99) UNRELEASED; urgency=low
+language-selector (0.100) UNRELEASED; urgency=low
 
   * This upload is about fixing LP: #1043031. Namely the use of LANG guards
     introduced in 0.86 wasn't a correct solution because there is a
@@ -10,6 +10,18 @@ language-selector (0.99) UNRELEASED; urgency=low
     these fonts installed.
 
  -- Iain Lane <iain.lane@canonical.com>  Fri, 14 Dec 2012 10:53:54 +0000
+
+language-selector (0.99) raring; urgency=low
+
+  * LanguageSelector/ImConfig.py,
+    LanguageSelector/gtk/GtkLanguageSelector.py:
+    - Get available input methods from im-config (LP: #1090754).
+  * debian/control:
+    - Bump version of the im-config dependency.
+    - yelp added to the Recommends field, since it's needed for the
+      "Help" button to work.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 18 Dec 2012 21:32:00 +0100
 
 language-selector (0.98) raring; urgency=low
 
