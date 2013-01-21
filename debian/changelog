@@ -1,15 +1,14 @@
-language-selector (0.100) UNRELEASED; urgency=low
+language-selector (0.100~ubuntu13.04.1~ppa0+noja) UNRELEASED; urgency=low
 
   * This upload is about fixing LP: #1043031. Namely the use of LANG guards
-    introduced in 0.86 wasn't a correct solution because there is a
-    significant class of users who do not use the 'native' locale of these
-    fonts, yet this is what a LANG guards tests for. We need the fontconfig
-    configurations to apply correctly in these cases too.
-  * Remove LANG guards from fontconfig/69-language-selector-ja-jp.conf as it
-    only references Japanese fonts so is harmless for users who don't have
-    these fonts installed.
+    introduced in 0.86 was possibly not an entirely correct solution because
+    there is a significant class of users who do not use the 'native' locale
+    of these fonts, yet this is what a LANG guards tests for. We need the
+    fontconfig configurations to apply correctly in these cases too.
+  * Remove Japanese fontconfig file; these have been moved to the individual
+    font packages which will be pulled in by l-s if appropriate.
 
- -- Iain Lane <iain.lane@canonical.com>  Fri, 14 Dec 2012 10:53:54 +0000
+ -- Iain Lane <iain.lane@canonical.com>  Mon, 21 Jan 2013 12:39:12 +0000
 
 language-selector (0.99) raring; urgency=low
 

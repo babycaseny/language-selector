@@ -28,12 +28,6 @@ get_pid() {
               string:$1 2>/dev/null | awk '/uint32/ {print $2}'
 }
 
-dpkg-maintscript-helper rm_conffile \
-	/etc/fonts/conf.avail/69-language-selector-ko-kr.conf 0.75 -- "$@"
-dpkg-maintscript-helper rm_conffile \
-	/etc/fonts/conf.avail/29-language-selector-ko-kr.conf 0.75 -- "$@"
-dpkg-maintscript-helper rm_conffile \
-    /etc/fonts/conf.avail/69-language-selector-ka-ge.conf 0.86~ -- "$@"
 
 # Clean up duplicate entries in /etc/environment created by language-selector.
 if dpkg --compare-versions "$2" lt-nl 0.85 && [ -e /etc/default/locale ] \
