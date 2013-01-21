@@ -1,4 +1,4 @@
-language-selector (0.100~ubuntu13.04.1~ppa0+noja) UNRELEASED; urgency=low
+language-selector (0.100~ubuntu13.04.1~ppa0+noja) raring; urgency=low
 
   * This upload is about fixing LP: #1043031. Namely the use of LANG guards
     introduced in 0.86 was possibly not an entirely correct solution because
@@ -10,7 +10,7 @@ language-selector (0.100~ubuntu13.04.1~ppa0+noja) UNRELEASED; urgency=low
   * Switch to using .maintscript file for removing conffiles; version
     debhelper BD as appropriate. 
 
- -- Iain Lane <iain.lane@canonical.com>  Mon, 21 Jan 2013 12:39:12 +0000
+ -- Iain Lane <iain.lane@canonical.com>  Mon, 21 Jan 2013 13:20:56 +0000
 
 language-selector (0.99) raring; urgency=low
 
