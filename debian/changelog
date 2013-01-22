@@ -1,3 +1,9 @@
+language-selector (0.100~ubuntu13.04.1~ppa1+noja) UNRELEASED; urgency=low
+
+  * fontconfig/README: Update to reflect reality of the 69_* files
+
+ -- Iain Lane <iain.lane@canonical.com>  Tue, 22 Jan 2013 16:09:21 +0000
+
 language-selector (0.100~ubuntu13.04.1~ppa0+noja) raring; urgency=low
 
   * This upload is about fixing LP: #1043031. Namely the use of LANG guards
