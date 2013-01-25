@@ -1,9 +1,9 @@
-language-selector (0.100~ubuntu13.04.1~ppa2) UNRELEASED; urgency=low
+language-selector (0.100~ubuntu13.04.1~ppa2) raring; urgency=low
 
   * 69_zh* - remove wqy-microhei versions. This package now has its own
     fontconfig configuration.
 
- -- Iain Lane <iain.lane@canonical.com>  Fri, 25 Jan 2013 13:34:40 +0000
+ -- Iain Lane <iain.lane@canonical.com>  Fri, 25 Jan 2013 13:35:28 +0000
 
 language-selector (0.100~ubuntu13.04.1~ppa1+noja) raring; urgency=low
 
