@@ -1,3 +1,10 @@
+language-selector (1.00) raring; urgency=low
+
+  * help/C/language-selector.xml:
+    Update due to the transition from im-switch to im-config.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 29 Jan 2013 21:29:00 +0100
+
 language-selector (0.99) raring; urgency=low
 
   * LanguageSelector/ImConfig.py,

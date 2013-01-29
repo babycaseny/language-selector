@@ -125,10 +125,9 @@
 
 		<para>The button <guibutton>Install / Remove Languages...</guibutton> opens the <guilabel>Installed Languages</guilabel> window with a list of all the languages that can be downloaded and installed on the system. Currently available languages are the checked items in the list. To install a new language, you check it in the list and click the <guibutton>Apply Changes</guibutton> button. That will download and install both the language's translations and other related components if any.</para>
 
-		<para>To type certain languages, such as Chinese, Japanese or Korean, a more complex input method than just a simple key to character mapping is required. Through the <guilabel>Keyboard input method system</guilabel> drop-down list you can set a framework for input methods that will be started automatically at login. Please note that this value is set for the current language. If for instance <quote>ibus</quote> is the selected input method system when the top-most language in the <link linkend="priority-list">language priority list</link> is Japanese, IBus is started automatically if Japanese is the current language.</para>
+		<para>To type certain languages, such as Chinese, Japanese or Korean, a more complex input method than just a simple key to character mapping is required. Through the <guilabel>Keyboard input method system</guilabel> drop-down list you can set a framework for input methods that will be started automatically at login. The recommended input method system for Ubuntu is <quote>IBus</quote>. If you want to use alternative systems, install the corresponding packages first and then choose the desired system from the drop-down list.</para>
 
-
-		<para>The recommended input method system for Ubuntu is <quote>ibus</quote>. If you want to use alternative systems, install the corresponding packages first and then choose the desired system from the drop-down list.</para>
+		<para>If the <quote>default</quote> option is selected, Ubuntu makes a guess, and thus starts an input method system at login if the current language is Chinese, Japanese, Korean or Vietnamese.</para>
 
 	</sect2>
 
