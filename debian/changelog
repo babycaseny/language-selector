@@ -2,6 +2,11 @@ language-selector (1.00) raring; urgency=low
 
   * help/C/language-selector.xml:
     Update due to the transition from im-switch to im-config.
+  * LanguageSelector/LanguageSelector.py,
+    LanguageSelector/gtk/GtkLanguageSelector.py:
+    Do not let the LANGUAGE priority list contain non-English items
+    after an English item, since the resulting display language would
+    not likely meet the user's expectations (LP: #1084745).
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 29 Jan 2013 21:29:00 +0100
 
