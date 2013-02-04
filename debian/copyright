@@ -6,10 +6,6 @@ Files: *
 Copyright: Copyright 2005-2006, Canonical Ltd
 License: GPL-2+
 
-Files: LanguageSelector/qt/QtLanguageSelector.py
-Copyright: Copyright 2009, Harald Sitter <apachelogger@ubuntu.com>
-License: GPL-2+
-
 Files: debian/*
 Copyright: Copyright 2009, Harald Sitter <apachelogger@ubuntu.com>
 Copyright: Copyright 2005-2006, Canonical Ltd

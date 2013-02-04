@@ -35,23 +35,6 @@ Description: Language selector for Ubuntu
  .
  This package contains the GTK+ frontend.
 
-Package: language-selector-kde
-Architecture: all
-Depends: language-selector-common (= ${binary:Version}),
- ${misc:Depends},
- ${python3:Depends},
- python3-pyqt4,
- python3-pykde4,
- qapt-batch,
- python3-apt
-Replaces: language-selector-qt (<< 0.16)
-Conflicts: language-selector-qt (<< 0.16)
-Description: Language selector for Kubuntu
- This package let you change and install language packs
- in Kubuntu.
- .
- This package contains the KDE frontend.
-
 Package: language-selector-common
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.7.2)

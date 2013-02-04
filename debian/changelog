@@ -10,6 +10,8 @@ language-selector (1.00) raring; urgency=low
   * data/LanguageSelector.ui:
     Title added to the "Checking available language support" progress
     dialog (LP: #1113093).
+  * Removal of stuff related to language-selector-kde, since Kubuntu
+    isn't using it any longer.
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 29 Jan 2013 21:29:00 +0100
 
