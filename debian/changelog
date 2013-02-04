@@ -12,6 +12,8 @@ language-selector (1.00) raring; urgency=low
     dialog (LP: #1113093).
   * Removal of stuff related to language-selector-kde, since Kubuntu
     isn't using it any longer.
+  * debian/control:
+    Bump Standards-Version to 3.9.4.
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 29 Jan 2013 21:29:00 +0100
 
