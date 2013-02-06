@@ -65,7 +65,7 @@ case "$1" in
             kill $pid 2>/dev/null || true
         fi
 
-        if dpkg --compare-versions $2 lt-nl 0.100~; then
+        if dpkg --compare-versions $2 lt-nl 0.101~; then
             rm_confd_symlink ja-jp
         fi
 
