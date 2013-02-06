@@ -1042,6 +1042,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         self.writeUserLanguage(envLanguage)
         self.userEnvLanguage = envLanguage
         self.check_input_methods()
+        self.updateLocaleChooserCombo()
         #os.environ["LANGUAGE"]=envLanguage
 
 #    @honorBlockedSignals

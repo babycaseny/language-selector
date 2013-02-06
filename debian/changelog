@@ -1,18 +1,4 @@
-language-selector (0.100~ubuntu13.04.1~ppa2) raring; urgency=low
-
-  * 69_zh* - remove wqy-microhei versions. This package now has its own
-    fontconfig configuration.
-
- -- Iain Lane <iain.lane@canonical.com>  Fri, 25 Jan 2013 13:35:28 +0000
-
-language-selector (0.100~ubuntu13.04.1~ppa1+noja) raring; urgency=low
-
-  * fontconfig/README: Update to reflect reality of the 69_* files
-  * Remove 'strong' binding and unnecessary fonts from zh_* configuration. 
-
- -- Iain Lane <iain.lane@canonical.com>  Tue, 22 Jan 2013 16:09:21 +0000
-
-language-selector (0.100~ubuntu13.04.1~ppa0+noja) raring; urgency=low
+language-selector (0.101) UNRELEASED; urgency=low
 
   * This upload is about fixing LP: #1043031. Namely the use of LANG guards
     introduced in 0.86 was possibly not an entirely correct solution because
@@ -23,8 +9,31 @@ language-selector (0.100~ubuntu13.04.1~ppa0+noja) raring; urgency=low
     font packages which will be pulled in by l-s if appropriate.
   * Switch to using .maintscript file for removing conffiles; version
     debhelper BD as appropriate. 
+  * 69_zh* - remove wqy-microhei versions. This package now has its own
+    fontconfig configuration.
+  * fontconfig/README: Update to reflect reality of the 69_* files
+  * Remove 'strong' binding and unnecessary fonts from zh_* configuration. 
 
- -- Iain Lane <iain.lane@canonical.com>  Mon, 21 Jan 2013 13:20:56 +0000
+ -- Iain Lane <iain.lane@canonical.com>  Wed, 06 Feb 2013 11:29:23 +0000
+
+language-selector (0.100) raring; urgency=low
+
+  * help/C/language-selector.xml:
+    Update due to the transition from im-switch to im-config.
+  * LanguageSelector/LanguageSelector.py,
+    LanguageSelector/gtk/GtkLanguageSelector.py:
+    Do not let the LANGUAGE priority list contain non-English items
+    after an English item, since the resulting display language would
+    not likely meet the user's expectations (LP: #1084745).
+  * data/LanguageSelector.ui:
+    Title added to the "Checking available language support" progress
+    dialog (LP: #1113093).
+  * Removal of stuff related to language-selector-kde, since Kubuntu
+    isn't using it any longer.
+  * debian/control:
+    Bump Standards-Version to 3.9.4.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 29 Jan 2013 21:29:00 +0100
 
 language-selector (0.99) raring; urgency=low
 

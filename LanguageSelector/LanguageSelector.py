@@ -82,7 +82,26 @@ class LanguageSelectorBase(object):
         obj = bus.get_object('org.freedesktop.Accounts',
                             '/org/freedesktop/Accounts/User%i' % uid)
         iface = dbus.Interface(obj, dbus_interface='org.freedesktop.Accounts.User')
-        iface.SetLanguage(userLanguage)
+        iface.SetLanguage(self.validateLangList(userLanguage))
+
+    def validateLangList(self, userLanguage):
+        """
+        remove possible non-English elements after the first
+        English element
+        """
+        tmp = []
+        is_eng = False
+        for lang in userLanguage.split(':'):
+            if lang.startswith('en_') or lang == 'en':
+                tmp.append(lang)
+                is_eng = True
+            elif not is_eng:
+                tmp.append(lang)
+        validatedLangList = ':'.join(tmp)
+        if validatedLangList != userLanguage:
+            warnings.warn('The language list was modified by the program, since there '
+                        + 'should not be any non-English items after an English item.')
+        return validatedLangList
 
 
 if __name__ == "__main__":
