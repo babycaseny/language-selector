@@ -1,4 +1,4 @@
-language-selector (0.101) UNRELEASED; urgency=low
+language-selector (0.101) raring; urgency=low
 
   * This upload is about fixing LP: #1043031. Namely the use of LANG guards
     introduced in 0.86 was possibly not an entirely correct solution because
@@ -14,7 +14,7 @@ language-selector (0.101) UNRELEASED; urgency=low
   * fontconfig/README: Update to reflect reality of the 69_* files
   * Remove 'strong' binding and unnecessary fonts from zh_* configuration. 
 
- -- Iain Lane <iain.lane@canonical.com>  Wed, 06 Feb 2013 11:29:23 +0000
+ -- Iain Lane <iain.lane@canonical.com>  Wed, 06 Feb 2013 15:37:33 +0000
 
 language-selector (0.100) raring; urgency=low
 
