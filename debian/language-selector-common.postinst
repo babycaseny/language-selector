@@ -28,17 +28,6 @@ get_pid() {
               string:$1 2>/dev/null | awk '/uint32/ {print $2}'
 }
 
-rm_confd_symlink() {
-    LOCALE=$1
-    [ -n "$LOCALE" ] || return 1
-    FILENAME="/etc/fonts/conf.d/69-language-selector-$LOCALE.conf"
-    # The user might have deleted it; don't worry about that.
-    [ -L $FILENAME ] || return 0
-    echo "Removing obsolete symlink $FILENAME ..."
-    rm $FILENAME
-}
-
-
 # Clean up duplicate entries in /etc/environment created by language-selector.
 if dpkg --compare-versions "$2" lt-nl 0.85 && [ -e /etc/default/locale ] \
    && [ -e /etc/environment ]
@@ -63,10 +52,6 @@ case "$1" in
         pid=$(get_pid com.ubuntu.LanguageSelector) || true
         if [ -n "$pid" ]; then
             kill $pid 2>/dev/null || true
-        fi
-
-        if dpkg --compare-versions $2 lt-nl 0.101~; then
-            rm_confd_symlink ja-jp
         fi
 
     ;;
