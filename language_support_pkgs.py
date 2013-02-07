@@ -106,7 +106,28 @@ class LanguageSupport:
         packages = set()
         for lang in self.available_languages():
                 packages.update(self.by_locale(lang, installed))
-        return packages
+        return self._hunspell_frami_special(packages)
+
+    def _hunspell_frami_special(self, packages):
+        ''' Ignore missing hunspell-de-xx if hunspell-de-xx-frami is installed.
+
+        https://launchpad.net/bugs/1103547
+        '''
+        framis = []
+        for country in ['de', 'at', 'ch']:
+            frami = 'hunspell-de-' + country + '-frami'
+            try:
+                if self.apt_cache[frami].installed:
+                    framis.append(frami)
+            except KeyError:
+                pass
+        if len(framis) == 0:
+            return packages
+        packages_new = []
+        for pack in packages:
+            if pack + '-frami' not in framis:
+                packages_new.append(pack)
+        return packages_new
 
     def available_languages(self):
         '''List available languages in the system.

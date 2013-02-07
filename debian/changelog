@@ -1,3 +1,17 @@
+language-selector (0.102) UNRELEASED; urgency=low
+
+  * LanguageSelector/LanguageSelector.py:
+    Call missing() in language_support_pkgs.py instead of
+    by_locale(), so the check for missing language support packages
+    is carried out for all the installed languages, not only for the
+    current system language.
+  * language_support_pkgs.py:
+    Hack to prevent that users are prompted to install hunspell-de-xx
+    when the enhanced (and conflicting) hunspell-de-xx-frami is
+    installed (LP: #1103547).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Thu, 07 Feb 2013 13:57:00 +0100
+
 language-selector (0.101) raring; urgency=low
 
   * This upload is about fixing LP: #1043031. Namely the use of LANG guards

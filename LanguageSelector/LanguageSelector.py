@@ -43,7 +43,7 @@ class LanguageSelectorBase(object):
         else:
             ls = language_support_pkgs.LanguageSupport(self._cache)
 
-        return ls.by_locale(self._localeinfo.getSystemDefaultLanguage()[0])
+        return ls.missing()
 
     def writeSysFormatsSetting(self, sysFormats):
         """ write various LC_* variables (e.g. de_DE.UTF-8) """
