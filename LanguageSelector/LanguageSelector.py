@@ -42,8 +42,10 @@ class LanguageSelectorBase(object):
                     os.path.join(self._datadir, "data", "pkg_depends"))
         else:
             ls = language_support_pkgs.LanguageSupport(self._cache)
-
-        return ls.missing()
+        missing = []
+        for pack in ls.missing():  # ls.missing() returns a set; we need a list
+            missing.append(pack)
+        return missing
 
     def writeSysFormatsSetting(self, sysFormats):
         """ write various LC_* variables (e.g. de_DE.UTF-8) """

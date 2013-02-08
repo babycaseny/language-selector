@@ -1,3 +1,11 @@
+language-selector (0.103) UNRELEASED; urgency=low
+
+  * LanguageSelector/LanguageSelector.py:
+    Make getMissingLangPacks() return a list instead of a set -
+    fixes regression issue from version 0.102 (LP: #1103547).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Fri, 08 Feb 2013 17:12:00 +0100
+
 language-selector (0.102) raring; urgency=low
 
   [ Martin Pitt ]
