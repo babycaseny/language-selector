@@ -1,4 +1,4 @@
-language-selector (0.102) UNRELEASED; urgency=low
+language-selector (0.102) raring; urgency=low
 
   [ Martin Pitt ]
   * tests/test_language_support_pkgs.py: Fix unstable test due to Python's
@@ -16,7 +16,7 @@ language-selector (0.102) UNRELEASED; urgency=low
     when the enhanced (and conflicting) hunspell-de-xx-frami is
     installed (LP: #1103547).
 
- -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 08 Feb 2013 11:39:09 +0100
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 08 Feb 2013 11:55:28 +0100
 
 language-selector (0.101) raring; urgency=low
 
