@@ -201,6 +201,24 @@ class T(unittest.TestCase):
         self.assertEqual(set(result), set(['language-pack-gnome-de', 'wngerman',
             'libreoffice-help-de']))
 
+    def test_hunspell_de_frami(self):
+        '''hunspell-de-frami special case'''
+
+        # if neither is installed, suggest the hunspell-de-de default
+        ls = self._fake_apt_language_support(['libreoffice-common'],
+                                             ['hunspell-de-de', 'hunspell-de-de-frami'])
+        self.assertEqual(ls.missing(), set(['hunspell-de-de']))
+
+        # if the default is installed, it's complete
+        ls = self._fake_apt_language_support(['libreoffice-common', 'hunspell-de-de'],
+                                             ['hunspell-de-de-frami'])
+        self.assertEqual(ls.missing(), set())
+
+        # -frami also suffices
+        ls = self._fake_apt_language_support(['libreoffice-common', 'hunspell-de-de-frami'],
+                                             ['hunspell-de-de'])
+        self.assertEqual(ls.missing(), set())
+
     def test_by_package(self):
         '''by_package()'''
 

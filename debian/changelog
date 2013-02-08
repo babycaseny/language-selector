@@ -1,7 +1,20 @@
 language-selector (0.102) UNRELEASED; urgency=low
 
+  [ Martin Pitt ]
   * tests/test_language_support_pkgs.py: Fix unstable test due to Python's
     current hash randomization.
+  * Add test case for LP #1103547.
+
+  [ Gunnar Hjalmarsson ]
+  * LanguageSelector/LanguageSelector.py:
+    Call missing() in language_support_pkgs.py instead of
+    by_locale(), so the check for missing language support packages
+    is carried out for all the installed languages, not only for the
+    current system language.
+  * language_support_pkgs.py:
+    Hack to prevent that users are prompted to install hunspell-de-xx
+    when the enhanced (and conflicting) hunspell-de-xx-frami is
+    installed (LP: #1103547).
 
  -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 08 Feb 2013 11:39:09 +0100
 
