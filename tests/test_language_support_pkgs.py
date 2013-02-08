@@ -138,7 +138,7 @@ class T(unittest.TestCase):
 
         # if we specify just the language, give us stuff for all countries
         result = ls.by_package_and_locale('libreoffice-common', 'en', False)
-        self.assertEqual(result, ['hunspell-en-ca', 'hunspell-en-us'])
+        self.assertEqual(set(result), set(['hunspell-en-ca', 'hunspell-en-us']))
 
     def test_by_package_and_locale_unknown(self):
         '''by_package_and_locale() for unknown locales/triggers'''
