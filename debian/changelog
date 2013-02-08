@@ -1,4 +1,4 @@
-language-selector (0.103) UNRELEASED; urgency=low
+language-selector (0.103) raring; urgency=low
 
   * LanguageSelector/LanguageSelector.py:
     Make getMissingLangPacks() return a list instead of a set -
