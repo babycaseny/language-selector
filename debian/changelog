@@ -1,3 +1,11 @@
+language-selector (0.104) UNRELEASED; urgency=low
+
+  * data/pkg_depends:
+    List of input methods for traditional Chinese modified. Thanks to
+    Ma Xiaojun for the proposal (LP: #1120833).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sun, 10 Feb 2013 23:11:00 +0100
+
 language-selector (0.103) raring; urgency=low
 
   * LanguageSelector/LanguageSelector.py:

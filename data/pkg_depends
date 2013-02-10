@@ -195,5 +195,7 @@ im:vi:ibus:ibus-unikey
 im:zh-hans:ibus:ibus-sunpinyin
 im:zh-hans:ibus:ibus-table-wubi
 im:zh-hant:ibus:ibus-chewing
-im:zh-hant:ibus:ibus-table-cangjie
+im:zh-hant:ibus:ibus-table-cangjie3
+im:zh-hant:ibus:ibus-table-cangjie5
+im:zh-hant:ibus:ibus-table-quick-classic
 im:te:ibus:ibus-m17n
