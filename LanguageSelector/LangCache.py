@@ -117,8 +117,12 @@ class LanguageSelectorPkgCache(apt.Cache):
                 #print("XXX pkg list for lang %s, installed: %s" % (item.languageCode, str(item.installed)))
                 try:
                     if item.installed:
+                        # We are selective when deleting language support packages to
+                        # prevent removal of packages that are not language specific.
                         for pkgname in pkgs:
-                            self[pkgname].mark_delete()
+                            if pkgname.startswith('language-pack-') or \
+                               pkgname.endswith('-' + li.languageCode):
+                                self[pkgname].mark_delete()
                     else:
                         for pkgname in pkgs:
                             self[pkgname].mark_install()
