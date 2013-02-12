@@ -1,4 +1,4 @@
-language-selector (0.104) UNRELEASED; urgency=low
+language-selector (0.104) raring; urgency=low
 
   * data/pkg_depends:
     List of input methods for traditional Chinese modified. Thanks to
@@ -7,7 +7,7 @@ language-selector (0.104) UNRELEASED; urgency=low
     When a language is removed, don't remove packages that are not
     language specific (LP: #37707).
 
- -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sun, 10 Feb 2013 23:11:00 +0100
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 12 Feb 2013 05:25:22 +0100
 
 language-selector (0.103) raring; urgency=low
 
