@@ -437,6 +437,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
         combo = self.combobox_input_method
         model = combo.get_model()
+        if not model:
+            return
         model.clear()
 
         # find the default
