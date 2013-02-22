@@ -132,35 +132,19 @@ class LanguageSupport:
     def available_languages(self):
         '''List available languages in the system.
 
-        This calls "locale -a" and filters the result for language codes, so
-        that iterating over it is a lot smaller than iterating over the full
-        locale list. As some languages like English, Portugese, or Chinese have
-        meaningful territory codes, these are kept.
-
         The list items can be passed as the "locale" argument of by_locale(),
         by_package_and_locale(), etc.
         '''
         languages = set()
-        locales = subprocess.check_output(
-            ['locale', '-a'], universal_newlines=True)
-        for locale in locales.splitlines():
-            locale = locale.split('.')[0]
-            if '_' not in locale:
-                continue
 
-            lang = locale.split('_')[0]
+        lang_string = subprocess.check_output(
+            ['/usr/share/language-tools/language-options'],
+            universal_newlines=True)
 
-            # languages where territory is deciding
-            if lang == 'zh':
-                languages.add(locale)
-                continue
-
-            # languages where territory is relevant; keep the general language,
-            # too
+        for lang in lang_string.split():
             languages.add(lang)
-            if locale in ['en_AU', 'en_GB', 'en_US'] or lang in ['es', 'pt',
-                    'zh']:
-                languages.add(locale)
+            if not lang.startswith('zh_'):
+                languages.add(lang.split('_')[0])
 
         return languages
 
