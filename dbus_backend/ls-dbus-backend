@@ -86,11 +86,18 @@ class LanguageSelectorServer(dbus.service.Object):
             return False
         conffiles = ["/etc/default/locale"]
         macr = LanguageSelector.macros.LangpackMacros(self._datadir, sysFormats)
+        defaultFormatsLocale = macr['SYSLOCALE']
         for var in 'LC_NUMERIC', 'LC_TIME', 'LC_MONETARY', 'LC_PAPER', 'LC_IDENTIFICATION', \
                    'LC_NAME', 'LC_ADDRESS', 'LC_TELEPHONE', 'LC_MEASUREMENT':
             findString = "%s=" % var
-            setString = "%s=\"%s\"\n" % (var, macr["SYSLOCALE"])
+            setString = "%s=\"%s\"\n" % (var, defaultFormatsLocale)
             find_string_and_replace(findString, setString, conffiles)
+        """ /etc/papersize ('a4' or 'letter') """
+        papersize = subprocess.check_output(
+            ['/usr/share/language-tools/locale2papersize', defaultFormatsLocale],
+            universal_newlines=True)
+        with open('/etc/papersize', 'w') as f:
+            f.write(papersize)
         return True
 
 if __name__ == "__main__":
