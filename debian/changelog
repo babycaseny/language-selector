@@ -1,3 +1,21 @@
+language-selector (0.106) raring; urgency=low
+
+  * language_support_pkgs.py:
+    Changes in available_languages() to avoid that users are prompted
+    to install language support for non-installed languages. That
+    could happen if there were other locales on the system but the
+    locales representing the installed languages.
+  * dbus_backend/ls-dbus-backend:
+    Update /etc/papersize when regional formats are applied system
+    wide (LP: #1130690).
+  * debian/control:
+    Bump the accountsservice dependency.
+  * LanguageSelector/LocaleInfo.py:
+    Don't display the @variant portion of a language or locale name
+    as b'variant'.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Fri, 22 Feb 2013 07:05:00 +0100
+
 language-selector (0.105) raring; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py:

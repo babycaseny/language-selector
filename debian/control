@@ -16,7 +16,6 @@ Standards-Version: 3.9.4
 Package: language-selector-gnome
 Architecture: all
 Depends: language-selector-common (= ${binary:Version}),
- accountsservice (>= 0.6.15-2ubuntu3),
  ${misc:Depends},
  ${python3:Depends},
  python3-gi,
@@ -44,7 +43,7 @@ Depends: ${python3:Depends},
  python3-apt (>= 0.7.12.0),
  python3-dbus,
  dbus,
- accountsservice (>= 0.6.15-2ubuntu3)
+ accountsservice (>= 0.6.29-1ubuntu6)
 Description: Language selector for Ubuntu
  This package let you change and install language packs
  in Ubuntu.

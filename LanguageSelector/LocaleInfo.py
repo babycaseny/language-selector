@@ -177,7 +177,7 @@ class LocaleInfo(object):
                 if mycountry:
                     returnVal = "%s (%s)" % (lang_name, country_name)
         if len(macr["VARIANT"]) > 0:
-            returnVal = "%s - %s" % (returnVal, macr["VARIANT"].encode('UTF-8'))
+            returnVal = "%s - %s" % (returnVal, macr["VARIANT"])
         
         if native == True:
             if current_language:
