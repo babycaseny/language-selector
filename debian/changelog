@@ -1,3 +1,10 @@
+language-selector (0.107) UNRELEASED; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    Prevent crashes like the one in LP: #1154243.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Mon, 18 Mar 2013 05:16:00 +0100
+
 language-selector (0.106) raring; urgency=low
 
   * language_support_pkgs.py:
