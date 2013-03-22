@@ -1,4 +1,4 @@
-language-selector (0.107) UNRELEASED; urgency=low
+language-selector (0.107) raring; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py:
     Prevent crashes like the one in LP: #1154243.
