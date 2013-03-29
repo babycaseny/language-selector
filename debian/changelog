@@ -1,3 +1,10 @@
+language-selector (0.108) raring; urgency=low
+
+  * language_support_pkgs.py:
+    Fix of TypeError in _expand_pkg_pattern() (LP: #1161953).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Fri, 29 Mar 2013 18:40:00 +0100
+
 language-selector (0.107) raring; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py:
