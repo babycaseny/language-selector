@@ -213,7 +213,7 @@ class LanguageSupport:
                 pkgs.append('%s%s-%s' % (pattern, lang, country))
 
         if variant:
-            pkgs.append('%s%s-%s-%s' % (pattern, lang, variant))
+            pkgs.append('%s%s-%s' % (pattern, lang, variant))
 
         if country and variant:
             pkgs.append('%s%s-%s-%s' % (pattern, lang, country, variant))
