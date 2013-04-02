@@ -1,3 +1,10 @@
+language-selector (0.109) raring; urgency=low
+
+  * data/LanguageSelector.ui:
+    Make the "Drag languages..." sentence bold (LP: #362204).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 02 Apr 2013 16:10:00 +0100
+
 language-selector (0.108) raring; urgency=low
 
   * language_support_pkgs.py:
