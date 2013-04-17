@@ -1,8 +1,8 @@
-language-selector (0.110) UNRELEASED; urgency=low
+language-selector (0.110) raring; urgency=low
 
   * Updated translations for raring
 
- -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 17 Apr 2013 12:26:06 +0200
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 17 Apr 2013 12:28:24 +0200
 
 language-selector (0.109) raring; urgency=low
 
