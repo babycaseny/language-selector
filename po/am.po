@@ -7,59 +7,59 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 22:00+0000\n"
-"PO-Revision-Date: 2012-06-20 06:09+0000\n"
+"POT-Creation-Date: 2013-04-09 14:32+0000\n"
+"PO-Revision-Date: 2012-12-23 19:19+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2012-10-09 12:41+0000\n"
-"X-Generator: Launchpad (build 16112)\n"
+"X-Launchpad-Export-Date: 2013-04-17 08:10+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 "Language: am\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:54
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "ቻይኒስ (ቀላል)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:56
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "ቻይኒስ (ባህላዊ)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
 msgstr "የቋንቋ መረጃ አልተገኘም"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
-#: ../LanguageSelector/qt/QtLanguageSelector.py:95
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr "ስርአቱ ዝግጁ ስለሆኑ ቋንቋዎች መረጃ የለውም ፡ አሁን ለማግኘት የኔትዎርክ ማሻሻያን ማስኬድ ይፈልጋሉ? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
-#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
 msgstr "_ማሻሻል"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "ቋንቋ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
 msgstr "ተገጥሟል"
 
-#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -67,7 +67,7 @@ msgstr[0] "%(INSTALL)d ለመግጠም"
 msgstr[1] "%(INSTALL)d ለመግጠም"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -75,24 +75,29 @@ msgstr[0] "%(REMOVE)d ለማስወገድ"
 msgstr[1] "%(REMOVE)d ለማስወገድ"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s፣ %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
+#. find out about the other options
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
+msgid "default"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
 msgid "none"
 msgstr "ምንም"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
-#: ../LanguageSelector/qt/QtLanguageSelector.py:78
-#: ../LanguageSelector/qt/QtLanguageSelector.py:336
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "የሶፍትዌር ዳታቤዝ ተሰብሯል"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -101,11 +106,11 @@ msgstr ""
 "ሶፍትዌር ለመግጠም ወይም ለማስወገድ አልተቻለም \"Synaptic\" ወይም በተርሚናል \"sudo apt-get install "
 "-f\" ውስጥ በመጀመሪያ ይህን ትእዛዝ ያስኪዱ ችግሩን ለመፍታት"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
 msgid "Could not install the selected language support"
 msgstr "የተመረጠውን ቋንቋ ድጋፍ ለመግጠም አልተቻለም"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -113,13 +118,13 @@ msgstr ""
 "ይህ ምናልባት የመተግበሪያው ችግር ይሆናል ፡ እባክዎን ይህን ችግር በዚህ አድራሻ ያሳውቁ  "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "የቋንቋውን ሙሉ ድጋፍ ለመግጠም አልተቻለም"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -127,39 +132,39 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
 msgid "Failed to authorize to install packages."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "የቋንቋው ድጋፍ ሙሉ በሙሉ አልተገጠመም"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
-#: ../LanguageSelector/qt/QtLanguageSelector.py:172
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr "ለመረጡት ቋንቋ የመጻፊያ ድጋፍ ገና አልተገጠመም ፡ አሁን መግጠም ይፈልጋሉ?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
-#: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
 msgstr "_በኋላ አስታውስኝ"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
-#: ../LanguageSelector/qt/QtLanguageSelector.py:166
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "_መግጠም"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "ዝርዝሮች"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -167,132 +172,9 @@ msgid ""
 "close and re-open Language Support."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:79
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
-msgid "Set System Language"
-msgstr "የስርአቱን ቋንቋ ማሰናዳት"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Default system language:"
-msgstr "ነባር የስርአቱ ቋንቋ"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-msgid "Keyboard input method:"
-msgstr "የፊደል ገበታ አገባብ ዘዴ"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:126
-msgid "Select language to install:"
-msgstr "ለመግጠም ቋንቋ ይምረጡ"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:127
-msgid "Select language to uninstall:"
-msgstr "ለመግጠም ቋንቋ ይምረጡ"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:128
-msgid "Translations"
-msgstr "ትርጉሞች"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:129
-msgid "Input methods"
-msgstr "የማስገቢያ መንገዶች"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:130
-msgid "Spellchecking and writing aids"
-msgstr "የፊደል ማረሚያ እና የመጻፊያ ድጋፍ"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:131
-msgid "Extra fonts"
-msgstr "ተጨማሪ ፊደሎች"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:132
-msgid "Components:"
-msgstr "አካላቶች"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:210
-msgid "Already installed"
-msgstr "አስቀድሞ ተገጥሟል"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
-msgid "Partially Installed"
-msgstr "በከፊል ተገጥሟል"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:216
-msgid "Not installed"
-msgstr "አልተገጠመም"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
-msgid "Component already installed"
-msgstr "አካላቱ በቅድሚያ ተገጥሟል"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
-msgid "Component not available"
-msgstr "አካላቱ ዝግጁ አይደለም"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
-msgid "Component not installed"
-msgstr "አካላቱ አልተገጠመም"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-#, python-format
-msgid "Default system Language now set to %s."
-msgstr "ነባር የስርአት ቋንቋ አሁን ተሰናድቷል ለ %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-msgid "Language Set"
-msgstr "ቋንቋ ማሰናዳት"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:337
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"ማንኛውንም ሶፍትዌር መግጠም ወይም ማስወገድ አይቻልም ፡ እባክዎን የጥቅል አስተዳዳሪውን ይጠቀሙ \"Adept\" ወይንም "
-"ይህን ያስኪዱ \"sudo apt-get install -f\" በተርሚናል ውስጥ ችግሮችን በቅድሚያ ለማስወገድ"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-#, python-format
-msgid ""
-"All selected components have now been installed for %s.  Select them from "
-"Country/Region & Language."
-msgstr "የመረጡዋቸው አካላቶች በሙሉ ተገጥመዋል  %s.  ይምረጡ አገር / አካባቢ & ቋንቋ"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-msgid "Language Installed"
-msgstr "የተገጠሙ ቋንቋዎች"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-#, python-format
-msgid "Translations and support have now been uninstalled for %s."
-msgstr "አሁን ትርጉም እና ድጋፍ ይጠፋሉ %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-msgid "Language Uninstalled"
-msgstr "ቋንቋው ይጠፋል"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Failed to set system language."
-msgstr "ወድቋል ለሲስተሙ ቋንቋ ማበጀት"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Language Not Set"
-msgstr "ቋንቋ አልተመረጠም"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Please run this software with administrative rights."
-msgstr "እባክዎ ይህን ሶፍትዌር በአስተዳዳሪ ፍቃድ ያስኪዱ"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Not Root User"
-msgstr "የሩት ተጠቃሚ አይደለም"
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "የቋንቋ ድጋፍ"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid ""
@@ -323,10 +205,6 @@ msgstr "መሰረዝ"
 msgid "Apply Changes"
 msgstr "ለውጦችን ተግባራዊ ማድረግ"
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
-msgid "Language Support"
-msgstr "የቋንቋ ድጋፍ"
-
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
 msgstr "ቋንቋ ለዝርዝሮች እና ለመስኮቶች"
@@ -345,11 +223,9 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
+"<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
-"<small>ቋንቋዎችን በመጎተት እንደ ፍልጎትዎ መደርደር ይችላሉ \n"
-"ለውጡ ተፈጻሚ የሚሆነው በሚቀጥለው ጊዜ ሲገቡ ነው</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -376,7 +252,7 @@ msgid ""
 "function.\n"
 "For example, you will need this function for typing Chinese, Japanese, "
 "Korean or Vietnamese.\n"
-"The recommended value for Ubuntu is \"ibus\".\n"
+"The recommended value for Ubuntu is \"IBus\".\n"
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
@@ -428,14 +304,6 @@ msgstr "የአካባቢው አቀማመጥ"
 msgid "Configure multiple and native language support on your system"
 msgstr "የበርካታ ቋንቋዎችን ድጋፍ በስርአቱ ላይ ማዋቀሪያ"
 
-#: ../data/kde-language-selector.desktop.in.h:1
-msgid "System Languages"
-msgstr "የስርአቱ ቋንቋዎች"
-
-#: ../data/kde-language-selector.desktop.in.h:2
-msgid "Install and set system languages"
-msgstr "መግጠሚያ እና የስርአቱን ቋንቋዎች ማሰናጃ"
-
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 #: ../data/incomplete-language-support-kde.note.in:5
@@ -453,16 +321,6 @@ msgid ""
 "\"System Settings... -> Language Support\")."
 msgstr ""
 
-#. Description
-#: ../data/incomplete-language-support-kde.note.in:6
-msgid ""
-"The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
-msgstr ""
-
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
@@ -475,7 +333,7 @@ msgstr "አዲስ ያሰናዱት ቋንቋ ተግባራዊ የሚሆነው ወ�
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
 msgid "Set system default language"
-msgstr ""
+msgstr "የስርአቱን ነበር ቋንቋ ማሰናጃ"
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
 msgid "System policy prevented setting default language"
@@ -485,28 +343,126 @@ msgstr ""
 msgid "don't verify installed language support"
 msgstr "የተገጠሙ ቋንቋዎችን ድጋፍ አታረጋግጥ"
 
-#: ../gnome-language-selector:20 ../check-language-support:27
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "አማራጭ የዳታ ዳይሬክቶሪ"
 
-#: ../check-language-support:24
+#: ../check-language-support:22
 msgid "target language code"
 msgstr ""
 
-#: ../check-language-support:28
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 
-#: ../check-language-support:30
+#: ../check-language-support:28
 msgid "output all available language support packages for all languages"
 msgstr ""
 
-#: ../check-language-support:33
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr "ማሳየት የተገጠሙትን ጥቅሎች እንዲሁም ቀሪውን"
 
-#~ msgid "Unconfigured"
-#~ msgstr "ያልተዋቀረ"
+#~ msgid "Select language to uninstall:"
+#~ msgstr "ለመግጠም ቋንቋ ይምረጡ"
 
-#~ msgid "Aborting"
-#~ msgstr "በማቋረጥ ላይ"
+#~ msgid "Set System Language"
+#~ msgstr "የስርአቱን ቋንቋ ማሰናዳት"
+
+#~ msgid "Default system language:"
+#~ msgstr "ነባር የስርአቱ ቋንቋ"
+
+#~ msgid "Partially Installed"
+#~ msgstr "በከፊል ተገጥሟል"
+
+#~ msgid "Language Set"
+#~ msgstr "ቋንቋ ማሰናዳት"
+
+#~ msgid "Language Installed"
+#~ msgstr "የተገጠሙ ቋንቋዎች"
+
+#~ msgid "Select language to install:"
+#~ msgstr "ለመግጠም ቋንቋ ይምረጡ"
+
+#~ msgid "Already installed"
+#~ msgstr "አስቀድሞ ተገጥሟል"
+
+#~ msgid "Not Root User"
+#~ msgstr "የሩት ተጠቃሚ አይደለም"
+
+#~ msgid "Language Not Set"
+#~ msgstr "ቋንቋ አልተመረጠም"
+
+#~ msgid "Extra fonts"
+#~ msgstr "ተጨማሪ ፊደሎች"
+
+#~ msgid "Components:"
+#~ msgstr "አካላቶች"
+
+#~ msgid "Input methods"
+#~ msgstr "የማስገቢያ መንገዶች"
+
+#~ msgid "Translations"
+#~ msgstr "ትርጉሞች"
+
+#~ msgid "Keyboard input method:"
+#~ msgstr "የፊደል ገበታ አገባብ ዘዴ"
+
+#~ msgid "Not installed"
+#~ msgstr "አልተገጠመም"
+
+#, python-format
+#~ msgid "Translations and support have now been uninstalled for %s."
+#~ msgstr "አሁን ትርጉም እና ድጋፍ ይጠፋሉ %s."
+
+#~ msgid "Failed to set system language."
+#~ msgstr "ወድቋል ለሲስተሙ ቋንቋ ማበጀት"
+
+#~ msgid "Language Uninstalled"
+#~ msgstr "ቋንቋው ይጠፋል"
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "እባክዎ ይህን ሶፍትዌር በአስተዳዳሪ ፍቃድ ያስኪዱ"
+
+#~ msgid "Component not available"
+#~ msgstr "አካላቱ ዝግጁ አይደለም"
+
+#~ msgid "Component already installed"
+#~ msgstr "አካላቱ በቅድሚያ ተገጥሟል"
+
+#~ msgid "Component not installed"
+#~ msgstr "አካላቱ አልተገጠመም"
+
+#~ msgid "System Languages"
+#~ msgstr "የስርአቱ ቋንቋዎች"
+
+#~ msgid "Install and set system languages"
+#~ msgstr "መግጠሚያ እና የስርአቱን ቋንቋዎች ማሰናጃ"
+
+#, python-format
+#~ msgid "Default system Language now set to %s."
+#~ msgstr "ነባር የስርአት ቋንቋ አሁን ተሰናድቷል ለ %s."
+
+#~ msgid "Spellchecking and writing aids"
+#~ msgstr "የፊደል ማረሚያ እና የመጻፊያ ድጋፍ"
+
+#, python-format
+#~ msgid ""
+#~ "All selected components have now been installed for %s.  Select them from "
+#~ "Country/Region & Language."
+#~ msgstr "የመረጡዋቸው አካላቶች በሙሉ ተገጥመዋል  %s.  ይምረጡ አገር / አካባቢ & ቋንቋ"
+
+#~ msgid ""
+#~ "<small>Drag languages to arrange them in order of preference.\n"
+#~ "Changes take effect next time you log in.</small>"
+#~ msgstr ""
+#~ "<small>ቋንቋዎችን በመጎተት እንደ ፍልጎትዎ መደርደር ይችላሉ \n"
+#~ "ለውጡ ተፈጻሚ የሚሆነው በሚቀጥለው ጊዜ ሲገቡ ነው</small>"
+
+#~ msgid ""
+#~ "It is impossible to install or remove any software. Please use the package "
+#~ "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+#~ "this issue at first."
+#~ msgstr ""
+#~ "ማንኛውንም ሶፍትዌር መግጠም ወይም ማስወገድ አይቻልም ፡ እባክዎን የጥቅል አስተዳዳሪውን ይጠቀሙ \"Adept\" ወይንም "
+#~ "ይህን ያስኪዱ \"sudo apt-get install -f\" በተርሚናል ውስጥ ችግሮችን በቅድሚያ ለማስወገድ"

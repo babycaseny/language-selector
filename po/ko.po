@@ -7,90 +7,95 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 22:00+0000\n"
-"PO-Revision-Date: 2012-06-20 06:09+0000\n"
-"Last-Translator: Jinkyu Yi <Unknown>\n"
+"POT-Creation-Date: 2013-04-09 14:32+0000\n"
+"PO-Revision-Date: 2013-04-12 05:02+0000\n"
+"Last-Translator: Kim Boram <boramism@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2012-10-09 12:40+0000\n"
-"X-Generator: Launchpad (build 16112)\n"
+"X-Launchpad-Export-Date: 2013-04-17 08:09+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 "Language: ko\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:54
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "중국어(간체)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:56
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "중국어(번체)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
 msgstr "사용할 수 있는 언어 정보 없음"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
-#: ../LanguageSelector/qt/QtLanguageSelector.py:95
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr "시스템에서 이용할 수 잇는 언어에 대한 정보가 없습니다. 지금 네트워크 업데이트를 수행하여 다운로드하시겠습니까? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
-#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
 msgstr "업데이트(_U)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "언어"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
 msgstr "설치함"
 
-#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
 msgstr[0] "설치할 항목 %(INSTALL)d개"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
 msgstr[0] "제거할 항목 %(REMOVE)d개"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
+#. find out about the other options
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
+msgid "default"
+msgstr "기본값"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
 msgid "none"
 msgstr "없음"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
-#: ../LanguageSelector/qt/QtLanguageSelector.py:78
-#: ../LanguageSelector/qt/QtLanguageSelector.py:336
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "소프트웨어 데이터베이스가 망가졌습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -99,11 +104,11 @@ msgstr ""
 "어떤 소프트웨어도 설치하거나 제거할 수 없습니다. 우선 \"시냅틱\"을 사용하거나 터미널에서 \"sudo apt-get install -"
 "f\" 명령을 실행하여 이 문제를 해결하십시오."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
 msgid "Could not install the selected language support"
 msgstr "선택한 언어 지원 패키지를 설치할 수 없습니다"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -111,13 +116,13 @@ msgstr ""
 "이 프로그램의 오류일 수 있습니다. 오류를 https://bugs.launchpad.net/ubuntu/+source/language-"
 "selector/+filebug 페이지에 보고해주십시오."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "언어 지원 패키지를 완전하게 설치할 수 없습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -127,39 +132,39 @@ msgstr ""
 "이 것은 보통 소프트웨어 저장소나 소프트웨어 관리자의 오류와 관련있습니다. 소프트웨어 소스(상단 막대의 가장 오른쪽 아이콘 클릭 후 "
 "\"시스템 설정... -> 소프트웨어 소스\" 선택)의 기본 설정을 확인하십시오."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
 msgid "Failed to authorize to install packages."
 msgstr "설치 패키지를 인증할 수 없습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "언어 지원 패키지를 완전하게 설치하지 않았습니다."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
-#: ../LanguageSelector/qt/QtLanguageSelector.py:172
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr "선택한 언어의 번역물 및 입력 도구 중 일부를 아직 설치하지 않았습니다. 지금 설치하시겠습니까?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
-#: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
 msgstr "나중에 알림(_R)"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
-#: ../LanguageSelector/qt/QtLanguageSelector.py:166
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "설치(_I)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "자세한 내용"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -169,134 +174,9 @@ msgstr ""
 "선택한 '%s' 형식을 적용할 수 없습니다.\n"
 "언어 지원 창을 닫은 후 다시 열면 형식의 예가 나타날 수 있습니다."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:79
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"어떤 소프트웨어도 설치하거나 삭제할 수 없습니다. \"Muon\"를 사용하거나 터미널에서 \"sudo apt-get install -"
-"f\"를 실행하여 이 문제를 먼저 해결하십시오."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
-msgid "Set System Language"
-msgstr "시스템 언어 설정"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Default system language:"
-msgstr "기본 시스템 언어:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-msgid "Keyboard input method:"
-msgstr "키보드 입력기:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:126
-msgid "Select language to install:"
-msgstr "설치할 언어 선택:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:127
-msgid "Select language to uninstall:"
-msgstr "제거할 언어 선택:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:128
-msgid "Translations"
-msgstr "번역"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:129
-msgid "Input methods"
-msgstr "입력기"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:130
-msgid "Spellchecking and writing aids"
-msgstr "맞춤법 검사와 입력 도구"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:131
-msgid "Extra fonts"
-msgstr "추가 글꼴"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:132
-msgid "Components:"
-msgstr "구성 요소:"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:210
-msgid "Already installed"
-msgstr "이미 설치함"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
-msgid "Partially Installed"
-msgstr "일부 설치함"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:216
-msgid "Not installed"
-msgstr "설치하지 않음"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
-msgid "Component already installed"
-msgstr "구성요소를 이미 설치했습니다."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
-msgid "Component not available"
-msgstr "구성 요소를 사용할 수 없습니다."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
-msgid "Component not installed"
-msgstr "구성 요소를 설치하지 않음"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-#, python-format
-msgid "Default system Language now set to %s."
-msgstr "기본 시스템 언어를 %s(으)로 설정했습니다."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-msgid "Language Set"
-msgstr "언어 선택"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:337
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"어떤 소프트웨어도 설치하거나 제거할 수 없습니다. 우선 패키지 관리자 \"Adept\"를 사용하거나 터미널에서 \"sudo apt-get "
-"install -f\" 명령 실행하여 이 문제를 해결하십시오."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-#, python-format
-msgid ""
-"All selected components have now been installed for %s.  Select them from "
-"Country/Region & Language."
-msgstr "선택한 %s의 모든 구성 요소를 설치했습니다. 국가/지역 & 언어에서 선택하십시오."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-msgid "Language Installed"
-msgstr "언어 설치됨"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-#, python-format
-msgid "Translations and support have now been uninstalled for %s."
-msgstr "%s 번역 과 지원 패키지를 제거했습니다."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-msgid "Language Uninstalled"
-msgstr "언어 삭제됨"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Failed to set system language."
-msgstr "시스템 언어를 설정하지 못했습니다."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Language Not Set"
-msgstr "언어가 설정되지 않음"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Please run this software with administrative rights."
-msgstr "이 프로그램은 관리자 권한으로 실행 하십시오."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Not Root User"
-msgstr "관리자 아님"
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "언어 지원"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid ""
@@ -327,10 +207,6 @@ msgstr "취소"
 msgid "Apply Changes"
 msgstr "바뀐 내용 적용"
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
-msgid "Language Support"
-msgstr "언어 지원"
-
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
 msgstr "메뉴와 창에 사용할 언어:"
@@ -354,11 +230,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
+"<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
-"<small>원하는 순서대로 언어를 끌어당겨 정렬하십시오.\n"
-"다음 로그인할 때 바뀐 내용을 적용합니다.</small>"
+"<small><b>언어를 끌어 선호하는 언어 순으로 배치해주십시오.</b>\n"
+"바뀐 내용은 다음 로그인할 때 적용합니다.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -385,14 +261,15 @@ msgid ""
 "function.\n"
 "For example, you will need this function for typing Chinese, Japanese, "
 "Korean or Vietnamese.\n"
-"The recommended value for Ubuntu is \"ibus\".\n"
+"The recommended value for Ubuntu is \"IBus\".\n"
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
-"복잡한 입력기가 필요한 언어를 입력해야 하는 경우 이 기능을 사용해야 합니다.\n"
-"중국어와 일본어 한국어 또는 베트남어를 입력할 때 필요합니다.\n"
-"추천하는 입력기는 \"ibus\"입니다.\n"
-"시스템에서 다른 입력기를 사용하려면 우선 적합한 패키지를 설치한 후 이곳에서 원하는 입력기를 선택하십시오."
+"키보드 문자 표시를 바꾸는 것 이상의 방법이 필요한 방법을 사용해야 문자를 입력할 수 있는 입력기가 필요한 경우에는 이 기능을 "
+"사용해주십시오.\n"
+"예를 들어 한국어, 중국어, 일본어 또는 베트남어를 사용하는 경우에는 이 옵션이 필요합니다.\n"
+"우분투가 권장하는 값은 \"IBus\"입니다.\n"
+"다른 입력기 시스템을 사용하려면 우선 사용하려는 패키를 설치한 후 이 곳에서 설치한 시스템을 선택해주십시오."
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -444,14 +321,6 @@ msgstr "지역 형식"
 msgid "Configure multiple and native language support on your system"
 msgstr "시스템에 여러 모국어 지원 설정"
 
-#: ../data/kde-language-selector.desktop.in.h:1
-msgid "System Languages"
-msgstr "시스템 언어"
-
-#: ../data/kde-language-selector.desktop.in.h:2
-msgid "Install and set system languages"
-msgstr "시스템 언어를 설치하고 설정합니다"
-
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 #: ../data/incomplete-language-support-kde.note.in:5
@@ -471,18 +340,6 @@ msgstr ""
 "선택한 언어 지원 파일이 완전하지 않습니다. \"이 동작 지금 실행\"을 누른 후 지시를 따르면 부족한 구성 요소를 설치할 수 있습니다. "
 "인터넷에 연결되어있어야 합니다. 이 작업을 나중에 실행하려면 상단 막대의 오른쪽 끝 아이콘을 클릭한 후 \"시스템 설정... -> 언어 "
 "지원\"을 선택하십시오."
-
-#. Description
-#: ../data/incomplete-language-support-kde.note.in:6
-msgid ""
-"The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
-msgstr ""
-"선택한 언어 지원 파일이 완전하지 않습니다. \"이 동작 지금 실행\"을 누른 후 지시를 따르면 부족한 구성 요소를 설치할 수 있습니다. "
-"인터넷에 연결되어있어야 합니다. 이 작업을 나중에 실행하려면 \"시스템 설정 -> 지역 & 언어\"를 사용하십시오."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -506,57 +363,159 @@ msgstr "시스템 정책으로 기본 언어 설정을 사용할 수 없습니�
 msgid "don't verify installed language support"
 msgstr "설치한 언어 지원을 검증하지 않음"
 
-#: ../gnome-language-selector:20 ../check-language-support:27
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "대안 데이터 디렉터리"
 
-#: ../check-language-support:24
+#: ../check-language-support:22
 msgid "target language code"
 msgstr "대상 언어 코드"
 
-#: ../check-language-support:28
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr "지정된 패키지만 확인 - 쉼표로 구분된 패키지 이름"
 
-#: ../check-language-support:30
+#: ../check-language-support:28
 msgid "output all available language support packages for all languages"
 msgstr "모든 언어의 사용 가능한 모든 언어 지원을 출력"
 
-#: ../check-language-support:33
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr "설치한 패키지 및 누락된 패키지 보이기"
 
-#~ msgid "Aborting"
-#~ msgstr "중지"
+#~ msgid "Input methods"
+#~ msgstr "입력기"
 
-#~ msgid "Force even when a configuration exists"
-#~ msgstr "설정이 있을 때에도 강제"
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "이 프로그램은 관리자 권한으로 실행 하십시오."
 
-#~ msgid "Show the current fontconfig-voodoo config"
-#~ msgstr "현재 fontconfig-voodoo 설정 보이기"
+#~ msgid "Language Not Set"
+#~ msgstr "언어가 설정되지 않음"
 
-#~ msgid "No fontconfig-voodoo configuration found for the selected locale"
-#~ msgstr "선택된 로케일을 위한 fontconfig-voodoo 설정이 없습니다."
+#~ msgid "Default system language:"
+#~ msgstr "기본 시스템 언어:"
 
-#~ msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
-#~ msgstr "현재 언어를 위한 fontconfig-voodoo 설정을 찾지 못했습니다."
+#~ msgid "Set System Language"
+#~ msgstr "시스템 언어 설정"
 
-#~ msgid "Set fontconfig voodoo for the selected language"
-#~ msgstr "선택된 언어를 위해 fontconfig voodoo 설정"
+#~ msgid "Failed to set system language."
+#~ msgstr "시스템 언어를 설정하지 못했습니다."
+
+#~ msgid "Language Installed"
+#~ msgstr "언어 설치됨"
+
+#~ msgid "Language Set"
+#~ msgstr "언어 선택"
+
+#~ msgid "Language Uninstalled"
+#~ msgstr "언어 삭제됨"
+
+#~ msgid "Select language to install:"
+#~ msgstr "설치할 언어 선택:"
+
+#~ msgid "Components:"
+#~ msgstr "구성 요소:"
+
+#~ msgid "Select language to uninstall:"
+#~ msgstr "제거할 언어 선택:"
+
+#~ msgid "Translations"
+#~ msgstr "번역"
+
+#~ msgid "System Languages"
+#~ msgstr "시스템 언어"
+
+#~ msgid "Install and set system languages"
+#~ msgstr "시스템 언어를 설치하고 설정합니다"
 
 #~ msgid ""
-#~ "Guess a configuration based on the LANGUAGE environment. Sets the config to "
-#~ "'none' if nothing suitable was found"
-#~ msgstr "LANGUAGE 환경 변수로 설정을 추측합니다. 적당한 것이 없는 경우는 '없음'으로 설정합니다."
+#~ "It is impossible to install or remove any software. Please use the package "
+#~ "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+#~ "this issue at first."
+#~ msgstr ""
+#~ "어떤 소프트웨어도 설치하거나 제거할 수 없습니다. 우선 패키지 관리자 \"Adept\"를 사용하거나 터미널에서 \"sudo apt-get "
+#~ "install -f\" 명령 실행하여 이 문제를 해결하십시오."
 
-#~ msgid "A configuration exists already. Use '--force' to overwrite it. "
-#~ msgstr "설정이 이미 존재합니다. 덮어쓰려면 --force 옵션을 사용하십시오. "
+#~ msgid "Keyboard input method:"
+#~ msgstr "키보드 입력기:"
 
-#~ msgid "Remove the current fontconfig-voodoo config"
-#~ msgstr "현재 fontconfig-voodoo 설정 제거"
+#~ msgid "Not installed"
+#~ msgstr "설치하지 않음"
 
-#~ msgid "Unconfigured"
-#~ msgstr "설정하지않음"
+#~ msgid "Partially Installed"
+#~ msgstr "일부 설치함"
 
-#~ msgid "List the available fontconfig-voodoo configs"
-#~ msgstr "사용할 수 있는 fontconfig-voodoo 설정 목록"
+#~ msgid "Component already installed"
+#~ msgstr "구성요소를 이미 설치했습니다."
+
+#~ msgid "Spellchecking and writing aids"
+#~ msgstr "맞춤법 검사와 입력 도구"
+
+#~ msgid "Extra fonts"
+#~ msgstr "추가 글꼴"
+
+#~ msgid "Component not available"
+#~ msgstr "구성 요소를 사용할 수 없습니다."
+
+#~ msgid "Already installed"
+#~ msgstr "이미 설치함"
+
+#, python-format
+#~ msgid "Default system Language now set to %s."
+#~ msgstr "기본 시스템 언어를 %s(으)로 설정했습니다."
+
+#~ msgid "Component not installed"
+#~ msgstr "구성 요소를 설치하지 않음"
+
+#, python-format
+#~ msgid ""
+#~ "All selected components have now been installed for %s.  Select them from "
+#~ "Country/Region & Language."
+#~ msgstr "선택한 %s의 모든 구성 요소를 설치했습니다. 국가/지역 & 언어에서 선택하십시오."
+
+#~ msgid "Not Root User"
+#~ msgstr "관리자 아님"
+
+#~ msgid ""
+#~ "<small>Drag languages to arrange them in order of preference.\n"
+#~ "Changes take effect next time you log in.</small>"
+#~ msgstr ""
+#~ "<small>원하는 순서대로 언어를 끌어당겨 정렬하십시오.\n"
+#~ "다음 로그인할 때 바뀐 내용을 적용합니다.</small>"
+
+#~ msgid ""
+#~ "If you need to type in languages, which require more complex input methods "
+#~ "than just a simple key to letter mapping, you may want to enable this "
+#~ "function.\n"
+#~ "For example, you will need this function for typing Chinese, Japanese, "
+#~ "Korean or Vietnamese.\n"
+#~ "The recommended value for Ubuntu is \"ibus\".\n"
+#~ "If you want to use alternative input method systems, install the "
+#~ "corresponding packages first and then choose the desired system here."
+#~ msgstr ""
+#~ "복잡한 입력기가 필요한 언어를 입력해야 하는 경우 이 기능을 사용해야 합니다.\n"
+#~ "중국어와 일본어 한국어 또는 베트남어를 입력할 때 필요합니다.\n"
+#~ "추천하는 입력기는 \"ibus\"입니다.\n"
+#~ "시스템에서 다른 입력기를 사용하려면 우선 적합한 패키지를 설치한 후 이곳에서 원하는 입력기를 선택하십시오."
+
+#~ msgid ""
+#~ "The language support files for your selected language seem to be incomplete. "
+#~ "You can install the missing components by clicking on \"Run this action "
+#~ "now\" and follow the instructions. An active internet connection is "
+#~ "required. If you would like to do this at a later time, please use \"System "
+#~ "Settings -> Regional & Language\" instead."
+#~ msgstr ""
+#~ "선택한 언어 지원 파일이 완전하지 않습니다. \"이 동작 지금 실행\"을 누른 후 지시를 따르면 부족한 구성 요소를 설치할 수 있습니다. "
+#~ "인터넷에 연결되어있어야 합니다. 이 작업을 나중에 실행하려면 \"시스템 설정 -> 지역 & 언어\"를 사용하십시오."
+
+#~ msgid ""
+#~ "It is impossible to install or remove any software. Please use the package "
+#~ "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
+#~ "this issue at first."
+#~ msgstr ""
+#~ "어떤 소프트웨어도 설치하거나 삭제할 수 없습니다. \"Muon\"를 사용하거나 터미널에서 \"sudo apt-get install -"
+#~ "f\"를 실행하여 이 문제를 먼저 해결하십시오."
+
+#, python-format
+#~ msgid "Translations and support have now been uninstalled for %s."
+#~ msgstr "%s 번역 과 지원 패키지를 제거했습니다."

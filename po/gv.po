@@ -7,35 +7,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2012-09-27 22:00+0000\n"
-"PO-Revision-Date: 2012-06-20 06:09+0000\n"
+"POT-Creation-Date: 2013-04-09 14:32+0000\n"
+"PO-Revision-Date: 2012-12-23 19:17+0000\n"
 "Last-Translator: Reuben Potts <Unknown>\n"
 "Language-Team: Manx <gv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : (n == 2 ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2012-10-09 12:40+0000\n"
-"X-Generator: Launchpad (build 16112)\n"
+"X-Launchpad-Export-Date: 2013-04-17 08:09+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:54
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "Sheeanish (aashaght)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:56
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "Sheenish (tradishoonaghl)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
 msgstr "Cha nel fysseree çhengey ry-geddyn"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
-#: ../LanguageSelector/qt/QtLanguageSelector.py:95
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -43,24 +43,24 @@ msgstr ""
 "Cha nel fysseree lesh yn corys mychione ny çhengeyghyn ry-geddyn 'sy traa "
 "t'ayn. Vel oo gearree cur er stoo noa cochiangley eddyr-voggyl "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
-#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
 msgstr "Cur n_oa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "çhengey"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
 msgstr "Er co`earrooder hannah."
 
-#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -68,7 +68,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -76,24 +76,29 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
+#. find out about the other options
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
+msgid "default"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
 msgid "none"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
-#: ../LanguageSelector/qt/QtLanguageSelector.py:78
-#: ../LanguageSelector/qt/QtLanguageSelector.py:336
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "Ta'n bun fysseree claaghyn brisht"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -103,11 +108,11 @@ msgstr ""
 "jeh yn reireyder bundeilyn \"Synaptic\" ny roie\"sudo apt-get install -f\"  "
 "ayns ny terminal dy jannoo shoh kiart son yn traa t'ayn."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
 msgid "Could not install the selected language support"
 msgstr "Cha noddym cur yn cooney çhengey reih't er yn co`earrooder"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -116,13 +121,13 @@ msgstr ""
 "neu-kiart my sailt ec https://bugs.launchpad.net/ubuntu/+source/language-"
 "selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "Cha noddym cur oilley yn cooney çhengey 'sy co`earrooder"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -130,39 +135,39 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
 msgid "Failed to authorize to install packages."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "Cha nel yn cooney çhengey currit er yn co`earrooder lane"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
-#: ../LanguageSelector/qt/QtLanguageSelector.py:172
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
-#: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
 msgstr "Briaght mish ny sanmey"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
-#: ../LanguageSelector/qt/QtLanguageSelector.py:166
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "_Cur er co`earrooder"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "Fysseree"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -170,138 +175,9 @@ msgid ""
 "close and re-open Language Support."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:79
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"Cha nel oo abyl dy cur claaghyn er yn co`earrooder ny geddyn rey lesh ayd er "
-"chor ervee. Jannoo ymmyd jeh yn reireyder bundeilyn \"Muon\" ny roie sy "
-"terminal \"sudo apt-get install -f\" dy cur eh kiart 'sy traa t'ayn."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
-msgid "Set System Language"
-msgstr "Cur er çhengey corys"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Default system language:"
-msgstr "çhengey corys cadjin:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-msgid "Keyboard input method:"
-msgstr "Aght cur stiagh mair-chlaa:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:126
-msgid "Select language to install:"
-msgstr "Reih ny çhengey dy cur 'sy co`earrooder:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:127
-msgid "Select language to uninstall:"
-msgstr "Reih ny çhengey dy cur veih yn co`earrooder"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:128
-msgid "Translations"
-msgstr "Stoo ayns çhengaghyn"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:129
-msgid "Input methods"
-msgstr "Aghtyn cur stiagh"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:130
-msgid "Spellchecking and writing aids"
-msgstr "Cooney jeeaghyn trooid teks as screeu"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:131
-msgid "Extra fonts"
-msgstr "Ny smoo laue screeuyn"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:132
-msgid "Components:"
-msgstr "Stoo ta cheet lesh:"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:210
-msgid "Already installed"
-msgstr "Currit er yn co`earrooder hannah"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
-msgid "Partially Installed"
-msgstr "Beggyn currit er yn co`earrooder"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:216
-msgid "Not installed"
-msgstr "Cha nel eh currit er yn co`earrooder"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
-msgid "Component already installed"
-msgstr "Red currit 'sy co`earrooder hannah"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
-msgid "Component not available"
-msgstr "Cha nel yn red ry-geddyn"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
-msgid "Component not installed"
-msgstr "Cha nel yn red currit 'sy co`earrooder"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-#, python-format
-msgid "Default system Language now set to %s."
-msgstr "Ta'n çhengey corys cadjin currit dys %s 'sy traa t'ayn."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-msgid "Language Set"
-msgstr "Rolley chengaghyn"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:337
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"Cha nel oo abyl dy cur claaghyn er yn co`earrooder ny geddyn rey lesh ayd er "
-"chor ervee. Jannoo ymmyd jeh yn reireyder bundeilyn \"Adept\" ny roie sy "
-"terminal \"sudo apt-get install -f\" dy cur eh kiart 'sy traa t'ayn."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-#, python-format
-msgid ""
-"All selected components have now been installed for %s.  Select them from "
-"Country/Region & Language."
-msgstr ""
-"Ta oilley ny redyn reih't er v'eh currit er yn co`earrooder son %s. Reih ad "
-"voish cheer"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-msgid "Language Installed"
-msgstr "çhengey currit er yn co`earrooder"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-#, python-format
-msgid "Translations and support have now been uninstalled for %s."
-msgstr "Ta stoo sy chengey as cooney er veh currit er son %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-msgid "Language Uninstalled"
-msgstr "çhengey currit veih'n co`earrooder"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Failed to set system language."
-msgstr "Doilleid lesh cur er yn çhengey corys"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Language Not Set"
-msgstr "Cha nel çhengey currit er"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Please run this software with administrative rights."
-msgstr "Roie ny claaghyn shoh lesh kiedyn reirey my sailt."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Not Root User"
-msgstr "Cha nel ymmydeyr Root"
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "Cooney çhengey"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid ""
@@ -335,10 +211,6 @@ msgstr "Cur ass"
 msgid "Apply Changes"
 msgstr "Cur er caghlaaghyn"
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
-msgid "Language Support"
-msgstr "Cooney çhengey"
-
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
 msgstr "çhengey son rolleyghyn as uinnagyn:"
@@ -357,12 +229,9 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
+"<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Tayrn çhengaghyn dy cur ad ayns oadagh jeh cre cho vooar smie lhiat "
-"ad\n"
-"Bee ny tagyrtyn tagyrt traa t'ou hurrys stiagh reesht.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -389,7 +258,7 @@ msgid ""
 "function.\n"
 "For example, you will need this function for typing Chinese, Japanese, "
 "Korean or Vietnamese.\n"
-"The recommended value for Ubuntu is \"ibus\".\n"
+"The recommended value for Ubuntu is \"IBus\".\n"
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
@@ -444,14 +313,6 @@ msgstr "Aghtyn mygeayrt y theill"
 msgid "Configure multiple and native language support on your system"
 msgstr "Reihghyn son ny smoo ny yn çhengey er yn corys ayd's"
 
-#: ../data/kde-language-selector.desktop.in.h:1
-msgid "System Languages"
-msgstr "Chengeyn corys"
-
-#: ../data/kde-language-selector.desktop.in.h:2
-msgid "Install and set system languages"
-msgstr "Cur er co`earrooder as reih chengeyn corys"
-
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 #: ../data/incomplete-language-support-kde.note.in:5
@@ -467,16 +328,6 @@ msgid ""
 "required. If you would like to do this at a later time, please use Language "
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
-msgstr ""
-
-#. Description
-#: ../data/incomplete-language-support-kde.note.in:6
-msgid ""
-"The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
 msgstr ""
 
 #. Name
@@ -501,58 +352,142 @@ msgstr ""
 msgid "don't verify installed language support"
 msgstr "ny jean gra cooney çhengey er yn co`earrooder"
 
-#: ../gnome-language-selector:20 ../check-language-support:27
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "datadir elley"
 
-#: ../check-language-support:24
+#: ../check-language-support:22
 msgid "target language code"
 msgstr "Coad chengey targad"
 
-#: ../check-language-support:28
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "Jeeaghyn er son ny bundeil(yn) currit. -- cur enmyn bundeil veih y cheilley "
 "liorish ny camogue"
 
-#: ../check-language-support:30
+#: ../check-language-support:28
 msgid "output all available language support packages for all languages"
 msgstr ""
 
-#: ../check-language-support:33
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr ""
 "Soilshaghey bundeilyn currit er yn co'earroder as feryn cha nel ayn nish"
 
-#~ msgid "A configuration exists already. Use '--force' to overwrite it. "
-#~ msgstr ""
-#~ "Ta reihghyn ayn hannah. Jannoo ymmyd jeh '--Cur niart er'  dy screeu harrish "
-#~ "eh "
+#~ msgid "Select language to uninstall:"
+#~ msgstr "Reih ny çhengey dy cur veih yn co`earrooder"
 
-#~ msgid "Set fontconfig voodoo for the selected language"
-#~ msgstr "Cur voodoo fontconfig son yn çhengey reih't"
+#~ msgid "Set System Language"
+#~ msgstr "Cur er çhengey corys"
+
+#~ msgid "Default system language:"
+#~ msgstr "çhengey corys cadjin:"
 
 #~ msgid ""
-#~ "Guess a configuration based on the LANGUAGE environment. Sets the config to "
-#~ "'none' if nothing suitable was found"
+#~ "It is impossible to install or remove any software. Please use the package "
+#~ "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+#~ "this issue at first."
 #~ msgstr ""
-#~ "Cur barel er ny reih bunnit er ny jeeagh çhengey. Cur config dys cha \"nel "
-#~ "fer erbee\" myr cha row red kiart feddynit"
+#~ "Cha nel oo abyl dy cur claaghyn er yn co`earrooder ny geddyn rey lesh ayd er "
+#~ "chor ervee. Jannoo ymmyd jeh yn reireyder bundeilyn \"Adept\" ny roie sy "
+#~ "terminal \"sudo apt-get install -f\" dy cur eh kiart 'sy traa t'ayn."
 
-#~ msgid "Aborting"
-#~ msgstr "Cur ass"
+#~ msgid "Select language to install:"
+#~ msgstr "Reih ny çhengey dy cur 'sy co`earrooder:"
 
-#~ msgid "Force even when a configuration exists"
-#~ msgstr "Cur niart dy jannoo traa ta reihghyn ayn"
+#~ msgid "Keyboard input method:"
+#~ msgstr "Aght cur stiagh mair-chlaa:"
 
-#~ msgid "Remove the current fontconfig-voodoo config"
-#~ msgstr "Geddyn rey lesh ny reihghyn fontconfig-voodoo 'sy traa t'ayn"
+#~ msgid "Not installed"
+#~ msgstr "Cha nel eh currit er yn co`earrooder"
 
-#~ msgid "Unconfigured"
-#~ msgstr "Cha nel eh reih't"
+#~ msgid "Partially Installed"
+#~ msgstr "Beggyn currit er yn co`earrooder"
 
-#~ msgid "List the available fontconfig-voodoo configs"
-#~ msgstr "Rolley jeh ny reihghyn reihghyn fontconfig-voodoo"
+#, python-format
+#~ msgid "Translations and support have now been uninstalled for %s."
+#~ msgstr "Ta stoo sy chengey as cooney er veh currit er son %s."
 
-#~ msgid "Show the current fontconfig-voodoo config"
-#~ msgstr "Soilshaghey ny reihghyn fontconfig-voodoo sy traa t'ayn"
+#~ msgid "Language Installed"
+#~ msgstr "çhengey currit er yn co`earrooder"
+
+#~ msgid "Language Uninstalled"
+#~ msgstr "çhengey currit veih'n co`earrooder"
+
+#~ msgid "Already installed"
+#~ msgstr "Currit er yn co`earrooder hannah"
+
+#, python-format
+#~ msgid "Default system Language now set to %s."
+#~ msgstr "Ta'n çhengey corys cadjin currit dys %s 'sy traa t'ayn."
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "Roie ny claaghyn shoh lesh kiedyn reirey my sailt."
+
+#~ msgid "Failed to set system language."
+#~ msgstr "Doilleid lesh cur er yn çhengey corys"
+
+#~ msgid "Language Not Set"
+#~ msgstr "Cha nel çhengey currit er"
+
+#~ msgid ""
+#~ "<small>Drag languages to arrange them in order of preference.\n"
+#~ "Changes take effect next time you log in.</small>"
+#~ msgstr ""
+#~ "<small>Tayrn çhengaghyn dy cur ad ayns oadagh jeh cre cho vooar smie lhiat "
+#~ "ad\n"
+#~ "Bee ny tagyrtyn tagyrt traa t'ou hurrys stiagh reesht.</small>"
+
+#~ msgid "Not Root User"
+#~ msgstr "Cha nel ymmydeyr Root"
+
+#~ msgid "Input methods"
+#~ msgstr "Aghtyn cur stiagh"
+
+#~ msgid "Extra fonts"
+#~ msgstr "Ny smoo laue screeuyn"
+
+#~ msgid "Components:"
+#~ msgstr "Stoo ta cheet lesh:"
+
+#~ msgid "Translations"
+#~ msgstr "Stoo ayns çhengaghyn"
+
+#~ msgid "Spellchecking and writing aids"
+#~ msgstr "Cooney jeeaghyn trooid teks as screeu"
+
+#~ msgid "Language Set"
+#~ msgstr "Rolley chengaghyn"
+
+#~ msgid "Component not available"
+#~ msgstr "Cha nel yn red ry-geddyn"
+
+#~ msgid "Component not installed"
+#~ msgstr "Cha nel yn red currit 'sy co`earrooder"
+
+#~ msgid "Component already installed"
+#~ msgstr "Red currit 'sy co`earrooder hannah"
+
+#~ msgid "Install and set system languages"
+#~ msgstr "Cur er co`earrooder as reih chengeyn corys"
+
+#, python-format
+#~ msgid ""
+#~ "All selected components have now been installed for %s.  Select them from "
+#~ "Country/Region & Language."
+#~ msgstr ""
+#~ "Ta oilley ny redyn reih't er v'eh currit er yn co`earrooder son %s. Reih ad "
+#~ "voish cheer"
+
+#~ msgid "System Languages"
+#~ msgstr "Chengeyn corys"
+
+#~ msgid ""
+#~ "It is impossible to install or remove any software. Please use the package "
+#~ "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
+#~ "this issue at first."
+#~ msgstr ""
+#~ "Cha nel oo abyl dy cur claaghyn er yn co`earrooder ny geddyn rey lesh ayd er "
+#~ "chor ervee. Jannoo ymmyd jeh yn reireyder bundeilyn \"Muon\" ny roie sy "
+#~ "terminal \"sudo apt-get install -f\" dy cur eh kiart 'sy traa t'ayn."

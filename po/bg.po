@@ -7,36 +7,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 22:00+0000\n"
-"PO-Revision-Date: 2012-06-20 06:11+0000\n"
-"Last-Translator: Svetoslav Stefanov <svetlisashkov@yahoo.com>\n"
+"POT-Creation-Date: 2013-04-09 14:32+0000\n"
+"PO-Revision-Date: 2013-03-06 01:00+0000\n"
+"Last-Translator: Atanas Kovachki <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2012-10-09 12:41+0000\n"
-"X-Generator: Launchpad (build 16112)\n"
+"X-Launchpad-Export-Date: 2013-04-17 08:09+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 "Language: bg\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:54
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "Китайски (опростен)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:56
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "Китайски (традиционен)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
 msgstr "Не е налична информация за език"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
-#: ../LanguageSelector/qt/QtLanguageSelector.py:95
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -44,24 +44,24 @@ msgstr ""
 "Системата все още няма информация за наличните езици. Искате ли да обновите "
 "сега, за да получите тази информация? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
-#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
 msgstr "_Обновяване"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Език"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
 msgstr "Инсталиран"
 
-#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -69,7 +69,7 @@ msgstr[0] "%(INSTALL)d за инсталиране"
 msgstr[1] "%(INSTALL)d за инсталиране"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -77,24 +77,29 @@ msgstr[0] "%(REMOVE)d за премахване"
 msgstr[1] "%(REMOVE)d за премахване"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
+#. find out about the other options
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
+msgid "default"
+msgstr "по подразбиране"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
 msgid "none"
 msgstr "никакви"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
-#: ../LanguageSelector/qt/QtLanguageSelector.py:78
-#: ../LanguageSelector/qt/QtLanguageSelector.py:336
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "Софтуерната база данни е счупена"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -104,11 +109,11 @@ msgstr ""
 "първо използвайте диспечера на пакети \"Synaptic\" или изпълнете \"sudo apt-"
 "get install -f\" в команден ред, за да поправите този проблем."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
 msgid "Could not install the selected language support"
 msgstr "Избраната езикова поддръжка не може да бъде инсталирана"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -116,31 +121,35 @@ msgstr ""
 "Това вероятно е грешка в програмата. Моля, докладвайте за грешката на адрес: "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "Пълната езикова поддръжка не може да бъде инсталирана"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
 "very right of the top bar and select \"System Settings... -> Software "
 "Sources\")."
 msgstr ""
+"Обичайно това е свързано с грешка в архива с приложенията или мениджъра на "
+"приложенията. Проверете вашите настройки в Източниците на софтуер (Кликнете "
+"върху най-дясната икона в горният панел и изберете «Системни настройки -> "
+"Източници на софтуер»)."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
 msgid "Failed to authorize to install packages."
-msgstr ""
+msgstr "Грешка при входа за инсталиране на пакети."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "Езиковата поддръжка не е инсталирана напълно"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
-#: ../LanguageSelector/qt/QtLanguageSelector.py:172
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -148,162 +157,36 @@ msgstr ""
 "Някои от преводите и помощника при писане, които са налични за избраните "
 "езици, все още не са инсталирани. Искате ли да се инсталират сега?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
-#: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
 msgstr "_Напомняне по-късно"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
-#: ../LanguageSelector/qt/QtLanguageSelector.py:166
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "_Инсталиране"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "Подробно"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
 "choice. The examples may show up if you\n"
 "close and re-open Language Support."
 msgstr ""
+"Ошибка применение выбранного формата '%s'. \n"
+"Примери могат да се покажат след като затворите \n"
+"и другата отворена услуга за намиране на езици."
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:79
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"Невъзможно е да бъде инсталиран или премахнат какъвто и да е софтуер. Моля, "
-"първо използвайте диспечера на пакети \"Muon\" или изпълнете \"sudo apt-get "
-"install -f\" в команден ред, за да поправите този проблем."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
-msgid "Set System Language"
-msgstr "Задаване на език на системата"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Default system language:"
-msgstr "Език на системата, по подразбиране:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-msgid "Keyboard input method:"
-msgstr "Начин на въвеждане от клавиатурата:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:126
-msgid "Select language to install:"
-msgstr "Избор на език за инсталиране:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:127
-msgid "Select language to uninstall:"
-msgstr "Избор на език за премахване:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:128
-msgid "Translations"
-msgstr "Преводи"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:129
-msgid "Input methods"
-msgstr "Входни методи"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:130
-msgid "Spellchecking and writing aids"
-msgstr "Проверка на правопис и помощник при писане"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:131
-msgid "Extra fonts"
-msgstr "Допълнителни шрифтове"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:132
-msgid "Components:"
-msgstr "Елементи:"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:210
-msgid "Already installed"
-msgstr "Вече е инсталиран"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
-msgid "Partially Installed"
-msgstr "Частично инсталиран"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:216
-msgid "Not installed"
-msgstr "Не е инсталиран"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
-msgid "Component already installed"
-msgstr "Компонентът вече е инсталиран"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
-msgid "Component not available"
-msgstr "Компонентът не е наличен"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
-msgid "Component not installed"
-msgstr "Компонентът не е инсталиран"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-#, python-format
-msgid "Default system Language now set to %s."
-msgstr "Езикът на системата по подразбиране сега е %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-msgid "Language Set"
-msgstr "Задаване на език"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:337
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"Невъзможно е да бъде инсталиран или премахнат какъвто и да е софтуер. Моля, "
-"първо използвайте диспечера на пакети \"Adept\" или изпълнете \"sudo apt-get "
-"install -f\" в команден ред, за да поправите този проблем."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-#, python-format
-msgid ""
-"All selected components have now been installed for %s.  Select them from "
-"Country/Region & Language."
-msgstr ""
-"Всички избрани компоненти са инсталирани за %s.  Изберете ги от "
-"Страна/Област и Език."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-msgid "Language Installed"
-msgstr "Езикът е инсталиран"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-#, python-format
-msgid "Translations and support have now been uninstalled for %s."
-msgstr "Преводи и поддръжка за %s са премахнати сега."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-msgid "Language Uninstalled"
-msgstr "Езикът е премахнат"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Failed to set system language."
-msgstr "Неуспешен опит за задаване на език на системата."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Language Not Set"
-msgstr "Езикът не е зададен"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Please run this software with administrative rights."
-msgstr "Моля, стартирайте този софтуер с администраторски права."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Not Root User"
-msgstr "Не е root потребител"
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "Езикова поддръжка"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid ""
@@ -337,10 +220,6 @@ msgstr "Отказ"
 msgid "Apply Changes"
 msgstr "Прилагане на промените"
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
-msgid "Language Support"
-msgstr "Езикова поддръжка"
-
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
 msgstr "Език за менютата и прозорците:"
@@ -366,11 +245,9 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
+"<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Плъзгане на езиците ще ги подреди в желания от Вас ред.\n"
-"Промените ще бъдат приложени при следващото Ви влизане в системата.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -381,6 +258,8 @@ msgid ""
 "<small>Use the same language choices for startup and the login "
 "screen.</small>"
 msgstr ""
+"<small>Използвай един и същи набор от езици за стартовия екран и вход в "
+"системата.</small>"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Install / Remove Languages..."
@@ -397,19 +276,18 @@ msgid ""
 "function.\n"
 "For example, you will need this function for typing Chinese, Japanese, "
 "Korean or Vietnamese.\n"
-"The recommended value for Ubuntu is \"ibus\".\n"
+"The recommended value for Ubuntu is \"IBus\".\n"
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
-"Ако е необходимо да пишете на езици, които изискват по-комклексни методи за "
-"въвеждане от простата релация между бутон и буква, Вие може би ще искате да "
-"разрешите тази функция. \n"
-"За пример, ще ви се наложи да използвате тази функция за писане на Китайски, "
-"Японски, Корейски или Виетнамски.\n"
-"Препоръчителната стойност за Убунту е \"ibus\".\n"
-"Ако е необходимо да използвате алтернативни методи за въвеждане, "
-"инсталирайте първо съответните пакети и след това изберете желаната система "
-"тук."
+"Можете да включите тази функция при необходимост на набор от езици, които "
+"изискват по-сложни методи за въвеждане, отколкото простото съответствие на "
+"бутоните.\n"
+"Например, тя ще ви потрябва за набор на китайски, японски, корейски или "
+"виетнамски езици.\n"
+"Препоръчителната стойност за Убунту - «IBus».\n"
+"За да използвате алтернативните методи за въвеждане, инсталирайте "
+"съответните пакети и след това изберете от тук желаната система."
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -442,6 +320,8 @@ msgstr ""
 msgid ""
 "<small>Use the same format choice for startup and the login screen.</small>"
 msgstr ""
+"<small>Използвай един и същ формат за стартовия екран и вход в "
+"системата.</small>"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Number:"
@@ -468,14 +348,6 @@ msgid "Configure multiple and native language support on your system"
 msgstr ""
 "Настройка на многоезична и вградена езикова поддръжка на Вашата система"
 
-#: ../data/kde-language-selector.desktop.in.h:1
-msgid "System Languages"
-msgstr "Системни езици"
-
-#: ../data/kde-language-selector.desktop.in.h:2
-msgid "Install and set system languages"
-msgstr "Инсталиране и задаване на системните езици"
-
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 #: ../data/incomplete-language-support-kde.note.in:5
@@ -492,21 +364,12 @@ msgid ""
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
 msgstr ""
-
-#. Description
-#: ../data/incomplete-language-support-kde.note.in:6
-msgid ""
-"The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
-msgstr ""
-"Файловете за поддръжка на език за Вашия избран език изглежда са непълни. "
-"Можете да инсталирате липсващите елементи като натиснете \"Изпълняване "
-"сега\" и следвате инструкциите. Необходима е интернет връзка. Ако искате да "
-"направите това по-късно, моля използвайте \"Системни настройки -> Регионални "
-"и Езикови\"."
+"Не са инсталирани напълно всички файлове за поддържане на избраният от вас "
+"език. За да инсталирате липсващите компоненти, кликнете на «Инсталирай Сега» "
+"и следвайте инструкциите. Инсталацията изисква активна интернет връзка. Ако "
+"искате да го направите по-късно, използвайте «Езикова поддръжка» (Кликнете "
+"върху най-дясната икона в горният панел и изберете «Системни настройки -> "
+"Езикова поддръжка»)."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -521,73 +384,184 @@ msgstr ""
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
 msgid "Set system default language"
-msgstr ""
+msgstr "Установи системният език по подразбиране"
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
 msgid "System policy prevented setting default language"
 msgstr ""
+"Политиката на системата не позволява назначаването на език по подразбиране"
 
 #: ../gnome-language-selector:17
 msgid "don't verify installed language support"
 msgstr "без проверка на поддръжката на инсталирания език"
 
-#: ../gnome-language-selector:20 ../check-language-support:27
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "алтернативна директория за данни"
 
-#: ../check-language-support:24
+#: ../check-language-support:22
 msgid "target language code"
 msgstr "код на търсения език"
 
-#: ../check-language-support:28
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "проверка за даден пакет/и само -- разделете имената на пакетите със запетая"
 
-#: ../check-language-support:30
+#: ../check-language-support:28
 msgid "output all available language support packages for all languages"
-msgstr ""
+msgstr "покажи всички достъпни езикови пакети на всички езици"
 
-#: ../check-language-support:33
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr ""
 "показване на инсталираните софтуерни пакети, както и на липсващите такива"
 
-#~ msgid "Aborting"
-#~ msgstr "Прекратяване"
+#~ msgid "Not installed"
+#~ msgstr "Не е инсталиран"
 
-#~ msgid "Force even when a configuration exists"
-#~ msgstr "Изпълнение дори при съществуваща конфигурация"
+#~ msgid "Partially Installed"
+#~ msgstr "Частично инсталиран"
 
-#~ msgid "Set fontconfig voodoo for the selected language"
-#~ msgstr "Задаване на fontconfig voodoo за избраният език"
+#~ msgid "Select language to install:"
+#~ msgstr "Избор на език за инсталиране:"
 
-#~ msgid "No fontconfig-voodoo configuration found for the selected locale"
-#~ msgstr "Няма намерена fontconfig-voodoo конфигурация за избрания локал"
+#~ msgid "Set System Language"
+#~ msgstr "Задаване на език на системата"
 
-#~ msgid "Unconfigured"
-#~ msgstr "Не е конфигуриран"
+#~ msgid "Already installed"
+#~ msgstr "Вече е инсталиран"
+
+#~ msgid "Language Set"
+#~ msgstr "Задаване на език"
+
+#~ msgid "Language Installed"
+#~ msgstr "Езикът е инсталиран"
+
+#~ msgid "Not Root User"
+#~ msgstr "Не е root потребител"
+
+#~ msgid "Language Not Set"
+#~ msgstr "Езикът не е зададен"
+
+#~ msgid "Failed to set system language."
+#~ msgstr "Неуспешен опит за задаване на език на системата."
+
+#~ msgid "Extra fonts"
+#~ msgstr "Допълнителни шрифтове"
+
+#~ msgid "Translations"
+#~ msgstr "Преводи"
+
+#~ msgid "Select language to uninstall:"
+#~ msgstr "Избор на език за премахване:"
+
+#~ msgid "Default system language:"
+#~ msgstr "Език на системата, по подразбиране:"
 
 #~ msgid ""
-#~ "Guess a configuration based on the LANGUAGE environment. Sets the config to "
-#~ "'none' if nothing suitable was found"
+#~ "It is impossible to install or remove any software. Please use the package "
+#~ "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+#~ "this issue at first."
 #~ msgstr ""
-#~ "Предположение за настройки, според езиковата среда, посочена от променливата "
-#~ "LANGUAGE. Задаване на настройка \"няма\", ако нищо подходящо не е намерено"
+#~ "Невъзможно е да бъде инсталиран или премахнат какъвто и да е софтуер. Моля, "
+#~ "първо използвайте диспечера на пакети \"Adept\" или изпълнете \"sudo apt-get "
+#~ "install -f\" в команден ред, за да поправите този проблем."
 
-#~ msgid "List the available fontconfig-voodoo configs"
-#~ msgstr "Списък на наличните настройки, тип fontconfig-voodoo"
+#~ msgid "Keyboard input method:"
+#~ msgstr "Начин на въвеждане от клавиатурата:"
 
-#~ msgid "Show the current fontconfig-voodoo config"
-#~ msgstr "Показване на текущата fontconfig-voodoo настройка"
+#, python-format
+#~ msgid "Default system Language now set to %s."
+#~ msgstr "Езикът на системата по подразбиране сега е %s."
 
-#~ msgid "A configuration exists already. Use '--force' to overwrite it. "
+#, python-format
+#~ msgid "Translations and support have now been uninstalled for %s."
+#~ msgstr "Преводи и поддръжка за %s са премахнати сега."
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "Моля, стартирайте този софтуер с администраторски права."
+
+#~ msgid "Language Uninstalled"
+#~ msgstr "Езикът е премахнат"
+
+#~ msgid ""
+#~ "<small>Drag languages to arrange them in order of preference.\n"
+#~ "Changes take effect next time you log in.</small>"
 #~ msgstr ""
-#~ "Вече съществува такава настройка. Използвайте '--force', за да я "
-#~ "препокриете. "
+#~ "<small>Плъзгане на езиците ще ги подреди в желания от Вас ред.\n"
+#~ "Промените ще бъдат приложени при следващото Ви влизане в системата.</small>"
 
-#~ msgid "Remove the current fontconfig-voodoo config"
-#~ msgstr "Премахване на текущата настройка тип fontconfig-voodoo"
+#~ msgid "Components:"
+#~ msgstr "Елементи:"
 
-#~ msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
-#~ msgstr "Никаква fontconfig-voodoo настройка не беше намерена за този език."
+#~ msgid "Input methods"
+#~ msgstr "Входни методи"
+
+#~ msgid "Spellchecking and writing aids"
+#~ msgstr "Проверка на правопис и помощник при писане"
+
+#~ msgid ""
+#~ "The language support files for your selected language seem to be incomplete. "
+#~ "You can install the missing components by clicking on \"Run this action "
+#~ "now\" and follow the instructions. An active internet connection is "
+#~ "required. If you would like to do this at a later time, please use \"System "
+#~ "Settings -> Regional & Language\" instead."
+#~ msgstr ""
+#~ "Файловете за поддръжка на език за Вашия избран език изглежда са непълни. "
+#~ "Можете да инсталирате липсващите елементи като натиснете \"Изпълняване "
+#~ "сега\" и следвате инструкциите. Необходима е интернет връзка. Ако искате да "
+#~ "направите това по-късно, моля използвайте \"Системни настройки -> Регионални "
+#~ "и Езикови\"."
+
+#~ msgid ""
+#~ "If you need to type in languages, which require more complex input methods "
+#~ "than just a simple key to letter mapping, you may want to enable this "
+#~ "function.\n"
+#~ "For example, you will need this function for typing Chinese, Japanese, "
+#~ "Korean or Vietnamese.\n"
+#~ "The recommended value for Ubuntu is \"ibus\".\n"
+#~ "If you want to use alternative input method systems, install the "
+#~ "corresponding packages first and then choose the desired system here."
+#~ msgstr ""
+#~ "Ако е необходимо да пишете на езици, които изискват по-комклексни методи за "
+#~ "въвеждане от простата релация между бутон и буква, Вие може би ще искате да "
+#~ "разрешите тази функция. \n"
+#~ "За пример, ще ви се наложи да използвате тази функция за писане на Китайски, "
+#~ "Японски, Корейски или Виетнамски.\n"
+#~ "Препоръчителната стойност за Убунту е \"ibus\".\n"
+#~ "Ако е необходимо да използвате алтернативни методи за въвеждане, "
+#~ "инсталирайте първо съответните пакети и след това изберете желаната система "
+#~ "тук."
+
+#~ msgid "Component not available"
+#~ msgstr "Компонентът не е наличен"
+
+#~ msgid "Component not installed"
+#~ msgstr "Компонентът не е инсталиран"
+
+#~ msgid "Component already installed"
+#~ msgstr "Компонентът вече е инсталиран"
+
+#, python-format
+#~ msgid ""
+#~ "All selected components have now been installed for %s.  Select them from "
+#~ "Country/Region & Language."
+#~ msgstr ""
+#~ "Всички избрани компоненти са инсталирани за %s.  Изберете ги от "
+#~ "Страна/Област и Език."
+
+#~ msgid "System Languages"
+#~ msgstr "Системни езици"
+
+#~ msgid "Install and set system languages"
+#~ msgstr "Инсталиране и задаване на системните езици"
+
+#~ msgid ""
+#~ "It is impossible to install or remove any software. Please use the package "
+#~ "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
+#~ "this issue at first."
+#~ msgstr ""
+#~ "Невъзможно е да бъде инсталиран или премахнат какъвто и да е софтуер. Моля, "
+#~ "първо използвайте диспечера на пакети \"Muon\" или изпълнете \"sudo apt-get "
+#~ "install -f\" в команден ред, за да поправите този проблем."

@@ -9,90 +9,95 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 22:00+0000\n"
-"PO-Revision-Date: 2012-06-20 06:09+0000\n"
+"POT-Creation-Date: 2013-04-09 14:32+0000\n"
+"PO-Revision-Date: 2012-12-23 19:19+0000\n"
 "Last-Translator: Giorgi Maghlakelidze <acidlabz@gmail.com>\n"
 "Language-Team: Georgian <gnome@inet.ge>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2012-10-09 12:41+0000\n"
-"X-Generator: Launchpad (build 16112)\n"
+"X-Launchpad-Export-Date: 2013-04-17 08:10+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 "Language: ka\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:54
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "ჩინური (გამარტივებული)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:56
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "ჩინური (ტრადიციული)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
 msgstr "არ არის ხელმისაწვდომი ინფორმაცია ენის შესახებ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
-#: ../LanguageSelector/qt/QtLanguageSelector.py:95
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
-#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
 msgstr "_განახლება"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "ენა"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
 msgstr "ჩაყენებული"
 
-#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
 msgstr[0] "%(INSTALL)d ჩაყენებისთვის"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
 msgstr[0] "%(REMOVE)d ამოშლისთვის"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
+#. find out about the other options
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
+msgid "default"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
 msgid "none"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
-#: ../LanguageSelector/qt/QtLanguageSelector.py:78
-#: ../LanguageSelector/qt/QtLanguageSelector.py:336
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "პროგრამების მონაცემთა ბაზა დაზიანებულია"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -102,23 +107,23 @@ msgstr ""
 "გადასაწყვეტად გთხოვთ გამოიყენოთ \"სინაპტიკ\" პროგრამების მენეჯერი ან "
 "ტერმინალიდან \"sudo apt-get install -f\" ბრძანება."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
 msgid "Could not install the selected language support"
 msgstr "შეუძლებელია მონიშნული ენის მხარდაჭერის ჩაყენება"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "შეუძლებელია ენის სრული მხარდაჭერის ჩაყენება"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -126,17 +131,17 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
 msgid "Failed to authorize to install packages."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "ენის მხარდაჭერა არ არის ბოლომდე ჩაყენებული"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
-#: ../LanguageSelector/qt/QtLanguageSelector.py:172
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -144,23 +149,23 @@ msgstr ""
 "შერჩეული ენებისთვის რამოდენიმე თარგმანი ან შეყვანის დამხმარეები ჯერ არ არის "
 "ჩაყენებული. გსურთ მათი მყისვე ჩაყენება?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
-#: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
 msgstr "შემახსენე _მოგვიანებით"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
-#: ../LanguageSelector/qt/QtLanguageSelector.py:166
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "_ჩაყენება"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "ცნობები"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -168,132 +173,9 @@ msgid ""
 "close and re-open Language Support."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:79
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
-msgid "Set System Language"
-msgstr "სისტემური ენის მითითება"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Default system language:"
-msgstr "<b>სისტემის ნაგულისხმევი ენა</b>"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-msgid "Keyboard input method:"
-msgstr "კლავიატურიდან შეყვანის გზა:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:126
-msgid "Select language to install:"
-msgstr "ჩასადგმელი ენის ამორჩევა:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:127
-msgid "Select language to uninstall:"
-msgstr "ამოსაშლელი ენის ამორჩევა:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:128
-msgid "Translations"
-msgstr "თარგმანები"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:129
-msgid "Input methods"
-msgstr "შეყვანის გზები"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:130
-msgid "Spellchecking and writing aids"
-msgstr "მართლწერა და შეყვანის დამხმარეები"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:131
-msgid "Extra fonts"
-msgstr "დამატებითი შრიფტები"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:132
-msgid "Components:"
-msgstr "შემადგენლობა:"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:210
-msgid "Already installed"
-msgstr "უკვე ინსტალირებული"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
-msgid "Partially Installed"
-msgstr "არასრულად ინსტალირებული"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:216
-msgid "Not installed"
-msgstr "არ არის ინსტალირებული"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
-msgid "Component already installed"
-msgstr "მდგენელი უკვე ჩაყენებულია"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
-msgid "Component not available"
-msgstr "მდგენელი მიუწვდომელია"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
-msgid "Component not installed"
-msgstr "მდგენელი ჩაყენებული არ არის"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-#, python-format
-msgid "Default system Language now set to %s."
-msgstr "სისტემის ძირითადი ენა %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-msgid "Language Set"
-msgstr "ენა"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:337
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-#, python-format
-msgid ""
-"All selected components have now been installed for %s.  Select them from "
-"Country/Region & Language."
-msgstr ""
-"ყველა მდგენელი ჩაყენებულია %s-სთვის.  აირჩიეთ ისინი მენიუდან ქვეყანა/რეგიონი "
-"და ენა."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-msgid "Language Installed"
-msgstr "ინსტალირებული ენა"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-#, python-format
-msgid "Translations and support have now been uninstalled for %s."
-msgstr "მოშორებულია თარგმანი და ენის მხარდაჭერა ენისთვის:  %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-msgid "Language Uninstalled"
-msgstr "ენა მოშორებულია"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Failed to set system language."
-msgstr "შეუძლებელია სისტემული ენის მითითება."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Language Not Set"
-msgstr "ენა არ არის მითითებული"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Please run this software with administrative rights."
-msgstr "გთხვოთ გაუშვათ ეს პროგრამა ადმინისტრატორის უფლებებით"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Not Root User"
-msgstr "ადმინისტრაციული უფლებები არ გაგაჩნიათ"
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "ენის მხარდაჭერა"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid ""
@@ -323,10 +205,6 @@ msgstr "შეწყვეტა"
 msgid "Apply Changes"
 msgstr "ცვლილების მიღება"
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
-msgid "Language Support"
-msgstr "ენის მხარდაჭერა"
-
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
 msgstr "ენა მენიუებსა და ფანჯრებისთვის:"
@@ -345,7 +223,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
+"<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
 
@@ -374,7 +252,7 @@ msgid ""
 "function.\n"
 "For example, you will need this function for typing Chinese, Japanese, "
 "Korean or Vietnamese.\n"
-"The recommended value for Ubuntu is \"ibus\".\n"
+"The recommended value for Ubuntu is \"IBus\".\n"
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
@@ -426,14 +304,6 @@ msgstr "რეგიონული ფორმატები"
 msgid "Configure multiple and native language support on your system"
 msgstr "თქვენს სისტემაში ძირითადი და სხვა ენების მხარდაჭერის კონფიგურაცია"
 
-#: ../data/kde-language-selector.desktop.in.h:1
-msgid "System Languages"
-msgstr "სისტემური ენები"
-
-#: ../data/kde-language-selector.desktop.in.h:2
-msgid "Install and set system languages"
-msgstr "სისტემის ენების არჩევა და ჩაყენება"
-
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 #: ../data/incomplete-language-support-kde.note.in:5
@@ -449,16 +319,6 @@ msgid ""
 "required. If you would like to do this at a later time, please use Language "
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
-msgstr ""
-
-#. Description
-#: ../data/incomplete-language-support-kde.note.in:6
-msgid ""
-"The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
 msgstr ""
 
 #. Name
@@ -484,60 +344,113 @@ msgstr ""
 msgid "don't verify installed language support"
 msgstr "ენის მხარდაჭერის სისრულის შემოწმება საჭირო არ არის"
 
-#: ../gnome-language-selector:20 ../check-language-support:27
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "ალტერნატიული datadir"
 
-#: ../check-language-support:24
+#: ../check-language-support:22
 msgid "target language code"
 msgstr "სასურველი ენის კოდი"
 
-#: ../check-language-support:28
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 
-#: ../check-language-support:30
+#: ../check-language-support:28
 msgid "output all available language support packages for all languages"
 msgstr ""
 
-#: ../check-language-support:33
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr ""
 
-#~ msgid "Aborting"
-#~ msgstr "შეწყვეტა"
+#~ msgid "Language Not Set"
+#~ msgstr "ენა არ არის მითითებული"
 
-#~ msgid "Unconfigured"
-#~ msgstr "არ არის კონფიგურირებული"
+#~ msgid "Default system language:"
+#~ msgstr "<b>სისტემის ნაგულისხმევი ენა</b>"
 
-#~ msgid "Force even when a configuration exists"
-#~ msgstr "ძალდატანება ცონფიგურაციის არსებობის მიუხედავად"
+#, python-format
+#~ msgid "Translations and support have now been uninstalled for %s."
+#~ msgstr "მოშორებულია თარგმანი და ენის მხარდაჭერა ენისთვის:  %s."
 
-#~ msgid "Set fontconfig voodoo for the selected language"
-#~ msgstr "მოცემული ენისთვის fontconfig voodoo-ს დაყენება"
+#~ msgid "Set System Language"
+#~ msgstr "სისტემური ენის მითითება"
 
-#~ msgid "Show the current fontconfig-voodoo config"
-#~ msgstr "მოცემული fontconfig-voodoo პარამეტრის ჩვენება"
+#, python-format
+#~ msgid "Default system Language now set to %s."
+#~ msgstr "სისტემის ძირითადი ენა %s."
 
-#~ msgid "List the available fontconfig-voodoo configs"
-#~ msgstr "არსებული fontconfig-voodoo-ს პარამეტრების სიის ჩვენება"
+#~ msgid "Not installed"
+#~ msgstr "არ არის ინსტალირებული"
 
-#~ msgid "No fontconfig-voodoo configuration found for the selected locale"
-#~ msgstr "არავითარი fontconfig-voodoo კონფიგურაცია ამორჩეული ლოკალისთვის"
+#~ msgid "Already installed"
+#~ msgstr "უკვე ინსტალირებული"
 
+#~ msgid "Failed to set system language."
+#~ msgstr "შეუძლებელია სისტემული ენის მითითება."
+
+#~ msgid "Language Installed"
+#~ msgstr "ინსტალირებული ენა"
+
+#~ msgid "Language Set"
+#~ msgstr "ენა"
+
+#~ msgid "Language Uninstalled"
+#~ msgstr "ენა მოშორებულია"
+
+#~ msgid "Partially Installed"
+#~ msgstr "არასრულად ინსტალირებული"
+
+#~ msgid "Select language to install:"
+#~ msgstr "ჩასადგმელი ენის ამორჩევა:"
+
+#~ msgid "Select language to uninstall:"
+#~ msgstr "ამოსაშლელი ენის ამორჩევა:"
+
+#~ msgid "Input methods"
+#~ msgstr "შეყვანის გზები"
+
+#~ msgid "Spellchecking and writing aids"
+#~ msgstr "მართლწერა და შეყვანის დამხმარეები"
+
+#~ msgid "Extra fonts"
+#~ msgstr "დამატებითი შრიფტები"
+
+#~ msgid "Translations"
+#~ msgstr "თარგმანები"
+
+#~ msgid "Keyboard input method:"
+#~ msgstr "კლავიატურიდან შეყვანის გზა:"
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "გთხვოთ გაუშვათ ეს პროგრამა ადმინისტრატორის უფლებებით"
+
+#~ msgid "Not Root User"
+#~ msgstr "ადმინისტრაციული უფლებები არ გაგაჩნიათ"
+
+#~ msgid "Component not available"
+#~ msgstr "მდგენელი მიუწვდომელია"
+
+#~ msgid "Component not installed"
+#~ msgstr "მდგენელი ჩაყენებული არ არის"
+
+#~ msgid "Component already installed"
+#~ msgstr "მდგენელი უკვე ჩაყენებულია"
+
+#, python-format
 #~ msgid ""
-#~ "Guess a configuration based on the LANGUAGE environment. Sets the config to "
-#~ "'none' if nothing suitable was found"
+#~ "All selected components have now been installed for %s.  Select them from "
+#~ "Country/Region & Language."
 #~ msgstr ""
-#~ "ირჩევს კონფიგურაციას LANGUAGE გარემოს მიხედვით. თუ ვერ მოიძებნა აბრუნებს "
-#~ "ლოგიკურ 'none'-ს"
+#~ "ყველა მდგენელი ჩაყენებულია %s-სთვის.  აირჩიეთ ისინი მენიუდან ქვეყანა/რეგიონი "
+#~ "და ენა."
 
-#~ msgid "A configuration exists already. Use '--force' to overwrite it. "
-#~ msgstr ""
-#~ "კონფიგურაცია უკვე არსებობს. გამოიყენეთ '--force' ზემოდან გადაწერისთვის. "
+#~ msgid "Components:"
+#~ msgstr "შემადგენლობა:"
 
-#~ msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
-#~ msgstr "მიმდინარე ენისთვის fontconfig-voodoo კონფიგურაცია არ მოიძებნა"
+#~ msgid "System Languages"
+#~ msgstr "სისტემური ენები"
 
-#~ msgid "Remove the current fontconfig-voodoo config"
-#~ msgstr "მიმდინარე fontconfig-voodoo კონფიგურაციის წაშლა"
+#~ msgid "Install and set system languages"
+#~ msgstr "სისტემის ენების არჩევა და ჩაყენება"

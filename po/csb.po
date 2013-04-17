@@ -7,37 +7,37 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 22:00+0000\n"
-"PO-Revision-Date: 2012-06-20 06:13+0000\n"
-"Last-Translator: Yurek Hinz <yurekh@yahoo.com>\n"
+"POT-Creation-Date: 2013-04-09 14:32+0000\n"
+"PO-Revision-Date: 2012-12-23 19:18+0000\n"
+"Last-Translator: Mark Kwidzińsczi <Unknown>\n"
 "Language-Team: Kashubian <csb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2012-10-09 12:41+0000\n"
-"X-Generator: Launchpad (build 16112)\n"
+"X-Launchpad-Export-Date: 2013-04-17 08:10+0000\n"
+"X-Generator: Launchpad (build 16567)\n"
 "Language: csb\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:54
+#: ../LanguageSelector/LocaleInfo.py:50
 msgid "Chinese (simplified)"
 msgstr "chińsczi (prosti)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:56
+#: ../LanguageSelector/LocaleInfo.py:52
 msgid "Chinese (traditional)"
 msgstr "chińsczi (tradicjowi)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
-#: ../LanguageSelector/qt/QtLanguageSelector.py:94
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
+#: ../LanguageSelector/qt/QtLanguageSelector.py:85
 msgid "No language information available"
 msgstr "Felëje wëdowiédza ò jãzëkù"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:232
-#: ../LanguageSelector/qt/QtLanguageSelector.py:95
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
+#: ../LanguageSelector/qt/QtLanguageSelector.py:86
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -45,24 +45,24 @@ msgstr ""
 "Systema ni zamëkô jesz w se wëdowiédzë ò przistãpnëch jãzëkach. Zrëszëc "
 "sécową aktualizacëjã, abë jã dobëc? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:236
-#: ../LanguageSelector/qt/QtLanguageSelector.py:89
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
+#: ../LanguageSelector/qt/QtLanguageSelector.py:80
 msgid "_Update"
 msgstr "Zakt_ualni"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:320
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:357
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Jãzëk"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:327
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
 msgid "Installed"
 msgstr "Winstalowóny"
 
-#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
+#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:395
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -71,7 +71,7 @@ msgstr[1] "%(INSTALL)d do winstalowaniô"
 msgstr[2] "%(INSTALL)d do winstalowaniô"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:397
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -80,24 +80,29 @@ msgstr[1] "%(REMOVE)d do rëmniãcô"
 msgstr[2] "%(REMOVE)d do rëmniãcô"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:406
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:468
+#. find out about the other options
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
+msgid "default"
+msgstr ""
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
 msgid "none"
 msgstr "felënk"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:518
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:722
-#: ../LanguageSelector/qt/QtLanguageSelector.py:78
-#: ../LanguageSelector/qt/QtLanguageSelector.py:336
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
+#: ../LanguageSelector/qt/QtLanguageSelector.py:69
+#: ../LanguageSelector/qt/QtLanguageSelector.py:328
 msgid "Software database is broken"
 msgstr "Załamónô baza paczetów"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:519
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:723
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -107,11 +112,11 @@ msgstr ""
 "menadżera paczétów  \"Synaptic\" abò wpisac w terminalu pòlét  \"sudo apt-"
 "get install -f\" bë naprawic nen problem."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:560
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
 msgid "Could not install the selected language support"
 msgstr "Nie dało sã winstalowac òbsłëdżi wëbrónëgò jãzëka"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:561
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -119,13 +124,13 @@ msgstr ""
 "Mòżlëwé, że je to fela ti programë. Proszã wësłac rapòrt ò felë ze starnë "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:585
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:620
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:624
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
 msgid "Could not install the full language support"
 msgstr "Nie dało sã winstalowac fùl òbsłëdżi jãzëków"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:586
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -133,17 +138,17 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:621
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
 msgid "Failed to authorize to install packages."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:679
-#: ../LanguageSelector/qt/QtLanguageSelector.py:171
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
+#: ../LanguageSelector/qt/QtLanguageSelector.py:162
 msgid "The language support is not installed completely"
 msgstr "Òbsłużënk przistãpnych jãzëków nie òsta całowno winstalowónô"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:680
-#: ../LanguageSelector/qt/QtLanguageSelector.py:172
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/qt/QtLanguageSelector.py:163
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -151,23 +156,23 @@ msgstr ""
 "Ni wszëtczé dolmaczënczi ë pòmòcné dodôwczi  dlô twòjegò jãzëka są terô "
 "winstalowóné. Chcesz je terô doinstalowac?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:683
-#: ../LanguageSelector/qt/QtLanguageSelector.py:90
-#: ../LanguageSelector/qt/QtLanguageSelector.py:167
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
+#: ../LanguageSelector/qt/QtLanguageSelector.py:81
+#: ../LanguageSelector/qt/QtLanguageSelector.py:158
 msgid "_Remind Me Later"
 msgstr "_Przëbôczë pòzdze"
 
 #. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:684
-#: ../LanguageSelector/qt/QtLanguageSelector.py:166
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
+#: ../LanguageSelector/qt/QtLanguageSelector.py:157
 msgid "_Install"
 msgstr "_Instalëjë"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:687
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
 msgid "Details"
 msgstr "Detale"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:947
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -175,138 +180,9 @@ msgid ""
 "close and re-open Language Support."
 msgstr ""
 
-#: ../LanguageSelector/qt/QtLanguageSelector.py:79
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"Instalacëjô ë rëmanié softwôrë nie je mòżlëwé. Proszã ùżëc menadżera "
-"paczétów \"Muon\" abò wpisac w terminalu pòlét  \"sudo apt-get install -f\" "
-"bë naprawic nen problem."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:123
-msgid "Set System Language"
-msgstr "Nastôwi jãzëk systemë"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:124
-msgid "Default system language:"
-msgstr "Domëszlny jãzëk"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:125
-msgid "Keyboard input method:"
-msgstr "Metoda wprowôdzniô znaków z klawiaturë"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:126
-msgid "Select language to install:"
-msgstr "Wëbierzë jãzëk do instalacëji:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:127
-msgid "Select language to uninstall:"
-msgstr "Proszã nacéchòwac jãzëk do winstalowaniô:"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:128
-msgid "Translations"
-msgstr "Dolmaczënczi"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:129
-msgid "Input methods"
-msgstr "Metodë wprowôdzania"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:130
-msgid "Spellchecking and writing aids"
-msgstr "Sprôwdzanié pisënkù ë programë wspiérającé wprowôdzanié"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:131
-msgid "Extra fonts"
-msgstr "Dodôwné fòntë"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:132
-msgid "Components:"
-msgstr "Kòmpònentë:"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:210
-msgid "Already installed"
-msgstr "Ju winstalowóné"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:213
-msgid "Partially Installed"
-msgstr "Dzélowò winstalowóny"
-
-#. not sure how to unset all flags, but this disables the item
-#: ../LanguageSelector/qt/QtLanguageSelector.py:216
-msgid "Not installed"
-msgstr "Niewinstalowóny"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:251
-msgid "Component already installed"
-msgstr "Kòmpònent je ju winstalowóny"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:253
-msgid "Component not available"
-msgstr "Kòmpònent nie je przistãpny"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:255
-msgid "Component not installed"
-msgstr "Kòmpònent nie je winstalowóny"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-#, python-format
-msgid "Default system Language now set to %s."
-msgstr "Domëslny jãzëk systemë: %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:296
-msgid "Language Set"
-msgstr "Zestôwk jãzëka"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:337
-msgid ""
-"It is impossible to install or remove any software. Please use the package "
-"manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-"this issue at first."
-msgstr ""
-"Instalacëjô ë rëmanié softwôrë nie je mòżlëwé. Proszã ùżëc menadżera "
-"paczétów \"Adept\" abò wpisac w terminalu pòlét  \"sudo apt-get install -f\" "
-"bë naprawic nen problem."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-#, python-format
-msgid ""
-"All selected components have now been installed for %s.  Select them from "
-"Country/Region & Language."
-msgstr ""
-"Wszëtczé zaznaczoné kómpònentë dlô %s òstałë wjinstalowóné. Mòże je wëbrac z "
-"lëstë Krajów/Regionów ë jãzëków."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:362
-msgid "Language Installed"
-msgstr "Jãzëk winstalowóny"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-#, python-format
-msgid "Translations and support have now been uninstalled for %s."
-msgstr "Dolmaczënczi ë wspiarcé òstałé òdinstalowóné dlô %s."
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:364
-msgid "Language Uninstalled"
-msgstr "Jãzëk òdinstalowóny"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Failed to set system language."
-msgstr "Nastôw jãzëka systemë nie darzëł sã"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:372
-msgid "Language Not Set"
-msgstr "Niénastôwiony jãzëk"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Please run this software with administrative rights."
-msgstr "Proszã zrëszëc nã programã z prawama sprôwnika"
-
-#: ../LanguageSelector/qt/QtLanguageSelector.py:441
-msgid "Not Root User"
-msgstr "Brëkòwnik nie je sprôwnikã (root)"
+#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+msgid "Language Support"
+msgstr "Jãzëczi"
 
 #: ../data/LanguageSelector.ui.h:1
 msgid ""
@@ -340,10 +216,6 @@ msgstr "Òprzestóń"
 msgid "Apply Changes"
 msgstr "Zacwierdzë zmianë"
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
-msgid "Language Support"
-msgstr "Jãzëczi"
-
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
 msgstr "Jãzëk dlô menu ë òczén:"
@@ -369,11 +241,9 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
-"<small>Drag languages to arrange them in order of preference.\n"
+"<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
-"<small>Jãzëczi mòże przecygac, abë ùstôwic je w pòsobnicë òd nôwôżniészegò.\n"
-"Zmianë bãdą zacwierdzoné pò nôslédnym wlogòwaniu.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -400,17 +270,10 @@ msgid ""
 "function.\n"
 "For example, you will need this function for typing Chinese, Japanese, "
 "Korean or Vietnamese.\n"
-"The recommended value for Ubuntu is \"ibus\".\n"
+"The recommended value for Ubuntu is \"IBus\".\n"
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
-"Żle chcész pisac w jãzëkach chterné brëkùją barżi złożonych metodów niżle są "
-"dostãpni z klawiatùrë, nót je włączëc nã fùnkcëjã.\n"
-"Np., na fùnkcja je brëkòwônô dlô pisaniégò w chńsczim, japońsczim, "
-"koreańsczim czë wietnamisczim jązëkù.\n"
-"Domëszlnô wartnota dlô Ùbuntu je \"ibus\".\n"
-"Dlô ùzëcô jinszich metodów interakcëji z kòmpùtrã, nót je wprzód "
-"zainstalowac brëkòwóné softwôrë a pózdni wëbrac nen system na tim placù."
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -465,14 +328,6 @@ msgstr "Òbéńdowé nastôwë"
 msgid "Configure multiple and native language support on your system"
 msgstr "Kònfigùracëjô wielojãzëkòwégò wspiarcô w systemie"
 
-#: ../data/kde-language-selector.desktop.in.h:1
-msgid "System Languages"
-msgstr "Jãzëczi systemë"
-
-#: ../data/kde-language-selector.desktop.in.h:2
-msgid "Install and set system languages"
-msgstr "Instalacëjô ë nastôwë jãzëków systemë"
-
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 #: ../data/incomplete-language-support-kde.note.in:5
@@ -489,20 +344,6 @@ msgid ""
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
 msgstr ""
-
-#. Description
-#: ../data/incomplete-language-support-kde.note.in:6
-msgid ""
-"The language support files for your selected language seem to be incomplete. "
-"You can install the missing components by clicking on \"Run this action "
-"now\" and follow the instructions. An active internet connection is "
-"required. If you would like to do this at a later time, please use \"System "
-"Settings -> Regional & Language\" instead."
-msgstr ""
-"Wëbróné wspiarcé dlô jãzëka wëzdrzi na niefùlwôrtné. Mòże winstalowac felącé "
-"kòmpònentë klëkając na \"Zrëszë no dzejanié terô\" ë jisc dali za "
-"intrukcëją. je nót aktiwnegò sparłãczenia z internetã. Mòże to zrobic téż "
-"pòzdze, proszã brëkòwac do tegò \"Systemòwi nastôw -> Òbéńda ë jãzëk\"."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -526,62 +367,169 @@ msgstr ""
 msgid "don't verify installed language support"
 msgstr "bez sprôwdzaniô winstalowónegò wspiarca dlô jãzëków"
 
-#: ../gnome-language-selector:20 ../check-language-support:27
+#: ../gnome-language-selector:20 ../check-language-support:25
 msgid "alternative datadir"
 msgstr "alternatiwny katalog pòdôwków"
 
-#: ../check-language-support:24
+#: ../check-language-support:22
 msgid "target language code"
 msgstr "Docélowi kòd jãzëka"
 
-#: ../check-language-support:28
+#: ../check-language-support:26
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "sprôwdzë blós dóné paczétë -- rozparłãczë miona paczétów rozczidnikama"
 
-#: ../check-language-support:30
+#: ../check-language-support:28
 msgid "output all available language support packages for all languages"
 msgstr ""
 
-#: ../check-language-support:33
+#: ../check-language-support:31
 msgid "show installed packages as well as missing ones"
 msgstr "wëskrzëni winstalowóné ë felëjącé paczétë"
 
-#~ msgid "Aborting"
-#~ msgstr "Òprzestóń"
+#~ msgid "Default system language:"
+#~ msgstr "Domëszlny jãzëk"
 
-#~ msgid "Unconfigured"
-#~ msgstr "Niéskònfigùrowóné"
+#~ msgid "Set System Language"
+#~ msgstr "Nastôwi jãzëk systemë"
 
-#~ msgid "Force even when a configuration exists"
-#~ msgstr "Wëmùszë nawetka jak kòfigùracëjã ju dô"
+#~ msgid "Language Installed"
+#~ msgstr "Jãzëk winstalowóny"
 
-#~ msgid "No fontconfig-voodoo configuration found for the selected locale"
-#~ msgstr ""
-#~ "Felëje kònfigùracëji fontconfig-voodoo dlô wëbrónych òbéńdowich nastôwów."
+#~ msgid "Language Uninstalled"
+#~ msgstr "Jãzëk òdinstalowóny"
 
-#~ msgid "A configuration exists already. Use '--force' to overwrite it. "
-#~ msgstr "Kònfigùracëjã ju je. Brëkùjë  \"--force\", abë nadpisac. "
+#~ msgid "Select language to install:"
+#~ msgstr "Wëbierzë jãzëk do instalacëji:"
+
+#~ msgid "Select language to uninstall:"
+#~ msgstr "Proszã nacéchòwac jãzëk do winstalowaniô:"
+
+#~ msgid "Keyboard input method:"
+#~ msgstr "Metoda wprowôdzniô znaków z klawiaturë"
+
+#~ msgid "Partially Installed"
+#~ msgstr "Dzélowò winstalowóny"
+
+#~ msgid "Language Set"
+#~ msgstr "Zestôwk jãzëka"
+
+#~ msgid "Already installed"
+#~ msgstr "Ju winstalowóné"
+
+#~ msgid "Please run this software with administrative rights."
+#~ msgstr "Proszã zrëszëc nã programã z prawama sprôwnika"
+
+#~ msgid "Failed to set system language."
+#~ msgstr "Nastôw jãzëka systemë nie darzëł sã"
+
+#~ msgid "Not Root User"
+#~ msgstr "Brëkòwnik nie je sprôwnikã (root)"
+
+#~ msgid "Language Not Set"
+#~ msgstr "Niénastôwiony jãzëk"
+
+#~ msgid "Extra fonts"
+#~ msgstr "Dodôwné fòntë"
+
+#~ msgid "Components:"
+#~ msgstr "Kòmpònentë:"
+
+#~ msgid "Input methods"
+#~ msgstr "Metodë wprowôdzania"
+
+#~ msgid "Spellchecking and writing aids"
+#~ msgstr "Sprôwdzanié pisënkù ë programë wspiérającé wprowôdzanié"
+
+#~ msgid "Translations"
+#~ msgstr "Dolmaczënczi"
+
+#, python-format
+#~ msgid "Translations and support have now been uninstalled for %s."
+#~ msgstr "Dolmaczënczi ë wspiarcé òstałé òdinstalowóné dlô %s."
 
 #~ msgid ""
-#~ "Guess a configuration based on the LANGUAGE environment. Sets the config to "
-#~ "'none' if nothing suitable was found"
+#~ "It is impossible to install or remove any software. Please use the package "
+#~ "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
+#~ "this issue at first."
 #~ msgstr ""
-#~ "Dobëjë kònfigùracëjã bazëjąc na zmienny òkrãżô LANGUAGE. Nastôwi "
-#~ "kònfigùracëjã na \"none\" jak nick pasownégò ni òstało nalazłé."
+#~ "Instalacëjô ë rëmanié softwôrë nie je mòżlëwé. Proszã ùżëc menadżera "
+#~ "paczétów \"Adept\" abò wpisac w terminalu pòlét  \"sudo apt-get install -f\" "
+#~ "bë naprawic nen problem."
 
-#~ msgid "Set fontconfig voodoo for the selected language"
-#~ msgstr "Nastôwi kònfigùracëjã fontconfig dlô wëbrónegò jãzëka"
-
-#~ msgid "Remove the current fontconfig-voodoo config"
-#~ msgstr "Rëmôj biéżną kònfigùracëjã fontconfig-voodoo"
-
-#~ msgid "List the available fontconfig-voodoo configs"
-#~ msgstr "Wëskrzëni przëstãpné kònfigùracëje fontconfig-voodoo"
-
-#~ msgid "Show the current fontconfig-voodoo config"
-#~ msgstr "Wëskrzëni biéżną kònfigùracëjã fontconfig-voodoo"
-
-#~ msgid "No fontconfig-voodoo configuration found for the current LANGUAGE"
+#~ msgid ""
+#~ "<small>Drag languages to arrange them in order of preference.\n"
+#~ "Changes take effect next time you log in.</small>"
 #~ msgstr ""
-#~ "Fontconfig-voodoo nie nalôzł pòprôwny kònfigùracëji dlô aktualnegò jãzëka."
+#~ "<small>Jãzëczi mòże przecygac, abë ùstôwic je w pòsobnicë òd nôwôżniészegò.\n"
+#~ "Zmianë bãdą zacwierdzoné pò nôslédnym wlogòwaniu.</small>"
+
+#~ msgid ""
+#~ "The language support files for your selected language seem to be incomplete. "
+#~ "You can install the missing components by clicking on \"Run this action "
+#~ "now\" and follow the instructions. An active internet connection is "
+#~ "required. If you would like to do this at a later time, please use \"System "
+#~ "Settings -> Regional & Language\" instead."
+#~ msgstr ""
+#~ "Wëbróné wspiarcé dlô jãzëka wëzdrzi na niefùlwôrtné. Mòże winstalowac felącé "
+#~ "kòmpònentë klëkając na \"Zrëszë no dzejanié terô\" ë jisc dali za "
+#~ "intrukcëją. je nót aktiwnegò sparłãczenia z internetã. Mòże to zrobic téż "
+#~ "pòzdze, proszã brëkòwac do tegò \"Systemòwi nastôw -> Òbéńda ë jãzëk\"."
+
+#~ msgid "Not installed"
+#~ msgstr "Niewinstalowóny"
+
+#, python-format
+#~ msgid "Default system Language now set to %s."
+#~ msgstr "Domëslny jãzëk systemë: %s."
+
+#~ msgid "Component not available"
+#~ msgstr "Kòmpònent nie je przistãpny"
+
+#~ msgid "Component not installed"
+#~ msgstr "Kòmpònent nie je winstalowóny"
+
+#~ msgid "Component already installed"
+#~ msgstr "Kòmpònent je ju winstalowóny"
+
+#~ msgid "System Languages"
+#~ msgstr "Jãzëczi systemë"
+
+#~ msgid "Install and set system languages"
+#~ msgstr "Instalacëjô ë nastôwë jãzëków systemë"
+
+#, python-format
+#~ msgid ""
+#~ "All selected components have now been installed for %s.  Select them from "
+#~ "Country/Region & Language."
+#~ msgstr ""
+#~ "Wszëtczé zaznaczoné kómpònentë dlô %s òstałë wjinstalowóné. Mòże je wëbrac z "
+#~ "lëstë Krajów/Regionów ë jãzëków."
+
+#~ msgid ""
+#~ "If you need to type in languages, which require more complex input methods "
+#~ "than just a simple key to letter mapping, you may want to enable this "
+#~ "function.\n"
+#~ "For example, you will need this function for typing Chinese, Japanese, "
+#~ "Korean or Vietnamese.\n"
+#~ "The recommended value for Ubuntu is \"ibus\".\n"
+#~ "If you want to use alternative input method systems, install the "
+#~ "corresponding packages first and then choose the desired system here."
+#~ msgstr ""
+#~ "Żle chcész pisac w jãzëkach chterné brëkùją barżi złożonych metodów niżle są "
+#~ "dostãpni z klawiatùrë, nót je włączëc nã fùnkcëjã.\n"
+#~ "Np., na fùnkcja je brëkòwônô dlô pisaniégò w chńsczim, japońsczim, "
+#~ "koreańsczim czë wietnamisczim jązëkù.\n"
+#~ "Domëszlnô wartnota dlô Ùbuntu je \"ibus\".\n"
+#~ "Dlô ùzëcô jinszich metodów interakcëji z kòmpùtrã, nót je wprzód "
+#~ "zainstalowac brëkòwóné softwôrë a pózdni wëbrac nen system na tim placù."
+
+#~ msgid ""
+#~ "It is impossible to install or remove any software. Please use the package "
+#~ "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
+#~ "this issue at first."
+#~ msgstr ""
+#~ "Instalacëjô ë rëmanié softwôrë nie je mòżlëwé. Proszã ùżëc menadżera "
+#~ "paczétów \"Muon\" abò wpisac w terminalu pòlét  \"sudo apt-get install -f\" "
+#~ "bë naprawic nen problem."
