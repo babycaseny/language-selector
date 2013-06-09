@@ -2,6 +2,7 @@ language-selector (0.111) UNRELEASED; urgency=low
 
   * data/pkg_depends:
     - Replace ttf-thai-tlwg with fonts-thai-tlwg.
+    - Replace ttf-arphic-ukai with fonts-arphic-ukai.
 
  -- Colin Watson <cjwatson@ubuntu.com>  Sun, 09 Jun 2013 23:51:18 +0100
 

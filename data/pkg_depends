@@ -175,10 +175,10 @@ fn:ur::fonts-sil-scheherazade
 fn:yi::fonts-sil-ezra
 fn:zh-hans::ttf-wqy-zenhei
 fn:zh-hans::fonts-arphic-uming
-fn:zh-hans::ttf-arphic-ukai
+fn:zh-hans::fonts-arphic-ukai
 fn:zh-hant::ttf-wqy-zenhei
 fn:zh-hant::fonts-arphic-uming
-fn:zh-hant::ttf-arphic-ukai
+fn:zh-hant::fonts-arphic-ukai
 
 # GhostScript CJK resources
 fn:ja:gs-cjk-resource:poppler-data
