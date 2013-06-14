@@ -1,3 +1,16 @@
+language-selector (0.112) saucy; urgency=low
+
+  * debian/language-selector-common.links:
+    Missing symlinks added.
+  * fontconfig/99-language-selector-zh.conf:
+    Get rid of fontconfig warnings (LP: #1189152).
+  * fontconfig/none:
+    Removed.
+  * fontconfig/README:
+    Cleanup.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sat, 15 Jun 2013 00:20:00 +0200
+
 language-selector (0.111) saucy; urgency=low
 
   * data/pkg_depends:
