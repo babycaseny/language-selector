@@ -1,3 +1,10 @@
+language-selector (0.113) saucy; urgency=low
+
+  * fontconfig/30-cjk-aliases.conf:
+    Stop fontconfig warnings (LP: #1191450).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Sun, 16 Jun 2013 07:41:00 +0200
+
 language-selector (0.112) saucy; urgency=low
 
   * debian/language-selector-common.links:
