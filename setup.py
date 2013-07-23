@@ -28,9 +28,6 @@ setup(name='language-selector',
                    ["dbus_backend/com.ubuntu.LanguageSelector.conf"]),
                   ('lib/language-selector/',
                    ["dbus_backend/ls-dbus-backend"]),
-                  # help
-                  ('share/gnome/help/language-selector/C',
-                   ['help/C/language-selector.xml']),
                   # pretty pictures
                   ('share/pixmaps',
                    ["data/language-selector.png"]),
