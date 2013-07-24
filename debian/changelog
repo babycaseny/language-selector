@@ -1,4 +1,4 @@
-language-selector (0.114) UNRELEASED; urgency=low
+language-selector (0.114) saucy; urgency=low
 
   * Update for python-distutils-extra changes to help handling
 
