@@ -9,36 +9,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta(langsel)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 14:32+0000\n"
-"PO-Revision-Date: 2012-12-23 19:18+0000\n"
-"Last-Translator: அருண் குமார் <admin@mugil.co.cc>\n"
+"POT-Creation-Date: 2013-09-18 18:10+0000\n"
+"PO-Revision-Date: 2013-09-29 18:54+0000\n"
+"Last-Translator: Thangamani Arun - தங்கமணி அருண் <thangam.arunx@gmail.com>\n"
 "Language-Team: tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-04-17 08:09+0000\n"
-"X-Generator: Launchpad (build 16567)\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
 "Language: \n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (simplified)"
 msgstr "சீனம் (எளியது)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:58
 msgid "Chinese (traditional)"
 msgstr "சீன (பாரம்பரியம்)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
 msgid "No language information available"
 msgstr "மொழி குறித்த எந்த தகவலும் இல்லை"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -46,24 +44,23 @@ msgstr ""
 "தேவையான மொழிகள் பற்றிய விவரம் இன்னும் இந்த கணினியில் இடம்பெறவில்லை. அவற்றை "
 "பெற வலையில் புதுப்பிக்கலாமா? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
 msgid "_Update"
 msgstr "_U மேம்படுத்துக"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:317
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:354
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "மொழி"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
 msgid "Installed"
 msgstr "நிறுவப்பட்டது"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -71,7 +68,7 @@ msgstr[0] "%(INSTALL)d ஐ நிறுவ"
 msgstr[1] "%(INSTALL)d ஐ நிறுவ"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -79,7 +76,7 @@ msgstr[0] "%(REMOVE)d ஐ  நீக்க"
 msgstr[1] "%(REMOVE)d ஐ நீக்க"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:403
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
@@ -87,21 +84,19 @@ msgstr "%s, %s"
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "default"
-msgstr ""
+msgstr "முன்னிருப்பு"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "ஒன்றுமில்லை"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
 msgid "Software database is broken"
 msgstr "மென்பொருள் தரவுத் தொட்டி உடைந்துவிட்டது"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -111,11 +106,11 @@ msgstr ""
 "தயை செய்து சைனாப்டிக் (\"Synaptic\" ) உபயோகிக்கவும் அல்லது முனையத்தில் "
 "\"sudo apt-get install -f\" ஐ இயக்கவும்."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid "Could not install the selected language support"
 msgstr "தேர்ந்தெடுத்த மொழி ஆதரவை நிறுவ இயலவில்லை."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -124,13 +119,13 @@ msgstr ""
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug க்கு "
 "செல்லவும்."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "முழு மொழி ஆதரவை நிறுவ இயலவில்லை."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -138,17 +133,15 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
 msgid "Failed to authorize to install packages."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
 msgid "The language support is not installed completely"
 msgstr "மொழி ஆதரவு முழுமையாக நிறுவப் படவில்லை."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -156,23 +149,19 @@ msgstr ""
 "நீங்கள் தேர்ந்தெடுத்த மொழிக்கு, சில மொழிபெயர்ப்புகளோ எழுத்தாக்க உபகரணங்களோ "
 "நிறுவப்பட வில்லை. அவற்றை இப்பொழுது நிறுவலாமா?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
 msgid "_Remind Me Later"
 msgstr "(_R) பிறகு நினைவூட்டு."
 
-#. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
 msgid "_Install"
 msgstr "நி_றுவல்"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
 msgid "Details"
 msgstr "விவரங்கள்"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -180,11 +169,11 @@ msgid ""
 "close and re-open Language Support."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+#: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
 msgstr "மொழி ஆதரவு"
 
-#: ../data/LanguageSelector.ui.h:1
+#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -192,11 +181,11 @@ msgid ""
 "languages."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:4
+#: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
 msgstr "நிறுவிய மொழிகள்"
 
-#: ../data/LanguageSelector.ui.h:5
+#: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -204,11 +193,11 @@ msgstr ""
 "ஒரு மொழி நிறுவப்பட்டப் பின், ஒவ்வொரு உபயோகிப்பாளரும் தங்கள் மொழி தேர்வில் "
 "அதை தேர்வு செய்துக் கொள்ளலாம்"
 
-#: ../data/LanguageSelector.ui.h:6
+#: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
 msgstr "ரத்து செய்"
 
-#: ../data/LanguageSelector.ui.h:7
+#: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
 msgstr "மாற்றங்களை செயல்படுத்து"
 
@@ -236,7 +225,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
-msgstr ""
+msgstr "கணினி முழுமைக்கும் செயற்படுத்து"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid ""
@@ -314,7 +303,6 @@ msgstr "உங்கள் கணினியில் பல் மொழி �
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
-#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "அரைகுறை மொழி ஆதரவு"
 
@@ -347,96 +335,26 @@ msgstr ""
 msgid "System policy prevented setting default language"
 msgstr ""
 
-#: ../gnome-language-selector:17
+#: ../gnome-language-selector:33
 msgid "don't verify installed language support"
 msgstr "நிறுவிய மொழியின் ஆதரவை சரிப்பார்க்காதே"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
 msgstr ""
 
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr ""
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr ""
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr ""
-
-#~ msgid "Not installed"
-#~ msgstr "நிறுவப்படவில்லை"
-
-#~ msgid "Partially Installed"
-#~ msgstr "பகுதி நிறுவப்பட்டுள்ளது"
-
-#~ msgid "Language Installed"
-#~ msgstr "மொழி நிறுவப்பட்டுள்ளது"
-
-#~ msgid "Select language to uninstall:"
-#~ msgstr "நீக்கவேண்டிய மொழியைத் தேர்வு செய்க:"
-
-#~ msgid "Set System Language"
-#~ msgstr "கணினியின் மொழியை அமைக்கவும்"
-
-#~ msgid "Default system language:"
-#~ msgstr "இயல்பு கணினி மொழி"
-
-#~ msgid "Language Set"
-#~ msgstr "மொழி தொகுப்பு"
-
-#~ msgid "Language Uninstalled"
-#~ msgstr "மொழி நிறுவல் நீக்கப்பட்டது"
-
-#~ msgid "Select language to install:"
-#~ msgstr "நிறுவ வேண்டிய மொழியை தேர்ந்தெடு:"
-
-#~ msgid "Already installed"
-#~ msgstr "ஏற்கனவே நிறுவப்பட்டுள்ளது"
-
-#~ msgid "Keyboard input method:"
-#~ msgstr "விசைப்பலகை உள்ளீட்டு முறை:"
-
-#~ msgid "Input methods"
-#~ msgstr "உள்ளீட்டு முறை"
-
-#~ msgid "Extra fonts"
-#~ msgstr "அதிக எழுத்துருக்கள்"
-
-#~ msgid "Components:"
-#~ msgstr "பகுப்பொருள்கள்:"
-
-#~ msgid "Translations"
-#~ msgstr "மொழிபெயர்ப்புகள்"
-
-#, python-format
-#~ msgid "Default system Language now set to %s."
-#~ msgstr "கணினியின் இயல்பு மொழி தற்பொழுது %s க்கு மாற்றப்பட்டுள்ளது"
-
-#~ msgid ""
-#~ "It is impossible to install or remove any software. Please use the package "
-#~ "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-#~ "this issue at first."
-#~ msgstr ""
-#~ "எந்த மென்பொருளையும் நிறுவுவவோ நீக்கவோ இயலாது. தயவு செய்து \"அடெப்ட்\" பொதி "
-#~ "மேலாண்மையை பயன்படுத்தவும் அல்லது இந்த பிணக்கை முதலில் சரிசெய்ய \"sudo apt-"
-#~ "get install -f\" ஐ முனையத்தில் இயக்கவும்."
-
-#~ msgid "Spellchecking and writing aids"
-#~ msgstr "பிழைத்திருத்தம் மற்றும் எழுதும் உதவி"
-
-#~ msgid "System Languages"
-#~ msgstr "அமைப்பு மொழிகள்"
-
-#~ msgid "Install and set system languages"
-#~ msgstr "அமைப்பு மொழிகளை நிறுவு மற்றும் அமை"
-
-#~ msgid "Language Not Set"
-#~ msgstr "மொழி அமைக்கப்படவில்லை"

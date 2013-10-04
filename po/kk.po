@@ -7,36 +7,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 14:32+0000\n"
-"PO-Revision-Date: 2012-12-23 19:16+0000\n"
+"POT-Creation-Date: 2013-09-18 18:10+0000\n"
+"PO-Revision-Date: 2013-06-10 05:19+0000\n"
 "Last-Translator: jmb_kz <Unknown>\n"
 "Language-Team: Kazakh <kk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-04-17 08:10+0000\n"
-"X-Generator: Launchpad (build 16567)\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
 "Language: kk\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (simplified)"
 msgstr "Қытай (жеңілдетілген)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:58
 msgid "Chinese (traditional)"
 msgstr "Қытай (кәдімгі)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
 msgid "No language information available"
 msgstr "Тілдер жайлы еш ақпарат жоқ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -44,38 +42,37 @@ msgstr ""
 "Жүйе қол жетімді тілдер туралы ақпарат әлі уақытқа дейін жоқ. Ақпаратты алу "
 "үшін дәл қазір жаңартуды орындағыңыз келеді ме? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
 msgid "_Update"
 msgstr "_Жаңарту"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:317
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:354
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Тіл"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
 msgid "Installed"
 msgstr "Орнатылған"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
 msgstr[0] "%(INSTALL)d орнату үшін"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
 msgstr[0] "%(REMOVE)d жою үшін"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:403
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
@@ -85,19 +82,17 @@ msgstr "%s, %s"
 msgid "default"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "таңдалмаған"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
 msgid "Software database is broken"
 msgstr "Бағдарламалық мәліметтер қоры бұзылған"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -107,11 +102,11 @@ msgstr ""
 "\"Synaptic\" пакеттер менеджерін қолданыңыз немесе терминалда \"sudo apt-get "
 "install -f\" орындаңыз."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid "Could not install the selected language support"
 msgstr "Таңдалған тілдің қолдауын орнату мүмкін емес"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -120,13 +115,13 @@ msgstr ""
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug сілтеме "
 "бойынша қате туралы хабарлауыңызды сұраймыз."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "Тілдің толық қолдауын орнату мүмкін емес"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -134,17 +129,15 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
 msgid "Failed to authorize to install packages."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
 msgid "The language support is not installed completely"
 msgstr "Тілдің қолдауы толығымен қамтылмаған"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -152,23 +145,19 @@ msgstr ""
 "Жүйеде таңдалған тілдің қол жетімділігі толығымен орнатылып қамтылмаған. "
 "Жетіспегендерді қазір орнатқыңыз келеді ме?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
 msgid "_Remind Me Later"
 msgstr "_Кейінірек ескерту"
 
-#. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
 msgid "_Install"
 msgstr "_Орнату"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
 msgid "Details"
 msgstr "Толығырақ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -176,11 +165,11 @@ msgid ""
 "close and re-open Language Support."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+#: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
 msgstr "Тілдің қолдауы"
 
-#: ../data/LanguageSelector.ui.h:1
+#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -191,11 +180,11 @@ msgstr ""
 "\n"
 "Әр түрлі тілдерде қолдау толықтығы әртекті болуы мүмкін."
 
-#: ../data/LanguageSelector.ui.h:4
+#: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
 msgstr "Орнатылған тілдер"
 
-#: ../data/LanguageSelector.ui.h:5
+#: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -203,11 +192,11 @@ msgstr ""
 "Егер қайсыбір тіл орнатылған болса, кез-келген пайдаланушы өзіне қажетті "
 "болса сол Тілді таңдай алады."
 
-#: ../data/LanguageSelector.ui.h:6
+#: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
 msgstr "Болдырмау"
 
-#: ../data/LanguageSelector.ui.h:7
+#: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
 msgstr "Өзгерістерді іске асыру"
 
@@ -325,7 +314,6 @@ msgstr "Жүйедегі қосымша және ана тілдерін қал�
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
-#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "Тілдің қолдауы толығымен қамтылмаған"
 
@@ -358,175 +346,27 @@ msgstr ""
 msgid "System policy prevented setting default language"
 msgstr ""
 
-#: ../gnome-language-selector:17
+#: ../gnome-language-selector:33
 msgid "don't verify installed language support"
 msgstr "орнатылған тілдің қолдауын тексермеу"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
 msgstr "өзгеше datadir бумасы"
 
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "қажетті тілдің коды"
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "тем осы пакетті (пакеттерді) тексеру  -- үтір арқылы пакеттердің аттары"
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr ""
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "орнатылған пакеттерді және орнатылмағандарды да көрсету"
-
-#~ msgid "Not installed"
-#~ msgstr "Орнатылмаған"
-
-#~ msgid "Partially Installed"
-#~ msgstr "Жартылай орнатылған"
-
-#, python-format
-#~ msgid "Translations and support have now been uninstalled for %s."
-#~ msgstr "%s тілдің аудармалары және қолдауы жойылды."
-
-#~ msgid "Language Installed"
-#~ msgstr "Тіл орнатылды"
-
-#~ msgid "Already installed"
-#~ msgstr "Орнатылып қойылған"
-
-#~ msgid "Language Set"
-#~ msgstr "Тіл таңдалынды"
-
-#~ msgid "Language Uninstalled"
-#~ msgstr "Тіл жойылды"
-
-#~ msgid "Language Not Set"
-#~ msgstr "Тіл таңдалмаған"
-
-#~ msgid "Components:"
-#~ msgstr "Құрама бөлігі:"
-
-#~ msgid "Translations"
-#~ msgstr "Аудармалар"
-
-#~ msgid "Input methods"
-#~ msgstr "Енгізу әдістемелері"
-
-#~ msgid "Spellchecking and writing aids"
-#~ msgstr "Орфография мен лингвистика"
-
-#~ msgid ""
-#~ "The language support files for your selected language seem to be incomplete. "
-#~ "You can install the missing components by clicking on \"Run this action "
-#~ "now\" and follow the instructions. An active internet connection is "
-#~ "required. If you would like to do this at a later time, please use \"System "
-#~ "Settings -> Regional & Language\" instead."
-#~ msgstr ""
-#~ "Ағымдағы тілдің қоудау файлдары толығымен орнатылмаған. Жетіспейтін "
-#~ "компоненттеріді орнату үшін, \"Қазір орнату\" батырмасын басып, оның  "
-#~ "нұсқайларына еріңіз.  Орнатылым үшін сізге интернетке қосылыс болуы тиіс. "
-#~ "Кейінірек жасаймын десеңіз, жүйелік мәзірінен \"Жүйелік -> Әкімшілік -> Тіл "
-#~ "локализациялары\" табасыз."
-
-#~ msgid ""
-#~ "It is impossible to install or remove any software. Please use the package "
-#~ "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-#~ "this issue at first."
-#~ msgstr ""
-#~ "Бағдарламаларды орнату немесе жою мүмкін емес. Мәселені шешу үшін \"Adept\" "
-#~ "пакеттер менеджерін қолданыңыз немесе терминалда \"sudo apt-get install -f\" "
-#~ "орындаңыз."
-
-#~ msgid "Default system language:"
-#~ msgstr "Жүйенің қалыпты тілі:"
-
-#~ msgid "Set System Language"
-#~ msgstr "Жүйенің тілін таңдаңыз"
-
-#~ msgid "Extra fonts"
-#~ msgstr "Қосымша қаріптер"
-
-#~ msgid "Component not available"
-#~ msgstr "Компонент жетімсіз"
-
-#~ msgid "Component not installed"
-#~ msgstr "Компонент орнатылмаған"
-
-#~ msgid "Component already installed"
-#~ msgstr "Компонент орнатылған болып тұр"
-
-#, python-format
-#~ msgid ""
-#~ "All selected components have now been installed for %s.  Select them from "
-#~ "Country/Region & Language."
-#~ msgstr ""
-#~ "Таңдалған барлық компоненттер %s үшін орнатылған. Оларды Ел/Аймақ және Тіл "
-#~ "мәзір ішінен таңдай аласыз."
-
-#~ msgid "System Languages"
-#~ msgstr "Жүйелік тілдер"
-
-#~ msgid "Install and set system languages"
-#~ msgstr "Жүйелік тілдерді орнату мен таңдау"
-
-#~ msgid ""
-#~ "If you need to type in languages, which require more complex input methods "
-#~ "than just a simple key to letter mapping, you may want to enable this "
-#~ "function.\n"
-#~ "For example, you will need this function for typing Chinese, Japanese, "
-#~ "Korean or Vietnamese.\n"
-#~ "The recommended value for Ubuntu is \"ibus\".\n"
-#~ "If you want to use alternative input method systems, install the "
-#~ "corresponding packages first and then choose the desired system here."
-#~ msgstr ""
-#~ "Егер таңдалған тілде әріптерді теру үшін қарапайым енгізу әдістері "
-#~ "жеткіліксіз болса, мүмкін сіздің күрделі енгізу әдістерін қамтитын осы "
-#~ "функцияны қосқыңыз келіп тұрған шығар.\n"
-#~ "Мысалыға, қытай, жапон, корей немесе вьетнам тіліндегі әріптерді теремін "
-#~ "десеңіз, бұл функция сізге міндетті түрде қажет болады.\n"
-#~ "Ubuntu үшін \"ibus\" қолдануға тиімдірек.\n"
-#~ "Егер альтернативті енгізу әдістерін қолдануға қажет болса, тиісті пакеттерді "
-#~ "орнатып, қайта осында келіп, қажеттісін таңдаңыз."
-
-#~ msgid "Select language to uninstall:"
-#~ msgstr "Жойылуға тиісті тілді таңдаңыз:"
-
-#~ msgid "Select language to install:"
-#~ msgstr "Орнатылуға тиісті тілді таңдаңыз:"
-
-#~ msgid "Keyboard input method:"
-#~ msgstr "Пернетақтадан енгізу әдістемесі:"
-
-#, python-format
-#~ msgid "Default system Language now set to %s."
-#~ msgstr "Жүйенің қалыпты тілі ретінде, %s етіп таңдалынды."
-
-#~ msgid "Please run this software with administrative rights."
-#~ msgstr "Осы бағдарламаны әкімшілік құқықтармен ашыңыз."
-
-#~ msgid "Failed to set system language."
-#~ msgstr "Жүйенің тілін орнату мүмкін емес."
-
-#~ msgid "Not Root User"
-#~ msgstr "Әкімшілік құқықтар жоқ"
-
-#~ msgid ""
-#~ "<small>Drag languages to arrange them in order of preference.\n"
-#~ "Changes take effect next time you log in.</small>"
-#~ msgstr ""
-#~ "<small>Тілдерді өзіңізге лайықты болғандай реттеңіз.\n"
-#~ "Өзгерістердің барлығын тек келесі жүйеге кірген кезде көре аласыз.</small>"
-
-#~ msgid ""
-#~ "It is impossible to install or remove any software. Please use the package "
-#~ "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
-#~ "this issue at first."
-#~ msgstr ""
-#~ "Бағдарламаларды орнату немесе жою мүмкін емес. Мәселені шешу үшін \"Muon\" "
-#~ "пакеттер менеджерін қолданыңыз немесе терминалда \"sudo apt-get install -f\" "
-#~ "орындаңыз."

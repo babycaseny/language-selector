@@ -9,36 +9,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po_language-selector-is\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 14:32+0000\n"
-"PO-Revision-Date: 2013-04-12 07:12+0000\n"
+"POT-Creation-Date: 2013-09-18 18:10+0000\n"
+"PO-Revision-Date: 2013-09-18 08:27+0000\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-04-17 08:09+0000\n"
-"X-Generator: Launchpad (build 16567)\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
 "Language: is\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (simplified)"
 msgstr "Kínverska (einfölduð)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:58
 msgid "Chinese (traditional)"
 msgstr "Kínverska (hefðbundin)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
 msgid "No language information available"
 msgstr "Engar tungumálaupplýsingar fundust"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -46,24 +44,23 @@ msgstr ""
 "Kerfið er ekki ennþá með allar upplýsingar um tiltæk tungumál. Viltu biðja "
 "um uppfærslu af netinu til að sækja þær? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
 msgid "_Update"
 msgstr "_Uppfæra"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:317
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:354
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Tungumál"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
 msgid "Installed"
 msgstr "Uppsett"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -71,7 +68,7 @@ msgstr[0] "%(INSTALL)d til að setja upp"
 msgstr[1] "%(INSTALL)d til að setja upp"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -79,7 +76,7 @@ msgstr[0] "%(REMOVE)d til að fjarlægja"
 msgstr[1] "%(REMOVE)d til að fjarlægja"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:403
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
@@ -89,19 +86,17 @@ msgstr "%s, %s"
 msgid "default"
 msgstr "sjálfgefið"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "ekkert"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
 msgid "Software database is broken"
 msgstr "Það er eitthvað að gangagrunninum"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -111,11 +106,11 @@ msgstr ""
 "pakkastjórann „Synaptic‟ eða keyrðu skipunina „sudo apt-get install -f‟ í "
 "útstöðina til að laga þetta vandamál."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid "Could not install the selected language support"
 msgstr "Tókst ekki að setja inn valið tungumál"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -123,13 +118,13 @@ msgstr ""
 "Þetta gæti verið villa í forritinu. Þú getur sent villuskýrslu til "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "Það tókst ekki að setja upp tungumálið."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -137,17 +132,15 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
 msgid "Failed to authorize to install packages."
 msgstr "Tókst ekki að fá heimild til að setja upp pakka."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
 msgid "The language support is not installed completely"
 msgstr "Ekki tókst að setja upp tungumálaforritið að fullu"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -155,23 +148,19 @@ msgstr ""
 "Sumar þýðingar og skriftæki sem til eru fyrir tungumálin þín hafa ekki verið "
 "sett upp. Viltu setja þau upp?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
 msgid "_Remind Me Later"
 msgstr "_Minna mig á síðar"
 
-#. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
 msgid "_Install"
 msgstr "_Setja upp"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
 msgid "Details"
 msgstr "Upplýsingar"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -179,11 +168,11 @@ msgid ""
 "close and re-open Language Support."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+#: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
 msgstr "Tungumál"
 
-#: ../data/LanguageSelector.ui.h:1
+#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -195,11 +184,11 @@ msgstr ""
 "Hafðu í huga að fjöldi þýðinga fer eftir tungumálum, og rithjálp er einnig "
 "breytileg."
 
-#: ../data/LanguageSelector.ui.h:4
+#: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
 msgstr "Tungumál sem er búið að setja upp"
 
-#: ../data/LanguageSelector.ui.h:5
+#: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -207,11 +196,11 @@ msgstr ""
 "Þegar búið er að setja upp tungumál geta einstakir notendur valið það í "
 "Tungumálastytlingum."
 
-#: ../data/LanguageSelector.ui.h:6
+#: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
 msgstr "Hætta við"
 
-#: ../data/LanguageSelector.ui.h:7
+#: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
 msgstr "Virkja breytingar"
 
@@ -268,6 +257,12 @@ msgid ""
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
+"Það væri sniðugt að virkja þetta ef þú þarft að skrifa á tungumálum sem nota "
+"flóknari tákn og stafi.\n"
+"Þetta hentar til dæmis vel fyrir kínversku, japönsku, kóresku eða "
+"víetnömsku.\n"
+"Mælt er með að velja „IBus“.\n"
+"Ef þú vilt nota aðra inntaksleið þá verður þú að setja upp annað forrit."
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -319,7 +314,6 @@ msgstr "Breyta stillingum fyrir tungumál í kerfinu og bæta við nýjum"
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
-#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "Tungumálið er ekki fullstutt"
 
@@ -352,173 +346,27 @@ msgstr "Setja sjálfgefið tungumál fyrir kerfið"
 msgid "System policy prevented setting default language"
 msgstr "Kerfisreglur hindruðu að hægt væri að setja sjálfgefið tungumál"
 
-#: ../gnome-language-selector:17
+#: ../gnome-language-selector:33
 msgid "don't verify installed language support"
 msgstr "Ekki staðfesta uppsettan tungumálastuðning"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
 msgstr "annað datadir"
 
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "Frum tungumála kóði"
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "athuga einungis fyrir ákveðna pakka -- aðgreina pakkaheiti með kommum"
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr ""
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "Sýna uppsetta pakka sem og þá sem vantar"
-
-#~ msgid "Set System Language"
-#~ msgstr "Velja tungumál kerfis"
-
-#, python-format
-#~ msgid "Default system Language now set to %s."
-#~ msgstr "Aðaltungumál kerfisins er núna %s."
-
-#~ msgid "Language Installed"
-#~ msgstr "Tungumál hefur verið sett upp"
-
-#~ msgid "Please run this software with administrative rights."
-#~ msgstr "Þú verður að keyra þetta forrit með stjórnandaréttindum."
-
-#, python-format
-#~ msgid "Translations and support have now been uninstalled for %s."
-#~ msgstr "Búið er að fjarlægja þýðingar og stuðning við %s."
-
-#~ msgid "Failed to set system language."
-#~ msgstr "Það mistókst að velja aðaltungumál."
-
-#~ msgid "Language Uninstalled"
-#~ msgstr "Tungumál hefur verið fjarlægt"
-
-#~ msgid "Not Root User"
-#~ msgstr "Ekki rótarnotandi"
-
-#~ msgid "Language Not Set"
-#~ msgstr "Tungumál ekki valið"
-
-#~ msgid "Extra fonts"
-#~ msgstr "Aukaleturgerðir"
-
-#~ msgid ""
-#~ "It is impossible to install or remove any software. Please use the package "
-#~ "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-#~ "this issue at first."
-#~ msgstr ""
-#~ "Það er ómögulegt að setja upp eða fjarlæga hugbúnað. Vinsamlega notaðu "
-#~ "pakkastjórann \"Adept\" eða keyrðu skipunina \"sudo apt-get install -f\" í "
-#~ "útstöð til að laga þetta vandamál fyrst."
-
-#~ msgid "Spellchecking and writing aids"
-#~ msgstr "Stafsetningarleiðrétting og rithjálp"
-
-#~ msgid "Input methods"
-#~ msgstr "Innskráningaraðferðir"
-
-#~ msgid "Components:"
-#~ msgstr "Innifalið:"
-
-#~ msgid "Select language to uninstall:"
-#~ msgstr "Veldu tungumál sem þú vilt fjarlægja:"
-
-#~ msgid "Default system language:"
-#~ msgstr "Aðaltungumálið:"
-
-#~ msgid "Select language to install:"
-#~ msgstr "Veldu það tungumál sem þú vilt setja upp:"
-
-#~ msgid "Not installed"
-#~ msgstr "Ekki sett upp"
-
-#~ msgid "Partially Installed"
-#~ msgstr "Sett upp að hluta"
-
-#~ msgid "Already installed"
-#~ msgstr "Þegar sett upp"
-
-#~ msgid ""
-#~ "The language support files for your selected language seem to be incomplete. "
-#~ "You can install the missing components by clicking on \"Run this action "
-#~ "now\" and follow the instructions. An active internet connection is "
-#~ "required. If you would like to do this at a later time, please use \"System "
-#~ "Settings -> Regional & Language\" instead."
-#~ msgstr ""
-#~ "Eitthvað vantar upp á hjálparskrárnar fyrir tungumálið sem þú valdir. Þú "
-#~ "getur sett upp þá hluta sem vantar með því að velja „Keyra þessa aðgerð "
-#~ "núna“ og fylgja leiðbeiningunum- hafðu í huga að þú þarft að vera tengdur "
-#~ "við netið. Þú getur farið í valmyndina „Kerfisstjórnun -> Svæði og tungumál“ "
-#~ "ef þú vilt gera þetta seinna."
-
-#~ msgid "Language Set"
-#~ msgstr "Velja tungumál"
-
-#~ msgid "Keyboard input method:"
-#~ msgstr "Lyklaborð:"
-
-#~ msgid "Translations"
-#~ msgstr "Þýðingar"
-
-#~ msgid ""
-#~ "<small>Drag languages to arrange them in order of preference.\n"
-#~ "Changes take effect next time you log in.</small>"
-#~ msgstr ""
-#~ "<small>Raðaðu tungumálum eftir forgangi með því að draga þau.\n"
-#~ "Breytingar taka gildi þegar þú skráir þig inn næst.</small>"
-
-#~ msgid ""
-#~ "If you need to type in languages, which require more complex input methods "
-#~ "than just a simple key to letter mapping, you may want to enable this "
-#~ "function.\n"
-#~ "For example, you will need this function for typing Chinese, Japanese, "
-#~ "Korean or Vietnamese.\n"
-#~ "The recommended value for Ubuntu is \"ibus\".\n"
-#~ "If you want to use alternative input method systems, install the "
-#~ "corresponding packages first and then choose the desired system here."
-#~ msgstr ""
-#~ "Það væri sniðugt að virkja þetta ef þú þarft að skrifa á tungumálum sem nota "
-#~ "flóknari tákn og stafi.\n"
-#~ "Þetta hentar til dæmis vel fyrir kínversku, japönsku, kóresku eða "
-#~ "víetnömsku.\n"
-#~ "Mælt er með að velja „ibus“.\n"
-#~ "Ef þú vilt nota aðra inntaksleið þá verður þú að setja upp annað forrit."
-
-#~ msgid "Component not available"
-#~ msgstr "Einingin er ekki tiltæk"
-
-#~ msgid "Component not installed"
-#~ msgstr "Einingin er ekki uppsett"
-
-#~ msgid "Component already installed"
-#~ msgstr "Einingin er þegar uppsett"
-
-#~ msgid "System Languages"
-#~ msgstr "Tungumál kerfisins"
-
-#~ msgid "Install and set system languages"
-#~ msgstr "Setja upp og stilla tungumál á kerfinu"
-
-#~ msgid ""
-#~ "It is impossible to install or remove any software. Please use the package "
-#~ "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
-#~ "this issue at first."
-#~ msgstr ""
-#~ "Það er ómögulegt að setja upp eða fjarlæga hugbúnað. Vinsamlega notaðu "
-#~ "pakkastjórann \"Muon\" eða keyrðu skipunina \"sudo apt-get install -f\" í "
-#~ "útstöð til að laga þetta vandamál fyrst."
-
-#, python-format
-#~ msgid ""
-#~ "All selected components have now been installed for %s.  Select them from "
-#~ "Country/Region & Language."
-#~ msgstr ""
-#~ "Allar valdar einingar hafa verið settar upp fyrir %s.  Veldu þær núna úr "
-#~ "Land/Hérað & Tungumál."

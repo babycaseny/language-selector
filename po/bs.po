@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 14:32+0000\n"
-"PO-Revision-Date: 2013-01-04 23:43+0000\n"
+"POT-Creation-Date: 2013-09-18 18:10+0000\n"
+"PO-Revision-Date: 2013-06-10 05:21+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,28 +16,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-04-17 08:09+0000\n"
-"X-Generator: Launchpad (build 16567)\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
 "Language: bs\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (simplified)"
 msgstr "Kineski (pojednostavljen)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:58
 msgid "Chinese (traditional)"
 msgstr "Kineski (tradicionalni)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
 msgid "No language information available"
 msgstr "Nema dostupne informacije o jeziku"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -45,24 +43,23 @@ msgstr ""
 "Sistem nema informacija o raspoloživim jezicima. Želite li mrežno ažuriranje "
 "da ih dobijete? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
 msgid "_Update"
 msgstr "_Ažuriraj"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:317
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:354
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Jezik"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
 msgid "Installed"
 msgstr "Instalirano"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -71,7 +68,7 @@ msgstr[1] "%(INSTALL)d za instalaciju"
 msgstr[2] "%(INSTALL)d za instalaciju"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -80,7 +77,7 @@ msgstr[1] "%(REMOVE)d za brisanje"
 msgstr[2] "%(REMOVE)d za brisanje"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:403
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
@@ -90,19 +87,17 @@ msgstr "%s, %s"
 msgid "default"
 msgstr "podrazumijevano"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "ništa"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
 msgid "Software database is broken"
 msgstr "Baza paketa je neispravna"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -112,11 +107,11 @@ msgstr ""
 "iskoristite \"Synaptic\" upravnika paketima ili izvršite \"sudo apt-get "
 "install -f\" u terminalu kako biste otklonili problem."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid "Could not install the selected language support"
 msgstr "Nije moguće instalirati podršku za odabrani jezik"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -124,13 +119,13 @@ msgstr ""
 "Ovo je vjerovatno greška u programu. Prijavite je na "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "Nije moguće instalirati punu jezičku podršku"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -142,17 +137,15 @@ msgstr ""
 "strani trake na vrhu i odaberite \"Sistemske postavke ... -> Softverski "
 "izvori\")"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
 msgid "Failed to authorize to install packages."
 msgstr "Nisam uspio da dam ovlašćenje za instalaciju paketa."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
 msgid "The language support is not installed completely"
 msgstr "Jezička podrška nije instalirana u potpunosti"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -160,23 +153,19 @@ msgstr ""
 "Dio prevoda ili pomoći pri pisanju dostupnih za Vaš jezik još nije "
 "instaliran. Da li želite da ih sada instalirate?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
 msgid "_Remind Me Later"
 msgstr "_Podsjeti me kasnije"
 
-#. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
 msgid "_Install"
 msgstr "_Instaliraj"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
 msgid "Details"
 msgstr "Detalji"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -187,11 +176,11 @@ msgstr ""
 "Primjeri se mogu pokazati ako zatvorite\n"
 "i ponovo otvorite jezičku podršku."
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+#: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
 msgstr "Jezička podrška"
 
-#: ../data/LanguageSelector.ui.h:1
+#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -202,11 +191,11 @@ msgstr ""
 "\n"
 "Raspoloživost prijevoda i alatki za pisanje se razlikuje od jezika do jezika."
 
-#: ../data/LanguageSelector.ui.h:4
+#: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
 msgstr "Instalirani jezici"
 
-#: ../data/LanguageSelector.ui.h:5
+#: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
@@ -214,11 +203,11 @@ msgstr ""
 "Nakon što je jezik instaliran, individualni korisnici ga mogu odabrati u "
 "svojim jezičkim postavkama."
 
-#: ../data/LanguageSelector.ui.h:6
+#: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
 msgstr "Poništi"
 
-#: ../data/LanguageSelector.ui.h:7
+#: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
 msgstr "Primijeni promjene"
 
@@ -252,6 +241,9 @@ msgid ""
 "<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small><b>Prevuci jezike za njihovo sortiranje po redoslijedu "
+"preferencije.</b>\n"
+"Promjene će imati efekta pri sljedećoj prijavi.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -351,7 +343,6 @@ msgstr "Podesite višejezičnu i podršku za vlastitog jezika na vašem sistemu"
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
-#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "Nekompletna jezička podrška"
 
@@ -390,174 +381,27 @@ msgstr "Postavi podrazumijevani jezik sistema"
 msgid "System policy prevented setting default language"
 msgstr "Pravila sistema spriječila postavljanje podrazumijevanog jezika"
 
-#: ../gnome-language-selector:17
+#: ../gnome-language-selector:33
 msgid "don't verify installed language support"
 msgstr "nemoj provjeriti instaliranu jezičku podršku"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
 msgstr "alternativni imenik podataka"
 
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "oznaka odredišnog jezika"
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 "provjera samo za naveden(e) paket(e) -- odvojite nazive paketa zarezom"
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr "ispisuje sve dostupne pakete podrške jezika za sve jezike"
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "prikaži instalirane i nedostajuće pakete"
-
-#~ msgid "Default system language:"
-#~ msgstr "Zadani sistemski jezik:"
-
-#~ msgid "Extra fonts"
-#~ msgstr "Dodatni fontovi:"
-
-#~ msgid "Components:"
-#~ msgstr "Komponente:"
-
-#~ msgid "Select language to install:"
-#~ msgstr "Odaberi jezik za instaliranje:"
-
-#~ msgid "Already installed"
-#~ msgstr "Već je instaliran"
-
-#~ msgid "Language Set"
-#~ msgstr "Set jezika"
-
-#, python-format
-#~ msgid "Default system Language now set to %s."
-#~ msgstr "Podrazumijevani jezik na sistemu je sada podešen na %s."
-
-#~ msgid "Language Uninstalled"
-#~ msgstr "Jezik je uklonjen"
-
-#, python-format
-#~ msgid "Translations and support have now been uninstalled for %s."
-#~ msgstr "Prevodi i podrška za %s su uklonjeni."
-
-#~ msgid "Language Not Set"
-#~ msgstr "Jezik nije postavljen"
-
-#~ msgid "Failed to set system language."
-#~ msgstr "Postavka jezika nije uspjela."
-
-#~ msgid "Input methods"
-#~ msgstr "Metode unosa"
-
-#~ msgid "Please run this software with administrative rights."
-#~ msgstr "Molimo pokrenite ovaj program sa administrativnim ovlastima."
-
-#~ msgid "Spellchecking and writing aids"
-#~ msgstr "Pomagala kod pisanja i provjere pravopisa"
-
-#~ msgid ""
-#~ "It is impossible to install or remove any software. Please use the package "
-#~ "manager \"Adept\" or run \"sudo apt-get install -f\" in a terminal to fix "
-#~ "this issue at first."
-#~ msgstr ""
-#~ "Nemoguće je instalirati ili ukloniti bilo koji program. Molimo upotrijebite "
-#~ "menadžer paketa \"Adept\" ili pokrenite \"sudo apt-get install -f\" u "
-#~ "terminalu da popravite ovaj problem."
-
-#~ msgid ""
-#~ "The language support files for your selected language seem to be incomplete. "
-#~ "You can install the missing components by clicking on \"Run this action "
-#~ "now\" and follow the instructions. An active internet connection is "
-#~ "required. If you would like to do this at a later time, please use \"System "
-#~ "Settings -> Regional & Language\" instead."
-#~ msgstr ""
-#~ "Podrška za ovaj jezik izgleda nekompletna. Možete instalirati nedostajuće "
-#~ "komponente klikom na \"Izvrši akciju sada\" i pratiti instrukcije. Potrebna "
-#~ "je aktivna Internet veza. Ako to želite uraditi kasnije, koristite "
-#~ "\"Sistemske postavke -> Regionalno i jezik\" ."
-
-#~ msgid "Translations"
-#~ msgstr "Prijevodi"
-
-#~ msgid "Keyboard input method:"
-#~ msgstr "Način unosa s tastature"
-
-#~ msgid "Select language to uninstall:"
-#~ msgstr "Izaberi jezik za deinstaliranje:"
-
-#~ msgid "Not installed"
-#~ msgstr "Nije instalirano"
-
-#~ msgid "Language Installed"
-#~ msgstr "Jezik je Instaliran"
-
-#~ msgid "Partially Installed"
-#~ msgstr "Djelimično Instalirano"
-
-#~ msgid ""
-#~ "<small>Drag languages to arrange them in order of preference.\n"
-#~ "Changes take effect next time you log in.</small>"
-#~ msgstr ""
-#~ "<small>Prevucite jezike da ih sortirate po vašem značaju.\n"
-#~ "Promjene će imati efekta pri sljedećoj prijavi.</small>"
-
-#~ msgid "Set System Language"
-#~ msgstr "Postavi sistemski Jezik"
-
-#~ msgid "Not Root User"
-#~ msgstr "Nije root korisnik"
-
-#~ msgid "Component not available"
-#~ msgstr "Komponenta nije raspoloživa"
-
-#~ msgid "Component not installed"
-#~ msgstr "Komponenta nije instalirana"
-
-#~ msgid "Component already installed"
-#~ msgstr "Komponenta već instalirana"
-
-#, python-format
-#~ msgid ""
-#~ "All selected components have now been installed for %s.  Select them from "
-#~ "Country/Region & Language."
-#~ msgstr ""
-#~ "Sve izabrane komponente su sada instalirane za %s. Odaberite ih iz Zemlja / "
-#~ "region i jezik."
-
-#~ msgid "System Languages"
-#~ msgstr "Sistemski jezici"
-
-#~ msgid "Install and set system languages"
-#~ msgstr "Instaliraj i podesi sistemski jezik"
-
-#~ msgid ""
-#~ "If you need to type in languages, which require more complex input methods "
-#~ "than just a simple key to letter mapping, you may want to enable this "
-#~ "function.\n"
-#~ "For example, you will need this function for typing Chinese, Japanese, "
-#~ "Korean or Vietnamese.\n"
-#~ "The recommended value for Ubuntu is \"ibus\".\n"
-#~ "If you want to use alternative input method systems, install the "
-#~ "corresponding packages first and then choose the desired system here."
-#~ msgstr ""
-#~ "Ako je potrebno da otkucate na jezicima, koji zahtevaju složenije metode "
-#~ "unosa od samo jednog tastera za mapiranje slova, možda ćete željeti da "
-#~ "omogućite ovu funkciju.\n"
-#~ "Na primer, biće vam potrebna ova funkcija za kucanje kineskom, japanskom, "
-#~ "korejskom ili vijetnamskom.\n"
-#~ "Preporučena vrijednost za Ubuntu je \"IBUS\".\n"
-#~ "Ukoliko želite da koristite alternativne sisteme metoda unosa, instalirajte "
-#~ "prvo odgovarajuće pakete, a zatim izaberite ovdje željeni sistem."
-
-#~ msgid ""
-#~ "It is impossible to install or remove any software. Please use the package "
-#~ "manager \"Muon\" or run \"sudo apt-get install -f\" in a terminal to fix "
-#~ "this issue at first."
-#~ msgstr ""
-#~ "Nemoguće je instalirati ili ukloniti bilo koji program. Molimo upotrijebite "
-#~ "menadžer paketa \"Muon\" ili pokrenite \"sudo apt-get install -f\" u "
-#~ "terminalu da popravite ovaj problem."

@@ -7,36 +7,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 14:32+0000\n"
-"PO-Revision-Date: 2012-12-23 19:19+0000\n"
+"POT-Creation-Date: 2013-09-18 18:10+0000\n"
+"PO-Revision-Date: 2013-06-10 05:28+0000\n"
 "Last-Translator: පසිඳු කාවින්ද <pkavinda@gmail.com>\n"
 "Language-Team: Sinhalese <si@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-04-17 08:10+0000\n"
-"X-Generator: Launchpad (build 16567)\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
 "Language: \n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (simplified)"
 msgstr "චීන (සරල)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:58
 msgid "Chinese (traditional)"
 msgstr "චීන (සාම්ප්‍රදායික)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
 msgid "No language information available"
 msgstr "කිසිදු භාෂා විස්තරයක් නැත"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -44,24 +42,23 @@ msgstr ""
 "පද්ධතිය සතුව ලබා ගත හැකි භාෂා පිළිබද තොරතුරු තවමත් නොමැත. ජාලකරණ "
 "යවත්කාලිනයක් සිදු කොට ඒවා ලබා ගමුද? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
 msgid "_Update"
 msgstr "_යාවත්කාලීන කරන්න"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:317
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:354
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "භාෂාව"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
 msgid "Installed"
 msgstr "ස්ථාපිත"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -69,7 +66,7 @@ msgstr[0] "%(INSTALL)d ක් ස්ථාපනයට"
 msgstr[1] "%(INSTALL)d ක් ස්ථාපනයට"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -77,7 +74,7 @@ msgstr[0] "%(REMOVE)d ක් ඉවත් කිරීමට"
 msgstr[1] "%(REMOVE)d ක් ඉවත් කිරීමට"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:403
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
@@ -87,42 +84,40 @@ msgstr "%s, %s"
 msgid "default"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "කිසිවක් නැත"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
 msgid "Software database is broken"
 msgstr "මෘදුකාංග දත්තගබඩාව බිඳී ඇත"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid "Could not install the selected language support"
 msgstr "තෝරාගත් භාෂා සහය ස්ථාපනය කිරීමට නොහැක."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "පූර්ණ භාෂා සහය ස්ථාපනය කිරීමට නොහැක."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -130,39 +125,33 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
 msgid "Failed to authorize to install packages."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
 msgid "The language support is not installed completely"
 msgstr "භාෂා සහය සම්පූර්ණයෙන් ස්ථාපනය කර නොමැත"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
 msgid "_Remind Me Later"
 msgstr "_පසුව මතක් කරන්න"
 
-#. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
 msgid "_Install"
 msgstr "_ස්ථාපනය"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
 msgid "Details"
 msgstr "විස්තර"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -170,11 +159,11 @@ msgid ""
 "close and re-open Language Support."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+#: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
 msgstr "භාෂා සහාය"
 
-#: ../data/LanguageSelector.ui.h:1
+#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -185,21 +174,21 @@ msgstr ""
 "\n"
 "පරිවර්තන සහ ලිවීමේ උපකාරකයන් ලබා ගැනීම භාෂාවන් අතර වෙනස් වේ."
 
-#: ../data/LanguageSelector.ui.h:4
+#: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
 msgstr "ස්ථාපිත භාෂා"
 
-#: ../data/LanguageSelector.ui.h:5
+#: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:6
+#: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
 msgstr "අවලංගු කරන්න"
 
-#: ../data/LanguageSelector.ui.h:7
+#: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
 msgstr "වෙනස්කම් යොදන්න"
 
@@ -304,7 +293,6 @@ msgstr ""
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
-#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "අසම්පූර්ණ භාෂා සහය"
 
@@ -337,117 +325,26 @@ msgstr "සාමාන්‍ය පද්ධති භාෂාව සකසන
 msgid "System policy prevented setting default language"
 msgstr ""
 
-#: ../gnome-language-selector:17
+#: ../gnome-language-selector:33
 msgid "don't verify installed language support"
 msgstr "ස්ථාපිත භාෂා සහය තහවුරු කරන්න එපා"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
 msgstr "වෛකල්පික datadir"
 
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "ඉලක්කගත භාෂා කේතය"
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr ""
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr ""
-
-#~ msgid "Not installed"
-#~ msgstr "ස්ථාපනය කර නොමැති"
-
-#~ msgid "Language Set"
-#~ msgstr "භාෂා කාණ්ඩය"
-
-#~ msgid "Not Root User"
-#~ msgstr "මූල පරිශීලකයා නොවේ"
-
-#~ msgid "Language Not Set"
-#~ msgstr "භාෂාව පිහිටුවා නැත"
-
-#~ msgid "Input methods"
-#~ msgstr "ආදාන ප්‍රකාරය"
-
-#~ msgid "Extra fonts"
-#~ msgstr "අතිරේක අක්ෂර"
-
-#~ msgid "Select language to uninstall:"
-#~ msgstr "අස්ථාපනය සඳහා භාෂාව තෝරන්න:"
-
-#~ msgid "Default system language:"
-#~ msgstr "පෙරනිමි පද්ධති භාෂාව:"
-
-#~ msgid "Set System Language"
-#~ msgstr "පද්ධති භාෂාව සකසන්න"
-
-#, python-format
-#~ msgid "Default system Language now set to %s."
-#~ msgstr "පෙරනිමි පද්ධති භාෂාව දැන් %s ට සකසා ඇත."
-
-#~ msgid "Please run this software with administrative rights."
-#~ msgstr "කරුණාකර මෙම මෘදුකාංගය පරිපාලන හිමිකම් සමගින් ක්‍රියාත්මක කරන්න."
-
-#~ msgid "Failed to set system language."
-#~ msgstr "පද්ධති භාෂාව සැකසීම අසාර්ථක විය."
-
-#~ msgid "Translations"
-#~ msgstr "පරිවර්තන"
-
-#~ msgid "Keyboard input method:"
-#~ msgstr "යතුරු පුවරු ආදාන විධිය:"
-
-#~ msgid "Spellchecking and writing aids"
-#~ msgstr "අක්ෂර වින්‍යාස සහ ලිවීමේ උදව්"
-
-#~ msgid "Component not available"
-#~ msgstr "සංරචකය ලබා ගත නොහැක"
-
-#~ msgid "Component already installed"
-#~ msgstr "සංරචකය දැනටමත් ස්ථාපිතයි"
-
-#~ msgid "Select language to install:"
-#~ msgstr "ස්ථාපනය සඳහා භාෂාව තෝරන්න:"
-
-#~ msgid "Partially Installed"
-#~ msgstr "පාර්ශවිකව ස්ථාපිත"
-
-#~ msgid "Component not installed"
-#~ msgstr "සංරචකය ස්ථාපිත කර නොමැත"
-
-#~ msgid "Already installed"
-#~ msgstr "දැනටමත් ස්ථාපිත"
-
-#~ msgid "Components:"
-#~ msgstr "සංරචක:"
-
-#, python-format
-#~ msgid "Translations and support have now been uninstalled for %s."
-#~ msgstr "පරිවර්තන සහ උපකාරකයන් දැන් %s සඳහා අස්ථාපනය කොට ඇත."
-
-#~ msgid "Language Installed"
-#~ msgstr "භාෂාව ස්ථාපිතයි"
-
-#~ msgid "Language Uninstalled"
-#~ msgstr "භාෂාව අස්ථාපිතයි"
-
-#, python-format
-#~ msgid ""
-#~ "All selected components have now been installed for %s.  Select them from "
-#~ "Country/Region & Language."
-#~ msgstr ""
-#~ "තෝරාගත් සියලු සංරචකයන් දැන් %s වෙත ස්ථාපනය කොට ඇත.  ඒවා රට/පළාත සහ භාෂාව "
-#~ "මගින් තොරා ගන්න."
-
-#~ msgid "System Languages"
-#~ msgstr "පද්ධති භාෂා"
-
-#~ msgid "Install and set system languages"
-#~ msgstr "පද්ධති භාෂාවන් ස්ථාපනය සහ සැකසීම"

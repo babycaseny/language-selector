@@ -1,40 +1,37 @@
-# translation of language-selector.po to Georgian
-# translation of PACKAGE.
-# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Vladimer Sichinava <alinux@siena.linux.it>, 2006.
-# Konstantin Sichinava <ksichinava@gmail.com>, 2006
+# Xhosa translation for language-selector
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the language-selector package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-09-18 18:10+0000\n"
-"PO-Revision-Date: 2013-06-10 05:27+0000\n"
-"Last-Translator: Giorgi Maghlakelidze <acidlabz@gmail.com>\n"
-"Language-Team: Georgian <gnome@inet.ge>\n"
+"PO-Revision-Date: 2013-04-27 13:01+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Xhosa <xh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
 "X-Generator: Launchpad (build 16791)\n"
-"Language: ka\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
 #: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (simplified)"
-msgstr "ჩინური (გამარტივებული)"
+msgstr ""
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
 #: ../LanguageSelector/LocaleInfo.py:58
 msgid "Chinese (traditional)"
-msgstr "ჩინური (ტრადიციული)"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
 msgid "No language information available"
-msgstr "არ არის ხელმისაწვდომი ინფორმაცია ენის შესახებ"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
 msgid ""
@@ -44,17 +41,17 @@ msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
 msgid "_Update"
-msgstr "_განახლება"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:317
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:354
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
-msgstr "ენა"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
 msgid "Installed"
-msgstr "ჩაყენებული"
+msgstr ""
 
 #. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
@@ -62,20 +59,22 @@ msgstr "ჩაყენებული"
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
-msgstr[0] "%(INSTALL)d ჩაყენებისთვის"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
-msgstr[0] "%(REMOVE)d ამოშლისთვის"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:403
 #, python-format
 msgid "%s, %s"
-msgstr "%s, %s"
+msgstr ""
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
@@ -89,7 +88,7 @@ msgstr ""
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
 msgid "Software database is broken"
-msgstr "პროგრამების მონაცემთა ბაზა დაზიანებულია"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
@@ -98,13 +97,10 @@ msgid ""
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"შეუძლებელია ნებისმიერი პროგრამის ინსტალაცია/მოშორება. პრობლემის "
-"გადასაწყვეტად გთხოვთ გამოიყენოთ \"სინაპტიკ\" პროგრამების მენეჯერი ან "
-"ტერმინალიდან \"sudo apt-get install -f\" ბრძანება."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid "Could not install the selected language support"
-msgstr "შეუძლებელია მონიშნული ენის მხარდაჭერის ჩაყენება"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid ""
@@ -116,7 +112,7 @@ msgstr ""
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
-msgstr "შეუძლებელია ენის სრული მხარდაჭერის ჩაყენება"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
@@ -132,27 +128,25 @@ msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
 msgid "The language support is not installed completely"
-msgstr "ენის მხარდაჭერა არ არის ბოლომდე ჩაყენებული"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"შერჩეული ენებისთვის რამოდენიმე თარგმანი ან შეყვანის დამხმარეები ჯერ არ არის "
-"ჩაყენებული. გსურთ მათი მყისვე ჩაყენება?"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
 msgid "_Remind Me Later"
-msgstr "შემახსენე _მოგვიანებით"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
 msgid "_Install"
-msgstr "_ჩაყენება"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
 msgid "Details"
-msgstr "ცნობები"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
 #, python-format
@@ -164,7 +158,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
-msgstr "ენის მხარდაჭერა"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:2
 msgid ""
@@ -176,27 +170,25 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
-msgstr "ჩაყენებული ენები"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
-"ენის ჩაყენების შემდეგ, მომხმარებლებს შეეძლება მისი არჩევა ენის გამართვის "
-"მენიუში."
 
 #: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
-msgstr "შეწყვეტა"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
-msgstr "ცვლილების მიღება"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
-msgstr "ენა მენიუებსა და ფანჯრებისთვის:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -218,7 +210,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
-msgstr "გამოყენება მთლიან სისტემაში"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:16
 msgid ""
@@ -228,11 +220,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Install / Remove Languages..."
-msgstr "ენების ჩაყენება / ამოშლა..."
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Keyboard input method system:"
-msgstr "კლავიატურიდან შეყვანის გზები:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:19
 msgid ""
@@ -248,7 +240,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr "რიცხვების, თარიღის და ფულის ჩვენება ჩვეულებრივ ფორმატში:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:25
 msgid ""
@@ -262,7 +254,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "<small>Changes take effect next time you log in.</small>"
-msgstr "<small>ცვლილებები ამოქმედდება სისტემაში შემდეგი შესვლისას.</small>"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:29
 msgid ""
@@ -271,32 +263,32 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Number:"
-msgstr "რიცხვი:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Date:"
-msgstr "თარიღი:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Currency:"
-msgstr "ფული:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "<b>Example</b>"
-msgstr "<b>მაგალითი</b>"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:34
 msgid "Regional Formats"
-msgstr "რეგიონული ფორმატები"
+msgstr ""
 
 #: ../data/language-selector.desktop.in.h:2
 msgid "Configure multiple and native language support on your system"
-msgstr "თქვენს სისტემაში ძირითადი და სხვა ენების მხარდაჭერის კონფიგურაცია"
+msgstr ""
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 msgid "Incomplete Language Support"
-msgstr "ენა სრული მხარდაჭერის გარეშე"
+msgstr ""
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -312,13 +304,12 @@ msgstr ""
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr "საჭიროა სესიის ხელახლად დაწყება"
+msgstr ""
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
 msgstr ""
-"ენის ახალი პარამეტრები ამოქმედდება მხოლოდ სისტემაში მეორედ შესვლისას."
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
 msgid "Set system default language"
@@ -330,15 +321,15 @@ msgstr ""
 
 #: ../gnome-language-selector:33
 msgid "don't verify installed language support"
-msgstr "ენის მხარდაჭერის სისრულის შემოწმება საჭირო არ არის"
+msgstr ""
 
 #: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
-msgstr "ალტერნატიული datadir"
+msgstr ""
 
 #: ../check-language-support:24
 msgid "target language code"
-msgstr "სასურველი ენის კოდი"
+msgstr ""
 
 #: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"

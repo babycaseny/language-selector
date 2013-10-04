@@ -7,35 +7,33 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-04-09 14:32+0000\n"
-"PO-Revision-Date: 2012-12-23 19:18+0000\n"
+"POT-Creation-Date: 2013-09-18 18:10+0000\n"
+"PO-Revision-Date: 2013-08-28 16:52+0000\n"
 "Last-Translator: Abdul-Rahim Nizamani <Unknown>\n"
 "Language-Team: Sindhi <sd@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-04-17 08:10+0000\n"
-"X-Generator: Launchpad (build 16567)\n"
+"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
+"X-Generator: Launchpad (build 16791)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:50
+#: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (simplified)"
 msgstr "چيني (سادي)"
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
-#: ../LanguageSelector/LocaleInfo.py:52
+#: ../LanguageSelector/LocaleInfo.py:58
 msgid "Chinese (traditional)"
 msgstr "چيني (روايتي)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:225
-#: ../LanguageSelector/qt/QtLanguageSelector.py:85
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
 msgid "No language information available"
 msgstr "ڪا ٻولي معلومات نه ملي سگهي"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:226
-#: ../LanguageSelector/qt/QtLanguageSelector.py:86
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -43,32 +41,31 @@ msgstr ""
 "سرشتي وٽ هن وقت موجود ٻولين جي معلومات ناهي. ڇا توهان اهي حاصل ڪرڻ لاءِ نيٽ "
 "ورڪ تجديد ڪرڻ گهرو ٿا؟ "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
-#: ../LanguageSelector/qt/QtLanguageSelector.py:80
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
 msgid "_Update"
 msgstr "_تجديد"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:314
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:351
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:317
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:354
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "ٻولي"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:321
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
 msgid "Installed"
-msgstr "انسٽال ٿيل"
+msgstr "تنسيب ٿيل"
 
-#. print "%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove)
+#. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:389
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
-msgstr[0] "انسٽال ٿيڻ ۾ %(INSTALL)d"
-msgstr[1] "انسٽال ٿيڻ ۾ %(INSTALL)d"
+msgstr[0] "تنسيب ٿيڻ ۾ %(INSTALL)d"
+msgstr[1] "تنسيب ٿيڻ ۾ %(INSTALL)d"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:391
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -76,7 +73,7 @@ msgstr[0] "%(REMOVE)d هٽائڻ ۾"
 msgstr[1] "%(REMOVE)d هٽائڻ ۾"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:400
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:403
 #, python-format
 msgid "%s, %s"
 msgstr "%s، %s"
@@ -84,35 +81,33 @@ msgstr "%s، %s"
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "default"
-msgstr ""
+msgstr "ڊيفالٽ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:462
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "ڪوبه نه"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:512
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
-#: ../LanguageSelector/qt/QtLanguageSelector.py:69
-#: ../LanguageSelector/qt/QtLanguageSelector.py:328
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
 msgid "Software database is broken"
 msgstr "سافٽويئر ڊيٽابيس خراب ٿيل آهي"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:513
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:717
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
-"سافٽ ويئر انسٽال ڪرڻ يا اڻ انسٽال ڪرڻ ممڪن ڪونهي. ان مسئلي کي اڳ ۾ حل ڪيو "
-"جنهن لاءِ يا ته پيڪيج مينيجر ”سائنيپٽڪ“ استعمال ڪيو يا ٽرمينل ۾ هي ڪمانڊ رن "
-"ڪيو: sudo apt-get install -f"
+"سافٽويئر تنسيب ڪرڻ يا هٽائڻ ممڪن ڪونهي. ان مسئلي کي اڳ ۾ حل ڪريو جنهن لاءِ "
+"يا نه پئڪيج مينيجر ”سائنيپٽڪ“ استعمال ڪريو يا ٽرمينل ۾ هي ڪمانڊ هلايو: ”sudo "
+"apt-get install -f“."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:554
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid "Could not install the selected language support"
-msgstr "چونڊيل ٻولي جو واڌارو انسٽال نه ٿي سگهيو"
+msgstr "چونڊيل ٻوليءَ جو سهڪار تنسيب نه ٿي سگهيو"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:555
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -120,13 +115,13 @@ msgstr ""
 "هي شايد هن پروگرام ۾ بگ آهي. مهرباني ڪري بگ رپورٽ جمع ڪرايو: "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:579
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:614
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:618
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
-msgstr "مڪمل ٻولي جي مدد انسٽال نه ٿي سگهي"
+msgstr "ٻوليءَ جو مڪمل سهڪار تنسيب نه ٿي سگهيو"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:580
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -134,39 +129,35 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:615
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
 msgid "Failed to authorize to install packages."
-msgstr ""
+msgstr "بنڊل تنسيب ڪرڻ لاءِ منظوري حاصل ڪرڻ ۾ ناڪام"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
-#: ../LanguageSelector/qt/QtLanguageSelector.py:162
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
 msgid "The language support is not installed completely"
-msgstr "ٻولين جي مدد مڪمل طرح انسٽال ٿيل ناهي"
+msgstr "ٻوليءَ سهڪار جي تنسيب مڪمل نه آهي."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
-#: ../LanguageSelector/qt/QtLanguageSelector.py:163
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
+"توهانجي چونڊيل ٻوليءَ لاءِ ڪجھ ترجما يا لکت سهائتائون تنسيب ٿيل نه آهن. ڇا "
+"توهان اِهي تنسيب ڪرڻ چاهيو ٿا؟"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:677
-#: ../LanguageSelector/qt/QtLanguageSelector.py:81
-#: ../LanguageSelector/qt/QtLanguageSelector.py:158
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
 msgid "_Remind Me Later"
 msgstr "_مون کي آئنده ياد ڪرايو"
 
-#. FIXME: add "details"
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:678
-#: ../LanguageSelector/qt/QtLanguageSelector.py:157
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
 msgid "_Install"
-msgstr "_انسٽال ڪريو"
+msgstr "_تنسيب ڪريو"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:681
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
 msgid "Details"
-msgstr "تفصيل"
+msgstr "تفصيلَ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:939
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -174,11 +165,11 @@ msgid ""
 "close and re-open Language Support."
 msgstr ""
 
-#: ../data/LanguageSelector.ui.h:8 ../data/language-selector.desktop.in.h:1
+#: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
 msgstr "ٻولي سهڪار"
 
-#: ../data/LanguageSelector.ui.h:1
+#: ../data/LanguageSelector.ui.h:2
 msgid ""
 "<big><b>Checking available language support</b></big>\n"
 "\n"
@@ -189,24 +180,25 @@ msgstr ""
 "\n"
 "ترجمن ۽ لکتي سهڪارن جي دستيابي مختلف ٻولين لاءِ مختلف ٿي سگهي ٿي."
 
-#: ../data/LanguageSelector.ui.h:4
-msgid "Installed Languages"
-msgstr "انسٽال ٿيل ٻوليون"
-
 #: ../data/LanguageSelector.ui.h:5
+msgid "Installed Languages"
+msgstr "تنسيب ٿيل ٻوليون"
+
+#: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
-"جڏهن ڪا ٻولي انسٽال ٿيل آهي، ته يوزر ان کي ٻولي ترتيبن ۾ چونڊي سگهن ٿا"
+"جڏهن ڪا ٻولي تنسيب ٿيل هجي، ته کاتيدار اها پنهنجي ٻوليءَ ترتيبن ۾ چونڊي سگهن "
+"ٿا."
 
-#: ../data/LanguageSelector.ui.h:6
+#: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
 msgstr "رد"
 
-#: ../data/LanguageSelector.ui.h:7
+#: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
-msgstr "تبديليون لاڳو ڪيو"
+msgstr "تبديليون لاڳو ڪريو"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
@@ -232,17 +224,18 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
-msgstr "سموري سسٽم ۾ لاڳو ڪريو"
+msgstr "سموري سرشتي ۾ لاڳو ڪريو"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid ""
 "<small>Use the same language choices for startup and the login "
 "screen.</small>"
 msgstr ""
+"<small>شروعات ۽ داخلا اسڪرين لاءِ ساڳي ٻولي چونڊ استعمال ڪريو.</small>"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Install / Remove Languages..."
-msgstr "ٻوليون انسٽال ڪريو يا هٽايو..."
+msgstr "ٻوليون تنسيب ڪريو يا هٽايو..."
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Keyboard input method system:"
@@ -262,7 +255,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "انگ، تاريخون ۽ سڪن جون رقمون عام طرح ڏيکاريو هن لاءِ:"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid ""
@@ -282,10 +275,12 @@ msgstr "<small>تبديليون ٻيهر داخل ٿيڻ وقت لاڳو ٿين�
 msgid ""
 "<small>Use the same format choice for startup and the login screen.</small>"
 msgstr ""
+"<small>فارميٽ جي ساڳي چونڊ شروعات ۽ داخلا اسڪرين لاءِ پڻ استعمال "
+"ڪريو.</small>"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Number:"
-msgstr "نمبر:"
+msgstr "عدد:"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Date:"
@@ -309,7 +304,6 @@ msgstr "پنهنجي سسٽم تي مقامي توڙي ٻين ٻولين جو س
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
-#: ../data/incomplete-language-support-kde.note.in:5
 msgid "Incomplete Language Support"
 msgstr "نامڪمل ٻولي سهڪار"
 
@@ -332,127 +326,36 @@ msgstr "سيشن جي ٻيهر شروعات گهربل"
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
-msgstr ""
-"ٻولي جي نئين سيٽنگ تڏهن لاڳو ٿيندي جڏهن توهان هڪ ڀيرو لاگ آئوٽ ٿيندؤ."
+msgstr "ٻوليءَ جي نئين ترتيب تڏهن لاڳو ٿيندي جڏهن توهان هڪ ڀيرو خارج ٿيند‏ؤ."
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
 msgid "Set system default language"
-msgstr "سسٽم جي ڊيفالٽ ٻولي مقرر ڪريو"
+msgstr "سرشتي جي ڊيفالٽ ٻولي مقرر ڪريو"
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
 msgid "System policy prevented setting default language"
-msgstr "سسٽم پاليسيءَ ڊيفالٽ ٻولي مقرر ڪرڻ کي روڪي ڇڏيو"
+msgstr "سرشتي جي پاليسيءَ ڊيفالٽ ٻولي مقرر ٿيڻ نه ڏني"
 
-#: ../gnome-language-selector:17
+#: ../gnome-language-selector:33
 msgid "don't verify installed language support"
 msgstr "تنسيب ٿيل ٻولي سهڪار جي تصديق نه ڪريو"
 
-#: ../gnome-language-selector:20 ../check-language-support:25
+#: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
 msgstr "متبادل ڊيٽاخانو"
 
-#: ../check-language-support:22
+#: ../check-language-support:24
 msgid "target language code"
 msgstr "گهربل ٻولي ڪوڊ"
 
-#: ../check-language-support:26
+#: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
 
-#: ../check-language-support:28
+#: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr "سڀني ٻولين لاءِ سمورا ٻولي سهڪار پئڪيج ڏيکاريو"
 
-#: ../check-language-support:31
+#: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
-msgstr "انسٽال ٿيل پيڪيج ڏيکاريو ۽ جيڪي کٽل آهن سي به"
-
-#~ msgid "Extra fonts"
-#~ msgstr "واڌارا فانٽ"
-
-#~ msgid "Translations"
-#~ msgstr "ترجما"
-
-#~ msgid "Select language to uninstall:"
-#~ msgstr "اڻ انسٽال ڪرڻ لاءِ ٻولي چونڊيو:"
-
-#~ msgid "Keyboard input method:"
-#~ msgstr "ڪيبورڊ اندراج جو طريقو:"
-
-#~ msgid "Default system language:"
-#~ msgstr "سرشتي جي ڊيفالٽ ٻولي:"
-
-#~ msgid "Set System Language"
-#~ msgstr "سرشتي جي ٻولي سيٽ ڪريو"
-
-#~ msgid "Partially Installed"
-#~ msgstr "جزوي انسٽال ٿيل"
-
-#~ msgid "Language Set"
-#~ msgstr "ٻولي سيٽ"
-
-#, python-format
-#~ msgid "Default system Language now set to %s."
-#~ msgstr "سرشتي جي ڊيفالٽ ٻولي هاڻي %s آهي."
-
-#~ msgid "Language Installed"
-#~ msgstr "ٻولي انسٽال ٿي ويئي"
-
-#~ msgid "Not installed"
-#~ msgstr "انسٽال نه ٿيل"
-
-#~ msgid "Select language to install:"
-#~ msgstr "انسٽال ڪرڻ لاءِ ٻولي چونڊيو:"
-
-#~ msgid "Already installed"
-#~ msgstr "اڳيئي انسٽال ٿيل"
-
-#~ msgid "Please run this software with administrative rights."
-#~ msgstr "هن سافٽويئر کي انتظامي اختيارات سان هلايو."
-
-#~ msgid "Language Uninstalled"
-#~ msgstr "ٻولي اڻ انسٽال ٿي ويئي"
-
-#~ msgid "Not Root User"
-#~ msgstr "روٽ يوزر ناهي"
-
-#~ msgid "Language Not Set"
-#~ msgstr "ٻولي سيٽ نه ٿي"
-
-#~ msgid "Components:"
-#~ msgstr "جزا:"
-
-#~ msgid "Input methods"
-#~ msgstr "اندراج جا طريقا"
-
-#~ msgid "Spellchecking and writing aids"
-#~ msgstr "هِجي چڪاس ۽ ليک امدادون"
-
-#~ msgid "Failed to set system language."
-#~ msgstr "سرشتي جي ٻولي سيت نه ٿي سگھي"
-
-#~ msgid ""
-#~ "<small>Drag languages to arrange them in order of preference.\n"
-#~ "Changes take effect next time you log in.</small>"
-#~ msgstr ""
-#~ "ٻولين کي ڊريگ ڪري پنهنجي پسند جي ترتيب ۾ آڻيو. تبديليون تڏهن لاڳو ٿينديون "
-#~ "جڏهن توهان ايندڙ ڀيري لاگ ان ڪندؤ."
-
-#~ msgid "Component already installed"
-#~ msgstr "ڪمپونينٽ اڳيئي تنسيب ٿيل"
-
-#, python-format
-#~ msgid "Translations and support have now been uninstalled for %s."
-#~ msgstr "%s جا ترجما ۽ سهڪار هاڻي هٽايا ويا آهن."
-
-#~ msgid "Component not available"
-#~ msgstr "ڪمپونينٽ دستياب ناهي"
-
-#~ msgid "Component not installed"
-#~ msgstr "ڪمپونينٽ تنسيب ٿيل ناهي"
-
-#~ msgid "Install and set system languages"
-#~ msgstr "سسٽم ٻوليون تنسيب ۽ سيٽ ڪريو"
-
-#~ msgid "System Languages"
-#~ msgstr "سسٽم ٻوليون"
+msgstr "تنسيب ٿيل بنڊل به ڏيکاريو ۽ کٽل به ڏيکاريو"
