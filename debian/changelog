@@ -1,3 +1,14 @@
+language-selector (0.115) saucy; urgency=low
+
+  * SECURITY UPDATE: possible privilege escalation via policykit UID lookup
+    race.
+    - dbus_backend/ls-dbus-backend: pass system-bus-name as a subject
+      instead of pid so policykit can get the information from the system
+      bus.
+    - CVE-2013-1066
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 18 Sep 2013 12:45:13 -0400
+
 language-selector (0.114) saucy; urgency=low
 
   * Update for python-distutils-extra changes to help handling
