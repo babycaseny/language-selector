@@ -173,10 +173,10 @@ fn:ug::fonts-ukij-uyghur
 fn:ur::fonts-nafees
 fn:ur::fonts-sil-scheherazade
 fn:yi::fonts-sil-ezra
-fn:zh-hans::ttf-wqy-zenhei
+fn:zh-hans::fonts-droid
 fn:zh-hans::fonts-arphic-uming
 fn:zh-hans::fonts-arphic-ukai
-fn:zh-hant::ttf-wqy-zenhei
+fn:zh-hant::fonts-droid
 fn:zh-hant::fonts-arphic-uming
 fn:zh-hant::fonts-arphic-ukai
 

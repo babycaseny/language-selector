@@ -1,3 +1,14 @@
+language-selector (0.118) trusty; urgency=low
+
+  * data/pkg_depends:
+    ttf-wqy-zenhei replaced with fonts-droid for Chinese (LP: #1173571).
+  * fontconfig/69-language-selector-zh-hk.conf, -zh-cn.conf, -zh-sg.conf:
+    Droid Sans Fallback moved to top.
+  * fontconfig/69-language-selector-zh-tw.conf:
+    Outdated DejaVu bindings removed (LP: #1173571).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Wed, 06 Nov 2013 14:58:00 +0100
+
 language-selector (0.117) trusty; urgency=low
 
   * LanguageSelector/LocaleInfo.py:
