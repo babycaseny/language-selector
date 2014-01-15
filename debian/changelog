@@ -1,3 +1,10 @@
+language-selector (0.119) trusty; urgency=medium
+
+  * data/language-selector.desktop.in:
+    - Show in both unity-control-center and gnome-control-center (LP: #1257505)
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Wed, 15 Jan 2014 15:07:58 +1300
+
 language-selector (0.118) trusty; urgency=low
 
   * data/pkg_depends:
