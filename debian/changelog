@@ -1,3 +1,10 @@
+language-selector (0.120) trusty; urgency=low
+
+  * fontconfig/69-language-selector-zh-hk.conf, -zh-mo.conf:
+    WenQuanYi Zen Hei fonts dropped (LP: #1270647).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 21 Jan 2014 22:37:00 +0100
+
 language-selector (0.119) trusty; urgency=medium
 
   * data/language-selector.desktop.in:
