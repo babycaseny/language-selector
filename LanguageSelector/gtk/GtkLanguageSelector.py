@@ -448,8 +448,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
         currentIM = self.ImConfig.getCurrentInputMethod()
 
         # find out about the other options
-        names = dict(default=_('default'), xim=_('none'), ibus='IBus',
-          scim='SCIM', hangul='Hangul', thai='Thai')
+        names = dict(xim=_('none'), ibus='IBus', scim='SCIM', hangul='Hangul', thai='Thai')
         for (i, IM) in enumerate(self.ImConfig.getAvailableInputMethods()):
             name = names[IM] if IM in names else IM
             iter = model.append()

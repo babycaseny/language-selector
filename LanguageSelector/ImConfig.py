@@ -1,4 +1,4 @@
-# ImConfig.py (c) 2012 Canonical
+# ImConfig.py (c) 2012-2014 Canonical
 # Author: Gunnar Hjalmarsson <gunnarhj@ubuntu.com>
 #
 # Released under the GPL
@@ -17,26 +17,43 @@ class ImConfig(object):
 
     def getAvailableInputMethods(self):
         inputMethods = subprocess.check_output(['im-config', '-l']).decode().split()
-        return ['default'] + sorted(inputMethods)
+        return sorted(inputMethods)
 
     def getCurrentInputMethod(self):
-        user_conf_file = os.path.expanduser('~/.xinputrc')
-        if os.path.exists(user_conf_file):
-            for line in open(user_conf_file):
+        (systemConfig, userConfig, autoConfig) = \
+          subprocess.check_output(['im-config', '-m']).decode().split()
+        if userConfig != 'missing':
+            return userConfig
+
+        """
+        no saved user configuration
+        let's ask the system and save the system configuration as the user ditto
+        """
+        system_conf = ''
+        if systemConfig == 'default':
+            # Using the autoConfig value might be incorrect if the mode in
+            # /etc/default/im-config is 'cjkv'. However, as from im-config 0.24-1ubuntu1
+            # the mode is 'auto' for all users of language-selector-gnome.
+            system_conf = autoConfig
+        elif os.path.exists('/etc/X11/xinit/xinputrc'):
+            for line in open('/etc/X11/xinit/xinputrc'):
                 if line.startswith('run_im'):
-                    return line.split()[1]
-        return 'default'
+                    system_conf = line.split()[1]
+                    break
+        if not system_conf:
+            system_conf = autoConfig
+        self.setInputMethod(system_conf)
+        return system_conf
 
     def setInputMethod(self, im):
-        arg = 'REMOVE' if im == 'default' else im
-        subprocess.call(['im-config', '-n', arg])
+        subprocess.call(['im-config', '-n', im])
     
 if __name__ == '__main__':
     im = ImConfig()
     print('available input methods: %s' % im.getAvailableInputMethods())
+    print('current method: %s' % im.getCurrentInputMethod())
     print("setting method 'fcitx'")
     im.setInputMethod('fcitx')
     print('current method: %s' % im.getCurrentInputMethod())
-    print("setting method 'default' (i.e. removing ~/.xinputrc)")
-    im.setInputMethod('default')
-    print('current method: %s' % im.getCurrentInputMethod())
+    print('removing ~/.xinputrc')
+    im.setInputMethod('REMOVE')
