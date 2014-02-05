@@ -1,4 +1,4 @@
-language-selector (0.121) UNRELEASED; urgency=low
+language-selector (0.121) trusty; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py,
     LanguageSelector/ImConfig.py:
@@ -9,7 +9,7 @@ language-selector (0.121) UNRELEASED; urgency=low
   * help/C/index.docbook:
     - Language Support Help updated.
 
- -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Mon, 27 Jan 2014 06:51:00 +0100
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Wed, 05 Feb 2014 08:19:00 +0100
 
 language-selector (0.120) trusty; urgency=low
 
