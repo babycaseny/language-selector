@@ -6,6 +6,8 @@ language-selector (0.121) UNRELEASED; urgency=low
   * debian/control:
     - Bump version of the im-config dependency.
     - Bump Standards-Version to 3.9.5.
+  * help/C/index.docbook:
+    - Language Support Help updated.
 
  -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Mon, 27 Jan 2014 06:51:00 +0100
 

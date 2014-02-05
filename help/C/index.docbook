@@ -19,7 +19,7 @@
 		  <surname>Hjalmarsson</surname>
 		  <affiliation>
 			<orgname>Ubuntu Documentation Contributors team</orgname>
-			<address> <email>ubuntu@gunnar.cc</email> </address>
+			<address> <email>gunnarhj@ubuntu.com</email> </address>
 		  </affiliation>
 		</author>
 
@@ -50,7 +50,7 @@
 	</legalnotice>
 
 	<copyright>
-		<year>2011-2012</year>
+		<year>2011-2014</year>
 		<holder>Canonical Ltd.</holder>
 	</copyright>
 
@@ -112,22 +112,20 @@
 
 	<para>The desired display language(s) and related settings can be set from <application>Language Support</application>. To open the tool, click the icon at the very right of the top bar and select <guilabel>System Settings...</guilabel> -> <guilabel>Language Support</guilabel>.</para>
 
-	<para>There are both system wide and user specific settings. The controls for system wide settings are the <guibutton>Apply System Wide</guibutton> buttons and the <guibutton>Install / Remove Languages...</guibutton> button. Those controls are only available to users with access to administer the system; to other users - if any - they are greyed out.</para>
+	<para>There are both system wide and user specific settings. The controls for system wide settings are the <guibutton>Apply system-wide</guibutton> buttons and the <guibutton>Install / Remove Languages...</guibutton> button. Those controls are only available to users with access to administer the system; to other users - if any - they are greyed out.</para>
 
 	<para>The <guilabel>Language Support</guilabel> window includes two tabs: <guilabel>Language</guilabel> and <guilabel>Regional Formats</guilabel>.</para>
 
 	<sect2 id="lang-tab">
 		<title>Language</title>
 
-		<para>The box <guilabel>Language for menus and windows</guilabel> contains items representing the translations that are available on the system. The current <link linkend="priority-list">language priority list</link> consists of the first items with black characters. Below, displayed in grey, are the other available translations. To add a translation to the language list, you pick a greyed item, drag it upwards, and drop it at a position above the <quote>English</quote> item.</para>
+		<para>The box <guilabel>Language for menus and windows</guilabel> contains items representing the translations that are available on the system. The current <emphasis>language priority list</emphasis> consists of the first items with black characters. Below, displayed in grey, are the other available translations. To add a translation to the language list, you pick a greyed item, drag it upwards, and drop it at a position above the <quote>English</quote> item.</para>
 
-		<para>By clicking the <guibutton>Apply System-Wide</guibutton> button, the system language list is set to the same items as your own current list. The system language setting controls the display language at startup and on the login screen.</para>
+		<para>By clicking the <guibutton>Apply system-wide</guibutton> button, the system language list is set to the same items as your own current list. The system language setting controls the display language at startup and on the login screen.</para>
 
-		<para>The button <guibutton>Install / Remove Languages...</guibutton> opens the <guilabel>Installed Languages</guilabel> window with a list of all the languages that can be downloaded and installed on the system. Currently available languages are the checked items in the list. To install a new language, you check it in the list and click the <guibutton>Apply Changes</guibutton> button. That will download and install both the language's translations and other related components if any.</para>
+		<para>The button <guibutton>Install / Remove Languages...</guibutton> opens the <guilabel>Installed Languages</guilabel> window with a list of all the languages that can be downloaded and installed on the system. Currently installed languages are the checked items in the list. To install a new language, you check it in the list and click the <guibutton>Apply Changes</guibutton> button. That will download and install both the language's translations and other related components if any.</para>
 
 		<para>To type certain languages, such as Chinese, Japanese or Korean, a more complex input method than just a simple key to character mapping is required. Through the <guilabel>Keyboard input method system</guilabel> drop-down list you can set a framework for input methods that will be started automatically at login. The recommended input method system for Ubuntu is <quote>IBus</quote>. If you want to use alternative systems, install the corresponding packages first and then choose the desired system from the drop-down list.</para>
-
-		<para>If the <quote>default</quote> option is selected, Ubuntu makes a guess, and thus starts an input method system at login if the current language is Chinese, Japanese, Korean or Vietnamese.</para>
 
 	</sect2>
 
@@ -136,7 +134,7 @@
 
 		<para>Typically there are country or region based conventions for how numbers, date and time, currency, etc. are denoted, and each item in the drop-down list at the top of the <guilabel>Regional Formats</guilabel> tab represents a set of format rules. If you change the setting, examples of what the new setting results in are instantly shown at the bottom of the tab.</para>
 
-		<para>By clicking the <guibutton>Apply System-Wide</guibutton> button, the system value is set out from your own current setting. The system format setting controls the display formats at startup and on the login screen. It also serves as a default value for users who have not set a user format setting.</para>
+		<para>By clicking the <guibutton>Apply system-wide</guibutton> button, the system value is set out from your own current setting. The system format setting controls the display formats at startup and on the login screen. It also serves as a default value for users who have not set a user format setting.</para>
 
 	</sect2>
 
@@ -155,13 +153,7 @@
 		<para>One of the <application><ulink url="http://www.freedesktop.org/wiki/Software/LightDM">LightDM</ulink></application> compatible login greeters, <emphasis>lightdm-gtk-greeter</emphasis>, provides an alternative control for setting the own user language.</para>
 
 		<!-- a link to "addremove-install.page" might be appropriate here -->
-		<para>To get a language chooser on the login screen, please install the package <emphasis>lightdm-gtk-greeter</emphasis> if it's not installed already. Then, to enable it:</para>
-
-		<itemizedlist>
-		  <listitem><para>In <code>/etc/lightdm/lightdm-gtk-greeter-ubuntu.conf</code>, set: <code>show-language-selector=true</code></para></listitem>
-		  <listitem><para>In <code>/etc/lightdm/lightdm.conf</code>, set: <code>greeter-session=lightdm-gtk-greeter</code></para></listitem>
-		  <listitem><para>Reboot</para></listitem>
-		</itemizedlist>
+		<para>To get a language chooser on the login screen, please install the package <emphasis>lightdm-gtk-greeter</emphasis> if it's not installed already.</para>
 
 	</sect2>
 
