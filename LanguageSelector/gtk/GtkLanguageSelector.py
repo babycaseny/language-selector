@@ -934,7 +934,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
                 "choice. The examples may show up if you\n"
                 "close and re-open Language Support.") % mylocale + ' ]')
             return
-        self.label_example_currency.set_text(locale.currency(20457.99))
+        self.label_example_currency.set_text(locale.currency(20457.99, grouping=True))
         self.label_example_number.set_text(locale.format("%.2f", 1234567.89, grouping=True))
         self.label_example_date.set_text(time.strftime(locale.nl_langinfo(locale.D_T_FMT)))
 
