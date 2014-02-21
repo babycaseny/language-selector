@@ -1,3 +1,9 @@
+language-selector (0.123) trusty; urgency=medium
+
+  * Rewrite the python shebang path to /usr/bin/python3.
+
+ -- Matthias Klose <doko@ubuntu.com>  Thu, 20 Feb 2014 13:10:24 +0100
+
 language-selector (0.122) trusty; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py:
