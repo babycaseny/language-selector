@@ -220,10 +220,10 @@ class GtkLanguageSelector(LanguageSelectorBase):
         if self.is_admin:
             # check if the package list is up-to-date
             if not self._cache.havePackageLists:
-                d = Gtk.MessageDialog(parent=self.window_main,
-                                      flags=Gtk.DialogFlags.MODAL,
-                                      message_type=Gtk.MessageType.INFO,
+                d = Gtk.MessageDialog(message_type=Gtk.MessageType.INFO,
                                       buttons=Gtk.ButtonsType.CANCEL)
+                d.set_modal(True)
+                d.set_transient_for(self.window_main)
                 d.set_markup("<big><b>%s</b></big>\n\n%s" % (
                     _("No language information available"),
                     _("The system does not have information about the "
@@ -514,10 +514,10 @@ class GtkLanguageSelector(LanguageSelectorBase):
         return (to_inst, to_rm)
 
     def error(self, summary, msg):
-        d = Gtk.MessageDialog(parent=self.window_main,
-                              flags=Gtk.DialogFlags.MODAL,
-                              message_type=Gtk.MessageType.ERROR,
+        d = Gtk.MessageDialog(message_type=Gtk.MessageType.ERROR,
                               buttons=Gtk.ButtonsType.CLOSE)
+        d.set_modal(True)
+        d.set_transient_for(self.window_main)
         d.set_markup("<big><b>%s</b></big>\n\n%s" % (summary, msg))
         d.set_title=("")
         d.run()
@@ -585,7 +585,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
     
     def _run_transaction(self, transaction):
-        dia = AptProgressDialog(transaction, parent=self.window_main)
+        dia = AptProgressDialog(transaction)
+        dia.set_transient_for(self.window_main)
         dia.connect("finished", self._on_finished)
         dia.run(error_handler=self._on_error)
         
@@ -658,9 +659,9 @@ class GtkLanguageSelector(LanguageSelectorBase):
         #print("Missing: %s " % missing)
         if len(missing) > 0:
             # FIXME: add "details"
-            d = Gtk.MessageDialog(parent=self.window_main,
-                                  flags=Gtk.DialogFlags.MODAL,
-                                  message_type=Gtk.MessageType.QUESTION)
+            d = Gtk.MessageDialog(message_type=Gtk.MessageType.QUESTION)
+            d.set_modal(True)
+            d.set_transient_for(self.window_main)
             d.set_markup("<big><b>%s</b></big>\n\n%s" % (
                 _("The language support is not installed completely"),
                 _("Some translations or writing aids available for your "
