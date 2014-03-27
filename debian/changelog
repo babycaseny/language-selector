@@ -1,3 +1,10 @@
+language-selector (0.126) trusty; urgency=medium
+
+  * LanguageSelector/ImConfig.py:
+    Make fcitx the system default if installed (LP: #1297831).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Thu, 27 Mar 2014 15:09:00 +0100
+
 language-selector (0.125) trusty; urgency=medium
 
   * fontconfig/69-language-selector-zh-*.conf:
