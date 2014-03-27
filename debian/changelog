@@ -1,3 +1,10 @@
+language-selector (0.125) trusty; urgency=medium
+
+  * fontconfig/69-language-selector-zh-*.conf:
+    Added 'binding="strong"' when missing (LP: #1227034).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Thu, 27 Mar 2014 11:38:00 +0100
+
 language-selector (0.124) trusty; urgency=medium
 
   * LanguageSelector/gtk/GtkLanguageSelector.py:
