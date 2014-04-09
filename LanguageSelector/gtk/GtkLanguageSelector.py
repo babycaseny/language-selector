@@ -674,6 +674,7 @@ class GtkLanguageSelector(LanguageSelectorBase):
             expander = Gtk.Expander.new(_("Details"))
             scroll = Gtk.ScrolledWindow()
             scroll.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+            scroll.set_min_content_height(130)
             textview = Gtk.TextView()
             textview.set_cursor_visible(False)
             textview.set_editable(False)

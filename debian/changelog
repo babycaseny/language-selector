@@ -1,3 +1,10 @@
+language-selector (0.128) UNRELEASED; urgency=medium
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py:
+    - set a minimal height for the details (lp: #1165626)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 09 Apr 2014 17:16:34 +0200
+
 language-selector (0.126) trusty; urgency=medium
 
   * LanguageSelector/ImConfig.py:
