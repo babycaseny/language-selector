@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
-"PO-Revision-Date: 2013-06-10 05:22+0000\n"
-"Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
+"PO-Revision-Date: 2014-02-23 08:43+0000\n"
+"Last-Translator: Marian Vasile <marianvasile1972@gmail.com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-04-10 17:53+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 "Language: ro\n"
 
 #. Hack for Chinese langpack split
@@ -85,20 +85,16 @@ msgstr "%s, %s"
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "nimic"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid "Software database is broken"
 msgstr "Baza de date pentru programe este deteriorată"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -108,11 +104,11 @@ msgstr ""
 "pachete „Synaptic” sau executați comanda „sudo apt-get install -f” într-un "
 "terminal pentru a remedia mai întâi această problemă."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
 msgstr "Suportul pentru limba selectată nu a putut fi instalat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -120,13 +116,13 @@ msgstr ""
 "Probabil aceasta este o eroare a aplicației. Raportați eroarea la "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "Nu s-a putut instala întregul suport pentru limbă"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -166,7 +162,7 @@ msgstr "_Instalează"
 msgid "Details"
 msgstr "Detalii"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -242,6 +238,9 @@ msgid ""
 "<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small><b>Mutați intrările pentru limbă pentru a le aranja în ordinea "
+"preferințelor.</b>\n"
+"Modificările vor avea efect la următoarea autentificare.</small."
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -274,6 +273,14 @@ msgid ""
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
+"Dacă doriți să lucrați cu o limbă care să necesite metode de introducere mai "
+"complexe decât maparea unei singure taste drept caracter, ați putea dori să "
+"activați această funcție.\n"
+"De exemplu, veți avea nevoie de această funcție pentru a tasta în limbile "
+"chineză, japoneză, coreeană sau vietnameză.\n"
+"Valoarea recomandată pentru Ubuntu este „IBus”.\n"
+"Dacă doriți să utilizați sisteme alternative de introducere, instalați mai "
+"întâi pachetul corespunzător și apoi alegeți de aici sistemul dorit."
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"

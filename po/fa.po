@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
-"PO-Revision-Date: 2013-06-10 05:28+0000\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
+"PO-Revision-Date: 2014-01-20 16:56+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@gmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-04-10 17:52+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 "Language: fa\n"
 
 #. Hack for Chinese langpack split
@@ -32,7 +32,7 @@ msgstr "چینی (سنتی)"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
 msgid "No language information available"
-msgstr "اطلاعاتی درباره زبان موجود نیست"
+msgstr "هیچ اطّلاعات زبانی موجود نیست"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
 msgid ""
@@ -79,20 +79,16 @@ msgstr "%s،‏ %s"
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr "پیش‌فرض"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "هیچ‌کدام"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid "Software database is broken"
 msgstr "پایگاه اطلاعات نرم افزار ناقص است"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -102,11 +98,11 @@ msgstr ""
 "»سیناپتیک« استفاده کنید و یا دستور »sudo apt-get install -f« را در یک پایانه "
 "اجرا کنید تا این مشکل برطرف شود."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
 msgstr "نتوانست بسته پشتیبان این زبان را کار گزاری کند"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -115,13 +111,13 @@ msgstr ""
 "دهید:\r\n"
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "نتوانست‌ پشتیباتی کامل از زبان را کار گزاری کند"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -161,7 +157,7 @@ msgstr "نصب"
 msgid "Details"
 msgstr "جزئیات ‌"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -183,8 +179,9 @@ msgid ""
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
-"big><b>در حال جستجو برای پشتیبانی زبانهای موجود</b></big>\n"
-"وجود ترجمه‌ و کمک افزارهای نوشتاری در زبان های مختلف فرق میکند."
+"<big><b>در حال بررسی پشتیبانی زبان موجود</b></big>\n"
+"\n"
+"ممکن است وجود ترجمه‌‌ها یا کمک‌های نوشتاری برای زبان های مختلف فرق کند."
 
 #: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
@@ -204,7 +201,7 @@ msgstr "لغو"
 
 #: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
-msgstr "دگرگونی ها  را اعمال کن"
+msgstr "تغییرات را اعمال کن"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
@@ -235,6 +232,8 @@ msgid ""
 "<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small><b>برای چیدن زبان‌ها به ترتیب اولویت، آن‌ها را بکشید.</b>\n"
+"تغییرات دفعه‌ی بعدی که وارد می‌شوید اثر می‌کنند.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -276,7 +275,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr "برای اینها شماره، تاریخ و واحد پول را در قالب عادی خودشون نشان بده:"
+msgstr "نمایش شماره‌ها، تاریخ‌ها و واحدهای پولی در قالب معمول برای:"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid ""
@@ -391,3 +390,6 @@ msgstr "همه‌ی بسته‌های پشتیبانی زبان را برای ه
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "بسته‌های مفقود را نیز با بسته‌های نصب شده نمایش بده."
+
+#~ msgid "default"
+#~ msgstr "پیش‌فرض"

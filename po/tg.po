@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
 "PO-Revision-Date: 2013-04-18 19:36+0000\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <tg@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-04-10 17:53+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
@@ -80,20 +80,16 @@ msgstr "%s, %s"
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr "пешфарз"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "ҳеҷ"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid "Software database is broken"
 msgstr "Пойгоҳи иттилоотии нармафзор вайрон мебошад"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -103,11 +99,11 @@ msgstr ""
 "бастаҳои \"Synaptic\"-ро истифода баред, ё ки барои аввал ҳал кардани ин "
 "мушкилӣ, фармони \"sudo apt-get install -f\"-ро дар терминал иҷро кунед."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
 msgstr "Дастгирии забони интихобшударо насб кардан нашуд"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -117,13 +113,13 @@ msgstr ""
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug "
 "фиристонед"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "Дастгирии пурраи забонро насб кардан нашуд"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -163,7 +159,7 @@ msgstr "_Насб кардан"
 msgid "Details"
 msgstr "Тафсилот"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -410,3 +406,6 @@ msgstr ""
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "намоиш додани бастаҳои насбшуда ва инчунин бастаҳои намерасидагӣ"
+
+#~ msgid "default"
+#~ msgstr "пешфарз"

@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
-"PO-Revision-Date: 2013-07-13 15:08+0000\n"
-"Last-Translator: zhangchao <zhangchao@ubuntukylin.com>\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
+"PO-Revision-Date: 2014-03-26 03:41+0000\n"
+"Last-Translator: Carlos Gong <Unknown>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
-"Language: \n"
+"X-Launchpad-Export-Date: 2014-04-10 17:53+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
+"Language: zh_CN\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
@@ -77,31 +77,27 @@ msgstr "%s，%s"
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr "默认"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "无"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid "Software database is broken"
 msgstr "软件数据库损坏"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr "无法安装或删除任何软件。请先使用新立得软件包管理器或在终端运行 \"sudo apt-get install -f\" 来修正这个问题。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
 msgstr "无法安装选定的语言支持"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -109,13 +105,13 @@ msgstr ""
 "这也许是该应用程序的一个问题。 请在 https://bugs.launchpad.net/ubuntu/+source/language-"
 "selector/+filebug?no-redirect 上报告这个问题。"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "无法安装完整的语言支持"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -149,7 +145,7 @@ msgstr "安装(_I)"
 msgid "Details"
 msgstr "详细信息"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -173,7 +169,7 @@ msgid ""
 msgstr ""
 "<big><b>检查可用的语言支持</b></big>\n"
 "\n"
-"不同语言里的翻译和写作助手的支持程度可能不同。"
+"不同语言的翻译和写作助手的支持程度可能不同。"
 
 #: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
@@ -217,6 +213,8 @@ msgid ""
 "<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small><b>拖动语言来安排他们的优先顺序。</b>\n"
+"在您下次登录时修改生效。</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -247,6 +245,9 @@ msgid ""
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
+"如果您需要输入某种语言，需要更复杂的输入方法，不仅仅是一个简单的按键字母映射，可能需要您启用此功能。\n"
+"例如，您将需要此功能用于输入中文，日语，韩语和越南语。\n"
+"Ubuntu 建议使用\"IBus\"。如果您想使用其他输入法系统，首先安装相应的软件包，然后选择所需的输入法系统。"
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
@@ -357,3 +358,6 @@ msgstr "为所有语言输出所有可用的语言支持包"
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "同时显示已安装的和缺失的软件包"
+
+#~ msgid "default"
+#~ msgstr "默认"

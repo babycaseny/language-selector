@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
 "PO-Revision-Date: 2013-08-30 18:47+0000\n"
 "Last-Translator: Aurimas Fišeras <Unknown>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-04-10 17:53+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 "Language: lt\n"
 
 #. Hack for Chinese langpack split
@@ -84,20 +84,16 @@ msgstr "%s, %s"
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr "numatytoji"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "nėra"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid "Software database is broken"
 msgstr "Programinės įrangos duomenų bazė sugadinta"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -107,11 +103,11 @@ msgstr ""
 "pasinaudokite „Synaptic“ arba terminale įvykdykite komandą „sudo apt-get "
 "install -f“, norėdami ištaisyti šią problemą."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
 msgstr "Nepavyko įdiegti pasirinktos kalbos palaikymo"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -119,23 +115,24 @@ msgstr ""
 "Tai greičiausiai yra programos klaida. Prašome pranešti apie klaidą "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "Nepavyko įdiegti pilno kalbos palaikymo"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
 "very right of the top bar and select \"System Settings... -> Software "
 "Sources\")."
 msgstr ""
-"Dažniausiai tai susiję su klaida jūsų programų archyve arba programų "
-"tvarkytuvėje. Patikrinkite savo nuostatas Programinės įrangos saugyklose "
+"Dažniausiai tai susiję su klaida jūsų programų archyve arba programų paketų "
+"tvarkytuvėje. Patikrinkite „Programinės įrangos saugyklų“ nustatymus "
 "(paspauskite piktogramą esančią dešiniausiai viršutinėje juostoje ir "
-"pasirinkite „Sistemos Nustatymai... -> Programinės įrangos saugyklos“)."
+"pasirinkite „Sistemos Nustatymai... -> Programos ir atnaujinimai "
+"(Saugyklos)“)."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
 msgid "Failed to authorize to install packages."
@@ -165,7 +162,7 @@ msgstr "Į_diegti"
 msgid "Details"
 msgstr "Smulkmenos"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -178,7 +175,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
-msgstr "Kalbos priežiūra"
+msgstr "Kalbų ir regionų nustatymai"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid ""
@@ -200,7 +197,7 @@ msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
-"Kai kalba įdiegta, atskiri naudotojai gali ją pasirinkti kalbos nuostatose."
+"Kai kalba įdiegta, naudotojai gali ją pasirinkti kalbos nustatymuose."
 
 #: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
@@ -225,9 +222,9 @@ msgid ""
 "\"English\".\n"
 "Every entry below \"English\" will be ignored."
 msgstr ""
-"Ši nuostata veikia tik jūsų darbastalio ir programų kalbą. Ji nenustato "
-"sistemos aplinkos, pvz., valiutos ar datos formatų nuostatų. Šitam naudokite "
-"nuostatas regionų formatų kortelėje.\n"
+"Šis nustatymas keičia tik jūsų darbastalio ir programų kalbą. Jis nenustato "
+"sistemos aplinkos, pvz., valiutos ar datos formatų nustatymų. Pastariesiems "
+"keisti eikite į regionų formatų kortelę.\n"
 "Čia rodoma reikšmių tvarka lemia, kuriuos vertimus naudoti jūsų "
 "darbastalyje. Jei nėra vertimų į pirmąją kalbą, bus mėginami kiti vertimai "
 "iš sąrašo. Paskutinis įrašas sąraše visada yra „English“.\n"
@@ -259,7 +256,7 @@ msgstr "Įdiegti / pašalinti kalbas..."
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Keyboard input method system:"
-msgstr "Klaviatūros įvesties metodo sistema:"
+msgstr "Klaviatūros rašymo būdų sistema:"
 
 #: ../data/LanguageSelector.ui.h:19
 msgid ""
@@ -272,9 +269,9 @@ msgid ""
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
-"Jei reikia rašyti kalbomis, kurioms reikia sudėtingesnių įvesties metodų, "
-"nei paprastas klavišo ir raidės atvaizdis, tikriausiai norėsite įjungti šią "
-"funkciją.\n"
+"Jei reikia rašyti kalbomis, kurioms reikia sudėtingesnių įvesties metodų "
+"(rašymo būdų), nei paprastas klavišo ir raidės atvaizdis, tikriausiai "
+"norėsite įjungti šią funkciją.\n"
 "Pavyzdžiui, jums reikės šios funkcijos rašyti kinų, japonų, korėjiečių ar "
 "vietnamiečių kalbomis.\n"
 "Ubuntu rekomenduojama reikšmė yra „IBus“.\n"
@@ -295,7 +292,7 @@ msgid ""
 "are located."
 msgstr ""
 "Tai nustatys sistemos aplinką kaip parodyta žemiau ir įtakos popieriaus "
-"formato pirmenybę bei kitas regionui būdingas nuostatas.\n"
+"formato pirmenybę bei kitus regionui būdingus nustatymus.\n"
 "Jei norite, kad darbastalis būtų rodomas kita kalba, negu čia, pasirinkite "
 "ją kalbų kortelėje.\n"
 "Taigi, jūs turėtumėte nustatyti protingą reikšmę regionui, kuriame esate."
@@ -350,12 +347,12 @@ msgid ""
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
 msgstr ""
-"Kalbos palaikymo failai jūsų pasirinktai kalbai matomai yra nepilni. Jūs "
+"Kalbų palaikymo failai jūsų pasirinktoms kalboms yra nepilnai įdiegti. Jūs "
 "galite įdiegti trūkstamus komponentus paspausdami „Vykdyti šį veiksmą dabar“ "
 "ir sekdami tolimesnes instrukcijas. Aktyvi interneto prieiga būtina. Jei "
-"pageidaujate viską atlikti vėliau, tuomet prašome naudoti Kalbos priežiūrą "
-"(spauskite piktogramą esančią dešiniausiai viršutinėje juostoje ir "
-"pasirinkite „Sistemos Nustatymai... -> Kalbos priežiūra“)."
+"pageidaujate viską atlikti vėliau, tuomet prašome naudoti „Kalbų ir regionų "
+"nustatymus“ (spauskite piktogramą esančią dešiniausiai viršutinėje juostoje "
+"ir pasirinkite „Sistemos Nustatymai... -> Kalbų ir regionų nustatymai“)."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -399,3 +396,6 @@ msgstr "išvesti visus prieinamus kalbų palaikymo paketus  visoms kalboms"
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "rodyti ir įdiegtus, ir trūkstamus paketus"
+
+#~ msgid "default"
+#~ msgstr "numatytoji"

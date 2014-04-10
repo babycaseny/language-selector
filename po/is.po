@@ -9,16 +9,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po_language-selector-is\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
-"PO-Revision-Date: 2013-09-18 08:27+0000\n"
-"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
+"PO-Revision-Date: 2013-10-23 07:42+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-04-10 17:53+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 "Language: is\n"
 
 #. Hack for Chinese langpack split
@@ -83,20 +83,16 @@ msgstr "%s, %s"
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr "sjálfgefið"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "ekkert"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
-msgid "Software database is broken"
-msgstr "Það er eitthvað að gangagrunninum"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+msgid "Software database is broken"
+msgstr "Það er eitthvað að hugbúnaðargagnagrunninum"
+
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -106,11 +102,11 @@ msgstr ""
 "pakkastjórann „Synaptic‟ eða keyrðu skipunina „sudo apt-get install -f‟ í "
 "útstöðina til að laga þetta vandamál."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
 msgstr "Tókst ekki að setja inn valið tungumál"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -118,19 +114,22 @@ msgstr ""
 "Þetta gæti verið villa í forritinu. Þú getur sent villuskýrslu til "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "Það tókst ekki að setja upp tungumálið."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
 "very right of the top bar and select \"System Settings... -> Software "
 "Sources\")."
 msgstr ""
+"Venjulega tengist þetta villum í hugbúnaðarsöfnum eða í hugbúnaðarstjórnun. "
+"Athugaðu stillingar fyrir hugbúnaðarupptök (þú getur farið í táknið lengst "
+"til hægri á efri stikunni og valið „Kerfisstjórnun... -> Hugbúnaðarsöfn“)."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
 msgid "Failed to authorize to install packages."
@@ -160,17 +159,21 @@ msgstr "_Setja upp"
 msgid "Details"
 msgstr "Upplýsingar"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
 "choice. The examples may show up if you\n"
 "close and re-open Language Support."
 msgstr ""
+"Mistókst að virkja '%s' sniðið.\n"
+"Sýnidæmi gætu birst ef þú lokar\n"
+"og opnar aftur glugganum fyrir \n"
+"tungumálastuðning."
 
 #: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
-msgstr "Tungumál"
+msgstr "Tungumálastuðningur"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid ""
@@ -194,7 +197,7 @@ msgid ""
 "Language settings."
 msgstr ""
 "Þegar búið er að setja upp tungumál geta einstakir notendur valið það í "
-"Tungumálastytlingum."
+"Tungumál-stillingum."
 
 #: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
@@ -219,12 +222,22 @@ msgid ""
 "\"English\".\n"
 "Every entry below \"English\" will be ignored."
 msgstr ""
+"Þessi stilling hefur einvörðungu áhrif á tungumálið sem skjáborðið og "
+"forritin birtast á. Þetta stillir ekki kerfisumhverfið, eins og gjaldmiðla- "
+"og dagsetningasnið. Fyrir það er sýslað í stillingum á flipanum Texti.\n"
+"Röð gildana sem birtast hér hefur áhrif á hvaða þýðingar eru notaðar á "
+"skjáborðinu. Ef engin þýðing er tiltæk fyrir fyrsta tungumálið, verður reynt "
+"að nota það tungumál sem er næst á listanum. Síðasta færslan á listanum er "
+"alltaf \"Enska\".\n"
+"Allar færslur neðan við \"Enska\" verða hunsaðar."
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
 "<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Raðaðu tungumálum eftir forgangi með því að draga þau.</b>\n"
+"Breytingar taka gildi þegar þú skráir þig inn næst.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -277,6 +290,12 @@ msgid ""
 "Hence you should set this to a sensible value for the region in which you "
 "are located."
 msgstr ""
+"Þetta mun setja kerfið á stillingarnar sem sýndar eru hér fyrir neðan og mun "
+"einnig hafa áhrif á staðfærðar stillingar eins og pappísstærðir o.fl.\n"
+"Ef þú vilt að skjáborðið birtist á öðru tungumáli en þessu, veldu það í "
+"\"Tungumál\" flipanum.\n"
+"Þannig ættirðu að stilla þetta á eitthvað sem hentar fyrir landssvæðið sem "
+"þú ert staddur/stödd á."
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "<small>Changes take effect next time you log in.</small>"
@@ -327,6 +346,12 @@ msgid ""
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
 msgstr ""
+"Eitthvað vantar upp á hjálparskrárnar fyrir tungumálið sem þú valdir. Þú "
+"getur sett upp þá hluta sem vantar með því að velja „Keyra þessa aðgerð "
+"núna“ og fylgja leiðbeiningunum. Virk nettenging verður að vera til staðar. "
+"Ef þú vilt gera þetta seinna, ættirðu að nota frekar stillingar fyrir "
+"tungumálastuðning (þú getur farið í táknið lengst til hægri á efri stikunni "
+"og valið „Kerfisstjórnun -> Tungumálastuðningur“)."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
@@ -365,8 +390,11 @@ msgstr ""
 
 #: ../check-language-support:30
 msgid "output all available language support packages for all languages"
-msgstr ""
+msgstr "telja upp alla mögulega stuðningspakka fyrir öll tungumál"
 
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "Sýna uppsetta pakka sem og þá sem vantar"
+
+#~ msgid "default"
+#~ msgstr "sjálfgefið"

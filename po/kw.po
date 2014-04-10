@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
-"PO-Revision-Date: 2013-06-10 05:27+0000\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
+"PO-Revision-Date: 2014-03-27 23:10+0000\n"
 "Last-Translator: kernow <Unknown>\n"
 "Language-Team: Cornish <kw@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n==3) ? 2 : 3;\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-04-10 17:53+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
@@ -53,7 +53,7 @@ msgstr "Yeth"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
 msgid "Installed"
-msgstr "Les"
+msgstr "Ynstallyes"
 
 #. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
@@ -61,10 +61,10 @@ msgstr "Les"
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
-msgstr[0] "%(INSTALL)d dhe lea"
-msgstr[1] "%(INSTALL)d dhe lea"
-msgstr[2] "%(INSTALL)d dhe lea"
-msgstr[3] "%(INSTALL)d dhe lea"
+msgstr[0] "%(INSTALL)d dhe ynstallya"
+msgstr[1] "%(INSTALL)d dhe ynstallya"
+msgstr[2] "%(INSTALL)d dhe ynstallya"
+msgstr[3] "%(INSTALL)d dhe ynstallya"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
@@ -84,43 +84,39 @@ msgstr ""
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr ""
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "nagonan"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid "Software database is broken"
 msgstr "Terrys yw database an medhelweyth"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
-msgstr "Ny veu possybyl lea an skoodhyans yeth dowisyes"
+msgstr "Ny veu possybyl lea an skoodhyans yeth dewisyes"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "Ny veu possybyl lea an skoodhyans yeth leun"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -134,7 +130,7 @@ msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
 msgid "The language support is not installed completely"
-msgstr "Nyns yw an skoodhyans yeth kowlles"
+msgstr "Nyns yw an skoodhyans yeth ynstallyes yn tien"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
 msgid ""
@@ -148,13 +144,13 @@ msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
 msgid "_Install"
-msgstr "_Lea"
+msgstr "_Ynstallya"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
 msgid "Details"
 msgstr "Manylyon"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -176,13 +172,14 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
-msgstr "Yethow les"
+msgstr "Yethow ynstallyes"
 
 #: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
-msgstr "Pan vo yeth les, devnydhyoryon a yll y dhowis y'ga settyansow yeth."
+msgstr ""
+"Pan vo yeth ynstallyes, usyoryon a yll y dhewis y'ga settyansow yeth."
 
 #: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
@@ -223,12 +220,12 @@ msgid ""
 "<small>Use the same language choices for startup and the login "
 "screen.</small>"
 msgstr ""
-"<small>Usya an keth dowisyansow yeth rag an dalethans ha'n skrin "
+"<small>Usya an keth dewisyansow yeth rag an dallethans ha'n skrin "
 "omgelmi.</small>"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Install / Remove Languages..."
-msgstr "Lea / dilea yethow..."
+msgstr "Ynstallya / dilea yethow..."
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Keyboard input method system:"
@@ -268,7 +265,7 @@ msgstr ""
 msgid ""
 "<small>Use the same format choice for startup and the login screen.</small>"
 msgstr ""
-"<small>Usya an keth dowisyans a furv rag an dalethans ha'n skrin "
+"<small>Usya an keth dewisyans a furv rag an dallethans ha'n skrin "
 "omgelmi.</small>"
 
 #: ../data/LanguageSelector.ui.h:30

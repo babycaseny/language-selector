@@ -1,3 +1,9 @@
+language-selector (0.129) UNRELEASED; urgency=medium
+
+  * Update translations from launchpad
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 10 Apr 2014 20:05:18 +0200
+
 language-selector (0.128) trusty; urgency=medium
 
   * LanguageSelector/gtk/GtkLanguageSelector.py:

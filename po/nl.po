@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
-"PO-Revision-Date: 2013-06-10 05:23+0000\n"
-"Last-Translator: Hannie Dumoleyn <Unknown>\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
+"PO-Revision-Date: 2014-03-28 07:14+0000\n"
+"Last-Translator: Tino Meinen <tino.meinen@gmail.com>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-04-10 17:53+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 "Language: nl\n"
 
 #. Hack for Chinese langpack split
@@ -81,20 +81,16 @@ msgstr "%s, %s"
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr "standaard"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "geen"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid "Software database is broken"
 msgstr "Softwaredatabase is beschadigd"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -104,12 +100,12 @@ msgstr ""
 "Gebruik het pakketbeheerprogramma \"Synaptic\" of gebruik \"sudo apt-get "
 "install -f\" in een terminalvenster om eerst dit probleem te verhelpen."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
 msgstr ""
 "Ondersteuning voor de geselecteerde taal kon niet geïnstalleerd worden"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -117,13 +113,13 @@ msgstr ""
 "Wellicht is dit een programmafout. Dien een foutenrapport in op "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "De taalondersteuning kon niet volledig geïnstalleerd worden"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -163,7 +159,7 @@ msgstr "_Installeren"
 msgid "Details"
 msgstr "Details"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -176,7 +172,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
-msgstr "Taal-ondersteuning"
+msgstr "Taalondersteuning"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid ""
@@ -225,16 +221,15 @@ msgid ""
 "\"English\".\n"
 "Every entry below \"English\" will be ignored."
 msgstr ""
-"Deze instelling heeft alleen effect op de taal die op uw bureaublad en in "
-"toepassingen wordt weergegeven. Het stelt niet de systeemomgeving, zoals "
-"valuta- of datumnotatie-instellingen, in. Gebruik daarvoor de instellingen "
-"in het tabblad \"Landinstellingen\".\n"
-"De volgorde waarin de items hier worden weergegeven bepaalt welke "
-"vertalingen er voor uw bureaublad worden gebruikt. Indien er geen "
+"Deze instelling heeft alleen effect op de taal die in uw werkomgeving en in "
+"toepassingen wordt weergegeven. Ze stelt niet de systeemomgeving in, zoals "
+"valuta- of datumnotatie-instellingen. Gebruik daarvoor de instellingen in "
+"het tabblad ‘Landinstellingen’.\n"
+"De volgorde waarin de talen hier worden weergegeven bepaalt welke "
+"vertalingen er voor uw werkomgeving worden gebruikt. Indien er geen "
 "vertalingen beschikbaar zijn voor de eerste taal,  zal de volgende in de "
-"lijst geprobeerd worden. Het laatste item in deze lijst is altijd "
-"\"English\".\n"
-"Elk item onder \"English\" zal worden genegeerd."
+"lijst geprobeerd worden. De laatste taal in deze lijst is altijd ‘English’.\n"
+"Elke taal onder ‘English’ zal worden genegeerd."
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
@@ -286,7 +281,7 @@ msgstr ""
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
 msgstr ""
-"Getallen, datums en valuta weergeven in het gebruikelijke formaat voor:"
+"Getallen, data en valuta weergeven in het gebruikelijke formaat voor:"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid ""
@@ -299,9 +294,9 @@ msgid ""
 msgstr ""
 "Dit stelt de systeemomgeving in zoals hieronder getoond, en heeft ook effect "
 "op de voorkeur voor papierformaat en andere regiospecifieke instellingen.\n"
-"Als u het bureaublad in een andere taal dan deze wilt weergeven, selecteer "
-"deze dan in het tabblad \"Taal\".\n"
-"U dient hier de juiste waarde in te stellen voor het land waar u zich "
+"Als u de werkomgeving in een andere taal dan deze wilt weergeven, selecteer "
+"deze dan in het tabblad ‘Taal’.\n"
+"U dient hier de juiste waarde in te stellen voor het land waarin u zich "
 "bevindt."
 
 #: ../data/LanguageSelector.ui.h:28
@@ -376,7 +371,7 @@ msgstr ""
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
 msgid "Set system default language"
-msgstr "De standaard systeemtaal instellen"
+msgstr "De standaardsysteemtaal instellen"
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
 msgid "System policy prevented setting default language"
@@ -407,3 +402,6 @@ msgstr "alle beschikbare taalondersteuningspakketten voor alle talen geven"
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "zowel geïnstalleerde pakketten als ontbrekende pakketten weergeven"
+
+#~ msgid "default"
+#~ msgstr "standaard"

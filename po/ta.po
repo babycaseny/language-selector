@@ -9,16 +9,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta(langsel)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
-"PO-Revision-Date: 2013-09-29 18:54+0000\n"
-"Last-Translator: Thangamani Arun - தங்கமணி அருண் <thangam.arunx@gmail.com>\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
+"PO-Revision-Date: 2014-03-22 12:56+0000\n"
+"Last-Translator: Arun Kumar - அருண் குமார் <thangam.arunx@gmail.com>\n"
 "Language-Team: tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-04-10 17:52+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 "Language: \n"
 
 #. Hack for Chinese langpack split
@@ -83,20 +83,16 @@ msgstr "%s, %s"
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr "முன்னிருப்பு"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
 msgstr "ஒன்றுமில்லை"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid "Software database is broken"
 msgstr "மென்பொருள் தரவுத் தொட்டி உடைந்துவிட்டது"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -106,11 +102,11 @@ msgstr ""
 "தயை செய்து சைனாப்டிக் (\"Synaptic\" ) உபயோகிக்கவும் அல்லது முனையத்தில் "
 "\"sudo apt-get install -f\" ஐ இயக்கவும்."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
 msgstr "தேர்ந்தெடுத்த மொழி ஆதரவை நிறுவ இயலவில்லை."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -119,23 +115,27 @@ msgstr ""
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug க்கு "
 "செல்லவும்."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "முழு மொழி ஆதரவை நிறுவ இயலவில்லை."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
 "very right of the top bar and select \"System Settings... -> Software "
 "Sources\")."
 msgstr ""
+"இது பொதுவாக உங்களு்டைய மென்பொருள் காப்பகம் அல்லது மென்பொருள் "
+"நிர்வாகியுடன் தொடர்புடைய பிழை. ஆகவே உங்களுடைய மென்பொருள் மூலங்களின் "
+"முன்னுரிமைகளை சரிபார்க்கவும் (வலதுபக்கத்திலுள்ள உயர்மட்ட பட்டையில் சிறு "
+"படத்தை சொடுக்கி \"கணினி அமைப்புகள்...-> மென்பொருள் மூலங்கள்\" தேர்ந்தெடு)."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
 msgid "Failed to authorize to install packages."
-msgstr ""
+msgstr "பொதிகளை நிறுவலில் அங்கீரிப்பு பிழை நேர்ந்துள்ளது."
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
 msgid "The language support is not installed completely"
@@ -161,13 +161,16 @@ msgstr "நி_றுவல்"
 msgid "Details"
 msgstr "விவரங்கள்"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
 "choice. The examples may show up if you\n"
 "close and re-open Language Support."
 msgstr ""
+"'%s' வடிவமைப்பு தேர்வை செயல்படுத்துவதில் தோல்வியடைந்தது.\n"
+"நீங்கள் மொழி ஆதரவை மூடிவிட்டு திறந்தால்\n"
+"உதாரணங்கள் காட்டப்படலாம்."
 
 #: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
@@ -180,6 +183,10 @@ msgid ""
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
+"<big><b>இருக்கும் மொழி ஆதரவிற்க்காக சரிபார்க்கிறது</b></big>\n"
+"\n"
+"மொழிகளுக்கு மொழி எழுதுவதில் அல்லது மொழிபெயர்ப்பில் வித்தியாசம் இருக்க "
+"வாய்ப்பிருக்கிறது."
 
 #: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
@@ -203,7 +210,7 @@ msgstr "மாற்றங்களை செயல்படுத்து"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "பட்டியியல் மற்றும் சாளரங்களுக்கான மொழி"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -216,12 +223,23 @@ msgid ""
 "\"English\".\n"
 "Every entry below \"English\" will be ignored."
 msgstr ""
+"இந்த அமைவுகள் உங்களுடைய திரைமேசை மற்றும் காண்பிக்கபடும் பயன்பாடுகளை மட்டுமே "
+"பாதிக்கும். இது கணினியின் ஒட்டுமொத்த சூழலை அமைக்காது, எ.கா "
+"நாணயக்குறியீடுஅல்லது தேதி அமைப்புகள். அதற்கு மண்டல வடிவங்கள் தாவலிலுள்ள "
+"அமைவுகளை பயன்படுத்தவும்.\n"
+"இந்த வரியமைப்பு எந்த மொழியாக்கத்தை முதலில் பணிமேடையில் பயன்படுத்துவது "
+"என்பதை தீர்மானிக்கும். வரிசையில் முதல் மொழிக்கான மொழியாககங்கள் "
+"இல்லையென்றால் அடுத்த மொழியை பயன்படுத்தும். வரிசையின்  கடைசியில் எப்போதும் "
+"\"ஆங்கிலம்\" இருக்கும்.\n"
+"\"ஆங்கிலம்\" த்திற்கு கீழேயுள்ள ஒவ்வொரு உள்ளீடும் தவர்க்கப்பட்டுவிடும்."
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
 "<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small><b>முன்னுரிமைகளில் மொழிகளை நகற்றி வரிசைப்படுத்தவும்.</b>\n"
+"மாற்றங்கள் மறுமுறை உள்நுழையும் பொருட்டெ தெரியவரும்.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
@@ -232,6 +250,8 @@ msgid ""
 "<small>Use the same language choices for startup and the login "
 "screen.</small>"
 msgstr ""
+"<small>ஒரே மொழி தேர்வை தொடக்கத்திற்கும் உள்நுழைவு திரைக்கும் "
+"பயன்படுத்தவும்.</small>"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Install / Remove Languages..."
@@ -252,10 +272,18 @@ msgid ""
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
+"மொழிகளில் தட்டச்சு செய்ய வேண்டுமெனில் சிக்கலான உள்ளீட்டு முறை மூலம் ஒரு "
+"சிறிய எழுத்தை காட்ட முடியும்,  நீங்கள் இதை செயல்படுத்த வேண்டும்.\n"
+"உதாரணமாக நீங்கள் தமிழ், கன்னடம், தெலுகு மற்றும் ஐப்பானிய சீன மொழிகளில் "
+"தட்டச்சு செய்ய தேவைப்படுகிறது.\n"
+"உபுண்டுவிற்கு பரிந்துரைக்கப்படும் மதிப்பு \"IBus\".\n"
+"நீங்கள் மாற்று உள்ளீட்டு முறைகளை பயன்படுத்த வேண்டுமெனில், அதற்க்கான பொதியை "
+"முதலில் நிறுவவும் பிறகு தேவையான அமைவுகளை தேர்ந்தெடுக்கவும்."
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
 msgstr ""
+"எண்கள், தேதிகள் நாணய மதிப்புகள் போன்றவற்றை இயல்பான வடிவில் காட்டவும்:"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid ""
@@ -266,6 +294,11 @@ msgid ""
 "Hence you should set this to a sensible value for the region in which you "
 "are located."
 msgstr ""
+"இது கணினியின் சூழல்களை கீழ்கண்டவாறு அமைக்கும் காகித வடுவமைப்பு மற்றம் பிற "
+"நாடு சார்ந்த அமைவுகளை பாதிக்கும்.\n"
+"நீங்கள் இதை தவிர பிற மொழிகளில் உங்கள் பணிமேடையை காண்பிக்க நினைத்தால், "
+"தயவுச்செய்து \"மொழி\" தாவலை தேர்ந்தெடு.\n"
+"எனவே நீங்கள் இருக்கும் இடத்தைப் பொருத்து அதை அமைத்தல் வேண்டும்."
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "<small>Changes take effect next time you log in.</small>"
@@ -276,6 +309,8 @@ msgstr ""
 msgid ""
 "<small>Use the same format choice for startup and the login screen.</small>"
 msgstr ""
+"<small>தொடங்குவதற்கும் உள்நுழைவதற்கும் ஒரே மாதிறி வடிவத்தை "
+"பயன்படுத்தவும்.</small>"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Number:"
@@ -316,24 +351,32 @@ msgid ""
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
 msgstr ""
+"நீங்கள் தேர்ந்தெடுத்த மொழிக்கான ஆதரவு முழுமையாக இல்லை. நீங்கள் \"இந்த செயலை "
+"இயக்கு\" சொடுக்கி தேவைப்படும் பொதிகளை நிறுவிக்கொள்ளவும் மற்ற வழிமுறைகளை "
+"பின்பற்றவும். செயல்பாட்டிலுள்ள இணைய இணைப்பு தேவைப்படுகிறது. நீங்கள் அதை "
+"இன்னொரு தருணத்தில் செய்ய வரும்பினால் மாற்றாக மொழி ஆதரவை "
+"பயன்படுத்தவும்(பலகத்தின் ஆக மேல் பட்டையிலுள்ள சின்னத்தில் தேரந்தெடுக்கவும் "
+"\"கணினி அமைப்புகள்...->மொழி ஆதரவு\")."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "அமர்வை மறுதவக்கம் செய்யவும்"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
 msgstr ""
+"புதிய மொழியின் அமைப்புகள் கணினியை விட்டு வெளியேறிய பிறகு தான் மாற்றத்தை "
+"ஏற்படுத்தும்."
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
 msgid "Set system default language"
-msgstr ""
+msgstr "கணினியின் முன்னிருப்பு மொழியை அமைக்கவும்"
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
 msgid "System policy prevented setting default language"
-msgstr ""
+msgstr "கணினி கொள்கையானது முன்னிருப்பு மொழி அமைப்பதை தடுக்கிறது"
 
 #: ../gnome-language-selector:33
 msgid "don't verify installed language support"
@@ -341,20 +384,26 @@ msgstr "நிறுவிய மொழியின் ஆதரவை சரி
 
 #: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
-msgstr ""
+msgstr "மாற்று தரவு அடைவு"
 
 #: ../check-language-support:24
 msgid "target language code"
-msgstr ""
+msgstr "இலக்கு மொழி குறியீடு"
 
 #: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
+"கொடுக்கப்பட்ட பொதி(களுக்கு) மட்டும் சரிபார்க்கவும் -- கால் புள்ளி மூலம் "
+"பொதிகளின் பெயர்களை பிரிக்கவும்"
 
 #: ../check-language-support:30
 msgid "output all available language support packages for all languages"
 msgstr ""
+"மொழி ஆதரவு இருக்கின்ற அனைத்து மொழிகளுக்கான பொதிகளையும் வெளிப்படுத்து"
 
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
-msgstr ""
+msgstr "நிறுவப்பட்டதையும் காணப்படாத பொதிகளையும் காட்டு"
+
+#~ msgid "default"
+#~ msgstr "முன்னிருப்பு"

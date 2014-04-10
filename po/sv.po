@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-18 18:10+0000\n"
-"PO-Revision-Date: 2013-06-29 10:20+0000\n"
-"Last-Translator: Peter Ahlgren <peter@peterahlgren.com>\n"
+"POT-Creation-Date: 2014-04-09 17:02+0000\n"
+"PO-Revision-Date: 2014-02-14 16:19+0000\n"
+"Last-Translator: Joachim Johansson <Unknown>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2013-10-04 08:56+0000\n"
-"X-Generator: Launchpad (build 16791)\n"
+"X-Launchpad-Export-Date: 2014-04-10 17:53+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 "Language: sv\n"
 
 #. Hack for Chinese langpack split
@@ -81,20 +81,16 @@ msgstr "%s, %s"
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
-msgid "default"
-msgstr "förval"
-
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
 msgid "none"
-msgstr "inget"
+msgstr "ingen"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:709
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
 msgid "Software database is broken"
 msgstr "Programdatabasen är trasig"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -104,11 +100,11 @@ msgstr ""
 "pakethanteraren \"Synaptic\" eller kör \"sudo apt-get install -f\" i en "
 "terminal för att rätta till det här problemet först."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
 msgid "Could not install the selected language support"
 msgstr "Kunde inte installera stöd för det valda språket"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -116,13 +112,13 @@ msgstr ""
 "Det kan vara ett fel i programmet. Skicka in en felrapport på "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
 msgid "Could not install the full language support"
 msgstr "Kunde inte installera fullständigt språkstöd"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -146,8 +142,8 @@ msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
-"Vissa översättningar eller skrivhjälpmedel finns tillgängliga för dina valda "
-"språk och är ännu inte installerade. Vill du installera dem nu?"
+"Vissa tillgängliga översättningar eller skrivhjälpmedel för dina valda språk "
+"är ännu inte installerade. Vill du installera dem nu?"
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
 msgid "_Remind Me Later"
@@ -161,7 +157,7 @@ msgstr "_Installera"
 msgid "Details"
 msgstr "Detaljer"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:934
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
@@ -185,8 +181,8 @@ msgid ""
 msgstr ""
 "<big><b>Kontrollerar tillgängligt språkstöd</b></big>\n"
 "\n"
-"Tillgängligheten för översättningar eller skrivhjälpmedel kan variera mellan "
-"olika språk."
+"Tillgången på översättningar eller skrivhjälpmedel kan variera mellan olika "
+"språk."
 
 #: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
@@ -197,7 +193,7 @@ msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
-"När ett språk är installerat kan individuella användare välja det i sina "
+"När ett språk är installerat, kan en användare välja det i sina "
 "språkinställningar."
 
 #: ../data/LanguageSelector.ui.h:7
@@ -398,3 +394,6 @@ msgstr "skriv ut alla tillgängliga språkpaket för alla språk"
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
 msgstr "visa installerade paket såväl som de som saknas"
+
+#~ msgid "default"
+#~ msgstr "förval"
