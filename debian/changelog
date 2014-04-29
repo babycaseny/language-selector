@@ -1,3 +1,13 @@
+language-selector (0.130) utopic; urgency=low
+
+  * LanguageSelector/ImConfig.py:
+    - Change in version 0.126 reverted - not needed any longer due to
+      changes in im-config.
+  * debian/control:
+    - Bump version of the im-config dependency.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 29 Apr 2014 13:11:00 +0200
+
 language-selector (0.129) trusty; urgency=medium
 
   * Update translations from launchpad

@@ -30,10 +30,7 @@ class ImConfig(object):
         let's ask the system and save the system configuration as the user ditto
         """
         system_conf = ''
-        if os.path.exists('/usr/bin/fcitx'):
-            # Ubuntu Kylin special
-            system_conf = 'fcitx'
-        elif systemConfig == 'default':
+        if systemConfig == 'default':
             # Using the autoConfig value might be incorrect if the mode in
             # /etc/default/im-config is 'cjkv'. However, as from im-config 0.24-1ubuntu1
             # the mode is 'auto' for all users of language-selector-gnome.
