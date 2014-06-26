@@ -1,3 +1,11 @@
+language-selector (0.131) utopic; urgency=low
+
+  * LanguageSelector/gtk/GtkLanguageSelector.py, help/C/index.docbook:
+    - Make the "Apply System-Wide" and "Install / Remove Languages..."
+      buttons sensitive also for standard users (LP: #1008344).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Fri, 27 Jun 2014 00:06:00 +0200
+
 language-selector (0.130) utopic; urgency=low
 
   * LanguageSelector/ImConfig.py:

@@ -112,7 +112,7 @@
 
 	<para>The desired display language(s) and related settings can be set from <application>Language Support</application>. To open the tool, click the icon at the very right of the top bar and select <guilabel>System Settings...</guilabel> -> <guilabel>Language Support</guilabel>.</para>
 
-	<para>There are both system wide and user specific settings. The controls for system wide settings are the <guibutton>Apply system-wide</guibutton> buttons and the <guibutton>Install / Remove Languages...</guibutton> button. Those controls are only available to users with access to administer the system; to other users - if any - they are greyed out.</para>
+	<para>There are both system wide and user specific settings. The controls for system wide settings are the <guibutton>Apply system-wide</guibutton> buttons and the <guibutton>Install / Remove Languages...</guibutton> button, and to make system wide changes you need to enter a password for a user with admin privileges.</para>
 
 	<para>The <guilabel>Language Support</guilabel> window includes two tabs: <guilabel>Language</guilabel> and <guilabel>Regional Formats</guilabel>.</para>
 

@@ -192,9 +192,8 @@ class GtkLanguageSelector(LanguageSelectorBase):
 
         # build the treeview
         self.setupLanguageTreeView()
-        if self.is_admin:
-            self.setupInstallerTreeView()
-            self.updateLanguageView()
+        self.setupInstallerTreeView()
+        self.updateLanguageView()
 #        self.updateUserDefaultCombo()
         self.updateLocaleChooserCombo()
         self.check_input_methods()
@@ -204,14 +203,17 @@ class GtkLanguageSelector(LanguageSelectorBase):
         self.button_apply.set_sensitive(False)
 
         # 'Apply System-Wide...' and 'Install/Remove Languages...' buttons
-        if self.is_admin:
-            self.button_apply_system_wide_languages.set_sensitive(True)
-            self.button_install_remove_languages.set_sensitive(True)
-            self.button_apply_system_wide_locale.set_sensitive(True)
-        else:
-            self.button_apply_system_wide_languages.set_sensitive(False)
-            self.button_install_remove_languages.set_sensitive(False)
-            self.button_apply_system_wide_locale.set_sensitive(False)
+        #
+        # Distinction depending on the is_admin test dropped as a
+        # temporary(?) fix of https://launchpad.net/bugs/1008344
+#        if self.is_admin:
+        self.button_apply_system_wide_languages.set_sensitive(True)
+        self.button_install_remove_languages.set_sensitive(True)
+        self.button_apply_system_wide_locale.set_sensitive(True)
+#        else:
+#            self.button_apply_system_wide_languages.set_sensitive(False)
+#            self.button_install_remove_languages.set_sensitive(False)
+#            self.button_apply_system_wide_locale.set_sensitive(False)
 
         # show it
         self.window_main.show()
@@ -703,8 +705,11 @@ class GtkLanguageSelector(LanguageSelectorBase):
         progress = GtkProgress(self.dialog_progress, self.progressbar_cache,
                                self.window_main)
         try:
-            self.openCache(progress)
-            progress.hide()
+            if self.is_admin:
+                self.openCache(progress)
+                progress.hide()
+            else:
+                self.openCache(None)
         except ExceptionPkgCacheBroken:
             self.error(
                 _("Software database is broken"),
