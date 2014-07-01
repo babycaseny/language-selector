@@ -1,3 +1,10 @@
+language-selector (0.132) utopic; urgency=low
+
+  * fontconfig/69-language-selector-zh-??.conf:
+    Replace "Droid Sans Fallback" with "Droid Sans" (LP: #1335482).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 01 Jul 2014 15:41:00 +0200
+
 language-selector (0.131) utopic; urgency=low
 
   * LanguageSelector/gtk/GtkLanguageSelector.py, help/C/index.docbook:
