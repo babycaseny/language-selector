@@ -1,3 +1,10 @@
+language-selector (0.133) utopic; urgency=low
+
+  * fontconfig/69-language-selector-zh-??.conf:
+    Reverse changes in version 0.132 (LP: #1334495, LP: #1351092).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Mon, 15 Sep 2014 16:23:00 +0200
+
 language-selector (0.132) utopic; urgency=low
 
   * fontconfig/69-language-selector-zh-??.conf:
