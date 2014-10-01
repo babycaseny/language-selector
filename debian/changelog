@@ -1,3 +1,10 @@
+language-selector (0.134) utopic; urgency=low
+
+  * data/pkg_depends:
+    Removed some entries which are no longer needed.
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Wed, 01 Oct 2014 22:53:00 +0200
+
 language-selector (0.133) utopic; urgency=low
 
   * fontconfig/69-language-selector-zh-??.conf:
