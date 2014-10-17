@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 17:02+0000\n"
-"PO-Revision-Date: 2013-06-10 05:24+0000\n"
-"Last-Translator: Ismayilzadeh Zulfugar <Unknown>\n"
+"POT-Creation-Date: 2014-10-02 05:17+0000\n"
+"PO-Revision-Date: 2014-07-15 16:53+0000\n"
+"Last-Translator: Nicat Məmmədov <n1c4t97@gmail.com>\n"
 "Language-Team: Azerbaijani <az@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2014-04-10 17:52+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-10-17 15:37+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
 "Language: az\n"
 
 #. Hack for Chinese langpack split
@@ -30,11 +30,11 @@ msgstr "Çincə (sadələşdirilmiş)"
 msgid "Chinese (traditional)"
 msgstr "Çincə (ənənəvi)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
 msgid "No language information available"
 msgstr "Heç bir dil haqda məlumat yoxdur"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
@@ -42,23 +42,23 @@ msgstr ""
 "Sistem mövcud dillər haqqında məlumata hələ sahib deyil. Bu məlumatı indi "
 "əldə etmək üçün şəbəkə yeniləməsi etmək istəyirsinizmi? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:235
 msgid "_Update"
 msgstr "_Yenilə"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:317
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:354
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:319
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:356
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Dil"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid "Installed"
 msgstr "Qurulu"
 
 #. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -66,7 +66,7 @@ msgstr[0] "%(INSTALL)d dənə qurulacaq"
 msgstr[1] "%(INSTALL)d dənə qurulacaq"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:396
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -74,23 +74,23 @@ msgstr[0] "%(REMOVE)d dənə silinəcək"
 msgstr[1] "%(REMOVE)d dənə silinəcək"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:403
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:405
 #, python-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
 #. find out about the other options
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "none"
 msgstr "heç biri"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:715
 msgid "Software database is broken"
 msgstr "Proqram bazası xarabdır"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:507
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
@@ -100,11 +100,11 @@ msgstr ""
 "qaldımaq üçün öncə \"Synaptic\" paket idarəçisindən istifadə edin və ya "
 "terminalda \"sudo apt-get install -f\" əmrini icra edin."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid "Could not install the selected language support"
 msgstr "Seçilmiş dil dəstəyi qurula bilmədi"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:549
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
@@ -113,29 +113,33 @@ msgstr ""
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug "
 "ünvanına xəta bildirişi göndərin."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:609
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:613
 msgid "Could not install the full language support"
 msgstr "Tam dil dəstəyi qurula bilmədi"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:574
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
 "very right of the top bar and select \"System Settings... -> Software "
 "Sources\")."
 msgstr ""
+"Bu xəta adətən proqram arxivi və ya proqram idarəçisi ilə əlaqəli olur. "
+"Proqram nizamlamalarınızı yoxlayın. (ən üstdəki panelin ən sağındakı "
+"piktoqrama klikləyin və  \"Sistem Tənzimləmələri... -> Proqram Mənbələri\"-"
+"ni seçin)."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:610
 msgid "Failed to authorize to install packages."
-msgstr ""
+msgstr "Paketləri yükləmək üçün icazə verilmədi."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
 msgid "The language support is not installed completely"
 msgstr "Dil dəstəyi tam olaraq qurulmayıb"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:669
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
@@ -143,25 +147,28 @@ msgstr ""
 "Sİzin seçdiyiniz dil üçün mövcud olan bəzi tərcümələr və ya yazı köməkləri "
 "hələ qurulmayıb. Siz onları qurmaq istəyirsinizmi?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:672
 msgid "_Remind Me Later"
-msgstr "_Mənə Daha Sonra Xatırlat"
+msgstr "Daha Sonra  _Xatırlat"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
 msgid "_Install"
-msgstr "_Qur"
+msgstr "_Quraşdır"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:676
 msgid "Details"
-msgstr "Təfsilatlar"
+msgstr "Təfərrüatlar"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:940
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
 "choice. The examples may show up if you\n"
 "close and re-open Language Support."
 msgstr ""
+"'%s' format seçimi tətbiq olunmadı.\n"
+"Əgər Dil Dəstəyini bağlayıb yenidən açsanız\n"
+"nümunələr sizə göstəriləcəkdir"
 
 #: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
@@ -176,23 +183,23 @@ msgid ""
 msgstr ""
 "<big><b>Mövcud dil dəstəyi yoxlanılır</b></big>\n"
 "\n"
-"Tərcümələrin və yazı köməklərinin mövcudluğu dildən dilə fərqlənə bilər."
+"Tərcümələrin və yazı köməklərinin mövcudluğu dillər arasında fərqlənə bilər."
 
 #: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
-msgstr "Quraşdırılmış dillər"
+msgstr "Quraşdırılmış Dillər"
 
 #: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
-"Əyər bir dil yüklənibsə ayrı-ayrı istifadəçilər onu öz Dil seçənəklərində "
-"istifadə edəbilərlər."
+"Bir dil yüklənəndə, ayrı-ayrı istifadəçilər onu öz Dil tənzimləmələrində "
+"seçə bilərlər."
 
 #: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
-msgstr "Ləğv Et"
+msgstr "İmtina"
 
 #: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
@@ -200,7 +207,7 @@ msgstr "Dəyişikliklər Tətbiq Et"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
-msgstr "Menyu və pəncərələr üçün dillər:"
+msgstr "Menyu və pəncərələr üçün dil:"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -219,24 +226,28 @@ msgid ""
 "<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small><b>Tərcih etdiyiniz dili daşıyaraq düzün.</b>\n"
+"Dəyişikliklər bir sonrakı girişinizdə aktivləşəcək.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
-msgstr ""
+msgstr "Ümumi sitemə tətbiq et"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid ""
 "<small>Use the same language choices for startup and the login "
 "screen.</small>"
 msgstr ""
+"<small>Başlanğıc və giriş ekranı üçün eyni dil seçimlərini istifadə "
+"et.</small>"
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Install / Remove Languages..."
-msgstr "Dilləri Qur / Sil..."
+msgstr "Dilləri Quraşdır / Sil..."
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "Klaviatura daxil etmə metodu sistemi:"
 
 #: ../data/LanguageSelector.ui.h:19
 msgid ""
@@ -252,7 +263,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
-msgstr ""
+msgstr "Rəqəmlər, tarixlər və valyutanın göstəriləcəyi format:"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid ""
@@ -267,35 +278,39 @@ msgstr ""
 #: ../data/LanguageSelector.ui.h:28
 msgid "<small>Changes take effect next time you log in.</small>"
 msgstr ""
+"<small>Dəyişikliklər gələn dəfə daxil olandan sonra özünü biruzə "
+"verəcək.</small>"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid ""
 "<small>Use the same format choice for startup and the login screen.</small>"
 msgstr ""
+"<small>Başlanğıc və giriş ekranı üçün eyni format seçimindən istifadə "
+"et.</small>"
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Number:"
-msgstr ""
+msgstr "Rəqəm:"
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Date:"
-msgstr ""
+msgstr "Tarix:"
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Currency:"
-msgstr ""
+msgstr "Valyuta:"
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "<b>Example</b>"
-msgstr ""
+msgstr "<b>Nümunə</b>"
 
 #: ../data/LanguageSelector.ui.h:34
 msgid "Regional Formats"
-msgstr ""
+msgstr "Yerli Formatlar"
 
 #: ../data/language-selector.desktop.in.h:2
 msgid "Configure multiple and native language support on your system"
-msgstr "Sisteminizdə çoxsaylı və yerli (doğma) dil dəstəyini quraşdırın"
+msgstr "Sisteminizdə çoxsaylı və yerli dil dəstəyini quraşdırın"
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
@@ -316,16 +331,17 @@ msgstr ""
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "Seansı Yenidən Başlatmanız Lazımdı"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
 msgstr ""
+"Yeni dil tənzimləmələriniz hesabdan çıxdığınız zaman özünü biruzə verəcək."
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
 msgid "Set system default language"
-msgstr ""
+msgstr "Sistemin varsayılan dilini təyin et"
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
 msgid "System policy prevented setting default language"
@@ -333,7 +349,7 @@ msgstr ""
 
 #: ../gnome-language-selector:33
 msgid "don't verify installed language support"
-msgstr ""
+msgstr "quraşdırılan dil dəstəyini təsdiqləmə"
 
 #: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
@@ -341,16 +357,16 @@ msgstr ""
 
 #: ../check-language-support:24
 msgid "target language code"
-msgstr ""
+msgstr "hədəf dil kodu"
 
 #: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
-msgstr ""
+msgstr "sadəcə verilən paket(ləri) yoxla -- paket adlarını vergüllə ayır"
 
 #: ../check-language-support:30
 msgid "output all available language support packages for all languages"
-msgstr ""
+msgstr "bütün dillər üçün mövcud dil dəstək paketlərinin çıxışını ver"
 
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
-msgstr ""
+msgstr "çatışmayanlarla birlikdə qurulu olan dilləri də göstər"

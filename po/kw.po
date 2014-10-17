@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-04-09 17:02+0000\n"
-"PO-Revision-Date: 2014-03-27 23:10+0000\n"
+"POT-Creation-Date: 2014-10-02 05:17+0000\n"
+"PO-Revision-Date: 2014-10-09 15:52+0000\n"
 "Last-Translator: kernow <Unknown>\n"
 "Language-Team: Cornish <kw@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n==3) ? 2 : 3;\n"
-"X-Launchpad-Export-Date: 2014-04-10 17:53+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-10-17 15:37+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
@@ -29,35 +29,35 @@ msgstr "Chinek (sempelhes)"
 msgid "Chinese (traditional)"
 msgstr "Chinek (hengovek)"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:228
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
 msgid "No language information available"
 msgstr "Nyns eus kedhlow yeth kavadow"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:229
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
-"Nyns eus dhe'n system kedhlow a-dro dhe'n yethow kavadow hwath. Eus hwans "
+"Ny'n jeves an system kedhlow a-dro dhe'n yethow kavadow hwath. Eus hwans "
 "dhywgh nowedhi an rosweyth rag aga havos lemmyn? "
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:233
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:235
 msgid "_Update"
 msgstr "_Nowedhi"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:317
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:354
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:319
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:356
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
 msgstr "Yeth"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:324
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid "Installed"
-msgstr "Ynstallyes"
+msgstr "Ynstallys"
 
 #. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:392
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
@@ -67,7 +67,7 @@ msgstr[2] "%(INSTALL)d dhe ynstallya"
 msgstr[3] "%(INSTALL)d dhe ynstallya"
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:394
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:396
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
@@ -77,46 +77,46 @@ msgstr[2] "%(REMOVE)d dhe dhilea"
 msgstr[3] "%(REMOVE)d dhe dhilea"
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:403
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:405
 #, python-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #. find out about the other options
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:451
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
 msgid "none"
 msgstr "nagonan"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:504
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:710
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:715
 msgid "Software database is broken"
 msgstr "Terrys yw database an medhelweyth"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:505
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:711
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:507
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
 msgid ""
 "It is impossible to install or remove any software. Please use the package "
 "manager \"Synaptic\" or run \"sudo apt-get install -f\" in a terminal to fix "
 "this issue at first."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:546
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid "Could not install the selected language support"
-msgstr "Ny veu possybyl lea an skoodhyans yeth dewisyes"
+msgstr "Ny ylles ynstallya an skoodhyans yeth dewisys"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:547
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:549
 msgid ""
 "This is perhaps a bug of this application. Please file a bug report at "
 "https://bugs.launchpad.net/ubuntu/+source/language-selector/+filebug"
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:571
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:607
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:611
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:573
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:609
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:613
 msgid "Could not install the full language support"
-msgstr "Ny veu possybyl lea an skoodhyans yeth leun"
+msgstr "Ny ylles ynstallya an skoodhyans yethow leun"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:572
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:574
 msgid ""
 "Usually this is related to an error in your software archive or software "
 "manager. Check your preferences in Software Sources (click the icon at the "
@@ -124,43 +124,49 @@ msgid ""
 "Sources\")."
 msgstr ""
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:608
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:610
 msgid "Failed to authorize to install packages."
-msgstr ""
+msgstr "Ri kummyas rag ynstallya fardellow a fyllis."
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:666
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
 msgid "The language support is not installed completely"
 msgstr "Nyns yw an skoodhyans yeth ynstallyes yn tien"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:667
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:669
 msgid ""
 "Some translations or writing aids available for your chosen languages are "
 "not installed yet. Do you want to install them now?"
 msgstr ""
+"Nyns yw ynstallys neb treylyansow po skrifellow kavadow rag'as yethow "
+"dewisys hwath. Eus hwans dhywgh aga ynstallya lemmyn?"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:670
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:672
 msgid "_Remind Me Later"
-msgstr ""
+msgstr "_Kofhe dhymm diwettha"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:671
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
 msgid "_Install"
 msgstr "_Ynstallya"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:674
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:676
 msgid "Details"
 msgstr "Manylyon"
 
-#: ../LanguageSelector/gtk/GtkLanguageSelector.py:935
+#: ../LanguageSelector/gtk/GtkLanguageSelector.py:940
 #, python-format
 msgid ""
 "Failed to apply the '%s' format\n"
 "choice. The examples may show up if you\n"
 "close and re-open Language Support."
 msgstr ""
+"Gweytha an dewis furvyans '%s' a\n"
+"fyllis. An ensamplow a alsa omdhiskwedhes\n"
+"mar tegeowgh ha dasygeri Skoodhyans\n"
+"Yethow."
 
 #: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
-msgstr "Skoodhyans yeth"
+msgstr "Skoodhyans yethow"
 
 #: ../data/LanguageSelector.ui.h:2
 msgid ""
@@ -169,6 +175,9 @@ msgid ""
 "The availability of translations or writing aids can differ between "
 "languages."
 msgstr ""
+"<big><b>Ow checkya an skoodhyans yeth kavadow</b></big>\n"
+"\n"
+"An kavadowder a dreylyansow po skrifellow a yll bos dihaval yntra yethow."
 
 #: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
@@ -179,7 +188,7 @@ msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
 msgstr ""
-"Pan vo yeth ynstallyes, usyoryon a yll y dhewis y'ga settyansow yeth."
+"Pan vo yeth ynstallyes, devnydhyoryon a yll hy dewis y'ga settyansow yeth."
 
 #: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
@@ -187,11 +196,11 @@ msgstr "Hedhi"
 
 #: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
-msgstr ""
+msgstr "Gweytha an chanjyow"
 
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
-msgstr ""
+msgstr "An yeth rag rolyow ha fenestri:"
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -204,23 +213,33 @@ msgid ""
 "\"English\".\n"
 "Every entry below \"English\" will be ignored."
 msgstr ""
+"Ny nas an settyans ma marnas an yeth mayth yw diskwedhys agas towlennow ha "
+"penn an desk. Ny sett kerghynnedh an system, kepar ha'n mona kemmyn po an "
+"settyansow dedhyans. Rag henna, usyewgh an settyansow y'n tab Furvyansow "
+"Ranndiryel.\n"
+"Aray an entransow diskwedhys omma a ervir py dreylyansow a dhevnydhir war "
+"benn an desk. Mar nyns yw kavadow treylyansow rag an kensa yeth, an nessa "
+"y'n rol ma a brevir. Pupprys yth yw \"English\" diwettha entrans an rol ma.\n"
+"Aswon pub entrans a-woles dhe \"English\" a vydh skonyes."
 
 #: ../data/LanguageSelector.ui.h:13
 msgid ""
 "<small><b>Drag languages to arrange them in order of preference.</b>\n"
 "Changes take effect next time you log in.</small>"
 msgstr ""
+"<small><b>Draylyewgh yethow rag aga araya herwydh agas bodh.</b>\n"
+"Chanjyow a weythir an nessa termyn hwi dhe omdenna.</small>"
 
 #: ../data/LanguageSelector.ui.h:15
 msgid "Apply System-Wide"
-msgstr ""
+msgstr "Gweytha dres an system oll"
 
 #: ../data/LanguageSelector.ui.h:16
 msgid ""
 "<small>Use the same language choices for startup and the login "
 "screen.</small>"
 msgstr ""
-"<small>Usya an keth dewisyansow yeth rag an dallethans ha'n skrin "
+"<small>Usya an keth dewisyow yeth rag an dallethans ha'n skrin "
 "omgelmi.</small>"
 
 #: ../data/LanguageSelector.ui.h:17
@@ -229,7 +248,7 @@ msgstr "Ynstallya / dilea yethow..."
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Keyboard input method system:"
-msgstr ""
+msgstr "System fordh ynworra an vysowek:"
 
 #: ../data/LanguageSelector.ui.h:19
 msgid ""
@@ -242,10 +261,19 @@ msgid ""
 "If you want to use alternative input method systems, install the "
 "corresponding packages first and then choose the desired system here."
 msgstr ""
+"Mars yw res dhywgh jynnskrifa dre yethow yw res dhedha fordhow ynworra moy "
+"komplek ages mappyans alhwedhen-dhe-lytheren, y halsa bos hwans dhywgh "
+"gallosegi an nas ma.\n"
+"Rag ensampel, y fydh res dhywgh an nas rag jynnskrifa Chinek, Japanek, "
+"Koreek po Vietnamek.\n"
+"\"IBus\" yw an settyans komendys rag Ubuntu.\n"
+"Mars eus hwans dhywgh usya systemow fordhow ynworra erel, ynstallyewgh an "
+"fardellow omdhesedhek kens oll, hag ena dewisewgh an system hwensys omma."
 
 #: ../data/LanguageSelector.ui.h:24
 msgid "Display numbers, dates and currency amounts in the usual format for:"
 msgstr ""
+"Diskwedhes niverow, dedhyow ha mynsow a vona kemmyn y'n furvyans usadow rag:"
 
 #: ../data/LanguageSelector.ui.h:25
 msgid ""
@@ -256,16 +284,22 @@ msgid ""
 "Hence you should set this to a sensible value for the region in which you "
 "are located."
 msgstr ""
+"Hemma a sett kerghynnedh an system kepar dell dhiskwedhir a-woles ha nasya "
+"ynwedh an furvyans paper preferys, keffrys ha settyansow ranndir-komparek "
+"aral.\n"
+"Mars eus hwans dhywgh diskwedhes penn an desk yn yeth aral ages hemma, "
+"dewisewgh hi y'n tab \"Yeth\".\n"
+"Alena y talvia dhywgh usya settyans fur rag an ranndir mayth owgh trigys."
 
 #: ../data/LanguageSelector.ui.h:28
 msgid "<small>Changes take effect next time you log in.</small>"
-msgstr ""
+msgstr "<small>Chanjyow a weythir an nessa termyn hwi dhe omdenna.</small>"
 
 #: ../data/LanguageSelector.ui.h:29
 msgid ""
 "<small>Use the same format choice for startup and the login screen.</small>"
 msgstr ""
-"<small>Usya an keth dewisyans a furv rag an dallethans ha'n skrin "
+"<small>Usya an keth dewis a furv rag an dallethans ha'n skrin "
 "omgelmi.</small>"
 
 #: ../data/LanguageSelector.ui.h:30
@@ -286,16 +320,16 @@ msgstr "<b>Ensampel</b>"
 
 #: ../data/LanguageSelector.ui.h:34
 msgid "Regional Formats"
-msgstr ""
+msgstr "Furvyansow ranndiryek"
 
 #: ../data/language-selector.desktop.in.h:2
 msgid "Configure multiple and native language support on your system"
-msgstr ""
+msgstr "Restra skoodhyans a lies yeth po yeth enesik war agas jynn-amontya"
 
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 msgid "Incomplete Language Support"
-msgstr ""
+msgstr "Skoodhyans yeth andhien"
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -307,45 +341,52 @@ msgid ""
 "Support instead (click the icon at the very right of the top bar and select "
 "\"System Settings... -> Language Support\")."
 msgstr ""
+"Yth hevel bos andhien an restrennow skoodhyans yeth rag agas yeth dewisys. "
+"Hwi a yll ynstallya an rannow a fyll dre glyckya war \"Resek an gwrians ma "
+"lemmyn\" ha holya an danvonadow. Res yw junyans kesrosweyth byw. Mars yw "
+"gwell genowgh gul hemma orth termyn diwettha, gwrewgh usya Skoodhyans Yethow "
+"yn y le (klyckyewgh an arwodhik orth tu dyghow an barr gwartha ha dewisewgh "
+"\"Settyansow an system... -> Skoodhyans yethow\")."
 
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr ""
+msgstr "Res yw dastalleth an esedhek"
 
 #. Description
 #: ../data/restart_session_required.note.in:6
 msgid "The new language settings will take effect once you have logged out."
-msgstr ""
+msgstr "An settyansow yeth nowydh a weythir wosa hwi dhe omdenna."
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:1
 msgid "Set system default language"
-msgstr ""
+msgstr "Settya yeth defowt an system"
 
 #: ../dbus_backend/com.ubuntu.languageselector.policy.in.h:2
 msgid "System policy prevented setting default language"
-msgstr ""
+msgstr "Polici an system a lettyas settya an yeth defowt"
 
 #: ../gnome-language-selector:33
 msgid "don't verify installed language support"
-msgstr ""
+msgstr "sevel orth gwirya an skoodhyans a yethow ynstallyes"
 
 #: ../gnome-language-selector:36 ../check-language-support:27
 msgid "alternative datadir"
-msgstr ""
+msgstr "datadir aral"
 
 #: ../check-language-support:24
 msgid "target language code"
-msgstr ""
+msgstr "koden an yeth kosten"
 
 #: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
 msgstr ""
+"checkya rag an fardell(ow) res hepken -- diberth packagenames dre gomma"
 
 #: ../check-language-support:30
 msgid "output all available language support packages for all languages"
-msgstr ""
+msgstr "eskorra oll an fardellow skoodhyans yethow kavadow rag oll yethow"
 
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
-msgstr ""
+msgstr "diskwedhes fardellow ynstallyes keffrys ha'n re a fyll"

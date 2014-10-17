@@ -1,60 +1,57 @@
-# German, Low translation for language-selector
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# Chechen translation for language-selector
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
 # This file is distributed under the same license as the language-selector package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: language-selector\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-02 05:17+0000\n"
-"PO-Revision-Date: 2010-09-07 03:00+0000\n"
-"Last-Translator: Arne Goetje <Unknown>\n"
-"Language-Team: German, Low <nds@li.org>\n"
+"PO-Revision-Date: 2014-08-19 09:09+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chechen <ce@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2014-10-17 15:37+0000\n"
+"X-Launchpad-Export-Date: 2014-10-17 15:38+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
-"Language: \n"
 
 #. Hack for Chinese langpack split
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
 #: ../LanguageSelector/LocaleInfo.py:56
 msgid "Chinese (simplified)"
-msgstr "Chinesisch (eenfach)"
+msgstr ""
 
 #. Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
 #: ../LanguageSelector/LocaleInfo.py:58
 msgid "Chinese (traditional)"
-msgstr "Chinesisch (traditschoonell)"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:230
 msgid "No language information available"
-msgstr "Keene Sprakinformatschoonen verfögbar"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:231
 msgid ""
 "The system does not have information about the available languages yet. Do "
 "you want to perform a network update to get them now? "
 msgstr ""
-"Das System hat keine Information über vorhandene Sprachen. Möchten Sie ein "
-"Update durchführen um diese zu erhalten? "
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:235
 msgid "_Update"
-msgstr "_Opfrischen"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:319
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:356
 #: ../data/LanguageSelector.ui.h:23
 msgid "Language"
-msgstr "Sprak"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:326
 msgid "Installed"
-msgstr "Installert"
+msgstr ""
 
 #. print("%(INSTALL)d to install, %(REMOVE)d to remove" % (countInstall, countRemove))
 #. Translators: %(INSTALL)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "INSTALL".
@@ -62,22 +59,22 @@ msgstr "Installert"
 #, python-format
 msgid "%(INSTALL)d to install"
 msgid_plural "%(INSTALL)d to install"
-msgstr[0] "%(INSTALL)d wird installiert"
-msgstr[1] "%(INSTALL)d wird installiert"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Translators: %(REMOVE)d is parsed; either keep it exactly as is or remove it entirely, but don't translate "REMOVE".
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:396
 #, python-format
 msgid "%(REMOVE)d to remove"
 msgid_plural "%(REMOVE)d to remove"
-msgstr[0] "%(REMOVE)d wird entfernt"
-msgstr[1] "%(REMOVE)d wird entfernt"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Translators: this string will concatenate the "%n to install" and "%n to remove" strings, you can replace the comma if you need to.
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:405
 #, python-format
 msgid "%s, %s"
-msgstr "%s, %s"
+msgstr ""
 
 #. find out about the other options
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:453
@@ -87,7 +84,7 @@ msgstr ""
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:506
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:715
 msgid "Software database is broken"
-msgstr "Programmdatenbank is im dutt"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:507
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:716
@@ -99,7 +96,7 @@ msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:548
 msgid "Could not install the selected language support"
-msgstr "Konnte die gewählte Sprachhilfen nicht installieren"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:549
 msgid ""
@@ -111,7 +108,7 @@ msgstr ""
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:609
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:613
 msgid "Could not install the full language support"
-msgstr "Konnte nicht die vollständige Sprachunterstützung installieren"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:574
 msgid ""
@@ -127,7 +124,7 @@ msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:668
 msgid "The language support is not installed completely"
-msgstr "Die Sprachunterstützung wurde nicht vollständig installiert"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:669
 msgid ""
@@ -137,15 +134,15 @@ msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:672
 msgid "_Remind Me Later"
-msgstr "_Später erinnern"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:673
 msgid "_Install"
-msgstr "_Installieren"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:676
 msgid "Details"
-msgstr "Details"
+msgstr ""
 
 #: ../LanguageSelector/gtk/GtkLanguageSelector.py:940
 #, python-format
@@ -157,7 +154,7 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:1 ../data/language-selector.desktop.in.h:1
 msgid "Language Support"
-msgstr "Sprakunnerstütten"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:2
 msgid ""
@@ -169,25 +166,25 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:5
 msgid "Installed Languages"
-msgstr "Installerte Spraken"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:6
 msgid ""
 "When a language is installed, individual users can choose it in their "
 "Language settings."
-msgstr "Wenn eene Sprak installert is"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:7
 msgid "Cancel"
-msgstr "Avbreken"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:8
 msgid "Apply Changes"
-msgstr "Ännern tostimmen"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:9
 msgid "Language for menus and windows:"
-msgstr "Sprak för Menüs un Finsters:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:10
 msgid ""
@@ -219,11 +216,11 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:17
 msgid "Install / Remove Languages..."
-msgstr "Spraken installeren / löschen..."
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:18
 msgid "Keyboard input method system:"
-msgstr "Knöppboordingavnmethodensystem:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:19
 msgid ""
@@ -262,19 +259,19 @@ msgstr ""
 
 #: ../data/LanguageSelector.ui.h:30
 msgid "Number:"
-msgstr "Taal:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:31
 msgid "Date:"
-msgstr "Dag:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:32
 msgid "Currency:"
-msgstr "Aktuell:"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:33
 msgid "<b>Example</b>"
-msgstr "<b>Bispeel</b>"
+msgstr ""
 
 #: ../data/LanguageSelector.ui.h:34
 msgid "Regional Formats"
@@ -287,7 +284,7 @@ msgstr ""
 #. Name
 #: ../data/incomplete-language-support-gnome.note.in:5
 msgid "Incomplete Language Support"
-msgstr "De Sprakunnerstütten is nich vollständig"
+msgstr ""
 
 #. Description
 #: ../data/incomplete-language-support-gnome.note.in:6
@@ -303,7 +300,7 @@ msgstr ""
 #. Name
 #: ../data/restart_session_required.note.in:5
 msgid "Session Restart Required"
-msgstr "De Törn mutt nej startet werrn"
+msgstr ""
 
 #. Description
 #: ../data/restart_session_required.note.in:6
@@ -328,7 +325,7 @@ msgstr ""
 
 #: ../check-language-support:24
 msgid "target language code"
-msgstr "Täälsprakcode"
+msgstr ""
 
 #: ../check-language-support:28
 msgid "check for the given package(s) only -- separate packagenames by comma"
@@ -340,4 +337,4 @@ msgstr ""
 
 #: ../check-language-support:33
 msgid "show installed packages as well as missing ones"
-msgstr "all installerte un fehlende Pakete opwiesen"
+msgstr ""
