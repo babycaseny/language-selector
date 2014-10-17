@@ -1,8 +1,8 @@
-language-selector (0.135) UNRELEASED; urgency=medium
+language-selector (0.135) utopic; urgency=medium
 
   * Update translations from launchpad
 
- -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 17 Oct 2014 17:48:43 +0200
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 17 Oct 2014 17:49:12 +0200
 
 language-selector (0.134) utopic; urgency=low
 
