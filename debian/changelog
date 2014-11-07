@@ -1,8 +1,8 @@
-language-selector (0.136) UNRELEASED; urgency=medium
+language-selector (0.136) vivid; urgency=medium
 
   * Remove gir1.2-vte-2.90 dependency, which is unused.
 
- -- Iain Lane <iain@orangesquash.org.uk>  Fri, 07 Nov 2014 12:47:56 +0000
+ -- Iain Lane <iain@orangesquash.org.uk>  Fri, 07 Nov 2014 12:48:22 +0000
 
 language-selector (0.135) utopic; urgency=medium
 
