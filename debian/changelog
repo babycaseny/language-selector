@@ -1,5 +1,8 @@
 language-selector (0.137) UNRELEASED; urgency=medium
 
+  * debian/control:
+    Bump Standards-Version to 3.9.6.
+
   [ Aron Xu ]
   * data/pkg_depends:
     Pull fcitx IM engines instead of IBus ditto for Chinese
