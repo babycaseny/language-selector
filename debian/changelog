@@ -1,4 +1,4 @@
-language-selector (0.137) UNRELEASED; urgency=medium
+language-selector (0.137) vivid; urgency=medium
 
   * debian/control:
     Bump Standards-Version to 3.9.6.
@@ -8,7 +8,7 @@ language-selector (0.137) UNRELEASED; urgency=medium
     Pull fcitx IM engines instead of IBus ditto for Chinese
     (LP: #1430893).
 
- -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Wed, 18 Mar 2015 18:40:00 +0100
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Wed, 18 Mar 2015 19:01:00 +0100
 
 language-selector (0.136) vivid; urgency=medium
 
