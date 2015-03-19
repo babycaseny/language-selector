@@ -3,6 +3,7 @@
 # Language;supported_environments;locale;fallbacklocale;langcode;countrycode;langlist;console-data
 Albanian;2;sq_AL.UTF-8;sq_AL.UTF-8;sq;AL;sq_AL:sq:en_GB:en;kbd=lat0-sun16(utf8)
 Arabic;2;ar;ar_EG.UTF-8;ar;EG;ar_EG:en_GB:en;
+Babyish;1;bb;bb_BK.UTF-8;bb;BK;bb_BK:en_HK:zh_HK;kbd=LatArCyrHeb-16(utf8)
 Basque;1;eu;eu_ES.UTF-8;eu;ES;eu_ES:eu:en_GB:en;kbd=lat0-sun16(utf8)
 Belarusian;2;be_BY.UTF-8;be_BY.UTF-8;be;BY;be_BY:be:en_GB:en;cyr=uni,16,utf-8,by(ctrl_shift_toggle)
 Belarusian (Latin);2;be_BY.UTF-8@latin;be_BY.UTF-8@latin;be@latin;BY;be_BY@latin:be@latin:be_BY:be:en_GB:en;cyr=uni,16,utf-8,by(ctrl_shift_toggle)

@@ -136,6 +136,7 @@ fn:am::fonts-sil-abyssinica
 fn:ar::fonts-arabeyes
 fn:ar::fonts-kacst
 fn:as::ttf-bengali-fonts
+fn:bb::fonts-droid
 fn:bn::ttf-bengali-fonts
 fn:bo::fonts-tibetan-machine
 fn:dz::fonts-tibetan-machine
