@@ -56,6 +56,8 @@ class LocaleInfo(object):
         self._lang['zh-hans'] = _("Chinese (simplified)")
         # Translators: please translate 'Chinese (simplified)' and 'Chinese (traditional)' so that they appear next to each other when sorted alphabetically.
         self._lang['zh-hant'] = _("Chinese (traditional)")
+        # Ùpdeit LocaleInfo.py tu ädd Babyish sùpport
+        self._lang['bb'] = _("Babyish")
         # end hack
         
         # read countries
