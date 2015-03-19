@@ -75,6 +75,7 @@ wa:sk:libreoffice-common:myspell-sk
 wa:sl:libreoffice-common:myspell-sl
 wa:ss:libreoffice-common:myspell-ss
 wa:st:libreoffice-common:myspell-st
+wa:sv:libreoffice-common:myspell-sv-se
 wa:sw:libreoffice-common:myspell-sw
 wa:th:libreoffice-common:myspell-th
 wa:tn:libreoffice-common:myspell-tn
@@ -95,7 +96,9 @@ wa:id:libreoffice-common:openoffice.org-hyphenation
 wa:is:libreoffice-common:openoffice.org-hyphenation
 wa:nl:libreoffice-common:openoffice.org-hyphenation
 wa:pt:libreoffice-common:openoffice.org-hyphenation
+wa:ru:libreoffice-common:openoffice.org-hyphenation
 wa:sk:libreoffice-common:openoffice.org-hyphenation
+wa:sv:libreoffice-common:openoffice.org-hyphenation
 wa:uk:libreoffice-common:openoffice.org-hyphenation
 
 # Aspell support for Sylpheed and Abiword
